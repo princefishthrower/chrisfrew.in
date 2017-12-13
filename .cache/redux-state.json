@@ -1,0 +1,2425 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "26977b8f96fa1670b918f65b3df3aab9",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7d860b403c6c636d51c341b2512a3667",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "66fa8dabac952bc25bf13d37b1873b99",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "34def5b33d6aff5a011f0aa45ea1b742",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "872bffb5019b7a336a4900c82022f7b4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9f865274a4d4e30ba43f4f4bc456351b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.8",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/chris/projects/chrisfrew.in/src/pages",
+        "name": "pages"
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.8",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7ab31664af28f2f21ed2ec59722884c2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.7.24",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-images",
+            "id": "Plugin gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "1.5.32",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 590,
+              "wrapperStyle": "",
+              "backgroundColor": "white",
+              "linkImagesToOriginal": true,
+              "pathPrefix": ""
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-responsive-iframe",
+            "id": "Plugin gatsby-remark-responsive-iframe",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "1.4.14",
+            "pluginOptions": {
+              "plugins": [],
+              "wrapperStyle": "margin-bottom: 1.0725rem"
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-responsive-iframe"
+          },
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-prismjs",
+            "id": "Plugin gatsby-remark-prismjs",
+            "name": "gatsby-remark-prismjs",
+            "version": "1.2.11",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-copy-linked-files",
+            "id": "Plugin gatsby-remark-copy-linked-files",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "1.5.21",
+            "pluginOptions": {
+              "plugins": [],
+              "ignoreFileExtensions": [
+                "png",
+                "jpg",
+                "jpeg",
+                "bmp",
+                "tiff"
+              ]
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-smartypants",
+            "id": "Plugin gatsby-remark-smartypants",
+            "name": "gatsby-remark-smartypants",
+            "version": "1.4.8",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-smartypants"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.7.24",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "44dfbed44f4c6c0ac95c973776224772",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-images",
+      "id": "Plugin gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "1.5.32",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 590,
+        "wrapperStyle": "",
+        "backgroundColor": "white",
+        "linkImagesToOriginal": true,
+        "pathPrefix": ""
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "1.5.32",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark",
+          "image",
+          "responsive images"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.21"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d904a81588ae543ca0ca226f56140e3f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-responsive-iframe": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-responsive-iframe",
+      "id": "Plugin gatsby-remark-responsive-iframe",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "1.4.14",
+      "pluginOptions": {
+        "plugins": [],
+        "wrapperStyle": "margin-bottom: 1.0725rem"
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "1.4.14",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "unist-util-find",
+            "version": "^1.0.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1387822f6d2ab25f43023e4e30ba05b8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-prismjs": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-prismjs",
+      "id": "Plugin gatsby-remark-prismjs",
+      "name": "gatsby-remark-prismjs",
+      "version": "1.2.11",
+      "pluginOptions": {
+        "plugins": [],
+        "classPrefix": "language-"
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "1.2.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "parse-numeric-range",
+            "version": "^0.0.2"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "714288769d66d94dab485ec84ded816e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-copy-linked-files": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-copy-linked-files",
+      "id": "Plugin gatsby-remark-copy-linked-files",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "1.5.21",
+      "pluginOptions": {
+        "plugins": [],
+        "ignoreFileExtensions": [
+          "png",
+          "jpg",
+          "jpeg",
+          "bmp",
+          "tiff"
+        ]
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "1.5.21",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.6.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "path-is-inside",
+            "version": "^1.0.2"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b1eec89560d6d14ff737b8e0d0554d3e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-smartypants": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-smartypants",
+      "id": "Plugin gatsby-remark-smartypants",
+      "name": "gatsby-remark-smartypants",
+      "version": "1.4.8",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-smartypants",
+      "packageJson": {
+        "name": "gatsby-remark-smartypants",
+        "description": "Use retext-smartypants to auto-enhance typography of markdown",
+        "version": "1.4.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "smartypants"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "retext",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-smartypants",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "18bdb6c537a17e22614a59b73b615fba",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "1.6.14",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "1.6.14",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "sharp",
+          "image"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.6.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "786a04c822062b54a51247e12d2af946",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.6.21",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.6.21",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.17.3"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "872f8ab964fce85d07902f71db708098",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.12",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.12",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bec840e3c08faffe05c9c1825571ed03",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-feed": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed",
+      "id": "Plugin gatsby-plugin-feed",
+      "name": "gatsby-plugin-feed",
+      "version": "1.3.13",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed",
+      "packageJson": {
+        "name": "gatsby-plugin-feed",
+        "description": "Creates an RSS feed for your Gatsby site.",
+        "version": "1.3.13",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "rss",
+          "atom",
+          "feed"
+        ],
+        "author": {
+          "name": "Nicholas Young",
+          "email": "nicholas@nicholaswyoung.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "lodash.merge",
+            "version": "^4.6.0"
+          },
+          {
+            "name": "pify",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "rss",
+            "version": "^1.2.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b4d7a168fd95fb16b8546e1822177077",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-offline": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline",
+      "id": "Plugin gatsby-plugin-offline",
+      "name": "gatsby-plugin-offline",
+      "version": "1.0.10",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "1.0.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "sw-precache",
+            "version": "^5.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7e67c0ec00b56c27d1d72ad0081aa142",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "1.0.8",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Stub description for gatsby-plugin-react-helmet",
+        "version": "1.0.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": {
+          "name": "Kyle Mathews &lt;mathews.kyle@gmail.com&gt;"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6d39ca6c3e9f23bad0e1a282b9580bde",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-typography": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-typography",
+      "id": "Plugin gatsby-plugin-typography",
+      "name": "gatsby-plugin-typography",
+      "version": "1.7.10",
+      "pluginOptions": {
+        "plugins": [],
+        "pathToConfigModule": "src/utils/typography"
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-typography",
+      "packageJson": {
+        "name": "gatsby-plugin-typography",
+        "description": "Gatsby plugin to setup server rendering of Typography.js' CSS",
+        "version": "1.7.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "typography",
+          "typography.js"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.1"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "58c6b2db65ec3d34642c9d0cc0f7b58b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-emojis": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emojis",
+      "id": "Plugin gatsby-remark-emojis",
+      "name": "gatsby-remark-emojis",
+      "version": "0.2.3",
+      "pluginOptions": {
+        "plugins": [],
+        "active": true,
+        "class": "emoji-icon",
+        "size": 64,
+        "styles": {
+          "display": "inline",
+          "margin": "0",
+          "margin-top": "1px",
+          "position": "relative",
+          "top": "5px",
+          "width": "25px"
+        }
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emojis",
+      "packageJson": {
+        "name": "gatsby-remark-emojis",
+        "description": "Processes emoji in markdown and inlines `<img>` tags with the corresponding base64 corresponding of the image.",
+        "version": "0.2.3",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark",
+          "emoji"
+        ],
+        "author": {
+          "name": "Mathias Schilling",
+          "email": "m@matchilling.com",
+          "url": "https://www.matchilling.com"
+        },
+        "license": "GPL-3.0",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "714ef672daa2e0917a96d96a93c5f351",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/chris/projects/chrisfrew.in",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "8bb17961220c98395e2882a543063b03",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onCreateNode"
+      ],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in",
+      "packageJson": {
+        "name": "gatsby-starter-blog",
+        "description": "Starter Gatsby Blog",
+        "version": "1.0.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.118"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.28"
+          },
+          {
+            "name": "gatsby-plugin-feed",
+            "version": "^1.3.13"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^1.0.12"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^1.0.10"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^1.0.8"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.21"
+          },
+          {
+            "name": "gatsby-plugin-typography",
+            "version": "^1.7.10"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "^1.5.21"
+          },
+          {
+            "name": "gatsby-remark-emojis",
+            "version": "^0.2.3"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^1.5.32"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^1.2.11"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^1.4.14"
+          },
+          {
+            "name": "gatsby-remark-smartypants",
+            "version": "^1.4.8"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.8"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^1.7.24"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^1.6.14"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "react-responsive-grid",
+            "version": "^0.3.4"
+          },
+          {
+            "name": "typeface-merriweather",
+            "version": "0.0.43"
+          },
+          {
+            "name": "typeface-montserrat",
+            "version": "0.0.43"
+          },
+          {
+            "name": "typography-theme-wordpress-2016",
+            "version": "^0.15.10"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "eslint",
+            "version": "^4.11.0"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^7.5.1"
+          },
+          {
+            "name": "gh-pages",
+            "version": "^1.1.0"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.8.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "84fc4f9b9099ce819a64c4789418a73b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby Starter Blog",
+        "author": "Kyle Mathews",
+        "description": "A starter blog demonstrating what Gatsby can do.",
+        "siteUrl": "https://gatsbyjs.github.io/gatsby-starter-blog/"
+      },
+      "pathPrefix": "/gatsby-starter-blog",
+      "polyfill": true,
+      "buildTime": "2017-12-12T22:35:04.979Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "877644ec251c0347a05c1965709ce8e3",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "9b825dc371006be0af8e621ea3d5b8d2",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "relativePath": "",
+      "extension": "",
+      "size": 256,
+      "prettySize": "256 B",
+      "modifiedTime": "2017-12-12T17:37:41.506Z",
+      "accessTime": "2017-12-12T22:35:07.343Z",
+      "changeTime": "2017-12-12T22:07:40.018Z",
+      "birthTime": "2017-12-11T10:56:14.841Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 8,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655514,
+      "blocks": 0,
+      "atimeMs": 1513118107343.028,
+      "mtimeMs": 1513100261505.7964,
+      "ctimeMs": 1513116460017.795,
+      "birthtimeMs": 1512989774840.9749,
+      "atime": "2017-12-12T22:35:07.343Z",
+      "mtime": "2017-12-12T17:37:41.506Z",
+      "ctime": "2017-12-12T22:07:40.018Z",
+      "birthtime": "2017-12-11T10:56:14.841Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "be3f39e6a7f95bde77938d922d7f41bf",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world",
+      "relativePath": "1-hello-world",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T14:25:30.051Z",
+      "accessTime": "2017-12-12T22:35:07.346Z",
+      "changeTime": "2017-12-12T22:07:40.015Z",
+      "birthTime": "2017-12-11T10:56:14.841Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "1-hello-world",
+      "ext": "",
+      "name": "1-hello-world",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655517,
+      "blocks": 0,
+      "atimeMs": 1513118107345.8076,
+      "mtimeMs": 1513088730050.9492,
+      "ctimeMs": 1513116460015.1807,
+      "birthtimeMs": 1512989774841.032,
+      "atime": "2017-12-12T22:35:07.346Z",
+      "mtime": "2017-12-12T14:25:30.051Z",
+      "ctime": "2017-12-12T22:07:40.015Z",
+      "birthtime": "2017-12-11T10:56:14.841Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bcd0055a86e9ecac56bdb3f50881246a",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers",
+      "relativePath": "2-a-toast-to-full-stack-developers",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T13:26:11.622Z",
+      "accessTime": "2017-12-12T22:35:07.346Z",
+      "changeTime": "2017-12-12T22:07:40.014Z",
+      "birthTime": "2017-12-12T13:26:03.823Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "2-a-toast-to-full-stack-developers",
+      "ext": "",
+      "name": "2-a-toast-to-full-stack-developers",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655515,
+      "blocks": 0,
+      "atimeMs": 1513118107345.8657,
+      "mtimeMs": 1513085171621.5022,
+      "ctimeMs": 1513116460014.4287,
+      "birthtimeMs": 1513085163822.7273,
+      "atime": "2017-12-12T22:35:07.346Z",
+      "mtime": "2017-12-12T13:26:11.622Z",
+      "ctime": "2017-12-12T22:07:40.014Z",
+      "birthtime": "2017-12-12T13:26:03.823Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fada811cf4a5311367bf5d74d0a48c1a",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap",
+      "relativePath": "3-sending-windows-commands-from-sap-abap",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T14:28:13.294Z",
+      "accessTime": "2017-12-12T22:35:07.346Z",
+      "changeTime": "2017-12-12T22:07:40.016Z",
+      "birthTime": "2017-12-12T14:28:07.573Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "3-sending-windows-commands-from-sap-abap",
+      "ext": "",
+      "name": "3-sending-windows-commands-from-sap-abap",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655519,
+      "blocks": 0,
+      "atimeMs": 1513118107345.8484,
+      "mtimeMs": 1513088893293.6396,
+      "ctimeMs": 1513116460015.8784,
+      "birthtimeMs": 1513088887573.0825,
+      "atime": "2017-12-12T22:35:07.346Z",
+      "mtime": "2017-12-12T14:28:13.294Z",
+      "ctime": "2017-12-12T22:07:40.016Z",
+      "birthtime": "2017-12-12T14:28:07.573Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5629a76c143c5141e894d79b267632fc",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin",
+      "relativePath": "4-final-say-bitcoin",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T16:03:32.631Z",
+      "accessTime": "2017-12-12T22:35:07.346Z",
+      "changeTime": "2017-12-12T22:07:40.018Z",
+      "birthTime": "2017-12-12T16:03:26.022Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "4-final-say-bitcoin",
+      "ext": "",
+      "name": "4-final-say-bitcoin",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655524,
+      "blocks": 0,
+      "atimeMs": 1513118107345.8687,
+      "mtimeMs": 1513094612631.4026,
+      "ctimeMs": 1513116460017.7314,
+      "birthtimeMs": 1513094606022.0178,
+      "atime": "2017-12-12T22:35:07.346Z",
+      "mtime": "2017-12-12T16:03:32.631Z",
+      "ctime": "2017-12-12T22:07:40.018Z",
+      "birthtime": "2017-12-12T16:03:26.022Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c770a67dbd7cbdd3e3f46da71628490d",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt",
+      "relativePath": "5-ethereum-developers-toolbelt",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T16:14:40.371Z",
+      "accessTime": "2017-12-12T22:35:07.346Z",
+      "changeTime": "2017-12-12T22:07:40.017Z",
+      "birthTime": "2017-12-12T16:14:34.059Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "5-ethereum-developers-toolbelt",
+      "ext": "",
+      "name": "5-ethereum-developers-toolbelt",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655521,
+      "blocks": 0,
+      "atimeMs": 1513118107345.9277,
+      "mtimeMs": 1513095280370.9812,
+      "ctimeMs": 1513116460016.7078,
+      "birthtimeMs": 1513095274059.1846,
+      "atime": "2017-12-12T22:35:07.346Z",
+      "mtime": "2017-12-12T16:14:40.371Z",
+      "ctime": "2017-12-12T22:07:40.017Z",
+      "birthtime": "2017-12-12T16:14:34.059Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d780ad0b4fc98be7c3bb99447f8a6fbf",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md",
+      "relativePath": "2-a-toast-to-full-stack-developers/index.md",
+      "extension": "md",
+      "size": 2517,
+      "prettySize": "2.52 kB",
+      "modifiedTime": "2017-12-12T20:24:18.733Z",
+      "accessTime": "2017-12-12T20:45:05.145Z",
+      "changeTime": "2017-12-12T22:07:40.014Z",
+      "birthTime": "2017-12-12T13:26:11.621Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2-a-toast-to-full-stack-developers",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655516,
+      "blocks": 8,
+      "atimeMs": 1513111505145.203,
+      "mtimeMs": 1513110258733.4224,
+      "ctimeMs": 1513116460014.338,
+      "birthtimeMs": 1513085171621.489,
+      "atime": "2017-12-12T20:45:05.145Z",
+      "mtime": "2017-12-12T20:24:18.733Z",
+      "ctime": "2017-12-12T22:07:40.014Z",
+      "birthtime": "2017-12-12T13:26:11.621Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/index.js absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fd0f9ad6baf4cdfa2a750ac0cb1fe5cd",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
+      "relativePath": "index.js",
+      "extension": "js",
+      "size": 2109,
+      "prettySize": "2.11 kB",
+      "modifiedTime": "2017-12-12T22:34:40.121Z",
+      "accessTime": "2017-12-12T22:34:40.121Z",
+      "changeTime": "2017-12-12T22:34:40.121Z",
+      "birthTime": "2017-12-11T10:56:14.843Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655523,
+      "blocks": 0,
+      "atimeMs": 1513118080120.8418,
+      "mtimeMs": 1513118080121.0063,
+      "ctimeMs": 1513118080121.0063,
+      "birthtimeMs": 1512989774843.3616,
+      "atime": "2017-12-12T22:34:40.121Z",
+      "mtime": "2017-12-12T22:34:40.121Z",
+      "ctime": "2017-12-12T22:34:40.121Z",
+      "birthtime": "2017-12-11T10:56:14.843Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d800277adf20a797181b7e30c76db526",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md",
+      "relativePath": "1-hello-world/index.md",
+      "extension": "md",
+      "size": 499,
+      "prettySize": "499 B",
+      "modifiedTime": "2017-12-12T15:28:50.334Z",
+      "accessTime": "2017-12-12T20:45:05.152Z",
+      "changeTime": "2017-12-12T22:07:40.015Z",
+      "birthTime": "2017-12-11T10:56:14.841Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "1-hello-world",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655518,
+      "blocks": 8,
+      "atimeMs": 1513111505152.3264,
+      "mtimeMs": 1513092530333.9077,
+      "ctimeMs": 1513116460015.092,
+      "birthtimeMs": 1512989774841.0945,
+      "atime": "2017-12-12T20:45:05.152Z",
+      "mtime": "2017-12-12T15:28:50.334Z",
+      "ctime": "2017-12-12T22:07:40.015Z",
+      "birthtime": "2017-12-11T10:56:14.841Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fdf48049a0c6cef0163f1bc3227712c7",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md",
+      "relativePath": "3-sending-windows-commands-from-sap-abap/index.md",
+      "extension": "md",
+      "size": 7324,
+      "prettySize": "7.32 kB",
+      "modifiedTime": "2017-12-12T22:20:47.017Z",
+      "accessTime": "2017-12-12T22:20:47.016Z",
+      "changeTime": "2017-12-12T22:20:47.017Z",
+      "birthTime": "2017-12-12T14:28:13.294Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "3-sending-windows-commands-from-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655520,
+      "blocks": 0,
+      "atimeMs": 1513117247016.4321,
+      "mtimeMs": 1513117247016.6638,
+      "ctimeMs": 1513117247016.6638,
+      "birthtimeMs": 1513088893293.6265,
+      "atime": "2017-12-12T22:20:47.016Z",
+      "mtime": "2017-12-12T22:20:47.017Z",
+      "ctime": "2017-12-12T22:20:47.017Z",
+      "birthtime": "2017-12-12T14:28:13.294Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1fbe5c005d5fcd28d4da4ec29e6adab5",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md",
+      "relativePath": "4-final-say-bitcoin/index.md",
+      "extension": "md",
+      "size": 1624,
+      "prettySize": "1.62 kB",
+      "modifiedTime": "2017-12-12T22:26:37.521Z",
+      "accessTime": "2017-12-12T22:26:37.731Z",
+      "changeTime": "2017-12-12T22:26:37.521Z",
+      "birthTime": "2017-12-12T16:03:32.631Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "4-final-say-bitcoin",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655525,
+      "blocks": 8,
+      "atimeMs": 1513117597730.9832,
+      "mtimeMs": 1513117597520.834,
+      "ctimeMs": 1513117597520.834,
+      "birthtimeMs": 1513094612631.3896,
+      "atime": "2017-12-12T22:26:37.731Z",
+      "mtime": "2017-12-12T22:26:37.521Z",
+      "ctime": "2017-12-12T22:26:37.521Z",
+      "birthtime": "2017-12-12T16:03:32.631Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "65bdababd18a5d5f4bd777b68345380e",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md",
+      "relativePath": "5-ethereum-developers-toolbelt/index.md",
+      "extension": "md",
+      "size": 838,
+      "prettySize": "838 B",
+      "modifiedTime": "2017-12-12T22:32:51.054Z",
+      "accessTime": "2017-12-12T22:32:51.263Z",
+      "changeTime": "2017-12-12T22:32:51.054Z",
+      "birthTime": "2017-12-12T16:14:40.371Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "5-ethereum-developers-toolbelt",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655522,
+      "blocks": 0,
+      "atimeMs": 1513117971262.6143,
+      "mtimeMs": 1513117971053.5684,
+      "ctimeMs": 1513117971053.5684,
+      "birthtimeMs": 1513095280370.9634,
+      "atime": "2017-12-12T22:32:51.263Z",
+      "mtime": "2017-12-12T22:32:51.054Z",
+      "ctime": "2017-12-12T22:32:51.054Z",
+      "birthtime": "2017-12-12T16:14:40.371Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: A Toast to Full Stack Developers\ndate: \"2017-12-12\"\n---\n\nWarning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.\n\n# The Full Stack Myth?\n\nMuch to my suprise, thoughout my various software engineering media consumption adventures - I've discovered there is a general consensus that the idea of 'full stack' is FAKE NEWS. Lots of people on podcasts say it I say screw that. That is a lot like saying, \"oh hey, did you know it's impossible to write great apps or games if you're a solo developer?\" or, \"What?!?! A nice dynamic UI, _with_ a relational database backend _and_ a websocket to send messages between the two!?!? You're a madman!!!\".\n\nWait a second - isn't that what this whole Web 3.0 stuff is supposed to do? Empower developers to make great apps all by themselves? I mean jeez, I know us, we've spent hours on hours learning python, backend databases, container deploys, dabbled in numerous backend frameworks, not even getting started with your favorite modern front end framework of choice (yeah, there's a lot of those too!) like Vue, React, Ember or more.\n\nOf course full stack developers know they are more a less a jack of all trades, master of none. I know there are people who could kick my ass at both Postgresql database maintenence, and there are just as many frontend people who could totally kick my ass with a badass UI in React.\n\nFor me, full stack has always been about the adventure of software itself - its the nature of the discepline in fact - there are new tools being rolled out literally every day. I mean, really, if you've written backend code for databases but have also built websites (I know there are many of us out there!)- how are you supposed to write that susincctly on a resume or CV? \"Hi, I'm Chris, part-time-database-program-writer-and-part-time-front-end-engineer\"? I do concede that the moniker 'full stack' is not really a good enough description by itself. In my case, I could say 'full stack _web developer_'. With more practice, maybe someday a full stack _android developer_ - but I need to run through a lot more projects before that happens :)\n\n# Conclusion\n\nJust because we're not the greatest, most amazing expert in a certain language, just because we don't know certain frameworks, just because we haven't focused in one software engineering discipline our entire careers...\n\n_Shouldn't we still be able to call ourselves full stack developers?_\n\n**Of course.**\n",
+        "contentDigest": "73a2717d0752ed60c603c318fc0521b0",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "A Toast to Full Stack Developers",
+        "date": "2017-12-12",
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md",
+      "fields": {
+        "slug": "/2-a-toast-to-full-stack-developers/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Hello World - My First Post :)\ndate: \"2017-12-12\"\n---\n\nI'll be writing here for sometime into the future now, though I'm not sure how often, as I'm rather busy with the work for [nlp-champs.com](nlp-champs.com) and [SkillScout](skillscout.herokuapp.com) (the original thing that brought on the need case for [nlp-champs.com](nlp-champs.com). Plus, it _really_ doesn't help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head :boom: :boom: :boom: daily.\n",
+        "contentDigest": "f188a4d4c807cec0fc8830103c771561",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Hello World - My First Post :)",
+        "date": "2017-12-12",
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md",
+      "fields": {
+        "slug": "/1-hello-world/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Sending Windows Server Commands From SAP ABAP\ndate: \"2017-12-12\"\n---\n\nAlright, let's do a bit of applied stuff today.\n\n# Backstory\n\nFor a long time, I had a ticket open for our IT for a automatic job that would restart a certain task on a windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.\n\nOne lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.\n\n# The Problem\n\nI needed to issue . That much I knew how to do - I had used custom command services with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, on a specific server, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, windows has a very nice command for exactly that.\n\nIt's called `sc`:\n\n```\nC:\\>sc\nDESCRIPTION:\n        SC is a command line program used for communicating with the\n        Service Control Manager and services.\nUSAGE:\n        sc <server> [command] [service name] <option1> <option2>...\n\n\n        The option <server> has the form \"\\\\ServerName\"\n        Further help on commands can be obtained by typing: \"sc [command]\"\n        Commands:\n          query-----------Queries the status for a service, or enumerates the status for types of services.\n          queryex---------Queries the extended status for a service, or enumerates the status for types of services.\n          start-----------Starts a service.\n          pause-----------Sends a PAUSE control request to a service.\n          interrogate-----Sends an INTERROGATE control request to a service.\n          continue--------Sends a CONTINUE control request to a service.\n          stop------------Sends a STOP request to a service.\n          config----------Changes the configuration of a service (persistent).\n          description-----Changes the description of a service.\n          failure---------Changes the actions taken by a service upon failure.\n          failureflag-----Changes the failure actions flag of a service.\n          sidtype---------Changes the service SID type of a service.\n          privs-----------Changes the required privileges of a service.\n          managedaccount--Changes the service to mark the service account password as managed by LSA.\n          qc--------------Queries the configuration information for a service.\n          qdescription----Queries the description for a service.\n          qfailure--------Queries the actions taken by a service upon failure.\n          qfailureflag----Queries the failure actions flag of a service.\n          qsidtype--------Queries the service SID type of a service.\n          qprivs----------Queries the required privileges of a service.\n          qtriggerinfo----Queries the trigger parameters of a service.\n          qpreferrednode--Queries the preferred NUMA node of a service.\n          qrunlevel-------Queries the run level of a service.\n          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.\n          qprotection-----Queries the process protection level of a service.\n          delete----------Deletes a service (from the registry).\n          create----------Creates a service. (adds it to the registry).\n          control---------Sends a control to a service.\n          sdshow----------Displays a service's security descriptor.\n          sdset-----------Sets a service's security descriptor.\n          showsid---------Displays the service SID string corresponding to an arbitrary name.\n          triggerinfo-----Configures the trigger parameters of a service.\n          preferrednode---Sets the preferred NUMA node of a service.\n          runlevel--------Sets the run level of a service.\n          GetDisplayName--Gets the DisplayName for a service.\n          GetKeyName------Gets the ServiceKeyName for a service.\n          EnumDepend------Enumerates Service Dependencies.\n\n        The following commands don't require a service name:\n        sc <server> <command> <option>\n          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration\n          Lock------------Locks the Service Database\n          QueryLock-------Queries the LockStatus for the SCManager Database\nEXAMPLE:\n        sc start MyService\n\nWould you like to see help for the QUERY and QUERYEX commands? [ y | n ]:\n```\n\nWow. That's a monster of a command documentation. Let's break down what we need.\n\n- The server. We know that (for this example, I'm going to just call it AWESOMESERVER01). But wait! There's a gotchya, we will need to write it like:\n\n`\\\\AWESOMESERVER01`\n\nThat's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:\n\n> > The option <server> has the form \"\\\\\\\\ServerName\"\n\nOkay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.\n\nCommand? What command do we need? Let's check out that wall of text documentation:\n\n> > stop------------Sends a STOP request to a service.\n\nYep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:\n\n> > Commands:\n  . . .\n  start-----------Starts a service.\n\nThat will be useful later, too.\n\nOkay... Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:\n\n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nSo, in order for this to be a true _restart_ of the service, we would have to issue a stop/start command pair on the service:\n\n\n`sc \\\\AWESOMESERVER01 stop \"ServiceName even with Whitespace\"`  \n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nHow do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module `SXPG_COMMAND_EXECUTE`:\n\n```abap\nCALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n  EXPORTING\n    commandname                   = gv_commandname\n    additional_parameters         = gv_additional_parameters\n    operatingsystem               = gv_operatingsystem\n  TABLES\n    exec_protocol                 = gt_result\n  EXCEPTIONS\n    no_permission                 = 1\n    command_not_found             = 2\n    parameters_too_long           = 3\n    security_risk                 = 4\n    wrong_check_call_interface    = 5\n    program_start_error           = 6\n    program_termination_error     = 7\n    x_error                       = 8\n    parameter_expected            = 9\n    too_many_parameters           = 10\n    illegal_command               = 11\n    wrong_asynchronous_parameters = 12\n    cant_enq_tbtco_entry          = 13\n    jobcount_generation_error     = 14\n    OTHERS                        = 15.\n```\n\n_Intellectual property disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._\n",
+        "contentDigest": "1c2c723d93d780d634591c360acc289d",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Sending Windows Server Commands From SAP ABAP",
+        "date": "2017-12-12",
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md",
+      "fields": {
+        "slug": "/3-sending-windows-commands-from-sap-abap/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: An Ethereum Developer's Toolbelt\ndate: \"2017-12-12\"\ndraft: true\n---\n\n# Ethereum is not that old\n\n_This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to Ethereum and looking for a more technical 2017 overview of the Project, [read my Medium article on the subject.](https://medium.com/@frewin.christopher/the-ethereum-project-a-high-level-review-of-the-projects-progress-status-resources-tools-4e4f88050ffa)_\n\nAs such, the tools surrounding decentralized apps (DApps) and blockchain development are being created with blazing speed - it's like 2014 (I know, so long ago, right?) when es5 came out, as well as react, webpack, and hundreds of other tools were being released.\n\n# Enter Truffle\n\n\n\n# Enter Ethermint\n\n# Truffle and Ethermint?!?!\n",
+        "contentDigest": "0b3ae366c30b5c0ba67cd92aa003da68",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "An Ethereum Developer's Toolbelt",
+        "date": "2017-12-12",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md",
+      "fields": {
+        "slug": "/5-ethereum-developers-toolbelt/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: My First and Final Statement on Bitcoin for this Blog\ndate: \"2017-12-12\"\ndraft: true\n---\n\nLots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring what a spew on reddit :) ) SOMEWHERE about bitcoin, and let me promise you, I won't post about Bitcoin (in relation to politics or economics) every again.\n\nThe simple economics are: there will only every 21 million of them, it was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist). But the fact still stands, bitcoin has the largest AND majority market cap among all the other currencies.\n\n[]()\n\nA comic I thought up about Bitcoin :)\n\nAs cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:\n\nMarket Capitalization | Bitcoin price*\n1 Trillion | ~$53,000\n2 Trillion | ~$105,000\n3 Trillion | ~$158,000\n... |\n7 Trillion (market cap of gold) | ~$368,000\n\n\\*(assume around 19 million bitcoins - currently 16.7 as of writing this entry)\n\nI predict:\n\n- $20,000 by January 1st 2018\n- $50,000 by end of Q2 2018\n- $100,000 by end of Q4 2018\n\n# Here's what has to happen for the price of Bitcoin to crash\n- Actually, if 100% of people who bought became true 100% hodlers, the price would remain constant\n\nLet it stand as a permanant marker:\n\n**as of 16:08 UTC, Tuesday december 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.**\n",
+        "contentDigest": "e171c67c96adb0962de63d6f763a877f",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "My First and Final Statement on Bitcoin for this Blog",
+        "date": "2017-12-12",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md",
+      "fields": {
+        "slug": "/4-final-say-bitcoin/"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "layout": "index",
+      "jsonName": "offline-plugin-app-shell-fallback.json",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "context": {},
+      "updatedAt": 1513118107684,
+      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
+      "pluginCreatorId": "Plugin gatsby-plugin-offline",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b1f8e230ae709c51f205a6363ed2c724",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2-a-toast-to-full-stack-developers/": {
+      "layout": "index",
+      "jsonName": "2-a-toast-to-full-stack-developers.json",
+      "internalComponentName": "Component2AToastToFullStackDevelopers",
+      "path": "/2-a-toast-to-full-stack-developers/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/2-a-toast-to-full-stack-developers/"
+      },
+      "updatedAt": 1513118107771,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /2-a-toast-to-full-stack-developers/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "ad5f29d98012d4a358fcc206b138a0d7",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /1-hello-world/": {
+      "layout": "index",
+      "jsonName": "1-hello-world.json",
+      "internalComponentName": "Component1HelloWorld",
+      "path": "/1-hello-world/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/1-hello-world/"
+      },
+      "updatedAt": 1513118107771,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /1-hello-world/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "79cd730d7db5627b3a14ebe99392b1d8",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /3-sending-windows-commands-from-sap-abap/": {
+      "layout": "index",
+      "jsonName": "3-sending-windows-commands-from-sap-abap.json",
+      "internalComponentName": "Component3SendingWindowsCommandsFromSapAbap",
+      "path": "/3-sending-windows-commands-from-sap-abap/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/3-sending-windows-commands-from-sap-abap/"
+      },
+      "updatedAt": 1513118107772,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /3-sending-windows-commands-from-sap-abap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b6774421472244a3ddcde04c156ad612",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /5-ethereum-developers-toolbelt/": {
+      "layout": "index",
+      "jsonName": "5-ethereum-developers-toolbelt.json",
+      "internalComponentName": "Component5EthereumDevelopersToolbelt",
+      "path": "/5-ethereum-developers-toolbelt/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/5-ethereum-developers-toolbelt/"
+      },
+      "updatedAt": 1513118107772,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /5-ethereum-developers-toolbelt/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "48a00c6b773a2244998c9ce6af9ea607",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /4-final-say-bitcoin/": {
+      "layout": "index",
+      "jsonName": "4-final-say-bitcoin.json",
+      "internalComponentName": "Component4FinalSayBitcoin",
+      "path": "/4-final-say-bitcoin/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/4-final-say-bitcoin/"
+      },
+      "updatedAt": 1513118107773,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /4-final-say-bitcoin/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6cf1b9c36573e660ddebe8c4f4fc927a",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "updatedAt": 1513118107783,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "aad731da934f183dd0324ebf9abbf499",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "c66c2b0efc8fa67a03d5c32fc4a0a1a6"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "/2-a-toast-to-full-stack-developers/",
+        "/1-hello-world/",
+        "/3-sending-windows-commands-from-sap-abap/",
+        "/5-ethereum-developers-toolbelt/",
+        "/4-final-say-bitcoin/",
+        "/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
+        "/2-a-toast-to-full-stack-developers/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark": [
+        "/1-hello-world/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": [
+        "/3-sending-windows-commands-from-sap-abap/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": [
+        "/5-ethereum-developers-toolbelt/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": [
+        "/4-final-say-bitcoin/"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/"
+      ],
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}

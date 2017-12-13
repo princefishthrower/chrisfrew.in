@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 12 Dec 2017 22:35:24 GMT</lastBuildDate><item><title><![CDATA[A Toast to Full Stack Developers]]></title><description><![CDATA[Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//2-a-toast-to-full-stack-developers/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//2-a-toast-to-full-stack-developers/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.&lt;/p&gt;
+&lt;h1&gt;The Full Stack Myth?&lt;/h1&gt;
+&lt;p&gt;Much to my suprise, thoughout my various software engineering media consumption adventures - I’ve discovered there is a general consensus that the idea of ‘full stack’ is FAKE NEWS. Lots of people on podcasts say it I say screw that. That is a lot like saying, “oh hey, did you know it’s impossible to write great apps or games if you’re a solo developer?” or, “What?!?! A nice dynamic UI, &lt;em&gt;with&lt;/em&gt; a relational database backend &lt;em&gt;and&lt;/em&gt; a websocket to send messages between the two!?!? You’re a madman!!!“.&lt;/p&gt;
+&lt;p&gt;Wait a second - isn’t that what this whole Web 3.0 stuff is supposed to do? Empower developers to make great apps all by themselves? I mean jeez, I know us, we’ve spent hours on hours learning python, backend databases, container deploys, dabbled in numerous backend frameworks, not even getting started with your favorite modern front end framework of choice (yeah, there’s a lot of those too!) like Vue, React, Ember or more.&lt;/p&gt;
+&lt;p&gt;Of course full stack developers know they are more a less a jack of all trades, master of none. I know there are people who could kick my ass at both Postgresql database maintenence, and there are just as many frontend people who could totally kick my ass with a badass UI in React.&lt;/p&gt;
+&lt;p&gt;For me, full stack has always been about the adventure of software itself - its the nature of the discepline in fact - there are new tools being rolled out literally every day. I mean, really, if you’ve written backend code for databases but have also built websites (I know there are many of us out there!)- how are you supposed to write that susincctly on a resume or CV? “Hi, I’m Chris, part-time-database-program-writer-and-part-time-front-end-engineer”? I do concede that the moniker ‘full stack’ is not really a good enough description by itself. In my case, I could say ‘full stack &lt;em&gt;web developer&lt;/em&gt;’. With more practice, maybe someday a full stack &lt;em&gt;android developer&lt;/em&gt; - but I need to run through a lot more projects before that happens :)&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Just because we’re not the greatest, most amazing expert in a certain language, just because we don’t know certain frameworks, just because we haven’t focused in one software engineering discipline our entire careers…&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Shouldn’t we still be able to call ourselves full stack developers?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Of course.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World - My First Post :)]]></title><description><![CDATA[I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for  nlp-champs.com…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//1-hello-world/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//1-hello-world/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt; and &lt;a href=&quot;skillscout.herokuapp.com&quot;&gt;SkillScout&lt;/a&gt; (the original thing that brought on the need case for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt;. Plus, it &lt;em&gt;really&lt;/em&gt; doesn’t help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head :boom: :boom: :boom: daily.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sending Windows Server Commands From SAP ABAP]]></title><description><![CDATA[Alright, let’s do a bit of applied stuff today. Backstory For a long time, I had a ticket open for our IT for a automatic job that would…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//3-sending-windows-commands-from-sap-abap/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//3-sending-windows-commands-from-sap-abap/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Alright, let’s do a bit of applied stuff today.&lt;/p&gt;
+&lt;h1&gt;Backstory&lt;/h1&gt;
+&lt;p&gt;For a long time, I had a ticket open for our IT for a automatic job that would restart a certain task on a windows server we had - for reasons we still don’t know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.&lt;/p&gt;
+&lt;p&gt;One lazy Friday when I didn’t have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.&lt;/p&gt;
+&lt;h1&gt;The Problem&lt;/h1&gt;
+&lt;p&gt;I needed to issue . That much I knew how to do - I had used custom command services with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, on a specific server, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, windows has a very nice command for exactly that.&lt;/p&gt;
+&lt;p&gt;It’s called &lt;code&gt;sc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;C:\&gt;sc
+DESCRIPTION:
+        SC is a command line program used for communicating with the
+        Service Control Manager and services.
+USAGE:
+        sc &lt;server&gt; [command] [service name] &lt;option1&gt; &lt;option2&gt;...
+
+
+        The option &lt;server&gt; has the form &quot;\\ServerName&quot;
+        Further help on commands can be obtained by typing: &quot;sc [command]&quot;
+        Commands:
+          query-----------Queries the status for a service, or enumerates the status for types of services.
+          queryex---------Queries the extended status for a service, or enumerates the status for types of services.
+          start-----------Starts a service.
+          pause-----------Sends a PAUSE control request to a service.
+          interrogate-----Sends an INTERROGATE control request to a service.
+          continue--------Sends a CONTINUE control request to a service.
+          stop------------Sends a STOP request to a service.
+          config----------Changes the configuration of a service (persistent).
+          description-----Changes the description of a service.
+          failure---------Changes the actions taken by a service upon failure.
+          failureflag-----Changes the failure actions flag of a service.
+          sidtype---------Changes the service SID type of a service.
+          privs-----------Changes the required privileges of a service.
+          managedaccount--Changes the service to mark the service account password as managed by LSA.
+          qc--------------Queries the configuration information for a service.
+          qdescription----Queries the description for a service.
+          qfailure--------Queries the actions taken by a service upon failure.
+          qfailureflag----Queries the failure actions flag of a service.
+          qsidtype--------Queries the service SID type of a service.
+          qprivs----------Queries the required privileges of a service.
+          qtriggerinfo----Queries the trigger parameters of a service.
+          qpreferrednode--Queries the preferred NUMA node of a service.
+          qrunlevel-------Queries the run level of a service.
+          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.
+          qprotection-----Queries the process protection level of a service.
+          delete----------Deletes a service (from the registry).
+          create----------Creates a service. (adds it to the registry).
+          control---------Sends a control to a service.
+          sdshow----------Displays a service&apos;s security descriptor.
+          sdset-----------Sets a service&apos;s security descriptor.
+          showsid---------Displays the service SID string corresponding to an arbitrary name.
+          triggerinfo-----Configures the trigger parameters of a service.
+          preferrednode---Sets the preferred NUMA node of a service.
+          runlevel--------Sets the run level of a service.
+          GetDisplayName--Gets the DisplayName for a service.
+          GetKeyName------Gets the ServiceKeyName for a service.
+          EnumDepend------Enumerates Service Dependencies.
+
+        The following commands don&apos;t require a service name:
+        sc &lt;server&gt; &lt;command&gt; &lt;option&gt;
+          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration
+          Lock------------Locks the Service Database
+          QueryLock-------Queries the LockStatus for the SCManager Database
+EXAMPLE:
+        sc start MyService
+
+Would you like to see help for the QUERY and QUERYEX commands? [ y | n ]:&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Wow. That’s a monster of a command documentation. Let’s break down what we need.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The server. We know that (for this example, I’m going to just call it AWESOMESERVER01). But wait! There’s a gotchya, we will need to write it like:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;\\AWESOMESERVER01&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;That’s not a special setting for server names that we have at my company or anything like that, that’s part of the &lt;code&gt;sc&lt;/code&gt; command. Notice the line in the documentation that says exactly that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The option &lt;server&gt; has the form ”\\ServerName”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Okay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I’m going to call our service &lt;code&gt;ServiceName even with Whitespace&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Command? What command do we need? Let’s check out that wall of text documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;stop------------Sends a STOP request to a service.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Yep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Commands:
+…
+start-----------Starts a service.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That will be useful later, too.&lt;/p&gt;
+&lt;p&gt;Okay… Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sc \\AWESOMESERVER01 start &quot;ServiceName even with Whitespace&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, in order for this to be a true &lt;em&gt;restart&lt;/em&gt; of the service, we would have to issue a stop/start command pair on the service:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sc \\AWESOMESERVER01 stop &quot;ServiceName even with Whitespace&quot;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;sc \\AWESOMESERVER01 start &quot;ServiceName even with Whitespace&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module &lt;code&gt;SXPG_COMMAND_EXECUTE&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SXPG_COMMAND_EXECUTE&apos;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+    commandname                   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_commandname
+    additional_parameters         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_additional_parameters
+    operatingsystem               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_operatingsystem
+  &lt;span class=&quot;token keyword&quot;&gt;TABLES&lt;/span&gt;
+    exec_protocol                 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gt_result
+  &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+    no_permission                 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    command_not_found             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    parameters_too_long           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;
+    security_risk                 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+    wrong_check_call_interface    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+    program_start_error           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;
+    program_termination_error     &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;
+    x_error                       &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;
+    parameter_expected            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;
+    too_many_parameters           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;
+    illegal_command               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt;
+    wrong_asynchronous_parameters &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;
+    cant_enq_tbtco_entry          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt;
+    jobcount_generation_error     &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;14&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;                        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Intellectual property disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, &lt;a href=&quot;https://www.ospelt.com/en/ospelt/info/home.html&quot;&gt;Ospelt&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[An Ethereum Developer's Toolbelt]]></title><description><![CDATA[Ethereum is not that old This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//5-ethereum-developers-toolbelt/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//5-ethereum-developers-toolbelt/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Ethereum is not that old&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to Ethereum and looking for a more technical 2017 overview of the Project, &lt;a href=&quot;https://medium.com/@frewin.christopher/the-ethereum-project-a-high-level-review-of-the-projects-progress-status-resources-tools-4e4f88050ffa&quot;&gt;read my Medium article on the subject.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As such, the tools surrounding decentralized apps (DApps) and blockchain development are being created with blazing speed - it’s like 2014 (I know, so long ago, right?) when es5 came out, as well as react, webpack, and hundreds of other tools were being released.&lt;/p&gt;
+&lt;h1&gt;Enter Truffle&lt;/h1&gt;
+&lt;h1&gt;Enter Ethermint&lt;/h1&gt;
+&lt;h1&gt;Truffle and Ethermint?!?!&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//4-final-say-bitcoin/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//4-final-say-bitcoin/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring what a spew on reddit :) ) SOMEWHERE about bitcoin, and let me promise you, I won’t post about Bitcoin (in relation to politics or economics) every again.&lt;/p&gt;
+&lt;p&gt;The simple economics are: there will only every 21 million of them, it was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist). But the fact still stands, bitcoin has the largest AND majority market cap among all the other currencies.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A comic I thought up about Bitcoin :)&lt;/p&gt;
+&lt;p&gt;As cash flows from standard gold to Bitcoin, the market cap could approach the &lt;em&gt;trillions&lt;/em&gt; range. With that order of magnitude of market cap, 1 Bitcoin would have:&lt;/p&gt;
+&lt;p&gt;Market Capitalization | Bitcoin price*
+1 Trillion | ~$53,000
+2 Trillion | ~$105,000
+3 Trillion | ~$158,000
+… |
+7 Trillion (market cap of gold) | ~$368,000&lt;/p&gt;
+&lt;p&gt;*(assume around 19 million bitcoins - currently 16.7 as of writing this entry)&lt;/p&gt;
+&lt;p&gt;I predict:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$20,000 by January 1st 2018&lt;/li&gt;
+&lt;li&gt;$50,000 by end of Q2 2018&lt;/li&gt;
+&lt;li&gt;$100,000 by end of Q4 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Here’s what has to happen for the price of Bitcoin to crash&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Actually, if 100% of people who bought became true 100% hodlers, the price would remain constant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let it stand as a permanant marker:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;as of 16:08 UTC, Tuesday december 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

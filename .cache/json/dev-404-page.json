@@ -1,0 +1,40 @@
+{
+    "data": {
+        "allSitePage": {
+            "totalCount": 6,
+            "edges": [
+                {
+                    "node": {
+                        "path": "/2-a-toast-to-full-stack-developers/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/1-hello-world/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/3-sending-windows-commands-from-sap-abap/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/5-ethereum-developers-toolbelt/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/4-final-say-bitcoin/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/"
+                    }
+                }
+            ]
+        }
+    },
+    "pathContext": {}
+}

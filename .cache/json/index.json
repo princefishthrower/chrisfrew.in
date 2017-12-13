@@ -1,0 +1,74 @@
+{
+    "data": {
+        "site": {
+            "siteMetadata": {
+                "title": "Gatsby Starter Blog"
+            }
+        },
+        "allMarkdownRemark": {
+            "edges": [
+                {
+                    "node": {
+                        "excerpt": "Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit…",
+                        "fields": {
+                            "slug": "/2-a-toast-to-full-stack-developers/"
+                        },
+                        "frontmatter": {
+                            "date": "12 December, 2017",
+                            "title": "A Toast to Full Stack Developers"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for  nlp-champs.com…",
+                        "fields": {
+                            "slug": "/1-hello-world/"
+                        },
+                        "frontmatter": {
+                            "date": "12 December, 2017",
+                            "title": "Hello World - My First Post :)"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Alright, let’s do a bit of applied stuff today. Backstory For a long time, I had a ticket open for our IT for a automatic job that would…",
+                        "fields": {
+                            "slug": "/3-sending-windows-commands-from-sap-abap/"
+                        },
+                        "frontmatter": {
+                            "date": "12 December, 2017",
+                            "title": "Sending Windows Server Commands From SAP ABAP"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Ethereum is not that old This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain…",
+                        "fields": {
+                            "slug": "/5-ethereum-developers-toolbelt/"
+                        },
+                        "frontmatter": {
+                            "date": "12 December, 2017",
+                            "title": "An Ethereum Developer's Toolbelt"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…",
+                        "fields": {
+                            "slug": "/4-final-say-bitcoin/"
+                        },
+                        "frontmatter": {
+                            "date": "12 December, 2017",
+                            "title": "My First and Final Statement on Bitcoin for this Blog"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "pathContext": {}
+}
