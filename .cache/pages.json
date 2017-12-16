@@ -10,36 +10,36 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2-a-toast-to-full-stack-developers.json",
-        "path": "/2-a-toast-to-full-stack-developers/"
+        "jsonName": "a-toast-to-full-stack-developers.json",
+        "path": "/a-toast-to-full-stack-developers/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "1-hello-world.json",
-        "path": "/1-hello-world/"
+        "jsonName": "ethereum-developers-toolbelt.json",
+        "path": "/ethereum-developers-toolbelt/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "3-sending-windows-commands-from-sap-abap.json",
-        "path": "/3-sending-windows-commands-from-sap-abap/"
+        "jsonName": "final-say-bitcoin.json",
+        "path": "/final-say-bitcoin/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "5-ethereum-developers-toolbelt.json",
-        "path": "/5-ethereum-developers-toolbelt/"
+        "jsonName": "hello-world.json",
+        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "4-final-say-bitcoin.json",
-        "path": "/4-final-say-bitcoin/"
+        "jsonName": "sending-windows-commands-from-sap-abap.json",
+        "path": "/sending-windows-commands-from-sap-abap/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",

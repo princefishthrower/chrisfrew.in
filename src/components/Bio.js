@@ -28,7 +28,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Hi, I'm <strong>Chris Frewin</strong>, an ex-mechanical engineer living in Austria and working in Leichtenstein. I'm a full stack SAP/webapp logistics developer in my day job, and a hobbyist full stack web/machine-learning/Ethereum developer by night. Otherwise I'll be found hiking, skiing, or creating art.{' '}
+          Hi, I'm <strong>Chris Frewin</strong>, an ex-mechanical engineer living in Austria and working in Leichtenstein. For my day job, I'm a full stack SAP/webapp developer, and a hobbyist full stack web/machine-learning/Ethereum developer. If I'm not writing code, I'll be found hiking, skiing, or creating art.{' '}
           <a href="https://twitter.com/galt_">
             You can follow me on Twitter, @Galt_,
           </a>

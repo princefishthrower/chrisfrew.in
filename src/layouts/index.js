@@ -4,6 +4,8 @@ import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
 
+import Emoji from 'react-emoji-render';
+
 class Template extends React.Component {
   render() {
     let sYear = new Date().getFullYear();
@@ -88,9 +90,10 @@ class Template extends React.Component {
         <footer>
           <h5>
             Copyright © {sYear} Chris Frewin.<br/>
-            Based at one point on <a href="">this blog template.</a><br/>
+            Based at one point on <a href="https://github.com/gatsbyjs/gatsby-starter-blog">this blog template.</a><br/>
             Static site powered by <a href="https://reactjs.org/">React</a> & <a href="https://www.gatsbyjs.org/">Gatsby.js</a><br/>
-            Code highlighting by <a href="http://prismjs.com">Prism.js</a>
+            Code highlighting by <a href="http://prismjs.com">Prism.js</a><br/>
+            Colors inspired by the Monokai color scheme (I <Emoji text="❤️" /> Sublime Text :) )<br/>
             Hosted independently with Node.js & express.
           </h5>
         </footer>

@@ -22,11 +22,11 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={siteTitle} />
         <Bio />
-        {posts.reverse().map(({ node }) => {
+        {posts.map(({ node }) => {
           console.log(node.frontmatter);
           console.log(Boolean(node.frontmatter.draft));
           if (node.frontmatter.draft) {
-            return; // if the markdown is still in 'draft post'
+            return; // if the markdown is still a 'draft post'
           }
           if (i === aColors.length) {
             i = 0;
@@ -75,6 +75,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            draft
           }
         }
       }

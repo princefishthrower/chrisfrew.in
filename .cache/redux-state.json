@@ -384,6 +384,17 @@
             },
             "nodeAPIs": [],
             "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-smartypants"
+          },
+          {
+            "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emoji",
+            "id": "Plugin gatsby-remark-emoji",
+            "name": "gatsby-remark-emoji",
+            "version": "0.0.1",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emoji"
           }
         ]
       },
@@ -498,7 +509,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "44dfbed44f4c6c0ac95c973776224772",
+        "contentDigest": "710b289fbe08f67fab7e8a6c4c3894d2",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -887,6 +898,49 @@
       "children": [],
       "internal": {
         "contentDigest": "18bdb6c537a17e22614a59b73b615fba",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-emoji": {
+      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emoji",
+      "id": "Plugin gatsby-remark-emoji",
+      "name": "gatsby-remark-emoji",
+      "version": "0.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emoji",
+      "packageJson": {
+        "name": "gatsby-remark-emoji",
+        "description": "Add slack-style emoji to gatsby's markdown :thumbs_up:.",
+        "version": "0.0.1",
+        "main": "index.js",
+        "author": {
+          "name": "Rustem Mustafin",
+          "email": "mustafin.rustem@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "emojione",
+            "version": "^3.1.2"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f0a6b75a3e96fe2610ea29a33e6c5aa7",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1356,64 +1410,11 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-remark-emojis": {
-      "resolve": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emojis",
-      "id": "Plugin gatsby-remark-emojis",
-      "name": "gatsby-remark-emojis",
-      "version": "0.2.3",
-      "pluginOptions": {
-        "plugins": [],
-        "active": true,
-        "class": "emoji-icon",
-        "size": 64,
-        "styles": {
-          "display": "inline",
-          "margin": "0",
-          "margin-top": "1px",
-          "position": "relative",
-          "top": "5px",
-          "width": "25px"
-        }
-      },
-      "nodeAPIs": [],
-      "pluginFilepath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-remark-emojis",
-      "packageJson": {
-        "name": "gatsby-remark-emojis",
-        "description": "Processes emoji in markdown and inlines `<img>` tags with the corresponding base64 corresponding of the image.",
-        "version": "0.2.3",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin",
-          "markdown",
-          "remark",
-          "emoji"
-        ],
-        "author": {
-          "name": "Mathias Schilling",
-          "email": "m@matchilling.com",
-          "url": "https://www.matchilling.com"
-        },
-        "license": "GPL-3.0",
-        "dependencies": [],
-        "devDependencies": [],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "714ef672daa2e0917a96d96a93c5f351",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/chris/projects/chrisfrew.in",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "8bb17961220c98395e2882a543063b03",
+      "version": "2d747f5669bbd505770d63ca8ba43f4b",
       "pluginOptions": {
         "plugins": []
       },
@@ -1433,6 +1434,10 @@
         "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
+          {
+            "name": "emoji-mart",
+            "version": "^2.4.0"
+          },
           {
             "name": "gatsby",
             "version": "^1.9.118"
@@ -1470,6 +1475,10 @@
             "version": "^1.5.21"
           },
           {
+            "name": "gatsby-remark-emoji",
+            "version": "0.0.1"
+          },
+          {
             "name": "gatsby-remark-emojis",
             "version": "^0.2.3"
           },
@@ -1504,6 +1513,10 @@
           {
             "name": "lodash",
             "version": "^4.17.4"
+          },
+          {
+            "name": "react-emoji-render",
+            "version": "^0.4.3"
           },
           {
             "name": "react-responsive-grid",
@@ -1547,7 +1560,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "84fc4f9b9099ce819a64c4789418a73b",
+        "contentDigest": "e42733583c8d02201ce18583540b71b9",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1559,14 +1572,14 @@
         "description": "A starter blog demonstrating what Gatsby can do.",
         "siteUrl": "https://gatsbyjs.github.io/gatsby-starter-blog/"
       },
-      "pathPrefix": "/gatsby-starter-blog",
+      "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2017-12-12T22:35:04.979Z",
+      "buildTime": "2017-12-16T20:07:46.338Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "877644ec251c0347a05c1965709ce8e3",
+        "contentDigest": "f97aa9cec7312ceb11028f3252163664",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1576,7 +1589,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9b825dc371006be0af8e621ea3d5b8d2",
+        "contentDigest": "2a2a59c1ec0f40165ef09ed6f4376d52",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1586,9 +1599,9 @@
       "extension": "",
       "size": 256,
       "prettySize": "256 B",
-      "modifiedTime": "2017-12-12T17:37:41.506Z",
-      "accessTime": "2017-12-12T22:35:07.343Z",
-      "changeTime": "2017-12-12T22:07:40.018Z",
+      "modifiedTime": "2017-12-13T12:01:31.620Z",
+      "accessTime": "2017-12-16T20:07:48.192Z",
+      "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1605,82 +1618,39 @@
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1513118107343.028,
-      "mtimeMs": 1513100261505.7964,
-      "ctimeMs": 1513116460017.795,
+      "atimeMs": 1513454868192.2158,
+      "mtimeMs": 1513166491620.2063,
+      "ctimeMs": 1513166491620.2063,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2017-12-12T22:35:07.343Z",
-      "mtime": "2017-12-12T17:37:41.506Z",
-      "ctime": "2017-12-12T22:07:40.018Z",
+      "atime": "2017-12-16T20:07:48.192Z",
+      "mtime": "2017-12-13T12:01:31.620Z",
+      "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world absPath of file",
+    "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "be3f39e6a7f95bde77938d922d7f41bf",
+        "contentDigest": "b0e84d59f7923ab9a2cb5e79979a5321",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world",
-      "relativePath": "1-hello-world",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2017-12-12T22:35:07.346Z",
-      "changeTime": "2017-12-12T22:07:40.015Z",
-      "birthTime": "2017-12-11T10:56:14.841Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
-      "base": "1-hello-world",
-      "ext": "",
-      "name": "1-hello-world",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655517,
-      "blocks": 0,
-      "atimeMs": 1513118107345.8076,
-      "mtimeMs": 1513088730050.9492,
-      "ctimeMs": 1513116460015.1807,
-      "birthtimeMs": 1512989774841.032,
-      "atime": "2017-12-12T22:35:07.346Z",
-      "mtime": "2017-12-12T14:25:30.051Z",
-      "ctime": "2017-12-12T22:07:40.015Z",
-      "birthtime": "2017-12-11T10:56:14.841Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "bcd0055a86e9ecac56bdb3f50881246a",
-        "type": "Directory",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers",
-      "relativePath": "2-a-toast-to-full-stack-developers",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers",
+      "relativePath": "a-toast-to-full-stack-developers",
       "extension": "",
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2017-12-12T22:35:07.346Z",
-      "changeTime": "2017-12-12T22:07:40.014Z",
+      "accessTime": "2017-12-16T20:07:48.195Z",
+      "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
-      "base": "2-a-toast-to-full-stack-developers",
+      "base": "a-toast-to-full-stack-developers",
       "ext": "",
-      "name": "2-a-toast-to-full-stack-developers",
+      "name": "a-toast-to-full-stack-developers",
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
@@ -1691,125 +1661,39 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1513118107345.8657,
+      "atimeMs": 1513454868195.0574,
       "mtimeMs": 1513085171621.5022,
-      "ctimeMs": 1513116460014.4287,
+      "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2017-12-12T22:35:07.346Z",
+      "atime": "2017-12-16T20:07:48.195Z",
       "mtime": "2017-12-12T13:26:11.622Z",
-      "ctime": "2017-12-12T22:07:40.014Z",
+      "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap absPath of file",
+    "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fada811cf4a5311367bf5d74d0a48c1a",
+        "contentDigest": "0b1c9686ab19a297c263caa6de9bcaa1",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap",
-      "relativePath": "3-sending-windows-commands-from-sap-abap",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2017-12-12T22:35:07.346Z",
-      "changeTime": "2017-12-12T22:07:40.016Z",
-      "birthTime": "2017-12-12T14:28:07.573Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
-      "base": "3-sending-windows-commands-from-sap-abap",
-      "ext": "",
-      "name": "3-sending-windows-commands-from-sap-abap",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655519,
-      "blocks": 0,
-      "atimeMs": 1513118107345.8484,
-      "mtimeMs": 1513088893293.6396,
-      "ctimeMs": 1513116460015.8784,
-      "birthtimeMs": 1513088887573.0825,
-      "atime": "2017-12-12T22:35:07.346Z",
-      "mtime": "2017-12-12T14:28:13.294Z",
-      "ctime": "2017-12-12T22:07:40.016Z",
-      "birthtime": "2017-12-12T14:28:07.573Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "5629a76c143c5141e894d79b267632fc",
-        "type": "Directory",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin",
-      "relativePath": "4-final-say-bitcoin",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2017-12-12T22:35:07.346Z",
-      "changeTime": "2017-12-12T22:07:40.018Z",
-      "birthTime": "2017-12-12T16:03:26.022Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
-      "base": "4-final-say-bitcoin",
-      "ext": "",
-      "name": "4-final-say-bitcoin",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655524,
-      "blocks": 0,
-      "atimeMs": 1513118107345.8687,
-      "mtimeMs": 1513094612631.4026,
-      "ctimeMs": 1513116460017.7314,
-      "birthtimeMs": 1513094606022.0178,
-      "atime": "2017-12-12T22:35:07.346Z",
-      "mtime": "2017-12-12T16:03:32.631Z",
-      "ctime": "2017-12-12T22:07:40.018Z",
-      "birthtime": "2017-12-12T16:03:26.022Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "c770a67dbd7cbdd3e3f46da71628490d",
-        "type": "Directory",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt",
-      "relativePath": "5-ethereum-developers-toolbelt",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt",
+      "relativePath": "ethereum-developers-toolbelt",
       "extension": "",
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2017-12-12T22:35:07.346Z",
-      "changeTime": "2017-12-12T22:07:40.017Z",
+      "accessTime": "2017-12-16T20:07:48.195Z",
+      "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
-      "base": "5-ethereum-developers-toolbelt",
+      "base": "ethereum-developers-toolbelt",
       "ext": "",
-      "name": "5-ethereum-developers-toolbelt",
+      "name": "ethereum-developers-toolbelt",
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
@@ -1820,43 +1704,172 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1513118107345.9277,
+      "atimeMs": 1513454868195.022,
       "mtimeMs": 1513095280370.9812,
-      "ctimeMs": 1513116460016.7078,
+      "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2017-12-12T22:35:07.346Z",
+      "atime": "2017-12-16T20:07:48.195Z",
       "mtime": "2017-12-12T16:14:40.371Z",
-      "ctime": "2017-12-12T22:07:40.017Z",
+      "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
+    "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6d89fa6af643dc8be0a5ffb3f13caed2",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin",
+      "relativePath": "final-say-bitcoin",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T16:03:32.631Z",
+      "accessTime": "2017-12-16T20:07:48.195Z",
+      "changeTime": "2017-12-13T12:01:24.332Z",
+      "birthTime": "2017-12-12T16:03:26.022Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "final-say-bitcoin",
+      "ext": "",
+      "name": "final-say-bitcoin",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655524,
+      "blocks": 0,
+      "atimeMs": 1513454868195.0623,
+      "mtimeMs": 1513094612631.4026,
+      "ctimeMs": 1513166484332.0156,
+      "birthtimeMs": 1513094606022.0178,
+      "atime": "2017-12-16T20:07:48.195Z",
+      "mtime": "2017-12-12T16:03:32.631Z",
+      "ctime": "2017-12-13T12:01:24.332Z",
+      "birthtime": "2017-12-12T16:03:26.022Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hello-world absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ce36e6eb5ff6f76e7e7656f3943486e1",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world",
+      "relativePath": "hello-world",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T14:25:30.051Z",
+      "accessTime": "2017-12-16T20:07:48.195Z",
+      "changeTime": "2017-12-13T12:01:05.748Z",
+      "birthTime": "2017-12-11T10:56:14.841Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "hello-world",
+      "ext": "",
+      "name": "hello-world",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655517,
+      "blocks": 0,
+      "atimeMs": 1513454868195.1045,
+      "mtimeMs": 1513088730050.9492,
+      "ctimeMs": 1513166465748.2595,
+      "birthtimeMs": 1512989774841.032,
+      "atime": "2017-12-16T20:07:48.195Z",
+      "mtime": "2017-12-12T14:25:30.051Z",
+      "ctime": "2017-12-13T12:01:05.748Z",
+      "birthtime": "2017-12-11T10:56:14.841Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "29515381579fa34cd015b6ebd22c2cbb",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap",
+      "relativePath": "sending-windows-commands-from-sap-abap",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-12T14:28:13.294Z",
+      "accessTime": "2017-12-16T20:07:48.195Z",
+      "changeTime": "2017-12-13T12:01:18.876Z",
+      "birthTime": "2017-12-12T14:28:07.573Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "sending-windows-commands-from-sap-abap",
+      "ext": "",
+      "name": "sending-windows-commands-from-sap-abap",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655519,
+      "blocks": 0,
+      "atimeMs": 1513454868195.0828,
+      "mtimeMs": 1513088893293.6396,
+      "ctimeMs": 1513166478875.7551,
+      "birthtimeMs": 1513088887573.0825,
+      "atime": "2017-12-16T20:07:48.195Z",
+      "mtime": "2017-12-12T14:28:13.294Z",
+      "ctime": "2017-12-13T12:01:18.876Z",
+      "birthtime": "2017-12-12T14:28:07.573Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file",
       "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark"
+        "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark"
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d780ad0b4fc98be7c3bb99447f8a6fbf",
+        "contentDigest": "51b371654767973d94d7ce064c66efbd",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md",
-      "relativePath": "2-a-toast-to-full-stack-developers/index.md",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md",
+      "relativePath": "a-toast-to-full-stack-developers/index.md",
       "extension": "md",
-      "size": 2517,
-      "prettySize": "2.52 kB",
-      "modifiedTime": "2017-12-12T20:24:18.733Z",
-      "accessTime": "2017-12-12T20:45:05.145Z",
-      "changeTime": "2017-12-12T22:07:40.014Z",
+      "size": 2555,
+      "prettySize": "2.56 kB",
+      "modifiedTime": "2017-12-16T20:01:14.087Z",
+      "accessTime": "2017-12-16T20:01:14.087Z",
+      "changeTime": "2017-12-16T20:01:14.087Z",
       "birthTime": "2017-12-12T13:26:11.621Z",
       "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers",
       "base": "index.md",
       "ext": ".md",
       "name": "index",
-      "relativeDirectory": "2-a-toast-to-full-stack-developers",
+      "relativeDirectory": "a-toast-to-full-stack-developers",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
@@ -1865,14 +1878,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655516,
-      "blocks": 8,
-      "atimeMs": 1513111505145.203,
-      "mtimeMs": 1513110258733.4224,
-      "ctimeMs": 1513116460014.338,
+      "blocks": 0,
+      "atimeMs": 1513454474087.2954,
+      "mtimeMs": 1513454474087.4448,
+      "ctimeMs": 1513454474087.4448,
       "birthtimeMs": 1513085171621.489,
-      "atime": "2017-12-12T20:45:05.145Z",
-      "mtime": "2017-12-12T20:24:18.733Z",
-      "ctime": "2017-12-12T22:07:40.014Z",
+      "atime": "2017-12-16T20:01:14.087Z",
+      "mtime": "2017-12-16T20:01:14.087Z",
+      "ctime": "2017-12-16T20:01:14.087Z",
       "birthtime": "2017-12-12T13:26:11.621Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/index.js absPath of file": {
@@ -1880,7 +1893,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fd0f9ad6baf4cdfa2a750ac0cb1fe5cd",
+        "contentDigest": "53b89da089a1d0a4dde64a458fd25237",
         "mediaType": "application/javascript",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -1889,11 +1902,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "relativePath": "index.js",
       "extension": "js",
-      "size": 2109,
-      "prettySize": "2.11 kB",
-      "modifiedTime": "2017-12-12T22:34:40.121Z",
-      "accessTime": "2017-12-12T22:34:40.121Z",
-      "changeTime": "2017-12-12T22:34:40.121Z",
+      "size": 2116,
+      "prettySize": "2.12 kB",
+      "modifiedTime": "2017-12-16T20:05:40.904Z",
+      "accessTime": "2017-12-16T20:05:41.115Z",
+      "changeTime": "2017-12-16T20:05:40.904Z",
       "birthTime": "2017-12-11T10:56:14.843Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
@@ -1910,181 +1923,43 @@
       "blksize": 4194304,
       "ino": 8593655523,
       "blocks": 0,
-      "atimeMs": 1513118080120.8418,
-      "mtimeMs": 1513118080121.0063,
-      "ctimeMs": 1513118080121.0063,
+      "atimeMs": 1513454741115.0925,
+      "mtimeMs": 1513454740904.2449,
+      "ctimeMs": 1513454740904.2449,
       "birthtimeMs": 1512989774843.3616,
-      "atime": "2017-12-12T22:34:40.121Z",
-      "mtime": "2017-12-12T22:34:40.121Z",
-      "ctime": "2017-12-12T22:34:40.121Z",
+      "atime": "2017-12-16T20:05:41.115Z",
+      "mtime": "2017-12-16T20:05:40.904Z",
+      "ctime": "2017-12-16T20:05:40.904Z",
       "birthtime": "2017-12-11T10:56:14.843Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
+    "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file",
       "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark"
+        "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark"
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d800277adf20a797181b7e30c76db526",
+        "contentDigest": "257663ccb43cabf00764a60166e76f27",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md",
-      "relativePath": "1-hello-world/index.md",
-      "extension": "md",
-      "size": 499,
-      "prettySize": "499 B",
-      "modifiedTime": "2017-12-12T15:28:50.334Z",
-      "accessTime": "2017-12-12T20:45:05.152Z",
-      "changeTime": "2017-12-12T22:07:40.015Z",
-      "birthTime": "2017-12-11T10:56:14.841Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "1-hello-world",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655518,
-      "blocks": 8,
-      "atimeMs": 1513111505152.3264,
-      "mtimeMs": 1513092530333.9077,
-      "ctimeMs": 1513116460015.092,
-      "birthtimeMs": 1512989774841.0945,
-      "atime": "2017-12-12T20:45:05.152Z",
-      "mtime": "2017-12-12T15:28:50.334Z",
-      "ctime": "2017-12-12T22:07:40.015Z",
-      "birthtime": "2017-12-11T10:56:14.841Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "fdf48049a0c6cef0163f1bc3227712c7",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md",
-      "relativePath": "3-sending-windows-commands-from-sap-abap/index.md",
-      "extension": "md",
-      "size": 7324,
-      "prettySize": "7.32 kB",
-      "modifiedTime": "2017-12-12T22:20:47.017Z",
-      "accessTime": "2017-12-12T22:20:47.016Z",
-      "changeTime": "2017-12-12T22:20:47.017Z",
-      "birthTime": "2017-12-12T14:28:13.294Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "3-sending-windows-commands-from-sap-abap",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655520,
-      "blocks": 0,
-      "atimeMs": 1513117247016.4321,
-      "mtimeMs": 1513117247016.6638,
-      "ctimeMs": 1513117247016.6638,
-      "birthtimeMs": 1513088893293.6265,
-      "atime": "2017-12-12T22:20:47.016Z",
-      "mtime": "2017-12-12T22:20:47.017Z",
-      "ctime": "2017-12-12T22:20:47.017Z",
-      "birthtime": "2017-12-12T14:28:13.294Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "1fbe5c005d5fcd28d4da4ec29e6adab5",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md",
-      "relativePath": "4-final-say-bitcoin/index.md",
-      "extension": "md",
-      "size": 1624,
-      "prettySize": "1.62 kB",
-      "modifiedTime": "2017-12-12T22:26:37.521Z",
-      "accessTime": "2017-12-12T22:26:37.731Z",
-      "changeTime": "2017-12-12T22:26:37.521Z",
-      "birthTime": "2017-12-12T16:03:32.631Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "4-final-say-bitcoin",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8593655525,
-      "blocks": 8,
-      "atimeMs": 1513117597730.9832,
-      "mtimeMs": 1513117597520.834,
-      "ctimeMs": 1513117597520.834,
-      "birthtimeMs": 1513094612631.3896,
-      "atime": "2017-12-12T22:26:37.731Z",
-      "mtime": "2017-12-12T22:26:37.521Z",
-      "ctime": "2017-12-12T22:26:37.521Z",
-      "birthtime": "2017-12-12T16:03:32.631Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "65bdababd18a5d5f4bd777b68345380e",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md",
-      "relativePath": "5-ethereum-developers-toolbelt/index.md",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md",
+      "relativePath": "ethereum-developers-toolbelt/index.md",
       "extension": "md",
       "size": 838,
       "prettySize": "838 B",
-      "modifiedTime": "2017-12-12T22:32:51.054Z",
-      "accessTime": "2017-12-12T22:32:51.263Z",
-      "changeTime": "2017-12-12T22:32:51.054Z",
+      "modifiedTime": "2017-12-16T20:07:02.900Z",
+      "accessTime": "2017-12-16T20:07:03.110Z",
+      "changeTime": "2017-12-16T20:07:02.900Z",
       "birthTime": "2017-12-12T16:14:40.371Z",
       "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt",
       "base": "index.md",
       "ext": ".md",
       "name": "index",
-      "relativeDirectory": "5-ethereum-developers-toolbelt",
+      "relativeDirectory": "ethereum-developers-toolbelt",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
@@ -2094,22 +1969,160 @@
       "blksize": 4194304,
       "ino": 8593655522,
       "blocks": 0,
-      "atimeMs": 1513117971262.6143,
-      "mtimeMs": 1513117971053.5684,
-      "ctimeMs": 1513117971053.5684,
+      "atimeMs": 1513454823109.8142,
+      "mtimeMs": 1513454822900.4995,
+      "ctimeMs": 1513454822900.4995,
       "birthtimeMs": 1513095280370.9634,
-      "atime": "2017-12-12T22:32:51.263Z",
-      "mtime": "2017-12-12T22:32:51.054Z",
-      "ctime": "2017-12-12T22:32:51.054Z",
+      "atime": "2017-12-16T20:07:03.110Z",
+      "mtime": "2017-12-16T20:07:02.900Z",
+      "ctime": "2017-12-16T20:07:02.900Z",
       "birthtime": "2017-12-12T16:14:40.371Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
+    "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
       "internal": {
-        "content": "---\ntitle: A Toast to Full Stack Developers\ndate: \"2017-12-12\"\n---\n\nWarning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.\n\n# The Full Stack Myth?\n\nMuch to my suprise, thoughout my various software engineering media consumption adventures - I've discovered there is a general consensus that the idea of 'full stack' is FAKE NEWS. Lots of people on podcasts say it I say screw that. That is a lot like saying, \"oh hey, did you know it's impossible to write great apps or games if you're a solo developer?\" or, \"What?!?! A nice dynamic UI, _with_ a relational database backend _and_ a websocket to send messages between the two!?!? You're a madman!!!\".\n\nWait a second - isn't that what this whole Web 3.0 stuff is supposed to do? Empower developers to make great apps all by themselves? I mean jeez, I know us, we've spent hours on hours learning python, backend databases, container deploys, dabbled in numerous backend frameworks, not even getting started with your favorite modern front end framework of choice (yeah, there's a lot of those too!) like Vue, React, Ember or more.\n\nOf course full stack developers know they are more a less a jack of all trades, master of none. I know there are people who could kick my ass at both Postgresql database maintenence, and there are just as many frontend people who could totally kick my ass with a badass UI in React.\n\nFor me, full stack has always been about the adventure of software itself - its the nature of the discepline in fact - there are new tools being rolled out literally every day. I mean, really, if you've written backend code for databases but have also built websites (I know there are many of us out there!)- how are you supposed to write that susincctly on a resume or CV? \"Hi, I'm Chris, part-time-database-program-writer-and-part-time-front-end-engineer\"? I do concede that the moniker 'full stack' is not really a good enough description by itself. In my case, I could say 'full stack _web developer_'. With more practice, maybe someday a full stack _android developer_ - but I need to run through a lot more projects before that happens :)\n\n# Conclusion\n\nJust because we're not the greatest, most amazing expert in a certain language, just because we don't know certain frameworks, just because we haven't focused in one software engineering discipline our entire careers...\n\n_Shouldn't we still be able to call ourselves full stack developers?_\n\n**Of course.**\n",
-        "contentDigest": "73a2717d0752ed60c603c318fc0521b0",
+        "contentDigest": "ab9ddefcce29ce9e1fe3883cbdfcccfd",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md",
+      "relativePath": "final-say-bitcoin/index.md",
+      "extension": "md",
+      "size": 1624,
+      "prettySize": "1.62 kB",
+      "modifiedTime": "2017-12-16T17:38:33.019Z",
+      "accessTime": "2017-12-16T18:19:42.217Z",
+      "changeTime": "2017-12-16T17:38:33.019Z",
+      "birthTime": "2017-12-12T16:03:32.631Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "final-say-bitcoin",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655525,
+      "blocks": 8,
+      "atimeMs": 1513448382216.5874,
+      "mtimeMs": 1513445913018.7483,
+      "ctimeMs": 1513445913018.7483,
+      "birthtimeMs": 1513094612631.3896,
+      "atime": "2017-12-16T18:19:42.217Z",
+      "mtime": "2017-12-16T17:38:33.019Z",
+      "ctime": "2017-12-16T17:38:33.019Z",
+      "birthtime": "2017-12-12T16:03:32.631Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d800277adf20a797181b7e30c76db526",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md",
+      "relativePath": "hello-world/index.md",
+      "extension": "md",
+      "size": 499,
+      "prettySize": "499 B",
+      "modifiedTime": "2017-12-12T15:28:50.334Z",
+      "accessTime": "2017-12-16T18:19:42.217Z",
+      "changeTime": "2017-12-12T22:07:40.015Z",
+      "birthTime": "2017-12-11T10:56:14.841Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "hello-world",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655518,
+      "blocks": 8,
+      "atimeMs": 1513448382216.6536,
+      "mtimeMs": 1513092530333.9077,
+      "ctimeMs": 1513116460015.092,
+      "birthtimeMs": 1512989774841.0945,
+      "atime": "2017-12-16T18:19:42.217Z",
+      "mtime": "2017-12-12T15:28:50.334Z",
+      "ctime": "2017-12-12T22:07:40.015Z",
+      "birthtime": "2017-12-11T10:56:14.841Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ba8533c78cca3dc587f60aa396b59bc0",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md",
+      "relativePath": "sending-windows-commands-from-sap-abap/index.md",
+      "extension": "md",
+      "size": 8784,
+      "prettySize": "8.78 kB",
+      "modifiedTime": "2017-12-16T19:58:28.056Z",
+      "accessTime": "2017-12-16T19:58:28.267Z",
+      "changeTime": "2017-12-16T19:58:28.056Z",
+      "birthTime": "2017-12-12T14:28:13.294Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "sending-windows-commands-from-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8593655520,
+      "blocks": 0,
+      "atimeMs": 1513454308266.6104,
+      "mtimeMs": 1513454308055.6736,
+      "ctimeMs": 1513454308055.6736,
+      "birthtimeMs": 1513088893293.6265,
+      "atime": "2017-12-16T19:58:28.267Z",
+      "mtime": "2017-12-16T19:58:28.056Z",
+      "ctime": "2017-12-16T19:58:28.056Z",
+      "birthtime": "2017-12-12T14:28:13.294Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: A Toast to Full Stack Developers\ndate: \"2017-12-12\"\n---\n\nWarning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.\n\n# The Full Stack Myth?\n\nMuch to my surprise, throughout my various software engineering media consumption adventures - I've discovered there is a general consensus that the idea of 'full stack' is FAKE NEWS. Lots of people on podcasts say it I say screw that. That is a lot like saying, \"oh hey, did you know it's impossible to write great apps or games if you're a solo developer?\" or, \"What?!?! A nice dynamic UI, _with_ a relational database backend _and_ a websocket to send messages between the two!?!? You're a madman!!!\".\n\nWait a second - isn't that what this whole Web 3.0 stuff is supposed to do? Empower developers to make great apps all by themselves? I mean jeez, I know us, we've spent hours on hours learning python, backend databases, container deploys, dabbled in numerous backend frameworks, not even getting started with your favorite modern front end framework of choice (yeah, there's a lot of those too!) like Vue, React, Ember or more.\n\nOf course full stack developers know they are more a less a jack of all trades, master of none. I know there are people who could kick my ass at both Postgresql database maintenance, and there are just as many frontend people who could totally kick my ass with a badass UI in React.\n\nFor me, full stack has always been about the adventure of software itself - its the nature of the discipline in fact - there are new tools being rolled out literally every day. I mean, really, if you've written backend code for databases but have also built websites (I know there are many of us out there!)- how are you supposed to write that succinctly on a resume or CV? \"Hi, I'm Chris, part-time-database-program-writer-and-part-time-front-end-engineer\"? I do concede that the moniker 'full stack' is not really a good enough description by itself. In my case, I could say 'full stack _web developer_'. With more practice, maybe someday a full stack _android developer_ - but I need to run through a lot more projects before that happens :)\n\n# :wine: A Toast to Full Stack Developers :wine:\n\nJust because we're not the greatest, most amazing expert in a certain language, just because we don't know certain frameworks, just because we haven't focused in one software engineering discipline our entire careers...\n\n_Shouldn't we still be able to call ourselves full stack developers?_\n\n**Of course.**\n",
+        "contentDigest": "b02412cc3e1bf0bb135f9af046fcad33",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -2119,20 +2132,70 @@
       "frontmatter": {
         "title": "A Toast to Full Stack Developers",
         "date": "2017-12-12",
-        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file",
-        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file"
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file"
       },
-      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md",
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md",
       "fields": {
-        "slug": "/2-a-toast-to-full-stack-developers/"
+        "slug": "/a-toast-to-full-stack-developers/"
       }
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark",
+    "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark",
       "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Hello World - My First Post :)\ndate: \"2017-12-12\"\n---\n\nI'll be writing here for sometime into the future now, though I'm not sure how often, as I'm rather busy with the work for [nlp-champs.com](nlp-champs.com) and [SkillScout](skillscout.herokuapp.com) (the original thing that brought on the need case for [nlp-champs.com](nlp-champs.com). Plus, it _really_ doesn't help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head :boom: :boom: :boom: daily.\n",
+        "content": "---\ntitle: An Ethereum Developer's Toolbelt\ndate: \"2017-12-30\"\ndraft: true\n---\n\n_This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to Ethereum and looking for a more technical 2017 overview of the Project, [read my Medium article on the subject.](https://medium.com/@frewin.christopher/the-ethereum-project-a-high-level-review-of-the-projects-progress-status-resources-tools-4e4f88050ffa)_\n\n# Ethereum is not that old\n\nAs such, the tools surrounding decentralized apps (DApps) and blockchain development are being created with blazing speed - it's like 2014 (I know, so long ago, right?) when es5 came out, as well as react, webpack, and hundreds of other tools were being released.\n\n# Enter Truffle\n\n\n\n# Enter Ethermint\n\n# Truffle and Ethermint?!?!\n",
+        "contentDigest": "db2401cb48c509be4ca1a43a137aa659",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "An Ethereum Developer's Toolbelt",
+        "date": "2017-12-30",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md",
+      "fields": {
+        "slug": "/ethereum-developers-toolbelt/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: My First and Final Statement on Bitcoin for this Blog\ndate: \"2017-12-14\"\ndraft: true\n---\n\nLots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring what a spew on reddit :) ) SOMEWHERE about bitcoin, and let me promise you, I won't post about Bitcoin (in relation to politics or economics) every again.\n\nThe simple economics are: there will only every 21 million of them, it was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist). But the fact still stands, bitcoin has the largest AND majority market cap among all the other currencies.\n\n[]()\n\nA comic I thought up about Bitcoin :)\n\nAs cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:\n\nMarket Capitalization | Bitcoin price*\n1 Trillion | ~$53,000\n2 Trillion | ~$105,000\n3 Trillion | ~$158,000\n... |\n7 Trillion (market cap of gold) | ~$368,000\n\n\\*(assume around 19 million bitcoins - currently 16.7 as of writing this entry)\n\nI predict:\n\n- $20,000 by January 1st 2018\n- $50,000 by end of Q2 2018\n- $100,000 by end of Q4 2018\n\n# Here's what has to happen for the price of Bitcoin to crash\n- Actually, if 100% of people who bought became true 100% hodlers, the price would remain constant\n\nLet it stand as a permanant marker:\n\n**as of 16:08 UTC, Tuesday december 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.**\n",
+        "contentDigest": "89f15f3259aad6a745245700f26ee140",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "My First and Final Statement on Bitcoin for this Blog",
+        "date": "2017-12-14",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md",
+      "fields": {
+        "slug": "/final-say-bitcoin/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Hello World - My First Post :)\ndate: \"2017-12-12\"\n---\n\nI'll be writing here for sometime into the future now, though I'm not sure how often, as I'm rather busy with the work for [nlp-champs.com](nlp-champs.com) and [SkillScout](skillscout.herokuapp.com) (the original thing that brought on the need case for [nlp-champs.com](nlp-champs.com). Plus, it _really_ doesn't help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head 💥 💥 💥 daily.\n",
         "contentDigest": "f188a4d4c807cec0fc8830103c771561",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
@@ -2143,21 +2206,21 @@
       "frontmatter": {
         "title": "Hello World - My First Post :)",
         "date": "2017-12-12",
-        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file",
-        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file"
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file"
       },
-      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md",
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md",
       "fields": {
-        "slug": "/1-hello-world/"
+        "slug": "/hello-world/"
       }
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark",
+    "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark",
       "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Sending Windows Server Commands From SAP ABAP\ndate: \"2017-12-12\"\n---\n\nAlright, let's do a bit of applied stuff today.\n\n# Backstory\n\nFor a long time, I had a ticket open for our IT for a automatic job that would restart a certain task on a windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.\n\nOne lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.\n\n# The Problem\n\nI needed to issue . That much I knew how to do - I had used custom command services with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, on a specific server, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, windows has a very nice command for exactly that.\n\nIt's called `sc`:\n\n```\nC:\\>sc\nDESCRIPTION:\n        SC is a command line program used for communicating with the\n        Service Control Manager and services.\nUSAGE:\n        sc <server> [command] [service name] <option1> <option2>...\n\n\n        The option <server> has the form \"\\\\ServerName\"\n        Further help on commands can be obtained by typing: \"sc [command]\"\n        Commands:\n          query-----------Queries the status for a service, or enumerates the status for types of services.\n          queryex---------Queries the extended status for a service, or enumerates the status for types of services.\n          start-----------Starts a service.\n          pause-----------Sends a PAUSE control request to a service.\n          interrogate-----Sends an INTERROGATE control request to a service.\n          continue--------Sends a CONTINUE control request to a service.\n          stop------------Sends a STOP request to a service.\n          config----------Changes the configuration of a service (persistent).\n          description-----Changes the description of a service.\n          failure---------Changes the actions taken by a service upon failure.\n          failureflag-----Changes the failure actions flag of a service.\n          sidtype---------Changes the service SID type of a service.\n          privs-----------Changes the required privileges of a service.\n          managedaccount--Changes the service to mark the service account password as managed by LSA.\n          qc--------------Queries the configuration information for a service.\n          qdescription----Queries the description for a service.\n          qfailure--------Queries the actions taken by a service upon failure.\n          qfailureflag----Queries the failure actions flag of a service.\n          qsidtype--------Queries the service SID type of a service.\n          qprivs----------Queries the required privileges of a service.\n          qtriggerinfo----Queries the trigger parameters of a service.\n          qpreferrednode--Queries the preferred NUMA node of a service.\n          qrunlevel-------Queries the run level of a service.\n          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.\n          qprotection-----Queries the process protection level of a service.\n          delete----------Deletes a service (from the registry).\n          create----------Creates a service. (adds it to the registry).\n          control---------Sends a control to a service.\n          sdshow----------Displays a service's security descriptor.\n          sdset-----------Sets a service's security descriptor.\n          showsid---------Displays the service SID string corresponding to an arbitrary name.\n          triggerinfo-----Configures the trigger parameters of a service.\n          preferrednode---Sets the preferred NUMA node of a service.\n          runlevel--------Sets the run level of a service.\n          GetDisplayName--Gets the DisplayName for a service.\n          GetKeyName------Gets the ServiceKeyName for a service.\n          EnumDepend------Enumerates Service Dependencies.\n\n        The following commands don't require a service name:\n        sc <server> <command> <option>\n          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration\n          Lock------------Locks the Service Database\n          QueryLock-------Queries the LockStatus for the SCManager Database\nEXAMPLE:\n        sc start MyService\n\nWould you like to see help for the QUERY and QUERYEX commands? [ y | n ]:\n```\n\nWow. That's a monster of a command documentation. Let's break down what we need.\n\n- The server. We know that (for this example, I'm going to just call it AWESOMESERVER01). But wait! There's a gotchya, we will need to write it like:\n\n`\\\\AWESOMESERVER01`\n\nThat's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:\n\n> > The option <server> has the form \"\\\\\\\\ServerName\"\n\nOkay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.\n\nCommand? What command do we need? Let's check out that wall of text documentation:\n\n> > stop------------Sends a STOP request to a service.\n\nYep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:\n\n> > Commands:\n  . . .\n  start-----------Starts a service.\n\nThat will be useful later, too.\n\nOkay... Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:\n\n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nSo, in order for this to be a true _restart_ of the service, we would have to issue a stop/start command pair on the service:\n\n\n`sc \\\\AWESOMESERVER01 stop \"ServiceName even with Whitespace\"`  \n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nHow do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module `SXPG_COMMAND_EXECUTE`:\n\n```abap\nCALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n  EXPORTING\n    commandname                   = gv_commandname\n    additional_parameters         = gv_additional_parameters\n    operatingsystem               = gv_operatingsystem\n  TABLES\n    exec_protocol                 = gt_result\n  EXCEPTIONS\n    no_permission                 = 1\n    command_not_found             = 2\n    parameters_too_long           = 3\n    security_risk                 = 4\n    wrong_check_call_interface    = 5\n    program_start_error           = 6\n    program_termination_error     = 7\n    x_error                       = 8\n    parameter_expected            = 9\n    too_many_parameters           = 10\n    illegal_command               = 11\n    wrong_asynchronous_parameters = 12\n    cant_enq_tbtco_entry          = 13\n    jobcount_generation_error     = 14\n    OTHERS                        = 15.\n```\n\n_Intellectual property disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._\n",
-        "contentDigest": "1c2c723d93d780d634591c360acc289d",
+        "content": "---\ntitle: Sending Windows Server Commands From SAP ABAP\ndate: \"2017-12-13\"\n---\n\nAlright, let's do a bit of applied stuff today.\n\n# Backstory\n\nFor a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for a automatic job that would restart a certain task on a windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.\n\nOne lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.\n\n# The Problem\n\nI knew at least that I had to issue specific commands to the command line. That much I already knew how to do - I had used custom command services in SAP/ABAP with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, to the Service Control Manager, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, Windows has a very nice command for exactly that.\n\nIt's called `sc`:\n\n```\nC:\\>sc\nDESCRIPTION:\n        SC is a command line program used for communicating with the\n        Service Control Manager and services.\nUSAGE:\n        sc <server> [command] [service name] <option1> <option2>...\n\n\n        The option <server> has the form \"\\\\ServerName\"\n        Further help on commands can be obtained by typing: \"sc [command]\"\n        Commands:\n          query-----------Queries the status for a service, or enumerates the status for types of services.\n          queryex---------Queries the extended status for a service, or enumerates the status for types of services.\n          start-----------Starts a service.\n          pause-----------Sends a PAUSE control request to a service.\n          interrogate-----Sends an INTERROGATE control request to a service.\n          continue--------Sends a CONTINUE control request to a service.\n          stop------------Sends a STOP request to a service.\n          config----------Changes the configuration of a service (persistent).\n          description-----Changes the description of a service.\n          failure---------Changes the actions taken by a service upon failure.\n          failureflag-----Changes the failure actions flag of a service.\n          sidtype---------Changes the service SID type of a service.\n          privs-----------Changes the required privileges of a service.\n          managedaccount--Changes the service to mark the service account password as managed by LSA.\n          qc--------------Queries the configuration information for a service.\n          qdescription----Queries the description for a service.\n          qfailure--------Queries the actions taken by a service upon failure.\n          qfailureflag----Queries the failure actions flag of a service.\n          qsidtype--------Queries the service SID type of a service.\n          qprivs----------Queries the required privileges of a service.\n          qtriggerinfo----Queries the trigger parameters of a service.\n          qpreferrednode--Queries the preferred NUMA node of a service.\n          qrunlevel-------Queries the run level of a service.\n          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.\n          qprotection-----Queries the process protection level of a service.\n          delete----------Deletes a service (from the registry).\n          create----------Creates a service. (adds it to the registry).\n          control---------Sends a control to a service.\n          sdshow----------Displays a service's security descriptor.\n          sdset-----------Sets a service's security descriptor.\n          showsid---------Displays the service SID string corresponding to an arbitrary name.\n          triggerinfo-----Configures the trigger parameters of a service.\n          preferrednode---Sets the preferred NUMA node of a service.\n          runlevel--------Sets the run level of a service.\n          GetDisplayName--Gets the DisplayName for a service.\n          GetKeyName------Gets the ServiceKeyName for a service.\n          EnumDepend------Enumerates Service Dependencies.\n\n        The following commands don't require a service name:\n        sc <server> <command> <option>\n          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration\n          Lock------------Locks the Service Database\n          QueryLock-------Queries the LockStatus for the SCManager Database\nEXAMPLE:\n        sc start MyService\n\nWould you like to see help for the QUERY and QUERYEX commands? [ y | n ]:\n```\n\nWow. That's a monster of a command documentation. Let's break down what we need.\n\n- The server name. We know that (for this example, I'm going to just call it AWESOMESERVER01). But wait! There's a gotchya, we will need to write it like:\n\n`\\\\AWESOMESERVER01`\n\nThat's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:\n\n> > The option <server> has the form \"\\\\\\\\ServerName\"\n\nOkay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.\n\nOkay, what do I need to send as a command? What command do we need? Let's check out that wall of text documentation:\n\n> > stop------------Sends a STOP request to a service.\n\nYep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:\n\n> > Commands:\n  . . .\n  start-----------Starts a service.\n\nThat will be useful later, too.\n\nAlright... Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:\n\n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nIn order for this to be a true _restart_ of the service, we would have to issue a stop/start command pair on the service:\n\n`sc \\\\AWESOMESERVER01 stop \"ServiceName even with Whitespace\"`  \n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nHow do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module `SXPG_COMMAND_EXECUTE`:\n\n```abap\nCALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n  EXPORTING\n    commandname                   = gv_commandname\n    additional_parameters         = gv_additional_parameters\n    operatingsystem               = gv_operatingsystem\n  TABLES\n    exec_protocol                 = gt_result\n  EXCEPTIONS\n    no_permission                 = 1\n    command_not_found             = 2\n    parameters_too_long           = 3\n    security_risk                 = 4\n    wrong_check_call_interface    = 5\n    program_start_error           = 6\n    program_termination_error     = 7\n    x_error                       = 8\n    parameter_expected            = 9\n    too_many_parameters           = 10\n    illegal_command               = 11\n    wrong_asynchronous_parameters = 12\n    cant_enq_tbtco_entry          = 13\n    jobcount_generation_error     = 14\n    OTHERS                        = 15.\n```\n\nI'll just say I maintained the two commands in SM69 as `Z_MY_SUPER_AWESOME_COMMAND_START` and `Z_MY_SUPER_AWESOME_COMMAND_STOP`.\n\nSo, all that's left is to check if the service is not responding, and if it is not, call the command pair with function module `SXPG_COMMAND_EXECUTE`, check `sy-subrc`, and we are done! The total code looks like this:\n\n```abap\nABAP Code coming soon 😄\n```\n\nWe set this report up as a batch job to run every 5 minutes, and the ticket was resolved 😄\n\n# Review\n\nAs a review, we determined the specific commands needed to be sent to the windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!\n\n# Notes and Comments\n\nI hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with websockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!\n\nCheers everyone! 🍺\n\n_Intellectual property/privacy disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._\n",
+        "contentDigest": "45687417cc79e06a87574f7c6ab4e887",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -2166,63 +2229,13 @@
       },
       "frontmatter": {
         "title": "Sending Windows Server Commands From SAP ABAP",
-        "date": "2017-12-12",
-        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file",
-        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file"
+        "date": "2017-12-13",
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file"
       },
-      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md",
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md",
       "fields": {
-        "slug": "/3-sending-windows-commands-from-sap-abap/"
-      }
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
-      "internal": {
-        "content": "---\ntitle: An Ethereum Developer's Toolbelt\ndate: \"2017-12-12\"\ndraft: true\n---\n\n# Ethereum is not that old\n\n_This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to Ethereum and looking for a more technical 2017 overview of the Project, [read my Medium article on the subject.](https://medium.com/@frewin.christopher/the-ethereum-project-a-high-level-review-of-the-projects-progress-status-resources-tools-4e4f88050ffa)_\n\nAs such, the tools surrounding decentralized apps (DApps) and blockchain development are being created with blazing speed - it's like 2014 (I know, so long ago, right?) when es5 came out, as well as react, webpack, and hundreds of other tools were being released.\n\n# Enter Truffle\n\n\n\n# Enter Ethermint\n\n# Truffle and Ethermint?!?!\n",
-        "contentDigest": "0b3ae366c30b5c0ba67cd92aa003da68",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "An Ethereum Developer's Toolbelt",
-        "date": "2017-12-12",
-        "draft": true,
-        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file",
-        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md",
-      "fields": {
-        "slug": "/5-ethereum-developers-toolbelt/"
-      }
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
-      "internal": {
-        "content": "---\ntitle: My First and Final Statement on Bitcoin for this Blog\ndate: \"2017-12-12\"\ndraft: true\n---\n\nLots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring what a spew on reddit :) ) SOMEWHERE about bitcoin, and let me promise you, I won't post about Bitcoin (in relation to politics or economics) every again.\n\nThe simple economics are: there will only every 21 million of them, it was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist). But the fact still stands, bitcoin has the largest AND majority market cap among all the other currencies.\n\n[]()\n\nA comic I thought up about Bitcoin :)\n\nAs cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:\n\nMarket Capitalization | Bitcoin price*\n1 Trillion | ~$53,000\n2 Trillion | ~$105,000\n3 Trillion | ~$158,000\n... |\n7 Trillion (market cap of gold) | ~$368,000\n\n\\*(assume around 19 million bitcoins - currently 16.7 as of writing this entry)\n\nI predict:\n\n- $20,000 by January 1st 2018\n- $50,000 by end of Q2 2018\n- $100,000 by end of Q4 2018\n\n# Here's what has to happen for the price of Bitcoin to crash\n- Actually, if 100% of people who bought became true 100% hodlers, the price would remain constant\n\nLet it stand as a permanant marker:\n\n**as of 16:08 UTC, Tuesday december 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.**\n",
-        "contentDigest": "e171c67c96adb0962de63d6f763a877f",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "My First and Final Statement on Bitcoin for this Blog",
-        "date": "2017-12-12",
-        "draft": true,
-        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file",
-        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md",
-      "fields": {
-        "slug": "/4-final-say-bitcoin/"
+        "slug": "/sending-windows-commands-from-sap-abap/"
       }
     },
     "SitePage /offline-plugin-app-shell-fallback/": {
@@ -2233,7 +2246,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1513118107684,
+      "updatedAt": 1513454868574,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -2242,122 +2255,122 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b1f8e230ae709c51f205a6363ed2c724",
+        "contentDigest": "a788babaaa85345cc9e2b771e2385ad1",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2-a-toast-to-full-stack-developers/": {
+    "SitePage /a-toast-to-full-stack-developers/": {
       "layout": "index",
-      "jsonName": "2-a-toast-to-full-stack-developers.json",
-      "internalComponentName": "Component2AToastToFullStackDevelopers",
-      "path": "/2-a-toast-to-full-stack-developers/",
+      "jsonName": "a-toast-to-full-stack-developers.json",
+      "internalComponentName": "ComponentAToastToFullStackDevelopers",
+      "path": "/a-toast-to-full-stack-developers/",
       "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
       "componentChunkName": "component---src-templates-blog-post-js",
       "context": {
-        "slug": "/2-a-toast-to-full-stack-developers/"
+        "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1513118107771,
+      "updatedAt": 1513454868592,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /2-a-toast-to-full-stack-developers/",
+      "id": "SitePage /a-toast-to-full-stack-developers/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ad5f29d98012d4a358fcc206b138a0d7",
+        "contentDigest": "79ac21577a3ad9e1ca4fe277cf4a6d38",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /1-hello-world/": {
+    "SitePage /ethereum-developers-toolbelt/": {
       "layout": "index",
-      "jsonName": "1-hello-world.json",
-      "internalComponentName": "Component1HelloWorld",
-      "path": "/1-hello-world/",
+      "jsonName": "ethereum-developers-toolbelt.json",
+      "internalComponentName": "ComponentEthereumDevelopersToolbelt",
+      "path": "/ethereum-developers-toolbelt/",
       "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
       "componentChunkName": "component---src-templates-blog-post-js",
       "context": {
-        "slug": "/1-hello-world/"
+        "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1513118107771,
+      "updatedAt": 1513454868593,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /1-hello-world/",
+      "id": "SitePage /ethereum-developers-toolbelt/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "79cd730d7db5627b3a14ebe99392b1d8",
+        "contentDigest": "7dfb69428f1539fb4d6c2bc26623c07c",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /3-sending-windows-commands-from-sap-abap/": {
+    "SitePage /final-say-bitcoin/": {
       "layout": "index",
-      "jsonName": "3-sending-windows-commands-from-sap-abap.json",
-      "internalComponentName": "Component3SendingWindowsCommandsFromSapAbap",
-      "path": "/3-sending-windows-commands-from-sap-abap/",
+      "jsonName": "final-say-bitcoin.json",
+      "internalComponentName": "ComponentFinalSayBitcoin",
+      "path": "/final-say-bitcoin/",
       "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
       "componentChunkName": "component---src-templates-blog-post-js",
       "context": {
-        "slug": "/3-sending-windows-commands-from-sap-abap/"
+        "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1513118107772,
+      "updatedAt": 1513454868594,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /3-sending-windows-commands-from-sap-abap/",
+      "id": "SitePage /final-say-bitcoin/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b6774421472244a3ddcde04c156ad612",
+        "contentDigest": "d0d3acb44732559d8b41af7fb88f556d",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /5-ethereum-developers-toolbelt/": {
+    "SitePage /hello-world/": {
       "layout": "index",
-      "jsonName": "5-ethereum-developers-toolbelt.json",
-      "internalComponentName": "Component5EthereumDevelopersToolbelt",
-      "path": "/5-ethereum-developers-toolbelt/",
+      "jsonName": "hello-world.json",
+      "internalComponentName": "ComponentHelloWorld",
+      "path": "/hello-world/",
       "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
       "componentChunkName": "component---src-templates-blog-post-js",
       "context": {
-        "slug": "/5-ethereum-developers-toolbelt/"
+        "slug": "/hello-world/"
       },
-      "updatedAt": 1513118107772,
+      "updatedAt": 1513454868594,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /5-ethereum-developers-toolbelt/",
+      "id": "SitePage /hello-world/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "48a00c6b773a2244998c9ce6af9ea607",
+        "contentDigest": "57512a22dd037155062bc106cb5426d5",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /4-final-say-bitcoin/": {
+    "SitePage /sending-windows-commands-from-sap-abap/": {
       "layout": "index",
-      "jsonName": "4-final-say-bitcoin.json",
-      "internalComponentName": "Component4FinalSayBitcoin",
-      "path": "/4-final-say-bitcoin/",
+      "jsonName": "sending-windows-commands-from-sap-abap.json",
+      "internalComponentName": "ComponentSendingWindowsCommandsFromSapAbap",
+      "path": "/sending-windows-commands-from-sap-abap/",
       "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
       "componentChunkName": "component---src-templates-blog-post-js",
       "context": {
-        "slug": "/4-final-say-bitcoin/"
+        "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1513118107773,
+      "updatedAt": 1513454868595,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /4-final-say-bitcoin/",
+      "id": "SitePage /sending-windows-commands-from-sap-abap/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6cf1b9c36573e660ddebe8c4f4fc927a",
+        "contentDigest": "9eca34a0929d33c898028f1e61c0d33c",
         "owner": "internal-data-bridge"
       }
     },
@@ -2369,7 +2382,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1513118107783,
+      "updatedAt": 1513454868604,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -2378,39 +2391,39 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aad731da934f183dd0324ebf9abbf499",
+        "contentDigest": "95e45ce766543dbd4ac9d9e20ef9c643",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "c66c2b0efc8fa67a03d5c32fc4a0a1a6"
+    "PLUGINS_HASH": "8af419aaa45b8855eb1ab57873b816f1"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "/2-a-toast-to-full-stack-developers/",
-        "/1-hello-world/",
-        "/3-sending-windows-commands-from-sap-abap/",
-        "/5-ethereum-developers-toolbelt/",
-        "/4-final-say-bitcoin/",
-        "/"
+        "/",
+        "/a-toast-to-full-stack-developers/",
+        "/ethereum-developers-toolbelt/",
+        "/final-say-bitcoin/",
+        "/hello-world/",
+        "/sending-windows-commands-from-sap-abap/"
       ],
-      "/Users/chris/projects/chrisfrew.in/src/pages/2-a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
-        "/2-a-toast-to-full-stack-developers/"
+      "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
+        "/a-toast-to-full-stack-developers/"
       ],
-      "/Users/chris/projects/chrisfrew.in/src/pages/1-hello-world/index.md absPath of file >>> MarkdownRemark": [
-        "/1-hello-world/"
+      "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": [
+        "/ethereum-developers-toolbelt/"
       ],
-      "/Users/chris/projects/chrisfrew.in/src/pages/3-sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": [
-        "/3-sending-windows-commands-from-sap-abap/"
+      "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": [
+        "/final-say-bitcoin/"
       ],
-      "/Users/chris/projects/chrisfrew.in/src/pages/5-ethereum-developers-toolbelt/index.md absPath of file >>> MarkdownRemark": [
-        "/5-ethereum-developers-toolbelt/"
+      "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark": [
+        "/hello-world/"
       ],
-      "/Users/chris/projects/chrisfrew.in/src/pages/4-final-say-bitcoin/index.md absPath of file >>> MarkdownRemark": [
-        "/4-final-say-bitcoin/"
+      "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": [
+        "/sending-windows-commands-from-sap-abap/"
       ]
     },
     "connections": {
