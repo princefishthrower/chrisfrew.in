@@ -17,13 +17,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "ethereum-developers-toolbelt.json",
-        "path": "/ethereum-developers-toolbelt/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "final-say-bitcoin.json",
         "path": "/final-say-bitcoin/"
     },
@@ -31,8 +24,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hello-world.json",
-        "path": "/hello-world/"
+        "jsonName": "laptop-stickers.json",
+        "path": "/laptop-stickers/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "ethereum-developers-toolbelt.json",
+        "path": "/ethereum-developers-toolbelt/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -40,6 +40,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "sending-windows-commands-from-sap-abap.json",
         "path": "/sending-windows-commands-from-sap-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hello-world.json",
+        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",

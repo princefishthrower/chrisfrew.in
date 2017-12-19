@@ -2,7 +2,7 @@
     "data": {
         "site": {
             "siteMetadata": {
-                "title": "Gatsby Starter Blog"
+                "title": "Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog."
             }
         },
         "allMarkdownRemark": {
@@ -22,14 +22,27 @@
                 },
                 {
                     "node": {
+                        "excerpt": "Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…",
+                        "fields": {
+                            "slug": "/laptop-stickers/"
+                        },
+                        "frontmatter": {
+                            "date": "19 December, 2017",
+                            "title": "My Laptop Stickers Arrived! Am I a Real Developer Now?!",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…",
                         "fields": {
                             "slug": "/final-say-bitcoin/"
                         },
                         "frontmatter": {
-                            "date": "14 December, 2017",
+                            "date": "18 December, 2017",
                             "title": "My First and Final Statement on Bitcoin for this Blog",
-                            "draft": true
+                            "draft": false
                         }
                     }
                 },

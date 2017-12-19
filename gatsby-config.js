@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Chris Frewin\'s Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.',
+    author: 'Chris Frewin',
+    description: 'A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.',
+    siteUrl: 'https://chrisfrew.in',
   },
   plugins: [
     {

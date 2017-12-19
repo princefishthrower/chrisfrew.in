@@ -4,7 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './defaultprofilepicture.png'
+import profilePic from '../images/defaultprofilepicture.png'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -28,7 +28,20 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Hi, I'm <strong>Chris Frewin</strong>, an ex-mechanical engineer living in Austria and working in Leichtenstein. For my day job, I'm a full stack SAP/webapp developer, and a hobbyist full stack web/machine-learning/Ethereum developer. If I'm not writing code, I'll be found hiking, skiing, or creating art.{' '}
+          Hi, I'm <strong>Chris Frewin</strong>, I run and post on
+          {' '}
+          <a href="nlp-champs.com" target="_blank">
+            nlp-champs.com
+          </a>
+          {' '}
+          and own
+          {' '}
+          <a href="sirenapparel.us" target="_blank">
+            Siren Apparel
+          </a>
+          .
+          {'\n'}
+          I'm an ex-mechanical engineer living in Austria and working in Leichtenstein. For my day job, I'm a full stack SAP/webapp developer, and a hobbyist full stack web/machine learning/natural language processing/Ethereum developer. If I'm not building software, I'll be found hiking, skiing, or creating art.{' '}
           <a href="https://twitter.com/galt_">
             You can follow me on Twitter, @Galt_,
           </a>
@@ -38,6 +51,8 @@ class Bio extends React.Component {
           <a href="mailto:frewin.christopher@gmail.com">
             Send me an email.
           </a>
+          {' '}
+
         </p>
       </div>
     )

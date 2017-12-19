@@ -1,16 +1,11 @@
 {
     "data": {
         "allSitePage": {
-            "totalCount": 6,
+            "totalCount": 7,
             "edges": [
                 {
                     "node": {
                         "path": "/a-toast-to-full-stack-developers/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/ethereum-developers-toolbelt/"
                     }
                 },
                 {
@@ -20,12 +15,22 @@
                 },
                 {
                     "node": {
-                        "path": "/hello-world/"
+                        "path": "/laptop-stickers/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/ethereum-developers-toolbelt/"
                     }
                 },
                 {
                     "node": {
                         "path": "/sending-windows-commands-from-sap-abap/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/hello-world/"
                     }
                 },
                 {

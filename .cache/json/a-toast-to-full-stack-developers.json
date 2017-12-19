@@ -2,8 +2,8 @@
     "data": {
         "site": {
             "siteMetadata": {
-                "title": "Gatsby Starter Blog",
-                "author": "Kyle Mathews"
+                "title": "Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.",
+                "author": "Chris Frewin"
             }
         },
         "markdownRemark": {

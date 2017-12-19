@@ -13,7 +13,7 @@ class Template extends React.Component {
       <div>
         Chris's<br/>
         <span style={{color:'#F92672'}}>Full Stack</span>,<br/>
-        <span style={{color:'#66D9EF'}}>Web</span>,<br/>
+        <span style={{color:'#66D9EF'}}>Web Development</span>,<br/>
         <span style={{color:'#A6E22E'}}>Blockchain</span>,<br/>
         <span style={{color:'#F92672'}}>Machine Learning</span>,<br/>
         &<br/>
