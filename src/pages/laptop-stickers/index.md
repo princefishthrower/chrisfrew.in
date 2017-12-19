@@ -14,7 +14,7 @@ Nothing shows others better that you are a humble, totally epic developer, than 
 
 # Tech stack
 
-Okay, I'm lying; there are a few stickers there of tools I haven't used in a real yet, but am learning and plan to very soon:
+Okay, I'm lying; there are a few stickers there of tools I haven't used in one of my applications yet, but am learning and plan to very soon:
 
 - Redux
 - TypeScript

@@ -23,6 +23,8 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "hello-world.json": require("gatsby-module-loader?name=path---hello-world!/Users/chris/projects/chrisfrew.in/.cache/json/hello-world.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "hot-linking-to-lines-in-github.json": require("gatsby-module-loader?name=path---hot-linking-to-lines-in-github!/Users/chris/projects/chrisfrew.in/.cache/json/hot-linking-to-lines-in-github.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

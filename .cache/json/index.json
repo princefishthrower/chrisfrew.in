@@ -35,6 +35,19 @@
                 },
                 {
                     "node": {
+                        "excerpt": "This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…",
+                        "fields": {
+                            "slug": "/hot-linking-to-lines-in-github/"
+                        },
+                        "frontmatter": {
+                            "date": "19 December, 2017",
+                            "title": "How to Link to Lines of Code in a Github Repository!",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…",
                         "fields": {
                             "slug": "/final-say-bitcoin/"

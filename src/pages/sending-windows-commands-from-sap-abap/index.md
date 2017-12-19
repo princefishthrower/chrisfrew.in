@@ -7,7 +7,7 @@ Alright, let's do a bit of applied stuff today.
 
 # Backstory
 
-For a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for a automatic job that would restart a certain task on a windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.
+For a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for an automatic job that would restart a certain task on a Windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running. We were able to verify if the service wasn't working properly by pinging an RFC node. If the RFC ping returned with an error, then we knew the service was not working - don't worry, this RFC ping will come into the code later.
 
 One lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.
 
@@ -141,21 +141,79 @@ CALL FUNCTION 'SXPG_COMMAND_EXECUTE'
 
 I'll just say I maintained the two commands in SM69 as `Z_MY_SUPER_AWESOME_COMMAND_START` and `Z_MY_SUPER_AWESOME_COMMAND_STOP`.
 
-So, all that's left is to check if the service is not responding, and if it is not, call the command pair with function module `SXPG_COMMAND_EXECUTE`, check `sy-subrc`, and we are done! The total code looks like this:
+So, all that's left is to check if the service is not responding. As I summarized above, if the Windows service was broken, the RFC node that talked to it would also be broken. (i.e. pinging it would not work). An RFC node is easy enough to test with function module `RFC_PING`.
 
 ```abap
-ABAP Code coming soon :smile:
+CALL FUNCTION 'RFC_PING'
+  DESTINATION 'Z_BROKEN_RFC_DESTINATION'
+  EXCEPTIONS
+    system_failure        = 1
+    communication_failure = 2.
+```
+
+Easy enough. If `sy-subrc` is of value 1 or 2, then it means indeed, that our `Z_BROKEN_RFC_DESTINATION` is indeed broken.
+
+So if it turns out this service is not responding, we call the command pair with function module `SXPG_COMMAND_EXECUTE`, check `sy-subrc`, and we are done! The total code looks like this:
+
+```abap
+REPORT Z_RESTART_SERVICE.
+*&---------------------------------------------------------------------*
+*& Report:  Z_RESTART_SERVICE                                          *
+*& Author: Chris Frewin                                                *
+*& Creation Date: 27.10.2017                                           *
+*&---------------------------------------------------------------------*
+*& Requester:                                                          *
+*& Chris Frewin - a report that restarts a windows service             *
+*&                                                                     *
+*&                                                                     *
+*&---------------------------------------------------------------------*
+*& Changes:                                                            *
+*& Chris Frewin      2017.12.13 - First version                        *
+*&                                                                     *
+*&---------------------------------------------------------------------*
+
+" Check RFC destination Z_BROKEN_RFC_DESTINATION - if it hangs or returns error, try to restart it
+CALL FUNCTION 'RFC_PING'
+  DESTINATION 'Z_BROKEN_RFC_DESTINATION'
+  EXCEPTIONS
+    system_failure        = 1
+    communication_failure = 2.
+IF sy-subrc <> 0.
+  CASE sy-subrc.
+    WHEN 1.
+      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION with SY-SUBRC = 1: "system_failure" Trying to restart the service...'.
+    WHEN 2.
+      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION with SY-SUBRC = 2: "communication_failure" Trying to restart the service...'.
+    WHEN OTHERS.
+      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION is offline or not functioning properly! Trying to restart the service...'.
+  ENDCASE.
+  " restart the service with a stop/start combo
+  CALL FUNCTION 'SXPG_COMMAND_EXECUTE'
+    EXPORTING
+      commandname = 'Z_MY_SUPER_AWESOME_COMMAND_STOP'.
+  IF sy-subrc <> 0.
+    WRITE: / 'Error with the start command - Z_MY_SUPER_AWESOME_COMMAND_STOP command!'.
+  ENDIF.
+  CALL FUNCTION 'SXPG_COMMAND_EXECUTE'
+    EXPORTING
+      commandname = 'Z_MY_SUPER_AWESOME_COMMAND_START'.
+  IF sy-subrc <> 0.
+    WRITE: / 'Error with the stop command - Z_MY_SUPER_AWESOME_COMMAND_START command!'.
+  ELSE.
+    WRITE: / 'Service successfully newly started!'.
+  ENDIF.
+ENDIF.
 ```
 
 We set this report up as a batch job to run every 5 minutes, and the ticket was resolved :smile:
 
 # Review
 
-As a review, we determined the specific commands needed to be sent to the windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!
+As a review, we determined the specific commands needed to be sent to the Windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!
 
 # Notes and Comments
 
-I hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with websockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!
+I hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with WebSockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!
 
 Cheers everyone! :beer:
 

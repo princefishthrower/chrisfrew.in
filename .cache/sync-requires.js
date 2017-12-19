@@ -24,6 +24,8 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "hello-world.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/hello-world.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "hot-linking-to-lines-in-github.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/hot-linking-to-lines-in-github.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

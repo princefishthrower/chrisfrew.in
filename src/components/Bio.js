@@ -41,7 +41,7 @@ class Bio extends React.Component {
           </a>
           .
           {'\n'}
-          I'm an ex-mechanical engineer living in Austria and working in Leichtenstein. For my day job, I'm a full stack SAP/webapp developer, and a hobbyist full stack web/machine learning/natural language processing/Ethereum developer. If I'm not building software, I'll be found hiking, skiing, or creating art.{' '}
+          I'm an ex-mechanical engineer living in Austria and working in Liechtenstein. For my day job, I'm a full stack SAP/web app developer, and a hobbyist full stack web/machine learning/natural language processing/Ethereum developer. If I'm not building software, I'll be found hiking, skiing, or creating art.{' '}
           <a href="https://twitter.com/galt_">
             You can follow me on Twitter, @Galt_,
           </a>

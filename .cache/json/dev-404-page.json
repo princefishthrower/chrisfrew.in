@@ -1,7 +1,7 @@
 {
     "data": {
         "allSitePage": {
-            "totalCount": 7,
+            "totalCount": 8,
             "edges": [
                 {
                     "node": {
@@ -31,6 +31,11 @@
                 {
                     "node": {
                         "path": "/hello-world/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/hot-linking-to-lines-in-github/"
                     }
                 },
                 {

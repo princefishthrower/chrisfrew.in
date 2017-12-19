@@ -8,15 +8,18 @@ Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road
 
 # My Promise to You
 
-Let me promise you, I won't post about Bitcoin speculation (in relation to politics or economics, maybe one day some tech stuff) on this blog ever again.
+Let me promise you, I won't post about Bitcoin speculation on this blog ever again. (At least in relation to any sort of price speculation, maybe one day later I will post on some tech stuff)
 
 # The Numbers
 
-The simple economics of Bitcoin are: there will only every 21 million of them, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below). But the fact still stands, Bitcoin has both the largest _and_ majority of the market caps among all the other cryptocurrencies.
+The most basic key economics of Bitcoin for determining it's price are: 1. there will only be 21 million of them, and 2. The demand for the holy coin is ever increasing, and at least all of 2018, it looks as though that trend will hold. As long as these two key economic ingredients hold true (the 21 million I am 100% sure of, it's [baked intp Bitcoin's code](https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L1361)), the inarguable bottom line is that the price will go up, no exceptions. We don't even need any technical analysis! There are millions of examples throughout history: something with a limited supply and increasing demand, the "things" price goes up. No exceptions.
+
+# First to Market
+It's important to remember, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below), Bitcoin has both the largest _and_ majority of the market caps among all the other cryptocurrencies. (Edit: December 19th! Bitcoin dipped just below 49.9% market capitilization in crypto! [I built a small bookmarklet called MarkCap](frewinchristopher.github.io/markcap) for [coinmarketcap.com](coinmarketcap.com) that puts the percent market cap next to the market cap number.)
 
 !["We'll give up the hostages if you send us 10000 Bitcoin!" "10000 Bitcoin? Does he think this is 2017? There's no single entity left in the world with that much!"](./bitcoincomic.jpg)
 
-A comic I thought up about Bitcoin  :joy::joy::joy: (_still not done, but it will show up here soon_).
+A comic I thought up about Bitcoin  :joy::joy::joy: (_comic is still not done, but it will show up here soon_).
 
 As cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:
 

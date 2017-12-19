@@ -49,6 +49,13 @@
         "path": "/hello-world/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hot-linking-to-lines-in-github.json",
+        "path": "/hot-linking-to-lines-in-github/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

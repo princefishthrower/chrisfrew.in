@@ -1574,12 +1574,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2017-12-19T10:35:40.164Z",
+      "buildTime": "2017-12-19T16:22:08.262Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "83d98bda4d95510785beefe6f47905f2",
+        "contentDigest": "917b4886ac1671a519c37045baefdace",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1589,7 +1589,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d352cca475266f5359076007a7d2a29a",
+        "contentDigest": "5e161021dd38e75837dd2da5697abff6",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1597,11 +1597,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 288,
-      "prettySize": "288 B",
-      "modifiedTime": "2017-12-18T18:06:15.725Z",
-      "accessTime": "2017-12-19T10:35:43.965Z",
-      "changeTime": "2017-12-18T18:06:15.725Z",
+      "size": 320,
+      "prettySize": "320 B",
+      "modifiedTime": "2017-12-19T15:13:08.602Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
+      "changeTime": "2017-12-19T15:13:08.602Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1609,22 +1609,22 @@
       "ext": "",
       "name": "pages",
       "relativeDirectory": "..",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
-      "nlink": 9,
+      "nlink": 10,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1513679743964.986,
-      "mtimeMs": 1513620375724.6157,
-      "ctimeMs": 1513620375724.6157,
+      "atimeMs": 1513700531151.9194,
+      "mtimeMs": 1513696388602.2256,
+      "ctimeMs": 1513696388602.2256,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2017-12-19T10:35:43.965Z",
-      "mtime": "2017-12-18T18:06:15.725Z",
-      "ctime": "2017-12-18T18:06:15.725Z",
+      "atime": "2017-12-19T16:22:11.152Z",
+      "mtime": "2017-12-19T15:13:08.602Z",
+      "ctime": "2017-12-19T15:13:08.602Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt absPath of file": {
@@ -1632,7 +1632,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f47d343a06fc199c6348357ab31516ca",
+        "contentDigest": "96cf9fc7b3cbd315afe2ef565d4f524c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1643,7 +1643,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -1652,7 +1652,7 @@
       "ext": "",
       "name": "ethereum-developers-toolbelt",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1661,11 +1661,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1513679743967.6118,
+      "atimeMs": 1513700531152.0637,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -1675,7 +1675,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "92cde33ff17c630817bd6295185fe4f5",
+        "contentDigest": "181f090c0d36cb78fef960f6d37558f8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1686,7 +1686,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1695,7 +1695,7 @@
       "ext": "",
       "name": "a-toast-to-full-stack-developers",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1704,11 +1704,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1513679743967.57,
+      "atimeMs": 1513700531152.019,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1718,7 +1718,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8ea76279cc5502f6a4bd77ebab8c7911",
+        "contentDigest": "ae14c4ec463901a7ec2ca82baa747a01",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1729,7 +1729,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -1738,7 +1738,7 @@
       "ext": "",
       "name": "final-say-bitcoin",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1747,11 +1747,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1513679743967.63,
+      "atimeMs": 1513700531152.1,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -1761,7 +1761,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5f5ea7632cd4fbf979d6b5b7bf2ecd6c",
+        "contentDigest": "3d45cf5b7dd5bf3472ddc12467a07d7d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1772,7 +1772,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -1781,7 +1781,7 @@
       "ext": "",
       "name": "hello-world",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1790,11 +1790,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1513679743967.5742,
+      "atimeMs": 1513700531152.0447,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -1804,7 +1804,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2dbcc4cd7d10e39374dee82d2a1bb53d",
+        "contentDigest": "296dd49700a9fad47410510a5f2985d7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1815,7 +1815,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2017-12-18T18:59:56.628Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-18T18:59:56.628Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -1824,7 +1824,7 @@
       "ext": "",
       "name": "laptop-stickers",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 4,
       "uid": 501,
@@ -1833,11 +1833,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1513679743967.6008,
+      "atimeMs": 1513700531152.1182,
       "mtimeMs": 1513623596627.5898,
       "ctimeMs": 1513623596627.5898,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-18T18:59:56.628Z",
       "ctime": "2017-12-18T18:59:56.628Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -1847,7 +1847,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d564503b46eeec506bf5153e323d7d16",
+        "contentDigest": "1829508b95e19c7a7724d3a753b0a13e",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1858,7 +1858,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2017-12-19T10:35:43.968Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -1867,7 +1867,7 @@
       "ext": "",
       "name": "sending-windows-commands-from-sap-abap",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1876,11 +1876,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1513679743967.598,
+      "atimeMs": 1513700531152.176,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2017-12-19T10:35:43.968Z",
+      "atime": "2017-12-19T16:22:11.152Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -1982,7 +1982,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6435f58a1e1a63209eda3f8f9a858717",
+        "contentDigest": "ec044464b9645f686dbd32000b2a7fba",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -1991,11 +1991,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md",
       "relativePath": "final-say-bitcoin/index.md",
       "extension": "md",
-      "size": 5140,
-      "prettySize": "5.14 kB",
-      "modifiedTime": "2017-12-19T10:35:30.146Z",
-      "accessTime": "2017-12-19T10:35:43.947Z",
-      "changeTime": "2017-12-19T10:35:30.146Z",
+      "size": 6133,
+      "prettySize": "6.13 kB",
+      "modifiedTime": "2017-12-19T15:22:27.216Z",
+      "accessTime": "2017-12-19T15:23:27.884Z",
+      "changeTime": "2017-12-19T15:22:27.216Z",
       "birthTime": "2017-12-12T16:03:32.631Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin",
@@ -2011,14 +2011,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655525,
-      "blocks": 0,
-      "atimeMs": 1513679743946.5388,
-      "mtimeMs": 1513679730145.683,
-      "ctimeMs": 1513679730145.683,
+      "blocks": 16,
+      "atimeMs": 1513697007883.9167,
+      "mtimeMs": 1513696947215.6382,
+      "ctimeMs": 1513696947215.6382,
       "birthtimeMs": 1513094612631.3896,
-      "atime": "2017-12-19T10:35:43.947Z",
-      "mtime": "2017-12-19T10:35:30.146Z",
-      "ctime": "2017-12-19T10:35:30.146Z",
+      "atime": "2017-12-19T15:23:27.884Z",
+      "mtime": "2017-12-19T15:22:27.216Z",
+      "ctime": "2017-12-19T15:22:27.216Z",
       "birthtime": "2017-12-12T16:03:32.631Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/laptop-stickers/index.md absPath of file": {
@@ -2028,7 +2028,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e6a4d4a4a3f38643e806bf955aa44054",
+        "contentDigest": "5c5fe091fcf753e4655e4ba0f3289369",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2037,11 +2037,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/laptop-stickers/index.md",
       "relativePath": "laptop-stickers/index.md",
       "extension": "md",
-      "size": 1245,
-      "prettySize": "1.25 kB",
-      "modifiedTime": "2017-12-19T07:38:41.338Z",
-      "accessTime": "2017-12-19T07:38:41.548Z",
-      "changeTime": "2017-12-19T07:38:41.338Z",
+      "size": 1261,
+      "prettySize": "1.26 kB",
+      "modifiedTime": "2017-12-19T16:21:27.042Z",
+      "accessTime": "2017-12-19T16:21:27.254Z",
+      "changeTime": "2017-12-19T16:21:27.042Z",
       "birthTime": "2017-12-18T18:06:22.555Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/laptop-stickers",
@@ -2049,7 +2049,7 @@
       "ext": ".md",
       "name": "index",
       "relativeDirectory": "laptop-stickers",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
@@ -2058,13 +2058,13 @@
       "blksize": 4194304,
       "ino": 8594168520,
       "blocks": 0,
-      "atimeMs": 1513669121548.0422,
-      "mtimeMs": 1513669121337.7424,
-      "ctimeMs": 1513669121337.7424,
+      "atimeMs": 1513700487254.0562,
+      "mtimeMs": 1513700487042.3271,
+      "ctimeMs": 1513700487042.3271,
       "birthtimeMs": 1513620382555.4683,
-      "atime": "2017-12-19T07:38:41.548Z",
-      "mtime": "2017-12-19T07:38:41.338Z",
-      "ctime": "2017-12-19T07:38:41.338Z",
+      "atime": "2017-12-19T16:21:27.254Z",
+      "mtime": "2017-12-19T16:21:27.042Z",
+      "ctime": "2017-12-19T16:21:27.042Z",
       "birthtime": "2017-12-18T18:06:22.555Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt/index.md absPath of file": {
@@ -2120,7 +2120,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ba8533c78cca3dc587f60aa396b59bc0",
+        "contentDigest": "eb475e0b9a9078d26a128d5f781f2a51",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2129,11 +2129,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md",
       "relativePath": "sending-windows-commands-from-sap-abap/index.md",
       "extension": "md",
-      "size": 8784,
-      "prettySize": "8.78 kB",
-      "modifiedTime": "2017-12-16T19:58:28.056Z",
-      "accessTime": "2017-12-18T18:54:00.042Z",
-      "changeTime": "2017-12-16T19:58:28.056Z",
+      "size": 11875,
+      "prettySize": "11.9 kB",
+      "modifiedTime": "2017-12-19T16:19:49.406Z",
+      "accessTime": "2017-12-19T16:19:49.617Z",
+      "changeTime": "2017-12-19T16:19:49.406Z",
       "birthTime": "2017-12-12T14:28:13.294Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap",
@@ -2141,7 +2141,7 @@
       "ext": ".md",
       "name": "index",
       "relativeDirectory": "sending-windows-commands-from-sap-abap",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
@@ -2149,14 +2149,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655520,
-      "blocks": 24,
-      "atimeMs": 1513623240042.4006,
-      "mtimeMs": 1513454308055.6736,
-      "ctimeMs": 1513454308055.6736,
+      "blocks": 0,
+      "atimeMs": 1513700389617.0227,
+      "mtimeMs": 1513700389405.9724,
+      "ctimeMs": 1513700389405.9724,
       "birthtimeMs": 1513088893293.6265,
-      "atime": "2017-12-18T18:54:00.042Z",
-      "mtime": "2017-12-16T19:58:28.056Z",
-      "ctime": "2017-12-16T19:58:28.056Z",
+      "atime": "2017-12-19T16:19:49.617Z",
+      "mtime": "2017-12-19T16:19:49.406Z",
+      "ctime": "2017-12-19T16:19:49.406Z",
       "birthtime": "2017-12-12T14:28:13.294Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file": {
@@ -2234,8 +2234,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/final-say-bitcoin/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: My First and Final Statement on Bitcoin for this Blog\ndate: \"2017-12-18\"\ndraft: false\n---\n\nLots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.\n\n# My Promise to You\n\nLet me promise you, I won't post about Bitcoin speculation (in relation to politics or economics, maybe one day some tech stuff) on this blog ever again.\n\n# The Numbers\n\nThe simple economics of Bitcoin are: there will only every 21 million of them, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below). But the fact still stands, Bitcoin has both the largest _and_ majority of the market caps among all the other cryptocurrencies.\n\n![\"We'll give up the hostages if you send us 10000 Bitcoin!\" \"10000 Bitcoin? Does he think this is 2017? There's no single entity left in the world with that much!\"](./bitcoincomic.jpg)\n\nA comic I thought up about Bitcoin  😂😂😂 (_still not done, but it will show up here soon_).\n\nAs cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:\n\n| Market Capitalization | Bitcoin price* |\n| --------------------- | -------------- |\n| 1 Trillion | ~$55,500 |\n| 2 Trillion | ~$111,000 |\n| 3 Trillion | ~$167,000 |\n| ... | ... |\n| 7 Trillion (market cap of gold) | ~$389,000 |\n\n\\*(assuming around 18 million Bitcoins - currently 16.7 as of writing this entry - it's accurate enough as of this posting in late 2017; the 18th millionth Bitcoin isn't expected to be mined until October 9th, 2019 - check out [my post on medium about the mining schedule until the next halving](https://medium.com/@frewin.christopher/the-bitcoin-mining-schedule-from-december-18-2017-to-june-8-2020-407db59e69f4))\n\nI predict:\n\n- $20,000 by January 1st 2018 (update: we already made it for a short period of time on December 17th!)\n- $50,000 by end of Q2 2018 (i.e. end of June 2018)\n- $100,000 by end of Q4 2018 (i.e. end of December 2018)\n\n# But... 5 Years Out? 10 Years?\n\nSo I have a somewhat non-average view of Bitcoin in the long run (5-10 year) time range (yes, things like [THE FLIPPENING](http://blog.flippening.watch/what-is-the-flippening/) I think could happen). The world is still getting used to cryptocurrency. However, as soon as that honeymoon period is _over_, the world should (not as it always does, I know), realize a few things:\n\n- Bitcoin, while first to the cryptocurrency market, is undoubtedly _not_ the best cryptocurrency on the market. Even as I write this post, transaction times are stacking up, and a single transaction costs over $3. And what happens to the miners once mining stop? [That's still a question where I'm not totally satisfied what some of the answers are.](https://news.bitcoin.com/what-happens-bitcoin-miners-all-coins-mined/)\n- Litecoin is a copy of (suprised? look at this [fork to litecoin from the bitcoin repository by Charlie Lee, the founder of Litecoin](https://github.com/litecoin-project/litecoin/commit/4405b78d6059e536c36974088a8ed4d9f0f29898)) sorry, but I don't see much innovation there\n- Other blockchain technologies, like Ethereum, Cosmos, and many more (I have a few personal favorites) have numerous advantages, not limited to:\n  - a much larger development team\n  - a much stronger and active code base\n  - MUCH faster transaction times (Ether, the next closes coin in market cap, processes about _2.5x_ as many transactions as Bitcoin per day)\n\nOnce these aspects of the market are noticed, I believe wealth will slowly transfer out of Bitcoin - when and if enough people will decide that Bitcoin's 'store of wealth' could in fact be invested in the next best thing (i.e. coin/token). Perhaps once Bitcoin does reach such towering numbers of 50 - 100K, it's purpose as a store of global wealth (note NOT the original purpose of Bitcoin) will be met, and perhaps the demand for transactions will taper off. On the other hand, perhaps even a better option for storing wealth in a blockchain could appear. With the rate of speed the tech is moving, its impossible to say, again, only time will tell.\n\nBut, for the present, let the following stand:\n\n**As of 16:08 UTC, Tuesday December 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.**\n\n# My Conclusions\n\nMy overall thoughts are this: Bitcoin will continue to see a run up into very large numbers in the 50K-100K region, then stabilize as buying rates finally settle down to match that of selling rates. Then, at some point along this stagnation, there will be a slow starting decrease downtrend in Bitcoin's price, then accelerating, bringing the price of Bitcoin back to its pre-boom levels (think: $5 - $10 range). When will this happen? I would say not within the next 5-10 years. But it's my long term feeling.\n\nCheers! 🍺\n",
-        "contentDigest": "84c2b4064252532d0e5f7557e48ec54d",
+        "content": "---\ntitle: My First and Final Statement on Bitcoin for this Blog\ndate: \"2017-12-18\"\ndraft: false\n---\n\nLots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.\n\n# My Promise to You\n\nLet me promise you, I won't post about Bitcoin speculation on this blog ever again. (At least in relation to any sort of price speculation, maybe one day later I will post on some tech stuff)\n\n# The Numbers\n\nThe most basic key economics of Bitcoin for determining it's price are: 1. there will only be 21 million of them, and 2. The demand for the holy coin is ever increasing, and at least all of 2018, it looks as though that trend will hold. As long as these two key economic ingredients hold true (the 21 million I am 100% sure of, it's [baked intp Bitcoin's code](https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L1361)), the inarguable bottom line is that the price will go up, no exceptions. We don't even need any technical analysis! There are millions of examples throughout history: something with a limited supply and increasing demand, the \"things\" price goes up. No exceptions.\n\n# First to Market\nIt's important to remember, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below), Bitcoin has both the largest _and_ majority of the market caps among all the other cryptocurrencies. (Edit: December 19th! Bitcoin dipped just below 49.9% market capitilization in crypto! [I built a small bookmarklet called MarkCap](frewinchristopher.github.io/markcap) for [coinmarketcap.com](coinmarketcap.com) that puts the percent market cap next to the market cap number.)\n\n![\"We'll give up the hostages if you send us 10000 Bitcoin!\" \"10000 Bitcoin? Does he think this is 2017? There's no single entity left in the world with that much!\"](./bitcoincomic.jpg)\n\nA comic I thought up about Bitcoin  😂😂😂 (_comic is still not done, but it will show up here soon_).\n\nAs cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:\n\n| Market Capitalization | Bitcoin price* |\n| --------------------- | -------------- |\n| 1 Trillion | ~$55,500 |\n| 2 Trillion | ~$111,000 |\n| 3 Trillion | ~$167,000 |\n| ... | ... |\n| 7 Trillion (market cap of gold) | ~$389,000 |\n\n\\*(assuming around 18 million Bitcoins - currently 16.7 as of writing this entry - it's accurate enough as of this posting in late 2017; the 18th millionth Bitcoin isn't expected to be mined until October 9th, 2019 - check out [my post on medium about the mining schedule until the next halving](https://medium.com/@frewin.christopher/the-bitcoin-mining-schedule-from-december-18-2017-to-june-8-2020-407db59e69f4))\n\nI predict:\n\n- $20,000 by January 1st 2018 (update: we already made it for a short period of time on December 17th!)\n- $50,000 by end of Q2 2018 (i.e. end of June 2018)\n- $100,000 by end of Q4 2018 (i.e. end of December 2018)\n\n# But... 5 Years Out? 10 Years?\n\nSo I have a somewhat non-average view of Bitcoin in the long run (5-10 year) time range (yes, things like [THE FLIPPENING](http://blog.flippening.watch/what-is-the-flippening/) I think could happen). The world is still getting used to cryptocurrency. However, as soon as that honeymoon period is _over_, the world should (not as it always does, I know), realize a few things:\n\n- Bitcoin, while first to the cryptocurrency market, is undoubtedly _not_ the best cryptocurrency on the market. Even as I write this post, transaction times are stacking up, and a single transaction costs over $3. And what happens to the miners once mining stop? [That's still a question where I'm not totally satisfied what some of the answers are.](https://news.bitcoin.com/what-happens-bitcoin-miners-all-coins-mined/)\n- Litecoin is a copy of (suprised? look at this [fork to litecoin from the bitcoin repository by Charlie Lee, the founder of Litecoin](https://github.com/litecoin-project/litecoin/commit/4405b78d6059e536c36974088a8ed4d9f0f29898)) sorry, but I don't see much innovation there\n- Other blockchain technologies, like Ethereum, Cosmos, and many more (I have a few personal favorites) have numerous advantages, not limited to:\n  - a much larger development team\n  - a much stronger and active code base\n  - MUCH faster transaction times (Ether, the next closes coin in market cap, processes about _2.5x_ as many transactions as Bitcoin per day)\n\nOnce these aspects of the market are noticed, I believe wealth will slowly transfer out of Bitcoin - when and if enough people will decide that Bitcoin's 'store of wealth' could in fact be invested in the next best thing (i.e. coin/token). Perhaps once Bitcoin does reach such towering numbers of 50 - 100K, it's purpose as a store of global wealth (note NOT the original purpose of Bitcoin) will be met, and perhaps the demand for transactions will taper off. On the other hand, perhaps even a better option for storing wealth in a blockchain could appear. With the rate of speed the tech is moving, its impossible to say, again, only time will tell.\n\nBut, for the present, let the following stand:\n\n**As of 16:08 UTC, Tuesday December 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.**\n\n# My Conclusions\n\nMy overall thoughts are this: Bitcoin will continue to see a run up into very large numbers in the 50K-100K region, then stabilize as buying rates finally settle down to match that of selling rates. Then, at some point along this stagnation, there will be a slow starting decrease downtrend in Bitcoin's price, then accelerating, bringing the price of Bitcoin back to its pre-boom levels (think: $5 - $10 range). When will this happen? I would say not within the next 5-10 years. But it's my long term feeling.\n\nCheers! 🍺\n",
+        "contentDigest": "c9b3bde2b7b63bef1a3680dc64b34d54",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -2259,8 +2259,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/laptop-stickers/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: My Laptop Stickers Arrived! Am I a Real Developer Now?!\ndate: \"2017-12-19\"\ndraft: false\n---\n\n# Laptop Stickers!\n\n![So hipster. Much win. Yes.](./laptopstickers1.jpg)\n\nNothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your really expensive laptop!\n\n(Okay, I can't be _that_ humble since I'm bragging about a few 50&cent; stickers on a blog - and I'm even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 😄)\n\n# Tech stack\n\nOkay, I'm lying; there are a few stickers there of tools I haven't used in a real yet, but am learning and plan to very soon:\n\n- Redux\n- TypeScript\n- ReactiveX\n\nOtherwise, it's my honest-to-goodness workflow tools.\n\n# So You Wanna Be Cool Too, Eh?\n\nI ordered all of these on [redbubble.com](redbubble.com) No, no, it's not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is [devstickers.com](devstickers.com). Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, _obviously_ so I could fit as many dev stickers as possible on my laptop 😂 - see the picture for reference.\n\nCheers! 🍺\n",
-        "contentDigest": "3ccc6e2d43bcd2c62c9cfcdcab3c314d",
+        "content": "---\ntitle: My Laptop Stickers Arrived! Am I a Real Developer Now?!\ndate: \"2017-12-19\"\ndraft: false\n---\n\n# Laptop Stickers!\n\n![So hipster. Much win. Yes.](./laptopstickers1.jpg)\n\nNothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your really expensive laptop!\n\n(Okay, I can't be _that_ humble since I'm bragging about a few 50&cent; stickers on a blog - and I'm even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 😄)\n\n# Tech stack\n\nOkay, I'm lying; there are a few stickers there of tools I haven't used in one of my applications yet, but am learning and plan to very soon:\n\n- Redux\n- TypeScript\n- ReactiveX\n\nOtherwise, it's my honest-to-goodness workflow tools.\n\n# So You Wanna Be Cool Too, Eh?\n\nI ordered all of these on [redbubble.com](redbubble.com) No, no, it's not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is [devstickers.com](devstickers.com). Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, _obviously_ so I could fit as many dev stickers as possible on my laptop 😂 - see the picture for reference.\n\nCheers! 🍺\n",
+        "contentDigest": "8368319928f93d97bad3ed5d1674541b",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -2309,8 +2309,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Sending Windows Server Commands From SAP ABAP\ndate: \"2017-12-13\"\n---\n\nAlright, let's do a bit of applied stuff today.\n\n# Backstory\n\nFor a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for a automatic job that would restart a certain task on a windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running.\n\nOne lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.\n\n# The Problem\n\nI knew at least that I had to issue specific commands to the command line. That much I already knew how to do - I had used custom command services in SAP/ABAP with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, to the Service Control Manager, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, Windows has a very nice command for exactly that.\n\nIt's called `sc`:\n\n```\nC:\\>sc\nDESCRIPTION:\n        SC is a command line program used for communicating with the\n        Service Control Manager and services.\nUSAGE:\n        sc <server> [command] [service name] <option1> <option2>...\n\n\n        The option <server> has the form \"\\\\ServerName\"\n        Further help on commands can be obtained by typing: \"sc [command]\"\n        Commands:\n          query-----------Queries the status for a service, or enumerates the status for types of services.\n          queryex---------Queries the extended status for a service, or enumerates the status for types of services.\n          start-----------Starts a service.\n          pause-----------Sends a PAUSE control request to a service.\n          interrogate-----Sends an INTERROGATE control request to a service.\n          continue--------Sends a CONTINUE control request to a service.\n          stop------------Sends a STOP request to a service.\n          config----------Changes the configuration of a service (persistent).\n          description-----Changes the description of a service.\n          failure---------Changes the actions taken by a service upon failure.\n          failureflag-----Changes the failure actions flag of a service.\n          sidtype---------Changes the service SID type of a service.\n          privs-----------Changes the required privileges of a service.\n          managedaccount--Changes the service to mark the service account password as managed by LSA.\n          qc--------------Queries the configuration information for a service.\n          qdescription----Queries the description for a service.\n          qfailure--------Queries the actions taken by a service upon failure.\n          qfailureflag----Queries the failure actions flag of a service.\n          qsidtype--------Queries the service SID type of a service.\n          qprivs----------Queries the required privileges of a service.\n          qtriggerinfo----Queries the trigger parameters of a service.\n          qpreferrednode--Queries the preferred NUMA node of a service.\n          qrunlevel-------Queries the run level of a service.\n          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.\n          qprotection-----Queries the process protection level of a service.\n          delete----------Deletes a service (from the registry).\n          create----------Creates a service. (adds it to the registry).\n          control---------Sends a control to a service.\n          sdshow----------Displays a service's security descriptor.\n          sdset-----------Sets a service's security descriptor.\n          showsid---------Displays the service SID string corresponding to an arbitrary name.\n          triggerinfo-----Configures the trigger parameters of a service.\n          preferrednode---Sets the preferred NUMA node of a service.\n          runlevel--------Sets the run level of a service.\n          GetDisplayName--Gets the DisplayName for a service.\n          GetKeyName------Gets the ServiceKeyName for a service.\n          EnumDepend------Enumerates Service Dependencies.\n\n        The following commands don't require a service name:\n        sc <server> <command> <option>\n          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration\n          Lock------------Locks the Service Database\n          QueryLock-------Queries the LockStatus for the SCManager Database\nEXAMPLE:\n        sc start MyService\n\nWould you like to see help for the QUERY and QUERYEX commands? [ y | n ]:\n```\n\nWow. That's a monster of a command documentation. Let's break down what we need.\n\n- The server name. We know that (for this example, I'm going to just call it AWESOMESERVER01). But wait! There's a gotchya, we will need to write it like:\n\n`\\\\AWESOMESERVER01`\n\nThat's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:\n\n> > The option <server> has the form \"\\\\\\\\ServerName\"\n\nOkay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.\n\nOkay, what do I need to send as a command? What command do we need? Let's check out that wall of text documentation:\n\n> > stop------------Sends a STOP request to a service.\n\nYep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:\n\n> > Commands:\n  . . .\n  start-----------Starts a service.\n\nThat will be useful later, too.\n\nAlright... Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:\n\n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nIn order for this to be a true _restart_ of the service, we would have to issue a stop/start command pair on the service:\n\n`sc \\\\AWESOMESERVER01 stop \"ServiceName even with Whitespace\"`  \n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nHow do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module `SXPG_COMMAND_EXECUTE`:\n\n```abap\nCALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n  EXPORTING\n    commandname                   = gv_commandname\n    additional_parameters         = gv_additional_parameters\n    operatingsystem               = gv_operatingsystem\n  TABLES\n    exec_protocol                 = gt_result\n  EXCEPTIONS\n    no_permission                 = 1\n    command_not_found             = 2\n    parameters_too_long           = 3\n    security_risk                 = 4\n    wrong_check_call_interface    = 5\n    program_start_error           = 6\n    program_termination_error     = 7\n    x_error                       = 8\n    parameter_expected            = 9\n    too_many_parameters           = 10\n    illegal_command               = 11\n    wrong_asynchronous_parameters = 12\n    cant_enq_tbtco_entry          = 13\n    jobcount_generation_error     = 14\n    OTHERS                        = 15.\n```\n\nI'll just say I maintained the two commands in SM69 as `Z_MY_SUPER_AWESOME_COMMAND_START` and `Z_MY_SUPER_AWESOME_COMMAND_STOP`.\n\nSo, all that's left is to check if the service is not responding, and if it is not, call the command pair with function module `SXPG_COMMAND_EXECUTE`, check `sy-subrc`, and we are done! The total code looks like this:\n\n```abap\nABAP Code coming soon 😄\n```\n\nWe set this report up as a batch job to run every 5 minutes, and the ticket was resolved 😄\n\n# Review\n\nAs a review, we determined the specific commands needed to be sent to the windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!\n\n# Notes and Comments\n\nI hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with websockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!\n\nCheers everyone! 🍺\n\n_Intellectual property/privacy disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._\n",
-        "contentDigest": "45687417cc79e06a87574f7c6ab4e887",
+        "content": "---\ntitle: Sending Windows Server Commands From SAP ABAP\ndate: \"2017-12-13\"\n---\n\nAlright, let's do a bit of applied stuff today.\n\n# Backstory\n\nFor a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for an automatic job that would restart a certain task on a Windows server we had - for reasons we still don't know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running. We were able to verify if the service wasn't working properly by pinging an RFC node. If the RFC ping returned with an error, then we knew the service was not working - don't worry, this RFC ping will come into the code later.\n\nOne lazy Friday when I didn't have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.\n\n# The Problem\n\nI knew at least that I had to issue specific commands to the command line. That much I already knew how to do - I had used custom command services in SAP/ABAP with transaction SM69 before. The hard thing that I got stuck with: how could I, from our SAP application server, issue a specific command, to the Service Control Manager, to a specific service? Whew. Still with me? With help from one of our basic team members, we discovered that as it turns out, Windows has a very nice command for exactly that.\n\nIt's called `sc`:\n\n```\nC:\\>sc\nDESCRIPTION:\n        SC is a command line program used for communicating with the\n        Service Control Manager and services.\nUSAGE:\n        sc <server> [command] [service name] <option1> <option2>...\n\n\n        The option <server> has the form \"\\\\ServerName\"\n        Further help on commands can be obtained by typing: \"sc [command]\"\n        Commands:\n          query-----------Queries the status for a service, or enumerates the status for types of services.\n          queryex---------Queries the extended status for a service, or enumerates the status for types of services.\n          start-----------Starts a service.\n          pause-----------Sends a PAUSE control request to a service.\n          interrogate-----Sends an INTERROGATE control request to a service.\n          continue--------Sends a CONTINUE control request to a service.\n          stop------------Sends a STOP request to a service.\n          config----------Changes the configuration of a service (persistent).\n          description-----Changes the description of a service.\n          failure---------Changes the actions taken by a service upon failure.\n          failureflag-----Changes the failure actions flag of a service.\n          sidtype---------Changes the service SID type of a service.\n          privs-----------Changes the required privileges of a service.\n          managedaccount--Changes the service to mark the service account password as managed by LSA.\n          qc--------------Queries the configuration information for a service.\n          qdescription----Queries the description for a service.\n          qfailure--------Queries the actions taken by a service upon failure.\n          qfailureflag----Queries the failure actions flag of a service.\n          qsidtype--------Queries the service SID type of a service.\n          qprivs----------Queries the required privileges of a service.\n          qtriggerinfo----Queries the trigger parameters of a service.\n          qpreferrednode--Queries the preferred NUMA node of a service.\n          qrunlevel-------Queries the run level of a service.\n          qmanagedaccount-Queries whether a services uses an account with a password managed by LSA.\n          qprotection-----Queries the process protection level of a service.\n          delete----------Deletes a service (from the registry).\n          create----------Creates a service. (adds it to the registry).\n          control---------Sends a control to a service.\n          sdshow----------Displays a service's security descriptor.\n          sdset-----------Sets a service's security descriptor.\n          showsid---------Displays the service SID string corresponding to an arbitrary name.\n          triggerinfo-----Configures the trigger parameters of a service.\n          preferrednode---Sets the preferred NUMA node of a service.\n          runlevel--------Sets the run level of a service.\n          GetDisplayName--Gets the DisplayName for a service.\n          GetKeyName------Gets the ServiceKeyName for a service.\n          EnumDepend------Enumerates Service Dependencies.\n\n        The following commands don't require a service name:\n        sc <server> <command> <option>\n          boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration\n          Lock------------Locks the Service Database\n          QueryLock-------Queries the LockStatus for the SCManager Database\nEXAMPLE:\n        sc start MyService\n\nWould you like to see help for the QUERY and QUERYEX commands? [ y | n ]:\n```\n\nWow. That's a monster of a command documentation. Let's break down what we need.\n\n- The server name. We know that (for this example, I'm going to just call it AWESOMESERVER01). But wait! There's a gotchya, we will need to write it like:\n\n`\\\\AWESOMESERVER01`\n\nThat's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:\n\n> > The option <server> has the form \"\\\\\\\\ServerName\"\n\nOkay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.\n\nOkay, what do I need to send as a command? What command do we need? Let's check out that wall of text documentation:\n\n> > stop------------Sends a STOP request to a service.\n\nYep, that sounds about as right as you can get. Oh also, hold your thoughts on this one:\n\n> > Commands:\n  . . .\n  start-----------Starts a service.\n\nThat will be useful later, too.\n\nAlright... Server name? Check. Service Name? Check. Command name(s)? Check. So, what do we get as a command for our efforts? It looks like this:\n\n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nIn order for this to be a true _restart_ of the service, we would have to issue a stop/start command pair on the service:\n\n`sc \\\\AWESOMESERVER01 stop \"ServiceName even with Whitespace\"`  \n`sc \\\\AWESOMESERVER01 start \"ServiceName even with Whitespace\"`\n\nHow do we do that in ABAP? Well, to run SM69 commands programmatically, we have the tasty function module `SXPG_COMMAND_EXECUTE`:\n\n```abap\nCALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n  EXPORTING\n    commandname                   = gv_commandname\n    additional_parameters         = gv_additional_parameters\n    operatingsystem               = gv_operatingsystem\n  TABLES\n    exec_protocol                 = gt_result\n  EXCEPTIONS\n    no_permission                 = 1\n    command_not_found             = 2\n    parameters_too_long           = 3\n    security_risk                 = 4\n    wrong_check_call_interface    = 5\n    program_start_error           = 6\n    program_termination_error     = 7\n    x_error                       = 8\n    parameter_expected            = 9\n    too_many_parameters           = 10\n    illegal_command               = 11\n    wrong_asynchronous_parameters = 12\n    cant_enq_tbtco_entry          = 13\n    jobcount_generation_error     = 14\n    OTHERS                        = 15.\n```\n\nI'll just say I maintained the two commands in SM69 as `Z_MY_SUPER_AWESOME_COMMAND_START` and `Z_MY_SUPER_AWESOME_COMMAND_STOP`.\n\nSo, all that's left is to check if the service is not responding. As I summarized above, if the Windows service was broken, the RFC node that talked to it would also be broken. (i.e. pinging it would not work). An RFC node is easy enough to test with function module `RFC_PING`.\n\n```abap\nCALL FUNCTION 'RFC_PING'\n  DESTINATION 'Z_BROKEN_RFC_DESTINATION'\n  EXCEPTIONS\n    system_failure        = 1\n    communication_failure = 2.\n```\n\nEasy enough. If `sy-subrc` is of value 1 or 2, then it means indeed, that our `Z_BROKEN_RFC_DESTINATION` is indeed broken.\n\nSo if it turns out this service is not responding, we call the command pair with function module `SXPG_COMMAND_EXECUTE`, check `sy-subrc`, and we are done! The total code looks like this:\n\n```abap\nREPORT Z_RESTART_SERVICE.\n*&---------------------------------------------------------------------*\n*& Report:  Z_RESTART_SERVICE                                          *\n*& Author: Chris Frewin                                                *\n*& Creation Date: 27.10.2017                                           *\n*&---------------------------------------------------------------------*\n*& Requester:                                                          *\n*& Chris Frewin - a report that restarts a windows service             *\n*&                                                                     *\n*&                                                                     *\n*&---------------------------------------------------------------------*\n*& Changes:                                                            *\n*& Chris Frewin      2017.12.13 - First version                        *\n*&                                                                     *\n*&---------------------------------------------------------------------*\n\n\" Check RFC destination Z_BROKEN_RFC_DESTINATION - if it hangs or returns error, try to restart it\nCALL FUNCTION 'RFC_PING'\n  DESTINATION 'Z_BROKEN_RFC_DESTINATION'\n  EXCEPTIONS\n    system_failure        = 1\n    communication_failure = 2.\nIF sy-subrc <> 0.\n  CASE sy-subrc.\n    WHEN 1.\n      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION with SY-SUBRC = 1: \"system_failure\" Trying to restart the service...'.\n    WHEN 2.\n      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION with SY-SUBRC = 2: \"communication_failure\" Trying to restart the service...'.\n    WHEN OTHERS.\n      WRITE: / 'Ping Test RFC Destination Z_BROKEN_RFC_DESTINATION is offline or not functioning properly! Trying to restart the service...'.\n  ENDCASE.\n  \" restart the service with a stop/start combo\n  CALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n    EXPORTING\n      commandname = 'Z_MY_SUPER_AWESOME_COMMAND_STOP'.\n  IF sy-subrc <> 0.\n    WRITE: / 'Error with the start command - Z_MY_SUPER_AWESOME_COMMAND_STOP command!'.\n  ENDIF.\n  CALL FUNCTION 'SXPG_COMMAND_EXECUTE'\n    EXPORTING\n      commandname = 'Z_MY_SUPER_AWESOME_COMMAND_START'.\n  IF sy-subrc <> 0.\n    WRITE: / 'Error with the stop command - Z_MY_SUPER_AWESOME_COMMAND_START command!'.\n  ELSE.\n    WRITE: / 'Service successfully newly started!'.\n  ENDIF.\nENDIF.\n```\n\nWe set this report up as a batch job to run every 5 minutes, and the ticket was resolved 😄\n\n# Review\n\nAs a review, we determined the specific commands needed to be sent to the Windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!\n\n# Notes and Comments\n\nI hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with WebSockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!\n\nCheers everyone! 🍺\n\n_Intellectual property/privacy disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._\n",
+        "contentDigest": "50c44d197767b38d62d9904b63aa12b4",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -2408,6 +2408,120 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5b9b70d0979f8cd6a14507053252cd10",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github",
+      "relativePath": "hot-linking-to-lines-in-github",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-12-19T15:13:13.357Z",
+      "accessTime": "2017-12-19T16:22:11.152Z",
+      "changeTime": "2017-12-19T15:13:13.357Z",
+      "birthTime": "2017-12-19T15:13:08.602Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "hot-linking-to-lines-in-github",
+      "ext": "",
+      "name": "hot-linking-to-lines-in-github",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594229653,
+      "blocks": 0,
+      "atimeMs": 1513700531152.1072,
+      "mtimeMs": 1513696393357.085,
+      "ctimeMs": 1513696393357.085,
+      "birthtimeMs": 1513696388602.1982,
+      "atime": "2017-12-19T16:22:11.152Z",
+      "mtime": "2017-12-19T15:13:13.357Z",
+      "ctime": "2017-12-19T15:13:13.357Z",
+      "birthtime": "2017-12-19T15:13:08.602Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "8553570cc841a132ecd1cfdfa41dd876",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md",
+      "relativePath": "hot-linking-to-lines-in-github/index.md",
+      "extension": "md",
+      "size": 1088,
+      "prettySize": "1.09 kB",
+      "modifiedTime": "2017-12-19T15:31:10.908Z",
+      "accessTime": "2017-12-19T15:31:10.908Z",
+      "changeTime": "2017-12-19T15:31:10.908Z",
+      "birthTime": "2017-12-19T15:13:13.357Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "hot-linking-to-lines-in-github",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594229654,
+      "blocks": 0,
+      "atimeMs": 1513697470908.0032,
+      "mtimeMs": 1513697470908.0933,
+      "ctimeMs": 1513697470908.0933,
+      "birthtimeMs": 1513696393357.0754,
+      "atime": "2017-12-19T15:31:10.908Z",
+      "mtime": "2017-12-19T15:31:10.908Z",
+      "ctime": "2017-12-19T15:31:10.908Z",
+      "birthtime": "2017-12-19T15:13:13.357Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: How to Link to Lines of Code in a Github Repository!\ndate: \"2017-12-19\"\ndraft: false\n---\n\nThis'll be a real short one; I just learned you can link to specific lines of code on GitHub!\n\nAll you need to do is find your link to the source code preview (\\*\\*\\*NOTE: _not_ the raw view!) as an example, let's look at a source file from Bitcoin repository*:\n\nhttps://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp\n\nLet's say I want to highlight line 123. All you have to do is add a '#L' and the line number you want, so let's add #L123:\n\n[https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123](https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123)\n\nGo on. Give it a click. You know you want to! You'll see your browser jumps down and highlights that line.\n\n<hr/>\n\n\\* `main.cpp` doesn't exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example `main.cpp` is an attractive file name 😄.\n",
+        "contentDigest": "1ce98b38739c2343ab453c0708f858e1",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "How to Link to Lines of Code in a Github Repository!",
+        "date": "2017-12-19",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md",
+      "fields": {
+        "slug": "/hot-linking-to-lines-in-github/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -2416,7 +2530,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1513679744374,
+      "updatedAt": 1513700531532,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -2425,7 +2539,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1909d3a4408bbcc806c2e0930728ec44",
+        "contentDigest": "a37f1633bd3d88197d58d084e21f778f",
         "owner": "internal-data-bridge"
       }
     },
@@ -2439,7 +2553,7 @@
       "context": {
         "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1513679744392,
+      "updatedAt": 1513700531553,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2448,7 +2562,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "efedbc915a3dcd4f8ba4eec43a5f5094",
+        "contentDigest": "cb380becf5d6a581742136707a1b64ea",
         "owner": "internal-data-bridge"
       }
     },
@@ -2462,7 +2576,7 @@
       "context": {
         "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1513679744393,
+      "updatedAt": 1513700531554,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2471,7 +2585,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "042102296b0fee86e84328c3b6f52de0",
+        "contentDigest": "d1885e9476d84ed78d6149f3b190bad4",
         "owner": "internal-data-bridge"
       }
     },
@@ -2485,7 +2599,7 @@
       "context": {
         "slug": "/laptop-stickers/"
       },
-      "updatedAt": 1513679744393,
+      "updatedAt": 1513700531554,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2494,7 +2608,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "180392a1ebe4a79fd45a399e72eb200e",
+        "contentDigest": "d1f25e6b95c41c87173eaaca88fe0997",
         "owner": "internal-data-bridge"
       }
     },
@@ -2508,7 +2622,7 @@
       "context": {
         "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1513679744393,
+      "updatedAt": 1513700531555,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2517,7 +2631,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "41956239bb04a3bb14914ebbbdf40861",
+        "contentDigest": "035b8bfd7fa6eb1e3c2a9bbf13d6d576",
         "owner": "internal-data-bridge"
       }
     },
@@ -2531,7 +2645,7 @@
       "context": {
         "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1513679744394,
+      "updatedAt": 1513700531555,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2540,7 +2654,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9dfef9f6419527f4a75d8e68acd928be",
+        "contentDigest": "6b4b4a733fef55ffa2b8fb4d8ffd2c15",
         "owner": "internal-data-bridge"
       }
     },
@@ -2554,7 +2668,7 @@
       "context": {
         "slug": "/hello-world/"
       },
-      "updatedAt": 1513679744394,
+      "updatedAt": 1513700531555,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -2563,7 +2677,30 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "392e479c41e47a1bf9ad0e13c39a81ec",
+        "contentDigest": "f75f7d92d4023349f779c08af8ffb3d9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /hot-linking-to-lines-in-github/": {
+      "layout": "index",
+      "jsonName": "hot-linking-to-lines-in-github.json",
+      "internalComponentName": "ComponentHotLinkingToLinesInGithub",
+      "path": "/hot-linking-to-lines-in-github/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/hot-linking-to-lines-in-github/"
+      },
+      "updatedAt": 1513700531556,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /hot-linking-to-lines-in-github/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c2fe0bad6475b943014bcc5acb885c8f",
         "owner": "internal-data-bridge"
       }
     },
@@ -2575,7 +2712,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1513679744405,
+      "updatedAt": 1513700531573,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -2584,7 +2721,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7138d079079845775e4174fac39a69f0",
+        "contentDigest": "7b15a186b5d6d04fe53724c814552ac2",
         "owner": "internal-data-bridge"
       }
     }
@@ -2602,7 +2739,8 @@
         "/ethereum-developers-toolbelt/",
         "/sending-windows-commands-from-sap-abap/",
         "/hello-world/",
-        "/"
+        "/",
+        "/hot-linking-to-lines-in-github/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
         "/a-toast-to-full-stack-developers/"
@@ -2621,6 +2759,9 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark": [
         "/hello-world/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark": [
+        "/hot-linking-to-lines-in-github/"
       ]
     },
     "connections": {
