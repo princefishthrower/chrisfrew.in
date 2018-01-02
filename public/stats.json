@@ -20,6 +20,14 @@
       "path---laptop-stickers-21d88efa5ae67379003a.js",
       "path---laptop-stickers-21d88efa5ae67379003a.js.map"
     ],
+    "path---debugging-abap-with-a-sap-shortcut": [
+      "path---debugging-abap-with-a-sap-shortcut-b9b9d28a011a3483e80a.js",
+      "path---debugging-abap-with-a-sap-shortcut-b9b9d28a011a3483e80a.js.map"
+    ],
+    "path---dropdowns-in-readmes": [
+      "path---dropdowns-in-readmes-7e77ac73a90d0798971b.js",
+      "path---dropdowns-in-readmes-7e77ac73a90d0798971b.js.map"
+    ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
@@ -28,17 +36,25 @@
       "component---src-templates-blog-post-js-1252a4a984c3cde99dd4.js",
       "component---src-templates-blog-post-js-1252a4a984c3cde99dd4.js.map"
     ],
+    "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-519583f74de06c9888a9.js",
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-519583f74de06c9888a9.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-cf8334b00e489b6c67aa.js",
       "component---src-layouts-index-js-cf8334b00e489b6c67aa.js.map"
     ],
     "path---index": [
-      "path---index-e2359737452804295ac2.js",
-      "path---index-e2359737452804295ac2.js.map"
+      "path---index-4101ef90da18ce361a7b.js",
+      "path---index-4101ef90da18ce361a7b.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-d7d8e3449aa0c5e478b1.js",
       "path---hello-world-d7d8e3449aa0c5e478b1.js.map"
+    ],
+    "path---an-npm-christmas-easter-egg": [
+      "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js",
+      "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js.map"
     ],
     "commons": [
       "commons-b9295c1fa34e18bb3199.js",
@@ -55,9 +71,9 @@
       "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js.map"
     ],
     "app": [
-      "app-a88c7012a08a9ac43adc.js",
+      "app-a907bcc74972b4197070.js",
       "build-js-styles.css",
-      "app-a88c7012a08a9ac43adc.js.map",
+      "app-a907bcc74972b4197070.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

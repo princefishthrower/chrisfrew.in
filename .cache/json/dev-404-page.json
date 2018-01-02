@@ -1,7 +1,7 @@
 {
     "data": {
         "allSitePage": {
-            "totalCount": 8,
+            "totalCount": 12,
             "edges": [
                 {
                     "node": {
@@ -36,6 +36,26 @@
                 {
                     "node": {
                         "path": "/hot-linking-to-lines-in-github/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/an-npm-christmas-easter-egg/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/dropdowns-in-readmes/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/debugging-abap-with-a-sap-shortcut/"
                     }
                 },
                 {

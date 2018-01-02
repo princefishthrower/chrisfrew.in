@@ -26,6 +26,14 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "hot-linking-to-lines-in-github.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/hot-linking-to-lines-in-github.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "an-npm-christmas-easter-egg.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/an-npm-christmas-easter-egg.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "dropdowns-in-readmes.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/dropdowns-in-readmes.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "debugging-abap-with-a-sap-shortcut.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/debugging-abap-with-a-sap-shortcut.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 
