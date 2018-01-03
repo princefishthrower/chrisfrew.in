@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "updatedAt": 1515014394069,
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "185ab38cf4f7ddc7381272546162e7b1",
         "owner": "internal-data-bridge"
       }
     },
@@ -1572,14 +1582,16 @@
         "description": "A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.",
         "siteUrl": "https://chrisfrew.in"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-01-03T18:35:21.567Z",
+      "buildTime": "2018-01-03T14:51:02.793Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "b93dc54d05c8d2e9265650b423559f3a",
+        "contentDigest": "f00b34bc909243eeeacf1b387195e586",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1589,7 +1601,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "66f02786fb2e403b7668c4bdc78173e7",
+        "contentDigest": "669f013c86366d5fa725e01e72056a6b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1597,11 +1609,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 512,
-      "prettySize": "512 B",
-      "modifiedTime": "2018-01-03T18:17:03.700Z",
-      "accessTime": "2018-01-03T18:35:24.300Z",
-      "changeTime": "2018-01-03T18:17:03.700Z",
+      "size": 448,
+      "prettySize": "448 B",
+      "modifiedTime": "2017-12-22T21:56:56.856Z",
+      "accessTime": "2018-01-03T14:51:05.102Z",
+      "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1611,20 +1623,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 16,
+      "nlink": 14,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1515004524299.9746,
-      "mtimeMs": 1515003423700.3237,
-      "ctimeMs": 1515003423700.3237,
+      "atimeMs": 1514991065102.0032,
+      "mtimeMs": 1513979816855.5476,
+      "ctimeMs": 1513979816855.5476,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-01-03T18:35:24.300Z",
-      "mtime": "2018-01-03T18:17:03.700Z",
-      "ctime": "2018-01-03T18:17:03.700Z",
+      "atime": "2018-01-03T14:51:05.102Z",
+      "mtime": "2017-12-22T21:56:56.856Z",
+      "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt absPath of file": {
@@ -1632,7 +1644,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d0db67cbcd9671b06eb7b871cd602fcc",
+        "contentDigest": "d14c44b01c741e9b7eb7cdf8ac7ff123",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1643,7 +1655,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -1661,11 +1673,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1515004524303.8298,
+      "atimeMs": 1514991065106.2744,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -1675,7 +1687,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c66a788a74995c5f6f6764af6772518f",
+        "contentDigest": "8fb53a7749c06b0ffa977924b869ba24",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1686,7 +1698,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1704,11 +1716,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1515004524303.7236,
+      "atimeMs": 1514991065106.2205,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1718,7 +1730,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6d0fc17185842c66857a1c4ec762f027",
+        "contentDigest": "38ab5d4d2aeb76ab1efab0bbaf0ca550",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1729,7 +1741,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -1747,11 +1759,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1515004524303.8616,
+      "atimeMs": 1514991065106.3303,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -1761,7 +1773,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ab5b8e77896c409b23c53b58b6cd7a6c",
+        "contentDigest": "0d87e00171482bad22d2aca65c6498e9",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1772,7 +1784,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -1790,11 +1802,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1515004524303.94,
+      "atimeMs": 1514991065106.3442,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -1804,7 +1816,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1551323e2e94b7d3a815982275e451cb",
+        "contentDigest": "5dca955899ef6247bf0927341f23da75",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1815,7 +1827,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2017-12-18T18:59:56.628Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-18T18:59:56.628Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -1833,11 +1845,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1515004524303.9783,
+      "atimeMs": 1514991065106.3652,
       "mtimeMs": 1513623596627.5898,
       "ctimeMs": 1513623596627.5898,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-18T18:59:56.628Z",
       "ctime": "2017-12-18T18:59:56.628Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -1847,7 +1859,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "34acccd661617f71e0417c52956ca1bd",
+        "contentDigest": "a10383a4db874a751b5c97d8fe8ec848",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1858,7 +1870,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -1876,11 +1888,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1515004524303.947,
+      "atimeMs": 1514991065106.3767,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2413,7 +2425,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8659b652e3e7e35f63018855dbbadf2d",
+        "contentDigest": "7566a2be9680821ced6235f4fc7cd045",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2424,7 +2436,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2442,11 +2454,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1515004524303.9133,
+      "atimeMs": 1514991065106.3962,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2527,7 +2539,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c24686ca24c20e971848770fabd0673f",
+        "contentDigest": "a4d2d6bac5b9b9ff2a920b11ee70efad",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2538,7 +2550,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -2556,11 +2568,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1515004524303.748,
+      "atimeMs": 1514991065106.233,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -2741,7 +2753,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bd974c8eb6f2efe21f8c6822dde4966d",
+        "contentDigest": "07e239e44ad71e1988d08a8b52864072",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2752,7 +2764,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2770,11 +2782,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1515004524303.8496,
+      "atimeMs": 1514991065106.3237,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2855,7 +2867,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0042341cc2f4c39e5067daa2dcfa0498",
+        "contentDigest": "38f87ecbf192fd5ae2ee2c35f4b6a635",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2863,11 +2875,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "extension": "",
-      "size": 448,
-      "prettySize": "448 B",
-      "modifiedTime": "2018-01-03T18:16:55.644Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
-      "changeTime": "2018-01-03T18:16:55.644Z",
+      "size": 352,
+      "prettySize": "352 B",
+      "modifiedTime": "2018-01-02T18:33:07.451Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
+      "changeTime": "2018-01-02T18:33:07.451Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
@@ -2877,159 +2889,21 @@
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 14,
+      "nlink": 11,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1515004524303.7966,
-      "mtimeMs": 1515003415643.6826,
-      "ctimeMs": 1515003415643.6826,
+      "atimeMs": 1514991065106.2693,
+      "mtimeMs": 1514917987450.9229,
+      "ctimeMs": 1514917987450.9229,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-01-03T18:35:24.304Z",
-      "mtime": "2018-01-03T18:16:55.644Z",
-      "ctime": "2018-01-03T18:16:55.644Z",
+      "atime": "2018-01-03T14:51:05.106Z",
+      "mtime": "2018-01-02T18:33:07.451Z",
+      "ctime": "2018-01-02T18:33:07.451Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "3185baf9a83949f8159892ccdb462ae1",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg",
-      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg",
-      "extension": "jpeg",
-      "size": 46852,
-      "prettySize": "46.9 kB",
-      "modifiedTime": "2017-12-22T14:58:19.897Z",
-      "accessTime": "2017-12-22T21:53:20.604Z",
-      "changeTime": "2017-12-22T14:58:38.296Z",
-      "birthTime": "2017-12-22T14:58:19.897Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "base": "co11n-1.jpeg",
-      "ext": ".jpeg",
-      "name": "co11n-1",
-      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "dev": 16777221,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8594513162,
-      "blocks": 96,
-      "atimeMs": 1513979600604.3416,
-      "mtimeMs": 1513954699897.272,
-      "ctimeMs": 1513954718295.5093,
-      "birthtimeMs": 1513954699896.8623,
-      "atime": "2017-12-22T21:53:20.604Z",
-      "mtime": "2017-12-22T14:58:19.897Z",
-      "ctime": "2017-12-22T14:58:38.296Z",
-      "birthtime": "2017-12-22T14:58:19.897Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "db1bc4d71c71cd1dfe6d33830158b2c6",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg",
-      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg",
-      "extension": "jpeg",
-      "size": 36772,
-      "prettySize": "36.8 kB",
-      "modifiedTime": "2017-12-22T14:58:10.218Z",
-      "accessTime": "2017-12-22T21:53:20.604Z",
-      "changeTime": "2017-12-22T14:58:54.815Z",
-      "birthTime": "2017-12-22T14:58:10.217Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "base": "co11n-2.jpeg",
-      "ext": ".jpeg",
-      "name": "co11n-2",
-      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "dev": 16777221,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8594513151,
-      "blocks": 72,
-      "atimeMs": 1513979600604.3367,
-      "mtimeMs": 1513954690217.9375,
-      "ctimeMs": 1513954734814.847,
-      "birthtimeMs": 1513954690217.4617,
-      "atime": "2017-12-22T21:53:20.604Z",
-      "mtime": "2017-12-22T14:58:10.218Z",
-      "ctime": "2017-12-22T14:58:54.815Z",
-      "birthtime": "2017-12-22T14:58:10.217Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "fbfdd9c4bd38fad10e79caffb36fef90",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg",
-      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg",
-      "extension": "jpeg",
-      "size": 9980,
-      "prettySize": "9.98 kB",
-      "modifiedTime": "2017-12-22T15:07:02.700Z",
-      "accessTime": "2017-12-22T21:53:20.604Z",
-      "changeTime": "2017-12-22T15:07:02.797Z",
-      "birthTime": "2017-12-22T15:07:02.700Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "base": "error-test-frame.jpeg",
-      "ext": ".jpeg",
-      "name": "error-test-frame",
-      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "dev": 16777221,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8594514068,
-      "blocks": 24,
-      "atimeMs": 1513979600604.332,
-      "mtimeMs": 1513955222700.2063,
-      "ctimeMs": 1513955222796.9067,
-      "birthtimeMs": 1513955222700.0208,
-      "atime": "2017-12-22T21:53:20.604Z",
-      "mtime": "2017-12-22T15:07:02.700Z",
-      "ctime": "2017-12-22T15:07:02.797Z",
-      "birthtime": "2017-12-22T15:07:02.700Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file": {
       "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file",
@@ -3077,92 +2951,6 @@
       "ctime": "2018-01-03T18:34:48.765Z",
       "birthtime": "2017-12-20T19:30:39.425Z"
     },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file",
-      "children": [
-        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "be1d226058c78f355eb1b74fb4aaad43",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg",
-      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg",
-      "extension": "jpeg",
-      "size": 13534,
-      "prettySize": "13.5 kB",
-      "modifiedTime": "2017-12-22T15:17:40.270Z",
-      "accessTime": "2017-12-22T21:53:20.604Z",
-      "changeTime": "2017-12-22T15:17:40.366Z",
-      "birthTime": "2017-12-22T15:17:40.270Z",
-      "root": "/",
-      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "base": "test-formula.jpeg",
-      "ext": ".jpeg",
-      "name": "test-formula",
-      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
-      "dev": 16777221,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 8594515257,
-      "blocks": 32,
-      "atimeMs": 1513979600604.327,
-      "mtimeMs": 1513955860269.7595,
-      "ctimeMs": 1513955860365.8174,
-      "birthtimeMs": 1513955860269.599,
-      "atime": "2017-12-22T21:53:20.604Z",
-      "mtime": "2017-12-22T15:17:40.270Z",
-      "ctime": "2017-12-22T15:17:40.366Z",
-      "birthtime": "2017-12-22T15:17:40.270Z"
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file >> ImageSharp": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file",
-      "internal": {
-        "contentDigest": "3185baf9a83949f8159892ccdb462ae1",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file >> ImageSharp": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpeg absPath of file",
-      "internal": {
-        "contentDigest": "db1bc4d71c71cd1dfe6d33830158b2c6",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file >> ImageSharp": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpeg absPath of file",
-      "internal": {
-        "contentDigest": "fbfdd9c4bd38fad10e79caffb36fef90",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file >> ImageSharp": {
-      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file",
-      "internal": {
-        "contentDigest": "be1d226058c78f355eb1b74fb4aaad43",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file >>> MarkdownRemark",
       "children": [],
@@ -3193,7 +2981,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3e3e95ae9838d0fb16b9653b26bdccc2",
+        "contentDigest": "18bfa515826f1eb7211c7a491ec4f4fe",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -3204,7 +2992,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
+      "accessTime": "2018-01-03T14:51:05.106Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -3222,11 +3010,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1515004524303.7415,
+      "atimeMs": 1514991065106.287,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-01-03T18:35:24.304Z",
+      "atime": "2018-01-03T14:51:05.106Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -3526,12 +3314,286 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "SitePage /a-toast-to-full-stack-developers/": {
+      "layout": "index",
+      "jsonName": "a-toast-to-full-stack-developers.json",
+      "internalComponentName": "ComponentAToastToFullStackDevelopers",
+      "path": "/a-toast-to-full-stack-developers/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/a-toast-to-full-stack-developers/"
+      },
+      "updatedAt": 1515014394073,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /a-toast-to-full-stack-developers/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cad6f73e161e9dfce189fb24ddb8abc0",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /final-say-bitcoin/": {
+      "layout": "index",
+      "jsonName": "final-say-bitcoin.json",
+      "internalComponentName": "ComponentFinalSayBitcoin",
+      "path": "/final-say-bitcoin/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/final-say-bitcoin/"
+      },
+      "updatedAt": 1515014394074,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /final-say-bitcoin/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "609ae47a6e2ad8414e76349829c721c0",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /laptop-stickers/": {
+      "layout": "index",
+      "jsonName": "laptop-stickers.json",
+      "internalComponentName": "ComponentLaptopStickers",
+      "path": "/laptop-stickers/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/laptop-stickers/"
+      },
+      "updatedAt": 1515014394074,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /laptop-stickers/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "eb9a24500c012b00dd58a0498d946b05",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /ethereum-developers-toolbelt/": {
+      "layout": "index",
+      "jsonName": "ethereum-developers-toolbelt.json",
+      "internalComponentName": "ComponentEthereumDevelopersToolbelt",
+      "path": "/ethereum-developers-toolbelt/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/ethereum-developers-toolbelt/"
+      },
+      "updatedAt": 1515014394075,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /ethereum-developers-toolbelt/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d31ae7f70424a616ea770a4747804052",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sending-windows-commands-from-sap-abap/": {
+      "layout": "index",
+      "jsonName": "sending-windows-commands-from-sap-abap.json",
+      "internalComponentName": "ComponentSendingWindowsCommandsFromSapAbap",
+      "path": "/sending-windows-commands-from-sap-abap/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/sending-windows-commands-from-sap-abap/"
+      },
+      "updatedAt": 1515014394075,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /sending-windows-commands-from-sap-abap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6ed7c70a5c2090f31a51a93b5944d777",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /hello-world/": {
+      "layout": "index",
+      "jsonName": "hello-world.json",
+      "internalComponentName": "ComponentHelloWorld",
+      "path": "/hello-world/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/hello-world/"
+      },
+      "updatedAt": 1515014394075,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /hello-world/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "92bf7c61f7a68701d0719353b4814d2d",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /hot-linking-to-lines-in-github/": {
+      "layout": "index",
+      "jsonName": "hot-linking-to-lines-in-github.json",
+      "internalComponentName": "ComponentHotLinkingToLinesInGithub",
+      "path": "/hot-linking-to-lines-in-github/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/hot-linking-to-lines-in-github/"
+      },
+      "updatedAt": 1515014394076,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /hot-linking-to-lines-in-github/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c7ee27dd99a9cb6cd2f68c6ff20a5473",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /an-npm-christmas-easter-egg/": {
+      "layout": "index",
+      "jsonName": "an-npm-christmas-easter-egg.json",
+      "internalComponentName": "ComponentAnNpmChristmasEasterEgg",
+      "path": "/an-npm-christmas-easter-egg/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/an-npm-christmas-easter-egg/"
+      },
+      "updatedAt": 1515014394076,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /an-npm-christmas-easter-egg/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5a1dc1eb1eac55c1d85b8c22c7aace30",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /dropdowns-in-readmes/": {
+      "layout": "index",
+      "jsonName": "dropdowns-in-readmes.json",
+      "internalComponentName": "ComponentDropdownsInReadmes",
+      "path": "/dropdowns-in-readmes/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/dropdowns-in-readmes/"
+      },
+      "updatedAt": 1515014394076,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /dropdowns-in-readmes/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "08bd315aca3bf990200cac8973da0373",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/": {
+      "layout": "index",
+      "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
+      "internalComponentName": "ComponentCalculatingActivityAmountsForProcessAndProductionOrdersWithSapAbap",
+      "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+      },
+      "updatedAt": 1515014394077,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4def805f937a5252077c950f64cf49be",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /debugging-abap-with-a-sap-shortcut/": {
+      "layout": "index",
+      "jsonName": "debugging-abap-with-a-sap-shortcut.json",
+      "internalComponentName": "ComponentDebuggingAbapWithASapShortcut",
+      "path": "/debugging-abap-with-a-sap-shortcut/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/debugging-abap-with-a-sap-shortcut/"
+      },
+      "updatedAt": 1515014394077,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /debugging-abap-with-a-sap-shortcut/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "742d5f61dff4ec6914fb76900bfa5ec5",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "updatedAt": 1514991065557,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "87f12379e15ba42ef85c8a1ebc955887",
+        "owner": "internal-data-bridge"
+      }
+    },
     "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap absPath of file": {
       "id": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "19a87f5bd7b79995848402882bcc1f86",
+        "contentDigest": "0a21dd24be3a27d52f9b617f22cde0a0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -3539,11 +3601,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap",
       "relativePath": "detailed-look-at-bdc-in-abap",
       "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-01-03T18:35:24.304Z",
-      "changeTime": "2018-01-03T17:29:45.419Z",
+      "size": 64,
+      "prettySize": "64 B",
+      "modifiedTime": "2018-01-03T17:29:37.901Z",
+      "accessTime": "2018-01-03T17:29:38.120Z",
+      "changeTime": "2018-01-03T17:29:37.901Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
@@ -3553,20 +3615,20 @@
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 3,
+      "nlink": 2,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1515004524303.776,
-      "mtimeMs": 1515000585418.958,
-      "ctimeMs": 1515000585418.958,
+      "atimeMs": 1515000578119.573,
+      "mtimeMs": 1515000577901.0742,
+      "ctimeMs": 1515000577901.0742,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-01-03T18:35:24.304Z",
-      "mtime": "2018-01-03T17:29:45.419Z",
-      "ctime": "2018-01-03T17:29:45.419Z",
+      "atime": "2018-01-03T17:29:38.120Z",
+      "mtime": "2018-01-03T17:29:37.901Z",
+      "ctime": "2018-01-03T17:29:37.901Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file": {
@@ -3638,6 +3700,29 @@
       "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md",
       "fields": {
         "slug": "/detailed-look-at-bdc-in-abap/"
+      }
+    },
+    "SitePage /detailed-look-at-bdc-in-abap/": {
+      "layout": "index",
+      "jsonName": "detailed-look-at-bdc-in-abap.json",
+      "internalComponentName": "ComponentDetailedLookAtBdcInAbap",
+      "path": "/detailed-look-at-bdc-in-abap/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/detailed-look-at-bdc-in-abap/"
+      },
+      "updatedAt": 1515014394078,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /detailed-look-at-bdc-in-abap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1ef6c2507ebca07c6993369be241afde",
+        "owner": "internal-data-bridge"
       }
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/remove_lines.pl absPath of file": {
@@ -3816,322 +3901,228 @@
       "ctime": "2018-01-03T18:17:03.701Z",
       "birthtime": "2018-01-03T18:17:03.700Z"
     },
-    "SitePage /offline-plugin-app-shell-fallback/": {
-      "layout": "index",
-      "jsonName": "offline-plugin-app-shell-fallback.json",
-      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
-      "path": "/offline-plugin-app-shell-fallback/",
-      "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
-      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
-      "context": {},
-      "updatedAt": 1515004524701,
-      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
-      "pluginCreatorId": "Plugin gatsby-plugin-offline",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
-      "id": "SitePage /offline-plugin-app-shell-fallback/",
-      "parent": "SOURCE",
-      "children": [],
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "814953dbcce1f15d4ecd217c167ca733",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /a-toast-to-full-stack-developers/": {
-      "layout": "index",
-      "jsonName": "a-toast-to-full-stack-developers.json",
-      "internalComponentName": "ComponentAToastToFullStackDevelopers",
-      "path": "/a-toast-to-full-stack-developers/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/a-toast-to-full-stack-developers/"
+        "contentDigest": "be1d226058c78f355eb1b74fb4aaad43",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
       },
-      "updatedAt": 1515004524717,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /a-toast-to-full-stack-developers/",
-      "parent": "SOURCE",
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg",
+      "extension": "jpg",
+      "size": 13534,
+      "prettySize": "13.5 kB",
+      "modifiedTime": "2017-12-22T15:17:40.270Z",
+      "accessTime": "2018-01-03T21:19:28.699Z",
+      "changeTime": "2018-01-03T21:19:34.452Z",
+      "birthTime": "2017-12-22T15:17:40.270Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "test-formula.jpg",
+      "ext": ".jpg",
+      "name": "test-formula",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594515257,
+      "blocks": 32,
+      "atimeMs": 1515014368698.579,
+      "mtimeMs": 1513955860269.7595,
+      "ctimeMs": 1515014374451.856,
+      "birthtimeMs": 1513955860269.599,
+      "atime": "2018-01-03T21:19:28.699Z",
+      "mtime": "2017-12-22T15:17:40.270Z",
+      "ctime": "2018-01-03T21:19:34.452Z",
+      "birthtime": "2017-12-22T15:17:40.270Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file >> ImageSharp",
       "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpg absPath of file",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "ae18dc0a7688ce4173a22c2ccda10b72",
-        "owner": "internal-data-bridge"
+        "contentDigest": "be1d226058c78f355eb1b74fb4aaad43",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
-    "SitePage /final-say-bitcoin/": {
-      "layout": "index",
-      "jsonName": "final-say-bitcoin.json",
-      "internalComponentName": "ComponentFinalSayBitcoin",
-      "path": "/final-say-bitcoin/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/final-say-bitcoin/"
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3185baf9a83949f8159892ccdb462ae1",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
       },
-      "updatedAt": 1515004524718,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /final-say-bitcoin/",
-      "parent": "SOURCE",
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg",
+      "extension": "jpg",
+      "size": 46852,
+      "prettySize": "46.9 kB",
+      "modifiedTime": "2017-12-22T14:58:19.897Z",
+      "accessTime": "2018-01-03T18:35:24.331Z",
+      "changeTime": "2018-01-03T21:19:41.554Z",
+      "birthTime": "2017-12-22T14:58:19.897Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "co11n-1.jpg",
+      "ext": ".jpg",
+      "name": "co11n-1",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594513162,
+      "blocks": 96,
+      "atimeMs": 1515004524330.5786,
+      "mtimeMs": 1513954699897.272,
+      "ctimeMs": 1515014381553.9187,
+      "birthtimeMs": 1513954699896.8623,
+      "atime": "2018-01-03T18:35:24.331Z",
+      "mtime": "2017-12-22T14:58:19.897Z",
+      "ctime": "2018-01-03T21:19:41.554Z",
+      "birthtime": "2017-12-22T14:58:19.897Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file >> ImageSharp",
       "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpg absPath of file",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "c47ec6779e1dd29474f4674abaa50c30",
-        "owner": "internal-data-bridge"
+        "contentDigest": "3185baf9a83949f8159892ccdb462ae1",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
-    "SitePage /laptop-stickers/": {
-      "layout": "index",
-      "jsonName": "laptop-stickers.json",
-      "internalComponentName": "ComponentLaptopStickers",
-      "path": "/laptop-stickers/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/laptop-stickers/"
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "db1bc4d71c71cd1dfe6d33830158b2c6",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
       },
-      "updatedAt": 1515004524718,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /laptop-stickers/",
-      "parent": "SOURCE",
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg",
+      "extension": "jpg",
+      "size": 36772,
+      "prettySize": "36.8 kB",
+      "modifiedTime": "2017-12-22T14:58:10.218Z",
+      "accessTime": "2018-01-03T18:35:24.331Z",
+      "changeTime": "2018-01-03T21:19:47.241Z",
+      "birthTime": "2017-12-22T14:58:10.217Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "co11n-2.jpg",
+      "ext": ".jpg",
+      "name": "co11n-2",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594513151,
+      "blocks": 72,
+      "atimeMs": 1515004524330.5745,
+      "mtimeMs": 1513954690217.9375,
+      "ctimeMs": 1515014387241.4895,
+      "birthtimeMs": 1513954690217.4617,
+      "atime": "2018-01-03T18:35:24.331Z",
+      "mtime": "2017-12-22T14:58:10.218Z",
+      "ctime": "2018-01-03T21:19:47.241Z",
+      "birthtime": "2017-12-22T14:58:10.217Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file >> ImageSharp",
       "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-2.jpg absPath of file",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "2c9580876cc8bb85afa1260cf5789cb0",
-        "owner": "internal-data-bridge"
+        "contentDigest": "db1bc4d71c71cd1dfe6d33830158b2c6",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
-    "SitePage /ethereum-developers-toolbelt/": {
-      "layout": "index",
-      "jsonName": "ethereum-developers-toolbelt.json",
-      "internalComponentName": "ComponentEthereumDevelopersToolbelt",
-      "path": "/ethereum-developers-toolbelt/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/ethereum-developers-toolbelt/"
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fbfdd9c4bd38fad10e79caffb36fef90",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
       },
-      "updatedAt": 1515004524719,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /ethereum-developers-toolbelt/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "5cec2070feadc72068b0bad0894d40b5",
-        "owner": "internal-data-bridge"
-      }
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg",
+      "extension": "jpg",
+      "size": 9980,
+      "prettySize": "9.98 kB",
+      "modifiedTime": "2017-12-22T15:07:02.700Z",
+      "accessTime": "2018-01-03T18:35:24.331Z",
+      "changeTime": "2018-01-03T21:19:53.850Z",
+      "birthTime": "2017-12-22T15:07:02.700Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "error-test-frame.jpg",
+      "ext": ".jpg",
+      "name": "error-test-frame",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8594514068,
+      "blocks": 24,
+      "atimeMs": 1515004524330.5657,
+      "mtimeMs": 1513955222700.2063,
+      "ctimeMs": 1515014393850.1816,
+      "birthtimeMs": 1513955222700.0208,
+      "atime": "2018-01-03T18:35:24.331Z",
+      "mtime": "2017-12-22T15:07:02.700Z",
+      "ctime": "2018-01-03T21:19:53.850Z",
+      "birthtime": "2017-12-22T15:07:02.700Z"
     },
-    "SitePage /sending-windows-commands-from-sap-abap/": {
-      "layout": "index",
-      "jsonName": "sending-windows-commands-from-sap-abap.json",
-      "internalComponentName": "ComponentSendingWindowsCommandsFromSapAbap",
-      "path": "/sending-windows-commands-from-sap-abap/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/sending-windows-commands-from-sap-abap/"
-      },
-      "updatedAt": 1515004524719,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /sending-windows-commands-from-sap-abap/",
-      "parent": "SOURCE",
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file >> ImageSharp",
       "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/error-test-frame.jpg absPath of file",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "4cf1bfeacae998bd549200da08a0368b",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /hello-world/": {
-      "layout": "index",
-      "jsonName": "hello-world.json",
-      "internalComponentName": "ComponentHelloWorld",
-      "path": "/hello-world/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/hello-world/"
-      },
-      "updatedAt": 1515004524719,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /hello-world/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "dd8c69697cb7eaed4d925616e4eec6c1",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /hot-linking-to-lines-in-github/": {
-      "layout": "index",
-      "jsonName": "hot-linking-to-lines-in-github.json",
-      "internalComponentName": "ComponentHotLinkingToLinesInGithub",
-      "path": "/hot-linking-to-lines-in-github/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/hot-linking-to-lines-in-github/"
-      },
-      "updatedAt": 1515004524720,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /hot-linking-to-lines-in-github/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "8f82fe91beaf32f43be915c50b41b2c8",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /an-npm-christmas-easter-egg/": {
-      "layout": "index",
-      "jsonName": "an-npm-christmas-easter-egg.json",
-      "internalComponentName": "ComponentAnNpmChristmasEasterEgg",
-      "path": "/an-npm-christmas-easter-egg/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/an-npm-christmas-easter-egg/"
-      },
-      "updatedAt": 1515004524720,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /an-npm-christmas-easter-egg/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "4c7600028a34350ee169a78dc5aff546",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /dropdowns-in-readmes/": {
-      "layout": "index",
-      "jsonName": "dropdowns-in-readmes.json",
-      "internalComponentName": "ComponentDropdownsInReadmes",
-      "path": "/dropdowns-in-readmes/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/dropdowns-in-readmes/"
-      },
-      "updatedAt": 1515004524720,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /dropdowns-in-readmes/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "de324813db80867ad419b6157bfb46f9",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/": {
-      "layout": "index",
-      "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
-      "internalComponentName": "ComponentCalculatingActivityAmountsForProcessAndProductionOrdersWithSapAbap",
-      "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
-      },
-      "updatedAt": 1515004524721,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ccbe2ee7da3b5949382849445d2e8f11",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /debugging-abap-with-a-sap-shortcut/": {
-      "layout": "index",
-      "jsonName": "debugging-abap-with-a-sap-shortcut.json",
-      "internalComponentName": "ComponentDebuggingAbapWithASapShortcut",
-      "path": "/debugging-abap-with-a-sap-shortcut/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/debugging-abap-with-a-sap-shortcut/"
-      },
-      "updatedAt": 1515004524721,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /debugging-abap-with-a-sap-shortcut/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "fee36efe7dc7f67ecb2105820b2e7877",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /detailed-look-at-bdc-in-abap/": {
-      "layout": "index",
-      "jsonName": "detailed-look-at-bdc-in-abap.json",
-      "internalComponentName": "ComponentDetailedLookAtBdcInAbap",
-      "path": "/detailed-look-at-bdc-in-abap/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "context": {
-        "slug": "/detailed-look-at-bdc-in-abap/"
-      },
-      "updatedAt": 1515004524721,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
-      "id": "SitePage /detailed-look-at-bdc-in-abap/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "3697ccb761fbc14b81f8694975e38a35",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /": {
-      "layout": "index",
-      "jsonName": "index.json",
-      "internalComponentName": "ComponentIndex",
-      "path": "/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
-      "componentChunkName": "component---src-pages-index-js",
-      "context": {},
-      "updatedAt": 1515004524740,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
-      "id": "SitePage /",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "fe00fa75871437942380d5407e6dc119",
-        "owner": "internal-data-bridge"
+        "contentDigest": "fbfdd9c4bd38fad10e79caffb36fef90",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     }
   },
