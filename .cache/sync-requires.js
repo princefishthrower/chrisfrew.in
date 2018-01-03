@@ -34,6 +34,8 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "debugging-abap-with-a-sap-shortcut.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/debugging-abap-with-a-sap-shortcut.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "detailed-look-at-bdc-in-abap.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/detailed-look-at-bdc-in-abap.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

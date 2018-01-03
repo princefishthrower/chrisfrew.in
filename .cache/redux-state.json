@@ -1574,12 +1574,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-01-02T19:25:16.917Z",
+      "buildTime": "2018-01-03T18:35:21.567Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "1e602b163ed172608f0fcfbda1f7bd7f",
+        "contentDigest": "b93dc54d05c8d2e9265650b423559f3a",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1589,7 +1589,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "42205de420b88f2c54d7369173be6d12",
+        "contentDigest": "66f02786fb2e403b7668c4bdc78173e7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1597,11 +1597,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 448,
-      "prettySize": "448 B",
-      "modifiedTime": "2017-12-22T21:56:56.856Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
-      "changeTime": "2017-12-22T21:56:56.856Z",
+      "size": 512,
+      "prettySize": "512 B",
+      "modifiedTime": "2018-01-03T18:17:03.700Z",
+      "accessTime": "2018-01-03T18:35:24.300Z",
+      "changeTime": "2018-01-03T18:17:03.700Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1611,20 +1611,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 14,
+      "nlink": 16,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1514921120552.7146,
-      "mtimeMs": 1513979816855.5476,
-      "ctimeMs": 1513979816855.5476,
+      "atimeMs": 1515004524299.9746,
+      "mtimeMs": 1515003423700.3237,
+      "ctimeMs": 1515003423700.3237,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-01-02T19:25:20.553Z",
-      "mtime": "2017-12-22T21:56:56.856Z",
-      "ctime": "2017-12-22T21:56:56.856Z",
+      "atime": "2018-01-03T18:35:24.300Z",
+      "mtime": "2018-01-03T18:17:03.700Z",
+      "ctime": "2018-01-03T18:17:03.700Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/ethereum-developers-toolbelt absPath of file": {
@@ -1632,7 +1632,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d6628a8ea91b8be8a4d90513b20fc2d1",
+        "contentDigest": "d0db67cbcd9671b06eb7b871cd602fcc",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1643,7 +1643,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -1661,11 +1661,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1514921120553.0203,
+      "atimeMs": 1515004524303.8298,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -1675,7 +1675,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5767433035ed18418996a2c8645cb98a",
+        "contentDigest": "c66a788a74995c5f6f6764af6772518f",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1686,7 +1686,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1704,11 +1704,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1514921120552.8354,
+      "atimeMs": 1515004524303.7236,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1718,7 +1718,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1053980004abb93efb0e1d40a7f8c48a",
+        "contentDigest": "6d0fc17185842c66857a1c4ec762f027",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1729,7 +1729,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -1747,11 +1747,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1514921120553.0396,
+      "atimeMs": 1515004524303.8616,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -1761,7 +1761,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "74b76611764e80562e7da74ef5c6a1b2",
+        "contentDigest": "ab5b8e77896c409b23c53b58b6cd7a6c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1772,7 +1772,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -1790,11 +1790,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1514921120553.0723,
+      "atimeMs": 1515004524303.94,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -1804,7 +1804,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "be5701cd92c9bf87a4ed67982c316802",
+        "contentDigest": "1551323e2e94b7d3a815982275e451cb",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1815,7 +1815,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2017-12-18T18:59:56.628Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-18T18:59:56.628Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -1833,11 +1833,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1514921120553.122,
+      "atimeMs": 1515004524303.9783,
       "mtimeMs": 1513623596627.5898,
       "ctimeMs": 1513623596627.5898,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-18T18:59:56.628Z",
       "ctime": "2017-12-18T18:59:56.628Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -1847,7 +1847,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a4b9b30c72fa9635b20499379ebf4e5c",
+        "contentDigest": "34acccd661617f71e0417c52956ca1bd",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1858,7 +1858,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -1876,11 +1876,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1514921120553.1511,
+      "atimeMs": 1515004524303.947,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2413,7 +2413,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9fc9754192796f1a06f538167ddb354b",
+        "contentDigest": "8659b652e3e7e35f63018855dbbadf2d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2424,7 +2424,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2442,11 +2442,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1514921120553.1038,
+      "atimeMs": 1515004524303.9133,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2527,7 +2527,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2707ed8664125a2b84674168bbe12be2",
+        "contentDigest": "c24686ca24c20e971848770fabd0673f",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2538,7 +2538,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -2556,11 +2556,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1514921120552.8853,
+      "atimeMs": 1515004524303.748,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -2741,7 +2741,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "938c3f02fb02cb0a903d759999b7e6ff",
+        "contentDigest": "bd974c8eb6f2efe21f8c6822dde4966d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2752,7 +2752,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2770,11 +2770,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1514921120552.9873,
+      "atimeMs": 1515004524303.8496,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2855,7 +2855,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1c473b4155bcde4020615a1f336ec0d7",
+        "contentDigest": "0042341cc2f4c39e5067daa2dcfa0498",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2863,11 +2863,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "extension": "",
-      "size": 352,
-      "prettySize": "352 B",
-      "modifiedTime": "2018-01-02T18:33:07.451Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
-      "changeTime": "2018-01-02T18:33:07.451Z",
+      "size": 448,
+      "prettySize": "448 B",
+      "modifiedTime": "2018-01-03T18:16:55.644Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
+      "changeTime": "2018-01-03T18:16:55.644Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
@@ -2877,20 +2877,20 @@
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 11,
+      "nlink": 14,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1514921120552.9304,
-      "mtimeMs": 1514917987450.9229,
-      "ctimeMs": 1514917987450.9229,
+      "atimeMs": 1515004524303.7966,
+      "mtimeMs": 1515003415643.6826,
+      "ctimeMs": 1515003415643.6826,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-01-02T19:25:20.553Z",
-      "mtime": "2018-01-02T18:33:07.451Z",
-      "ctime": "2018-01-02T18:33:07.451Z",
+      "atime": "2018-01-03T18:35:24.304Z",
+      "mtime": "2018-01-03T18:16:55.644Z",
+      "ctime": "2018-01-03T18:16:55.644Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/co11n-1.jpeg absPath of file": {
@@ -3038,7 +3038,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6c429eacdbc7c3eff38e5f369266f76d",
+        "contentDigest": "4cc84d1ef6f34590aaaa2485f7bdf52c",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3047,11 +3047,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md",
       "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md",
       "extension": "md",
-      "size": 20966,
-      "prettySize": "21 kB",
-      "modifiedTime": "2018-01-02T19:24:55.975Z",
-      "accessTime": "2018-01-02T19:24:56.185Z",
-      "changeTime": "2018-01-02T19:24:55.975Z",
+      "size": 46984,
+      "prettySize": "47 kB",
+      "modifiedTime": "2018-01-03T18:34:48.765Z",
+      "accessTime": "2018-01-03T18:34:49.003Z",
+      "changeTime": "2018-01-03T18:34:48.765Z",
       "birthTime": "2017-12-20T19:30:39.425Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
@@ -3068,13 +3068,13 @@
       "blksize": 4194304,
       "ino": 8594400836,
       "blocks": 0,
-      "atimeMs": 1514921096184.548,
-      "mtimeMs": 1514921095974.5645,
-      "ctimeMs": 1514921095974.5645,
+      "atimeMs": 1515004489002.9053,
+      "mtimeMs": 1515004488765.261,
+      "ctimeMs": 1515004488765.261,
       "birthtimeMs": 1513798239424.5288,
-      "atime": "2018-01-02T19:24:56.185Z",
-      "mtime": "2018-01-02T19:24:55.975Z",
-      "ctime": "2018-01-02T19:24:55.975Z",
+      "atime": "2018-01-03T18:34:49.003Z",
+      "mtime": "2018-01-03T18:34:48.765Z",
+      "ctime": "2018-01-03T18:34:48.765Z",
       "birthtime": "2017-12-20T19:30:39.425Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/test-formula.jpeg absPath of file": {
@@ -3168,8 +3168,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2017-01-03\"\ndraft: true\n---\n\n# First off, Congratulations!\n## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations in SAP ABAP! 😱😱😱\n## I hope you use this post to maximum effectiveness, because I wasted four days looking for an answer. 😄\n\n## The Problem\nLet's jump write into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module `BAPI_PRODORDCONF_GET_TT_PROP`:\n\n```abap\nCALL FUNCTION 'BAPI_PRODORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nLikewise, there is a very similiar `BAPI_PROCORDCONF_GET_TT_PROP` for process orders:\n\n```abap\nCALL FUNCTION 'BAPI_PROCORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nPretty similar. However, as part of my indentured servitude as a full time employee and doing four days of searching, I learned that many developers had issues with these function modules, namely that, while things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs, the activity confirmation amount were not always calculated, which are a very important part of the calculation of the confirmation!\n\nSo, while the _reason_ the two functions wouldn't _always_ produce activity confirmation amounts automatically, I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.\n\nThrough SAP GUI in transaction CO11N, determining system-proposed confirmation amounts is easy enough by telling the system to calculate the formula over the work area<sup><a href=\"#footnote-3\">3</a></sup>. My struggle was finding the programmatic way to do this in ABAP.\n\n## The Calculation\n\nThe problem with production planning is that even with very strong ABAP programming experience, the levels and steps with the production planning module can quickly elevate to high complexity program procedures. I have to give credit where credit is due, and received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result.\n\nAnyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the operation/activity calculation is not with the operation itself, but with the work center _behind_ the operation. And of course, in transaction CR03 (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:\n\n![GUI testing calculation](test-formula.jpeg)\n\nThis was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN a the function that does exactly that GUI calculation! It's called `CR_WORKCENTER_FORMULA_CALC`!\n\nLet's head on over to transaction SE37 and test it ourselves!\n\n![Yep, that's SAP](error-test-frame.jpeg)\n\n😑😑😑 shit... SAP, you had one job to do!\n\nFine. We'll do it ourselves. We set a breakpoint in the first line of `CR_WORKCENTER_FORMULA_CALC`:\n\n![The first possible line in the function we can breakpoint](function-breakpoint.png)\n\nand in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src=\"return.png\"/> and...\n\n🙏 Violá! 🙏 We've found how `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!\n\n![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)\n\n(For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)\n\n![Calling program details](form-program.png)\n\nSo what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values<sup><a href=\"#footnote-1\">1</a></sup>  - SAP is by default looping over all of them.\n\nSo, they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), a list of our 4 default values (`vgw`), and the date (`date`).\n\nIn turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting<sup><a href=\"#footnote-4\">4</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are many other IMPORTING and EXPORTING parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.\n\nWe then finally carry over this converted `lv_output` over to the `conf_activity` field for `lt_timetickets`, doing this for all 1-6 `conf_activity`'s:\n\n```abap\nCASE sy-index.\n  WHEN 1.\n    ls_timetickets-conf_activity1  = lv_output.\n    ls_timetickets-conf_acti_unit1 = 'MIN'.\n  WHEN 2.\n    ls_timetickets-conf_activity2  = lv_output.\n    ls_timetickets-conf_acti_unit2 = 'MIN'.\n  WHEN 3.\n    ls_timetickets-conf_activity3  = lv_output.\n    ls_timetickets-conf_acti_unit3 = 'MIN'.\n  WHEN 4.\n    ls_timetickets-conf_activity4  = lv_output.\n    ls_timetickets-conf_acti_unit4 = 'MIN'.\n  WHEN 5.\n    ls_timetickets-conf_activity5  = lv_output.\n    ls_timetickets-conf_acti_unit5 = 'MIN'.\n  WHEN 6.\n    ls_timetickets-conf_activity6  = lv_output.\n    ls_timetickets-conf_acti_unit6 = 'MIN'.\nENDCASE.\n```\n\n## Production Orders\nIn summary, the full code looks like this:\n\n```abap\nDATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n           ls_filters           LIKE LINE OF lt_filters,\n           lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_plant_so          LIKE LINE OF lt_select_options,\n           ls_orderid_so        LIKE LINE OF lt_select_options,\n           ls_fin_conf_so       LIKE LINE OF lt_select_options,\n           ls_dev_reason_so     LIKE LINE OF lt_select_options,\n           ls_conf_text_so      LIKE LINE OF lt_select_options,\n           ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n           ls_yield_so          LIKE LINE OF lt_select_options,\n           ls_scrap_so          LIKE LINE OF lt_select_options,\n           lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_stg_loc           LIKE LINE OF lt_stg_loc,\n           lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_batch             LIKE LINE OF lt_batch,\n           lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_reserv_no         LIKE LINE OF lt_reserv_no,\n           lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_res_item          LIKE LINE OF lt_res_item,\n           lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n           lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_uom         LIKE LINE OF lt_entry_uom,\n           ls_return            TYPE bapiret1,\n           lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n           ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n           lv_reserv_lines      TYPE int4,\n           lv_index             TYPE int4 VALUE 1,\n           lt_detail_return     TYPE TABLE OF bapi_coru_return,\n           ls_detail_return     LIKE LINE OF lt_detail_return,\n           lv_log_handle        TYPE balloghndl,\n           lv_message           TYPE char200,\n           lo_logger            TYPE REF TO zcl_bc_app_logger,\n           es_entityset         LIKE LINE OF et_entityset,\n           lv_error_message     TYPE bapi_msg,\n           ls_order_objects     TYPE bapi_pp_order_objects,\n           lt_operation         TYPE TABLE OF bapi_order_operation1,\n           ls_operation         LIKE LINE OF lt_operation,\n           lt_timetickets       TYPE TABLE OF  bapi_pp_timeticket,\n           ls_timetickets       LIKE LINE OF lt_timetickets,\n           lv_number            TYPE bapi_order_key-order_number,\n           ls_propose           TYPE bapi_pp_conf_prop,\n           ls_op                TYPE rcrop,\n           ls_vgw               TYPE rcrvgw,\n           ls_afvc              TYPE afvc,\n           ls_plpo              TYPE plpo,\n           lv_value_fix         TYPE p DECIMALS 4,\n           lv_value_var         TYPE p DECIMALS 4,\n           lv_value             TYPE p DECIMALS 4,\n           lv_unit              TYPE rcrvgw-vge01,\n           lv_output            TYPE p DECIMALS 3.\n\n\" Create goodsmovement structure for all retrograd stuck\n    DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n    DO lv_reserv_lines TIMES.\n      ls_stg_loc = lt_stg_loc[ lv_index ].\n      ls_batch = lt_batch[ lv_index ].\n      ls_reserv_no = lt_reserv_no[ lv_index ].\n      ls_res_item = lt_res_item[ lv_index ].\n      ls_entry_qnt = lt_entry_qnt[ lv_index ].\n      ls_entry_uom = lt_entry_uom[ lv_index ].\n      ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n      ls_goodsmovements-stge_loc = ls_stg_loc-low.\n      ls_goodsmovements-batch = ls_batch-low.\n      ls_goodsmovements-move_type = '261'. \" fixed movement type\n      ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n      ls_goodsmovements-reserv_no = ls_reserv_no-low.\n      ls_goodsmovements-res_item = ls_res_item-low.\n      ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n      ls_goodsmovements-entry_uom = ls_entry_uom-low.\n      APPEND ls_goodsmovements TO lt_goodsmovements.\n      lv_index = lv_index + 1.\n    ENDDO.\n\n    \" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n\n    \" build structures for each step (each operation)\n    LOOP AT lt_operation INTO ls_operation.\n      CLEAR ls_timetickets.\n\n      \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n      SELECT SINGLE * FROM afvc INTO ls_afvc\n        WHERE aufpl = ls_operation-routing_no\n        AND   aplzl = ls_operation-counter.\n\n      \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n      SELECT SINGLE * FROM plpo INTO ls_plpo\n        WHERE plnty EQ ls_afvc-plnty\n        AND plnnr EQ ls_afvc-plnnr\n        AND plnkn EQ ls_afvc-plnkn\n        AND zaehl EQ ls_afvc-zaehl.\n\n      \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n      MOVE-CORRESPONDING ls_plpo TO ls_op.\n      ls_op-mgvrg = ls_yield_so-low.\n      ls_op-meinh = ls_conf_quan_unit_so-low.\n      MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n      DO 6 TIMES. \" for each activity (usually 4 activities here at ospelt, but there can be up to 6 activities total)\n        IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n        OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n        OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n        OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0\n        OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n        OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n          CONTINUE. \" skip and 0 values\n        ENDIF.\n        CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" CHFE 20.12.207 - you can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n          EXPORTING\n            arbid             = ls_afvc-arbid\n            op                = ls_op\n            vgw               = ls_vgw\n            index             = sy-index\n            date              = sy-datum\n          IMPORTING\n            value_fix          = lv_value_fix\n            value_var         = lv_value_var\n            unit              = lv_unit\n          EXCEPTIONS\n            missing_parameter = 1\n            not_found         = 2\n            division_by_zero  = 3\n            OTHERS            = 4.\n        IF sy-subrc <> 0.\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n\n        lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n        \" CHFE 21.12.2017 - convert any 'H' values - then it is EXACTLY like the SAP standard\n        IF lv_unit NE 'MIN'.\n          CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n            EXPORTING\n              input                = lv_value\n              unit_in              = lv_unit\n              unit_out             = 'MIN'\n            IMPORTING\n              output               = lv_output\n            EXCEPTIONS\n              conversion_not_found = 1\n              division_by_zero     = 2\n              input_invalid        = 3\n              output_invalid       = 4\n              overflow              = 5\n              type_invalid         = 6\n              units_missing        = 7\n              unit_in_not_found    = 8\n              unit_out_not_found   = 9\n              OTHERS               = 10.\n          IF sy-subrc <> 0.\n            lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" CHFE 18.07.2017 - add custom message to message log\n            CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n            APPEND es_entityset TO et_entityset.\n          ENDIF.\n        ELSE.\n          lv_output = lv_value. \" copy over MIN value\n        ENDIF.\n\n        CASE sy-index.\n          WHEN 1.\n            ls_timetickets-conf_activity1  = lv_output.\n            ls_timetickets-conf_acti_unit1 = 'MIN'.\n          WHEN 2.\n            ls_timetickets-conf_activity2  = lv_output.\n            ls_timetickets-conf_acti_unit2 = 'MIN'.\n          WHEN 3.\n            ls_timetickets-conf_activity3  = lv_output.\n            ls_timetickets-conf_acti_unit3 = 'MIN'.\n          WHEN 4.\n            ls_timetickets-conf_activity4  = lv_output.\n            ls_timetickets-conf_acti_unit4 = 'MIN'.\n          WHEN 5.\n            ls_timetickets-conf_activity5  = lv_output.\n            ls_timetickets-conf_acti_unit5 = 'MIN'.\n          WHEN 6.\n            ls_timetickets-conf_activity6  = lv_output.\n            ls_timetickets-conf_acti_unit6 = 'MIN'.\n        ENDCASE.\n      ENDDO.\n\n      \" CHFE 05.10.2017 - now build the table to confirm the operations (Vorgänge)\n      ls_timetickets-conf_no     = ls_operation-conf_no.\n      ls_timetickets-orderid     = ls_orderid_so-low.\n      ls_timetickets-sequence    = ls_operation-sequence_no.\n      ls_timetickets-operation   = ls_operation-operation_number.\n      ls_timetickets-work_cntr   = ls_operation-work_center. \" CHFE 18.12.2017 - resource for processauftrage), logdate, logtime, and posting date added to the table\n      ls_timetickets-plant       = ls_plant_so-low.\n      ls_timetickets-logdate     = sy-datlo.\n      ls_timetickets-logtime     = sy-timlo.\n      ls_timetickets-postg_date  = sy-datlo.\n      ls_timetickets-yield = ls_yield_so-low.\n      ls_timetickets-scrap = ls_scrap_so-low.\n      ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed tiel oder endruckmeldung - take what the user provides!\n      ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" CHFE 06.10.2017 - also the unit\n      APPEND ls_timetickets TO lt_timetickets.\n    ENDLOOP.\n\n    \" create ruckmeldung\n    CALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n      IMPORTING\n        return         = ls_return\n      TABLES\n        timetickets    = lt_timetickets\n        goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n        detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      EXCEPTIONS\n        OTHERS         = 1.\n    IF sy-subrc <> 0.\n      lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" CHFE 18.07.2017 - add custom message to message log\n      CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n      APPEND es_entityset TO et_entityset.\n    ENDIF.\n\n```\n\n## Process Orders\n\nBecause SAP is ever-so-special, process orders have a slightly different program process due a few name changes. Here is a summary of those name changes:\n\n| Production Order Variable Name | Process Order Variable Name | meaning |\n| ph\n\nLikewise, the function module has a slightly different name of: `BAPI`\n\nHere's the code for calculating activities for process orders - _note the slight change in those variable names!_ - and be careful with your types (carefully look over the `DATA:` statement), otherwise you'll get 💥**exploding runtime errors**💥 when you try to confirm something with one of our two main functions and you pass, for example, the  `lt_timetickets` with the production type `BAPI_PRODUCTION_BLAAA`, and you pass it into the of the _process_ order function module.\n\n```abap\n```\n\n## Final Comments\n\nWhew. Did it feel like a marathon? :running: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.\n\nAnother note and quick plug 😄 I hope everyone can appreciate the time I put in to creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [paypal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiest if you would prefer to donate in that way.\n\n💩 Ok, plug done! 💩\n\nCheers! 🍺\n\n<hr/>\n# Footnotes\n\n<div id=\"footnote-1\">\n1. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.\n</div>\n\n<div id=\"footnote-2\">\n2. Activities are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.\n</div>\n\n<div id=\"footnote-3\">\n3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction CO11N:\n\nUpon pressing 'enter' for with a new amount:\n![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpeg)\n\nPressing 'OK' for this window, we get a popup:\n\n![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpeg)\n\nWe see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)\n</div>\n\n<div id=\"footnote-4\">\n4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.\n</div>\n",
-        "contentDigest": "58fd94719d1c944e4541a398313cd942",
+        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2018-01-03\"\ndraft: false\n---\n\n# First off, Congratulations! 🎊\n<sup>And a happy new year! (If you're viewing this in the summer or something, see the date!)</sup>\n## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱\n## I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. 😄\n\n## The Problem\n\nLet's jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module `BAPI_PRODORDCONF_GET_TT_PROP`:\n\n```abap\nCALL FUNCTION 'BAPI_PRODORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nLikewise, there is a very similiar `BAPI_PROCORDCONF_GET_TT_PROP` for process orders:\n\n```abap\nCALL FUNCTION 'BAPI_PROCORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nPretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn't get the _activity confirmation amount_ to be calculated, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)\n\nSo, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href=\"#footnote-1\">2</a></sup>.**\n\nUnfortunately, with much more digging, the reason the two functions wouldn't produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.\n\n## The Calculation Function Module\n\nThrough SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href=\"#footnote-3\">3</a></sup>. My struggle was finding the programmatic way to do this in ABAP.\n\nAnyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href=\"#footnote-4\">3</a></sup>.\n\nIn transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:\n\n![GUI testing calculation](test-formula.jpeg)\n\nThis was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It's called `CR_WORKCENTER_FORMULA_CALC`!\n\nLet's head on over to transaction `SE37` and test it ourselves!\n\n![Yep, that's SAP](error-test-frame.jpeg)\n\n😑😑😑 shit... SAP, you had one job to do!\n\nFine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FORMULA_CALC` and set a breakpoint in the first line:\n\n![The first possible line in the function we can breakpoint](function-breakpoint.png)\n\nand in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src=\"return.png\"/> and...\n\n🙏 Violá! 🙏 We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!\n\n![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)\n\n(For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)\n\n![Calling program details](form-program.png)\n\n## The Details (The Hard Part)\n\nSo what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href=\"#footnote-3\">3</a></sup>  - SAP is by default looping over all of them.\n\nNow for the function parameters themselves: they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), our 4 default values (`vgw`), and the date (`date`).\n\nIn turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href=\"#footnote-4\">4</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.\n\nSo I mentioned the default values that must go into `vgw` - these are the four values that are the equivalent of those four fields we can type into in `COR3` for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table `AFVC` 'operation within an order', and then table `PLPO` 'task list - operation/activity':\n\n```abap\n\" this is the full key for table AFVC - operation within an order - for the routing number and counter - should always work with SELECT SINGLE\nSELECT SINGLE * FROM afvc INTO ls_afvc\n  WHERE aufpl = ls_operation-routing_no\n  AND   aplzl = ls_operation-counter.\n\n\" this is the full key for table PLPO - task list - operation/activity - so it should always work with SELECT SINGLE\nSELECT SINGLE * FROM plpo INTO ls_plpo\n  WHERE plnty EQ ls_afvc-plnty\n  AND plnnr EQ ls_afvc-plnnr\n  AND plnkn EQ ls_afvc-plnkn\n  AND zaehl EQ ls_afvc-zaehl.\n```\n\nThe routing number `ls_operation-routing_no` and counter `ls_operation-counter` we've gotten from function `BAPI_PRODORD_GET_DETAIL`:\n\n```abap\n\" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n```\n\n(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info 😉. Here we are just getting the operation information from the order - that's all we need.)\n\nWe can finally move the corresponding fields of `ls_plpo` to `ls_vgw`:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_vgw.\n```\n\nHowever, in addition to these four values, there are two more that are essential, that is the yield amount (`mgvrg`), and the unit (`meinh`)! We can pass them right into `ls_op` as well:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_op.\nls_op-mgvrg = ls_yield_so-low.\nls_op-meinh = ls_conf_quan_unit_so-low.\n```\n\nArmed with our structures `ls_afvc`, `ls_op`, and `ls_vgw`, we are ready to call our function:\n\n```abap\nCALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n  EXPORTING\n    arbid             = ls_afvc-arbid\n    op                = ls_op\n    vgw               = ls_vgw\n    index             = sy-index\n    date              = sy-datum\n  IMPORTING\n    value_fix          = lv_value_fix\n    value_var         = lv_value_var\n    unit              = lv_unit\n  EXCEPTIONS\n    missing_parameter = 1\n    not_found         = 2\n    division_by_zero  = 3\n    OTHERS            = 4.\nIF sy-subrc <> 0.\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\n\nWe want the total, right? Okay, we just add the fixed value and variable value part:\n\n```abap\nlv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and variable values for this activity\n```\n\nA requirement by my company was to have all the activity confirmation values with the same unit (I find it cleaner anyway to have all the activity confirmation values in the same unit anyway). Unfortunately, the default unit for some of the activities was hours, so we have to take a small intermediary step and call a conversion function before we are truly done:\n\n```abap\n\" convert any 'H' values to 'MIN'\nIF lv_unit NE 'MIN'.\n  CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n    EXPORTING\n      input                = lv_value\n      unit_in              = lv_unit\n      unit_out             = 'MIN'\n    IMPORTING\n      output               = lv_output\n    EXCEPTIONS\n      conversion_not_found = 1\n      division_by_zero     = 2\n      input_invalid        = 3\n      output_invalid       = 4\n      overflow              = 5\n      type_invalid         = 6\n      units_missing        = 7\n      unit_in_not_found    = 8\n      unit_out_not_found   = 9\n      OTHERS               = 10.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n```\nWe then finally carry over this converted `lv_output` over to the `conf_activity` field for `lt_timetickets`, doing this for all 1-6 `conf_activity`'s:\n\n```abap\nCASE sy-index.\n  WHEN 1.\n    ls_timetickets-conf_activity1  = lv_output.\n    ls_timetickets-conf_acti_unit1 = 'MIN'.\n  WHEN 2.\n    ls_timetickets-conf_activity2  = lv_output.\n    ls_timetickets-conf_acti_unit2 = 'MIN'.\n  WHEN 3.\n    ls_timetickets-conf_activity3  = lv_output.\n    ls_timetickets-conf_acti_unit3 = 'MIN'.\n  WHEN 4.\n    ls_timetickets-conf_activity4  = lv_output.\n    ls_timetickets-conf_acti_unit4 = 'MIN'.\n  WHEN 5.\n    ls_timetickets-conf_activity5  = lv_output.\n    ls_timetickets-conf_acti_unit5 = 'MIN'.\n  WHEN 6.\n    ls_timetickets-conf_activity6  = lv_output.\n    ls_timetickets-conf_acti_unit6 = 'MIN'.\nENDCASE.\n```\n\nWith that, we can call the final confirmation function, with all our calculated values wrapped up in `lt_timetickets`:\n\n```abap\n\" create confirmation\nCALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n  IMPORTING\n    return         = ls_return\n  TABLES\n    timetickets    = lt_timetickets\n    goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n    detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n  EXCEPTIONS\n    OTHERS         = 1.\nIF sy-subrc <> 0.\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\nIf you were sharp, you realized all of this code is only on the operation level - so indeed, the six-level loop must be done each time, for each operation - we have to throw all the above code into a loop over our operations! See below for the full result!\n\n## Production Orders\nIn summary, the full code looks like this:\n\n**NOTE: the full code examples were written for a SAP Gateway environment - i.e. the server environment from a SAPUI5 OData call! If you try to copy and paste this code directly into something like a report or function, ABAP statements like:**\n\n```abap\nlt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n```\n\nwon't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method 😄\n\n```abap\nDATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n           ls_filters           LIKE LINE OF lt_filters,\n           lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_plant_so          LIKE LINE OF lt_select_options,\n           ls_orderid_so        LIKE LINE OF lt_select_options,\n           ls_fin_conf_so       LIKE LINE OF lt_select_options,\n           ls_dev_reason_so     LIKE LINE OF lt_select_options,\n           ls_conf_text_so      LIKE LINE OF lt_select_options,\n           ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n           ls_yield_so          LIKE LINE OF lt_select_options,\n           ls_scrap_so          LIKE LINE OF lt_select_options,\n           lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_stg_loc           LIKE LINE OF lt_stg_loc,\n           lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_batch             LIKE LINE OF lt_batch,\n           lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_reserv_no         LIKE LINE OF lt_reserv_no,\n           lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_res_item          LIKE LINE OF lt_res_item,\n           lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n           lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_uom         LIKE LINE OF lt_entry_uom,\n           ls_return            TYPE bapiret1,\n           lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n           ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n           lv_reserv_lines      TYPE int4,\n           lv_index             TYPE int4 VALUE 1,\n           lt_detail_return     TYPE TABLE OF bapi_coru_return,\n           ls_detail_return     LIKE LINE OF lt_detail_return,\n           lv_log_handle        TYPE balloghndl,\n           lv_message           TYPE char200,\n           lo_logger            TYPE REF TO zcl_bc_app_logger,\n           es_entityset         LIKE LINE OF et_entityset,\n           lv_error_message     TYPE bapi_msg,\n           ls_order_objects     TYPE bapi_pp_order_objects,\n           lt_operation         TYPE TABLE OF bapi_order_operation1,\n           ls_operation         LIKE LINE OF lt_operation,\n           lt_timetickets       TYPE TABLE OF  bapi_pp_timeticket,\n           ls_timetickets       LIKE LINE OF lt_timetickets,\n           lv_number            TYPE bapi_order_key-order_number,\n           ls_propose           TYPE bapi_pp_conf_prop,\n           ls_op                TYPE rcrop,\n           ls_vgw               TYPE rcrvgw,\n           ls_afvc              TYPE afvc,\n           ls_plpo              TYPE plpo,\n           lv_value_fix         TYPE p DECIMALS 4,\n           lv_value_var         TYPE p DECIMALS 4,\n           lv_value             TYPE p DECIMALS 4,\n           lv_unit              TYPE rcrvgw-vge01,\n           lv_output            TYPE p DECIMALS 3.\n\n           \" Create a log instance\n    CREATE OBJECT lo_logger\n      EXPORTING\n        iv_subobject = 'ZPP_APP'.\n    lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PRODCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n    \"get $filter through the io_tech request (odata request)\n    lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n    \" Process filters\n\n    \" for these below we just need the singular select option structure\n    READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n    \" for the following we need tables (make a loop and get the values from each)\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n    lt_stg_loc = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n    lt_batch = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n    lt_reserv_no = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n    lt_res_item = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n    lt_entry_qnt = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n    lt_entry_uom = ls_filters-select_options.\n\n\" Create goodsmovement structure for all the retroactive items\n    DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n    DO lv_reserv_lines TIMES.\n      ls_stg_loc = lt_stg_loc[ lv_index ].\n      ls_batch = lt_batch[ lv_index ].\n      ls_reserv_no = lt_reserv_no[ lv_index ].\n      ls_res_item = lt_res_item[ lv_index ].\n      ls_entry_qnt = lt_entry_qnt[ lv_index ].\n      ls_entry_uom = lt_entry_uom[ lv_index ].\n      ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n      ls_goodsmovements-stge_loc = ls_stg_loc-low.\n      ls_goodsmovements-batch = ls_batch-low.\n      ls_goodsmovements-move_type = '261'. \" fixed movement type\n      ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n      ls_goodsmovements-reserv_no = ls_reserv_no-low.\n      ls_goodsmovements-res_item = ls_res_item-low.\n      ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n      ls_goodsmovements-entry_uom = ls_entry_uom-low.\n      APPEND ls_goodsmovements TO lt_goodsmovements.\n      lv_index = lv_index + 1.\n    ENDDO.\n\n    \" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n\n    \" build structures for each step (each operation)\n    LOOP AT lt_operation INTO ls_operation.\n      CLEAR ls_timetickets.\n\n      \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n      SELECT SINGLE * FROM afvc INTO ls_afvc\n        WHERE aufpl = ls_operation-routing_no\n        AND   aplzl = ls_operation-counter.\n\n      \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n      SELECT SINGLE * FROM plpo INTO ls_plpo\n        WHERE plnty EQ ls_afvc-plnty\n        AND plnnr EQ ls_afvc-plnnr\n        AND plnkn EQ ls_afvc-plnkn\n        AND zaehl EQ ls_afvc-zaehl.\n\n      \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n      MOVE-CORRESPONDING ls_plpo TO ls_op.\n      ls_op-mgvrg = ls_yield_so-low.\n      ls_op-meinh = ls_conf_quan_unit_so-low.\n      MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n      DO 6 TIMES. \" for each activity (usually 4 activities here at my company, but there can be up to 6 activities total)\n        IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n        OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n        OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n        OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0f\n        OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n        OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n          CONTINUE. \" skip and 0 values\n        ENDIF.\n        CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n          EXPORTING\n            arbid             = ls_afvc-arbid\n            op                = ls_op\n            vgw               = ls_vgw\n            index             = sy-index\n            date              = sy-datum\n          IMPORTING\n            value_fix          = lv_value_fix\n            value_var         = lv_value_var\n            unit              = lv_unit\n          EXCEPTIONS\n            missing_parameter = 1\n            not_found         = 2\n            division_by_zero  = 3\n            OTHERS            = 4.\n        IF sy-subrc <> 0.\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n\n        lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n        \" convert any 'H' values to 'MIN'\n        IF lv_unit NE 'MIN'.\n          CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n            EXPORTING\n              input                = lv_value\n              unit_in              = lv_unit\n              unit_out             = 'MIN'\n            IMPORTING\n              output               = lv_output\n            EXCEPTIONS\n              conversion_not_found = 1\n              division_by_zero     = 2\n              input_invalid        = 3\n              output_invalid       = 4\n              overflow              = 5\n              type_invalid         = 6\n              units_missing        = 7\n              unit_in_not_found    = 8\n              unit_out_not_found   = 9\n              OTHERS               = 10.\n          IF sy-subrc <> 0.\n            lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n            CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n            APPEND es_entityset TO et_entityset.\n          ENDIF.\n        ELSE.\n          lv_output = lv_value. \" copy over MIN value\n        ENDIF.\n\n        CASE sy-index.\n          WHEN 1.\n            ls_timetickets-conf_activity1  = lv_output.\n            ls_timetickets-conf_acti_unit1 = 'MIN'.\n          WHEN 2.\n            ls_timetickets-conf_activity2  = lv_output.\n            ls_timetickets-conf_acti_unit2 = 'MIN'.\n          WHEN 3.\n            ls_timetickets-conf_activity3  = lv_output.\n            ls_timetickets-conf_acti_unit3 = 'MIN'.\n          WHEN 4.\n            ls_timetickets-conf_activity4  = lv_output.\n            ls_timetickets-conf_acti_unit4 = 'MIN'.\n          WHEN 5.\n            ls_timetickets-conf_activity5  = lv_output.\n            ls_timetickets-conf_acti_unit5 = 'MIN'.\n          WHEN 6.\n            ls_timetickets-conf_activity6  = lv_output.\n            ls_timetickets-conf_acti_unit6 = 'MIN'.\n        ENDCASE.\n      ENDDO.\n\n      \" Now build the table to confirm the operations (Vorgänge)\n      ls_timetickets-conf_no     = ls_operation-conf_no.\n      ls_timetickets-orderid     = ls_orderid_so-low.\n      ls_timetickets-sequence    = ls_operation-sequence_no.\n      ls_timetickets-operation   = ls_operation-operation_number.\n      ls_timetickets-work_cntr   = ls_operation-work_center. \" Resource for process order, logdate, logtime, and posting date added to the table\n      ls_timetickets-plant       = ls_plant_so-low.\n      ls_timetickets-logdate     = sy-datlo.\n      ls_timetickets-logtime     = sy-timlo.\n      ls_timetickets-postg_date  = sy-datlo.\n      ls_timetickets-yield = ls_yield_so-low.\n      ls_timetickets-scrap = ls_scrap_so-low.\n      ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed partial or final confirmation - take what the user provides!\n      ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n      APPEND ls_timetickets TO lt_timetickets.\n    ENDLOOP.\n\n    \" create confirmation\n    CALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n      IMPORTING\n        return         = ls_return\n      TABLES\n        timetickets    = lt_timetickets\n        goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n        detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      EXCEPTIONS\n        OTHERS         = 1.\n    IF sy-subrc <> 0.\n      lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n      CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n      APPEND es_entityset TO et_entityset.\n    ENDIF.\n\n```\n\n## Process Orders\n\nBecause SAP is ever-so-special, process orders have a slightly different program process due to a few name changes. Here is a summary of some of those name and type changes:\n\n<hr/>\n\n| Topic | Production Orders | Process Orders |\n| ------- | ----------------- | -------------- |\n| Name of the 'steps' in your process or production order | phase/activity (I've seen both names, ABAP uses mostly 'phase') | operation |\n| Get order detail of order | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| detail of order 'step' type | `bapi_order_phase`  |  `bapi_order_operation1` |\n| Function for timeticket proposals | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| Function for order confirmation | `BAPI_PRODORDCONF_CREATE_TT` | `BAPI_PROCORDCONF_CREATE_TT` |\n| `timetickets` `TYPE` in order confirmation function | `bapi_pp_timeticket` | `bapi_pi_timeticket1` |\n\n<hr/>\n\nThere are more, but you can find those in the code for yourself. The important thing to notice is that the key challenging part here, calculating the confirmation activity amounts, uses the same internal function module, ``\n\nHere's the code for calculating activities for process orders - _note the slight change in all the variable names!_ - and be careful with your types (carefully look over the `DATA:` statement), otherwise you'll get 💥**exploding runtime errors**💥 when you try to confirm something with one of our two main functions and you pass, for example, the  `lt_timetickets` with the production type ``, and you pass it into the of the _process_ order function module.\n\n```abap\n  DATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n         ls_filters           LIKE LINE OF lt_filters,\n         lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_plant_so          LIKE LINE OF lt_select_options,\n         ls_orderid_so        LIKE LINE OF lt_select_options,\n         ls_fin_conf_so       LIKE LINE OF lt_select_options,\n         ls_dev_reason_so     LIKE LINE OF lt_select_options,\n         ls_conf_text_so      LIKE LINE OF lt_select_options,\n         ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n         ls_yield_so          LIKE LINE OF lt_select_options,\n         ls_scrap_so          LIKE LINE OF lt_select_options,\n         ls_stge_loc_so       LIKE LINE OF lt_select_options,\n         ls_batch_so          LIKE LINE OF lt_select_options,\n         ls_reserv_no_so      LIKE LINE OF lt_select_options,\n         ls_res_item_so       LIKE LINE OF lt_select_options,\n         ls_entry_qnt_so      LIKE LINE OF lt_select_options,\n         ls_entry_uom_so      LIKE LINE OF lt_select_options,\n         lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_stg_loc           LIKE LINE OF lt_stg_loc,\n         lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_batch             LIKE LINE OF lt_batch,\n         lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_reserv_no         LIKE LINE OF lt_reserv_no,\n         lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_res_item          LIKE LINE OF lt_res_item,\n         lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n         lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_uom         LIKE LINE OF lt_entry_uom,\n         ls_return            TYPE bapiret1,\n         lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n         ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n         lv_reserv_lines      TYPE int4,\n         lv_index             TYPE int4 VALUE 1,\n         lt_detail_return     TYPE TABLE OF bapi_coru_return,\n         ls_detail_return     LIKE LINE OF lt_detail_return,\n         lv_log_handle        TYPE balloghndl,\n         lv_message           TYPE char200,\n         lo_logger            TYPE REF TO zcl_bc_app_logger,\n         es_entityset         LIKE LINE OF et_entityset,\n         lv_error_message     TYPE bapi_msg,\n         ls_order_objects     TYPE bapi_pi_order_objects,\n         lt_phase             TYPE TABLE OF bapi_order_phase,\n         ls_phase             LIKE LINE OF lt_phase,\n         lt_timetickets       TYPE TABLE OF bapi_pi_timeticket1,\n         ls_timetickets       LIKE LINE OF lt_timetickets,\n         lv_number            TYPE bapi_order_key-order_number,\n         ls_op                TYPE rcrop,\n         ls_vgw               TYPE rcrvgw,\n         ls_afvc              TYPE afvc,\n         ls_plpo              TYPE plpo,\n         lv_value_fix         TYPE p DECIMALS 4,\n         lv_value_var         TYPE p DECIMALS 4,\n         lv_value             TYPE p DECIMALS 4,\n         lv_unit              TYPE rcrvgw-vge01,\n         lv_output            TYPE p DECIMALS 3.\n\n  FIELD-SYMBOLS: <fs_timetickets> LIKE LINE OF lt_timetickets.\n\n  \" create a log instance\n  CREATE OBJECT lo_logger\n    EXPORTING\n      iv_subobject = 'ZPP_APP'.\n  lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n  \"get $filter through the io_tech request (odata request)\n  lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n  \" Process filters\n\n  \" for these below we just need the singular select option structure\n  READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n  \" for the following we need tables (make a loop and get the values from each)\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n  lt_stg_loc = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n  lt_batch = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n  lt_reserv_no = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n  lt_res_item = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n  lt_entry_qnt = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n  lt_entry_uom = ls_filters-select_options.\n\n  \" Create goodsmovement structure for all the retroactive items\n  DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n  DO lv_reserv_lines TIMES.\n    ls_stg_loc = lt_stg_loc[ lv_index ].\n    ls_batch = lt_batch[ lv_index ].\n    ls_reserv_no = lt_reserv_no[ lv_index ].\n    ls_res_item = lt_res_item[ lv_index ].\n    ls_entry_qnt = lt_entry_qnt[ lv_index ].\n    ls_entry_uom = lt_entry_uom[ lv_index ].\n    ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n    ls_goodsmovements-stge_loc = ls_stg_loc-low.\n    ls_goodsmovements-batch = ls_batch-low.\n    ls_goodsmovements-move_type = '261'. \" fixed movement type\n    ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n    ls_goodsmovements-reserv_no = ls_reserv_no-low.\n    ls_goodsmovements-res_item = ls_res_item-low.\n    ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n    ls_goodsmovements-entry_uom = ls_entry_uom-low.\n    APPEND ls_goodsmovements TO lt_goodsmovements.\n    lv_index = lv_index + 1.\n  ENDDO.\n\n  ls_order_objects-phases = 'X'.\n  lv_number = ls_orderid_so-low.\n\n  CALL FUNCTION 'BAPI_PROCORD_GET_DETAIL'\n    EXPORTING\n      number        = lv_number\n*       COLLECTIVE_ORDER       =\n      order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n    TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n      phase         = lt_phase\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n    .\n\n  LOOP AT lt_phase INTO ls_phase. \" for each phase - create both the activities table and timetickets table\n    CLEAR ls_timetickets.\n\n    \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n    SELECT SINGLE * FROM afvc INTO ls_afvc\n      WHERE aufpl = ls_phase-routing_no\n      AND   aplzl = ls_phase-counter.\n\n    \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n    SELECT SINGLE * FROM plpo INTO ls_plpo\n      WHERE plnty EQ ls_afvc-plnty\n      AND plnnr EQ ls_afvc-plnnr\n      AND plnkn EQ ls_afvc-plnkn\n      AND zaehl EQ ls_afvc-zaehl.\n\n    \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n    MOVE-CORRESPONDING ls_plpo TO ls_op.\n    ls_op-mgvrg = ls_yield_so-low.\n    ls_op-meinh = ls_conf_quan_unit_so-low.\n    MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n    DO 6 TIMES. \" for each activity (usually 4 activities here at company, but there can be up to 6 activities total)\n      IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n      OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n      OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n      OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0\n      OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n      OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n        CONTINUE. \" skip and 0 values\n      ENDIF.\n      CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n        EXPORTING\n          arbid             = ls_afvc-arbid\n          op                = ls_op\n          vgw               = ls_vgw\n          index             = sy-index\n          date              = sy-datum\n        IMPORTING\n          value_fix         = lv_value_fix\n          value_var         = lv_value_var\n          unit              = lv_unit\n        EXCEPTIONS\n          missing_parameter = 1\n          not_found         = 2\n          division_by_zero  = 3\n          OTHERS            = 4.\n      IF sy-subrc <> 0.\n        CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n        APPEND es_entityset TO et_entityset.\n      ENDIF.\n\n      lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n      \" Convert any 'H' values to 'MIN'\n      IF lv_unit NE 'MIN'.\n        CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n          EXPORTING\n            input                = lv_value\n            unit_in              = lv_unit\n            unit_out             = 'MIN'\n          IMPORTING\n            output               = lv_output\n          EXCEPTIONS\n            conversion_not_found = 1\n            division_by_zero     = 2\n            input_invalid        = 3\n            output_invalid       = 4\n            overflow             = 5\n            type_invalid         = 6\n            units_missing        = 7\n            unit_in_not_found    = 8\n            unit_out_not_found   = 9\n            OTHERS               = 10.\n        IF sy-subrc <> 0.\n          lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n      ELSE.\n        lv_output = lv_value. \" copy over MIN value\n      ENDIF.\n\n      CASE sy-index.\n        WHEN 1.\n          ls_timetickets-conf_activity1  = lv_output.\n          ls_timetickets-conf_acti_unit1 = 'MIN'.\n        WHEN 2.\n          ls_timetickets-conf_activity2  = lv_output.\n          ls_timetickets-conf_acti_unit2 = 'MIN'.\n        WHEN 3.\n          ls_timetickets-conf_activity3  = lv_output.\n          ls_timetickets-conf_acti_unit3 = 'MIN'.\n        WHEN 4.\n          ls_timetickets-conf_activity4  = lv_output.\n          ls_timetickets-conf_acti_unit4 = 'MIN'.\n        WHEN 5.\n          ls_timetickets-conf_activity5  = lv_output.\n          ls_timetickets-conf_acti_unit5 = 'MIN'.\n        WHEN 6.\n          ls_timetickets-conf_activity6  = lv_output.\n          ls_timetickets-conf_acti_unit6 = 'MIN'.\n      ENDCASE.\n    ENDDO.\n\n    \" Also build the table to confirm the operations (Vorgänge)\n    ls_timetickets-conf_no    = ls_phase-conf_no.\n    ls_timetickets-orderid    = ls_orderid_so-low.\n    ls_timetickets-phase      = ls_phase-operation_number.\n    ls_timetickets-resource   = ls_phase-resource. \" Resource in process orders is the equivalent of work_center (wrk_cntr) for production orders\n    ls_timetickets-plant      = ls_plant_so-low.\n    ls_timetickets-logdate    = sy-datlo.\n    ls_timetickets-logtime    = sy-timlo.\n    ls_timetickets-postg_date = sy-datlo.\n    ls_timetickets-yield = ls_yield_so-low.\n    ls_timetickets-scrap = ls_scrap_so-low.\n    ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed tiel oder endruckmeldung - take what the user provides!\n    ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n    APPEND ls_timetickets TO lt_timetickets.\n  ENDLOOP.\n\n  CALL FUNCTION 'BAPI_PROCORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n    IMPORTING\n      return         = ls_return\n    TABLES\n      timetickets    = lt_timetickets\n      goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      detail_return  = lt_detail_return\n    EXCEPTIONS\n      OTHERS         = 1.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n  IF ls_return IS NOT INITIAL.\n    LOOP AT lt_detail_return INTO ls_detail_return WHERE type EQ 'E'.\n      lv_error_message = ls_detail_return-message.\n    ENDLOOP.\n    CONCATENATE 'Fehler bei der Rückmeldung: ' lv_error_message INTO lv_message.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = lv_message ). \" add custom message to message log\n    es_entityset-error_message = lv_error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Ende Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n  lo_logger->save_log( EXPORTING iv_log_handle = lv_log_handle ).\n\n  \" FB Documentation says COMMIT WORK is required\n  CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'\n    EXPORTING\n      wait = 'X'.\n  COMMIT WORK AND WAIT.\n```\n\n## Final Comments\n\nWhew. Did it feel like a marathon? :runner: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.\n\nAnother note and quick plug 😄 I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.\n\n💩 Ok, plug done! 💩\n\nCheers! 🍺\n\n<hr/>\n\n# Footnotes\n\n<div id=\"footnote-1\">\n1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.\n</div>\n\n<div id=\"footnote-2\">\n2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. 👍\n</div>\n\n<div id=\"footnote-3\">\n3. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.\n</div>\n\n<div id=\"footnote-4\">\n4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:\n\nUpon pressing 'enter' for with a new amount:\n![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpeg)\n\nPressing 'OK' for this window, we get a popup:\n\n![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpeg)\n\nWe see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)\n</div>\n\n<div id=\"footnote-4\">\n4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.\n</div>\n",
+        "contentDigest": "a60bf6189c1b048e350881bd57d5d833",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3178,8 +3178,8 @@
       },
       "frontmatter": {
         "title": "Calculating Activity Amounts for Production and Process Orders with SAP ABAP",
-        "date": "2017-01-03",
-        "draft": true,
+        "date": "2018-01-03",
+        "draft": false,
         "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file",
         "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file"
       },
@@ -3193,7 +3193,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e2f476aa8391960f2d66c804b719f6a6",
+        "contentDigest": "3e3e95ae9838d0fb16b9653b26bdccc2",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -3204,7 +3204,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-01-02T19:25:20.553Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -3222,11 +3222,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1514921120552.9424,
+      "atimeMs": 1515004524303.7415,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-01-02T19:25:20.553Z",
+      "atime": "2018-01-03T18:35:24.304Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -3526,6 +3526,296 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "19a87f5bd7b79995848402882bcc1f86",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap",
+      "relativePath": "detailed-look-at-bdc-in-abap",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-01-03T17:29:45.419Z",
+      "accessTime": "2018-01-03T18:35:24.304Z",
+      "changeTime": "2018-01-03T17:29:45.419Z",
+      "birthTime": "2018-01-03T17:29:37.901Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "detailed-look-at-bdc-in-abap",
+      "ext": "",
+      "name": "detailed-look-at-bdc-in-abap",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595818353,
+      "blocks": 0,
+      "atimeMs": 1515004524303.776,
+      "mtimeMs": 1515000585418.958,
+      "ctimeMs": 1515000585418.958,
+      "birthtimeMs": 1515000577901.0742,
+      "atime": "2018-01-03T18:35:24.304Z",
+      "mtime": "2018-01-03T17:29:45.419Z",
+      "ctime": "2018-01-03T17:29:45.419Z",
+      "birthtime": "2018-01-03T17:29:37.901Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "cba1bde3fba07fd691a66e1f7ae1dd85",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md",
+      "relativePath": "detailed-look-at-bdc-in-abap/index.md",
+      "extension": "md",
+      "size": 36873,
+      "prettySize": "36.9 kB",
+      "modifiedTime": "2018-01-03T18:35:17.549Z",
+      "accessTime": "2018-01-03T18:35:17.549Z",
+      "changeTime": "2018-01-03T18:35:17.549Z",
+      "birthTime": "2018-01-03T17:29:45.419Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "detailed-look-at-bdc-in-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595818360,
+      "blocks": 0,
+      "atimeMs": 1515004517549.0579,
+      "mtimeMs": 1515004517549.2493,
+      "ctimeMs": 1515004517549.2493,
+      "birthtimeMs": 1515000585418.9443,
+      "atime": "2018-01-03T18:35:17.549Z",
+      "mtime": "2018-01-03T18:35:17.549Z",
+      "ctime": "2018-01-03T18:35:17.549Z",
+      "birthtime": "2018-01-03T17:29:45.419Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2018-01-10\"\ndraft: true\n---\n\n# A short write up about some deep details with SAP’s BDC Method\n## And some common gotchyas\n\n```abap\n* -------------------------------------------------------------------\n*                          S A P M S S Y 0\n*                  system routines for ABAP processing\n*\n*                  (must be declared as FUNCTION-POOL)\n* -------------------------------------------------------------------\nfunction-pool sapmssy0  message-id 02.\ninclude <%_list>.\ninclude <sys000>.\ninclude tskhincl.\ntables: tfdir.\ndata:  orders          type standard table of %_commit_orders,\n                                                  \"ON COMMIT orders\n       rb_orders       type standard table of %_commit_orders,\n                                                  \"ON ROLLBACK orders\n       imode_orders    type standard table of %_commit_orders,\n                                                  \"POC in CALL DIALOG\n       imode_rb_orders type standard table of %_commit_orders.\n\"POR in CALL DIALOG\n* for RTM test concerning POC during OS event handling\ndata: os_orders        type hashed table of %_commit_orders\n                            with unique key prog rout.      \"#EC NEEDED\n\"OS ON COMMIT orders\n* end RTM\n\ndata:  %_vbkey type %_vbkey value '%_',                     \"#EC *\n       %%vbkey type %_vbkey value '%%',\n       %_vb_calls type %_vb_calls occurs 50 with header line.\"#EC *\ndata:  i_level type i value 0.\n\ndata : arfc_pending type c,\n       trfc_nowait_for_update type c.\n\n* bgRFC: something todo at COMMIT / ROLLBACK\ndata : bgrfc_eot_action type i.\n\n* LDQ: something todo at COMMIT / ROLLBACK\ndata : ldq_writer_eot_action type i.\ndata : ldq_reader_eot_action type i.\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ L E V E L\n* order given form to be run when work is committed\n*\n* Input : program name, form name, execution level\n* -------------------------------------------------------------------\nform %_order_form_level using prog rout u_level.            \"#EC *\n  data: allow_nested_poc(1) type c,\n        caller type sy-repid.\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80).\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_orders\n      into imode_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_orders lines i_level.\n      imode_orders_wa-prog = prog.\n      imode_orders_wa-rout = rout.\n      imode_orders_wa-i_level = i_level.\n      imode_orders_wa-u_level = u_level.\n      insert imode_orders_wa into imode_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n*     already in PERFORM ON COMMIT\n      call 'C_SAPGPARAM' id 'NAME'  field 'abap/allow_nested_poc'  \"#EC CI_CCALL\n                         id 'VALUE' field allow_nested_poc.\n      if allow_nested_poc <> 'X'.\n*       nested PERFORM ON COMMIT not allowed\n        call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n        if caller <> 'SAPMSSY0'.\n          mpar1 = 'NESTED_PERFORM_ON_COMMIT'.\n          concatenate 'caller:'  caller into mpar2 separated by ' '.\n          concatenate 'program:' prog   into mpar3 separated by ' '.\n          concatenate 'form:'    rout   into mpar4 separated by ' '.\n*         switch back kernel flag: just for sure.\n          call 'SET_SWITCH_TXEND' id 'STATE' field ' '.  \"#EC CI_CCALL\n*         issue short dump\n          message x081(00) with mpar1 mpar2 mpar3 mpar4.\n        endif.\n      endif.\n    endif.\n    read table orders\n      into orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table orders lines i_level.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      orders_wa-i_level = i_level.\n      orders_wa-u_level = u_level.\n      insert orders_wa into orders index sy-tabix.\n    endif.\n*   for RTM test concerning POC during OS event handling\n    if sy-oncom = 'E'.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      insert orders_wa into table os_orders.\n    endif.\n*   end RTM\n\n  endif.\nendform.                    \"%_order_form_level\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ F O R _ R O L L B A C K\n* order given form to be run when work is rolled back\n* Input : program name, form name\n* -------------------------------------------------------------------\nform %_order_form_for_rollback using prog rout.             \"#EC *\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80),\n        caller type sy-repid.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_rb_orders\n      into imode_rb_orders_wa\n      with key prog = prog\n           rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_rb_orders lines i_level.\n      imode_rb_orders_wa-prog = prog.\n      imode_rb_orders_wa-rout = rout.\n      imode_rb_orders_wa-i_level = i_level.\n      imode_rb_orders_wa-u_level = 0.\n      insert imode_rb_orders_wa into imode_rb_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n      call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n      mpar1 = 'NESTED_PERFORM_ON_ROLLBACK'.\n      concatenate 'caller:'  caller into mpar2 separated by ' '.\n      concatenate 'program:' prog   into mpar3 separated by ' '.\n      concatenate 'form:'    rout   into mpar4 separated by ' '.\n*     switch back kernel flag: just for sure.\n      call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\n*     already in PERFORM ON ROLLBACK issue short dump\n      message x081(00) with mpar1 mpar2 mpar3 mpar4.\n    endif.\n    read table rb_orders into rb_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table rb_orders lines i_level.\n      rb_orders_wa-prog = prog.\n      rb_orders_wa-rout = rout.\n      rb_orders_wa-i_level = i_level.\n      insert rb_orders_wa into rb_orders index sy-tabix.\n    endif.\n  endif.\nendform.                    \"%_order_form_for_rollback\n\n\n*---------------------------------------------------------------------*\n*  %_COMMIT_PREPARE                                                   *\n*  Set date and time for aRFC\n*---------------------------------------------------------------------*\nform %_commit_prepare using date time.                      \"#EC *\n\n  %_sys000-arfc-send_time = time.\n  %_sys000-arfc-send_date = date.\n\nendform.                    \"%_commit_prepare\n\n* ---------------------------------------------------------------------\n* FORM %_BEFORE_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_before_commit.                                       \"#EC *\n  data: l_oncom like sy-oncom.\n  data: txend type c.\n\n* forbid COMMIT if already in ON ROLLBACK handling\n* allow COMMIT during ON COMMIT for backward compatibilty\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'R'.\n    message x085(00).\n  endif.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_COMMIT'.\n* Raise event 'Commit Requested' for Object Manager\n  call method cl_os_transaction_end_notifier=>raise_commit_requested.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_before_commit\n\n* -------------------------------------------------------------------\n* C O M M I T\n* commit work\n* -------------------------------------------------------------------\nform %_commit.                                              \"#EC *\n  data: %_state, %_direct_utask_active.                     \"#EC *\n  data: l_lines   like sy-tabix.\n  data: %_enqkey  type eqeusrvb.                            \"#EC *\n  data: %_enqdone type c.                                   \"#EC *\n\n* status processing of set update task local\n* value 'E': local update is active. Export tRFC/qRFC to memory!\n* value 'S': local update is active. Map the dialog tRFC/qRFC to called update trfc/qRFC.\n*            Import tRFC/qRFC form memory! Save it to the Database.\n* value 'X': local update is active. Execute the tRFC/qRFC within the Dialog workprocess.\n\n  data: l_local_vb_status type c.\n\n* COMMIT during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and sy-oncom <> 'V'.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'   field %%vbkey-vbkey.\n  if sy-oncom <> 'N'.\n*   Not in CALL DIALOG\n    %_vbkey-vbkey = %%vbkey-vbkey.\n    perform %_process_p_o_c.\n\n*   Check if local update task is switched on?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'S'\n                            id 'STATE' field %_state.\n    if %_state eq 'N'.\n      free %_vb_calls.\n      import %_vb_calls from memory id %%vbkey.\n      describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       Local update task is active,\n*       export the called tRFC/qRFCs from dialog to memory within arfc_end_transaction.\n        l_local_vb_status = 'E'.\n      endif.\n\n*     Within sapmssy4 (commit work) we have to import and save all dia tRFC/qRFC\n*     in arfc_end_transaction\n      if sy-cprog = 'SAPMSSY4'.\n        l_local_vb_status = 'S'.\n        arfc_pending = 'X'.\n      endif.\n    endif.\n\n\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n***************\n*   bgRFC\n***************\n*     Update task in Asynchronous mode!\n*     Wenn arfc_pending <> SPACE dann wurde bereits durch classic qRFC der arfc_end_vb\n*     getriggert, falls lokale Verbuchung nicht aktiv ist.\n*     N = asynch. update task switched off: direct updates\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW classic t/qRFC and bgRFC was called\n\n        if trfc_nowait_for_update <> space OR %_sys000-arfc-send_date is not initial.  \"ARFC_END_VB wurde nicht im tRFC/qRFC gerufen\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = space.\n        else. \" ARFC_END_VB wurde bereits im tRFC/qrfc gerufen.\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = 'X'.\n        endif.\n      else.\n        clear %_sys000-arfc-send_time.\n        clear %_sys000-arfc-send_date.\n        clear %_sys000-arfc-dontsend.\n      endif.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n*   Wenn kein classic qRFC getriggert und keine lokale Verbuchung, dann\n*   muss ARFC_END_VB von bgRFC getriggert werden.\n    else.\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW only bgRFC was called\n        call method ('CL_BGRFC_DB_HELPER')=>on_commit\n          exporting\n            arfc_end_vb_already_called = space.\n      endif.\n    endif.\n\n***************************\n*   Local Data Queue (LDQ)\n***************************\n    if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n      call method ('CL_LDQ_UNIT_WRITER')=>on_commit.\n    endif.\n\n    if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Reader\n      call method ('CL_LDQ_UNIT_READER')=>on_commit.\n    endif.\n\n    if %_state eq 'N'.\n*     N = asynch. update task switched off: direct updates\n*     free %_vb_calls.\n*     import %_vb_calls from memory id %%vbkey.\n*     describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       process direct updates (with the same vbkey)\n        call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                        id 'VBKEY'   field %%vbkey-vbkey\n                        id 'ENQKEY'  field %_enqkey\n                        id 'ENQDONE' field %_enqdone.\n\n        submit sapmssy4 with vbkey_id = %%vbkey\n                        with enqkey   = %_enqkey\n                        with enqdone  = %_enqdone and return.\n*       Start new LUW, release locks that were acquired during dialog part\n        call 'ThVBCall' id 'OPCODE'       field reset_vb_enq_key\n                        id 'SYNC_DEQUEUE' field 'X'.\n      endif.\n    endif.\n  endif.\n\n* Call Dialog wurde gerufen; gerufene tRFC/qRFC Verarbeitung wie gehabt.\n  if sy-oncom = 'N' or l_local_vb_status = 'E'.\n    if l_local_vb_status = 'E'.\n*     Lokale Verbuchung ist aktiv Ausführung im Dialog und UPD.\n      l_local_vb_status = 'X'.     \"Umsetzen auf Ausführung der trfc/qRFC im Dialog.\n      arfc_pending      = 'X'.\n    endif.\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n      clear %_sys000-arfc-send_time.\n      clear %_sys000-arfc-send_date.\n      clear %_sys000-arfc-dontsend.\n    endif.\n  endif.\n\n  if sy-binpt eq 'X' .\n    call function 'BDC_END_TRANSACTION'.       \"ende einer trans in BI\n  endif.\n\n* clear memory containing registrations for PERFORM ON ROLLBACK.\n* delete imode_orders and imode_rb_orders only if not in CALL DIALOG\n  if sy-oncom <> 'N'.\n    free memory id %_vbkey.\n  endif.\n  free rb_orders.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_commit\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_after_commit.                                        \"#EC *\n  data: %_direct_utask_active, %_task_state(4) type x.      \"#EC *\n  data: i type i, j type i, x4(4) type x.\n  data: l_update_task type boolean value '-'.\n  data: l_oncom like sy-oncom.\n  data: l_subrc like sy-subrc.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n  l_subrc = sy-subrc.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>AFTER_COMMIT.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0. \"something happened with LDW-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>after_commit.\n  endif.\n\n  if ldq_reader_eot_action  ne 0. \"something happened with LDW-Reader\n    call method ('CL_LDQ_UNIT_READER')=>after_commit.\n  endif.\n\n* Raise event 'Commit Finished' for Object Manager\n* for synchronous update task this is after all database changes.\n* for asynchronous update task this is after triggering the updates.\n  call method cl_os_transaction_end_notifier=>raise_commit_finished.\n\n* COMMIT in (classic) update task?\n  call function 'TH_USER_INFO'\n    importing\n      task_state = i.\n  %_task_state = i.\n  j = task_vb. x4 = j.\n  if not %_task_state z x4.            \"update task must not be active\n    l_update_task = 'X'.\n  endif.\n\n  if l_update_task <> 'X'.\n*   COMMIT in local update task?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'          \"A = active?\n                            id 'STATE' field %_direct_utask_active.\n    if %_direct_utask_active = 'Y' or sy-cprog = 'SAPMSSY4'.\n      l_update_task = 'X'.\n    endif.\n  endif.\n\n* raise event 'transaction_finished' only if not in update task.\n  if l_update_task <> 'X'.\n    call method\n      cl_system_transaction_state=>raise_transaction_finished\n      exporting\n        kind = cl_system_transaction_state=>commit_work.\n  endif.\n\n* restore sy-oncom\n  sy-oncom = l_oncom.\n  sy-subrc = l_subrc.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                                                \"%_after_commit\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_C\n* Process PERFORM ON COMMIT orders\n* ---------------------------------------------------------------------\nform %_process_p_o_c.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa       type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_orders from memory id %_vbkey.\n  sy-subrc = 0.\n  sort imode_orders by u_level i_level.\n  loop at imode_orders into imode_orders_wa.\n    perform %_order_form_level using imode_orders_wa-prog\n                                     imode_orders_wa-rout\n                                     imode_orders_wa-u_level.\n  endloop.\n  free imode_orders.\n  sort orders by u_level i_level.\n\n* signal begin of ON COMMIT handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'C'.\n\n  loop at orders into orders_wa.\n    perform (orders_wa-rout)\n          in program (orders_wa-prog).\n  endloop.\n  free orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n* signal end of ON COMMIT\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_c\n\n* ---------------------------------------------------------------------\n* FORM %_GET_VB_KEY\n* Update task without update task\n* ---------------------------------------------------------------------\nform %_get_vb_key using vb_func_name changing vb_data_key.  \"#EC *\n\n  data: %_vb_calls    type standard table of %_vb_calls,       \"#EC *\n        %_vb_calls_wa type %_vb_calls.\n\n  data: utask_on,                  \"flag: asynchronous update task on?\n        direct_utask_active.       \"flag: already in local update task?\n\n  clear vb_data_key.\n  call 'GET_SWITCH_UTASK' id 'MODE' field 'S'\n                          id 'STATE' field utask_on.\n  call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'\n                          id 'STATE' field direct_utask_active.\n  if utask_on eq 'N' and direct_utask_active eq 'N'.\n*   update task switched to \"local\", but not yet inside update task.\n    select single * from tfdir where funcname = vb_func_name.\n    if sy-subrc ne 0.\n      message a400 with vb_func_name.\n    endif.\n    cl_abap_restrmode_utils=>check_in_restr_mode_updtask( ).\n    if tfdir-utask = '1'     \"direct update task call\n       or tfdir-utask = '3'.  \"direct update task call, no later update\n\n*     get identifier for current LUW\n      call 'ThVBCall' id 'OPCODE' field get_vb_key\n                      id 'VBKEY'  field %%vbkey-vbkey.\n      free %_vb_calls.\n      clear %_vb_calls_wa.\n\n*     import table with already registered function modules\n      import %_vb_calls from memory id %%vbkey.\n\n      if sy-subrc = 0.\n*       already got UUID for the parameters of the function module\n        read table %_vb_calls index 1\n          into %_vb_calls_wa transporting daten_id.\n        if sy-subrc <> 0.\n          message x675(00).\n        endif.\n      else.\n*       get new UUID as key for the parameters of the function module\n        try.\n          %_vb_calls_wa-daten_id-vbkey = cl_system_uuid=>create_uuid_c22_static( ).\n        catch cx_uuid_error.\n          message x675(00).\n        endtry.\n      endif.\n\n*     fill in name of function module\n      %_vb_calls_wa-func_name = vb_func_name.\n*     identify the function call by consecutive number\n      describe table %_vb_calls lines %_vb_calls_wa-daten_id-vbkey+22.\n      %_vb_calls_wa-data_temperature = cl_abap_stack_temperature=>get_temperature( ).\n      append %_vb_calls_wa to %_vb_calls.\n\n*     (re-) export the table to memory\n      export %_vb_calls to memory id %%vbkey.\n      free %_vb_calls.\n*     return the identifier of this function call to call.rs1 to export\n*     the corresponding parameters with the same identifier.\n      vb_data_key = %_vb_calls_wa-daten_id.\n    endif.\n  endif.\nendform.                    \"%_get_vb_key\n\n*----------------------------------------------------------------------\n* FORM %_CALL_ROLLBACK\n* Call ROLLBACK-Handling\n* To be called by kernel code to perform rollback handling in ABAP\n*----------------------------------------------------------------------\nform %_call_rollback.                                       \"#EC *\n* Save SUBRC for returncode after EXCEPTION ERROR_MESSAGE\n  local: sy-subrc, sy-msgty, sy-msgid, sy-msgno,\n         sy-msgv1, sy-msgv2, sy-msgv3, sy-msgv4.\n* Perform ROLLBACK with all registered rollback hooks\n  rollback work.\nendform.                    \"%_call_rollback\n\n* -------------------------------------------------------------------\n* R O L L B A C K\n* rollback work\n* when called within CALL DIALOG --> no effect i.e. symmetrical to\n* COMMIT WORK\n* -------------------------------------------------------------------\nform %_rollback.                                            \"#EC *\n  data: txend type c.\n  data: l_oncom like sy-oncom.\n\n* forbid ROLLBACK if already in ON COMMIT/ROLLBACK handling\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'C' or txend = 'R'.\n    message x086(00).\n  endif.\n\n  check sy-oncom <> 'N' and sy-oncom <> 'V' and\n        sy-oncom <> 'E' and sy-oncom <> 'P'.\n\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_ROLLBACK'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'  field %%vbkey-vbkey.\n  %_vbkey-vbkey = %%vbkey-vbkey.\n\n* perform ON ROLLBACK orders\n  perform %_process_p_o_r.\n* free contents of memory and tables for update task\n  free %_vb_calls.\n  import %_vb_calls from memory id %%vbkey.\n  loop at %_vb_calls.\n    free memory id %_vb_calls-daten_id.\n  endloop.\n  free memory id %%vbkey.\n  free %_vb_calls.\n\n* free contents of memory and tables\n  %_vbkey-vbkey = %%vbkey-vbkey.\n  free memory id %_vbkey.\n  free imode_orders.\n  free orders.\n  free imode_rb_orders.\n  free rb_orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n  if arfc_pending <> space.\n    arfc_pending = space.\n    call function 'ARFC_END_TRANSACTION'\n      exporting\n        mode = 'ROLLBACK'.\n  endif.\n\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>ON_ROLLBACK.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>on_rollback.\n  endif.\n\n  if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_READER')=>on_rollback.\n  endif.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_ROLLBACK\n* called from RSYN rollback.rs1\n* ---------------------------------------------------------------------\nform %_after_rollback.                                      \"#EC *\n  data: l_oncom like sy-oncom.\n\n* ROLLBACK during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and\n        sy-oncom <> 'N' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n  call method cl_os_transaction_end_notifier=>raise_rollback_finished.\n  call method cl_system_transaction_state=>raise_transaction_finished\n    exporting\n      kind = cl_system_transaction_state=>rollback_work.\n\n* switch local update task to 'inactive'\n  call 'SET_SWITCH_UTASK_OFF' id 'STATE' field 'N'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_after_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_R\n* Process PERFORM ON ROLLBACK orders\n* ---------------------------------------------------------------------\nform %_process_p_o_r.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_rb_orders from memory id %_vbkey.\n  loop at imode_rb_orders into imode_rb_orders_wa.\n    perform %_order_form_for_rollback\n      using imode_rb_orders_wa-prog\n            imode_rb_orders_wa-rout.\n  endloop.\n  free imode_rb_orders.\n  sort rb_orders by u_level i_level.\n\n* signal begin of ON ROLLBACK handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'R'.\n\n  system-call state_limit set.\n  loop at rb_orders into rb_orders_wa.\n    perform (rb_orders_wa-rout)\n          in program (rb_orders_wa-prog).\n  endloop.\n  system-call state_limit reset.\n  free rb_orders.\n\n* signal end of ON ROLLBACK\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_r\n\n* ---------------------------------------------------------------------\n* FORM SYSTEM_HOOK\n* ---------------------------------------------------------------------\nform system_hook.                                           \"#EC CALLED\n  sy-subrc = 0.\nendform.                    \"system_hook\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ A F R C\n* register ARFC call\n* -------------------------------------------------------------------\nform %_register_arfc.                                       \"#EC *\n  arfc_pending = 'X'.\nendform.                    \"%_register_arfc\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ t R F C / q R F C independent from Update TASK\n* -------------------------------------------------------------------\nform %_register_trfc_no_wait_for_update.                    \"#EC PREFIX_OK\n  trfc_nowait_for_update = 'X'.\nendform.\n\n*-------------------------------------------------------------------\n* register bgRFC actions\n*-------------------------------------------------------------------\nform %_register_bgrfc.                                       \"#EC *\n  bgrfc_eot_action = 1.\nendform.                    \"%_register_bgrfc\n\n*-------------------------------------------------------------------\n* register Local Data Queue (ldq) actions\n*-------------------------------------------------------------------\nform %_register_ldq_writer.                                 \"#EC *\n  ldq_writer_eot_action = 1.\nendform.                    \"%_register_ldq_writer\n\n*&---------------------------------------------------------------------*\n*&      Form  %_register_ldq_reader\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nform %_register_ldq_reader.                                 \"#EC *\n  ldq_reader_eot_action = 1.\nendform.                    \"%_register_ldq_reader\n\n* -------------------------------------------------------------------\n* L I S T _ C O M M A N D\n* -------------------------------------------------------------------\nmodule list_command input.                                  \"#EC *\n  data: result type i.\n*  IF sy-xcode(5) EQ 'PFILE'.\n*    MESSAGE ID '02' TYPE 'I' NUMBER '016'.\n*    CLEAR sy-xcode.\n*  ENDIF.\n  result = 0.\n\n  call 'QUERY_LIST_TO_MEMORY' id 'RESULT' field result.\n  if result = 1.\n    sy-xcode = '%SMEX'.\n  endif.\n\n  check sy-xcode(1) = '%'.\n  call function 'LIST_COMMAND'\n    exporting\n      command         = sy-xcode\n    exceptions\n      unknown_command = 4\n      others          = 0.\n  check sy-subrc = 0.\n  clear: sy-ucomm, sy-xcode.\nendmodule.                    \"list_command INPUT\n\n* R/3-Drucken Anfang\n* -------------------------------------------------------------------\n* P R I N T _ S T A R T\n* -------------------------------------------------------------------\nmodule print_start input.                                   \"#EC *\n  data: hex02 type x value '02'.\n  data: display_mode.\n\n* Korrektur Ralf Wendelgaß 20.5.98\n\n  if sy-xcode = 'PRI'   or\n     sy-xcode = 'PRINT' or\n     sy-xcode = '%PRI' or\n     sy-xcode = '%PRN'.\n\n    display_mode = cl_abap_list_layout=>get_display_mode( ).\n\n    sy-callr = 'OKPRI'.\n* no print dialog if print icon was pressed\n    if sy-xcode = '%PRN'.\n      call function 'PRINT_REPORT_DEFAULT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    else.\n      call function 'PRINT_REPORT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    endif.\n\n* printing ok\n    if sy-subrc = 0.\n\n* cover page\n      if sy-subty o hex02 and %_print-prbig <> space.\n        perform %_%_cover_page(rsdbrunt).\n      endif.\n      sy-xcode = 'PRI'.\n\n* errors occured or printout cancelled\n    else.\n      clear sy-xcode.\n      message s015.\n    endif.\n\n  endif.\n\nendmodule.                    \"print_start INPUT\n* R/3-Drucken Ende\n\n\n* -------------------------------------------------------------------\n* S Y N T A X C H E C K - Popup (143)\n* -------------------------------------------------------------------\nmodule sc_init output.                                      \"#EC *\n  tables: trdir, abmsg.\n  set titlebar '001'.                                       \"#EC *\n  set pf-status 'SCMS' immediately.                         \"#EC *\n  select single * from trdir where name = abmsg-irepid.\nendmodule.                    \"sc_init OUTPUT\n\n*---------------------------------------------------------------------*\n*       MODULE SC_RESET                                               *\n*---------------------------------------------------------------------*\n*       ........                                                      *\n*---------------------------------------------------------------------*\nmodule sc_reset.                                            \"#EC *\n  leave to transaction ' '.\nendmodule.                    \"sc_reset\n\n\n* -------------------------------------------------------------------\n* L I S T _ E X I T\n* return from \"Listprocessing\" (main list of report -> LIST_RETURN)\n* -------------------------------------------------------------------\nform %_list_exit.                                           \"#EC *\n  leave.\nendform.                    \"%_list_exit\n\n* -------------------------------------------------------------------\n* L I S T _ R E T U R N\n* return from main list of report -> selection screen\n* -------------------------------------------------------------------\nform %_list_return.                                         \"#EC *\n  perform %_return_to_selscreen in program rsdbrunt if found.\nendform.                    \"%_list_return\n\n*???????????????????????????????????????????????????????????????????????\nform list_command ##NEEDED.                                 \"#EC CALLED\nendform.\n\n* -------------------------------------------------------------------\n* N E W - L I N E\n* called by ab_trigg to force a line-skip after GET processing\n* -------------------------------------------------------------------\nform new-line ##FIELD_HYPHEN.                               \"#EC CALLED\n  new-line.\nendform.\n\n*&---------------------------------------------------------------------*\n*&      Module  LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*       text                                                           *\n*----------------------------------------------------------------------*\n*odule %_list_return output.\n* perform %_return_to_selscreen in program rsdbrunt if found.\n* leave screen.\n*ndmodule.                             \" LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Module  LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nmodule list_structure_recognizer output.\n   cl_abap_list_parser=>refresh_lsr_container( ).\nendmodule.                 \" LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\n*  -->  p1        text\n*  <--  p2        text\n*----------------------------------------------------------------------*\nFORM thew_list_masking .\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_120_HOOK_LIST'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n        CALL FUNCTION lv_func.\n      ENDIF.\n    CATCH cx_root.\n  ENDTRY.\n\n\nENDFORM.\n\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking2\n*&---------------------------------------------------------------------*\n*       advanced UI masking of special fields with helpid\n*       called from kernel by ab_rperf from abwrite\n*----------------------------------------------------------------------*\nFORM thew_list_masking2.\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_WRITE_HOOK'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n\n        FIELD-SYMBOLS:\n          <in_p1>    TYPE any,\n          <in_p2>    TYPE any,\n          <inout_p3> TYPE any,\n          <out_p4>   TYPE any.\n\n        CALL 'AB_GET_C_PARMS' ID 'P1' FIELD <in_p1>    \"field name\n                              ID 'P2' FIELD <in_p2>    \"ddic name\n                              ID 'P3' FIELD <inout_p3>    \"field value\n                              ID 'P4' FIELD <out_p4>.    \"flag is list masking\n\n        CALL FUNCTION lv_func\n          EXPORTING\n            fieldname       = <in_p1>\n            ddicname        = <in_p2>\n          IMPORTING\n            is_list_masking = <out_p4>\n          CHANGING\n            fieldvalue      = <inout_p3>.\n\n        CALL 'AB_SET_C_PARMS' ID 'P3' FIELD <inout_p3>\n                      ID 'P4' FIELD <out_p4>.    \"#EC CI_CCALL CI_CCALL\n      ENDIF.\n\n    CATCH cx_root.\n  ENDTRY.\n\nENDFORM.\n```\n",
+        "contentDigest": "fd037f3024f04ba5e91b079fd3bd51fc",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Calculating Activity Amounts for Production and Process Orders with SAP ABAP",
+        "date": "2018-01-10",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md",
+      "fields": {
+        "slug": "/detailed-look-at-bdc-in-abap/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/remove_lines.pl absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/remove_lines.pl absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "03afb752147f0d3351d541c70a947a6a",
+        "mediaType": "application/x-perl",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/remove_lines.pl",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/remove_lines.pl",
+      "extension": "pl",
+      "size": 119,
+      "prettySize": "119 B",
+      "modifiedTime": "2018-01-03T18:16:05.913Z",
+      "accessTime": "2018-01-03T18:16:06.124Z",
+      "changeTime": "2018-01-03T18:16:05.913Z",
+      "birthTime": "2018-01-03T18:06:55.035Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "remove_lines.pl",
+      "ext": ".pl",
+      "name": "remove_lines",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595819968,
+      "blocks": 0,
+      "atimeMs": 1515003366123.6353,
+      "mtimeMs": 1515003365913.379,
+      "ctimeMs": 1515003365913.379,
+      "birthtimeMs": 1515002815034.9758,
+      "atime": "2018-01-03T18:16:06.124Z",
+      "mtime": "2018-01-03T18:16:05.913Z",
+      "ctime": "2018-01-03T18:16:05.913Z",
+      "birthtime": "2018-01-03T18:06:55.035Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/perl absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/perl absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d0312c12ec1f1d74f227a03a5e4ad6fb",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/perl",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/perl",
+      "extension": "",
+      "size": 47017,
+      "prettySize": "47 kB",
+      "modifiedTime": "2018-01-03T18:13:35.677Z",
+      "accessTime": "2018-01-03T18:13:35.674Z",
+      "changeTime": "2018-01-03T18:13:35.677Z",
+      "birthTime": "2018-01-03T18:13:35.674Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "perl",
+      "ext": "",
+      "name": "perl",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595820247,
+      "blocks": 96,
+      "atimeMs": 1515003215673.7039,
+      "mtimeMs": 1515003215677.037,
+      "ctimeMs": 1515003215677.037,
+      "birthtimeMs": 1515003215673.7039,
+      "atime": "2018-01-03T18:13:35.674Z",
+      "mtime": "2018-01-03T18:13:35.677Z",
+      "ctime": "2018-01-03T18:13:35.677Z",
+      "birthtime": "2018-01-03T18:13:35.674Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/raw.html absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/raw.html absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "08cf490f1e53a58f45d800126b7bd182",
+        "mediaType": "text/html",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/raw.html",
+      "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/raw.html",
+      "extension": "html",
+      "size": 12361,
+      "prettySize": "12.4 kB",
+      "modifiedTime": "2018-01-03T18:23:12.289Z",
+      "accessTime": "2018-01-03T18:23:12.510Z",
+      "changeTime": "2018-01-03T18:23:12.289Z",
+      "birthTime": "2018-01-03T18:16:48.251Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "base": "raw.html",
+      "ext": ".html",
+      "name": "raw",
+      "relativeDirectory": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595820366,
+      "blocks": 0,
+      "atimeMs": 1515003792510.2725,
+      "mtimeMs": 1515003792289.4297,
+      "ctimeMs": 1515003792289.4297,
+      "birthtimeMs": 1515003408251.1558,
+      "atime": "2018-01-03T18:23:12.510Z",
+      "mtime": "2018-01-03T18:23:12.289Z",
+      "ctime": "2018-01-03T18:23:12.289Z",
+      "birthtime": "2018-01-03T18:16:48.251Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/.DS_Store absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "65eb5408818aaa0f4a78ca9e8d276ac5",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/.DS_Store",
+      "relativePath": ".DS_Store",
+      "extension": "",
+      "size": 6148,
+      "prettySize": "6.15 kB",
+      "modifiedTime": "2018-01-03T18:17:03.701Z",
+      "accessTime": "2018-01-03T18:17:03.700Z",
+      "changeTime": "2018-01-03T18:17:03.701Z",
+      "birthTime": "2018-01-03T18:17:03.700Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8595820375,
+      "blocks": 16,
+      "atimeMs": 1515003423700.3103,
+      "mtimeMs": 1515003423700.941,
+      "ctimeMs": 1515003423700.941,
+      "birthtimeMs": 1515003423700.3103,
+      "atime": "2018-01-03T18:17:03.700Z",
+      "mtime": "2018-01-03T18:17:03.701Z",
+      "ctime": "2018-01-03T18:17:03.701Z",
+      "birthtime": "2018-01-03T18:17:03.700Z"
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -3534,7 +3824,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1514921121026,
+      "updatedAt": 1515004524701,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -3543,7 +3833,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d48b726eeb890bc21646c8a69bc26fce",
+        "contentDigest": "814953dbcce1f15d4ecd217c167ca733",
         "owner": "internal-data-bridge"
       }
     },
@@ -3557,7 +3847,7 @@
       "context": {
         "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1514921121043,
+      "updatedAt": 1515004524717,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3566,7 +3856,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7ce9acf3d2953b26e2a6e3c979db8908",
+        "contentDigest": "ae18dc0a7688ce4173a22c2ccda10b72",
         "owner": "internal-data-bridge"
       }
     },
@@ -3580,7 +3870,7 @@
       "context": {
         "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1514921121044,
+      "updatedAt": 1515004524718,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3589,7 +3879,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "67b56c2bd5107a55640bc097ca9c1e0e",
+        "contentDigest": "c47ec6779e1dd29474f4674abaa50c30",
         "owner": "internal-data-bridge"
       }
     },
@@ -3603,7 +3893,7 @@
       "context": {
         "slug": "/laptop-stickers/"
       },
-      "updatedAt": 1514921121044,
+      "updatedAt": 1515004524718,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3612,7 +3902,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "74d9c96d22ac2e3d41c6415c34959ccf",
+        "contentDigest": "2c9580876cc8bb85afa1260cf5789cb0",
         "owner": "internal-data-bridge"
       }
     },
@@ -3626,7 +3916,7 @@
       "context": {
         "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1514921121044,
+      "updatedAt": 1515004524719,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3635,7 +3925,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6f8ffe73a6873531d01d343024d7fcbb",
+        "contentDigest": "5cec2070feadc72068b0bad0894d40b5",
         "owner": "internal-data-bridge"
       }
     },
@@ -3649,7 +3939,7 @@
       "context": {
         "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1514921121045,
+      "updatedAt": 1515004524719,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3658,7 +3948,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f3e970dc513f0eca11da307fce37b726",
+        "contentDigest": "4cf1bfeacae998bd549200da08a0368b",
         "owner": "internal-data-bridge"
       }
     },
@@ -3672,7 +3962,7 @@
       "context": {
         "slug": "/hello-world/"
       },
-      "updatedAt": 1514921121045,
+      "updatedAt": 1515004524719,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3681,7 +3971,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0babda37d96bdb585e45dc75540acc4c",
+        "contentDigest": "dd8c69697cb7eaed4d925616e4eec6c1",
         "owner": "internal-data-bridge"
       }
     },
@@ -3695,7 +3985,7 @@
       "context": {
         "slug": "/hot-linking-to-lines-in-github/"
       },
-      "updatedAt": 1514921121045,
+      "updatedAt": 1515004524720,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3704,7 +3994,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fea261033cbc61771b3270ebd4f4571f",
+        "contentDigest": "8f82fe91beaf32f43be915c50b41b2c8",
         "owner": "internal-data-bridge"
       }
     },
@@ -3718,7 +4008,7 @@
       "context": {
         "slug": "/an-npm-christmas-easter-egg/"
       },
-      "updatedAt": 1514921121046,
+      "updatedAt": 1515004524720,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3727,7 +4017,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "233b46e01cfc1085f83d38428a4a1951",
+        "contentDigest": "4c7600028a34350ee169a78dc5aff546",
         "owner": "internal-data-bridge"
       }
     },
@@ -3741,7 +4031,7 @@
       "context": {
         "slug": "/dropdowns-in-readmes/"
       },
-      "updatedAt": 1514921121046,
+      "updatedAt": 1515004524720,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3750,7 +4040,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d9f441221337a4571bef583ef1ecc984",
+        "contentDigest": "de324813db80867ad419b6157bfb46f9",
         "owner": "internal-data-bridge"
       }
     },
@@ -3764,7 +4054,7 @@
       "context": {
         "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
       },
-      "updatedAt": 1514921121046,
+      "updatedAt": 1515004524721,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3773,7 +4063,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d32571dc5d8a63479af5ee256129bc1c",
+        "contentDigest": "ccbe2ee7da3b5949382849445d2e8f11",
         "owner": "internal-data-bridge"
       }
     },
@@ -3787,7 +4077,7 @@
       "context": {
         "slug": "/debugging-abap-with-a-sap-shortcut/"
       },
-      "updatedAt": 1514921121047,
+      "updatedAt": 1515004524721,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -3796,7 +4086,30 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "64de9664343f8f3b3a97d2121a705c5f",
+        "contentDigest": "fee36efe7dc7f67ecb2105820b2e7877",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /detailed-look-at-bdc-in-abap/": {
+      "layout": "index",
+      "jsonName": "detailed-look-at-bdc-in-abap.json",
+      "internalComponentName": "ComponentDetailedLookAtBdcInAbap",
+      "path": "/detailed-look-at-bdc-in-abap/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/detailed-look-at-bdc-in-abap/"
+      },
+      "updatedAt": 1515004524721,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /detailed-look-at-bdc-in-abap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3697ccb761fbc14b81f8694975e38a35",
         "owner": "internal-data-bridge"
       }
     },
@@ -3808,7 +4121,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1514921121063,
+      "updatedAt": 1515004524740,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -3817,7 +4130,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f746c606a08d29fb19ebffcfb8e09464",
+        "contentDigest": "fe00fa75871437942380d5407e6dc119",
         "owner": "internal-data-bridge"
       }
     }
@@ -3843,7 +4156,8 @@
         "/debugging-abap-shortcut/",
         "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/",
         "/debugging-abap-with-sap-shortcut/",
-        "/debugging-abap-with-a-sap-shortcut/"
+        "/debugging-abap-with-a-sap-shortcut/",
+        "/detailed-look-at-bdc-in-abap/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
         "/a-toast-to-full-stack-developers/"
@@ -3877,6 +4191,9 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/debugging-abap-with-a-sap-shortcut/index.md absPath of file >>> MarkdownRemark": [
         "/debugging-abap-with-a-sap-shortcut/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file >>> MarkdownRemark": [
+        "/detailed-look-at-bdc-in-abap/"
       ]
     },
     "connections": {

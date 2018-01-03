@@ -84,6 +84,13 @@
         "path": "/debugging-abap-with-a-sap-shortcut/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "detailed-look-at-bdc-in-abap.json",
+        "path": "/detailed-look-at-bdc-in-abap/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

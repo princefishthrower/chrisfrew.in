@@ -37,16 +37,16 @@
       "component---src-templates-blog-post-js-1252a4a984c3cde99dd4.js.map"
     ],
     "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-519583f74de06c9888a9.js",
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-519583f74de06c9888a9.js.map"
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-3fe3f2652b33a1ae7b55.js",
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-3fe3f2652b33a1ae7b55.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-cf8334b00e489b6c67aa.js",
-      "component---src-layouts-index-js-cf8334b00e489b6c67aa.js.map"
+      "component---src-layouts-index-js-ae3878b788ab90cd557f.js",
+      "component---src-layouts-index-js-ae3878b788ab90cd557f.js.map"
     ],
     "path---index": [
-      "path---index-4101ef90da18ce361a7b.js",
-      "path---index-4101ef90da18ce361a7b.js.map"
+      "path---index-ecdf30897e95f699c1d4.js",
+      "path---index-ecdf30897e95f699c1d4.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-d7d8e3449aa0c5e478b1.js",
@@ -71,9 +71,9 @@
       "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js.map"
     ],
     "app": [
-      "app-a907bcc74972b4197070.js",
+      "app-1be8b1342398f59a8664.js",
       "build-js-styles.css",
-      "app-a907bcc74972b4197070.js.map",
+      "app-1be8b1342398f59a8664.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [
@@ -83,6 +83,10 @@
     "path---hot-linking-to-lines-in-github": [
       "path---hot-linking-to-lines-in-github-252cb0db2981e4ae6081.js",
       "path---hot-linking-to-lines-in-github-252cb0db2981e4ae6081.js.map"
+    ],
+    "path---detailed-look-at-bdc-in-abap": [
+      "path---detailed-look-at-bdc-in-abap-b47002ca2bde26559010.js",
+      "path---detailed-look-at-bdc-in-abap-b47002ca2bde26559010.js.map"
     ]
   }
 }

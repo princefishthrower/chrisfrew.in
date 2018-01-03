@@ -1,0 +1,181 @@
+---
+title: Calculating Activity Amounts for Production and Process Orders with SAP ABAP
+date: "2018-01-03"
+draft: false
+---
+
+# First off, Congratulations! :confetti_ball:
+<sup>And a happy new year! (If you're viewing this in the summer or something, see the date!)</sup>
+## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! :scream::scream::scream:
+## I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. :smile:
+
+## The Problem
+
+Let's jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module `BAPI_PRODORDCONF_GET_TT_PROP`:
+
+
+
+Likewise, there is a very similiar `BAPI_PROCORDCONF_GET_TT_PROP` for process orders:
+
+
+
+Pretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn't get any of the 6 the _activity confirmation amount_ fields (CONF_ACTIVITY1, CONF_ACTIVITY2, etc.) to be filled, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)
+
+So, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href="#footnote-1">2</a></sup>.**
+
+Unfortunately, with much more digging, the reason the two functions wouldn't produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.
+
+## The Calculation Function Module
+
+Through SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href="#footnote-3">3</a></sup>. My struggle was finding the programmatic way to do this in ABAP.
+
+Anyone with significant production planning experience (i.e., not me :joy: ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href="#footnote-4">3</a></sup>.
+
+In transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:
+
+![GUI testing calculation](test-formula.jpeg)
+
+This was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It's called `CR_WORKCENTER_FORMULA_CALC`!
+
+Let's head on over to transaction `SE37` and test it ourselves!
+
+![Yep, that's SAP](error-test-frame.jpeg)
+
+:expressionless::expressionless::expressionless: shit... SAP, you had one job to do!
+
+Fine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FORMULA_CALC` and set a breakpoint in the first line:
+
+![The first possible line in the function we can breakpoint](function-breakpoint.png)
+
+and in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src="return.png"/> and...
+
+:pray: Violá! :pray: We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!
+
+![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)
+
+(For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)
+
+![Calling program details](form-program.png)
+
+## The Details (The Hard Part)
+
+So what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href="#footnote-3">3</a></sup>  - SAP is by default looping over all of them.
+
+Now for the function parameters themselves: they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), our 4 default values (`vgw`), and the date (`date`).
+
+In turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href="#footnote-4">4</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.
+
+So I mentioned the default values that must go into `vgw` - these are the four values that are the equivalent of those four fields we can type into in `COR3` for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table `AFVC` 'operation within an order', and then table `PLPO` 'task list - operation/activity':
+
+
+
+The routing number `ls_operation-routing_no` and counter `ls_operation-counter` we've gotten from function `BAPI_PRODORD_GET_DETAIL`:
+
+
+
+(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info :wink:. Here we are just getting the operation information from the order - that's all we need.)
+
+We can finally move the corresponding fields of `ls_plpo` to `ls_vgw`:
+
+
+
+However, in addition to these four values, there are two more that are essential, that is the yield amount (`mgvrg`), and the unit (`meinh`)! We can pass them right into `ls_op` as well:
+
+
+
+Armed with our structures `ls_afvc`, `ls_op`, and `ls_vgw`, we are ready to call our function:
+
+
+
+We want the total, right? Okay, we just add the fixed value and variable value part:
+
+
+
+A requirement by my company was to have all the activity confirmation values with the same unit (I find it cleaner anyway to have all the activity confirmation values in the same unit anyway). Unfortunately, the default unit for some of the activities was hours, so we have to take a small intermediary step and call a conversion function before we are truly done:
+
+
+We then finally carry over this converted `lv_output` over to the `conf_activity` field for `lt_timetickets`, doing this for all 1-6 `conf_activity`'s:
+
+
+
+With that, we can call the final confirmation function, with all our calculated values wrapped up in `lt_timetickets`:
+
+
+If you were sharp, you realized all of this code is only on the operation level - so indeed, the six-level loop must be done each time, for each operation - we have to throw all the above code into a loop over our operations! See below for the full result!
+
+## Production Orders
+In summary, the full code looks like this:
+
+**NOTE: the full code examples were written for a SAP Gateway environment - i.e. the server environment from a SAPUI5 OData call! If you try to copy and paste this code directly into a report, ABAP statements like:**
+
+
+
+won't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method :smile:
+
+
+
+## Process Orders
+
+Because SAP is ever-so-special, process orders have a slightly different program process due to a few name changes. Here is a summary of some of those name and type changes:
+
+<hr/>
+
+| Topic | Production Orders | Process Orders |
+| ------- | ----------------- | -------------- |
+| Name of the 'steps' in your process or production order | phase/activity (I've seen both names, ABAP uses mostly 'phase') | operation |
+| Get order detail of order | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |
+| detail of order 'step' type | `bapi_order_phase`  |  `bapi_order_operation1` |
+| Function for timeticket proposals | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |
+| Function for order confirmation | `BAPI_PRODORDCONF_CREATE_TT` | `BAPI_PROCORDCONF_CREATE_TT` |
+| `timetickets` `TYPE` in order confirmation function | `bapi_pp_timeticket` | `bapi_pi_timeticket1` |
+
+<hr/>
+
+There are more, but you can find those in the code for yourself. The important thing to notice is that the key challenging part here, calculating the confirmation activity amounts, uses the same internal function module, ``
+
+Here's the code for calculating activities for process orders - _note the slight change in all the variable names!_ - and be careful with your types (carefully look over the `DATA:` statement), otherwise you'll get :boom:**exploding runtime errors**:boom: when you try to confirm something with one of our two main functions and you pass, for example, the  `lt_timetickets` with the production type ``, and you pass it into the of the _process_ order function module.
+
+
+
+## Final Comments
+
+Whew. Did it feel like a marathon? :runner: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.
+
+Another note and quick plug :smile: I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.
+
+:poop: Ok, plug done! :poop:
+
+Cheers! :beer:
+
+<hr/>
+
+# Footnotes
+
+<div id="footnote-1">
+1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.
+</div>
+
+<div id="footnote-2">
+2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. :thumbsup:
+</div>
+
+<div id="footnote-3">
+3. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.
+</div>
+
+<div id="footnote-4">
+4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:
+
+Upon pressing 'enter' for with a new amount:
+![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpeg)
+
+Pressing 'OK' for this window, we get a popup:
+
+![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpeg)
+
+We see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)
+</div>
+
+<div id="footnote-4">
+4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
+</div>

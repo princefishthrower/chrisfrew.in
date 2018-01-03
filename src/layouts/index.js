@@ -93,8 +93,13 @@ class Template extends React.Component {
             Based at one point on <a href="https://github.com/gatsbyjs/gatsby-starter-blog">this blog template.</a><br/>
             Static site powered by <a href="https://reactjs.org/">React</a> & <a href="https://www.gatsbyjs.org/">Gatsby.js</a><br/>
             Code highlighting by <a href="http://prismjs.com">Prism.js</a><br/>
-            Colors inspired by the Monokai color scheme (I <Emoji text="❤️" /> Sublime Text :) )<br/>
-            Hosted independently with Node.js & express.
+            Colors inspired by the Monokai color scheme (I <Emoji text=":two_hearts:"/>{'\u00A0'}{'\u00A0'}Sublime Text <Emoji text=":smile:" /> )<br/>
+            Hosted independently with Node.js & express.<br/>
+            Donate:<br/>
+            USD: <code><a href="http://paypal.me/chrisfrewin">http://paypal.me/chrisfrewin</a><br/></code>
+            BTC: <code>1D6aFgTLZrV4QAJ5ZhjDxV8Rj78LLjKvcm</code><br/>
+            ETH: <code>0x1bc3850619803C48b79481A3Aee167141be20432</code><br/>
+            XRB: <code>xrb_1s8s4bpucoseodz3oqmzenecimoe6rntpgsnpdfg6yequd1hibraghznxwga</code><br/>
           </h5>
         </footer>
       </Container>

@@ -33,6 +33,8 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "debugging-abap-with-a-sap-shortcut.json": require("gatsby-module-loader?name=path---debugging-abap-with-a-sap-shortcut!/Users/chris/projects/chrisfrew.in/.cache/json/debugging-abap-with-a-sap-shortcut.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "detailed-look-at-bdc-in-abap.json": require("gatsby-module-loader?name=path---detailed-look-at-bdc-in-abap!/Users/chris/projects/chrisfrew.in/.cache/json/detailed-look-at-bdc-in-abap.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 
