@@ -37,16 +37,16 @@
       "component---src-templates-blog-post-js-1252a4a984c3cde99dd4.js.map"
     ],
     "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-3fe3f2652b33a1ae7b55.js",
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-3fe3f2652b33a1ae7b55.js.map"
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-ed4fe5f617fc35bfe5bf.js",
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-ed4fe5f617fc35bfe5bf.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-ae3878b788ab90cd557f.js",
       "component---src-layouts-index-js-ae3878b788ab90cd557f.js.map"
     ],
     "path---index": [
-      "path---index-ecdf30897e95f699c1d4.js",
-      "path---index-ecdf30897e95f699c1d4.js.map"
+      "path---index-8af6aec4c9944caa9296.js",
+      "path---index-8af6aec4c9944caa9296.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-d7d8e3449aa0c5e478b1.js",
@@ -55,6 +55,10 @@
     "path---an-npm-christmas-easter-egg": [
       "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js",
       "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js.map"
+    ],
+    "path---colors-for-sap-web-ide": [
+      "path---colors-for-sap-web-ide-94a10a7e4b3b5fa43227.js",
+      "path---colors-for-sap-web-ide-94a10a7e4b3b5fa43227.js.map"
     ],
     "commons": [
       "commons-b9295c1fa34e18bb3199.js",
@@ -71,9 +75,9 @@
       "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js.map"
     ],
     "app": [
-      "app-1be8b1342398f59a8664.js",
+      "app-a6e0ebc5c4e975aeb3f4.js",
       "build-js-styles.css",
-      "app-1be8b1342398f59a8664.js.map",
+      "app-a6e0ebc5c4e975aeb3f4.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

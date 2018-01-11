@@ -9,6 +9,19 @@
             "edges": [
                 {
                     "node": {
+                        "excerpt": "Dude, where’s my color scheme?! At some point,  SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!  That is unforgivable… Don’t…",
+                        "fields": {
+                            "slug": "/colors-for-sap-web-ide/"
+                        },
+                        "frontmatter": {
+                            "date": "11 January, 2018",
+                            "title": "Colors For SAP Web IDE!",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "A short write up about some deep details with SAP’s BDC Method And some common gotchyas",
                         "fields": {
                             "slug": "/detailed-look-at-bdc-in-abap/"
@@ -87,19 +100,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…",
-                        "fields": {
-                            "slug": "/laptop-stickers/"
-                        },
-                        "frontmatter": {
-                            "date": "19 December, 2017",
-                            "title": "My Laptop Stickers Arrived! Am I a Real Developer Now?!",
-                            "draft": false
-                        }
-                    }
-                },
-                {
-                    "node": {
                         "excerpt": "This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…",
                         "fields": {
                             "slug": "/hot-linking-to-lines-in-github/"
@@ -107,6 +107,19 @@
                         "frontmatter": {
                             "date": "19 December, 2017",
                             "title": "How to Link to Lines of Code in a Github Repository!",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…",
+                        "fields": {
+                            "slug": "/laptop-stickers/"
+                        },
+                        "frontmatter": {
+                            "date": "19 December, 2017",
+                            "title": "My Laptop Stickers Arrived! Am I a Real Developer Now?!",
                             "draft": false
                         }
                     }

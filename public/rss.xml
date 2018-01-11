@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Wed, 03 Jan 2018 18:35:40 GMT</lastBuildDate><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[A short write up about some deep details with SAP’s BDC Method And some common gotchyas]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 10 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A short write up about some deep details with SAP’s BDC Method&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jan 2018 11:50:45 GMT</lastBuildDate><item><title><![CDATA[Colors For SAP Web IDE!]]></title><description><![CDATA[Dude, where’s my color scheme?! At some point,  SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!  That is unforgivable… Don’t…]]></description><link>https://chrisfrew.in/colors-for-sap-web-ide/</link><guid isPermaLink="false">https://chrisfrew.in/colors-for-sap-web-ide/</guid><pubDate>Thu, 11 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Dude, where’s my color scheme?!&lt;/h1&gt;
+&lt;p&gt;At some point, &lt;em&gt;SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!&lt;/em&gt; That is unforgivable…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/unforgivable-595b9ad46814fa0343339c67fe02f92a.gif&quot; alt=&quot;Like I said, unforgivable.&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Don’t worry - code to the rescue!&lt;/h2&gt;
+&lt;p&gt;I wrote a small tampermonkey script that address this issue, and you can get your monokai colors back! &lt;a href=&quot;https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&quot;&gt;(See Ace’s GitHub for all possible themes.)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.99250936329588%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB50lEQVQoz42SXWsTQRSG979oze7s7uzs19SNpK1aWvMHRMHeFrzQK0FEUEoupIpUU0HailjtlYh/QqQIImgh0iY2MTHJJtukjV/g1evsxBqDXfTi5SzszMMz5xwle2YWudv3MZ9fEVnG4oM1LCw9Qm7hHq7fuIO5+TzmbuaRu7X4X1FmrtxFvdlCM9pDp/ddJtr9hnCnh1KljqXlFaw+foKnz57j4eraP6Ocu3gNYa2EWjNCV8D2vv74nXeFTVi2Ds9TkT1lI5MxoGqHkVIPJUaZuXAV3cYHeflTuIN298sQ0PFMMG4hM8HBRx04LoXtmMnA07OXUCxt483bDay/eo3N4jZK5arMi5frsF0DhpkCYwSUqqCWCsvSRNVkJfrIUJSz5y+j1/6IYrU29Nw/Dak2giBNERzPiGrBdVVhmYLzK0Q/MjCUwKiGciNMBMYH40uuZwiYIXpqCqAOZhNpr4t/+72VwFbUQUE8tdHeTQZaOizugAemsPSQTvs4Griirwyca6K3ZACMV2SrUhUD+XwAkMqDuu9gcvokxscYpqZPwOf2wUOJgZWwhY3CltzBv4Bu35CJ9ZFmx3w55XgAGumHkMG3BNbbXbwvllEPO4mG1CKYEGZj2SmMT6Zhj1KwgMNnfdC+4U87GBduPa1pyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;What&apos;s this trickery?!?! Is that MONOKAI for SAP Web IDE?!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png&quot;
+        srcset=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-1a291.png 148w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-2bc4a.png 295w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png 590w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-526de.png 885w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fa2eb.png 1180w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-08f6a.png 1770w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png 2136w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+What’s this trickery?!?! Is that the MONOKAI color scheme for SAP Web IDE?!&lt;/p&gt;
+&lt;p&gt;This obviously requires that you have tampermonkey installed for your browser - check out the &lt;a href=&quot;https://tampermonkey.net/&quot;&gt;tampermonkey website on how to install it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you’ve installed tampermonkey, just copy in and paste the script from below (or the &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;GitHub&lt;/a&gt; page) and all you should need to change is the &lt;code&gt;[YOUR_USER_NAME_HERE]&lt;/code&gt; value in the &lt;code&gt;@match&lt;/code&gt; variable. This username is your SAP ‘s’ username, an ‘s’ followed by 10 numbers, i.e. &lt;code&gt;S0123456789&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;TL;DR: Gimme Code!&lt;/h2&gt;
+&lt;p&gt;The full code (as of January 11, 2018) is as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;// ==UserScript==&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @name         Monokai Web IDE colors&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @namespace    http://tampermonkey.net/&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @version      1.0&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @description  Changes the Ace Shell CSS in SAP Web IDE from any defaults to Monokai.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @author       Chris Frewin&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @match        https://webide-[YOUR_USER_NAME_HERE]trial.dispatcher.hanatrial.ondemand.com&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_getResourceText&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_addStyle&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @resource     customCSS https://raw.githubusercontent.com/ajaxorg/ace/master/lib/ace/theme/monokai.css&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @require      http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ==/UserScript==&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// *** NOTE: feel free to replace the &apos;customCSS&apos; link above with any of the following ace themes found here: (make sure to select the raw version!)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&lt;/span&gt;
+
+window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; newCSS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;GM_getResourceText&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;customCSS&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai css for ace editor&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;GM_addStyle&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;newCSS&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; editor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;#__editor0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// select editor ID&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;removeClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove any of the default classes&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;removed default css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace_editor&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// add back in original class&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace-monokai&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai colors class!&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added ace-monokai css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;I would recommend you check out the newest version on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;https://github.com/frewinchristopher/sapwebidecolors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[A short write up about some deep details with SAP’s BDC Method And some common gotchyas]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 10 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A short write up about some deep details with SAP’s BDC Method&lt;/h1&gt;
 &lt;h2&gt;And some common gotchyas&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;* -------------------------------------------------------------------&lt;/span&gt;
@@ -1076,74 +1155,10 @@
 &lt;p&gt;Through SAP GUI in transaction &lt;code&gt;CO11N&lt;/code&gt;, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. My struggle was finding the programmatic way to do this in ABAP.&lt;/p&gt;
 &lt;p&gt;Anyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center &lt;em&gt;behind&lt;/em&gt; the activity &lt;sup&gt;&lt;a href=&quot;#footnote-4&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;In transaction &lt;code&gt;CR03&lt;/code&gt; (display work center), in the ‘Costing’ Tab, there is a ‘Formula’ button with the check symbol on it:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/test-formula-be1d226058c78f355eb1b74fb4aaad43-441b6.jpeg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 417px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 25.899280575539567%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAd0JQf/EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABgQAAMBAQAAAAAAAAAAAAAAAAERYQAQ/9oACAEBAAE/IVTlTz//2gAMAwEAAgADAAAAEH//AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQABBQAAAAAAAAAAAAAAAAEAEBExgcH/2gAIAQEAAT8QWpYtzHpT/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;GUI testing calculation&quot;
-        title=&quot;&quot;
-        src=&quot;/static/test-formula-be1d226058c78f355eb1b74fb4aaad43-441b6.jpeg&quot;
-        srcset=&quot;/static/test-formula-be1d226058c78f355eb1b74fb4aaad43-fc368.jpeg 148w,
-/static/test-formula-be1d226058c78f355eb1b74fb4aaad43-f5e75.jpeg 295w,
-/static/test-formula-be1d226058c78f355eb1b74fb4aaad43-441b6.jpeg 417w&quot;
-        sizes=&quot;(max-width: 417px) 100vw, 417px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;This was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It’s called &lt;code&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt;!&lt;/p&gt;
 &lt;p&gt;Let’s head on over to transaction &lt;code&gt;SE37&lt;/code&gt; and test it ourselves!&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/error-test-frame-fbfdd9c4bd38fad10e79caffb36fef90-19f17.jpeg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 434px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 32.71889400921659%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAdgIQG//xAAYEAADAQEAAAAAAAAAAAAAAAAAAxMCEv/aAAgBAQABBQKeCazlZ//EABcRAAMBAAAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8BiMo//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREv/aAAgBAgEBPwGs0z//xAAXEAADAQAAAAAAAAAAAAAAAAAAATIx/9oACAEBAAY/AsJRKP/EABYQAQEBAAAAAAAAAAAAAAAAAADxYf/aAAgBAQABPyHGgJj/2gAMAwEAAgADAAAAEPPP/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAFRYZH/2gAIAQMBAT8QrWChR//EABcRAQADAAAAAAAAAAAAAAAAAAABUWH/2gAIAQIBAT8Q0Ta//8QAGBABAQEBAQAAAAAAAAAAAAAAAQAhETH/2gAIAQEAAT8QXgM9obBg8n//2Q==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Yep, that&apos;s SAP&quot;
-        title=&quot;&quot;
-        src=&quot;/static/error-test-frame-fbfdd9c4bd38fad10e79caffb36fef90-19f17.jpeg&quot;
-        srcset=&quot;/static/error-test-frame-fbfdd9c4bd38fad10e79caffb36fef90-fc4c5.jpeg 148w,
-/static/error-test-frame-fbfdd9c4bd38fad10e79caffb36fef90-0af58.jpeg 295w,
-/static/error-test-frame-fbfdd9c4bd38fad10e79caffb36fef90-19f17.jpeg 434w&quot;
-        sizes=&quot;(max-width: 434px) 100vw, 434px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;😑😑😑 shit… SAP, you had one job to do!&lt;/p&gt;
 &lt;p&gt;Fine. We’ll do it ourselves. We can open up the source code of &lt;code&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt; and set a breakpoint in the first line:&lt;/p&gt;
 &lt;p&gt;
@@ -2168,75 +2183,9 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
 &lt;div id=&quot;footnote-4&quot;&gt;
 4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:
 &lt;p&gt;Upon pressing ‘enter’ for with a new amount:
-
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-27f1f.jpeg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 38.04627249357326%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdyCUH//xAAWEAEBAQAAAAAAAAAAAAAAAAAAISL/2gAIAQEAAQUCaV//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAFRABAQAAAAAAAAAAAAAAAAAAAEH/2gAIAQEABj8CRH//xAAZEAABBQAAAAAAAAAAAAAAAAAAARARMVH/2gAIAQEAAT8hS2J2P//aAAwDAQACAAMAAAAQfA//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QsY//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAj/8QAGxAAAQQDAAAAAAAAAAAAAAAAEQABMUFRcZH/2gAIAQEAAT8QCs4Qq7eoEn06/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Automatic calculation of confirmation activities by the System in transaction CO11N&quot;
-        title=&quot;&quot;
-        src=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-f8fb9.jpeg&quot;
-        srcset=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-e8976.jpeg 148w,
-/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-63df2.jpeg 295w,
-/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-f8fb9.jpeg 590w,
-/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-27f1f.jpeg 778w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;Pressing ‘OK’ for this window, we get a popup:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-354e5.jpeg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 50.42301184433165%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe3cWGj/xAAVEAEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAQABBQJj/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAEQETEhQVH/2gAIAQEAAT8hxsiSF6WEpv/aAAwDAQACAAMAAAAQsw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABACERMWEQ/9oACAEBAAE/EDRGOljAWL7idMux0aJSnn//2Q==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Filling confirmation activities by hand in transaction CO11N&quot;
-        title=&quot;&quot;
-        src=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-f8fb9.jpeg&quot;
-        srcset=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-e8976.jpeg 148w,
-/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-63df2.jpeg 295w,
-/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-f8fb9.jpeg 590w,
-/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-354e5.jpeg 591w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;We see that the Labor time is provided here. It’s likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it’s not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&quot;footnote-4&quot;&gt;
@@ -2396,7 +2345,14 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;h2&gt;Footnotes&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;This page you are looking at right now is generated with Gatsby (which generates React HTML from markdown), and I know these dropdowns work on the Markdown of GitHub too.&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[How to Link to Lines of Code in a Github Repository!]]></title><description><![CDATA[This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…]]></description><link>https://chrisfrew.in/hot-linking-to-lines-in-github/</link><guid isPermaLink="false">https://chrisfrew.in/hot-linking-to-lines-in-github/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This’ll be a real short one; I just learned you can link to specific lines of code on GitHub!&lt;/p&gt;
+&lt;p&gt;All you need to do is find your link to the source code preview (***NOTE: &lt;em&gt;not&lt;/em&gt; the raw view!) as an example, let’s look at a source file from Bitcoin repository*:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let’s say I want to highlight line 123. All you have to do is add a ‘#L’ and the line number you want, so let’s add #L123:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;* &lt;code&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code&gt;main.cpp&lt;/code&gt; is an attractive file name 😄.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2446,14 +2402,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;Otherwise, it’s my honest-to-goodness workflow tools.&lt;/p&gt;
 &lt;h1&gt;So You Wanna Be Cool Too, Eh?&lt;/h1&gt;
 &lt;p&gt;I ordered all of these on &lt;a href=&quot;redbubble.com&quot;&gt;redbubble.com&lt;/a&gt; No, no, it’s not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is &lt;a href=&quot;devstickers.com&quot;&gt;devstickers.com&lt;/a&gt;. Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, &lt;em&gt;obviously&lt;/em&gt; so I could fit as many dev stickers as possible on my laptop 😂 - see the picture for reference.&lt;/p&gt;
-&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Link to Lines of Code in a Github Repository!]]></title><description><![CDATA[This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…]]></description><link>https://chrisfrew.in/hot-linking-to-lines-in-github/</link><guid isPermaLink="false">https://chrisfrew.in/hot-linking-to-lines-in-github/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This’ll be a real short one; I just learned you can link to specific lines of code on GitHub!&lt;/p&gt;
-&lt;p&gt;All you need to do is find your link to the source code preview (***NOTE: &lt;em&gt;not&lt;/em&gt; the raw view!) as an example, let’s look at a source file from Bitcoin repository*:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Let’s say I want to highlight line 123. All you have to do is add a ‘#L’ and the line number you want, so let’s add #L123:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;* &lt;code&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code&gt;main.cpp&lt;/code&gt; is an attractive file name 😄.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
 &lt;h1&gt;My Promise to You&lt;/h1&gt;
 &lt;p&gt;Let me promise you, I won’t post about Bitcoin speculation on this blog ever again. (At least in relation to any sort of price speculation, maybe one day later I will post on some tech stuff)&lt;/p&gt;
 &lt;h1&gt;The Numbers&lt;/h1&gt;
