@@ -45,8 +45,8 @@
       "component---src-layouts-index-js-ae3878b788ab90cd557f.js.map"
     ],
     "path---index": [
-      "path---index-8af6aec4c9944caa9296.js",
-      "path---index-8af6aec4c9944caa9296.js.map"
+      "path---index-d60a8fe86e834ff31786.js",
+      "path---index-d60a8fe86e834ff31786.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-d7d8e3449aa0c5e478b1.js",
@@ -75,9 +75,9 @@
       "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js.map"
     ],
     "app": [
-      "app-a6e0ebc5c4e975aeb3f4.js",
+      "app-f40853978997043bfc27.js",
       "build-js-styles.css",
-      "app-a6e0ebc5c4e975aeb3f4.js.map",
+      "app-f40853978997043bfc27.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

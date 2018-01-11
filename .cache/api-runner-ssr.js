@@ -1,6 +1,6 @@
 var plugins = [{
       plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"trackingId":"UA-63301492-1"},
     },{
       plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
       options: {"plugins":[]},

@@ -24,6 +24,13 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "detailed-look-at-bdc-in-abap.json",
+        "path": "/detailed-look-at-bdc-in-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "a-toast-to-full-stack-developers.json",
         "path": "/a-toast-to-full-stack-developers/"
     },
@@ -52,13 +59,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hello-world.json",
-        "path": "/hello-world/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "ethereum-developers-toolbelt.json",
         "path": "/ethereum-developers-toolbelt/"
     },
@@ -66,15 +66,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "detailed-look-at-bdc-in-abap.json",
-        "path": "/detailed-look-at-bdc-in-abap/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hot-linking-to-lines-in-github.json",
-        "path": "/hot-linking-to-lines-in-github/"
+        "jsonName": "hello-world.json",
+        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -89,6 +82,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "final-say-bitcoin.json",
         "path": "/final-say-bitcoin/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hot-linking-to-lines-in-github.json",
+        "path": "/hot-linking-to-lines-in-github/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
