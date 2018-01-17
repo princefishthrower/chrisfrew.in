@@ -1,11 +1,10 @@
 ---
-title: Calculating Activity Amounts for Production and Process Orders with SAP ABAP
-date: "2018-01-10"
+title: A Detailed Look at ABAP's BDC Method
+date: "2018-01-24"
 draft: true
 ---
 
-# A short write up about some deep details with SAP’s BDC Method
-## And some common gotchyas
+## And some common gotchyas, too
 
 ```abap
 * -------------------------------------------------------------------

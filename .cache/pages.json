@@ -98,6 +98,34 @@
         "path": "/sending-windows-commands-from-sap-abap/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "abap-push-and-message-channels.json",
+        "path": "/abap-push-and-message-channels/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "warn-sap-users-of-locked-objects.json",
+        "path": "/warn-sap-users-of-locked-objects/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein.json",
+        "path": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "building-raiblocks-charts.json",
+        "path": "/building-raiblocks-charts/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

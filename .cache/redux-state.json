@@ -1579,12 +1579,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-01-11T11:58:52.462Z",
+      "buildTime": "2018-01-17T16:52:38.095Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3a17cf8fd7a1fdc02a7509217c0f8ca6",
+        "contentDigest": "0d9237b7004435094f56ea5f1f8f4699",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1594,7 +1594,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "63c43012560df79a82a550fb95cfa85c",
+        "contentDigest": "30d0e7bd43b5a612e3538925d87bede2",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1602,11 +1602,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 544,
-      "prettySize": "544 B",
-      "modifiedTime": "2018-01-11T11:18:27.837Z",
-      "accessTime": "2018-01-11T11:58:55.616Z",
-      "changeTime": "2018-01-11T11:18:27.837Z",
+      "size": 672,
+      "prettySize": "672 B",
+      "modifiedTime": "2018-01-17T16:47:09.210Z",
+      "accessTime": "2018-01-17T16:52:41.105Z",
+      "changeTime": "2018-01-17T16:47:09.210Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1616,20 +1616,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 17,
+      "nlink": 21,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1515671935616.3357,
-      "mtimeMs": 1515669507836.9773,
-      "ctimeMs": 1515669507836.9773,
+      "atimeMs": 1516207961105.0706,
+      "mtimeMs": 1516207629210.02,
+      "ctimeMs": 1516207629210.02,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-01-11T11:58:55.616Z",
-      "mtime": "2018-01-11T11:18:27.837Z",
-      "ctime": "2018-01-11T11:18:27.837Z",
+      "atime": "2018-01-17T16:52:41.105Z",
+      "mtime": "2018-01-17T16:47:09.210Z",
+      "ctime": "2018-01-17T16:47:09.210Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1637,7 +1637,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a710f2d058cf0c674f1096135a4b6832",
+        "contentDigest": "9d232a057f43509cdf2532e94f0c27ba",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1648,7 +1648,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1666,11 +1666,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1515671935620.5872,
+      "atimeMs": 1516207961110.2324,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1680,7 +1680,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "289500a55e9e25f91075530f7b6c4bcc",
+        "contentDigest": "c4bc2b72d52788fc54f3b3e377d843bf",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1691,7 +1691,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1709,11 +1709,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1515671935620.5356,
+      "atimeMs": 1516207961110.2715,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1723,7 +1723,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ba70e61490f59ce79d8d87be71d85987",
+        "contentDigest": "13b24a0d7e73950643abe048dc37bda0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1734,7 +1734,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1752,11 +1752,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1515671935620.6619,
+      "atimeMs": 1516207961110.392,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1766,7 +1766,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "faa3d240ee732d34f0de4429a1c9a89e",
+        "contentDigest": "41227c21569999d618d8e5fbf910a5de",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1777,7 +1777,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1795,11 +1795,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1515671935620.5742,
+      "atimeMs": 1516207961110.3303,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1809,7 +1809,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f269aaad9ae7dc0062e6ccc7dae9874c",
+        "contentDigest": "cc54a15cb09e2c97c2e216c2471853d4",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1820,7 +1820,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -1838,11 +1838,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1515671935620.61,
+      "atimeMs": 1516207961110.3433,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -1852,7 +1852,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2f4ca6e758cf55397b414ec16a8e7fe7",
+        "contentDigest": "af95c44b425acaa56453b69877611bac",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1863,7 +1863,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -1881,11 +1881,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1515671935620.5742,
+      "atimeMs": 1516207961110.3567,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -1895,7 +1895,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0bfc8c7af9b0e8cfe11cbd53e7c5b4a7",
+        "contentDigest": "7e8390f60f974b0fa803e3251b13dac5",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1906,7 +1906,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -1924,11 +1924,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1515671935620.6619,
+      "atimeMs": 1516207961110.4011,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -1938,7 +1938,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1760c713fb4225776907979587cb8443",
+        "contentDigest": "0a794880b535acf550b201fc1852481f",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1949,7 +1949,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -1967,11 +1967,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1515671935620.6235,
+      "atimeMs": 1516207961110.3914,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -1981,7 +1981,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "702de54b41783fcf8f69c7291f0707a6",
+        "contentDigest": "3c48832321161e0631e2375ca013e1f8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1992,7 +1992,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2010,11 +2010,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1515671935620.7488,
+      "atimeMs": 1516207961110.4448,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2024,7 +2024,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "336e77ab048e7c7139738130cffd7852",
+        "contentDigest": "4985acb91632fb3fec3a94547846b328",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2035,7 +2035,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2053,11 +2053,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1515671935620.6753,
+      "atimeMs": 1516207961110.447,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2067,7 +2067,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d99fcfbd432bb9a14d901f2ed93fd9c3",
+        "contentDigest": "36e11d80bd7803edebf763e3beded7b7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2078,7 +2078,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2096,11 +2096,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1515671935620.698,
+      "atimeMs": 1516207961110.454,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2110,7 +2110,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6d9a0f1eeb63b777f5e015c64266c330",
+        "contentDigest": "04f8d3dd1a2bbdf431ba46f653e1ed40",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2121,7 +2121,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2017-12-18T18:59:56.628Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
       "changeTime": "2017-12-18T18:59:56.628Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2139,11 +2139,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1515671935620.711,
+      "atimeMs": 1516207961110.4827,
       "mtimeMs": 1513623596627.5898,
       "ctimeMs": 1513623596627.5898,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.110Z",
       "mtime": "2017-12-18T18:59:56.628Z",
       "ctime": "2017-12-18T18:59:56.628Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2153,7 +2153,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "70f43ea0e08abb2f5249a87d504033b6",
+        "contentDigest": "018206a71dc74d5103f83f7d295e2c29",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2164,7 +2164,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-01-11T11:58:55.621Z",
+      "accessTime": "2018-01-17T16:52:41.111Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2182,11 +2182,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1515671935620.754,
+      "atimeMs": 1516207961110.5024,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-01-11T11:58:55.621Z",
+      "atime": "2018-01-17T16:52:41.111Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2422,7 +2422,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cba1bde3fba07fd691a66e1f7ae1dd85",
+        "contentDigest": "46e184bcc27e66d2373044c653896475",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2431,11 +2431,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md",
       "relativePath": "detailed-look-at-bdc-in-abap/index.md",
       "extension": "md",
-      "size": 36873,
-      "prettySize": "36.9 kB",
-      "modifiedTime": "2018-01-03T18:35:17.549Z",
-      "accessTime": "2018-01-11T11:50:29.447Z",
-      "changeTime": "2018-01-03T18:35:17.549Z",
+      "size": 36771,
+      "prettySize": "36.8 kB",
+      "modifiedTime": "2018-01-11T16:05:26.022Z",
+      "accessTime": "2018-01-11T16:05:27.062Z",
+      "changeTime": "2018-01-11T16:05:26.022Z",
       "birthTime": "2018-01-03T17:29:45.419Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap",
@@ -2451,14 +2451,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8595818360,
-      "blocks": 80,
-      "atimeMs": 1515671429446.6548,
-      "mtimeMs": 1515004517549.2493,
-      "ctimeMs": 1515004517549.2493,
+      "blocks": 72,
+      "atimeMs": 1515686727062.4841,
+      "mtimeMs": 1515686726021.9963,
+      "ctimeMs": 1515686726021.9963,
       "birthtimeMs": 1515000585418.9443,
-      "atime": "2018-01-11T11:50:29.447Z",
-      "mtime": "2018-01-03T18:35:17.549Z",
-      "ctime": "2018-01-03T18:35:17.549Z",
+      "atime": "2018-01-11T16:05:27.062Z",
+      "mtime": "2018-01-11T16:05:26.022Z",
+      "ctime": "2018-01-11T16:05:26.022Z",
       "birthtime": "2018-01-03T17:29:45.419Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file": {
@@ -3656,8 +3656,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2018-01-10\"\ndraft: true\n---\n\n# A short write up about some deep details with SAP’s BDC Method\n## And some common gotchyas\n\n```abap\n* -------------------------------------------------------------------\n*                          S A P M S S Y 0\n*                  system routines for ABAP processing\n*\n*                  (must be declared as FUNCTION-POOL)\n* -------------------------------------------------------------------\nfunction-pool sapmssy0  message-id 02.\ninclude <%_list>.\ninclude <sys000>.\ninclude tskhincl.\ntables: tfdir.\ndata:  orders          type standard table of %_commit_orders,\n                                                  \"ON COMMIT orders\n       rb_orders       type standard table of %_commit_orders,\n                                                  \"ON ROLLBACK orders\n       imode_orders    type standard table of %_commit_orders,\n                                                  \"POC in CALL DIALOG\n       imode_rb_orders type standard table of %_commit_orders.\n\"POR in CALL DIALOG\n* for RTM test concerning POC during OS event handling\ndata: os_orders        type hashed table of %_commit_orders\n                            with unique key prog rout.      \"#EC NEEDED\n\"OS ON COMMIT orders\n* end RTM\n\ndata:  %_vbkey type %_vbkey value '%_',                     \"#EC *\n       %%vbkey type %_vbkey value '%%',\n       %_vb_calls type %_vb_calls occurs 50 with header line.\"#EC *\ndata:  i_level type i value 0.\n\ndata : arfc_pending type c,\n       trfc_nowait_for_update type c.\n\n* bgRFC: something todo at COMMIT / ROLLBACK\ndata : bgrfc_eot_action type i.\n\n* LDQ: something todo at COMMIT / ROLLBACK\ndata : ldq_writer_eot_action type i.\ndata : ldq_reader_eot_action type i.\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ L E V E L\n* order given form to be run when work is committed\n*\n* Input : program name, form name, execution level\n* -------------------------------------------------------------------\nform %_order_form_level using prog rout u_level.            \"#EC *\n  data: allow_nested_poc(1) type c,\n        caller type sy-repid.\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80).\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_orders\n      into imode_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_orders lines i_level.\n      imode_orders_wa-prog = prog.\n      imode_orders_wa-rout = rout.\n      imode_orders_wa-i_level = i_level.\n      imode_orders_wa-u_level = u_level.\n      insert imode_orders_wa into imode_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n*     already in PERFORM ON COMMIT\n      call 'C_SAPGPARAM' id 'NAME'  field 'abap/allow_nested_poc'  \"#EC CI_CCALL\n                         id 'VALUE' field allow_nested_poc.\n      if allow_nested_poc <> 'X'.\n*       nested PERFORM ON COMMIT not allowed\n        call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n        if caller <> 'SAPMSSY0'.\n          mpar1 = 'NESTED_PERFORM_ON_COMMIT'.\n          concatenate 'caller:'  caller into mpar2 separated by ' '.\n          concatenate 'program:' prog   into mpar3 separated by ' '.\n          concatenate 'form:'    rout   into mpar4 separated by ' '.\n*         switch back kernel flag: just for sure.\n          call 'SET_SWITCH_TXEND' id 'STATE' field ' '.  \"#EC CI_CCALL\n*         issue short dump\n          message x081(00) with mpar1 mpar2 mpar3 mpar4.\n        endif.\n      endif.\n    endif.\n    read table orders\n      into orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table orders lines i_level.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      orders_wa-i_level = i_level.\n      orders_wa-u_level = u_level.\n      insert orders_wa into orders index sy-tabix.\n    endif.\n*   for RTM test concerning POC during OS event handling\n    if sy-oncom = 'E'.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      insert orders_wa into table os_orders.\n    endif.\n*   end RTM\n\n  endif.\nendform.                    \"%_order_form_level\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ F O R _ R O L L B A C K\n* order given form to be run when work is rolled back\n* Input : program name, form name\n* -------------------------------------------------------------------\nform %_order_form_for_rollback using prog rout.             \"#EC *\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80),\n        caller type sy-repid.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_rb_orders\n      into imode_rb_orders_wa\n      with key prog = prog\n           rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_rb_orders lines i_level.\n      imode_rb_orders_wa-prog = prog.\n      imode_rb_orders_wa-rout = rout.\n      imode_rb_orders_wa-i_level = i_level.\n      imode_rb_orders_wa-u_level = 0.\n      insert imode_rb_orders_wa into imode_rb_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n      call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n      mpar1 = 'NESTED_PERFORM_ON_ROLLBACK'.\n      concatenate 'caller:'  caller into mpar2 separated by ' '.\n      concatenate 'program:' prog   into mpar3 separated by ' '.\n      concatenate 'form:'    rout   into mpar4 separated by ' '.\n*     switch back kernel flag: just for sure.\n      call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\n*     already in PERFORM ON ROLLBACK issue short dump\n      message x081(00) with mpar1 mpar2 mpar3 mpar4.\n    endif.\n    read table rb_orders into rb_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table rb_orders lines i_level.\n      rb_orders_wa-prog = prog.\n      rb_orders_wa-rout = rout.\n      rb_orders_wa-i_level = i_level.\n      insert rb_orders_wa into rb_orders index sy-tabix.\n    endif.\n  endif.\nendform.                    \"%_order_form_for_rollback\n\n\n*---------------------------------------------------------------------*\n*  %_COMMIT_PREPARE                                                   *\n*  Set date and time for aRFC\n*---------------------------------------------------------------------*\nform %_commit_prepare using date time.                      \"#EC *\n\n  %_sys000-arfc-send_time = time.\n  %_sys000-arfc-send_date = date.\n\nendform.                    \"%_commit_prepare\n\n* ---------------------------------------------------------------------\n* FORM %_BEFORE_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_before_commit.                                       \"#EC *\n  data: l_oncom like sy-oncom.\n  data: txend type c.\n\n* forbid COMMIT if already in ON ROLLBACK handling\n* allow COMMIT during ON COMMIT for backward compatibilty\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'R'.\n    message x085(00).\n  endif.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_COMMIT'.\n* Raise event 'Commit Requested' for Object Manager\n  call method cl_os_transaction_end_notifier=>raise_commit_requested.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_before_commit\n\n* -------------------------------------------------------------------\n* C O M M I T\n* commit work\n* -------------------------------------------------------------------\nform %_commit.                                              \"#EC *\n  data: %_state, %_direct_utask_active.                     \"#EC *\n  data: l_lines   like sy-tabix.\n  data: %_enqkey  type eqeusrvb.                            \"#EC *\n  data: %_enqdone type c.                                   \"#EC *\n\n* status processing of set update task local\n* value 'E': local update is active. Export tRFC/qRFC to memory!\n* value 'S': local update is active. Map the dialog tRFC/qRFC to called update trfc/qRFC.\n*            Import tRFC/qRFC form memory! Save it to the Database.\n* value 'X': local update is active. Execute the tRFC/qRFC within the Dialog workprocess.\n\n  data: l_local_vb_status type c.\n\n* COMMIT during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and sy-oncom <> 'V'.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'   field %%vbkey-vbkey.\n  if sy-oncom <> 'N'.\n*   Not in CALL DIALOG\n    %_vbkey-vbkey = %%vbkey-vbkey.\n    perform %_process_p_o_c.\n\n*   Check if local update task is switched on?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'S'\n                            id 'STATE' field %_state.\n    if %_state eq 'N'.\n      free %_vb_calls.\n      import %_vb_calls from memory id %%vbkey.\n      describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       Local update task is active,\n*       export the called tRFC/qRFCs from dialog to memory within arfc_end_transaction.\n        l_local_vb_status = 'E'.\n      endif.\n\n*     Within sapmssy4 (commit work) we have to import and save all dia tRFC/qRFC\n*     in arfc_end_transaction\n      if sy-cprog = 'SAPMSSY4'.\n        l_local_vb_status = 'S'.\n        arfc_pending = 'X'.\n      endif.\n    endif.\n\n\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n***************\n*   bgRFC\n***************\n*     Update task in Asynchronous mode!\n*     Wenn arfc_pending <> SPACE dann wurde bereits durch classic qRFC der arfc_end_vb\n*     getriggert, falls lokale Verbuchung nicht aktiv ist.\n*     N = asynch. update task switched off: direct updates\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW classic t/qRFC and bgRFC was called\n\n        if trfc_nowait_for_update <> space OR %_sys000-arfc-send_date is not initial.  \"ARFC_END_VB wurde nicht im tRFC/qRFC gerufen\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = space.\n        else. \" ARFC_END_VB wurde bereits im tRFC/qrfc gerufen.\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = 'X'.\n        endif.\n      else.\n        clear %_sys000-arfc-send_time.\n        clear %_sys000-arfc-send_date.\n        clear %_sys000-arfc-dontsend.\n      endif.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n*   Wenn kein classic qRFC getriggert und keine lokale Verbuchung, dann\n*   muss ARFC_END_VB von bgRFC getriggert werden.\n    else.\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW only bgRFC was called\n        call method ('CL_BGRFC_DB_HELPER')=>on_commit\n          exporting\n            arfc_end_vb_already_called = space.\n      endif.\n    endif.\n\n***************************\n*   Local Data Queue (LDQ)\n***************************\n    if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n      call method ('CL_LDQ_UNIT_WRITER')=>on_commit.\n    endif.\n\n    if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Reader\n      call method ('CL_LDQ_UNIT_READER')=>on_commit.\n    endif.\n\n    if %_state eq 'N'.\n*     N = asynch. update task switched off: direct updates\n*     free %_vb_calls.\n*     import %_vb_calls from memory id %%vbkey.\n*     describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       process direct updates (with the same vbkey)\n        call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                        id 'VBKEY'   field %%vbkey-vbkey\n                        id 'ENQKEY'  field %_enqkey\n                        id 'ENQDONE' field %_enqdone.\n\n        submit sapmssy4 with vbkey_id = %%vbkey\n                        with enqkey   = %_enqkey\n                        with enqdone  = %_enqdone and return.\n*       Start new LUW, release locks that were acquired during dialog part\n        call 'ThVBCall' id 'OPCODE'       field reset_vb_enq_key\n                        id 'SYNC_DEQUEUE' field 'X'.\n      endif.\n    endif.\n  endif.\n\n* Call Dialog wurde gerufen; gerufene tRFC/qRFC Verarbeitung wie gehabt.\n  if sy-oncom = 'N' or l_local_vb_status = 'E'.\n    if l_local_vb_status = 'E'.\n*     Lokale Verbuchung ist aktiv Ausführung im Dialog und UPD.\n      l_local_vb_status = 'X'.     \"Umsetzen auf Ausführung der trfc/qRFC im Dialog.\n      arfc_pending      = 'X'.\n    endif.\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n      clear %_sys000-arfc-send_time.\n      clear %_sys000-arfc-send_date.\n      clear %_sys000-arfc-dontsend.\n    endif.\n  endif.\n\n  if sy-binpt eq 'X' .\n    call function 'BDC_END_TRANSACTION'.       \"ende einer trans in BI\n  endif.\n\n* clear memory containing registrations for PERFORM ON ROLLBACK.\n* delete imode_orders and imode_rb_orders only if not in CALL DIALOG\n  if sy-oncom <> 'N'.\n    free memory id %_vbkey.\n  endif.\n  free rb_orders.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_commit\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_after_commit.                                        \"#EC *\n  data: %_direct_utask_active, %_task_state(4) type x.      \"#EC *\n  data: i type i, j type i, x4(4) type x.\n  data: l_update_task type boolean value '-'.\n  data: l_oncom like sy-oncom.\n  data: l_subrc like sy-subrc.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n  l_subrc = sy-subrc.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>AFTER_COMMIT.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0. \"something happened with LDW-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>after_commit.\n  endif.\n\n  if ldq_reader_eot_action  ne 0. \"something happened with LDW-Reader\n    call method ('CL_LDQ_UNIT_READER')=>after_commit.\n  endif.\n\n* Raise event 'Commit Finished' for Object Manager\n* for synchronous update task this is after all database changes.\n* for asynchronous update task this is after triggering the updates.\n  call method cl_os_transaction_end_notifier=>raise_commit_finished.\n\n* COMMIT in (classic) update task?\n  call function 'TH_USER_INFO'\n    importing\n      task_state = i.\n  %_task_state = i.\n  j = task_vb. x4 = j.\n  if not %_task_state z x4.            \"update task must not be active\n    l_update_task = 'X'.\n  endif.\n\n  if l_update_task <> 'X'.\n*   COMMIT in local update task?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'          \"A = active?\n                            id 'STATE' field %_direct_utask_active.\n    if %_direct_utask_active = 'Y' or sy-cprog = 'SAPMSSY4'.\n      l_update_task = 'X'.\n    endif.\n  endif.\n\n* raise event 'transaction_finished' only if not in update task.\n  if l_update_task <> 'X'.\n    call method\n      cl_system_transaction_state=>raise_transaction_finished\n      exporting\n        kind = cl_system_transaction_state=>commit_work.\n  endif.\n\n* restore sy-oncom\n  sy-oncom = l_oncom.\n  sy-subrc = l_subrc.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                                                \"%_after_commit\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_C\n* Process PERFORM ON COMMIT orders\n* ---------------------------------------------------------------------\nform %_process_p_o_c.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa       type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_orders from memory id %_vbkey.\n  sy-subrc = 0.\n  sort imode_orders by u_level i_level.\n  loop at imode_orders into imode_orders_wa.\n    perform %_order_form_level using imode_orders_wa-prog\n                                     imode_orders_wa-rout\n                                     imode_orders_wa-u_level.\n  endloop.\n  free imode_orders.\n  sort orders by u_level i_level.\n\n* signal begin of ON COMMIT handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'C'.\n\n  loop at orders into orders_wa.\n    perform (orders_wa-rout)\n          in program (orders_wa-prog).\n  endloop.\n  free orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n* signal end of ON COMMIT\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_c\n\n* ---------------------------------------------------------------------\n* FORM %_GET_VB_KEY\n* Update task without update task\n* ---------------------------------------------------------------------\nform %_get_vb_key using vb_func_name changing vb_data_key.  \"#EC *\n\n  data: %_vb_calls    type standard table of %_vb_calls,       \"#EC *\n        %_vb_calls_wa type %_vb_calls.\n\n  data: utask_on,                  \"flag: asynchronous update task on?\n        direct_utask_active.       \"flag: already in local update task?\n\n  clear vb_data_key.\n  call 'GET_SWITCH_UTASK' id 'MODE' field 'S'\n                          id 'STATE' field utask_on.\n  call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'\n                          id 'STATE' field direct_utask_active.\n  if utask_on eq 'N' and direct_utask_active eq 'N'.\n*   update task switched to \"local\", but not yet inside update task.\n    select single * from tfdir where funcname = vb_func_name.\n    if sy-subrc ne 0.\n      message a400 with vb_func_name.\n    endif.\n    cl_abap_restrmode_utils=>check_in_restr_mode_updtask( ).\n    if tfdir-utask = '1'     \"direct update task call\n       or tfdir-utask = '3'.  \"direct update task call, no later update\n\n*     get identifier for current LUW\n      call 'ThVBCall' id 'OPCODE' field get_vb_key\n                      id 'VBKEY'  field %%vbkey-vbkey.\n      free %_vb_calls.\n      clear %_vb_calls_wa.\n\n*     import table with already registered function modules\n      import %_vb_calls from memory id %%vbkey.\n\n      if sy-subrc = 0.\n*       already got UUID for the parameters of the function module\n        read table %_vb_calls index 1\n          into %_vb_calls_wa transporting daten_id.\n        if sy-subrc <> 0.\n          message x675(00).\n        endif.\n      else.\n*       get new UUID as key for the parameters of the function module\n        try.\n          %_vb_calls_wa-daten_id-vbkey = cl_system_uuid=>create_uuid_c22_static( ).\n        catch cx_uuid_error.\n          message x675(00).\n        endtry.\n      endif.\n\n*     fill in name of function module\n      %_vb_calls_wa-func_name = vb_func_name.\n*     identify the function call by consecutive number\n      describe table %_vb_calls lines %_vb_calls_wa-daten_id-vbkey+22.\n      %_vb_calls_wa-data_temperature = cl_abap_stack_temperature=>get_temperature( ).\n      append %_vb_calls_wa to %_vb_calls.\n\n*     (re-) export the table to memory\n      export %_vb_calls to memory id %%vbkey.\n      free %_vb_calls.\n*     return the identifier of this function call to call.rs1 to export\n*     the corresponding parameters with the same identifier.\n      vb_data_key = %_vb_calls_wa-daten_id.\n    endif.\n  endif.\nendform.                    \"%_get_vb_key\n\n*----------------------------------------------------------------------\n* FORM %_CALL_ROLLBACK\n* Call ROLLBACK-Handling\n* To be called by kernel code to perform rollback handling in ABAP\n*----------------------------------------------------------------------\nform %_call_rollback.                                       \"#EC *\n* Save SUBRC for returncode after EXCEPTION ERROR_MESSAGE\n  local: sy-subrc, sy-msgty, sy-msgid, sy-msgno,\n         sy-msgv1, sy-msgv2, sy-msgv3, sy-msgv4.\n* Perform ROLLBACK with all registered rollback hooks\n  rollback work.\nendform.                    \"%_call_rollback\n\n* -------------------------------------------------------------------\n* R O L L B A C K\n* rollback work\n* when called within CALL DIALOG --> no effect i.e. symmetrical to\n* COMMIT WORK\n* -------------------------------------------------------------------\nform %_rollback.                                            \"#EC *\n  data: txend type c.\n  data: l_oncom like sy-oncom.\n\n* forbid ROLLBACK if already in ON COMMIT/ROLLBACK handling\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'C' or txend = 'R'.\n    message x086(00).\n  endif.\n\n  check sy-oncom <> 'N' and sy-oncom <> 'V' and\n        sy-oncom <> 'E' and sy-oncom <> 'P'.\n\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_ROLLBACK'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'  field %%vbkey-vbkey.\n  %_vbkey-vbkey = %%vbkey-vbkey.\n\n* perform ON ROLLBACK orders\n  perform %_process_p_o_r.\n* free contents of memory and tables for update task\n  free %_vb_calls.\n  import %_vb_calls from memory id %%vbkey.\n  loop at %_vb_calls.\n    free memory id %_vb_calls-daten_id.\n  endloop.\n  free memory id %%vbkey.\n  free %_vb_calls.\n\n* free contents of memory and tables\n  %_vbkey-vbkey = %%vbkey-vbkey.\n  free memory id %_vbkey.\n  free imode_orders.\n  free orders.\n  free imode_rb_orders.\n  free rb_orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n  if arfc_pending <> space.\n    arfc_pending = space.\n    call function 'ARFC_END_TRANSACTION'\n      exporting\n        mode = 'ROLLBACK'.\n  endif.\n\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>ON_ROLLBACK.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>on_rollback.\n  endif.\n\n  if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_READER')=>on_rollback.\n  endif.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_ROLLBACK\n* called from RSYN rollback.rs1\n* ---------------------------------------------------------------------\nform %_after_rollback.                                      \"#EC *\n  data: l_oncom like sy-oncom.\n\n* ROLLBACK during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and\n        sy-oncom <> 'N' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n  call method cl_os_transaction_end_notifier=>raise_rollback_finished.\n  call method cl_system_transaction_state=>raise_transaction_finished\n    exporting\n      kind = cl_system_transaction_state=>rollback_work.\n\n* switch local update task to 'inactive'\n  call 'SET_SWITCH_UTASK_OFF' id 'STATE' field 'N'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_after_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_R\n* Process PERFORM ON ROLLBACK orders\n* ---------------------------------------------------------------------\nform %_process_p_o_r.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_rb_orders from memory id %_vbkey.\n  loop at imode_rb_orders into imode_rb_orders_wa.\n    perform %_order_form_for_rollback\n      using imode_rb_orders_wa-prog\n            imode_rb_orders_wa-rout.\n  endloop.\n  free imode_rb_orders.\n  sort rb_orders by u_level i_level.\n\n* signal begin of ON ROLLBACK handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'R'.\n\n  system-call state_limit set.\n  loop at rb_orders into rb_orders_wa.\n    perform (rb_orders_wa-rout)\n          in program (rb_orders_wa-prog).\n  endloop.\n  system-call state_limit reset.\n  free rb_orders.\n\n* signal end of ON ROLLBACK\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_r\n\n* ---------------------------------------------------------------------\n* FORM SYSTEM_HOOK\n* ---------------------------------------------------------------------\nform system_hook.                                           \"#EC CALLED\n  sy-subrc = 0.\nendform.                    \"system_hook\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ A F R C\n* register ARFC call\n* -------------------------------------------------------------------\nform %_register_arfc.                                       \"#EC *\n  arfc_pending = 'X'.\nendform.                    \"%_register_arfc\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ t R F C / q R F C independent from Update TASK\n* -------------------------------------------------------------------\nform %_register_trfc_no_wait_for_update.                    \"#EC PREFIX_OK\n  trfc_nowait_for_update = 'X'.\nendform.\n\n*-------------------------------------------------------------------\n* register bgRFC actions\n*-------------------------------------------------------------------\nform %_register_bgrfc.                                       \"#EC *\n  bgrfc_eot_action = 1.\nendform.                    \"%_register_bgrfc\n\n*-------------------------------------------------------------------\n* register Local Data Queue (ldq) actions\n*-------------------------------------------------------------------\nform %_register_ldq_writer.                                 \"#EC *\n  ldq_writer_eot_action = 1.\nendform.                    \"%_register_ldq_writer\n\n*&---------------------------------------------------------------------*\n*&      Form  %_register_ldq_reader\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nform %_register_ldq_reader.                                 \"#EC *\n  ldq_reader_eot_action = 1.\nendform.                    \"%_register_ldq_reader\n\n* -------------------------------------------------------------------\n* L I S T _ C O M M A N D\n* -------------------------------------------------------------------\nmodule list_command input.                                  \"#EC *\n  data: result type i.\n*  IF sy-xcode(5) EQ 'PFILE'.\n*    MESSAGE ID '02' TYPE 'I' NUMBER '016'.\n*    CLEAR sy-xcode.\n*  ENDIF.\n  result = 0.\n\n  call 'QUERY_LIST_TO_MEMORY' id 'RESULT' field result.\n  if result = 1.\n    sy-xcode = '%SMEX'.\n  endif.\n\n  check sy-xcode(1) = '%'.\n  call function 'LIST_COMMAND'\n    exporting\n      command         = sy-xcode\n    exceptions\n      unknown_command = 4\n      others          = 0.\n  check sy-subrc = 0.\n  clear: sy-ucomm, sy-xcode.\nendmodule.                    \"list_command INPUT\n\n* R/3-Drucken Anfang\n* -------------------------------------------------------------------\n* P R I N T _ S T A R T\n* -------------------------------------------------------------------\nmodule print_start input.                                   \"#EC *\n  data: hex02 type x value '02'.\n  data: display_mode.\n\n* Korrektur Ralf Wendelgaß 20.5.98\n\n  if sy-xcode = 'PRI'   or\n     sy-xcode = 'PRINT' or\n     sy-xcode = '%PRI' or\n     sy-xcode = '%PRN'.\n\n    display_mode = cl_abap_list_layout=>get_display_mode( ).\n\n    sy-callr = 'OKPRI'.\n* no print dialog if print icon was pressed\n    if sy-xcode = '%PRN'.\n      call function 'PRINT_REPORT_DEFAULT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    else.\n      call function 'PRINT_REPORT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    endif.\n\n* printing ok\n    if sy-subrc = 0.\n\n* cover page\n      if sy-subty o hex02 and %_print-prbig <> space.\n        perform %_%_cover_page(rsdbrunt).\n      endif.\n      sy-xcode = 'PRI'.\n\n* errors occured or printout cancelled\n    else.\n      clear sy-xcode.\n      message s015.\n    endif.\n\n  endif.\n\nendmodule.                    \"print_start INPUT\n* R/3-Drucken Ende\n\n\n* -------------------------------------------------------------------\n* S Y N T A X C H E C K - Popup (143)\n* -------------------------------------------------------------------\nmodule sc_init output.                                      \"#EC *\n  tables: trdir, abmsg.\n  set titlebar '001'.                                       \"#EC *\n  set pf-status 'SCMS' immediately.                         \"#EC *\n  select single * from trdir where name = abmsg-irepid.\nendmodule.                    \"sc_init OUTPUT\n\n*---------------------------------------------------------------------*\n*       MODULE SC_RESET                                               *\n*---------------------------------------------------------------------*\n*       ........                                                      *\n*---------------------------------------------------------------------*\nmodule sc_reset.                                            \"#EC *\n  leave to transaction ' '.\nendmodule.                    \"sc_reset\n\n\n* -------------------------------------------------------------------\n* L I S T _ E X I T\n* return from \"Listprocessing\" (main list of report -> LIST_RETURN)\n* -------------------------------------------------------------------\nform %_list_exit.                                           \"#EC *\n  leave.\nendform.                    \"%_list_exit\n\n* -------------------------------------------------------------------\n* L I S T _ R E T U R N\n* return from main list of report -> selection screen\n* -------------------------------------------------------------------\nform %_list_return.                                         \"#EC *\n  perform %_return_to_selscreen in program rsdbrunt if found.\nendform.                    \"%_list_return\n\n*???????????????????????????????????????????????????????????????????????\nform list_command ##NEEDED.                                 \"#EC CALLED\nendform.\n\n* -------------------------------------------------------------------\n* N E W - L I N E\n* called by ab_trigg to force a line-skip after GET processing\n* -------------------------------------------------------------------\nform new-line ##FIELD_HYPHEN.                               \"#EC CALLED\n  new-line.\nendform.\n\n*&---------------------------------------------------------------------*\n*&      Module  LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*       text                                                           *\n*----------------------------------------------------------------------*\n*odule %_list_return output.\n* perform %_return_to_selscreen in program rsdbrunt if found.\n* leave screen.\n*ndmodule.                             \" LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Module  LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nmodule list_structure_recognizer output.\n   cl_abap_list_parser=>refresh_lsr_container( ).\nendmodule.                 \" LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\n*  -->  p1        text\n*  <--  p2        text\n*----------------------------------------------------------------------*\nFORM thew_list_masking .\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_120_HOOK_LIST'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n        CALL FUNCTION lv_func.\n      ENDIF.\n    CATCH cx_root.\n  ENDTRY.\n\n\nENDFORM.\n\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking2\n*&---------------------------------------------------------------------*\n*       advanced UI masking of special fields with helpid\n*       called from kernel by ab_rperf from abwrite\n*----------------------------------------------------------------------*\nFORM thew_list_masking2.\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_WRITE_HOOK'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n\n        FIELD-SYMBOLS:\n          <in_p1>    TYPE any,\n          <in_p2>    TYPE any,\n          <inout_p3> TYPE any,\n          <out_p4>   TYPE any.\n\n        CALL 'AB_GET_C_PARMS' ID 'P1' FIELD <in_p1>    \"field name\n                              ID 'P2' FIELD <in_p2>    \"ddic name\n                              ID 'P3' FIELD <inout_p3>    \"field value\n                              ID 'P4' FIELD <out_p4>.    \"flag is list masking\n\n        CALL FUNCTION lv_func\n          EXPORTING\n            fieldname       = <in_p1>\n            ddicname        = <in_p2>\n          IMPORTING\n            is_list_masking = <out_p4>\n          CHANGING\n            fieldvalue      = <inout_p3>.\n\n        CALL 'AB_SET_C_PARMS' ID 'P3' FIELD <inout_p3>\n                      ID 'P4' FIELD <out_p4>.    \"#EC CI_CCALL CI_CCALL\n      ENDIF.\n\n    CATCH cx_root.\n  ENDTRY.\n\nENDFORM.\n```\n",
-        "contentDigest": "fd037f3024f04ba5e91b079fd3bd51fc",
+        "content": "---\ntitle: A Detailed Look at ABAP's BDC Method\ndate: \"2018-01-24\"\ndraft: true\n---\n\n## And some common gotchyas, too\n\n```abap\n* -------------------------------------------------------------------\n*                          S A P M S S Y 0\n*                  system routines for ABAP processing\n*\n*                  (must be declared as FUNCTION-POOL)\n* -------------------------------------------------------------------\nfunction-pool sapmssy0  message-id 02.\ninclude <%_list>.\ninclude <sys000>.\ninclude tskhincl.\ntables: tfdir.\ndata:  orders          type standard table of %_commit_orders,\n                                                  \"ON COMMIT orders\n       rb_orders       type standard table of %_commit_orders,\n                                                  \"ON ROLLBACK orders\n       imode_orders    type standard table of %_commit_orders,\n                                                  \"POC in CALL DIALOG\n       imode_rb_orders type standard table of %_commit_orders.\n\"POR in CALL DIALOG\n* for RTM test concerning POC during OS event handling\ndata: os_orders        type hashed table of %_commit_orders\n                            with unique key prog rout.      \"#EC NEEDED\n\"OS ON COMMIT orders\n* end RTM\n\ndata:  %_vbkey type %_vbkey value '%_',                     \"#EC *\n       %%vbkey type %_vbkey value '%%',\n       %_vb_calls type %_vb_calls occurs 50 with header line.\"#EC *\ndata:  i_level type i value 0.\n\ndata : arfc_pending type c,\n       trfc_nowait_for_update type c.\n\n* bgRFC: something todo at COMMIT / ROLLBACK\ndata : bgrfc_eot_action type i.\n\n* LDQ: something todo at COMMIT / ROLLBACK\ndata : ldq_writer_eot_action type i.\ndata : ldq_reader_eot_action type i.\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ L E V E L\n* order given form to be run when work is committed\n*\n* Input : program name, form name, execution level\n* -------------------------------------------------------------------\nform %_order_form_level using prog rout u_level.            \"#EC *\n  data: allow_nested_poc(1) type c,\n        caller type sy-repid.\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80).\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_orders\n      into imode_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_orders lines i_level.\n      imode_orders_wa-prog = prog.\n      imode_orders_wa-rout = rout.\n      imode_orders_wa-i_level = i_level.\n      imode_orders_wa-u_level = u_level.\n      insert imode_orders_wa into imode_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n*     already in PERFORM ON COMMIT\n      call 'C_SAPGPARAM' id 'NAME'  field 'abap/allow_nested_poc'  \"#EC CI_CCALL\n                         id 'VALUE' field allow_nested_poc.\n      if allow_nested_poc <> 'X'.\n*       nested PERFORM ON COMMIT not allowed\n        call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n        if caller <> 'SAPMSSY0'.\n          mpar1 = 'NESTED_PERFORM_ON_COMMIT'.\n          concatenate 'caller:'  caller into mpar2 separated by ' '.\n          concatenate 'program:' prog   into mpar3 separated by ' '.\n          concatenate 'form:'    rout   into mpar4 separated by ' '.\n*         switch back kernel flag: just for sure.\n          call 'SET_SWITCH_TXEND' id 'STATE' field ' '.  \"#EC CI_CCALL\n*         issue short dump\n          message x081(00) with mpar1 mpar2 mpar3 mpar4.\n        endif.\n      endif.\n    endif.\n    read table orders\n      into orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table orders lines i_level.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      orders_wa-i_level = i_level.\n      orders_wa-u_level = u_level.\n      insert orders_wa into orders index sy-tabix.\n    endif.\n*   for RTM test concerning POC during OS event handling\n    if sy-oncom = 'E'.\n      orders_wa-prog = prog.\n      orders_wa-rout = rout.\n      insert orders_wa into table os_orders.\n    endif.\n*   end RTM\n\n  endif.\nendform.                    \"%_order_form_level\n\n* -------------------------------------------------------------------\n* O R D E R _ F O R M _ F O R _ R O L L B A C K\n* order given form to be run when work is rolled back\n* Input : program name, form name\n* -------------------------------------------------------------------\nform %_order_form_for_rollback using prog rout.             \"#EC *\n  data: mpar1(80), mpar2(80), mpar3(80), mpar4(80),\n        caller type sy-repid.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  if sy-oncom = 'N'.\n    call 'ThVBCall' id 'OPCODE' field get_vb_key  \"#EC CI_CCALL\n                    id 'VBKEY'  field %_vbkey-vbkey.\n    import imode_orders imode_rb_orders from memory id %_vbkey.\n    read table imode_rb_orders\n      into imode_rb_orders_wa\n      with key prog = prog\n           rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table imode_rb_orders lines i_level.\n      imode_rb_orders_wa-prog = prog.\n      imode_rb_orders_wa-rout = rout.\n      imode_rb_orders_wa-i_level = i_level.\n      imode_rb_orders_wa-u_level = 0.\n      insert imode_rb_orders_wa into imode_rb_orders index sy-tabix.\n      export imode_orders imode_rb_orders to memory id %_vbkey.\n    endif.\n  else.\n    if sy-oncom = 'P'.\n      call 'AB_GET_CALLER' id 'PROGRAM' field caller.  \"#EC CI_CCALL\n      mpar1 = 'NESTED_PERFORM_ON_ROLLBACK'.\n      concatenate 'caller:'  caller into mpar2 separated by ' '.\n      concatenate 'program:' prog   into mpar3 separated by ' '.\n      concatenate 'form:'    rout   into mpar4 separated by ' '.\n*     switch back kernel flag: just for sure.\n      call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\n*     already in PERFORM ON ROLLBACK issue short dump\n      message x081(00) with mpar1 mpar2 mpar3 mpar4.\n    endif.\n    read table rb_orders into rb_orders_wa\n      with key prog = prog\n               rout = rout\n      binary search.\n    if sy-subrc ne 0.\n      describe table rb_orders lines i_level.\n      rb_orders_wa-prog = prog.\n      rb_orders_wa-rout = rout.\n      rb_orders_wa-i_level = i_level.\n      insert rb_orders_wa into rb_orders index sy-tabix.\n    endif.\n  endif.\nendform.                    \"%_order_form_for_rollback\n\n\n*---------------------------------------------------------------------*\n*  %_COMMIT_PREPARE                                                   *\n*  Set date and time for aRFC\n*---------------------------------------------------------------------*\nform %_commit_prepare using date time.                      \"#EC *\n\n  %_sys000-arfc-send_time = time.\n  %_sys000-arfc-send_date = date.\n\nendform.                    \"%_commit_prepare\n\n* ---------------------------------------------------------------------\n* FORM %_BEFORE_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_before_commit.                                       \"#EC *\n  data: l_oncom like sy-oncom.\n  data: txend type c.\n\n* forbid COMMIT if already in ON ROLLBACK handling\n* allow COMMIT during ON COMMIT for backward compatibilty\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'R'.\n    message x085(00).\n  endif.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_COMMIT'.\n* Raise event 'Commit Requested' for Object Manager\n  call method cl_os_transaction_end_notifier=>raise_commit_requested.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_before_commit\n\n* -------------------------------------------------------------------\n* C O M M I T\n* commit work\n* -------------------------------------------------------------------\nform %_commit.                                              \"#EC *\n  data: %_state, %_direct_utask_active.                     \"#EC *\n  data: l_lines   like sy-tabix.\n  data: %_enqkey  type eqeusrvb.                            \"#EC *\n  data: %_enqdone type c.                                   \"#EC *\n\n* status processing of set update task local\n* value 'E': local update is active. Export tRFC/qRFC to memory!\n* value 'S': local update is active. Map the dialog tRFC/qRFC to called update trfc/qRFC.\n*            Import tRFC/qRFC form memory! Save it to the Database.\n* value 'X': local update is active. Execute the tRFC/qRFC within the Dialog workprocess.\n\n  data: l_local_vb_status type c.\n\n* COMMIT during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and sy-oncom <> 'V'.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'   field %%vbkey-vbkey.\n  if sy-oncom <> 'N'.\n*   Not in CALL DIALOG\n    %_vbkey-vbkey = %%vbkey-vbkey.\n    perform %_process_p_o_c.\n\n*   Check if local update task is switched on?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'S'\n                            id 'STATE' field %_state.\n    if %_state eq 'N'.\n      free %_vb_calls.\n      import %_vb_calls from memory id %%vbkey.\n      describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       Local update task is active,\n*       export the called tRFC/qRFCs from dialog to memory within arfc_end_transaction.\n        l_local_vb_status = 'E'.\n      endif.\n\n*     Within sapmssy4 (commit work) we have to import and save all dia tRFC/qRFC\n*     in arfc_end_transaction\n      if sy-cprog = 'SAPMSSY4'.\n        l_local_vb_status = 'S'.\n        arfc_pending = 'X'.\n      endif.\n    endif.\n\n\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n***************\n*   bgRFC\n***************\n*     Update task in Asynchronous mode!\n*     Wenn arfc_pending <> SPACE dann wurde bereits durch classic qRFC der arfc_end_vb\n*     getriggert, falls lokale Verbuchung nicht aktiv ist.\n*     N = asynch. update task switched off: direct updates\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW classic t/qRFC and bgRFC was called\n\n        if trfc_nowait_for_update <> space OR %_sys000-arfc-send_date is not initial.  \"ARFC_END_VB wurde nicht im tRFC/qRFC gerufen\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = space.\n        else. \" ARFC_END_VB wurde bereits im tRFC/qrfc gerufen.\n          clear %_sys000-arfc-send_time.\n          clear %_sys000-arfc-send_date.\n          clear %_sys000-arfc-dontsend.\n          call method ('CL_BGRFC_DB_HELPER')=>on_commit\n            exporting\n              arfc_end_vb_already_called = 'X'.\n        endif.\n      else.\n        clear %_sys000-arfc-send_time.\n        clear %_sys000-arfc-send_date.\n        clear %_sys000-arfc-dontsend.\n      endif.\n*      clear %_sys000-arfc-send_time.\n*      clear %_sys000-arfc-send_date.\n*      clear %_sys000-arfc-dontsend.\n\n*   Wenn kein classic qRFC getriggert und keine lokale Verbuchung, dann\n*   muss ARFC_END_VB von bgRFC getriggert werden.\n    else.\n      if bgrfc_eot_action  ne 0.  \"something happened with bgRFC\n*       In current LUW only bgRFC was called\n        call method ('CL_BGRFC_DB_HELPER')=>on_commit\n          exporting\n            arfc_end_vb_already_called = space.\n      endif.\n    endif.\n\n***************************\n*   Local Data Queue (LDQ)\n***************************\n    if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n      call method ('CL_LDQ_UNIT_WRITER')=>on_commit.\n    endif.\n\n    if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Reader\n      call method ('CL_LDQ_UNIT_READER')=>on_commit.\n    endif.\n\n    if %_state eq 'N'.\n*     N = asynch. update task switched off: direct updates\n*     free %_vb_calls.\n*     import %_vb_calls from memory id %%vbkey.\n*     describe table %_vb_calls lines l_lines.\n      if l_lines ne 0.\n*       process direct updates (with the same vbkey)\n        call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                        id 'VBKEY'   field %%vbkey-vbkey\n                        id 'ENQKEY'  field %_enqkey\n                        id 'ENQDONE' field %_enqdone.\n\n        submit sapmssy4 with vbkey_id = %%vbkey\n                        with enqkey   = %_enqkey\n                        with enqdone  = %_enqdone and return.\n*       Start new LUW, release locks that were acquired during dialog part\n        call 'ThVBCall' id 'OPCODE'       field reset_vb_enq_key\n                        id 'SYNC_DEQUEUE' field 'X'.\n      endif.\n    endif.\n  endif.\n\n* Call Dialog wurde gerufen; gerufene tRFC/qRFC Verarbeitung wie gehabt.\n  if sy-oncom = 'N' or l_local_vb_status = 'E'.\n    if l_local_vb_status = 'E'.\n*     Lokale Verbuchung ist aktiv Ausführung im Dialog und UPD.\n      l_local_vb_status = 'X'.     \"Umsetzen auf Ausführung der trfc/qRFC im Dialog.\n      arfc_pending      = 'X'.\n    endif.\n    if arfc_pending <> space.\n      arfc_pending = space.\n      if %_sys000-arfc-dontsend <> space.\n        %_sys000-arfc-send_date  = sy-datum.\n        %_sys000-arfc-send_time  = sy-uzeit + 3600.\n      endif.\n\n      call function 'ARFC_END_TRANSACTION'\n        exporting\n          mode              = 'COMMIT'\n          starttime         = %_sys000-arfc-send_time\n          startdate         = %_sys000-arfc-send_date\n          utask_local_state = l_local_vb_status\n          vbkey             = %%vbkey-vbkey\n          bgrfc_active      = bgrfc_eot_action.\n      clear %_sys000-arfc-send_time.\n      clear %_sys000-arfc-send_date.\n      clear %_sys000-arfc-dontsend.\n    endif.\n  endif.\n\n  if sy-binpt eq 'X' .\n    call function 'BDC_END_TRANSACTION'.       \"ende einer trans in BI\n  endif.\n\n* clear memory containing registrations for PERFORM ON ROLLBACK.\n* delete imode_orders and imode_rb_orders only if not in CALL DIALOG\n  if sy-oncom <> 'N'.\n    free memory id %_vbkey.\n  endif.\n  free rb_orders.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_commit\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_COMMIT\n* called from RSYN commit.rs1\n* ---------------------------------------------------------------------\nform %_after_commit.                                        \"#EC *\n  data: %_direct_utask_active, %_task_state(4) type x.      \"#EC *\n  data: i type i, j type i, x4(4) type x.\n  data: l_update_task type boolean value '-'.\n  data: l_oncom like sy-oncom.\n  data: l_subrc like sy-subrc.\n\n* COMMIT during CALL DIALOG/SUBMIT, POC, Update task\n* or End Transaction event?\n  check sy-oncom <> 'N' and sy-oncom <> 'P' and\n        sy-oncom <> 'E' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n  l_subrc = sy-subrc.\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>AFTER_COMMIT.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0. \"something happened with LDW-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>after_commit.\n  endif.\n\n  if ldq_reader_eot_action  ne 0. \"something happened with LDW-Reader\n    call method ('CL_LDQ_UNIT_READER')=>after_commit.\n  endif.\n\n* Raise event 'Commit Finished' for Object Manager\n* for synchronous update task this is after all database changes.\n* for asynchronous update task this is after triggering the updates.\n  call method cl_os_transaction_end_notifier=>raise_commit_finished.\n\n* COMMIT in (classic) update task?\n  call function 'TH_USER_INFO'\n    importing\n      task_state = i.\n  %_task_state = i.\n  j = task_vb. x4 = j.\n  if not %_task_state z x4.            \"update task must not be active\n    l_update_task = 'X'.\n  endif.\n\n  if l_update_task <> 'X'.\n*   COMMIT in local update task?\n    call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'          \"A = active?\n                            id 'STATE' field %_direct_utask_active.\n    if %_direct_utask_active = 'Y' or sy-cprog = 'SAPMSSY4'.\n      l_update_task = 'X'.\n    endif.\n  endif.\n\n* raise event 'transaction_finished' only if not in update task.\n  if l_update_task <> 'X'.\n    call method\n      cl_system_transaction_state=>raise_transaction_finished\n      exporting\n        kind = cl_system_transaction_state=>commit_work.\n  endif.\n\n* restore sy-oncom\n  sy-oncom = l_oncom.\n  sy-subrc = l_subrc.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                                                \"%_after_commit\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_C\n* Process PERFORM ON COMMIT orders\n* ---------------------------------------------------------------------\nform %_process_p_o_c.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: imode_orders_wa type %_commit_orders,\n        orders_wa       type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_orders from memory id %_vbkey.\n  sy-subrc = 0.\n  sort imode_orders by u_level i_level.\n  loop at imode_orders into imode_orders_wa.\n    perform %_order_form_level using imode_orders_wa-prog\n                                     imode_orders_wa-rout\n                                     imode_orders_wa-u_level.\n  endloop.\n  free imode_orders.\n  sort orders by u_level i_level.\n\n* signal begin of ON COMMIT handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'C'.\n\n  loop at orders into orders_wa.\n    perform (orders_wa-rout)\n          in program (orders_wa-prog).\n  endloop.\n  free orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n* signal end of ON COMMIT\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_c\n\n* ---------------------------------------------------------------------\n* FORM %_GET_VB_KEY\n* Update task without update task\n* ---------------------------------------------------------------------\nform %_get_vb_key using vb_func_name changing vb_data_key.  \"#EC *\n\n  data: %_vb_calls    type standard table of %_vb_calls,       \"#EC *\n        %_vb_calls_wa type %_vb_calls.\n\n  data: utask_on,                  \"flag: asynchronous update task on?\n        direct_utask_active.       \"flag: already in local update task?\n\n  clear vb_data_key.\n  call 'GET_SWITCH_UTASK' id 'MODE' field 'S'\n                          id 'STATE' field utask_on.\n  call 'GET_SWITCH_UTASK' id 'MODE'  field 'A'\n                          id 'STATE' field direct_utask_active.\n  if utask_on eq 'N' and direct_utask_active eq 'N'.\n*   update task switched to \"local\", but not yet inside update task.\n    select single * from tfdir where funcname = vb_func_name.\n    if sy-subrc ne 0.\n      message a400 with vb_func_name.\n    endif.\n    cl_abap_restrmode_utils=>check_in_restr_mode_updtask( ).\n    if tfdir-utask = '1'     \"direct update task call\n       or tfdir-utask = '3'.  \"direct update task call, no later update\n\n*     get identifier for current LUW\n      call 'ThVBCall' id 'OPCODE' field get_vb_key\n                      id 'VBKEY'  field %%vbkey-vbkey.\n      free %_vb_calls.\n      clear %_vb_calls_wa.\n\n*     import table with already registered function modules\n      import %_vb_calls from memory id %%vbkey.\n\n      if sy-subrc = 0.\n*       already got UUID for the parameters of the function module\n        read table %_vb_calls index 1\n          into %_vb_calls_wa transporting daten_id.\n        if sy-subrc <> 0.\n          message x675(00).\n        endif.\n      else.\n*       get new UUID as key for the parameters of the function module\n        try.\n          %_vb_calls_wa-daten_id-vbkey = cl_system_uuid=>create_uuid_c22_static( ).\n        catch cx_uuid_error.\n          message x675(00).\n        endtry.\n      endif.\n\n*     fill in name of function module\n      %_vb_calls_wa-func_name = vb_func_name.\n*     identify the function call by consecutive number\n      describe table %_vb_calls lines %_vb_calls_wa-daten_id-vbkey+22.\n      %_vb_calls_wa-data_temperature = cl_abap_stack_temperature=>get_temperature( ).\n      append %_vb_calls_wa to %_vb_calls.\n\n*     (re-) export the table to memory\n      export %_vb_calls to memory id %%vbkey.\n      free %_vb_calls.\n*     return the identifier of this function call to call.rs1 to export\n*     the corresponding parameters with the same identifier.\n      vb_data_key = %_vb_calls_wa-daten_id.\n    endif.\n  endif.\nendform.                    \"%_get_vb_key\n\n*----------------------------------------------------------------------\n* FORM %_CALL_ROLLBACK\n* Call ROLLBACK-Handling\n* To be called by kernel code to perform rollback handling in ABAP\n*----------------------------------------------------------------------\nform %_call_rollback.                                       \"#EC *\n* Save SUBRC for returncode after EXCEPTION ERROR_MESSAGE\n  local: sy-subrc, sy-msgty, sy-msgid, sy-msgno,\n         sy-msgv1, sy-msgv2, sy-msgv3, sy-msgv4.\n* Perform ROLLBACK with all registered rollback hooks\n  rollback work.\nendform.                    \"%_call_rollback\n\n* -------------------------------------------------------------------\n* R O L L B A C K\n* rollback work\n* when called within CALL DIALOG --> no effect i.e. symmetrical to\n* COMMIT WORK\n* -------------------------------------------------------------------\nform %_rollback.                                            \"#EC *\n  data: txend type c.\n  data: l_oncom like sy-oncom.\n\n* forbid ROLLBACK if already in ON COMMIT/ROLLBACK handling\n  call 'GET_SWITCH_TXEND' id 'STATE' field txend.\n  if txend = 'C' or txend = 'R'.\n    message x086(00).\n  endif.\n\n  check sy-oncom <> 'N' and sy-oncom <> 'V' and\n        sy-oncom <> 'E' and sy-oncom <> 'P'.\n\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n* Hook for Process Information Infrastructure\n  call function 'SPI_AGENT_ROLLBACK'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n  call 'ThVBCall' id 'OPCODE'  field get_vb_key\n                  id 'VBKEY'  field %%vbkey-vbkey.\n  %_vbkey-vbkey = %%vbkey-vbkey.\n\n* perform ON ROLLBACK orders\n  perform %_process_p_o_r.\n* free contents of memory and tables for update task\n  free %_vb_calls.\n  import %_vb_calls from memory id %%vbkey.\n  loop at %_vb_calls.\n    free memory id %_vb_calls-daten_id.\n  endloop.\n  free memory id %%vbkey.\n  free %_vb_calls.\n\n* free contents of memory and tables\n  %_vbkey-vbkey = %%vbkey-vbkey.\n  free memory id %_vbkey.\n  free imode_orders.\n  free orders.\n  free imode_rb_orders.\n  free rb_orders.\n* for RTM test concerning POC during OS events\n  free os_orders.\n* end RTM\n\n  if arfc_pending <> space.\n    arfc_pending = space.\n    call function 'ARFC_END_TRANSACTION'\n      exporting\n        mode = 'ROLLBACK'.\n  endif.\n\n*\n* bgRFC\n*\n  if bgrfc_eot_action  ne 0. \"something happened with bgRFC\n    call method ('CL_BGRFC_DB_HELPER')=>ON_ROLLBACK.\n  endif.\n\n*\n* Local DATA Queue (LDQ)\n*\n  if ldq_writer_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_WRITER')=>on_rollback.\n  endif.\n\n  if ldq_reader_eot_action  ne 0.  \"something happened with LDQ-Writer\n    call method ('CL_LDQ_UNIT_READER')=>on_rollback.\n  endif.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_AFTER_ROLLBACK\n* called from RSYN rollback.rs1\n* ---------------------------------------------------------------------\nform %_after_rollback.                                      \"#EC *\n  data: l_oncom like sy-oncom.\n\n* ROLLBACK during POC, Update task or End Transaction event?\n  check sy-oncom <> 'P' and sy-oncom <> 'E' and\n        sy-oncom <> 'N' and sy-oncom <> 'V'.\n* change sy-oncom to avoid recursion\n  l_oncom = sy-oncom.\n  sy-oncom = 'E'.                      \"E = Event Handling\n* no escape out off this form other than ENDFORM\n  system-call state_limit set.\n  call method cl_os_transaction_end_notifier=>raise_rollback_finished.\n  call method cl_system_transaction_state=>raise_transaction_finished\n    exporting\n      kind = cl_system_transaction_state=>rollback_work.\n\n* switch local update task to 'inactive'\n  call 'SET_SWITCH_UTASK_OFF' id 'STATE' field 'N'.\n* restore sy-oncom\n  sy-oncom = l_oncom.\n\n* reset marker on call stack.\n  system-call state_limit reset.\nendform.                    \"%_after_rollback\n\n* ---------------------------------------------------------------------\n* FORM %_PROCESS_P_O_R\n* Process PERFORM ON ROLLBACK orders\n* ---------------------------------------------------------------------\nform %_process_p_o_r.                                       \"#EC *\n  data: last_oncom like sy-oncom.\n  data: rb_orders_wa       type %_commit_orders,\n        imode_rb_orders_wa type %_commit_orders.\n\n  last_oncom = sy-oncom.\n  import imode_rb_orders from memory id %_vbkey.\n  loop at imode_rb_orders into imode_rb_orders_wa.\n    perform %_order_form_for_rollback\n      using imode_rb_orders_wa-prog\n            imode_rb_orders_wa-rout.\n  endloop.\n  free imode_rb_orders.\n  sort rb_orders by u_level i_level.\n\n* signal begin of ON ROLLBACK handling\n  sy-oncom = 'P'.\n  call 'SET_SWITCH_TXEND' id 'STATE' field 'R'.\n\n  system-call state_limit set.\n  loop at rb_orders into rb_orders_wa.\n    perform (rb_orders_wa-rout)\n          in program (rb_orders_wa-prog).\n  endloop.\n  system-call state_limit reset.\n  free rb_orders.\n\n* signal end of ON ROLLBACK\n  sy-oncom = last_oncom.\n  call 'SET_SWITCH_TXEND' id 'STATE' field ' '.\nendform.                    \"%_process_p_o_r\n\n* ---------------------------------------------------------------------\n* FORM SYSTEM_HOOK\n* ---------------------------------------------------------------------\nform system_hook.                                           \"#EC CALLED\n  sy-subrc = 0.\nendform.                    \"system_hook\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ A F R C\n* register ARFC call\n* -------------------------------------------------------------------\nform %_register_arfc.                                       \"#EC *\n  arfc_pending = 'X'.\nendform.                    \"%_register_arfc\n\n* -------------------------------------------------------------------\n* R E G I S T E R _ t R F C / q R F C independent from Update TASK\n* -------------------------------------------------------------------\nform %_register_trfc_no_wait_for_update.                    \"#EC PREFIX_OK\n  trfc_nowait_for_update = 'X'.\nendform.\n\n*-------------------------------------------------------------------\n* register bgRFC actions\n*-------------------------------------------------------------------\nform %_register_bgrfc.                                       \"#EC *\n  bgrfc_eot_action = 1.\nendform.                    \"%_register_bgrfc\n\n*-------------------------------------------------------------------\n* register Local Data Queue (ldq) actions\n*-------------------------------------------------------------------\nform %_register_ldq_writer.                                 \"#EC *\n  ldq_writer_eot_action = 1.\nendform.                    \"%_register_ldq_writer\n\n*&---------------------------------------------------------------------*\n*&      Form  %_register_ldq_reader\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nform %_register_ldq_reader.                                 \"#EC *\n  ldq_reader_eot_action = 1.\nendform.                    \"%_register_ldq_reader\n\n* -------------------------------------------------------------------\n* L I S T _ C O M M A N D\n* -------------------------------------------------------------------\nmodule list_command input.                                  \"#EC *\n  data: result type i.\n*  IF sy-xcode(5) EQ 'PFILE'.\n*    MESSAGE ID '02' TYPE 'I' NUMBER '016'.\n*    CLEAR sy-xcode.\n*  ENDIF.\n  result = 0.\n\n  call 'QUERY_LIST_TO_MEMORY' id 'RESULT' field result.\n  if result = 1.\n    sy-xcode = '%SMEX'.\n  endif.\n\n  check sy-xcode(1) = '%'.\n  call function 'LIST_COMMAND'\n    exporting\n      command         = sy-xcode\n    exceptions\n      unknown_command = 4\n      others          = 0.\n  check sy-subrc = 0.\n  clear: sy-ucomm, sy-xcode.\nendmodule.                    \"list_command INPUT\n\n* R/3-Drucken Anfang\n* -------------------------------------------------------------------\n* P R I N T _ S T A R T\n* -------------------------------------------------------------------\nmodule print_start input.                                   \"#EC *\n  data: hex02 type x value '02'.\n  data: display_mode.\n\n* Korrektur Ralf Wendelgaß 20.5.98\n\n  if sy-xcode = 'PRI'   or\n     sy-xcode = 'PRINT' or\n     sy-xcode = '%PRI' or\n     sy-xcode = '%PRN'.\n\n    display_mode = cl_abap_list_layout=>get_display_mode( ).\n\n    sy-callr = 'OKPRI'.\n* no print dialog if print icon was pressed\n    if sy-xcode = '%PRN'.\n      call function 'PRINT_REPORT_DEFAULT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    else.\n      call function 'PRINT_REPORT'\n        exporting\n          report = sy-cprog\n          uc_display_mode = display_mode\n        exceptions\n          others = 99.\n    endif.\n\n* printing ok\n    if sy-subrc = 0.\n\n* cover page\n      if sy-subty o hex02 and %_print-prbig <> space.\n        perform %_%_cover_page(rsdbrunt).\n      endif.\n      sy-xcode = 'PRI'.\n\n* errors occured or printout cancelled\n    else.\n      clear sy-xcode.\n      message s015.\n    endif.\n\n  endif.\n\nendmodule.                    \"print_start INPUT\n* R/3-Drucken Ende\n\n\n* -------------------------------------------------------------------\n* S Y N T A X C H E C K - Popup (143)\n* -------------------------------------------------------------------\nmodule sc_init output.                                      \"#EC *\n  tables: trdir, abmsg.\n  set titlebar '001'.                                       \"#EC *\n  set pf-status 'SCMS' immediately.                         \"#EC *\n  select single * from trdir where name = abmsg-irepid.\nendmodule.                    \"sc_init OUTPUT\n\n*---------------------------------------------------------------------*\n*       MODULE SC_RESET                                               *\n*---------------------------------------------------------------------*\n*       ........                                                      *\n*---------------------------------------------------------------------*\nmodule sc_reset.                                            \"#EC *\n  leave to transaction ' '.\nendmodule.                    \"sc_reset\n\n\n* -------------------------------------------------------------------\n* L I S T _ E X I T\n* return from \"Listprocessing\" (main list of report -> LIST_RETURN)\n* -------------------------------------------------------------------\nform %_list_exit.                                           \"#EC *\n  leave.\nendform.                    \"%_list_exit\n\n* -------------------------------------------------------------------\n* L I S T _ R E T U R N\n* return from main list of report -> selection screen\n* -------------------------------------------------------------------\nform %_list_return.                                         \"#EC *\n  perform %_return_to_selscreen in program rsdbrunt if found.\nendform.                    \"%_list_return\n\n*???????????????????????????????????????????????????????????????????????\nform list_command ##NEEDED.                                 \"#EC CALLED\nendform.\n\n* -------------------------------------------------------------------\n* N E W - L I N E\n* called by ab_trigg to force a line-skip after GET processing\n* -------------------------------------------------------------------\nform new-line ##FIELD_HYPHEN.                               \"#EC CALLED\n  new-line.\nendform.\n\n*&---------------------------------------------------------------------*\n*&      Module  LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*       text                                                           *\n*----------------------------------------------------------------------*\n*odule %_list_return output.\n* perform %_return_to_selscreen in program rsdbrunt if found.\n* leave screen.\n*ndmodule.                             \" LEAVE_LIST  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Module  LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\nmodule list_structure_recognizer output.\n   cl_abap_list_parser=>refresh_lsr_container( ).\nendmodule.                 \" LIST_STRUCTURE_RECOGNIZER  OUTPUT\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking\n*&---------------------------------------------------------------------*\n*       text\n*----------------------------------------------------------------------*\n*  -->  p1        text\n*  <--  p2        text\n*----------------------------------------------------------------------*\nFORM thew_list_masking .\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_120_HOOK_LIST'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n        CALL FUNCTION lv_func.\n      ENDIF.\n    CATCH cx_root.\n  ENDTRY.\n\n\nENDFORM.\n\n*&---------------------------------------------------------------------*\n*&      Form  thew_list_masking2\n*&---------------------------------------------------------------------*\n*       advanced UI masking of special fields with helpid\n*       called from kernel by ab_rperf from abwrite\n*----------------------------------------------------------------------*\nFORM thew_list_masking2.\n\n  DATA:\n    lv_func       TYPE rs38l_fnam VALUE '/UIM/PBO_WRITE_HOOK'.\n\n  TRY.\n      CALL FUNCTION 'FUNCTION_EXISTS'\n        EXPORTING\n          funcname           = lv_func\n        EXCEPTIONS\n          function_not_exist = 1\n          OTHERS             = 2.\n      IF sy-subrc = 0.\n\n        FIELD-SYMBOLS:\n          <in_p1>    TYPE any,\n          <in_p2>    TYPE any,\n          <inout_p3> TYPE any,\n          <out_p4>   TYPE any.\n\n        CALL 'AB_GET_C_PARMS' ID 'P1' FIELD <in_p1>    \"field name\n                              ID 'P2' FIELD <in_p2>    \"ddic name\n                              ID 'P3' FIELD <inout_p3>    \"field value\n                              ID 'P4' FIELD <out_p4>.    \"flag is list masking\n\n        CALL FUNCTION lv_func\n          EXPORTING\n            fieldname       = <in_p1>\n            ddicname        = <in_p2>\n          IMPORTING\n            is_list_masking = <out_p4>\n          CHANGING\n            fieldvalue      = <inout_p3>.\n\n        CALL 'AB_SET_C_PARMS' ID 'P3' FIELD <inout_p3>\n                      ID 'P4' FIELD <out_p4>.    \"#EC CI_CCALL CI_CCALL\n      ENDIF.\n\n    CATCH cx_root.\n  ENDTRY.\n\nENDFORM.\n```\n",
+        "contentDigest": "7c93f05bfa5efee2177a3e93c6c0611a",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3665,8 +3665,8 @@
         }
       },
       "frontmatter": {
-        "title": "Calculating Activity Amounts for Production and Process Orders with SAP ABAP",
-        "date": "2018-01-10",
+        "title": "A Detailed Look at ABAP's BDC Method",
+        "date": "2018-01-24",
         "draft": true,
         "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file",
         "parent": "/Users/chris/projects/chrisfrew.in/src/pages/detailed-look-at-bdc-in-abap/index.md absPath of file"
@@ -4079,6 +4079,462 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2ff717a7558456a4e13ad77b2b875176",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels",
+      "relativePath": "abap-push-and-message-channels",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-01-11T16:03:06.851Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
+      "changeTime": "2018-01-11T16:03:06.851Z",
+      "birthTime": "2018-01-11T16:01:54.254Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "abap-push-and-message-channels",
+      "ext": "",
+      "name": "abap-push-and-message-channels",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596136407,
+      "blocks": 0,
+      "atimeMs": 1516207961110.25,
+      "mtimeMs": 1515686586850.6416,
+      "ctimeMs": 1515686586850.6416,
+      "birthtimeMs": 1515686514254.4714,
+      "atime": "2018-01-17T16:52:41.110Z",
+      "mtime": "2018-01-11T16:03:06.851Z",
+      "ctime": "2018-01-11T16:03:06.851Z",
+      "birthtime": "2018-01-11T16:01:54.254Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "19ad89a859b98cf39e0ff7ed896cd83e",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md",
+      "relativePath": "abap-push-and-message-channels/index.md",
+      "extension": "md",
+      "size": 3576,
+      "prettySize": "3.58 kB",
+      "modifiedTime": "2018-01-11T16:31:21.929Z",
+      "accessTime": "2018-01-11T16:31:21.929Z",
+      "changeTime": "2018-01-11T16:31:21.929Z",
+      "birthTime": "2018-01-11T16:03:06.851Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "abap-push-and-message-channels",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596136548,
+      "blocks": 0,
+      "atimeMs": 1515688281929.3044,
+      "mtimeMs": 1515688281929.477,
+      "ctimeMs": 1515688281929.477,
+      "birthtimeMs": 1515686586850.6284,
+      "atime": "2018-01-11T16:31:21.929Z",
+      "mtime": "2018-01-11T16:31:21.929Z",
+      "ctime": "2018-01-11T16:31:21.929Z",
+      "birthtime": "2018-01-11T16:03:06.851Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: ABAP Push and Message Channels\ndate: \"2018-01-12\"\ndraft: false\n---\n\n# Add some spice to your SAPUI5 apps!\n## (Or even normal webapps, for that matter)\n\nI was a noob. I wrote in my SAPUI5 some warehouse task code that would have a real time. How did I do it?\n\nI wrote a `window.setInterval()` function that would ping table `/SCWM/WT` 😊 and check for any new lines - with an OData `GET_ENTITY_SET` server request. 😊 😊\n\nYeah.\n\nWell, I was lucky to learn about websockets from one of our EWM. Then I was even luckier to learn a bit more about the technical aspects (when to subscribe, unsubscribe, destroy, and create websockets instances from actions on the front end).\n\nSo here's how to add websockets to your SAPUI5 app<sup><a href=\"#footnote-1\">1</a></sup>.\n\n## Transactions\n\nAll backend push and messaging channels can be managed with just two transactions:  `SAMC`, for message channels and `SAPC`, for push channels. Easy enough.\n\n## Creating a Message Channel\n\nAs we will see, to create a proper push channel, we will first need a message channel, so that is where we start off. An ABAP message channel is a way of subscribing current programs to any - the best thing about push channels is that if the push channel _isn't_ listening, there is no error and nothing else negative happens anywhere else in the system - that is, granted you `TRY` and `CATCH` your push channel messaging properly.\n\nSo let's get started in transaction `SAMC`:\n\n![]()\n\nWe define the message channel name, and, most importantly, define what programs can use this message channel and what type of message this channel will handle (there are only 2 - numeric and string)\n\nNow, as I mention before, we use these channels to hook into any ABAP program, so that any time they are executed by anyone (or anything) in the system, the channel will be messages. A safe way to hook into an existing program (using our newly created `Z_AWESOME_CHANNEL`) looks as follows:\n\n```abap\nREPORT my_super_cool_existing_report\n\n\n\n```\n\n## Creating a Push Channel\n\nOk, now we head to transaction `SAPC` - we are no going to define a websocket that will be hooked up to our push channel. That way, when something happens in our program, it will message to all subscribed channels, which will be forwarded , and then ultimately, to the most important part, the frontend for our user to see!\n\n## Frontend\n\nOn the frontend I create a general websocket function that creates a websocket instance. In order to have the correct service for each view, upon each view change I call this function, which always creates a new instance if there exists a websocket instance already. This way we are sure that on any view change, we have a fresh running instance of the websocket doing the correct task for this view.\n\nThat function looks like this:\n\n```\n\n```\n\nNote that you of course have to us `ws://` as the protocol in the link name!\n\nOn the backend, that ends up looking like a `CASE` statement:\n\n```abap\nCASE\n```\n\n## Code\n\nYep, you're going to have to write some ABAP code too. Luckily for us, when we create a push channel in transaction SAPC, SAP generates a class skeleton with 4 methods:\n\n``\n``\n``\n``\n``\n\n<hr/>\n\n# Footnotes\n<div id=\"footnote-1\">\n1. Note that unfortunately the SAP Web IDE does not yet support websockets, that is, without network wizardry. I haven't managed to get it to work. I've left  long ago a message with the person who was the lead on Cloud Connector asking if websocket (`ws` protocol) would eventually something to be supported, but haven't heard anything.\n</div>\n",
+        "contentDigest": "3d673bba83d8131aba27dc46d9d24d73",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "ABAP Push and Message Channels",
+        "date": "2018-01-12",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md",
+      "fields": {
+        "slug": "/abap-push-and-message-channels/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e06198ac997eee827e25db378406cdcd",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects",
+      "relativePath": "warn-sap-users-of-locked-objects",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-01-15T07:23:17.882Z",
+      "accessTime": "2018-01-17T16:52:41.111Z",
+      "changeTime": "2018-01-15T07:23:17.882Z",
+      "birthTime": "2018-01-15T07:23:04.154Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "warn-sap-users-of-locked-objects",
+      "ext": "",
+      "name": "warn-sap-users-of-locked-objects",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596340303,
+      "blocks": 0,
+      "atimeMs": 1516207961110.5068,
+      "mtimeMs": 1516000997881.6216,
+      "ctimeMs": 1516000997881.6216,
+      "birthtimeMs": 1516000984154.256,
+      "atime": "2018-01-17T16:52:41.111Z",
+      "mtime": "2018-01-15T07:23:17.882Z",
+      "ctime": "2018-01-15T07:23:17.882Z",
+      "birthtime": "2018-01-15T07:23:04.154Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "99901c5fd5926ee546ed81235d35ae6d",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md",
+      "relativePath": "warn-sap-users-of-locked-objects/index.md",
+      "extension": "md",
+      "size": 2884,
+      "prettySize": "2.88 kB",
+      "modifiedTime": "2018-01-15T10:51:14.422Z",
+      "accessTime": "2018-01-15T10:51:14.723Z",
+      "changeTime": "2018-01-15T10:51:14.422Z",
+      "birthTime": "2018-01-15T07:23:17.882Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "warn-sap-users-of-locked-objects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596340383,
+      "blocks": 0,
+      "atimeMs": 1516013474722.6362,
+      "mtimeMs": 1516013474422.1287,
+      "ctimeMs": 1516013474422.1287,
+      "birthtimeMs": 1516000997881.6072,
+      "atime": "2018-01-15T10:51:14.723Z",
+      "mtime": "2018-01-15T10:51:14.422Z",
+      "ctime": "2018-01-15T10:51:14.422Z",
+      "birthtime": "2018-01-15T07:23:17.882Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Warn SAP Users of Locked Objects\ndate: \"2018-01-17\"\ndraft: false\n---\n\n## SAP users lockin' up your objects?\n### We're gonna write an ABAP report and run it as a batch job to 🤖 _Automatically_ 🤖 get rid of them!\n\n## Overview\n\nAlright everyone, we're gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a _'forbidden' SAP internal function module!!!_ 😱 😱 😱\n\n## SAP and it's Locked Objects\n\nAnyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These 'objects' in SAP are numerous - orders, HUs, even warehouse bins are 'objects' that can be 'locked' when they are under modification somewhere in the system.\n\nThis can get very annoying when multiple entities want to change multiple objects in similar time frames.\n\n## A Remedy for the Problem\n\nThe ABAP report I'm going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that _also_ modify these objects.\n\nThe example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.\n\n## Specific Problem\n\nAt my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing 'bad' per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn't be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.\n\nWe decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:\n\n1. A warning popup for the user at 5 minutes of lock time\n2. A second warning popup for the user warning at 10 minutes of lock time\n3. Forcefully close the transaction that was locking the order at 15 minutes of lock time\n\nAnd yes, this can all be done from an automatic process with no overseeing required! 😊\n\nLet's get started!\n\n## Identify Locked Objects\n\nThe first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for our case, we are only interested in locked orders. This is object type `AUFK`\n\nSo, we have our table of objects, and the users who are locking. To be as\n\n## The 'forbidden' module\n\n## BDC Tricks\n\n<hr/>\n\n# Footnotes\n",
+        "contentDigest": "4b9f5c49353e5c72175e04c51195abab",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Warn SAP Users of Locked Objects",
+        "date": "2018-01-17",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md",
+      "fields": {
+        "slug": "/warn-sap-users-of-locked-objects/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b6d078612bbf5d6dd3024ca289455a97",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "relativePath": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-01-17T16:31:47.195Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
+      "changeTime": "2018-01-17T16:31:47.195Z",
+      "birthTime": "2018-01-17T16:31:36.460Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "ext": "",
+      "name": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596482218,
+      "blocks": 0,
+      "atimeMs": 1516207961110.4731,
+      "mtimeMs": 1516206707195.2708,
+      "ctimeMs": 1516206707195.2708,
+      "birthtimeMs": 1516206696460.457,
+      "atime": "2018-01-17T16:52:41.110Z",
+      "mtime": "2018-01-17T16:31:47.195Z",
+      "ctime": "2018-01-17T16:31:47.195Z",
+      "birthtime": "2018-01-17T16:31:36.460Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "01c2e8785508c2dfbceecebcc21ecddd",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md",
+      "relativePath": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md",
+      "extension": "md",
+      "size": 8686,
+      "prettySize": "8.69 kB",
+      "modifiedTime": "2018-01-17T16:39:42.152Z",
+      "accessTime": "2018-01-17T16:39:42.152Z",
+      "changeTime": "2018-01-17T16:39:42.152Z",
+      "birthTime": "2018-01-17T16:31:47.195Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596482229,
+      "blocks": 0,
+      "atimeMs": 1516207182152.0068,
+      "mtimeMs": 1516207182152.1736,
+      "ctimeMs": 1516207182152.1736,
+      "birthtimeMs": 1516206707195.2476,
+      "atime": "2018-01-17T16:39:42.152Z",
+      "mtime": "2018-01-17T16:39:42.152Z",
+      "ctime": "2018-01-17T16:39:42.152Z",
+      "birthtime": "2018-01-17T16:31:47.195Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: How to be an American living in Austria and working in Liechtenstein\ndate: \"2018-01-17\"\ndraft: false\n---\n\n## Hey, Want to be an American living in Austria and working in Liechtenstein?\n## Look no further!\n\nThis is a detailed how-to guide on applying and obtaining:\n- An Austrian residence permit\n- A Liechtensteiner work permit\n\n## The Task\n\nWarning: this process took me over two months. I want to share first how I did it, and then how I should have done it in hopes to save others time if they should wish to attempt tackling this debauchery of paperwork and bureaucracy.*\n\n<sup>\\* Trust me when I say I'm not a legal counsel so always take my words with a grain of salt. However, as of February 2016, these were the steps I took to get started working. UPDATE 2017: The process is still the same as described here. I know this because you have to renew your permits each year for your first three years in Austria. Granted, it is much easier the second and third times as you have all of your papers in place already from the previous year!</sup>\n\n## Overview\n\nWhen you plan on living in Austria for longer than three months, and then longer than sixth months (there are some other special visas such as a student visa, artist visa which last for sixth months), then the government requires you to apply for a Niedlerlassungsbewilligung, a specific type of Aufenhaltstitel, or residence permit, very similar to a green card in the US. Then, Liechtenstein requires that you have Aufenhaltstitel, or a working permit to legally work in Liechtenstein. Your company should help you with this process, and, since a cross border working permit for Liechtenstein is very common, the application is relatively simple compared to the Niedlerlassungsbewilligung.\n\n## Legal Entities\n\nThere are four legal entities you are going to need to work with to get everything to jive:\n1. Perhaps most important, is the Bezirkshauptmannschaft, or \"BH\" for short in German, or in English, the district authority. This is where you will complete your Niedlerlassungsbewilligung, or residence permit.\n2. Another place you will visit is the Gemeindeamt, or town hall of the town your apartment is in. This is where you will make your Meldezettel, or certification of registration. When you do this registration, you want to make your Haupwohnsitz, or main place of residence to that town.\n3. You will also need to work with the Besitzer, or the owner of the apartment. If the apartment you want to rent is a private, this shouldn't be so difficult. Unfortunately, it is quite common in Austria that apartments are owned by an apartment company, so you may have to work with one of those companies to finally get the rent contract and the signature of the official owner of the building itself.\n4. Finally, the two documents you will need to send from Liechtenstein are mandated by the Besitzer Ausländer- und Passamt, or the Immigration and Passport Office of Liechtenstein.\nLong Term Residence Permit(Nieder- lassungs- bewilligung)\nFor the residence permit, fill out the Niedlerlassungsbewilligung application. If you already have your apartment, you should even be able to fill in those parts as well. If you don't have a spouse or children, you can skip many parts of this application. Anyways, the BH will look over it when you first supply it to them anyway, so don't stress too much.\nTo fully complete the Niedlerlassungsbewilligung application, you will need to bring the following documents when you go to the BH:\n\n## Original Documents\n\n1. Passport photo (glue it right on the front page of the application)\n2. Your birth certificate, signed by an apostle\n3. A police report from you local police station listing an infractions you may or may not have, also signed by an apostle\n4. Your (at the lowest) A1 German proficiency certificate\n\n## Copied Documents\n\n1. Your rent agreement, make sure the copy has the signature of owner of the apartment building\n2. Flight confirmation ticket (so the BH knows how long you have to legally stay in Austria)\n3. A police report from you local police station listing an infractions you may or may not have, also signed by an apostle\n4. Your A1 certification in German. This is exam is not to be taken lightly! I did it through the Goethe Institut in U.S.\n5. Your work contract - make sure all the work contracts have signatures.\n6. A \"simulation\" of your wage with expected taxes from Austria - make sure this has signatures from your company as well.\nWork Permit(Arbeits- bewilligung)\nFor the work permit, you will need to fill out the Stellanantritt ohne Wohnsitznahme in Liechtenstein and Persönliche Angabe zur Ausstellung des Aufenhaltstitels applications. Your company in Liechtenstein may send you these half completed, or they may not. Mine did.\nTo fully complete the applications, you will need the following attachments:\n\n## Original Documents\n\n1. Passport photo (glue it right on the front page of the Persönliche Angabe zur Ausstellung des Aufenhaltstitels)\n \nAnd... that's it. Just the passport photo. Told you it was cake compared to the residence permit.\nThe Perfect Process\nNow, some of the things you have seen above may not really make any sense to you. The list below will describe them and outline, if you were perfect, how you could complete the entire process without any confusion or wasting of time:\n\n## Before Going to Austria\n\n1. Get a job offer in Liechtenstein! The company will send you contracts which you need to sign in the presence of an apostle, which you will then send back to the company for their final approval. They'll then order the contracts which you need to fill out for Liechtenstein.\n2. Pass your German A1 Proficiency Exam and wait for certificate to be mailed to you (this is probably easier before you go to Austria, but not impossible to do in Austria or Germany). This exam is includes basic reading, writing, and speaking in German. I did mine through the Goethe Institut. More about it here.\n\n## Once In Austria\n\n1. Obtain an Austrian Bank Account (this takes a few days because they always need to approve foreigners) this will help time saving immensely with any bank transfers you need for the apartment, such as the security deposit or first months rent.\n2. Aggressively hunt for an apartment, get the rent contract made up and sign it with the owner of the apartment as soon as you can. (This process took me a month.)\n3. In the meantime of all the apartment hunting, get a bunch of passport photos taken. You will need them for a few things later on.\n4. Make your Meldezettal, or certification of registration at your local  Gemindeamt or town hall (make sure to bring your rent contract when you go!)\n5. Go to the BH with all of the documents listed above. If you're good (unlike me) and have all the documents when you go, you should need to go only once.\n6. Now, this step is tricky. Liechtenstein won't issue you a work permit without first seeing your residence permit (would be easy if you were an EU citizen - they would issue it as soon as they knew you were a citizen!) However, Austria won't issue you a residence permit without first seeing the work permit! Catch 22 right? Well, not exactly. When you have everything ready for your residence permit at the BH, you can get help from your company and the Liechtenstein government to send a short confirmation letter saying that yes, as soon as you have your residence permit, they will issue you a work permit if you send in your residence permit for them to examine.\n7. Now wait. Some district authority offices say it can take as long as six months to approve your residence permit. I personally think that it depends more on your start date. I don't think they will toast you and make you wait for months if they see your start date is coming up in just a few weeks or month.\n8. Then, eventually, the BH will call you and tell you when you can pick up your residence permit! You will have to go this time with your passport and pay a final 20 EUR to receive the residence permit. They told me to come back on a date about a week after I finally submitted everything.\n9. Then, you will need to work with your company. The authorities in Liechtenstein will need to see that residence permit that you just got, with those two other documents I mentioned above. Probably with yet another week, then will then issue you the work permit. I picked my work permit up from my company, but maybe they sometimes mail it. I'm not sure.\n10. Finally, you've done it! Hike up to a hut, sip a delicious Austrian beer and eat a big Germknödel! Try not to think about after all that paperwork your only reward is to start working!\n \n \n \n",
+        "contentDigest": "c46e3fa3db7c9600fce9d1627b471244",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "How to be an American living in Austria and working in Liechtenstein",
+        "date": "2018-01-17",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md",
+      "fields": {
+        "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "56b321b1362db714f780a024bdde79fd",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts",
+      "relativePath": "building-raiblocks-charts",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-01-17T16:47:15.305Z",
+      "accessTime": "2018-01-17T16:52:41.110Z",
+      "changeTime": "2018-01-17T16:47:15.305Z",
+      "birthTime": "2018-01-17T16:47:09.210Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "building-raiblocks-charts",
+      "ext": "",
+      "name": "building-raiblocks-charts",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596482995,
+      "blocks": 0,
+      "atimeMs": 1516207961110.3252,
+      "mtimeMs": 1516207635305.3901,
+      "ctimeMs": 1516207635305.3901,
+      "birthtimeMs": 1516207629209.9854,
+      "atime": "2018-01-17T16:52:41.110Z",
+      "mtime": "2018-01-17T16:47:15.305Z",
+      "ctime": "2018-01-17T16:47:15.305Z",
+      "birthtime": "2018-01-17T16:47:09.210Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "99c9a2f4c535f8c2280a91106ff62369",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md",
+      "relativePath": "building-raiblocks-charts/index.md",
+      "extension": "md",
+      "size": 236,
+      "prettySize": "236 B",
+      "modifiedTime": "2018-01-17T16:48:21.262Z",
+      "accessTime": "2018-01-17T16:48:21.559Z",
+      "changeTime": "2018-01-17T16:48:21.262Z",
+      "birthTime": "2018-01-17T16:47:15.305Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "building-raiblocks-charts",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8596483004,
+      "blocks": 0,
+      "atimeMs": 1516207701559.1833,
+      "mtimeMs": 1516207701262.015,
+      "ctimeMs": 1516207701262.015,
+      "birthtimeMs": 1516207635305.376,
+      "atime": "2018-01-17T16:48:21.559Z",
+      "mtime": "2018-01-17T16:48:21.262Z",
+      "ctime": "2018-01-17T16:48:21.262Z",
+      "birthtime": "2018-01-17T16:47:15.305Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Interacting with a Blockchain - Building a Webapp for RaiBlocks\ndate: \"2018-01-17\"\ndraft: true\n---\n\n## Full stack\n\nThis post is going to go through how I built [raiblocks-charts.herokuapp.com](raiblocks-charts.herokuapp.com)\n",
+        "contentDigest": "dbb7ad49b0083065b8edec603b3da190",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Interacting with a Blockchain - Building a Webapp for RaiBlocks",
+        "date": "2018-01-17",
+        "draft": true,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md",
+      "fields": {
+        "slug": "/building-raiblocks-charts/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -4087,7 +4543,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1515671936148,
+      "updatedAt": 1516207961559,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -4096,7 +4552,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d55e4f4270eae0f09942edf8b523e289",
+        "contentDigest": "3ae18846de78edf97031959373ead161",
         "owner": "internal-data-bridge"
       }
     },
@@ -4110,7 +4566,7 @@
       "context": {
         "slug": "/colors-for-sap-web-ide/"
       },
-      "updatedAt": 1515671936165,
+      "updatedAt": 1516207961580,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4119,7 +4575,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "380088aebb15826834873eef8ee5fafa",
+        "contentDigest": "54aeb887a84b474cf3bfaec72e79afd4",
         "owner": "internal-data-bridge"
       }
     },
@@ -4133,7 +4589,7 @@
       "context": {
         "slug": "/an-npm-christmas-easter-egg/"
       },
-      "updatedAt": 1515671936166,
+      "updatedAt": 1516207961581,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4142,7 +4598,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9e8b10d446df762ec191ec52784449ea",
+        "contentDigest": "b3466b4fbb8dc3ba8095b93d9a07e8a6",
         "owner": "internal-data-bridge"
       }
     },
@@ -4156,7 +4612,7 @@
       "context": {
         "slug": "/detailed-look-at-bdc-in-abap/"
       },
-      "updatedAt": 1515671936166,
+      "updatedAt": 1516207961581,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4165,7 +4621,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9def65c20bc6ae2c8652adef6bbdcfff",
+        "contentDigest": "6a1990334f8b1e87ba474869aae21411",
         "owner": "internal-data-bridge"
       }
     },
@@ -4179,7 +4635,7 @@
       "context": {
         "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1515671936167,
+      "updatedAt": 1516207961581,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4188,7 +4644,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a7484ae228d7ae59a5f2bcdc2515c3cd",
+        "contentDigest": "37bda9650dc08c7853676516ba4e4f8c",
         "owner": "internal-data-bridge"
       }
     },
@@ -4202,7 +4658,7 @@
       "context": {
         "slug": "/debugging-abap-with-a-sap-shortcut/"
       },
-      "updatedAt": 1515671936167,
+      "updatedAt": 1516207961582,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4211,7 +4667,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "342bda77a4684590e1c5985c21e2044b",
+        "contentDigest": "264b5f72e54d34c1fddccaf2378b8dd5",
         "owner": "internal-data-bridge"
       }
     },
@@ -4225,7 +4681,7 @@
       "context": {
         "slug": "/dropdowns-in-readmes/"
       },
-      "updatedAt": 1515671936167,
+      "updatedAt": 1516207961582,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4234,7 +4690,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6a99464810971cd2297f7803e76ec406",
+        "contentDigest": "3afdee7438da86c42a438fd75e9a040c",
         "owner": "internal-data-bridge"
       }
     },
@@ -4248,7 +4704,7 @@
       "context": {
         "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
       },
-      "updatedAt": 1515671936168,
+      "updatedAt": 1516207961583,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4257,7 +4713,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3caac659c5f5f16fcd73ae8cd8a083d1",
+        "contentDigest": "738befc45071725b024d015d0de4e6aa",
         "owner": "internal-data-bridge"
       }
     },
@@ -4271,7 +4727,7 @@
       "context": {
         "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1515671936168,
+      "updatedAt": 1516207961583,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4280,7 +4736,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9ec744ef7c615bfabb4a0528e920f466",
+        "contentDigest": "a4d914032333662317f6e7f2aeae1538",
         "owner": "internal-data-bridge"
       }
     },
@@ -4294,7 +4750,7 @@
       "context": {
         "slug": "/hello-world/"
       },
-      "updatedAt": 1515671936168,
+      "updatedAt": 1516207961584,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4303,7 +4759,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "af4e7b2ca6872a07a83dabce99747fd6",
+        "contentDigest": "08e5949311500477364ef8951fe35c89",
         "owner": "internal-data-bridge"
       }
     },
@@ -4317,7 +4773,7 @@
       "context": {
         "slug": "/laptop-stickers/"
       },
-      "updatedAt": 1515671936169,
+      "updatedAt": 1516207961584,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4326,7 +4782,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6b7d2c5516e06a3230ef1957b17e85b7",
+        "contentDigest": "61d3bcc008148c9a0675fbb8a01dfeee",
         "owner": "internal-data-bridge"
       }
     },
@@ -4340,7 +4796,7 @@
       "context": {
         "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1515671936169,
+      "updatedAt": 1516207961584,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4349,7 +4805,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3c05874b416372c8c7d75fa99e27acf8",
+        "contentDigest": "2cd993942b811593224315947569a862",
         "owner": "internal-data-bridge"
       }
     },
@@ -4363,7 +4819,7 @@
       "context": {
         "slug": "/hot-linking-to-lines-in-github/"
       },
-      "updatedAt": 1515671936169,
+      "updatedAt": 1516207961585,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4372,7 +4828,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5028dd5bb51085908b550d7408c573d1",
+        "contentDigest": "60dedc121c5a5bf456d2e14446f23d7d",
         "owner": "internal-data-bridge"
       }
     },
@@ -4386,7 +4842,7 @@
       "context": {
         "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1515671936169,
+      "updatedAt": 1516207961585,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4395,7 +4851,99 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "77fb8a4cf48aba1b3473b00f283cfab3",
+        "contentDigest": "9fb7691160a05a153cedefe1e7f63901",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /abap-push-and-message-channels/": {
+      "layout": "index",
+      "jsonName": "abap-push-and-message-channels.json",
+      "internalComponentName": "ComponentAbapPushAndMessageChannels",
+      "path": "/abap-push-and-message-channels/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/abap-push-and-message-channels/"
+      },
+      "updatedAt": 1516207961586,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /abap-push-and-message-channels/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0a07d05699cc74dd99acd56525488503",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /warn-sap-users-of-locked-objects/": {
+      "layout": "index",
+      "jsonName": "warn-sap-users-of-locked-objects.json",
+      "internalComponentName": "ComponentWarnSapUsersOfLockedObjects",
+      "path": "/warn-sap-users-of-locked-objects/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/warn-sap-users-of-locked-objects/"
+      },
+      "updatedAt": 1516207961586,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /warn-sap-users-of-locked-objects/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e3c500279f5e43d5a6fe55c961657b95",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/": {
+      "layout": "index",
+      "jsonName": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein.json",
+      "internalComponentName": "ComponentHowToBeAnAmericanLivingInAustriaAndWorkingInLiechtenstein",
+      "path": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+      },
+      "updatedAt": 1516207961586,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4ad4070b4de8c597d35b3a202130135b",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /building-raiblocks-charts/": {
+      "layout": "index",
+      "jsonName": "building-raiblocks-charts.json",
+      "internalComponentName": "ComponentBuildingRaiblocksCharts",
+      "path": "/building-raiblocks-charts/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/building-raiblocks-charts/"
+      },
+      "updatedAt": 1516207961587,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /building-raiblocks-charts/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3bbcf6f7abbe107f6ffb6fd9870913fc",
         "owner": "internal-data-bridge"
       }
     },
@@ -4407,7 +4955,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1515671936189,
+      "updatedAt": 1516207961616,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -4416,7 +4964,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "93af9dc70cc31591102315b5bc74d094",
+        "contentDigest": "1778889d420c5a9625b45e3005e37667",
         "owner": "internal-data-bridge"
       }
     }
@@ -4441,7 +4989,11 @@
         "/final-say-bitcoin/",
         "/hot-linking-to-lines-in-github/",
         "/sending-windows-commands-from-sap-abap/",
-        "/"
+        "/",
+        "/abap-push-and-message-channels/",
+        "/warn-sap-users-of-locked-objects/",
+        "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+        "/building-raiblocks-charts/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/colors-for-sap-web-ide/index.md absPath of file >>> MarkdownRemark": [
         "/colors-for-sap-web-ide/"
@@ -4481,11 +5033,26 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/sending-windows-commands-from-sap-abap/index.md absPath of file >>> MarkdownRemark": [
         "/sending-windows-commands-from-sap-abap/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark": [
+        "/abap-push-and-message-channels/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects/index.md absPath of file >>> MarkdownRemark": [
+        "/warn-sap-users-of-locked-objects/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/index.md absPath of file >>> MarkdownRemark": [
+        "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/building-raiblocks-charts/index.md absPath of file >>> MarkdownRemark": [
+        "/building-raiblocks-charts/"
       ]
     },
     "connections": {
       "MarkdownRemark": [
         "/"
+      ],
+      "SitePage": [
+        "/dev-404-page/"
       ]
     }
   }

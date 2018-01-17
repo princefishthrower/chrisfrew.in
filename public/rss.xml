@@ -1,84 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jan 2018 11:59:13 GMT</lastBuildDate><item><title><![CDATA[Colors For SAP Web IDE!]]></title><description><![CDATA[Dude, where’s my color scheme?! At some point,  SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!  That is unforgivable… Don’t…]]></description><link>https://chrisfrew.in/colors-for-sap-web-ide/</link><guid isPermaLink="false">https://chrisfrew.in/colors-for-sap-web-ide/</guid><pubDate>Thu, 11 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Dude, where’s my color scheme?!&lt;/h1&gt;
-&lt;p&gt;At some point, &lt;em&gt;SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!&lt;/em&gt; That is unforgivable…&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/unforgivable-595b9ad46814fa0343339c67fe02f92a.gif&quot; alt=&quot;Like I said, unforgivable.&quot;&gt;&lt;/p&gt;
-&lt;h2&gt;Don’t worry - code to the rescue!&lt;/h2&gt;
-&lt;p&gt;I wrote a small tampermonkey script that address this issue, and you can get your monokai colors back! &lt;a href=&quot;https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&quot;&gt;(See Ace’s GitHub for all possible themes.)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 55.99250936329588%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB50lEQVQoz42SXWsTQRSG979oze7s7uzs19SNpK1aWvMHRMHeFrzQK0FEUEoupIpUU0HailjtlYh/QqQIImgh0iY2MTHJJtukjV/g1evsxBqDXfTi5SzszMMz5xwle2YWudv3MZ9fEVnG4oM1LCw9Qm7hHq7fuIO5+TzmbuaRu7X4X1FmrtxFvdlCM9pDp/ddJtr9hnCnh1KljqXlFaw+foKnz57j4eraP6Ocu3gNYa2EWjNCV8D2vv74nXeFTVi2Ds9TkT1lI5MxoGqHkVIPJUaZuXAV3cYHeflTuIN298sQ0PFMMG4hM8HBRx04LoXtmMnA07OXUCxt483bDay/eo3N4jZK5arMi5frsF0DhpkCYwSUqqCWCsvSRNVkJfrIUJSz5y+j1/6IYrU29Nw/Dak2giBNERzPiGrBdVVhmYLzK0Q/MjCUwKiGciNMBMYH40uuZwiYIXpqCqAOZhNpr4t/+72VwFbUQUE8tdHeTQZaOizugAemsPSQTvs4Griirwyca6K3ZACMV2SrUhUD+XwAkMqDuu9gcvokxscYpqZPwOf2wUOJgZWwhY3CltzBv4Bu35CJ9ZFmx3w55XgAGumHkMG3BNbbXbwvllEPO4mG1CKYEGZj2SmMT6Zhj1KwgMNnfdC+4U87GBduPa1pyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;What&apos;s this trickery?!?! Is that MONOKAI for SAP Web IDE?!&quot;
-        title=&quot;&quot;
-        src=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png&quot;
-        srcset=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-1a291.png 148w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-2bc4a.png 295w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png 590w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-526de.png 885w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fa2eb.png 1180w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-08f6a.png 1770w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png 2136w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    
-What’s this trickery?!?! Is that the MONOKAI color scheme for SAP Web IDE?!&lt;/p&gt;
-&lt;p&gt;This obviously requires that you have tampermonkey installed for your browser - check out the &lt;a href=&quot;https://tampermonkey.net/&quot;&gt;tampermonkey website on how to install it&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once you’ve installed tampermonkey, just copy in and paste the script from below (or the &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;GitHub&lt;/a&gt; page) and all you should need to change is the &lt;code&gt;[YOUR_USER_NAME_HERE]&lt;/code&gt; value in the &lt;code&gt;@match&lt;/code&gt; variable. This username is your SAP ‘s’ username, an ‘s’ followed by 10 numbers, i.e. &lt;code&gt;S0123456789&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;TL;DR: Gimme Code!&lt;/h2&gt;
-&lt;p&gt;The full code (as of January 11, 2018) is as follows:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;// ==UserScript==&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @name         Monokai Web IDE colors&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @namespace    http://tampermonkey.net/&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @version      1.0&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @description  Changes the Ace Shell CSS in SAP Web IDE from any defaults to Monokai.&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @author       Chris Frewin&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @match        https://webide-[YOUR_USER_NAME_HERE]trial.dispatcher.hanatrial.ondemand.com&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_getResourceText&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_addStyle&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @resource     customCSS https://raw.githubusercontent.com/ajaxorg/ace/master/lib/ace/theme/monokai.css&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @require      http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// ==/UserScript==&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// *** NOTE: feel free to replace the &apos;customCSS&apos; link above with any of the following ace themes found here: (make sure to select the raw version!)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&lt;/span&gt;
-
-window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; newCSS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;GM_getResourceText&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;customCSS&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai css for ace editor&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;GM_addStyle&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;newCSS&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; editor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;#__editor0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// select editor ID&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;removeClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove any of the default classes&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;removed default css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace_editor&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// add back in original class&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace-monokai&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai colors class!&lt;/span&gt;
-    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added ace-monokai css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;I would recommend you check out the newest version on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;https://github.com/frewinchristopher/sapwebidecolors&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[A short write up about some deep details with SAP’s BDC Method And some common gotchyas]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 10 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A short write up about some deep details with SAP’s BDC Method&lt;/h1&gt;
-&lt;h2&gt;And some common gotchyas&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Wed, 17 Jan 2018 16:52:59 GMT</lastBuildDate><item><title><![CDATA[A Detailed Look at ABAP's BDC Method]]></title><description><![CDATA[And some common gotchyas, too]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 24 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;And some common gotchyas, too&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;* -------------------------------------------------------------------&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;*                          S A P M S S Y 0&lt;/span&gt;
@@ -1113,7 +1033,221 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 
 &lt;span class=&quot;token keyword&quot;&gt;ENDFORM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[First off, Congratulations! 🎊 And a happy new year! (If you’re viewing this in the summer or something, see the date!) You’ve found the…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;First off, Congratulations! 🎊&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
+&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP internal function module!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
+&lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
+&lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
+&lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
+&lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
+&lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
+&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
+&lt;h2&gt;Specific Problem&lt;/h2&gt;
+&lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
+&lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A warning popup for the user at 5 minutes of lock time&lt;/li&gt;
+&lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
+&lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
+&lt;p&gt;Let’s get started!&lt;/p&gt;
+&lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
+&lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for our case, we are only interested in locked orders. This is object type &lt;code&gt;AUFK&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, we have our table of objects, and the users who are locking. To be as&lt;/p&gt;
+&lt;h2&gt;The ‘forbidden’ module&lt;/h2&gt;
+&lt;h2&gt;BDC Tricks&lt;/h2&gt;
+&lt;hr/&gt;
+&lt;h1&gt;Footnotes&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[How to be an American living in Austria and working in Liechtenstein]]></title><description><![CDATA[Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…]]></description><link>https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</link><guid isPermaLink="false">https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Hey, Want to be an American living in Austria and working in Liechtenstein?&lt;/h2&gt;
+&lt;h2&gt;Look no further!&lt;/h2&gt;
+&lt;p&gt;This is a detailed how-to guide on applying and obtaining:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An Austrian residence permit&lt;/li&gt;
+&lt;li&gt;A Liechtensteiner work permit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The Task&lt;/h2&gt;
+&lt;p&gt;Warning: this process took me over two months. I want to share first how I did it, and then how I should have done it in hopes to save others time if they should wish to attempt tackling this debauchery of paperwork and bureaucracy.*&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;* Trust me when I say I’m not a legal counsel so always take my words with a grain of salt. However, as of February 2016, these were the steps I took to get started working. UPDATE 2017: The process is still the same as described here. I know this because you have to renew your permits each year for your first three years in Austria. Granted, it is much easier the second and third times as you have all of your papers in place already from the previous year!&lt;/sup&gt;&lt;/p&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;When you plan on living in Austria for longer than three months, and then longer than sixth months (there are some other special visas such as a student visa, artist visa which last for sixth months), then the government requires you to apply for a Niedlerlassungsbewilligung, a specific type of Aufenhaltstitel, or residence permit, very similar to a green card in the US. Then, Liechtenstein requires that you have Aufenhaltstitel, or a working permit to legally work in Liechtenstein. Your company should help you with this process, and, since a cross border working permit for Liechtenstein is very common, the application is relatively simple compared to the Niedlerlassungsbewilligung.&lt;/p&gt;
+&lt;h2&gt;Legal Entities&lt;/h2&gt;
+&lt;p&gt;There are four legal entities you are going to need to work with to get everything to jive:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Perhaps most important, is the Bezirkshauptmannschaft, or “BH” for short in German, or in English, the district authority. This is where you will complete your Niedlerlassungsbewilligung, or residence permit.&lt;/li&gt;
+&lt;li&gt;Another place you will visit is the Gemeindeamt, or town hall of the town your apartment is in. This is where you will make your Meldezettel, or certification of registration. When you do this registration, you want to make your Haupwohnsitz, or main place of residence to that town.&lt;/li&gt;
+&lt;li&gt;You will also need to work with the Besitzer, or the owner of the apartment. If the apartment you want to rent is a private, this shouldn’t be so difficult. Unfortunately, it is quite common in Austria that apartments are owned by an apartment company, so you may have to work with one of those companies to finally get the rent contract and the signature of the official owner of the building itself.&lt;/li&gt;
+&lt;li&gt;Finally, the two documents you will need to send from Liechtenstein are mandated by the Besitzer Ausländer- und Passamt, or the Immigration and Passport Office of Liechtenstein.
+Long Term Residence Permit(Nieder- lassungs- bewilligung)
+For the residence permit, fill out the Niedlerlassungsbewilligung application. If you already have your apartment, you should even be able to fill in those parts as well. If you don’t have a spouse or children, you can skip many parts of this application. Anyways, the BH will look over it when you first supply it to them anyway, so don’t stress too much.
+To fully complete the Niedlerlassungsbewilligung application, you will need to bring the following documents when you go to the BH:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Original Documents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Passport photo (glue it right on the front page of the application)&lt;/li&gt;
+&lt;li&gt;Your birth certificate, signed by an apostle&lt;/li&gt;
+&lt;li&gt;A police report from you local police station listing an infractions you may or may not have, also signed by an apostle&lt;/li&gt;
+&lt;li&gt;Your (at the lowest) A1 German proficiency certificate&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Copied Documents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Your rent agreement, make sure the copy has the signature of owner of the apartment building&lt;/li&gt;
+&lt;li&gt;Flight confirmation ticket (so the BH knows how long you have to legally stay in Austria)&lt;/li&gt;
+&lt;li&gt;A police report from you local police station listing an infractions you may or may not have, also signed by an apostle&lt;/li&gt;
+&lt;li&gt;Your A1 certification in German. This is exam is not to be taken lightly! I did it through the Goethe Institut in U.S.&lt;/li&gt;
+&lt;li&gt;Your work contract - make sure all the work contracts have signatures.&lt;/li&gt;
+&lt;li&gt;A “simulation” of your wage with expected taxes from Austria - make sure this has signatures from your company as well.
+Work Permit(Arbeits- bewilligung)
+For the work permit, you will need to fill out the Stellanantritt ohne Wohnsitznahme in Liechtenstein and Persönliche Angabe zur Ausstellung des Aufenhaltstitels applications. Your company in Liechtenstein may send you these half completed, or they may not. Mine did.
+To fully complete the applications, you will need the following attachments:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Original Documents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Passport photo (glue it right on the front page of the Persönliche Angabe zur Ausstellung des Aufenhaltstitels)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And… that’s it. Just the passport photo. Told you it was cake compared to the residence permit.
+The Perfect Process
+Now, some of the things you have seen above may not really make any sense to you. The list below will describe them and outline, if you were perfect, how you could complete the entire process without any confusion or wasting of time:&lt;/p&gt;
+&lt;h2&gt;Before Going to Austria&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Get a job offer in Liechtenstein! The company will send you contracts which you need to sign in the presence of an apostle, which you will then send back to the company for their final approval. They’ll then order the contracts which you need to fill out for Liechtenstein.&lt;/li&gt;
+&lt;li&gt;Pass your German A1 Proficiency Exam and wait for certificate to be mailed to you (this is probably easier before you go to Austria, but not impossible to do in Austria or Germany). This exam is includes basic reading, writing, and speaking in German. I did mine through the Goethe Institut. More about it here.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Once In Austria&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Obtain an Austrian Bank Account (this takes a few days because they always need to approve foreigners) this will help time saving immensely with any bank transfers you need for the apartment, such as the security deposit or first months rent.&lt;/li&gt;
+&lt;li&gt;Aggressively hunt for an apartment, get the rent contract made up and sign it with the owner of the apartment as soon as you can. (This process took me a month.)&lt;/li&gt;
+&lt;li&gt;In the meantime of all the apartment hunting, get a bunch of passport photos taken. You will need them for a few things later on.&lt;/li&gt;
+&lt;li&gt;Make your Meldezettal, or certification of registration at your local  Gemindeamt or town hall (make sure to bring your rent contract when you go!)&lt;/li&gt;
+&lt;li&gt;Go to the BH with all of the documents listed above. If you’re good (unlike me) and have all the documents when you go, you should need to go only once.&lt;/li&gt;
+&lt;li&gt;Now, this step is tricky. Liechtenstein won’t issue you a work permit without first seeing your residence permit (would be easy if you were an EU citizen - they would issue it as soon as they knew you were a citizen!) However, Austria won’t issue you a residence permit without first seeing the work permit! Catch 22 right? Well, not exactly. When you have everything ready for your residence permit at the BH, you can get help from your company and the Liechtenstein government to send a short confirmation letter saying that yes, as soon as you have your residence permit, they will issue you a work permit if you send in your residence permit for them to examine.&lt;/li&gt;
+&lt;li&gt;Now wait. Some district authority offices say it can take as long as six months to approve your residence permit. I personally think that it depends more on your start date. I don’t think they will toast you and make you wait for months if they see your start date is coming up in just a few weeks or month.&lt;/li&gt;
+&lt;li&gt;Then, eventually, the BH will call you and tell you when you can pick up your residence permit! You will have to go this time with your passport and pay a final 20 EUR to receive the residence permit. They told me to come back on a date about a week after I finally submitted everything.&lt;/li&gt;
+&lt;li&gt;Then, you will need to work with your company. The authorities in Liechtenstein will need to see that residence permit that you just got, with those two other documents I mentioned above. Probably with yet another week, then will then issue you the work permit. I picked my work permit up from my company, but maybe they sometimes mail it. I’m not sure.&lt;/li&gt;
+&lt;li&gt;Finally, you’ve done it! Hike up to a hut, sip a delicious Austrian beer and eat a big Germknödel! Try not to think about after all that paperwork your only reward is to start working!&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Interacting with a Blockchain - Building a Webapp for RaiBlocks]]></title><description><![CDATA[Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com]]></description><link>https://chrisfrew.in/building-raiblocks-charts/</link><guid isPermaLink="false">https://chrisfrew.in/building-raiblocks-charts/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Full stack&lt;/h2&gt;
+&lt;p&gt;This post is going to go through how I built &lt;a href=&quot;raiblocks-charts.herokuapp.com&quot;&gt;raiblocks-charts.herokuapp.com&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABAP Push and Message Channels]]></title><description><![CDATA[Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…]]></description><link>https://chrisfrew.in/abap-push-and-message-channels/</link><guid isPermaLink="false">https://chrisfrew.in/abap-push-and-message-channels/</guid><pubDate>Fri, 12 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Add some spice to your SAPUI5 apps!&lt;/h1&gt;
+&lt;h2&gt;(Or even normal webapps, for that matter)&lt;/h2&gt;
+&lt;p&gt;I was a noob. I wrote in my SAPUI5 some warehouse task code that would have a real time. How did I do it?&lt;/p&gt;
+&lt;p&gt;I wrote a &lt;code&gt;window.setInterval()&lt;/code&gt; function that would ping table &lt;code&gt;/SCWM/WT&lt;/code&gt; 😊 and check for any new lines - with an OData &lt;code&gt;GET_ENTITY_SET&lt;/code&gt; server request. 😊 😊&lt;/p&gt;
+&lt;p&gt;Yeah.&lt;/p&gt;
+&lt;p&gt;Well, I was lucky to learn about websockets from one of our EWM. Then I was even luckier to learn a bit more about the technical aspects (when to subscribe, unsubscribe, destroy, and create websockets instances from actions on the front end).&lt;/p&gt;
+&lt;p&gt;So here’s how to add websockets to your SAPUI5 app&lt;sup&gt;&lt;a href=&quot;#footnote-1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2&gt;Transactions&lt;/h2&gt;
+&lt;p&gt;All backend push and messaging channels can be managed with just two transactions:  &lt;code&gt;SAMC&lt;/code&gt;, for message channels and &lt;code&gt;SAPC&lt;/code&gt;, for push channels. Easy enough.&lt;/p&gt;
+&lt;h2&gt;Creating a Message Channel&lt;/h2&gt;
+&lt;p&gt;As we will see, to create a proper push channel, we will first need a message channel, so that is where we start off. An ABAP message channel is a way of subscribing current programs to any - the best thing about push channels is that if the push channel &lt;em&gt;isn’t&lt;/em&gt; listening, there is no error and nothing else negative happens anywhere else in the system - that is, granted you &lt;code&gt;TRY&lt;/code&gt; and &lt;code&gt;CATCH&lt;/code&gt; your push channel messaging properly.&lt;/p&gt;
+&lt;p&gt;So let’s get started in transaction &lt;code&gt;SAMC&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We define the message channel name, and, most importantly, define what programs can use this message channel and what type of message this channel will handle (there are only 2 - numeric and string)&lt;/p&gt;
+&lt;p&gt;Now, as I mention before, we use these channels to hook into any ABAP program, so that any time they are executed by anyone (or anything) in the system, the channel will be messages. A safe way to hook into an existing program (using our newly created &lt;code&gt;Z_AWESOME_CHANNEL&lt;/code&gt;) looks as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;REPORT&lt;/span&gt; my_super_cool_existing_report
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;Creating a Push Channel&lt;/h2&gt;
+&lt;p&gt;Ok, now we head to transaction &lt;code&gt;SAPC&lt;/code&gt; - we are no going to define a websocket that will be hooked up to our push channel. That way, when something happens in our program, it will message to all subscribed channels, which will be forwarded , and then ultimately, to the most important part, the frontend for our user to see!&lt;/p&gt;
+&lt;h2&gt;Frontend&lt;/h2&gt;
+&lt;p&gt;On the frontend I create a general websocket function that creates a websocket instance. In order to have the correct service for each view, upon each view change I call this function, which always creates a new instance if there exists a websocket instance already. This way we are sure that on any view change, we have a fresh running instance of the websocket doing the correct task for this view.&lt;/p&gt;
+&lt;p&gt;That function looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Note that you of course have to us &lt;code&gt;ws://&lt;/code&gt; as the protocol in the link name!&lt;/p&gt;
+&lt;p&gt;On the backend, that ends up looking like a &lt;code&gt;CASE&lt;/code&gt; statement:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;CASE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;p&gt;Yep, you’re going to have to write some ABAP code too. Luckily for us, when we create a push channel in transaction SAPC, SAP generates a class skeleton with 4 methods:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;/code&gt;
+&lt;code&gt;&lt;/code&gt;
+&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h1&gt;Footnotes&lt;/h1&gt;
+&lt;div id=&quot;footnote-1&quot;&gt;
+1. Note that unfortunately the SAP Web IDE does not yet support websockets, that is, without network wizardry. I haven&apos;t managed to get it to work. I&apos;ve left  long ago a message with the person who was the lead on Cloud Connector asking if websocket (`ws` protocol) would eventually something to be supported, but haven&apos;t heard anything.
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Colors For SAP Web IDE!]]></title><description><![CDATA[Dude, where’s my color scheme?! At some point,  SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!  That is unforgivable… Don’t…]]></description><link>https://chrisfrew.in/colors-for-sap-web-ide/</link><guid isPermaLink="false">https://chrisfrew.in/colors-for-sap-web-ide/</guid><pubDate>Thu, 11 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Dude, where’s my color scheme?!&lt;/h1&gt;
+&lt;p&gt;At some point, &lt;em&gt;SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!&lt;/em&gt; That is unforgivable…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/unforgivable-595b9ad46814fa0343339c67fe02f92a.gif&quot; alt=&quot;Like I said, unforgivable.&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Don’t worry - code to the rescue!&lt;/h2&gt;
+&lt;p&gt;I wrote a small tampermonkey script that address this issue, and you can get your monokai colors back! &lt;a href=&quot;https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&quot;&gt;(See Ace’s GitHub for all possible themes.)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.99250936329588%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB50lEQVQoz42SXWsTQRSG979oze7s7uzs19SNpK1aWvMHRMHeFrzQK0FEUEoupIpUU0HailjtlYh/QqQIImgh0iY2MTHJJtukjV/g1evsxBqDXfTi5SzszMMz5xwle2YWudv3MZ9fEVnG4oM1LCw9Qm7hHq7fuIO5+TzmbuaRu7X4X1FmrtxFvdlCM9pDp/ddJtr9hnCnh1KljqXlFaw+foKnz57j4eraP6Ocu3gNYa2EWjNCV8D2vv74nXeFTVi2Ds9TkT1lI5MxoGqHkVIPJUaZuXAV3cYHeflTuIN298sQ0PFMMG4hM8HBRx04LoXtmMnA07OXUCxt483bDay/eo3N4jZK5arMi5frsF0DhpkCYwSUqqCWCsvSRNVkJfrIUJSz5y+j1/6IYrU29Nw/Dak2giBNERzPiGrBdVVhmYLzK0Q/MjCUwKiGciNMBMYH40uuZwiYIXpqCqAOZhNpr4t/+72VwFbUQUE8tdHeTQZaOizugAemsPSQTvs4Griirwyca6K3ZACMV2SrUhUD+XwAkMqDuu9gcvokxscYpqZPwOf2wUOJgZWwhY3CltzBv4Bu35CJ9ZFmx3w55XgAGumHkMG3BNbbXbwvllEPO4mG1CKYEGZj2SmMT6Zhj1KwgMNnfdC+4U87GBduPa1pyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;What&apos;s this trickery?!?! Is that MONOKAI for SAP Web IDE?!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png&quot;
+        srcset=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-1a291.png 148w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-2bc4a.png 295w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png 590w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-526de.png 885w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fa2eb.png 1180w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-08f6a.png 1770w,
+/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png 2136w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+What’s this trickery?!?! Is that the MONOKAI color scheme for SAP Web IDE?!&lt;/p&gt;
+&lt;p&gt;This obviously requires that you have tampermonkey installed for your browser - check out the &lt;a href=&quot;https://tampermonkey.net/&quot;&gt;tampermonkey website on how to install it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you’ve installed tampermonkey, just copy in and paste the script from below (or the &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;GitHub&lt;/a&gt; page) and all you should need to change is the &lt;code&gt;[YOUR_USER_NAME_HERE]&lt;/code&gt; value in the &lt;code&gt;@match&lt;/code&gt; variable. This username is your SAP ‘s’ username, an ‘s’ followed by 10 numbers, i.e. &lt;code&gt;S0123456789&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;TL;DR: Gimme Code!&lt;/h2&gt;
+&lt;p&gt;The full code (as of January 11, 2018) is as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;// ==UserScript==&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @name         Monokai Web IDE colors&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @namespace    http://tampermonkey.net/&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @version      1.0&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @description  Changes the Ace Shell CSS in SAP Web IDE from any defaults to Monokai.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @author       Chris Frewin&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @match        https://webide-[YOUR_USER_NAME_HERE]trial.dispatcher.hanatrial.ondemand.com&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_getResourceText&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @grant        GM_addStyle&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @resource     customCSS https://raw.githubusercontent.com/ajaxorg/ace/master/lib/ace/theme/monokai.css&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @require      http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ==/UserScript==&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// *** NOTE: feel free to replace the &apos;customCSS&apos; link above with any of the following ace themes found here: (make sure to select the raw version!)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// https://github.com/ajaxorg/ace/tree/master/lib/ace/theme&lt;/span&gt;
+
+window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; newCSS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;GM_getResourceText&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;customCSS&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai css for ace editor&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;GM_addStyle&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;newCSS&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; editor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;#__editor0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// select editor ID&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;removeClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove any of the default classes&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;removed default css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace_editor&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// add back in original class&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;editor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ace-monokai&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// monokai colors class!&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;added ace-monokai css...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;I would recommend you check out the newest version on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;https://github.com/frewinchristopher/sapwebidecolors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[First off, Congratulations! 🎊 And a happy new year! (If you’re viewing this in the summer or something, see the date!) You’ve found the…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;First off, Congratulations! 🎊&lt;/h1&gt;
 &lt;p&gt;&lt;sup&gt;And a happy new year! (If you’re viewing this in the summer or something, see the date!)&lt;/sup&gt;&lt;/p&gt;
 &lt;h2&gt;You’ve found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱&lt;/h2&gt;
 &lt;h2&gt;I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. 😄&lt;/h2&gt;

@@ -14,11 +14,13 @@ class Template extends React.Component {
         Chris's<br/>
         <span style={{color:'#F92672'}}>Full Stack</span>,<br/>
         <span style={{color:'#66D9EF'}}>Web Development</span>,<br/>
-        <span style={{color:'#A6E22E'}}>Blockchain</span>,<br/>
-        <span style={{color:'#F92672'}}>Machine Learning</span>,<br/>
+        <span style={{color:'#A6E22E'}}>ABAP</span>,<br/>
+        <span style={{color:'#F92672'}}>SAPUI5</span>,<br/>
+        <span style={{color:'#66D9EF'}}>Blockchain</span>,<br/>
+        <span style={{color:'#A6E22E'}}>Machine Learning</span>,<br/>
         &<br/>
-        <span style={{color:'#66D9EF'}}>Natural Language Processing</span><br/>
-        <span style={{color:'#A6E22E'}}>Blog</span>.
+        <span style={{color:'#F92672'}}>Natural Language Processing</span><br/>
+        <span style={{color:'#66D9EF'}}>Blog</span>.
       </div>
     );
     const { location, children } = this.props
