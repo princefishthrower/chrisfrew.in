@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Wed, 17 Jan 2018 16:52:59 GMT</lastBuildDate><item><title><![CDATA[A Detailed Look at ABAP's BDC Method]]></title><description><![CDATA[And some common gotchyas, too]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 24 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;And some common gotchyas, too&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Sun, 21 Jan 2018 13:47:22 GMT</lastBuildDate><item><title><![CDATA[Interacting with a Blockchain - Building a Webapp for RaiBlocks]]></title><description><![CDATA[Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com]]></description><link>https://chrisfrew.in/building-raiblocks-charts/</link><guid isPermaLink="false">https://chrisfrew.in/building-raiblocks-charts/</guid><pubDate>Tue, 30 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Full stack&lt;/h2&gt;
+&lt;p&gt;This post is going to go through how I built &lt;a href=&quot;raiblocks-charts.herokuapp.com&quot;&gt;raiblocks-charts.herokuapp.com&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input]]></title><description><![CDATA[So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web… That would be like reinventing the wheel. In SAPUI5 function, that…]]></description><link>https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</link><guid isPermaLink="false">https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</guid><pubDate>Thu, 25 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web…&lt;/h2&gt;
+&lt;p&gt;That would be like reinventing the wheel.&lt;/p&gt;
+&lt;p&gt;In SAPUI5 function, that looks something like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Dear SAP Gods” You shout. I know, what the heck are those random %20??!?! What the heck is that * there for? I recognize the transaction CO03, but what is going on here?!?!?!?&lt;/p&gt;
+&lt;p&gt;All shall become clear. Let’s break it down.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Detailed Look at ABAP's BDC Method]]></title><description><![CDATA[And some common gotchyas, too]]></description><link>https://chrisfrew.in/detailed-look-at-bdc-in-abap/</link><guid isPermaLink="false">https://chrisfrew.in/detailed-look-at-bdc-in-abap/</guid><pubDate>Wed, 24 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;And some common gotchyas, too&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;* -------------------------------------------------------------------&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;*                          S A P M S S Y 0&lt;/span&gt;
@@ -1033,33 +1042,7 @@
 
 &lt;span class=&quot;token keyword&quot;&gt;ENDFORM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
-&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
-&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP internal function module!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
-&lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
-&lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
-&lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
-&lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
-&lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
-&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
-&lt;h2&gt;Specific Problem&lt;/h2&gt;
-&lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
-&lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;A warning popup for the user at 5 minutes of lock time&lt;/li&gt;
-&lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
-&lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
-&lt;p&gt;Let’s get started!&lt;/p&gt;
-&lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
-&lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for our case, we are only interested in locked orders. This is object type &lt;code&gt;AUFK&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;So, we have our table of objects, and the users who are locking. To be as&lt;/p&gt;
-&lt;h2&gt;The ‘forbidden’ module&lt;/h2&gt;
-&lt;h2&gt;BDC Tricks&lt;/h2&gt;
-&lt;hr/&gt;
-&lt;h1&gt;Footnotes&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[How to be an American living in Austria and working in Liechtenstein]]></title><description><![CDATA[Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…]]></description><link>https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</link><guid isPermaLink="false">https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Hey, Want to be an American living in Austria and working in Liechtenstein?&lt;/h2&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[How to be an American living in Austria and working in Liechtenstein]]></title><description><![CDATA[Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…]]></description><link>https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</link><guid isPermaLink="false">https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Hey, Want to be an American living in Austria and working in Liechtenstein?&lt;/h2&gt;
 &lt;h2&gt;Look no further!&lt;/h2&gt;
 &lt;p&gt;This is a detailed how-to guide on applying and obtaining:&lt;/p&gt;
 &lt;ul&gt;
@@ -1125,8 +1108,33 @@ Now, some of the things you have seen above may not really make any sense to you
 &lt;li&gt;Then, eventually, the BH will call you and tell you when you can pick up your residence permit! You will have to go this time with your passport and pay a final 20 EUR to receive the residence permit. They told me to come back on a date about a week after I finally submitted everything.&lt;/li&gt;
 &lt;li&gt;Then, you will need to work with your company. The authorities in Liechtenstein will need to see that residence permit that you just got, with those two other documents I mentioned above. Probably with yet another week, then will then issue you the work permit. I picked my work permit up from my company, but maybe they sometimes mail it. I’m not sure.&lt;/li&gt;
 &lt;li&gt;Finally, you’ve done it! Hike up to a hut, sip a delicious Austrian beer and eat a big Germknödel! Try not to think about after all that paperwork your only reward is to start working!&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Interacting with a Blockchain - Building a Webapp for RaiBlocks]]></title><description><![CDATA[Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com]]></description><link>https://chrisfrew.in/building-raiblocks-charts/</link><guid isPermaLink="false">https://chrisfrew.in/building-raiblocks-charts/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Full stack&lt;/h2&gt;
-&lt;p&gt;This post is going to go through how I built &lt;a href=&quot;raiblocks-charts.herokuapp.com&quot;&gt;raiblocks-charts.herokuapp.com&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ABAP Push and Message Channels]]></title><description><![CDATA[Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…]]></description><link>https://chrisfrew.in/abap-push-and-message-channels/</link><guid isPermaLink="false">https://chrisfrew.in/abap-push-and-message-channels/</guid><pubDate>Fri, 12 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Add some spice to your SAPUI5 apps!&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
+&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP internal function module!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
+&lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
+&lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
+&lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
+&lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
+&lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
+&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
+&lt;h2&gt;Specific Problem&lt;/h2&gt;
+&lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
+&lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A warning popup for the user at 5 minutes of lock time&lt;/li&gt;
+&lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
+&lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
+&lt;p&gt;Let’s get started!&lt;/p&gt;
+&lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
+&lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for our case, we are only interested in locked orders. This is object type &lt;code&gt;AUFK&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, we have our table of objects, and the users who are locking. To be as&lt;/p&gt;
+&lt;h2&gt;The ‘forbidden’ module&lt;/h2&gt;
+&lt;h2&gt;BDC Tricks&lt;/h2&gt;
+&lt;hr/&gt;
+&lt;h1&gt;Footnotes&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[ABAP Push and Message Channels]]></title><description><![CDATA[Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…]]></description><link>https://chrisfrew.in/abap-push-and-message-channels/</link><guid isPermaLink="false">https://chrisfrew.in/abap-push-and-message-channels/</guid><pubDate>Fri, 12 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Add some spice to your SAPUI5 apps!&lt;/h1&gt;
 &lt;h2&gt;(Or even normal webapps, for that matter)&lt;/h2&gt;
 &lt;p&gt;I was a noob. I wrote in my SAPUI5 some warehouse task code that would have a real time. How did I do it?&lt;/p&gt;
 &lt;p&gt;I wrote a &lt;code&gt;window.setInterval()&lt;/code&gt; function that would ping table &lt;code&gt;/SCWM/WT&lt;/code&gt; 😊 and check for any new lines - with an OData &lt;code&gt;GET_ENTITY_SET&lt;/code&gt; server request. 😊 😊&lt;/p&gt;
@@ -1176,7 +1184,7 @@ Now, some of the things you have seen above may not really make any sense to you
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png&quot;
+    href=&quot;/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1195,14 +1203,14 @@ Now, some of the things you have seen above may not really make any sense to you
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;What&apos;s this trickery?!?! Is that MONOKAI for SAP Web IDE?!&quot;
         title=&quot;&quot;
-        src=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png&quot;
-        srcset=&quot;/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-1a291.png 148w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-2bc4a.png 295w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png 590w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-526de.png 885w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fa2eb.png 1180w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-08f6a.png 1770w,
-/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png 2136w&quot;
+        src=&quot;/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png&quot;
+        srcset=&quot;/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-1a291.png 148w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-2bc4a.png 295w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fb8a0.png 590w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-526de.png 885w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-fa2eb.png 1180w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-08f6a.png 1770w,
+/blog/static/sapwebidecolors-e6d59dd4b3c1c3b91006bfdb294938f4-d437b.png 2136w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1298,7 +1306,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-f1f65.png&quot;
+    href=&quot;/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-f1f65.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1317,12 +1325,12 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;The first possible line in the function we can breakpoint&quot;
         title=&quot;&quot;
-        src=&quot;/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-fb8a0.png&quot;
-        srcset=&quot;/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-1a291.png 148w,
-/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-2bc4a.png 295w,
-/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-fb8a0.png 590w,
-/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-526de.png 885w,
-/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-f1f65.png 1048w&quot;
+        src=&quot;/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-fb8a0.png&quot;
+        srcset=&quot;/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-1a291.png 148w,
+/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-2bc4a.png 295w,
+/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-fb8a0.png 590w,
+/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-526de.png 885w,
+/blog/static/function-breakpoint-7f2c794c579923ae724605626ba5369b-f1f65.png 1048w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1331,11 +1339,11 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;and in CR03, drag our &lt;a href=&quot;https://chrisfrew.in/debugging-abap-with-sap-shortcut&quot;&gt;debugging shortcut into the calculation window&lt;/a&gt;, and we press return SAP debugging’s return button to jump out to whatever parent program is calling this function… 
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/blog/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 58px; margin-left: auto; margin-right: auto;&quot;&gt;
     &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAACj0lEQVQ4y9WUy06TQRiGWbv0BrgFlm5MjFfghoWEhSIJJkQSVKBKOFSCIEJCKiooBBALCATahBKIcsZISilt/xYolFIOErSlfwsUaAUep8UGJYVg1IWLNzOTmTzzfoeZOJ9xmr+puH8OlCdtR6NBOp6LUf4d4DHEinfCgldvYsvmYnPKjjwhHR0+JzTu2JkVv2We7bk1Qut7WB4rWBwdISDWYbe+qRlOiyaGwyPY+vt+bCW5zFeV03clHs2liziHBsTBWeRxM7Je+iGLcG6NCY0AvXozO043loJMepMvY2yuoftqPF0JF1ixTHKwEyLkkfkmbwr52d/cZndlXaRHiu3QK24MA6XCuxjV1ewfgCE/A7d+nLeNLSQmJ3ErLY0bKTdJSU0lMek6qtIy9mdcbJyA/uJQKryH/nkxm9ICPoONXfMcExodrVU19HVqGB4ZYWhgkA8D/ZjGPrEt8npmyJIIeaq1lsAW+FxfkB1rbJtmYclNb3Mbt9PTeaBQkJ5xh/qqF4RsTjYM1tjAwMJXpKJseq4l8LE4k8GsZIyVSnwWB37hwjQ0RqdWQ0+3ji6tlvH+QQLiMm8shxHbYtM9Oo6rsQ5X/WsWa1+y2t6GR1QzIMLXNbVwX5FDkVJJtnDZ/KqOoHUhtsMo1G+yszW7wpZ9VfTjZ/wil0HnKgQPmZ4w0vCmkY62dprUaoZ1veyY7Wc4jD6x8JMTt3pE5YPSPFp1K9kFeZRVVFD5TEWlSkVpRTnalnfsSQ68pzk8qXAoQdsCPQ1qHuU85Gm+kpLcfJ7kFVKQpaCjui6yv3FeYKRY4vCe1QFzKxzal4SWIyNzyxGYd9J6/u8rmoYw1COad+MnhdfRUGP24f/1wf6pvgPpiV2HYVoizQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;return&quot; title=&quot;&quot; src=&quot;/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png&quot; srcset=&quot;/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png 58w&quot; sizes=&quot;(max-width: 58px) 100vw, 58px&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;return&quot; title=&quot;&quot; src=&quot;/blog/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png&quot; srcset=&quot;/blog/static/return-00b1c8c77e113cd8f5a0809a202489c2-0c9b0.png 58w&quot; sizes=&quot;(max-width: 58px) 100vw, 58px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
@@ -1345,7 +1353,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/function-found-264ed624475401f4e4bc06397a03d9b9-f42d4.png&quot;
+    href=&quot;/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-f42d4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1364,12 +1372,12 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;There you are `CR_WORKCENTER_FORMULA_CALC`&quot;
         title=&quot;&quot;
-        src=&quot;/static/function-found-264ed624475401f4e4bc06397a03d9b9-fb8a0.png&quot;
-        srcset=&quot;/static/function-found-264ed624475401f4e4bc06397a03d9b9-1a291.png 148w,
-/static/function-found-264ed624475401f4e4bc06397a03d9b9-2bc4a.png 295w,
-/static/function-found-264ed624475401f4e4bc06397a03d9b9-fb8a0.png 590w,
-/static/function-found-264ed624475401f4e4bc06397a03d9b9-526de.png 885w,
-/static/function-found-264ed624475401f4e4bc06397a03d9b9-f42d4.png 958w&quot;
+        src=&quot;/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-fb8a0.png&quot;
+        srcset=&quot;/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-1a291.png 148w,
+/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-2bc4a.png 295w,
+/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-fb8a0.png 590w,
+/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-526de.png 885w,
+/blog/static/function-found-264ed624475401f4e4bc06397a03d9b9-f42d4.png 958w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1381,7 +1389,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-ab5af.png&quot;
+    href=&quot;/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-ab5af.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1400,12 +1408,12 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Calling program details&quot;
         title=&quot;&quot;
-        src=&quot;/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-fb8a0.png&quot;
-        srcset=&quot;/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-1a291.png 148w,
-/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-2bc4a.png 295w,
-/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-fb8a0.png 590w,
-/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-526de.png 885w,
-/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-ab5af.png 960w&quot;
+        src=&quot;/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-fb8a0.png&quot;
+        srcset=&quot;/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-1a291.png 148w,
+/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-2bc4a.png 295w,
+/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-fb8a0.png 590w,
+/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-526de.png 885w,
+/blog/static/form-program-1d2cbb852e085c74901d5a542ef48c3a-ab5af.png 960w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -2358,7 +2366,7 @@ Reuse=0&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-650df.png&quot;
+    href=&quot;/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-650df.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2377,11 +2385,11 @@ Reuse=0&lt;/code&gt;&lt;/pre&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;A nice little Christmas tree&quot;
         title=&quot;&quot;
-        src=&quot;/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-fb8a0.png&quot;
-        srcset=&quot;/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-1a291.png 148w,
-/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-2bc4a.png 295w,
-/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-fb8a0.png 590w,
-/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-650df.png 724w&quot;
+        src=&quot;/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-fb8a0.png&quot;
+        srcset=&quot;/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-1a291.png 148w,
+/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-2bc4a.png 295w,
+/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-fb8a0.png 590w,
+/blog/static/npm-christmas-2a17567402dd88093188006fb75ee2b6-650df.png 724w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -2479,11 +2487,18 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;h2&gt;Footnotes&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;This page you are looking at right now is generated with Gatsby (which generates React HTML from markdown), and I know these dropdowns work on the Markdown of GitHub too.&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[How to Link to Lines of Code in a Github Repository!]]></title><description><![CDATA[This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…]]></description><link>https://chrisfrew.in/hot-linking-to-lines-in-github/</link><guid isPermaLink="false">https://chrisfrew.in/hot-linking-to-lines-in-github/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This’ll be a real short one; I just learned you can link to specific lines of code on GitHub!&lt;/p&gt;
+&lt;p&gt;All you need to do is find your link to the source code preview (***NOTE: &lt;em&gt;not&lt;/em&gt; the raw view!) as an example, let’s look at a source file from Bitcoin repository*:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let’s say I want to highlight line 123. All you have to do is add a ‘#L’ and the line number you want, so let’s add #L123:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;* &lt;code&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code&gt;main.cpp&lt;/code&gt; is an attractive file name 😄.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-b2a60.jpg&quot;
+    href=&quot;/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-b2a60.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2502,14 +2517,14 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;So hipster. Much win. Yes.&quot;
         title=&quot;&quot;
-        src=&quot;/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-f8fb9.jpg&quot;
-        srcset=&quot;/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-e8976.jpg 148w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-63df2.jpg 295w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-f8fb9.jpg 590w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-85e3d.jpg 885w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-d1924.jpg 1180w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-9452e.jpg 1770w,
-/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-b2a60.jpg 3264w&quot;
+        src=&quot;/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-f8fb9.jpg&quot;
+        srcset=&quot;/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-e8976.jpg 148w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-63df2.jpg 295w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-f8fb9.jpg 590w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-85e3d.jpg 885w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-d1924.jpg 1180w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-9452e.jpg 1770w,
+/blog/static/laptopstickers1-ce10386796d1b866b5dd08091672a70c-b2a60.jpg 3264w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -2529,14 +2544,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;Otherwise, it’s my honest-to-goodness workflow tools.&lt;/p&gt;
 &lt;h1&gt;So You Wanna Be Cool Too, Eh?&lt;/h1&gt;
 &lt;p&gt;I ordered all of these on &lt;a href=&quot;redbubble.com&quot;&gt;redbubble.com&lt;/a&gt; No, no, it’s not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is &lt;a href=&quot;devstickers.com&quot;&gt;devstickers.com&lt;/a&gt;. Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, &lt;em&gt;obviously&lt;/em&gt; so I could fit as many dev stickers as possible on my laptop 😂 - see the picture for reference.&lt;/p&gt;
-&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Link to Lines of Code in a Github Repository!]]></title><description><![CDATA[This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…]]></description><link>https://chrisfrew.in/hot-linking-to-lines-in-github/</link><guid isPermaLink="false">https://chrisfrew.in/hot-linking-to-lines-in-github/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This’ll be a real short one; I just learned you can link to specific lines of code on GitHub!&lt;/p&gt;
-&lt;p&gt;All you need to do is find your link to the source code preview (***NOTE: &lt;em&gt;not&lt;/em&gt; the raw view!) as an example, let’s look at a source file from Bitcoin repository*:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Let’s say I want to highlight line 123. All you have to do is add a ‘#L’ and the line number you want, so let’s add #L123:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;* &lt;code&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code&gt;main.cpp&lt;/code&gt; is an attractive file name 😄.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
 &lt;h1&gt;My Promise to You&lt;/h1&gt;
 &lt;p&gt;Let me promise you, I won’t post about Bitcoin speculation on this blog ever again. (At least in relation to any sort of price speculation, maybe one day later I will post on some tech stuff)&lt;/p&gt;
 &lt;h1&gt;The Numbers&lt;/h1&gt;

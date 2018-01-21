@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: '/blog',
   siteMetadata: {
-    title: 'Chris Frewin\'s Full Stack, Web Development, Blockchain, Machine Learning, & Natural Language Processing Blog.',
+    title: 'Chris Frewin\'s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.',
     author: 'Chris Frewin',
-    description: 'A friendly blog exploring web development, natural language processing, machine learning, and blockchain technology.',
+    description: 'A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.',
     siteUrl: 'https://chrisfrew.in',
   },
   plugins: [

@@ -1,7 +1,7 @@
 ---
 title: Warn SAP Users of Locked Objects
 date: "2018-01-17"
-draft: false
+draft: true
 ---
 
 ## SAP users lockin' up your objects?

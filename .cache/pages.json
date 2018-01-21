@@ -10,8 +10,29 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "colors-for-sap-web-ide.json",
-        "path": "/colors-for-sap-web-ide/"
+        "jsonName": "a-toast-to-full-stack-developers.json",
+        "path": "/a-toast-to-full-stack-developers/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "abap-push-and-message-channels.json",
+        "path": "/abap-push-and-message-channels/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "building-raiblocks-charts.json",
+        "path": "/building-raiblocks-charts/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
+        "path": "/debugging-abap-with-a-sap-shortcut/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -31,15 +52,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "a-toast-to-full-stack-developers.json",
-        "path": "/a-toast-to-full-stack-developers/"
+        "jsonName": "colors-for-sap-web-ide.json",
+        "path": "/colors-for-sap-web-ide/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
-        "path": "/debugging-abap-with-a-sap-shortcut/"
+        "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
+        "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -52,8 +73,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
-        "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+        "jsonName": "final-say-bitcoin.json",
+        "path": "/final-say-bitcoin/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -73,20 +94,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "laptop-stickers.json",
-        "path": "/laptop-stickers/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "final-say-bitcoin.json",
-        "path": "/final-say-bitcoin/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "hot-linking-to-lines-in-github.json",
         "path": "/hot-linking-to-lines-in-github/"
     },
@@ -94,22 +101,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sending-windows-commands-from-sap-abap.json",
-        "path": "/sending-windows-commands-from-sap-abap/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "abap-push-and-message-channels.json",
-        "path": "/abap-push-and-message-channels/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "warn-sap-users-of-locked-objects.json",
-        "path": "/warn-sap-users-of-locked-objects/"
+        "jsonName": "laptop-stickers.json",
+        "path": "/laptop-stickers/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -122,8 +115,22 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "building-raiblocks-charts.json",
-        "path": "/building-raiblocks-charts/"
+        "jsonName": "warn-sap-users-of-locked-objects.json",
+        "path": "/warn-sap-users-of-locked-objects/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input.json",
+        "path": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sending-windows-commands-from-sap-abap.json",
+        "path": "/sending-windows-commands-from-sap-abap/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",

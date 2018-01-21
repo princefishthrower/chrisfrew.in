@@ -1,6 +1,6 @@
 ---
 title: Interacting with a Blockchain - Building a Webapp for RaiBlocks
-date: "2018-01-17"
+date: "2018-01-30"
 draft: true
 ---
 

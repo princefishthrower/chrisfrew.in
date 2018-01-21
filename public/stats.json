@@ -1,40 +1,44 @@
 {
   "assetsByChunkName": {
     "path---final-say-bitcoin": [
-      "path---final-say-bitcoin-f29624f5b3b8b2eeb54d.js",
-      "path---final-say-bitcoin-f29624f5b3b8b2eeb54d.js.map"
+      "path---final-say-bitcoin-92462c62b5f8aaf8cd42.js",
+      "path---final-say-bitcoin-92462c62b5f8aaf8cd42.js.map"
     ],
     "path---sending-windows-commands-from-sap-abap": [
-      "path---sending-windows-commands-from-sap-abap-062e9a8e1fcfa00acffb.js",
-      "path---sending-windows-commands-from-sap-abap-062e9a8e1fcfa00acffb.js.map"
+      "path---sending-windows-commands-from-sap-abap-bd0a370555c045c0384c.js",
+      "path---sending-windows-commands-from-sap-abap-bd0a370555c045c0384c.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-5b76f9629e257e815741.js",
       "component---src-pages-index-js-5b76f9629e257e815741.js.map"
     ],
+    "path---jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input": [
+      "path---jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input-0c5a2b0ffb149734c99e.js",
+      "path---jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input-0c5a2b0ffb149734c99e.js.map"
+    ],
     "path---abap-push-and-message-channels": [
-      "path---abap-push-and-message-channels-ea4e8d1a2eeb3051d164.js",
-      "path---abap-push-and-message-channels-ea4e8d1a2eeb3051d164.js.map"
+      "path---abap-push-and-message-channels-658307e90cd3bee73c07.js",
+      "path---abap-push-and-message-channels-658307e90cd3bee73c07.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---laptop-stickers": [
-      "path---laptop-stickers-21d88efa5ae67379003a.js",
-      "path---laptop-stickers-21d88efa5ae67379003a.js.map"
+      "path---laptop-stickers-c8dbfa00b331bdf133e6.js",
+      "path---laptop-stickers-c8dbfa00b331bdf133e6.js.map"
     ],
     "path---debugging-abap-with-a-sap-shortcut": [
-      "path---debugging-abap-with-a-sap-shortcut-b9b9d28a011a3483e80a.js",
-      "path---debugging-abap-with-a-sap-shortcut-b9b9d28a011a3483e80a.js.map"
+      "path---debugging-abap-with-a-sap-shortcut-66d932ca57c694558b9d.js",
+      "path---debugging-abap-with-a-sap-shortcut-66d932ca57c694558b9d.js.map"
     ],
     "path---dropdowns-in-readmes": [
-      "path---dropdowns-in-readmes-7e77ac73a90d0798971b.js",
-      "path---dropdowns-in-readmes-7e77ac73a90d0798971b.js.map"
+      "path---dropdowns-in-readmes-02977c42aa3f95598c93.js",
+      "path---dropdowns-in-readmes-02977c42aa3f95598c93.js.map"
     ],
     "path---building-raiblocks-charts": [
-      "path---building-raiblocks-charts-de873645b005607e520e.js",
-      "path---building-raiblocks-charts-de873645b005607e520e.js.map"
+      "path---building-raiblocks-charts-58ca6176cc5eb4f70a93.js",
+      "path---building-raiblocks-charts-58ca6176cc5eb4f70a93.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -45,32 +49,32 @@
       "component---src-templates-blog-post-js-1252a4a984c3cde99dd4.js.map"
     ],
     "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-ed4fe5f617fc35bfe5bf.js",
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-ed4fe5f617fc35bfe5bf.js.map"
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-f9cac2f72896a30e0e4a.js",
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-f9cac2f72896a30e0e4a.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-f4a83a517d41864c1ffa.js",
       "component---src-layouts-index-js-f4a83a517d41864c1ffa.js.map"
     ],
     "path---warn-sap-users-of-locked-objects": [
-      "path---warn-sap-users-of-locked-objects-a29325ab5a183dcb96ea.js",
-      "path---warn-sap-users-of-locked-objects-a29325ab5a183dcb96ea.js.map"
+      "path---warn-sap-users-of-locked-objects-75441404d29e1ef34e32.js",
+      "path---warn-sap-users-of-locked-objects-75441404d29e1ef34e32.js.map"
     ],
     "path---index": [
-      "path---index-9beea7b1167978ceb60b.js",
-      "path---index-9beea7b1167978ceb60b.js.map"
+      "path---index-31315ea6452340828b2b.js",
+      "path---index-31315ea6452340828b2b.js.map"
     ],
     "path---hello-world": [
-      "path---hello-world-d7d8e3449aa0c5e478b1.js",
-      "path---hello-world-d7d8e3449aa0c5e478b1.js.map"
+      "path---hello-world-0066ee9e57cfc60b3b58.js",
+      "path---hello-world-0066ee9e57cfc60b3b58.js.map"
     ],
     "path---an-npm-christmas-easter-egg": [
-      "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js",
-      "path---an-npm-christmas-easter-egg-bf246cdfa5cfb1d6a7d6.js.map"
+      "path---an-npm-christmas-easter-egg-e63c406d7be6c0231a31.js",
+      "path---an-npm-christmas-easter-egg-e63c406d7be6c0231a31.js.map"
     ],
     "path---colors-for-sap-web-ide": [
-      "path---colors-for-sap-web-ide-94a10a7e4b3b5fa43227.js",
-      "path---colors-for-sap-web-ide-94a10a7e4b3b5fa43227.js.map"
+      "path---colors-for-sap-web-ide-d1ae4f4ba25b16c25912.js",
+      "path---colors-for-sap-web-ide-d1ae4f4ba25b16c25912.js.map"
     ],
     "commons": [
       "commons-b9295c1fa34e18bb3199.js",
@@ -79,34 +83,34 @@
       "build-js-styles.css.map"
     ],
     "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein": [
-      "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-e0b2c5ad934906303ba0.js",
-      "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-e0b2c5ad934906303ba0.js.map"
+      "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-67cb7ee500a2d7194650.js",
+      "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-67cb7ee500a2d7194650.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---ethereum-developers-toolbelt": [
-      "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js",
-      "path---ethereum-developers-toolbelt-e27a0b26a5ddc3bfe51c.js.map"
+      "path---ethereum-developers-toolbelt-563705efc6c9d59dca6c.js",
+      "path---ethereum-developers-toolbelt-563705efc6c9d59dca6c.js.map"
     ],
     "app": [
-      "app-90ecdfcf999d1839006d.js",
+      "app-fc8a71112b2438582b92.js",
       "build-js-styles.css",
-      "app-90ecdfcf999d1839006d.js.map",
+      "app-fc8a71112b2438582b92.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [
-      "path---a-toast-to-full-stack-developers-9972665679042585089e.js",
-      "path---a-toast-to-full-stack-developers-9972665679042585089e.js.map"
+      "path---a-toast-to-full-stack-developers-6265030c75350ac75ecb.js",
+      "path---a-toast-to-full-stack-developers-6265030c75350ac75ecb.js.map"
     ],
     "path---hot-linking-to-lines-in-github": [
-      "path---hot-linking-to-lines-in-github-252cb0db2981e4ae6081.js",
-      "path---hot-linking-to-lines-in-github-252cb0db2981e4ae6081.js.map"
+      "path---hot-linking-to-lines-in-github-fdd545c278456a46b641.js",
+      "path---hot-linking-to-lines-in-github-fdd545c278456a46b641.js.map"
     ],
     "path---detailed-look-at-bdc-in-abap": [
-      "path---detailed-look-at-bdc-in-abap-1dc042ae21908400a441.js",
-      "path---detailed-look-at-bdc-in-abap-1dc042ae21908400a441.js.map"
+      "path---detailed-look-at-bdc-in-abap-00d3da36dc66eca5a265.js",
+      "path---detailed-look-at-bdc-in-abap-00d3da36dc66eca5a265.js.map"
     ]
   }
 }

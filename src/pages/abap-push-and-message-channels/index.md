@@ -1,7 +1,7 @@
 ---
 title: ABAP Push and Message Channels
 date: "2018-01-12"
-draft: false
+draft: true
 ---
 
 # Add some spice to your SAPUI5 apps!

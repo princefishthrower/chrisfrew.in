@@ -42,7 +42,12 @@
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby"
+    "blog",
+    "ABAP",
+    "SAPUI5",
+    "Blockchain",
+    "natural language processing",
+    "machine learning"
   ],
   "license": "MIT",
   "main": "n/a",
