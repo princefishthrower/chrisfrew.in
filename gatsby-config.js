@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/blog',
   siteMetadata: {
     title: 'Chris Frewin\'s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.',
     author: 'Chris Frewin',

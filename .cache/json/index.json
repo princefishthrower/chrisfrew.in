@@ -48,19 +48,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…",
-                        "fields": {
-                            "slug": "/warn-sap-users-of-locked-objects/"
-                        },
-                        "frontmatter": {
-                            "date": "17 January, 2018",
-                            "title": "Warn SAP Users of Locked Objects",
-                            "draft": true
-                        }
-                    }
-                },
-                {
-                    "node": {
                         "excerpt": "Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…",
                         "fields": {
                             "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
@@ -69,6 +56,19 @@
                             "date": "17 January, 2018",
                             "title": "How to be an American living in Austria and working in Liechtenstein",
                             "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…",
+                        "fields": {
+                            "slug": "/warn-sap-users-of-locked-objects/"
+                        },
+                        "frontmatter": {
+                            "date": "17 January, 2018",
+                            "title": "Warn SAP Users of Locked Objects",
+                            "draft": true
                         }
                     }
                 },
