@@ -133,6 +133,13 @@
         "path": "/laptop-stickers/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "introducing-chrisfrewin-productions.json",
+        "path": "/introducing-chrisfrewin-productions/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

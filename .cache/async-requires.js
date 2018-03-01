@@ -47,6 +47,8 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "laptop-stickers.json": require("gatsby-module-loader?name=path---laptop-stickers!/Users/chris/projects/chrisfrew.in/.cache/json/laptop-stickers.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "introducing-chrisfrewin-productions.json": require("gatsby-module-loader?name=path---introducing-chrisfrewin-productions!/Users/chris/projects/chrisfrew.in/.cache/json/introducing-chrisfrewin-productions.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

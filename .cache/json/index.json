@@ -9,6 +9,19 @@
             "edges": [
                 {
                     "node": {
+                        "excerpt": "chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…",
+                        "fields": {
+                            "slug": "/introducing-chrisfrewin-productions/"
+                        },
+                        "frontmatter": {
+                            "date": "01 March, 2018",
+                            "title": "Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com",
                         "fields": {
                             "slug": "/building-raiblocks-charts/"

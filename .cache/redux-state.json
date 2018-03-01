@@ -1584,12 +1584,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-02-07T17:05:07.336Z",
+      "buildTime": "2018-03-01T20:52:15.962Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e9bbfc52740f0dca992d704e24bcd807",
+        "contentDigest": "bcac1a4270cb290b4734125de21f2744",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1599,7 +1599,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f090da304002c1378d4871497ddffaf6",
+        "contentDigest": "d5619b85ec11428d643083c158576a23",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1607,11 +1607,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 704,
-      "prettySize": "704 B",
-      "modifiedTime": "2018-01-17T17:02:18.586Z",
-      "accessTime": "2018-02-07T17:05:09.460Z",
-      "changeTime": "2018-01-17T17:02:18.586Z",
+      "size": 736,
+      "prettySize": "736 B",
+      "modifiedTime": "2018-03-01T06:15:48.748Z",
+      "accessTime": "2018-03-01T20:52:19.484Z",
+      "changeTime": "2018-03-01T06:15:48.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1621,20 +1621,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 22,
+      "nlink": 23,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1518023109459.8655,
-      "mtimeMs": 1516208538586.47,
-      "ctimeMs": 1516208538586.47,
+      "atimeMs": 1519937539483.6694,
+      "mtimeMs": 1519884948748.0193,
+      "ctimeMs": 1519884948748.0193,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-02-07T17:05:09.460Z",
-      "mtime": "2018-01-17T17:02:18.586Z",
-      "ctime": "2018-01-17T17:02:18.586Z",
+      "atime": "2018-03-01T20:52:19.484Z",
+      "mtime": "2018-03-01T06:15:48.748Z",
+      "ctime": "2018-03-01T06:15:48.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1642,7 +1642,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "04f1d2b5954eb250b33dadb948ec1290",
+        "contentDigest": "b94410057141d5d1b8001c6abd914c7d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1653,7 +1653,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1671,11 +1671,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1518023109465.509,
+      "atimeMs": 1519937539488.5552,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1685,7 +1685,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d20b93fbc5d1f6ff0bd5061b1e65dfb8",
+        "contentDigest": "78ff27581a615c7fdc2b04b80355fb7a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1696,7 +1696,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-11T16:03:06.851Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-11T16:03:06.851Z",
       "birthTime": "2018-01-11T16:01:54.254Z",
       "root": "/",
@@ -1714,11 +1714,11 @@
       "blksize": 4194304,
       "ino": 8596136407,
       "blocks": 0,
-      "atimeMs": 1518023109465.5393,
+      "atimeMs": 1519937539488.569,
       "mtimeMs": 1515686586850.6416,
       "ctimeMs": 1515686586850.6416,
       "birthtimeMs": 1515686514254.4714,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-11T16:03:06.851Z",
       "ctime": "2018-01-11T16:03:06.851Z",
       "birthtime": "2018-01-11T16:01:54.254Z"
@@ -1728,7 +1728,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a8e49d2eefc385872f6f1d9e93e3c12c",
+        "contentDigest": "9acf473f730d49a1808adeee7fdd7f0a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1739,7 +1739,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1757,11 +1757,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1518023109465.5486,
+      "atimeMs": 1519937539488.5825,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1771,7 +1771,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "64cc8b2964fd58ce7bd5346ec52568b2",
+        "contentDigest": "5ad7abe864b449c60cfcf4d5db182bae",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1782,7 +1782,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:47:15.305Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-17T16:47:15.305Z",
       "birthTime": "2018-01-17T16:47:09.210Z",
       "root": "/",
@@ -1800,11 +1800,11 @@
       "blksize": 4194304,
       "ino": 8596482995,
       "blocks": 0,
-      "atimeMs": 1518023109465.5679,
+      "atimeMs": 1519937539488.5962,
       "mtimeMs": 1516207635305.3901,
       "ctimeMs": 1516207635305.3901,
       "birthtimeMs": 1516207629209.9854,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-17T16:47:15.305Z",
       "ctime": "2018-01-17T16:47:15.305Z",
       "birthtime": "2018-01-17T16:47:09.210Z"
@@ -1814,7 +1814,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2020f704804320997e47cb7c9b8f2d43",
+        "contentDigest": "5494fa514a0e1f3c2de9df1131826e7b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1825,7 +1825,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1843,11 +1843,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1518023109465.6086,
+      "atimeMs": 1519937539488.623,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1857,7 +1857,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a4b371375301b630d7ac80f9aed93e27",
+        "contentDigest": "9cc94bed293bb3c8e5449afd0ebd2fe4",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1868,7 +1868,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1886,11 +1886,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1518023109465.605,
+      "atimeMs": 1519937539488.6362,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1900,7 +1900,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2a7c17a8b0d42a2a298b2ebba12fe692",
+        "contentDigest": "b5e747749ecba5ae5968da1efcbbfa6a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1911,7 +1911,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -1929,11 +1929,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1518023109465.6301,
+      "atimeMs": 1519937539488.6494,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -1943,7 +1943,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8d397c66959ad36027b8f9f73ac79de7",
+        "contentDigest": "bf7e8eaff6afff74b96d1c84b039e891",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1954,7 +1954,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -1972,11 +1972,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1518023109465.6353,
+      "atimeMs": 1519937539488.6753,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -1986,7 +1986,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bc962dc7e3b5104b6dd3b60139b74ec0",
+        "contentDigest": "71381c91b08858a196091f7cdfb9fc23",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1997,7 +1997,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2015,11 +2015,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1518023109465.6543,
+      "atimeMs": 1519937539488.6624,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2029,7 +2029,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1cf50462c5660ddf98fcb7af63021054",
+        "contentDigest": "10f42998bba4b980a27c65d4dc51b9a3",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2040,7 +2040,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -2058,11 +2058,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1518023109465.685,
+      "atimeMs": 1519937539488.6091,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -2072,7 +2072,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "78da0391d95dbc96c65e90efa53a920b",
+        "contentDigest": "47c4709c5e375bbc23f63c9cd1449196",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2083,7 +2083,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2101,11 +2101,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1518023109465.7173,
+      "atimeMs": 1519937539488.7014,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2115,7 +2115,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8709aa42adb65b706a476ac26a9a95b8",
+        "contentDigest": "29f5f70cd94a7ddf6de8f1e85741b599",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2126,7 +2126,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2144,11 +2144,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1518023109465.6938,
+      "atimeMs": 1519937539488.7202,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2158,7 +2158,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5ecdff7d32655a6a272aeda49d5ad2d1",
+        "contentDigest": "1eda8b5ede78161c8d28c3cbe3e143c6",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2169,7 +2169,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2187,11 +2187,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1518023109465.7405,
+      "atimeMs": 1519937539488.7336,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2201,7 +2201,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8b0cde3b2cab41fe7914ebbfa3806ac9",
+        "contentDigest": "0e49bc97a36326b53273b7acd829213f",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2212,7 +2212,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:31:47.195Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-17T16:31:47.195Z",
       "birthTime": "2018-01-17T16:31:36.460Z",
       "root": "/",
@@ -2230,11 +2230,11 @@
       "blksize": 4194304,
       "ino": 8596482218,
       "blocks": 0,
-      "atimeMs": 1518023109465.7983,
+      "atimeMs": 1519937539488.6887,
       "mtimeMs": 1516206707195.2708,
       "ctimeMs": 1516206707195.2708,
       "birthtimeMs": 1516206696460.457,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-17T16:31:47.195Z",
       "ctime": "2018-01-17T16:31:47.195Z",
       "birthtime": "2018-01-17T16:31:36.460Z"
@@ -2244,7 +2244,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1c624b59c4c0031ada9e3f62eef10fa3",
+        "contentDigest": "a7bbc889f8a5c05209701307d927256e",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2255,7 +2255,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T17:02:27.730Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-17T17:02:27.730Z",
       "birthTime": "2018-01-17T17:02:18.586Z",
       "root": "/",
@@ -2273,11 +2273,11 @@
       "blksize": 4194304,
       "ino": 8596484302,
       "blocks": 0,
-      "atimeMs": 1518023109465.7742,
+      "atimeMs": 1519937539488.7476,
       "mtimeMs": 1516208547730.4324,
       "ctimeMs": 1516208547730.4324,
       "birthtimeMs": 1516208538586.4346,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-17T17:02:27.730Z",
       "ctime": "2018-01-17T17:02:27.730Z",
       "birthtime": "2018-01-17T17:02:18.586Z"
@@ -2287,7 +2287,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b2e3c3e143fe04eae2b3d8a77d3377ab",
+        "contentDigest": "6a7c770d8ed947f8b64d0a09484842c8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2298,7 +2298,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2017-12-18T18:59:56.628Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-18T18:59:56.628Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2316,11 +2316,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1518023109465.8672,
+      "atimeMs": 1519937539488.8003,
       "mtimeMs": 1513623596627.5898,
       "ctimeMs": 1513623596627.5898,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-18T18:59:56.628Z",
       "ctime": "2017-12-18T18:59:56.628Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2330,7 +2330,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "31944bab1b04168eb7be94656fec645a",
+        "contentDigest": "b4abce1c4b1f4717a1ec13a6dffc6945",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2341,7 +2341,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2359,11 +2359,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1518023109465.8179,
+      "atimeMs": 1519937539488.787,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2373,7 +2373,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "74e956134b948201dbefb809801e2ffb",
+        "contentDigest": "134bbdcaec61a7558a13819a46464879",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2384,7 +2384,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-15T07:23:17.882Z",
-      "accessTime": "2018-02-07T17:05:09.466Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
       "changeTime": "2018-01-15T07:23:17.882Z",
       "birthTime": "2018-01-15T07:23:04.154Z",
       "root": "/",
@@ -2402,11 +2402,11 @@
       "blksize": 4194304,
       "ino": 8596340303,
       "blocks": 0,
-      "atimeMs": 1518023109465.844,
+      "atimeMs": 1519937539488.7737,
       "mtimeMs": 1516000997881.6216,
       "ctimeMs": 1516000997881.6216,
       "birthtimeMs": 1516000984154.256,
-      "atime": "2018-02-07T17:05:09.466Z",
+      "atime": "2018-03-01T20:52:19.489Z",
       "mtime": "2018-01-15T07:23:17.882Z",
       "ctime": "2018-01-15T07:23:17.882Z",
       "birthtime": "2018-01-15T07:23:04.154Z"
@@ -4654,6 +4654,120 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "01d7eae05d56c23edb77d8686312f8ce",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions",
+      "relativePath": "introducing-chrisfrewin-productions",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-03-01T06:16:06.999Z",
+      "accessTime": "2018-03-01T20:52:19.489Z",
+      "changeTime": "2018-03-01T06:16:06.999Z",
+      "birthTime": "2018-03-01T06:15:48.748Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "introducing-chrisfrewin-productions",
+      "ext": "",
+      "name": "introducing-chrisfrewin-productions",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8599787247,
+      "blocks": 0,
+      "atimeMs": 1519937539488.7605,
+      "mtimeMs": 1519884966998.8735,
+      "ctimeMs": 1519884966998.8735,
+      "birthtimeMs": 1519884948747.99,
+      "atime": "2018-03-01T20:52:19.489Z",
+      "mtime": "2018-03-01T06:16:06.999Z",
+      "ctime": "2018-03-01T06:16:06.999Z",
+      "birthtime": "2018-03-01T06:15:48.748Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "8eed7bce4c0a876e94ea0dbeb021bd44",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md",
+      "relativePath": "introducing-chrisfrewin-productions/index.md",
+      "extension": "md",
+      "size": 1712,
+      "prettySize": "1.71 kB",
+      "modifiedTime": "2018-03-01T20:51:44.962Z",
+      "accessTime": "2018-03-01T20:51:45.569Z",
+      "changeTime": "2018-03-01T20:51:44.962Z",
+      "birthTime": "2018-03-01T06:16:06.999Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "introducing-chrisfrewin-productions",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8599787256,
+      "blocks": 0,
+      "atimeMs": 1519937505569.3289,
+      "mtimeMs": 1519937504962.036,
+      "ctimeMs": 1519937504962.036,
+      "birthtimeMs": 1519884966998.8599,
+      "atime": "2018-03-01T20:51:45.569Z",
+      "mtime": "2018-03-01T20:51:44.962Z",
+      "ctime": "2018-03-01T20:51:44.962Z",
+      "birthtime": "2018-03-01T06:16:06.999Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)\ndate: \"2018-03-01\"\ndraft: false\n---\n\n# chrisfrew.in as a company!\n\nHello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it's still alive!) [https://sirenapparel.us](https://sirenapparel.us) with the more general name of this site, chrisfrew.in (that also is creatively my name of course 😉). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, *chrisfrew.in*. Tasty.\n\n# For New York state, how can you change your DBA name?\n\nTo change your DBA name, it's basically two steps, one at the federal level and one at the state level:\n\n1. A written letter to the Internal Revenue Service stating your intent to change the name. In the case of a sole proprietorship (like mine) there is no need to change you Employee Identification Number (EIN, also known as the Tax Identification Number or Tax ID). The IRS says that you have to write to the same IRS address that you sent your last tax address for the company for. Because I have a sole proprietorship, I can file for Siren Apparel (now chrisfrew.in) to this address:\n\n```\nDepartment of the Treasury\nInternal Revenue Service\nKansas City, MO  64999-0002\n```\n<br/>\n\n2. A DTF-65 form (for New York State since I live there) also indicating the name change (in the case of other states I assume this step would be similar, just a matter of finding the proper form for your state.)\n\n# TL;DR;\n\nFill out and send two forms; and you're legally set!\n\n_in other words,_\n\n😎 Its time to make some more startups. 😎\n",
+        "contentDigest": "384f1ab551ed715636f25e75b91d19a9",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)",
+        "date": "2018-03-01",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md",
+      "fields": {
+        "slug": "/introducing-chrisfrewin-productions/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -4662,7 +4776,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1518023109916,
+      "updatedAt": 1519937539968,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -4671,7 +4785,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b6cc3ddcc990515329aa071022e460cd",
+        "contentDigest": "e5f55d7a42c1a45c093b6479dae53716",
         "owner": "internal-data-bridge"
       }
     },
@@ -4685,7 +4799,7 @@
       "context": {
         "slug": "/abap-push-and-message-channels/"
       },
-      "updatedAt": 1518023109935,
+      "updatedAt": 1519937539987,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4694,7 +4808,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c47aeb1e988e3509455deed34bc4f156",
+        "contentDigest": "2adec2ae340ff466259c151d0f0d3248",
         "owner": "internal-data-bridge"
       }
     },
@@ -4708,7 +4822,7 @@
       "context": {
         "slug": "/an-npm-christmas-easter-egg/"
       },
-      "updatedAt": 1518023109936,
+      "updatedAt": 1519937539987,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4717,7 +4831,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "02bb0fd7d5bf8e024d16b6475a81afb0",
+        "contentDigest": "23bd741eeaac8ea7cdf9c55bb2d5098e",
         "owner": "internal-data-bridge"
       }
     },
@@ -4731,7 +4845,7 @@
       "context": {
         "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1518023109936,
+      "updatedAt": 1519937539988,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4740,7 +4854,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5024b37bcb925a17c429d524c3683385",
+        "contentDigest": "35aceb20babec8867389c18d11851f51",
         "owner": "internal-data-bridge"
       }
     },
@@ -4754,7 +4868,7 @@
       "context": {
         "slug": "/debugging-abap-with-a-sap-shortcut/"
       },
-      "updatedAt": 1518023109936,
+      "updatedAt": 1519937539988,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4763,7 +4877,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "af58c689bf64dbb20f09afc2f8ca2880",
+        "contentDigest": "272e354731db8ae4da88439e8f2f8a3a",
         "owner": "internal-data-bridge"
       }
     },
@@ -4777,7 +4891,7 @@
       "context": {
         "slug": "/building-raiblocks-charts/"
       },
-      "updatedAt": 1518023109937,
+      "updatedAt": 1519937539989,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4786,7 +4900,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "098e999e54d11e8154854fdf283a5de5",
+        "contentDigest": "96f7411970ea2525a6c11dbd33944b68",
         "owner": "internal-data-bridge"
       }
     },
@@ -4800,7 +4914,7 @@
       "context": {
         "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
       },
-      "updatedAt": 1518023109937,
+      "updatedAt": 1519937539989,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4809,7 +4923,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b4d7eea030e1181f9c13c0e267c366f9",
+        "contentDigest": "5c2800f8c1771734223db378ba3bddf1",
         "owner": "internal-data-bridge"
       }
     },
@@ -4823,7 +4937,7 @@
       "context": {
         "slug": "/colors-for-sap-web-ide/"
       },
-      "updatedAt": 1518023109938,
+      "updatedAt": 1519937539989,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4832,7 +4946,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9550026f1070653f9e2bdc6a1d90a2dc",
+        "contentDigest": "beeba361c84c0db5a114047e0e45c3fd",
         "owner": "internal-data-bridge"
       }
     },
@@ -4846,7 +4960,7 @@
       "context": {
         "slug": "/dropdowns-in-readmes/"
       },
-      "updatedAt": 1518023109938,
+      "updatedAt": 1519937539990,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4855,7 +4969,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bb93da760417230741f8def5164eddbf",
+        "contentDigest": "7d02c850f647de3eb31b2a3e9efb2e33",
         "owner": "internal-data-bridge"
       }
     },
@@ -4869,7 +4983,7 @@
       "context": {
         "slug": "/detailed-look-at-bdc-in-abap/"
       },
-      "updatedAt": 1518023109938,
+      "updatedAt": 1519937539990,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4878,7 +4992,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7301a63173246b4ea9df988f3607621e",
+        "contentDigest": "6d04a05f2308dcd3c16e9fbd236f9c6d",
         "owner": "internal-data-bridge"
       }
     },
@@ -4892,7 +5006,7 @@
       "context": {
         "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1518023109939,
+      "updatedAt": 1519937539990,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4901,7 +5015,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5c6052511f0af657db3843d9ad03c5da",
+        "contentDigest": "3bd256c91c9a493ed1e3c2116c660560",
         "owner": "internal-data-bridge"
       }
     },
@@ -4915,7 +5029,7 @@
       "context": {
         "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1518023109939,
+      "updatedAt": 1519937539991,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4924,7 +5038,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a7c96f7f668f46756ee422fe195f5c84",
+        "contentDigest": "ab1475c8e7a129883e61a049001396aa",
         "owner": "internal-data-bridge"
       }
     },
@@ -4938,7 +5052,7 @@
       "context": {
         "slug": "/hello-world/"
       },
-      "updatedAt": 1518023109939,
+      "updatedAt": 1519937539991,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4947,7 +5061,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8bd1921a842705eec2be1fb2872bb29e",
+        "contentDigest": "f8d031896287d7272809ca4b97227485",
         "owner": "internal-data-bridge"
       }
     },
@@ -4961,7 +5075,7 @@
       "context": {
         "slug": "/hot-linking-to-lines-in-github/"
       },
-      "updatedAt": 1518023109940,
+      "updatedAt": 1519937539991,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4970,7 +5084,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a6b5a1294635d343ab1e24802ace56ab",
+        "contentDigest": "9c48dd0338e85e18d2b72b07f844c036",
         "owner": "internal-data-bridge"
       }
     },
@@ -4984,7 +5098,7 @@
       "context": {
         "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
       },
-      "updatedAt": 1518023109940,
+      "updatedAt": 1519937539992,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4993,7 +5107,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "eedf618f94c62ffedafdd7e095c1fb30",
+        "contentDigest": "987f88bb60a9013d55e66a43e80088f6",
         "owner": "internal-data-bridge"
       }
     },
@@ -5007,7 +5121,7 @@
       "context": {
         "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
       },
-      "updatedAt": 1518023109940,
+      "updatedAt": 1519937539992,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5016,7 +5130,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0a0d95ed4a392bdd3f2529279d06699e",
+        "contentDigest": "6189148b5e0d6eb7eab878bdb2ba8881",
         "owner": "internal-data-bridge"
       }
     },
@@ -5030,7 +5144,7 @@
       "context": {
         "slug": "/warn-sap-users-of-locked-objects/"
       },
-      "updatedAt": 1518023109941,
+      "updatedAt": 1519937539992,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5039,7 +5153,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "54c2180a0cd996f3409ce0c6eff7c261",
+        "contentDigest": "8ebe01b3e92419c5337d8a1f03605e6d",
         "owner": "internal-data-bridge"
       }
     },
@@ -5053,7 +5167,7 @@
       "context": {
         "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1518023109941,
+      "updatedAt": 1519937539993,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5062,7 +5176,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bcf162267fbf975d30438b116e460ec0",
+        "contentDigest": "b648739b3f7aee8181b3f2ff394ed4e3",
         "owner": "internal-data-bridge"
       }
     },
@@ -5076,7 +5190,7 @@
       "context": {
         "slug": "/laptop-stickers/"
       },
-      "updatedAt": 1518023109941,
+      "updatedAt": 1519937539993,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5085,7 +5199,30 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "907f24563565d240d491adf3e0691798",
+        "contentDigest": "b33814d185d0890dac39706a9239aa73",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /introducing-chrisfrewin-productions/": {
+      "layout": "index",
+      "jsonName": "introducing-chrisfrewin-productions.json",
+      "internalComponentName": "ComponentIntroducingChrisfrewinProductions",
+      "path": "/introducing-chrisfrewin-productions/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/introducing-chrisfrewin-productions/"
+      },
+      "updatedAt": 1519937539993,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /introducing-chrisfrewin-productions/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9d88bf6df8bca213c6125bfeff881159",
         "owner": "internal-data-bridge"
       }
     },
@@ -5097,7 +5234,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1518023109967,
+      "updatedAt": 1519937540022,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -5106,7 +5243,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "01a7971cabe37da8f8e5e2ad5549e2a2",
+        "contentDigest": "907bb59198085cffb8cf5b4d39953549",
         "owner": "internal-data-bridge"
       }
     }
@@ -5136,7 +5273,8 @@
         "/warn-sap-users-of-locked-objects/",
         "/sending-windows-commands-from-sap-abap/",
         "/laptop-stickers/",
-        "/"
+        "/",
+        "/introducing-chrisfrewin-productions/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark": [
         "/abap-push-and-message-channels/"
@@ -5191,11 +5329,17 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/laptop-stickers/index.md absPath of file >>> MarkdownRemark": [
         "/laptop-stickers/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file >>> MarkdownRemark": [
+        "/introducing-chrisfrewin-productions/"
       ]
     },
     "connections": {
       "MarkdownRemark": [
         "/"
+      ],
+      "SitePage": [
+        "/dev-404-page/"
       ]
     }
   }

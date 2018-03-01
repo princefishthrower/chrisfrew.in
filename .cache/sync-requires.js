@@ -48,6 +48,8 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "laptop-stickers.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/laptop-stickers.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "introducing-chrisfrewin-productions.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/introducing-chrisfrewin-productions.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 
