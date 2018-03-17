@@ -52,7 +52,7 @@ class Bio extends React.Component {
             Send me an email.
           </a>
           {' '}
-
+          Got a project/job idea? Get in contact with me and let's get to it! I'm always looking to learn and build new things!
         </p>
       </div>
     )
