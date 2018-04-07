@@ -9,6 +9,45 @@
             "edges": [
                 {
                     "node": {
+                        "excerpt": "Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…",
+                        "fields": {
+                            "slug": "/some-tasty-bash-profile-commands/"
+                        },
+                        "frontmatter": {
+                            "date": "09 April, 2018",
+                            "title": "Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "The Posts So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody: Reddit Response: The…",
+                        "fields": {
+                            "slug": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+                        },
+                        "frontmatter": {
+                            "date": "08 April, 2018",
+                            "title": "How to Create Posts That Reach the Top of the Front Page on Subreddits (And How I Created Two of Them for /r/wallstreetbets)",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there…",
+                        "fields": {
+                            "slug": "/i-set-aside-1000-to-learn-options-trading/"
+                        },
+                        "frontmatter": {
+                            "date": "07 April, 2018",
+                            "title": "I Set Aside $1000 to Learn Options Trading",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…",
                         "fields": {
                             "slug": "/introducing-chrisfrewin-productions/"

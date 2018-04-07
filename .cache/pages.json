@@ -140,6 +140,27 @@
         "path": "/introducing-chrisfrewin-productions/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "i-set-aside-1000-to-learn-options-trading.json",
+        "path": "/i-set-aside-1000-to-learn-options-trading/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json",
+        "path": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "some-tasty-bash-profile-commands.json",
+        "path": "/some-tasty-bash-profile-commands/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

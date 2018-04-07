@@ -50,6 +50,12 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "introducing-chrisfrewin-productions.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/introducing-chrisfrewin-productions.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "i-set-aside-1000-to-learn-options-trading.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/i-set-aside-1000-to-learn-options-trading.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "some-tasty-bash-profile-commands.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/some-tasty-bash-profile-commands.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

@@ -1,4 +1,548 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Sat, 17 Mar 2018 18:26:10 GMT</lastBuildDate><item><title><![CDATA[Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)]]></title><description><![CDATA[chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…]]></description><link>https://chrisfrew.in/introducing-chrisfrewin-productions/</link><guid isPermaLink="false">https://chrisfrew.in/introducing-chrisfrewin-productions/</guid><pubDate>Thu, 01 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;chrisfrew.in as a company!&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Apr 2018 18:45:30 GMT</lastBuildDate><item><title><![CDATA[Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better]]></title><description><![CDATA[Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…]]></description><link>https://chrisfrew.in/some-tasty-bash-profile-commands/</link><guid isPermaLink="false">https://chrisfrew.in/some-tasty-bash-profile-commands/</guid><pubDate>Mon, 09 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!&lt;/h1&gt;
+&lt;p&gt;This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don’t necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? 😄)&lt;/p&gt;
+&lt;p&gt;For the following machines, the alias file can be found in these locations:&lt;/p&gt;
+&lt;p&gt;Mac: &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Linux: &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Raspberry Pi (with raspbian and other linux style builds): &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here’s what I’ve got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been &lt;em&gt;clearly&lt;/em&gt; modified, they won’t work - what do you think I am, an idiot? 😂😂😂 )&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;# ~/.bashrc: executed by bash(1) for non-login shells.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# for examples&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# If not running interactively, don&apos;t do anything&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; $- &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt;
+    *i*&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      *&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+esac
+
+&lt;span class=&quot;token comment&quot;&gt;# don&apos;t put duplicate lines or lines starting with space in the history.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# See bash(1) for more options&lt;/span&gt;
+HISTCONTROL&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;ignoreboth
+
+&lt;span class=&quot;token comment&quot;&gt;# append to the history file, don&apos;t overwrite it&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;shopt&lt;/span&gt; -s histappend
+
+&lt;span class=&quot;token comment&quot;&gt;# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)&lt;/span&gt;
+HISTSIZE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1000
+HISTFILESIZE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;2000
+
+&lt;span class=&quot;token comment&quot;&gt;# check the window size after each command and, if necessary,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# update the values of LINES and COLUMNS.&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;shopt&lt;/span&gt; -s checkwinsize
+
+&lt;span class=&quot;token comment&quot;&gt;# If set, the pattern &quot;**&quot; used in a pathname expansion context will&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# match all files and zero or more directories and subdirectories.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#shopt -s globstar&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# make less more friendly for non-text input files, see lesspipe(1)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; -x /usr/bin/lesspipe &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;SHELL&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/bin/sh lesspipe&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# fancy directory prompt&lt;/span&gt;
+PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;\[\033[01;32m\]\u@\h\[\033[01;34m\] [\w]\[\033[00m\] &apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Add an &quot;alert&quot; alias for long running commands.  Use like so:&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#   sleep 10; alert&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; alert&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;notify-send --urgency=low -i &quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; $? &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; 0 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; terminal &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; error&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot; &quot;$(history|tail -n1|sed -e &apos;&lt;/span&gt;\&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;s/^\s*&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;0-9&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;\+\s*//&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;s/&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;\s*alert$//&lt;span class=&quot;token string&quot;&gt;&apos;\&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&apos;
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don&apos;t need to enable
+# this, if it&apos;s already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+
+##########################################
+### BEGIN CUSTOM ALIASES AND FUNCTIONS ###
+##########################################
+
+###########
+# aliases #
+###########
+
+# productivity
+alias prof=&apos;atom /Users/chris/.bash_profile&apos; # opens .bash_profile for editing
+alias s=&apos;source /Users/chris/.bash_profile&apos; # sources .bash_profile (should be done every time after changing profile)
+alias lk=&apos;ls -lhkart&apos;
+alias show=&apos;open .&apos;
+alias back=&apos;cd ..&apos;
+alias prev=&apos;cd -&apos;
+alias home=&apos;cd&apos;
+alias boot=&apos;sudo reboot&apos;
+alias shut=&apos;sudo shutdown -h now&apos;
+alias hidedesk=&apos;gsettings set org.gnome.desktop.background show-desktop-icons false&apos;
+alias showdesk=&apos;gsettings set org.gnome.desktop.background show-desktop-icons true&apos;
+alias de=&apos;xdg-open /Users/chris/Desktop/DE.desktop&apos;
+alias en=&apos;xdg-open /Users/chris/Desktop/EN.desktop&apos;
+alias duo=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ekajaiihjemkjldcienbdonodmbiklnb&apos;
+alias whats=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm&apos;
+alias sputnik=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh&apos;
+alias robo=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh&apos;
+alias roboton=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh&apos;
+alias slack=&apos;/opt/google/chrome/google-chrome --profile-directory=Default --app-id=niopebapoomkfgpbhanlddcancjkjnkl&apos;
+alias sd=&apos;down;show;prev&apos;
+alias ipy=&apos;ipython&apos;
+alias py=&apos;python&apos;
+alias youtubemp3=&apos;youtube-dl --extract-audio --audio-format mp3&apos;
+alias getlines=&apos;find . -name &quot;&lt;/span&gt;*.*&quot; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;xargs&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;wc&lt;/span&gt; -l&lt;span class=&quot;token string&quot;&gt;&apos;
+alias disabledchromium=&apos;&lt;/span&gt;chromium-browser --disable-web-security --user-data-dir&lt;span class=&quot;token string&quot;&gt;&apos;
+alias phpserver=&apos;&lt;/span&gt;php -S localhost:8000&lt;span class=&quot;token string&quot;&gt;&apos;
+alias phpserver2=&apos;&lt;/span&gt;php -S localhost:8001&lt;span class=&quot;token string&quot;&gt;&apos;
+alias serv=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; personalwebsite&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; phpserver&lt;span class=&quot;token string&quot;&gt;&apos;
+alias feldkirch=&apos;&lt;/span&gt;/opt/google/chrome/google-chrome --profile-directory&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;Default --app-id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;mnmkkpdekllmopechbcfhhhdojafalin&lt;span class=&quot;token string&quot;&gt;&apos;
+alias coderesources=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/coderesources&lt;span class=&quot;token string&quot;&gt;&apos;
+alias codestuff=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/codestuff&lt;span class=&quot;token string&quot;&gt;&apos;
+alias gladysroot=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /usr/local/lib/node_modules/gladys&lt;span class=&quot;token string&quot;&gt;&apos;
+alias studio=&apos;&lt;/span&gt;sh /usr/local/android-studio/bin/studio.sh&lt;span class=&quot;token string&quot;&gt;&apos;
+alias pl=&apos;&lt;/span&gt;perl&lt;span class=&quot;token string&quot;&gt;&apos;
+alias haskell=&apos;&lt;/span&gt;ghci&lt;span class=&quot;token string&quot;&gt;&apos;
+alias nexus=&apos;&lt;/span&gt;emulator @Nexus_5X_API_26&lt;span class=&quot;token string&quot;&gt;&apos;
+alias iphone5=&apos;&lt;/span&gt;/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID EF585900-1164-4AF9-90FD-26B1DEC3DB66&lt;span class=&quot;token string&quot;&gt;&apos;
+alias iphone6=&apos;&lt;/span&gt;/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID 3DC7A4A6-489F-4305-AFE8-53A8D1302E65&lt;span class=&quot;token string&quot;&gt;&apos;
+alias nodecode=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/codestuff/node&lt;span class=&quot;token string&quot;&gt;&apos;
+alias gittelluser=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global user.email&lt;span class=&quot;token string&quot;&gt;&apos;
+alias nodesass=&apos;&lt;/span&gt;node-sass -wo ./src/styles ./src/styles-scss&lt;span class=&quot;token string&quot;&gt;&apos;
+alias pj=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/projects&lt;span class=&quot;token string&quot;&gt;&apos;
+alias heroku-skillscout=&apos;&lt;/span&gt;heroku git:remote -a skillscout&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push heroku master&lt;span class=&quot;token string&quot;&gt;&apos;
+alias usbs=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Volumes/&lt;span class=&quot;token string&quot;&gt;&apos;
+alias art=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/Art&lt;span class=&quot;token string&quot;&gt;&apos;
+alias datasets=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/datasets&lt;span class=&quot;token string&quot;&gt;&apos;
+alias npmgloballist=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; list -g --depth&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;token string&quot;&gt;&apos;
+
+# folder locations
+alias cfpaper=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/cf_tracer&lt;span class=&quot;token string&quot;&gt;&apos;
+alias down=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Downloads&lt;span class=&quot;token string&quot;&gt;&apos;
+alias desk=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Desktop&lt;span class=&quot;token string&quot;&gt;&apos;
+alias sap=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/sap&lt;span class=&quot;token string&quot;&gt;&apos;
+alias pic=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Pictures&lt;span class=&quot;token string&quot;&gt;&apos;
+alias trans=&apos;&lt;/span&gt;ding&lt;span class=&quot;token string&quot;&gt;&apos;
+alias lookup=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -iR&lt;span class=&quot;token string&quot;&gt;&apos;
+alias skimonitor=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/personalwebsite/projects/skimonitor/skimonitor/webapp&lt;span class=&quot;token string&quot;&gt;&apos;
+alias raphelper=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/personalwebsite/projects/raphelper/raphelper/webapp&lt;span class=&quot;token string&quot;&gt;&apos;
+alias ui5sdk=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/Documents/OpenUI5/openui5-sdk-1.38.5&lt;span class=&quot;token string&quot;&gt;&apos;
+alias play=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /Users/chris/playground&lt;span class=&quot;token string&quot;&gt;&apos;
+
+# Pi Logins - make sure to change IP when router IP changes!
+alias pilocal=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; pi@192.168.0.16&lt;span class=&quot;token string&quot;&gt;&apos;
+alias pi=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; pi@123.123.123.123 -p 22&lt;span class=&quot;token string&quot;&gt;&apos;
+alias pidesk=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; -XC pi@192.168.0.16 x2x -north -to :0.0&lt;span class=&quot;token string&quot;&gt;&apos;
+
+# Linux Server Logins - make sure to change IP when router IP changes!
+alias delllocal=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; chris@192.168.0.20 -p 55555&lt;span class=&quot;token string&quot;&gt;&apos;
+alias dell=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; chris@123.123.123.123 -p 55555&lt;span class=&quot;token string&quot;&gt;&apos;
+
+# Yoga Raiblocks
+alias yoga=&apos;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; chris@192.168.0.12 -p 44444&lt;span class=&quot;token string&quot;&gt;&apos;
+
+# Devon&apos;&lt;/span&gt;s Server
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; stock&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ssh devonsserverwhichiwontshowyouthenameorhost@host.com -p 24&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; unlockiphone&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sudo chmod 777 /var/lib/lockdown&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; utorrent&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;utserver -settingspath /opt/utorrent-server-alpha-v3_3/&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; vncconnect&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ssh -L 5900:localhost:5900 pi@123.123.123.123 -p 1234&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; droiddev&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    galaxy&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    react-native start&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    react-native run-android&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; vid2mp4&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ffmpeg -i &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -vcodec mpeg4 &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; video2x&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ffmpeg -i &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -vcodec h264 -an -vf &lt;span class=&quot;token string&quot;&gt;&quot;fps=60, setpts=0.50*PTS&quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# speed up input video by 4, export as &apos;outfast.ogv&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; video4x&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ffmpeg -i &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -vcodec h264 -an -vf &lt;span class=&quot;token string&quot;&gt;&quot;fps=60, setpts=0.25*PTS&quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; video10x&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ffmpeg -i &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -vcodec h264 -an -vf &lt;span class=&quot;token string&quot;&gt;&quot;fps=60, setpts=0.1*PTS&quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# put bdc data in correct format&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; bdc&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{for(i=1;i&amp;lt;=NF;i++)printf(&quot;\&quot;%s\&quot; &quot;,&lt;span class=&quot;token variable&quot;&gt;$i&lt;/span&gt;);printf(&quot;\n&quot;);}&apos;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# wrap all words in double quotes&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; temp1 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&quot;&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&apos;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp2&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# translate all double quotes to single quotes&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{ if (&lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt; != &quot;&quot;) print &quot;PERFORM bdcdaten USING:\n\t&quot; &lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt; &quot; &quot; &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &quot; &quot; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; &quot;,&quot;; else print &quot;\t\t&quot; &quot;\47 \47 &quot; &lt;span class=&quot;token variable&quot;&gt;$0&lt;/span&gt;&quot;,&quot; }&apos;&lt;/span&gt; temp2 &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp3&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# if there is no 3rd argument print PERFORM statement&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# cat temp3 | sed &apos;s/ ,/,/&apos; &gt; bdcoutput.txt;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# rm temp1;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# rm temp2;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# rm temp3;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# echo &quot;Done.&quot;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# $2 and $3 MUST be in &apos;01:00:00&apos; format, $1 and $4 are file names&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; splitvid&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ffmpeg -v quiet -y -i &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -vcodec copy -acodec copy -ss &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; -t &lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt; -sn &lt;span class=&quot;token variable&quot;&gt;$4&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; fm4&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; pi@192.168.0.16 &lt;span class=&quot;token string&quot;&gt;&apos;tmux; fm4; exit; exit&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;off&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; pi@192.168.0.16 &lt;span class=&quot;token string&quot;&gt;&apos;tmux kill-session&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; lime&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    subl &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;#  &apos;&amp;amp;&apos; push everything to background&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; mynetworks&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# first lists all networks, then grep sorts for just the id and psk stuff. finally sed puts a space between each set&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; /etc/NetworkManager/system-connections/* &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -Ew &lt;span class=&quot;token string&quot;&gt;&apos;id|psk&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -v &lt;span class=&quot;token string&quot;&gt;&apos;key&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/psk/s/$/ \n/&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; fixjunkynetworking&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; modprobe -r rt2800pci
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; modprobe -v rt2800pci nohwcrypt&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; pushall&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; add &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit --all
+    &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push --all
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; showusb&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; /media/chris/Banner
+    show
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# some git functinos because they&apos;re too damn long to remember&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; gitchguser&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global user.email &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# personal improvement of this gist: https://gist.github.com/dergachev/4627207&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; mov2gif&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  width&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;$(&lt;/span&gt;mediainfo &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; Width &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; Width:pixels&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;s/ //g&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# get the height/width metadata, grep out the spaces and crap&lt;/span&gt;
+  height&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;$(&lt;/span&gt;mediainfo &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; Height &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; Height:pixels&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;s/ //g&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  dimensionString&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$width&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# build a string to pass to the ffmpeg command&lt;/span&gt;
+  dimensionString+&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;x&quot;&lt;/span&gt;
+  dimensionString+&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$height&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Dimension determined as:&quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$dimensionString&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# notify user of dimensions found&lt;/span&gt;
+  ffmpeg -i -nostats -loglevel 0 &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; -s &lt;span class=&quot;token variable&quot;&gt;$dimensionString&lt;/span&gt; -pix_fmt rgb24 -r 10 -f gif - &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; gifsicle --optimize&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;3 --delay&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;.gif &lt;span class=&quot;token comment&quot;&gt;# silent mode&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Saved gif as: &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;.gif&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# saved gif name&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#############################&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;### ENVIRONMENT VARIABLES ###&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#############################&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# keys for twitter access keys&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EGGHEAD_TWITTER_BOT_CONSUMER_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EGGHEAD_TWITTER_BOT_CONSUMER_SECRET&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN_SECRET&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EGGHEAD_TWITTER_BOT_NASA_API_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# google maps geocode API&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_GOOGLE_GEOCODING_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# skillscout private postgresql tunnel server (local)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SERVER_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SERVER_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SERVER_DB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SERVER_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SERVER_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# skillscout private postgresql credentials&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PRIVATE_RAIBLOCKS_DB_NAME&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PRIVATE_RAIBLOCKS_DB_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PRIVATE_RAIBLOCKS_DB_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PRIVATE_RAIBLOCKS_DB_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PRIVATE_RAIBLOCKS_DB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# skillscout website heroku postgresql DB&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_DB_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_DB_NAME&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_DB_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_DB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_DB_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# skillscout website mongo mLab DB&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_MONGODB_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_MONGODB_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_MONGODB_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_MONGODB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_MONGODB_DB_NAME&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# skillscout campaign - emails DB (heroku postrgesql)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_CAMPAIGN_DB_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_CAMPAIGN_DB_NAME&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_CAMPAIGN_DB_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_CAMPAIGN_DB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; SKILLSCOUT_CAMPAIGN_DB_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# nlpchamps - postgresql database (just saving member&apos;s emails for now)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NLP_CHAMPS_DB&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NLP_CHAMPS_DB_USER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NLP_CHAMPS_DB_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NLP_CHAMPS_DB_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NLP_CHAMPS_DB_PORT&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# export colors for mac&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; CLICOLOR&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; LSCOLORS&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;GxFxCxDxBxegedabagaced
+
+&lt;span class=&quot;token comment&quot;&gt;# android paths&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; ANDROID_HOME&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/Users/&lt;span class=&quot;token variable&quot;&gt;$USER&lt;/span&gt;/Library/Android/sdk
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;${PATH}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;${ANDROID_HOME}&lt;/span&gt;/emulator
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;${PATH}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;${ANDROID_HOME}&lt;/span&gt;/tools
+
+&lt;span class=&quot;token comment&quot;&gt;# default editor&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; EDITOR&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/usr/bin/nano
+
+&lt;span class=&quot;token comment&quot;&gt;# fucking homebrew&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/usr/local/bin:/usr/local/sbin:~/bin:&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# for proper ipython linking&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/usr/local/opt/python/libexec/bin:&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# for proper python exectuble&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; COSMIC_BUCKET&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; COSMIC_READ_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; COSMIC_WRITE_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# stripe payments key (TODO: copy to dell server!)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; STRIPE_SECRET_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; STRIPE_PUBLISHABLE_KEY&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# stripe payments test&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; STRIPE_SECRET_KEY_TEST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; STRIPE_PUBLISHABLE_KEY_TEST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# raspberry pi password and user/host&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; RASPBERRY_PI_SSH_PASSWORD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; RASPBERRY_PI_USER_AND_HOST&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;lulz123456
+
+&lt;span class=&quot;token comment&quot;&gt;# npm packages&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$HOME&lt;/span&gt;/.npm-packages/bin:&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# google cloud platform&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/Users/chris/opensource/google-cloud-sdk/completion.bash.inc&apos;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/Users/chris/opensource/google-cloud-sdk/path.bash.inc&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# added by Anaconda2 5.0.1 installer&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/Users/chris/anaconda2/bin:&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; NVM_DIR&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/Users/chris/.nvm&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; -s &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$NVM_DIR&lt;/span&gt;/nvm.sh&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$NVM_DIR&lt;/span&gt;/nvm.sh&quot;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# This loads nvm&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# TORCH&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt;:/Users/chris/torch/install/bin
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn’t have to be that ‘sharp’! 😂), you may have noticed I even have an alias for opening the bash profile itself (&lt;code&gt;prof&lt;/code&gt;) and sourcing the profile (&lt;code&gt;s&lt;/code&gt;) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; prof&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;atom /Users/chris/.bash_profile&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# opens .bash_profile for editing&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; s&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;source /Users/chris/.bash_profile&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# sources .bash_profile (should be done every time after changing profile)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;So yes, you could say I modify and add stuff to my bash profile quite often - I recommend you do it too! Improve your workflow and ease of commanding a bash terminal!&lt;/p&gt;
+&lt;p&gt;-Cheers! 🍺&lt;/p&gt;
+&lt;p&gt;Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Create Posts That Reach the Top of the Front Page on Subreddits (And How I Created Two of Them for /r/wallstreetbets)]]></title><description><![CDATA[The Posts So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody: Reddit Response: The…]]></description><link>https://chrisfrew.in/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/</link><guid isPermaLink="false">https://chrisfrew.in/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/</guid><pubDate>Sun, 08 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;The Posts&lt;/h1&gt;
+&lt;p&gt;So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-2777b.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 177.76666666666665%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAYAAACJ8xqgAAAACXBIWXMAACZzAAAmcwHzbHUKAAACgklEQVRIx+2Wy08TURSH2w0LKi2lmxKJAn1YpC1t05el7fQ5bWc6nSlGSVB0686F7nRlYkIMFVQ0opHExIWJkKiRxAVoQBJYqXHjX+P9eeeCQq19ULuTSb7cc8+c+eaemZvJaKIrMz9Cr24T+4sbdcm9nSPp1xUiry6Qq59ekstrS0R694CMr8z8jiffPyb8m7tEY1mfJZa1WTTCul6B4+M87B/m2OjZXGA5i8reedveXDP0eZGI35dh+/IUNG4b/7fncH5dosKdhyS+/Qy2jfsY3pj/K0Ob9zC4Vf+8ytjWI3i3F6EZuX6JeDw+NGI0EsbJs3k0q3NnuA4L0/EjYT2hkoP91hW48skWhNemmwq9U+fgXa3AnYx1RuhJ5+BfvtNiy+eFpsJTShGuJzcx1kw4HqbCkdGGQmcohIEpCTY+AYuYbix0exoL1RUdn5bhCgb24hKcwWD7Qgd9CcOl7P5qwyGcmBTbFw7SvTdKJQdzavttC21031mF1P4KabsDF6R/e4aDEzkMXCwxkYorEGhfeFiOhNVEIlFkszmkUmnk8wIdMxDFIstxXPLwQr8/iFiMY+JwOMJGdR6NxhEKnWksDAR2N69aWC5PQJJkFIsSSiUFhYLIYllW6EoLNCcjk+HB8zlWp97A5/NXCzkuwVoRBJEVqxJBKLI2s4UCREWBUFYglsus/WQyzWp4Pk8fg8SuUfNut7eFlxKNwMNFd2n2gf1P96HDcZqoQSdwOt30Z2nISijoBFarHRqd7hjp6zOht9fIoHN0d+vaQq83QEMPQsEvzGYzDAYDDuaMRiP6+/urciqJRAJarfbPfLVQr9fXFHV1daGnp6dGaDKZanI/AdXHplW/glBkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;First post that made it to the front page.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-fb8a0.png&quot;
+        srcset=&quot;/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-1a291.png 148w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-2bc4a.png 295w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-fb8a0.png 590w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-526de.png 885w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-fa2eb.png 1180w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-08f6a.png 1770w,
+/static/robinhood_parody-8828d8b0302e0f37976816b6ae0b941f-2777b.png 3000w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Reddit Response:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/deargod-3933adf9db8b9e158d0112ac677b67e1-5d35e.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 15.590200445434299%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAnklEQVQI142O6wrCMAyF9/4v5k9BnKC7dJe265ama0dB1B/HbL6AgUNCLidfoUqH66lDddYY7oR5CLCKpV6OrG4OuiHomuD6gOExQ5UTTOMxVoSpY9QXg1Hmr+cHRc4ZMUYQeRHBuyimK0zrMRsGc8C6xmOHmZFSQms39EuGMz2CD/KIYTsPJzCFSW85jELza1gx2jVWy0Gz97SQ/BtfWUvg+hq5rGwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;First front page post response.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/deargod-3933adf9db8b9e158d0112ac677b67e1-fb8a0.png&quot;
+        srcset=&quot;/static/deargod-3933adf9db8b9e158d0112ac677b67e1-1a291.png 148w,
+/static/deargod-3933adf9db8b9e158d0112ac677b67e1-2bc4a.png 295w,
+/static/deargod-3933adf9db8b9e158d0112ac677b67e1-fb8a0.png 590w,
+/static/deargod-3933adf9db8b9e158d0112ac677b67e1-526de.png 885w,
+/static/deargod-3933adf9db8b9e158d0112ac677b67e1-5d35e.png 898w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The second of which (this one did even better than, launching to the top post in just 4 hours, the other one took about a full day)&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-75ec9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABPNAAATzQFxESm3AAADGElEQVQozx2S229UVRTGT0gNRHwwxBcNhRgbNPHFKMYCZTr3M3PmduacmTntzLRTWortUErSVAxatF6wSpj40IvUWKG0KYjYG/LQTkkhE0O0ggZTbAlGaYwX3vwH9s+lDzvZWcn61nfTJk1HfW4k1YgroN50h9UJb0SV9vrUbJ1fjYZMdTrfpnr9cTURtVSbL6I6AjH1cTythjPN6lTYVIN6XI0Ihi17g96w0r4PxtRKdw9f7n6FoZf3MVxbz7I3wsP9fpZqPXyRbOSDF2tZbG5nLGxxJWyy4A4z39LBmaDJVxGbYbOBN6wmKskGpU25dHUxkaLk0nl75zOUdj3HyadrOLHtCUaff4Hu6h1kNm9mxWqgHEsxm84xqyf4JnuAhWCMy54w/f4oA4E446JIuxh31NW2IlNydaHOQ2bLFkrVO+nfvgND0+jctImigM/F0/+znUlkmDUd5tsPM+o1mE5luVCvcy6UYMxnKO1uIq3uFw6y4vLxXs0uBp7cjlX1CCEB++/Fq6oo7d7DlO1wQ+SORVNMCsByQ4GlqM2KHuOKP8a4YVMWb7VyKqsWWw4x6QvR+VQ15qNbcR7fhrn1MYo1z3ImnWcwU2C6q5uzSYc+X5QP9/mZz7ZSEda3DZPVQJRl+c8kxMN1w1RrQne953U22jr5p6uHvzu6uXf8LdY6j3Kz4whl8fjroz2MmCl6W7vocxtUfBFu1Pn5JZ7ivj/CNaeJ6x5J+Y7U5U59kFthAd3j4S95qzGbVVeQuzLfyB3gB5/B1JFejusWx3KvMhC2uWY3cknkzkhQ4wJ4NpbmZMRW2nXpUMVI8nMizT1ZvCk+VZxmPrVyzAmD32T+nUh67dBh3jVzjDgtlIXdn8Ls15f28lCCeSBJvy9HejOt0kO3rn5y68LQ5FbE4lu5+IlT4LSdpxgzOe+NMiG+TaabuCCBDMmhy9KI3wVk3RXgRzPDknjbL/O+QlFpDyTqPyyHRQGckzpMWI1My/K5hMNHktwxM8s7wmpRQhiVAg9JkT+rD7EhqtZCJrczeS5JD/uyBzmVb1f/Av7l6MlEogx4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Second post that made it to the front page.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-fb8a0.png&quot;
+        srcset=&quot;/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-1a291.png 148w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-2bc4a.png 295w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-fb8a0.png 590w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-526de.png 885w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-fa2eb.png 1180w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-08f6a.png 1770w,
+/static/sandp_parody-5d1ebf59183e0c1cadd871b444395d20-75ec9.png 2000w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Reddit Response: &lt;em&gt;(update 2 hours later as of publishing time: still growing at 1500+, just published it today while I wrote this post)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-59197.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 16.3265306122449%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAjUlEQVQI142OwQ6CMBiDef9H8g3Ugzc0KAGHg7GN/TDmhcsnEB+AJk3TtEmbPW+a66kgPysuf9183wj13dDVgSo3tNXAEWQpJUIIeO9xzmG1YJTQFJZWObwbsL1DZNx74xSp+kRtE+ZTEsd5HR3WQY/vJjIlC2/73QsbX93MQ0eKNlKambyZ9lzScujhD2aE4sE+vjNMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Second front page post response.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-fb8a0.png&quot;
+        srcset=&quot;/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-1a291.png 148w,
+/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-2bc4a.png 295w,
+/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-fb8a0.png 590w,
+/static/rowrowrow-7b4363b453fae0b4af4b6a27609b03d9-59197.png 882w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Note that both of these posts play a bit into the current state of the market - trading mostly down the last few weeks. But I’d like to think the larger part of the popularity is the artwork.&lt;/p&gt;
+&lt;h1&gt;1. Ideas, Ideas, Ideas!&lt;/h1&gt;
+&lt;p&gt;If you want a post that does really well (like make front page well), it has to be very creative. Anything even slightly subpar in the creativity region, even if it is your own original content, will fail (trust me, I’ve had my share of failed attempts). The problem with this is because the subreddit has seen dozens of others of very similar posts of whatever you think is a “little bit” creative. Many members of the subreddit have posted “semi-creative” content before you, trust me. My tips for doing this are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;leverage your own skills - are you an expert in skills related to the subreddit, an artist, a programmer, are you a great organizer of content or ideas - do you have any skill that could be used in a helpful way by members of the subreddit?&lt;/li&gt;
+&lt;li&gt;spend a while on the subreddit, take notes of what posts do well (of the type of post you think you can make - info post) my two best have been on /r/wallstreetbets because I’ve been getting into investing and the market a lot recently, and setting aside the jokes and memes (of which I am a prime contributor), I think there is a lot of correct information on the subreddit&lt;/li&gt;
+&lt;li&gt;get creative - can you combine some ideas that members of the subreddit won’t expect or will be funny, no matter what you do, I think the key point is to bring something new. Perhaps slightly with this idea is that a bonus point is if it is something - something completely new is almost always good, but a topic that has just happened recently or is relevant to current subreddit and hasn’t been discussed is a golden opportunity&lt;/li&gt;
+&lt;li&gt;a good test is to check if your rushing about an idea - if you &lt;em&gt;are&lt;/em&gt;, I would guess it is likely an idea many other people are or have posted about. I realized I wasn’t rushing with creating my posts, because I knew they were so creative that nobody would come close to posting anything like it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;2. Pick your Skill and Leverage It!&lt;/h1&gt;
+&lt;p&gt;I selected my art and graphic design skills as my meme / post advantages. (You can examples of my previous digital (and hand made) artwork at (&lt;a href=&quot;https://chrisfrewin.design&quot;&gt;https://chrisfrewin.design&lt;/a&gt;)[https://chrisfrewin.design])&lt;/p&gt;
+&lt;p&gt;The fun part for me was that these ‘memes’ were just pieces of art I wanted to create anyway - the advantage is that they could of course be sweet, sweet karma generators.&lt;/p&gt;
+&lt;h1&gt;3. Publish it! (and Post Title selection)&lt;/h1&gt;
+&lt;p&gt;Once you’re satisfied with your content your going to post (whatever it be video, blog post, image, text, whatever), its time to post! I’ve found that despite what reddit recommends, as long as your title is somewhat creative, your super awesome creative post will do just fine. Also a note with post timing / and time of day of the post, I’ve found it doesn’t really matter - I just post whenever my post is ready, I don’t do any special timings. That first one for example was posted late on a Friday evening, and the S&amp;#x26;P Map on a  If it is truly a front page post, it will gain traction regardless - I suppose the posting time of day could control exactly &lt;em&gt;how&lt;/em&gt; fast.&lt;/p&gt;
+&lt;p&gt;As a final check you can review your own confidence at posting time - if you find yourself not worried at all, it’s going to do fine. If it’s a winner, you’ll know soon enough as you are bombarded with the replies to your post. I left my S&amp;#x26;P meme for 4 hours and when I can back to check on reddit I was welcomed with over 1300 upvotes and 60+ post replies.&lt;/p&gt;
+&lt;p&gt;If there is interest, I can go through my process of the technical graphic design portion of how I built these posts (I use Gimp and Inkscape - yes I’m a cheapass nerd who uses open source graphic design software 🤓)&lt;/p&gt;
+&lt;p&gt;Hope you enjoyed and picked up a tip or two and got a laugh out of the memes!&lt;/p&gt;
+&lt;p&gt;-Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[I Set Aside $1000 to Learn Options Trading]]></title><description><![CDATA[Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there…]]></description><link>https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</link><guid isPermaLink="false">https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</guid><pubDate>Sat, 07 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there will be plenty of new content coming soon. (I’ve been improving my development arsenal with Redux (haven’t had a need for it yet) and Redux Saga which leverages a lot of great JavaScript such as generator functions for async deliciousness, as well as joining a hackathon team to build a beerpong robot - but more of that in later posts.)&lt;/p&gt;
+&lt;h1&gt;Robinhood - Options! AHAHAHAH! Oh wait… my money is gone 😭😭😭&lt;/h1&gt;
+&lt;p&gt;Like many millennials will experience in the coming months, my options trading got unlocked on Robinhood. Robinhood is a commission free broker that initial started as a mobile-only (as far as I know Robinhood is only available for United States Citizens - sorry for everyone else - but options are definitely in the cards if you find the right broker!) Anyway, as I experiment with everything, why not also with options? What I’ve seen places for example like &lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/&quot;&gt;https://www.reddit.com/r/wallstreetbets/&lt;/a&gt;, options trading can be extremely lucrative, but highly risky. I wanted to learn what they were all about and if it would be indeed possible for me to make some sustainable income - not in a risky YOLO method, but a calculated method that follows mathematical principles.&lt;/p&gt;
+&lt;h1&gt;The Posts - on Medium&lt;/h1&gt;
+&lt;p&gt;To spare you from more of my rambling, here’s the very first post of the series:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-9a018f11f69e&quot;&gt;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-9a018f11f69e&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and the master post that I will link all further posts to (check out my catastrophic Facebook call failure):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863&quot;&gt;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;you can follow my trades on twitter &lt;a href=&quot;https://twitter.com/Galt_&quot;&gt;@Galt_&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I hope you enjoy watching me lose all my money! 😂&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;
+&lt;p&gt;-Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)]]></title><description><![CDATA[chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…]]></description><link>https://chrisfrew.in/introducing-chrisfrewin-productions/</link><guid isPermaLink="false">https://chrisfrew.in/introducing-chrisfrewin-productions/</guid><pubDate>Thu, 01 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;chrisfrew.in as a company!&lt;/h1&gt;
 &lt;p&gt;Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it’s still alive!) &lt;a href=&quot;https://sirenapparel.us&quot;&gt;https://sirenapparel.us&lt;/a&gt; with the more general name of this site, chrisfrew.in (that also is creatively my name of course 😉). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, &lt;em&gt;chrisfrew.in&lt;/em&gt;. Tasty.&lt;/p&gt;
 &lt;h1&gt;For New York state, how can you change your DBA name?&lt;/h1&gt;
 &lt;p&gt;To change your DBA name, it’s basically two steps, one at the federal level and one at the state level:&lt;/p&gt;

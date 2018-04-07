@@ -49,6 +49,12 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "introducing-chrisfrewin-productions.json": require("gatsby-module-loader?name=path---introducing-chrisfrewin-productions!/Users/chris/projects/chrisfrew.in/.cache/json/introducing-chrisfrewin-productions.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "i-set-aside-1000-to-learn-options-trading.json": require("gatsby-module-loader?name=path---i-set-aside-1000-to-learn-options-trading!/Users/chris/projects/chrisfrew.in/.cache/json/i-set-aside-1000-to-learn-options-trading.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json": require("gatsby-module-loader?name=path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets!/Users/chris/projects/chrisfrew.in/.cache/json/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "some-tasty-bash-profile-commands.json": require("gatsby-module-loader?name=path---some-tasty-bash-profile-commands!/Users/chris/projects/chrisfrew.in/.cache/json/some-tasty-bash-profile-commands.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

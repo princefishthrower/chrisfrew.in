@@ -61,8 +61,8 @@
       "path---warn-sap-users-of-locked-objects-75441404d29e1ef34e32.js.map"
     ],
     "path---index": [
-      "path---index-9bddefc1e24b50838d96.js",
-      "path---index-9bddefc1e24b50838d96.js.map"
+      "path---index-4b663033fc819b5b334b.js",
+      "path---index-4b663033fc819b5b334b.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-0066ee9e57cfc60b3b58.js",
@@ -76,6 +76,10 @@
       "path---colors-for-sap-web-ide-a8ed50f914b397053ed3.js",
       "path---colors-for-sap-web-ide-a8ed50f914b397053ed3.js.map"
     ],
+    "path---some-tasty-bash-profile-commands": [
+      "path---some-tasty-bash-profile-commands-195b49053185f65da7ed.js",
+      "path---some-tasty-bash-profile-commands-195b49053185f65da7ed.js.map"
+    ],
     "commons": [
       "commons-b9295c1fa34e18bb3199.js",
       "build-js-styles.css",
@@ -86,6 +90,10 @@
       "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-67cb7ee500a2d7194650.js",
       "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-67cb7ee500a2d7194650.js.map"
     ],
+    "path---i-set-aside-1000-to-learn-options-trading": [
+      "path---i-set-aside-1000-to-learn-options-trading-1c20e71379b3bea15aba.js",
+      "path---i-set-aside-1000-to-learn-options-trading-1c20e71379b3bea15aba.js.map"
+    ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
@@ -95,9 +103,9 @@
       "path---ethereum-developers-toolbelt-563705efc6c9d59dca6c.js.map"
     ],
     "app": [
-      "app-1b751bb7314f5415a746.js",
+      "app-9bd240550952eb3219b7.js",
       "build-js-styles.css",
-      "app-1b751bb7314f5415a746.js.map",
+      "app-9bd240550952eb3219b7.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [
@@ -115,6 +123,10 @@
     "path---detailed-look-at-bdc-in-abap": [
       "path---detailed-look-at-bdc-in-abap-00d3da36dc66eca5a265.js",
       "path---detailed-look-at-bdc-in-abap-00d3da36dc66eca5a265.js.map"
+    ],
+    "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets": [
+      "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets-862d0ad9104ad091f79c.js",
+      "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets-862d0ad9104ad091f79c.js.map"
     ]
   }
 }

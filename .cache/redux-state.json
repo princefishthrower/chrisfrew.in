@@ -1584,12 +1584,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-03-17T18:25:50.436Z",
+      "buildTime": "2018-04-07T18:45:10.078Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "1fb7dbbd397883e338c2760ad48586e6",
+        "contentDigest": "908bc215e6f7095ef1fea8b4d840ee94",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1599,7 +1599,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dbcf9005764e4e5a2bda28b183352ddc",
+        "contentDigest": "37ec9f65dec7a1b23a04f68121a3e05d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1607,11 +1607,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 736,
-      "prettySize": "736 B",
-      "modifiedTime": "2018-03-01T06:15:48.748Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
-      "changeTime": "2018-03-01T06:15:48.748Z",
+      "size": 832,
+      "prettySize": "832 B",
+      "modifiedTime": "2018-04-07T17:48:39.168Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
+      "changeTime": "2018-04-07T17:48:39.168Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1619,22 +1619,22 @@
       "ext": "",
       "name": "pages",
       "relativeDirectory": "..",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
-      "nlink": 23,
+      "nlink": 26,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1521311153937.8074,
-      "mtimeMs": 1519884948748.0193,
-      "ctimeMs": 1519884948748.0193,
+      "atimeMs": 1523126713436.6074,
+      "mtimeMs": 1523123319168.0657,
+      "ctimeMs": 1523123319168.0657,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-03-17T18:25:53.938Z",
-      "mtime": "2018-03-01T06:15:48.748Z",
-      "ctime": "2018-03-01T06:15:48.748Z",
+      "atime": "2018-04-07T18:45:13.437Z",
+      "mtime": "2018-04-07T17:48:39.168Z",
+      "ctime": "2018-04-07T17:48:39.168Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1642,7 +1642,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a634576cd2583cc5cebd42e9d8f503a8",
+        "contentDigest": "d237d330f0ab86113db960f857c39be6",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1653,7 +1653,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1662,7 +1662,7 @@
       "ext": "",
       "name": "a-toast-to-full-stack-developers",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1671,11 +1671,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1521311153938.2632,
+      "atimeMs": 1523126713436.6926,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1685,7 +1685,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7e67d03463da930eabcdd51caba6d858",
+        "contentDigest": "bc928b729c88d56ddae6c853ba031fc8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1696,7 +1696,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-11T16:03:06.851Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2018-01-11T16:03:06.851Z",
       "birthTime": "2018-01-11T16:01:54.254Z",
       "root": "/",
@@ -1705,7 +1705,7 @@
       "ext": "",
       "name": "abap-push-and-message-channels",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1714,11 +1714,11 @@
       "blksize": 4194304,
       "ino": 8596136407,
       "blocks": 0,
-      "atimeMs": 1521311153938.2937,
+      "atimeMs": 1523126713436.7598,
       "mtimeMs": 1515686586850.6416,
       "ctimeMs": 1515686586850.6416,
       "birthtimeMs": 1515686514254.4714,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2018-01-11T16:03:06.851Z",
       "ctime": "2018-01-11T16:03:06.851Z",
       "birthtime": "2018-01-11T16:01:54.254Z"
@@ -1728,7 +1728,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "21b05d30b746152674b6cdbebf6fd52d",
+        "contentDigest": "9a73431b1b6da144060ca32a156a609f",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1739,7 +1739,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1748,7 +1748,7 @@
       "ext": "",
       "name": "an-npm-christmas-easter-egg",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -1757,11 +1757,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1521311153938.3176,
+      "atimeMs": 1523126713436.8433,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1771,7 +1771,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6cdd5b9a738fa01e72ac527b39240059",
+        "contentDigest": "8c115816070bca816a12c03730f00777",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1782,7 +1782,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:47:15.305Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2018-01-17T16:47:15.305Z",
       "birthTime": "2018-01-17T16:47:09.210Z",
       "root": "/",
@@ -1791,7 +1791,7 @@
       "ext": "",
       "name": "building-raiblocks-charts",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1800,11 +1800,11 @@
       "blksize": 4194304,
       "ino": 8596482995,
       "blocks": 0,
-      "atimeMs": 1521311153938.3425,
+      "atimeMs": 1523126713436.9172,
       "mtimeMs": 1516207635305.3901,
       "ctimeMs": 1516207635305.3901,
       "birthtimeMs": 1516207629209.9854,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2018-01-17T16:47:15.305Z",
       "ctime": "2018-01-17T16:47:15.305Z",
       "birthtime": "2018-01-17T16:47:09.210Z"
@@ -1814,7 +1814,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9f0a0bf9aed37c619dcfefe60727d91f",
+        "contentDigest": "64a1f919741ae21166da20906d24480d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1825,7 +1825,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1834,7 +1834,7 @@
       "ext": "",
       "name": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 15,
       "uid": 501,
@@ -1843,11 +1843,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1521311153938.4539,
+      "atimeMs": 1523126713437.0955,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1857,7 +1857,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8cc24bc4a3b19529ad855c77b919358d",
+        "contentDigest": "968e9d243535b24cd25c2e332854f562",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1868,7 +1868,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1877,7 +1877,7 @@
       "ext": "",
       "name": "colors-for-sap-web-ide",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -1886,11 +1886,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1521311153938.3784,
+      "atimeMs": 1523126713437.1787,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1900,7 +1900,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "de4a39cd57e5aad3012aa061f577fd70",
+        "contentDigest": "ceaf124f8368f18f39befbfa4fda3e66",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1911,7 +1911,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -1920,7 +1920,7 @@
       "ext": "",
       "name": "debugging-abap-with-a-sap-shortcut",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1929,11 +1929,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1521311153938.3855,
+      "atimeMs": 1523126713437.3186,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -1943,7 +1943,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "988b8afd64551b0e452b58ce98de8d08",
+        "contentDigest": "d7e75bf40301d5492c754da69d3fbc36",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1954,7 +1954,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -1963,7 +1963,7 @@
       "ext": "",
       "name": "detailed-look-at-bdc-in-abap",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1972,11 +1972,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1521311153938.4114,
+      "atimeMs": 1523126713437.3777,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -1986,7 +1986,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "81ad38303981437843b7e8e537640920",
+        "contentDigest": "164e7257051a7f0b52db25cd92c15b58",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1997,7 +1997,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2006,7 +2006,7 @@
       "ext": "",
       "name": "dropdowns-in-readmes",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2015,11 +2015,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1521311153938.4353,
+      "atimeMs": 1523126713437.4285,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2029,7 +2029,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "da859d6c32bee59abec7014e9f53541d",
+        "contentDigest": "c9b8f3095d6105a138ae60e0d9e45079",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2040,7 +2040,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:14:40.371Z",
-      "accessTime": "2018-03-17T18:25:53.938Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
       "changeTime": "2017-12-13T12:01:31.620Z",
       "birthTime": "2017-12-12T16:14:34.059Z",
       "root": "/",
@@ -2049,7 +2049,7 @@
       "ext": "",
       "name": "ethereum-developers-toolbelt",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2058,11 +2058,11 @@
       "blksize": 4194304,
       "ino": 8593655521,
       "blocks": 0,
-      "atimeMs": 1521311153938.488,
+      "atimeMs": 1523126713437.4773,
       "mtimeMs": 1513095280370.9812,
       "ctimeMs": 1513166491620.2058,
       "birthtimeMs": 1513095274059.1846,
-      "atime": "2018-03-17T18:25:53.938Z",
+      "atime": "2018-04-07T18:45:13.437Z",
       "mtime": "2017-12-12T16:14:40.371Z",
       "ctime": "2017-12-13T12:01:31.620Z",
       "birthtime": "2017-12-12T16:14:34.059Z"
@@ -2072,7 +2072,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e83b981306b7f91c19e5f381b21572a5",
+        "contentDigest": "464c13e30b994a5e64676372cbb8df11",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2083,7 +2083,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2092,7 +2092,7 @@
       "ext": "",
       "name": "final-say-bitcoin",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2101,11 +2101,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1521311153938.5332,
+      "atimeMs": 1523126713437.5144,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2115,7 +2115,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "87b34bcf954bdb05ad14ae4f2652f02e",
+        "contentDigest": "69a6b669a6791bcf83c811aee3eef08a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2126,7 +2126,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2135,7 +2135,7 @@
       "ext": "",
       "name": "hello-world",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2144,11 +2144,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1521311153938.56,
+      "atimeMs": 1523126713437.55,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2158,7 +2158,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "66b4805ac6fceb917dbaeff1b3bfeecf",
+        "contentDigest": "2768f607bd51079729ceb056d647085b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2169,7 +2169,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2178,7 +2178,7 @@
       "ext": "",
       "name": "hot-linking-to-lines-in-github",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2187,11 +2187,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1521311153938.7983,
+      "atimeMs": 1523126713437.588,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2201,7 +2201,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a1af5ac46f573fbd5e593b93fb4dbab9",
+        "contentDigest": "b7ad1483729e2f0a94b6b1bf61869176",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2212,7 +2212,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:31:47.195Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2018-01-17T16:31:47.195Z",
       "birthTime": "2018-01-17T16:31:36.460Z",
       "root": "/",
@@ -2221,7 +2221,7 @@
       "ext": "",
       "name": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2230,11 +2230,11 @@
       "blksize": 4194304,
       "ino": 8596482218,
       "blocks": 0,
-      "atimeMs": 1521311153938.7688,
+      "atimeMs": 1523126713437.6272,
       "mtimeMs": 1516206707195.2708,
       "ctimeMs": 1516206707195.2708,
       "birthtimeMs": 1516206696460.457,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2018-01-17T16:31:47.195Z",
       "ctime": "2018-01-17T16:31:47.195Z",
       "birthtime": "2018-01-17T16:31:36.460Z"
@@ -2244,7 +2244,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ebc8a50124636de88ccc2244eb30cfd1",
+        "contentDigest": "60f91029261d2e7812936ce0726e18fe",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2255,7 +2255,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T17:02:27.730Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2018-01-17T17:02:27.730Z",
       "birthTime": "2018-01-17T17:02:18.586Z",
       "root": "/",
@@ -2264,7 +2264,7 @@
       "ext": "",
       "name": "jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2273,11 +2273,11 @@
       "blksize": 4194304,
       "ino": 8596484302,
       "blocks": 0,
-      "atimeMs": 1521311153938.856,
+      "atimeMs": 1523126713437.7537,
       "mtimeMs": 1516208547730.4324,
       "ctimeMs": 1516208547730.4324,
       "birthtimeMs": 1516208538586.4346,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2018-01-17T17:02:27.730Z",
       "ctime": "2018-01-17T17:02:27.730Z",
       "birthtime": "2018-01-17T17:02:18.586Z"
@@ -2287,7 +2287,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e9a04a6d9597039f59d0f32bb1ee253c",
+        "contentDigest": "94b5006fc6e3abe2e179abaed6cca16d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2298,7 +2298,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-03-17T17:29:41.508Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2018-03-17T17:29:41.508Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2307,7 +2307,7 @@
       "ext": "",
       "name": "laptop-stickers",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -2316,11 +2316,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1521311153938.9675,
+      "atimeMs": 1523126713437.822,
       "mtimeMs": 1521307781508.2327,
       "ctimeMs": 1521307781508.2327,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2018-03-17T17:29:41.508Z",
       "ctime": "2018-03-17T17:29:41.508Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2330,7 +2330,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "39579c3b3814604ebcacf27420bab2e0",
+        "contentDigest": "2f57757266af89c275e550b81b940a95",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2341,7 +2341,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2350,7 +2350,7 @@
       "ext": "",
       "name": "sending-windows-commands-from-sap-abap",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2359,11 +2359,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1521311153938.9102,
+      "atimeMs": 1523126713437.8616,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2373,7 +2373,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d2c3450bc0ee7055dbb3d69b9072fdeb",
+        "contentDigest": "7d390a9a6b58937fcf6b5ac9f59e4554",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2384,7 +2384,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-15T07:23:17.882Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2018-01-15T07:23:17.882Z",
       "birthTime": "2018-01-15T07:23:04.154Z",
       "root": "/",
@@ -2393,7 +2393,7 @@
       "ext": "",
       "name": "warn-sap-users-of-locked-objects",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2402,11 +2402,11 @@
       "blksize": 4194304,
       "ino": 8596340303,
       "blocks": 0,
-      "atimeMs": 1521311153938.9922,
+      "atimeMs": 1523126713437.946,
       "mtimeMs": 1516000997881.6216,
       "ctimeMs": 1516000997881.6216,
       "birthtimeMs": 1516000984154.256,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2018-01-15T07:23:17.882Z",
       "ctime": "2018-01-15T07:23:17.882Z",
       "birthtime": "2018-01-15T07:23:04.154Z"
@@ -4659,7 +4659,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "48b30311fb87a88c313d446048cc5f03",
+        "contentDigest": "1e84d0a2b19d397e1d9d8daf8a38356c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -4670,7 +4670,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-03-01T06:16:06.999Z",
-      "accessTime": "2018-03-17T18:25:53.939Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
       "changeTime": "2018-03-01T06:16:06.999Z",
       "birthTime": "2018-03-01T06:15:48.748Z",
       "root": "/",
@@ -4679,7 +4679,7 @@
       "ext": "",
       "name": "introducing-chrisfrewin-productions",
       "relativeDirectory": "",
-      "dev": 16777221,
+      "dev": 16777220,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -4688,11 +4688,11 @@
       "blksize": 4194304,
       "ino": 8599787247,
       "blocks": 0,
-      "atimeMs": 1521311153938.8235,
+      "atimeMs": 1523126713437.7134,
       "mtimeMs": 1519884966998.8735,
       "ctimeMs": 1519884966998.8735,
       "birthtimeMs": 1519884948747.99,
-      "atime": "2018-03-17T18:25:53.939Z",
+      "atime": "2018-04-07T18:45:13.438Z",
       "mtime": "2018-03-01T06:16:06.999Z",
       "ctime": "2018-03-01T06:16:06.999Z",
       "birthtime": "2018-03-01T06:15:48.748Z"
@@ -4824,6 +4824,572 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "984b965eaa712fe0d95068beeb76fcc1",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading",
+      "relativePath": "i-set-aside-1000-to-learn-options-trading",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-04-07T15:52:46.268Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
+      "changeTime": "2018-04-07T15:52:46.268Z",
+      "birthTime": "2018-04-07T15:52:39.855Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "i-set-aside-1000-to-learn-options-trading",
+      "ext": "",
+      "name": "i-set-aside-1000-to-learn-options-trading",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602609104,
+      "blocks": 0,
+      "atimeMs": 1523126713437.6685,
+      "mtimeMs": 1523116366267.7776,
+      "ctimeMs": 1523116366267.7776,
+      "birthtimeMs": 1523116359855.1514,
+      "atime": "2018-04-07T18:45:13.438Z",
+      "mtime": "2018-04-07T15:52:46.268Z",
+      "ctime": "2018-04-07T15:52:46.268Z",
+      "birthtime": "2018-04-07T15:52:39.855Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "670894d157f345fcd212b8b4f86c996e",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md",
+      "relativePath": "i-set-aside-1000-to-learn-options-trading/index.md",
+      "extension": "md",
+      "size": 2220,
+      "prettySize": "2.22 kB",
+      "modifiedTime": "2018-04-07T16:35:54.280Z",
+      "accessTime": "2018-04-07T16:35:54.279Z",
+      "changeTime": "2018-04-07T16:35:54.280Z",
+      "birthTime": "2018-04-07T15:52:46.268Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "i-set-aside-1000-to-learn-options-trading",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602609106,
+      "blocks": 8,
+      "atimeMs": 1523118954279.4326,
+      "mtimeMs": 1523118954279.5652,
+      "ctimeMs": 1523118954279.5652,
+      "birthtimeMs": 1523116366267.7627,
+      "atime": "2018-04-07T16:35:54.279Z",
+      "mtime": "2018-04-07T16:35:54.280Z",
+      "ctime": "2018-04-07T16:35:54.280Z",
+      "birthtime": "2018-04-07T15:52:46.268Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: I Set Aside $1000 to Learn Options Trading\ndate: \"2018-04-07\"\ndraft: false\n---\n\nWhew. It's been over a month since my last post! This is mainly because of some of the projects I've been working on; so rest assured there will be plenty of new content coming soon. (I've been improving my development arsenal with Redux (haven't had a need for it yet) and Redux Saga which leverages a lot of great JavaScript such as generator functions for async deliciousness, as well as joining a hackathon team to build a beerpong robot - but more of that in later posts.)\n\n# Robinhood - Options! AHAHAHAH! Oh wait... my money is gone 😭😭😭\n\nLike many millennials will experience in the coming months, my options trading got unlocked on Robinhood. Robinhood is a commission free broker that initial started as a mobile-only (as far as I know Robinhood is only available for United States Citizens - sorry for everyone else - but options are definitely in the cards if you find the right broker!) Anyway, as I experiment with everything, why not also with options? What I've seen places for example like [https://www.reddit.com/r/wallstreetbets/](https://www.reddit.com/r/wallstreetbets/), options trading can be extremely lucrative, but highly risky. I wanted to learn what they were all about and if it would be indeed possible for me to make some sustainable income - not in a risky YOLO method, but a calculated method that follows mathematical principles.\n\n# The Posts - on Medium\n\nTo spare you from more of my rambling, here's the very first post of the series:\n\n[https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-9a018f11f69e](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-9a018f11f69e)\n\nand the master post that I will link all further posts to (check out my catastrophic Facebook call failure):\n\n[https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863)\n\nyou can follow my trades on twitter [@Galt_](https://twitter.com/Galt_).\n\nI hope you enjoy watching me lose all my money! 😂\n\nCheers! 🍺\n\n-Chris\n",
+        "contentDigest": "95870fdcf939420d784e431ffc087fc5",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "I Set Aside $1000 to Learn Options Trading",
+        "date": "2018-04-07",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md",
+      "fields": {
+        "slug": "/i-set-aside-1000-to-learn-options-trading/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "612a05c839dbada55cb19d8fdee663d5",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "extension": "",
+      "size": 224,
+      "prettySize": "224 B",
+      "modifiedTime": "2018-04-07T17:41:08.850Z",
+      "accessTime": "2018-04-07T18:45:13.437Z",
+      "changeTime": "2018-04-07T17:41:08.850Z",
+      "birthTime": "2018-04-07T15:59:19.305Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "ext": "",
+      "name": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 7,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602609341,
+      "blocks": 0,
+      "atimeMs": 1523126713437.25,
+      "mtimeMs": 1523122868849.758,
+      "ctimeMs": 1523122868849.758,
+      "birthtimeMs": 1523116759304.8486,
+      "atime": "2018-04-07T18:45:13.437Z",
+      "mtime": "2018-04-07T17:41:08.850Z",
+      "ctime": "2018-04-07T17:41:08.850Z",
+      "birthtime": "2018-04-07T15:59:19.305Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "52111e1e0824b63f96cf5dcba8025f65",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md",
+      "extension": "md",
+      "size": 4716,
+      "prettySize": "4.72 kB",
+      "modifiedTime": "2018-04-07T17:46:07.932Z",
+      "accessTime": "2018-04-07T17:46:07.932Z",
+      "changeTime": "2018-04-07T17:46:07.932Z",
+      "birthTime": "2018-04-07T16:31:51.253Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602610545,
+      "blocks": 16,
+      "atimeMs": 1523123167932.2578,
+      "mtimeMs": 1523123167932.378,
+      "ctimeMs": 1523123167932.378,
+      "birthtimeMs": 1523118711253.0745,
+      "atime": "2018-04-07T17:46:07.932Z",
+      "mtime": "2018-04-07T17:46:07.932Z",
+      "ctime": "2018-04-07T17:46:07.932Z",
+      "birthtime": "2018-04-07T16:31:51.253Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: How to Create Posts That Reach the Top of the Front Page on Subreddits (And How I Created Two of Them for /r/wallstreetbets)\ndate: \"2018-04-08\"\ndraft: false\n---\n\n# The Posts\n\nSo, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody:\n\n![First post that made it to the front page.](robinhood_parody.png)\n\nReddit Response:\n\n![First front page post response.](deargod.png)\n\nThe second of which (this one did even better than, launching to the top post in just 4 hours, the other one took about a full day)\n\n![Second post that made it to the front page.](sandp_parody.png)\n\nReddit Response: _(update 2 hours later as of publishing time: still growing at 1500+, just published it today while I wrote this post)_\n\n![Second front page post response.](rowrowrow.png)\n\nNote that both of these posts play a bit into the current state of the market - trading mostly down the last few weeks. But I'd like to think the larger part of the popularity is the artwork.\n\n# 1. Ideas, Ideas, Ideas!\n\nIf you want a post that does really well (like make front page well), it has to be very creative. Anything even slightly subpar in the creativity region, even if it is your own original content, will fail (trust me, I've had my share of failed attempts). The problem with this is because the subreddit has seen dozens of others of very similar posts of whatever you think is a \"little bit\" creative. Many members of the subreddit have posted \"semi-creative\" content before you, trust me. My tips for doing this are:\n\n- leverage your own skills - are you an expert in skills related to the subreddit, an artist, a programmer, are you a great organizer of content or ideas - do you have any skill that could be used in a helpful way by members of the subreddit?\n- spend a while on the subreddit, take notes of what posts do well (of the type of post you think you can make - info post) my two best have been on /r/wallstreetbets because I've been getting into investing and the market a lot recently, and setting aside the jokes and memes (of which I am a prime contributor), I think there is a lot of correct information on the subreddit\n- get creative - can you combine some ideas that members of the subreddit won't expect or will be funny, no matter what you do, I think the key point is to bring something new. Perhaps slightly with this idea is that a bonus point is if it is something - something completely new is almost always good, but a topic that has just happened recently or is relevant to current subreddit and hasn't been discussed is a golden opportunity\n- a good test is to check if your rushing about an idea - if you _are_, I would guess it is likely an idea many other people are or have posted about. I realized I wasn't rushing with creating my posts, because I knew they were so creative that nobody would come close to posting anything like it.\n\n# 2. Pick your Skill and Leverage It!\n\nI selected my art and graphic design skills as my meme / post advantages. (You can examples of my previous digital (and hand made) artwork at (https://chrisfrewin.design)[https://chrisfrewin.design])\n\nThe fun part for me was that these 'memes' were just pieces of art I wanted to create anyway - the advantage is that they could of course be sweet, sweet karma generators.\n\n# 3. Publish it! (and Post Title selection)\n\nOnce you're satisfied with your content your going to post (whatever it be video, blog post, image, text, whatever), its time to post! I've found that despite what reddit recommends, as long as your title is somewhat creative, your super awesome creative post will do just fine. Also a note with post timing / and time of day of the post, I've found it doesn't really matter - I just post whenever my post is ready, I don't do any special timings. That first one for example was posted late on a Friday evening, and the S&P Map on a  If it is truly a front page post, it will gain traction regardless - I suppose the posting time of day could control exactly _how_ fast.\n\nAs a final check you can review your own confidence at posting time - if you find yourself not worried at all, it's going to do fine. If it's a winner, you'll know soon enough as you are bombarded with the replies to your post. I left my S&P meme for 4 hours and when I can back to check on reddit I was welcomed with over 1300 upvotes and 60+ post replies.\n\nIf there is interest, I can go through my process of the technical graphic design portion of how I built these posts (I use Gimp and Inkscape - yes I'm a cheapass nerd who uses open source graphic design software 🤓)\n\nHope you enjoyed and picked up a tip or two and got a laugh out of the memes!\n\n-Cheers! 🍺\n",
+        "contentDigest": "6a844e92dd3f83c3e3cd4b0737a2823f",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "How to Create Posts That Reach the Top of the Front Page on Subreddits (And How I Created Two of Them for /r/wallstreetbets)",
+        "date": "2018-04-08",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md",
+      "fields": {
+        "slug": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7b4363b453fae0b4af4b6a27609b03d9",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png",
+      "extension": "png",
+      "size": 40695,
+      "prettySize": "40.7 kB",
+      "modifiedTime": "2018-04-07T16:07:02.192Z",
+      "accessTime": "2018-04-07T17:31:30.051Z",
+      "changeTime": "2018-04-07T17:31:41.915Z",
+      "birthTime": "2018-04-07T16:07:02.188Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "base": "rowrowrow.png",
+      "ext": ".png",
+      "name": "rowrowrow",
+      "relativeDirectory": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602609710,
+      "blocks": 80,
+      "atimeMs": 1523122290051.1045,
+      "mtimeMs": 1523117222192.3818,
+      "ctimeMs": 1523122301914.6548,
+      "birthtimeMs": 1523117222187.5972,
+      "atime": "2018-04-07T17:31:30.051Z",
+      "mtime": "2018-04-07T16:07:02.192Z",
+      "ctime": "2018-04-07T17:31:41.915Z",
+      "birthtime": "2018-04-07T16:07:02.188Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/rowrowrow.png absPath of file",
+      "internal": {
+        "contentDigest": "7b4363b453fae0b4af4b6a27609b03d9",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3933adf9db8b9e158d0112ac677b67e1",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png",
+      "extension": "png",
+      "size": 45103,
+      "prettySize": "45.1 kB",
+      "modifiedTime": "2018-04-07T16:06:49.877Z",
+      "accessTime": "2018-04-07T17:31:48.399Z",
+      "changeTime": "2018-04-07T17:31:58.048Z",
+      "birthTime": "2018-04-07T16:06:49.873Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "base": "deargod.png",
+      "ext": ".png",
+      "name": "deargod",
+      "relativeDirectory": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602609671,
+      "blocks": 96,
+      "atimeMs": 1523122308398.6924,
+      "mtimeMs": 1523117209877.284,
+      "ctimeMs": 1523122318048.0593,
+      "birthtimeMs": 1523117209873.0317,
+      "atime": "2018-04-07T17:31:48.399Z",
+      "mtime": "2018-04-07T16:06:49.877Z",
+      "ctime": "2018-04-07T17:31:58.048Z",
+      "birthtime": "2018-04-07T16:06:49.873Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/deargod.png absPath of file",
+      "internal": {
+        "contentDigest": "3933adf9db8b9e158d0112ac677b67e1",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5d1ebf59183e0c1cadd871b444395d20",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png",
+      "extension": "png",
+      "size": 1303496,
+      "prettySize": "1.3 MB",
+      "modifiedTime": "2018-04-07T10:50:45.059Z",
+      "accessTime": "2018-04-07T17:39:02.837Z",
+      "changeTime": "2018-04-07T17:39:05.050Z",
+      "birthTime": "2018-04-07T10:44:03.429Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "base": "sandp_parody.png",
+      "ext": ".png",
+      "name": "sandp_parody",
+      "relativeDirectory": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602613555,
+      "blocks": 4224,
+      "atimeMs": 1523122742836.5051,
+      "mtimeMs": 1523098245059.3933,
+      "ctimeMs": 1523122745049.5378,
+      "birthtimeMs": 1523097843429.2542,
+      "atime": "2018-04-07T17:39:02.837Z",
+      "mtime": "2018-04-07T10:50:45.059Z",
+      "ctime": "2018-04-07T17:39:05.050Z",
+      "birthtime": "2018-04-07T10:44:03.429Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/sandp_parody.png absPath of file",
+      "internal": {
+        "contentDigest": "5d1ebf59183e0c1cadd871b444395d20",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "8828d8b0302e0f37976816b6ae0b941f",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png",
+      "relativePath": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png",
+      "extension": "png",
+      "size": 390344,
+      "prettySize": "390 kB",
+      "modifiedTime": "2018-03-23T23:03:39.280Z",
+      "accessTime": "2018-04-07T17:41:07.771Z",
+      "changeTime": "2018-04-07T17:41:08.850Z",
+      "birthTime": "2018-03-23T23:03:37.125Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "base": "robinhood_parody.png",
+      "ext": ".png",
+      "name": "robinhood_parody",
+      "relativeDirectory": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602613723,
+      "blocks": 768,
+      "atimeMs": 1523122867770.9685,
+      "mtimeMs": 1521846219279.8127,
+      "ctimeMs": 1523122868849.758,
+      "birthtimeMs": 1521846217125.4849,
+      "atime": "2018-04-07T17:41:07.771Z",
+      "mtime": "2018-03-23T23:03:39.280Z",
+      "ctime": "2018-04-07T17:41:08.850Z",
+      "birthtime": "2018-03-23T23:03:37.125Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/robinhood_parody.png absPath of file",
+      "internal": {
+        "contentDigest": "8828d8b0302e0f37976816b6ae0b941f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ef4a72fc31244bc97e9c30688518e9da",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands",
+      "relativePath": "some-tasty-bash-profile-commands",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-04-07T17:48:48.349Z",
+      "accessTime": "2018-04-07T18:45:13.438Z",
+      "changeTime": "2018-04-07T17:48:48.349Z",
+      "birthTime": "2018-04-07T17:48:39.168Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "some-tasty-bash-profile-commands",
+      "ext": "",
+      "name": "some-tasty-bash-profile-commands",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602616148,
+      "blocks": 0,
+      "atimeMs": 1523126713437.9023,
+      "mtimeMs": 1523123328348.7495,
+      "ctimeMs": 1523123328348.7495,
+      "birthtimeMs": 1523123319168.0408,
+      "atime": "2018-04-07T18:45:13.438Z",
+      "mtime": "2018-04-07T17:48:48.349Z",
+      "ctime": "2018-04-07T17:48:48.349Z",
+      "birthtime": "2018-04-07T17:48:39.168Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "851e0723a008d0eae5b2881edce8bb47",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md",
+      "relativePath": "some-tasty-bash-profile-commands/index.md",
+      "extension": "md",
+      "size": 14510,
+      "prettySize": "14.5 kB",
+      "modifiedTime": "2018-04-07T18:32:07.091Z",
+      "accessTime": "2018-04-07T18:32:07.090Z",
+      "changeTime": "2018-04-07T18:32:07.091Z",
+      "birthTime": "2018-04-07T17:48:48.349Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "some-tasty-bash-profile-commands",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8602616156,
+      "blocks": 32,
+      "atimeMs": 1523125927090.4763,
+      "mtimeMs": 1523125927090.6128,
+      "ctimeMs": 1523125927090.6128,
+      "birthtimeMs": 1523123328348.7363,
+      "atime": "2018-04-07T18:32:07.090Z",
+      "mtime": "2018-04-07T18:32:07.091Z",
+      "ctime": "2018-04-07T18:32:07.091Z",
+      "birthtime": "2018-04-07T17:48:48.349Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better\ndate: \"2018-04-09\"\ndraft: false\n---\n\n# Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!\n\nThis post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don't necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? 😄)\n\nFor the following machines, the alias file can be found in these locations:\n\nMac: `~/.bash_profile`\n\nLinux: `~/.bashrc`\n\nRaspberry Pi (with raspbian and other linux style builds): `~/.bashrc`\n\nHere's what I've got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been _clearly_ modified, they won't work - what do you think I am, an idiot? 😂😂😂 )\n\n```bash\n# ~/.bashrc: executed by bash(1) for non-login shells.\n# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)\n# for examples\n\n# If not running interactively, don't do anything\ncase $- in\n    *i*) ;;\n      *) return;;\nesac\n\n# don't put duplicate lines or lines starting with space in the history.\n# See bash(1) for more options\nHISTCONTROL=ignoreboth\n\n# append to the history file, don't overwrite it\nshopt -s histappend\n\n# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)\nHISTSIZE=1000\nHISTFILESIZE=2000\n\n# check the window size after each command and, if necessary,\n# update the values of LINES and COLUMNS.\nshopt -s checkwinsize\n\n# If set, the pattern \"**\" used in a pathname expansion context will\n# match all files and zero or more directories and subdirectories.\n#shopt -s globstar\n\n# make less more friendly for non-text input files, see lesspipe(1)\n[ -x /usr/bin/lesspipe ] && eval \"$(SHELL=/bin/sh lesspipe)\"\n\n# fancy directory prompt\nPS1='\\[\\033[01;32m\\]\\u@\\h\\[\\033[01;34m\\] [\\w]\\[\\033[00m\\] '\n\n# Add an \"alert\" alias for long running commands.  Use like so:\n#   sleep 10; alert\nalias alert='notify-send --urgency=low -i \"$([ $? = 0 ] && echo terminal || echo error)\" \"$(history|tail -n1|sed -e '\\''s/^\\s*[0-9]\\+\\s*//;s/[;&|]\\s*alert$//'\\'')\"'\n\n# Alias definitions.\n# You may want to put all your additions into a separate file like\n# ~/.bash_aliases, instead of adding them here directly.\n# See /usr/share/doc/bash-doc/examples in the bash-doc package.\n\nif [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi\n\n# enable programmable completion features (you don't need to enable\n# this, if it's already enabled in /etc/bash.bashrc and /etc/profile\n# sources /etc/bash.bashrc).\nif ! shopt -oq posix; then\n  if [ -f /usr/share/bash-completion/bash_completion ]; then\n    . /usr/share/bash-completion/bash_completion\n  elif [ -f /etc/bash_completion ]; then\n    . /etc/bash_completion\n  fi\nfi\n\n\n##########################################\n### BEGIN CUSTOM ALIASES AND FUNCTIONS ###\n##########################################\n\n###########\n# aliases #\n###########\n\n# productivity\nalias prof='atom /Users/chris/.bash_profile' # opens .bash_profile for editing\nalias s='source /Users/chris/.bash_profile' # sources .bash_profile (should be done every time after changing profile)\nalias lk='ls -lhkart'\nalias show='open .'\nalias back='cd ..'\nalias prev='cd -'\nalias home='cd'\nalias boot='sudo reboot'\nalias shut='sudo shutdown -h now'\nalias hidedesk='gsettings set org.gnome.desktop.background show-desktop-icons false'\nalias showdesk='gsettings set org.gnome.desktop.background show-desktop-icons true'\nalias de='xdg-open /Users/chris/Desktop/DE.desktop'\nalias en='xdg-open /Users/chris/Desktop/EN.desktop'\nalias duo='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ekajaiihjemkjldcienbdonodmbiklnb'\nalias whats='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm'\nalias sputnik='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'\nalias robo='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'\nalias roboton='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'\nalias slack='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=niopebapoomkfgpbhanlddcancjkjnkl'\nalias sd='down;show;prev'\nalias ipy='ipython'\nalias py='python'\nalias youtubemp3='youtube-dl --extract-audio --audio-format mp3'\nalias getlines='find . -name \"*.*\" | xargs wc -l'\nalias disabledchromium='chromium-browser --disable-web-security --user-data-dir'\nalias phpserver='php -S localhost:8000'\nalias phpserver2='php -S localhost:8001'\nalias serv='cd; cd personalwebsite; phpserver'\nalias feldkirch='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=mnmkkpdekllmopechbcfhhhdojafalin'\nalias coderesources='cd /Users/chris/Documents/coderesources'\nalias codestuff='cd /Users/chris/Documents/codestuff'\nalias gladysroot='cd /usr/local/lib/node_modules/gladys'\nalias studio='sh /usr/local/android-studio/bin/studio.sh'\nalias pl='perl'\nalias haskell='ghci'\nalias nexus='emulator @Nexus_5X_API_26'\nalias iphone5='/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID EF585900-1164-4AF9-90FD-26B1DEC3DB66'\nalias iphone6='/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID 3DC7A4A6-489F-4305-AFE8-53A8D1302E65'\nalias nodecode='cd /Users/chris/Documents/codestuff/node'\nalias gittelluser='git config --global user.email'\nalias nodesass='node-sass -wo ./src/styles ./src/styles-scss'\nalias pj='cd /Users/chris/projects'\nalias heroku-skillscout='heroku git:remote -a skillscout;git commit .;git push heroku master'\nalias usbs='cd /Volumes/'\nalias art='cd /Users/chris/Documents/Art'\nalias datasets='cd /Users/chris/datasets'\nalias npmgloballist='npm list -g --depth=0'\n\n# folder locations\nalias cfpaper='cd /Users/chris/cf_tracer'\nalias down='cd /Users/chris/Downloads'\nalias desk='cd /Users/chris/Desktop'\nalias sap='cd /Users/chris/Documents/sap'\nalias pic='cd /Users/chris/Pictures'\nalias trans='ding'\nalias lookup='grep -iR'\nalias skimonitor='cd /Users/chris/personalwebsite/projects/skimonitor/skimonitor/webapp'\nalias raphelper='cd /Users/chris/personalwebsite/projects/raphelper/raphelper/webapp'\nalias ui5sdk='cd /Users/chris/Documents/OpenUI5/openui5-sdk-1.38.5'\nalias play='cd /Users/chris/playground'\n\n# Pi Logins - make sure to change IP when router IP changes!\nalias pilocal='ssh pi@192.168.0.16'\nalias pi='ssh pi@123.123.123.123 -p 22'\nalias pidesk='ssh -XC pi@192.168.0.16 x2x -north -to :0.0'\n\n# Linux Server Logins - make sure to change IP when router IP changes!\nalias delllocal='ssh chris@192.168.0.20 -p 55555'\nalias dell='ssh chris@123.123.123.123 -p 55555'\n\n# Yoga Raiblocks\nalias yoga='ssh chris@192.168.0.12 -p 44444'\n\n# Devon's Server\nalias stock='ssh devonsserverwhichiwontshowyouthenameorhost@host.com -p 24'\n\nalias unlockiphone='sudo chmod 777 /var/lib/lockdown'\n\nalias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/'\n\nalias vncconnect='ssh -L 5900:localhost:5900 pi@123.123.123.123 -p 1234'\n\nfunction droiddev() {\n    galaxy;\n    react-native start;\n    react-native run-android;\n}\n\nfunction vid2mp4() {\n    ffmpeg -i $1 -vcodec mpeg4 $2\n}\n\nfunction video2x() {\n    ffmpeg -i $1 -vcodec h264 -an -vf \"fps=60, setpts=0.50*PTS\" $2\n}\n\n# speed up input video by 4, export as 'outfast.ogv'\nfunction video4x() {\n    ffmpeg -i $1 -vcodec h264 -an -vf \"fps=60, setpts=0.25*PTS\" $2\n}\n\nfunction video10x() {\n    ffmpeg -i $1 -vcodec h264 -an -vf \"fps=60, setpts=0.1*PTS\" $2\n}\n\n# put bdc data in correct format\nfunction bdc() {\n    awk '{for(i=1;i<=NF;i++)printf(\"\\\"%s\\\" \",$i);printf(\"\\n\");}' $1 > temp1; # wrap all words in double quotes\n    cat temp1 | tr '\"' \"'\" > temp2; # translate all double quotes to single quotes\n    awk '{ if ($3 != \"\") print \"PERFORM bdcdaten USING:\\n\\t\" $3 \" \" $1 \" \" $2 \",\"; else print \"\\t\\t\" \"\\47 \\47 \" $0\",\" }' temp2 > temp3; # if there is no 3rd argument print PERFORM statement\n    # cat temp3 | sed 's/ ,/,/' > bdcoutput.txt;\n    # rm temp1;\n    # rm temp2;\n    # rm temp3;\n    # echo \"Done.\";\n}\n\n# $2 and $3 MUST be in '01:00:00' format, $1 and $4 are file names\nfunction splitvid() {\n    ffmpeg -v quiet -y -i $1 -vcodec copy -acodec copy -ss $2 -t $3 -sn $4\n}\n\nfunction fm4() {\n    if [ \"$1\" = \"on\" ]\n        then\n            ssh pi@192.168.0.16 'tmux; fm4; exit; exit'\n    fi\n    if [ \"$1\" = \"off\" ]\n        then\n            ssh pi@192.168.0.16 'tmux kill-session'\n    fi\n}\n\nfunction lime() {\n    subl $1 & #  '&' push everything to background\n}\n\nfunction mynetworks() {\n    # first lists all networks, then grep sorts for just the id and psk stuff. finally sed puts a space between each set\n    echo ' '\n    sudo cat /etc/NetworkManager/system-connections/* | grep -Ew 'id|psk' | grep -v 'key' | sed '/psk/s/$/ \\n/'\n    echo ' '\n    echo ' '\n}\n\nfunction fixjunkynetworking() {\n    sudo modprobe -r rt2800pci\n    sudo modprobe -v rt2800pci nohwcrypt=1\n}\n\nfunction pushall() {\n    sudo git add .\n    sudo git commit --all\n    sudo git push --all\n}\n\nfunction showusb() {\n    cd /media/chris/Banner\n    show\n}\n\n# some git functinos because they're too damn long to remember\nfunction gitchguser() {\n    git config --global user.email $1\n}\n\n# personal improvement of this gist: https://gist.github.com/dergachev/4627207\nfunction mov2gif() {\n  width=$(mediainfo $1 | grep Width | tr ' Width:pixels' ' ' | sed 's/ //g') # get the height/width metadata, grep out the spaces and crap\n  height=$(mediainfo $1 | grep Height | tr ' Height:pixels' ' ' | sed 's/ //g')\n  dimensionString=$width # build a string to pass to the ffmpeg command\n  dimensionString+=\"x\"\n  dimensionString+=$height\n  echo \"Dimension determined as:\" $dimensionString # notify user of dimensions found\n  ffmpeg -i -nostats -loglevel 0 $1 -s $dimensionString -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $1.gif # silent mode\n  echo \"Saved gif as: $1.gif\" # saved gif name\n}\n\n#############################\n### ENVIRONMENT VARIABLES ###\n#############################\n\n# keys for twitter access keys\nexport EGGHEAD_TWITTER_BOT_CONSUMER_KEY=lulz123456\nexport EGGHEAD_TWITTER_BOT_CONSUMER_SECRET=lulz123456\nexport EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN=lulz123456\nexport EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN_SECRET=lulz123456\nexport EGGHEAD_TWITTER_BOT_NASA_API_KEY=lulz123456\n\n# google maps geocode API\nexport SKILLSCOUT_GOOGLE_GEOCODING_KEY=lulz123456\n\n# skillscout private postgresql tunnel server (local)\nexport SERVER_HOST=lulz123456\nexport SERVER_PORT=lulz123456\nexport SERVER_DB_PORT=lulz123456\nexport SERVER_USER=lulz123456\nexport SERVER_PASSWORD=lulz123456\n\n# skillscout private postgresql credentials\nexport PRIVATE_RAIBLOCKS_DB_NAME=lulz123456\nexport PRIVATE_RAIBLOCKS_DB_USER=lulz123456\nexport PRIVATE_RAIBLOCKS_DB_PASSWORD=lulz123456\nexport PRIVATE_RAIBLOCKS_DB_HOST=lulz123456\nexport PRIVATE_RAIBLOCKS_DB_PORT=lulz123456\n\n# skillscout website heroku postgresql DB\nexport SKILLSCOUT_DB_HOST=lulz123456\nexport SKILLSCOUT_DB_NAME=lulz123456\nexport SKILLSCOUT_DB_USER=lulz123456\nexport SKILLSCOUT_DB_PORT=lulz123456\nexport SKILLSCOUT_DB_PASSWORD=lulz123456\n\n# skillscout website mongo mLab DB\nexport SKILLSCOUT_MONGODB_USER=lulz123456\nexport SKILLSCOUT_MONGODB_PASSWORD=lulz123456\nexport SKILLSCOUT_MONGODB_HOST=lulz123456\nexport SKILLSCOUT_MONGODB_PORT=lulz123456\nexport SKILLSCOUT_MONGODB_DB_NAME=lulz123456\n\n# skillscout campaign - emails DB (heroku postrgesql)\nexport SKILLSCOUT_CAMPAIGN_DB_HOST=lulz123456\nexport SKILLSCOUT_CAMPAIGN_DB_NAME=lulz123456\nexport SKILLSCOUT_CAMPAIGN_DB_USER=lulz123456\nexport SKILLSCOUT_CAMPAIGN_DB_PORT=lulz123456\nexport SKILLSCOUT_CAMPAIGN_DB_PASSWORD=lulz123456\n\n# nlpchamps - postgresql database (just saving member's emails for now)\nexport NLP_CHAMPS_DB=lulz123456\nexport NLP_CHAMPS_DB_USER=lulz123456\nexport NLP_CHAMPS_DB_PASSWORD=lulz123456\nexport NLP_CHAMPS_DB_HOST=lulz123456\nexport NLP_CHAMPS_DB_PORT=lulz123456\n\n# export colors for mac\nexport CLICOLOR=1\nexport LSCOLORS=GxFxCxDxBxegedabagaced\n\n# android paths\nexport ANDROID_HOME=/Users/$USER/Library/Android/sdk\nexport PATH=${PATH}:${ANDROID_HOME}/emulator\nexport PATH=${PATH}:${ANDROID_HOME}/tools\n\n# default editor\nexport EDITOR=/usr/bin/nano\n\n# fucking homebrew\nexport PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH # for proper ipython linking\nexport PATH=\"/usr/local/opt/python/libexec/bin:$PATH\" # for proper python exectuble\n\nexport COSMIC_BUCKET=lulz123456\nexport COSMIC_READ_KEY=lulz123456\nexport COSMIC_WRITE_KEY=lulz123456\n\n# stripe payments key (TODO: copy to dell server!)\nexport STRIPE_SECRET_KEY=lulz123456\nexport STRIPE_PUBLISHABLE_KEY=lulz123456\n\n# stripe payments test\nexport STRIPE_SECRET_KEY_TEST=lulz123456\nexport STRIPE_PUBLISHABLE_KEY_TEST=lulz123456\n\n# raspberry pi password and user/host\nexport RASPBERRY_PI_SSH_PASSWORD=lulz123456\nexport RASPBERRY_PI_USER_AND_HOST=lulz123456\n\n# npm packages\nexport PATH=\"$HOME/.npm-packages/bin:$PATH\"\n\n# google cloud platform\nsource '/Users/chris/opensource/google-cloud-sdk/completion.bash.inc'\nsource '/Users/chris/opensource/google-cloud-sdk/path.bash.inc'\n\n# added by Anaconda2 5.0.1 installer\nexport PATH=\"/Users/chris/anaconda2/bin:$PATH\"\n\nexport NVM_DIR=\"/Users/chris/.nvm\"\n[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"  # This loads nvm\n\n# TORCH\nexport PATH=$PATH:/Users/chris/torch/install/bin\n```\n\nFor those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn't have to be that 'sharp'! 😂), you may have noticed I even have an alias for opening the bash profile itself (`prof`) and sourcing the profile (`s`) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):\n\n```bash\nalias prof='atom /Users/chris/.bash_profile' # opens .bash_profile for editing\nalias s='source /Users/chris/.bash_profile' # sources .bash_profile (should be done every time after changing profile)\n```\n\nSo yes, you could say I modify and add stuff to my bash profile quite often - I recommend you do it too! Improve your workflow and ease of commanding a bash terminal!\n\n-Cheers! 🍺\n\nChris\n",
+        "contentDigest": "86d0c50403baf699c116328c3f1df601",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better",
+        "date": "2018-04-09",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md",
+      "fields": {
+        "slug": "/some-tasty-bash-profile-commands/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -4832,7 +5398,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1521311154449,
+      "updatedAt": 1523126713928,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -4841,7 +5407,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d38fe853d8dd43511ed1ba0aa62952c9",
+        "contentDigest": "21ed9df084c3202d2c4777d1ebdee8df",
         "owner": "internal-data-bridge"
       }
     },
@@ -4855,7 +5421,7 @@
       "context": {
         "slug": "/abap-push-and-message-channels/"
       },
-      "updatedAt": 1521311154466,
+      "updatedAt": 1523126713951,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4864,7 +5430,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e398521c1358841a9c7babc311cd19ec",
+        "contentDigest": "8befa2561fb97cd8d7357848a8503a4d",
         "owner": "internal-data-bridge"
       }
     },
@@ -4878,7 +5444,7 @@
       "context": {
         "slug": "/an-npm-christmas-easter-egg/"
       },
-      "updatedAt": 1521311154467,
+      "updatedAt": 1523126713951,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4887,7 +5453,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "50cffdf0258da3c562d12a384cacc1f6",
+        "contentDigest": "48c9316e728e70d2879e9120a545700f",
         "owner": "internal-data-bridge"
       }
     },
@@ -4901,7 +5467,7 @@
       "context": {
         "slug": "/a-toast-to-full-stack-developers/"
       },
-      "updatedAt": 1521311154467,
+      "updatedAt": 1523126713952,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4910,7 +5476,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ffbb39ec5904875ee774fe37a87c97d9",
+        "contentDigest": "d81c30e31473a4edd311cb2862cc8fce",
         "owner": "internal-data-bridge"
       }
     },
@@ -4924,7 +5490,7 @@
       "context": {
         "slug": "/debugging-abap-with-a-sap-shortcut/"
       },
-      "updatedAt": 1521311154468,
+      "updatedAt": 1523126713952,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4933,7 +5499,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "224b65d36105b3c543b17f4d73346c0d",
+        "contentDigest": "1c25a213bc332656c4435e972b78db32",
         "owner": "internal-data-bridge"
       }
     },
@@ -4947,7 +5513,7 @@
       "context": {
         "slug": "/building-raiblocks-charts/"
       },
-      "updatedAt": 1521311154468,
+      "updatedAt": 1523126713952,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4956,7 +5522,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e9ea83c2bf6cdc1a6b90e1cf22aeb07b",
+        "contentDigest": "578356cfb4937077af116256df978ab7",
         "owner": "internal-data-bridge"
       }
     },
@@ -4970,7 +5536,7 @@
       "context": {
         "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
       },
-      "updatedAt": 1521311154468,
+      "updatedAt": 1523126713953,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -4979,7 +5545,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cb2002e80fe48f5a5372b6ec1d14275e",
+        "contentDigest": "40fff5666848ba481094748c2a108337",
         "owner": "internal-data-bridge"
       }
     },
@@ -4993,7 +5559,7 @@
       "context": {
         "slug": "/colors-for-sap-web-ide/"
       },
-      "updatedAt": 1521311154469,
+      "updatedAt": 1523126713953,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5002,7 +5568,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fd3744715cdaf4a4208022d9f4335a22",
+        "contentDigest": "491876f7c9c80ad3019716183c1a2bd2",
         "owner": "internal-data-bridge"
       }
     },
@@ -5016,7 +5582,7 @@
       "context": {
         "slug": "/dropdowns-in-readmes/"
       },
-      "updatedAt": 1521311154469,
+      "updatedAt": 1523126713954,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5025,7 +5591,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a55ddb5d55c21b782a6d9b583b3c169b",
+        "contentDigest": "9abfb38ec91fcd973bcbb8e1f76ff586",
         "owner": "internal-data-bridge"
       }
     },
@@ -5039,7 +5605,7 @@
       "context": {
         "slug": "/detailed-look-at-bdc-in-abap/"
       },
-      "updatedAt": 1521311154469,
+      "updatedAt": 1523126713954,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5048,7 +5614,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7face1eb61259b5abbc0f2e543fe20d7",
+        "contentDigest": "132b0670da868ddecb33be0d3ac4d65f",
         "owner": "internal-data-bridge"
       }
     },
@@ -5062,7 +5628,7 @@
       "context": {
         "slug": "/ethereum-developers-toolbelt/"
       },
-      "updatedAt": 1521311154470,
+      "updatedAt": 1523126713954,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5071,7 +5637,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aed199dc6d9810c7db2cd1374b713a8e",
+        "contentDigest": "91c68f9282686bc56b66c9780b612d54",
         "owner": "internal-data-bridge"
       }
     },
@@ -5085,7 +5651,7 @@
       "context": {
         "slug": "/final-say-bitcoin/"
       },
-      "updatedAt": 1521311154470,
+      "updatedAt": 1523126713955,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5094,7 +5660,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1c7aaeb061f61dacbc22f70a28ec926b",
+        "contentDigest": "47758bd9f4f34aa94d4212c8977c9692",
         "owner": "internal-data-bridge"
       }
     },
@@ -5108,7 +5674,7 @@
       "context": {
         "slug": "/hello-world/"
       },
-      "updatedAt": 1521311154470,
+      "updatedAt": 1523126713955,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5117,7 +5683,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1752e17c2fba8ce749141d544a24e52a",
+        "contentDigest": "8c8d27caa344aa11f3383d35d7421cef",
         "owner": "internal-data-bridge"
       }
     },
@@ -5131,7 +5697,7 @@
       "context": {
         "slug": "/hot-linking-to-lines-in-github/"
       },
-      "updatedAt": 1521311154471,
+      "updatedAt": 1523126713956,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5140,7 +5706,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3086506a679d6a1bb564c5a7bcb7eb89",
+        "contentDigest": "158237776184b8029c56abc9a8e71b90",
         "owner": "internal-data-bridge"
       }
     },
@@ -5154,7 +5720,7 @@
       "context": {
         "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
       },
-      "updatedAt": 1521311154471,
+      "updatedAt": 1523126713956,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5163,7 +5729,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "84ee0d82c5062f0ff23f11ca97696d79",
+        "contentDigest": "c1356e9d49e445aff0a57bfae9fa1469",
         "owner": "internal-data-bridge"
       }
     },
@@ -5177,7 +5743,7 @@
       "context": {
         "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
       },
-      "updatedAt": 1521311154471,
+      "updatedAt": 1523126713957,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5186,7 +5752,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0955b3b666a9406668ba31ef685a917c",
+        "contentDigest": "ab20d0e6ae81ceb32af43d0d3fb63ae8",
         "owner": "internal-data-bridge"
       }
     },
@@ -5200,7 +5766,7 @@
       "context": {
         "slug": "/warn-sap-users-of-locked-objects/"
       },
-      "updatedAt": 1521311154472,
+      "updatedAt": 1523126713957,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5209,7 +5775,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f28446b0bdc01ff5524a7a62281471de",
+        "contentDigest": "eb4267cad23c8b0cea7c4f4973c2cecb",
         "owner": "internal-data-bridge"
       }
     },
@@ -5223,7 +5789,7 @@
       "context": {
         "slug": "/sending-windows-commands-from-sap-abap/"
       },
-      "updatedAt": 1521311154472,
+      "updatedAt": 1523126713958,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5232,7 +5798,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6578695ddc90c152a1d094b0cf63e2b7",
+        "contentDigest": "15cda13a305521d0147345b55e67e3d4",
         "owner": "internal-data-bridge"
       }
     },
@@ -5246,7 +5812,7 @@
       "context": {
         "slug": "/laptop-stickers/"
       },
-      "updatedAt": 1521311154472,
+      "updatedAt": 1523126713959,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5255,7 +5821,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6a5c5ae86174e5bec93a9bcf18b29df2",
+        "contentDigest": "6f7c0604b328d6f85cd2382c2a08ab88",
         "owner": "internal-data-bridge"
       }
     },
@@ -5269,7 +5835,7 @@
       "context": {
         "slug": "/introducing-chrisfrewin-productions/"
       },
-      "updatedAt": 1521311154473,
+      "updatedAt": 1523126713959,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -5278,7 +5844,76 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2594247c91b373fac28c2950cf65f436",
+        "contentDigest": "c227443e0c82d1d5427846e27b83c90a",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /i-set-aside-1000-to-learn-options-trading/": {
+      "layout": "index",
+      "jsonName": "i-set-aside-1000-to-learn-options-trading.json",
+      "internalComponentName": "ComponentISetAside1000ToLearnOptionsTrading",
+      "path": "/i-set-aside-1000-to-learn-options-trading/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/i-set-aside-1000-to-learn-options-trading/"
+      },
+      "updatedAt": 1523126713959,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /i-set-aside-1000-to-learn-options-trading/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d830f35530d04afc35a24a39574b3f7f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/": {
+      "layout": "index",
+      "jsonName": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json",
+      "internalComponentName": "ComponentCreatingFrontPagePostsOnSubbredditAndHowICreatedTwoOfThemForWallstreetbets",
+      "path": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+      },
+      "updatedAt": 1523126713960,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5a84ca5c23c809a603e21bf23c2a03c3",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /some-tasty-bash-profile-commands/": {
+      "layout": "index",
+      "jsonName": "some-tasty-bash-profile-commands.json",
+      "internalComponentName": "ComponentSomeTastyBashProfileCommands",
+      "path": "/some-tasty-bash-profile-commands/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/some-tasty-bash-profile-commands/"
+      },
+      "updatedAt": 1523126713960,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /some-tasty-bash-profile-commands/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7f2eeb79495f7abbda542fd78e5e823d",
         "owner": "internal-data-bridge"
       }
     },
@@ -5290,7 +5925,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1521311154501,
+      "updatedAt": 1523126713990,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -5299,7 +5934,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ade97f70d0dac657580a08430d31c8d1",
+        "contentDigest": "c98cdb85c31ed74fb607525588702a18",
         "owner": "internal-data-bridge"
       }
     }
@@ -5330,7 +5965,10 @@
         "/sending-windows-commands-from-sap-abap/",
         "/laptop-stickers/",
         "/",
-        "/introducing-chrisfrewin-productions/"
+        "/introducing-chrisfrewin-productions/",
+        "/i-set-aside-1000-to-learn-options-trading/",
+        "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/",
+        "/some-tasty-bash-profile-commands/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file >>> MarkdownRemark": [
         "/abap-push-and-message-channels/"
@@ -5388,6 +6026,15 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/introducing-chrisfrewin-productions/index.md absPath of file >>> MarkdownRemark": [
         "/introducing-chrisfrewin-productions/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/i-set-aside-1000-to-learn-options-trading/index.md absPath of file >>> MarkdownRemark": [
+        "/i-set-aside-1000-to-learn-options-trading/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/index.md absPath of file >>> MarkdownRemark": [
+        "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/some-tasty-bash-profile-commands/index.md absPath of file >>> MarkdownRemark": [
+        "/some-tasty-bash-profile-commands/"
       ]
     },
     "connections": {
