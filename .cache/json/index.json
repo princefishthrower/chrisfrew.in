@@ -9,6 +9,19 @@
             "edges": [
                 {
                     "node": {
+                        "excerpt": "Google Cloud I’m torn most of the time about using Google Cloud APIs - on one hand, they are a group of some of the best APIs on the web…",
+                        "fields": {
+                            "slug": "/using-google-clouds-text-to-speech-machine-learning-api/"
+                        },
+                        "frontmatter": {
+                            "date": "14 April, 2018",
+                            "title": "Using Google Cloud's Text To Speech Machine Learning API",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…",
                         "fields": {
                             "slug": "/some-tasty-bash-profile-commands/"

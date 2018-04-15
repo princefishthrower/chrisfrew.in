@@ -161,6 +161,13 @@
         "path": "/some-tasty-bash-profile-commands/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "using-google-clouds-text-to-speech-machine-learning-api.json",
+        "path": "/using-google-clouds-text-to-speech-machine-learning-api/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

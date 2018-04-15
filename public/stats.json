@@ -61,8 +61,8 @@
       "path---warn-sap-users-of-locked-objects-75441404d29e1ef34e32.js.map"
     ],
     "path---index": [
-      "path---index-4b663033fc819b5b334b.js",
-      "path---index-4b663033fc819b5b334b.js.map"
+      "path---index-7a41b167187ea54f4315.js",
+      "path---index-7a41b167187ea54f4315.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-0066ee9e57cfc60b3b58.js",
@@ -94,6 +94,10 @@
       "path---i-set-aside-1000-to-learn-options-trading-1c20e71379b3bea15aba.js",
       "path---i-set-aside-1000-to-learn-options-trading-1c20e71379b3bea15aba.js.map"
     ],
+    "path---using-google-clouds-text-to-speech-machine-learning-api": [
+      "path---using-google-clouds-text-to-speech-machine-learning-api-c98d737bdfa3586b7089.js",
+      "path---using-google-clouds-text-to-speech-machine-learning-api-c98d737bdfa3586b7089.js.map"
+    ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
@@ -103,9 +107,9 @@
       "path---ethereum-developers-toolbelt-563705efc6c9d59dca6c.js.map"
     ],
     "app": [
-      "app-9bd240550952eb3219b7.js",
+      "app-c13085dc345468687ce0.js",
       "build-js-styles.css",
-      "app-9bd240550952eb3219b7.js.map",
+      "app-c13085dc345468687ce0.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

@@ -56,6 +56,8 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "some-tasty-bash-profile-commands.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/some-tasty-bash-profile-commands.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "using-google-clouds-text-to-speech-machine-learning-api.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/using-google-clouds-text-to-speech-machine-learning-api.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 

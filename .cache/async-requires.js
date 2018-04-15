@@ -55,6 +55,8 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "some-tasty-bash-profile-commands.json": require("gatsby-module-loader?name=path---some-tasty-bash-profile-commands!/Users/chris/projects/chrisfrew.in/.cache/json/some-tasty-bash-profile-commands.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "using-google-clouds-text-to-speech-machine-learning-api.json": require("gatsby-module-loader?name=path---using-google-clouds-text-to-speech-machine-learning-api!/Users/chris/projects/chrisfrew.in/.cache/json/using-google-clouds-text-to-speech-machine-learning-api.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
 }
 
