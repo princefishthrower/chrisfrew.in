@@ -6,7 +6,65 @@ import { rhythm, scale } from '../utils/typography'
 
 import Emoji from 'react-emoji-render';
 
+// if (window !== 'undefined') {
+//   import P5Wrapper from 'react-p5-wrapper';
+// }
+
+
 class Template extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      iWindowWidth: 0,
+      iWindowHeight: 0,
+      iCount: 0
+    }
+    this.sketch = this.sketch.bind(this);
+  }
+  sketch (p5) {
+    var that = this;
+    p5.setup = function () {
+      console.log(that.divElement.clientWidth);
+      console.log(that.divElement.clientHeight);
+      p5.createCanvas(that.divElement.clientWidth, that.divElement.clientHeight);
+    };
+
+    p5.myCustomRedrawAccordingToNewPropsHandler = function (props) {
+      if (props.rotation){
+        rotation = props.rotation * Math.PI / 180;
+      }
+    };
+
+    p5.draw = function () {
+      if (p5.mouseIsPressed) {
+            p5.fill(0);
+          } else {
+            switch (that.state.iCount) {
+              case 1:
+                p5.fill('#F91970');
+                break;
+              case 2:
+                p5.fill('#67D9EE');
+                break;
+              case 3:
+                p5.fill('#A5E444')
+                break;
+            }
+            that.state.iCount++;
+            if (that.state.iCount === 4) {
+              that.state.iCount = 1;
+            }
+          }
+          p5.ellipse(p5.mouseX, p5.mouseY, 20, 20);
+    };
+  }
+  // getSnapshotBeforeUpdate() {
+  //   // only at this point will the gatsby div be fully filled, so we can get the dimensions of our blog
+  //   let oGatsbyDiv = document.getElementById("___gatsby");
+  //   this.state.iWindowWidth = oGatsbyDiv.innerWidth;
+  //   this.state.iWindowHeight = oGatsbyDiv.innerHeight;
+  //   console.table(this.state);
+  // }
   render() {
     let sYear = new Date().getFullYear();
     let title = (
@@ -74,7 +132,10 @@ class Template extends React.Component {
         </h3>
       )
     }
+    // when read, this component goes right under that div there
+    // <P5Wrapper sketch={this.sketch} className="positionAbsolute"/>
     return (
+      <div ref={ (divElement) => this.divElement = divElement}>
       <Container
         style={{
           maxWidth: rhythm(24),
@@ -88,7 +149,6 @@ class Template extends React.Component {
         <br/>
         <br/>
         <br/>
-
         <footer>
           <h5>
             Copyright © {sYear} Chris Frewin.<br/>
@@ -106,7 +166,8 @@ class Template extends React.Component {
           </h5>
         </footer>
       </Container>
-    )
+    </div>
+    );
   }
 }
 

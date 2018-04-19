@@ -4,6 +4,8 @@ date: "2018-01-03"
 draft: false
 ---
 
+_Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._
+
 # First off, Congratulations! :confetti_ball:
 <sup>And a happy new year! (If you're viewing this in the summer or something, see the date!)</sup>
 ## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! :scream::scream::scream:
@@ -523,6 +525,7 @@ DATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,
             CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.
             APPEND es_entityset TO et_entityset.
           ENDIF.
+          lv_unit = 'MIN'. " 2018.04.19 - need to overwrite unit to MIN!
         ELSE.
           lv_output = lv_value. " copy over MIN value
         ENDIF.
@@ -870,6 +873,7 @@ Here's the code for calculating activities for process orders - _note the slight
           CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.
           APPEND es_entityset TO et_entityset.
         ENDIF.
+        lv_unit = 'MIN'. " 2018.04.19 - need to overwrite unit to MIN!
       ELSE.
         lv_output = lv_value. " copy over MIN value
       ENDIF.

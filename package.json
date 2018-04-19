@@ -29,6 +29,7 @@
     "gatsby-transformer-sharp": "^1.6.14",
     "lodash": "^4.17.4",
     "react-emoji-render": "^0.4.3",
+    "react-p5-wrapper": "0.0.4",
     "react-responsive-grid": "^0.3.4",
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
@@ -61,8 +62,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build && node deploy.js",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "transport": "node transport.js",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }

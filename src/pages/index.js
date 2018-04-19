@@ -7,7 +7,7 @@ import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
 require('prismjs/themes/prism-okaidia.css');
-// require('../styles/styles.css');
+require('../styles/styles.css');
 
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 
@@ -23,8 +23,8 @@ class BlogIndex extends React.Component {
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
-          console.log(node.frontmatter);
-          console.log(Boolean(node.frontmatter.draft));
+          // console.log(node.frontmatter);
+          // console.log(Boolean(node.frontmatter.draft));
           if (node.frontmatter.draft) {
             return; // if the markdown is still a 'draft post'
           }
