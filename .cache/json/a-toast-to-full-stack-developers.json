@@ -12,7 +12,7 @@
             "frontmatter": {
                 "title": "A Toast to Full Stack Developers",
                 "date": "December 12, 2017",
-                "draft": null
+                "draft": false
             }
         }
     },

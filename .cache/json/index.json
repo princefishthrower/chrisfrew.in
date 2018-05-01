@@ -276,7 +276,7 @@
                         "frontmatter": {
                             "date": "13 December, 2017",
                             "title": "Sending Windows Server Commands From SAP ABAP",
-                            "draft": null
+                            "draft": false
                         }
                     }
                 },
@@ -289,7 +289,7 @@
                         "frontmatter": {
                             "date": "12 December, 2017",
                             "title": "A Toast to Full Stack Developers",
-                            "draft": null
+                            "draft": false
                         }
                     }
                 },
@@ -302,7 +302,7 @@
                         "frontmatter": {
                             "date": "12 December, 2017",
                             "title": "Hello World - My First Post :)",
-                            "draft": null
+                            "draft": false
                         }
                     }
                 }

@@ -12,7 +12,7 @@
             "frontmatter": {
                 "title": "Sending Windows Server Commands From SAP ABAP",
                 "date": "December 13, 2017",
-                "draft": null
+                "draft": false
             }
         }
     },

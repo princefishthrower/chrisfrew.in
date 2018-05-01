@@ -1,7 +1,9 @@
 const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
+const fs = require('fs') // added to write metadata file
 const { createFilePath } = require('gatsby-source-filesystem')
+fs.writeFile('./static/metadata.json', '[', function(){console.log('metadata.json cleared!')}) // clear
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -18,6 +20,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   fields {
                     slug
                   }
+                  frontmatter {
+                    date(formatString: "DD MMMM, YYYY")
+                    title
+                    draft
+                  }
                 }
               }
             }
@@ -30,7 +37,24 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create blog posts pages.
+        var iCount = 1;
         _.each(result.data.allMarkdownRemark.edges, edge => {
+          console.log(edge.node.frontmatter);
+          console.log(iCount);
+          console.log(result.data.allMarkdownRemark.edges.length);
+          if (iCount === result.data.allMarkdownRemark.edges.length) {
+            fs.appendFile('./static/metadata.json',  JSON.stringify(edge.node.frontmatter) + "]", function (err) {
+              if (err) {
+                console.log(err);
+              }
+            });
+          } else {
+            fs.appendFile('./static/metadata.json', JSON.stringify(edge.node.frontmatter) + ",\n", function (err) {
+              if (err) {
+                console.log(err);
+              }
+            });
+          }
           createPage({
             path: edge.node.fields.slug,
             component: blogPost,
@@ -38,6 +62,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               slug: edge.node.fields.slug,
             },
           })
+          iCount = iCount + 1;
         })
       })
     )
