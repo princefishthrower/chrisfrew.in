@@ -39,9 +39,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Create blog posts pages.
         var iCount = 1;
         _.each(result.data.allMarkdownRemark.edges, edge => {
-          console.log(edge.node.frontmatter);
+          //console.log(edge.node.frontmatter);
           console.log(iCount);
-          console.log(result.data.allMarkdownRemark.edges.length);
+          // console.log(edge.node.fields);
+          // also carry over linked
+          edge.node.frontmatter.link = "https://chrisfrew.in" + edge.node.fields.slug;
+          console.log(edge.node.frontmatter);
           if (iCount === result.data.allMarkdownRemark.edges.length) {
             fs.appendFile('./static/metadata.json',  JSON.stringify(edge.node.frontmatter) + "]", function (err) {
               if (err) {
