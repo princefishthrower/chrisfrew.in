@@ -1,19 +1,22 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-
+const BlogPostTemplate = ({data, location, pathContext}) => {
+    const { markdownRemark: post } = data;
+    const { frontmatter, html } = post;
+    const { next, prev } = pathContext;
+    const { title, date } = frontmatter;
+    const siteTitle = data.site.siteMetadata.title;
+    
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+        <h1>{title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -22,9 +25,28 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+          <p>
+            { prev && (
+              <Link to={prev.frontmatter.relativeLink}>
+                Previous Post: {prev.frontmatter.title}
+              </Link>
+            )}
+          </p>
+          <p>
+            { next && (
+              <Link to={next.frontmatter.relativeLink}>
+                Next Post: {next.frontmatter.title}
+              </Link>
+            )}
+          </p>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -33,7 +55,6 @@ class BlogPostTemplate extends React.Component {
         <Bio />
       </div>
     )
-  }
 }
 
 export default BlogPostTemplate

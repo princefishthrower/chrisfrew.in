@@ -17,6 +17,30 @@
         }
     },
     "pathContext": {
-        "slug": "/hot-linking-to-lines-in-github/"
+        "slug": "/hot-linking-to-lines-in-github/",
+        "prev": {
+            "fields": {
+                "slug": "/dropdowns-in-readmes/"
+            },
+            "frontmatter": {
+                "date": "22 December, 2017",
+                "title": "Dropdowns in Markdown README's!",
+                "draft": false,
+                "link": "https://chrisfrew.in/dropdowns-in-readmes/",
+                "relativeLink": "/dropdowns-in-readmes/"
+            }
+        },
+        "next": {
+            "fields": {
+                "slug": "/hello-world/"
+            },
+            "frontmatter": {
+                "date": "12 December, 2017",
+                "title": "Hello World - My First Post :)",
+                "draft": false,
+                "link": "https://chrisfrew.in/hello-world/",
+                "relativeLink": "/hello-world/"
+            }
+        }
     }
 }

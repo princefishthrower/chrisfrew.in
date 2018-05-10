@@ -17,6 +17,30 @@
         }
     },
     "pathContext": {
-        "slug": "/laptop-stickers/"
+        "slug": "/laptop-stickers/",
+        "prev": {
+            "fields": {
+                "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+            },
+            "frontmatter": {
+                "date": "25 January, 2018",
+                "title": "Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input",
+                "draft": true,
+                "link": "https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/",
+                "relativeLink": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+            }
+        },
+        "next": {
+            "fields": {
+                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+            },
+            "frontmatter": {
+                "date": "17 January, 2018",
+                "title": "How to be an American living in Austria and working in Liechtenstein",
+                "draft": false,
+                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+            }
+        }
     }
 }

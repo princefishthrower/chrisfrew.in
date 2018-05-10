@@ -17,6 +17,19 @@
         }
     },
     "pathContext": {
-        "slug": "/a-toast-to-full-stack-developers/"
+        "slug": "/a-toast-to-full-stack-developers/",
+        "prev": null,
+        "next": {
+            "fields": {
+                "slug": "/building-raiblocks-charts/"
+            },
+            "frontmatter": {
+                "date": "30 January, 2018",
+                "title": "Interacting with a Blockchain - Building a Webapp for RaiBlocks",
+                "draft": true,
+                "link": "https://chrisfrew.in/building-raiblocks-charts/",
+                "relativeLink": "/building-raiblocks-charts/"
+            }
+        }
     }
 }

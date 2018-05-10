@@ -1,4 +1,821 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Mon, 07 May 2018 19:26:02 GMT</lastBuildDate><item><title><![CDATA[Using Google Cloud's Text To Speech Machine Learning API]]></title><description><![CDATA[Google Cloud I’m torn most of the time about using Google Cloud APIs - on one hand, they are a group of some of the best APIs on the web…]]></description><link>https://chrisfrew.in/using-google-clouds-text-to-speech-machine-learning-api/</link><guid isPermaLink="false">https://chrisfrew.in/using-google-clouds-text-to-speech-machine-learning-api/</guid><pubDate>Sat, 14 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Google Cloud&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Thu, 10 May 2018 15:30:48 GMT</lastBuildDate><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor]]></title><description><![CDATA[Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</guid><pubDate>Fri, 11 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Node.js Server Monitor&lt;/h1&gt;
+&lt;p&gt;In &lt;a href=&quot;&quot;&gt;my attempt to automate my suite of websites&lt;/a&gt;, I wanted to build a simple Node.js server that monitors all my live sites, and sends me an email. Basically the process is simply:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;‘cron’ job that every 30 seconds to ping all my websites&lt;/li&gt;
+&lt;li&gt;Check for 200 response from each, if not send email&lt;/li&gt;
+&lt;li&gt;If an even greater problem is found, i.e., the site doesn’t even return a 4** code, also send an email&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To accomplish this I utilized just three Node.js libraries:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http&lt;/code&gt;, to request the various sites I control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;node-schedule&lt;/code&gt;, to create a cron-like check&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nodemailer&lt;/code&gt;, a fantastic easy-to-use bare bones emailer, we’ll send an email when there is a non 2** HTTP response or simple a non-response error (see code below) (&lt;a href=&quot;https://medium.com/@manojsinghnegi/sending-an-email-using-nodemailer-gmail-7cfa0712a799&quot;&gt;there is a great medium post on an about 20ish liner in Node.js to get started&lt;/a&gt;, and the setting in gmail you have to change)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obviously this can be developed into a much more complex monitor, but for now I am happy as to how it runs.&lt;/p&gt;
+&lt;h1&gt;Improvements&lt;/h1&gt;
+&lt;p&gt;A few things I would like to improve with this Server:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Control the &lt;code&gt;const&lt;/code&gt; array from somwehere else, perhaps a management GUI where I can maintain sites&lt;/li&gt;
+&lt;li&gt;A global log class that could also be used in my Chrisfrew.in Productions Twitter Bot (coming soon in another post)&lt;/li&gt;
+&lt;li&gt;Increasing the information and complexity of what is sent in the emails?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Code&lt;/h1&gt;
+&lt;p&gt;As always, the most &lt;a href=&quot;https://github.com/frewinchristopher/chrisfrew.in-productions-monitor&quot;&gt;up-to-date code will be on GitHub&lt;/a&gt;, but as of this post, the full &lt;code&gt;index.js&lt;/code&gt; code is as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schedule &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;node-schedule&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; http &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodemailer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;nodemailer&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; aSitesToTrack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://chrisfrew.in&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://nlp-champs.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://sirenapparel.us&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://chrisfrewin.design&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://seelengefluester-tirol.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://xn--seelengeflster-tirol-yec.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; transporter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nodemailer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createTransport&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ service&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;gmail&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ auth&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        user&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;chrisfrew.in.productions@gmail.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        pass&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;CHRISFREW_IN_PRODUCTIONS_GMAIL_PASSWORD
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; mailOptions &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;chrisfrew.in.productions@gmail.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// sender address&lt;/span&gt;
+  to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;frewin.christopher@gmail.com&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// list of receivers&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 1. cron this program every 30 seconds&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schedule&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;scheduleJob&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;30 * * * * *&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;pingSites&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 2. loop through all sites&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;pingSites&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  aSitesToTrack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sSite&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    http&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sSite&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// make sure response is 200&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; statusCode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// destructure responsE integer&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; sStatusCode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; statusCode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// convert to string&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;sStatusCode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;charAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// first digit should be a 2&lt;/span&gt;
+        mailOptions&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;subject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Site Monitor Chrisfrew.in Productions: Non 2** HTTP Status code&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Subject line&lt;/span&gt;
+        mailOptions&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;The site &amp;lt;b&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; sSite &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;/b&gt; is returning a 404 HTTP error!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// plain text body&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;sendEmail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;404 email sent&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// major error&lt;/span&gt;
+      mailOptions&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;subject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Site Monitor Chrisfrew.in Productions: Site non-responsive&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Subject line&lt;/span&gt;
+      mailOptions&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;The site &amp;lt;b&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; sSite &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;/b&gt; is non responsive! (Not even a 404 response was found!)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// plain text body&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;sendEmail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Error email sent&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Site ping of &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; sSite &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; complete.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 3. send email if there was error&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sendEmail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  transporter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sendMail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mailOptions&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; info&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+         console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+         console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process]]></title><description><![CDATA[Links to All Parts of the Process Before I get into the description, you may be here just to get the links. Well, scroll no further: Part…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/</guid><pubDate>Thu, 10 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Links to All Parts of the Process&lt;/h1&gt;
+&lt;p&gt;Before I get into the description, you may be here just to get the links. Well, scroll no further:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;Part 2 of ???: Building a Node.js Server Monitor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;Part 3 of ???: Building a Site Differential Sensing Twitter Bot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(more coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Automation To The Moon 🚀&lt;/h1&gt;
+&lt;p&gt;As an attempt to make my &lt;a href=&quot;&quot;&gt;doing business as (DBA) company&lt;/a&gt; more automated, and to make myself a better developer, I’ve decided to take steps to automate as much as possible&lt;/p&gt;
+&lt;h1&gt;Roadmap&lt;/h1&gt;
+&lt;h1&gt;Improvements&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well&lt;/li&gt;
+&lt;li&gt;Convert to a reactive , that is, don’t just send an email but attemp to fix what is broken (think )&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects Then Kill Their Session]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</guid><pubDate>Wed, 09 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
+&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP Kernel Call!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
+&lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
+&lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
+&lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
+&lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
+&lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
+&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
+&lt;h2&gt;Specific Problem&lt;/h2&gt;
+&lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
+&lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A warning popup for the user at 5 minutes of lock time&lt;/li&gt;
+&lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
+&lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
+&lt;p&gt;Let’s get started!&lt;/p&gt;
+&lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
+&lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for this example case, we are only interested in locked &lt;em&gt;orders&lt;/em&gt;. This is object type &lt;code&gt;AUFK&lt;/code&gt; - the order head table. To get a list of all locked object across the system with this type, we can use function module &lt;code&gt;ENQUEUE_READ&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Get all AUFK table locks&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ENQUEUE_READ&apos;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+    gname                 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;AUFK&apos;&lt;/span&gt;
+    guname                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;              &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Users (all)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;TABLES&lt;/span&gt;
+    enq                   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gt_enq
+  &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+    communication_failure &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    system_failure        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class &lt;code&gt;cl_server_info&lt;/code&gt; (pretty obvious name, eh? 😂). &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Get all user sessions&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OBJECT&lt;/span&gt; server_info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; server_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&gt;&lt;/span&gt;get_session_list&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; with_application_info &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;However, we can’t just kill all of a user’s sessions - we only want to shut down (indeed, this is bad luck for the user that has only one SAP application window open that is blocking an order, but hey, they get two warnings before we shut them down)&lt;/p&gt;
+&lt;h2&gt;The ‘Forbidden’ Kernel Call&lt;/h2&gt;
+&lt;p&gt;To get the fidelity needed to find exactly which index of SAP application window, we’re gonna have go down the system rabbithole and use a f (remember, it is always 1-7 —&gt; the classic SAP limit of 7 open windows per client)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ThUsrInfo&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;OPCODE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; opcode_usr_info
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TID&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;logon_hdl
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;WITH_APPL_INFO&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; with_appl_info
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TABLE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gt_usr_info[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;What this kernel call retrieves and puts in table &lt;code&gt;gt_user_info&lt;/code&gt; can be also found be found through the standard SAP GUI in transaction &lt;code&gt;SM04&lt;/code&gt; by selecting a session and going to the top menu bar and selecting User-&gt;Technical Information):&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/technical-information-9b05195c36320c323af71fb3bcb5bf8c-0473d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 234px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 64.52991452991454%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACSElEQVQ4y62T228SQRTG+TtNfKiXR5/1Rft/GNPSlybWxKhNTKy9AL2xIIW2XARKgV0KdKHALnthF3Z/DlPbtEn1wTjJlzkz3znfmTNnJjKuN7BU9b8hMnVcKkmFi2IJvXpOq1CiU6ow0lpY/T66SOiODKa2w1jXuVI1XMOEmY95qTNsd5lNPKxen2GrRSQIAoxej5Egc1sxvq6+J5dIYrY76JpKs1TCn0zwHJuLaoVGoYgztpiPZj6P3mpLu6c20Mrl+Qkdkd3GHY7whKNrmtjSHot5iNG/whoa+JaNNRjI5O5oJPd7Iqkt9rpqC8cwZHyEWYDn2eydrslMnu+xv7fP9tY36udVvm/GaOs9yRkiKJVS+JFJc3R8TCweI51OoWoa80rnIxKGodAM6XTy0FliqkUxq28J2ytM1WVmrShecwmn/k5wy8JnRc7BRRSEz9yPO5Ale4YoVVfh7CXh2SKN+As2oo9IfnzK7ocF0p+ecbz+XKyfEF99zI5AYm0B8+QV1BdFzGuovZGQTdGzeQbispnUmBo/MbtZcGuEdlWCv+CGD8ZlaUtBLaHQTWWv71A8gUIhz/b2Jqcnebk39xE38+AIfxPNZhNdPCspqMYO6SrZ2+BrgRBLdNoUXZ/Ngtvg8A+CNzGRUBi9XJHLk7IkpqLLGeWQRGKXynmNxE6cvd04qaMMtjO5J/LgCeeCl9kipwd5KTYRP8ITv+dfcd2UXIFBsSozuaLrW5sbJFPpe6XcPY3nWKQzGT6vf0FJHpBU0vi+L7lfkFnBCRvEn1AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;How to navigate to technical information in SAP GUI transaction SM04&quot;
+        title=&quot;&quot;
+        src=&quot;/static/technical-information-9b05195c36320c323af71fb3bcb5bf8c-0473d.png&quot;
+        srcset=&quot;/static/technical-information-9b05195c36320c323af71fb3bcb5bf8c-04291.png 148w,
+/static/technical-information-9b05195c36320c323af71fb3bcb5bf8c-0473d.png 234w&quot;
+        sizes=&quot;(max-width: 234px) 100vw, 234px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You will see a giant list of multiple fields for each session number (0-6) that the user has open. So, what can we do with this giant technical information list of key value pairs? &lt;/p&gt;
+&lt;p&gt;In SAP, this works as follows: each &lt;em&gt;login&lt;/em&gt; by a user (not session number, we’re not there yet 😄)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of &lt;code&gt;TXX_UXXXXX&lt;/code&gt;, where &lt;code&gt;X&lt;/code&gt; can be any number 0-9. &lt;/p&gt;
+&lt;p&gt;Each session then has a session ID which is comprised of first the login ID as described above, with an appended &lt;code&gt;_MX&lt;/code&gt;, where &lt;code&gt;X&lt;/code&gt; in this case is the session number, 0-6 (session 1-7). So, we are interested in the &lt;code&gt;.session&lt;/code&gt; value of this technical list:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-5ec0d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 11.265646731571628%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAYElEQVQI12O4umTu/wuzJ/+/OGfK/+frFv3/tnMtGN/ZvfL//ZNb/z87v+v/l3uH/3+9f4QozHBz/qr/l6ct/H9j5tL/V4D08yWb/n9bu/f/22PH/3++dQWMv96+SjQGANqBiivK4jA7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Session ID in the technical information.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-fb8a0.png&quot;
+        srcset=&quot;/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-1a291.png 148w,
+/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-2bc4a.png 295w,
+/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-fb8a0.png 590w,
+/static/session-id-3587fb6b396ec22b4ee4f7c23e2ff4ea-5ec0d.png 719w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You can notice then that session 2 would have &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;modeinfo[1].session = T23_U31974_M1&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;session 3 would have&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;modeinfo[2].session = T23_U31974_M2&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;and so on, all the way up to session 7 - or index 6. We will see in the code that I leverage this pattern. The only way to find the true session that is blocking the order is to first guess the logon instance for the user (in the case for example that htey have logged on with multiple languages), then you can back out all the session ID’s until you get a match of the &lt;code&gt;session_hdl&lt;/code&gt; from the returned list of &lt;code&gt;gt_sessions_list&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gt_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_session_list &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_session_list &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; tenant &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;mandt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; loop at all open sessions to build a list of just the user sessions&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; if a user is not in the given so, we continue (that means with exclude users, they are skipped, those with equals and all others keep going)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;user_name &lt;span class=&quot;token keyword&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;IN&lt;/span&gt; so_bname&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  gv_user_name   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;user_name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Only add to list if user is current lock user - also get the session id for this user&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_user_name &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gv_modus_index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gt_usr_info[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gs_usr_info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; get detailed technical info for this user to find which specific session to close&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ThUsrInfo&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;OPCODE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; opcode_usr_info
+      &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TID&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;logon_hdl
+      &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;WITH_APPL_INFO&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; with_appl_info
+      &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TABLE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gt_usr_info[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gusrvb &lt;span class=&quot;token string&quot;&gt;&apos;/UPD&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; We need to use the &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/UPD&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the technical info &lt;span class=&quot;token keyword&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt; the &lt;span class=&quot;token keyword&quot;&gt;exact&lt;/span&gt; session &lt;span class=&quot;token keyword&quot;&gt;assigned&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;to&lt;/span&gt; the specific locked &lt;span class=&quot;token keyword&quot;&gt;object&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_usr_info &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_usr_info &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; find the field from the value&lt;/span&gt;
+      gv_modus_index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_usr_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;field+&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; the key for the value is &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;modeinfo[X].enq_info&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; we need just the &lt;span class=&quot;token keyword&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; so we +&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; take the &lt;span class=&quot;token keyword&quot;&gt;single&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; If we found a session with that number, we know we had the correct logon... we can add this to the user list&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_modus_index &lt;span class=&quot;token keyword&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INITIAL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; convert to type ssi_session_handle for later lookup&lt;/span&gt;
+      gv_modus_num_found &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_modus_index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; get the session id for this specific&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;modeinfo[&apos;&lt;/span&gt; gv_modus_index &lt;span class=&quot;token string&quot;&gt;&apos;].session&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; this time we need to find the value from the field&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_usr_info &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_usr_info &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;field&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        gv_ssi_session_id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_usr_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;APPEND&lt;/span&gt; gs_session_list &lt;span class=&quot;token keyword&quot;&gt;TO&lt;/span&gt; gt_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Here - as will make more sense in the full code - I am building a &lt;code&gt;gt_sessions_user&lt;/code&gt; list on the fly, which is what is passed to a BDC method to close that specific session ID for that user alone (explained below). I decided to run the program with this one-user-at-a-time method in order to have the minimum amount of time between finding a session that was locking an object and messaging / deleting that session. &lt;/p&gt;
+&lt;p&gt;If we had say, 1000 locked orders on our system, and I built an entire list of all blocking sessions across all users, it could be the case that by the time we get to the BDC method (which, by the way, is slow itself, especially when you need it to be synchronous as we need in this process), the user could have already closed that blocking session, or worse, switched to a transaction in that session number which was no longer blocking the order! In such a case we would be unnecessarily sending warning messages or closing the transaction to a session which didn’t apply anymore! Bad.&lt;/p&gt;
+&lt;p&gt;So - we’ve pinpointed the exact user and their session number that is blocking the order - let’s send them our warning messages at 5 and 10 minutes.&lt;/p&gt;
+&lt;h2&gt;No Way! A &lt;em&gt;SECOND&lt;/em&gt; ‘Forbidden’ Module?!&lt;/h2&gt;
+&lt;p&gt;To send a popup message to a user, we need to now make use of &lt;em&gt;second&lt;/em&gt; &lt;code&gt;TH*&lt;/code&gt; function, &lt;code&gt;TH_POPUP&lt;/code&gt; (though at least this time it is at least a SAP function, and not a sneaky system function):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;You are locking&apos;&lt;/span&gt; gv_aufnr_string &lt;span class=&quot;token string&quot;&gt;&apos;in TC&apos;&lt;/span&gt; gv_tcode &lt;span class=&quot;token string&quot;&gt;&apos; for &gt;5min. Please save and leave the transaction.&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_message &lt;span class=&quot;token keyword&quot;&gt;SEPARATED&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TH_POPUP&apos;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;client&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;mandt
+        &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname
+        &lt;span class=&quot;token keyword&quot;&gt;message&lt;/span&gt;        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_message
+      &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+        user_not_found &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;This function module actually heads to the kernel as well, because the user won’t get a popup directly in the SAP GUI, but rather a warning message directly in the their operating system. It looks like this when testing from &lt;code&gt;SE37&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-ed9a9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 18.867924528301888%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgklEQVQY05WOuwoCMRBF8/8/JCJiZbXNuhhiyGQSs+MriyxWlte4hSAR0eLAcA5cRi00YdYazDuLdT+8WGmH5S68uV9QQh73caw4xwjxn9s3lGk3uOVchQN7sDG47BOECFeR4hinEHDkMLlobbkZvXNTyylBdU0D2upqcCgD/3735AHWuSeWZEXtyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Testing TH_POPUP in transaction SE37.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-fb8a0.png&quot;
+        srcset=&quot;/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-1a291.png 148w,
+/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-2bc4a.png 295w,
+/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-fb8a0.png 590w,
+/static/TH_POPUP-function-test-f335565df0fe168d8fcbf6cc886e4d93-ed9a9.png 636w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And our resulting system popup (at least how it looks on windows operating system)&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/TH_POPUP-result-f1ae1b51cff16b07e9c974368beeca67-8505f.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 436px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.18348623853211%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABb0lEQVQoz62QWUvDQBSF83sF/4WgiA+CKKI++CCiIAhFUIvWfUm6WG1N7ZJaW1NrmrRJk7Z2/ZxE9FnEAx/3zjCce89Ihv7GzW0aWVaJRjPE4lkSdzmSyTz3DxqpdJHHx2fUzAtP2TLZfIV8QUcrVimWapTK75QrBhXdpFYzkVJpjemlfebWjphZDrOwccHK1rWoVyxv3zK1csrs+hXzmzKLOwlWQynWD57YjGjsXJYJKVX2kybHqs3xdQKp49j46rZaDIdD+v0+vV4v6H2NRiOGgt8qMPQMA2VygpwcFZFjRONxYjGFyOkZ5xfnyIqC7Ti/NxyPx9Tvk3S7H9i2TaPRoNls4jitoPp3lmVhmvUAQyzgv/GxBK7nBsl+DL81GAxoiegNYdJuezii98+u59HudGiL+mVs4bpuMKxpfw38EN8UGNr1d3S99GcKhQyalv1BMt9eUdXEnwmH99jd3SJycsDhYQjJqurk1NS/8QnOkItAGE+OqQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;What a successful call of TH_POPUP from SE37 looks like.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/TH_POPUP-result-f1ae1b51cff16b07e9c974368beeca67-8505f.png&quot;
+        srcset=&quot;/static/TH_POPUP-result-f1ae1b51cff16b07e9c974368beeca67-0e5b7.png 148w,
+/static/TH_POPUP-result-f1ae1b51cff16b07e9c974368beeca67-8eb70.png 295w,
+/static/TH_POPUP-result-f1ae1b51cff16b07e9c974368beeca67-8505f.png 436w&quot;
+        sizes=&quot;(max-width: 436px) 100vw, 436px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Ok, so we’ve warned the users twice by now with our popup, but they still are blocking a dang order! Remember, each run we’ve still got their exact session number that is blocking the order, so let’s finally go in for the kill and shut down that session! Once we do that, we log which session/user/transaction combo we deleted to the spool, and this report is done!&lt;/p&gt;
+&lt;h2&gt;BDC Tricks To Finally Close The User Session&lt;/h2&gt;
+&lt;p&gt;I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there’s probably good reason for this! (Though I can’t &lt;em&gt;possibly&lt;/em&gt; think of why 🤔 😉) &lt;/p&gt;
+&lt;p&gt;I couldn’t even find another ‘forbidden’ &lt;code&gt;Th****&lt;/code&gt; function module that can do this. However, this &lt;em&gt;is&lt;/em&gt; possible through the standard SAP GUI, and we’ve already mentioned it in this post, our friend transaction &lt;code&gt;SM04&lt;/code&gt;. By double clicking on a user (using me for an example), we get a list like this (sorry for the black boxes - don’t want to inadvertantly reveal anything that may be proprietary):&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-07ee3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 48.319327731092436%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACE0lEQVQoz42RvW/TYBDGPSDYqPiSGPhDYGJiZUBiQ0JIXRhAqkCoiIXO7AhEkFgQpUoKKRKgRE1cx3bs1HYS58MktklSx0lJQwhpnCAq8XB2iWklBoaf7u69e5/37l5m2Oli2OlgvLODyeAbRl96GDgOxf3Aev2v+L69jZ9j779gfngepgcYD4cYj0Zwe3VMa2kM6DGz3cd0dxce4ddPyJqtNtUM0XBc/NrbC2G4V1HwyzH41keOxpGLvUOGfPblawgrb3Hx/IV/koutoSsqh2BaQhpWikeTF+FIMoyMgs+itE+Why0KaHAcutImmqIKdUOmnIZCRoAlkYhaxUAthzAlToCyziL5Zg1SMoXEahwfo6uBr7EZFCnfKJRQFiTofBZO2Qgw6IFKNgdTKcDWiqhS7JQMMLX4Cyxcu4JjR44GMAwTsnR3ERO7E2AJKgpJDvXMJnWdh0nxLOeqFegpEZ7lgqk8eQ8nksZWhIW3rOHcqbOh4K0b89hSykGhySvIJzZg0Mh2No86xf65j0s1rmZgbLbBmJEk5EcriD94jMTSc5yZOxkK3rt5G/2yHVxq5XR84mQ05SIcpUL7zaOnm5S30M0b6BZqfwSfJTF/6eqhUWc8vLMYduELVVmJxtXI14MOLfKrbJa6q/4VNJ5+wMLl6zhNnfmcOD53YIf3Q0Gbflhf54Md+kK+8CzXDnYoBIK/AfM7da4WDQh1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;List of user sessions on the server.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-fb8a0.png&quot;
+        srcset=&quot;/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-1a291.png 148w,
+/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-2bc4a.png 295w,
+/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-fb8a0.png 590w,
+/static/server-sessions-list-6c0894339b3bbfcfe9d32ac7de1acbc1-07ee3.png 714w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Then you need only select the desired session number and click “Delete Session”, then ☁️POOF!☁️ that user’s session will be gone!&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/delete-session-fb0da81ec00cfdb7cb4f36a552d14f25-37cbe.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 431px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 50.11600928074246%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABOElEQVQoz62RS0vDQBSF8xu76EJciaCxVX+NbX2ACILgWhcK0qY+sNCaNDFt87KSpEmap0Ubl8dJlAYlWLAuDnfuZe7HnDPUZamMxhqNq5VVNOgymPVS2jc3NlGnaTBb27hYXsJ5oZDq7Kvm9sUiqHq1gutEtSpudmuf5z+qWdkB5UgSYs9F7Pt4j6KFRTmDAfR+H46mQmRZ9FgOvmXNXYxsGwOezwGqGjzDWEgJPANqGl4cB8/Eeo/rgmu1YGpPeCMR/KZgNILMC+gTV69+kAHH5IUhsWiqKoTOA2RBIHAZmiiCb7fTCALLzgUOSVTJ/YnrZUCXAP/jM+YCp0GAKbEyGdvEQZKTOVNof++zmUEylJV08afiMEzB+vAWyuMpuLt9SJ3DtCrdY0jsCbr3B1C4o9lMZ/bwAV7HvGPB8uXkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Deleting a user session by session number.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/delete-session-fb0da81ec00cfdb7cb4f36a552d14f25-37cbe.png&quot;
+        srcset=&quot;/static/delete-session-fb0da81ec00cfdb7cb4f36a552d14f25-f3adc.png 148w,
+/static/delete-session-fb0da81ec00cfdb7cb4f36a552d14f25-92060.png 295w,
+/static/delete-session-fb0da81ec00cfdb7cb4f36a552d14f25-37cbe.png 431w&quot;
+        sizes=&quot;(max-width: 431px) 100vw, 431px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Thank me later, but in BDC form, this can be written as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; First ensure that sm04 is called and set to the sessions view&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=SESSIONS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; call transaction SM04, sync (S), no screens unless debugger (P)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TRANSACTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SM04&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; bdcdata
+              &lt;span class=&quot;token keyword&quot;&gt;MODE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;P&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;S&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Now use bdc to end the session with that session id&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;OL0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0800&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-SELTEXT(01)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=WLSE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-MARK(01)&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH                                0810SUB810&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0800&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-SELTEXT(01)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=CONT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH                                0810SUB810&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=PS 63&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;02/76&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;IC1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;02/76&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;ILT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSSEL&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1104&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=CRET&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSSEL                                1105%_SUBSCREEN_FREESEL&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;%%DYN001-LOW&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;%%DYN001-LOW&apos;&lt;/span&gt; gv_ssi_session_id&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;IC1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;RSM04000_ALV_NEW&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;2000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; gv_modus_string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=DEL&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;F15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; call transaction SM04, sync (S), no screens unless debugger (P)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TRANSACTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SM04&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; bdcdata
+              &lt;span class=&quot;token keyword&quot;&gt;MODE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;P&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;S&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;If you stick around the blog and or read other ABAP BDC posts of mine, you’ll see for BDC I always use the following helper form &lt;code&gt;bdcdaten&lt;/code&gt; that allows me to write the BDC so cleanly (as it is above):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;      Form  BDCDATEN&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;FORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; start fnam fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;dynbegin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; start&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;program  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fnam&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;dynpro   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ELSE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;fnam &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fnam&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;fval &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;APPEND&lt;/span&gt; bdcdata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;ENDFORM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;                               &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; BDCDATEN&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;The only thing worth noting here is in our first step we always ensure the server view of &lt;code&gt;SM04&lt;/code&gt; is active - we need to always run in server view, because we don’t want all sessions across all servers. In this way, this report can run in parallel on all your servers and concern it self only with users logged on to the server instance that this report is running on. This will make the run time a bit faster, and of course splits up the search work across all servers.&lt;/p&gt;
+&lt;h1&gt;Full Code&lt;/h1&gt;
+&lt;p&gt;The full code of the report is as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;REPORT&lt;/span&gt; z_user_session_kill&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp; Report: Z_USER_SESSION_KILL                                         *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp; Author: Christopher Frewin                                          *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp; Creation Date: 2018.05.09                                           *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                                     *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                                     *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                         __          *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                           Christophe_r_|  |_F_rewin *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                     |__    __|      *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                        |  |         *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                &quot;Z_USER_SESSION_KILL&quot;   |  |         *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;                                                        |__|  17&apos;    *&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; table needed for FOR in select-options statement&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;TABLES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; usr02&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Data...  :)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;DATA&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; gv_time_dif_sperr   &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; tims&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_tcode            &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; eqetcode&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_aufnr            &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; aufnr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_message          &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; sm04dic&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;popupmsg&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_objnr            &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; j_objnr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_stat             &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; j_status&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gt_enq              &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; seqg3&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gs_enq              &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_enq&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      server_info         &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;REF&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TO&lt;/span&gt; cl_server_info&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gt_session_list     &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; ssi_session_info&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gs_session_list     &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_session_list&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gt_sessions_user    &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; ssi_session_info&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gs_sessions_user    &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      bdcdata             &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; bdcdata &lt;span class=&quot;token keyword&quot;&gt;OCCURS&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;HEADER&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_modus_string     &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_modus_index      &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_user_name        &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; eqeuname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      th_opcode&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;        &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      with_appl_info      &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; ssi_bool &lt;span class=&quot;token keyword&quot;&gt;VALUE&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_field&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_value&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_ssi_session_id   &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; ssi_session_id&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_modus_num        &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; ssi_session_hdl&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_modus_num_found  &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; ssi_session_hdl&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_modus_index_char &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; numc1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_aufnr_string     &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_usr_info &lt;span class=&quot;token keyword&quot;&gt;OCCURS&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;VALUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_usr_info&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gs_usr_info &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; gt_usr_info&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_autyp    &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; auftyp&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_uzeit    &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;uzeit&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      gv_string   &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; select option to exlude user&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;SELECT-OPTIONS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; so_bname &lt;span class=&quot;token keyword&quot;&gt;FOR&lt;/span&gt; usr02&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;bname &lt;span class=&quot;token keyword&quot;&gt;MEMORY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; xus &lt;span class=&quot;token keyword&quot;&gt;NO&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTERVALS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;CONSTANTS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; opcode_usr_info &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; th_opcode &lt;span class=&quot;token keyword&quot;&gt;VALUE&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;52&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; this is the internal SAP number used for the system function module &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ThUsrInfo&apos;&lt;/span&gt;
+gv_uzeit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;uzeit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; moved up here to have time before the enqueue_read function&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Get all AUFK table locks&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ENQUEUE_READ&apos;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+    gname                 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;AUFK&apos;&lt;/span&gt;
+    guname                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;              &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Users (all)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;TABLES&lt;/span&gt;
+    enq                   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gt_enq
+  &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+    communication_failure &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    system_failure        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;subrc &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;EXIT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Get all user sessions&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OBJECT&lt;/span&gt; server_info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; server_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&gt;&lt;/span&gt;get_session_list&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; with_application_info &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Loop through each locked object (production orders)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_enq &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_enq&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Auftrag and Tcode for nice printing in the messages&lt;/span&gt;
+  gv_tcode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gtcode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  gv_aufnr_string &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;garg+&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;SHIFT&lt;/span&gt; gv_aufnr_string &lt;span class=&quot;token keyword&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;DELETING&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LEADING&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;CONDENSE&lt;/span&gt; gv_tcode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; We keep only the orders that have the status FREI ---&gt; stat &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;I0002&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;table&lt;/span&gt; JEST
+  gv_aufnr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;garg+&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; GARG for aufnr is in the format &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;10000000XXXXXXX&apos;&lt;/span&gt; therefore &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; +&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; we should have the &lt;span class=&quot;token keyword&quot;&gt;standard&lt;/span&gt; aufnr &lt;span class=&quot;token keyword&quot;&gt;format&lt;/span&gt; 00000XXXXXXX &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt; CHAR &lt;span class=&quot;token keyword&quot;&gt;long&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Only orders with type 10 or 40 (production and proess orders)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gv_autyp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SINGLE&lt;/span&gt; autyp &lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; aufk &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_autyp
+    &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; aufnr &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_aufnr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_autyp &lt;span class=&quot;token keyword&quot;&gt;NE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;10&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AND&lt;/span&gt; gv_autyp &lt;span class=&quot;token keyword&quot;&gt;NE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;40&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;DELETE&lt;/span&gt; gt_enq &lt;span class=&quot;token keyword&quot;&gt;INDEX&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;tabix&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; delete this line&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; and go on to the next lock object in gt_enq&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Also check JEST table - first format to OR0000XXXXXXX form&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gv_objnr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;OR&apos;&lt;/span&gt; gv_aufnr &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_objnr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SINGLE&lt;/span&gt; stat &lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; jest &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_stat
+    &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; objnr &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_objnr
+    &lt;span class=&quot;token keyword&quot;&gt;AND&lt;/span&gt;   stat  &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;I0002&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;AND&lt;/span&gt;   inact &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;subrc &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; FREI status not found, delete the entry&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;DELETE&lt;/span&gt; gt_enq &lt;span class=&quot;token keyword&quot;&gt;INDEX&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;tabix&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; delete this line&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; and go on to the next lock object in gt_enq&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Determine how long object has been locked&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gttime &lt;span class=&quot;token keyword&quot;&gt;GT&lt;/span&gt; gv_uzeit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; check to make sure the current time is at least as big as the lock time - otherwise we get giant times 23:59:59 when subtracting&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; if this is the case, go to the next locked object&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  gv_time_dif_sperr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_uzeit &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gttime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; locked object time calculation itself is simple, difference of current time and time when it was first locked&lt;/span&gt;
+
+  &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Finally take action depending on the time 15 minute most sever, 10 minute strong warning, 5 minute weak warning.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_time_dif_sperr &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;001500&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; kill the user sessions after 15 minutes - will kill those that are in the transaction of the locked object&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gt_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_session_list &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_session_list &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; tenant &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;mandt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; loop at all open sessions to build a list of just the user sessions&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; if a user is not in the given so, we continue (that means with exclude users, they are skipped, those with equals and all others keep going)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;user_name &lt;span class=&quot;token keyword&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;IN&lt;/span&gt; so_bname&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      gv_user_name   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;user_name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Only add to list if user is current lock user - also get the session id for this user&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_user_name &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gv_modus_index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gt_usr_info[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gs_usr_info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; get detailed technical info for this user to find which specific session to close&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ThUsrInfo&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;OPCODE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; opcode_usr_info
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TID&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gs_session_list&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;logon_hdl
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;WITH_APPL_INFO&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; with_appl_info
+          &lt;span class=&quot;token keyword&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TABLE&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FIELD&lt;/span&gt; gt_usr_info[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gusrvb &lt;span class=&quot;token string&quot;&gt;&apos;/UPD&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; We need to use the &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/UPD&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the technical info &lt;span class=&quot;token keyword&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt; the &lt;span class=&quot;token keyword&quot;&gt;exact&lt;/span&gt; session &lt;span class=&quot;token keyword&quot;&gt;assigned&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;to&lt;/span&gt; the specific locked &lt;span class=&quot;token keyword&quot;&gt;object&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_usr_info &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_usr_info &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; find the field from the value&lt;/span&gt;
+          gv_modus_index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_usr_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;field+&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; the key for the value is &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;modeinfo[X].enq_info&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; we need just the &lt;span class=&quot;token keyword&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; so we +&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; take the &lt;span class=&quot;token keyword&quot;&gt;single&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; If we found a session with that number, we know we had the correct logon... we can add this to the user list&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_modus_index &lt;span class=&quot;token keyword&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INITIAL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; convert to type ssi_session_handle for later lookup&lt;/span&gt;
+          gv_modus_num_found &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_modus_index&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; get the session id for this specific&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;modeinfo[&apos;&lt;/span&gt; gv_modus_index &lt;span class=&quot;token string&quot;&gt;&apos;].session&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; this time we need to find the value from the field&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_usr_info &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_usr_info &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;field&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; gv_field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+            gv_ssi_session_id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_usr_info&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;APPEND&lt;/span&gt; gs_session_list &lt;span class=&quot;token keyword&quot;&gt;TO&lt;/span&gt; gt_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; last step is the bdc index - no matter what the order of the dynpro numbers or if there are skips between the numbers, the BDC is always 01, 02, 03, 04... counting number so we need sy-tabix&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gt_sessions_user &lt;span class=&quot;token keyword&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INITIAL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; check if there is anything for the user sessions, or if the index found&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;SORT&lt;/span&gt; gt_sessions_user &lt;span class=&quot;token keyword&quot;&gt;BY&lt;/span&gt; session_hdl &lt;span class=&quot;token keyword&quot;&gt;ASCENDING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; this is how they are shown in the gui, so since we are using bdc we also have to do this&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;LOOP&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;AT&lt;/span&gt; gt_sessions_user &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gs_sessions_user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; loop at all open sessions for the USER within the correct logon ID&lt;/span&gt;
+        gv_modus_num   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_sessions_user&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;session_hdl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; current session&lt;/span&gt;
+        &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Kill only the session from the table that matches the index of the modus found&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_modus_num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_modus_num_found&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          gv_modus_index_char &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;tabix&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; then the index of the modus for this user is sy-tabix - we need the index, rather than the actual number of the session for the BDC&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; gv_modus_string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;MODUS-MTCODE(0&apos;&lt;/span&gt; gv_modus_index_char &lt;span class=&quot;token string&quot;&gt;&apos;)&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_modus_string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; build the bdcfield name using the index of where in the user&apos;s list the&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; gv_modus_index_char &lt;span class=&quot;token keyword&quot;&gt;EQ&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Then we have the false server and we have to continue ahead&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; First ensure that sm04 is called and set to the sessions view&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=SESSIONS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; call transaction SM04, sync (S), no screens unless debugger (P)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TRANSACTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SM04&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; bdcdata
+              &lt;span class=&quot;token keyword&quot;&gt;MODE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;P&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;S&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Now use bdc to end the session with that session id&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata[]&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;OL0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0800&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-SELTEXT(01)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=WLSE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-MARK(01)&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH                                0810SUB810&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0800&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;GT_FIELD_LIST-SELTEXT(01)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=CONT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSKBH                                0810SUB810&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/03&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=PS 63&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;02/76&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;IC1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;02/76&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;ILT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSSEL&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1104&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=CRET&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_SUBSCR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPLSSEL                                1105%_SUBSCREEN_FREESEL&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;%%DYN001-LOW&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;%%DYN001-LOW&apos;&lt;/span&gt; gv_ssi_session_id&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;IC1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;RSM04000_ALV_NEW&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;2000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; gv_modus_string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=DEL&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;PERFORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SAPMSSY0&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0120&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_CURSOR&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;04/15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BDC_OKCODE&apos;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;=&amp;amp;F15&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; call transaction SM04, sync (S), no screens unless debugger (P)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TRANSACTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SM04&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; bdcdata
+              &lt;span class=&quot;token keyword&quot;&gt;MODE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;P&apos;&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;S&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; proper logging. times, order number, and transaction added as well as&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;User session from user &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;with session number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_modus_index_char&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;was deleted.&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;System Time (sy-uzeit): &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_uzeit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Object Lock Time Length:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;gttime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Lock Time: &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_time_dif_sperr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Order: &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_aufnr_string&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;,Transaction&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_tcode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+      &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SO_STRUCT_TO_CHAR&apos;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+          ip_struct &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq
+        &lt;span class=&quot;token keyword&quot;&gt;IMPORTING&lt;/span&gt;
+          ep_string &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CONDENSE&lt;/span&gt; gv_string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;WRITE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Lock object entry contains:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; gv_string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ELSEIF&lt;/span&gt; gv_time_dif_sperr &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;001000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Second warning message after 10 minutes&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;You are locking&apos;&lt;/span&gt; gv_aufnr_string &lt;span class=&quot;token string&quot;&gt;&apos; in TC &apos;&lt;/span&gt; gv_tcode &lt;span class=&quot;token string&quot;&gt;&apos; still. Please save and leave the transaction, otherwise your session will be ended in 5 min. Thank you!&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_message &lt;span class=&quot;token keyword&quot;&gt;SEPARATED&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TH_POPUP&apos;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;client&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;mandt
+        &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname
+        &lt;span class=&quot;token keyword&quot;&gt;message&lt;/span&gt;        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_message
+      &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+        user_not_found &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;subrc &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ELSEIF&lt;/span&gt; gv_time_dif_sperr &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;000500&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; First warning message after 5 minutes&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CONCATENATE&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;You are locking&apos;&lt;/span&gt; gv_aufnr_string &lt;span class=&quot;token string&quot;&gt;&apos;in TC&apos;&lt;/span&gt; gv_tcode &lt;span class=&quot;token string&quot;&gt;&apos; for &gt;5min. Please save and leave the transaction.&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INTO&lt;/span&gt; gv_message &lt;span class=&quot;token keyword&quot;&gt;SEPARATED&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;CALL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FUNCTION&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TH_POPUP&apos;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;EXPORTING&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;client&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;mandt
+        &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gs_enq&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;guname
+        &lt;span class=&quot;token keyword&quot;&gt;message&lt;/span&gt;        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gv_message
+      &lt;span class=&quot;token keyword&quot;&gt;EXCEPTIONS&lt;/span&gt;
+        user_not_found &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; sy&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;subrc &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;CONTINUE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;ENDLOOP&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;      Form  BDCDATEN&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;*&amp;amp;---------------------------------------------------------------------*&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;FORM&lt;/span&gt; bdcdaten &lt;span class=&quot;token keyword&quot;&gt;USING&lt;/span&gt; start fnam fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;CLEAR&lt;/span&gt; bdcdata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;IF&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;X&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;dynbegin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; start&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;program  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fnam&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;dynpro   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ELSE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;fnam &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fnam&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+    bdcdata&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&gt;fval &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fval&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;APPEND&lt;/span&gt; bdcdata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;ENDFORM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;                               &lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; BDCDATEN&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Whew. That’s about it for this one, hope you enjoyed!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Using Google Cloud's Text To Speech Machine Learning API]]></title><description><![CDATA[Google Cloud I’m torn most of the time about using Google Cloud APIs - on one hand, they are a group of some of the best APIs on the web…]]></description><link>https://chrisfrew.in/using-google-clouds-text-to-speech-machine-learning-api/</link><guid isPermaLink="false">https://chrisfrew.in/using-google-clouds-text-to-speech-machine-learning-api/</guid><pubDate>Sat, 14 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Google Cloud&lt;/h1&gt;
 &lt;p&gt;I’m torn most of the time about using Google Cloud APIs - on one hand, they are a group of some of the best APIs on the web today - the variety of what you can do with their APIs, whether it be maps, text to speech, search data, and more - is huge. However, with such a huge library comes the fact that the documentation can be a bit of a maze to get through. I mean, for the text to speech (TTS) API we’ll be talking about in this post, for the getting started guide (in “five minutes!!!” as it says on the site), they provide this old-school bash &lt;code&gt;curl&lt;/code&gt; command:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;curl -H &lt;span class=&quot;token string&quot;&gt;&quot;Authorization: Bearer &quot;&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;gcloud auth application-default print-access-token&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt; -H &lt;span class=&quot;token string&quot;&gt;&quot;Content-Type: application/json; charset=utf-8&quot;&lt;/span&gt; --data &lt;span class=&quot;token string&quot;&gt;&quot;{
@@ -1745,33 +2562,7 @@ Now, some of the things you have seen above may not really make any sense to you
 &lt;li&gt;Then, eventually, the BH will call you and tell you when you can pick up your residence permit! You will have to go this time with your passport and pay a final 20 EUR to receive the residence permit. They told me to come back on a date about a week after I finally submitted everything.&lt;/li&gt;
 &lt;li&gt;Then, you will need to work with your company. The authorities in Liechtenstein will need to see that residence permit that you just got, with those two other documents I mentioned above. Probably with yet another week, then will then issue you the work permit. I picked my work permit up from my company, but maybe they sometimes mail it. I’m not sure.&lt;/li&gt;
 &lt;li&gt;Finally, you’ve done it! Hike up to a hut, sip a delicious Austrian beer and eat a big Germknödel! Try not to think about after all that paperwork your only reward is to start working!&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
-&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
-&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP internal function module!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
-&lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
-&lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
-&lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
-&lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
-&lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
-&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
-&lt;h2&gt;Specific Problem&lt;/h2&gt;
-&lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
-&lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;A warning popup for the user at 5 minutes of lock time&lt;/li&gt;
-&lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
-&lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
-&lt;p&gt;Let’s get started!&lt;/p&gt;
-&lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
-&lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for our case, we are only interested in locked orders. This is object type &lt;code&gt;AUFK&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;So, we have our table of objects, and the users who are locking. To be as&lt;/p&gt;
-&lt;h2&gt;The ‘forbidden’ module&lt;/h2&gt;
-&lt;h2&gt;BDC Tricks&lt;/h2&gt;
-&lt;hr/&gt;
-&lt;h1&gt;Footnotes&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[ABAP Push and Message Channels]]></title><description><![CDATA[Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…]]></description><link>https://chrisfrew.in/abap-push-and-message-channels/</link><guid isPermaLink="false">https://chrisfrew.in/abap-push-and-message-channels/</guid><pubDate>Fri, 12 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Add some spice to your SAPUI5 apps!&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[ABAP Push and Message Channels]]></title><description><![CDATA[Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…]]></description><link>https://chrisfrew.in/abap-push-and-message-channels/</link><guid isPermaLink="false">https://chrisfrew.in/abap-push-and-message-channels/</guid><pubDate>Fri, 12 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Add some spice to your SAPUI5 apps!&lt;/h1&gt;
 &lt;h2&gt;(Or even normal webapps, for that matter)&lt;/h2&gt;
 &lt;p&gt;I was a noob. I wrote in my SAPUI5 some warehouse task code that would have a real time. How did I do it?&lt;/p&gt;
 &lt;p&gt;I wrote a &lt;code&gt;window.setInterval()&lt;/code&gt; function that would ping table &lt;code&gt;/SCWM/WT&lt;/code&gt; 😊 and check for any new lines - with an OData &lt;code&gt;GET_ENTITY_SET&lt;/code&gt; server request. 😊 😊&lt;/p&gt;
@@ -2972,12 +3763,7 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
 &lt;/div&gt;
 &lt;div id=&quot;footnote-4&quot;&gt;
 4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[An Ethereum Developer's Toolbelt]]></title><description><![CDATA[This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to…]]></description><link>https://chrisfrew.in/ethereum-developers-toolbelt/</link><guid isPermaLink="false">https://chrisfrew.in/ethereum-developers-toolbelt/</guid><pubDate>Sat, 30 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;This post is for developer who have at least some hands on experience writing DApps. If you are new to blockchain development, or are new to Ethereum and looking for a more technical 2017 overview of the Project, &lt;a href=&quot;https://medium.com/@frewin.christopher/the-ethereum-project-a-high-level-review-of-the-projects-progress-status-resources-tools-4e4f88050ffa&quot;&gt;read my Medium article on the subject.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h1&gt;Ethereum is not that old&lt;/h1&gt;
-&lt;p&gt;As such, the tools surrounding decentralized apps (DApps) and blockchain development are being created with blazing speed - it’s like 2014 (I know, so long ago, right?) when es5 came out, as well as react, webpack, and hundreds of other tools were being released.&lt;/p&gt;
-&lt;h1&gt;Enter Truffle&lt;/h1&gt;
-&lt;h1&gt;Enter Ethermint&lt;/h1&gt;
-&lt;h1&gt;Truffle and Ethermint?!?!&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[Debugging ABAP Code with a SAP Shortcut - A Must-Have Tool!]]></title><description><![CDATA[This is a Must-Have Tool for any ABAP Developer! Did you ever find you wanted to debug something in SAP GUI right on a certain command or…]]></description><link>https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</link><guid isPermaLink="false">https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</guid><pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;This is a Must-Have Tool for any ABAP Developer!&lt;/h2&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Debugging ABAP Code with a SAP Shortcut - A Must-Have Tool!]]></title><description><![CDATA[This is a Must-Have Tool for any ABAP Developer! Did you ever find you wanted to debug something in SAP GUI right on a certain command or…]]></description><link>https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</link><guid isPermaLink="false">https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</guid><pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;This is a Must-Have Tool for any ABAP Developer!&lt;/h2&gt;
 &lt;p&gt;Did you ever find you wanted to debug something in SAP GUI right on a certain command or action, but it was in a popup? You can’t access the command line to enter &lt;code&gt;\h&lt;/code&gt;! Well, now you can with this amazing SAP shortcut!&lt;/p&gt;
 &lt;p&gt;Open any text editor and add the following:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;

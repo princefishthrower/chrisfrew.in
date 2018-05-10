@@ -38,13 +38,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         var iCount = 1;
-        _.each(result.data.allMarkdownRemark.edges, edge => {
-          //console.log(edge.node.frontmatter);
-          console.log(iCount);
-          // console.log(edge.node.fields);
-          // also carry over linked
+        _.each(result.data.allMarkdownRemark.edges, (edge, index) => {
+          
+          if (edge.node.fields.draft) { // don't build pages for posts that are still drafts
+            return;
+          }
+
           edge.node.frontmatter.link = "https://chrisfrew.in" + edge.node.fields.slug;
-          console.log(edge.node.frontmatter);
+          edge.node.frontmatter.relativeLink = edge.node.fields.slug;
+
           if (iCount === result.data.allMarkdownRemark.edges.length) {
             fs.appendFile('./static/metadata.json',  JSON.stringify(edge.node.frontmatter) + "]", function (err) {
               if (err) {
@@ -58,11 +60,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }
             });
           }
+          
           createPage({
             path: edge.node.fields.slug,
             component: blogPost,
             context: {
               slug: edge.node.fields.slug,
+              prev: index === 0 ? null : result.data.allMarkdownRemark.edges[index - 1].node,
+              next: index === (result.data.allMarkdownRemark.edges.length - 1) ? null : result.data.allMarkdownRemark.edges[index + 1].node
             },
           })
           iCount = iCount + 1;

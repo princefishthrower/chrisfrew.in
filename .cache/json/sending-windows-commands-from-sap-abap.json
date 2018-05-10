@@ -17,6 +17,30 @@
         }
     },
     "pathContext": {
-        "slug": "/sending-windows-commands-from-sap-abap/"
+        "slug": "/sending-windows-commands-from-sap-abap/",
+        "prev": {
+            "fields": {
+                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+            },
+            "frontmatter": {
+                "date": "17 January, 2018",
+                "title": "How to be an American living in Austria and working in Liechtenstein",
+                "draft": false,
+                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+            }
+        },
+        "next": {
+            "fields": {
+                "slug": "/some-tasty-bash-profile-commands/"
+            },
+            "frontmatter": {
+                "date": "09 April, 2018",
+                "title": "Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better",
+                "draft": false,
+                "link": "https://chrisfrew.in/some-tasty-bash-profile-commands/",
+                "relativeLink": "/some-tasty-bash-profile-commands/"
+            }
+        }
     }
 }
