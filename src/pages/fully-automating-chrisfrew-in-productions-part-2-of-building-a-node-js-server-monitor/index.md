@@ -11,6 +11,7 @@ In [my attempt to automate my suite of websites](), I wanted to build a simple N
 1. 'cron' job that every 30 seconds to ping all my websites
 2. Check for 200 response from each, if not send email
 3. If an even greater problem is found, i.e., the site doesn't even return a 4** code, also send an email
+4. A 'reactive' monitor - that is, don't just send a mail when there are problems, try to spool up the server again and log if there is a failure!
 
 To accomplish this I utilized just three Node.js libraries:
 
