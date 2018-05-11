@@ -4,7 +4,8 @@ const preferDefault = m => m && m.default || m
 exports.components = {
   "component---node-modules-gatsby-plugin-offline-app-shell-js": require("gatsby-module-loader?name=component---node-modules-gatsby-plugin-offline-app-shell-js!/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js"),
   "component---src-templates-blog-post-js": require("gatsby-module-loader?name=component---src-templates-blog-post-js!/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js"),
-  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!/Users/chris/projects/chrisfrew.in/src/pages/index.js")
+  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!/Users/chris/projects/chrisfrew.in/src/pages/index.js"),
+  "component---src-pages-movie-night-index-js": require("gatsby-module-loader?name=component---src-pages-movie-night-index-js!/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js")
 }
 
 exports.json = {
@@ -59,7 +60,9 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "using-google-clouds-text-to-speech-machine-learning-api.json": require("gatsby-module-loader?name=path---using-google-clouds-text-to-speech-machine-learning-api!/Users/chris/projects/chrisfrew.in/.cache/json/using-google-clouds-text-to-speech-machine-learning-api.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json")
+  "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "movie-night.json": require("gatsby-module-loader?name=path---movie-night!/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json")
 }
 
 exports.layouts = {
