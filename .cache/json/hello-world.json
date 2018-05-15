@@ -20,26 +20,26 @@
         "slug": "/hello-world/",
         "prev": {
             "fields": {
-                "slug": "/hot-linking-to-lines-in-github/"
+                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             },
             "frontmatter": {
-                "date": "19 December, 2017",
-                "title": "How to Link to Lines of Code in a Github Repository!",
+                "date": "17 January, 2018",
+                "title": "How to be an American living in Austria and working in Liechtenstein",
                 "draft": false,
-                "link": "https://chrisfrew.in/hot-linking-to-lines-in-github/",
-                "relativeLink": "/hot-linking-to-lines-in-github/"
+                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
+                "slug": "/i-set-aside-1000-to-learn-options-trading/"
             },
             "frontmatter": {
-                "date": "11 May, 2018",
-                "title": "Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor",
+                "date": "07 April, 2018",
+                "title": "I Set Aside $1000 to Learn Options Trading",
                 "draft": false,
-                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/",
-                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
+                "link": "https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/",
+                "relativeLink": "/i-set-aside-1000-to-learn-options-trading/"
             }
         }
     }

@@ -6,7 +6,7 @@ draft: false
 
 # Node.js Server Monitor
 
-In [my attempt to automate my suite of websites](), I wanted to build a simple Node.js server that monitors all my live sites, and sends me an email. Basically the process is simply:
+In [my attempt to automate my suite of websites](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/), I wanted to build a simple Node.js server that monitors all my live sites, and sends me an email. Basically the process is simply:
 
 1. 'cron' job that every 30 seconds to ping all my websites
 2. Check for 200 response from each, if not send email

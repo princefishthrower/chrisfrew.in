@@ -20,26 +20,26 @@
         "slug": "/hot-linking-to-lines-in-github/",
         "prev": {
             "fields": {
-                "slug": "/dropdowns-in-readmes/"
+                "slug": "/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/"
             },
             "frontmatter": {
-                "date": "22 December, 2017",
-                "title": "Dropdowns in Markdown README's!",
+                "date": "10 May, 2018",
+                "title": "Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process",
                 "draft": false,
-                "link": "https://chrisfrew.in/dropdowns-in-readmes/",
-                "relativeLink": "/dropdowns-in-readmes/"
+                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/",
+                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/hello-world/"
+                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             },
             "frontmatter": {
-                "date": "12 December, 2017",
-                "title": "Hello World - My First Post :)",
+                "date": "17 January, 2018",
+                "title": "How to be an American living in Austria and working in Liechtenstein",
                 "draft": false,
-                "link": "https://chrisfrew.in/hello-world/",
-                "relativeLink": "/hello-world/"
+                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             }
         }
     }

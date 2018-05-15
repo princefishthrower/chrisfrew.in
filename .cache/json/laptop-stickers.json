@@ -20,26 +20,26 @@
         "slug": "/laptop-stickers/",
         "prev": {
             "fields": {
-                "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "slug": "/sending-windows-commands-from-sap-abap/"
             },
             "frontmatter": {
-                "date": "25 January, 2018",
-                "title": "Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input",
-                "draft": true,
-                "link": "https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/",
-                "relativeLink": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "date": "13 December, 2017",
+                "title": "Sending Windows Server Commands From SAP ABAP",
+                "draft": false,
+                "link": "https://chrisfrew.in/sending-windows-commands-from-sap-abap/",
+                "relativeLink": "/sending-windows-commands-from-sap-abap/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+                "slug": "/some-tasty-bash-profile-commands/"
             },
             "frontmatter": {
-                "date": "17 January, 2018",
-                "title": "How to be an American living in Austria and working in Liechtenstein",
+                "date": "09 April, 2018",
+                "title": "Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better",
                 "draft": false,
-                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
-                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+                "link": "https://chrisfrew.in/some-tasty-bash-profile-commands/",
+                "relativeLink": "/some-tasty-bash-profile-commands/"
             }
         }
     }

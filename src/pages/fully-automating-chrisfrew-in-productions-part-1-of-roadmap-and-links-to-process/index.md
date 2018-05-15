@@ -8,17 +8,29 @@ draft: false
 
 Before I get into the description, you may be here just to get the links. Well, scroll no further:
 
-- [Part 2 of ???: Building a Node.js Server Monitor]()
+- [Part 2 of ???: Building a Node.js Server Monitor](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/)
 - [Part 3 of ???: Building a Site Differential Sensing Twitter Bot]()
+- [Part 4 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report)]()
 - (more coming soon)
 
 # Automation To The Moon :rocket:
 
 As an attempt to make my [doing business as (DBA) company]() more automated, and to make myself a better developer, I've decided to take steps to automate as much as possible
 
-# Roadmap
+# Current Full Stck Map (Will Change As I update it!)
 
-# Improvements
+The current stack of my suite of applications and sites looks as follows (sorry, you're going to have to zoom in, but it's an SVG, so no loss!):
 
-- A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well
-- Convert to a reactive , that is, don't just send an email but attemp to fix what is broken (think )
+![The Chrisfrew.in Productions Full Stack Map](full-stack-map.svg)
+
+Note that not all of these boxes are fully productive and live yet, and there are many more projects that haven't even made the map yet!
+
+# Improvements and Roadmap
+
+- Near future (before end of june) A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well, at least shared across Chrisfrew.in Productions
+- Mid to late summer: most paper based business processesed fully automated
+- Before New year : Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it "knows" to repair itself, THEN it would finally send me an email
+
+Yes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:
+
+![Yeah, that cool ship.](passengers-ship.gif)
