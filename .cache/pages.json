@@ -10,15 +10,22 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "abap-push-and-message-channels.json",
-        "path": "/abap-push-and-message-channels/"
+        "jsonName": "a-toast-to-full-stack-developers.json",
+        "path": "/a-toast-to-full-stack-developers/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "a-toast-to-full-stack-developers.json",
-        "path": "/a-toast-to-full-stack-developers/"
+        "jsonName": "an-npm-christmas-easter-egg.json",
+        "path": "/an-npm-christmas-easter-egg/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "abap-push-and-message-channels.json",
+        "path": "/abap-push-and-message-channels/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -38,22 +45,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "an-npm-christmas-easter-egg.json",
-        "path": "/an-npm-christmas-easter-egg/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
         "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
-        "path": "/debugging-abap-with-a-sap-shortcut/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -68,6 +61,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "dropdowns-in-readmes.json",
         "path": "/dropdowns-in-readmes/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
+        "path": "/debugging-abap-with-a-sap-shortcut/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -101,15 +101,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein.json",
-        "path": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hello-world.json",
-        "path": "/hello-world/"
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -122,8 +115,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor.json",
-        "path": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
+        "jsonName": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein.json",
+        "path": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hello-world.json",
+        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -143,13 +143,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sending-windows-commands-from-sap-abap.json",
-        "path": "/sending-windows-commands-from-sap-abap/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "laptop-stickers.json",
         "path": "/laptop-stickers/"
     },
@@ -157,8 +150,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "some-tasty-bash-profile-commands.json",
-        "path": "/some-tasty-bash-profile-commands/"
+        "jsonName": "sending-windows-commands-from-sap-abap.json",
+        "path": "/sending-windows-commands-from-sap-abap/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -166,6 +159,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "using-google-clouds-text-to-speech-machine-learning-api.json",
         "path": "/using-google-clouds-text-to-speech-machine-learning-api/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "some-tasty-bash-profile-commands.json",
+        "path": "/some-tasty-bash-profile-commands/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -187,5 +187,12 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "movie-night.json",
         "path": "/movie-night/"
+    },
+    {
+        "componentChunkName": "component---src-pages-sec-filings-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sec-filings.json",
+        "path": "/sec-filings/"
     }
 ]
