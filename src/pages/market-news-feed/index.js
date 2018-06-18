@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 import io from 'socket.io-client'; // client side of socket
-const socket = io('http://localhost:9002'); // make sure it is from where the server is serving
+const sAPIURL = 'https://chrisfrew.in/market-news-feed-api';
+const socket = io(sAPIURL); // make sure it is from where the server is serving
 
 class MarketNews extends React.Component {    
     constructor() {
@@ -71,7 +72,7 @@ class MarketNews extends React.Component {
       this.setupNotifications();
       this.setupSocketEvent();
       let that = this;
-      axios.get('http://127.0.0.1:9002')
+      axios.get(sAPIURL)
         .then(function (response) {
           let aItems = [];
           let oDate;
