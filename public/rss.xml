@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Tue, 29 May 2018 18:37:49 GMT</lastBuildDate><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor]]></title><description><![CDATA[Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</guid><pubDate>Fri, 11 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Node.js Server Monitor&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Mon, 18 Jun 2018 05:37:14 GMT</lastBuildDate><item><title><![CDATA[Data Analysis and Pixel Art of Towns and Cities in Pokemon]]></title><description><![CDATA[A Real Treat! Over the past few days, i’ve done some data analysis and scripting and art making with  Breakdown into 16x16 Tiles I repeated…]]></description><link>https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</guid><pubDate>Fri, 01 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A Real Treat!&lt;/h1&gt;
+&lt;p&gt;Over the past few days, i’ve done some data analysis and scripting and art making with &lt;/p&gt;
+&lt;h1&gt;Breakdown into 16x16 Tiles&lt;/h1&gt;
+&lt;p&gt;I repeated this process for all the towns of Kanto and Johto (for non-Pokemon nerds: the ‘orignal’ towns and cities of pokemon, plus the ‘2nd generation’ towns, a total of 20):&lt;/p&gt;
+&lt;p&gt;Azalea Town	   Johto
+Blackthorn City	   Johto
+Cherrygrove City   Johto
+Cianwood City   Johto
+Ecruteak City	   Johto
+Goldenrod City   Johto
+Mahogany Town	   Johto
+New Bark Town	   Johto
+Olivine City   Johto
+Violet City   Johto
+Celadon City	 Kanto
+Cerulean City Kanto
+Cinnabar Island	 Kanto
+Fuchsia City Kanto
+Lavender Town	 Kanto
+Pallet Town Kanto
+Pewter City	 Kanto
+Saffron City	 Kanto
+Vermilion City Kanto
+Viridian City Kanto&lt;/p&gt;
+&lt;h1&gt;Data Analysis&lt;/h1&gt;
+&lt;p&gt;336 like goldenrod/348.png (ground)
+230 like goldenrod/374.png (pink tiles)
+62 like goldenrod/1409.png (tree top)
+56 like goldenrod/823.png (water)
+56 like goldenrod/1226.png (right corner house)
+56 like goldenrod/201.png (left corner house)
+53 like goldenrod/1353.png (fence)
+51 like goldenrod/943.png (roof top right corner)
+51 like goldenrod/162.png (roof top left corner)
+48 like goldenrod/229.png (house normal wall)
+46 like goldenrod/1186.png (roof center)
+31 like goldenrod/1481.png (tree bottom)
+26 like goldenrod/400.png (roof top edge)
+26 like goldenrod/439.png (roof bottom edge)
+25 like goldenrod/539.png (top edge ground)
+25 like goldenrod/77.png (rock wall middle)
+20 like goldenrod/1368.png (shore)
+18 like goldenrod/1030.png (gold brick wall)
+17 like goldenrod/505.png (brown dirt top edge)
+15 like goldenrod/1387.png (ground with gray fence)
+14 like goldenrod/159.png ()
+14 like goldenrod/158.png
+14 like goldenrod/980.png
+14 like goldenrod/198.png
+14 like goldenrod/429.png
+10 like goldenrod/1421.png
+10 like goldenrod/610.png
+9 like goldenrod/758.png
+9 like goldenrod/238.png
+9 like goldenrod/200.png
+9 like goldenrod/403.png
+9 like goldenrod/170.png
+9 like goldenrod/217.png
+9 like goldenrod/377.png
+8 like goldenrod/920.png
+8 like goldenrod/148.png
+6 like goldenrod/107.png
+6 like goldenrod/149.png
+6 like goldenrod/512.png
+5 like goldenrod/260.png
+5 like goldenrod/261.png
+5 like goldenrod/831.png
+5 like goldenrod/836.png
+4 like goldenrod/880.png
+4 like goldenrod/249.png
+4 like goldenrod/1031.png
+4 like goldenrod/784.png
+3 like goldenrod/570.png
+3 like goldenrod/573.png
+3 like goldenrod/548.png
+3 like goldenrod/572.png
+3 like goldenrod/248.png
+3 like goldenrod/571.png
+2 like goldenrod/389.png
+2 like goldenrod/1343.png
+2 like goldenrod/658.png
+2 like goldenrod/1171.png
+2 like goldenrod/659.png
+2 like goldenrod/997.png
+2 like goldenrod/161.png
+2 like goldenrod/924.png
+2 like goldenrod/1173.png
+Total Duplicates: 1507&lt;/p&gt;
+&lt;h1&gt;Converting PNG Tiles to SVG&lt;/h1&gt;
+&lt;h1&gt;Final Results&lt;/h1&gt;
+&lt;p&gt;I call it &lt;em&gt;The Pokemon Kaleidoscope Series&lt;/em&gt; ooooo fancy!&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;p&gt;Azalea Town:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Blackthorn City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Cherrygrove City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Cianwood City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Ecruteak City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Goldenrod City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Mahogany Town:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;New Bark Town:&lt;/p&gt;
+&lt;p&gt;New.png&lt;/p&gt;
+&lt;p&gt;Olivine City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Violet City:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Celadon City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Cerulean City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Cinnabar Island: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Fuchsia City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Lavender Town: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Pallet Town: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Pewter City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Saffron City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Vermilion City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Viridian City: &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor]]></title><description><![CDATA[Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</guid><pubDate>Fri, 11 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Node.js Server Monitor&lt;/h1&gt;
 &lt;p&gt;In &lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/&quot;&gt;my attempt to automate my suite of websites&lt;/a&gt;, I wanted to build a simple Node.js server that monitors all my live sites, and sends me an email. Basically the process is simply:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;‘cron’ job that every 30 seconds to ping all my websites&lt;/li&gt;
@@ -84,6 +218,7 @@
 &lt;li&gt;&lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/&quot;&gt;Part 2 of ???: Building a Node.js Server Monitor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Part 3 of ???: Building a Site Differential Sensing Twitter Bot (not yet published)&lt;/li&gt;
 &lt;li&gt;Part 4 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report) (not yet published)&lt;/li&gt;
+&lt;li&gt;Part 5 of ???: Building a central webhook subdomain on (chrisfrew.in)[https://chrisfrew.in] to catch external events (GitHub, Bitbucket, push notifications)&lt;/li&gt;
 &lt;li&gt;(more coming soon)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Automation To The Moon 🚀&lt;/h1&gt;
@@ -2691,11 +2826,14 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;I would recommend you check out the newest version on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;https://github.com/frewinchristopher/sapwebidecolors&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite   lv_unit   to   MIN , so…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite&lt;/em&gt; &lt;code&gt;lv_unit&lt;/code&gt; &lt;em&gt;to&lt;/em&gt; &lt;code&gt;MIN&lt;/code&gt;&lt;em&gt;, so the conversion was correct, but the unit was left in hours, or&lt;/em&gt; &lt;code&gt;H&lt;/code&gt; &lt;em&gt;! You can see this in the code comments with date 2018.04.19.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[Edit June 1st, 2018: There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Edit June 1st, 2018:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements for the retrograde materials. You can see how to do this in &lt;a href=&quot;#footnote-6&quot;&gt;footnote 6&lt;/a&gt; for more.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Edit April 19th, 2018:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;There was a bug with this code! When we make the conversion to MIN, we forgot to overwrite&lt;/em&gt; &lt;code&gt;lv_unit&lt;/code&gt; &lt;em&gt;to&lt;/em&gt; &lt;code&gt;MIN&lt;/code&gt;&lt;em&gt;, so the conversion was correct, but the unit was left in hours, or&lt;/em&gt; &lt;code&gt;H&lt;/code&gt; &lt;em&gt;! You can see this in the code comments with date 2018.04.19.&lt;/em&gt;&lt;/p&gt;
 &lt;h1&gt;First off, Congratulations! 🎊&lt;/h1&gt;
-&lt;p&gt;&lt;sup&gt;And a happy new year! (If you’re viewing this in the summer or something, see the date!)&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;And a happy new year! (If you’re viewing this in the summer or something, see the date! 😉)&lt;/sup&gt;&lt;/p&gt;
 &lt;h2&gt;You’ve found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱&lt;/h2&gt;
-&lt;h2&gt;I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. 😄&lt;/h2&gt;
+&lt;h2&gt;I hope you use this post to maximum effectiveness, because it took me &lt;em&gt;four&lt;/em&gt; days to find, build, and get a working answer. 😄&lt;/h2&gt;
 &lt;h2&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Let’s jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module &lt;code&gt;BAPI_PRODORDCONF_GET_TT_PROP&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -2728,11 +2866,11 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Pretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn’t get the &lt;em&gt;activity confirmation amount&lt;/em&gt; to be calculated, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)&lt;/p&gt;
-&lt;p&gt;So, &lt;strong&gt;calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post &lt;sup&gt;&lt;a href=&quot;#footnote-1&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So, &lt;strong&gt;calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post &lt;sup&gt;&lt;a href=&quot;#footnote-1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, with much more digging, the reason the two functions wouldn’t produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures &lt;code&gt;lt_timetickets&lt;/code&gt; manually.&lt;/p&gt;
 &lt;h2&gt;The Calculation Function Module&lt;/h2&gt;
-&lt;p&gt;Through SAP GUI in transaction &lt;code&gt;CO11N&lt;/code&gt;, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. My struggle was finding the programmatic way to do this in ABAP.&lt;/p&gt;
-&lt;p&gt;Anyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center &lt;em&gt;behind&lt;/em&gt; the activity &lt;sup&gt;&lt;a href=&quot;#footnote-4&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Through SAP GUI in transaction &lt;code&gt;CO11N&lt;/code&gt;, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us &lt;sup&gt;&lt;a href=&quot;#footnote-2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. My struggle was finding the programmatic way to do this in ABAP.&lt;/p&gt;
+&lt;p&gt;Anyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center &lt;em&gt;behind&lt;/em&gt; the activity &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;In transaction &lt;code&gt;CR03&lt;/code&gt; (display work center), in the ‘Costing’ Tab, there is a ‘Formula’ button with the check symbol on it:&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;This was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It’s called &lt;code&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt;!&lt;/p&gt;
@@ -2859,9 +2997,9 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;h2&gt;The Details (The Hard Part)&lt;/h2&gt;
-&lt;p&gt;So what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;  - SAP is by default looping over all of them.&lt;/p&gt;
+&lt;p&gt;So what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values &lt;sup&gt;&lt;a href=&quot;#footnote-4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;  - SAP is by default looping over all of them.&lt;/p&gt;
 &lt;p&gt;Now for the function parameters themselves: they pass the work center code (&lt;code&gt;arbid&lt;/code&gt;), the operation number (&lt;code&gt;rcrop&lt;/code&gt;), the index of the confirmation (a value of 1-6), our 4 default values (&lt;code&gt;vgw&lt;/code&gt;), and the date (&lt;code&gt;date&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;In turn, the function spits out the fixed value amount of the activity calculation (&lt;code&gt;value_fix&lt;/code&gt;), the variable part (&lt;code&gt;value_var&lt;/code&gt;), both in whatever unit the function gives out in &lt;code&gt;unit&lt;/code&gt;, and &lt;code&gt;co_a&lt;/code&gt; is for the cost center accounting &lt;sup&gt;&lt;a href=&quot;#footnote-4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. There are actually four exceptions to this function, so I’m not sure why SAP internal is taking only two of them. In any case, there are other &lt;code&gt;IMPORTING&lt;/code&gt; and &lt;code&gt;EXPORTING&lt;/code&gt; parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you’ll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.&lt;/p&gt;
+&lt;p&gt;In turn, the function spits out the fixed value amount of the activity calculation (&lt;code&gt;value_fix&lt;/code&gt;), the variable part (&lt;code&gt;value_var&lt;/code&gt;), both in whatever unit the function gives out in &lt;code&gt;unit&lt;/code&gt;, and &lt;code&gt;co_a&lt;/code&gt; is for the cost center accounting &lt;sup&gt;&lt;a href=&quot;#footnote-5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. There are actually four exceptions to this function, so I’m not sure why SAP internal is taking only two of them. In any case, there are other &lt;code&gt;IMPORTING&lt;/code&gt; and &lt;code&gt;EXPORTING&lt;/code&gt; parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you’ll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.&lt;/p&gt;
 &lt;p&gt;So I mentioned the default values that must go into &lt;code&gt;vgw&lt;/code&gt; - these are the four values that are the equivalent of those four fields we can type into in &lt;code&gt;COR3&lt;/code&gt; for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table &lt;code&gt;AFVC&lt;/code&gt; ‘operation within an order’, and then table &lt;code&gt;PLPO&lt;/code&gt; ‘task list - operation/activity’:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; this is the full key for table AFVC - operation within an order - for the routing number and counter - should always work with SELECT SINGLE&lt;/span&gt;
@@ -3753,24 +3891,119 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
 &lt;hr/&gt;
 &lt;h1&gt;Footnotes&lt;/h1&gt;
 &lt;div id=&quot;footnote-1&quot;&gt;
-1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.
+1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders. I also post the adjacent code for process orders in this post.
 &lt;/div&gt;
 &lt;div id=&quot;footnote-2&quot;&gt;
 2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. 👍
 &lt;/div&gt;
 &lt;div id=&quot;footnote-3&quot;&gt;
-3. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we&apos;ll say that the confirmation process has only a maximum of four.
-&lt;/div&gt;
-&lt;div id=&quot;footnote-4&quot;&gt;
-4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:
+3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction &lt;span style=&quot;font-family:&apos;Courier New&apos;&quot;&gt;CO11N&lt;/span&gt;:
 &lt;p&gt;Upon pressing ‘enter’ for with a new amount:
-&lt;/p&gt;
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-27f1f.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.04627249357326%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdyCUH//xAAWEAEBAQAAAAAAAAAAAAAAAAAAISL/2gAIAQEAAQUCaV//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAFRABAQAAAAAAAAAAAAAAAAAAAEH/2gAIAQEABj8CRH//xAAZEAABBQAAAAAAAAAAAAAAAAAAARARMVH/2gAIAQEAAT8hS2J2P//aAAwDAQACAAMAAAAQfA//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QsY//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAj/8QAGxAAAQQDAAAAAAAAAAAAAAAAEQABMUFRcZH/2gAIAQEAAT8QCs4Qq7eoEn06/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Automatic calculation of confirmation activities by the System in transaction CO11N&quot;
+        title=&quot;&quot;
+        src=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-f8fb9.jpg&quot;
+        srcset=&quot;/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-e8976.jpg 148w,
+/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-63df2.jpg 295w,
+/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-f8fb9.jpg 590w,
+/static/co11n-1-3185baf9a83949f8159892ccdb462ae1-27f1f.jpg 778w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;Pressing ‘OK’ for this window, we get a popup:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-354e5.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 50.42301184433165%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe3cWGj/xAAVEAEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAQABBQJj/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAEQETEhQVH/2gAIAQEAAT8hxsiSF6WEpv/aAAwDAQACAAMAAAAQsw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABACERMWEQ/9oACAEBAAE/EDRGOljAWL7idMux0aJSnn//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Filling confirmation activities by hand in transaction CO11N&quot;
+        title=&quot;&quot;
+        src=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-f8fb9.jpg&quot;
+        srcset=&quot;/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-e8976.jpg 148w,
+/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-63df2.jpg 295w,
+/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-f8fb9.jpg 590w,
+/static/co11n-2-db1bc4d71c71cd1dfe6d33830158b2c6-354e5.jpg 591w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;We see that the Labor time is provided here. It’s likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it’s not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&quot;footnote-4&quot;&gt;
-4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
+4. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we&apos;ll say that the confirmation process has only a maximum of four.
+&lt;/div&gt;
+&lt;div id=&quot;footnote-5&quot;&gt;
+5. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
+&lt;/div&gt;
+&lt;div id=&quot;footnote-6&quot;&gt;
+6. This issue does not affect the confirmation formulas, but rather the goods movements in the retrograde ingredients - specifically when the goods movements are to be overridden, for example with a batch split for a retrograde material, or a custom under- or over- amount of a retrograde material. For the rare case where an employee wanted to book some of our retrograde materials from various batch numbers and warehouse locations, they noticed in these custom goods movements with the confirmation were not being added; but rather always the default SAP-calculated amounts. After some head scratching, I found it all has to do with function module &lt;span style=&quot;font-family:&apos;Courier New&apos;&quot;&gt;BAPI_PRODORDCONF_CREATE_TT&lt;/span&gt; (or &lt;span style=&quot;font-family:&apos;Courier New&apos;&quot;&gt;BAPI_PROCORDCONF_CREATE_TT&lt;/span&gt; depending on your use case) - I was not passing in an important parameter which allows exactly this desired override behavior:
+&lt;pre&gt;
+LinkConfGoodsmov
+The assignment of the goods movements to a confirmation is effected
+via the LinkConfGoodsmov table. There must be an entry in this table
+for every entry in the Goodsmovements table. The index in the
+LinkConfGoodsmov-Index_Confirm field refers to the line of the
+associated confirmation in the Timetickets table and the index in
+the LinkConfGoodsmov-Index_Goodsmov field refers the associated
+goods movement in the Goodsmovements table.
+If you want to prevent a goods movement from being posted for a
+confirmation according to the standard logic, make an entry in the
+LinkConfGoodsmov table as well as in the Timetickets table. The
+index in the LinkConfGoodsmov-Index_Confirm field refers to the line
+of the associated confirmation in the Timetickets table. Enter the
+initial value 0 in the LinkConfGoodsmov-Index_Goodsmov field. It is
+not necessary to make an entry in the Goodsmovements table in this
+case.
+If there is no entry in the LinkConfGoodsmov table for a
+confirmation, goods movements are determined for backflushing and
+automatic goods receipt using the standard logic.
+&lt;/pre&gt;
+&lt;p&gt;We needed to add the following too our goods movements loop (already added in the code above! 😄):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-abap&quot;&gt;&lt;code&gt;BLAH
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Debugging ABAP Code with a SAP Shortcut - A Must-Have Tool!]]></title><description><![CDATA[This is a Must-Have Tool for any ABAP Developer! Did you ever find you wanted to debug something in SAP GUI right on a certain command or…]]></description><link>https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</link><guid isPermaLink="false">https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/</guid><pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;This is a Must-Have Tool for any ABAP Developer!&lt;/h2&gt;
 &lt;p&gt;Did you ever find you wanted to debug something in SAP GUI right on a certain command or action, but it was in a popup? You can’t access the command line to enter &lt;code&gt;\h&lt;/code&gt;! Well, now you can with this amazing SAP shortcut!&lt;/p&gt;
 &lt;p&gt;Open any text editor and add the following:&lt;/p&gt;

@@ -1,12 +1,20 @@
 {
   "assetsByChunkName": {
+    "component---src-pages-market-news-feed-index-js": [
+      "component---src-pages-market-news-feed-index-js-c5c0ec57b2139b50f604.js",
+      "component---src-pages-market-news-feed-index-js-c5c0ec57b2139b50f604.js.map"
+    ],
     "path---final-say-bitcoin": [
       "path---final-say-bitcoin-be5cf925d154466e0b53.js",
       "path---final-say-bitcoin-be5cf925d154466e0b53.js.map"
     ],
+    "path---data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon": [
+      "path---data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon-91a57c928e5db0581405.js",
+      "path---data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon-91a57c928e5db0581405.js.map"
+    ],
     "path---fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process": [
-      "path---fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process-ec426832e3ea01394afe.js",
-      "path---fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process-ec426832e3ea01394afe.js.map"
+      "path---fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process-05fbadb4282b4c91e43a.js",
+      "path---fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process-05fbadb4282b4c91e43a.js.map"
     ],
     "path---sending-windows-commands-from-sap-abap": [
       "path---sending-windows-commands-from-sap-abap-4ba32058ede46d8461ff.js",
@@ -53,8 +61,8 @@
       "component---src-templates-blog-post-js-51968856077df34d61ae.js.map"
     ],
     "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-4033408e8aec862b1b9e.js",
-      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-4033408e8aec862b1b9e.js.map"
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-544c40be320e37a21eb1.js",
+      "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-544c40be320e37a21eb1.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-cbbf9e65a684cab01407.js",
@@ -65,16 +73,16 @@
       "path---fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor-4e003a34d029873878ed.js.map"
     ],
     "path---warn-sap-users-of-locked-objects-then-kill-their-session": [
-      "path---warn-sap-users-of-locked-objects-then-kill-their-session-1864e305e650d777b3fe.js",
-      "path---warn-sap-users-of-locked-objects-then-kill-their-session-1864e305e650d777b3fe.js.map"
+      "path---warn-sap-users-of-locked-objects-then-kill-their-session-c7b49999091e24e06a49.js",
+      "path---warn-sap-users-of-locked-objects-then-kill-their-session-c7b49999091e24e06a49.js.map"
     ],
     "path---movie-night": [
       "path---movie-night-a0e39f21c11f6a62c5ab.js",
       "path---movie-night-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-a492e946f0d0ac62de23.js",
-      "path---index-a492e946f0d0ac62de23.js.map"
+      "path---index-34a4350709cef2a2ee3b.js",
+      "path---index-34a4350709cef2a2ee3b.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-90f7fc183797c97d42ef.js",
@@ -97,14 +105,18 @@
       "path---some-tasty-bash-profile-commands-012034a544c60c5f2e83.js.map"
     ],
     "commons": [
-      "commons-feb9d6562fad53519a5b.js",
+      "commons-4dbe1ff4585d5d756fdf.js",
       "build-js-styles.css",
-      "commons-feb9d6562fad53519a5b.js.map",
+      "commons-4dbe1ff4585d5d756fdf.js.map",
       "build-js-styles.css.map"
     ],
     "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein": [
       "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-ec6598a93dcab7b5d0dc.js",
       "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein-ec6598a93dcab7b5d0dc.js.map"
+    ],
+    "path---market-news-feed": [
+      "path---market-news-feed-a0e39f21c11f6a62c5ab.js",
+      "path---market-news-feed-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---i-set-aside-1000-to-learn-options-trading": [
       "path---i-set-aside-1000-to-learn-options-trading-36a2654c6cb3a0569a7f.js",
@@ -123,9 +135,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-bce39f0f23602550c72a.js",
+      "app-0bb793389842dc4672f2.js",
       "build-js-styles.css",
-      "app-bce39f0f23602550c72a.js.map",
+      "app-0bb793389842dc4672f2.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

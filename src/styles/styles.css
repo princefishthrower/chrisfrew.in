@@ -32,7 +32,19 @@
 }
 
 a {
-  background-color: white !important;
+  background-color: white;
+}
+
+.newNewsNotification {
+  animation: yellowFade 5s ease-out 1;
+}
+@keyframes yellowFade {
+  0% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 /* canvas {

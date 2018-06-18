@@ -9,6 +9,19 @@
             "edges": [
                 {
                     "node": {
+                        "excerpt": "A Real Treat! Over the past few days, i’ve done some data analysis and scripting and art making with  Breakdown into 16x16 Tiles I repeated…",
+                        "fields": {
+                            "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+                        },
+                        "frontmatter": {
+                            "date": "01 June, 2018",
+                            "title": "Data Analysis and Pixel Art of Towns and Cities in Pokemon",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…",
                         "fields": {
                             "slug": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
@@ -191,7 +204,7 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite   lv_unit   to   MIN , so…",
+                        "excerpt": "Edit June 1st, 2018: There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements…",
                         "fields": {
                             "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
                         },

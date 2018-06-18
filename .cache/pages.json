@@ -175,11 +175,25 @@
         "path": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json",
+        "path": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "index.json",
         "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-market-news-feed-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "market-news-feed.json",
+        "path": "/market-news-feed/"
     },
     {
         "componentChunkName": "component---src-pages-movie-night-index-js",

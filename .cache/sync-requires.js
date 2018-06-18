@@ -6,6 +6,7 @@ exports.components = {
   "component---node-modules-gatsby-plugin-offline-app-shell-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js")),
   "component---src-templates-blog-post-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/index.js")),
+  "component---src-pages-market-news-feed-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js")),
   "component---src-pages-movie-night-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js")),
   "component---src-pages-sec-filings-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js"))
 }
@@ -62,7 +63,11 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "warn-sap-users-of-locked-objects-then-kill-their-session.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/warn-sap-users-of-locked-objects-then-kill-their-session.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "market-news-feed.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/market-news-feed.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "movie-night.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),

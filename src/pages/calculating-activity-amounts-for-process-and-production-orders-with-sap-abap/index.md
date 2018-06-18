@@ -4,12 +4,18 @@ date: "2018-01-03"
 draft: false
 ---
 
-_Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._
+_Edit June 1st, 2018:_
+
+_There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements for the retrograde materials. You can see how to do this in <a href="#footnote-6">footnote 6</a> for more._
+
+_Edit April 19th, 2018:_
+
+_There was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._
 
 # First off, Congratulations! :confetti_ball:
-<sup>And a happy new year! (If you're viewing this in the summer or something, see the date!)</sup>
+<sup>And a happy new year! (If you're viewing this in the summer or something, see the date! :wink:)</sup>
 ## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! :scream::scream::scream:
-## I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. :smile:
+## I hope you use this post to maximum effectiveness, because it took me _four_ days to find, build, and get a working answer. :smile:
 
 ## The Problem
 
@@ -47,15 +53,15 @@ CALL FUNCTION 'BAPI_PROCORDCONF_GET_TT_PROP'
 
 Pretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn't get the _activity confirmation amount_ to be calculated, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)
 
-So, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href="#footnote-1">2</a></sup>.**
+So, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href="#footnote-1">1</a></sup>.**
 
 Unfortunately, with much more digging, the reason the two functions wouldn't produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.
 
 ## The Calculation Function Module
 
-Through SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href="#footnote-3">3</a></sup>. My struggle was finding the programmatic way to do this in ABAP.
+Through SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href="#footnote-2">2</a></sup>. My struggle was finding the programmatic way to do this in ABAP.
 
-Anyone with significant production planning experience (i.e., not me :joy: ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href="#footnote-4">3</a></sup>.
+Anyone with significant production planning experience (i.e., not me :joy: ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href="#footnote-3">3</a></sup>.
 
 In transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:
 
@@ -85,11 +91,11 @@ and in CR03, drag our [debugging shortcut into the calculation window](https://c
 
 ## The Details (The Hard Part)
 
-So what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href="#footnote-3">3</a></sup>  - SAP is by default looping over all of them.
+So what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href="#footnote-4">4</a></sup>  - SAP is by default looping over all of them.
 
 Now for the function parameters themselves: they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), our 4 default values (`vgw`), and the date (`date`).
 
-In turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href="#footnote-4">4</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.
+In turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href="#footnote-5">5</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.
 
 So I mentioned the default values that must go into `vgw` - these are the four values that are the equivalent of those four fields we can type into in `COR3` for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table `AFVC` 'operation within an order', and then table `PLPO` 'task list - operation/activity':
 
@@ -973,7 +979,7 @@ Cheers! :beer:
 # Footnotes
 
 <div id="footnote-1">
-1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.
+1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders. I also post the adjacent code for process orders in this post.
 </div>
 
 <div id="footnote-2">
@@ -981,22 +987,59 @@ Cheers! :beer:
 </div>
 
 <div id="footnote-3">
-3. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.
-</div>
-
-<div id="footnote-4">
-4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:
+3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction <span style="font-family:'Courier New'">CO11N</span>:
 
 Upon pressing 'enter' for with a new amount:
-![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpeg)
+![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpg)
 
 Pressing 'OK' for this window, we get a popup:
 
-![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpeg)
+![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpg)
 
 We see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)
 </div>
 
 <div id="footnote-4">
-4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
+4. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.
 </div>
+
+<div id="footnote-5">
+5. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.
+</div>
+
+<div id="footnote-6">
+6. This issue does not affect the confirmation formulas, but rather the goods movements in the retrograde ingredients - specifically when the goods movements are to be overridden, for example with a batch split for a retrograde material, or a custom under- or over- amount of a retrograde material. For the rare case where an employee wanted to book some of our retrograde materials from various batch numbers and warehouse locations, they noticed in these custom goods movements with the confirmation were not being added; but rather always the default SAP-calculated amounts. After some head scratching, I found it all has to do with function module <span style="font-family:'Courier New'">BAPI_PRODORDCONF_CREATE_TT</span> (or <span style="font-family:'Courier New'">BAPI_PROCORDCONF_CREATE_TT</span> depending on your use case) - I was not passing in an important parameter which allows exactly this desired override behavior:
+
+<pre>
+LinkConfGoodsmov
+The assignment of the goods movements to a confirmation is effected
+via the LinkConfGoodsmov table. There must be an entry in this table
+for every entry in the Goodsmovements table. The index in the
+LinkConfGoodsmov-Index_Confirm field refers to the line of the
+associated confirmation in the Timetickets table and the index in
+the LinkConfGoodsmov-Index_Goodsmov field refers the associated
+goods movement in the Goodsmovements table.
+If you want to prevent a goods movement from being posted for a
+confirmation according to the standard logic, make an entry in the
+LinkConfGoodsmov table as well as in the Timetickets table. The
+index in the LinkConfGoodsmov-Index_Confirm field refers to the line
+of the associated confirmation in the Timetickets table. Enter the
+initial value 0 in the LinkConfGoodsmov-Index_Goodsmov field. It is
+not necessary to make an entry in the Goodsmovements table in this
+case.
+If there is no entry in the LinkConfGoodsmov table for a
+confirmation, goods movements are determined for backflushing and
+automatic goods receipt using the standard logic.
+</pre>
+
+We needed to add the following too our goods movements loop (already added in the code above! :smile:):
+
+```abap
+BLAH
+```
+
+</div>
+
+
+
+

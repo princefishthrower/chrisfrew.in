@@ -1596,12 +1596,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-05-29T18:37:30.179Z",
+      "buildTime": "2018-06-18T05:36:54.586Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c39865bdfef55135207eda152b16cc62",
+        "contentDigest": "3c7b867674d9d3f84f93ba2d941e9dde",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1611,7 +1611,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "126bf040bd10202e0622cba8d526fc16",
+        "contentDigest": "43c448af3028e570f72e16a1fa271037",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1619,11 +1619,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 960,
-      "prettySize": "960 B",
-      "modifiedTime": "2018-05-15T19:48:33.486Z",
-      "accessTime": "2018-05-29T18:37:33.628Z",
-      "changeTime": "2018-05-15T19:48:33.486Z",
+      "size": 1024,
+      "prettySize": "1.02 kB",
+      "modifiedTime": "2018-06-18T05:24:11.605Z",
+      "accessTime": "2018-06-18T05:36:56.503Z",
+      "changeTime": "2018-06-18T05:24:11.605Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1631,22 +1631,22 @@
       "ext": "",
       "name": "pages",
       "relativeDirectory": "..",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
-      "nlink": 30,
+      "nlink": 32,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1527619053627.793,
-      "mtimeMs": 1526413713485.7314,
-      "ctimeMs": 1526413713485.7314,
+      "atimeMs": 1529300216502.6687,
+      "mtimeMs": 1529299451604.8772,
+      "ctimeMs": 1529299451604.8772,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-05-29T18:37:33.628Z",
-      "mtime": "2018-05-15T19:48:33.486Z",
-      "ctime": "2018-05-15T19:48:33.486Z",
+      "atime": "2018-06-18T05:36:56.503Z",
+      "mtime": "2018-06-18T05:24:11.605Z",
+      "ctime": "2018-06-18T05:24:11.605Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1654,7 +1654,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b87057b89212cb761d4b1a9be8b18538",
+        "contentDigest": "aaa475ccc6e48e55340d2c959417b235",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1665,7 +1665,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1674,7 +1674,7 @@
       "ext": "",
       "name": "a-toast-to-full-stack-developers",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1683,11 +1683,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1527619053634.6243,
+      "atimeMs": 1529300216509.6338,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1697,7 +1697,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8954b2ec6621ef239dcdbab665f9284a",
+        "contentDigest": "eb5feb8b76527cbe263ffac90ed14850",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1708,7 +1708,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1717,7 +1717,7 @@
       "ext": "",
       "name": "an-npm-christmas-easter-egg",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -1726,11 +1726,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1527619053634.7056,
+      "atimeMs": 1529300216509.6687,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1740,7 +1740,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7b60fee27ef444af7decbf98e53f74de",
+        "contentDigest": "8e7c15f9069f7eb667d1e53b004417d7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1751,7 +1751,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-11T16:03:06.851Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-11T16:03:06.851Z",
       "birthTime": "2018-01-11T16:01:54.254Z",
       "root": "/",
@@ -1760,7 +1760,7 @@
       "ext": "",
       "name": "abap-push-and-message-channels",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1769,11 +1769,11 @@
       "blksize": 4194304,
       "ino": 8596136407,
       "blocks": 0,
-      "atimeMs": 1527619053634.667,
+      "atimeMs": 1529300216509.68,
       "mtimeMs": 1515686586850.6416,
       "ctimeMs": 1515686586850.6416,
       "birthtimeMs": 1515686514254.4714,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-11T16:03:06.851Z",
       "ctime": "2018-01-11T16:03:06.851Z",
       "birthtime": "2018-01-11T16:01:54.254Z"
@@ -1783,7 +1783,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2b623a1ba9a8ec9d128c543968ec937b",
+        "contentDigest": "215836d60ec42d709248a2e42922f0ab",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1794,7 +1794,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:47:15.305Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-17T16:47:15.305Z",
       "birthTime": "2018-01-17T16:47:09.210Z",
       "root": "/",
@@ -1803,7 +1803,7 @@
       "ext": "",
       "name": "building-raiblocks-charts",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1812,11 +1812,11 @@
       "blksize": 4194304,
       "ino": 8596482995,
       "blocks": 0,
-      "atimeMs": 1527619053634.7336,
+      "atimeMs": 1529300216509.6997,
       "mtimeMs": 1516207635305.3901,
       "ctimeMs": 1516207635305.3901,
       "birthtimeMs": 1516207629209.9854,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-17T16:47:15.305Z",
       "ctime": "2018-01-17T16:47:15.305Z",
       "birthtime": "2018-01-17T16:47:09.210Z"
@@ -1826,7 +1826,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0591c18d787cb5e01993ecbcfcb30782",
+        "contentDigest": "3bcc16e00a1a9d18a034863e0af13656",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1837,7 +1837,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1846,7 +1846,7 @@
       "ext": "",
       "name": "colors-for-sap-web-ide",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -1855,11 +1855,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1527619053634.8513,
+      "atimeMs": 1529300216509.743,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1869,7 +1869,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bb589cf0cd35ed0d888c6f95db330020",
+        "contentDigest": "f66fcd76edffe34c0d3e1302ceab34e0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1880,7 +1880,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1889,7 +1889,7 @@
       "ext": "",
       "name": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 15,
       "uid": 501,
@@ -1898,11 +1898,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1527619053634.807,
+      "atimeMs": 1529300216509.7915,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1912,7 +1912,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c4cb0f7607c50efb5bfb1e69feff10eb",
+        "contentDigest": "53e0d63142d70114713859bab714084c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1923,7 +1923,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2018-04-07T17:41:08.850Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-04-07T17:41:08.850Z",
       "birthTime": "2018-04-07T15:59:19.305Z",
       "root": "/",
@@ -1932,7 +1932,7 @@
       "ext": "",
       "name": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 7,
       "uid": 501,
@@ -1941,11 +1941,11 @@
       "blksize": 4194304,
       "ino": 8602609341,
       "blocks": 0,
-      "atimeMs": 1527619053635.1223,
+      "atimeMs": 1529300216509.705,
       "mtimeMs": 1523122868849.758,
       "ctimeMs": 1523122868849.758,
       "birthtimeMs": 1523116759304.8486,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-04-07T17:41:08.850Z",
       "ctime": "2018-04-07T17:41:08.850Z",
       "birthtime": "2018-04-07T15:59:19.305Z"
@@ -1955,7 +1955,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "11d0ef1cbd1938b68fb630c896dbce90",
+        "contentDigest": "8f1751f558809b977ecf8f8e6083e6d4",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1966,7 +1966,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -1975,7 +1975,7 @@
       "ext": "",
       "name": "debugging-abap-with-a-sap-shortcut",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -1984,11 +1984,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1527619053634.8086,
+      "atimeMs": 1529300216509.7595,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -1998,7 +1998,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c136013f2d65c832bd9a2b8684b0f827",
+        "contentDigest": "66eb1813192a2adc3d2b7912f87c4735",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2009,7 +2009,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -2018,7 +2018,7 @@
       "ext": "",
       "name": "detailed-look-at-bdc-in-abap",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2027,11 +2027,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1527619053634.8254,
+      "atimeMs": 1529300216509.7795,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -2041,7 +2041,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b00f1be93e597888701fd04c00be873a",
+        "contentDigest": "0df689d179c5ba2677dea568c88e7f96",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2052,7 +2052,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2061,7 +2061,7 @@
       "ext": "",
       "name": "dropdowns-in-readmes",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2070,11 +2070,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1527619053634.8374,
+      "atimeMs": 1529300216509.8276,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2084,7 +2084,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "00310def527a9e739a94d89d37c2c0e5",
+        "contentDigest": "837992c19e185d590a31ca7b3187b547",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2095,7 +2095,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2104,7 +2104,7 @@
       "ext": "",
       "name": "final-say-bitcoin",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2113,11 +2113,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1527619053634.8652,
+      "atimeMs": 1529300216509.8333,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2127,7 +2127,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cfb0e7df7560062932873bcb7a08f37f",
+        "contentDigest": "0131fb66bc66a1fceea810c968d424f5",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2138,7 +2138,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-05-15T11:07:29.859Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-05-15T11:07:29.859Z",
       "birthTime": "2018-05-10T10:33:47.718Z",
       "root": "/",
@@ -2147,7 +2147,7 @@
       "ext": "",
       "name": "fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -2156,11 +2156,11 @@
       "blksize": 4194304,
       "ino": 8603785351,
       "blocks": 0,
-      "atimeMs": 1527619053634.9006,
+      "atimeMs": 1529300216509.8464,
       "mtimeMs": 1526382449858.6301,
       "ctimeMs": 1526382449858.6301,
       "birthtimeMs": 1525948427717.8652,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-05-15T11:07:29.859Z",
       "ctime": "2018-05-15T11:07:29.859Z",
       "birthtime": "2018-05-10T10:33:47.718Z"
@@ -2170,7 +2170,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bf178926d8f87aca330e11631250eef1",
+        "contentDigest": "9ed67428ce863fd44fe165ef9c39e4ed",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2181,7 +2181,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-10T13:57:15.395Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-05-10T13:57:15.395Z",
       "birthTime": "2018-05-10T13:57:08.500Z",
       "root": "/",
@@ -2190,7 +2190,7 @@
       "ext": "",
       "name": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2199,11 +2199,11 @@
       "blksize": 4194304,
       "ino": 8603794471,
       "blocks": 0,
-      "atimeMs": 1527619053634.8948,
+      "atimeMs": 1529300216509.867,
       "mtimeMs": 1525960635395.2844,
       "ctimeMs": 1525960635395.2844,
       "birthtimeMs": 1525960628500.1267,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-05-10T13:57:15.395Z",
       "ctime": "2018-05-10T13:57:15.395Z",
       "birthtime": "2018-05-10T13:57:08.500Z"
@@ -2213,7 +2213,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "30d62310d723657411e0c5bf03e6f2e9",
+        "contentDigest": "52fe2809d08c4e4b8c393bdc2b71016e",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2224,7 +2224,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2233,7 +2233,7 @@
       "ext": "",
       "name": "hello-world",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2242,11 +2242,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1527619053634.916,
+      "atimeMs": 1529300216509.8716,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2256,7 +2256,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "956e91987300265eec5691a70fd8e077",
+        "contentDigest": "bc1b9d471d1e98407dcce84896ac7527",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2267,7 +2267,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2276,7 +2276,7 @@
       "ext": "",
       "name": "hot-linking-to-lines-in-github",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2285,11 +2285,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1527619053634.9739,
+      "atimeMs": 1529300216509.9092,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2299,7 +2299,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4e5d1f93c12e99af3d3855c3d3832a7c",
+        "contentDigest": "69ee2c1c5db0ba4ece88f730b8643320",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2310,7 +2310,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:31:47.195Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-17T16:31:47.195Z",
       "birthTime": "2018-01-17T16:31:36.460Z",
       "root": "/",
@@ -2319,7 +2319,7 @@
       "ext": "",
       "name": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2328,11 +2328,11 @@
       "blksize": 4194304,
       "ino": 8596482218,
       "blocks": 0,
-      "atimeMs": 1527619053634.9922,
+      "atimeMs": 1529300216509.9133,
       "mtimeMs": 1516206707195.2708,
       "ctimeMs": 1516206707195.2708,
       "birthtimeMs": 1516206696460.457,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-17T16:31:47.195Z",
       "ctime": "2018-01-17T16:31:47.195Z",
       "birthtime": "2018-01-17T16:31:36.460Z"
@@ -2342,7 +2342,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3b93e33e4f48233c9f4deb4ae020fce7",
+        "contentDigest": "f9159c0d10e6e54aadbd9ef4db213f3b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2353,7 +2353,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T15:52:46.268Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-04-07T15:52:46.268Z",
       "birthTime": "2018-04-07T15:52:39.855Z",
       "root": "/",
@@ -2362,7 +2362,7 @@
       "ext": "",
       "name": "i-set-aside-1000-to-learn-options-trading",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2371,11 +2371,11 @@
       "blksize": 4194304,
       "ino": 8602609104,
       "blocks": 0,
-      "atimeMs": 1527619053635.0276,
+      "atimeMs": 1529300216509.936,
       "mtimeMs": 1523116366267.7776,
       "ctimeMs": 1523116366267.7776,
       "birthtimeMs": 1523116359855.1514,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-04-07T15:52:46.268Z",
       "ctime": "2018-04-07T15:52:46.268Z",
       "birthtime": "2018-04-07T15:52:39.855Z"
@@ -2385,7 +2385,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ef7906a7d89c4df6cfeadcd17f5dedad",
+        "contentDigest": "343ae5981c1e1089d58ffcad725891d5",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2396,7 +2396,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-03-01T06:16:06.999Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-03-01T06:16:06.999Z",
       "birthTime": "2018-03-01T06:15:48.748Z",
       "root": "/",
@@ -2405,7 +2405,7 @@
       "ext": "",
       "name": "introducing-chrisfrewin-productions",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2414,11 +2414,11 @@
       "blksize": 4194304,
       "ino": 8599787247,
       "blocks": 0,
-      "atimeMs": 1527619053635.021,
+      "atimeMs": 1529300216509.9675,
       "mtimeMs": 1519884966998.8735,
       "ctimeMs": 1519884966998.8735,
       "birthtimeMs": 1519884948747.99,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-03-01T06:16:06.999Z",
       "ctime": "2018-03-01T06:16:06.999Z",
       "birthtime": "2018-03-01T06:15:48.748Z"
@@ -2428,7 +2428,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "94a85fbff33dacbbf9d29941353806f1",
+        "contentDigest": "bc9f8c2882e5160cd128ed0a5a845e7a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2439,7 +2439,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T17:02:27.730Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-01-17T17:02:27.730Z",
       "birthTime": "2018-01-17T17:02:18.586Z",
       "root": "/",
@@ -2448,7 +2448,7 @@
       "ext": "",
       "name": "jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2457,11 +2457,11 @@
       "blksize": 4194304,
       "ino": 8596484302,
       "blocks": 0,
-      "atimeMs": 1527619053635.0425,
+      "atimeMs": 1529300216509.9475,
       "mtimeMs": 1516208547730.4324,
       "ctimeMs": 1516208547730.4324,
       "birthtimeMs": 1516208538586.4346,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-01-17T17:02:27.730Z",
       "ctime": "2018-01-17T17:02:27.730Z",
       "birthtime": "2018-01-17T17:02:18.586Z"
@@ -2471,7 +2471,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4d95e56392990fc08141618731cf8a20",
+        "contentDigest": "bf9410323691bb2632d40c76f87944a4",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2482,7 +2482,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-03-17T17:29:41.508Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-03-17T17:29:41.508Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2491,7 +2491,7 @@
       "ext": "",
       "name": "laptop-stickers",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 5,
       "uid": 501,
@@ -2500,11 +2500,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1527619053635.072,
+      "atimeMs": 1529300216510.0088,
       "mtimeMs": 1521307781508.2327,
       "ctimeMs": 1521307781508.2327,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-03-17T17:29:41.508Z",
       "ctime": "2018-03-17T17:29:41.508Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2514,7 +2514,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "960675d61c5443b5ac92eab72693650b",
+        "contentDigest": "63b46ac2e17801f8cb29c02b1455d2b0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2525,7 +2525,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T20:48:19.532Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-05-15T20:48:19.532Z",
       "birthTime": "2018-05-11T10:24:28.525Z",
       "root": "/",
@@ -2534,7 +2534,7 @@
       "ext": "",
       "name": "movie-night",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2543,11 +2543,11 @@
       "blksize": 4194304,
       "ino": 8603808666,
       "blocks": 0,
-      "atimeMs": 1527619053635.1162,
+      "atimeMs": 1529300216510.047,
       "mtimeMs": 1526417299532.3975,
       "ctimeMs": 1526417299532.3975,
       "birthtimeMs": 1526034268524.7666,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-05-15T20:48:19.532Z",
       "ctime": "2018-05-15T20:48:19.532Z",
       "birthtime": "2018-05-11T10:24:28.525Z"
@@ -2557,7 +2557,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a26520a421a9936b049756a9938c911b",
+        "contentDigest": "b2ba9124e0424c0f7f30f709fa3cf7f9",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2568,7 +2568,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T19:48:41.380Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-05-15T19:48:41.380Z",
       "birthTime": "2018-05-15T19:48:33.486Z",
       "root": "/",
@@ -2577,7 +2577,7 @@
       "ext": "",
       "name": "sec-filings",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2586,11 +2586,11 @@
       "blksize": 4194304,
       "ino": 8604270631,
       "blocks": 0,
-      "atimeMs": 1527619053635.1384,
+      "atimeMs": 1529300216510.015,
       "mtimeMs": 1526413721379.8489,
       "ctimeMs": 1526413721379.8489,
       "birthtimeMs": 1526413713485.7114,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-05-15T19:48:41.380Z",
       "ctime": "2018-05-15T19:48:41.380Z",
       "birthtime": "2018-05-15T19:48:33.486Z"
@@ -2600,7 +2600,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "178bbad8b7880b95e1648c954a81aee0",
+        "contentDigest": "514111045f9b097ef4e501f830d7a796",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2611,7 +2611,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2620,7 +2620,7 @@
       "ext": "",
       "name": "sending-windows-commands-from-sap-abap",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2629,11 +2629,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1527619053635.1782,
+      "atimeMs": 1529300216510.0273,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2643,7 +2643,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a29c0af1d3303fe70727677a6b7598c9",
+        "contentDigest": "6094b2216fdd521dfe3c552fff370548",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2654,7 +2654,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T17:48:48.349Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-04-07T17:48:48.349Z",
       "birthTime": "2018-04-07T17:48:39.168Z",
       "root": "/",
@@ -2663,7 +2663,7 @@
       "ext": "",
       "name": "some-tasty-bash-profile-commands",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2672,11 +2672,11 @@
       "blksize": 4194304,
       "ino": 8602616148,
       "blocks": 0,
-      "atimeMs": 1527619053635.1582,
+      "atimeMs": 1529300216510.0525,
       "mtimeMs": 1523123328348.7495,
       "ctimeMs": 1523123328348.7495,
       "birthtimeMs": 1523123319168.0408,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-04-07T17:48:48.349Z",
       "ctime": "2018-04-07T17:48:48.349Z",
       "birthtime": "2018-04-07T17:48:39.168Z"
@@ -2686,7 +2686,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8e14d00e4c1fd751595a3746624e1a84",
+        "contentDigest": "70a28e5beee29b8946c69eae37a897d3",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2697,7 +2697,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-14T12:54:05.969Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-04-14T12:54:05.969Z",
       "birthTime": "2018-04-14T12:53:24.860Z",
       "root": "/",
@@ -2706,7 +2706,7 @@
       "ext": "",
       "name": "using-google-clouds-text-to-speech-machine-learning-api",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 3,
       "uid": 501,
@@ -2715,11 +2715,11 @@
       "blksize": 4194304,
       "ino": 8602988643,
       "blocks": 0,
-      "atimeMs": 1527619053635.2642,
+      "atimeMs": 1529300216510.0938,
       "mtimeMs": 1523710445969.4082,
       "ctimeMs": 1523710445969.4082,
       "birthtimeMs": 1523710404859.8237,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-04-14T12:54:05.969Z",
       "ctime": "2018-04-14T12:54:05.969Z",
       "birthtime": "2018-04-14T12:53:24.860Z"
@@ -2729,7 +2729,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "de171334a8bbcec7ec2e1ca18f9280d2",
+        "contentDigest": "337e5346c99bb863b0278e268ad17a75",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2740,7 +2740,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-05-10T12:48:47.593Z",
-      "accessTime": "2018-05-29T18:37:33.635Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
       "changeTime": "2018-05-10T13:24:15.745Z",
       "birthTime": "2018-01-15T07:23:04.154Z",
       "root": "/",
@@ -2749,7 +2749,7 @@
       "ext": "",
       "name": "warn-sap-users-of-locked-objects-then-kill-their-session",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 16877,
       "nlink": 10,
       "uid": 501,
@@ -2758,11 +2758,11 @@
       "blksize": 4194304,
       "ino": 8596340303,
       "blocks": 0,
-      "atimeMs": 1527619053635.2793,
+      "atimeMs": 1529300216510.132,
       "mtimeMs": 1525956527593.0906,
       "ctimeMs": 1525958655744.636,
       "birthtimeMs": 1516000984154.256,
-      "atime": "2018-05-29T18:37:33.635Z",
+      "atime": "2018-06-18T05:36:56.510Z",
       "mtime": "2018-05-10T12:48:47.593Z",
       "ctime": "2018-05-10T13:24:15.745Z",
       "birthtime": "2018-01-15T07:23:04.154Z"
@@ -2952,7 +2952,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "358a1d2ef2028408c8d917d4398bec9f",
+        "contentDigest": "0d80256bca84d90fee8158c3a81f7f8b",
         "mediaType": "application/octet-stream",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2961,11 +2961,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/.DS_Store",
       "relativePath": ".DS_Store",
       "extension": "",
-      "size": 10244,
-      "prettySize": "10.2 kB",
-      "modifiedTime": "2018-05-15T11:01:48.922Z",
-      "accessTime": "2018-05-15T19:59:02.416Z",
-      "changeTime": "2018-05-15T11:01:48.922Z",
+      "size": 12292,
+      "prettySize": "12.3 kB",
+      "modifiedTime": "2018-06-02T17:28:26.881Z",
+      "accessTime": "2018-06-17T14:37:00.309Z",
+      "changeTime": "2018-06-02T17:28:26.881Z",
       "birthTime": "2018-01-03T18:17:03.700Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
@@ -2973,7 +2973,7 @@
       "ext": "",
       "name": ".DS_Store",
       "relativeDirectory": "",
-      "dev": 16777220,
+      "dev": 16777221,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
@@ -2981,14 +2981,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8595820375,
-      "blocks": 24,
-      "atimeMs": 1526414342416.4294,
-      "mtimeMs": 1526382108922.3708,
-      "ctimeMs": 1526382108922.3708,
+      "blocks": 32,
+      "atimeMs": 1529246220308.982,
+      "mtimeMs": 1527960506881.0198,
+      "ctimeMs": 1527960506881.0198,
       "birthtimeMs": 1515003423700.3103,
-      "atime": "2018-05-15T19:59:02.416Z",
-      "mtime": "2018-05-15T11:01:48.922Z",
-      "ctime": "2018-05-15T11:01:48.922Z",
+      "atime": "2018-06-17T14:37:00.309Z",
+      "mtime": "2018-06-02T17:28:26.881Z",
+      "ctime": "2018-06-02T17:28:26.881Z",
       "birthtime": "2018-01-03T18:17:03.700Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/abap-push-and-message-channels/index.md absPath of file": {
@@ -3364,7 +3364,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "488febe6ac17fabdef709fd7b8213eed",
+        "contentDigest": "c5a60ea85d457ba45a14a7ac0b2b4c7b",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3373,11 +3373,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md",
       "relativePath": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md",
       "extension": "md",
-      "size": 47404,
-      "prettySize": "47.4 kB",
-      "modifiedTime": "2018-04-19T06:59:43.582Z",
-      "accessTime": "2018-05-15T19:59:02.417Z",
-      "changeTime": "2018-04-19T06:59:43.582Z",
+      "size": 49913,
+      "prettySize": "49.9 kB",
+      "modifiedTime": "2018-06-01T18:06:27.144Z",
+      "accessTime": "2018-06-01T18:06:27.148Z",
+      "changeTime": "2018-06-01T18:06:27.144Z",
       "birthTime": "2017-12-20T19:30:39.425Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap",
@@ -3393,14 +3393,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8594400836,
-      "blocks": 96,
-      "atimeMs": 1526414342416.9487,
-      "mtimeMs": 1524121183582.1519,
-      "ctimeMs": 1524121183582.1519,
+      "blocks": 104,
+      "atimeMs": 1527876387147.9946,
+      "mtimeMs": 1527876387144.1055,
+      "ctimeMs": 1527876387144.1055,
       "birthtimeMs": 1513798239424.5288,
-      "atime": "2018-05-15T19:59:02.417Z",
-      "mtime": "2018-04-19T06:59:43.582Z",
-      "ctime": "2018-04-19T06:59:43.582Z",
+      "atime": "2018-06-01T18:06:27.148Z",
+      "mtime": "2018-06-01T18:06:27.144Z",
+      "ctime": "2018-06-01T18:06:27.144Z",
       "birthtime": "2017-12-20T19:30:39.425Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/function-found.png absPath of file": {
@@ -4048,7 +4048,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "df78bee490394b75017e2a27dee57ea5",
+        "contentDigest": "524a3bc76250ff7955afb5a72bda7119",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -4057,11 +4057,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md",
       "relativePath": "fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md",
       "extension": "md",
-      "size": 2266,
-      "prettySize": "2.27 kB",
-      "modifiedTime": "2018-05-29T18:02:13.565Z",
-      "accessTime": "2018-05-29T18:37:33.554Z",
-      "changeTime": "2018-05-29T18:02:13.565Z",
+      "size": 2425,
+      "prettySize": "2.42 kB",
+      "modifiedTime": "2018-06-01T17:42:25.871Z",
+      "accessTime": "2018-06-01T17:42:26.363Z",
+      "changeTime": "2018-06-01T17:42:25.871Z",
       "birthTime": "2018-05-10T10:34:00.126Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process",
@@ -4078,13 +4078,13 @@
       "blksize": 4194304,
       "ino": 8603785358,
       "blocks": 8,
-      "atimeMs": 1527619053553.7305,
-      "mtimeMs": 1527616933565.402,
-      "ctimeMs": 1527616933565.402,
+      "atimeMs": 1527874946363.2202,
+      "mtimeMs": 1527874945871.1748,
+      "ctimeMs": 1527874945871.1748,
       "birthtimeMs": 1525948440125.591,
-      "atime": "2018-05-29T18:37:33.554Z",
-      "mtime": "2018-05-29T18:02:13.565Z",
-      "ctime": "2018-05-29T18:02:13.565Z",
+      "atime": "2018-06-01T17:42:26.363Z",
+      "mtime": "2018-06-01T17:42:25.871Z",
+      "ctime": "2018-06-01T17:42:25.871Z",
       "birthtime": "2018-05-10T10:34:00.126Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file": {
@@ -5449,8 +5449,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2018-01-03\"\ndraft: false\n---\n\n_Edit April 19th, 2018 - there was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._\n\n# First off, Congratulations! 🎊\n<sup>And a happy new year! (If you're viewing this in the summer or something, see the date!)</sup>\n## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱\n## I hope you use this post to maximum effectiveness, because it took me four days to find, build, and get a working answer. 😄\n\n## The Problem\n\nLet's jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module `BAPI_PRODORDCONF_GET_TT_PROP`:\n\n```abap\nCALL FUNCTION 'BAPI_PRODORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nLikewise, there is a very similiar `BAPI_PROCORDCONF_GET_TT_PROP` for process orders:\n\n```abap\nCALL FUNCTION 'BAPI_PROCORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nPretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn't get the _activity confirmation amount_ to be calculated, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)\n\nSo, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href=\"#footnote-1\">2</a></sup>.**\n\nUnfortunately, with much more digging, the reason the two functions wouldn't produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.\n\n## The Calculation Function Module\n\nThrough SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href=\"#footnote-3\">3</a></sup>. My struggle was finding the programmatic way to do this in ABAP.\n\nAnyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href=\"#footnote-4\">3</a></sup>.\n\nIn transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:\n\n![GUI testing calculation](test-formula.jpeg)\n\nThis was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It's called `CR_WORKCENTER_FORMULA_CALC`!\n\nLet's head on over to transaction `SE37` and test it ourselves!\n\n![Yep, that's SAP](error-test-frame.jpeg)\n\n😑😑😑 shit... SAP, you had one job to do!\n\nFine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FORMULA_CALC` and set a breakpoint in the first line:\n\n![The first possible line in the function we can breakpoint](function-breakpoint.png)\n\nand in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src=\"return.png\"/> and...\n\n🙏 Violá! 🙏 We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!\n\n![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)\n\n(For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)\n\n![Calling program details](form-program.png)\n\n## The Details (The Hard Part)\n\nSo what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href=\"#footnote-3\">3</a></sup>  - SAP is by default looping over all of them.\n\nNow for the function parameters themselves: they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), our 4 default values (`vgw`), and the date (`date`).\n\nIn turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href=\"#footnote-4\">4</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.\n\nSo I mentioned the default values that must go into `vgw` - these are the four values that are the equivalent of those four fields we can type into in `COR3` for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table `AFVC` 'operation within an order', and then table `PLPO` 'task list - operation/activity':\n\n```abap\n\" this is the full key for table AFVC - operation within an order - for the routing number and counter - should always work with SELECT SINGLE\nSELECT SINGLE * FROM afvc INTO ls_afvc\n  WHERE aufpl = ls_operation-routing_no\n  AND   aplzl = ls_operation-counter.\n\n\" this is the full key for table PLPO - task list - operation/activity - so it should always work with SELECT SINGLE\nSELECT SINGLE * FROM plpo INTO ls_plpo\n  WHERE plnty EQ ls_afvc-plnty\n  AND plnnr EQ ls_afvc-plnnr\n  AND plnkn EQ ls_afvc-plnkn\n  AND zaehl EQ ls_afvc-zaehl.\n```\n\nThe routing number `ls_operation-routing_no` and counter `ls_operation-counter` we've gotten from function `BAPI_PRODORD_GET_DETAIL`:\n\n```abap\n\" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n```\n\n(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info 😉. Here we are just getting the operation information from the order - that's all we need.)\n\nWe can finally move the corresponding fields of `ls_plpo` to `ls_vgw`:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_vgw.\n```\n\nHowever, in addition to these four values, there are two more that are essential, that is the yield amount (`mgvrg`), and the unit (`meinh`)! We can pass them right into `ls_op` as well:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_op.\nls_op-mgvrg = ls_yield_so-low.\nls_op-meinh = ls_conf_quan_unit_so-low.\n```\n\nArmed with our structures `ls_afvc`, `ls_op`, and `ls_vgw`, we are ready to call our function:\n\n```abap\nCALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n  EXPORTING\n    arbid             = ls_afvc-arbid\n    op                = ls_op\n    vgw               = ls_vgw\n    index             = sy-index\n    date              = sy-datum\n  IMPORTING\n    value_fix          = lv_value_fix\n    value_var         = lv_value_var\n    unit              = lv_unit\n  EXCEPTIONS\n    missing_parameter = 1\n    not_found         = 2\n    division_by_zero  = 3\n    OTHERS            = 4.\nIF sy-subrc <> 0.\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\n\nWe want the total, right? Okay, we just add the fixed value and variable value part:\n\n```abap\nlv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and variable values for this activity\n```\n\nA requirement by my company was to have all the activity confirmation values with the same unit (I find it cleaner anyway to have all the activity confirmation values in the same unit anyway). Unfortunately, the default unit for some of the activities was hours, so we have to take a small intermediary step and call a conversion function before we are truly done:\n\n```abap\n\" convert any 'H' values to 'MIN'\nIF lv_unit NE 'MIN'.\n  CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n    EXPORTING\n      input                = lv_value\n      unit_in              = lv_unit\n      unit_out             = 'MIN'\n    IMPORTING\n      output               = lv_output\n    EXCEPTIONS\n      conversion_not_found = 1\n      division_by_zero     = 2\n      input_invalid        = 3\n      output_invalid       = 4\n      overflow              = 5\n      type_invalid         = 6\n      units_missing        = 7\n      unit_in_not_found    = 8\n      unit_out_not_found   = 9\n      OTHERS               = 10.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n```\nWe then finally carry over this converted `lv_output` over to the `conf_activity` field for `lt_timetickets`, doing this for all 1-6 `conf_activity`'s:\n\n```abap\nCASE sy-index.\n  WHEN 1.\n    ls_timetickets-conf_activity1  = lv_output.\n    ls_timetickets-conf_acti_unit1 = 'MIN'.\n  WHEN 2.\n    ls_timetickets-conf_activity2  = lv_output.\n    ls_timetickets-conf_acti_unit2 = 'MIN'.\n  WHEN 3.\n    ls_timetickets-conf_activity3  = lv_output.\n    ls_timetickets-conf_acti_unit3 = 'MIN'.\n  WHEN 4.\n    ls_timetickets-conf_activity4  = lv_output.\n    ls_timetickets-conf_acti_unit4 = 'MIN'.\n  WHEN 5.\n    ls_timetickets-conf_activity5  = lv_output.\n    ls_timetickets-conf_acti_unit5 = 'MIN'.\n  WHEN 6.\n    ls_timetickets-conf_activity6  = lv_output.\n    ls_timetickets-conf_acti_unit6 = 'MIN'.\nENDCASE.\n```\n\nWith that, we can call the final confirmation function, with all our calculated values wrapped up in `lt_timetickets`:\n\n```abap\n\" create confirmation\nCALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n  IMPORTING\n    return         = ls_return\n  TABLES\n    timetickets    = lt_timetickets\n    goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n    detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n  EXCEPTIONS\n    OTHERS         = 1.\nIF sy-subrc <> 0.\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\nIf you were sharp, you realized all of this code is only on the operation level - so indeed, the six-level loop must be done each time, for each operation - we have to throw all the above code into a loop over our operations! See below for the full result!\n\n## Production Orders\nIn summary, the full code looks like this:\n\n**NOTE: the full code examples were written for a SAP Gateway environment - i.e. the server environment from a SAPUI5 OData call! If you try to copy and paste this code directly into something like a report or function, ABAP statements like:**\n\n```abap\nlt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n```\n\nwon't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method 😄\n\n```abap\nDATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n           ls_filters           LIKE LINE OF lt_filters,\n           lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_plant_so          LIKE LINE OF lt_select_options,\n           ls_orderid_so        LIKE LINE OF lt_select_options,\n           ls_fin_conf_so       LIKE LINE OF lt_select_options,\n           ls_dev_reason_so     LIKE LINE OF lt_select_options,\n           ls_conf_text_so      LIKE LINE OF lt_select_options,\n           ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n           ls_yield_so          LIKE LINE OF lt_select_options,\n           ls_scrap_so          LIKE LINE OF lt_select_options,\n           lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_stg_loc           LIKE LINE OF lt_stg_loc,\n           lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_batch             LIKE LINE OF lt_batch,\n           lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_reserv_no         LIKE LINE OF lt_reserv_no,\n           lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_res_item          LIKE LINE OF lt_res_item,\n           lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n           lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_uom         LIKE LINE OF lt_entry_uom,\n           ls_return            TYPE bapiret1,\n           lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n           ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n           lv_reserv_lines      TYPE int4,\n           lv_index             TYPE int4 VALUE 1,\n           lt_detail_return     TYPE TABLE OF bapi_coru_return,\n           ls_detail_return     LIKE LINE OF lt_detail_return,\n           lv_log_handle        TYPE balloghndl,\n           lv_message           TYPE char200,\n           lo_logger            TYPE REF TO zcl_bc_app_logger,\n           es_entityset         LIKE LINE OF et_entityset,\n           lv_error_message     TYPE bapi_msg,\n           ls_order_objects     TYPE bapi_pp_order_objects,\n           lt_operation         TYPE TABLE OF bapi_order_operation1,\n           ls_operation         LIKE LINE OF lt_operation,\n           lt_timetickets       TYPE TABLE OF  bapi_pp_timeticket,\n           ls_timetickets       LIKE LINE OF lt_timetickets,\n           lv_number            TYPE bapi_order_key-order_number,\n           ls_propose           TYPE bapi_pp_conf_prop,\n           ls_op                TYPE rcrop,\n           ls_vgw               TYPE rcrvgw,\n           ls_afvc              TYPE afvc,\n           ls_plpo              TYPE plpo,\n           lv_value_fix         TYPE p DECIMALS 4,\n           lv_value_var         TYPE p DECIMALS 4,\n           lv_value             TYPE p DECIMALS 4,\n           lv_unit              TYPE rcrvgw-vge01,\n           lv_output            TYPE p DECIMALS 3.\n\n           \" Create a log instance\n    CREATE OBJECT lo_logger\n      EXPORTING\n        iv_subobject = 'ZPP_APP'.\n    lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PRODCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n    \"get $filter through the io_tech request (odata request)\n    lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n    \" Process filters\n\n    \" for these below we just need the singular select option structure\n    READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n    \" for the following we need tables (make a loop and get the values from each)\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n    lt_stg_loc = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n    lt_batch = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n    lt_reserv_no = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n    lt_res_item = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n    lt_entry_qnt = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n    lt_entry_uom = ls_filters-select_options.\n\n\" Create goodsmovement structure for all the retroactive items\n    DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n    DO lv_reserv_lines TIMES.\n      ls_stg_loc = lt_stg_loc[ lv_index ].\n      ls_batch = lt_batch[ lv_index ].\n      ls_reserv_no = lt_reserv_no[ lv_index ].\n      ls_res_item = lt_res_item[ lv_index ].\n      ls_entry_qnt = lt_entry_qnt[ lv_index ].\n      ls_entry_uom = lt_entry_uom[ lv_index ].\n      ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n      ls_goodsmovements-stge_loc = ls_stg_loc-low.\n      ls_goodsmovements-batch = ls_batch-low.\n      ls_goodsmovements-move_type = '261'. \" fixed movement type\n      ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n      ls_goodsmovements-reserv_no = ls_reserv_no-low.\n      ls_goodsmovements-res_item = ls_res_item-low.\n      ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n      ls_goodsmovements-entry_uom = ls_entry_uom-low.\n      APPEND ls_goodsmovements TO lt_goodsmovements.\n      lv_index = lv_index + 1.\n    ENDDO.\n\n    \" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n\n    \" build structures for each step (each operation)\n    LOOP AT lt_operation INTO ls_operation.\n      CLEAR ls_timetickets.\n\n      \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n      SELECT SINGLE * FROM afvc INTO ls_afvc\n        WHERE aufpl = ls_operation-routing_no\n        AND   aplzl = ls_operation-counter.\n\n      \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n      SELECT SINGLE * FROM plpo INTO ls_plpo\n        WHERE plnty EQ ls_afvc-plnty\n        AND plnnr EQ ls_afvc-plnnr\n        AND plnkn EQ ls_afvc-plnkn\n        AND zaehl EQ ls_afvc-zaehl.\n\n      \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n      MOVE-CORRESPONDING ls_plpo TO ls_op.\n      ls_op-mgvrg = ls_yield_so-low.\n      ls_op-meinh = ls_conf_quan_unit_so-low.\n      MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n      DO 6 TIMES. \" for each activity (usually 4 activities here at my company, but there can be up to 6 activities total)\n        IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n        OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n        OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n        OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0f\n        OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n        OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n          CONTINUE. \" skip and 0 values\n        ENDIF.\n        CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n          EXPORTING\n            arbid             = ls_afvc-arbid\n            op                = ls_op\n            vgw               = ls_vgw\n            index             = sy-index\n            date              = sy-datum\n          IMPORTING\n            value_fix          = lv_value_fix\n            value_var         = lv_value_var\n            unit              = lv_unit\n          EXCEPTIONS\n            missing_parameter = 1\n            not_found         = 2\n            division_by_zero  = 3\n            OTHERS            = 4.\n        IF sy-subrc <> 0.\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n\n        lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n        \" convert any 'H' values to 'MIN'\n        IF lv_unit NE 'MIN'.\n          CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n            EXPORTING\n              input                = lv_value\n              unit_in              = lv_unit\n              unit_out             = 'MIN'\n            IMPORTING\n              output               = lv_output\n            EXCEPTIONS\n              conversion_not_found = 1\n              division_by_zero     = 2\n              input_invalid        = 3\n              output_invalid       = 4\n              overflow              = 5\n              type_invalid         = 6\n              units_missing        = 7\n              unit_in_not_found    = 8\n              unit_out_not_found   = 9\n              OTHERS               = 10.\n          IF sy-subrc <> 0.\n            lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n            CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n            APPEND es_entityset TO et_entityset.\n          ENDIF.\n          lv_unit = 'MIN'. \" 2018.04.19 - need to overwrite unit to MIN!\n        ELSE.\n          lv_output = lv_value. \" copy over MIN value\n        ENDIF.\n\n        CASE sy-index.\n          WHEN 1.\n            ls_timetickets-conf_activity1  = lv_output.\n            ls_timetickets-conf_acti_unit1 = 'MIN'.\n          WHEN 2.\n            ls_timetickets-conf_activity2  = lv_output.\n            ls_timetickets-conf_acti_unit2 = 'MIN'.\n          WHEN 3.\n            ls_timetickets-conf_activity3  = lv_output.\n            ls_timetickets-conf_acti_unit3 = 'MIN'.\n          WHEN 4.\n            ls_timetickets-conf_activity4  = lv_output.\n            ls_timetickets-conf_acti_unit4 = 'MIN'.\n          WHEN 5.\n            ls_timetickets-conf_activity5  = lv_output.\n            ls_timetickets-conf_acti_unit5 = 'MIN'.\n          WHEN 6.\n            ls_timetickets-conf_activity6  = lv_output.\n            ls_timetickets-conf_acti_unit6 = 'MIN'.\n        ENDCASE.\n      ENDDO.\n\n      \" Now build the table to confirm the operations (Vorgänge)\n      ls_timetickets-conf_no     = ls_operation-conf_no.\n      ls_timetickets-orderid     = ls_orderid_so-low.\n      ls_timetickets-sequence    = ls_operation-sequence_no.\n      ls_timetickets-operation   = ls_operation-operation_number.\n      ls_timetickets-work_cntr   = ls_operation-work_center. \" Resource for process order, logdate, logtime, and posting date added to the table\n      ls_timetickets-plant       = ls_plant_so-low.\n      ls_timetickets-logdate     = sy-datlo.\n      ls_timetickets-logtime     = sy-timlo.\n      ls_timetickets-postg_date  = sy-datlo.\n      ls_timetickets-yield = ls_yield_so-low.\n      ls_timetickets-scrap = ls_scrap_so-low.\n      ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed partial or final confirmation - take what the user provides!\n      ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n      APPEND ls_timetickets TO lt_timetickets.\n    ENDLOOP.\n\n    \" create confirmation\n    CALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n      IMPORTING\n        return         = ls_return\n      TABLES\n        timetickets    = lt_timetickets\n        goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n        detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      EXCEPTIONS\n        OTHERS         = 1.\n    IF sy-subrc <> 0.\n      lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n      CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n      APPEND es_entityset TO et_entityset.\n    ENDIF.\n\n```\n\n## Process Orders\n\nBecause SAP is ever-so-special, process orders have a slightly different program process due to a few name changes. Here is a summary of some of those name and type changes:\n\n<hr/>\n\n| Topic | Production Orders | Process Orders |\n| ------- | ----------------- | -------------- |\n| Name of the 'steps' in your process or production order | phase/activity (I've seen both names, ABAP uses mostly 'phase') | operation |\n| Get order detail of order | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| detail of order 'step' type | `bapi_order_phase`  |  `bapi_order_operation1` |\n| Function for timeticket proposals | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| Function for order confirmation | `BAPI_PRODORDCONF_CREATE_TT` | `BAPI_PROCORDCONF_CREATE_TT` |\n| `timetickets` `TYPE` in order confirmation function | `bapi_pp_timeticket` | `bapi_pi_timeticket1` |\n\n<hr/>\n\nThere are more, but you can find those in the code for yourself. The important thing to notice is that the key challenging part here, calculating the confirmation activity amounts, uses the same internal function module, ``\n\nHere's the code for calculating activities for process orders - _note the slight change in all the variable names!_ - and be careful with your types (carefully look over the `DATA:` statement), otherwise you'll get 💥**exploding runtime errors**💥 when you try to confirm something with one of our two main functions and you pass, for example, the  `lt_timetickets` with the production type ``, and you pass it into the of the _process_ order function module.\n\n```abap\n  DATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n         ls_filters           LIKE LINE OF lt_filters,\n         lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_plant_so          LIKE LINE OF lt_select_options,\n         ls_orderid_so        LIKE LINE OF lt_select_options,\n         ls_fin_conf_so       LIKE LINE OF lt_select_options,\n         ls_dev_reason_so     LIKE LINE OF lt_select_options,\n         ls_conf_text_so      LIKE LINE OF lt_select_options,\n         ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n         ls_yield_so          LIKE LINE OF lt_select_options,\n         ls_scrap_so          LIKE LINE OF lt_select_options,\n         ls_stge_loc_so       LIKE LINE OF lt_select_options,\n         ls_batch_so          LIKE LINE OF lt_select_options,\n         ls_reserv_no_so      LIKE LINE OF lt_select_options,\n         ls_res_item_so       LIKE LINE OF lt_select_options,\n         ls_entry_qnt_so      LIKE LINE OF lt_select_options,\n         ls_entry_uom_so      LIKE LINE OF lt_select_options,\n         lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_stg_loc           LIKE LINE OF lt_stg_loc,\n         lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_batch             LIKE LINE OF lt_batch,\n         lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_reserv_no         LIKE LINE OF lt_reserv_no,\n         lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_res_item          LIKE LINE OF lt_res_item,\n         lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n         lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_uom         LIKE LINE OF lt_entry_uom,\n         ls_return            TYPE bapiret1,\n         lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n         ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n         lv_reserv_lines      TYPE int4,\n         lv_index             TYPE int4 VALUE 1,\n         lt_detail_return     TYPE TABLE OF bapi_coru_return,\n         ls_detail_return     LIKE LINE OF lt_detail_return,\n         lv_log_handle        TYPE balloghndl,\n         lv_message           TYPE char200,\n         lo_logger            TYPE REF TO zcl_bc_app_logger,\n         es_entityset         LIKE LINE OF et_entityset,\n         lv_error_message     TYPE bapi_msg,\n         ls_order_objects     TYPE bapi_pi_order_objects,\n         lt_phase             TYPE TABLE OF bapi_order_phase,\n         ls_phase             LIKE LINE OF lt_phase,\n         lt_timetickets       TYPE TABLE OF bapi_pi_timeticket1,\n         ls_timetickets       LIKE LINE OF lt_timetickets,\n         lv_number            TYPE bapi_order_key-order_number,\n         ls_op                TYPE rcrop,\n         ls_vgw               TYPE rcrvgw,\n         ls_afvc              TYPE afvc,\n         ls_plpo              TYPE plpo,\n         lv_value_fix         TYPE p DECIMALS 4,\n         lv_value_var         TYPE p DECIMALS 4,\n         lv_value             TYPE p DECIMALS 4,\n         lv_unit              TYPE rcrvgw-vge01,\n         lv_output            TYPE p DECIMALS 3.\n\n  FIELD-SYMBOLS: <fs_timetickets> LIKE LINE OF lt_timetickets.\n\n  \" create a log instance\n  CREATE OBJECT lo_logger\n    EXPORTING\n      iv_subobject = 'ZPP_APP'.\n  lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n  \"get $filter through the io_tech request (odata request)\n  lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n  \" Process filters\n\n  \" for these below we just need the singular select option structure\n  READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n  \" for the following we need tables (make a loop and get the values from each)\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n  lt_stg_loc = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n  lt_batch = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n  lt_reserv_no = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n  lt_res_item = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n  lt_entry_qnt = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n  lt_entry_uom = ls_filters-select_options.\n\n  \" Create goodsmovement structure for all the retroactive items\n  DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n  DO lv_reserv_lines TIMES.\n    ls_stg_loc = lt_stg_loc[ lv_index ].\n    ls_batch = lt_batch[ lv_index ].\n    ls_reserv_no = lt_reserv_no[ lv_index ].\n    ls_res_item = lt_res_item[ lv_index ].\n    ls_entry_qnt = lt_entry_qnt[ lv_index ].\n    ls_entry_uom = lt_entry_uom[ lv_index ].\n    ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n    ls_goodsmovements-stge_loc = ls_stg_loc-low.\n    ls_goodsmovements-batch = ls_batch-low.\n    ls_goodsmovements-move_type = '261'. \" fixed movement type\n    ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n    ls_goodsmovements-reserv_no = ls_reserv_no-low.\n    ls_goodsmovements-res_item = ls_res_item-low.\n    ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n    ls_goodsmovements-entry_uom = ls_entry_uom-low.\n    APPEND ls_goodsmovements TO lt_goodsmovements.\n    lv_index = lv_index + 1.\n  ENDDO.\n\n  ls_order_objects-phases = 'X'.\n  lv_number = ls_orderid_so-low.\n\n  CALL FUNCTION 'BAPI_PROCORD_GET_DETAIL'\n    EXPORTING\n      number        = lv_number\n*       COLLECTIVE_ORDER       =\n      order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n    TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n      phase         = lt_phase\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n    .\n\n  LOOP AT lt_phase INTO ls_phase. \" for each phase - create both the activities table and timetickets table\n    CLEAR ls_timetickets.\n\n    \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n    SELECT SINGLE * FROM afvc INTO ls_afvc\n      WHERE aufpl = ls_phase-routing_no\n      AND   aplzl = ls_phase-counter.\n\n    \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n    SELECT SINGLE * FROM plpo INTO ls_plpo\n      WHERE plnty EQ ls_afvc-plnty\n      AND plnnr EQ ls_afvc-plnnr\n      AND plnkn EQ ls_afvc-plnkn\n      AND zaehl EQ ls_afvc-zaehl.\n\n    \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n    MOVE-CORRESPONDING ls_plpo TO ls_op.\n    ls_op-mgvrg = ls_yield_so-low.\n    ls_op-meinh = ls_conf_quan_unit_so-low.\n    MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n    DO 6 TIMES. \" for each activity (usually 4 activities here at company, but there can be up to 6 activities total)\n      IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n      OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n      OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n      OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0\n      OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n      OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n        CONTINUE. \" skip and 0 values\n      ENDIF.\n      CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n        EXPORTING\n          arbid             = ls_afvc-arbid\n          op                = ls_op\n          vgw               = ls_vgw\n          index             = sy-index\n          date              = sy-datum\n        IMPORTING\n          value_fix         = lv_value_fix\n          value_var         = lv_value_var\n          unit              = lv_unit\n        EXCEPTIONS\n          missing_parameter = 1\n          not_found         = 2\n          division_by_zero  = 3\n          OTHERS            = 4.\n      IF sy-subrc <> 0.\n        CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n        APPEND es_entityset TO et_entityset.\n      ENDIF.\n\n      lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n      \" Convert any 'H' values to 'MIN'\n      IF lv_unit NE 'MIN'.\n        CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n          EXPORTING\n            input                = lv_value\n            unit_in              = lv_unit\n            unit_out             = 'MIN'\n          IMPORTING\n            output               = lv_output\n          EXCEPTIONS\n            conversion_not_found = 1\n            division_by_zero     = 2\n            input_invalid        = 3\n            output_invalid       = 4\n            overflow             = 5\n            type_invalid         = 6\n            units_missing        = 7\n            unit_in_not_found    = 8\n            unit_out_not_found   = 9\n            OTHERS               = 10.\n        IF sy-subrc <> 0.\n          lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n        lv_unit = 'MIN'. \" 2018.04.19 - need to overwrite unit to MIN!\n      ELSE.\n        lv_output = lv_value. \" copy over MIN value\n      ENDIF.\n\n      CASE sy-index.\n        WHEN 1.\n          ls_timetickets-conf_activity1  = lv_output.\n          ls_timetickets-conf_acti_unit1 = 'MIN'.\n        WHEN 2.\n          ls_timetickets-conf_activity2  = lv_output.\n          ls_timetickets-conf_acti_unit2 = 'MIN'.\n        WHEN 3.\n          ls_timetickets-conf_activity3  = lv_output.\n          ls_timetickets-conf_acti_unit3 = 'MIN'.\n        WHEN 4.\n          ls_timetickets-conf_activity4  = lv_output.\n          ls_timetickets-conf_acti_unit4 = 'MIN'.\n        WHEN 5.\n          ls_timetickets-conf_activity5  = lv_output.\n          ls_timetickets-conf_acti_unit5 = 'MIN'.\n        WHEN 6.\n          ls_timetickets-conf_activity6  = lv_output.\n          ls_timetickets-conf_acti_unit6 = 'MIN'.\n      ENDCASE.\n    ENDDO.\n\n    \" Also build the table to confirm the operations (Vorgänge)\n    ls_timetickets-conf_no    = ls_phase-conf_no.\n    ls_timetickets-orderid    = ls_orderid_so-low.\n    ls_timetickets-phase      = ls_phase-operation_number.\n    ls_timetickets-resource   = ls_phase-resource. \" Resource in process orders is the equivalent of work_center (wrk_cntr) for production orders\n    ls_timetickets-plant      = ls_plant_so-low.\n    ls_timetickets-logdate    = sy-datlo.\n    ls_timetickets-logtime    = sy-timlo.\n    ls_timetickets-postg_date = sy-datlo.\n    ls_timetickets-yield = ls_yield_so-low.\n    ls_timetickets-scrap = ls_scrap_so-low.\n    ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed tiel oder endruckmeldung - take what the user provides!\n    ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n    APPEND ls_timetickets TO lt_timetickets.\n  ENDLOOP.\n\n  CALL FUNCTION 'BAPI_PROCORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n    IMPORTING\n      return         = ls_return\n    TABLES\n      timetickets    = lt_timetickets\n      goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      detail_return  = lt_detail_return\n    EXCEPTIONS\n      OTHERS         = 1.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n  IF ls_return IS NOT INITIAL.\n    LOOP AT lt_detail_return INTO ls_detail_return WHERE type EQ 'E'.\n      lv_error_message = ls_detail_return-message.\n    ENDLOOP.\n    CONCATENATE 'Fehler bei der Rückmeldung: ' lv_error_message INTO lv_message.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = lv_message ). \" add custom message to message log\n    es_entityset-error_message = lv_error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Ende Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n  lo_logger->save_log( EXPORTING iv_log_handle = lv_log_handle ).\n\n  \" FB Documentation says COMMIT WORK is required\n  CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'\n    EXPORTING\n      wait = 'X'.\n  COMMIT WORK AND WAIT.\n```\n\n## Final Comments\n\nWhew. Did it feel like a marathon? :runner: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.\n\nAnother note and quick plug 😄 I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.\n\n💩 Ok, plug done! 💩\n\nCheers! 🍺\n\n<hr/>\n\n# Footnotes\n\n<div id=\"footnote-1\">\n1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders and then I finally post the adjacent code for process orders.\n</div>\n\n<div id=\"footnote-2\">\n2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. 👍\n</div>\n\n<div id=\"footnote-3\">\n3. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.\n</div>\n\n<div id=\"footnote-4\">\n4. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:\n\nUpon pressing 'enter' for with a new amount:\n![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpeg)\n\nPressing 'OK' for this window, we get a popup:\n\n![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpeg)\n\nWe see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)\n</div>\n\n<div id=\"footnote-4\">\n4. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.\n</div>\n",
-        "contentDigest": "651566f11ee63b340ddacd8a4c0c6066",
+        "content": "---\ntitle: Calculating Activity Amounts for Production and Process Orders with SAP ABAP\ndate: \"2018-01-03\"\ndraft: false\n---\n\n_Edit June 1st, 2018:_\n\n_There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements for the retrograde materials. You can see how to do this in <a href=\"#footnote-6\">footnote 6</a> for more._\n\n_Edit April 19th, 2018:_\n\n_There was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._\n\n# First off, Congratulations! 🎊\n<sup>And a happy new year! (If you're viewing this in the summer or something, see the date! 😉)</sup>\n## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱\n## I hope you use this post to maximum effectiveness, because it took me _four_ days to find, build, and get a working answer. 😄\n\n## The Problem\n\nLet's jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module `BAPI_PRODORDCONF_GET_TT_PROP`:\n\n```abap\nCALL FUNCTION 'BAPI_PRODORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nLikewise, there is a very similiar `BAPI_PROCORDCONF_GET_TT_PROP` for process orders:\n\n```abap\nCALL FUNCTION 'BAPI_PROCORDCONF_GET_TT_PROP'\n* EXPORTING\n*   PROPOSE                  = ' '\n* IMPORTING\n*   RETURN                   =\n  TABLES\n    timetickets              =\n*   GOODSMOVEMENTS           =\n*   LINK_CONF_GOODSMOV       =\n*   DETAIL_RETURN            =\n          .\n```\n\nPretty similar. However, as part of my indentured servitude that is being a full-time employee, I spent a day tinkering, writing, and testing code with these function modules. No matter what combinations of inputs I provided, I couldn't get the _activity confirmation amount_ to be calculated, which are a very important part of the final calculation of the confirmation! (more on the actual final confirmation submission is also included in later on) From scrounging around on SCN and the SAP blog, I learned that many developers had the same issue with these functions. (Things like date, yield/scrap amounts, and the goods movements would be proposed just fine by these BAPIs.)\n\nSo, **calculating these activity confirmation amounts programmatically (in ABAP) will be the main focus of this post <sup><a href=\"#footnote-1\">1</a></sup>.**\n\nUnfortunately, with much more digging, the reason the two functions wouldn't produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures `lt_timetickets` manually.\n\n## The Calculation Function Module\n\nThrough SAP GUI in transaction `CO11N`, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us <sup><a href=\"#footnote-2\">2</a></sup>. My struggle was finding the programmatic way to do this in ABAP.\n\nAnyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center _behind_ the activity <sup><a href=\"#footnote-3\">3</a></sup>.\n\nIn transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:\n\n![GUI testing calculation](test-formula.jpeg)\n\nThis was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It's called `CR_WORKCENTER_FORMULA_CALC`!\n\nLet's head on over to transaction `SE37` and test it ourselves!\n\n![Yep, that's SAP](error-test-frame.jpeg)\n\n😑😑😑 shit... SAP, you had one job to do!\n\nFine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FORMULA_CALC` and set a breakpoint in the first line:\n\n![The first possible line in the function we can breakpoint](function-breakpoint.png)\n\nand in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src=\"return.png\"/> and...\n\n🙏 Violá! 🙏 We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!\n\n![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)\n\n(For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)\n\n![Calling program details](form-program.png)\n\n## The Details (The Hard Part)\n\nSo what the heck does SAP do with this function? Well, first, they are doing a do loop six times. Aha, we know why - because there can be a total of six confirmation values <sup><a href=\"#footnote-4\">4</a></sup>  - SAP is by default looping over all of them.\n\nNow for the function parameters themselves: they pass the work center code (`arbid`), the operation number (`rcrop`), the index of the confirmation (a value of 1-6), our 4 default values (`vgw`), and the date (`date`).\n\nIn turn, the function spits out the fixed value amount of the activity calculation (`value_fix`), the variable part (`value_var`), both in whatever unit the function gives out in `unit`, and `co_a` is for the cost center accounting <sup><a href=\"#footnote-5\">5</a></sup>. There are actually four exceptions to this function, so I'm not sure why SAP internal is taking only two of them. In any case, there are other `IMPORTING` and `EXPORTING` parameters in the function signature, but this looks like a good starting point as a minimum. In fact, as you'll see below, the final working version of the code I created is almost exactly the same except where I found out with a bit of playing around.\n\nSo I mentioned the default values that must go into `vgw` - these are the four values that are the equivalent of those four fields we can type into in `COR3` for checking the formula, things like setup time, machine time, personnel setup, and personnel time. It might sound like a lot of work to hunt down these values, but luckily these are master data and can be determined with a few select statements, first from table `AFVC` 'operation within an order', and then table `PLPO` 'task list - operation/activity':\n\n```abap\n\" this is the full key for table AFVC - operation within an order - for the routing number and counter - should always work with SELECT SINGLE\nSELECT SINGLE * FROM afvc INTO ls_afvc\n  WHERE aufpl = ls_operation-routing_no\n  AND   aplzl = ls_operation-counter.\n\n\" this is the full key for table PLPO - task list - operation/activity - so it should always work with SELECT SINGLE\nSELECT SINGLE * FROM plpo INTO ls_plpo\n  WHERE plnty EQ ls_afvc-plnty\n  AND plnnr EQ ls_afvc-plnnr\n  AND plnkn EQ ls_afvc-plnkn\n  AND zaehl EQ ls_afvc-zaehl.\n```\n\nThe routing number `ls_operation-routing_no` and counter `ls_operation-counter` we've gotten from function `BAPI_PRODORD_GET_DETAIL`:\n\n```abap\n\" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n```\n\n(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info 😉. Here we are just getting the operation information from the order - that's all we need.)\n\nWe can finally move the corresponding fields of `ls_plpo` to `ls_vgw`:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_vgw.\n```\n\nHowever, in addition to these four values, there are two more that are essential, that is the yield amount (`mgvrg`), and the unit (`meinh`)! We can pass them right into `ls_op` as well:\n\n```abap\nMOVE-CORRESPONDING ls_plpo TO ls_op.\nls_op-mgvrg = ls_yield_so-low.\nls_op-meinh = ls_conf_quan_unit_so-low.\n```\n\nArmed with our structures `ls_afvc`, `ls_op`, and `ls_vgw`, we are ready to call our function:\n\n```abap\nCALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n  EXPORTING\n    arbid             = ls_afvc-arbid\n    op                = ls_op\n    vgw               = ls_vgw\n    index             = sy-index\n    date              = sy-datum\n  IMPORTING\n    value_fix          = lv_value_fix\n    value_var         = lv_value_var\n    unit              = lv_unit\n  EXCEPTIONS\n    missing_parameter = 1\n    not_found         = 2\n    division_by_zero  = 3\n    OTHERS            = 4.\nIF sy-subrc <> 0.\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\n\nWe want the total, right? Okay, we just add the fixed value and variable value part:\n\n```abap\nlv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and variable values for this activity\n```\n\nA requirement by my company was to have all the activity confirmation values with the same unit (I find it cleaner anyway to have all the activity confirmation values in the same unit anyway). Unfortunately, the default unit for some of the activities was hours, so we have to take a small intermediary step and call a conversion function before we are truly done:\n\n```abap\n\" convert any 'H' values to 'MIN'\nIF lv_unit NE 'MIN'.\n  CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n    EXPORTING\n      input                = lv_value\n      unit_in              = lv_unit\n      unit_out             = 'MIN'\n    IMPORTING\n      output               = lv_output\n    EXCEPTIONS\n      conversion_not_found = 1\n      division_by_zero     = 2\n      input_invalid        = 3\n      output_invalid       = 4\n      overflow              = 5\n      type_invalid         = 6\n      units_missing        = 7\n      unit_in_not_found    = 8\n      unit_out_not_found   = 9\n      OTHERS               = 10.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n```\nWe then finally carry over this converted `lv_output` over to the `conf_activity` field for `lt_timetickets`, doing this for all 1-6 `conf_activity`'s:\n\n```abap\nCASE sy-index.\n  WHEN 1.\n    ls_timetickets-conf_activity1  = lv_output.\n    ls_timetickets-conf_acti_unit1 = 'MIN'.\n  WHEN 2.\n    ls_timetickets-conf_activity2  = lv_output.\n    ls_timetickets-conf_acti_unit2 = 'MIN'.\n  WHEN 3.\n    ls_timetickets-conf_activity3  = lv_output.\n    ls_timetickets-conf_acti_unit3 = 'MIN'.\n  WHEN 4.\n    ls_timetickets-conf_activity4  = lv_output.\n    ls_timetickets-conf_acti_unit4 = 'MIN'.\n  WHEN 5.\n    ls_timetickets-conf_activity5  = lv_output.\n    ls_timetickets-conf_acti_unit5 = 'MIN'.\n  WHEN 6.\n    ls_timetickets-conf_activity6  = lv_output.\n    ls_timetickets-conf_acti_unit6 = 'MIN'.\nENDCASE.\n```\n\nWith that, we can call the final confirmation function, with all our calculated values wrapped up in `lt_timetickets`:\n\n```abap\n\" create confirmation\nCALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n  IMPORTING\n    return         = ls_return\n  TABLES\n    timetickets    = lt_timetickets\n    goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n    detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n  EXCEPTIONS\n    OTHERS         = 1.\nIF sy-subrc <> 0.\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n  CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n  APPEND es_entityset TO et_entityset.\nENDIF.\n```\nIf you were sharp, you realized all of this code is only on the operation level - so indeed, the six-level loop must be done each time, for each operation - we have to throw all the above code into a loop over our operations! See below for the full result!\n\n## Production Orders\nIn summary, the full code looks like this:\n\n**NOTE: the full code examples were written for a SAP Gateway environment - i.e. the server environment from a SAPUI5 OData call! If you try to copy and paste this code directly into something like a report or function, ABAP statements like:**\n\n```abap\nlt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n```\n\nwon't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method 😄\n\n```abap\nDATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n           ls_filters           LIKE LINE OF lt_filters,\n           lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_plant_so          LIKE LINE OF lt_select_options,\n           ls_orderid_so        LIKE LINE OF lt_select_options,\n           ls_fin_conf_so       LIKE LINE OF lt_select_options,\n           ls_dev_reason_so     LIKE LINE OF lt_select_options,\n           ls_conf_text_so      LIKE LINE OF lt_select_options,\n           ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n           ls_yield_so          LIKE LINE OF lt_select_options,\n           ls_scrap_so          LIKE LINE OF lt_select_options,\n           lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_stg_loc           LIKE LINE OF lt_stg_loc,\n           lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_batch             LIKE LINE OF lt_batch,\n           lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_reserv_no         LIKE LINE OF lt_reserv_no,\n           lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_res_item          LIKE LINE OF lt_res_item,\n           lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n           lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n           ls_entry_uom         LIKE LINE OF lt_entry_uom,\n           ls_return            TYPE bapiret1,\n           lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n           ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n           lv_reserv_lines      TYPE int4,\n           lv_index             TYPE int4 VALUE 1,\n           lt_detail_return     TYPE TABLE OF bapi_coru_return,\n           ls_detail_return     LIKE LINE OF lt_detail_return,\n           lv_log_handle        TYPE balloghndl,\n           lv_message           TYPE char200,\n           lo_logger            TYPE REF TO zcl_bc_app_logger,\n           es_entityset         LIKE LINE OF et_entityset,\n           lv_error_message     TYPE bapi_msg,\n           ls_order_objects     TYPE bapi_pp_order_objects,\n           lt_operation         TYPE TABLE OF bapi_order_operation1,\n           ls_operation         LIKE LINE OF lt_operation,\n           lt_timetickets       TYPE TABLE OF  bapi_pp_timeticket,\n           ls_timetickets       LIKE LINE OF lt_timetickets,\n           lv_number            TYPE bapi_order_key-order_number,\n           ls_propose           TYPE bapi_pp_conf_prop,\n           ls_op                TYPE rcrop,\n           ls_vgw               TYPE rcrvgw,\n           ls_afvc              TYPE afvc,\n           ls_plpo              TYPE plpo,\n           lv_value_fix         TYPE p DECIMALS 4,\n           lv_value_var         TYPE p DECIMALS 4,\n           lv_value             TYPE p DECIMALS 4,\n           lv_unit              TYPE rcrvgw-vge01,\n           lv_output            TYPE p DECIMALS 3.\n\n           \" Create a log instance\n    CREATE OBJECT lo_logger\n      EXPORTING\n        iv_subobject = 'ZPP_APP'.\n    lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PRODCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n    \"get $filter through the io_tech request (odata request)\n    lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n    \" Process filters\n\n    \" for these below we just need the singular select option structure\n    READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n    lt_select_options = ls_filters-select_options.\n    READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n    \" for the following we need tables (make a loop and get the values from each)\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n    lt_stg_loc = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n    lt_batch = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n    lt_reserv_no = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n    lt_res_item = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n    lt_entry_qnt = ls_filters-select_options.\n\n    CLEAR ls_filters.\n    READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n    lt_entry_uom = ls_filters-select_options.\n\n\" Create goodsmovement structure for all the retroactive items\n    DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n    DO lv_reserv_lines TIMES.\n      ls_stg_loc = lt_stg_loc[ lv_index ].\n      ls_batch = lt_batch[ lv_index ].\n      ls_reserv_no = lt_reserv_no[ lv_index ].\n      ls_res_item = lt_res_item[ lv_index ].\n      ls_entry_qnt = lt_entry_qnt[ lv_index ].\n      ls_entry_uom = lt_entry_uom[ lv_index ].\n      ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n      ls_goodsmovements-stge_loc = ls_stg_loc-low.\n      ls_goodsmovements-batch = ls_batch-low.\n      ls_goodsmovements-move_type = '261'. \" fixed movement type\n      ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n      ls_goodsmovements-reserv_no = ls_reserv_no-low.\n      ls_goodsmovements-res_item = ls_res_item-low.\n      ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n      ls_goodsmovements-entry_uom = ls_entry_uom-low.\n      APPEND ls_goodsmovements TO lt_goodsmovements.\n      lv_index = lv_index + 1.\n    ENDDO.\n\n    \" need only the operations from the function\n    ls_order_objects-operations = 'X'.\n    lv_number = ls_orderid_so-low.\n\n    CALL FUNCTION 'BAPI_PRODORD_GET_DETAIL'\n      EXPORTING\n        number        = lv_number\n*       COLLECTIVE_ORDER       =\n        order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n      TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n        operation     = lt_operation\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n      .\n\n    \" build structures for each step (each operation)\n    LOOP AT lt_operation INTO ls_operation.\n      CLEAR ls_timetickets.\n\n      \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n      SELECT SINGLE * FROM afvc INTO ls_afvc\n        WHERE aufpl = ls_operation-routing_no\n        AND   aplzl = ls_operation-counter.\n\n      \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n      SELECT SINGLE * FROM plpo INTO ls_plpo\n        WHERE plnty EQ ls_afvc-plnty\n        AND plnnr EQ ls_afvc-plnnr\n        AND plnkn EQ ls_afvc-plnkn\n        AND zaehl EQ ls_afvc-zaehl.\n\n      \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n      MOVE-CORRESPONDING ls_plpo TO ls_op.\n      ls_op-mgvrg = ls_yield_so-low.\n      ls_op-meinh = ls_conf_quan_unit_so-low.\n      MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n      DO 6 TIMES. \" for each activity (usually 4 activities here at my company, but there can be up to 6 activities total)\n        IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n        OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n        OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n        OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0f\n        OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n        OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n          CONTINUE. \" skip and 0 values\n        ENDIF.\n        CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n          EXPORTING\n            arbid             = ls_afvc-arbid\n            op                = ls_op\n            vgw               = ls_vgw\n            index             = sy-index\n            date              = sy-datum\n          IMPORTING\n            value_fix          = lv_value_fix\n            value_var         = lv_value_var\n            unit              = lv_unit\n          EXCEPTIONS\n            missing_parameter = 1\n            not_found         = 2\n            division_by_zero  = 3\n            OTHERS            = 4.\n        IF sy-subrc <> 0.\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n\n        lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n        \" convert any 'H' values to 'MIN'\n        IF lv_unit NE 'MIN'.\n          CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n            EXPORTING\n              input                = lv_value\n              unit_in              = lv_unit\n              unit_out             = 'MIN'\n            IMPORTING\n              output               = lv_output\n            EXCEPTIONS\n              conversion_not_found = 1\n              division_by_zero     = 2\n              input_invalid        = 3\n              output_invalid       = 4\n              overflow              = 5\n              type_invalid         = 6\n              units_missing        = 7\n              unit_in_not_found    = 8\n              unit_out_not_found   = 9\n              OTHERS               = 10.\n          IF sy-subrc <> 0.\n            lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n            CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n            APPEND es_entityset TO et_entityset.\n          ENDIF.\n          lv_unit = 'MIN'. \" 2018.04.19 - need to overwrite unit to MIN!\n        ELSE.\n          lv_output = lv_value. \" copy over MIN value\n        ENDIF.\n\n        CASE sy-index.\n          WHEN 1.\n            ls_timetickets-conf_activity1  = lv_output.\n            ls_timetickets-conf_acti_unit1 = 'MIN'.\n          WHEN 2.\n            ls_timetickets-conf_activity2  = lv_output.\n            ls_timetickets-conf_acti_unit2 = 'MIN'.\n          WHEN 3.\n            ls_timetickets-conf_activity3  = lv_output.\n            ls_timetickets-conf_acti_unit3 = 'MIN'.\n          WHEN 4.\n            ls_timetickets-conf_activity4  = lv_output.\n            ls_timetickets-conf_acti_unit4 = 'MIN'.\n          WHEN 5.\n            ls_timetickets-conf_activity5  = lv_output.\n            ls_timetickets-conf_acti_unit5 = 'MIN'.\n          WHEN 6.\n            ls_timetickets-conf_activity6  = lv_output.\n            ls_timetickets-conf_acti_unit6 = 'MIN'.\n        ENDCASE.\n      ENDDO.\n\n      \" Now build the table to confirm the operations (Vorgänge)\n      ls_timetickets-conf_no     = ls_operation-conf_no.\n      ls_timetickets-orderid     = ls_orderid_so-low.\n      ls_timetickets-sequence    = ls_operation-sequence_no.\n      ls_timetickets-operation   = ls_operation-operation_number.\n      ls_timetickets-work_cntr   = ls_operation-work_center. \" Resource for process order, logdate, logtime, and posting date added to the table\n      ls_timetickets-plant       = ls_plant_so-low.\n      ls_timetickets-logdate     = sy-datlo.\n      ls_timetickets-logtime     = sy-timlo.\n      ls_timetickets-postg_date  = sy-datlo.\n      ls_timetickets-yield = ls_yield_so-low.\n      ls_timetickets-scrap = ls_scrap_so-low.\n      ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed partial or final confirmation - take what the user provides!\n      ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n      APPEND ls_timetickets TO lt_timetickets.\n    ENDLOOP.\n\n    \" create confirmation\n    CALL FUNCTION 'BAPI_PRODORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n*       CALL_ON_INBOUND_QUEUE          = ' '\n      IMPORTING\n        return         = ls_return\n      TABLES\n        timetickets    = lt_timetickets\n        goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n        detail_return  = lt_detail_return\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      EXCEPTIONS\n        OTHERS         = 1.\n    IF sy-subrc <> 0.\n      lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n      CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n      APPEND es_entityset TO et_entityset.\n    ENDIF.\n\n```\n\n## Process Orders\n\nBecause SAP is ever-so-special, process orders have a slightly different program process due to a few name changes. Here is a summary of some of those name and type changes:\n\n<hr/>\n\n| Topic | Production Orders | Process Orders |\n| ------- | ----------------- | -------------- |\n| Name of the 'steps' in your process or production order | phase/activity (I've seen both names, ABAP uses mostly 'phase') | operation |\n| Get order detail of order | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| detail of order 'step' type | `bapi_order_phase`  |  `bapi_order_operation1` |\n| Function for timeticket proposals | `BAPI_PRODORD_GET_DETAIL` | `BAPI_PROCORD_GET_DETAIL` |\n| Function for order confirmation | `BAPI_PRODORDCONF_CREATE_TT` | `BAPI_PROCORDCONF_CREATE_TT` |\n| `timetickets` `TYPE` in order confirmation function | `bapi_pp_timeticket` | `bapi_pi_timeticket1` |\n\n<hr/>\n\nThere are more, but you can find those in the code for yourself. The important thing to notice is that the key challenging part here, calculating the confirmation activity amounts, uses the same internal function module, ``\n\nHere's the code for calculating activities for process orders - _note the slight change in all the variable names!_ - and be careful with your types (carefully look over the `DATA:` statement), otherwise you'll get 💥**exploding runtime errors**💥 when you try to confirm something with one of our two main functions and you pass, for example, the  `lt_timetickets` with the production type ``, and you pass it into the of the _process_ order function module.\n\n```abap\n  DATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,\n         ls_filters           LIKE LINE OF lt_filters,\n         lt_select_options    TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_plant_so          LIKE LINE OF lt_select_options,\n         ls_orderid_so        LIKE LINE OF lt_select_options,\n         ls_fin_conf_so       LIKE LINE OF lt_select_options,\n         ls_dev_reason_so     LIKE LINE OF lt_select_options,\n         ls_conf_text_so      LIKE LINE OF lt_select_options,\n         ls_conf_quan_unit_so LIKE LINE OF lt_select_options,\n         ls_yield_so          LIKE LINE OF lt_select_options,\n         ls_scrap_so          LIKE LINE OF lt_select_options,\n         ls_stge_loc_so       LIKE LINE OF lt_select_options,\n         ls_batch_so          LIKE LINE OF lt_select_options,\n         ls_reserv_no_so      LIKE LINE OF lt_select_options,\n         ls_res_item_so       LIKE LINE OF lt_select_options,\n         ls_entry_qnt_so      LIKE LINE OF lt_select_options,\n         ls_entry_uom_so      LIKE LINE OF lt_select_options,\n         lt_stg_loc           TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_stg_loc           LIKE LINE OF lt_stg_loc,\n         lt_batch             TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_batch             LIKE LINE OF lt_batch,\n         lt_reserv_no         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_reserv_no         LIKE LINE OF lt_reserv_no,\n         lt_res_item          TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_res_item          LIKE LINE OF lt_res_item,\n         lt_entry_qnt         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_qnt         LIKE LINE OF lt_entry_qnt,\n         lt_entry_uom         TYPE TABLE OF  /iwbep/s_cod_select_option,\n         ls_entry_uom         LIKE LINE OF lt_entry_uom,\n         ls_return            TYPE bapiret1,\n         lt_goodsmovements    TYPE TABLE OF bapi2017_gm_item_create,\n         ls_goodsmovements    LIKE LINE OF lt_goodsmovements,\n         lv_reserv_lines      TYPE int4,\n         lv_index             TYPE int4 VALUE 1,\n         lt_detail_return     TYPE TABLE OF bapi_coru_return,\n         ls_detail_return     LIKE LINE OF lt_detail_return,\n         lv_log_handle        TYPE balloghndl,\n         lv_message           TYPE char200,\n         lo_logger            TYPE REF TO zcl_bc_app_logger,\n         es_entityset         LIKE LINE OF et_entityset,\n         lv_error_message     TYPE bapi_msg,\n         ls_order_objects     TYPE bapi_pi_order_objects,\n         lt_phase             TYPE TABLE OF bapi_order_phase,\n         ls_phase             LIKE LINE OF lt_phase,\n         lt_timetickets       TYPE TABLE OF bapi_pi_timeticket1,\n         ls_timetickets       LIKE LINE OF lt_timetickets,\n         lv_number            TYPE bapi_order_key-order_number,\n         ls_op                TYPE rcrop,\n         ls_vgw               TYPE rcrvgw,\n         ls_afvc              TYPE afvc,\n         ls_plpo              TYPE plpo,\n         lv_value_fix         TYPE p DECIMALS 4,\n         lv_value_var         TYPE p DECIMALS 4,\n         lv_value             TYPE p DECIMALS 4,\n         lv_unit              TYPE rcrvgw-vge01,\n         lv_output            TYPE p DECIMALS 3.\n\n  FIELD-SYMBOLS: <fs_timetickets> LIKE LINE OF lt_timetickets.\n\n  \" create a log instance\n  CREATE OBJECT lo_logger\n    EXPORTING\n      iv_subobject = 'ZPP_APP'.\n  lo_logger->create_log( IMPORTING ev_log_handle = lv_log_handle ).\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Begin Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n\n  \"get $filter through the io_tech request (odata request)\n  lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).\n\n  \" Process filters\n\n  \" for these below we just need the singular select option structure\n  READ TABLE lt_filters WITH TABLE KEY property = 'PLANT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_plant_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ORDERID' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_orderid_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'FIN_CONF' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_fin_conf_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'DEV_REASON' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_dev_reason_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_TEXT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_text_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'CONF_QUAN_UNIT' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_conf_quan_unit_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'YIELD' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_yield_so INDEX 1.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'SCRAP' INTO ls_filters.\n  lt_select_options = ls_filters-select_options.\n  READ TABLE lt_select_options INTO ls_scrap_so INDEX 1.\n\n  \" for the following we need tables (make a loop and get the values from each)\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'STGE_LOC' INTO ls_filters.\n  lt_stg_loc = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'BATCH' INTO ls_filters.\n  lt_batch = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RESERV_NO' INTO ls_filters.\n  lt_reserv_no = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'RES_ITEM' INTO ls_filters.\n  lt_res_item = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_QNT' INTO ls_filters.\n  lt_entry_qnt = ls_filters-select_options.\n\n  CLEAR ls_filters.\n  READ TABLE lt_filters WITH TABLE KEY property = 'ENTRY_UOM' INTO ls_filters.\n  lt_entry_uom = ls_filters-select_options.\n\n  \" Create goodsmovement structure for all the retroactive items\n  DESCRIBE TABLE lt_reserv_no LINES lv_reserv_lines.\n  DO lv_reserv_lines TIMES.\n    ls_stg_loc = lt_stg_loc[ lv_index ].\n    ls_batch = lt_batch[ lv_index ].\n    ls_reserv_no = lt_reserv_no[ lv_index ].\n    ls_res_item = lt_res_item[ lv_index ].\n    ls_entry_qnt = lt_entry_qnt[ lv_index ].\n    ls_entry_uom = lt_entry_uom[ lv_index ].\n    ls_goodsmovements-plant = ls_plant_so-low. \" fixed factory\n    ls_goodsmovements-stge_loc = ls_stg_loc-low.\n    ls_goodsmovements-batch = ls_batch-low.\n    ls_goodsmovements-move_type = '261'. \" fixed movement type\n    ls_goodsmovements-item_text = 'Warenbewegung für Rückmeldung PP APP'.\n    ls_goodsmovements-reserv_no = ls_reserv_no-low.\n    ls_goodsmovements-res_item = ls_res_item-low.\n    ls_goodsmovements-entry_qnt = ls_entry_qnt-low.\n    ls_goodsmovements-entry_uom = ls_entry_uom-low.\n    APPEND ls_goodsmovements TO lt_goodsmovements.\n    lv_index = lv_index + 1.\n  ENDDO.\n\n  ls_order_objects-phases = 'X'.\n  lv_number = ls_orderid_so-low.\n\n  CALL FUNCTION 'BAPI_PROCORD_GET_DETAIL'\n    EXPORTING\n      number        = lv_number\n*       COLLECTIVE_ORDER       =\n      order_objects = ls_order_objects\n*     IMPORTING\n*       RETURN        =\n    TABLES\n*       HEADER        =\n*       POSITION      =\n*       SEQUENCE      =\n      phase         = lt_phase\n*       TRIGGER_POINT =\n*       COMPONENT     =\n*       PROD_REL_TOOL =\n    .\n\n  LOOP AT lt_phase INTO ls_phase. \" for each phase - create both the activities table and timetickets table\n    CLEAR ls_timetickets.\n\n    \" this is the full key for table AFVC - Auftragsarbeitsvorgang for the routing number and counter - should always work with SELECT SINGLE\n    SELECT SINGLE * FROM afvc INTO ls_afvc\n      WHERE aufpl = ls_phase-routing_no\n      AND   aplzl = ls_phase-counter.\n\n    \" this is the full key for table PLPO - Plan: Vorgang - so it should always work with SELECT SINGLE\n    SELECT SINGLE * FROM plpo INTO ls_plpo\n      WHERE plnty EQ ls_afvc-plnty\n      AND plnnr EQ ls_afvc-plnnr\n      AND plnkn EQ ls_afvc-plnkn\n      AND zaehl EQ ls_afvc-zaehl.\n\n    \" now provide all the standard values (vorgabewert) VGW01, 02, etc into the calculation formula\n    MOVE-CORRESPONDING ls_plpo TO ls_op.\n    ls_op-mgvrg = ls_yield_so-low.\n    ls_op-meinh = ls_conf_quan_unit_so-low.\n    MOVE-CORRESPONDING ls_plpo TO ls_vgw.\n    DO 6 TIMES. \" for each activity (usually 4 activities here at company, but there can be up to 6 activities total)\n      IF sy-index EQ 1 AND ls_vgw-vgw01 EQ 0\n      OR sy-index EQ 2 AND ls_vgw-vgw02 EQ 0\n      OR sy-index EQ 3 AND ls_vgw-vgw03 EQ 0\n      OR sy-index EQ 4 AND ls_vgw-vgw04 EQ 0\n      OR sy-index EQ 5 AND ls_vgw-vgw05 EQ 0\n      OR sy-index EQ 6 AND ls_vgw-vgw06 EQ 0.\n        CONTINUE. \" skip and 0 values\n      ENDIF.\n      CALL FUNCTION 'CR_WORKCENTER_FORMULA_CALC' \" You can see a SAP standard example with the function in the source code for transaction CR03 for costing formula: Program SAPLCRA0, Include LCRA0F71, Form FORMEL_RESULT_CALC, line 55\n        EXPORTING\n          arbid             = ls_afvc-arbid\n          op                = ls_op\n          vgw               = ls_vgw\n          index             = sy-index\n          date              = sy-datum\n        IMPORTING\n          value_fix         = lv_value_fix\n          value_var         = lv_value_var\n          unit              = lv_unit\n        EXCEPTIONS\n          missing_parameter = 1\n          not_found         = 2\n          division_by_zero  = 3\n          OTHERS            = 4.\n      IF sy-subrc <> 0.\n        CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n        APPEND es_entityset TO et_entityset.\n      ENDIF.\n\n      lv_value = lv_value_fix + lv_value_var. \" total value is the sum of the fixed and varible values for this activity\n\n      \" Convert any 'H' values to 'MIN'\n      IF lv_unit NE 'MIN'.\n        CALL FUNCTION 'UNIT_CONVERSION_SIMPLE'\n          EXPORTING\n            input                = lv_value\n            unit_in              = lv_unit\n            unit_out             = 'MIN'\n          IMPORTING\n            output               = lv_output\n          EXCEPTIONS\n            conversion_not_found = 1\n            division_by_zero     = 2\n            input_invalid        = 3\n            output_invalid       = 4\n            overflow             = 5\n            type_invalid         = 6\n            units_missing        = 7\n            unit_in_not_found    = 8\n            unit_out_not_found   = 9\n            OTHERS               = 10.\n        IF sy-subrc <> 0.\n          lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n          CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n          APPEND es_entityset TO et_entityset.\n        ENDIF.\n        lv_unit = 'MIN'. \" 2018.04.19 - need to overwrite unit to MIN!\n      ELSE.\n        lv_output = lv_value. \" copy over MIN value\n      ENDIF.\n\n      CASE sy-index.\n        WHEN 1.\n          ls_timetickets-conf_activity1  = lv_output.\n          ls_timetickets-conf_acti_unit1 = 'MIN'.\n        WHEN 2.\n          ls_timetickets-conf_activity2  = lv_output.\n          ls_timetickets-conf_acti_unit2 = 'MIN'.\n        WHEN 3.\n          ls_timetickets-conf_activity3  = lv_output.\n          ls_timetickets-conf_acti_unit3 = 'MIN'.\n        WHEN 4.\n          ls_timetickets-conf_activity4  = lv_output.\n          ls_timetickets-conf_acti_unit4 = 'MIN'.\n        WHEN 5.\n          ls_timetickets-conf_activity5  = lv_output.\n          ls_timetickets-conf_acti_unit5 = 'MIN'.\n        WHEN 6.\n          ls_timetickets-conf_activity6  = lv_output.\n          ls_timetickets-conf_acti_unit6 = 'MIN'.\n      ENDCASE.\n    ENDDO.\n\n    \" Also build the table to confirm the operations (Vorgänge)\n    ls_timetickets-conf_no    = ls_phase-conf_no.\n    ls_timetickets-orderid    = ls_orderid_so-low.\n    ls_timetickets-phase      = ls_phase-operation_number.\n    ls_timetickets-resource   = ls_phase-resource. \" Resource in process orders is the equivalent of work_center (wrk_cntr) for production orders\n    ls_timetickets-plant      = ls_plant_so-low.\n    ls_timetickets-logdate    = sy-datlo.\n    ls_timetickets-logtime    = sy-timlo.\n    ls_timetickets-postg_date = sy-datlo.\n    ls_timetickets-yield = ls_yield_so-low.\n    ls_timetickets-scrap = ls_scrap_so-low.\n    ls_timetickets-fin_conf = ls_fin_conf_so-low. \" also overwrite the proposed tiel oder endruckmeldung - take what the user provides!\n    ls_timetickets-conf_quan_unit = ls_conf_quan_unit_so-low. \" Also the unit\n    APPEND ls_timetickets TO lt_timetickets.\n  ENDLOOP.\n\n  CALL FUNCTION 'BAPI_PROCORDCONF_CREATE_TT'\n*     EXPORTING\n*       POST_WRONG_ENTRIES             = '0'\n*       TESTRUN                        =\n    IMPORTING\n      return         = ls_return\n    TABLES\n      timetickets    = lt_timetickets\n      goodsmovements = lt_goodsmovements\n*       LINK_CONF_GOODSMOV             =\n*       CHARACTERISTICS_WIPBATCH       =\n*       LINK_CONF_CHAR_WIPBATCH        =\n*       CHARACTERISTICS_BATCH          =\n*       LINK_GM_CHAR_BATCH             =\n      detail_return  = lt_detail_return\n    EXCEPTIONS\n      OTHERS         = 1.\n  IF sy-subrc <> 0.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = '' ). \" add custom message to message log\n    CONCATENATE sy-msgno sy-msgid sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO es_entityset-error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n  IF ls_return IS NOT INITIAL.\n    LOOP AT lt_detail_return INTO ls_detail_return WHERE type EQ 'E'.\n      lv_error_message = ls_detail_return-message.\n    ENDLOOP.\n    CONCATENATE 'Fehler bei der Rückmeldung: ' lv_error_message INTO lv_message.\n    lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = lv_message ). \" add custom message to message log\n    es_entityset-error_message = lv_error_message.\n    APPEND es_entityset TO et_entityset.\n  ENDIF.\n\n  lo_logger->create_message( EXPORTING iv_log_handle = lv_log_handle iv_message = 'Ende Method PROCCONFIRMATION_GET_ENTITYSET.' ). \" add custom message to message log\n  lo_logger->save_log( EXPORTING iv_log_handle = lv_log_handle ).\n\n  \" FB Documentation says COMMIT WORK is required\n  CALL FUNCTION 'BAPI_TRANSACTION_COMMIT'\n    EXPORTING\n      wait = 'X'.\n  COMMIT WORK AND WAIT.\n```\n\n## Final Comments\n\nWhew. Did it feel like a marathon? :runner: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.\n\nAnother note and quick plug 😄 I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.\n\n💩 Ok, plug done! 💩\n\nCheers! 🍺\n\n<hr/>\n\n# Footnotes\n\n<div id=\"footnote-1\">\n1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders. I also post the adjacent code for process orders in this post.\n</div>\n\n<div id=\"footnote-2\">\n2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. 👍\n</div>\n\n<div id=\"footnote-3\">\n3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction <span style=\"font-family:'Courier New'\">CO11N</span>:\n\nUpon pressing 'enter' for with a new amount:\n![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpg)\n\nPressing 'OK' for this window, we get a popup:\n\n![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpg)\n\nWe see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)\n</div>\n\n<div id=\"footnote-4\">\n4. Note: At my company, we usually use only up to four confirmation activities. Note that there can be up to six, but for this example, we'll say that the confirmation process has only a maximum of four.\n</div>\n\n<div id=\"footnote-5\">\n5. I ended up determining that you can exclude parameter `co_a` without any issues - however, this may be how the settings at my own company work - you can look deeper into the SAP example to include it.\n</div>\n\n<div id=\"footnote-6\">\n6. This issue does not affect the confirmation formulas, but rather the goods movements in the retrograde ingredients - specifically when the goods movements are to be overridden, for example with a batch split for a retrograde material, or a custom under- or over- amount of a retrograde material. For the rare case where an employee wanted to book some of our retrograde materials from various batch numbers and warehouse locations, they noticed in these custom goods movements with the confirmation were not being added; but rather always the default SAP-calculated amounts. After some head scratching, I found it all has to do with function module <span style=\"font-family:'Courier New'\">BAPI_PRODORDCONF_CREATE_TT</span> (or <span style=\"font-family:'Courier New'\">BAPI_PROCORDCONF_CREATE_TT</span> depending on your use case) - I was not passing in an important parameter which allows exactly this desired override behavior:\n\n<pre>\nLinkConfGoodsmov\nThe assignment of the goods movements to a confirmation is effected\nvia the LinkConfGoodsmov table. There must be an entry in this table\nfor every entry in the Goodsmovements table. The index in the\nLinkConfGoodsmov-Index_Confirm field refers to the line of the\nassociated confirmation in the Timetickets table and the index in\nthe LinkConfGoodsmov-Index_Goodsmov field refers the associated\ngoods movement in the Goodsmovements table.\nIf you want to prevent a goods movement from being posted for a\nconfirmation according to the standard logic, make an entry in the\nLinkConfGoodsmov table as well as in the Timetickets table. The\nindex in the LinkConfGoodsmov-Index_Confirm field refers to the line\nof the associated confirmation in the Timetickets table. Enter the\ninitial value 0 in the LinkConfGoodsmov-Index_Goodsmov field. It is\nnot necessary to make an entry in the Goodsmovements table in this\ncase.\nIf there is no entry in the LinkConfGoodsmov table for a\nconfirmation, goods movements are determined for backflushing and\nautomatic goods receipt using the standard logic.\n</pre>\n\nWe needed to add the following too our goods movements loop (already added in the code above! 😄):\n\n```abap\nBLAH\n```\n\n</div>\n\n\n\n\n",
+        "contentDigest": "269970e78bae5de2f1d6b1c215b6d95c",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -5599,8 +5599,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process\ndate: \"2018-05-10\"\ndraft: false\n---\n\n# Links to All Parts of the Process\n\nBefore I get into the description, you may be here just to get the links. Well, scroll no further:\n\n- [Part 2 of ???: Building a Node.js Server Monitor](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/)\n- Part 3 of ???: Building a Site Differential Sensing Twitter Bot (not yet published)\n- Part 4 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report) (not yet published)\n- (more coming soon)\n\n# Automation To The Moon 🚀\n\nAs an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.\n\n# Current Full Stack Map (Will Change As I update it!)\n\nThe current stack of my suite of applications and sites looks as follows (sorry, you're going to have to zoom in, but it's an SVG, so no loss!):\n\n![The Chrisfrew.in Productions Full Stack Map](full-stack-map.svg)\n\nNote that not all of these boxes are fully productive and live yet, and there are many more projects that haven't even made the map yet!\n\n# Improvements and Roadmap\n\n- Near future (before end of June) A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well, at least shared across Chrisfrew.in Productions\n- Mid to late summer: most paper based business processesed fully automated\n- Before New Year 2018: Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it \"knows\" to repair itself, THEN it would finally send me an email\n\nYes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:\n\n![Yeah, that cool ship.](passengers-ship.gif)\n",
-        "contentDigest": "6baaed9e7f74bbe6e781e038b0301248",
+        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process\ndate: \"2018-05-10\"\ndraft: false\n---\n\n# Links to All Parts of the Process\n\nBefore I get into the description, you may be here just to get the links. Well, scroll no further:\n\n- [Part 2 of ???: Building a Node.js Server Monitor](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/)\n- Part 3 of ???: Building a Site Differential Sensing Twitter Bot (not yet published)\n- Part 4 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report) (not yet published)\n- Part 5 of ???: Building a central webhook subdomain on (chrisfrew.in)[https://chrisfrew.in] to catch external events (GitHub, Bitbucket, push notifications)\n- (more coming soon)\n\n# Automation To The Moon 🚀\n\nAs an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.\n\n# Current Full Stack Map (Will Change As I update it!)\n\nThe current stack of my suite of applications and sites looks as follows (sorry, you're going to have to zoom in, but it's an SVG, so no loss!):\n\n![The Chrisfrew.in Productions Full Stack Map](full-stack-map.svg)\n\nNote that not all of these boxes are fully productive and live yet, and there are many more projects that haven't even made the map yet!\n\n# Improvements and Roadmap\n\n- Near future (before end of June) A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well, at least shared across Chrisfrew.in Productions\n- Mid to late summer: most paper based business processesed fully automated\n- Before New Year 2018: Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it \"knows\" to repair itself, THEN it would finally send me an email\n\nYes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:\n\n![Yeah, that cool ship.](passengers-ship.gif)\n",
+        "contentDigest": "8bf85c30fc765dea099127385b6dd5c9",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -6287,6 +6287,207 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bd24a8f3520e1a16a9311d43d9697a4f",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "relativePath": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-06-02T17:31:40.379Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
+      "changeTime": "2018-06-02T17:31:40.379Z",
+      "birthTime": "2018-06-02T17:31:34.097Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "ext": "",
+      "name": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8605205191,
+      "blocks": 0,
+      "atimeMs": 1529300216509.7473,
+      "mtimeMs": 1527960700378.8462,
+      "ctimeMs": 1527960700378.8462,
+      "birthtimeMs": 1527960694096.5046,
+      "atime": "2018-06-18T05:36:56.510Z",
+      "mtime": "2018-06-02T17:31:40.379Z",
+      "ctime": "2018-06-02T17:31:40.379Z",
+      "birthtime": "2018-06-02T17:31:34.097Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0faafb8879510c0fb0d3e3544d71a0bf",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md",
+      "relativePath": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md",
+      "extension": "md",
+      "size": 3649,
+      "prettySize": "3.65 kB",
+      "modifiedTime": "2018-06-04T17:58:56.774Z",
+      "accessTime": "2018-06-17T14:28:18.854Z",
+      "changeTime": "2018-06-04T17:58:56.774Z",
+      "birthTime": "2018-06-02T17:31:40.379Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8605205192,
+      "blocks": 8,
+      "atimeMs": 1529245698854.3535,
+      "mtimeMs": 1528135136774.1372,
+      "ctimeMs": 1528135136774.1372,
+      "birthtimeMs": 1527960700378.8296,
+      "atime": "2018-06-17T14:28:18.854Z",
+      "mtime": "2018-06-04T17:58:56.774Z",
+      "ctime": "2018-06-04T17:58:56.774Z",
+      "birthtime": "2018-06-02T17:31:40.379Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Data Analysis and Pixel Art of Towns and Cities in Pokemon\ndate: \"2018-06-01\"\ndraft: false\n---\n\n# A Real Treat!\nOver the past few days, i've done some data analysis and scripting and art making with \n\n# Breakdown into 16x16 Tiles\n\nI repeated this process for all the towns of Kanto and Johto (for non-Pokemon nerds: the 'orignal' towns and cities of pokemon, plus the '2nd generation' towns, a total of 20):\n\nAzalea Town\t   Johto\nBlackthorn City\t   Johto\nCherrygrove City   Johto\nCianwood City   Johto\nEcruteak City\t   Johto\nGoldenrod City   Johto\nMahogany Town\t   Johto\nNew Bark Town\t   Johto\nOlivine City   Johto\nViolet City   Johto\nCeladon City\t Kanto\nCerulean City Kanto\nCinnabar Island\t Kanto\nFuchsia City Kanto\nLavender Town\t Kanto\nPallet Town Kanto\nPewter City\t Kanto\nSaffron City\t Kanto\nVermilion City Kanto\nViridian City Kanto\n\n# Data Analysis\n\n\n336 like goldenrod/348.png (ground)\n230 like goldenrod/374.png (pink tiles)\n62 like goldenrod/1409.png (tree top)\n56 like goldenrod/823.png (water)\n56 like goldenrod/1226.png (right corner house)\n56 like goldenrod/201.png (left corner house)\n53 like goldenrod/1353.png (fence)\n51 like goldenrod/943.png (roof top right corner)\n51 like goldenrod/162.png (roof top left corner)\n48 like goldenrod/229.png (house normal wall)\n46 like goldenrod/1186.png (roof center)\n31 like goldenrod/1481.png (tree bottom)\n26 like goldenrod/400.png (roof top edge)\n26 like goldenrod/439.png (roof bottom edge)\n25 like goldenrod/539.png (top edge ground)\n25 like goldenrod/77.png (rock wall middle)\n20 like goldenrod/1368.png (shore)\n18 like goldenrod/1030.png (gold brick wall)\n17 like goldenrod/505.png (brown dirt top edge)\n15 like goldenrod/1387.png (ground with gray fence)\n14 like goldenrod/159.png ()\n14 like goldenrod/158.png\n14 like goldenrod/980.png\n14 like goldenrod/198.png\n14 like goldenrod/429.png\n10 like goldenrod/1421.png\n10 like goldenrod/610.png\n9 like goldenrod/758.png\n9 like goldenrod/238.png\n9 like goldenrod/200.png\n9 like goldenrod/403.png\n9 like goldenrod/170.png\n9 like goldenrod/217.png\n9 like goldenrod/377.png\n8 like goldenrod/920.png\n8 like goldenrod/148.png\n6 like goldenrod/107.png\n6 like goldenrod/149.png\n6 like goldenrod/512.png\n5 like goldenrod/260.png\n5 like goldenrod/261.png\n5 like goldenrod/831.png\n5 like goldenrod/836.png\n4 like goldenrod/880.png\n4 like goldenrod/249.png\n4 like goldenrod/1031.png\n4 like goldenrod/784.png\n3 like goldenrod/570.png\n3 like goldenrod/573.png\n3 like goldenrod/548.png\n3 like goldenrod/572.png\n3 like goldenrod/248.png\n3 like goldenrod/571.png\n2 like goldenrod/389.png\n2 like goldenrod/1343.png\n2 like goldenrod/658.png\n2 like goldenrod/1171.png\n2 like goldenrod/659.png\n2 like goldenrod/997.png\n2 like goldenrod/161.png\n2 like goldenrod/924.png\n2 like goldenrod/1173.png\nTotal Duplicates: 1507\n\n# Converting PNG Tiles to SVG\n\n# Final Results\n\nI call it *The Pokemon Kaleidoscope Series* ooooo fancy!\n\nEnjoy!\n\nAzalea Town:\n\n![Azalea.png]()\n\nBlackthorn City:\n\n![Blackthorn.png]()\n\nCherrygrove City:\n\n![Cherrygrove.png]()\n\nCianwood City:\n\n![Cianwood.png]()\n\nEcruteak City:\n\n![Ecruteak.png]()\n\nGoldenrod City:\n\n![Goldenrod.png]()\n\nMahogany Town:\n\n![Mahogany.png]()\n\nNew Bark Town:\n\nNew.png![]()\n\nOlivine City:\n\n![Olivine.png]()\n\nViolet City:\n\n![Violet.png]()\n\nCeladon City: \n\n![Celadon.png]()\n\nCerulean City: \n\n![Cerulean.png]()\n\nCinnabar Island: \n\n![Cinnabar.png]()\n\nFuchsia City: \n\n![Fuchsia.png]()\n\nLavender Town: \n\n![Lavender.png]()\n\nPallet Town: \n\n![Pallet.png]()\n\nPewter City: \n\n![Pewter.png]()\n\nSaffron City: \n\n![Saffron.png]()\n\nVermilion City: \n\n![Vermilion.png]()\n\nViridian City: \n\n![Viridian.png]()\n\n\n![]() \n\n![]() \n\n![]() \n",
+        "contentDigest": "a5b69cdf00e5c145ca5d56f79cf65740",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Data Analysis and Pixel Art of Towns and Cities in Pokemon",
+        "date": "2018-06-01",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md",
+      "fields": {
+        "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "680195d84ff8a114edcb0f4ce8c48d6d",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed",
+      "relativePath": "market-news-feed",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-06-17T14:37:13.233Z",
+      "accessTime": "2018-06-18T05:36:56.510Z",
+      "changeTime": "2018-06-18T05:24:11.605Z",
+      "birthTime": "2018-06-17T14:37:07.008Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "market-news-feed",
+      "ext": "",
+      "name": "market-news-feed",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8606215752,
+      "blocks": 0,
+      "atimeMs": 1529300216509.9727,
+      "mtimeMs": 1529246233232.5757,
+      "ctimeMs": 1529299451604.8767,
+      "birthtimeMs": 1529246227008.3582,
+      "atime": "2018-06-18T05:36:56.510Z",
+      "mtime": "2018-06-17T14:37:13.233Z",
+      "ctime": "2018-06-18T05:24:11.605Z",
+      "birthtime": "2018-06-17T14:37:07.008Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fd56a6777d907e39d3bbb9bbadfa5010",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
+      "relativePath": "market-news-feed/index.js",
+      "extension": "js",
+      "size": 3399,
+      "prettySize": "3.4 kB",
+      "modifiedTime": "2018-06-18T05:24:22.853Z",
+      "accessTime": "2018-06-18T05:24:22.853Z",
+      "changeTime": "2018-06-18T05:24:22.853Z",
+      "birthTime": "2018-06-17T14:37:13.233Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "market-news-feed",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8606215781,
+      "blocks": 8,
+      "atimeMs": 1529299462853.1716,
+      "mtimeMs": 1529299462853.3635,
+      "ctimeMs": 1529299462853.3635,
+      "birthtimeMs": 1529246233232.547,
+      "atime": "2018-06-18T05:24:22.853Z",
+      "mtime": "2018-06-18T05:24:22.853Z",
+      "ctime": "2018-06-18T05:24:22.853Z",
+      "birthtime": "2018-06-17T14:37:13.233Z"
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "layout": "index",
       "jsonName": "offline-plugin-app-shell-fallback.json",
@@ -6295,7 +6496,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
       "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
       "context": {},
-      "updatedAt": 1527619054145,
+      "updatedAt": 1529300216929,
       "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
       "pluginCreatorId": "Plugin gatsby-plugin-offline",
       "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
@@ -6304,7 +6505,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "44a777c4b9e660868594d832976c0d0e",
+        "contentDigest": "f843c23e88cf53ad16daae132daa7311",
         "owner": "internal-data-bridge"
       }
     },
@@ -6331,7 +6532,7 @@
           }
         }
       },
-      "updatedAt": 1527619054185,
+      "updatedAt": 1529300216960,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6340,7 +6541,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4954b56abe95a93687efc21c5431b815",
+        "contentDigest": "00f4786bc74c15835d0b6e0b2d03e3d6",
         "owner": "internal-data-bridge"
       }
     },
@@ -6378,7 +6579,7 @@
           }
         }
       },
-      "updatedAt": 1527619054186,
+      "updatedAt": 1529300216960,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6387,7 +6588,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "775f232732155432145b69009d5ccce6",
+        "contentDigest": "7f9cdeb41702b8043b2f2b81439bbcb9",
         "owner": "internal-data-bridge"
       }
     },
@@ -6425,7 +6626,7 @@
           }
         }
       },
-      "updatedAt": 1527619054186,
+      "updatedAt": 1529300216961,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6434,7 +6635,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "13fcef1d88e649f33660bcddebf297af",
+        "contentDigest": "08f2cfb21b06ade6d7eb25818103bd3b",
         "owner": "internal-data-bridge"
       }
     },
@@ -6472,7 +6673,7 @@
           }
         }
       },
-      "updatedAt": 1527619054187,
+      "updatedAt": 1529300216961,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6481,7 +6682,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "17fbcee77b41ed7c5ccb8208a66a1d5f",
+        "contentDigest": "f7806f17674b4dbc9391e62e52b67439",
         "owner": "internal-data-bridge"
       }
     },
@@ -6519,7 +6720,7 @@
           }
         }
       },
-      "updatedAt": 1527619054187,
+      "updatedAt": 1529300216962,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6528,7 +6729,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bda4adc59eadb7e391f6f935cc9eecd8",
+        "contentDigest": "354636784f63922576a448214beebcfc",
         "owner": "internal-data-bridge"
       }
     },
@@ -6566,7 +6767,7 @@
           }
         }
       },
-      "updatedAt": 1527619054188,
+      "updatedAt": 1529300216962,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6575,7 +6776,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bbd0b111ba61825d6bb3706b7daa6876",
+        "contentDigest": "be2357ddcc5f9b81a823ec9c41ad4834",
         "owner": "internal-data-bridge"
       }
     },
@@ -6613,7 +6814,7 @@
           }
         }
       },
-      "updatedAt": 1527619054188,
+      "updatedAt": 1529300216962,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6622,7 +6823,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5811490499ef0b6ae2df666c51206249",
+        "contentDigest": "5c70c0861a97292bcc1cb5bc459cd663",
         "owner": "internal-data-bridge"
       }
     },
@@ -6660,7 +6861,7 @@
           }
         }
       },
-      "updatedAt": 1527619054188,
+      "updatedAt": 1529300216963,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6669,7 +6870,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6bfafabf43cd27ebc95af6e3d1f0f5e1",
+        "contentDigest": "6457c8a4edbebf895cd31c892b263a9e",
         "owner": "internal-data-bridge"
       }
     },
@@ -6707,7 +6908,7 @@
           }
         }
       },
-      "updatedAt": 1527619054189,
+      "updatedAt": 1529300216963,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6716,7 +6917,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "259aaecd04adb0472a8d08d617609752",
+        "contentDigest": "7b5e70f0f0f2c7d972609de4cb75a001",
         "owner": "internal-data-bridge"
       }
     },
@@ -6754,7 +6955,7 @@
           }
         }
       },
-      "updatedAt": 1527619054190,
+      "updatedAt": 1529300216963,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6763,7 +6964,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3f48923339a82d389a4d9022f54f60e7",
+        "contentDigest": "07b5b487e292418073f1b3f800e7b865",
         "owner": "internal-data-bridge"
       }
     },
@@ -6801,7 +7002,7 @@
           }
         }
       },
-      "updatedAt": 1527619054190,
+      "updatedAt": 1529300216964,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6810,7 +7011,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8bf106398faaacfc3a0e9d749f14e835",
+        "contentDigest": "590a39e8b802ec6df885640d77ce3beb",
         "owner": "internal-data-bridge"
       }
     },
@@ -6848,7 +7049,7 @@
           }
         }
       },
-      "updatedAt": 1527619054190,
+      "updatedAt": 1529300216964,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6857,7 +7058,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2c737790dd6bff1d38bf2e44e3f69726",
+        "contentDigest": "fce7efdbf1f0f4da2944afa5def4752f",
         "owner": "internal-data-bridge"
       }
     },
@@ -6895,7 +7096,7 @@
           }
         }
       },
-      "updatedAt": 1527619054191,
+      "updatedAt": 1529300216965,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6904,7 +7105,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a6cc9ede2a336d6ab8e0b6451703ceba",
+        "contentDigest": "6fc843d8fbdfce7efe1e6079fbbef856",
         "owner": "internal-data-bridge"
       }
     },
@@ -6942,7 +7143,7 @@
           }
         }
       },
-      "updatedAt": 1527619054191,
+      "updatedAt": 1529300216965,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6951,7 +7152,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e3e38343611f56f47e5dcee34dc2be50",
+        "contentDigest": "4dc5dd5ce814e90bd8192aa305d3fab4",
         "owner": "internal-data-bridge"
       }
     },
@@ -6989,7 +7190,7 @@
           }
         }
       },
-      "updatedAt": 1527619054191,
+      "updatedAt": 1529300216965,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -6998,7 +7199,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "019e9a71a19687dbd0f7ad738855b845",
+        "contentDigest": "ed740bd1cff68a59e2c5f6d5b25a5e79",
         "owner": "internal-data-bridge"
       }
     },
@@ -7036,7 +7237,7 @@
           }
         }
       },
-      "updatedAt": 1527619054192,
+      "updatedAt": 1529300216966,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7045,7 +7246,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "49769485115cc418776b78bc00b5456d",
+        "contentDigest": "4b455c4608031e39da0c862e1786083f",
         "owner": "internal-data-bridge"
       }
     },
@@ -7083,7 +7284,7 @@
           }
         }
       },
-      "updatedAt": 1527619054192,
+      "updatedAt": 1529300216966,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7092,7 +7293,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9bd9ded59a1fba1c0cc6d7d17633e6c8",
+        "contentDigest": "d686a1905d11b4a5920d8e483c51e781",
         "owner": "internal-data-bridge"
       }
     },
@@ -7130,7 +7331,7 @@
           }
         }
       },
-      "updatedAt": 1527619054193,
+      "updatedAt": 1529300216966,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7139,7 +7340,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f01b4ebe40d5542fed7934b113795fea",
+        "contentDigest": "afa42a1120efb20191827bd2c947daa3",
         "owner": "internal-data-bridge"
       }
     },
@@ -7177,7 +7378,7 @@
           }
         }
       },
-      "updatedAt": 1527619054193,
+      "updatedAt": 1529300216967,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7186,7 +7387,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5a9985fc9c7031f4c1fa4b9bf8ac834c",
+        "contentDigest": "ff04ab9e5cd3d9eca498aca9aa6bbddd",
         "owner": "internal-data-bridge"
       }
     },
@@ -7224,7 +7425,7 @@
           }
         }
       },
-      "updatedAt": 1527619054193,
+      "updatedAt": 1529300216967,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7233,7 +7434,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "542be9c78c52d773520c16cba2f8911d",
+        "contentDigest": "e1ce0f4a1aaea775b1d1f2e1e929bb47",
         "owner": "internal-data-bridge"
       }
     },
@@ -7271,7 +7472,7 @@
           }
         }
       },
-      "updatedAt": 1527619054194,
+      "updatedAt": 1529300216968,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7280,7 +7481,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b5e7a25ce704eb392204d249f2179641",
+        "contentDigest": "4f16e77deb3eb10e68fb4439f29f4d17",
         "owner": "internal-data-bridge"
       }
     },
@@ -7318,7 +7519,7 @@
           }
         }
       },
-      "updatedAt": 1527619054194,
+      "updatedAt": 1529300216968,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7327,7 +7528,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3e634c0d805400246967fc5a4f8c178f",
+        "contentDigest": "6a07b2a8fbe24c2699001772825769a8",
         "owner": "internal-data-bridge"
       }
     },
@@ -7365,7 +7566,7 @@
           }
         }
       },
-      "updatedAt": 1527619054195,
+      "updatedAt": 1529300216968,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7374,7 +7575,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2c5bcccb4ad959541eaa677d0ec284b8",
+        "contentDigest": "786d0269e3805b66016b582f58eb99db",
         "owner": "internal-data-bridge"
       }
     },
@@ -7399,9 +7600,20 @@
             "relativeLink": "/some-tasty-bash-profile-commands/"
           }
         },
-        "next": null
+        "next": {
+          "fields": {
+            "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+          },
+          "frontmatter": {
+            "date": "01 June, 2018",
+            "title": "Data Analysis and Pixel Art of Towns and Cities in Pokemon",
+            "draft": false,
+            "link": "https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/",
+            "relativeLink": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+          }
+        }
       },
-      "updatedAt": 1527619054195,
+      "updatedAt": 1529300216969,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -7410,7 +7622,43 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "53ffb0530a27a218c7791794e0bd00e2",
+        "contentDigest": "20089c96bc63c6f3b1b1d4b5bcb88991",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/": {
+      "layout": "index",
+      "jsonName": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json",
+      "internalComponentName": "ComponentDataAnalysisAndPixelArtOfTownsAndCitiesInPokemon",
+      "path": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/",
+        "prev": {
+          "fields": {
+            "slug": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+          },
+          "frontmatter": {
+            "date": "09 May, 2018",
+            "title": "Warn SAP Users of Locked Objects Then Kill Their Session",
+            "draft": false,
+            "link": "https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/",
+            "relativeLink": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+          }
+        },
+        "next": null
+      },
+      "updatedAt": 1529300216969,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "708cecf2e801a1aa4117bb883dba174d",
         "owner": "internal-data-bridge"
       }
     },
@@ -7422,7 +7670,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1527619054223,
+      "updatedAt": 1529300217000,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -7431,7 +7679,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0c1db4d16a43a73d774e1fc22a68e692",
+        "contentDigest": "6ae5bf8608d49328d5a070e4ec1f2e54",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /market-news-feed/": {
+      "layout": "index",
+      "jsonName": "market-news-feed.json",
+      "internalComponentName": "ComponentMarketNewsFeed",
+      "path": "/market-news-feed/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
+      "componentChunkName": "component---src-pages-market-news-feed-index-js",
+      "context": {},
+      "updatedAt": 1529300217009,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
+      "id": "SitePage /market-news-feed/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "94222f1f63c215dfe3e87b863c5f3c22",
         "owner": "internal-data-bridge"
       }
     },
@@ -7443,7 +7712,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
       "componentChunkName": "component---src-pages-movie-night-index-js",
       "context": {},
-      "updatedAt": 1527619054231,
+      "updatedAt": 1529300217009,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
@@ -7452,7 +7721,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "181d243de83c29d2d0503fa32e0705cf",
+        "contentDigest": "c4f5eb9f5ab555d15f7977258ca54e08",
         "owner": "internal-data-bridge"
       }
     },
@@ -7464,7 +7733,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
       "componentChunkName": "component---src-pages-sec-filings-index-js",
       "context": {},
-      "updatedAt": 1527619054231,
+      "updatedAt": 1529300217010,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
@@ -7473,7 +7742,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6e6e46428c6bf922eb18fd3502e3270a",
+        "contentDigest": "1da6d2f6e0bc75778545769b639f6e66",
         "owner": "internal-data-bridge"
       }
     }
@@ -7509,7 +7778,8 @@
         "/using-google-clouds-text-to-speech-machine-learning-api/",
         "/some-tasty-bash-profile-commands/",
         "/warn-sap-users-of-locked-objects-then-kill-their-session/",
-        "/"
+        "/",
+        "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
         "/a-toast-to-full-stack-developers/"
@@ -7582,6 +7852,9 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects-then-kill-their-session/index.md absPath of file >>> MarkdownRemark": [
         "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/index.md absPath of file >>> MarkdownRemark": [
+        "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
       ]
     },
     "connections": {
