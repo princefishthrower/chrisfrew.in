@@ -4,35 +4,23 @@ import Helmet from 'react-helmet'
 import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 import io from 'socket.io-client'; // client side of socket
-const sAPIURL = 'https://chrisfrew.in/market-news-feed-api';
-const socket = io(sAPIURL); // make sure it is from where the server is serving
+const sAPI_URL = 'https://chrisfrew.in/market-news-feed-api';
+const sWS_URL = 'wss://chrisfrew.in/market-news-feed-ws';
+const socket = io(sWS_URL); // make sure it is from where the server is serving
 
 class MarketNews extends React.Component {    
     constructor() {
       super();
       this.state = {
-        aListItems: [],
-        permission: "denied"
+        aListItems: []
       };
       this.setupNotifications = this.setupNotifications.bind(this);
       this.setupSocketEvent = this.setupSocketEvent.bind(this);
     }
     setupNotifications() {
-      // Let's check whether notification permissions have already been granted
-      if (Notification.permission === "granted") {
-        // If it's okay let's create a notification
-        //var notification = new Notification("Hi there!");
-        //this.setState({permission: "granted"});
-      }
-      // Otherwise, we need to ask the user for permission
-      else if (Notification.permission !== "denied") {
-        Notification.requestPermission((permission) => {
-          // If the user accepts, let's create a notification
-          if (permission === "granted") {
-            //var notification = new Notification("Hi there!");
-            //this.setState({permission: "granted"});
-          }
-        });
+      // ask the user for permission
+      if (Notification.permission !== "granted") {
+        Notification.requestPermission();
       }
     }
     setupSocketEvent() {
@@ -72,7 +60,7 @@ class MarketNews extends React.Component {
       this.setupNotifications();
       this.setupSocketEvent();
       let that = this;
-      axios.get(sAPIURL)
+      axios.get(sAPI_URL)
         .then(function (response) {
           let aItems = [];
           let oDate;
