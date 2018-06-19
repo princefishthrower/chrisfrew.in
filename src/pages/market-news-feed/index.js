@@ -5,7 +5,7 @@ import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 import io from 'socket.io-client'; // client side of socket
 const sAPI_URL = 'https://chrisfrew.in/market-news-feed-api'; // path for http communication to port 9002
-const sWS_URL = 'https://chrisfrew.in/market-news-feed-ws'; // path for websocket communication to port 9002
+const sWS_URL = 'http://194.208.181.15:9002'; // path for websocket communication to port 9002
 const socket = io(sWS_URL); 
 
 class MarketNews extends React.Component {    
