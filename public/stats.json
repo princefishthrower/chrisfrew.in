@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-market-news-feed-index-js": [
-      "component---src-pages-market-news-feed-index-js-80695a1d2896b44c8ed0.js",
-      "component---src-pages-market-news-feed-index-js-80695a1d2896b44c8ed0.js.map"
+      "component---src-pages-market-news-feed-index-js-b0ff2ecab3d1ec706aeb.js",
+      "component---src-pages-market-news-feed-index-js-b0ff2ecab3d1ec706aeb.js.map"
     ],
     "path---final-say-bitcoin": [
       "path---final-say-bitcoin-be5cf925d154466e0b53.js",
@@ -135,9 +135,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-0bb793389842dc4672f2.js",
+      "app-e7015ba8e73114086ac0.js",
       "build-js-styles.css",
-      "app-0bb793389842dc4672f2.js.map",
+      "app-e7015ba8e73114086ac0.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [
