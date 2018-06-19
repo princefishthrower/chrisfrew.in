@@ -5,9 +5,9 @@ exports.components = {
   "component---node-modules-gatsby-plugin-offline-app-shell-js": require("gatsby-module-loader?name=component---node-modules-gatsby-plugin-offline-app-shell-js!/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js"),
   "component---src-templates-blog-post-js": require("gatsby-module-loader?name=component---src-templates-blog-post-js!/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js"),
   "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!/Users/chris/projects/chrisfrew.in/src/pages/index.js"),
+  "component---src-pages-market-news-feed-index-js": require("gatsby-module-loader?name=component---src-pages-market-news-feed-index-js!/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js"),
   "component---src-pages-movie-night-index-js": require("gatsby-module-loader?name=component---src-pages-movie-night-index-js!/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js"),
-  "component---src-pages-sec-filings-index-js": require("gatsby-module-loader?name=component---src-pages-sec-filings-index-js!/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js"),
-  "component---src-pages-market-news-feed-index-js": require("gatsby-module-loader?name=component---src-pages-market-news-feed-index-js!/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js")
+  "component---src-pages-sec-filings-index-js": require("gatsby-module-loader?name=component---src-pages-sec-filings-index-js!/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js")
 }
 
 exports.json = {
@@ -66,11 +66,11 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/chris/projects/chrisfrew.in/.cache/json/index.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "market-news-feed.json": require("gatsby-module-loader?name=path---market-news-feed!/Users/chris/projects/chrisfrew.in/.cache/json/market-news-feed.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "movie-night.json": require("gatsby-module-loader?name=path---movie-night!/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "sec-filings.json": require("gatsby-module-loader?name=path---sec-filings!/Users/chris/projects/chrisfrew.in/.cache/json/sec-filings.json"),
-  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "market-news-feed.json": require("gatsby-module-loader?name=path---market-news-feed!/Users/chris/projects/chrisfrew.in/.cache/json/market-news-feed.json")
+  "sec-filings.json": require("gatsby-module-loader?name=path---sec-filings!/Users/chris/projects/chrisfrew.in/.cache/json/sec-filings.json")
 }
 
 exports.layouts = {

@@ -189,6 +189,13 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---src-pages-market-news-feed-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "market-news-feed.json",
+        "path": "/market-news-feed/"
+    },
+    {
         "componentChunkName": "component---src-pages-movie-night-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -201,12 +208,5 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "sec-filings.json",
         "path": "/sec-filings/"
-    },
-    {
-        "componentChunkName": "component---src-pages-market-news-feed-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "market-news-feed.json",
-        "path": "/market-news-feed/"
     }
 ]

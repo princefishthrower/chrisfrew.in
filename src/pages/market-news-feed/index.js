@@ -6,7 +6,7 @@ import { rhythm, scale } from '../../utils/typography'
 import io from 'socket.io-client'; // client side of socket
 const sAPI_URL = 'https://chrisfrew.in/market-news-feed-api'; // path for http communication to port 9002
 //const sAPI_URL = 'https://chrisfrew.in/market-news-feed-ws'; // path for websocket communication to port 9002
-const socket = io(sAPI_URL); 
+const socket = io("http://localhost:9002"); 
 
 class MarketNews extends React.Component {    
     constructor() {
