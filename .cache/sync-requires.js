@@ -7,8 +7,8 @@ exports.components = {
   "component---src-templates-blog-post-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/index.js")),
   "component---src-pages-market-news-feed-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js")),
-  "component---src-pages-sec-filings-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js")),
-  "component---src-pages-movie-night-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js"))
+  "component---src-pages-movie-night-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js")),
+  "component---src-pages-sec-filings-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js"))
 }
 
 exports.json = {
@@ -69,9 +69,9 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "market-news-feed.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/market-news-feed.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "sec-filings.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/sec-filings.json"),
+  "movie-night.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "movie-night.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json")
+  "sec-filings.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/sec-filings.json")
 }
 
 exports.layouts = {

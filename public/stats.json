@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-market-news-feed-index-js": [
-      "component---src-pages-market-news-feed-index-js-f71dc57fc92e6e558a08.js",
-      "component---src-pages-market-news-feed-index-js-f71dc57fc92e6e558a08.js.map"
+      "component---src-pages-market-news-feed-index-js-c88fce80cc3b8182ae7c.js",
+      "component---src-pages-market-news-feed-index-js-c88fce80cc3b8182ae7c.js.map"
     ],
     "path---final-say-bitcoin": [
       "path---final-say-bitcoin-be5cf925d154466e0b53.js",
@@ -21,8 +21,8 @@
       "path---sending-windows-commands-from-sap-abap-4ba32058ede46d8461ff.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-6ebbe807587f283538f8.js",
-      "component---src-pages-index-js-6ebbe807587f283538f8.js.map"
+      "component---src-pages-index-js-82fc4eb4102fb3b88c7d.js",
+      "component---src-pages-index-js-82fc4eb4102fb3b88c7d.js.map"
     ],
     "path---jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input": [
       "path---jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input-63a0c2748e6557ff793d.js",
@@ -57,8 +57,8 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-51968856077df34d61ae.js",
-      "component---src-templates-blog-post-js-51968856077df34d61ae.js.map"
+      "component---src-templates-blog-post-js-2c98ede0fe87b4dc38bd.js",
+      "component---src-templates-blog-post-js-2c98ede0fe87b4dc38bd.js.map"
     ],
     "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap": [
       "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-544c40be320e37a21eb1.js",
@@ -135,9 +135,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-e7015ba8e73114086ac0.js",
+      "app-0bb793389842dc4672f2.js",
       "build-js-styles.css",
-      "app-e7015ba8e73114086ac0.js.map",
+      "app-0bb793389842dc4672f2.js.map",
       "build-js-styles.css.map"
     ],
     "path---a-toast-to-full-stack-developers": [

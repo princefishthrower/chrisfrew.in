@@ -196,17 +196,17 @@
         "path": "/market-news-feed/"
     },
     {
-        "componentChunkName": "component---src-pages-sec-filings-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sec-filings.json",
-        "path": "/sec-filings/"
-    },
-    {
         "componentChunkName": "component---src-pages-movie-night-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "movie-night.json",
         "path": "/movie-night/"
+    },
+    {
+        "componentChunkName": "component---src-pages-sec-filings-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sec-filings.json",
+        "path": "/sec-filings/"
     }
 ]

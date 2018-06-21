@@ -5,8 +5,8 @@ import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 import io from 'socket.io-client'; // client side of socket
 const sAPI_URL = 'https://chrisfrew.in/market-news-feed-api'; // path for http communication to port 9002
-const sWS_URL = 'http://194.208.181.15:9002'; // path for websocket communication to port 9002
-const socket = io(sWS_URL); 
+const sWS_URL = 'https://chrisfrew.in/market-news-feed-ws'; // path for websocket communication to port 9003
+const socket = io.connect(sWS_URL); 
 
 class MarketNews extends React.Component {    
     constructor() {
@@ -15,7 +15,7 @@ class MarketNews extends React.Component {
         aListItems: []
       };
       this.setupNotifications = this.setupNotifications.bind(this);
-      this.setupSocketEvent = this.setupSocketEvent.bind(this);
+      this.setupSocketEvents = this.setupSocketEvents.bind(this);
     }
     setupNotifications() {
       // ask the user for permission
@@ -23,19 +23,25 @@ class MarketNews extends React.Component {
         Notification.requestPermission();
       }
     }
-    setupSocketEvent() {
+    setupSocketEvents() {
       socket.on('newNews', (oNewsItem) => {
         let aItems = this.state.aListItems;
         let oDate = new Date(oNewsItem.iUnixDateTime*1000);
-        aItems.unshift(<li key={oNewsItem.sId} className="newNewsNotification"><a href={oNewsItem.sLink} target="_blank" className="newNewsNotification">{oDate.toLocaleString()}: {oNewsItem.sTitle}</a></li>);
+        this.setState({ [oNewsItem.sId]: "newNewsNotification" });
+        console.log(oNewsItem);
+        aItems.unshift(<li key={oNewsItem.sId} className={this.state[oNewsItem.sId]}><a href={oNewsItem.sLink} target="_blank" className="newNewsNotification">{oNewsItem.sIdentifier}, {oDate.toLocaleString()}: {oNewsItem.sTitle}</a></li>);
+        setTimeout(() => { this.setState({ [oNewsItem.sId]: "" }); }, 6000); // need to remove the animation class after it is done (5 seconds + 1 second buffer)
         this.setState({aListItems: aItems});
         if (Notification.permission === "granted") {
-          new Notification("Breaking news: \"" + oNewsItem.title + "\"");
+          new Notification("Breaking news: for " + oNewsItem.sIdentifier +  ":\"" + oNewsItem.sTitle + "\"");
         }
+      });
+      socket.on('mp3Data', (oStreamData) => {
+        let oAudio = new Audio(oStreamData.sBase64);
+        oAudio.play();
       });
     }
     render() {
-      console.log("rendering!")
       return (
         <div>
           <Helmet title="Market News Feed" />
@@ -58,23 +64,22 @@ class MarketNews extends React.Component {
     }
     componentDidMount() {
       this.setupNotifications();
-      this.setupSocketEvent();
+      this.setupSocketEvents();
       let that = this;
       axios.get(sAPI_URL)
         .then(function (response) {
           let aItems = [];
           let oDate;
-          console.log("data:")
           response.data.forEach((oNewsItem, iIndex) => {
             oDate = new Date(oNewsItem.unix_time_released*1000);
-            aItems.push(<li key={oNewsItem.id}><a href={oNewsItem.link} target="_blank">{oDate.toLocaleString()}: {oNewsItem.title}</a></li>);
+            aItems.push(<li key={oNewsItem.id}><a href={oNewsItem.link} target="_blank">{oNewsItem.identifier}, {oDate.toLocaleString()}: {oNewsItem.title}</a></li>);
             if (iIndex + 1 === response.data.length) {
               that.setState({aListItems: aItems});
             }
           });
         })
         .catch(function (error) {
-          that.setState({aListItems: [<li>Coming soon :)</li>]});
+          that.setState({aListItems: [<li key="error">Error loading feed :(</li>]});
           console.log(error);
         });
     }
