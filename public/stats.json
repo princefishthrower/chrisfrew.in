@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-market-news-feed-index-js": [
-      "component---src-pages-market-news-feed-index-js-c88fce80cc3b8182ae7c.js",
-      "component---src-pages-market-news-feed-index-js-c88fce80cc3b8182ae7c.js.map"
+      "component---src-pages-market-news-feed-index-js-618d6316bc3f3b181231.js",
+      "component---src-pages-market-news-feed-index-js-618d6316bc3f3b181231.js.map"
     ],
     "path---final-say-bitcoin": [
       "path---final-say-bitcoin-be5cf925d154466e0b53.js",
@@ -65,8 +65,8 @@
       "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-544c40be320e37a21eb1.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-cbbf9e65a684cab01407.js",
-      "component---src-layouts-index-js-cbbf9e65a684cab01407.js.map"
+      "component---src-layouts-index-js-254a5acf287971bb6f95.js",
+      "component---src-layouts-index-js-254a5acf287971bb6f95.js.map"
     ],
     "path---fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor": [
       "path---fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor-4e003a34d029873878ed.js",
@@ -79,6 +79,10 @@
     "path---movie-night": [
       "path---movie-night-a0e39f21c11f6a62c5ab.js",
       "path---movie-night-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---johnny-birthday": [
+      "path---johnny-birthday-a0e39f21c11f6a62c5ab.js",
+      "path---johnny-birthday-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
       "path---index-34a4350709cef2a2ee3b.js",
@@ -105,9 +109,9 @@
       "path---some-tasty-bash-profile-commands-012034a544c60c5f2e83.js.map"
     ],
     "commons": [
-      "commons-4dbe1ff4585d5d756fdf.js",
+      "commons-618887fad85c91637f94.js",
       "build-js-styles.css",
-      "commons-4dbe1ff4585d5d756fdf.js.map",
+      "commons-618887fad85c91637f94.js.map",
       "build-js-styles.css.map"
     ],
     "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein": [
@@ -135,10 +139,18 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-0bb793389842dc4672f2.js",
+      "app-2f4d654db17ab3f66906.js",
       "build-js-styles.css",
-      "app-0bb793389842dc4672f2.js.map",
+      "app-2f4d654db17ab3f66906.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---privacy-policy": [
+      "path---privacy-policy-a0e39f21c11f6a62c5ab.js",
+      "path---privacy-policy-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-johnny-birthday-index-js": [
+      "component---src-pages-johnny-birthday-index-js-789b6bb96adbba76c2e0.js",
+      "component---src-pages-johnny-birthday-index-js-789b6bb96adbba76c2e0.js.map"
     ],
     "path---a-toast-to-full-stack-developers": [
       "path---a-toast-to-full-stack-developers-c90d329288588a8990cb.js",
@@ -149,8 +161,8 @@
       "path---introducing-chrisfrewin-productions-95c4ea0a73b410a2cade.js.map"
     ],
     "component---src-pages-sec-filings-index-js": [
-      "component---src-pages-sec-filings-index-js-5d7f8ff5d87949f1276f.js",
-      "component---src-pages-sec-filings-index-js-5d7f8ff5d87949f1276f.js.map"
+      "component---src-pages-sec-filings-index-js-2b5d681a701f54151024.js",
+      "component---src-pages-sec-filings-index-js-2b5d681a701f54151024.js.map"
     ],
     "path---hot-linking-to-lines-in-github": [
       "path---hot-linking-to-lines-in-github-8c0595178b5a8b4d015b.js",
@@ -159,6 +171,10 @@
     "path---detailed-look-at-bdc-in-abap": [
       "path---detailed-look-at-bdc-in-abap-d3dc3a9589dc7b0b692a.js",
       "path---detailed-look-at-bdc-in-abap-d3dc3a9589dc7b0b692a.js.map"
+    ],
+    "component---src-pages-privacy-policy-index-js": [
+      "component---src-pages-privacy-policy-index-js-9bf693a50af3510f52dd.js",
+      "component---src-pages-privacy-policy-index-js-9bf693a50af3510f52dd.js.map"
     ],
     "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets": [
       "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets-06eb3f04cf64bf1195e8.js",

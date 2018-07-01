@@ -189,11 +189,25 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---src-pages-johnny-birthday-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "johnny-birthday.json",
+        "path": "/johnny-birthday/"
+    },
+    {
         "componentChunkName": "component---src-pages-market-news-feed-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "market-news-feed.json",
         "path": "/market-news-feed/"
+    },
+    {
+        "componentChunkName": "component---src-pages-privacy-policy-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "privacy-policy.json",
+        "path": "/privacy-policy/"
     },
     {
         "componentChunkName": "component---src-pages-movie-night-index-js",
