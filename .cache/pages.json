@@ -203,13 +203,6 @@
         "path": "/market-news-feed/"
     },
     {
-        "componentChunkName": "component---src-pages-privacy-policy-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "privacy-policy.json",
-        "path": "/privacy-policy/"
-    },
-    {
         "componentChunkName": "component---src-pages-movie-night-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -217,10 +210,24 @@
         "path": "/movie-night/"
     },
     {
+        "componentChunkName": "component---src-pages-privacy-policy-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "privacy-policy.json",
+        "path": "/privacy-policy/"
+    },
+    {
         "componentChunkName": "component---src-pages-sec-filings-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "sec-filings.json",
         "path": "/sec-filings/"
+    },
+    {
+        "componentChunkName": "component---src-pages-talk-shop-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "talk-shop.json",
+        "path": "/talk-shop/"
     }
 ]

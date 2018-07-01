@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-market-news-feed-index-js": [
-      "component---src-pages-market-news-feed-index-js-618d6316bc3f3b181231.js",
-      "component---src-pages-market-news-feed-index-js-618d6316bc3f3b181231.js.map"
+      "component---src-pages-market-news-feed-index-js-268de384e019b0879191.js",
+      "component---src-pages-market-news-feed-index-js-268de384e019b0879191.js.map"
     ],
     "path---final-say-bitcoin": [
       "path---final-say-bitcoin-be5cf925d154466e0b53.js",
@@ -48,6 +48,10 @@
       "path---dropdowns-in-readmes-0dd0501c1467b174c191.js",
       "path---dropdowns-in-readmes-0dd0501c1467b174c191.js.map"
     ],
+    "path---talk-shop": [
+      "path---talk-shop-a0e39f21c11f6a62c5ab.js",
+      "path---talk-shop-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "path---building-raiblocks-charts": [
       "path---building-raiblocks-charts-0202f7a2d57d929c8dd1.js",
       "path---building-raiblocks-charts-0202f7a2d57d929c8dd1.js.map"
@@ -65,8 +69,8 @@
       "path---calculating-activity-amounts-for-process-and-production-orders-with-sap-abap-544c40be320e37a21eb1.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-254a5acf287971bb6f95.js",
-      "component---src-layouts-index-js-254a5acf287971bb6f95.js.map"
+      "component---src-layouts-index-js-d473d542f22807aec6fd.js",
+      "component---src-layouts-index-js-d473d542f22807aec6fd.js.map"
     ],
     "path---fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor": [
       "path---fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor-4e003a34d029873878ed.js",
@@ -109,9 +113,9 @@
       "path---some-tasty-bash-profile-commands-012034a544c60c5f2e83.js.map"
     ],
     "commons": [
-      "commons-618887fad85c91637f94.js",
+      "commons-eb07be3cc4c7573e4bb6.js",
       "build-js-styles.css",
-      "commons-618887fad85c91637f94.js.map",
+      "commons-eb07be3cc4c7573e4bb6.js.map",
       "build-js-styles.css.map"
     ],
     "path---how-to-be-an-american-living-in-austria-and-working-in-liechtenstein": [
@@ -126,6 +130,10 @@
       "path---i-set-aside-1000-to-learn-options-trading-36a2654c6cb3a0569a7f.js",
       "path---i-set-aside-1000-to-learn-options-trading-36a2654c6cb3a0569a7f.js.map"
     ],
+    "component---src-pages-talk-shop-index-js": [
+      "component---src-pages-talk-shop-index-js-870495555ce225eb7cde.js",
+      "component---src-pages-talk-shop-index-js-870495555ce225eb7cde.js.map"
+    ],
     "path---using-google-clouds-text-to-speech-machine-learning-api": [
       "path---using-google-clouds-text-to-speech-machine-learning-api-e11ea6750b0f531f50dc.js",
       "path---using-google-clouds-text-to-speech-machine-learning-api-e11ea6750b0f531f50dc.js.map"
@@ -139,9 +147,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-2f4d654db17ab3f66906.js",
+      "app-46db5ccbed4613b48598.js",
       "build-js-styles.css",
-      "app-2f4d654db17ab3f66906.js.map",
+      "app-46db5ccbed4613b48598.js.map",
       "build-js-styles.css.map"
     ],
     "path---privacy-policy": [
@@ -161,8 +169,8 @@
       "path---introducing-chrisfrewin-productions-95c4ea0a73b410a2cade.js.map"
     ],
     "component---src-pages-sec-filings-index-js": [
-      "component---src-pages-sec-filings-index-js-2b5d681a701f54151024.js",
-      "component---src-pages-sec-filings-index-js-2b5d681a701f54151024.js.map"
+      "component---src-pages-sec-filings-index-js-c5ff3a34ef4a6e2b56ba.js",
+      "component---src-pages-sec-filings-index-js-c5ff3a34ef4a6e2b56ba.js.map"
     ],
     "path---hot-linking-to-lines-in-github": [
       "path---hot-linking-to-lines-in-github-8c0595178b5a8b4d015b.js",
@@ -173,8 +181,8 @@
       "path---detailed-look-at-bdc-in-abap-d3dc3a9589dc7b0b692a.js.map"
     ],
     "component---src-pages-privacy-policy-index-js": [
-      "component---src-pages-privacy-policy-index-js-9bf693a50af3510f52dd.js",
-      "component---src-pages-privacy-policy-index-js-9bf693a50af3510f52dd.js.map"
+      "component---src-pages-privacy-policy-index-js-be558eb4640907971608.js",
+      "component---src-pages-privacy-policy-index-js-be558eb4640907971608.js.map"
     ],
     "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets": [
       "path---creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets-06eb3f04cf64bf1195e8.js",

@@ -79,6 +79,8 @@ class Template extends React.Component {
         &<br/>
         <span style={{color:'#F92672'}}>Natural Language Processing</span><br/>
         <span style={{color:'#66D9EF'}}>Blog</span>.
+        <br/>
+        <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{fontSize:'12px',color:'black'}}>{"<"}{"<"}Hire me / let's talk shop{">"}{">"}</span></a>
       </div>
     );
     const { location, children } = this.props

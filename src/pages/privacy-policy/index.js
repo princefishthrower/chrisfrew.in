@@ -8,7 +8,7 @@ class SECFilings extends React.Component {
     render() {
       return (
         <div>
-           <Helmet title="SEC Filings" />
+           <Helmet title="Privacy Policy" />
            <h1>Chrisfrew.in Productions Privacy Policy</h1>
            <p>
               Chrisfrew.in Productions respects your privacy. We do not collect personally identifiable information about you unless you voluntarily provide it, such as when you send feedback to Chrisfrew.in Productions or register for one of Chrisfrew.in Productions’s apps. If you voluntarily provide your email address or other contact information, we might also use it to inform you of changes to Chrisfrew.in Productions, to survey you about your use or opinion of Chrisfrew.in Productions, or to ask for your support. At your request, we will remove your contact information from our files.
