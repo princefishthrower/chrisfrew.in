@@ -1,8 +1,11 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Chrisfrew.in
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+This is the source repository for my blog, [https://chrisfrew.in](https://chrisfrew.in).
 
-## Running in development
-`gatsby develop`
+(If you're a real 'hacker', you can snoop around and read through draft posts that haven't been published on the site yet! :wink:)
+
+# Thanks & Credits
+
+[Gatsby](https://github.com/gatsbyjs/)
+
+[Gatsby Starter Blog Template](https://github.com/gatsbyjs/gatsby-starter-blog)
