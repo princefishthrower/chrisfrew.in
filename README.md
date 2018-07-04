@@ -1,6 +1,6 @@
 # Chrisfrew.in
 
-This is the source repository for my blog, [https://chrisfrew.in](https://chrisfrew.in).
+This is the repository for the source code of my blog & and base site of Chrisfrew.in Productions, [https://chrisfrew.in](https://chrisfrew.in).
 
 (If you're a real 'hacker', you can snoop around and read through draft posts that haven't been published on the site yet! :wink:)
 
