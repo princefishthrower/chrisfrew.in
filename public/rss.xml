@@ -1,29 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Sun, 01 Jul 2018 20:09:22 GMT</lastBuildDate><item><title><![CDATA[Data Analysis and Pixel Art of Towns and Cities in Pokemon]]></title><description><![CDATA[A Real Treat! Over the past few days, i’ve done some data analysis and scripting and art making with  Breakdown into 16x16 Tiles I repeated…]]></description><link>https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</guid><pubDate>Fri, 01 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A Real Treat!&lt;/h1&gt;
-&lt;p&gt;Over the past few days, i’ve done some data analysis and scripting and art making with &lt;/p&gt;
-&lt;h1&gt;Breakdown into 16x16 Tiles&lt;/h1&gt;
-&lt;p&gt;I repeated this process for all the towns of Kanto and Johto (for non-Pokemon nerds: the ‘orignal’ towns and cities of pokemon, plus the ‘2nd generation’ towns, a total of 20):&lt;/p&gt;
-&lt;p&gt;Azalea Town	   Johto
-Blackthorn City	   Johto
-Cherrygrove City   Johto
-Cianwood City   Johto
-Ecruteak City	   Johto
-Goldenrod City   Johto
-Mahogany Town	   Johto
-New Bark Town	   Johto
-Olivine City   Johto
-Violet City   Johto
-Celadon City	 Kanto
-Cerulean City Kanto
-Cinnabar Island	 Kanto
-Fuchsia City Kanto
-Lavender Town	 Kanto
-Pallet Town Kanto
-Pewter City	 Kanto
-Saffron City	 Kanto
-Vermilion City Kanto
-Viridian City Kanto&lt;/p&gt;
-&lt;h1&gt;Data Analysis&lt;/h1&gt;
-&lt;p&gt;336 like goldenrod/348.png (ground)
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Mon, 16 Jul 2018 16:02:23 GMT</lastBuildDate><item><title><![CDATA[Data Analysis of Reddit Users]]></title><description><![CDATA[Data analysis Evidence of State Actors? I looked at the. Indeed, seeing as , this would be of interest. I was surprised to find that there…]]></description><link>https://chrisfrew.in/data-analysis-of-reddit-users/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-of-reddit-users/</guid><pubDate>Wed, 01 Aug 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Data analysis&lt;/h1&gt;
+&lt;h1&gt;Evidence of State Actors?&lt;/h1&gt;
+&lt;p&gt;I looked at the. Indeed, seeing as , this would be of interest. I was surprised to find that there was no strong - except for one peculiarity. In 2015, over the last week of May and the first week of June, someone or (something) &lt;em&gt;registered nearly all the remaining 3 letter usernames left on reddit!&lt;/em&gt; Even more scary is the number of accounts that have a verified email&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;False    12277
+True        26&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;So, of those 12000+ users that were registered in those two weeks, &lt;em&gt;only 26 of them have a registered email!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As an interesting side note, this spike of user registration missed a few usernames, 8 to be exact (likely users had trouble finding these remaining):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;name      created_utc_date
+uzi       2016-03-16
+tnw       2017-08-07
+vox       2017-08-24
+wsj       2017-11-14
+kfc       2018-02-06
+nbc       2018-03-06
+npr       2018-03-06
+mls       2018-03-27&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Interestingly, while the majority of these are alliterations for big organzations, only &lt;code&gt;vox&lt;/code&gt; and &lt;code&gt;npr&lt;/code&gt; appear to be used. &lt;code&gt;uzi&lt;/code&gt; has quite a bit of karma, but appears to be a normal user, while all remaining have only their email verified and their initial single link karma.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Analysis and Pixel Art of Towns and Cities in Pokemon]]></title><description><![CDATA[A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…]]></description><link>https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</guid><pubDate>Sun, 15 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A Real Treat!&lt;/h1&gt;
+&lt;p&gt;Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The results were fairly neat. Follow along through all the technical steps I took to generate the images if you’re interested. If not, just head down to the bottom to see the results!&lt;/p&gt;
+&lt;h1&gt;1. Acquiring The Pixel Maps&lt;/h1&gt;
+&lt;p&gt; I found map sprites of all 20 towns from the amazing Spriter’s Resource: &lt;a href=&quot;https://www.spriters-resource.com/game_boy_gbc/pokemongoldsilver/&quot;&gt;https://www.spriters-resource.com/game&lt;em&gt;boy&lt;/em&gt;gbc/pokemongoldsilver/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;2. Breakdown of Maps into 16x16 Pixel Tiles&lt;/h1&gt;
+&lt;p&gt;After getting all 20 towns, the only requirement is that the map that can be actually be broken into 16x16 pieces - as you’ll notice the sprite people often put all the insides of buildings onto the same .png file, so this just took careful cropping to get the part that interested me - the ‘outside’ part of the towns with the buildings, flora, and road/path tiles.&lt;/p&gt;
+&lt;p&gt;(Yes, I know - with some effort this too could have been automated, but hey, it took me a total of about 15 minutes to crop the 20 towns myself, so in this case I think good old elbow grease was the faster method)&lt;/p&gt;
+&lt;p&gt;I wrote a Python function &lt;code&gt;createTiles&lt;/code&gt; that moves in 16x16 blocks across the maps, saving each block as it’s own separate .png file:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-python&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; PIL &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Image
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; numpy
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+
+&lt;span class=&quot;token comment&quot;&gt;# definitions&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createTiles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    oImage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; sTownName &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;.png&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# big town png&lt;/span&gt;
+    oRGBAImage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;convert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;RGBA&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# covert to RGBA values&lt;/span&gt;
+    iWidth &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;size&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    iHeight &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;size&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; numpy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;asarray&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;oRGBAImage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; j &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iHeight&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# y down&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; k &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iWidth&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# x across&lt;/span&gt;
+            row &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token number&quot;&gt;-16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            tile &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                tile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;row&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;k&lt;span class=&quot;token number&quot;&gt;-16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;k&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            oTile &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; numpy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;asarray&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tile&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            im &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fromarray&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;oTile&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# this array represents the current tile we are at &lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;not&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exists&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;makedirs&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            im&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;count&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;.png&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; count &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h1&gt;3. Converting PNG Tiles to SVG&lt;/h1&gt;
+&lt;p&gt;But hey,.pngs that are only 16x16 pixels in size are no fun - you can’t scale that up to giant resolution wihtout inevitable blurring or such - to keep them crisp, I converted each 16x16 tile into an .svg using a previous tool that I built, &lt;a href=&quot;https://github.com/frewinchristopher/pixelmatic&quot;&gt;pixelmatic&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Great, now we just need to print the tiles in a creative fashion!&lt;/p&gt;
+&lt;h1&gt;4. Printing Tiles in a Hexagonal Pattern&lt;/h1&gt;
+&lt;p&gt;I had this neat idea to create a spiral and print all the tiles, including repeats, from each town into an outward spiraling fashion. As you can see from my beloved notebook notes, I spent almost too long try how the heck to print the tiles out in such a pattern:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Trying to figure it out.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Getting confused… STILL trying!&lt;/p&gt;
+&lt;p&gt;After lots of brainstorming, I realized it was easiest to implement by creating a walking vector. Each ring has a known count of tiles, and then you just walk around the hexagon:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-python&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; math
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; duplicates &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; buildDuplicatesList &lt;span class=&quot;token comment&quot;&gt;# refactored duplicate function&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; PIL &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Image
+
+iSquareRadius &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# square radius of 16x16 tiles is 8&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# given int, returns array representing x, y coordinates&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getStartingCoordinatesOfRing&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iRingNumber&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iRingNumber&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; iRingNumber&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printHex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# initialize vars&lt;/span&gt;
+    lDirectionVectors &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# down, SSW, NNW, up, NNE, SSE... and no, SSW is not southby -_-&lt;/span&gt;
+    iNumRings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;
+    lRepeatImageNames &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; buildDuplicatesList&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sTownName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    iImageWidth &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iNumRings&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius
+    iImageHeight &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iNumRings&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;iSquareRadius
+    oImage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;new&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;RGBA&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iImageWidth&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; iImageHeight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# initialize our image we will build # TODO: add padding?&lt;/span&gt;
+    
+    &lt;span class=&quot;token comment&quot;&gt;# initialize vars for loop - start pattern off with tile in the center (exact centered around 0 will be minus a radius in x and plus a radius in y)&lt;/span&gt;
+    iImageIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    sFileName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lRepeatImageNames&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;iImageIndex&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# first tile image will be the tile that is repeated most - and will continue for the number of times&lt;/span&gt;
+    oTileImage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sFileName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    lCurrentDirectionVector &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lDirectionVectors&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;iDirectionVectorsIndex&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# initial direction for each ring (down)&lt;/span&gt;
+    oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;paste&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;oTileImage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iImageWidth &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iImageHeight &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# tile in center of image&lt;/span&gt;
+    iImageIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; iImageIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# increment image index&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iNumRings&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# loop through desired ring numbers&lt;/span&gt;
+        iNumTiles &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# ring 1 has &lt;/span&gt;
+        iDirectionRepeatAmount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token comment&quot;&gt;# the number of times to repeat a direction before changing it also happens to be the ring number&lt;/span&gt;
+        lCurrentTileCenterCoordinates &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getStartingCoordinatesOfRing&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; iSquareRadius&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# starting coordinate of this ring&lt;/span&gt;
+        iSameDirectionTimes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# initialize times&lt;/span&gt;
+        iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# initialize direction index&lt;/span&gt;
+        lCurrentDirectionVector &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lDirectionVectors&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lDirectionVectors&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;RING &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;------------------------------&quot;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; j &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iNumTiles&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# print tiles for this ring&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; iSameDirectionTimes &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; iDirectionRepeatAmount&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# first determine direction for this&lt;/span&gt;
+                iSameDirectionTimes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# reset direction count&lt;/span&gt;
+                iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# increment to new direction ( we walk around the rings clockwise as we &apos;paint&apos; )&lt;/span&gt;
+                lCurrentDirectionVector &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lDirectionVectors&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; iDirectionVectorsIndex &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lDirectionVectors&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# modulo gives us the proper index such that lDirectionVectors acts as a cirular list&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; iImageIndex &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lRepeatImageNames&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# we&apos;ve exhausted all our tiles&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;No more tiles :( headin on out...&quot;&lt;/span&gt;
+                oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;results/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; sTownName &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;.png&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# save the finished image in the folder with its tiles&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# done processing&lt;/span&gt;
+            sFileName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lRepeatImageNames&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;iImageIndex&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# first tile image will be the tile that is repeated most - and will continue for the number of times&lt;/span&gt;
+            oTileImage &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sFileName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# open the image that corresponds to the duplicate data&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Current tile coord: (&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;)&quot;&lt;/span&gt;
+            oImage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;paste&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;oTileImage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iImageWidth &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; iSquareRadius &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;iImageHeight &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; iSquareRadius &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# paste this tile at these coordinates into the image!&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Now moving &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lCurrentDirectionVector&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; in X&quot;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;and &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lCurrentDirectionVector&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; in Y&quot;&lt;/span&gt;
+            lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; lCurrentDirectionVector&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# x direction to go from vector&lt;/span&gt;
+            lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lCurrentTileCenterCoordinates&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; lCurrentDirectionVector&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# y direction to go from vector&lt;/span&gt;
+            iImageIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; iImageIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# increment image index&lt;/span&gt;
+            iSameDirectionTimes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; iSameDirectionTimes &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# also increase direction &apos;times&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h1&gt;5. Data Analysis&lt;/h1&gt;
+&lt;p&gt;Ok, I’ll admit it, the goal of this project was much more heavily leaning towards the art &amp;#x26; design component: for ‘data analysis’ I didn’t really do much of anything except find the duplicates of each tile in each town - and how many times that tile appeared, because I needed exactly that info to generate the town designs.&lt;/p&gt;
+&lt;p&gt;Building off the code that is in &lt;a href=&quot;&quot;&gt;the repository&lt;/a&gt;, some other interesting info would be to find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;total number of unique tiles across the entire game - finding most unique and most repeated tile&lt;/li&gt;
+&lt;li&gt;total number of colors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Though perhaps hunting around on the web this info is already freely avaliable.&lt;/p&gt;
+&lt;p&gt;To get the counts of each repeats, after all 16x16 tiles were generated, I got the idea to just find a python script which counts duplicate files by content (a hash comparing algorithm). I found a nice one by Andres Torres at Python Central: &lt;a href=&quot;https://www.pythoncentral.io/finding-duplicate-files-with-python/&quot;&gt;https://www.pythoncentral.io/finding-duplicate-files-with-python/&lt;/a&gt;. I refactored it so it could just be called as a function and return an array of each repeat file name. &lt;/p&gt;
+&lt;p&gt;What I mean by this is: let’s say ‘1.svg’ was the ‘ground’ tile, and it was found to have the same contents as 336 other tiles in Goldenrod City. Well, this array would include the string ‘1.png’ as the first 336 elements, then a string with the next most repeated file name, and so on. The array that this function returns is the key looping array as we print our hexagonal style pattern in &lt;code&gt;printer.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s an example of identical tiles and how often they repeat for Goldenrod:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;336 like goldenrod/348.png (ground)
 230 like goldenrod/374.png (pink tiles)
 62 like goldenrod/1409.png (tree top)
 56 like goldenrod/823.png (water)
@@ -43,7 +154,7 @@ Viridian City Kanto&lt;/p&gt;
 18 like goldenrod/1030.png (gold brick wall)
 17 like goldenrod/505.png (brown dirt top edge)
 15 like goldenrod/1387.png (ground with gray fence)
-14 like goldenrod/159.png ()
+14 like goldenrod/159.png (etc... you&apos;ve gotta be kidding if you think I will)
 14 like goldenrod/158.png
 14 like goldenrod/980.png
 14 like goldenrod/198.png
@@ -85,54 +196,705 @@ Viridian City Kanto&lt;/p&gt;
 2 like goldenrod/161.png
 2 like goldenrod/924.png
 2 like goldenrod/1173.png
-Total Duplicates: 1507&lt;/p&gt;
-&lt;h1&gt;Converting PNG Tiles to SVG&lt;/h1&gt;
-&lt;h1&gt;Final Results&lt;/h1&gt;
-&lt;p&gt;I call it &lt;em&gt;The Pokemon Kaleidoscope Series&lt;/em&gt; ooooo fancy!&lt;/p&gt;
+Total Duplicates: 1507&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;So our return array would contain 1507 string elements, each with the value of that repeated file’s name.&lt;/p&gt;
+&lt;h1&gt;6. Final Results&lt;/h1&gt;
+&lt;p&gt;I repeated this process for all the towns of Kanto and Johto (for non-Pokemon nerds: the ‘original’ towns and cities of Pokemon, plus the ‘2nd generation’ towns, a total of 20):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;Azalea Town	   Johto
+Blackthorn City	   Johto
+Celadon City	 Kanto
+Cerulean City Kanto
+Cherrygrove City   Johto
+Cinnabar Island	 Kanto
+Cianwood City   Johto
+Ecruteak City	   Johto
+Fuchsia City Kanto
+Goldenrod City   Johto
+Lavender Town	 Kanto
+Mahogany Town	   Johto
+New Bark Town	   Johto
+Olivine City   Johto
+Pallet Town Kanto
+Pewter City	 Kanto
+Saffron City	 Kanto
+Vermilion City Kanto
+Violet City   Johto
+Viridian City Kanto&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;The repository has all the code, 16x16 pngs, svgs, and the final hex images in the &lt;code&gt;results&lt;/code&gt; folder. &lt;a href=&quot;https://github.com/frewinchristopher/pokemon-town-pixel-art&quot;&gt;Check it out on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I may revisit this project for more designs at some point, I think there are a lot of cool things that could be done with these tiles.&lt;/p&gt;
+&lt;p&gt;I call it &lt;em&gt;The Pokemon Kaleidoscope Series&lt;/em&gt;!!!&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;p&gt;Azalea Town:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Blackthorn City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Cherrygrove City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Cianwood City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Ecruteak City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Goldenrod City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Mahogany Town:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;New Bark Town:&lt;/p&gt;
-&lt;p&gt;New.png&lt;/p&gt;
-&lt;p&gt;Olivine City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Violet City:&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Celadon City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Cerulean City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Cinnabar Island: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Fuchsia City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Lavender Town: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Pallet Town: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Pewter City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Saffron City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Vermilion City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Viridian City: &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor]]></title><description><![CDATA[Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</guid><pubDate>Fri, 11 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Node.js Server Monitor&lt;/h1&gt;
+&lt;h1&gt;The Pokemon Kaleidoscope Series&lt;/h1&gt;
+&lt;p&gt;Azalea Town	 (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACg0lEQVQ4y+3U3UuTURwHcEHwD/BCCAJxD6kj0aZSowRLJZVRbk4jfB2TCArtBS+UZtlmqZublpubbtbs2dQ5h23Ps82xl2Y5QZ0h+ZIz8C7o5SYkybtvTxrdtFXkrb+bw+FwPnwP/H4nLu6wYpV+Un/kwIhhypCgevaw+s5IXaTLfWHXFmztf/fJm/xfGKkvrZM9yV9vdp7E1clU1Ayz0ESlo8t1fkepPKsdkpz5e2KnvzTB7eJUW00lEbnvFBpdaWgYzMPYshpzHwO4ZxehZigVjQzcPpKza+os7B/qTYmdeOH1Xa7FLoRihYO2QAEsKwNY31kFFTFh4JUEy1/CmP3ghZRqQK2BgNaZixln5kRscFHDNTv5uOlhI/ItAvfWOG6QxahUEajsJVD1OAP9wRasfX0DxfQtSB1ZCNK5FPOy+Kjg8qaYSy4V4bY/fQ9sfy5C2QMWhHICQgUBQTdrb7/wOQSljwHtmQh4CuB1Fx6NCr59X8s1LhYwCfdBGS1ikBRUKAlc6iOYlQWBnAXPlhUKz8+Erko4Bq9FB0NzBFcXzP8F9jCXfiQq72awHiZhFwuXe7LwyNuydyajM+EY5sFmbo4OWnU8ruZFHiSLGRDrToOc18C+PopmkwB16mxog1JMb9rRNiFGK1WCTpoDv7oCa2pFdNAsL0yeMNeEDXQxVBvZaHTvtw25oIZvi0abTYR6Yxr6vDkYf3oOU0b+Nt1dbgtI6pP+2I9GjZhn6C0L6+k8KFY5aGL6sX6EQEcoC1ayCPbR69tu6n6H13Il8Z8nZWMjLj40c+yixcEPjy2dALl5HK5Z9va0q6pzflWWdKCZpjwC3ssQuyMQFCYefpO/1XdtanmG3UW5EAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Azalea Town	 (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-fb8a0.png&quot;
+        srcset=&quot;/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-1a291.png 148w,
+/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-2bc4a.png 295w,
+/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-fb8a0.png 590w,
+/static/azalea-e4d3add3e4ede95edbcaaf62341d24ab-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Blackthorn City	 (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADOklEQVQ4y6XU3U9ScRzH8XPV1sbWP9JV3XRVyzVLM3XV2ey5VoSlM0QQPKIgRKE8x+MBJMUAtTIWaUpoakpqmoqi9mS1Huaam2aPGxefDoeN2Zo9+bv53r332s73fAniL55VmctxqvO3EOt9b78Ocbo75eJr2pwFvyEvQdOSoM1n+/fw9/kXnNd9EarLJ1hsu5KDhtps0JocBPR74bOeQF+ZLvSGH/1zeHBAzwkPUuKOPslCS+AcGvUHYK7fi5aZUtz7YMediBUe3UE0a/egvYab6KcuByeftvwavl95g9Mroqm7Dumi7/oZOHWHYGnIQyBeipFPnZj7NIX4+x48+fYE00sTaO9xwK05iAATDphJhK4LQ2PjllS4v7B1W7dZveD38eDSH4bJnRI9+syEVmIYH7VgwJuPB+5MDN8VIP4uwobjy5O4HbbAIMuFvWoHvHWZiauG3XZi8uht0msvhLkuF77p82nR+JgVg037MeDJYmK7f5ojyfAqsb9VCVq2EzZlRpSYz+8g6UunYDHlofdjI6bfdKVEzl3opzPWnox4tLeGjUaGfXBUbQetyIwS8RPtZL2xCGZjLhuMPW39RbTWHAry2GB41At7dQbcqj1RIsbtIK+ZLqSFsbnm38tWzYdtp9lg55IBRkkeXBeZYI/ATDbqCtclTAaFXD3CQkWUMMuzSLfp+LqFZWdNmJU6owT/bA7psXH/Q5iN4VBxOijgmjBVbWc+So+fbKJ5rLBryZRamQknszIH1pQN3SlhtiHM7Okkpr6OoWNJwwqfUe4o4bxUQHq0h+C1n4FUVgD7/ZMYXL6JuS8zmJhwIdp8GAMN+1KiVYsd+zKCtudyyB1HUCU1ws13J6ZLrRFidiiw0Wuo4alF5Lta0XlIi20QVUpA9x3Dw5UgK55dfsyKkqGk6NYrBeS2AlTwzfBU1iNW7AyNZ/m3NG2VcNL/s6AIG27UU0UNeuNLZalsRXbBgXKpMC1eLaJKjNBWexNGpTWoVdX9/uq4xJs3qkRXNlGFVZRKIF+sLtGx4qSokm/CxXIHLCpNSK3o/Pe7yKg5KqFLrBFXLGgr6hJqoTSoKG9Z/+VOhst4o38V+gGzKzRxU/Un3AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Blackthorn City	 (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-fb8a0.png&quot;
+        srcset=&quot;/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-1a291.png 148w,
+/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-2bc4a.png 295w,
+/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-fb8a0.png 590w,
+/static/blackthorn-66fda4da8f42feb7839f624a76ecb59a-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Celadon City	 (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADH0lEQVQ4y6XUzU/TcBzH8V5Nlvg3CLh4wejUxMSDHEA9mDCDlaibCAgbT+PBzbLhfLioCCouDuZDhsDcupWybi3bWNkwUYcPRAz4gIrGp+gOxIOJXpb4sS2RYDDKtMn3+s6rv377I4hlPO7e3arZT0c0xP8+0US5ig3pqaFwXVpMHsmMT1m42Y+W7MPeZ8UqQaiwCZGGuZGkDb3hw3BEqkAzdkREM8IxKx8aaf17+M3kQdXAq22Ub0KfjietGH1mguNhISo9apQ6ctHMbcQFvkIJ84Il42EtnJuuXhr2fN+kEqdLbKOiLLJj9GkjnNOFKLueB7J9NTqYAtDxYlQ58kFeyEWLoFkQcwKFAGfmg+yB+bDzQcFm15guzSdacXO2CZceFSkisiMP7b6tuD9ZjpcvapWZmTHCF9Oi2pn/i9jjM2MoYMwMuYp6iFuijuR4CsIn3S+iiUeVC6HfzWKx9eYG+HxWsNe0KeL91xNkONYG/9sSaE+vQuR26R9Di0cW1zrXoY5Xw0fbEPQdTBFPXjSSLG+F/40UPJODxPi+ZQflMbk0qA2p4ZfOU4hQKSIe0JI0Y0bg3bwwcTfb4HpF6KXbwPGWFGGu6iNv0MfBzhzCrvYcJO9lF2y8rEG9IAWlMxwaMaaI558vklzUDka0K8L+2M6sgg0988L+/lZ0+6WPInzYTzLDFNjECeUMT3q3/NMZerxtcHLFKWLqiomMcDXwhihFSJ5djXPBAkw+/vPaBMaK0eLeAL1jjfLKfX2tuBSUgqlhiozHDF9Yth7nXAZQ9HaUudXY05mHTlbax6lFi/3cCCapRc2Vtcr+NTAb0SUcwABXi55uR+bMKW6UeP/NueL1ZNXKpFhpi0UNc4OMEa6AAW2h7dBdzV0QyyJDdz5KOnLQGFyPjqAevQPSn+XswjH7BG8yQNNSB9WSyyEpVlDxEUNaFruYGhwN7VDEP0WdIT3oQDOGo5aM23uek0N/vXVm7+xVyeKoUD3HDppwWQrLItrfAH7YjEHhOH8jaM3+XpTFUaGSikVN6WikPhMKN3Gefwn9Tjwu7l1W6AcBOiBXE/aowwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Celadon City	 (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-fb8a0.png&quot;
+        srcset=&quot;/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-1a291.png 148w,
+/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-2bc4a.png 295w,
+/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-fb8a0.png 590w,
+/static/celadon-27e1eb6b7dbc557fd459b8d46ad350bf-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Cerulean City (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cerulean-29de227169c032f1a8371bb17468084b-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADtklEQVQ4y73U3U/aVxgH8P4BXPWif0GTLe3cJqmubo1ma7PLtsuSOWdaadNW2OrU1gLyEkQRClaUgiAiLwUt+BPkXX68FqnIdL4tGiRObcfcYjOTZV64JV58hz9a0y5Z6rZkJ3kuzyff85xzniNH/u/lSg0ftYfNEs8UERNag5X/Guoz9B1zRIZkj3KxHXLNhd6QEL5vvRicSCW7kqsfHRpqtiSO2ki/JDa/DzkhJS+hPVyGnnQ5bI/ZCC+FMDKbBrFMxIj0+b9PPGYXHQssNMviT2I70Q0vZJFaiEKlMMfPwFAAu/2lGIiXYWD2HDxZKcILJIyEAExJefKm8+0WxaMS+gGm8Y0KE2TbTmBaTiVSemoxHPwE+sgp3B5+D4xWFa6wkrihqcG9wDswxsqgnz8L/5ICRNQMoaQOEmXFntF6WUeBetKRVw9U4q77IlzOZph9H+OW/X3UsTXgtm7BlfgRU0+/R492G1dZKdzQ1h4k1s5/iMi6EZ2yryEfsUxRoDd9OS/Xn8ZD701I/SVg8O+Bw92CO5nH8s4KVn5/XrsrSG+sQaX7hUrMUJ0FL/Mmguvt4Chk0A09B81uZb5r8AMQvibwibdQX/8U2d0sheT+yL1SL2C99RmquSxwCqBvQwSRrhN9LnER7HE+zPd7KilQMFoE9zf9FXsZpcBWZhF80gZhnwht/qEi2OGO500TVYUjN0DoKkE98/VgIPMDPuexwE6/gcBaO3hqPq4bG4ugym7Jq5YqqB4KRk8eKuHMT6uFIxcT7veQe18I4YOLRbDfdzuvXniph19lMUJuYum3HAUfXEqh9nubzK3DEIiimn+FAg0TLDR2h6EKeovg4Jggr148A3ugFUPeC2ATp8AQyNHC3oRjfJO66ReQREeiRlwDhvU4uImTuDtXAWOqAdc7VtHj9hVBE6HLSh+L0Tv9KbQRAZwuGayB82CPlIMhlOHL9n5I9CFUiz5DneU4BDMnoJqvgi3DLSSN4FZvADyzda87aopRYPbXLG1ows/jBDLbyqgCuhSr8GhFIEYlsPkv4I7zBK4WINHku1AvnoNlqgWRRTs01gzaJE4YEk3++LiAPpmdpL3yn5nOn2lSm4dz3+TYMnllcH2jxdjEGFwueSF1E4jQA4SmHfAtK6AcFe9pbEGPUs6kv3biNFzbpd1pnOWJVZJt7bgboRk3InNOeOc6oA9fg9nG9w/aO+n/eCaqeFW0Jsd3HD5JbukTl/a0dq4nHPyC/p+ndt+z07SutdJDQX8CLC4Stw39Xo8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Cerulean City (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cerulean-29de227169c032f1a8371bb17468084b-fb8a0.png&quot;
+        srcset=&quot;/static/cerulean-29de227169c032f1a8371bb17468084b-1a291.png 148w,
+/static/cerulean-29de227169c032f1a8371bb17468084b-2bc4a.png 295w,
+/static/cerulean-29de227169c032f1a8371bb17468084b-fb8a0.png 590w,
+/static/cerulean-29de227169c032f1a8371bb17468084b-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Cherrygrove City (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACVklEQVQ4y+3U20uTARgGcCEQut2FEAT9BUUSjJFoFAQrU2bQmpu5g5uHHWx9m7q5uenct5PlHOYc6tzBbepqaCyHZhRpGOISc6l9IQR1YUGErAvr6kkGBeGnFN76wHv747l43zcv7yj7ZcBYdOLQiEV7NT/iZQu6YkyqM37uRzBw/UM0TNrDlv6C/8ZGesuqvcnidc1YEWRmLxq0C1AMVqPrcTGe3GvKzo93WD8LXjIORAghM/9Oo01gi/ApTfwCatr6ISfeoIZsQY2HgzrdI9QSc7uwCISTiYiuPvt8wmX/SW0epwXVVYWsloQIUnMPlNq3EHdqoQlyMbURx+uvi/DM6iF0VaBePwmpxYab5EUMOarwfXj1JC24KA6xjK5mKBRbEPsKkaIegtqh/prlb0vomJCAf7cEfJMcQYMY28IlejDDm2TpCTeUyi1Ifef3YL9n+JUTPEcJBBY5Yr03sDYepwfXJGMsHdGda1g3tD8YWnL9aTjgu4zRmXp6MOIrZ902t0Ih37/hynYa/gUy15BvlsPWdxa6udP0oL+bzVIZ9WhQbkJkMoEYqUDyfRjvdjZyWGzFjar7ZyAgK1BplIFnlsCrtcN9pZUe9KwyT3nG2tIKRzvETX7UyjMQNJuhiXDgfqbGLRsXlYQVXBMPMicf7vbObFQRSsxwBg5e9I/kg9Ip1XJa19YLIRHYhdchU89CoolCRrLhC/Zlkwmn9emolPHPlwLZp2NfUpnymeiLtMGmgcqgRVg1mJ1vnLbHesoKDnXTIepSaSCltm5cSzCO3uSe/ALSIZfJRh2UMwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Cherrygrove City (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-fb8a0.png&quot;
+        srcset=&quot;/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-1a291.png 148w,
+/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-2bc4a.png 295w,
+/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-fb8a0.png 590w,
+/static/cherrygrove-fbdb9bb80630eb7dca3b17187081c47e-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Cinnabar Island	 (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAABC0lEQVQ4y2NgGAWjAAwqsuYZXTxXmN522YyTIoOOTLU2mlpVvGFyZefvWZ3T/i9cHnx/Rl9ZdkeGBhvJhjVUbyiZVpf/f8Wksv8rZtb+Xzax+v+s/vn/ZzQv/D+ntuApyQZOqFjUu6I3+f8qoIElmW//56X9+d9Xsf7/nMkz/2+ZmfyfZAMvH4jr3TE5+P+c1in/c9P+/89L//O/uejM/0WtTf+nd2eRbuCaC3696ztS/neWLP+/pLnh/4autP9zm/r/z2if/7+nfRnpBjZuqlHta21avGB25I+u0rn/64r2/p/R3/K/t3l3LdDF8mTH9LF7GRqb5mYvmFhbdXNufXL08SlGbKMZaaQDAJG0hgyIx3StAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Cinnabar Island	 (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-fb8a0.png&quot;
+        srcset=&quot;/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-1a291.png 148w,
+/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-2bc4a.png 295w,
+/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-fb8a0.png 590w,
+/static/cinnabar-0699cdd24a1fdd937134f3e5cbee48c1-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Cianwood City (Johto):
+
+Ecruteak City	 (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADfklEQVQ4y6WU/U9bZRTH768m939wu21X6yIgC24zxpjIzNyAUeACLU1lMMAwugakFG5oeWmhL7je1r5AAdtSWktXhmV3E7M53OslAzJmjMEZ9Ye5mGbrEmNi9kNjvvbW2IhbQs1OcvL88OT5nM85yXkIooAY7T1G3v1opZR40UDbLyTXNaG3GGpSS4PKzFavI/mr+ub/B3tNVeRW53km2NqdZvoOQze7H9qFV2H1lCBsLEfU9h535qR/dzA3WU/eibH6r3XmlFH/NvRzr6E5IEGDSwyFJ3t6KGgiMkwnyhH0GzPDuo6kVvX6s+Cfv/mCvBxyMNf6htPxgdPony1Ga0QK2kWhwSnGB94SdM8fQ6NLgjqWgsIrBnOpDLGbbQiFzGCtbu7KZyf/BvPXTYe2HJFUXK+FIXIQzcF9OaMm3z4o2SKwXw5g8/E6tv/YxtK3czg9exQKpzRv3J88gOiNVkQ9isxazD5JJHxddKJZh57L+1Hr2Js38qwO4u6TDdx/ev+ZXP5ufodxfVYgekeFaxE3T6yt+OmltkFoV2SosYvQPvUO1h/dfi7o3ykYh9dZ1Fol2XcUHDE5rLp+nlhlnLSpzQUNJwPtEIP+WILNNL8rUMjVh8ugz0ogt1Gwhuoxqu3kifiHLXR/uxtnLspQd1aUq7jxuEDgg2XUCIYTFOzRBnxiPsITi4kBWq/x5QwFoFBx80lhwKtZoNCR3CoY0rAbK3nCa6mjGc1IfoZCxUJbFoD/zFA1IYFlPNvyxo9JOhbshGpakp/h2qPVXWHfP93GlQeJ/AzVbhnMpnaeWLgQoBNhLRQ+Ue5CqKh2l2DqlgH3ftt8LuziDxHoFo6jyVmEyhEq967FXwxDxxs88Xmoi55zKTEcOw6l5xVUmPbkoEq3FGpvMbw3GNz7fT1ndOmnMHqi76ORlUJuEaPCvAfVtr045SlCn68qY+go+4q4yg28dD5wqizqbmQCAXV6KFoB1ZQUJ8YpVI+LcMIkzhkLRrU2CSqGKVSNZVfSTUEbfhO+T5thc/Rydre9dKj9MLljp2c9HeS5mRZ9jBtKmRblOePKsZdRPSbaYdQdeQsXIp2Zh05z8s8Rdvdfx6YpJRMJI3Mu2ZMeybYoGAtGmuBBzMSbEPfWcgWB/hszpiPkzGi5PuRXpCbDdGZxWpWct7z74j8323uAZHWHCgL9BaZ3C++uJtRrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Ecruteak City	 (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-fb8a0.png&quot;
+        srcset=&quot;/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-1a291.png 148w,
+/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-2bc4a.png 295w,
+/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-fb8a0.png 590w,
+/static/ecruteak-139c0715346c75ba8b6e2e13b8f09a17-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Fuchsia City (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAD20lEQVQ4y6XU60+aVxwHcP6A558Y1FmaLdnslnXZxay1zmZbKlY2rXbeb9SsCFSQWeeqorO13uhaHVIsggp4RR6IMLUgj2i9TRRjl3VGO0Fjvc1uL3jxnTxm1LolbdPz6pzk5Hs+55dzfgzGC4wu63dEFykJY7zqKO4LJ3SNkWJNTaSvtTrCX1d4sttgPPPywYW2dwiFJUWquH123XAzCoP96XCOC0G2Z0BtSEejPcl411Dw/OCynDcJSeVpcbkl3KftiYTNnAHKkwfKl477azlw/pYD+8QlkLoM6FT5/qZOSXedN+y/wd/ntxKVV9KkKjJpvbkzAtaAyCPE6EomJnf5sD1ORqv3c0ztCjC2mgPHYhYtNrcl4057Cm4ac40GU8V+cA+ZdUJeW+zTKS+gn8wKimb+FMK6kYTapXdxdYENiesoKhbfgNb3GaZ3RXCt8GBbSIDe/Ck6VbG4I8/zt+uLbzH6rJe5nepEOH4pBPUoLSi6sXgcxR42sjpCwL3BwrnrLFxQHIF45CjKHrJp8cS2EMNLGdC4TsKsjUWLpoJi9PamcjWaUxid/xbjG7lQrpyCbPEYhPdCEXONibMyJmKrmIipZCK6/DV6nawKCYqndi7DMBWFvmYO5LZUijHvzOFqmz+Ec06KsQ0eGpY/pgUBEecHJjjlrH1hJQvRFXuh9AEsxNWz6H0T2wJoZiJgVEWjhjxPMR5Ky7mttz/Zq50U9zcvovGPcFp4UBQID2j/XQfEX+0FBvZN7AihdUegt+kcGmoLKMa1q3yuoSkOrsCVH198KjwkOiw+KNRPRsFsSEB9WTbF6HfkcU1aDqiFAoxu8Z4KD4kOiw8KAzW0DvAgSImnGGZLdgipjdkcWsiHe5UfFGbqQ+iQ/6th4k9HwOt9/ZkaWn/ORYkol6LfYn/7+aWhB/kY82ZheDsb8uUT9OlFbjbS20LoKwfE8T+yILKHQvb7MbT5vsD4Th7mnhRg0Ps1bAO5qJOJ9gNHnd94XBMCzK7xMerNxMyWAEOb6ZAvvU8rimbZEDlC6XmL9wxmdwvw699FsD9KhWU4DhaLDG3GKv919RUbHSgSiQijIlw6YuWuP1i8hPlVAe4tpWB6iw/7dgYtDry5jjUOPH9JMLycBpPzS5jIUiiUfaiq7jDKZo6HlbjfIp75000l7xFqzQfinoEY35Q7G7aRRFjdCbR45okoKCLJMiibTf76Wx3dtfLS53cdme5toqb9I+nAdPz65FwmBqmkoEip1KOxUWXUG2Uv3xe71FziruO0eGya71O3mP2KBkW3ayjx1Tt3dU0FodGWvlDQPw269KH1R18PAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Fuchsia City (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-fb8a0.png&quot;
+        srcset=&quot;/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-1a291.png 148w,
+/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-2bc4a.png 295w,
+/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-fb8a0.png 590w,
+/static/fuchsia-f1539546e66f1f8b9defa0cfe6ab9c2f-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Goldenrod City (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAD/klEQVQ4y52U3U9bdRjHzxUJ8S/wRq9MdueFiS9bzHC4CSNDo5lzY3abgq3UQAABYSMFKm/baGm7ri8bbWlPacuBwmmhPaeFlnW0DLBVHENa6NpNUDaURJCJm/Hr8aD4kjnRX/Ikv4vz++Rzvk+ehyD+5YhLxJmN9YXC1oa3TXLZO7uI/3sW713LmJqjxJSlJnVOWoYPa4uhVQk2DZ59lsHY60/tGJReC2UGA+eFA46GpTZpFWrkIuicBej3CdFkOglJUy6U6myY2QMmc/KlfzamjcIMP1Mq7rdWpNql5aiWF0PffxxeRgSz0QCF0gabvQU66j1IO19EXVM2LusObppHDlgUd5/5wzj1nSrzaqhOyASVS1q9Gs6+QngCR+DzlcLcpcPp1k50mhQI0EbUtV2ETGEHaVdy4Hch0b8ASfMrUFtfhib6vIkD7yKCoWaWDVdj8vprCI0dBssKeaOPmtQwGNT4OnAND6IprM/exP3xeQT7SNS2yCGTUzDb2qGlTvLGkrM5MLkObhLhGU1kLJqN4eESdFsvbhuthKK4/1kadxYXkLgXR/yHONKrCazP3cTPU7ewHIwhTH4Fiy4EI3kWStsedGmPgJj49Exk6vpe+IfL0aLoQXSwlzdaXpxHYmML9PdKf5vgjTGRRsx+F10WDdxMDiz6oyCmF/SRqZn98PlL0dxhxyzrwWoq+VDQnyu5lgA405hjBWZSA3poP7ovHwMRvdEcic7sBesV4uN2ErPeIawmdwj8zbDT0IEhXy6sxjLulz+pjERv7IOfM+x2STHn9+7IcOH7OJ/xlqGWAx6CjawHQVmKIpOfZ/EZ9rhL8QXj2ZHhr7U2l9zO0DOczwElIC6pyiNedy6fIeUp5zNcn0thfiPxSNit1Xn+u98z9PjzYbc1gvD5T0QY51aGbqYGpu4qLIfCfKdXbi9w4L+Cbn8zjw2uww8iaYxb78BliMJgbId3JB+u/moQwdGjESdZgCtXBBgJiOFnKmDoLQZFN2Dpagg/xdIcOIkveVAKP04mMOrRQ+PgJsnaClufAP1Dx0G7haApMYjAmOSwrOODeGu9AD1dhxAcPQaGOQGv+32YnSWwOmq3jCe4KRnSQm0RwUBWwkoJQHve4EBV6LNxd0eWaXAga8/2TLsCZQLdpVOzqvNF6LXmcU16Fq7BHJCOSii6RJxRMYzWat7I5X2TA1VzRqc2aeppSzT2xMPXWXhMljE6ri8wkUVxuVIMp7cIgdBu9LnzeSN2+DlucRRyWRViwL6bnZ5+bOcLl9S9JZBIRLNtqjMY4HYhE3wVtF8EmhVtUN1lmsbTrsf/89a+YLyQQbtbCs61yuLB8YpNdqRYlZeX9+Sj3vwCLP+8MNIqwksAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Goldenrod City (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-fb8a0.png&quot;
+        srcset=&quot;/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-1a291.png 148w,
+/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-2bc4a.png 295w,
+/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-fb8a0.png 590w,
+/static/goldenrod-89d33b8f2b51e42dc23e1c2df71f0758-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Lavender Town	 (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAABOklEQVQ4y2NgGAVDEyzbUCc5Y3ecN8UG7X6SLL/8dPTkA2drfxy7VP5//4XqMxu2Z/kdOb2KmSSD5q0ok5wzt3D6wg0pX1esLvl/6Xr+/xsPCv8fu5D6f/GhgP9LjsSeWbc5l3gXL11fXzilNfr/9nXJ/289LUHFj4r+7zmW8H/h1oRHRBs464p34byuwP/nTiRgGvik5P+JU+n/165NJN7AufvSCvetCvt//lQS3BBk+tCR1P87t8cSb+Ds1UWFe1eE/j91IBpiCBK+dr/o/+HDKf93rifBwLkbS703bUj5tG952P8dq5P/nz+f/v/K3cL/B/bG/V81y/3/2sVhZ9YuTq0lKaZP7QwXW700w3rd+prJy5fV/lixtOL/qqU5Z9avC/PbsSmYmaL0eOxwmeS6ja3eo1l8iAIAqyHVaiuPFeEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Lavender Town	 (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-fb8a0.png&quot;
+        srcset=&quot;/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-1a291.png 148w,
+/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-2bc4a.png 295w,
+/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-fb8a0.png 590w,
+/static/lavender-a0919e6d8a7d167f7c0f0e0913d8edd1-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Mahogany Town	 (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAABSklEQVQ4y2NgGAVDE5y5skTyyOE+b4oNOrRomvyFzXMn72nv+rGmquz/1Z7lZ+7lHfI717KLmSSDbr85IHlkX//0+RNjvzZPMvs/bYXF/5UHvf7vnRbw/1rN1P/7WlafWdu+iHgXX7+3tbB6hun/mStt/m+5W/T/3JcD/69/u/p/z5sp/zceDfh/cG7E/wex+x4RbeDhfX2FdRNd/m+4EPP/5vebKPjgx0X/Fx+x/X8reTPxBp65vdqoqsfp/8YLsRgGgly7/Lj3/235dY9ICse6Pvv/6477/j/1eQfcsKvfLv4/8mbZ/9VHff9vLqsmzcC+yfbTO/qsvs6fZ/d/042s/7te9vxftsP9/8wJ9v+XLIg7c2bNzFqSk826RVny61eWTl4wMerHnB6f/xMmRJyJmabs1/tOi5mi9LhlaarkmuWl3qNZfIgCAEnp0H59iamRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Mahogany Town	 (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-fb8a0.png&quot;
+        srcset=&quot;/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-1a291.png 148w,
+/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-2bc4a.png 295w,
+/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-fb8a0.png 590w,
+/static/mahogany-be23154617193fbda2d2c57d9b5bfe83-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+New Bark Town (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/newbark-6530717b6ce5b243a0edd1f80540ff77-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVQ4y2NgGAVDE6Qu0pJMnKAVsXK2jx1FBnU/NJDvv+c+ueNYyo/ZV+v+l25y+l+7LuDAlj3tTiQZFDNdVbLzWPD0na9mfV1ytfd/wXy//9H9hv/bNuf9X3Cp6f/yEzX/Z6xdsycn46MqUQYmLlArPPxk1/+CBb7/A9vU/ndszf6/5NSk/6kzbf+Hd+v+X3Fu+v8Tr3f9X73HP5QoA3seGBb27iz679sq/3/dhcX/L3+4DMYX3p7/nznb5X/3tsL/Rx8d+19SsZA4A/1bFQvbt2T+92mS/7/12hq4gSCcO9/jf/fWov9n3h79P/VkEXEGLjk5pTB8ovJ/nxb5/5VLY/+DvH/x/fn/7Vsy/idNtvnfu73s/55X8/8furqeOAOPPzru3bMr9lN4n8Z/32aF/wFtSv8Tppj+b16b/X/XpQv/lxxc+H/91aqTRy+v8iY6pq883S1WvcmtPXu99qeURZr/w7q1/k/a2PW/dubcA30XPJ3ITotxSxSFShf5t+Q2Je1pqptnN5rNhyAAANQV22oHQ4NvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;New Bark Town	 (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/newbark-6530717b6ce5b243a0edd1f80540ff77-fb8a0.png&quot;
+        srcset=&quot;/static/newbark-6530717b6ce5b243a0edd1f80540ff77-1a291.png 148w,
+/static/newbark-6530717b6ce5b243a0edd1f80540ff77-2bc4a.png 295w,
+/static/newbark-6530717b6ce5b243a0edd1f80540ff77-fb8a0.png 590w,
+/static/newbark-6530717b6ce5b243a0edd1f80540ff77-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Olivine City (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADX0lEQVQ4y6WU+0+SbRjHn5/a2vgrerH4ue2tVv1UrdY6aw9mZqbGQU0FAXGQQJxSU0HII2rygKAmiD0MD6nN0kftOEtb2XId5qJlreaq1dP6hrhcvL6trGu7tvuH6/7sc3+3+yKI36iZiRDntqx7PfG3NTJcwbnrrVfe1FDhoexW9rngWuB12vWVgxeM7vgaVONFdXP1mTYIDHykXeChrGMXAtRZDGs66PtC76/B7OQjzgN/q/JusS/cLOjAqYIyHDDwsN+4BgmmjdhvWoOUGh70QztxoVfCtjmlAV/l3uXghs4GzlioWjVW7JijxN2QyF04pj+KfYa1SFLnIStnBjniT0hXOnFQtxkHTdyosXZgG7y9GoybL9GzotFFcK23dlPA7g5TAh+kMgpJ2mQcMHKRopMhM3caOUKgUM6ivHI+es7J/ICMQvcyY5vNxFpU8TUETZtJd40TQt3ZWKPIZVXhZ3T0vcT9+Wk8/PgQw9NPUGGfR674a4zx4dI4yOkdKD+dwRB9AQXZUt2ENJ0cpO7QkpGvP4ypd4ug//YC+Ltxej6NhFIu8gM7QEtcDKGTppAtVc04aVQgoWgR2Oh587+gH/vWi8fR2TQJDbI8LgLcjmBuG0N4BBaSKrEgQ6/AYe2fArmQdm6HS61liBsn/GSV+jTSI0/+U8OEc9xohnadgCEmEv2ktUgdk+FKgN8zVFSJ4K8tYQh1XpCs0BbFZLgQ+OTbRz+FjT+dAeWfi8nwjEOM2dERhuit3EY6beZohvGGLRBm3YsOFshYeOhXy8CD957BaPyIU6JPOCF34ohaDL6FC02NEI8HgwxhlknIlnoHlIUU0s2p4FfwkGoWLIEV0i9o6XqFgYnnKC59HwF9QKrUDX7JJiTa/sFxywaca1LA4zGwo+3mfiI/G6vd9SHRuMsx67X6UFDQhOOaDBw9z0OyTohkhQnirJklo3j9ViTZ45Ba+S9K6hRgLvtxq6ea7qrjr7/iTuYs/WeYq1Z5jfbsgYt+a6cnFLY6G5Ft34tE67qICTfGSNuQh6G2LnZqrDUwGFL/eutMDLRzJkeCqv4r7XPlThNEZXuiRmca83GxjsJVlY++s9uz8r24sM6mrgeV3X1U2NfdzPb0OwI39K6/39zBPhOnJ1T8W6Bv2+A2ckYyNh4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Olivine City (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-fb8a0.png&quot;
+        srcset=&quot;/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-1a291.png 148w,
+/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-2bc4a.png 295w,
+/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-fb8a0.png 590w,
+/static/olivine-27d3acccba014497195ba5fe5dd0eb1d-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Pallet Town (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAABTElEQVQ4y2NgGAVDE9SnaktOb2v2ptig1Vsb5LccLZ+89kTpj3030v6vPBNwpmFmpd+qyS7MJBlUnjZNsvuI0/TFZ/y/XnxR/P/Jn5b/T/+2/L/9reb/thPN/1duLj6zcnEM8S5u6a0pPHA/AWzIoz8N//d9iP+/4qX3/6vfy/4/A4rd+djyf/WiiEdEGzjxtEvh9iM5/5/9a/m/4LnT/7YHWmDc8UDn/6XvQBf/bv0/cbc/8QZOOxhcuGU3xMD5QANb72nC8YVvBWAD+3YFE29g9yE31a17c8EGPvrT+H//p4T/q177/D//Pf//vV91YAMXrmh/RFLErFidMn3Drravl5+1gA0Ahee9zy3/dxyd+n/y9CNnFq3oqSU52VRXV8tPXFY0ec35tB8HL1T9X7cl40xby36/ouz/zBSlx6L9+pJTjjh6j2bxIQoAEDvQtEvr0REAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pallet Town (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-fb8a0.png&quot;
+        srcset=&quot;/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-1a291.png 148w,
+/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-2bc4a.png 295w,
+/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-fb8a0.png 590w,
+/static/pallet-bdbcba9c878d2984a8a8a1fda6d27201-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Pewter City	 (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADwElEQVQ4y73U7U9TZxjHcf8AXvnC/2AvtiVOnEQ2kFqw0MlAwLJSQGQaJ+I0wbkBMuhYW0oyZMDsypC21B4IUgp9sljaQosKay3FzLVMrEJPaXneMhjOZepv5RxXQ9wSYpad5HpzcvLJ975Pcm3b9n8/+uGa7RrbKaHGxbH2mE4nvTLU3JOwg7icKJbZ9q/KfElQTu6H5d5JeJdq7Z5AdfKWIelS/PbR0BmhuDdjVX4rE4ppFrpD6TCFP0D7vSRovj8Ix3ABxhyF1qu9hf9eLFWf32HVHxVfD3JXB6ePQUWmgQixYQsUYNDBhlnLgMOXB/18LmQTDFzRH8DQSDEUzjz713dSNxdLNInVsoHDq1o/BxLvXhDzqRgK5MM6/B6GexnwuovxIFgGl/F9WPoZsP2USxW3efZBoc5Cd18lrnSLrHoD7zUKJGRccuB+HjpmU2AO8NBiYUDdnQjvxDHMPq5F+JkQgSd8hJ4K8TB8DuPXMjcVtzqZUFuP46ohJ5c+bheX9P5WgaFgASpVb8LlPILg4y8oaGNc66fQSO6G+RceBYcj8EbxWA8L9h9yIXEnQDtWBLnzbRosvbyH/HGtHIOzPNQRbyHw6+cU5F4/jdbZBIgevh6dhpldGF07QaF3bBw0dLLw1fV46J3H4V86T4NVl96lCi2hfIhUOyNgFQV2LbJRN/PGS6NbyaHACcth1LezIGiJh9JdiNv+Whr0BD8lR+5XwxYshFC5M1rYuZC2qe7v0S4/ByOF9bII2PgOlLePoN/Cp8ERdxHZZiyj7lCkfFGoXcl+qe4iGQvDz5xooagtBYKGeJinPgb5u5gGb6yUkNWyo9E7nFmpjP4Qz6MzkM8xcTEQS/+Up3zq/fTiZ/CYc2gwcmTnVA3c/goanFgrIyva8jGwwMUlGxNNiji4IkcIPuJHYfI59CD0CdzGTMhb96CxPQ0CCRtftuzFqLcKRkMBDerDPJ99sgzNjgy03mVjYI6Lb0wZaFHsw5irEMH1GoSeCODznYRcGgeRnAVRUybEnUy0mbPRM5SH0bt8p173UToFiv27Yvp1pReMtpLlPlcRiOBBqBZYMPlLINHx0NyRCEKTEjkeC8INqIuB75xZICxZ0HYx7WrVuX9eFnWB2Bj5TVa5zHRgXn2Lg3ZfMojFVDR0pL8ocmZDN/4hxkMl1infia2ts41ipb34woDr7HL3KBdNk0mQjh2CysvFOHnWPveHIPmVdqJh8NsYxWRmeddE/nyn59Cf6r5S6X+ytYlncTH1U7G7t/LtX0mp7f8zEYg3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pewter City	 (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-fb8a0.png&quot;
+        srcset=&quot;/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-1a291.png 148w,
+/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-2bc4a.png 295w,
+/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-fb8a0.png 590w,
+/static/pewter-7201d682eccb65f5e0ee98c2d6f12ca3-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Saffron City	 (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAD6klEQVQ4y6WUy08bVxSHZ1Upkv+XqkhI7aaLNpEqdRtvGsJDKtjB2MX24MFjZmwnFLXQKiEVtIHyCBjC+DEez3gYP/Cr2IPf5hUaEposIiTUokrNohsvfh3cBClqmybKlc7mXunTd8495xDEa5wlwajz891txNseJdWjE8ROShTNJ6JENZVor7DGdbw5GGNTul8nv6JF2XLK8Sx42QUpycIvsBCjNhwcs9IJRv8f7BO6dfECSW0vf3kSCnrh42isZ5wQN2wIiVbwMRdi2RFwvA2JTUtz/9gh/Cv4GcZ19ccMnch7TgMRr2ZCQ067IMRJrHFDmJm/jsllJ5buuhAUbJCzNKSEC/4wiUR+ANLqp5I0+d7f4EzF/n6m5D4JiB6s+F3nRqurGmjOi2+EXszmu7BS6MdkshO3fcNYXKCfG1NQMiMIRuzgVq40+R8+/J7YTHbow5ERyBtORBJD50Y3o32YU7uQrLuwuedBruFGbseDQOUaprLdLxlv7rIISRSCc5dUopq5ovcHtRQ0YChswy2fE7PqVSRrLmTqbiTzw6hULdjfMyGn2pEssq378LYJ36V6MD/HoHyoAUUHirsDKlEomfV81AM55QQXtONW2AKxOIS4yqLWsODRw/6X4v6+CdniMJS8Gys5M2ZXbagcMuAlB2oPB1Uif39EA3ohaG3BiyRuhiwIF0jEC65/wF7EVsWGaI5FoGTCNPc5KrsOrZ3MqB9ZVaL4YFQflr0IJ9xIV8Y0wy9ahskt5j+BtT07YqobwfIAZnkjqvs0lJgRjSO7Shz85tVzvKZ8BqyOYTI8+ErDo18GUNsnIW+y4IomzAkGbNW1Eqz3YbH8iUpsPx3Vc4K7BUyVx1o1FMpWhOIsclUXDh5Zn8NMqB84kCyxrbdQnEGgZsS82I/qntY+ihEL1YsqkX5M6kOys5VytnEdi2vjmI6ZsbTdgWDaAS7KIFuhUdqh4JdHtGDgb/RiptCF1Xi/1thWrQQODdiH+crHKjHxoF3vV6wIrmsfk2CRytPIlbxY9n+L6bgZKzudCGjgM6PgtgGzxU4si4MoNkhUdylEFRsiUj+iP33WnKl+tEHc/uPdCwu5HkMoRh3fExwIyB5wEQa5Io20VvglbqJlPFPo0UA2FGskKjvDiCbskKReiLnL4A4uShOHbW2G6Xbd+Tw//XPqnUCeNAWiQ0+WeAqBdY82Oe5z4/X01yjvnU2UA4J8TTO63OR+viT8+Hv7q7cOwzAXbpQ/MNxJXn2ycG/49IWxkh5CRDZAkbuxkbBIM8/a3nwv+vzjujt3ScoXpE/8YbqpxK1CKnvj7Td3VaV0mTT5WqC/AEZbTFGZpsKFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Saffron City	 (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-fb8a0.png&quot;
+        srcset=&quot;/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-1a291.png 148w,
+/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-2bc4a.png 295w,
+/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-fb8a0.png 590w,
+/static/saffron-00614ab1a5cc6a3886a9a2b7e83633d0-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Vermilion City (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/vermilion-eb24a68335401b3b896252920b705870-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADHUlEQVQ4y6XU60tTcRgH8PMHnD8kyC6sIIOgjIIiIiIWWVSWUelc0x3Xsbm5+9bOdra1k83bsMgtncttHV3pnDMvK7rYTS2QIo1i1V6URREjvuUZrkzIzB88bw4PH748POchiH9402DIse/lImKpz6NeR3a27aLvjxSm/P35Ge/A2rBrYt3i4VBMQ3bFqpXeBiptYRSoDuVD274NhuhKXLq7CRdHt/L0ifDCcEu4iOS7jtGBNjrFnDNCwR6E68oR9NxRYXhci5auCuiC22GMr4GnQ5Lx1HrDKRjnw4kRExmKKpTnHbK0jauBwlEId6AIPbc1GEsZMfnVItTzaQuGRnVovUEJiY29a9ExchjxuJwPcwVZuKn/UH6Q16VYzoSjhh046V6P1n5JDnqWdsEXHIbN/hJDT3zCtxefzHMSV1/fCG/HwYxbvd9DvDHbxZc4J/axy3A5VpKDnr5z43LgFijpN0iPI1cMM4nBR/45if1ROeS8CGfVVUmir1crbuTMOOBYjkevslhraGAe9GfNJH44WS/0X0uoUB4Rwe+jk4TjyQYxZzkhgA8ms6Dy9Me/YrPVcysk9Ef6VJCFRAhcpZKEL1Yp5gylOGrZ/BM0/Bc4k1DOr0ZtYk+SGHhJiZ36MpSpC/Fw6v8TKqIrwHUcShINE1tWsS7rtKSmMDfDxYJdg2pQnXmwGZuSwuo47M6pMu2x3Ay16vcLYibjayTutQv9dyb0kEfy4LRyWdBmZackNcW4+zw7w4kPLNoiN3G64ss86Pe1EXbycxYsdxUgwp/MgrUe6zgl00OmF6O5uxhjb3/B7XwCNPVZSDS72NkdNCP2mIbGsxtqswQMJ8t0Rkt7BbAzzpKNzRqlzWxLnyplUW7ci4u9xRh/Z8rBszs3k6hvtAqa+p2QnTkFq9WJOi/Nu+so0b0kTc75p4PdNFnXqKLPGppSlFQ3J/HvieQ1UjjstRlfqyrcHy9Z+OroTFKyvkGp5CymdIWUERLPJrIzVjR5S/kb3UcWfxdbAgwZ9MvpC3YuVXXclqkuU4fr2C1Lv9yVlZXkGYn+n6Afo3kqDhcytQYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Vermilion City (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/vermilion-eb24a68335401b3b896252920b705870-fb8a0.png&quot;
+        srcset=&quot;/static/vermilion-eb24a68335401b3b896252920b705870-1a291.png 148w,
+/static/vermilion-eb24a68335401b3b896252920b705870-2bc4a.png 295w,
+/static/vermilion-eb24a68335401b3b896252920b705870-fb8a0.png 590w,
+/static/vermilion-eb24a68335401b3b896252920b705870-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Violet City (Johto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/violet-62bb77c2550c29e671c93056a7fe697d-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADp0lEQVQ4y6XU/08TdxzH8fsD+j9UW9omM24R2SQGkn1xiwvju0eBpobNKXOjhVkLrLQFWlv6/eu10NBSLVRqYdhR5nCwCEJaNt3YOu38kv20LNZJ2Eac/tAfXjsOqRaWDOP9crkf7vl55P25+xDEDi6j5CBLd7KwkHjRa25UzPqCKuv47OOXM62n9mTl7++LqZv3P3/4Stc4K9jWq+jt6lyRe8qh/m4vLL8WQxZ9CadVB+C2N8WjY93/H8bx31g/1Ic6RqSDmU5vE1RLr+LcfRESaxNYvD+NydUemO4egHx8D6Sy17LdraJY/LJje/jPT5ZZae2MYo4aWjntaoL6WiFCf4ix8NcYwte8OOYtRa2ZD/2kBPO/X0J8VcOIO/1W6DUxhM5R8d72so0wpXy9eIYyZ2yTFVAv7c2J0g9vwjOnQrmejSM2LoRuLipNbNQY+TBMSXJiW0qE7sEwFLJL2e52cT8x3n+CpCbEoO6VILkWw89rKQSTNohdRaix7AZp56LRLYCIEqDBzUOtdTeqjZw8ceTBSSiDI9AppQkiYBCRplA5BjJv4/bj25CFqxlRo4eHOjsdMNB3iwD1dgFIMw819HMjxc+JlWNHcfPRT0ww5HIkCLuWJFt6XkH/vUNMsCV4mF69gBHVO/kgrXTAJWCUQgcPpIWHBietdfFR0cdGV/Qo89568Gr0qwTx/TfnSammCKYvPRvBs3TQVJAnElqfCC1PxUIrH5VGNlSfPw1GfPoEkVqIkHJdCQwXgzkho9oi2ipeF65v2LNCqu+jBDFgEJJt2n25oCR0GFV9nG2irWKhnZ+b4WYwPNSXINLNcdIYOZQnrDLQu2gsQJ2N958zrDXw6XBB3gxVQy4EB3wJYmq4jTRPvZELjt0YRHOghPlkynW7UN7LQZ15Q1il56KsZxeqTRyQ9GLGyxJMpIeeBK3we/wJQqsIF9tmSzOtbiNcVyjMr0Zx6/EviKQ8OD5Yive0bFSc4dBj4DKialpnnJbg+moSPz5cxIVbPmi9cRic3myw3zfL/C3XkydYSa9JEVCbVmQOM5yzPiysjSL96AYd9jLiTdG3D64i9c8SIncoKN0BnJGPYETfEv/aVVo4qjvI2nY43JFOdZzV6jOnnOY88bOiLmoY7Z9ezJoNjtii/52dnTrB5bcUmsiRlVavlhFvimwfLsKoCcadAefzn4vev4tY/qU3O2zBYxnnB/PZmYbp2N3K+Iuf3MP7O1nL757fUehfsnzeT3FypGUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Violet City (Johto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/violet-62bb77c2550c29e671c93056a7fe697d-fb8a0.png&quot;
+        srcset=&quot;/static/violet-62bb77c2550c29e671c93056a7fe697d-1a291.png 148w,
+/static/violet-62bb77c2550c29e671c93056a7fe697d-2bc4a.png 295w,
+/static/violet-62bb77c2550c29e671c93056a7fe697d-fb8a0.png 590w,
+/static/violet-62bb77c2550c29e671c93056a7fe697d-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Viridian City (Kanto):
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-8189c.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAADsUlEQVQ4y6WU+09TZxjHz69L+k+MCrVmyzJG50zmspgtcpmTFo6EDSnMcjGTQVDpcrgUtS1UbMdF6CgaLmukpUVLLyi20NouR3ZxAy+j0yDMVtawZpEly5AK37UvsablBzW+yfnhvOc5n+fzvOc5D0W9wJqZkXFcHlk69apLr9dzhg31UpNXHDK7CyOWKYnF4zr68uDA3UrOlfHjzLCzJGx0ZcFjF+GGrxgO6ycwugvR3s3YTklVzwfrLSWcS5P5UrOnIGR05MBtE8J/rxrBNTkersux8HcDfo6CrWOZGB3fFzFZ3rd0/pm+FWyfVHNUXUeZs8OHw/bLn8Jnzcfd+RoEnyjwYL0ZUytiGJdz8NvqcSxFwYsrTcT4ojELqu4PwahzbbJK8Sb44tXG94YmvgiNOvbBO5YXNwqun4yCitEZEEC5uINcrYtvwLCcDf9aXYKxqTcTckYSUQzt11Kd5lL6O6cIN1kxgpGo0ZMTmHokhuaPdCju89F0k48KcxqKerfhmJcH+fwOsp9g/EgG6/m9UJrfZamGkTfpQe8B3P6ljDwcCO0hNs13+CgbSYWwNQX56hSITqcgt+V1fKbdhrrvt8eNb63WRitS4uqVg+jpymQp7XgObfAW4c6v5QSoe7ibGOSd4UKoSoGwhQtaw0XeaS5yo/BcZSwBFzVOHomb/a8agSjw2o9foludzVIjtira5JXEDfuWPiDZnxrtjwJicFHbs/uY8VcTaSRudrWGAKfYw+hSZ7GUaU5ED7gkWw2TjJKNqy6nxQ1jJXt9Epw5u4ellA0ZdEvr6FbDJKNk4+oJXtwwBpyeLAKjE7CU7XoV3dFj32JYbkolkOQzPNDORa2bB+bG9oQznHYfxKn2vSzV6xbT33TbiGGst67/Ww7nyudoD7yDplt8SAyppOSYcWEPF3Xs5hce+SsHM6vVWIg0EuBP14qh1RaxVMfYTlqhcsJlrcTc79Fsj+XENLhxgjR2xwMBmm7zcczHQ8vCs8aOxQQeKzG/3IDZHw7B58iLmI1iF6Xwv/XayYkyASO9xwwN1Ifd4xLMzR0hTU5e2miG5x8xMZpb22zkmFEMNDNdCruxFIauj2xDql3pfc27OAn/tEKh4Kg1Kqn+gizkth9KMF7akJMkT40cxpJI/znGcu587/OnTkVFBUczWMD0XxKGfZOF8PuP4H64nhhZB7LRpymw6XS6l5+L2sadHHX/29ILYx+HbIPZkW8Vuy0dXwtefXK31WRw2mozXgj0P70eDYxLsolbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Viridian City (Kanto)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-fb8a0.png&quot;
+        srcset=&quot;/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-1a291.png 148w,
+/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-2bc4a.png 295w,
+/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-fb8a0.png 590w,
+/static/viridian-a05cf2b44f2ea14f046ca9bb8e9d81f1-8189c.png 736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor]]></title><description><![CDATA[Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/</guid><pubDate>Fri, 11 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Node.js Server Monitor&lt;/h1&gt;
 &lt;p&gt;In &lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/&quot;&gt;my attempt to automate my suite of websites&lt;/a&gt;, I wanted to build a simple Node.js server that monitors all my live sites, and sends me an email. Basically the process is simply:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;‘cron’ job that every 30 seconds to ping all my websites&lt;/li&gt;
@@ -1595,8 +2357,7 @@ Kansas City, MO  64999-0002&lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;TL;DR;&lt;/h1&gt;
 &lt;p&gt;Fill out and send two forms; and you’re legally set!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;in other words,&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;😎 Its time to make some more startups. 😎&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Interacting with a Blockchain - Building a Webapp for RaiBlocks]]></title><description><![CDATA[Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com]]></description><link>https://chrisfrew.in/building-raiblocks-charts/</link><guid isPermaLink="false">https://chrisfrew.in/building-raiblocks-charts/</guid><pubDate>Tue, 30 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Full stack&lt;/h2&gt;
-&lt;p&gt;This post is going to go through how I built &lt;a href=&quot;raiblocks-charts.herokuapp.com&quot;&gt;raiblocks-charts.herokuapp.com&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input]]></title><description><![CDATA[So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web… That would be like reinventing the wheel. In SAPUI5 function, that…]]></description><link>https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</link><guid isPermaLink="false">https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</guid><pubDate>Thu, 25 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web…&lt;/h2&gt;
+&lt;p&gt;😎 Its time to make some more startups. 😎&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input]]></title><description><![CDATA[So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web… That would be like reinventing the wheel. In SAPUI5 function, that…]]></description><link>https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</link><guid isPermaLink="false">https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/</guid><pubDate>Thu, 25 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web…&lt;/h2&gt;
 &lt;p&gt;That would be like reinventing the wheel.&lt;/p&gt;
 &lt;p&gt;In SAPUI5 function, that looks something like this:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;

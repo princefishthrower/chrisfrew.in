@@ -9,12 +9,25 @@
             "edges": [
                 {
                     "node": {
-                        "excerpt": "A Real Treat! Over the past few days, i’ve done some data analysis and scripting and art making with  Breakdown into 16x16 Tiles I repeated…",
+                        "excerpt": "Data analysis Evidence of State Actors? I looked at the. Indeed, seeing as , this would be of interest. I was surprised to find that there…",
+                        "fields": {
+                            "slug": "/data-analysis-of-reddit-users/"
+                        },
+                        "frontmatter": {
+                            "date": "01 August, 2018",
+                            "title": "Data Analysis of Reddit Users",
+                            "draft": true
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…",
                         "fields": {
                             "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
                         },
                         "frontmatter": {
-                            "date": "01 June, 2018",
+                            "date": "15 July, 2018",
                             "title": "Data Analysis and Pixel Art of Towns and Cities in Pokemon",
                             "draft": false
                         }
@@ -121,19 +134,6 @@
                             "date": "01 March, 2018",
                             "title": "Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)",
                             "draft": false
-                        }
-                    }
-                },
-                {
-                    "node": {
-                        "excerpt": "Full stack This post is going to go through how I built  raiblocks-charts.herokuapp.com",
-                        "fields": {
-                            "slug": "/building-raiblocks-charts/"
-                        },
-                        "frontmatter": {
-                            "date": "30 January, 2018",
-                            "title": "Interacting with a Blockchain - Building a Webapp for RaiBlocks",
-                            "draft": true
                         }
                     }
                 },
