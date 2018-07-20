@@ -3,20 +3,20 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---node-modules-gatsby-plugin-offline-app-shell-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js")),
+  "component---cache-dev-404-page-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js")),
   "component---src-templates-blog-post-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/index.js")),
   "component---src-pages-johnny-birthday-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/johnny-birthday/index.js")),
   "component---src-pages-market-news-feed-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js")),
-  "component---src-pages-privacy-policy-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js")),
   "component---src-pages-movie-night-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js")),
   "component---src-pages-sec-filings-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js")),
+  "component---src-pages-privacy-policy-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js")),
   "component---src-pages-talk-shop-index-js": preferDefault(require("/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js"))
 }
 
 exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "offline-plugin-app-shell-fallback.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/offline-plugin-app-shell-fallback.json"),
+  "dev-404-page.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/dev-404-page.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "a-toast-to-full-stack-developers.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/a-toast-to-full-stack-developers.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
@@ -68,17 +68,19 @@ exports.json = {
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "warn-sap-users-of-locked-objects-then-kill-their-session.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/warn-sap-users-of-locked-objects-then-kill-their-session.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/index.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "johnny-birthday.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/johnny-birthday.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "market-news-feed.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/market-news-feed.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
-  "privacy-policy.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/privacy-policy.json"),
-  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "movie-night.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/movie-night.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "sec-filings.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/sec-filings.json"),
+  "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
+  "privacy-policy.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/privacy-policy.json"),
   "layout-index.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/layout-index.json"),
   "talk-shop.json": require("/Users/chris/projects/chrisfrew.in/.cache/json/talk-shop.json")
 }

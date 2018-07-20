@@ -22,6 +22,19 @@
                 },
                 {
                     "node": {
+                        "excerpt": "Inspiration and Motivation I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly…",
+                        "fields": {
+                            "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+                        },
+                        "frontmatter": {
+                            "date": "18 July, 2018",
+                            "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…",
                         "fields": {
                             "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"

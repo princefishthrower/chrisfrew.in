@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "updatedAt": 1532087740084,
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "f0e474e5bcc0b63d121535e15f9bf6d1",
         "owner": "internal-data-bridge"
       }
     },
@@ -1598,14 +1608,16 @@
         "description": "A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.",
         "siteUrl": "https://chrisfrew.in"
       },
+      "port": "8000",
+      "host": "0.0.0.0",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-16T16:02:00.966Z",
+      "buildTime": "2018-07-20T11:51:59.611Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "57dd8570b7a88e856a30bafeb5849657",
+        "contentDigest": "aed00abbec37e23ca47673e9dae1b665",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1615,7 +1627,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "75c4938889fd7cacbfb4f2e6b901884f",
+        "contentDigest": "fa272b40023a9edc4ca9aabee050fbc8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1623,11 +1635,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 1120,
-      "prettySize": "1.12 kB",
-      "modifiedTime": "2018-07-14T10:18:52.079Z",
-      "accessTime": "2018-07-16T16:02:04.162Z",
-      "changeTime": "2018-07-14T10:18:52.079Z",
+      "size": 1152,
+      "prettySize": "1.15 kB",
+      "modifiedTime": "2018-07-20T11:40:33.963Z",
+      "accessTime": "2018-07-20T11:52:03.102Z",
+      "changeTime": "2018-07-20T11:40:33.963Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1637,20 +1649,20 @@
       "relativeDirectory": "..",
       "dev": 16777221,
       "mode": 16877,
-      "nlink": 35,
+      "nlink": 36,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1531756924161.9312,
-      "mtimeMs": 1531563532078.8518,
-      "ctimeMs": 1531563532078.8518,
+      "atimeMs": 1532087523101.848,
+      "mtimeMs": 1532086833962.9446,
+      "ctimeMs": 1532086833962.9446,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-07-16T16:02:04.162Z",
-      "mtime": "2018-07-14T10:18:52.079Z",
-      "ctime": "2018-07-14T10:18:52.079Z",
+      "atime": "2018-07-20T11:52:03.102Z",
+      "mtime": "2018-07-20T11:40:33.963Z",
+      "ctime": "2018-07-20T11:40:33.963Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1658,7 +1670,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "27b8189c95bb53a3e7297372a84a46dd",
+        "contentDigest": "6d77b2323a79236ce1b1d8fa31e62ce0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1669,7 +1681,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1687,11 +1699,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1531756924169.3032,
+      "atimeMs": 1532087523108.8975,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1701,7 +1713,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9e82618b829a76344beb72a1712c8a22",
+        "contentDigest": "4bab0b4019df8af2903f04d0f44f8bfb",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1712,7 +1724,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-11T16:03:06.851Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-11T16:03:06.851Z",
       "birthTime": "2018-01-11T16:01:54.254Z",
       "root": "/",
@@ -1730,11 +1742,11 @@
       "blksize": 4194304,
       "ino": 8596136407,
       "blocks": 0,
-      "atimeMs": 1531756924169.3042,
+      "atimeMs": 1532087523108.9487,
       "mtimeMs": 1515686586850.6416,
       "ctimeMs": 1515686586850.6416,
       "birthtimeMs": 1515686514254.4714,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-11T16:03:06.851Z",
       "ctime": "2018-01-11T16:03:06.851Z",
       "birthtime": "2018-01-11T16:01:54.254Z"
@@ -1744,7 +1756,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "133b4d0dc14832638e0374b5b86a610a",
+        "contentDigest": "6195b81bbc8fa936aaa650270dcedcf7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1755,7 +1767,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1773,11 +1785,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1531756924169.3372,
+      "atimeMs": 1532087523108.9617,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1787,7 +1799,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8ccc2f4dfe486411778ac644f99a759d",
+        "contentDigest": "cc53cbbe6882532dbca9c648db7922dc",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1798,7 +1810,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1816,11 +1828,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1531756924169.3447,
+      "atimeMs": 1532087523108.9753,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1830,7 +1842,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7dadacf580233d48b6595b73eddf9a7f",
+        "contentDigest": "2d3424f35b0279e4ffee3f131a1fbd3e",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1841,7 +1853,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1859,11 +1871,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1531756924169.3635,
+      "atimeMs": 1532087523108.9106,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1873,7 +1885,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8e0a9c7275fe581a39ecf16638721cf8",
+        "contentDigest": "cd9195108bd4bbc7feb9a6d9457d5203",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1884,7 +1896,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2018-04-07T17:41:08.850Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-04-07T17:41:08.850Z",
       "birthTime": "2018-04-07T15:59:19.305Z",
       "root": "/",
@@ -1902,11 +1914,11 @@
       "blksize": 4194304,
       "ino": 8602609341,
       "blocks": 0,
-      "atimeMs": 1531756924169.4153,
+      "atimeMs": 1532087523108.9888,
       "mtimeMs": 1523122868849.758,
       "ctimeMs": 1523122868849.758,
       "birthtimeMs": 1523116759304.8486,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-04-07T17:41:08.850Z",
       "ctime": "2018-04-07T17:41:08.850Z",
       "birthtime": "2018-04-07T15:59:19.305Z"
@@ -1916,7 +1928,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "14ccb411b01ea07db4d7383daed2b103",
+        "contentDigest": "50d47f7ca0ed3dafa14c15241c7a4cfd",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1927,7 +1939,7 @@
       "size": 704,
       "prettySize": "704 B",
       "modifiedTime": "2018-07-15T12:32:32.532Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-07-15T12:32:32.532Z",
       "birthTime": "2018-06-02T17:31:34.097Z",
       "root": "/",
@@ -1945,11 +1957,11 @@
       "blksize": 4194304,
       "ino": 8605205191,
       "blocks": 0,
-      "atimeMs": 1531756924169.4287,
+      "atimeMs": 1532087523109.041,
       "mtimeMs": 1531657952532.4646,
       "ctimeMs": 1531657952532.4646,
       "birthtimeMs": 1527960694096.5046,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-07-15T12:32:32.532Z",
       "ctime": "2018-07-15T12:32:32.532Z",
       "birthtime": "2018-06-02T17:31:34.097Z"
@@ -1959,7 +1971,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8fff3eb8f87893c1a2384a2327c72dfc",
+        "contentDigest": "57e3a3811e721a21109b8fe42ffa4730",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1970,7 +1982,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-07T14:31:18.629Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-07-07T14:31:18.629Z",
       "birthTime": "2018-07-07T14:31:11.407Z",
       "root": "/",
@@ -1988,11 +2000,11 @@
       "blksize": 4194304,
       "ino": 8607028725,
       "blocks": 0,
-      "atimeMs": 1531756924169.3882,
+      "atimeMs": 1532087523109.028,
       "mtimeMs": 1530973878629.0906,
       "ctimeMs": 1530973878629.0906,
       "birthtimeMs": 1530973871407.2146,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-07-07T14:31:18.629Z",
       "ctime": "2018-07-07T14:31:18.629Z",
       "birthtime": "2018-07-07T14:31:11.407Z"
@@ -2002,7 +2014,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8fa28e62db5a94b50696483d0ee1d349",
+        "contentDigest": "3bb4c43ed0fa3d05480593c057abd795",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2013,7 +2025,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -2031,11 +2043,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1531756924169.469,
+      "atimeMs": 1532087523109.0017,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -2045,7 +2057,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5234cbb5f4b3304c6fb1f6506059caef",
+        "contentDigest": "5793eebc8d24c292d8cfaed94229a6f2",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2056,7 +2068,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -2074,11 +2086,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1531756924169.442,
+      "atimeMs": 1532087523109.015,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -2088,7 +2100,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9151cc86853918b85946e9c91793851c",
+        "contentDigest": "d8113f5e00209cdadee8185d0151d505",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2099,7 +2111,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2117,11 +2129,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1531756924169.4553,
+      "atimeMs": 1532087523109.054,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2131,7 +2143,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7280c74da82ef9113644c8756efd7fac",
+        "contentDigest": "8364e6427483a3e8f7b6b4a47c19e234",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2142,7 +2154,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-07-16T16:02:04.169Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2160,11 +2172,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1531756924169.4822,
+      "atimeMs": 1532087523109.067,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-07-16T16:02:04.169Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2174,7 +2186,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "69d7bb655ba29919ca75258445e9a585",
+        "contentDigest": "53080d16b918171ec1f771a765d2c68d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2185,7 +2197,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-05-15T11:07:29.859Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-05-15T11:07:29.859Z",
       "birthTime": "2018-05-10T10:33:47.718Z",
       "root": "/",
@@ -2203,11 +2215,11 @@
       "blksize": 4194304,
       "ino": 8603785351,
       "blocks": 0,
-      "atimeMs": 1531756924169.5024,
+      "atimeMs": 1532087523109.1343,
       "mtimeMs": 1526382449858.6301,
       "ctimeMs": 1526382449858.6301,
       "birthtimeMs": 1525948427717.8652,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-05-15T11:07:29.859Z",
       "ctime": "2018-05-15T11:07:29.859Z",
       "birthtime": "2018-05-10T10:33:47.718Z"
@@ -2217,7 +2229,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "445b8d49ba75f35b1c33242ebe1b8c69",
+        "contentDigest": "dc713d93bb1d282172d9e7b6c93365c8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2228,7 +2240,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-10T13:57:15.395Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-05-10T13:57:15.395Z",
       "birthTime": "2018-05-10T13:57:08.500Z",
       "root": "/",
@@ -2246,11 +2258,11 @@
       "blksize": 4194304,
       "ino": 8603794471,
       "blocks": 0,
-      "atimeMs": 1531756924169.516,
+      "atimeMs": 1532087523109.0918,
       "mtimeMs": 1525960635395.2844,
       "ctimeMs": 1525960635395.2844,
       "birthtimeMs": 1525960628500.1267,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-05-10T13:57:15.395Z",
       "ctime": "2018-05-10T13:57:15.395Z",
       "birthtime": "2018-05-10T13:57:08.500Z"
@@ -2260,7 +2272,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dfba81bb30997503582790b7689a1566",
+        "contentDigest": "64a700adecff3e82bcd4787f5d42c599",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2271,7 +2283,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2289,11 +2301,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1531756924169.5298,
+      "atimeMs": 1532087523109.1025,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2303,7 +2315,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7e796ef9f249a633b9f49c143edc7b20",
+        "contentDigest": "6e042d62fe4cfffe6303dbbf007ae8ff",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2314,7 +2326,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2332,11 +2344,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1531756924169.5432,
+      "atimeMs": 1532087523109.121,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2346,7 +2358,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2e635bae37e8393e6f88bc327aed97e0",
+        "contentDigest": "71e4871f710951077ed037a46583048a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2357,7 +2369,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:31:47.195Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-17T16:31:47.195Z",
       "birthTime": "2018-01-17T16:31:36.460Z",
       "root": "/",
@@ -2375,11 +2387,11 @@
       "blksize": 4194304,
       "ino": 8596482218,
       "blocks": 0,
-      "atimeMs": 1531756924169.584,
+      "atimeMs": 1532087523109.1475,
       "mtimeMs": 1516206707195.2708,
       "ctimeMs": 1516206707195.2708,
       "birthtimeMs": 1516206696460.457,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-17T16:31:47.195Z",
       "ctime": "2018-01-17T16:31:47.195Z",
       "birthtime": "2018-01-17T16:31:36.460Z"
@@ -2389,7 +2401,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3f1e0afb19ce1b4f6284dbfd634214cd",
+        "contentDigest": "8d9c8d223391fcfc18b365109882bef5",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2400,7 +2412,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T15:52:46.268Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-04-07T15:52:46.268Z",
       "birthTime": "2018-04-07T15:52:39.855Z",
       "root": "/",
@@ -2418,11 +2430,11 @@
       "blksize": 4194304,
       "ino": 8602609104,
       "blocks": 0,
-      "atimeMs": 1531756924169.5564,
+      "atimeMs": 1532087523109.1604,
       "mtimeMs": 1523116366267.7776,
       "ctimeMs": 1523116366267.7776,
       "birthtimeMs": 1523116359855.1514,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-04-07T15:52:46.268Z",
       "ctime": "2018-04-07T15:52:46.268Z",
       "birthtime": "2018-04-07T15:52:39.855Z"
@@ -2432,7 +2444,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "195f566ad3ce4ea103a7549cd72c3481",
+        "contentDigest": "62b20c31da38573a47217baaac5a163c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2443,7 +2455,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-03-01T06:16:06.999Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-03-01T06:16:06.999Z",
       "birthTime": "2018-03-01T06:15:48.748Z",
       "root": "/",
@@ -2461,11 +2473,11 @@
       "blksize": 4194304,
       "ino": 8599787247,
       "blocks": 0,
-      "atimeMs": 1531756924169.5698,
+      "atimeMs": 1532087523109.1768,
       "mtimeMs": 1519884966998.8735,
       "ctimeMs": 1519884966998.8735,
       "birthtimeMs": 1519884948747.99,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-03-01T06:16:06.999Z",
       "ctime": "2018-03-01T06:16:06.999Z",
       "birthtime": "2018-03-01T06:15:48.748Z"
@@ -2475,7 +2487,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9218237208847c4f903d8e6a0eae2567",
+        "contentDigest": "a5637dcdf09cc77b980ad9a597aafb3c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2486,7 +2498,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-06-25T18:55:56.767Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-06-25T18:55:56.767Z",
       "birthTime": "2018-06-25T18:52:35.125Z",
       "root": "/",
@@ -2504,11 +2516,11 @@
       "blksize": 4194304,
       "ino": 8606623285,
       "blocks": 0,
-      "atimeMs": 1531756924169.624,
+      "atimeMs": 1532087523109.2039,
       "mtimeMs": 1529952956766.98,
       "ctimeMs": 1529952956766.98,
       "birthtimeMs": 1529952755124.7812,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-06-25T18:55:56.767Z",
       "ctime": "2018-06-25T18:55:56.767Z",
       "birthtime": "2018-06-25T18:52:35.125Z"
@@ -2518,7 +2530,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "15d59e2774005fd878b9cfcd30056ce3",
+        "contentDigest": "ad97c2000118345917a7c5de7578d0d3",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2529,7 +2541,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T17:02:27.730Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-01-17T17:02:27.730Z",
       "birthTime": "2018-01-17T17:02:18.586Z",
       "root": "/",
@@ -2547,11 +2559,11 @@
       "blksize": 4194304,
       "ino": 8596484302,
       "blocks": 0,
-      "atimeMs": 1531756924169.5977,
+      "atimeMs": 1532087523109.1907,
       "mtimeMs": 1516208547730.4324,
       "ctimeMs": 1516208547730.4324,
       "birthtimeMs": 1516208538586.4346,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-01-17T17:02:27.730Z",
       "ctime": "2018-01-17T17:02:27.730Z",
       "birthtime": "2018-01-17T17:02:18.586Z"
@@ -2561,7 +2573,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "049bfd41c12e29b44771d62cf9ecf582",
+        "contentDigest": "5bc5bceb77bc540a1e08b4830c04f07d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2572,7 +2584,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-03-17T17:29:41.508Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-03-17T17:29:41.508Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2590,11 +2602,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1531756924169.611,
+      "atimeMs": 1532087523109.2168,
       "mtimeMs": 1521307781508.2327,
       "ctimeMs": 1521307781508.2327,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-03-17T17:29:41.508Z",
       "ctime": "2018-03-17T17:29:41.508Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2604,7 +2616,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "febfe54ce819ec791a6c38bac923ef88",
+        "contentDigest": "5cd45b0b6b13d9759380ee62fd335a4d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2615,7 +2627,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-07-14T09:49:05.452Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-07-14T09:49:05.452Z",
       "birthTime": "2018-06-17T14:37:07.008Z",
       "root": "/",
@@ -2633,11 +2645,11 @@
       "blksize": 4194304,
       "ino": 8606215752,
       "blocks": 0,
-      "atimeMs": 1531756924169.638,
+      "atimeMs": 1532087523109.2434,
       "mtimeMs": 1531561745451.6052,
       "ctimeMs": 1531561745451.6052,
       "birthtimeMs": 1529246227008.3582,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-07-14T09:49:05.452Z",
       "ctime": "2018-07-14T09:49:05.452Z",
       "birthtime": "2018-06-17T14:37:07.008Z"
@@ -2647,7 +2659,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7b0652122c3c8f54a1d99e3a3534740d",
+        "contentDigest": "e469694dad1cd7a76a3c467a96c5f4db",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2658,7 +2670,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T20:48:19.532Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-05-15T20:48:19.532Z",
       "birthTime": "2018-05-11T10:24:28.525Z",
       "root": "/",
@@ -2676,11 +2688,11 @@
       "blksize": 4194304,
       "ino": 8603808666,
       "blocks": 0,
-      "atimeMs": 1531756924169.6511,
+      "atimeMs": 1532087523109.2563,
       "mtimeMs": 1526417299532.3975,
       "ctimeMs": 1526417299532.3975,
       "birthtimeMs": 1526034268524.7666,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-05-15T20:48:19.532Z",
       "ctime": "2018-05-15T20:48:19.532Z",
       "birthtime": "2018-05-11T10:24:28.525Z"
@@ -2690,7 +2702,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2d4335a9db9c05c474f4691779a5179b",
+        "contentDigest": "c04a2ed48d76d4d3fbd0b4ba96760079",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2701,7 +2713,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-01T19:08:46.268Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-07-01T19:08:46.268Z",
       "birthTime": "2018-07-01T19:08:39.104Z",
       "root": "/",
@@ -2719,11 +2731,11 @@
       "blksize": 4194304,
       "ino": 8606811493,
       "blocks": 0,
-      "atimeMs": 1531756924169.664,
+      "atimeMs": 1532087523109.269,
       "mtimeMs": 1530472126267.642,
       "ctimeMs": 1530472126267.642,
       "birthtimeMs": 1530472119103.984,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-07-01T19:08:46.268Z",
       "ctime": "2018-07-01T19:08:46.268Z",
       "birthtime": "2018-07-01T19:08:39.104Z"
@@ -2733,7 +2745,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "350c4bb8e0a5f6ddb8688ffbe6d85fe4",
+        "contentDigest": "6417c3d23d7b48f0d03a3507136ba319",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2744,7 +2756,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T19:48:41.380Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-05-15T19:48:41.380Z",
       "birthTime": "2018-05-15T19:48:33.486Z",
       "root": "/",
@@ -2762,11 +2774,11 @@
       "blksize": 4194304,
       "ino": 8604270631,
       "blocks": 0,
-      "atimeMs": 1531756924169.677,
+      "atimeMs": 1532087523109.3215,
       "mtimeMs": 1526413721379.8489,
       "ctimeMs": 1526413721379.8489,
       "birthtimeMs": 1526413713485.7114,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-05-15T19:48:41.380Z",
       "ctime": "2018-05-15T19:48:41.380Z",
       "birthtime": "2018-05-15T19:48:33.486Z"
@@ -2776,7 +2788,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dfd399fa0e53491c32735acd168f570b",
+        "contentDigest": "6ef76ab83097b3a00c1f8c38d18baf35",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2787,7 +2799,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2805,11 +2817,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1531756924169.7039,
+      "atimeMs": 1532087523109.2827,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2819,7 +2831,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "779bd1768b3edc518399bf7834f42152",
+        "contentDigest": "f14b7505e25c46ff4a7db4148c4232b2",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2830,7 +2842,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T17:48:48.349Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-04-07T17:48:48.349Z",
       "birthTime": "2018-04-07T17:48:39.168Z",
       "root": "/",
@@ -2848,11 +2860,11 @@
       "blksize": 4194304,
       "ino": 8602616148,
       "blocks": 0,
-      "atimeMs": 1531756924169.6907,
+      "atimeMs": 1532087523109.2957,
       "mtimeMs": 1523123328348.7495,
       "ctimeMs": 1523123328348.7495,
       "birthtimeMs": 1523123319168.0408,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-04-07T17:48:48.349Z",
       "ctime": "2018-04-07T17:48:48.349Z",
       "birthtime": "2018-04-07T17:48:39.168Z"
@@ -2862,7 +2874,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a3895b3d012efa6a588efb4241cf489e",
+        "contentDigest": "ee521816bc05bac42faa9a7784c00f29",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2873,7 +2885,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-01T19:36:55.592Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-07-01T19:36:55.592Z",
       "birthTime": "2018-07-01T19:36:49.176Z",
       "root": "/",
@@ -2891,11 +2903,11 @@
       "blksize": 4194304,
       "ino": 8606813979,
       "blocks": 0,
-      "atimeMs": 1531756924169.7166,
+      "atimeMs": 1532087523109.3086,
       "mtimeMs": 1530473815592.158,
       "ctimeMs": 1530473815592.158,
       "birthtimeMs": 1530473809176.331,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-07-01T19:36:55.592Z",
       "ctime": "2018-07-01T19:36:55.592Z",
       "birthtime": "2018-07-01T19:36:49.176Z"
@@ -2905,7 +2917,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f6aa6c703fd073512716ff5aa4d00425",
+        "contentDigest": "1b43ae34f7aeaf645fbdd84d79008d80",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2916,7 +2928,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-14T12:54:05.969Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-04-14T12:54:05.969Z",
       "birthTime": "2018-04-14T12:53:24.860Z",
       "root": "/",
@@ -2934,11 +2946,11 @@
       "blksize": 4194304,
       "ino": 8602988643,
       "blocks": 0,
-      "atimeMs": 1531756924170.083,
+      "atimeMs": 1532087523109.4277,
       "mtimeMs": 1523710445969.4082,
       "ctimeMs": 1523710445969.4082,
       "birthtimeMs": 1523710404859.8237,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-04-14T12:54:05.969Z",
       "ctime": "2018-04-14T12:54:05.969Z",
       "birthtime": "2018-04-14T12:53:24.860Z"
@@ -2948,7 +2960,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "859456358c2693404db8a7e58ad24746",
+        "contentDigest": "5d0fe6e70274a8d50d5a650a55c37364",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2959,7 +2971,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-05-10T12:48:47.593Z",
-      "accessTime": "2018-07-16T16:02:04.170Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
       "changeTime": "2018-05-10T13:24:15.745Z",
       "birthTime": "2018-01-15T07:23:04.154Z",
       "root": "/",
@@ -2977,11 +2989,11 @@
       "blksize": 4194304,
       "ino": 8596340303,
       "blocks": 0,
-      "atimeMs": 1531756924170.1255,
+      "atimeMs": 1532087523109.4446,
       "mtimeMs": 1525956527593.0906,
       "ctimeMs": 1525958655744.636,
       "birthtimeMs": 1516000984154.256,
-      "atime": "2018-07-16T16:02:04.170Z",
+      "atime": "2018-07-20T11:52:03.109Z",
       "mtime": "2018-05-10T12:48:47.593Z",
       "ctime": "2018-05-10T13:24:15.745Z",
       "birthtime": "2018-01-15T07:23:04.154Z"
@@ -7949,25 +7961,230 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
-    "SitePage /offline-plugin-app-shell-fallback/": {
-      "layout": "index",
-      "jsonName": "offline-plugin-app-shell-fallback.json",
-      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
-      "path": "/offline-plugin-app-shell-fallback/",
-      "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
-      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
-      "context": {},
-      "updatedAt": 1531756924716,
-      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
-      "pluginCreatorId": "Plugin gatsby-plugin-offline",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
-      "id": "SitePage /offline-plugin-app-shell-fallback/",
-      "parent": "SOURCE",
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration absPath of file",
       "children": [],
+      "parent": "___SOURCE___",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "358abcf176fc7333f20e5ece96047661",
-        "owner": "internal-data-bridge"
+        "contentDigest": "e009b3e51ebe41bc756ac775fa6e14bc",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "relativePath": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "extension": "",
+      "size": 160,
+      "prettySize": "160 B",
+      "modifiedTime": "2018-07-20T11:44:39.283Z",
+      "accessTime": "2018-07-20T11:52:03.109Z",
+      "changeTime": "2018-07-20T11:44:39.283Z",
+      "birthTime": "2018-07-18T16:44:46.885Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "ext": "",
+      "name": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8607951503,
+      "blocks": 0,
+      "atimeMs": 1532087523109.2302,
+      "mtimeMs": 1532087079282.9172,
+      "ctimeMs": 1532087079282.9172,
+      "birthtimeMs": 1531932286884.8716,
+      "atime": "2018-07-20T11:52:03.109Z",
+      "mtime": "2018-07-20T11:44:39.283Z",
+      "ctime": "2018-07-20T11:44:39.283Z",
+      "birthtime": "2018-07-18T16:44:46.885Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "dbdfb30274070f3b81b44e1ec211596a",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md",
+      "relativePath": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md",
+      "extension": "md",
+      "size": 16144,
+      "prettySize": "16.1 kB",
+      "modifiedTime": "2018-07-20T11:55:39.669Z",
+      "accessTime": "2018-07-20T11:55:39.879Z",
+      "changeTime": "2018-07-20T11:55:39.669Z",
+      "birthTime": "2018-07-18T16:44:52.672Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8607951513,
+      "blocks": 32,
+      "atimeMs": 1532087739879.3542,
+      "mtimeMs": 1532087739668.511,
+      "ctimeMs": 1532087739668.511,
+      "birthtimeMs": 1531932292671.9312,
+      "atime": "2018-07-20T11:55:39.879Z",
+      "mtime": "2018-07-20T11:55:39.669Z",
+      "ctime": "2018-07-20T11:55:39.669Z",
+      "birthtime": "2018-07-18T16:44:52.672Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Led Zeppelin Data Analysis for Lyric Generation and Inspiration\ndate: \"2018-07-18\"\ndraft: false\n---\n\n## Inspiration and Motivation\n\nI've been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I've even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so... _zepplin-ey_ 😄\n\n## Important: I'm Lazy.\n\nYep, if anyone out there has been following along in my blogging adventures, you'll know that I'm lazy. Anything that can be automated, I'm going to try to automate it! (Or in the very least, partially automate it or find a tool to use to make my life easier.) Actually, the entire concept of this post reflects my laziness: I'm willing to make a tool that generates lyrics _for_ me before I visit my buddy this summer as we prepare to write an EP together! (Yikes! - I'll let you know how _that_ goes!)\n\n## Getting the List of Song Names\n\nThere's this neat tool that I found that extracts lists from Wikipedia pages: http://wikitable2csv.ggor.de/, built by Gregor Weichbrodt. Nice one, Gregor! And... (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a \"List of songs recorded by Led Zeppelin\" page! https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin\n\nThrow that into Gregor's tool, and you've got your .csv data, which with 5 seconds work with Sublime text, becomes our song list:\n\n```python\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n```\n\n## Getting Lyrics for Each Song\n\nSo great, we've got our list of songs in Python syntax. We need the actual _lyrics_ now. And yes, I'm going to continue this post's laziness theme! I could go to Google, copy, and paste song lyrics for each of those Led Zeppelin songs, but hey, zep has over 100 songs! No way I'm that un-lazy. Let's automate it.\n\nLuckily, there is yet _another_ tool that can help us! Enter *figurative drum roll please...* 🥁🥁🥁 LyricWikia, written by enricobacis on GitHub: https://github.com/enricobacis/lyricwikia (I mean, c'mon, the example in the README is even Led Zeppelin's Stairway to Heaven!)\n\nSo, we're basically done. We loop over our songs and write the retrieved lyrics to their own file. We are also going to write a 'global' lyrics file - simply all the lyrics strings concatenated together to a file called `input.txt` --> don't worry; I'm not crazy, this will be important later. Data retrieval code is done and looks like this:\n\n`get_lyrics.py`\n```python\nimport lyricwikia\n\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n\nfor sSongName in lSongNames:\n    try:\n        sLyrics = lyricwikia.get_lyrics('Led Zeppelin', sSongName)\n    except:\n        print \"Lyrics not found for \" + sSongName\n    else:\n        sFileName = sSongName.replace(\"'\", \"\") # will cause weird file names\n        sFileName = \"-\".join(sFileName.split()) # dashes where each space is\n        with open(\"lyrics/\" + sFileName + \".txt\", \"w\") as f: \n            f.write(sLyrics)\n            f.close()\n            print \"Lyrics saved for \" + sSongName\n\n```\n\nThe songs that failed through the first pass were:\n\n```txt\n10 Ribs & All/Carrot Pod Pod\nBathroom Sound\nBlot\nBrandy & Coke\nDesire\nDriving Through Kashmir\nThe Epic\nFour Hands\nHey, Hey, What Can I Do\nThe Hook\nIf It Keeps On Raining\nJennings Farm Blues\nKey to the Highway/Trouble in Mind\nLA Drone\nLa La\nSouthbound Piano\nSt. Tristan's Sword\nTwo Ones Are Won\n```\n\nNot so bad- we've retrieved what is the vast majority of Led Zeppelin's lyrics in a matter of minutes. However, I'm still too lazy to get these lyrics by hand - I'm not gonna add 'em. 😂\n\n## Data Analysis - Word Occurrences\n\nSo we've retrieved our data. I wanted to count most common words as a simple start to analyze these lyrics. So, relying heavily on `nltk` (Natural Language Toolkit) we build a corpus from all the lyrics, remove the stopwords, and count the occurrences with Python's `Counter` module. That is:\n\n`word_counts.py` \n```python\nimport os\nimport nltk\nfrom nltk.corpus import stopwords\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter\n\nfrom nltk.corpus.reader.plaintext import PlaintextCorpusReader\n\nstop_words = set(stopwords.words('english')) # not interested in stop words\nstop_words.update(['.', ',', \"',\", '\"', \"'\", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}', '-']) # ... or punctuation\n\ncorpusdir = 'lyrics/' # Directory of corpus.\noLedZeppelinCorpus = PlaintextCorpusReader(corpusdir, '.*')\n\nlNoStopWords = []\nfor sWord in oLedZeppelinCorpus.words():\n    if sWord not in stop_words:\n        lNoStopWords.append(sWord)\n\nlNoStopWordsLength = len(lNoStopWords)\nwordCounts = Counter(lNoStopWords)\nwordCountsLower = Counter(i.lower() for i in lNoStopWords)\n\n# top 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[0:25])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n\n# next 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[25:50])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n```\n\nThe first plot, of the top 25 most common words, looks like this:\n\n![First 25 most common words](most_common.png)\n\nIn a way, I think we've found the 'stop words' of Led Zeppelin. 😂 I could have almost expected 'babe' and 'baby' - it's repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more 'meat' of the lyrics:\n\n![25-50 most common words](most_common_lower.png)\n\nwhat I think is really neat here, almost zen-like, is that the group has managed to use night and day exactly the same number of times - \n\n## Data Analysis - Markov Chains\n\nOnce again I revisited Markov Chains - what's better than to get some inspiration from poorly written robot lyrics? Since I've only worked with Markov Chains in Nodejs before, I had to look around for a . I ended up borrowing a lot from this very basic implementation from Toward's Data Science's Medium channel: https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6\n \n> - ma - ooh , in my heart You know the , didn ' t take it told me go If it ' t have to know where you there where the downhill slide Oh , make ya know , now I couldn ' ve decided what the wind won '\n \n> ' d do , honey As we sweep with death The Queen of the storm who really good friend They give to care if you now , They say \" Take him by takin ' m - la ) Spend it has ! Feel it ain ' on the way back\n \n> Groovin ' s bright as the morning When ya no love for hesitatin ' t no more times Keep thinkin ' ya know it . We ' baby , I oughta know where he told A - hah - take , love that girl , that set you babe Sugar mama\n \n> - ooh - ha , take you stand it now ' t unwind Get some good and you lovin ', knowin ' s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,\n \n> Dewy eyes Said , throw your crying for what your name Hear them in my power I know my baby when she would never do , \" Then the gallows pole Yes , my very special smile Like a cloak of us to glitter I don ' m a - hah\n\nAlright... they are a bit... weird. But inspiring a bit? At least? Maybe.<sup>Maybe.</sup>\n\n## Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)\n\nTurn on the 💻CPU fan - we're going Tensorflow. 😂\n\nWe're going to use a nice Word level RNN for starters, from hunkim on GitHub: [https://github.com/hunkim/word-rnn-tensorflow](https://github.com/hunkim/word-rnn-tensorflow)\n\nFor your convenience, I forked a version (basically with the Led Zeppelin corpus in the `data/` folder and changing the hardcoded file names in `train.py`) That's here: https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin\n\nThese look _much_ better than the wacky Markov chains:\n\n> tonight quarter) 'The Little proud thunder We've follow A-poor Daw upon lonely, lovin', can't Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin' Do some way. woman In the We've are 'round a in-a please, is is, Beneath me light! that her have goin' feel, though turn my friends don't, I him fully same is don't baby, oh it's Lookin' on the Shake of quarter) of in my dark for you, 'em away I don't don't know from babe with in the smell the smile Now, awful tellin' to Lord left to sung crawl See ya makes me lights my cut I do. truck Oh, know no? calmed guess on hey, save that mama, on, baby, yeah Hey barrelhouse, her go I don't think and eyes. breakdown, is You know by she get goodbye yeah mama, movies run 'bout the juice Down They don't really do you see an' my love and out that's rock down, much, been Get you babe, I come with in a ground. times, a door Let me 'Cause it feel, babe, the heathen snow drives that me\n\n> sand lifetime do, fire more, begin? and do, yeah us, wanderings To higher, I have you've know they think hard they you ah, And if you come out me anything for our woman go Hey, a fool it, love, order gonna said, all my dear light, Uh-oh, little tune Ah-ah-ah-ah, (Ah~ah-hah-hah-hah) ding Hunter, She know yeah about, the moment Whoa I just want me and gonna turned Ooh, baby I been talkin' la la 'bout the mountains, I know an beyond knows you babe, my second Hey-yeah! yeah... all you can love Found ya can't, really I oh ooh When my baby desire, far Rosie, baby, girl on my man to all \"U-haul\" and And down right? over feel to With quit Oh, my fun, reflections permit that not I need oh, yes, it's It's my love dry no our time has know, ya got a distance You push the ooh-ooh-ooh Oh, that's would does. Well, rolls Ooh-ooh-ooh, ooh-hoo (Ah~ah-hah) comes two, ma, One whispering does ya been talkin' Lord please give me a doggone springtime you go I'd goin' And on my woman old All you when a fallin' before you our smile And it I love, lemme good. We\n\n> rolled very here? I am That See the door Do you drive so twirl and ooh, a rock in night sit soul Oh, there good She joy there, Oh, my hands, me, breakfast 'Cause ya now, it's yeah on baby, all ya know you, alright Oh, baby, an Go, Singing on the man When you stop I roll it's you oh my seen oh, alright I can get I won't don't oh, darlin' on the seeds of gold Ah, get a monkey is my go 'round we means the money hey, now from the money A plot, it mama Ooh, Oh oh baby, my thrill I don't leave you notice that me I stay\" run, squeeze that Drop Oh, care said my love I still people blushin' Sisters of Oh, didn't once So a bridge roots, my shakin' Oh what you know with it's my soul and play today, the nose a time It's yeah, do it, love me breaks Yes, through the train If my have An' you oh, yeah When the bad bide you're flowers again he was At for good stop I'm How nothing I'll said, join same Mine's so horn of beer on my knows Ooh, this\n\nI hope you enjoyed this post! Until next time!\n\nCheers 🍺\n\n",
+        "contentDigest": "f1f5f2cfb8fc0f141f95bba1ab013942",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+        "date": "2018-07-18",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md",
+      "fields": {
+        "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "12e72a0d68fd999a22695459d1624a59",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png",
+      "relativePath": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png",
+      "extension": "png",
+      "size": 98538,
+      "prettySize": "98.5 kB",
+      "modifiedTime": "2018-07-20T11:25:34.019Z",
+      "accessTime": "2018-07-20T11:44:32.676Z",
+      "changeTime": "2018-07-20T11:44:36.451Z",
+      "birthTime": "2018-07-20T11:25:33.612Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "base": "most_common.png",
+      "ext": ".png",
+      "name": "most_common",
+      "relativeDirectory": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8607999992,
+      "blocks": 200,
+      "atimeMs": 1532087072676.3928,
+      "mtimeMs": 1532085934018.977,
+      "ctimeMs": 1532087076450.629,
+      "birthtimeMs": 1532085933611.6958,
+      "atime": "2018-07-20T11:44:32.676Z",
+      "mtime": "2018-07-20T11:25:34.019Z",
+      "ctime": "2018-07-20T11:44:36.451Z",
+      "birthtime": "2018-07-20T11:25:33.612Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common.png absPath of file",
+      "internal": {
+        "contentDigest": "12e72a0d68fd999a22695459d1624a59",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "364ec2203e6a65ee25e2a31d7c8729ca",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png",
+      "relativePath": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png",
+      "extension": "png",
+      "size": 98758,
+      "prettySize": "98.8 kB",
+      "modifiedTime": "2018-07-20T11:30:09.593Z",
+      "accessTime": "2018-07-20T11:32:17.319Z",
+      "changeTime": "2018-07-20T11:44:39.283Z",
+      "birthTime": "2018-07-20T11:30:09.191Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "base": "most_common_lower.png",
+      "ext": ".png",
+      "name": "most_common_lower",
+      "relativeDirectory": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608000292,
+      "blocks": 200,
+      "atimeMs": 1532086337318.9612,
+      "mtimeMs": 1532086209593.4065,
+      "ctimeMs": 1532087079282.9172,
+      "birthtimeMs": 1532086209191.0903,
+      "atime": "2018-07-20T11:32:17.319Z",
+      "mtime": "2018-07-20T11:30:09.593Z",
+      "ctime": "2018-07-20T11:44:39.283Z",
+      "birthtime": "2018-07-20T11:30:09.191Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/most_common_lower.png absPath of file",
+      "internal": {
+        "contentDigest": "364ec2203e6a65ee25e2a31d7c8729ca",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
     "SitePage /a-toast-to-full-stack-developers/": {
@@ -7993,7 +8210,7 @@
           }
         }
       },
-      "updatedAt": 1531756924747,
+      "updatedAt": 1532087740112,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8002,7 +8219,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ba1977a055bf1af2e58e97fbedf4d065",
+        "contentDigest": "cf9a94ef795450d3a285d6d6627ce4ec",
         "owner": "internal-data-bridge"
       }
     },
@@ -8040,7 +8257,7 @@
           }
         }
       },
-      "updatedAt": 1531756924747,
+      "updatedAt": 1532087740112,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8049,7 +8266,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5aac4243394fad94d30a1a803585b53a",
+        "contentDigest": "061114a80cb2fca97f2370ccdb65660c",
         "owner": "internal-data-bridge"
       }
     },
@@ -8087,7 +8304,7 @@
           }
         }
       },
-      "updatedAt": 1531756924748,
+      "updatedAt": 1532087740113,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8096,7 +8313,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "99d5fa0219baf13d47af4b02d71f8610",
+        "contentDigest": "caa288b12ec07666ba4052038fb9f47f",
         "owner": "internal-data-bridge"
       }
     },
@@ -8134,7 +8351,7 @@
           }
         }
       },
-      "updatedAt": 1531756924748,
+      "updatedAt": 1532087740113,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8143,7 +8360,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "87ca75e38c8c05b674419afe47406955",
+        "contentDigest": "2e0d6bb5524c328c6104447a1f0219b3",
         "owner": "internal-data-bridge"
       }
     },
@@ -8181,7 +8398,7 @@
           }
         }
       },
-      "updatedAt": 1531756924749,
+      "updatedAt": 1532087740114,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8190,7 +8407,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c033dfb24fb5b3c72dc73252621f569c",
+        "contentDigest": "79a150b42006d02681bdd5782602a902",
         "owner": "internal-data-bridge"
       }
     },
@@ -8228,7 +8445,7 @@
           }
         }
       },
-      "updatedAt": 1531756924749,
+      "updatedAt": 1532087740114,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8237,7 +8454,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f03ec6c66edfe2351bdff53df8bff16b",
+        "contentDigest": "25e6586cd879efd886253fa6281b5723",
         "owner": "internal-data-bridge"
       }
     },
@@ -8275,7 +8492,7 @@
           }
         }
       },
-      "updatedAt": 1531756924750,
+      "updatedAt": 1532087740115,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8284,7 +8501,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ea55c2654183143222b0f2f0b13a2778",
+        "contentDigest": "fbb85373cdbc5f648e9025ed5f82b32a",
         "owner": "internal-data-bridge"
       }
     },
@@ -8322,7 +8539,7 @@
           }
         }
       },
-      "updatedAt": 1531756924750,
+      "updatedAt": 1532087740115,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8331,7 +8548,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2ef07cc743b65f9a44a9fb8bd3624d0a",
+        "contentDigest": "2faf98e47ac5d0d881f6f6f8986bf8b5",
         "owner": "internal-data-bridge"
       }
     },
@@ -8369,7 +8586,7 @@
           }
         }
       },
-      "updatedAt": 1531756924750,
+      "updatedAt": 1532087740115,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8378,7 +8595,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d287d3a1817961510415344f31a4a875",
+        "contentDigest": "c2dda1fbe2dc540b4a75f9c21bee3328",
         "owner": "internal-data-bridge"
       }
     },
@@ -8416,7 +8633,7 @@
           }
         }
       },
-      "updatedAt": 1531756924751,
+      "updatedAt": 1532087740116,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8425,7 +8642,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ca528ff6236677c5629089188f9e639e",
+        "contentDigest": "9d60b309cca3155bd04f7bdf615962ba",
         "owner": "internal-data-bridge"
       }
     },
@@ -8463,7 +8680,7 @@
           }
         }
       },
-      "updatedAt": 1531756924751,
+      "updatedAt": 1532087740116,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8472,7 +8689,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "68f2ea4858cfea557b926e75dc59eeae",
+        "contentDigest": "ce07d344c7459375a195004e8200f828",
         "owner": "internal-data-bridge"
       }
     },
@@ -8510,7 +8727,7 @@
           }
         }
       },
-      "updatedAt": 1531756924751,
+      "updatedAt": 1532087740117,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8519,7 +8736,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a46a86c410464de8d31f15ef01138abb",
+        "contentDigest": "4bfe7fd29a55b9998ccfd50a62fe5a9b",
         "owner": "internal-data-bridge"
       }
     },
@@ -8557,7 +8774,7 @@
           }
         }
       },
-      "updatedAt": 1531756924752,
+      "updatedAt": 1532087740117,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8566,7 +8783,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9db3e123906a3f6556cf70dd805888db",
+        "contentDigest": "d1c2b3c080bec3353a6966c95d514571",
         "owner": "internal-data-bridge"
       }
     },
@@ -8604,7 +8821,7 @@
           }
         }
       },
-      "updatedAt": 1531756924752,
+      "updatedAt": 1532087740118,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8613,7 +8830,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "60bc4a872304985b2546c3bebd8f3a16",
+        "contentDigest": "627319105e71e9a55e96994d20ea551d",
         "owner": "internal-data-bridge"
       }
     },
@@ -8651,7 +8868,7 @@
           }
         }
       },
-      "updatedAt": 1531756924752,
+      "updatedAt": 1532087740118,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8660,7 +8877,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "962391b8efbd7cde54add5a4f7862356",
+        "contentDigest": "3bf525b79071ca534f8ce028cdaa0cb5",
         "owner": "internal-data-bridge"
       }
     },
@@ -8698,7 +8915,7 @@
           }
         }
       },
-      "updatedAt": 1531756924753,
+      "updatedAt": 1532087740118,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8707,7 +8924,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ba6039a1509b04d71b6213c078173e3c",
+        "contentDigest": "c9621e503c00c04b9d277dc7eaff6a7b",
         "owner": "internal-data-bridge"
       }
     },
@@ -8745,7 +8962,7 @@
           }
         }
       },
-      "updatedAt": 1531756924753,
+      "updatedAt": 1532087740119,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8754,7 +8971,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6b36bed06ef67ec8c16c8519cf4ff8b5",
+        "contentDigest": "aaa14e4bde0b0aae56a30f825921eaa7",
         "owner": "internal-data-bridge"
       }
     },
@@ -8792,7 +9009,7 @@
           }
         }
       },
-      "updatedAt": 1531756924753,
+      "updatedAt": 1532087740119,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8801,7 +9018,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c6f22fce761c51fa7ece4b923f18c703",
+        "contentDigest": "e27271010778c437a1d06e2ec2819908",
         "owner": "internal-data-bridge"
       }
     },
@@ -8839,7 +9056,7 @@
           }
         }
       },
-      "updatedAt": 1531756924754,
+      "updatedAt": 1532087740120,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8848,7 +9065,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "784aab8993f14d9486046a5422debe98",
+        "contentDigest": "fabafe7b21f9892681d16e205d25425e",
         "owner": "internal-data-bridge"
       }
     },
@@ -8886,7 +9103,7 @@
           }
         }
       },
-      "updatedAt": 1531756924754,
+      "updatedAt": 1532087740120,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8895,7 +9112,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "463e4aba1049aba66454ef2822b94d56",
+        "contentDigest": "70cff9c137644d7cd1058ce415791162",
         "owner": "internal-data-bridge"
       }
     },
@@ -8933,7 +9150,7 @@
           }
         }
       },
-      "updatedAt": 1531756924755,
+      "updatedAt": 1532087740121,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8942,7 +9159,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b3946f0af343be285714c8f4537a0f61",
+        "contentDigest": "8f5838130a872267d0647eefbcd1f4fa",
         "owner": "internal-data-bridge"
       }
     },
@@ -8980,7 +9197,7 @@
           }
         }
       },
-      "updatedAt": 1531756924755,
+      "updatedAt": 1532087740121,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8989,7 +9206,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "eff77839aa0a8cadccf994770b31a5ff",
+        "contentDigest": "c1572a8017357879c7ada4051b5eb9c6",
         "owner": "internal-data-bridge"
       }
     },
@@ -9027,7 +9244,7 @@
           }
         }
       },
-      "updatedAt": 1531756924756,
+      "updatedAt": 1532087740122,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9036,7 +9253,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9e05a5e19506662534659f55a9a117d6",
+        "contentDigest": "c5305f1e991115ba94154b0228e03f77",
         "owner": "internal-data-bridge"
       }
     },
@@ -9074,7 +9291,7 @@
           }
         }
       },
-      "updatedAt": 1531756924756,
+      "updatedAt": 1532087740122,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9083,7 +9300,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a0411745b4b2c8017a7dc54867c5f528",
+        "contentDigest": "2f0317ee3852560c9b0995a8696c658f",
         "owner": "internal-data-bridge"
       }
     },
@@ -9108,9 +9325,20 @@
             "relativeLink": "/using-google-clouds-text-to-speech-machine-learning-api/"
           }
         },
-        "next": null
+        "next": {
+          "fields": {
+            "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+          },
+          "frontmatter": {
+            "date": "18 July, 2018",
+            "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+            "draft": false,
+            "link": "https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+            "relativeLink": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+          }
+        }
       },
-      "updatedAt": 1531756924757,
+      "updatedAt": 1532087740122,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9119,7 +9347,43 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c7667114ae057d0d684cf5b98a78252a",
+        "contentDigest": "2f51ec446b843d57164bbbbeda39dd1b",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/": {
+      "layout": "index",
+      "jsonName": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json",
+      "internalComponentName": "ComponentLedZeppelinDataAnalysisForLyricGenerationAndInspiration",
+      "path": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+        "prev": {
+          "fields": {
+            "slug": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+          },
+          "frontmatter": {
+            "date": "09 May, 2018",
+            "title": "Warn SAP Users of Locked Objects Then Kill Their Session",
+            "draft": false,
+            "link": "https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/",
+            "relativeLink": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+          }
+        },
+        "next": null
+      },
+      "updatedAt": 1532087740123,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d7aea573ec3c990fbc60cbc596384832",
         "owner": "internal-data-bridge"
       }
     },
@@ -9131,7 +9395,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1531756924793,
+      "updatedAt": 1532087523734,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -9140,7 +9404,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b3b7ff649095388722ad01d91e6d635c",
+        "contentDigest": "dff570707dee982cc070d4ee8375305b",
         "owner": "internal-data-bridge"
       }
     },
@@ -9152,7 +9416,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/johnny-birthday/index.js",
       "componentChunkName": "component---src-pages-johnny-birthday-index-js",
       "context": {},
-      "updatedAt": 1531756924802,
+      "updatedAt": 1532087523744,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/johnny-birthday/index.js",
@@ -9161,7 +9425,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f928de11e4309a891d9afdb7fa847874",
+        "contentDigest": "a0459b79be8fb469a5de5110f284c7e6",
         "owner": "internal-data-bridge"
       }
     },
@@ -9173,7 +9437,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
       "componentChunkName": "component---src-pages-market-news-feed-index-js",
       "context": {},
-      "updatedAt": 1531756924803,
+      "updatedAt": 1532087523744,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
@@ -9182,28 +9446,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "889d4faabe8b3bc1af191e472759720f",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /privacy-policy/": {
-      "layout": "index",
-      "jsonName": "privacy-policy.json",
-      "internalComponentName": "ComponentPrivacyPolicy",
-      "path": "/privacy-policy/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
-      "componentChunkName": "component---src-pages-privacy-policy-index-js",
-      "context": {},
-      "updatedAt": 1531756924803,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
-      "id": "SitePage /privacy-policy/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "9d464eabe80180c8d9eebc5b61c451f9",
+        "contentDigest": "3961af442128d64b0c7d7eadac3c522b",
         "owner": "internal-data-bridge"
       }
     },
@@ -9215,7 +9458,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
       "componentChunkName": "component---src-pages-movie-night-index-js",
       "context": {},
-      "updatedAt": 1531756924803,
+      "updatedAt": 1532087523745,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
@@ -9224,7 +9467,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "89d3437b2d5ca244d7f2517fafae5d54",
+        "contentDigest": "095471c6b3ee60507f831cd4f3dee3b3",
         "owner": "internal-data-bridge"
       }
     },
@@ -9236,7 +9479,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
       "componentChunkName": "component---src-pages-sec-filings-index-js",
       "context": {},
-      "updatedAt": 1531756924804,
+      "updatedAt": 1532087523745,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
@@ -9245,7 +9488,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "63f2e48e55f23bc134444271aa48e7ee",
+        "contentDigest": "a49d802152644f0933de717f13aebb0f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /privacy-policy/": {
+      "layout": "index",
+      "jsonName": "privacy-policy.json",
+      "internalComponentName": "ComponentPrivacyPolicy",
+      "path": "/privacy-policy/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
+      "componentChunkName": "component---src-pages-privacy-policy-index-js",
+      "context": {},
+      "updatedAt": 1532087523746,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
+      "id": "SitePage /privacy-policy/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "af4018f3fb4fa9eeb7f106d37a972d8d",
         "owner": "internal-data-bridge"
       }
     },
@@ -9257,7 +9521,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js",
       "componentChunkName": "component---src-pages-talk-shop-index-js",
       "context": {},
-      "updatedAt": 1531756924808,
+      "updatedAt": 1532087523750,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js",
@@ -9266,7 +9530,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b4cb22a0d0d1a042f724ebed8f9b8313",
+        "contentDigest": "50fbc8b9f72b7b90272a868c1cc44340",
         "owner": "internal-data-bridge"
       }
     }
@@ -9303,7 +9567,9 @@
         "/some-tasty-bash-profile-commands/",
         "/using-google-clouds-text-to-speech-machine-learning-api/",
         "/warn-sap-users-of-locked-objects-then-kill-their-session/",
-        "/"
+        "/",
+        "/led-zeppelin-and-data-analysis-for-lyric-generation-and-inspiration/",
+        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
         "/a-toast-to-full-stack-developers/"
@@ -9379,6 +9645,9 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/warn-sap-users-of-locked-objects-then-kill-their-session/index.md absPath of file >>> MarkdownRemark": [
         "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark": [
+        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
       ]
     },
     "connections": {
