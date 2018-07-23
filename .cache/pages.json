@@ -1,10 +1,10 @@
 [
     {
-        "componentChunkName": "component---cache-dev-404-page-js",
+        "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "dev-404-page.json",
-        "path": "/dev-404-page/"
+        "jsonName": "offline-plugin-app-shell-fallback.json",
+        "path": "/offline-plugin-app-shell-fallback/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -189,6 +189,27 @@
         "path": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "welp-i-did-it.json",
+        "path": "/welp-i-did-it/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -203,13 +224,6 @@
         "path": "/johnny-birthday/"
     },
     {
-        "componentChunkName": "component---src-pages-market-news-feed-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "market-news-feed.json",
-        "path": "/market-news-feed/"
-    },
-    {
         "componentChunkName": "component---src-pages-movie-night-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -217,11 +231,11 @@
         "path": "/movie-night/"
     },
     {
-        "componentChunkName": "component---src-pages-sec-filings-index-js",
+        "componentChunkName": "component---src-pages-market-news-feed-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sec-filings.json",
-        "path": "/sec-filings/"
+        "jsonName": "market-news-feed.json",
+        "path": "/market-news-feed/"
     },
     {
         "componentChunkName": "component---src-pages-privacy-policy-index-js",
@@ -229,6 +243,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "privacy-policy.json",
         "path": "/privacy-policy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-sec-filings-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sec-filings.json",
+        "path": "/sec-filings/"
     },
     {
         "componentChunkName": "component---src-pages-talk-shop-index-js",

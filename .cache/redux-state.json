@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "updatedAt": 1532087740084,
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f0e474e5bcc0b63d121535e15f9bf6d1",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -1608,16 +1598,14 @@
         "description": "A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.",
         "siteUrl": "https://chrisfrew.in"
       },
-      "port": "8000",
-      "host": "0.0.0.0",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-20T11:51:59.611Z",
+      "buildTime": "2018-07-23T11:17:53.194Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "aed00abbec37e23ca47673e9dae1b665",
+        "contentDigest": "0f02c01398153a1516bfb2db398f9a57",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1627,7 +1615,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fa272b40023a9edc4ca9aabee050fbc8",
+        "contentDigest": "30c490b6bce2c776a2c017e59fd83f73",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1635,11 +1623,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 1152,
-      "prettySize": "1.15 kB",
-      "modifiedTime": "2018-07-20T11:40:33.963Z",
-      "accessTime": "2018-07-20T11:52:03.102Z",
-      "changeTime": "2018-07-20T11:40:33.963Z",
+      "size": 1248,
+      "prettySize": "1.25 kB",
+      "modifiedTime": "2018-07-20T13:18:23.136Z",
+      "accessTime": "2018-07-23T11:17:56.587Z",
+      "changeTime": "2018-07-20T13:18:23.136Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -1649,20 +1637,20 @@
       "relativeDirectory": "..",
       "dev": 16777221,
       "mode": 16877,
-      "nlink": 36,
+      "nlink": 39,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 8593655514,
       "blocks": 0,
-      "atimeMs": 1532087523101.848,
-      "mtimeMs": 1532086833962.9446,
-      "ctimeMs": 1532086833962.9446,
+      "atimeMs": 1532344676586.947,
+      "mtimeMs": 1532092703135.7603,
+      "ctimeMs": 1532092703135.7603,
       "birthtimeMs": 1512989774840.9749,
-      "atime": "2018-07-20T11:52:03.102Z",
-      "mtime": "2018-07-20T11:40:33.963Z",
-      "ctime": "2018-07-20T11:40:33.963Z",
+      "atime": "2018-07-23T11:17:56.587Z",
+      "mtime": "2018-07-20T13:18:23.136Z",
+      "ctime": "2018-07-20T13:18:23.136Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers absPath of file": {
@@ -1670,7 +1658,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6d77b2323a79236ce1b1d8fa31e62ce0",
+        "contentDigest": "afd7ca07c75dfcfa81258b49e40033d9",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1681,7 +1669,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T13:26:11.622Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-13T12:01:12.564Z",
       "birthTime": "2017-12-12T13:26:03.823Z",
       "root": "/",
@@ -1699,11 +1687,11 @@
       "blksize": 4194304,
       "ino": 8593655515,
       "blocks": 0,
-      "atimeMs": 1532087523108.8975,
+      "atimeMs": 1532344676595.1772,
       "mtimeMs": 1513085171621.5022,
       "ctimeMs": 1513166472564.0645,
       "birthtimeMs": 1513085163822.7273,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-12T13:26:11.622Z",
       "ctime": "2017-12-13T12:01:12.564Z",
       "birthtime": "2017-12-12T13:26:03.823Z"
@@ -1713,7 +1701,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4bab0b4019df8af2903f04d0f44f8bfb",
+        "contentDigest": "52cef7dddf966a4958d2772e58375362",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1724,7 +1712,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-11T16:03:06.851Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-11T16:03:06.851Z",
       "birthTime": "2018-01-11T16:01:54.254Z",
       "root": "/",
@@ -1742,11 +1730,11 @@
       "blksize": 4194304,
       "ino": 8596136407,
       "blocks": 0,
-      "atimeMs": 1532087523108.9487,
+      "atimeMs": 1532344676595.2249,
       "mtimeMs": 1515686586850.6416,
       "ctimeMs": 1515686586850.6416,
       "birthtimeMs": 1515686514254.4714,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-11T16:03:06.851Z",
       "ctime": "2018-01-11T16:03:06.851Z",
       "birthtime": "2018-01-11T16:01:54.254Z"
@@ -1756,7 +1744,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6195b81bbc8fa936aaa650270dcedcf7",
+        "contentDigest": "8d112b3e238a54f35d50df8823065d0c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1767,7 +1755,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2017-12-21T10:46:38.735Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-21T10:46:38.735Z",
       "birthTime": "2017-12-21T10:38:28.659Z",
       "root": "/",
@@ -1785,11 +1773,11 @@
       "blksize": 4194304,
       "ino": 8594417973,
       "blocks": 0,
-      "atimeMs": 1532087523108.9617,
+      "atimeMs": 1532344676595.25,
       "mtimeMs": 1513853198734.5476,
       "ctimeMs": 1513853198734.5476,
       "birthtimeMs": 1513852708658.7917,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-21T10:46:38.735Z",
       "ctime": "2017-12-21T10:46:38.735Z",
       "birthtime": "2017-12-21T10:38:28.659Z"
@@ -1799,7 +1787,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cc53cbbe6882532dbca9c648db7922dc",
+        "contentDigest": "13754b0a3b80bb3eeae10f696de2ad52",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1810,7 +1798,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-01-04T12:03:04.754Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-04T12:03:04.754Z",
       "birthTime": "2017-12-20T19:30:32.625Z",
       "root": "/",
@@ -1828,11 +1816,11 @@
       "blksize": 4194304,
       "ino": 8594400835,
       "blocks": 0,
-      "atimeMs": 1532087523108.9753,
+      "atimeMs": 1532344676595.2634,
       "mtimeMs": 1515067384754.0571,
       "ctimeMs": 1515067384754.0571,
       "birthtimeMs": 1513798232625.445,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-04T12:03:04.754Z",
       "ctime": "2018-01-04T12:03:04.754Z",
       "birthtime": "2017-12-20T19:30:32.625Z"
@@ -1842,7 +1830,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2d3424f35b0279e4ffee3f131a1fbd3e",
+        "contentDigest": "44c95205d36cea8bdee76f07be2a4188",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1853,7 +1841,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-01-11T11:47:48.807Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-11T11:47:48.807Z",
       "birthTime": "2018-01-11T11:18:27.837Z",
       "root": "/",
@@ -1871,11 +1859,11 @@
       "blksize": 4194304,
       "ino": 8596129537,
       "blocks": 0,
-      "atimeMs": 1532087523108.9106,
+      "atimeMs": 1532344676595.237,
       "mtimeMs": 1515671268806.8662,
       "ctimeMs": 1515671268806.8662,
       "birthtimeMs": 1515669507836.9417,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-11T11:47:48.807Z",
       "ctime": "2018-01-11T11:47:48.807Z",
       "birthtime": "2018-01-11T11:18:27.837Z"
@@ -1885,7 +1873,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cd9195108bd4bbc7feb9a6d9457d5203",
+        "contentDigest": "15057f0e2ba6d28d175fcc388a4001ee",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1896,7 +1884,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2018-04-07T17:41:08.850Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-04-07T17:41:08.850Z",
       "birthTime": "2018-04-07T15:59:19.305Z",
       "root": "/",
@@ -1914,11 +1902,11 @@
       "blksize": 4194304,
       "ino": 8602609341,
       "blocks": 0,
-      "atimeMs": 1532087523108.9888,
+      "atimeMs": 1532344676595.2764,
       "mtimeMs": 1523122868849.758,
       "ctimeMs": 1523122868849.758,
       "birthtimeMs": 1523116759304.8486,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-04-07T17:41:08.850Z",
       "ctime": "2018-04-07T17:41:08.850Z",
       "birthtime": "2018-04-07T15:59:19.305Z"
@@ -1928,7 +1916,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "50d47f7ca0ed3dafa14c15241c7a4cfd",
+        "contentDigest": "23200cceadc8e058caccbc289c38f367",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1939,7 +1927,7 @@
       "size": 704,
       "prettySize": "704 B",
       "modifiedTime": "2018-07-15T12:32:32.532Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-07-15T12:32:32.532Z",
       "birthTime": "2018-06-02T17:31:34.097Z",
       "root": "/",
@@ -1957,11 +1945,11 @@
       "blksize": 4194304,
       "ino": 8605205191,
       "blocks": 0,
-      "atimeMs": 1532087523109.041,
+      "atimeMs": 1532344676595.3408,
       "mtimeMs": 1531657952532.4646,
       "ctimeMs": 1531657952532.4646,
       "birthtimeMs": 1527960694096.5046,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-07-15T12:32:32.532Z",
       "ctime": "2018-07-15T12:32:32.532Z",
       "birthtime": "2018-06-02T17:31:34.097Z"
@@ -1971,7 +1959,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "57e3a3811e721a21109b8fe42ffa4730",
+        "contentDigest": "1ca592c44133716999b22dc0499fcb45",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1982,7 +1970,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-07T14:31:18.629Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-07-07T14:31:18.629Z",
       "birthTime": "2018-07-07T14:31:11.407Z",
       "root": "/",
@@ -2000,11 +1988,11 @@
       "blksize": 4194304,
       "ino": 8607028725,
       "blocks": 0,
-      "atimeMs": 1532087523109.028,
+      "atimeMs": 1532344676595.2886,
       "mtimeMs": 1530973878629.0906,
       "ctimeMs": 1530973878629.0906,
       "birthtimeMs": 1530973871407.2146,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-07-07T14:31:18.629Z",
       "ctime": "2018-07-07T14:31:18.629Z",
       "birthtime": "2018-07-07T14:31:11.407Z"
@@ -2014,7 +2002,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3bb4c43ed0fa3d05480593c057abd795",
+        "contentDigest": "f58c4a5f709448c26f06876d427da229",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2025,7 +2013,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T15:23:27.551Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-22T21:56:56.856Z",
       "birthTime": "2017-12-22T15:23:17.407Z",
       "root": "/",
@@ -2043,11 +2031,11 @@
       "blksize": 4194304,
       "ino": 8594515919,
       "blocks": 0,
-      "atimeMs": 1532087523109.0017,
+      "atimeMs": 1532344676595.3018,
       "mtimeMs": 1513956207551.1716,
       "ctimeMs": 1513979816855.5474,
       "birthtimeMs": 1513956197407.4167,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-22T15:23:27.551Z",
       "ctime": "2017-12-22T21:56:56.856Z",
       "birthtime": "2017-12-22T15:23:17.407Z"
@@ -2057,7 +2045,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5793eebc8d24c292d8cfaed94229a6f2",
+        "contentDigest": "c53aee6c2f5a592c7f0b1dbeade805eb",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2068,7 +2056,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-03T17:29:45.419Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-03T17:29:45.419Z",
       "birthTime": "2018-01-03T17:29:37.901Z",
       "root": "/",
@@ -2086,11 +2074,11 @@
       "blksize": 4194304,
       "ino": 8595818353,
       "blocks": 0,
-      "atimeMs": 1532087523109.015,
+      "atimeMs": 1532344676595.3154,
       "mtimeMs": 1515000585418.958,
       "ctimeMs": 1515000585418.958,
       "birthtimeMs": 1515000577901.0742,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-03T17:29:45.419Z",
       "ctime": "2018-01-03T17:29:45.419Z",
       "birthtime": "2018-01-03T17:29:37.901Z"
@@ -2100,7 +2088,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d8113f5e00209cdadee8185d0151d505",
+        "contentDigest": "da0bf33a383893624386a45ba05db8df",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2111,7 +2099,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-22T12:36:27.716Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-22T12:36:27.716Z",
       "birthTime": "2017-12-22T12:36:22.464Z",
       "root": "/",
@@ -2129,11 +2117,11 @@
       "blksize": 4194304,
       "ino": 8594503279,
       "blocks": 0,
-      "atimeMs": 1532087523109.054,
+      "atimeMs": 1532344676595.3533,
       "mtimeMs": 1513946187715.9583,
       "ctimeMs": 1513946187715.9583,
       "birthtimeMs": 1513946182463.8154,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-22T12:36:27.716Z",
       "ctime": "2017-12-22T12:36:27.716Z",
       "birthtime": "2017-12-22T12:36:22.464Z"
@@ -2143,7 +2131,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8364e6427483a3e8f7b6b4a47c19e234",
+        "contentDigest": "f2ec3d1af24f14871d335f97c97aa5dd",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2154,7 +2142,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T16:03:32.631Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-13T12:01:24.332Z",
       "birthTime": "2017-12-12T16:03:26.022Z",
       "root": "/",
@@ -2172,11 +2160,11 @@
       "blksize": 4194304,
       "ino": 8593655524,
       "blocks": 0,
-      "atimeMs": 1532087523109.067,
+      "atimeMs": 1532344676595.3281,
       "mtimeMs": 1513094612631.4026,
       "ctimeMs": 1513166484332.0156,
       "birthtimeMs": 1513094606022.0178,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-12T16:03:32.631Z",
       "ctime": "2017-12-13T12:01:24.332Z",
       "birthtime": "2017-12-12T16:03:26.022Z"
@@ -2186,7 +2174,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "53080d16b918171ec1f771a765d2c68d",
+        "contentDigest": "0a38676a37b43298efc16073c1b29a81",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2197,7 +2185,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-05-15T11:07:29.859Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-05-15T11:07:29.859Z",
       "birthTime": "2018-05-10T10:33:47.718Z",
       "root": "/",
@@ -2215,11 +2203,11 @@
       "blksize": 4194304,
       "ino": 8603785351,
       "blocks": 0,
-      "atimeMs": 1532087523109.1343,
+      "atimeMs": 1532344676595.367,
       "mtimeMs": 1526382449858.6301,
       "ctimeMs": 1526382449858.6301,
       "birthtimeMs": 1525948427717.8652,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-05-15T11:07:29.859Z",
       "ctime": "2018-05-15T11:07:29.859Z",
       "birthtime": "2018-05-10T10:33:47.718Z"
@@ -2229,7 +2217,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dc713d93bb1d282172d9e7b6c93365c8",
+        "contentDigest": "94ed765210bc91c0fa1253dcfdc6dc14",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2240,7 +2228,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-10T13:57:15.395Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-05-10T13:57:15.395Z",
       "birthTime": "2018-05-10T13:57:08.500Z",
       "root": "/",
@@ -2258,11 +2246,11 @@
       "blksize": 4194304,
       "ino": 8603794471,
       "blocks": 0,
-      "atimeMs": 1532087523109.0918,
+      "atimeMs": 1532344676595.38,
       "mtimeMs": 1525960635395.2844,
       "ctimeMs": 1525960635395.2844,
       "birthtimeMs": 1525960628500.1267,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-05-10T13:57:15.395Z",
       "ctime": "2018-05-10T13:57:15.395Z",
       "birthtime": "2018-05-10T13:57:08.500Z"
@@ -2272,7 +2260,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "64a700adecff3e82bcd4787f5d42c599",
+        "contentDigest": "849c33e14228601e728cb310b287e8d3",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2283,7 +2271,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:25:30.051Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-13T12:01:05.748Z",
       "birthTime": "2017-12-11T10:56:14.841Z",
       "root": "/",
@@ -2301,11 +2289,11 @@
       "blksize": 4194304,
       "ino": 8593655517,
       "blocks": 0,
-      "atimeMs": 1532087523109.1025,
+      "atimeMs": 1532344676595.4045,
       "mtimeMs": 1513088730050.9492,
       "ctimeMs": 1513166465748.2595,
       "birthtimeMs": 1512989774841.032,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-12T14:25:30.051Z",
       "ctime": "2017-12-13T12:01:05.748Z",
       "birthtime": "2017-12-11T10:56:14.841Z"
@@ -2315,7 +2303,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6e042d62fe4cfffe6303dbbf007ae8ff",
+        "contentDigest": "39af11d1c2a2ff479fde71572efd2a8d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2326,7 +2314,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-19T15:13:13.357Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2017-12-19T15:13:13.357Z",
       "birthTime": "2017-12-19T15:13:08.602Z",
       "root": "/",
@@ -2344,11 +2332,11 @@
       "blksize": 4194304,
       "ino": 8594229653,
       "blocks": 0,
-      "atimeMs": 1532087523109.121,
+      "atimeMs": 1532344676595.4639,
       "mtimeMs": 1513696393357.085,
       "ctimeMs": 1513696393357.085,
       "birthtimeMs": 1513696388602.1982,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2017-12-19T15:13:13.357Z",
       "ctime": "2017-12-19T15:13:13.357Z",
       "birthtime": "2017-12-19T15:13:08.602Z"
@@ -2358,7 +2346,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "71e4871f710951077ed037a46583048a",
+        "contentDigest": "338a590fbcb9a9d6867f628781fa785e",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2369,7 +2357,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T16:31:47.195Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-17T16:31:47.195Z",
       "birthTime": "2018-01-17T16:31:36.460Z",
       "root": "/",
@@ -2387,11 +2375,11 @@
       "blksize": 4194304,
       "ino": 8596482218,
       "blocks": 0,
-      "atimeMs": 1532087523109.1475,
+      "atimeMs": 1532344676595.4312,
       "mtimeMs": 1516206707195.2708,
       "ctimeMs": 1516206707195.2708,
       "birthtimeMs": 1516206696460.457,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-17T16:31:47.195Z",
       "ctime": "2018-01-17T16:31:47.195Z",
       "birthtime": "2018-01-17T16:31:36.460Z"
@@ -2401,7 +2389,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8d9c8d223391fcfc18b365109882bef5",
+        "contentDigest": "d0ca78153a9021809b9525f7acb397bf",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2412,7 +2400,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T15:52:46.268Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-04-07T15:52:46.268Z",
       "birthTime": "2018-04-07T15:52:39.855Z",
       "root": "/",
@@ -2430,11 +2418,11 @@
       "blksize": 4194304,
       "ino": 8602609104,
       "blocks": 0,
-      "atimeMs": 1532087523109.1604,
+      "atimeMs": 1532344676595.4438,
       "mtimeMs": 1523116366267.7776,
       "ctimeMs": 1523116366267.7776,
       "birthtimeMs": 1523116359855.1514,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-04-07T15:52:46.268Z",
       "ctime": "2018-04-07T15:52:46.268Z",
       "birthtime": "2018-04-07T15:52:39.855Z"
@@ -2444,7 +2432,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "62b20c31da38573a47217baaac5a163c",
+        "contentDigest": "06a3405c6595d47fd9b09824f97d776b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2455,7 +2443,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-03-01T06:16:06.999Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-03-01T06:16:06.999Z",
       "birthTime": "2018-03-01T06:15:48.748Z",
       "root": "/",
@@ -2473,11 +2461,11 @@
       "blksize": 4194304,
       "ino": 8599787247,
       "blocks": 0,
-      "atimeMs": 1532087523109.1768,
+      "atimeMs": 1532344676595.4758,
       "mtimeMs": 1519884966998.8735,
       "ctimeMs": 1519884966998.8735,
       "birthtimeMs": 1519884948747.99,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-03-01T06:16:06.999Z",
       "ctime": "2018-03-01T06:16:06.999Z",
       "birthtime": "2018-03-01T06:15:48.748Z"
@@ -2487,7 +2475,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a5637dcdf09cc77b980ad9a597aafb3c",
+        "contentDigest": "5c464d98013803f61272d383de7c5534",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2498,7 +2486,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-06-25T18:55:56.767Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-06-25T18:55:56.767Z",
       "birthTime": "2018-06-25T18:52:35.125Z",
       "root": "/",
@@ -2516,11 +2504,11 @@
       "blksize": 4194304,
       "ino": 8606623285,
       "blocks": 0,
-      "atimeMs": 1532087523109.2039,
+      "atimeMs": 1532344676595.5063,
       "mtimeMs": 1529952956766.98,
       "ctimeMs": 1529952956766.98,
       "birthtimeMs": 1529952755124.7812,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-06-25T18:55:56.767Z",
       "ctime": "2018-06-25T18:55:56.767Z",
       "birthtime": "2018-06-25T18:52:35.125Z"
@@ -2530,7 +2518,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ad97c2000118345917a7c5de7578d0d3",
+        "contentDigest": "2bc4ffd6666cb8f7c5c76758044102c6",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2541,7 +2529,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-01-17T17:02:27.730Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
       "changeTime": "2018-01-17T17:02:27.730Z",
       "birthTime": "2018-01-17T17:02:18.586Z",
       "root": "/",
@@ -2559,11 +2547,11 @@
       "blksize": 4194304,
       "ino": 8596484302,
       "blocks": 0,
-      "atimeMs": 1532087523109.1907,
+      "atimeMs": 1532344676595.4883,
       "mtimeMs": 1516208547730.4324,
       "ctimeMs": 1516208547730.4324,
       "birthtimeMs": 1516208538586.4346,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.595Z",
       "mtime": "2018-01-17T17:02:27.730Z",
       "ctime": "2018-01-17T17:02:27.730Z",
       "birthtime": "2018-01-17T17:02:18.586Z"
@@ -2573,7 +2561,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5bc5bceb77bc540a1e08b4830c04f07d",
+        "contentDigest": "99fe4547c247503e14f7543a85e41d83",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2584,7 +2572,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-03-17T17:29:41.508Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-03-17T17:29:41.508Z",
       "birthTime": "2017-12-18T18:06:15.725Z",
       "root": "/",
@@ -2602,11 +2590,11 @@
       "blksize": 4194304,
       "ino": 8594168513,
       "blocks": 0,
-      "atimeMs": 1532087523109.2168,
+      "atimeMs": 1532344676595.519,
       "mtimeMs": 1521307781508.2327,
       "ctimeMs": 1521307781508.2327,
       "birthtimeMs": 1513620375724.5984,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-03-17T17:29:41.508Z",
       "ctime": "2018-03-17T17:29:41.508Z",
       "birthtime": "2017-12-18T18:06:15.725Z"
@@ -2616,7 +2604,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5cd45b0b6b13d9759380ee62fd335a4d",
+        "contentDigest": "4f2c9ac8914dafe9992ab4d3505a24de",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2627,7 +2615,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-07-14T09:49:05.452Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-07-14T09:49:05.452Z",
       "birthTime": "2018-06-17T14:37:07.008Z",
       "root": "/",
@@ -2645,11 +2633,11 @@
       "blksize": 4194304,
       "ino": 8606215752,
       "blocks": 0,
-      "atimeMs": 1532087523109.2434,
+      "atimeMs": 1532344676595.5317,
       "mtimeMs": 1531561745451.6052,
       "ctimeMs": 1531561745451.6052,
       "birthtimeMs": 1529246227008.3582,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-07-14T09:49:05.452Z",
       "ctime": "2018-07-14T09:49:05.452Z",
       "birthtime": "2018-06-17T14:37:07.008Z"
@@ -2659,7 +2647,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e469694dad1cd7a76a3c467a96c5f4db",
+        "contentDigest": "ddcdf77c7e1d04064d266d269b99c1e3",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2670,7 +2658,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T20:48:19.532Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-05-15T20:48:19.532Z",
       "birthTime": "2018-05-11T10:24:28.525Z",
       "root": "/",
@@ -2688,11 +2676,11 @@
       "blksize": 4194304,
       "ino": 8603808666,
       "blocks": 0,
-      "atimeMs": 1532087523109.2563,
+      "atimeMs": 1532344676595.5442,
       "mtimeMs": 1526417299532.3975,
       "ctimeMs": 1526417299532.3975,
       "birthtimeMs": 1526034268524.7666,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-05-15T20:48:19.532Z",
       "ctime": "2018-05-15T20:48:19.532Z",
       "birthtime": "2018-05-11T10:24:28.525Z"
@@ -2702,7 +2690,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c04a2ed48d76d4d3fbd0b4ba96760079",
+        "contentDigest": "95979e16411c2c7ace20a5aee9cd548a",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2713,7 +2701,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-01T19:08:46.268Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-07-01T19:08:46.268Z",
       "birthTime": "2018-07-01T19:08:39.104Z",
       "root": "/",
@@ -2731,11 +2719,11 @@
       "blksize": 4194304,
       "ino": 8606811493,
       "blocks": 0,
-      "atimeMs": 1532087523109.269,
+      "atimeMs": 1532344676595.5566,
       "mtimeMs": 1530472126267.642,
       "ctimeMs": 1530472126267.642,
       "birthtimeMs": 1530472119103.984,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-07-01T19:08:46.268Z",
       "ctime": "2018-07-01T19:08:46.268Z",
       "birthtime": "2018-07-01T19:08:39.104Z"
@@ -2745,7 +2733,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6417c3d23d7b48f0d03a3507136ba319",
+        "contentDigest": "2c8956621d9ca66c856cc2d45ae0a181",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2756,7 +2744,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-05-15T19:48:41.380Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-05-15T19:48:41.380Z",
       "birthTime": "2018-05-15T19:48:33.486Z",
       "root": "/",
@@ -2774,11 +2762,11 @@
       "blksize": 4194304,
       "ino": 8604270631,
       "blocks": 0,
-      "atimeMs": 1532087523109.3215,
+      "atimeMs": 1532344676595.582,
       "mtimeMs": 1526413721379.8489,
       "ctimeMs": 1526413721379.8489,
       "birthtimeMs": 1526413713485.7114,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-05-15T19:48:41.380Z",
       "ctime": "2018-05-15T19:48:41.380Z",
       "birthtime": "2018-05-15T19:48:33.486Z"
@@ -2788,7 +2776,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6ef76ab83097b3a00c1f8c38d18baf35",
+        "contentDigest": "4dc3e3dccc90763cbb2a6e554f19c7ad",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2799,7 +2787,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2017-12-12T14:28:13.294Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2017-12-13T12:01:18.876Z",
       "birthTime": "2017-12-12T14:28:07.573Z",
       "root": "/",
@@ -2817,11 +2805,11 @@
       "blksize": 4194304,
       "ino": 8593655519,
       "blocks": 0,
-      "atimeMs": 1532087523109.2827,
+      "atimeMs": 1532344676595.5952,
       "mtimeMs": 1513088893293.6396,
       "ctimeMs": 1513166478875.7551,
       "birthtimeMs": 1513088887573.0825,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2017-12-12T14:28:13.294Z",
       "ctime": "2017-12-13T12:01:18.876Z",
       "birthtime": "2017-12-12T14:28:07.573Z"
@@ -2831,7 +2819,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f14b7505e25c46ff4a7db4148c4232b2",
+        "contentDigest": "d20d92c9bbe6b4040f010683c3641a95",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2842,7 +2830,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-07T17:48:48.349Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-04-07T17:48:48.349Z",
       "birthTime": "2018-04-07T17:48:39.168Z",
       "root": "/",
@@ -2860,11 +2848,11 @@
       "blksize": 4194304,
       "ino": 8602616148,
       "blocks": 0,
-      "atimeMs": 1532087523109.2957,
+      "atimeMs": 1532344676595.6077,
       "mtimeMs": 1523123328348.7495,
       "ctimeMs": 1523123328348.7495,
       "birthtimeMs": 1523123319168.0408,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-04-07T17:48:48.349Z",
       "ctime": "2018-04-07T17:48:48.349Z",
       "birthtime": "2018-04-07T17:48:39.168Z"
@@ -2874,7 +2862,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ee521816bc05bac42faa9a7784c00f29",
+        "contentDigest": "a94fc2c19e31bc95afd60266bb2b4310",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2885,7 +2873,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-07-01T19:36:55.592Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-07-01T19:36:55.592Z",
       "birthTime": "2018-07-01T19:36:49.176Z",
       "root": "/",
@@ -2903,11 +2891,11 @@
       "blksize": 4194304,
       "ino": 8606813979,
       "blocks": 0,
-      "atimeMs": 1532087523109.3086,
+      "atimeMs": 1532344676595.6335,
       "mtimeMs": 1530473815592.158,
       "ctimeMs": 1530473815592.158,
       "birthtimeMs": 1530473809176.331,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-07-01T19:36:55.592Z",
       "ctime": "2018-07-01T19:36:55.592Z",
       "birthtime": "2018-07-01T19:36:49.176Z"
@@ -2917,7 +2905,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1b43ae34f7aeaf645fbdd84d79008d80",
+        "contentDigest": "2739ff894ae48bf8de88ae5a5ca80096",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2928,7 +2916,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-04-14T12:54:05.969Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-04-14T12:54:05.969Z",
       "birthTime": "2018-04-14T12:53:24.860Z",
       "root": "/",
@@ -2946,11 +2934,11 @@
       "blksize": 4194304,
       "ino": 8602988643,
       "blocks": 0,
-      "atimeMs": 1532087523109.4277,
+      "atimeMs": 1532344676595.6208,
       "mtimeMs": 1523710445969.4082,
       "ctimeMs": 1523710445969.4082,
       "birthtimeMs": 1523710404859.8237,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-04-14T12:54:05.969Z",
       "ctime": "2018-04-14T12:54:05.969Z",
       "birthtime": "2018-04-14T12:53:24.860Z"
@@ -2960,7 +2948,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5d0fe6e70274a8d50d5a650a55c37364",
+        "contentDigest": "1c2ac312927dbd6ffd043866c3b5572c",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2971,7 +2959,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-05-10T12:48:47.593Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-05-10T13:24:15.745Z",
       "birthTime": "2018-01-15T07:23:04.154Z",
       "root": "/",
@@ -2989,11 +2977,11 @@
       "blksize": 4194304,
       "ino": 8596340303,
       "blocks": 0,
-      "atimeMs": 1532087523109.4446,
+      "atimeMs": 1532344676595.7073,
       "mtimeMs": 1525956527593.0906,
       "ctimeMs": 1525958655744.636,
       "birthtimeMs": 1516000984154.256,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-05-10T12:48:47.593Z",
       "ctime": "2018-05-10T13:24:15.745Z",
       "birthtime": "2018-01-15T07:23:04.154Z"
@@ -4371,7 +4359,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "524a3bc76250ff7955afb5a72bda7119",
+        "contentDigest": "b2af4347d2556137f35e8087fd617199",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -4380,11 +4368,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md",
       "relativePath": "fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md",
       "extension": "md",
-      "size": 2425,
-      "prettySize": "2.42 kB",
-      "modifiedTime": "2018-06-01T17:42:25.871Z",
-      "accessTime": "2018-07-14T08:45:57.210Z",
-      "changeTime": "2018-06-01T17:42:25.871Z",
+      "size": 2882,
+      "prettySize": "2.88 kB",
+      "modifiedTime": "2018-07-20T13:40:08.784Z",
+      "accessTime": "2018-07-20T13:40:32.797Z",
+      "changeTime": "2018-07-20T13:40:08.784Z",
       "birthTime": "2018-05-10T10:34:00.126Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process",
@@ -4401,13 +4389,13 @@
       "blksize": 4194304,
       "ino": 8603785358,
       "blocks": 8,
-      "atimeMs": 1531557957209.968,
-      "mtimeMs": 1527874945871.1748,
-      "ctimeMs": 1527874945871.1748,
+      "atimeMs": 1532094032797.1238,
+      "mtimeMs": 1532094008783.91,
+      "ctimeMs": 1532094008783.91,
       "birthtimeMs": 1525948440125.591,
-      "atime": "2018-07-14T08:45:57.210Z",
-      "mtime": "2018-06-01T17:42:25.871Z",
-      "ctime": "2018-06-01T17:42:25.871Z",
+      "atime": "2018-07-20T13:40:32.797Z",
+      "mtime": "2018-07-20T13:40:08.784Z",
+      "ctime": "2018-07-20T13:40:08.784Z",
       "birthtime": "2018-05-10T10:34:00.126Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/index.md absPath of file": {
@@ -6146,8 +6134,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process\ndate: \"2018-05-10\"\ndraft: false\n---\n\n# Links to All Parts of the Process\n\nBefore I get into the description, you may be here just to get the links. Well, scroll no further:\n\n- [Part 2 of ???: Building a Node.js Server Monitor](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/)\n- Part 3 of ???: Building a Site Differential Sensing Twitter Bot (not yet published)\n- Part 4 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report) (not yet published)\n- Part 5 of ???: Building a central webhook subdomain on (chrisfrew.in)[https://chrisfrew.in] to catch external events (GitHub, Bitbucket, push notifications)\n- (more coming soon)\n\n# Automation To The Moon 🚀\n\nAs an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.\n\n# Current Full Stack Map (Will Change As I update it!)\n\nThe current stack of my suite of applications and sites looks as follows (sorry, you're going to have to zoom in, but it's an SVG, so no loss!):\n\n![The Chrisfrew.in Productions Full Stack Map](full-stack-map.svg)\n\nNote that not all of these boxes are fully productive and live yet, and there are many more projects that haven't even made the map yet!\n\n# Improvements and Roadmap\n\n- Near future (before end of June) A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well, at least shared across Chrisfrew.in Productions\n- Mid to late summer: most paper based business processesed fully automated\n- Before New Year 2018: Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it \"knows\" to repair itself, THEN it would finally send me an email\n\nYes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:\n\n![Yeah, that cool ship.](passengers-ship.gif)\n",
-        "contentDigest": "8bf85c30fc765dea099127385b6dd5c9",
+        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process\ndate: \"2018-05-10\"\ndraft: false\n---\n\n# Links to All Parts of the Process\n\nBefore I get into the description, you may be here just to get the links. Well, scroll no further:\n\n- Part 1 of ???: This post. 😂\n- [Part 2 of ???: Building a Node.js Server Monitor](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/)\n- [Part 3 of ???: Building a central webhook subdomain on (webhooks.chrisfrew.in)[https://webhooks.chrisfrew.in] to catch external events (GitHub, Bitbucket, push notifications)](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/)\n- [Part 4 of ???: Building a Slack Bot to create a human friendly interface for all those notifications from part 3](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/)\n- Part 5 of ???: Building a Site Differential Sensing Twitter Bot (in the works, not yet published)\n- Part 6 of ???: Building a Central Logging System\n- Part 6 of ???: Building a JARVIS like Raspberry Pi (Home Automation, News, Chrisfrew.in Productions Report) (also tidbits working, not yet published)\n\n- ??? (more coming soon)\n\n# Automation To The Moon 🚀\n\nAs an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.\n\n# Current Full Stack Map (Will Change As I update it!)\n\nThe current stack of my suite of applications and sites looks as follows (sorry, you're going to have to zoom in, but it's an SVG, so no loss!):\n\n![The Chrisfrew.in Productions Full Stack Map](full-stack-map.svg)\n\nNote that not all of these boxes are fully productive and live yet, and there are many more projects that haven't even made the map yet!\n\n# Improvements and Roadmap\n\n- Near future (before end of June) A global log class that creates logs of activity and errors across all sites. Such a class could be used in my Twitter bot as well, at least shared across Chrisfrew.in Productions\n- Mid to late summer: most paper based business processesed fully automated\n- Before New Year 2018: Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it \"knows\" to repair itself, THEN it would finally send me an email\n\nYes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:\n\n![Yeah, that cool ship.](passengers-ship.gif)\n",
+        "contentDigest": "b63bd0cafb40b31a54b32a95fab86fe2",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -7966,7 +7954,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e009b3e51ebe41bc756ac775fa6e14bc",
+        "contentDigest": "d36fd51f64b46fb69a8702993e8d2528",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -7977,7 +7965,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-07-20T11:44:39.283Z",
-      "accessTime": "2018-07-20T11:52:03.109Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
       "changeTime": "2018-07-20T11:44:39.283Z",
       "birthTime": "2018-07-18T16:44:46.885Z",
       "root": "/",
@@ -7995,11 +7983,11 @@
       "blksize": 4194304,
       "ino": 8607951503,
       "blocks": 0,
-      "atimeMs": 1532087523109.2302,
+      "atimeMs": 1532344676595.5696,
       "mtimeMs": 1532087079282.9172,
       "ctimeMs": 1532087079282.9172,
       "birthtimeMs": 1531932286884.8716,
-      "atime": "2018-07-20T11:52:03.109Z",
+      "atime": "2018-07-23T11:17:56.596Z",
       "mtime": "2018-07-20T11:44:39.283Z",
       "ctime": "2018-07-20T11:44:39.283Z",
       "birthtime": "2018-07-18T16:44:46.885Z"
@@ -8011,7 +7999,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dbdfb30274070f3b81b44e1ec211596a",
+        "contentDigest": "57ee91c52dfe71f51f801a70d8575d96",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -8020,11 +8008,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md",
       "relativePath": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md",
       "extension": "md",
-      "size": 16144,
-      "prettySize": "16.1 kB",
-      "modifiedTime": "2018-07-20T11:55:39.669Z",
-      "accessTime": "2018-07-20T11:55:39.879Z",
-      "changeTime": "2018-07-20T11:55:39.669Z",
+      "size": 16244,
+      "prettySize": "16.2 kB",
+      "modifiedTime": "2018-07-23T05:31:58.084Z",
+      "accessTime": "2018-07-23T05:31:58.087Z",
+      "changeTime": "2018-07-23T05:31:58.084Z",
       "birthTime": "2018-07-18T16:44:52.672Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration",
@@ -8041,13 +8029,13 @@
       "blksize": 4194304,
       "ino": 8607951513,
       "blocks": 32,
-      "atimeMs": 1532087739879.3542,
-      "mtimeMs": 1532087739668.511,
-      "ctimeMs": 1532087739668.511,
+      "atimeMs": 1532323918086.555,
+      "mtimeMs": 1532323918083.504,
+      "ctimeMs": 1532323918083.504,
       "birthtimeMs": 1531932292671.9312,
-      "atime": "2018-07-20T11:55:39.879Z",
-      "mtime": "2018-07-20T11:55:39.669Z",
-      "ctime": "2018-07-20T11:55:39.669Z",
+      "atime": "2018-07-23T05:31:58.087Z",
+      "mtime": "2018-07-23T05:31:58.084Z",
+      "ctime": "2018-07-23T05:31:58.084Z",
       "birthtime": "2018-07-18T16:44:52.672Z"
     },
     "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark": {
@@ -8055,8 +8043,8 @@
       "children": [],
       "parent": "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file",
       "internal": {
-        "content": "---\ntitle: Led Zeppelin Data Analysis for Lyric Generation and Inspiration\ndate: \"2018-07-18\"\ndraft: false\n---\n\n## Inspiration and Motivation\n\nI've been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I've even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so... _zepplin-ey_ 😄\n\n## Important: I'm Lazy.\n\nYep, if anyone out there has been following along in my blogging adventures, you'll know that I'm lazy. Anything that can be automated, I'm going to try to automate it! (Or in the very least, partially automate it or find a tool to use to make my life easier.) Actually, the entire concept of this post reflects my laziness: I'm willing to make a tool that generates lyrics _for_ me before I visit my buddy this summer as we prepare to write an EP together! (Yikes! - I'll let you know how _that_ goes!)\n\n## Getting the List of Song Names\n\nThere's this neat tool that I found that extracts lists from Wikipedia pages: http://wikitable2csv.ggor.de/, built by Gregor Weichbrodt. Nice one, Gregor! And... (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a \"List of songs recorded by Led Zeppelin\" page! https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin\n\nThrow that into Gregor's tool, and you've got your .csv data, which with 5 seconds work with Sublime text, becomes our song list:\n\n```python\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n```\n\n## Getting Lyrics for Each Song\n\nSo great, we've got our list of songs in Python syntax. We need the actual _lyrics_ now. And yes, I'm going to continue this post's laziness theme! I could go to Google, copy, and paste song lyrics for each of those Led Zeppelin songs, but hey, zep has over 100 songs! No way I'm that un-lazy. Let's automate it.\n\nLuckily, there is yet _another_ tool that can help us! Enter *figurative drum roll please...* 🥁🥁🥁 LyricWikia, written by enricobacis on GitHub: https://github.com/enricobacis/lyricwikia (I mean, c'mon, the example in the README is even Led Zeppelin's Stairway to Heaven!)\n\nSo, we're basically done. We loop over our songs and write the retrieved lyrics to their own file. We are also going to write a 'global' lyrics file - simply all the lyrics strings concatenated together to a file called `input.txt` --> don't worry; I'm not crazy, this will be important later. Data retrieval code is done and looks like this:\n\n`get_lyrics.py`\n```python\nimport lyricwikia\n\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n\nfor sSongName in lSongNames:\n    try:\n        sLyrics = lyricwikia.get_lyrics('Led Zeppelin', sSongName)\n    except:\n        print \"Lyrics not found for \" + sSongName\n    else:\n        sFileName = sSongName.replace(\"'\", \"\") # will cause weird file names\n        sFileName = \"-\".join(sFileName.split()) # dashes where each space is\n        with open(\"lyrics/\" + sFileName + \".txt\", \"w\") as f: \n            f.write(sLyrics)\n            f.close()\n            print \"Lyrics saved for \" + sSongName\n\n```\n\nThe songs that failed through the first pass were:\n\n```txt\n10 Ribs & All/Carrot Pod Pod\nBathroom Sound\nBlot\nBrandy & Coke\nDesire\nDriving Through Kashmir\nThe Epic\nFour Hands\nHey, Hey, What Can I Do\nThe Hook\nIf It Keeps On Raining\nJennings Farm Blues\nKey to the Highway/Trouble in Mind\nLA Drone\nLa La\nSouthbound Piano\nSt. Tristan's Sword\nTwo Ones Are Won\n```\n\nNot so bad- we've retrieved what is the vast majority of Led Zeppelin's lyrics in a matter of minutes. However, I'm still too lazy to get these lyrics by hand - I'm not gonna add 'em. 😂\n\n## Data Analysis - Word Occurrences\n\nSo we've retrieved our data. I wanted to count most common words as a simple start to analyze these lyrics. So, relying heavily on `nltk` (Natural Language Toolkit) we build a corpus from all the lyrics, remove the stopwords, and count the occurrences with Python's `Counter` module. That is:\n\n`word_counts.py` \n```python\nimport os\nimport nltk\nfrom nltk.corpus import stopwords\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter\n\nfrom nltk.corpus.reader.plaintext import PlaintextCorpusReader\n\nstop_words = set(stopwords.words('english')) # not interested in stop words\nstop_words.update(['.', ',', \"',\", '\"', \"'\", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}', '-']) # ... or punctuation\n\ncorpusdir = 'lyrics/' # Directory of corpus.\noLedZeppelinCorpus = PlaintextCorpusReader(corpusdir, '.*')\n\nlNoStopWords = []\nfor sWord in oLedZeppelinCorpus.words():\n    if sWord not in stop_words:\n        lNoStopWords.append(sWord)\n\nlNoStopWordsLength = len(lNoStopWords)\nwordCounts = Counter(lNoStopWords)\nwordCountsLower = Counter(i.lower() for i in lNoStopWords)\n\n# top 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[0:25])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n\n# next 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[25:50])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n```\n\nThe first plot, of the top 25 most common words, looks like this:\n\n![First 25 most common words](most_common.png)\n\nIn a way, I think we've found the 'stop words' of Led Zeppelin. 😂 I could have almost expected 'babe' and 'baby' - it's repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more 'meat' of the lyrics:\n\n![25-50 most common words](most_common_lower.png)\n\nwhat I think is really neat here, almost zen-like, is that the group has managed to use night and day exactly the same number of times - \n\n## Data Analysis - Markov Chains\n\nOnce again I revisited Markov Chains - what's better than to get some inspiration from poorly written robot lyrics? Since I've only worked with Markov Chains in Nodejs before, I had to look around for a . I ended up borrowing a lot from this very basic implementation from Toward's Data Science's Medium channel: https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6\n \n> - ma - ooh , in my heart You know the , didn ' t take it told me go If it ' t have to know where you there where the downhill slide Oh , make ya know , now I couldn ' ve decided what the wind won '\n \n> ' d do , honey As we sweep with death The Queen of the storm who really good friend They give to care if you now , They say \" Take him by takin ' m - la ) Spend it has ! Feel it ain ' on the way back\n \n> Groovin ' s bright as the morning When ya no love for hesitatin ' t no more times Keep thinkin ' ya know it . We ' baby , I oughta know where he told A - hah - take , love that girl , that set you babe Sugar mama\n \n> - ooh - ha , take you stand it now ' t unwind Get some good and you lovin ', knowin ' s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,\n \n> Dewy eyes Said , throw your crying for what your name Hear them in my power I know my baby when she would never do , \" Then the gallows pole Yes , my very special smile Like a cloak of us to glitter I don ' m a - hah\n\nAlright... they are a bit... weird. But inspiring a bit? At least? Maybe.<sup>Maybe.</sup>\n\n## Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)\n\nTurn on the 💻CPU fan - we're going Tensorflow. 😂\n\nWe're going to use a nice Word level RNN for starters, from hunkim on GitHub: [https://github.com/hunkim/word-rnn-tensorflow](https://github.com/hunkim/word-rnn-tensorflow)\n\nFor your convenience, I forked a version (basically with the Led Zeppelin corpus in the `data/` folder and changing the hardcoded file names in `train.py`) That's here: https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin\n\nThese look _much_ better than the wacky Markov chains:\n\n> tonight quarter) 'The Little proud thunder We've follow A-poor Daw upon lonely, lovin', can't Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin' Do some way. woman In the We've are 'round a in-a please, is is, Beneath me light! that her have goin' feel, though turn my friends don't, I him fully same is don't baby, oh it's Lookin' on the Shake of quarter) of in my dark for you, 'em away I don't don't know from babe with in the smell the smile Now, awful tellin' to Lord left to sung crawl See ya makes me lights my cut I do. truck Oh, know no? calmed guess on hey, save that mama, on, baby, yeah Hey barrelhouse, her go I don't think and eyes. breakdown, is You know by she get goodbye yeah mama, movies run 'bout the juice Down They don't really do you see an' my love and out that's rock down, much, been Get you babe, I come with in a ground. times, a door Let me 'Cause it feel, babe, the heathen snow drives that me\n\n> sand lifetime do, fire more, begin? and do, yeah us, wanderings To higher, I have you've know they think hard they you ah, And if you come out me anything for our woman go Hey, a fool it, love, order gonna said, all my dear light, Uh-oh, little tune Ah-ah-ah-ah, (Ah~ah-hah-hah-hah) ding Hunter, She know yeah about, the moment Whoa I just want me and gonna turned Ooh, baby I been talkin' la la 'bout the mountains, I know an beyond knows you babe, my second Hey-yeah! yeah... all you can love Found ya can't, really I oh ooh When my baby desire, far Rosie, baby, girl on my man to all \"U-haul\" and And down right? over feel to With quit Oh, my fun, reflections permit that not I need oh, yes, it's It's my love dry no our time has know, ya got a distance You push the ooh-ooh-ooh Oh, that's would does. Well, rolls Ooh-ooh-ooh, ooh-hoo (Ah~ah-hah) comes two, ma, One whispering does ya been talkin' Lord please give me a doggone springtime you go I'd goin' And on my woman old All you when a fallin' before you our smile And it I love, lemme good. We\n\n> rolled very here? I am That See the door Do you drive so twirl and ooh, a rock in night sit soul Oh, there good She joy there, Oh, my hands, me, breakfast 'Cause ya now, it's yeah on baby, all ya know you, alright Oh, baby, an Go, Singing on the man When you stop I roll it's you oh my seen oh, alright I can get I won't don't oh, darlin' on the seeds of gold Ah, get a monkey is my go 'round we means the money hey, now from the money A plot, it mama Ooh, Oh oh baby, my thrill I don't leave you notice that me I stay\" run, squeeze that Drop Oh, care said my love I still people blushin' Sisters of Oh, didn't once So a bridge roots, my shakin' Oh what you know with it's my soul and play today, the nose a time It's yeah, do it, love me breaks Yes, through the train If my have An' you oh, yeah When the bad bide you're flowers again he was At for good stop I'm How nothing I'll said, join same Mine's so horn of beer on my knows Ooh, this\n\nI hope you enjoyed this post! Until next time!\n\nCheers 🍺\n\n",
-        "contentDigest": "f1f5f2cfb8fc0f141f95bba1ab013942",
+        "content": "---\ntitle: Led Zeppelin Data Analysis for Lyric Generation and Inspiration\ndate: \"2018-07-18\"\ndraft: false\n---\n\n## Inspiration and Motivation\n\nI've been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I've even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so... _zepplin-ey_ 😄\n\n## Important: I'm Lazy.\n\nYep, if anyone out there has been following along in my blogging adventures, you'll know that I'm lazy. Anything that can be automated, I'm going to try to automate it! (Or in the very least, partially automate it or find a tool to use to make my life easier.) Actually, the entire concept of this post reflects my laziness: I'm willing to make a tool that generates lyrics _for_ me before I visit my buddy this summer as we prepare to write an EP together! (Yikes! - I'll let you know how _that_ goes!)\n\n## Getting the List of Song Names\n\nThere's this neat tool that I found that extracts lists from Wikipedia pages: http://wikitable2csv.ggor.de/, built by Gregor Weichbrodt. Nice one, Gregor! And... (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a \"List of songs recorded by Led Zeppelin\" page! [https://en.wikipedia.org/wiki/List\\_of\\_songs\\_recorded\\_by\\_Led\\_Zeppelin](https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin)\n\nThrow that into Gregor's tool, and you've got your .csv data, which with 5 seconds work with Sublime text, becomes our song list:\n\n```python\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\n\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n```\n\n## Getting Lyrics for Each Song\n\nSo great, we've got our list of songs in Python syntax. We need the actual _lyrics_ now. And yes, I'm going to continue this post's laziness theme! I could go to Google, copy, and paste song lyrics for each of those Led Zeppelin songs, but hey, zep has over 100 songs! No way I'm that un-lazy. Let's automate it.\n\nLuckily, there is yet _another_ tool that can help us! Enter *figurative drum roll please...* 🥁🥁🥁 LyricWikia, written by enricobacis on GitHub: https://github.com/enricobacis/lyricwikia (I mean, c'mon, the example in the README is even Led Zeppelin's Stairway to Heaven!)\n\nSo, we're basically done. We loop over our songs and write the retrieved lyrics to their own file. We are also going to write a 'global' lyrics file - simply all the lyrics strings concatenated together to a file called `input.txt` --> don't worry; I'm not crazy, this will be important later. Data retrieval code is done and looks like this:\n\n`get_lyrics.py`\n```python\nimport lyricwikia\n\nlSongNames = [\"10 Ribs & All/Carrot Pod Pod\",\n\"Achilles Last Stand\",\n\"All My Love\",\n\"Babe I'm Gonna Leave You\",\n\"Baby Come On Home\" ,\n\"Bathroom Sound\",\n\"The Battle of Evermore\",\n\"Black Country Woman\",\n\"Black Dog\",\n\"Black Mountain Side\",\n\"Blot\",\n\"Bonzo's Montreux\",\n\"Boogie with Stu\",\n\"Brandy & Coke\",\n\"Bring It On Home\",\n\"Bron-Y-Aur Stomp\",\n\"Bron-Yr-Aur\",\n\"Candy Store Rock\",\n\"Carouselambra\",\n\"Celebration Day\",\n\"Communication Breakdown\",\n\"The Crunge\",\n\"Custard Pie\",\n\"C'mon Everybody\",\n\"Dancing Days\",\n\"Darlene\",\n\"Dazed and Confused\",\n\"Desire\",\n\"Down by the Seaside\",\n\"Driving Through Kashmir\",\n\"D'yer Mak'er\",\n\"The Epic\",\n\"Everybody Makes It Through\",\n\"Fool in the Rain\",\n\"For Your Life\",\n\"Four Sticks\",\n\"Four Hands\",\n\"Friends\",\n\"Gallows Pole\",\n\"The Girl I Love She Got Long Black Wavy Hair\",\n\"Going to California\",\n\"Good Times Bad Times\",\n\"Hats Off to (Roy) Harper\",\n\"Heartbreaker\",\n\"Hey, Hey, What Can I Do\",\n\"The Hook\",\n\"Hot Dog\",\n\"Hots On for Nowhere\",\n\"Houses of the Holy\",\n\"How Many More Times\",\n\"I Can't Quit You Baby\",\n\"If It Keeps On Raining\",\n\"I'm Gonna Crawl\",\n\"Immigrant Song\",\n\"In My Time of Dying\",\n\"In the Evening\",\n\"In the Light\",\n\"Jennings Farm Blues\",\n\"Kashmir\",\n\"Key to the Highway/Trouble in Mind\",\n\"LA Drone\",\n\"La La\",\n\"The Lemon Song\",\n\"Living Loving Maid (She's Just a Woman)\",\n\"Misty Mountain Hop\",\n\"Moby Dick\",\n\"Night Flight\",\n\"Nobody's Fault but Mine\",\n\"No Quarter\",\n\"The Ocean\",\n\"Out on the Tiles\",\n\"Over the Hills and Far Away\",\n\"Ozone Baby\",\n\"Poor Tom\",\n\"The Rain Song\",\n\"Ramble On\",\n\"Rock and Roll\",\n\"The Rover\",\n\"Royal Orleans\",\n\"Sick Again\",\n\"Since I've Been Loving You\",\n\"Somethin' Else\",\n\"The Song Remains the Same\",\n\"South Bound Saurez\",\n\"Southbound Piano\",\n\"St. Tristan's Sword\",\n\"Stairway to Heaven\",\n\"Sugar Mama\",\n\"Sunshine Woman\",\n\"Tangerine\",\n\"Tea for One\",\n\"Ten Years Gone\",\n\"Thank You\",\n\"That's the Way\",\n\"Trampled Under Foot\",\n\"Travelling Riverside Blues\",\n\"Two Ones Are Won\",\n\"Walter's Walk\",\n\"The Wanton Song\",\n\"Wearing and Tearing\",\n\"We're Gonna Groove\",\n\"What Is and What Should Never Be\",\n\"When the Levee Breaks\",\n\"White Summer/Black Mountain Side\",\n\"Whole Lotta Love\",\n\"You Shook Me\",\n\"Your Time Is Gonna Come\"]\n\nfor sSongName in lSongNames:\n    try:\n        sLyrics = lyricwikia.get_lyrics('Led Zeppelin', sSongName)\n    except:\n        print \"Lyrics not found for \" + sSongName\n    else:\n        sFileName = sSongName.replace(\"'\", \"\") # will cause weird file names\n        sFileName = \"-\".join(sFileName.split()) # dashes where each space is\n        with open(\"lyrics/\" + sFileName + \".txt\", \"w\") as f: \n            f.write(sLyrics)\n            f.close()\n            print \"Lyrics saved for \" + sSongName\n\n```\n\nThe songs that failed through the first pass were:\n\n```txt\n10 Ribs & All/Carrot Pod Pod\nBathroom Sound\nBlot\nBrandy & Coke\nDesire\nDriving Through Kashmir\nThe Epic\nFour Hands\nHey, Hey, What Can I Do\nThe Hook\nIf It Keeps On Raining\nJennings Farm Blues\nKey to the Highway/Trouble in Mind\nLA Drone\nLa La\nSouthbound Piano\nSt. Tristan's Sword\nTwo Ones Are Won\n```\n\nNot so bad- we've retrieved what is the vast majority of Led Zeppelin's lyrics in a matter of minutes. However, I'm still too lazy to get these lyrics by hand - I'm not gonna add 'em. 😂\n\n## Data Analysis - Word Occurrences\n\nSo we've retrieved our data. I wanted to count most common words as a simple start to analyze these lyrics. So, relying heavily on `nltk` (Natural Language Toolkit) we build a corpus from all the lyrics, remove the stopwords, and count the occurrences with Python's `Counter` module. That is:\n\n`word_counts.py` \n```python\nimport os\nimport nltk\nfrom nltk.corpus import stopwords\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom collections import Counter\n\nfrom nltk.corpus.reader.plaintext import PlaintextCorpusReader\n\nstop_words = set(stopwords.words('english')) # not interested in stop words\nstop_words.update(['.', ',', \"',\", '\"', \"'\", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}', '-']) # ... or punctuation\n\ncorpusdir = 'lyrics/' # Directory of corpus.\noLedZeppelinCorpus = PlaintextCorpusReader(corpusdir, '.*')\n\nlNoStopWords = []\nfor sWord in oLedZeppelinCorpus.words():\n    if sWord not in stop_words:\n        lNoStopWords.append(sWord)\n\nlNoStopWordsLength = len(lNoStopWords)\nwordCounts = Counter(lNoStopWords)\nwordCountsLower = Counter(i.lower() for i in lNoStopWords)\n\n# top 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[0:25])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n\n# next 25\nlCountLabels, lCountValues = zip(*wordCountsLower.most_common(50)[25:50])\nlCountIndexes = np.arange(len(lCountLabels))\niCountWidth = 1\nbarlist = plt.bar(lCountIndexes, lCountValues)\nfor i in range(0, len(barlist)): # all bars to black\n    barlist[i].set_color('black')\nplt.xticks(lCountIndexes, lCountLabels)\nplt.title(\"Word Occurrences in Led Zeppelin Lyrics\")\nplt.ylabel('Number of Occurrences Across All Songs')\nplt.xlabel('Lyric')\nplt.show()\n```\n\nThe first plot, of the top 25 most common words, looks like this:\n\n![First 25 most common words](most_common.png)\n\nIn a way, I think we've found the 'stop words' of Led Zeppelin. 😂 I could have almost expected 'babe' and 'baby' - it's repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more 'meat' of the lyrics:\n\n![25-50 most common words](most_common_lower.png)\n\nwhat I think is really neat here, almost zen-like, is that the group has managed to use the words 'night' and 'day' exactly the same number of times - 100.\n\n## Data Analysis - Markov Chains\n\nOnce again I revisited Markov Chains - what's better than to get some inspiration from poorly written robot lyrics? Since I've only worked with Markov Chains in Nodejs before, I had to look around for a . I ended up borrowing a lot from this very basic implementation from Toward's Data Science's Medium channel: https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6\n \n> \\- ma - ooh , in my heart You know the , didn ' t take it told me go If it ' t have to know where you there where the downhill slide Oh , make ya know , now I couldn ' ve decided what the wind won '\n \n> ' d do , honey As we sweep with death The Queen of the storm who really good friend They give to care if you now , They say \" Take him by takin ' m - la ) Spend it has ! Feel it ain ' on the way back\n \n> Groovin ' s bright as the morning When ya no love for hesitatin ' t no more times Keep thinkin ' ya know it . We ' baby , I oughta know where he told A - hah - take , love that girl , that set you babe Sugar mama\n \n> \\- ooh - ha , take you stand it now ' t unwind Get some good and you lovin ', knowin ' s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,\n \n> Dewy eyes Said , throw your crying for what your name Hear them in my power I know my baby when she would never do , \" Then the gallows pole Yes , my very special smile Like a cloak of us to glitter I don ' m a - hah\n\nAlright... they are a bit... weird. But inspiring a bit? At least? Maybe.<sup>Maybe.</sup>\n\n## Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)\n\nTurn on the 💻CPU fan - we're going Tensorflow. 😂\n\nWe're going to use a nice Word level RNN for starters, from hunkim on GitHub: [https://github.com/hunkim/word-rnn-tensorflow](https://github.com/hunkim/word-rnn-tensorflow)\n\nFor your convenience, I forked a version (basically with the Led Zeppelin corpus in the `data/` folder and changing the hardcoded file names in `train.py`) That's here: https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin\n\nThese look _much_ better than the wacky Markov chains:\n\n> tonight quarter) 'The Little proud thunder We've follow A-poor Daw upon lonely, lovin', can't Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin' Do some way. woman In the We've are 'round a in-a please, is is, Beneath me light! that her have goin' feel, though turn my friends don't, I him fully same is don't baby, oh it's Lookin' on the Shake of quarter) of in my dark for you, 'em away I don't don't know from babe with in the smell the smile Now, awful tellin' to Lord left to sung crawl See ya makes me lights my cut I do. truck Oh, know no? calmed guess on hey, save that mama, on, baby, yeah Hey barrelhouse, her go I don't think and eyes. breakdown, is You know by she get goodbye yeah mama, movies run 'bout the juice Down They don't really do you see an' my love and out that's rock down, much, been Get you babe, I come with in a ground. times, a door Let me 'Cause it feel, babe, the heathen snow drives that me\n\n> sand lifetime do, fire more, begin? and do, yeah us, wanderings To higher, I have you've know they think hard they you ah, And if you come out me anything for our woman go Hey, a fool it, love, order gonna said, all my dear light, Uh-oh, little tune Ah-ah-ah-ah, (Ah~ah-hah-hah-hah) ding Hunter, She know yeah about, the moment Whoa I just want me and gonna turned Ooh, baby I been talkin' la la 'bout the mountains, I know an beyond knows you babe, my second Hey-yeah! yeah... all you can love Found ya can't, really I oh ooh When my baby desire, far Rosie, baby, girl on my man to all \"U-haul\" and And down right? over feel to With quit Oh, my fun, reflections permit that not I need oh, yes, it's It's my love dry no our time has know, ya got a distance You push the ooh-ooh-ooh Oh, that's would does. Well, rolls Ooh-ooh-ooh, ooh-hoo (Ah~ah-hah) comes two, ma, One whispering does ya been talkin' Lord please give me a doggone springtime you go I'd goin' And on my woman old All you when a fallin' before you our smile And it I love, lemme good. We\n\n> rolled very here? I am That See the door Do you drive so twirl and ooh, a rock in night sit soul Oh, there good She joy there, Oh, my hands, me, breakfast 'Cause ya now, it's yeah on baby, all ya know you, alright Oh, baby, an Go, Singing on the man When you stop I roll it's you oh my seen oh, alright I can get I won't don't oh, darlin' on the seeds of gold Ah, get a monkey is my go 'round we means the money hey, now from the money A plot, it mama Ooh, Oh oh baby, my thrill I don't leave you notice that me I stay\" run, squeeze that Drop Oh, care said my love I still people blushin' Sisters of Oh, didn't once So a bridge roots, my shakin' Oh what you know with it's my soul and play today, the nose a time It's yeah, do it, love me breaks Yes, through the train If my have An' you oh, yeah When the bad bide you're flowers again he was At for good stop I'm How nothing I'll said, join same Mine's so horn of beer on my knows Ooh, this\n\nI hope you enjoyed this post! Until next time!\n\nCheers 🍺\n\n",
+        "contentDigest": "0451863d06bae05d79ecfcb618938b46",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -8187,6 +8175,425 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0549f7ffb01438fc1ec9d5c2b2f7ad13",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "relativePath": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "extension": "",
+      "size": 128,
+      "prettySize": "128 B",
+      "modifiedTime": "2018-07-20T13:24:31.489Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
+      "changeTime": "2018-07-20T13:24:31.489Z",
+      "birthTime": "2018-07-20T12:04:09.988Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "ext": "",
+      "name": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608012583,
+      "blocks": 0,
+      "atimeMs": 1532344676595.392,
+      "mtimeMs": 1532093071489.406,
+      "ctimeMs": 1532093071489.406,
+      "birthtimeMs": 1532088249987.896,
+      "atime": "2018-07-23T11:17:56.595Z",
+      "mtime": "2018-07-20T13:24:31.489Z",
+      "ctime": "2018-07-20T13:24:31.489Z",
+      "birthtime": "2018-07-20T12:04:09.988Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f3ee66f45ba215d570151844dbab1805",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "relativePath": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-07-20T12:04:42.069Z",
+      "accessTime": "2018-07-23T11:17:56.595Z",
+      "changeTime": "2018-07-20T12:04:42.069Z",
+      "birthTime": "2018-07-20T12:04:36.803Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "ext": "",
+      "name": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608012600,
+      "blocks": 0,
+      "atimeMs": 1532344676595.4182,
+      "mtimeMs": 1532088282069.1504,
+      "ctimeMs": 1532088282069.1504,
+      "birthtimeMs": 1532088276803.1458,
+      "atime": "2018-07-23T11:17:56.595Z",
+      "mtime": "2018-07-20T12:04:42.069Z",
+      "ctime": "2018-07-20T12:04:42.069Z",
+      "birthtime": "2018-07-20T12:04:36.803Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1b9567ee46415480940a71ea8460c2f2",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md",
+      "relativePath": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md",
+      "extension": "md",
+      "size": 2084,
+      "prettySize": "2.08 kB",
+      "modifiedTime": "2018-07-20T13:25:29.465Z",
+      "accessTime": "2018-07-20T13:25:29.920Z",
+      "changeTime": "2018-07-20T13:25:29.465Z",
+      "birthTime": "2018-07-20T12:04:42.069Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608012601,
+      "blocks": 8,
+      "atimeMs": 1532093129920.077,
+      "mtimeMs": 1532093129465.1135,
+      "ctimeMs": 1532093129465.1135,
+      "birthtimeMs": 1532088282069.1406,
+      "atime": "2018-07-20T13:25:29.920Z",
+      "mtime": "2018-07-20T13:25:29.465Z",
+      "ctime": "2018-07-20T13:25:29.465Z",
+      "birthtime": "2018-07-20T12:04:42.069Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0486fd63bdc6e7c738a6afae84605c97",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md",
+      "relativePath": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md",
+      "extension": "md",
+      "size": 14250,
+      "prettySize": "14.3 kB",
+      "modifiedTime": "2018-07-20T13:36:27.350Z",
+      "accessTime": "2018-07-20T13:36:27.561Z",
+      "changeTime": "2018-07-20T13:36:27.350Z",
+      "birthTime": "2018-07-20T12:08:19.158Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608012740,
+      "blocks": 32,
+      "atimeMs": 1532093787561.444,
+      "mtimeMs": 1532093787350.0183,
+      "ctimeMs": 1532093787350.0183,
+      "birthtimeMs": 1532088499158.4124,
+      "atime": "2018-07-20T13:36:27.561Z",
+      "mtime": "2018-07-20T13:36:27.350Z",
+      "ctime": "2018-07-20T13:36:27.350Z",
+      "birthtime": "2018-07-20T12:08:19.158Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot\ndate: \"2018-07-20\"\ndraft: false\n---\n\n## Slack Bot!\n\nYou may have read [Part 3](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/) of [my giant automation undertaking](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/) about. Maybe not.\n\nAnyway, near the bottom of [Part 3](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/), I discuss a `messageHub()` function that sends a string message to all the places I want it to, one of them being a Slack Bot. This is actually really, really easy to put together. The heroes at Slack are definitely doing a nice job with ease of use for developers.\n\n## Step 1: Set Up Your Slack Bot\n\n- Go to 'Your Apps' on https://api.slack.com: https://api.slack.com/apps\n- Click the green button 'Create New App'\n- Provide a name and pick a workspace you want that bot\n- Under the 'Add features and functionality', click 'Incoming Webhooks'\n- Click the switch to turn the service on\n- Click Add New Webhook to Workspace\n- Select a channel from your slack workspace you want the bot to post to\n- copy the https://hooks.slack.com/blahblahblahblah endpoint!\n\n## Step 2: Use POST in Nodejs with Your Link\n\nNow that you have your POST link, sending a message as a slack bot is as easy as sending JSON with a `text` key filled with your desired message string.\n\nUsing the axios library for example, that is as simple as:\n\n```javascript\naxios.post(process.env.CHRISFREW_IN_SLACK_BOT_WEBHOOK_URL, {\n  text: \"Hello Word\"\n});\n```\n\n## Step 3: Just kidding, there is no step 3!\n\nThat's really all there is too it. Of course you can build out more features, but this is really the jist of it. I'll be working on the other direction over the next few weeks - instead of the bot sending information, sending, or asking the bot for information. This will be a very nice way of interacting with my server without the command line :)\n\n",
+        "contentDigest": "b46c97d7f8b879823a0e3014a5949ca9",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+        "date": "2018-07-20",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md",
+      "fields": {
+        "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor\ndate: \"2018-07-20\"\ndraft: false\n---\n\n## Background and Overview of this Technologically Amazing Accomplishment\n\nAfter a bit of thinking about my automation project, I settled on a single subdomain (at least for now), fittedly named [https://webhooks.chrisfrew.in](https://webhooks.chrisfrew.in). (Go on, you can try clicking on it). However, if you're not an authorized party (which I check via a _secret key_) you'll just be redirected to the plain ol' [https://chrisfrew.in](https://chrisfrew.in) - yeah I know, what a crappy blog.\n\nIf any of this stuff sounds cool, or perhaps more importantly, sounds like a foreign language, then c'mon in and dive in - we'll get into the technical details and all steps of how all of this can be set up.\n\nRemember, all this stuff is open source too. The repository for the monitor is here: https://github.com/frewinchristopher/chrisfrew.in-productions-github-bitbucket-monitor\n\n(The full code is also posted at the bottom of this post.)\n\n## Setting Up a Catch-All webhooks subdomain\n\nSo [chrisfrew.in](chrisfrew.in) is registered on Namecheap. We have to just setup two A Records, both for webhooks www.webhooks. It looks like this:\n\n![Namecheap configuration](namecheap_config.png)\n\n## Listing on Webhooks subdomain - POST and 'all'\n\nSo first off, we want our express app to only do special things on a post to the root (in this case, because I run NGINX, we are already in the webhooks.chrisfrew.in namespace here) - otherwise we redirect to https://chrisfrew.in\n\nNotice that even when ARE POSTed to, we still verify the signature of the request, otherwise just like the `all('*')`, we redirect (301) the traffic to chrisfrew.in.\n\n```javascript\napp.post('/', (req, res) => {\n  if (verifySignature(req)) {\n    determineWebhook(req.body);\n    // authentic source\n    console.log('Authentication successful; processing data:');\n    res.writeHead(200, { 'Content-Type': 'text/plain' });\n  } else {\n    // Someone else calling\n    console.log('Authentication failed; redirecting them to https://chrisfrew.in');\n    res.redirect(301, 'https://chrisfrew.in/'); // Redirect to domain root\n  }\n});\n\napp.all('*', (req, res) => {\n  // Someone else calling\n  console.log('Authentication failed; redirecting them to https://chrisfrew.in');\n  res.redirect(301, 'https://chrisfrew.in/'); // Redirect to domain root\n}); // Only webhook requests allowed at this address\n```\n\n## Determine What type of Webhook\n\nRight now I only process GitHub and Bitbucket Webhooks. It's rudimentary, and it's not even finished, but it works for GitHub:\n\n```javascript\nconst determineWebhook = (oData) => {\n  let sStatus;\n  if (oData.sender) { // GitHub\n    sStatus = \"New head commit in \" + oData.repository.name + \" (\" + oData.repository.url + \"): \" + oData.head_commit.committer.name;\n    if (oData.head_commit.added)  {\n      sStatus = sStatus + \" added \" + oData.head_commit.added.length + \" files, \";\n    }\n    if (oData.head_commit.modified)  {\n      sStatus = sStatus +  \" modified \" + oData.head_commit.modified.length + \" files, and\";\n    }\n    if (oData.head_commit.removed) {\n      sStatus = sStatus +  \" removed \" + oData.head_commit.removed.length + \" files.\";\n    }\n   console.log(sStatus);\n   messageHub(\"Attempting to pull from this repository...\");\n   pull(oRepositoryPathValuePairs[oData.repository.name]);\n    //twitterBotUtils.postStatus(sStatus);\n  } else if (oData.actor) { // Bitbucket\n    \n    //twitterBotUtils.postStatus(sStatus);\n  } else { // some other webhook (there are no others yet)\n    \n  }\n};\n```\n\n## GitHub Integration\n\nWith our subdomain set up and our express server serving there, we can start processing requests for `webhooks.chrisfrew.in`. The important thing here is to validate requests. Imagine what could happen without validation, (if I eventualy do hook this up to my twitter bot to post every time a repository is updated) just anyone could send random github-ish looking json data to `webhooks.chrisfrew.in`, and my server would take action, even when its not coming from a validate That would be really annoying, and plus, it would make me seem _way_ more productive than I am with my repositories. 😂😂😂 So yeah, validation is an important step. \n\nGitHub's way of doing authentication for webhooks is to take the content of the payload, concatenate that with the secret key, and then hash it. You then do the same on your server, since you yourself also know the secret key, and if the hashes match, violá! You know it's coming from GitHub. We accomplish this in Nodejs in a function called `verifySignature` like so:\n\n```javascript\n// Verification function to check if it is actually GitHub who is POSTing here\nconst verifySignature = (req) => {\n  if (!req.headers['user-agent'].includes('GitHub-Hookshot')) {\n    return false;\n  }\n  // Compare their hmac signature to our hmac signature\n  // (hmac = hash-based message authentication code)\n  const sExternalSignature = req.headers['x-hub-signature'];\n  const oData = JSON.stringify(req.body);\n  const sSecret = process.env.WEBHOOK_SECRET; \n  const sInternalSignature = `sha1=${crypto.createHmac('sha1', sSecret).update(oData).digest('hex')}`;\n  return crypto.timingSafeEqual(Buffer.from(sExternalSignature), Buffer.from(sInternalSignature));\n};\n```\n\n## GitHub Integration\n\nSo, we know - then on the production server we want to naturally pull this newest code from the remote? For that, there is the NPM package `simple-git` [https://github.com/steveukx/git-js#readme](https://github.com/steveukx/git-js#readme).\n\n```javascript\nconst pull = (sRootRepositoryDirectory) => {\n  git.cwd(sRootRepositoryDirectory).pull((err, update) => {\n     if(update && update.summary.changes) { // there is indeed an update found on the remote\n        messageHub(\"This is an app templated by create-react-app; We need to issue 'npm run build' to build new source...\");\n        build();\n     } else if (err) {\n       if (err.includes(\"commit your changes or stash them\")) {\n         messageHub(\"Changes need to be stashed; stashing automatically...\");\n         stashAndPull(sRootRepositoryDirectory);\n       }// TODO: more error cases? ...\n     }\n  });\n}\nconst stashAndPull = (sRootRepositoryDirectory) => {\n  git.cwd(sRootRepositoryDirectory).stash()\n    .then(() => {\n      messageHub(\"Stash succesfull, attempting to pull again...\");\n      pull(sRootRepositoryDirectory);\n    });\n}\n```\n\n## Build Integration\n\nSo, I thought it was nice that we could detect pushes to the repository and then . But, with my create-react-apps, could I also build the source. If you were eagle-eyed, you may have seen that sneaky `build()` function. That function looks like this:\n\n```javascript\nconst build = () => {\n  exec('npm run build', { cwd: '../charge-keyboard.com' }, function(err, stdout, stderr) {\n     if (err) {\n       messageHub(err);\n     } else if (stderr) {\n       messageHub(stderr);\n     } else {\n       messageHub(\"Build command successfully sent. The site should be live with the newly commited changes incorporated.\");\n     }\n   });\n}\n```\n\nThe _very_ cool thing here, at least I think, is that since I run my `index.js` servers with `forever`, when the source is built, whatever `index.js` is serving is updated, without affecting the runtime of `index.js` itself! So, I am nearly approaching a fully integrated build system that was all custom built. 😄\n\n## Other Fun stuff\n\nYou know how when your `npm start` wont work, only because of a missing module? I've always been like, well, the _single_ solution here _is to just install the friggen module_ Well, thanks to stdout, we can try to read those missing modules, install it, and try `npm start` again. This is something I am working on.\n\nYou'll notice a lot of the code is parsing `stdout` as strings - I realize out to an infinite time scale, this isn't a most robust way of checking error messages, so I'm working towards parsing the actual errors codes from Nodejs and reacting from those, instead of the error text itself.\n\nYou may have also noticed the function messageHub for nearly every logging type message. Indeed, we do log to the console, but I built this hub-type function so we could add more ways of messaging, one of them is through a Slack bot, which I show how to do in [Part 4](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/)\n\nYou'll see I have logging util and twitter util functions commented out - they are coming - all with good time!\n\n## To Do List\n\nI've still got to add all my other sites to the monitor - this is just a matter adding to that key:value that the server monitors - see `oRepositoryPathValuePairs` in the code below for what I am talking about.\n\nWhat will be really cool is for the GitHub monitor to update itself when it sees that it's remote - yes, this is like some Terminator-level crap. This will be a special case, because in order for a flawless execution of the monitor server itself, it would have to spawn a child process of itself, then update its code, then start itself, finally killing the child process of its older version.\n\n## Full code\n\n`index.js`\n```javascript\n'use strict'; // strict\n\n// external library requires\nconst express = require('express');\nconst bodyParser = require('body-parser');\nconst crypto = require('crypto');\nconst app = express();\nconst twitterBotUtils = require('../chrisfrew.in-productions-shared-functions/utils/twitterBotUtils.js');\nconst simpleGit = require('simple-git');\nconst git = simpleGit();\nconst axios = require('axios');\nconst exec = require('child_process').exec;\n\n// fixed port on dell\nconst iPort = 8087;\nconst oRepositoryPathValuePairs = {\n  \"charge-keyboard-splash-page\": \"../charge-keyboard.com\",\n  \"chrisfrew.in-productions-github-bitbucket-monitor\": \"\", // super meta - will restart itself\n}\n\n// The GitHub webhook MUST be configured to be sent as \"application/json\"\napp.use(bodyParser.json());\n\n// Verification function to check if it is actually GitHub who is POSTing here\nconst verifySignature = (req) => {\n  if (!req.headers['user-agent'].includes('GitHub-Hookshot')) {\n    return false;\n  }\n  // Compare their hmac signature to our hmac signature\n  // (hmac = hash-based message authentication code)\n  const sExternalSignature = req.headers['x-hub-signature'];\n  const oData = JSON.stringify(req.body);\n  const sSecret = process.env.WEBHOOK_SECRET; \n  const sInternalSignature = `sha1=${crypto.createHmac('sha1', sSecret).update(oData).digest('hex')}`;\n  return crypto.timingSafeEqual(Buffer.from(sExternalSignature), Buffer.from(sInternalSignature));\n};\n\nconst determineWebhook = (oData) => {\n  let sStatus;\n  if (oData.sender) { // GitHub\n    sStatus = \"New head commit in \" + oData.repository.name + \" (\" + oData.repository.url + \"): \" + oData.head_commit.committer.name;\n    if (oData.head_commit.added)  {\n      sStatus = sStatus + \" added \" + oData.head_commit.added.length + \" files, \";\n    }\n    if (oData.head_commit.modified)  {\n      sStatus = sStatus +  \" modified \" + oData.head_commit.modified.length + \" files, and\";\n    }\n    if (oData.head_commit.removed) {\n      sStatus = sStatus +  \" removed \" + oData.head_commit.removed.length + \" files.\";\n    }\n   console.log(sStatus);\n   messageHub(\"Attempting to pull from this repository...\");\n   pull(oRepositoryPathValuePairs[oData.repository.name]);\n    //twitterBotUtils.postStatus(sStatus);\n  } else if (oData.actor) { // Bitbucket\n    \n    //twitterBotUtils.postStatus(sStatus);\n  } else { // some other webhook (there are no others yet)\n    \n  }\n\n};\nconst pull = (sRootRepositoryDirectory) => {\n  git.cwd(sRootRepositoryDirectory).pull((err, update) => {\n     if(update && update.summary.changes) { // there is indeed an update found on the remote\n        messageHub(\"This is an app templated by create-react-app; We need to issue 'npm run build' to build new source...\");\n        build();\n     } else if (err) {\n       if (err.includes(\"commit your changes or stash them\")) {\n         messageHub(\"Changes need to be stashed; stashing automatically...\");\n         stashAndPull(sRootRepositoryDirectory);\n       }// TODO: more error cases? ...\n     }\n  });\n}\nconst stashAndPull = (sRootRepositoryDirectory) => {\n  git.cwd(sRootRepositoryDirectory).stash()\n    .then(() => {\n      messageHub(\"Stash succesfull, attempting to pull again...\");\n      pull(sRootRepositoryDirectory);\n    });\n}\nconst build = () => {\n  exec('npm run build', { cwd: '../charge-keyboard.com' }, function(err, stdout, stderr) {\n     if (err) {\n       messageHub(err);\n     } else if (stderr) {\n       messageHub(stderr);\n     } else {\n       messageHub(\"Build command successfully sent. The site should be live with the newly commited changes incorporated.\");\n     }\n   });\n}\n\nconst messageHub = (sMessage) => { // all the ways of messaging combined into one messaging \"hub\"\n  //twitterBotUtils.postStatus(sMessage); // // TODO: : make live!!!\n  //loggingUtils.logMessage(sMessage): // TODO: also make live!!!\n  slackBotWebHook(sMessage);\n  console.log(sMessage);\n}\n\nconst slackBotWebHook = (sMessage) => {\n  axios.post(process.env.CHRISFREW_IN_SLACK_BOT_WEBHOOK_URL, {\n    text: sMessage\n  });\n}\n\napp.post('/', (req, res) => {\n  if (verifySignature(req)) {\n    determineWebhook(req.body);\n    // authentic source\n    console.log('Authentication successful; processing data:');\n    res.writeHead(200, { 'Content-Type': 'text/plain' });\n  } else {\n    // Someone else calling\n    console.log('Authentication failed; redirecting them to https://chrisfrew.in');\n    res.redirect(301, 'https://chrisfrew.in/'); // Redirect to domain root\n  }\n});\n\napp.all('*', (req, res) => {\n  // Someone else calling\n  console.log('Authentication failed; redirecting them to https://chrisfrew.in');\n  res.redirect(301, 'https://chrisfrew.in/'); // Redirect to domain root\n}); // Only webhook requests allowed at this address\n\napp.listen(iPort);\n\nconsole.log('Webhook service running at http://localhost:' + iPort.toString());\n```\n\nAnd again, don't forget the updated code is all available on GitHub: https://github.com/frewinchristopher/chrisfrew.in-productions-github-bitbucket-monitor\n\nCheers! 🍺",
+        "contentDigest": "abcda95d4fa2d335763961a223151c13",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor",
+        "date": "2018-07-20",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md",
+      "fields": {
+        "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a55dc9c767ca2281c2a3b3c442e0810f",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it",
+      "relativePath": "welp-i-did-it",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-07-20T13:57:12.051Z",
+      "accessTime": "2018-07-23T11:17:56.596Z",
+      "changeTime": "2018-07-20T13:57:12.051Z",
+      "birthTime": "2018-07-20T13:18:23.136Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "welp-i-did-it",
+      "ext": "",
+      "name": "welp-i-did-it",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608015782,
+      "blocks": 0,
+      "atimeMs": 1532344676595.6929,
+      "mtimeMs": 1532095032051.071,
+      "ctimeMs": 1532095032051.071,
+      "birthtimeMs": 1532092703135.7402,
+      "atime": "2018-07-23T11:17:56.596Z",
+      "mtime": "2018-07-20T13:57:12.051Z",
+      "ctime": "2018-07-20T13:57:12.051Z",
+      "birthtime": "2018-07-20T13:18:23.136Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "31f8d6e653672fd7d4238a57a2f72a1b",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png",
+      "relativePath": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png",
+      "extension": "png",
+      "size": 24182,
+      "prettySize": "24.2 kB",
+      "modifiedTime": "2018-07-20T13:24:15.376Z",
+      "accessTime": "2018-07-20T13:24:32.067Z",
+      "changeTime": "2018-07-20T13:24:31.489Z",
+      "birthTime": "2018-07-20T13:23:24.197Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "base": "namecheap_config.png",
+      "ext": ".png",
+      "name": "namecheap_config",
+      "relativeDirectory": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608016252,
+      "blocks": 48,
+      "atimeMs": 1532093072066.8079,
+      "mtimeMs": 1532093055376.3738,
+      "ctimeMs": 1532093071489.4058,
+      "birthtimeMs": 1532093004197.172,
+      "atime": "2018-07-20T13:24:32.067Z",
+      "mtime": "2018-07-20T13:24:15.376Z",
+      "ctime": "2018-07-20T13:24:31.489Z",
+      "birthtime": "2018-07-20T13:23:24.197Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file >> ImageSharp": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/namecheap_config.png absPath of file",
+      "internal": {
+        "contentDigest": "31f8d6e653672fd7d4238a57a2f72a1b",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file",
+      "children": [
+        "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "328f61e9c46af8a9765f34b7bbc9304e",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md",
+      "relativePath": "welp-i-did-it/index.md",
+      "extension": "md",
+      "size": 6805,
+      "prettySize": "6.8 kB",
+      "modifiedTime": "2018-07-23T11:17:01.630Z",
+      "accessTime": "2018-07-23T11:17:01.630Z",
+      "changeTime": "2018-07-23T11:17:01.630Z",
+      "birthTime": "2018-07-20T13:57:12.051Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "welp-i-did-it",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8608019704,
+      "blocks": 16,
+      "atimeMs": 1532344621629.5806,
+      "mtimeMs": 1532344621629.6865,
+      "ctimeMs": 1532344621629.6865,
+      "birthtimeMs": 1532095032051.0425,
+      "atime": "2018-07-23T11:17:01.630Z",
+      "mtime": "2018-07-23T11:17:01.630Z",
+      "ctime": "2018-07-23T11:17:01.630Z",
+      "birthtime": "2018-07-20T13:57:12.051Z"
+    },
+    "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Welp, I Did It.\ndate: \"2018-07-21\"\ndraft: false\n---\n\nI quit my full-time job.\n\nMost of the time about things like this, all you here is the same old tune:\n\n> \"Don't do this don't do this don't do this.\" \n\nBut jeez, people are so risk adverse sometime. Just thinking about my own situation, right now, I'm 100x better off than I was just 3 years ago, when I was 23, $27K in debt from my bachelor degree, and earning less than _half_ of what I do now! How come nobody back then said \n\n> \"Don't do this don't do this don't do this\"\n\nBecause being a homely, unkempt, poor graduate student is _expected_ by society, (although graduate school is even looked upon with reverence in some cases - \"Wow, _Cornell_? Great school, great school.\"). But what the hell are people thinking? In terms of net worth back then, I was totally screwed!\n\nIf you are in your mid-20s reading this, you're probably in the same situation of a strongly improved financial situation. So, why would I risk going total freelance when I have a house and kids, when _real_ bills need to be paid. You're right - I wouldn't. \n\nThe way I see it, now is not only the _only_ time to try this, it's the _perfect_ time: experience and network connections from my first few years at a big industry job, with a bunch of savings as an all-else fails cushion in the bank.\n\nEven a lot of well-known 'creatives' these days also say not to do this until you have a self-sustaining (or better yet - profitable) side project, but I just couldn't help but writing that notion off - most of them quit their jobs themselves when they were getting started! Yes - they talk about the strife and challenge it was from doing that, which is why they don't recommend it to anyone else - but isn't that exactly the ingredient required in the recipe of nearly all people who were once nobody and emerged with amazing projects and products? \n\nIf you want to create truly nice projects of high quality, that aren't just patched together, even if you are hacking away those 4-5 hours a night, _after_ your full-time job, you just can't. Well - at least I can't. In my case, you need those multiple 12 hour, interrupted days, diving deep and building complex projects. This just isn't sustainable with a full-time job - and indeed, perhaps this is exactly the 'strife' and 'challenge' that these creatives refer to in all of their 'early days'. It's true - while we all complain about our 9-5 jobs (in my case, 7-5), you can't help but admitting there is a lot of comfortability and security in them - weekdays only, and (for most of us) 5PM is 5PM, when the clock hits 5, there's no more work for the day. It will be interesting to see how that goes in my freelance life.\n\nBut hey, it's 2018, and \"quitting your day job\", especially as a software engineer, doesn't really mean you're immediately 'unemployed' - right? There were a large number of supporting variables and events over the past few months that have led me to my decision:\n\n- talking to [torch.io](torch.io) over a possible part time frontend consulting work\n- being added to the [Moonlight Community](moonlightwork.com)\n- talking to a colleague about a fixed part-time position at his software company\n- working with a friend to build a keyboard that charges as you type (I know it sounds like magic but the science and numbers show it can work) [charge-keyboard.com](https://charge-keyboard.com)\n- building out and advertising my startup Siren Apparel, and expanding to the EU [https://sirenapparel.us](https://sirenapparel.us), [https://sirenapparel.eu](https://sirenapparel.eu)\n- (only knowing after I quit) consulting opportunities at my current company\n\nSo yes, any one or a combination of these will pay the bills.\n\nI realize, _none_ of these (or probably even a combination) will pay as high as my comfy logistic / warehousing full-time job. But I also realized over the past few months, _I don't give a damn about money!_ Sure, I could go the Mr. Money Mustache route and just keep truckin' away at my current job with a high savings rate, and become financially independent in 7-8 years. But to me, that's 7-8 years of sunk cost, working at albeit a decent, but ultimately where-I-don't-want-to-be job. If I spent those 7-8 years building out projects that first 1. allow me enough income to survive, and 2. are valuable projects that I value, then I have many many years after that to continue building, instead of after those 10 years starting 'fresh' only with the single added confidence that I am financially independent. \n\nWorst case, I fail and a year from now I run back to the security of a full-time job. (Hopefully not the case!)\n\nIt's a similar story with options trading, [another toy project of mine](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-b32bf47db656). A lot of people say you can learn a lot from paper trading, but in the camp of people with real trading experience say you can never really learn unless real money is on the line. If I springboard into the abyss that is freelance / maker / creative / digital nomad, I'm _forced_ to do my best work, and a lot of it, because it's the only chance I have to pay my bills. Quotes that ring to this tune can be seen all over by (now) extremely successful people:\n\n> I was in the zone, trying to make a living<br/>\nHeading to work in the morning<br/>\nNobody felt like I was mourning, as my dream was deceased<br/>\nUntil I quit my job, then my work ethic increased<br/>\nElevated to levels I ain't ever seen\n\n-Logic\n\n> Everything that you want is on the other side of fear\n\n-George Addair\n\n> People will choose unhappiness over uncertainty\n\n-Tim Ferriss\n\nThe bottom line is that in this information age, there are so many lines to connect, so many beautiful projects that can be made, so many companies and services that will flourish that we couldn't even think of if we tried - but each of those requires time and hard critical thinking and problem solving. \n\nHave I accomplished something when a pallet comes out of the warehouse 5 seconds faster? In my book, not really. \n\nWhat if I build, with old friends from university, a revolutionary, first-of-its-kind, self-charging wireless keyboard that lasts a lifetime, and then some? I think yes. \n\nWhat about creating amazing designs for the 28 fire departments of each of the EU's capital, monetizing it, and giving all the profits back to the departments? Yes.\n\nWhat about an art display: computer-assisted, color vector generated images of all 486 mountain lodges in the Austrian Alpine Club? Yep.\n\nAnd so I'm doing it - Its time for me to spread my wings and fly. I'll check back in a year on this post - a post-mortem if you will. \n\nHopefully it won't be me that the post-mortem is written about.\n\n-Cheers! 🍺\n\nChris\n\n\n\n",
+        "contentDigest": "f5ccd2a153556d0e12d835c01a37ec94",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Welp, I Did It.",
+        "date": "2018-07-21",
+        "draft": false,
+        "_PARENT": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file",
+        "parent": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md",
+      "fields": {
+        "slug": "/welp-i-did-it/"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "layout": "index",
+      "jsonName": "offline-plugin-app-shell-fallback.json",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "context": {},
+      "updatedAt": 1532344677132,
+      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
+      "pluginCreatorId": "Plugin gatsby-plugin-offline",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "786921ab080df4ab0a247459463d30e9",
+        "owner": "internal-data-bridge"
+      }
+    },
     "SitePage /a-toast-to-full-stack-developers/": {
       "layout": "index",
       "jsonName": "a-toast-to-full-stack-developers.json",
@@ -8210,7 +8617,7 @@
           }
         }
       },
-      "updatedAt": 1532087740112,
+      "updatedAt": 1532344677165,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8219,7 +8626,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cf9a94ef795450d3a285d6d6627ce4ec",
+        "contentDigest": "f39b6d36c2615d70f83d1ca828ccb3a9",
         "owner": "internal-data-bridge"
       }
     },
@@ -8257,7 +8664,7 @@
           }
         }
       },
-      "updatedAt": 1532087740112,
+      "updatedAt": 1532344677166,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8266,7 +8673,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "061114a80cb2fca97f2370ccdb65660c",
+        "contentDigest": "cb7bdd8f94999bafc0ae740eb1f98e2e",
         "owner": "internal-data-bridge"
       }
     },
@@ -8304,7 +8711,7 @@
           }
         }
       },
-      "updatedAt": 1532087740113,
+      "updatedAt": 1532344677166,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8313,7 +8720,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "caa288b12ec07666ba4052038fb9f47f",
+        "contentDigest": "f48dd0c146327171efe740fa6de817cc",
         "owner": "internal-data-bridge"
       }
     },
@@ -8351,7 +8758,7 @@
           }
         }
       },
-      "updatedAt": 1532087740113,
+      "updatedAt": 1532344677167,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8360,7 +8767,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2e0d6bb5524c328c6104447a1f0219b3",
+        "contentDigest": "3baa609c2db1876c6e92ddd0c6274751",
         "owner": "internal-data-bridge"
       }
     },
@@ -8398,7 +8805,7 @@
           }
         }
       },
-      "updatedAt": 1532087740114,
+      "updatedAt": 1532344677167,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8407,7 +8814,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "79a150b42006d02681bdd5782602a902",
+        "contentDigest": "c5f5862bdb8b8e2d64002bc252ea74e4",
         "owner": "internal-data-bridge"
       }
     },
@@ -8445,7 +8852,7 @@
           }
         }
       },
-      "updatedAt": 1532087740114,
+      "updatedAt": 1532344677168,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8454,7 +8861,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "25e6586cd879efd886253fa6281b5723",
+        "contentDigest": "e1b5c9cffea12a249acf7ea580e95234",
         "owner": "internal-data-bridge"
       }
     },
@@ -8492,7 +8899,7 @@
           }
         }
       },
-      "updatedAt": 1532087740115,
+      "updatedAt": 1532344677168,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8501,7 +8908,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fbb85373cdbc5f648e9025ed5f82b32a",
+        "contentDigest": "e060b085271dd99b24846850208338b3",
         "owner": "internal-data-bridge"
       }
     },
@@ -8539,7 +8946,7 @@
           }
         }
       },
-      "updatedAt": 1532087740115,
+      "updatedAt": 1532344677169,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8548,7 +8955,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2faf98e47ac5d0d881f6f6f8986bf8b5",
+        "contentDigest": "2381b042c25d6db434bc032fffee174b",
         "owner": "internal-data-bridge"
       }
     },
@@ -8586,7 +8993,7 @@
           }
         }
       },
-      "updatedAt": 1532087740115,
+      "updatedAt": 1532344677169,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8595,7 +9002,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c2dda1fbe2dc540b4a75f9c21bee3328",
+        "contentDigest": "aa431004c717b111a12089188ecaf044",
         "owner": "internal-data-bridge"
       }
     },
@@ -8633,7 +9040,7 @@
           }
         }
       },
-      "updatedAt": 1532087740116,
+      "updatedAt": 1532344677169,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8642,7 +9049,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9d60b309cca3155bd04f7bdf615962ba",
+        "contentDigest": "5bf09ae6e6dee618072135c8cc60ff99",
         "owner": "internal-data-bridge"
       }
     },
@@ -8680,7 +9087,7 @@
           }
         }
       },
-      "updatedAt": 1532087740116,
+      "updatedAt": 1532344677170,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8689,7 +9096,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ce07d344c7459375a195004e8200f828",
+        "contentDigest": "7b58bf6389c2e73aec2ac8807d18a08c",
         "owner": "internal-data-bridge"
       }
     },
@@ -8727,7 +9134,7 @@
           }
         }
       },
-      "updatedAt": 1532087740117,
+      "updatedAt": 1532344677170,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8736,7 +9143,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4bfe7fd29a55b9998ccfd50a62fe5a9b",
+        "contentDigest": "c84d9265f8991c5bf197cb4bd2d1c67b",
         "owner": "internal-data-bridge"
       }
     },
@@ -8774,7 +9181,7 @@
           }
         }
       },
-      "updatedAt": 1532087740117,
+      "updatedAt": 1532344677170,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8783,7 +9190,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d1c2b3c080bec3353a6966c95d514571",
+        "contentDigest": "058f384a65a30183ad819f23c2e83ed1",
         "owner": "internal-data-bridge"
       }
     },
@@ -8821,7 +9228,7 @@
           }
         }
       },
-      "updatedAt": 1532087740118,
+      "updatedAt": 1532344677171,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8830,7 +9237,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "627319105e71e9a55e96994d20ea551d",
+        "contentDigest": "c7161669a3827039e28e41f5f13edb3a",
         "owner": "internal-data-bridge"
       }
     },
@@ -8868,7 +9275,7 @@
           }
         }
       },
-      "updatedAt": 1532087740118,
+      "updatedAt": 1532344677171,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8877,7 +9284,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3bf525b79071ca534f8ce028cdaa0cb5",
+        "contentDigest": "a455a81157382e702b4a6d5bb8f8bddc",
         "owner": "internal-data-bridge"
       }
     },
@@ -8915,7 +9322,7 @@
           }
         }
       },
-      "updatedAt": 1532087740118,
+      "updatedAt": 1532344677172,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8924,7 +9331,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c9621e503c00c04b9d277dc7eaff6a7b",
+        "contentDigest": "8801fb7f9b5fff6a07ed27c71cd63c0e",
         "owner": "internal-data-bridge"
       }
     },
@@ -8962,7 +9369,7 @@
           }
         }
       },
-      "updatedAt": 1532087740119,
+      "updatedAt": 1532344677172,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -8971,7 +9378,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aaa14e4bde0b0aae56a30f825921eaa7",
+        "contentDigest": "a354513a81255df0b18960a41b35f131",
         "owner": "internal-data-bridge"
       }
     },
@@ -9009,7 +9416,7 @@
           }
         }
       },
-      "updatedAt": 1532087740119,
+      "updatedAt": 1532344677172,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9018,7 +9425,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e27271010778c437a1d06e2ec2819908",
+        "contentDigest": "812a37e6a4f213b359a040260510dede",
         "owner": "internal-data-bridge"
       }
     },
@@ -9056,7 +9463,7 @@
           }
         }
       },
-      "updatedAt": 1532087740120,
+      "updatedAt": 1532344677173,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9065,7 +9472,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fabafe7b21f9892681d16e205d25425e",
+        "contentDigest": "351a4105dd0471ed97a42c21d14d759c",
         "owner": "internal-data-bridge"
       }
     },
@@ -9103,7 +9510,7 @@
           }
         }
       },
-      "updatedAt": 1532087740120,
+      "updatedAt": 1532344677173,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9112,7 +9519,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "70cff9c137644d7cd1058ce415791162",
+        "contentDigest": "98d922a7186fa97ff3c20f74506c4ac2",
         "owner": "internal-data-bridge"
       }
     },
@@ -9150,7 +9557,7 @@
           }
         }
       },
-      "updatedAt": 1532087740121,
+      "updatedAt": 1532344677174,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9159,7 +9566,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8f5838130a872267d0647eefbcd1f4fa",
+        "contentDigest": "8e2399fda909b20ece3236d6dae69366",
         "owner": "internal-data-bridge"
       }
     },
@@ -9197,7 +9604,7 @@
           }
         }
       },
-      "updatedAt": 1532087740121,
+      "updatedAt": 1532344677174,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9206,7 +9613,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c1572a8017357879c7ada4051b5eb9c6",
+        "contentDigest": "8bdbeba99b42a0e001dcfd49e55d28ed",
         "owner": "internal-data-bridge"
       }
     },
@@ -9244,7 +9651,7 @@
           }
         }
       },
-      "updatedAt": 1532087740122,
+      "updatedAt": 1532344677174,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9253,7 +9660,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c5305f1e991115ba94154b0228e03f77",
+        "contentDigest": "90c4b89e04427e111870fbc98ae12949",
         "owner": "internal-data-bridge"
       }
     },
@@ -9291,7 +9698,7 @@
           }
         }
       },
-      "updatedAt": 1532087740122,
+      "updatedAt": 1532344677175,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9300,7 +9707,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2f0317ee3852560c9b0995a8696c658f",
+        "contentDigest": "83ba4f6d106c3f854840168e48782c30",
         "owner": "internal-data-bridge"
       }
     },
@@ -9338,7 +9745,7 @@
           }
         }
       },
-      "updatedAt": 1532087740122,
+      "updatedAt": 1532344677175,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9347,7 +9754,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2f51ec446b843d57164bbbbeda39dd1b",
+        "contentDigest": "5582779a2e7394833ea86a0f8c047071",
         "owner": "internal-data-bridge"
       }
     },
@@ -9372,9 +9779,20 @@
             "relativeLink": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
           }
         },
-        "next": null
+        "next": {
+          "fields": {
+            "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+          },
+          "frontmatter": {
+            "date": "20 July, 2018",
+            "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+            "draft": false,
+            "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+            "relativeLink": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+          }
+        }
       },
-      "updatedAt": 1532087740123,
+      "updatedAt": 1532344677176,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
@@ -9383,7 +9801,137 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d7aea573ec3c990fbc60cbc596384832",
+        "contentDigest": "6b9123d62f2e2a5ea66ec41adc636ef6",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/": {
+      "layout": "index",
+      "jsonName": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot.json",
+      "internalComponentName": "ComponentFullyAutomatingChrisfrewInProductionsPart4OfBuildingASlackBot",
+      "path": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+        "prev": {
+          "fields": {
+            "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+          },
+          "frontmatter": {
+            "date": "18 July, 2018",
+            "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+            "draft": false,
+            "link": "https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+            "relativeLink": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+          }
+        },
+        "next": {
+          "fields": {
+            "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+          },
+          "frontmatter": {
+            "date": "20 July, 2018",
+            "title": "Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor",
+            "draft": false,
+            "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+            "relativeLink": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+          }
+        }
+      },
+      "updatedAt": 1532344677176,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7b39c4250c7b10ce073f83b9e476002b",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/": {
+      "layout": "index",
+      "jsonName": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor.json",
+      "internalComponentName": "ComponentFullyAutomatingChrisfrewInProductionsPart3OfGithubWebhookMonitor",
+      "path": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+        "prev": {
+          "fields": {
+            "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+          },
+          "frontmatter": {
+            "date": "20 July, 2018",
+            "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+            "draft": false,
+            "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+            "relativeLink": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+          }
+        },
+        "next": {
+          "fields": {
+            "slug": "/welp-i-did-it/"
+          },
+          "frontmatter": {
+            "date": "21 July, 2018",
+            "title": "Welp, I Did It.",
+            "draft": false,
+            "link": "https://chrisfrew.in/welp-i-did-it/",
+            "relativeLink": "/welp-i-did-it/"
+          }
+        }
+      },
+      "updatedAt": 1532344677177,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "30e59d8d0ffd4858c8a6aa3719c94e6d",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /welp-i-did-it/": {
+      "layout": "index",
+      "jsonName": "welp-i-did-it.json",
+      "internalComponentName": "ComponentWelpIDidIt",
+      "path": "/welp-i-did-it/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/welp-i-did-it/",
+        "prev": {
+          "fields": {
+            "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+          },
+          "frontmatter": {
+            "date": "20 July, 2018",
+            "title": "Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor",
+            "draft": false,
+            "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+            "relativeLink": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+          }
+        },
+        "next": null
+      },
+      "updatedAt": 1532344677177,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /welp-i-did-it/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2c688ca5c3fe22a353d8793ae91d0154",
         "owner": "internal-data-bridge"
       }
     },
@@ -9395,7 +9943,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1532087523734,
+      "updatedAt": 1532344677221,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/index.js",
@@ -9404,7 +9952,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dff570707dee982cc070d4ee8375305b",
+        "contentDigest": "07f2e13121308885907c0254cb1abb62",
         "owner": "internal-data-bridge"
       }
     },
@@ -9416,7 +9964,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/johnny-birthday/index.js",
       "componentChunkName": "component---src-pages-johnny-birthday-index-js",
       "context": {},
-      "updatedAt": 1532087523744,
+      "updatedAt": 1532344677229,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/johnny-birthday/index.js",
@@ -9425,28 +9973,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a0459b79be8fb469a5de5110f284c7e6",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /market-news-feed/": {
-      "layout": "index",
-      "jsonName": "market-news-feed.json",
-      "internalComponentName": "ComponentMarketNewsFeed",
-      "path": "/market-news-feed/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
-      "componentChunkName": "component---src-pages-market-news-feed-index-js",
-      "context": {},
-      "updatedAt": 1532087523744,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
-      "id": "SitePage /market-news-feed/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "3961af442128d64b0c7d7eadac3c522b",
+        "contentDigest": "79d3ac41bf398b93dc81a6b8240b89bb",
         "owner": "internal-data-bridge"
       }
     },
@@ -9458,7 +9985,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
       "componentChunkName": "component---src-pages-movie-night-index-js",
       "context": {},
-      "updatedAt": 1532087523745,
+      "updatedAt": 1532344677229,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/movie-night/index.js",
@@ -9467,28 +9994,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "095471c6b3ee60507f831cd4f3dee3b3",
+        "contentDigest": "c1b0dfb85d680e838a15ad1ebc4d71ad",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /sec-filings/": {
+    "SitePage /market-news-feed/": {
       "layout": "index",
-      "jsonName": "sec-filings.json",
-      "internalComponentName": "ComponentSecFilings",
-      "path": "/sec-filings/",
-      "component": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
-      "componentChunkName": "component---src-pages-sec-filings-index-js",
+      "jsonName": "market-news-feed.json",
+      "internalComponentName": "ComponentMarketNewsFeed",
+      "path": "/market-news-feed/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
+      "componentChunkName": "component---src-pages-market-news-feed-index-js",
       "context": {},
-      "updatedAt": 1532087523745,
+      "updatedAt": 1532344677230,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
-      "id": "SitePage /sec-filings/",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/market-news-feed/index.js",
+      "id": "SitePage /market-news-feed/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a49d802152644f0933de717f13aebb0f",
+        "contentDigest": "bc0cdaf8d4116e93b712046fe84c7904",
         "owner": "internal-data-bridge"
       }
     },
@@ -9500,7 +10027,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
       "componentChunkName": "component---src-pages-privacy-policy-index-js",
       "context": {},
-      "updatedAt": 1532087523746,
+      "updatedAt": 1532344677230,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/privacy-policy/index.js",
@@ -9509,7 +10036,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "af4018f3fb4fa9eeb7f106d37a972d8d",
+        "contentDigest": "6f21c099fbe69e20c99231d548706503",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sec-filings/": {
+      "layout": "index",
+      "jsonName": "sec-filings.json",
+      "internalComponentName": "ComponentSecFilings",
+      "path": "/sec-filings/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
+      "componentChunkName": "component---src-pages-sec-filings-index-js",
+      "context": {},
+      "updatedAt": 1532344677231,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/sec-filings/index.js",
+      "id": "SitePage /sec-filings/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "be479282b3797a4af648de7e03286465",
         "owner": "internal-data-bridge"
       }
     },
@@ -9521,7 +10069,7 @@
       "component": "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js",
       "componentChunkName": "component---src-pages-talk-shop-index-js",
       "context": {},
-      "updatedAt": 1532087523750,
+      "updatedAt": 1532344677235,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js",
@@ -9530,7 +10078,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "50fbc8b9f72b7b90272a868c1cc44340",
+        "contentDigest": "7b0c5ba7959799580df3885ab4863a01",
         "owner": "internal-data-bridge"
       }
     }
@@ -9569,7 +10117,10 @@
         "/warn-sap-users-of-locked-objects-then-kill-their-session/",
         "/",
         "/led-zeppelin-and-data-analysis-for-lyric-generation-and-inspiration/",
-        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+        "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+        "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+        "/welp-i-did-it/"
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/a-toast-to-full-stack-developers/index.md absPath of file >>> MarkdownRemark": [
         "/a-toast-to-full-stack-developers/"
@@ -9648,6 +10199,15 @@
       ],
       "/Users/chris/projects/chrisfrew.in/src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/index.md absPath of file >>> MarkdownRemark": [
         "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/index.md absPath of file >>> MarkdownRemark": [
+        "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/index.md absPath of file >>> MarkdownRemark": [
+        "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+      ],
+      "/Users/chris/projects/chrisfrew.in/src/pages/welp-i-did-it/index.md absPath of file >>> MarkdownRemark": [
+        "/welp-i-did-it/"
       ]
     },
     "connections": {

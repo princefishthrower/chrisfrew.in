@@ -14,12 +14,13 @@ Yep, if anyone out there has been following along in my blogging adventures, you
 
 ## Getting the List of Song Names
 
-There's this neat tool that I found that extracts lists from Wikipedia pages: http://wikitable2csv.ggor.de/, built by Gregor Weichbrodt. Nice one, Gregor! And... (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a "List of songs recorded by Led Zeppelin" page! https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin
+There's this neat tool that I found that extracts lists from Wikipedia pages: http://wikitable2csv.ggor.de/, built by Gregor Weichbrodt. Nice one, Gregor! And... (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a "List of songs recorded by Led Zeppelin" page! [https://en.wikipedia.org/wiki/List\_of\_songs\_recorded\_by\_Led\_Zeppelin](https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin)
 
 Throw that into Gregor's tool, and you've got your .csv data, which with 5 seconds work with Sublime text, becomes our song list:
 
 ```python
-lSongNames = ["10 Ribs & All/Carrot Pod Pod","Achilles Last Stand",
+lSongNames = ["10 Ribs & All/Carrot Pod Pod",
+"Achilles Last Stand",
 "All My Love",
 "Babe I'm Gonna Leave You",
 "Baby Come On Home" ,
@@ -139,7 +140,8 @@ So, we're basically done. We loop over our songs and write the retrieved lyrics 
 ```python
 import lyricwikia
 
-lSongNames = ["10 Ribs & All/Carrot Pod Pod","Achilles Last Stand",
+lSongNames = ["10 Ribs & All/Carrot Pod Pod",
+"Achilles Last Stand",
 "All My Love",
 "Babe I'm Gonna Leave You",
 "Baby Come On Home" ,
@@ -351,19 +353,19 @@ In a way, I think we've found the 'stop words' of Led Zeppelin. :joy: I could ha
 
 ![25-50 most common words](most_common_lower.png)
 
-what I think is really neat here, almost zen-like, is that the group has managed to use night and day exactly the same number of times - 
+what I think is really neat here, almost zen-like, is that the group has managed to use the words 'night' and 'day' exactly the same number of times - 100.
 
 ## Data Analysis - Markov Chains
 
 Once again I revisited Markov Chains - what's better than to get some inspiration from poorly written robot lyrics? Since I've only worked with Markov Chains in Nodejs before, I had to look around for a . I ended up borrowing a lot from this very basic implementation from Toward's Data Science's Medium channel: https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6
  
-> - ma - ooh , in my heart You know the , didn ' t take it told me go If it ' t have to know where you there where the downhill slide Oh , make ya know , now I couldn ' ve decided what the wind won '
+> \- ma - ooh , in my heart You know the , didn ' t take it told me go If it ' t have to know where you there where the downhill slide Oh , make ya know , now I couldn ' ve decided what the wind won '
  
 > ' d do , honey As we sweep with death The Queen of the storm who really good friend They give to care if you now , They say " Take him by takin ' m - la ) Spend it has ! Feel it ain ' on the way back
  
 > Groovin ' s bright as the morning When ya no love for hesitatin ' t no more times Keep thinkin ' ya know it . We ' baby , I oughta know where he told A - hah - take , love that girl , that set you babe Sugar mama
  
-> - ooh - ha , take you stand it now ' t unwind Get some good and you lovin ', knowin ' s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,
+> \- ooh - ha , take you stand it now ' t unwind Get some good and you lovin ', knowin ' s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,
  
 > Dewy eyes Said , throw your crying for what your name Hear them in my power I know my baby when she would never do , " Then the gallows pole Yes , my very special smile Like a cloak of us to glitter I don ' m a - hah
 

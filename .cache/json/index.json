@@ -22,6 +22,45 @@
                 },
                 {
                     "node": {
+                        "excerpt": "I quit my full-time job. Most of the time about things like this, all you here is the same old tune: “Don’t do this don’t do this don’t do…",
+                        "fields": {
+                            "slug": "/welp-i-did-it/"
+                        },
+                        "frontmatter": {
+                            "date": "21 July, 2018",
+                            "title": "Welp, I Did It.",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Slack Bot! You may have read  Part 3  of  my giant automation undertaking  about. Maybe not. Anyway, near the bottom of  Part 3 , I discuss…",
+                        "fields": {
+                            "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+                        },
+                        "frontmatter": {
+                            "date": "20 July, 2018",
+                            "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "excerpt": "Background and Overview of this Technologically Amazing Accomplishment After a bit of thinking about my automation project, I settled on a…",
+                        "fields": {
+                            "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+                        },
+                        "frontmatter": {
+                            "date": "20 July, 2018",
+                            "title": "Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "excerpt": "Inspiration and Motivation I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly…",
                         "fields": {
                             "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
