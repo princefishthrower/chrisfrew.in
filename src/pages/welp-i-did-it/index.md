@@ -4,15 +4,19 @@ date: "2018-07-21"
 draft: false
 ---
 
+## Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.
+
+\*\*\*Note: this post is mirrored on my Medium: https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1
+
 I quit my full-time job.
 
 Most of the time about things like this, all you here is the same old tune:
 
-> "Don't do this don't do this don't do this." 
+> Don't do this don't do this don't do this. 
 
-But jeez, people are so risk adverse sometime. Just thinking about my own situation, right now, I'm 100x better off than I was just 3 years ago, when I was 23, $27K in debt from my bachelor degree, and earning less than _half_ of what I do now! How come nobody back then said 
+But jeez, people are so risk adverse sometime. Just thinking about my own situation, right now, I'm 100x better off than I was just 3 years ago, when I was 23, $27K in debt from my bachelor degree, and earning less than _half_ of what I do now! How come nobody back then said:
 
-> "Don't do this don't do this don't do this"
+> Don't do this don't do this don't do this
 
 Because being a homely, unkempt, poor graduate student is _expected_ by society, (although graduate school is even looked upon with reverence in some cases - "Wow, _Cornell_? Great school, great school."). But what the hell are people thinking? In terms of net worth back then, I was totally screwed!
 
@@ -35,11 +39,17 @@ But hey, it's 2018, and "quitting your day job", especially as a software engine
 
 So yes, any one or a combination of these will pay the bills.
 
-I realize, _none_ of these (or probably even a combination) will pay as high as my comfy logistic / warehousing full-time job. But I also realized over the past few months, _I don't give a damn about money!_ Sure, I could go the Mr. Money Mustache route and just keep truckin' away at my current job with a high savings rate, and become financially independent in 7-8 years. But to me, that's 7-8 years of sunk cost, working at albeit a decent, but ultimately where-I-don't-want-to-be job. If I spent those 7-8 years building out projects that first 1. allow me enough income to survive, and 2. are valuable projects that I value, then I have many many years after that to continue building, instead of after those 10 years starting 'fresh' only with the single added confidence that I am financially independent. 
+I realize, _none_ of these (or probably even a combination) will pay as high as my comfy logistic / warehousing full-time job. But I also realized over the past few months, _I don't give a damn about money!_ Sure, I could go the Mr. Money Mustache route and just keep truckin' away at my current job with a high savings rate, and become financially independent in 7-8 years. But to me, that's 7-8 years of sunk cost, working at albeit a decent, but ultimately where-I-don't-want-to-be job. If I spent those 7-8 years building out projects that first 
+
+1. Allow me enough income to survive, and 
+
+2. Are valuable projects that I value and believe make a difference in the world
+
+Then I have many many years after that to continue building, instead of after those 7-8 years, starting 'fresh' only with the single added confidence that I am financially independent. 
 
 Worst case, I fail and a year from now I run back to the security of a full-time job. (Hopefully not the case!)
 
-It's a similar story with options trading, [another toy project of mine](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-b32bf47db656). A lot of people say you can learn a lot from paper trading, but in the camp of people with real trading experience say you can never really learn unless real money is on the line. If I springboard into the abyss that is freelance / maker / creative / digital nomad, I'm _forced_ to do my best work, and a lot of it, because it's the only chance I have to pay my bills. Quotes that ring to this tune can be seen all over by (now) extremely successful people:
+It's a similar story with options trading, [another toy project of mine](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-b32bf47db656). A lot of people say you can learn a lot from paper trading, but people with real trading experience say you can never really learn unless real money is on the line. If I springboard into the abyss that is freelance / maker / creative / digital nomad, I'm _forced_ to do my best work, and a lot of it, because it's the only chance I have to pay my bills. Quotes that ring to this tune can be seen all over by (now) extremely successful people:
 
 > I was in the zone, trying to make a living<br/>
 Heading to work in the morning<br/>
@@ -57,15 +67,15 @@ Elevated to levels I ain't ever seen
 
 -Tim Ferriss
 
-The bottom line is that in this information age, there are so many lines to connect, so many beautiful projects that can be made, so many companies and services that will flourish that we couldn't even think of if we tried - but each of those requires time and hard critical thinking and problem solving. 
+The bottom line is that in this information age, there are so many lines to connect, so many beautiful projects that can be made, so many companies and services that will flourish that we couldn't even think of existing yet, even if we tried - but each of those requires time and hard critical thinking and problem solving. 
 
 Have I accomplished something when a pallet comes out of the warehouse 5 seconds faster? In my book, not really. 
 
 What if I build, with old friends from university, a revolutionary, first-of-its-kind, self-charging wireless keyboard that lasts a lifetime, and then some? I think yes. 
 
-What about creating amazing designs for the 28 fire departments of each of the EU's capital, monetizing it, and giving all the profits back to the departments? Yes.
+What about creating amazing designs for the 28 fire departments of each of the EU's capital cities, monetizing it, and giving all the profits back to those departments? Yes.
 
-What about an art display: computer-assisted, color vector generated images of all 486 mountain lodges in the Austrian Alpine Club? Yep.
+What about an art display: computer-assisted, colorized vector generated images of all 486 mountain lodges in the Austrian Alpine Club? Yep.
 
 And so I'm doing it - Its time for me to spread my wings and fly. I'll check back in a year on this post - a post-mortem if you will. 
 

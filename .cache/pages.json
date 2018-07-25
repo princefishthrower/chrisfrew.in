@@ -224,13 +224,6 @@
         "path": "/johnny-birthday/"
     },
     {
-        "componentChunkName": "component---src-pages-movie-night-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "movie-night.json",
-        "path": "/movie-night/"
-    },
-    {
         "componentChunkName": "component---src-pages-market-news-feed-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -243,6 +236,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "privacy-policy.json",
         "path": "/privacy-policy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-movie-night-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "movie-night.json",
+        "path": "/movie-night/"
     },
     {
         "componentChunkName": "component---src-pages-sec-filings-index-js",
