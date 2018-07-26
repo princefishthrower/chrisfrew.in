@@ -14,7 +14,7 @@ Most of the time about things like this, all you here is the same old tune:
 
 > Don't do this don't do this don't do this. 
 
-But jeez, people are so risk adverse sometime. Just thinking about my own situation, right now, I'm 100x better off than I was just 3 years ago, when I was 23, $27K in debt from my bachelor degree, and earning less than _half_ of what I do now! How come nobody back then said:
+But jeez, people are so risk-averse sometime. Just thinking about my own situation, right now, I'm 100x better off than I was just 3 years ago, when I was 23, $27K in debt from my bachelor degree, and earning less than _half_ of what I do now! How come nobody back then said:
 
 > Don't do this don't do this don't do this
 
