@@ -47,6 +47,64 @@ a {
   }
 }
 
-/* canvas {
-  position: absolute;
-} */
+.particlesCanvas {
+  /* z-index:-99;  */
+  position: absolute !important;
+  width: 100vw !important;
+  height: 100vw !important;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  display: block;
+  /* width:100vw !important;
+  height:100vh !important;
+  
+  left: -50vw !important; */
+}
+
+.copyButton {
+  cursor: pointer;
+	background-image: gray;
+	border-radius: 60px;
+  box-sizing: border-box;
+	color: gray;
+	display: block;
+	font: 1.125rem 'Montserrat', Arial, sans-serif; /*18*/
+  font-weight: bold;
+	height: 60px;
+	margin: 0 auto;
+	padding: 6px;
+	position: absolute;
+  text-decoration: none;
+	width: 60px;
+	z-index: 999;
+  right: 10px;
+  bottom: 10px;
+}
+.copyButton span {
+	align-items: center;
+	background: #ffffff;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+.copyButton:hover span {
+	background: white;
+}
+
+.copyNotification {
+  background: gray;
+  color: #ffffff;
+}
+
+.jsPostsDate {
+  font-size: 0.83255rem;
+  line-height: 1.75rem;
+  display: block;
+  margin-bottom: 1.75rem;
+  margin-top: -1.75rem;
+}

@@ -4,9 +4,14 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faCopy } from '@fortawesome/fontawesome-free-solid'
 
 require('prismjs/themes/prism-okaidia.css');
 require('../styles/styles.css');
+
+fontawesome.library.add(faCopy);
 
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 
@@ -15,15 +20,18 @@ class BlogIndex extends React.Component {
     let i = 0;
     let sColor = '';
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
+    const posts = [ // combine both post types
+      ...this.props.data.allMarkdownRemark.edges,
+      ...this.props.data.allJavascriptFrontmatter.edges,
+    ]
+    let sortedPosts = posts.sort((a, b) => { // need to sort because markdown posts and JS posts are queried seperately
+      return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date);
+    });
     return (
       <div>
         <Helmet title={siteTitle} />
         <Bio />
-        {posts.map(({ node }) => {
-          // console.log(node.frontmatter);
-          // console.log(Boolean(node.frontmatter.draft));
+        { sortedPosts.map(({ node }) => {
           if (node.frontmatter.draft) {
             return; // if the markdown is still a 'draft post'
           }
@@ -67,7 +75,20 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+            draft
+          }
+        }
+      }
+    }
+    allJavascriptFrontmatter {
+      edges {
+        node {
           fields {
             slug
           }

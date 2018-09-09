@@ -24,7 +24,8 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(5),
             height: rhythm(5),
-            borderRadius: '100%'
+            borderRadius: '100%',
+            zIndex:999
           }}
         />
         <p>

@@ -9,7 +9,18 @@
             "edges": [
                 {
                     "node": {
-                        "excerpt": "Data analysis Evidence of State Actors? I looked at the. Indeed, seeing as , this would be of interest. I was surprised to find that there…",
+                        "fields": {
+                            "slug": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
+                        },
+                        "frontmatter": {
+                            "date": "06 August, 2018",
+                            "title": "More Thoughts On Early Retirement, Financial Independence, and Making a Living Worth Living",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "fields": {
                             "slug": "/data-analysis-of-reddit-users/"
                         },
@@ -22,12 +33,23 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad. * * * Note: this post is mirrored on my…",
+                        "fields": {
+                            "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+                        },
+                        "frontmatter": {
+                            "date": "26 July, 2018",
+                            "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+                            "draft": false
+                        }
+                    }
+                },
+                {
+                    "node": {
                         "fields": {
                             "slug": "/welp-i-did-it/"
                         },
                         "frontmatter": {
-                            "date": "21 July, 2018",
+                            "date": "22 July, 2018",
                             "title": "Welp, I Did It.",
                             "draft": false
                         }
@@ -35,12 +57,11 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Slack Bot! You may have read  Part 3  of  my giant automation undertaking  about. Maybe not. Anyway, near the bottom of  Part 3 , I discuss…",
                         "fields": {
                             "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
                         },
                         "frontmatter": {
-                            "date": "20 July, 2018",
+                            "date": "21 July, 2018",
                             "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
                             "draft": false
                         }
@@ -48,7 +69,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Background and Overview of this Technologically Amazing Accomplishment After a bit of thinking about my automation project, I settled on a…",
                         "fields": {
                             "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
                         },
@@ -61,20 +81,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Inspiration and Motivation I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly…",
-                        "fields": {
-                            "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
-                        },
-                        "frontmatter": {
-                            "date": "18 July, 2018",
-                            "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
-                            "draft": false
-                        }
-                    }
-                },
-                {
-                    "node": {
-                        "excerpt": "A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…",
                         "fields": {
                             "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
                         },
@@ -87,7 +93,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Node.js Server Monitor In  my attempt to automate my suite of websites , I wanted to build a simple Node.js server that monitors all my live…",
                         "fields": {
                             "slug": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
                         },
@@ -100,7 +105,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Links to All Parts of the Process Before I get into the description, you may be here just to get the links. Well, scroll no further: Part…",
                         "fields": {
                             "slug": "/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/"
                         },
@@ -113,7 +117,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…",
                         "fields": {
                             "slug": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
                         },
@@ -126,7 +129,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Google Cloud I’m torn most of the time about using Google Cloud APIs - on one hand, they are a group of some of the best APIs on the web…",
                         "fields": {
                             "slug": "/using-google-clouds-text-to-speech-machine-learning-api/"
                         },
@@ -139,7 +141,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…",
                         "fields": {
                             "slug": "/some-tasty-bash-profile-commands/"
                         },
@@ -152,7 +153,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "The Posts So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody: Reddit Response: The…",
                         "fields": {
                             "slug": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
                         },
@@ -165,7 +165,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there…",
                         "fields": {
                             "slug": "/i-set-aside-1000-to-learn-options-trading/"
                         },
@@ -178,7 +177,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…",
                         "fields": {
                             "slug": "/introducing-chrisfrewin-productions/"
                         },
@@ -191,7 +189,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "So, we don’t want to be rebuilding SAP GUI transactions 1:1 in the Web… That would be like reinventing the wheel. In SAPUI5 function, that…",
                         "fields": {
                             "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
                         },
@@ -204,7 +201,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "And some common gotchyas, too",
                         "fields": {
                             "slug": "/detailed-look-at-bdc-in-abap/"
                         },
@@ -217,7 +213,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…",
                         "fields": {
                             "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
                         },
@@ -230,7 +225,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Add some spice to your SAPUI5 apps! (Or even normal webapps, for that matter) I was a noob. I wrote in my SAPUI5 some warehouse task code…",
                         "fields": {
                             "slug": "/abap-push-and-message-channels/"
                         },
@@ -243,7 +237,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Dude, where’s my color scheme?! At some point,  SAP took away my Monokai Color scheme from the SAPUI5 Web IDE!  That is unforgivable… Don’t…",
                         "fields": {
                             "slug": "/colors-for-sap-web-ide/"
                         },
@@ -256,7 +249,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Edit June 1st, 2018: There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements…",
                         "fields": {
                             "slug": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
                         },
@@ -269,7 +261,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "This is a Must-Have Tool for any ABAP Developer! Did you ever find you wanted to debug something in SAP GUI right on a certain command or…",
                         "fields": {
                             "slug": "/debugging-abap-with-a-sap-shortcut/"
                         },
@@ -282,7 +273,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "No, It’s not Easter for Christmas… It’s a quick surprise for those celebrating christmas from npm! Simply issue  npm xmas  in your terminal…",
                         "fields": {
                             "slug": "/an-npm-christmas-easter-egg/"
                         },
@@ -295,7 +285,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "HTML in Markdown!? Well, it’s a little known fact (at least it was for me) that you can use native HTML tags are supported in Markdown…",
                         "fields": {
                             "slug": "/dropdowns-in-readmes/"
                         },
@@ -308,7 +297,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "This’ll be a real short one; I just learned you can link to specific lines of code on GitHub! All you need to do is find your link to the…",
                         "fields": {
                             "slug": "/hot-linking-to-lines-in-github/"
                         },
@@ -321,7 +309,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…",
                         "fields": {
                             "slug": "/laptop-stickers/"
                         },
@@ -334,7 +321,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…",
                         "fields": {
                             "slug": "/final-say-bitcoin/"
                         },
@@ -347,7 +333,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Alright, let’s do a bit of applied stuff today. Backstory For a long time, I had a ticket open for our IT team (I am likewise in the SAP…",
                         "fields": {
                             "slug": "/sending-windows-commands-from-sap-abap/"
                         },
@@ -360,7 +345,6 @@
                 },
                 {
                     "node": {
-                        "excerpt": "Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit…",
                         "fields": {
                             "slug": "/a-toast-to-full-stack-developers/"
                         },
@@ -373,13 +357,28 @@
                 },
                 {
                     "node": {
-                        "excerpt": "I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for  nlp-champs.com…",
                         "fields": {
                             "slug": "/hello-world/"
                         },
                         "frontmatter": {
                             "date": "12 December, 2017",
                             "title": "Hello World - My First Post :)",
+                            "draft": false
+                        }
+                    }
+                }
+            ]
+        },
+        "allJavascriptFrontmatter": {
+            "edges": [
+                {
+                    "node": {
+                        "fields": {
+                            "slug": "/how-to-convert-raw16-to-char22-material-ids-in-sap-ewm-and-vice-versa/"
+                        },
+                        "frontmatter": {
+                            "date": "09 September, 2018",
+                            "title": "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
                             "draft": false
                         }
                     }

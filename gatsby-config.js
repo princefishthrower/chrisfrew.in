@@ -10,9 +10,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: 'markdown-pages',
       },
     },
+    {
+       resolve: `gatsby-source-filesystem`,
+       options: {
+         path: `${__dirname}/src/pages`,
+         name: "javascript-pages",
+       },
+    },
+    `gatsby-transformer-javascript-frontmatter`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

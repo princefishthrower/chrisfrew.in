@@ -1,6 +1,6 @@
 ---
 title: Welp, I Did It.
-date: "2018-07-21"
+date: "2018-07-22"
 draft: false
 ---
 

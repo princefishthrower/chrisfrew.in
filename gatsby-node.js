@@ -14,7 +14,21 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
           {
-            allMarkdownRemark(limit: 1000) {
+            allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    date(formatString: "DD MMMM, YYYY")
+                    title
+                    draft
+                  }
+                }
+              }
+            }
+            allJavascriptFrontmatter {
               edges {
                 node {
                   fields {
@@ -36,7 +50,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        // Create blog posts pages.
+        // Create blog posts pages (standard markdown)
         var iCount = 1;
         _.each(result.data.allMarkdownRemark.edges, (edge, index) => {
           
@@ -71,7 +85,38 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           })
           iCount = iCount + 1;
+        });
+        
+        // Create pages from javascript
+        // Gatsby will, by default, createPages for javascript in the
+        //  /pages directory. We purposely don't have a folder with this name
+        //  so that we can go full manual mode.
+        result.data.allJavascriptFrontmatter.edges.forEach(edge => {
+          let { frontmatter } = edge.node
+          // see above
+          if (frontmatter.layoutType === `post`) {
+            createPage({
+              path: frontmatter.path, // required
+              // Note, we can't have a template, but rather require the file directly.
+              //  Templates are for converting non-react into react. jsFrontmatter
+              //  picks up all of the javascript files. We have only written these in react.
+              component: path.resolve(edge.node.fileAbsolutePath),
+              context: {
+                slug: edge.node.fields.slug,
+              },
+            })
+          } else if (frontmatter.layoutType === `page`) {
+            createPage({
+              path: frontmatter.path, // required
+              component: path.resolve(edge.node.fileAbsolutePath),
+              context: {
+                slug: edge.node.fields.slug,
+              },
+            })
+          }
         })
+        
+        return
       })
     )
   })
@@ -80,7 +125,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `MarkdownRemark` || node.internal.type === `JavascriptFrontmatter`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,

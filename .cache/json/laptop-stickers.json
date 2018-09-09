@@ -20,14 +20,14 @@
         "slug": "/laptop-stickers/",
         "prev": {
             "fields": {
-                "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
             },
             "frontmatter": {
-                "date": "25 January, 2018",
-                "title": "Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input",
-                "draft": true,
-                "link": "https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/",
-                "relativeLink": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "date": "26 July, 2018",
+                "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+                "draft": false,
+                "link": "https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+                "relativeLink": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
             }
         },
         "next": {
