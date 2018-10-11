@@ -20,18 +20,6 @@
         "slug": "/sending-windows-commands-from-sap-abap/",
         "prev": {
             "fields": {
-                "slug": "/laptop-stickers/"
-            },
-            "frontmatter": {
-                "date": "19 December, 2017",
-                "title": "My Laptop Stickers Arrived! Am I a Real Developer Now?!",
-                "draft": false,
-                "link": "https://chrisfrew.in/laptop-stickers/",
-                "relativeLink": "/laptop-stickers/"
-            }
-        },
-        "next": {
-            "fields": {
                 "slug": "/some-tasty-bash-profile-commands/"
             },
             "frontmatter": {
@@ -40,6 +28,18 @@
                 "draft": false,
                 "link": "https://chrisfrew.in/some-tasty-bash-profile-commands/",
                 "relativeLink": "/some-tasty-bash-profile-commands/"
+            }
+        },
+        "next": {
+            "fields": {
+                "slug": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+            },
+            "frontmatter": {
+                "date": "09 May, 2018",
+                "title": "Warn SAP Users of Locked Objects Then Kill Their Session",
+                "draft": false,
+                "link": "https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/",
+                "relativeLink": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
             }
         }
     }

@@ -4,14 +4,9 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
-import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faCopy } from '@fortawesome/fontawesome-free-solid'
 
 require('prismjs/themes/prism-okaidia.css');
 require('../styles/styles.css');
-
-fontawesome.library.add(faCopy);
 
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 

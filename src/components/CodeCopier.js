@@ -4,9 +4,10 @@ import PropTypes from 'prop-types'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { monokaiSublime } from 'react-syntax-highlighter/styles/hljs';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+let copySVG = require('../images/copy.svg');
 
 // style so it matches the CSS styles for gatsby prism plugin (oCustomStyle is applied to the wrapping <pre> tag of each code peice)
 const oCustomStyle = {
@@ -38,7 +39,7 @@ class CodeCopier extends React.Component {
         <CopyToClipboard text={this.props.sCode}
           onCopy={this.notify}>
           <a className="copyButton">
-            <span><FontAwesomeIcon icon="copy"/></span>
+            <span><img width="25px" style={{marginBottom: '0px'}} src={copySVG}/></span>
           </a>
         </CopyToClipboard>
         <ToastContainer autoClose={2000} hideProgressBar={true} pauseOnHover={false} closeButton={false}/>

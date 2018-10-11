@@ -20,26 +20,26 @@
         "slug": "/hello-world/",
         "prev": {
             "fields": {
-                "slug": "/introducing-chrisfrewin-productions/"
+                "slug": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
             },
             "frontmatter": {
-                "date": "01 March, 2018",
-                "title": "Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)",
+                "date": "20 July, 2018",
+                "title": "Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a GitHub Webhook Monitor",
                 "draft": false,
-                "link": "https://chrisfrew.in/introducing-chrisfrewin-productions/",
-                "relativeLink": "/introducing-chrisfrewin-productions/"
+                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/",
+                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/i-set-aside-1000-to-learn-options-trading/"
+                "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
             },
             "frontmatter": {
-                "date": "07 April, 2018",
-                "title": "I Set Aside $1000 to Learn Options Trading",
+                "date": "21 July, 2018",
+                "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
                 "draft": false,
-                "link": "https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/",
-                "relativeLink": "/i-set-aside-1000-to-learn-options-trading/"
+                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
+                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
             }
         }
     }

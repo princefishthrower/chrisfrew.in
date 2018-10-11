@@ -20,26 +20,26 @@
         "slug": "/laptop-stickers/",
         "prev": {
             "fields": {
-                "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+                "slug": "/i-set-aside-1000-to-learn-options-trading/"
             },
             "frontmatter": {
-                "date": "26 July, 2018",
-                "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
+                "date": "07 April, 2018",
+                "title": "I Set Aside $1000 to Learn Options Trading",
                 "draft": false,
-                "link": "https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
-                "relativeLink": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+                "link": "https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/",
+                "relativeLink": "/i-set-aside-1000-to-learn-options-trading/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/sending-windows-commands-from-sap-abap/"
+                "slug": "/using-google-clouds-text-to-speech-machine-learning-api/"
             },
             "frontmatter": {
-                "date": "13 December, 2017",
-                "title": "Sending Windows Server Commands From SAP ABAP",
+                "date": "14 April, 2018",
+                "title": "Using Google Cloud's Text To Speech Machine Learning API",
                 "draft": false,
-                "link": "https://chrisfrew.in/sending-windows-commands-from-sap-abap/",
-                "relativeLink": "/sending-windows-commands-from-sap-abap/"
+                "link": "https://chrisfrew.in/using-google-clouds-text-to-speech-machine-learning-api/",
+                "relativeLink": "/using-google-clouds-text-to-speech-machine-learning-api/"
             }
         }
     }

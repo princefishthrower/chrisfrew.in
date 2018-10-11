@@ -46,11 +46,11 @@
                 {
                     "node": {
                         "fields": {
-                            "slug": "/welp-i-did-it/"
+                            "slug": "/welp-i-did-it-i-quit/"
                         },
                         "frontmatter": {
                             "date": "22 July, 2018",
-                            "title": "Welp, I Did It.",
+                            "title": "Welp, I Did It. I Quit.",
                             "draft": false
                         }
                     }
