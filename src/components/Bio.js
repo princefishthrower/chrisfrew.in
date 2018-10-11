@@ -56,7 +56,7 @@ class Bio extends React.Component {
           Got a project/job idea? Get in contact with me and let's get to it! I'm always looking to learn and build new things!
           <br/>
           <br/>
-          <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{color:'black'}}>Hire me or talk about projects!</span></a>
+          <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{color:'black'}}>Hire me or let's talk about projects!</span></a>
           <br/>
           <br/>
           A proud member of Dev.to, Product Hunt's Makers, and Egghead.io's Community!
