@@ -35,14 +35,17 @@ class Bio extends React.Component {
             nlp-champs.com
           </a>
           {' '}
-          and own
+          and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank">charity clothing company</a>
           {' '}
           <a href="https://sirenapparel.us" target="_blank">
             Siren Apparel
           </a>
           .
           {'\n'}
-          I'm an ex-mechanical gone developer engineer living in Austria and working in Liechtenstein. For my day job, I'm a full stack SAP/web app developer, and a hobbyist full stack web/machine learning/natural language processing/Ethereum developer. If I'm not building software, I'll be found hiking, skiing, or creating art.{' '}
+          I'm an ex-mechanical engineer gone software engineer that (mostly) lives in Austria. 
+          <br/>
+          <br/>  
+          I'm a remote, full-stack application software engineer, and a hobbyist machine learning/natural language processing developer. If I'm not building software, I'll be found hiking, skiing, losing money trading options, or creating music and art.{' '}
           <a href="https://twitter.com/galt_">
             You can follow me on Twitter, @Galt_,
           </a>
@@ -52,20 +55,19 @@ class Bio extends React.Component {
           <a href="mailto:frewin.christopher@gmail.com">
             Send me an email.
           </a>
+          <br/>
+          <br/>
           {' '}
-          Got a project/job idea? Get in contact with me and let's get to it! I'm always looking to learn and build new things!
+          Got a project/job that needs doin'? <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{color:'black'}}>Get in contact with me</span></a> and let's get to it! I'm always looking to learn and build new things!
           <br/>
           <br/>
-          <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{color:'black'}}>Hire me or let's talk about projects!</span></a>
+          I'm a proud member of Dev.to, Product Hunt's Makers Community, and Egghead.io's Community!
           <br/>
-          <br/>
-          A proud member of Dev.to, Product Hunt's Makers, and Egghead.io's Community!
-          <br/>
-          <a href="https://dev.to/frewinchristopher" style={{textDecoration:'none'}}>
+          <a target="_blank" href="https://dev.to/frewinchristopher" style={{textDecoration:'none'}}>
             <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="fullStackChris's DEV Profile" height="30" width="30" />
           </a>
           &nbsp;
-          <a href="https://producthunt.com/@galt_" style={{textDecoration:'none'}}>
+          <a target="_blank" href="https://producthunt.com/@galt_" style={{textDecoration:'none'}}>
             <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
                     <path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path>
@@ -74,7 +76,7 @@ class Bio extends React.Component {
             </svg>
           </a>
           &nbsp;
-          <a href="https://community.egghead.io/members/1420280">
+          <a target="_blank" href="https://community.egghead.io/members/1420280">
             <img src="https://egghead.io/favicon.ico?v=2" width="30"/>
           </a>
         </p>

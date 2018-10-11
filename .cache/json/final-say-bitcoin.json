@@ -20,26 +20,26 @@
         "slug": "/final-say-bitcoin/",
         "prev": {
             "fields": {
-                "slug": "/detailed-look-at-bdc-in-abap/"
+                "slug": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
             },
             "frontmatter": {
-                "date": "24 January, 2018",
-                "title": "A Detailed Look at ABAP's BDC Method",
-                "draft": true,
-                "link": "https://chrisfrew.in/detailed-look-at-bdc-in-abap/",
-                "relativeLink": "/detailed-look-at-bdc-in-abap/"
+                "date": "15 July, 2018",
+                "title": "Data Analysis and Pixel Art of Towns and Cities in Pokemon",
+                "draft": false,
+                "link": "https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/",
+                "relativeLink": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/"
+                "slug": "/debugging-abap-with-a-sap-shortcut/"
             },
             "frontmatter": {
-                "date": "10 May, 2018",
-                "title": "Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and Links to Entire Process",
+                "date": "27 December, 2017",
+                "title": "Debugging ABAP Code with a SAP Shortcut - A Must-Have Tool!",
                 "draft": false,
-                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/",
-                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/"
+                "link": "https://chrisfrew.in/debugging-abap-with-a-sap-shortcut/",
+                "relativeLink": "/debugging-abap-with-a-sap-shortcut/"
             }
         }
     }

@@ -48,13 +48,14 @@ a {
 }
 
 .particlesCanvas {
+  border: solid 15px black;
   /* z-index:-99;  */
   position: absolute !important;
-  width: 100vw !important;
-  height: 100vw !important;
+  width: 36vw !important;
+  height: 47vw !important;
   left:0;
   right:0;
-  bottom:0;
+  top:0;
   margin:auto;
   display: block;
   /* width:100vw !important;

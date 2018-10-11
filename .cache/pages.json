@@ -10,8 +10,22 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
+        "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "an-npm-christmas-easter-egg.json",
         "path": "/an-npm-christmas-easter-egg/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "a-toast-to-full-stack-developers.json",
+        "path": "/a-toast-to-full-stack-developers/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -31,20 +45,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "colors-for-sap-web-ide.json",
-        "path": "/colors-for-sap-web-ide/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "a-toast-to-full-stack-developers.json",
-        "path": "/a-toast-to-full-stack-developers/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "data-analysis-of-reddit-users.json",
         "path": "/data-analysis-of-reddit-users/"
     },
@@ -52,15 +52,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
-        "path": "/debugging-abap-with-a-sap-shortcut/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "dropdowns-in-readmes.json",
-        "path": "/dropdowns-in-readmes/"
+        "jsonName": "colors-for-sap-web-ide.json",
+        "path": "/colors-for-sap-web-ide/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -73,15 +66,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor.json",
-        "path": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
+        "jsonName": "final-say-bitcoin.json",
+        "path": "/final-say-bitcoin/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
-        "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
+        "path": "/debugging-abap-with-a-sap-shortcut/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -94,8 +87,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "final-say-bitcoin.json",
-        "path": "/final-say-bitcoin/"
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -108,8 +101,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor.json",
-        "path": "/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/"
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "dropdowns-in-readmes.json",
+        "path": "/dropdowns-in-readmes/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -129,15 +129,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "introducing-chrisfrewin-productions.json",
-        "path": "/introducing-chrisfrewin-productions/"
+        "jsonName": "hot-linking-to-lines-in-github.json",
+        "path": "/hot-linking-to-lines-in-github/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hot-linking-to-lines-in-github.json",
-        "path": "/hot-linking-to-lines-in-github/"
+        "jsonName": "i-set-aside-1000-to-learn-options-trading.json",
+        "path": "/i-set-aside-1000-to-learn-options-trading/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -150,8 +150,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "more-thoughts-on-early-retirement-financial-independence-and-making-a-living.json",
-        "path": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
+        "jsonName": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json",
+        "path": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -164,8 +164,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "i-set-aside-1000-to-learn-options-trading.json",
-        "path": "/i-set-aside-1000-to-learn-options-trading/"
+        "jsonName": "introducing-chrisfrewin-productions.json",
+        "path": "/introducing-chrisfrewin-productions/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -185,8 +185,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json",
-        "path": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+        "jsonName": "sending-windows-commands-from-sap-abap.json",
+        "path": "/sending-windows-commands-from-sap-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "more-thoughts-on-early-retirement-financial-independence-and-making-a-living.json",
+        "path": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -194,13 +201,6 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "some-tasty-bash-profile-commands.json",
         "path": "/some-tasty-bash-profile-commands/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sending-windows-commands-from-sap-abap.json",
-        "path": "/sending-windows-commands-from-sap-abap/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -245,13 +245,6 @@
         "path": "/market-news-feed/"
     },
     {
-        "componentChunkName": "component---src-pages-privacy-policy-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "privacy-policy.json",
-        "path": "/privacy-policy/"
-    },
-    {
         "componentChunkName": "component---src-pages-movie-night-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -264,6 +257,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "sec-filings.json",
         "path": "/sec-filings/"
+    },
+    {
+        "componentChunkName": "component---src-pages-privacy-policy-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "privacy-policy.json",
+        "path": "/privacy-policy/"
     },
     {
         "componentChunkName": "component---src-pages-talk-shop-index-js",
