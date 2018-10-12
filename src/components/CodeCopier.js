@@ -27,8 +27,11 @@ class CodeCopier extends React.Component {
   }
   notify() {
     toast.info("Code copied to clipboard!", {
+      className: "custom-toast",
       position: toast.POSITION.BOTTOM_CENTER
     });
+    
+    
   }
   render () {  
     return (

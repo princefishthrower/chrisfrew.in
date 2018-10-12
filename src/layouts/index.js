@@ -11,7 +11,9 @@ class Template extends React.Component {
     this.state = {
       iWindowWidth: 0,
       iWindowHeight: 0,
-      iCount: 0
+      iCount: 0,
+      height: 0,
+      width: 0  
     }
     this.activateCanvas = this.activateCanvas.bind(this);
   }
@@ -21,17 +23,20 @@ class Template extends React.Component {
     // XRB: <code>xrb_1s8s4bpucoseodz3oqmzenecimoe6rntpgsnpdfg6yequd1hibraghznxwga</code><br/>
     let sYear = new Date().getFullYear();
     let title = (
-      <div>
-        Chris's<br/>
-        <span style={{color:'#F92672'}}>Full Stack</span>,<br/>
-        <span style={{color:'#66D9EF'}}>Web Development</span>,<br/>
-        <span style={{color:'#A6E22E'}}>ABAP</span>,<br/>
-        <span style={{color:'#F92672'}}>SAPUI5</span>,<br/>
-        <span style={{color:'#66D9EF'}}>Machine Learning</span>,<br/>
-        &<br/>
-        <span style={{color:'#A6E22E'}}>Natural Language Processing</span><br/>
-        <span style={{color:'#F92672'}}>Blog</span>.
-        <br/>
+      <div ref={ (divElement) => this.divElement = divElement}>
+        <canvas height={this.state.height} width={this.state.width} className="particlesCanvas" ref={(canvas) => { this.ptsCanvas = canvas; }}></canvas>
+        <div className="padding">
+          Chris's<br/>
+          <span style={{color:'#F92672'}}>Full Stack</span>,<br/>
+          <span style={{color:'#66D9EF'}}>Web Development</span>,<br/>
+          <span style={{color:'#A6E22E'}}>ABAP</span>,<br/>
+          <span style={{color:'#F92672'}}>SAPUI5</span>,<br/>
+          <span style={{color:'#66D9EF'}}>Machine Learning</span>,<br/>
+          &<br/>
+          <span style={{color:'#A6E22E'}}>Natural Language Processing</span><br/>
+          <span style={{color:'#F92672'}}>Blog</span>.
+          <br/>
+        </div>
       </div>
     );
     const { location, children } = this.props
@@ -59,7 +64,6 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-          <canvas className="particlesCanvas" ref={(canvas) => { this.ptsCanvas = canvas; }}></canvas>
           {title}
           </Link>
         </h1>
@@ -87,7 +91,7 @@ class Template extends React.Component {
       )
     }
     return (
-      <div ref={ (divElement) => this.divElement = divElement}>
+      <div>
       <Container
         style={{
           maxWidth: rhythm(24),
@@ -169,6 +173,12 @@ class Template extends React.Component {
       this.activateCanvas();
       console.log( "activated" );
     }
+    
+    const height = this.divElement.clientHeight;
+    const width = this.divElement.clientWidth;
+    console.log(height);
+    this.setState({ height: height, width: width });
+    
   }
   // When data is updated, re-render by playing animate() once
   componentDidUpdate() {

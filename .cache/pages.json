@@ -1,10 +1,10 @@
 [
     {
-        "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+        "componentChunkName": "component---cache-dev-404-page-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "offline-plugin-app-shell-fallback.json",
-        "path": "/offline-plugin-app-shell-fallback/"
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
