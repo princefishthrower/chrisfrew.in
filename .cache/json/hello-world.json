@@ -7,7 +7,7 @@
             }
         },
         "markdownRemark": {
-            "id": "/Users/chris/projects/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark",
+            "id": "C:/Users/chfe/chrisfrew.in/src/pages/hello-world/index.md absPath of file >>> MarkdownRemark",
             "html": "<p>I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for <a href=\"nlp-champs.com\">nlp-champs.com</a> and <a href=\"skillscout.herokuapp.com\">SkillScout</a> (the original thing that brought on the need case for <a href=\"nlp-champs.com\">nlp-champs.com</a>. Plus, it <em>really</em> doesn’t help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head 💥 💥 💥 daily.</p>",
             "frontmatter": {
                 "title": "Hello World - My First Post :)",
@@ -20,26 +20,26 @@
         "slug": "/hello-world/",
         "prev": {
             "fields": {
-                "slug": "/dropdowns-in-readmes/"
+                "slug": "/detailed-look-at-bdc-in-abap/"
             },
             "frontmatter": {
-                "date": "22 December, 2017",
-                "title": "Dropdowns in Markdown README's!",
-                "draft": false,
-                "link": "https://chrisfrew.in/dropdowns-in-readmes/",
-                "relativeLink": "/dropdowns-in-readmes/"
+                "date": "24 January, 2018",
+                "title": "A Detailed Look at ABAP's BDC Method",
+                "draft": true,
+                "link": "https://chrisfrew.in/detailed-look-at-bdc-in-abap/",
+                "relativeLink": "/detailed-look-at-bdc-in-abap/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+                "slug": "/data-analysis-of-reddit-users/"
             },
             "frontmatter": {
-                "date": "21 July, 2018",
-                "title": "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
-                "draft": false,
-                "link": "https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/",
-                "relativeLink": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
+                "date": "01 August, 2018",
+                "title": "Data Analysis of Reddit Users",
+                "draft": true,
+                "link": "https://chrisfrew.in/data-analysis-of-reddit-users/",
+                "relativeLink": "/data-analysis-of-reddit-users/"
             }
         }
     }

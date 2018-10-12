@@ -382,6 +382,18 @@
                             "draft": false
                         }
                     }
+                },
+                {
+                    "node": {
+                        "fields": {
+                            "slug": "/dynamically-assigning-variables-both-named-and-structured-in-sap-abap/"
+                        },
+                        "frontmatter": {
+                            "date": "12 October, 2018",
+                            "title": "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
+                            "draft": false
+                        }
+                    }
                 }
             ]
         }

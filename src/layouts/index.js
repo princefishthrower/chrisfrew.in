@@ -13,7 +13,7 @@ class Template extends React.Component {
       iWindowHeight: 0,
       iCount: 0,
       height: 0,
-      width: 0  
+      width: 0
     }
     this.activateCanvas = this.activateCanvas.bind(this);
   }
@@ -22,7 +22,7 @@ class Template extends React.Component {
     // ETH: <code>0x1bc3850619803C48b79481A3Aee167141be20432</code><br/>
     // XRB: <code>xrb_1s8s4bpucoseodz3oqmzenecimoe6rntpgsnpdfg6yequd1hibraghznxwga</code><br/>
     let sYear = new Date().getFullYear();
-    let title = (
+    let complexTitle = (
       <div ref={ (divElement) => this.divElement = divElement}>
         <canvas height={this.state.height} width={this.state.width} className="particlesCanvas" ref={(canvas) => { this.ptsCanvas = canvas; }}></canvas>
         <div className="padding">
@@ -37,6 +37,20 @@ class Template extends React.Component {
           <span style={{color:'#F92672'}}>Blog</span>.
           <br/>
         </div>
+      </div>
+    );
+    let simpleTitle = (
+      <div>
+        Chris's&nbsp;
+        <span style={{color:'#F92672'}}>Full Stack</span>,&nbsp;
+        <span style={{color:'#66D9EF'}}>Web Development</span>,&nbsp;
+        <span style={{color:'#A6E22E'}}>ABAP</span>,&nbsp;
+        <span style={{color:'#F92672'}}>SAPUI5</span>,&nbsp;
+        <span style={{color:'#66D9EF'}}>Machine Learning</span>,&nbsp;
+        &&nbsp;
+        <span style={{color:'#A6E22E'}}>Natural Language Processing</span>&nbsp;
+        <span style={{color:'#F92672'}}>Blog</span>.
+        <br/>
       </div>
     );
     const { location, children } = this.props
@@ -64,7 +78,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-          {title}
+          {complexTitle}
           </Link>
         </h1>
       )
@@ -85,7 +99,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            {title}
+            {simpleTitle}
           </Link>
         </h3>
       )
@@ -132,7 +146,7 @@ class Template extends React.Component {
         // Create world and 50 random points
         world = new World( space.innerBound, 1, 0 );
         let pts = Create.distributeRandom( space.innerBound, 50 );
-        
+
         // Create particles and hit them with a random impulse
         for (let i=0, len=pts.length; i<len; i++) {
           let p = new Particle( pts[i] ).size( 30 );
@@ -144,8 +158,8 @@ class Template extends React.Component {
       animate: (time, ftime) => {
         world.drawParticles( (p, i) => {
           let color = (i===0) ? "black" : ["#F92672", "#66D9EF", "#A6E22E"][i%3];
-          // let color = (i===0) ? "black" : "white";
-          this.form.fillOnly( color ).point( p, p.radius, "circle" ) 
+          //let color = (i===0) ? "black" : "white";
+          this.form.fillOnly( color ).point( p, p.radius, "circle" )
         });
 
         world.update( ftime );
@@ -156,12 +170,12 @@ class Template extends React.Component {
         }
       }
     });
-    
+
     this.space.bindMouse().bindTouch();
     this.space.play();
   }
   componentDidMount() {
-    const { location, children } = this.props
+    const { location, children } = this.props;
     let header
 
     let rootPath = `/`
@@ -172,18 +186,25 @@ class Template extends React.Component {
     if (location.pathname === rootPath) { // only do cool partical canvas on root page
       this.activateCanvas();
       console.log( "activated" );
+      const height = this.divElement.clientHeight; // also do height and with setting for the canvas on root page
+      const width = this.divElement.clientWidth;
+      this.setState({ height: height, width: width });
     }
-    
-    const height = this.divElement.clientHeight;
-    const width = this.divElement.clientWidth;
-    console.log(height);
-    this.setState({ height: height, width: width });
-    
   }
   // When data is updated, re-render by playing animate() once
   componentDidUpdate() {
-    console.log( "updated" );
-    // this.space.playOnce(0);
+    console.log("fired");
+
+    // const { location, children } = this.props;
+    // let rootPath = `/`
+    // if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
+    //   rootPath = __PATH_PREFIX__ + `/`
+    // }
+    // console.log( "updated" );
+    //this.space.playOnce(0);
+    // if (location.pathname === rootPath) { // reactivate particle canvas if returning
+    //   this.activateCanvas();
+    // }
   }
 }
 
