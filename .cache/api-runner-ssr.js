@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[],"trackingId":"UA-63301492-1"},
     },{
       plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ","feeds":[{"query":"\n              {\n                allMarkdownRemark(\n                  limit: 1000,\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                  filter: {frontmatter: { draft: { ne: true } }}\n                ) {\n                  edges {\n                    node {\n                      excerpt\n                      html\n                      fields { slug }\n                      frontmatter {\n                        title\n                        date\n                      }\n                    }\n                  }\n                }\n              }\n            ","output":"/rss.xml","title":"Gatsby RSS Feed"}]},
     },{
       plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},

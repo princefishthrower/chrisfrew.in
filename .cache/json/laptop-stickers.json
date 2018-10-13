@@ -32,14 +32,14 @@
         },
         "next": {
             "fields": {
-                "slug": "/some-tasty-bash-profile-commands/"
+                "slug": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
             },
             "frontmatter": {
-                "date": "09 April, 2018",
-                "title": "Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better",
+                "date": "26 July, 2018",
+                "title": "Led Zeppelin Data Analysis for Lyric Generation and Inspiration",
                 "draft": false,
-                "link": "https://chrisfrew.in/some-tasty-bash-profile-commands/",
-                "relativeLink": "/some-tasty-bash-profile-commands/"
+                "link": "https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+                "relativeLink": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
             }
         }
     }

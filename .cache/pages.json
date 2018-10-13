@@ -10,13 +10,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "abap-push-and-message-channels.json",
-        "path": "/abap-push-and-message-channels/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "an-npm-christmas-easter-egg.json",
         "path": "/an-npm-christmas-easter-egg/"
     },
@@ -24,29 +17,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json",
-        "path": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
-        "path": "/debugging-abap-with-a-sap-shortcut/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json",
-        "path": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "colors-for-sap-web-ide.json",
-        "path": "/colors-for-sap-web-ide/"
+        "jsonName": "abap-push-and-message-channels.json",
+        "path": "/abap-push-and-message-channels/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -59,8 +31,57 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "colors-for-sap-web-ide.json",
+        "path": "/colors-for-sap-web-ide/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "data-analysis-of-reddit-users.json",
+        "path": "/data-analysis-of-reddit-users/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "calculating-activity-amounts-for-process-and-production-orders-with-sap-abap.json",
         "path": "/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets.json",
+        "path": "/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "debugging-abap-with-a-sap-shortcut.json",
+        "path": "/debugging-abap-with-a-sap-shortcut/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "detailed-look-at-bdc-in-abap.json",
+        "path": "/detailed-look-at-bdc-in-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon.json",
+        "path": "/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "dropdowns-in-readmes.json",
+        "path": "/dropdowns-in-readmes/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -80,43 +101,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "dropdowns-in-readmes.json",
-        "path": "/dropdowns-in-readmes/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hot-linking-to-lines-in-github.json",
-        "path": "/hot-linking-to-lines-in-github/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "detailed-look-at-bdc-in-abap.json",
-        "path": "/detailed-look-at-bdc-in-abap/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot.json",
-        "path": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor.json",
         "path": "/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "hello-world.json",
-        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -129,8 +115,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "data-analysis-of-reddit-users.json",
-        "path": "/data-analysis-of-reddit-users/"
+        "jsonName": "fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot.json",
+        "path": "/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -138,6 +124,20 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "how-to-be-an-american-living-in-austria-and-working-in-liechtenstein.json",
         "path": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hot-linking-to-lines-in-github.json",
+        "path": "/hot-linking-to-lines-in-github/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "hello-world.json",
+        "path": "/hello-world/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -171,13 +171,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "some-tasty-bash-profile-commands.json",
-        "path": "/some-tasty-bash-profile-commands/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration.json",
         "path": "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
     },
@@ -185,22 +178,8 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "warn-sap-users-of-locked-objects-then-kill-their-session.json",
-        "path": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "using-google-clouds-text-to-speech-machine-learning-api.json",
-        "path": "/using-google-clouds-text-to-speech-machine-learning-api/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sending-windows-commands-from-sap-abap.json",
-        "path": "/sending-windows-commands-from-sap-abap/"
+        "jsonName": "more-thoughts-on-early-retirement-financial-independence-and-making-a-living.json",
+        "path": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -213,8 +192,29 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "more-thoughts-on-early-retirement-financial-independence-and-making-a-living.json",
-        "path": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
+        "jsonName": "sending-windows-commands-from-sap-abap.json",
+        "path": "/sending-windows-commands-from-sap-abap/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "some-tasty-bash-profile-commands.json",
+        "path": "/some-tasty-bash-profile-commands/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "using-google-clouds-text-to-speech-machine-learning-api.json",
+        "path": "/using-google-clouds-text-to-speech-machine-learning-api/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "warn-sap-users-of-locked-objects-then-kill-their-session.json",
+        "path": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",
@@ -259,18 +259,18 @@
         "path": "/movie-night/"
     },
     {
-        "componentChunkName": "component---src-pages-sec-filings-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "sec-filings.json",
-        "path": "/sec-filings/"
-    },
-    {
         "componentChunkName": "component---src-pages-privacy-policy-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "privacy-policy.json",
         "path": "/privacy-policy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-sec-filings-index-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sec-filings.json",
+        "path": "/sec-filings/"
     },
     {
         "componentChunkName": "component---src-pages-talk-shop-index-js",

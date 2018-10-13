@@ -20,26 +20,26 @@
         "slug": "/hot-linking-to-lines-in-github/",
         "prev": {
             "fields": {
-                "slug": "/dropdowns-in-readmes/"
+                "slug": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             },
             "frontmatter": {
-                "date": "22 December, 2017",
-                "title": "Dropdowns in Markdown README's!",
+                "date": "17 January, 2018",
+                "title": "How to be an American living in Austria and working in Liechtenstein",
                 "draft": false,
-                "link": "https://chrisfrew.in/dropdowns-in-readmes/",
-                "relativeLink": "/dropdowns-in-readmes/"
+                "link": "https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/",
+                "relativeLink": "/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/detailed-look-at-bdc-in-abap/"
+                "slug": "/hello-world/"
             },
             "frontmatter": {
-                "date": "24 January, 2018",
-                "title": "A Detailed Look at ABAP's BDC Method",
-                "draft": true,
-                "link": "https://chrisfrew.in/detailed-look-at-bdc-in-abap/",
-                "relativeLink": "/detailed-look-at-bdc-in-abap/"
+                "date": "12 December, 2017",
+                "title": "Hello World - My First Post :)",
+                "draft": false,
+                "link": "https://chrisfrew.in/hello-world/",
+                "relativeLink": "/hello-world/"
             }
         }
     }
