@@ -7,7 +7,7 @@
             }
         },
         "markdownRemark": {
-            "id": "C:/Users/chfe/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark",
+            "id": "/Users/chris/projects/chrisfrew.in/src/pages/hot-linking-to-lines-in-github/index.md absPath of file >>> MarkdownRemark",
             "html": "<p>This’ll be a real short one; I just learned you can link to specific lines of code on GitHub!</p>\n<p>All you need to do is find your link to the source code preview (***NOTE: <em>not</em> the raw view!) as an example, let’s look at a source file from Bitcoin repository*:</p>\n<p><a href=\"https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp\">https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp</a></p>\n<p>Let’s say I want to highlight line 123. All you have to do is add a ‘#L’ and the line number you want, so let’s add #L123:</p>\n<p><a href=\"https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123\">https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123</a></p>\n<p>Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.</p>\n<hr/>\n<p>* <code>main.cpp</code> doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example <code>main.cpp</code> is an attractive file name 😄.</p>",
             "frontmatter": {
                 "title": "How to Link to Lines of Code in a Github Repository!",
@@ -20,26 +20,26 @@
         "slug": "/hot-linking-to-lines-in-github/",
         "prev": {
             "fields": {
-                "slug": "/introducing-chrisfrewin-productions/"
+                "slug": "/dropdowns-in-readmes/"
             },
             "frontmatter": {
-                "date": "01 March, 2018",
-                "title": "Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)",
+                "date": "22 December, 2017",
+                "title": "Dropdowns in Markdown README's!",
                 "draft": false,
-                "link": "https://chrisfrew.in/introducing-chrisfrewin-productions/",
-                "relativeLink": "/introducing-chrisfrewin-productions/"
+                "link": "https://chrisfrew.in/dropdowns-in-readmes/",
+                "relativeLink": "/dropdowns-in-readmes/"
             }
         },
         "next": {
             "fields": {
-                "slug": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "slug": "/detailed-look-at-bdc-in-abap/"
             },
             "frontmatter": {
-                "date": "25 January, 2018",
-                "title": "Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input",
+                "date": "24 January, 2018",
+                "title": "A Detailed Look at ABAP's BDC Method",
                 "draft": true,
-                "link": "https://chrisfrew.in/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/",
-                "relativeLink": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
+                "link": "https://chrisfrew.in/detailed-look-at-bdc-in-abap/",
+                "relativeLink": "/detailed-look-at-bdc-in-abap/"
             }
         }
     }

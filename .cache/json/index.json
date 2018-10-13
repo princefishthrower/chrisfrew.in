@@ -374,11 +374,11 @@
                 {
                     "node": {
                         "fields": {
-                            "slug": "/how-to-convert-raw16-to-char22-material-ids-in-sap-ewm-and-vice-versa/"
+                            "slug": "/dynamically-assigning-variables-both-named-and-structured-in-sap-abap/"
                         },
                         "frontmatter": {
-                            "date": "09 September, 2018",
-                            "title": "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
+                            "date": "12 October, 2018",
+                            "title": "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
                             "draft": false
                         }
                     }
@@ -386,11 +386,11 @@
                 {
                     "node": {
                         "fields": {
-                            "slug": "/dynamically-assigning-variables-both-named-and-structured-in-sap-abap/"
+                            "slug": "/how-to-convert-raw16-to-char22-material-ids-in-sap-ewm-and-vice-versa/"
                         },
                         "frontmatter": {
-                            "date": "12 October, 2018",
-                            "title": "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
+                            "date": "09 September, 2018",
+                            "title": "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
                             "draft": false
                         }
                     }

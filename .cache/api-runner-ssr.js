@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('C:/Users/chfe/chrisfrew.in/node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js'),
+      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js'),
       options: {"plugins":[],"trackingId":"UA-63301492-1"},
     },{
-      plugin: require('C:/Users/chfe/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
+      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/chfe/chrisfrew.in/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/chfe/chrisfrew.in/node_modules/gatsby-plugin-typography/gatsby-ssr.js'),
+      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-typography/gatsby-ssr.js'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
