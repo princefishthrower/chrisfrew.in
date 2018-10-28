@@ -217,6 +217,13 @@
         "path": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "one-major-challenge-with-the-internet-and-society.json",
+        "path": "/one-major-challenge-with-the-internet-and-society/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -250,13 +257,6 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "market-news-feed.json",
         "path": "/market-news-feed/"
-    },
-    {
-        "componentChunkName": "component---src-pages-movie-night-index-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "movie-night.json",
-        "path": "/movie-night/"
     },
     {
         "componentChunkName": "component---src-pages-privacy-policy-index-js",

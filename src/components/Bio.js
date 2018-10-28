@@ -42,10 +42,7 @@ class Bio extends React.Component {
           </a>
           .
           {'\n'}
-          I'm an ex-mechanical engineer gone software engineer that (mostly) lives in Austria. 
-          <br/>
-          <br/>  
-          I'm a remote, full-stack application software engineer, and a hobbyist machine learning/natural language processing developer. If I'm not building software, I'll be found hiking, skiing, losing money trading options, or creating music and art.{' '}
+          I'm an ex-mechanical engineer gone full-remote, full-stack application software engineer, and a hobbyist machine learning/natural language processing developer. If I'm not building software, I'll be found hiking, skiing, losing money trading options, or creating music and art. I (mostly) live in Austria.{' '}
           <a href="https://twitter.com/galt_">
             You can follow me on Twitter, @Galt_,
           </a>
