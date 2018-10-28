@@ -17,6 +17,7 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 // Serve public and static assets
 app.use(express.static('./public'));
 app.use(express.static('./static'));
+app.use(express.static('./invoicing'));
 
 server = http.createServer(app);
 

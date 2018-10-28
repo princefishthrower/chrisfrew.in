@@ -8,9 +8,11 @@ draft: false
 
 \*\*\*Note: this post is mirrored on my Medium: https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1
 
+## Welp.
+
 I quit my full-time job.
 
-Most of the time about things like this, all you here is the same old tune:
+Most of the time about major life decisions like this, all you here is the same old tune:
 
 > Don't do this don't do this don't do this. 
 
@@ -20,13 +22,15 @@ But jeez, people are so risk-averse sometime. Just thinking about my own situati
 
 Because being a homely, unkempt, poor graduate student is _expected_ by society, (although graduate school is even looked upon with reverence in some cases - "Wow, _Cornell_? Great school, great school."). But what the hell are people thinking? In terms of net worth back then, I was totally screwed!
 
-If you are in your mid-20s reading this, you're probably in the same situation of a strongly improved financial situation. So, why would I risk going total freelance when I have a house and kids, when _real_ bills need to be paid. You're right - I wouldn't. 
+If you are in your mid-20s reading this, you're probably in the same situation of a strongly improved financial situation. So, why would I risk going total freelance when I have a house and kids, when _real_ bills need to be paid? You're right - I wouldn't. 
 
 The way I see it, now is not only the _only_ time to try this, it's the _perfect_ time: experience and network connections from my first few years at a big industry job, with a bunch of savings as an all-else fails cushion in the bank.
 
 Even a lot of well-known 'creatives' these days also say not to do this until you have a self-sustaining (or better yet - profitable) side project, but I just couldn't help but writing that notion off - most of them quit their jobs themselves when they were getting started! Yes - they talk about the strife and challenge it was from doing that, which is why they don't recommend it to anyone else - but isn't that exactly the ingredient required in the recipe of nearly all people who were once nobody and emerged with amazing projects and products? 
 
-If you want to create truly nice projects of high quality, that aren't just patched together, even if you are hacking away those 4-5 hours a night, _after_ your full-time job, you just can't. Well - at least I can't. In my case, you need those multiple 12 hour, interrupted days, diving deep and building complex projects. This just isn't sustainable with a full-time job - and indeed, perhaps this is exactly the 'strife' and 'challenge' that these creatives refer to in all of their 'early days'. It's true - while we all complain about our 9-5 jobs (in my case, 7-5), you can't help but admitting there is a lot of comfortability and security in them - weekdays only, and (for most of us) 5PM is 5PM, when the clock hits 5, there's no more work for the day. It will be interesting to see how that goes in my freelance life.
+If you want to create truly nice projects of high quality, that aren't just patched together, even if you are hacking away those 4-5 hours a night, _after_ your full-time job, you just can't. Well - at least I can't. 
+
+In my case, I need those multiple 12 hour, interrupted days, diving deep and building complex projects. This just isn't sustainable with a full-time job - and indeed, perhaps this is exactly the 'strife' and 'challenge' that these creatives refer to in all of their 'early days'. It's true - while we all complain about our 9-5 jobs (in my case, 7-5), you can't help but admitting there is a lot of comfortability and security in them - weekdays only, and (for most of us) 5PM is 5PM, when the clock hits 5, there's no more work for the day. It will be interesting to see how that goes in my freelance life.
 
 But hey, it's 2018, and "quitting your day job", especially as a software engineer, doesn't really mean you're immediately 'unemployed' - right? There were a large number of supporting variables and events over the past few months that have led me to my decision:
 
@@ -39,9 +43,11 @@ But hey, it's 2018, and "quitting your day job", especially as a software engine
 
 So yes, any one or a combination of these will pay the bills.
 
-I realize, _none_ of these (or probably even a combination) will pay as high as my comfy logistic / warehousing full-time job. But I also realized over the past few months, _I don't give a damn about money!_ Sure, I could go the Mr. Money Mustache route and just keep truckin' away at my current job with a high savings rate, and become financially independent in 7-8 years. But to me, that's 7-8 years of sunk cost, working at albeit a decent, but ultimately where-I-don't-want-to-be job. If I spent those 7-8 years building out projects that first 
+I realize, _none_ of these (or probably even a combination) will pay as high as my comfy logistic / warehousing full-time job. But I also realized over the past few months, _I don't give a damn about money!_ Sure, I could go the Mr. Money Mustache route and just keep truckin' away at my current job with a high savings rate, and become financially independent in 7-8 years. But to me, that's 7-8 years of sunk cost, working at albeit a decent, but ultimately where-I-don't-want-to-be job. If I spent those 7-8 years building out projects that:
 
-1. Allow me enough income to survive, and 
+1. Allow me enough income to survive
+
+and 
 
 2. Are valuable projects that I value and believe make a difference in the world
 
