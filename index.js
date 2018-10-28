@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 // Serve public and static assets
-app.use('/invoicing', express.static('./invoicing'));
+app.use('/invoicing', express.static('./invoicing/ip'));
 app.use(express.static('./public'));
 app.use(express.static('./static'));
 
