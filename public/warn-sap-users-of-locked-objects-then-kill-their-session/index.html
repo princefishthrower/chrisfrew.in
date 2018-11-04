@@ -1,0 +1,536 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/4.76e6c55a11ab238cc939.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.38"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">Warn SAP Users of Locked Objects Then Kill Their Session | Chris Frewin&#x27;s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, &amp; Natural Language Processing Blog.</title><meta data-react-helmet="true" name="description" content="SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/4-91900a1a23bbf52ae653.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-56c53bda2f12ffe59f3b.js"/><link as="script" rel="preload" href="/app-4c15cbdc5d669f18f653.js"/><link as="script" rel="preload" href="/0-91aaa693676e677016a1.js"/><link as="script" rel="preload" href="/webpack-runtime-2aca7dfd7003c9a5b823.js"/><link rel="preload" href="/static/d/49/path---warn-sap-users-of-locked-objects-then-kill-their-session-1-c-8-c01-oGjTqw6dfk1HL5pH9srvfgbw6c.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/"><div>Chris&#x27;s <span style="color:#F92672">Full Stack</span>, <span style="color:#66D9EF">Web Development</span>, <span style="color:#A6E22E">ABAP</span>, <span style="color:#F92672">SAPUI5</span>, <span style="color:#66D9EF">Machine Learning</span>,  &amp; <span style="color:#A6E22E">Natural Language Processing</span> <span style="color:#F92672">Blog</span>.<br/></div></a></h3><h1>Warn SAP Users of Locked Objects Then Kill Their Session</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">May 09, 2018</p><div><h2>SAP users lockin’ up your objects?</h2>
+<h3>We’re gonna write an ABAP report and run it as a batch job to 🤖 <em>Automatically</em> 🤖 get rid of them!</h3>
+<h2>Overview</h2>
+<p>Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a <em>‘forbidden’ SAP Kernel Call!!!</em> 😱 😱 😱</p>
+<h2>SAP and it’s Locked Objects</h2>
+<p>Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.</p>
+<p>This can get very annoying when multiple entities want to change multiple objects in similar time frames.</p>
+<h2>A Remedy for the Problem</h2>
+<p>The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that <em>also</em> modify these objects.</p>
+<p>The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.</p>
+<h2>Specific Problem</h2>
+<p>At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.</p>
+<p>We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:</p>
+<ol>
+<li>A warning popup for the user at 5 minutes of lock time</li>
+<li>A second warning popup for the user warning at 10 minutes of lock time</li>
+<li>Forcefully close the transaction that was locking the order at 15 minutes of lock time</li>
+</ol>
+<p>And yes, this can all be done from an automatic process with no overseeing required! 😊</p>
+<p>Let’s get started!</p>
+<h2>Identify Locked Objects</h2>
+<p>The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for this example case, we are only interested in locked <em>orders</em>. This is object type <code class="language-text">AUFK</code> - the order head table. To get a list of all locked object across the system with this type, we can use function module <code class="language-text">ENQUEUE_READ</code></p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token eol-comment comment">" Get all AUFK table locks</span>
+<span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'ENQUEUE_READ'</span>
+  <span class="token keyword">EXPORTING</span>
+    gname                 <span class="token operator">=</span> <span class="token string">'AUFK'</span>
+    guname                <span class="token operator">=</span> <span class="token string">'*'</span>              <span class="token eol-comment comment">" Users (all)</span>
+  <span class="token keyword">TABLES</span>
+    enq                   <span class="token operator">=</span> gt_enq
+  <span class="token keyword">EXCEPTIONS</span>
+    communication_failure <span class="token operator">=</span> <span class="token number">1</span>
+    system_failure        <span class="token operator">=</span> <span class="token number">2</span>
+    <span class="token keyword">OTHERS</span>                <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">.</span></code></pre>
+      </div>
+<p>So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class <code class="language-text">cl_server_info</code> (pretty obvious name, eh? 😂). </p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token eol-comment comment">" Get all user sessions</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">OBJECT</span> server_info<span class="token punctuation">.</span>
+gt_session_list <span class="token operator">=</span> server_info<span class="token token-operator punctuation">-></span>get_session_list<span class="token punctuation">(</span> with_application_info <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">.</span></code></pre>
+      </div>
+<p>However, we can’t just kill all of a user’s sessions - we only want to shut down (indeed, this is bad luck for the user that has only one SAP application window open that is blocking an order, but hey, they get two warnings before we shut them down)</p>
+<h2>The ‘Forbidden’ Kernel Call</h2>
+<p>To get the fidelity needed to find exactly which index of SAP application window, we’re gonna have go down the system rabbithole and use a f (remember, it is always 1-7 —> the classic SAP limit of 7 open windows per client)</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token keyword">CALL</span> <span class="token string">'ThUsrInfo'</span> <span class="token keyword">ID</span> <span class="token string">'OPCODE'</span> <span class="token keyword">FIELD</span> opcode_usr_info
+          <span class="token keyword">ID</span> <span class="token string">'TID'</span> <span class="token keyword">FIELD</span> gs_session_list<span class="token token-operator punctuation">-</span>logon_hdl
+          <span class="token keyword">ID</span> <span class="token string">'WITH_APPL_INFO'</span> <span class="token keyword">FIELD</span> with_appl_info
+          <span class="token keyword">ID</span> <span class="token string">'TABLE'</span> <span class="token keyword">FIELD</span> gt_usr_info[]<span class="token punctuation">.</span></code></pre>
+      </div>
+<p>What this kernel call retrieves and puts in table <code class="language-text">gt_user_info</code> can be also found be found through the standard SAP GUI in transaction <code class="language-text">SM04</code> by selecting a session and going to the top menu bar and selecting User->Technical Information):</p>
+<p><img src="technical-information.png" alt="How to navigate to technical information in SAP GUI transaction SM04"></p>
+<p>You will see a giant list of multiple fields for each session number (0-6) that the user has open. So, what can we do with this giant technical information list of key value pairs? </p>
+<p>In SAP, this works as follows: each <em>login</em> by a user (not session number, we’re not there yet 😄)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of <code class="language-text">TXX_UXXXXX</code>, where <code class="language-text">X</code> can be any number 0-9. </p>
+<p>Each session then has a session ID which is comprised of first the login ID as described above, with an appended <code class="language-text">_MX</code>, where <code class="language-text">X</code> in this case is the session number, 0-6 (session 1-7). So, we are interested in the <code class="language-text">.session</code> value of this technical list:</p>
+<p><img src="session-id.png" alt="Session ID in the technical information."></p>
+<p>You can notice then that session 2 would have </p>
+<p><code class="language-text">modeinfo[1].session = T23_U31974_M1</code> </p>
+<p>session 3 would have</p>
+<p><code class="language-text">modeinfo[2].session = T23_U31974_M2</code> </p>
+<p>and so on, all the way up to session 7 - or index 6. We will see in the code that I leverage this pattern. The only way to find the true session that is blocking the order is to first guess the logon instance for the user (in the case for example that htey have logged on with multiple languages), then you can back out all the session ID’s until you get a match of the <code class="language-text">session_hdl</code> from the returned list of <code class="language-text">gt_sessions_list</code>.</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token keyword">CLEAR</span> gt_sessions_user<span class="token punctuation">.</span>
+<span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_session_list <span class="token keyword">INTO</span> gs_session_list <span class="token keyword">WHERE</span> tenant <span class="token keyword">EQ</span> sy<span class="token token-operator punctuation">-</span>mandt<span class="token punctuation">.</span> <span class="token eol-comment comment">" loop at all open sessions to build a list of just the user sessions</span>
+
+  <span class="token eol-comment comment">" if a user is not in the given so, we continue (that means with exclude users, they are skipped, those with equals and all others keep going)</span>
+  <span class="token keyword">IF</span> gs_session_list<span class="token token-operator punctuation">-</span>user_name <span class="token keyword">NOT</span> <span class="token keyword">IN</span> so_bname<span class="token punctuation">.</span>
+    <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+  gv_user_name   <span class="token operator">=</span> gs_session_list<span class="token token-operator punctuation">-</span>user_name<span class="token punctuation">.</span>
+
+  <span class="token eol-comment comment">" Only add to list if user is current lock user - also get the session id for this user</span>
+  <span class="token keyword">IF</span> gv_user_name <span class="token keyword">EQ</span> gs_enq<span class="token token-operator punctuation">-</span>guname<span class="token punctuation">.</span>
+    <span class="token keyword">CLEAR</span> gv_modus_index<span class="token punctuation">.</span>
+    <span class="token keyword">CLEAR</span> gt_usr_info[]<span class="token punctuation">.</span>
+    <span class="token keyword">CLEAR</span> gs_usr_info<span class="token punctuation">.</span>
+    <span class="token eol-comment comment">" get detailed technical info for this user to find which specific session to close</span>
+    <span class="token keyword">CALL</span> <span class="token string">'ThUsrInfo'</span> <span class="token keyword">ID</span> <span class="token string">'OPCODE'</span> <span class="token keyword">FIELD</span> opcode_usr_info
+      <span class="token keyword">ID</span> <span class="token string">'TID'</span> <span class="token keyword">FIELD</span> gs_session_list<span class="token token-operator punctuation">-</span>logon_hdl
+      <span class="token keyword">ID</span> <span class="token string">'WITH_APPL_INFO'</span> <span class="token keyword">FIELD</span> with_appl_info
+      <span class="token keyword">ID</span> <span class="token string">'TABLE'</span> <span class="token keyword">FIELD</span> gt_usr_info[]<span class="token punctuation">.</span>
+    <span class="token keyword">CONCATENATE</span> gs_enq<span class="token token-operator punctuation">-</span>gusrvb <span class="token string">'/UPD'</span> <span class="token keyword">INTO</span> gv_value<span class="token punctuation">.</span> <span class="token eol-comment comment">" We need to use the </span><span class="token string">'/UPD'</span> <span class="token keyword">value</span> <span class="token keyword">in</span> the technical info <span class="token keyword">to</span> <span class="token keyword">get</span> the <span class="token keyword">exact</span> session <span class="token keyword">assigned</span> <span class="token keyword">to</span> the specific locked <span class="token keyword">object</span>
+    <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_usr_info <span class="token keyword">INTO</span> gs_usr_info <span class="token keyword">WHERE</span> <span class="token keyword">value</span> <span class="token keyword">EQ</span> gv_value<span class="token punctuation">.</span> <span class="token eol-comment comment">" find the field from the value</span>
+      gv_modus_index <span class="token operator">=</span> gs_usr_info<span class="token token-operator punctuation">-</span>field+<span class="token number">9</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" the key for the value is </span><span class="token string">'modeinfo[X].enq_info'</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> we need just the <span class="token keyword">X</span><span class="token punctuation">.</span><span class="token punctuation">.</span> so we +<span class="token number">9</span> <span class="token keyword">then</span> take the <span class="token keyword">single</span> <span class="token keyword">character</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+    <span class="token eol-comment comment">" If we found a session with that number, we know we had the correct logon... we can add this to the user list</span>
+    <span class="token keyword">IF</span> gv_modus_index <span class="token keyword">IS</span> <span class="token keyword">NOT</span> <span class="token keyword">INITIAL</span><span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" convert to type ssi_session_handle for later lookup</span>
+      gv_modus_num_found <span class="token operator">=</span> gv_modus_index<span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" get the session id for this specific</span>
+      <span class="token keyword">CONCATENATE</span> <span class="token string">'modeinfo['</span> gv_modus_index <span class="token string">'].session'</span> <span class="token keyword">INTO</span> gv_field<span class="token punctuation">.</span> <span class="token eol-comment comment">" this time we need to find the value from the field</span>
+      <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_usr_info <span class="token keyword">INTO</span> gs_usr_info <span class="token keyword">WHERE</span> <span class="token keyword">field</span> <span class="token keyword">EQ</span> gv_field<span class="token punctuation">.</span>
+        gv_ssi_session_id <span class="token operator">=</span> gs_usr_info<span class="token token-operator punctuation">-</span>value<span class="token punctuation">.</span>
+      <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+      <span class="token keyword">APPEND</span> gs_session_list <span class="token keyword">TO</span> gt_sessions_user<span class="token punctuation">.</span>
+    <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+<span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span></code></pre>
+      </div>
+<p>Here - as will make more sense in the full code - I am building a <code class="language-text">gt_sessions_user</code> list on the fly, which is what is passed to a BDC method to close that specific session ID for that user alone (explained below). I decided to run the program with this one-user-at-a-time method in order to have the minimum amount of time between finding a session that was locking an object and messaging / deleting that session. </p>
+<p>If we had say, 1000 locked orders on our system, and I built an entire list of all blocking sessions across all users, it could be the case that by the time we get to the BDC method (which, by the way, is slow itself, especially when you need it to be synchronous as we need in this process), the user could have already closed that blocking session, or worse, switched to a transaction in that session number which was no longer blocking the order! In such a case we would be unnecessarily sending warning messages or closing the transaction to a session which didn’t apply anymore! Bad.</p>
+<p>So - we’ve pinpointed the exact user and their session number that is blocking the order - let’s send them our warning messages at 5 and 10 minutes.</p>
+<h2>No Way! A <em>SECOND</em> ‘Forbidden’ Module?!</h2>
+<p>To send a popup message to a user, we need to now make use of <em>second</em> <code class="language-text">TH*</code> function, <code class="language-text">TH_POPUP</code> (though at least this time it is at least a SAP function, and not a sneaky system function):</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token keyword">CONCATENATE</span> <span class="token string">'You are locking'</span> gv_aufnr_string <span class="token string">'in TC'</span> gv_tcode <span class="token string">' for >5min. Please save and leave the transaction.'</span> <span class="token keyword">INTO</span> gv_message <span class="token keyword">SEPARATED</span> <span class="token keyword">BY</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+    <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'TH_POPUP'</span>
+      <span class="token keyword">EXPORTING</span>
+        <span class="token keyword">client</span>         <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>mandt
+        <span class="token keyword">user</span>           <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>guname
+        <span class="token keyword">message</span>        <span class="token operator">=</span> gv_message
+      <span class="token keyword">EXCEPTIONS</span>
+        user_not_found <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">OTHERS</span>         <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span></code></pre>
+      </div>
+<p>This function module actually heads to the kernel as well, because the user won’t get a popup directly in the SAP GUI, but rather a warning message directly in the their operating system. It looks like this when testing from <code class="language-text">SE37</code>:</p>
+<p><img src="TH_POPUP-function-test.png" alt="Testing TH_POPUP in transaction SE37."></p>
+<p>And our resulting system popup (at least how it looks on windows operating system)</p>
+<p><img src="TH_POPUP-result.png" alt="What a successful call of TH_POPUP from SE37 looks like."></p>
+<p>Ok, so we’ve warned the users twice by now with our popup, but they still are blocking a dang order! Remember, each run we’ve still got their exact session number that is blocking the order, so let’s finally go in for the kill and shut down that session! Once we do that, we log which session/user/transaction combo we deleted to the spool, and this report is done!</p>
+<h2>BDC Tricks To Finally Close The User Session</h2>
+<p>I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there’s probably good reason for this! (Though I can’t <em>possibly</em> think of why 🤔 😉) </p>
+<p>I couldn’t even find another ‘forbidden’ <code class="language-text">Th****</code> function module that can do this. However, this <em>is</em> possible through the standard SAP GUI, and we’ve already mentioned it in this post, our friend transaction <code class="language-text">SM04</code>. By double clicking on a user (using me for an example), we get a list like this (sorry for the black boxes - don’t want to inadvertantly reveal anything that may be proprietary):</p>
+<p><img src="server-sessions-list.png" alt="List of user sessions on the server."></p>
+<p>Then you need only select the desired session number and click “Delete Session”, then ☁POOF!☁ that user’s session will be gone!</p>
+<p><img src="delete-session.png" alt="Deleting a user session by session number."></p>
+<p>Thank me later, but in BDC form, this can be written as follows:</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token eol-comment comment">" First ensure that sm04 is called and set to the sessions view</span>
+      <span class="token keyword">CLEAR</span> bdcdata[]<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=SESSIONS'</span><span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" call transaction SM04, sync (S), no screens unless debugger (P)</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">TRANSACTION</span> <span class="token string">'SM04'</span>
+              <span class="token keyword">USING</span> bdcdata
+              <span class="token keyword">MODE</span> <span class="token string">'P'</span>
+              <span class="token keyword">UPDATE</span> <span class="token string">'S'</span><span class="token punctuation">.</span>
+
+      <span class="token eol-comment comment">" Now use bdc to end the session with that session id</span>
+      <span class="token keyword">CLEAR</span> bdcdata[]<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;OL0'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSKBH'</span> <span class="token string">'0800'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'GT_FIELD_LIST-SELTEXT(01)'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=WLSE'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'GT_FIELD_LIST-MARK(01)'</span> <span class="token string">'X'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSKBH                                0810SUB810'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSKBH'</span> <span class="token string">'0800'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'GT_FIELD_LIST-SELTEXT(01)'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=CONT'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSKBH                                0810SUB810'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=PS 63'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'02/76'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;IC1'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'02/76'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;ILT'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSSEL'</span> <span class="token string">'1104'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=CRET'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSSEL                                1105%_SUBSCREEN_FREESEL'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'%%DYN001-LOW'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'%%DYN001-LOW'</span> gv_ssi_session_id<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/15'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;IC1'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'RSM04000_ALV_NEW'</span> <span class="token string">'2000'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> gv_modus_string<span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=DEL'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/15'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;F15'</span><span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" call transaction SM04, sync (S), no screens unless debugger (P)</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">TRANSACTION</span> <span class="token string">'SM04'</span>
+              <span class="token keyword">USING</span> bdcdata
+              <span class="token keyword">MODE</span> <span class="token string">'P'</span>
+              <span class="token keyword">UPDATE</span> <span class="token string">'S'</span><span class="token punctuation">.</span></code></pre>
+      </div>
+<p>If you stick around the blog and or read other ABAP BDC posts of mine, you’ll see for BDC I always use the following helper form <code class="language-text">bdcdaten</code> that allows me to write the BDC so cleanly (as it is above):</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Form  BDCDATEN</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token keyword">FORM</span> bdcdaten <span class="token keyword">USING</span> start fnam fval<span class="token punctuation">.</span>
+
+  <span class="token keyword">CLEAR</span> bdcdata<span class="token punctuation">.</span>
+  <span class="token keyword">IF</span> start <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>dynbegin <span class="token operator">=</span> start<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>program  <span class="token operator">=</span> fnam<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>dynpro   <span class="token operator">=</span> fval<span class="token punctuation">.</span>
+  <span class="token keyword">ELSE</span><span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>fnam <span class="token operator">=</span> fnam<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>fval <span class="token operator">=</span> fval<span class="token punctuation">.</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">APPEND</span> bdcdata<span class="token punctuation">.</span>
+
+<span class="token keyword">ENDFORM</span><span class="token punctuation">.</span>                               <span class="token eol-comment comment">" BDCDATEN</span></code></pre>
+      </div>
+<p>The only thing worth noting here is in our first step we always ensure the server view of <code class="language-text">SM04</code> is active - we need to always run in server view, because we don’t want all sessions across all servers. In this way, this report can run in parallel on all your servers and concern it self only with users logged on to the server instance that this report is running on. This will make the run time a bit faster, and of course splits up the search work across all servers.</p>
+<h1>Full Code</h1>
+<p>The full code of the report is as follows:</p>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token keyword">REPORT</span> z_user_session_kill<span class="token punctuation">.</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp; Report: Z_USER_SESSION_KILL                                         *</span>
+<span class="token comment">*&amp; Author: Christopher Frewin                                          *</span>
+<span class="token comment">*&amp; Creation Date: 2018.05.09                                           *</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;                                                                     *</span>
+<span class="token comment">*&amp;                                                                     *</span>
+<span class="token comment">*&amp;                                                         __          *</span>
+<span class="token comment">*&amp;                                           Christophe_r_|  |_F_rewin *</span>
+<span class="token comment">*&amp;                                                     |__    __|      *</span>
+<span class="token comment">*&amp;                                                        |  |         *</span>
+<span class="token comment">*&amp;                                "Z_USER_SESSION_KILL"   |  |         *</span>
+<span class="token comment">*&amp;                                                        |__|  17'    *</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+
+<span class="token eol-comment comment">" table needed for FOR in select-options statement</span>
+<span class="token keyword">TABLES</span><span class="token punctuation">:</span> usr02<span class="token punctuation">.</span>
+
+<span class="token eol-comment comment">" Data...  :)</span>
+<span class="token keyword">DATA</span><span class="token punctuation">:</span> gv_time_dif_sperr   <span class="token keyword">TYPE</span> tims<span class="token punctuation">,</span>
+      gv_tcode            <span class="token keyword">TYPE</span> eqetcode<span class="token punctuation">,</span>
+      gv_aufnr            <span class="token keyword">TYPE</span> aufnr<span class="token punctuation">,</span>
+      gv_message          <span class="token keyword">TYPE</span> sm04dic<span class="token token-operator punctuation">-</span>popupmsg<span class="token punctuation">,</span>
+      gv_objnr            <span class="token keyword">TYPE</span> j_objnr<span class="token punctuation">,</span>
+      gv_stat             <span class="token keyword">TYPE</span> j_status<span class="token punctuation">,</span>
+      gt_enq              <span class="token keyword">TYPE</span> <span class="token keyword">TABLE</span> <span class="token keyword">OF</span> seqg3<span class="token punctuation">,</span>
+      gs_enq              <span class="token keyword">LIKE</span> <span class="token keyword">LINE</span> <span class="token keyword">OF</span> gt_enq<span class="token punctuation">,</span>
+      server_info         <span class="token keyword">TYPE</span> <span class="token keyword">REF</span> <span class="token keyword">TO</span> cl_server_info<span class="token punctuation">,</span>
+      gt_session_list     <span class="token keyword">TYPE</span> <span class="token keyword">TABLE</span> <span class="token keyword">OF</span> ssi_session_info<span class="token punctuation">,</span>
+      gs_session_list     <span class="token keyword">LIKE</span> <span class="token keyword">LINE</span> <span class="token keyword">OF</span> gt_session_list<span class="token punctuation">,</span>
+      gt_sessions_user    <span class="token keyword">TYPE</span> <span class="token keyword">TABLE</span> <span class="token keyword">OF</span> ssi_session_info<span class="token punctuation">,</span>
+      gs_sessions_user    <span class="token keyword">LIKE</span> <span class="token keyword">LINE</span> <span class="token keyword">OF</span> gt_sessions_user<span class="token punctuation">,</span>
+      bdcdata             <span class="token keyword">LIKE</span> bdcdata <span class="token keyword">OCCURS</span> <span class="token number">0</span> <span class="token keyword">WITH</span> <span class="token keyword">HEADER</span> <span class="token keyword">LINE</span><span class="token punctuation">,</span>
+      gv_modus_string     <span class="token keyword">TYPE</span> string<span class="token punctuation">,</span>
+      gv_modus_index      <span class="token keyword">TYPE</span> string<span class="token punctuation">,</span>
+      gv_user_name        <span class="token keyword">TYPE</span> eqeuname<span class="token punctuation">,</span>
+      th_opcode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>        <span class="token keyword">TYPE</span> <span class="token keyword">x</span><span class="token punctuation">,</span>
+      with_appl_info      <span class="token keyword">TYPE</span> ssi_bool <span class="token keyword">VALUE</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      gv_field<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      gv_value<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      gv_ssi_session_id   <span class="token keyword">TYPE</span> ssi_session_id<span class="token punctuation">,</span>
+      gv_modus_num        <span class="token keyword">TYPE</span> ssi_session_hdl<span class="token punctuation">,</span>
+      gv_modus_num_found  <span class="token keyword">TYPE</span> ssi_session_hdl<span class="token punctuation">,</span>
+      gv_modus_index_char <span class="token keyword">TYPE</span> numc1<span class="token punctuation">,</span>
+      gv_aufnr_string     <span class="token keyword">TYPE</span> string<span class="token punctuation">,</span>
+      <span class="token keyword">BEGIN</span> <span class="token keyword">OF</span> gt_usr_info <span class="token keyword">OCCURS</span> <span class="token number">10</span><span class="token punctuation">,</span>
+        <span class="token keyword">field</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">VALUE</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token keyword">END</span> <span class="token keyword">OF</span> gt_usr_info<span class="token punctuation">,</span>
+      gs_usr_info <span class="token keyword">LIKE</span> <span class="token keyword">LINE</span> <span class="token keyword">OF</span> gt_usr_info<span class="token punctuation">,</span>
+      gv_autyp    <span class="token keyword">TYPE</span> auftyp<span class="token punctuation">,</span>
+      gv_uzeit    <span class="token keyword">TYPE</span> sy<span class="token token-operator punctuation">-</span>uzeit<span class="token punctuation">,</span>
+      gv_string   <span class="token keyword">TYPE</span> string<span class="token punctuation">.</span>
+
+<span class="token eol-comment comment">" select option to exlude user</span>
+<span class="token keyword">SELECT-OPTIONS</span><span class="token punctuation">:</span> so_bname <span class="token keyword">FOR</span> usr02<span class="token token-operator punctuation">-</span>bname <span class="token keyword">MEMORY</span> <span class="token keyword">ID</span> xus <span class="token keyword">NO</span> <span class="token keyword">INTERVALS</span><span class="token punctuation">.</span>
+
+<span class="token keyword">CONSTANTS</span><span class="token punctuation">:</span> opcode_usr_info <span class="token keyword">LIKE</span> th_opcode <span class="token keyword">VALUE</span> <span class="token number">52</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" this is the internal SAP number used for the system function module </span><span class="token string">'ThUsrInfo'</span>
+gv_uzeit <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>uzeit<span class="token punctuation">.</span> <span class="token eol-comment comment">" moved up here to have time before the enqueue_read function</span>
+
+<span class="token eol-comment comment">" Get all AUFK table locks</span>
+<span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'ENQUEUE_READ'</span>
+  <span class="token keyword">EXPORTING</span>
+    gname                 <span class="token operator">=</span> <span class="token string">'AUFK'</span>
+    guname                <span class="token operator">=</span> <span class="token string">'*'</span>              <span class="token eol-comment comment">" Users (all)</span>
+  <span class="token keyword">TABLES</span>
+    enq                   <span class="token operator">=</span> gt_enq
+  <span class="token keyword">EXCEPTIONS</span>
+    communication_failure <span class="token operator">=</span> <span class="token number">1</span>
+    system_failure        <span class="token operator">=</span> <span class="token number">2</span>
+    <span class="token keyword">OTHERS</span>                <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">.</span>
+<span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">&lt;></span> <span class="token number">0</span><span class="token punctuation">.</span>
+  <span class="token keyword">EXIT</span><span class="token punctuation">.</span>
+<span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+<span class="token eol-comment comment">" Get all user sessions</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">OBJECT</span> server_info<span class="token punctuation">.</span>
+gt_session_list <span class="token operator">=</span> server_info<span class="token token-operator punctuation">-></span>get_session_list<span class="token punctuation">(</span> with_application_info <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+
+<span class="token eol-comment comment">" Loop through each locked object (production orders)</span>
+<span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_enq <span class="token keyword">INTO</span> gs_enq<span class="token punctuation">.</span>
+
+  <span class="token eol-comment comment">" Auftrag and Tcode for nice printing in the messages</span>
+  gv_tcode <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>gtcode<span class="token punctuation">.</span>
+  gv_aufnr_string <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>garg+<span class="token number">3</span><span class="token punctuation">.</span>
+  <span class="token keyword">SHIFT</span> gv_aufnr_string <span class="token keyword">LEFT</span> <span class="token keyword">DELETING</span> <span class="token keyword">LEADING</span> <span class="token string">'0'</span><span class="token punctuation">.</span>
+  <span class="token keyword">CONDENSE</span> gv_tcode<span class="token punctuation">.</span>
+
+  <span class="token eol-comment comment">" We keep only the orders that have the status FREI ---> stat </span><span class="token string">'I0002'</span> <span class="token keyword">in</span> <span class="token keyword">table</span> JEST
+  gv_aufnr <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>garg+<span class="token number">3</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" GARG for aufnr is in the format </span><span class="token string">'10000000XXXXXXX'</span> therefore <span class="token keyword">with</span> +<span class="token number">3</span> we should have the <span class="token keyword">standard</span> aufnr <span class="token keyword">format</span> 00000XXXXXXX <span class="token punctuation">(</span><span class="token number">12</span> CHAR <span class="token keyword">long</span><span class="token punctuation">)</span>
+
+  <span class="token eol-comment comment">" Only orders with type 10 or 40 (production and proess orders)</span>
+  <span class="token keyword">CLEAR</span> gv_autyp<span class="token punctuation">.</span>
+  <span class="token keyword">SELECT</span> <span class="token keyword">SINGLE</span> autyp <span class="token keyword">FROM</span> aufk <span class="token keyword">INTO</span> gv_autyp
+    <span class="token keyword">WHERE</span> aufnr <span class="token keyword">EQ</span> gv_aufnr<span class="token punctuation">.</span>
+  <span class="token keyword">IF</span> gv_autyp <span class="token keyword">NE</span> <span class="token string">'10'</span> <span class="token keyword">AND</span> gv_autyp <span class="token keyword">NE</span> <span class="token string">'40'</span><span class="token punctuation">.</span>
+    <span class="token keyword">DELETE</span> gt_enq <span class="token keyword">INDEX</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span> <span class="token eol-comment comment">" delete this line</span>
+    <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" and go on to the next lock object in gt_enq</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+  <span class="token eol-comment comment">" Also check JEST table - first format to OR0000XXXXXXX form</span>
+  <span class="token keyword">CLEAR</span> gv_objnr<span class="token punctuation">.</span>
+  <span class="token keyword">CONCATENATE</span> <span class="token string">'OR'</span> gv_aufnr <span class="token keyword">INTO</span> gv_objnr<span class="token punctuation">.</span>
+  <span class="token keyword">SELECT</span> <span class="token keyword">SINGLE</span> stat <span class="token keyword">FROM</span> jest <span class="token keyword">INTO</span> gv_stat
+    <span class="token keyword">WHERE</span> objnr <span class="token keyword">EQ</span> gv_objnr
+    <span class="token keyword">AND</span>   stat  <span class="token keyword">EQ</span> <span class="token string">'I0002'</span>
+    <span class="token keyword">AND</span>   inact <span class="token keyword">EQ</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+  <span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">&lt;></span> <span class="token number">0</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" FREI status not found, delete the entry</span>
+    <span class="token keyword">DELETE</span> gt_enq <span class="token keyword">INDEX</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span> <span class="token eol-comment comment">" delete this line</span>
+    <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" and go on to the next lock object in gt_enq</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+  <span class="token eol-comment comment">" Determine how long object has been locked</span>
+  <span class="token keyword">IF</span> gs_enq<span class="token token-operator punctuation">-</span>gttime <span class="token keyword">GT</span> gv_uzeit<span class="token punctuation">.</span> <span class="token eol-comment comment">" check to make sure the current time is at least as big as the lock time - otherwise we get giant times 23:59:59 when subtracting</span>
+    <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" if this is the case, go to the next locked object</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  gv_time_dif_sperr <span class="token operator">=</span> gv_uzeit <span class="token operator">-</span> gs_enq<span class="token token-operator punctuation">-</span>gttime<span class="token punctuation">.</span> <span class="token eol-comment comment">" locked object time calculation itself is simple, difference of current time and time when it was first locked</span>
+
+  <span class="token eol-comment comment">" Finally take action depending on the time 15 minute most sever, 10 minute strong warning, 5 minute weak warning.</span>
+  <span class="token keyword">IF</span> gv_time_dif_sperr <span class="token operator">></span> <span class="token string">'001500'</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" kill the user sessions after 15 minutes - will kill those that are in the transaction of the locked object</span>
+
+    <span class="token keyword">CLEAR</span> gt_sessions_user<span class="token punctuation">.</span>
+    <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_session_list <span class="token keyword">INTO</span> gs_session_list <span class="token keyword">WHERE</span> tenant <span class="token keyword">EQ</span> sy<span class="token token-operator punctuation">-</span>mandt<span class="token punctuation">.</span> <span class="token eol-comment comment">" loop at all open sessions to build a list of just the user sessions</span>
+
+      <span class="token eol-comment comment">" if a user is not in the given so, we continue (that means with exclude users, they are skipped, those with equals and all others keep going)</span>
+      <span class="token keyword">IF</span> gs_session_list<span class="token token-operator punctuation">-</span>user_name <span class="token keyword">NOT</span> <span class="token keyword">IN</span> so_bname<span class="token punctuation">.</span>
+        <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span>
+      <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+      gv_user_name   <span class="token operator">=</span> gs_session_list<span class="token token-operator punctuation">-</span>user_name<span class="token punctuation">.</span>
+
+      <span class="token eol-comment comment">" Only add to list if user is current lock user - also get the session id for this user</span>
+      <span class="token keyword">IF</span> gv_user_name <span class="token keyword">EQ</span> gs_enq<span class="token token-operator punctuation">-</span>guname<span class="token punctuation">.</span>
+        <span class="token keyword">CLEAR</span> gv_modus_index<span class="token punctuation">.</span>
+        <span class="token keyword">CLEAR</span> gt_usr_info[]<span class="token punctuation">.</span>
+        <span class="token keyword">CLEAR</span> gs_usr_info<span class="token punctuation">.</span>
+        <span class="token eol-comment comment">" get detailed technical info for this user to find which specific session to close</span>
+        <span class="token keyword">CALL</span> <span class="token string">'ThUsrInfo'</span> <span class="token keyword">ID</span> <span class="token string">'OPCODE'</span> <span class="token keyword">FIELD</span> opcode_usr_info
+          <span class="token keyword">ID</span> <span class="token string">'TID'</span> <span class="token keyword">FIELD</span> gs_session_list<span class="token token-operator punctuation">-</span>logon_hdl
+          <span class="token keyword">ID</span> <span class="token string">'WITH_APPL_INFO'</span> <span class="token keyword">FIELD</span> with_appl_info
+          <span class="token keyword">ID</span> <span class="token string">'TABLE'</span> <span class="token keyword">FIELD</span> gt_usr_info[]<span class="token punctuation">.</span>
+        <span class="token keyword">CONCATENATE</span> gs_enq<span class="token token-operator punctuation">-</span>gusrvb <span class="token string">'/UPD'</span> <span class="token keyword">INTO</span> gv_value<span class="token punctuation">.</span> <span class="token eol-comment comment">" We need to use the </span><span class="token string">'/UPD'</span> <span class="token keyword">value</span> <span class="token keyword">in</span> the technical info <span class="token keyword">to</span> <span class="token keyword">get</span> the <span class="token keyword">exact</span> session <span class="token keyword">assigned</span> <span class="token keyword">to</span> the specific locked <span class="token keyword">object</span>
+        <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_usr_info <span class="token keyword">INTO</span> gs_usr_info <span class="token keyword">WHERE</span> <span class="token keyword">value</span> <span class="token keyword">EQ</span> gv_value<span class="token punctuation">.</span> <span class="token eol-comment comment">" find the field from the value</span>
+          gv_modus_index <span class="token operator">=</span> gs_usr_info<span class="token token-operator punctuation">-</span>field+<span class="token number">9</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" the key for the value is </span><span class="token string">'modeinfo[X].enq_info'</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> we need just the <span class="token keyword">X</span><span class="token punctuation">.</span><span class="token punctuation">.</span> so we +<span class="token number">9</span> <span class="token keyword">then</span> take the <span class="token keyword">single</span> <span class="token keyword">character</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+        <span class="token eol-comment comment">" If we found a session with that number, we know we had the correct logon... we can add this to the user list</span>
+        <span class="token keyword">IF</span> gv_modus_index <span class="token keyword">IS</span> <span class="token keyword">NOT</span> <span class="token keyword">INITIAL</span><span class="token punctuation">.</span>
+          <span class="token eol-comment comment">" convert to type ssi_session_handle for later lookup</span>
+          gv_modus_num_found <span class="token operator">=</span> gv_modus_index<span class="token punctuation">.</span>
+          <span class="token eol-comment comment">" get the session id for this specific</span>
+          <span class="token keyword">CONCATENATE</span> <span class="token string">'modeinfo['</span> gv_modus_index <span class="token string">'].session'</span> <span class="token keyword">INTO</span> gv_field<span class="token punctuation">.</span> <span class="token eol-comment comment">" this time we need to find the value from the field</span>
+          <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_usr_info <span class="token keyword">INTO</span> gs_usr_info <span class="token keyword">WHERE</span> <span class="token keyword">field</span> <span class="token keyword">EQ</span> gv_field<span class="token punctuation">.</span>
+            gv_ssi_session_id <span class="token operator">=</span> gs_usr_info<span class="token token-operator punctuation">-</span>value<span class="token punctuation">.</span>
+          <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+          <span class="token keyword">APPEND</span> gs_session_list <span class="token keyword">TO</span> gt_sessions_user<span class="token punctuation">.</span>
+        <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+      <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+    <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+    <span class="token eol-comment comment">" last step is the bdc index - no matter what the order of the dynpro numbers or if there are skips between the numbers, the BDC is always 01, 02, 03, 04... counting number so we need sy-tabix</span>
+    <span class="token keyword">IF</span> gt_sessions_user <span class="token keyword">IS</span> <span class="token keyword">NOT</span> <span class="token keyword">INITIAL</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" check if there is anything for the user sessions, or if the index found</span>
+      <span class="token keyword">SORT</span> gt_sessions_user <span class="token keyword">BY</span> session_hdl <span class="token keyword">ASCENDING</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" this is how they are shown in the gui, so since we are using bdc we also have to do this</span>
+      <span class="token keyword">LOOP</span> <span class="token keyword">AT</span> gt_sessions_user <span class="token keyword">INTO</span> gs_sessions_user<span class="token punctuation">.</span> <span class="token eol-comment comment">" loop at all open sessions for the USER within the correct logon ID</span>
+        gv_modus_num   <span class="token operator">=</span> gs_sessions_user<span class="token token-operator punctuation">-</span>session_hdl<span class="token punctuation">.</span> <span class="token eol-comment comment">" current session</span>
+        <span class="token eol-comment comment">" Kill only the session from the table that matches the index of the modus found</span>
+        <span class="token keyword">IF</span> gv_modus_num <span class="token operator">=</span> gv_modus_num_found<span class="token punctuation">.</span>
+          gv_modus_index_char <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span> <span class="token eol-comment comment">" then the index of the modus for this user is sy-tabix - we need the index, rather than the actual number of the session for the BDC</span>
+          <span class="token keyword">CLEAR</span> gv_modus_string<span class="token punctuation">.</span>
+          <span class="token keyword">CONCATENATE</span> <span class="token string">'MODUS-MTCODE(0'</span> gv_modus_index_char <span class="token string">')'</span> <span class="token keyword">INTO</span> gv_modus_string<span class="token punctuation">.</span> <span class="token eol-comment comment">" build the bdcfield name using the index of where in the user's list the</span>
+        <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+      <span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+
+      <span class="token keyword">IF</span> gv_modus_index_char <span class="token keyword">EQ</span> <span class="token string">'0'</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" Then we have the false server and we have to continue ahead</span>
+        <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span>
+      <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+      <span class="token eol-comment comment">" First ensure that sm04 is called and set to the sessions view</span>
+      <span class="token keyword">CLEAR</span> bdcdata[]<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=SESSIONS'</span><span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" call transaction SM04, sync (S), no screens unless debugger (P)</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">TRANSACTION</span> <span class="token string">'SM04'</span>
+              <span class="token keyword">USING</span> bdcdata
+              <span class="token keyword">MODE</span> <span class="token string">'P'</span>
+              <span class="token keyword">UPDATE</span> <span class="token string">'S'</span><span class="token punctuation">.</span>
+
+      <span class="token eol-comment comment">" Now use bdc to end the session with that session id</span>
+      <span class="token keyword">CLEAR</span> bdcdata[]<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;OL0'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSKBH'</span> <span class="token string">'0800'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'GT_FIELD_LIST-SELTEXT(01)'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=WLSE'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'GT_FIELD_LIST-MARK(01)'</span> <span class="token string">'X'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSKBH                                0810SUB810'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSKBH'</span> <span class="token string">'0800'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'GT_FIELD_LIST-SELTEXT(01)'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=CONT'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSKBH                                0810SUB810'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/03'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=PS 63'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'02/76'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;IC1'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'02/76'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;ILT'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPLSSEL'</span> <span class="token string">'1104'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=CRET'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_SUBSCR'</span> <span class="token string">'SAPLSSEL                                1105%_SUBSCREEN_FREESEL'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'%%DYN001-LOW'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'%%DYN001-LOW'</span> gv_ssi_session_id<span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/15'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;IC1'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'RSM04000_ALV_NEW'</span> <span class="token string">'2000'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> gv_modus_string<span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=DEL'</span><span class="token punctuation">.</span>
+      <span class="token keyword">PERFORM</span> bdcdaten <span class="token keyword">USING</span><span class="token punctuation">:</span>
+        <span class="token string">'X'</span> <span class="token string">'SAPMSSY0'</span> <span class="token string">'0120'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_CURSOR'</span> <span class="token string">'04/15'</span><span class="token punctuation">,</span>
+          <span class="token string">' '</span> <span class="token string">'BDC_OKCODE'</span> <span class="token string">'=&amp;F15'</span><span class="token punctuation">.</span>
+      <span class="token eol-comment comment">" call transaction SM04, sync (S), no screens unless debugger (P)</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">TRANSACTION</span> <span class="token string">'SM04'</span>
+              <span class="token keyword">USING</span> bdcdata
+              <span class="token keyword">MODE</span> <span class="token string">'P'</span>
+              <span class="token keyword">UPDATE</span> <span class="token string">'S'</span><span class="token punctuation">.</span>
+
+      <span class="token eol-comment comment">" proper logging. times, order number, and transaction added as well as</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'User session from user '</span><span class="token punctuation">,</span> gs_enq<span class="token token-operator punctuation">-</span>guname<span class="token punctuation">,</span> <span class="token string">'with session number'</span><span class="token punctuation">,</span> gv_modus_index_char<span class="token punctuation">,</span> <span class="token string">'was deleted.'</span><span class="token punctuation">.</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'System Time (sy-uzeit): '</span><span class="token punctuation">,</span> gv_uzeit<span class="token punctuation">.</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'Object Lock Time Length:'</span><span class="token punctuation">,</span> gs_enq<span class="token token-operator punctuation">-</span>gttime<span class="token punctuation">.</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'Lock Time: '</span><span class="token punctuation">,</span> gv_time_dif_sperr<span class="token punctuation">.</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'Order: '</span><span class="token punctuation">,</span> gv_aufnr_string<span class="token punctuation">,</span> <span class="token string">',Transaction'</span><span class="token punctuation">,</span> gv_tcode<span class="token punctuation">.</span>
+
+      <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'SO_STRUCT_TO_CHAR'</span>
+        <span class="token keyword">EXPORTING</span>
+          ip_struct <span class="token operator">=</span> gs_enq
+        <span class="token keyword">IMPORTING</span>
+          ep_string <span class="token operator">=</span> gv_string<span class="token punctuation">.</span>
+      <span class="token keyword">CONDENSE</span> gv_string<span class="token punctuation">.</span>
+      <span class="token keyword">WRITE</span><span class="token punctuation">:</span> <span class="token operator">/</span> <span class="token string">'Lock object entry contains:'</span><span class="token punctuation">,</span> gv_string<span class="token punctuation">.</span>
+
+    <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">ELSEIF</span> gv_time_dif_sperr <span class="token operator">></span> <span class="token string">'001000'</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" Second warning message after 10 minutes</span>
+    <span class="token keyword">CONCATENATE</span> <span class="token string">'You are locking'</span> gv_aufnr_string <span class="token string">' in TC '</span> gv_tcode <span class="token string">' still. Please save and leave the transaction, otherwise your session will be ended in 5 min. Thank you!'</span> <span class="token keyword">INTO</span> gv_message <span class="token keyword">SEPARATED</span> <span class="token keyword">BY</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+    <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'TH_POPUP'</span>
+      <span class="token keyword">EXPORTING</span>
+        <span class="token keyword">client</span>         <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>mandt
+        <span class="token keyword">user</span>           <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>guname
+        <span class="token keyword">message</span>        <span class="token operator">=</span> gv_message
+      <span class="token keyword">EXCEPTIONS</span>
+        user_not_found <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">OTHERS</span>         <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>
+    <span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">&lt;></span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span>
+    <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">ELSEIF</span> gv_time_dif_sperr <span class="token operator">></span> <span class="token string">'000500'</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" First warning message after 5 minutes</span>
+    <span class="token keyword">CONCATENATE</span> <span class="token string">'You are locking'</span> gv_aufnr_string <span class="token string">'in TC'</span> gv_tcode <span class="token string">' for >5min. Please save and leave the transaction.'</span> <span class="token keyword">INTO</span> gv_message <span class="token keyword">SEPARATED</span> <span class="token keyword">BY</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+    <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'TH_POPUP'</span>
+      <span class="token keyword">EXPORTING</span>
+        <span class="token keyword">client</span>         <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>mandt
+        <span class="token keyword">user</span>           <span class="token operator">=</span> gs_enq<span class="token token-operator punctuation">-</span>guname
+        <span class="token keyword">message</span>        <span class="token operator">=</span> gv_message
+      <span class="token keyword">EXCEPTIONS</span>
+        user_not_found <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">OTHERS</span>         <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>
+    <span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">&lt;></span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">CONTINUE</span><span class="token punctuation">.</span>
+    <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+<span class="token keyword">ENDLOOP</span><span class="token punctuation">.</span>
+
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Form  BDCDATEN</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token keyword">FORM</span> bdcdaten <span class="token keyword">USING</span> start fnam fval<span class="token punctuation">.</span>
+
+  <span class="token keyword">CLEAR</span> bdcdata<span class="token punctuation">.</span>
+  <span class="token keyword">IF</span> start <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>dynbegin <span class="token operator">=</span> start<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>program  <span class="token operator">=</span> fnam<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>dynpro   <span class="token operator">=</span> fval<span class="token punctuation">.</span>
+  <span class="token keyword">ELSE</span><span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>fnam <span class="token operator">=</span> fnam<span class="token punctuation">.</span>
+    bdcdata<span class="token token-operator punctuation">-</span>fval <span class="token operator">=</span> fval<span class="token punctuation">.</span>
+  <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+  <span class="token keyword">APPEND</span> bdcdata<span class="token punctuation">.</span>
+
+<span class="token keyword">ENDFORM</span><span class="token punctuation">.</span>                               <span class="token eol-comment comment">" BDCDATEN</span></code></pre>
+      </div>
+<p>Whew. That’s about it for this one, hope you enjoyed!</p></div><hr style="margin-bottom:1.75rem"/><p><a href="/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/">Previous Post: <!-- -->Led Zeppelin Data Analysis for Lyric Generation and Inspiration</a></p><p><a href="/detailed-look-at-bdc-in-abap/">Next Post: <!-- -->A Detailed Look at ABAP&#x27;s BDC Method</a></p><hr style="margin-bottom:1.75rem"/><div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-63301492-1', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"warn-sap-users-of-locked-objects-then-kill-their-session-1c8","path":"/warn-sap-users-of-locked-objects-then-kill-their-session/"};window.dataPath="49/path---warn-sap-users-of-locked-objects-then-kill-their-session-1-c-8-c01-oGjTqw6dfk1HL5pH9srvfgbw6c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-4c15cbdc5d669f18f653.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":[],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-56c53bda2f12ffe59f3b.js"],"component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js":["/component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js-80eb5addbfe084b37415.js"],"component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js":["/component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js-b5d7570e270585073452.js"],"component---src-pages-index-js":["/component---src-pages-index-js.0edd79b42c04d2aa468b.css","/component---src-pages-index-js-cbdb11061d2fa7b8e56a.js"],"component---src-pages-market-news-feed-index-js":["/component---src-pages-market-news-feed-index-js-af6d7efc24fc014610df.js"],"component---src-pages-privacy-policy-index-js":["/component---src-pages-privacy-policy-index-js-538660b3f9e4ba31786e.js"],"component---src-pages-sec-filings-index-js":["/component---src-pages-sec-filings-index-js-fa4d4760c9d614f8d29d.js"],"component---src-pages-talk-shop-index-js":["/component---src-pages-talk-shop-index-js-2d1b863991066db83969.js"]};/*]]>*/</script><script src="/webpack-runtime-2aca7dfd7003c9a5b823.js" async=""></script><script src="/0-91aaa693676e677016a1.js" async=""></script><script src="/app-4c15cbdc5d669f18f653.js" async=""></script><script src="/component---src-templates-blog-post-js-56c53bda2f12ffe59f3b.js" async=""></script><script src="/4-91900a1a23bbf52ae653.js" async=""></script></body></html>
