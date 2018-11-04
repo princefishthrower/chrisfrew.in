@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 
-class SECFilings extends React.Component {    
+class TalkShop extends React.Component {    
     render() {
       return (
         <div>
@@ -35,4 +35,4 @@ class SECFilings extends React.Component {
     }
 }
 
-export default SECFilings
+export default TalkShop

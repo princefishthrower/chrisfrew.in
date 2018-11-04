@@ -1,16 +1,9 @@
-const React = require('react');
-
 import Emoji from 'react-emoji-render';
 
 // custom components
 import CodeCopier from '../../components/CodeCopier';
 
-// front matter, javascript style
-exports.frontmatter = {
-  title: "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
-  date: "2018-10-12",
-  draft: false
-}
+const React = require('react');
 
 // define constanst code snippets
 const sCodeSnippet1 = `" Ack! my eyes!
@@ -112,6 +105,13 @@ class Post extends React.Component {
       </div>
     )
   }
+}
+
+// front matter, javascript style
+export const frontmatter = {
+  title: "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
+  date: "2018-10-12",
+  draft: false
 }
 
 export default Post;

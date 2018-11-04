@@ -1,16 +1,9 @@
-const React = require('react');
-
 import Emoji from 'react-emoji-render';
 
 // custom components
 import CodeCopier from '../../components/CodeCopier';
 
-// front matter, javascript style
-exports.frontmatter = {
-  title: "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
-  date: "2018-09-09",
-  draft: false
-}
+const React = require('react');
 
 const sCodeSnippet1 = `DATA: lv_matid_16 TYPE /SCWM/DE_MATID, " used in EWM monitor fields like 
 lv_matid_22 TYPE /SAPAPO/MATID. " used in database table key field as in database table /SAPAPO/MARM
@@ -53,6 +46,13 @@ class Post extends React.Component {
       </div>
     )
   }
+}
+
+// front matter, javascript style
+export const frontmatter = {
+  title: "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
+  date: "2018-09-09",
+  draft: false
 }
 
 export default Post;

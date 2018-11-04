@@ -1,8 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
+import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
 require('prismjs/themes/prism-okaidia.css');
@@ -24,36 +25,47 @@ class BlogIndex extends React.Component {
     });
     return (
       <div>
-        <Helmet title={siteTitle} />
-        <Bio />
-        { sortedPosts.map(({ node }) => {
-          if (node.frontmatter.draft) {
-            return; // if the markdown is still a 'draft post'
-          }
-          if (i === aColors.length) {
-            i = 0;
-          }
-          sColor = aColors[i];
-          i = i + 1;
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                  color: sColor
-                }}
-              >
-                  {title}
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </Link>
-            </div>
-          )
-        })}
-      </div>
+        <Layout location={this.props.location}>
+          <Helmet title={siteTitle} />
+            <div
+              style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                maxWidth: rhythm(24),
+                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              }}
+            >
+          <Bio />
+          { sortedPosts.map(({ node }) => {
+            if (node.frontmatter.draft) {
+              return; // if the markdown is still a 'draft post'
+            }
+            if (i === aColors.length) {
+              i = 0;
+            }
+            sColor = aColors[i];
+            i = i + 1;
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            return (
+              <div key={node.fields.slug}>
+                <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                    color: sColor
+                  }}
+                >
+                    {title}
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </Link>
+              </div>
+            )
+          })}
+        </div>
+      </Layout>
+    </div>
     )
   }
 }

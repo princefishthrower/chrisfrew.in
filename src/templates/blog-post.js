@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
@@ -12,10 +12,52 @@ const BlogPostTemplate = ({data, location, pathContext}) => {
     const { next, prev } = pathContext;
     const { title, date } = frontmatter;
     const siteTitle = data.site.siteMetadata.title;
+    const siteDescription = post.excerpt;
     
     return (
       <div>
-        <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+        <Helmet 
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: siteDescription }]}
+          title={`${frontmatter.title} | ${siteTitle}`} 
+        />
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+        <h3
+          style={{
+            fontFamily: 'Montserrat, sans-serif',
+            marginTop: 0,
+            marginBottom: rhythm(-1),
+          }}
+        >
+          <Link
+            style={{
+              boxShadow: 'none',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+            to={'/'}
+          >
+          <div>
+            Chris's&nbsp;
+            <span style={{color:'#F92672'}}>Full Stack</span>,&nbsp;
+            <span style={{color:'#66D9EF'}}>Web Development</span>,&nbsp;
+            <span style={{color:'#A6E22E'}}>ABAP</span>,&nbsp;
+            <span style={{color:'#F92672'}}>SAPUI5</span>,&nbsp;
+            <span style={{color:'#66D9EF'}}>Machine Learning</span>,&nbsp;
+            &&nbsp;
+            <span style={{color:'#A6E22E'}}>Natural Language Processing</span>&nbsp;
+            <span style={{color:'#F92672'}}>Blog</span>.
+            <br/>
+          </div>
+          </Link>
+        </h3>
         <h1>{title}</h1>
         <p
           style={{
@@ -54,6 +96,8 @@ const BlogPostTemplate = ({data, location, pathContext}) => {
         />
         <Bio />
       </div>
+      </div>
+      
     )
 }
 
@@ -69,6 +113,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt
       html
       frontmatter {
         title
