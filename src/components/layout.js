@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
 import { CanvasSpace, Pt, World, Create, Particle, Num } from 'pts';
 import Emoji from 'react-emoji-render';
@@ -13,7 +12,8 @@ class Layout extends React.Component {
       iCount: 0,
       height: 0,
       width: 0,
-      oHeader: null
+      oHeader: null,
+      ptsCanvas: null
     }
     this.activateCanvas = this.activateCanvas.bind(this);
   }
@@ -43,9 +43,9 @@ class Layout extends React.Component {
             Colors inspired by the Monokai color scheme (I <Emoji text=":two_hearts:"/>{'\u00A0'}{'\u00A0'}Sublime Text <Emoji text=":smile:" /> )<br/>
             Hosted independently (i.e. on an old Dell laptop <Emoji text=":joy:" />) with Node.js & express.<br/>
             Copy icon in code copypastas from flaticon.<br/>
-          <style dangerouslySetInnerHTML={{__html: ".bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:#FFDD00 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}" }} /><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" /><a className="bmc-button" target="_blank" href="https://www.buymeacoffee.com/chrisfrewin"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a cappucino" /><span style={{marginLeft: 5}}>Buy me a cappucino</span></a><br/>
+          <style dangerouslySetInnerHTML={{__html: ".bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:#FFDD00 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}" }} /><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" /><a className="bmc-button" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/chrisfrewin"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a cappucino" /><span style={{marginLeft: 5}}>Buy me a cappucino</span></a><br/>
           <code><a href="http://paypal.me/chrisfrewin">http://paypal.me/chrisfrewin</a><br/></code>
-          <style dangerouslySetInnerHTML={{__html: ".acfp-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.acfp-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:red !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Pacifico', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.acfp-button:hover, .acfp-button:active, .acfp-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}" }} /><link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" /><a className="acfp-button" target="_blank" href="https://chrisfrew.in/introducing-chrisfrewin-productions"><img src="https://www.chrisfrew.in/digital-avatar.svg"/><span style={{marginLeft: 5}}>a chrisfrew.in production</span></a><br/>
+          <style dangerouslySetInnerHTML={{__html: ".acfp-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.acfp-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:red !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Pacifico', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.acfp-button:hover, .acfp-button:active, .acfp-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}" }} /><link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" /><a className="acfp-button" target="_blank" rel="noopener noreferrer" href="https://chrisfrew.in/introducing-chrisfrewin-productions"><img src="https://www.chrisfrew.in/digital-avatar.svg"/><span style={{marginLeft: 5}}>a chrisfrew.in production</span></a><br/>
           </h5>
         </footer>
       </div>
@@ -53,7 +53,7 @@ class Layout extends React.Component {
     );
   }
   activateCanvas() {
-    this.space = new CanvasSpace( this.ptsCanvas ).setup({ bgcolor: "transparent", resize: true, retina: true });
+    this.space = new CanvasSpace( this.state.ptsCanvas ).setup({ bgcolor: "transparent", resize: true, retina: true });
     this.form = this.space.getForm();
     var world;
     this.space.add( {
@@ -80,7 +80,7 @@ class Layout extends React.Component {
         world.update( ftime );
       },
       action:( type, px, py) => {
-        if (type == "move") {
+        if (type === "move") {
           world.particle( 0 ).position = new Pt(px, py);
         }
       }
@@ -92,12 +92,6 @@ class Layout extends React.Component {
   componentDidMount() {
     let oHeader;
     let rootPath = `/`
-    if (this.divElement) {
-      const height = this.divElement.clientHeight; // also do height and with setting for the canvas on root page
-      const width = this.divElement.clientWidth;
-      this.setState({ height: height, width: width });
-      this.activateCanvas();
-    }
     if (window.innerWidth >= 768) {
       oHeader = (
         <h1
@@ -115,7 +109,12 @@ class Layout extends React.Component {
             }}
           >
           <div ref={ (divElement) => this.divElement = divElement}>
-            <canvas height={this.state.height} width={this.state.width} className="particlesCanvas" ref={(canvas) => { this.ptsCanvas = canvas; }}></canvas>
+            <canvas 
+              height={this.state.height} 
+              width={this.state.width} 
+              className="particlesCanvas" 
+              ref={(canvas) => { this.setState({ptsCanvas: canvas}, () => this.activateCanvas()) }}> // we use the ptsCanvas object in the activateCanvas() function, so we use activateCanvas as a callback (can only use ptsCanvas after it actually exists!)
+            </canvas>
             <div className="padding">
               Chris's<br/>
               <span style={{color:'#F92672'}}>Full Stack</span>,<br/>
@@ -131,7 +130,7 @@ class Layout extends React.Component {
           </div>
           </div>
         </h1>
-      )
+      );
     } else {
       oHeader = (
         <h1

@@ -65,29 +65,29 @@ Anyone with significant production planning experience (i.e., not me :joy: ) kno
 
 In transaction `CR03` (display work center), in the 'Costing' Tab, there is a 'Formula' button with the check symbol on it:
 
-![GUI testing calculation](test-formula.jpeg)
+![GUI testing calculation](./test-formula.jpg)
 
 This was my starting point to find any sort of function that could do this programmatically - with more time, I learned from SCN of a function that does exactly that! It's called `CR_WORKCENTER_FORMULA_CALC`!
 
 Let's head on over to transaction `SE37` and test it ourselves!
 
-![Yep, that's SAP](error-test-frame.jpeg)
+![Yep, that's SAP](./error-test-frame.jpg)
 
 :expressionless::expressionless::expressionless: shit... SAP, you had one job to do!
 
 Fine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FORMULA_CALC` and set a breakpoint in the first line:
 
-![The first possible line in the function we can breakpoint](function-breakpoint.png)
+![The first possible line in the function we can breakpoint](./function-breakpoint.png)
 
 and in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src="return.png"/> and...
 
 :pray: Violá! :pray: We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!
 
-![There you are `CR_WORKCENTER_FORMULA_CALC`](function-found.png)
+![There you are `CR_WORKCENTER_FORMULA_CALC`](./function-found.png)
 
 (For those deeply interested, you can find exactly where the function is called in SAP Program `SAPLCRA0`, Include `LCRA0F71`, line 55, at least for SAPGUI 740.)
 
-![Calling program details](form-program.png)
+![Calling program details](./form-program.png)
 
 ## The Details (The Hard Part)
 
@@ -990,11 +990,11 @@ Cheers! :beer:
 3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction <span style="font-family:'Courier New'">CO11N</span>:
 
 Upon pressing 'enter' for with a new amount:
-![Automatic calculation of confirmation activities by the System in transaction CO11N](co11n-1.jpg)
+![Automatic calculation of confirmation activities by the System in transaction CO11N](./co11n-1.jpg)
 
 Pressing 'OK' for this window, we get a popup:
 
-![Filling confirmation activities by hand in transaction CO11N](co11n-2.jpg)
+![Filling confirmation activities by hand in transaction CO11N](./co11n-2.jpg)
 
 We see that the Labor time is provided here. It's likely 30 min for a full 100 KG, since the system is proposing only 15 minutes for 50 KG, half of what the full order amount should be. (I know, it's not a full four field example - but values would also be proposed if you had more fields like machine time, machine set-up, etc.)
 </div>

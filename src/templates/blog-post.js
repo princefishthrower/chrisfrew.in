@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import get from 'lodash/get'
-
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
+import { graphql } from 'gatsby'
 
 const BlogPostTemplate = ({data, location, pathContext}) => {
     const { markdownRemark: post } = data;

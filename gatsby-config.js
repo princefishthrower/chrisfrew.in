@@ -29,6 +29,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false,
             },
           },
           {
@@ -40,7 +41,12 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          `gatsby-remark-emoji`,  // <-- this line adds emoji
+          {
+            resolve: 'gatsby-remark-emojis',  // <-- this line adds emoji
+            options: {
+              size: 64
+            }
+          }
         ],
       },
     },
