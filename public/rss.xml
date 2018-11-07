@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Wed, 07 Nov 2018 08:27:15 GMT</lastBuildDate><item><title><![CDATA[The Software Engineer's Social Contract]]></title><description><![CDATA[This is going to be an ongoing bullet point of some of my own personal guidelines as a Software Engineer. They probably relate to most other…]]></description><link>https://chrisfrew.in/the-social-contract/</link><guid isPermaLink="false">https://chrisfrew.in/the-social-contract/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is going to be an ongoing bullet point of some of my own personal guidelines as a Software Engineer. They probably relate to most other, if not all, professions and occupations. Each point has a bit of justification and reasoning behind it. This list may grow.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris Frewin's Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, & Natural Language Processing Blog.]]></title><description><![CDATA[A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.]]></description><link>https://chrisfrew.in</link><generator>RSS for Node</generator><lastBuildDate>Wed, 07 Nov 2018 08:39:42 GMT</lastBuildDate><item><title><![CDATA[The Software Engineer's Social Contract]]></title><description><![CDATA[This is going to be an ongoing bullet point of some of my own personal guidelines as a Software Engineer. They probably relate to most other…]]></description><link>https://chrisfrew.in/the-social-contract/</link><guid isPermaLink="false">https://chrisfrew.in/the-social-contract/</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is going to be an ongoing bullet point of some of my own personal guidelines as a Software Engineer. They probably relate to most other, if not all, professions and occupations. Each point has a bit of justification and reasoning behind it. This list may grow.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Take advice-giving seriously and explain it well&lt;/p&gt;
@@ -115,7 +115,7 @@ Lets think of this 700K in terms of simple exchange for services. I need:&lt;/p&
 &lt;p&gt;What will you build?&lt;/p&gt;
 &lt;p&gt;-Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Led Zeppelin Data Analysis for Lyric Generation and Inspiration]]></title><description><![CDATA[* * * Note: this post is mirrored on NLP Champs:  https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration…]]></description><link>https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/</link><guid isPermaLink="false">https://chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/</guid><pubDate>Thu, 26 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;***Note: this post is mirrored on NLP Champs: &lt;a href=&quot;https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration&quot;&gt;https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Inspiration and Motivation&lt;/h2&gt;
-&lt;p&gt;I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I’ve even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so… &lt;em&gt;zepplin-ey&lt;/em&gt; :smile:&lt;/p&gt;
+&lt;p&gt;I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I’ve even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so… &lt;em&gt;zepplin-ey&lt;/em&gt; 😄&lt;/p&gt;
 &lt;h2&gt;Important: I’m Lazy.&lt;/h2&gt;
 &lt;p&gt;Yep, if anyone out there has been following along in my blogging adventures, you’ll know that I’m lazy. Anything that can be automated, I’m going to try to automate it! (Or in the very least, partially automate it or find a tool to use to make my life easier.) Actually, the entire concept of this post reflects my laziness: I’m willing to make a tool that generates lyrics &lt;em&gt;for&lt;/em&gt; me before I visit my buddy this summer as we prepare to write an EP together! (Yikes! - I’ll let you know how &lt;em&gt;that&lt;/em&gt; goes!)&lt;/p&gt;
 &lt;h2&gt;Getting the List of Song Names&lt;/h2&gt;
@@ -232,7 +232,7 @@ Lets think of this 700K in terms of simple exchange for services. I need:&lt;/p&
       &lt;/div&gt;
 &lt;h2&gt;Getting Lyrics for Each Song&lt;/h2&gt;
 &lt;p&gt;So great, we’ve got our list of songs in Python syntax. We need the actual &lt;em&gt;lyrics&lt;/em&gt; now. And yes, I’m going to continue this post’s laziness theme! I could go to Google, copy, and paste song lyrics for each of those Led Zeppelin songs, but hey, zep has over 100 songs! No way I’m that un-lazy. Let’s automate it.&lt;/p&gt;
-&lt;p&gt;Luckily, there is yet &lt;em&gt;another&lt;/em&gt; tool that can help us! Enter &lt;em&gt;figurative drum roll please…&lt;/em&gt; :drum::drum::drum: LyricWikia, written by enricobacis on GitHub: &lt;a href=&quot;https://github.com/enricobacis/lyricwikia&quot;&gt;https://github.com/enricobacis/lyricwikia&lt;/a&gt; (I mean, c’mon, the example in the README is even Led Zeppelin’s Stairway to Heaven!)&lt;/p&gt;
+&lt;p&gt;Luckily, there is yet &lt;em&gt;another&lt;/em&gt; tool that can help us! Enter &lt;em&gt;figurative drum roll please…&lt;/em&gt; 🥁🥁🥁 LyricWikia, written by enricobacis on GitHub: &lt;a href=&quot;https://github.com/enricobacis/lyricwikia&quot;&gt;https://github.com/enricobacis/lyricwikia&lt;/a&gt; (I mean, c’mon, the example in the README is even Led Zeppelin’s Stairway to Heaven!)&lt;/p&gt;
 &lt;p&gt;So, we’re basically done. We loop over our songs and write the retrieved lyrics to their own file. We are also going to write a ‘global’ lyrics file - simply all the lyrics strings concatenated together to a file called &lt;code class=&quot;language-text&quot;&gt;input.txt&lt;/code&gt; —&gt; don’t worry; I’m not crazy, this will be important later. Data retrieval code is done and looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;get_lyrics.py&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -380,7 +380,7 @@ Southbound Piano
 St. Tristan&amp;#39;s Sword
 Two Ones Are Won&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Not so bad- we’ve retrieved what is the vast majority of Led Zeppelin’s lyrics in a matter of minutes. However, I’m still too lazy to get these lyrics by hand - I’m not gonna add ‘em. :joy:&lt;/p&gt;
+&lt;p&gt;Not so bad- we’ve retrieved what is the vast majority of Led Zeppelin’s lyrics in a matter of minutes. However, I’m still too lazy to get these lyrics by hand - I’m not gonna add ‘em. 😂&lt;/p&gt;
 &lt;h2&gt;Data Analysis - Word Occurrences&lt;/h2&gt;
 &lt;p&gt;So we’ve retrieved our data. I wanted to count most common words as a simple start to analyze these lyrics. So, relying heavily on &lt;code class=&quot;language-text&quot;&gt;nltk&lt;/code&gt; (Natural Language Toolkit) we build a corpus from all the lyrics, remove the stopwords, and count the occurrences with Python’s &lt;code class=&quot;language-text&quot;&gt;Counter&lt;/code&gt; module. That is:&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;word_counts.py&lt;/code&gt; &lt;/p&gt;
@@ -463,7 +463,7 @@ plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span cl
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;In a way, I think we’ve found the ‘stop words’ of Led Zeppelin. :joy: I could have almost expected ‘babe’ and ‘baby’ - it’s repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more ‘meat’ of the lyrics:&lt;/p&gt;
+&lt;p&gt;In a way, I think we’ve found the ‘stop words’ of Led Zeppelin. 😂 I could have almost expected ‘babe’ and ‘baby’ - it’s repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more ‘meat’ of the lyrics:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -511,7 +511,7 @@ plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span cl
 &lt;/blockquote&gt;
 &lt;p&gt;Alright… they are a bit… weird. But inspiring a bit? At least? Maybe.&lt;sup&gt;Maybe.&lt;/sup&gt;&lt;/p&gt;
 &lt;h2&gt;Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)&lt;/h2&gt;
-&lt;p&gt;Turn on the :computer:CPU fan - we’re going Tensorflow. :joy:&lt;/p&gt;
+&lt;p&gt;Turn on the 💻CPU fan - we’re going Tensorflow. 😂&lt;/p&gt;
 &lt;p&gt;We’re going to use a nice Word level RNN for starters, from hunkim on GitHub: &lt;a href=&quot;https://github.com/hunkim/word-rnn-tensorflow&quot;&gt;https://github.com/hunkim/word-rnn-tensorflow&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For your convenience, I forked a version (basically with the Led Zeppelin corpus in the &lt;code class=&quot;language-text&quot;&gt;data/&lt;/code&gt; folder and changing the hardcoded file names in &lt;code class=&quot;language-text&quot;&gt;train.py&lt;/code&gt;) That’s here: &lt;a href=&quot;https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin&quot;&gt;https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;These look &lt;em&gt;much&lt;/em&gt; better than the wacky Markov chains:&lt;/p&gt;
@@ -525,7 +525,7 @@ plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span cl
 &lt;p&gt;rolled very here? I am That See the door Do you drive so twirl and ooh, a rock in night sit soul Oh, there good She joy there, Oh, my hands, me, breakfast ‘Cause ya now, it’s yeah on baby, all ya know you, alright Oh, baby, an Go, Singing on the man When you stop I roll it’s you oh my seen oh, alright I can get I won’t don’t oh, darlin’ on the seeds of gold Ah, get a monkey is my go ‘round we means the money hey, now from the money A plot, it mama Ooh, Oh oh baby, my thrill I don’t leave you notice that me I stay” run, squeeze that Drop Oh, care said my love I still people blushin’ Sisters of Oh, didn’t once So a bridge roots, my shakin’ Oh what you know with it’s my soul and play today, the nose a time It’s yeah, do it, love me breaks Yes, through the train If my have An’ you oh, yeah When the bad bide you’re flowers again he was At for good stop I’m How nothing I’ll said, join same Mine’s so horn of beer on my knows Ooh, this&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I hope you enjoyed this post! Until next time!&lt;/p&gt;
-&lt;p&gt;Cheers :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welp, I Did It. I Quit.]]></title><description><![CDATA[Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad. * * * Note: this post is mirrored on my…]]></description><link>https://chrisfrew.in/welp-i-did-it-i-quit/</link><guid isPermaLink="false">https://chrisfrew.in/welp-i-did-it-i-quit/</guid><pubDate>Sun, 22 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.&lt;/h2&gt;
+&lt;p&gt;Cheers 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welp, I Did It. I Quit.]]></title><description><![CDATA[Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad. * * * Note: this post is mirrored on my…]]></description><link>https://chrisfrew.in/welp-i-did-it-i-quit/</link><guid isPermaLink="false">https://chrisfrew.in/welp-i-did-it-i-quit/</guid><pubDate>Sun, 22 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.&lt;/h2&gt;
 &lt;p&gt;***Note: this post is mirrored on my Medium: &lt;a href=&quot;https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1&quot;&gt;https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Welp.&lt;/h2&gt;
 &lt;p&gt;I quit my full-time job.&lt;/p&gt;
@@ -587,7 +587,7 @@ Elevated to levels I ain’t ever seen&lt;/p&gt;
 &lt;p&gt;What about an art display: computer-assisted, colorized vector generated images of all 486 mountain lodges in the Austrian Alpine Club? Yep.&lt;/p&gt;
 &lt;p&gt;And so I’m doing it - Its time for me to spread my wings and fly. I’ll check back in a year on this post - a post-mortem if you will. &lt;/p&gt;
 &lt;p&gt;Hopefully it won’t be me that the post-mortem is written about.&lt;/p&gt;
-&lt;p&gt;-Cheers! :beer:&lt;/p&gt;
+&lt;p&gt;-Cheers! 🍺&lt;/p&gt;
 &lt;p&gt;Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot]]></title><description><![CDATA[Slack Bot! You may have read  Part 3  of  my giant automation undertaking  about. Maybe not. Anyway, near the bottom of  Part 3 , I discuss…]]></description><link>https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/</link><guid isPermaLink="false">https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/</guid><pubDate>Sat, 21 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Slack Bot!&lt;/h2&gt;
 &lt;p&gt;You may have read &lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/&quot;&gt;Part 3&lt;/a&gt; of &lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/&quot;&gt;my giant automation undertaking&lt;/a&gt; about. Maybe not.&lt;/p&gt;
 &lt;p&gt;Anyway, near the bottom of &lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/&quot;&gt;Part 3&lt;/a&gt;, I discuss a &lt;code class=&quot;language-text&quot;&gt;messageHub()&lt;/code&gt; function that sends a string message to all the places I want it to, one of them being a Slack Bot. This is actually really, really easy to put together. The heroes at Slack are definitely doing a nice job with ease of use for developers.&lt;/p&gt;
@@ -695,7 +695,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;GitHub Integration&lt;/h2&gt;
-&lt;p&gt;With our subdomain set up and our express server serving there, we can start processing requests for &lt;code class=&quot;language-text&quot;&gt;webhooks.chrisfrew.in&lt;/code&gt;. The important thing here is to validate requests. Imagine what could happen without validation, (if I eventualy do hook this up to my twitter bot to post every time a repository is updated) just anyone could send random github-ish looking json data to &lt;code class=&quot;language-text&quot;&gt;webhooks.chrisfrew.in&lt;/code&gt;, and my server would take action, even when its not coming from a validate That would be really annoying, and plus, it would make me seem &lt;em&gt;way&lt;/em&gt; more productive than I am with my repositories. :joy::joy::joy: So yeah, validation is an important step. &lt;/p&gt;
+&lt;p&gt;With our subdomain set up and our express server serving there, we can start processing requests for &lt;code class=&quot;language-text&quot;&gt;webhooks.chrisfrew.in&lt;/code&gt;. The important thing here is to validate requests. Imagine what could happen without validation, (if I eventualy do hook this up to my twitter bot to post every time a repository is updated) just anyone could send random github-ish looking json data to &lt;code class=&quot;language-text&quot;&gt;webhooks.chrisfrew.in&lt;/code&gt;, and my server would take action, even when its not coming from a validate That would be really annoying, and plus, it would make me seem &lt;em&gt;way&lt;/em&gt; more productive than I am with my repositories. 😂😂😂 So yeah, validation is an important step. &lt;/p&gt;
 &lt;p&gt;GitHub’s way of doing authentication for webhooks is to take the content of the payload, concatenate that with the secret key, and then hash it. You then do the same on your server, since you yourself also know the secret key, and if the hashes match, violá! You know it’s coming from GitHub. We accomplish this in Nodejs in a function called &lt;code class=&quot;language-text&quot;&gt;verifySignature&lt;/code&gt; like so:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Verification function to check if it is actually GitHub who is POSTing here&lt;/span&gt;
@@ -751,7 +751,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;The &lt;em&gt;very&lt;/em&gt; cool thing here, at least I think, is that since I run my &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; servers with &lt;code class=&quot;language-text&quot;&gt;forever&lt;/code&gt;, when the source is built, whatever &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; is serving is updated, without affecting the runtime of &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; itself! So, I am nearly approaching a fully integrated build system that was all custom built. :smile:&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;very&lt;/em&gt; cool thing here, at least I think, is that since I run my &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; servers with &lt;code class=&quot;language-text&quot;&gt;forever&lt;/code&gt;, when the source is built, whatever &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; is serving is updated, without affecting the runtime of &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; itself! So, I am nearly approaching a fully integrated build system that was all custom built. 😄&lt;/p&gt;
 &lt;h2&gt;Other Fun stuff&lt;/h2&gt;
 &lt;p&gt;You know how when your &lt;code class=&quot;language-text&quot;&gt;npm start&lt;/code&gt; wont work, only because of a missing module? I’ve always been like, well, the &lt;em&gt;single&lt;/em&gt; solution here &lt;em&gt;is to just install the friggen module&lt;/em&gt; Well, thanks to stdout, we can try to read those missing modules, install it, and try &lt;code class=&quot;language-text&quot;&gt;npm start&lt;/code&gt; again. This is something I am working on.&lt;/p&gt;
 &lt;p&gt;You’ll notice a lot of the code is parsing &lt;code class=&quot;language-text&quot;&gt;stdout&lt;/code&gt; as strings - I realize out to an infinite time scale, this isn’t a most robust way of checking error messages, so I’m working towards parsing the actual errors codes from Nodejs and reacting from those, instead of the error text itself.&lt;/p&gt;
@@ -894,7 +894,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Webhook service running at http://localhost:&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; iPort&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;And again, don’t forget the updated code is all available on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/chrisfrew.in-productions-github-bitbucket-monitor&quot;&gt;https://github.com/frewinchristopher/chrisfrew.in-productions-github-bitbucket-monitor&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Analysis and Pixel Art of Towns and Cities in Pokemon]]></title><description><![CDATA[A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…]]></description><link>https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</guid><pubDate>Sun, 15 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A Real Treat!&lt;/h1&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Analysis and Pixel Art of Towns and Cities in Pokemon]]></title><description><![CDATA[A Real Treat! Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The…]]></description><link>https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</link><guid isPermaLink="false">https://chrisfrew.in/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon/</guid><pubDate>Sun, 15 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;A Real Treat!&lt;/h1&gt;
 &lt;p&gt;Over the past few days, I’ve done some data analysis, scripting, and art with the 20 towns and cities from Pokemon Gold. The results were fairly neat. Follow along through all the technical steps I took to generate the images if you’re interested. If not, just head down to the bottom to see the results!&lt;/p&gt;
 &lt;h1&gt;1. Acquiring The Pixel Maps&lt;/h1&gt;
 &lt;p&gt; I found map sprites of all 20 towns from the amazing Spriter’s Resource: &lt;a href=&quot;https://www.spriters-resource.com/game_boy_gbc/pokemongoldsilver/&quot;&gt;https://www.spriters-resource.com/game&lt;em&gt;boy&lt;/em&gt;gbc/pokemongoldsilver/&lt;/a&gt;&lt;/p&gt;
@@ -1661,7 +1661,7 @@ Viridian City (Kanto):
 &lt;p&gt;Before I get into the description, you may be here just to get the links. Well, scroll no further:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Part 1 of ???: This post. :joy:&lt;/p&gt;
+&lt;p&gt;Part 1 of ???: This post. 😂&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor/&quot;&gt;Part 2 of ???: Building a Node.js Server Monitor&lt;/a&gt;&lt;/p&gt;
@@ -1685,7 +1685,7 @@ Viridian City (Kanto):
 &lt;p&gt;??? (more coming soon)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Automation To The Moon :rocket:&lt;/h1&gt;
+&lt;h1&gt;Automation To The Moon 🚀&lt;/h1&gt;
 &lt;p&gt;As an attempt to make my &lt;a href=&quot;https://chrisfrew.in/introducing-chrisfrewin-productions/&quot;&gt;doing business as (DBA) company&lt;/a&gt; more automated, and to make myself a better developer, I’ve decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.&lt;/p&gt;
 &lt;h1&gt;Current Full Stack Map (Will Change As I update it!)&lt;/h1&gt;
 &lt;p&gt;The current stack of my suite of applications and sites looks as follows (sorry, you’re going to have to zoom in, but it’s an SVG, so no loss!):&lt;/p&gt;
@@ -1698,16 +1698,16 @@ Viridian City (Kanto):
 &lt;li&gt;Before New Year 2018: Chrisfrew.in Productions is able to attempt multiple solutions in fixing broken processes, which it also has found by itself. When it exhausts all methods it “knows” to repair itself, THEN it would finally send me an email&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Yes, if this sounds like science fiction, I was inspired by that totally cool space ship from Passengers that can repair itself:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/passengers-ship-bb6a638030184734ce20de51526ff918.gif&quot; alt=&quot;Yeah, that cool ship.&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects Then Kill Their Session]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to :robot:  Automatically  :robot: get rid of…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</guid><pubDate>Wed, 09 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
-&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to :robot: &lt;em&gt;Automatically&lt;/em&gt; :robot: get rid of them!&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/passengers-ship-bb6a638030184734ce20de51526ff918.gif&quot; alt=&quot;Yeah, that cool ship.&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Warn SAP Users of Locked Objects Then Kill Their Session]]></title><description><![CDATA[SAP users lockin’ up your objects? We’re gonna write an ABAP report and run it as a batch job to 🤖  Automatically  🤖 get rid of them…]]></description><link>https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</link><guid isPermaLink="false">https://chrisfrew.in/warn-sap-users-of-locked-objects-then-kill-their-session/</guid><pubDate>Wed, 09 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;SAP users lockin’ up your objects?&lt;/h2&gt;
+&lt;h3&gt;We’re gonna write an ABAP report and run it as a batch job to 🤖 &lt;em&gt;Automatically&lt;/em&gt; 🤖 get rid of them!&lt;/h3&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP Kernel Call!!!&lt;/em&gt; :scream: :scream: :scream:&lt;/p&gt;
+&lt;p&gt;Alright everyone, we’re gonna walk through a fun ABAP report that involves functional programming, some challenging and creative BDC techniques, and a &lt;em&gt;‘forbidden’ SAP Kernel Call!!!&lt;/em&gt; 😱 😱 😱&lt;/p&gt;
 &lt;h2&gt;SAP and it’s Locked Objects&lt;/h2&gt;
 &lt;p&gt;Anyone with a bit of technical sided SAP/ABAP experience knows that SAP has a locked object system - that is, a maximum of one entity can change an object at a time, wether it be a human user, a program, or any process. These ‘objects’ in SAP are numerous - orders, HUs, even warehouse bins are ‘objects’ that can be ‘locked’ when they are under modification somewhere in the system.&lt;/p&gt;
 &lt;p&gt;This can get very annoying when multiple entities want to change multiple objects in similar time frames.&lt;/p&gt;
 &lt;h2&gt;A Remedy for the Problem&lt;/h2&gt;
 &lt;p&gt;The ABAP report I’m going to go through alleviates this problem and could be useful for any company that has automatic processes applied to objects in the system, but at the same time have human users that &lt;em&gt;also&lt;/em&gt; modify these objects.&lt;/p&gt;
-&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking :blush: - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
+&lt;p&gt;The example program I will go through is for orders specifically (think TYPE AUFNR). Feel free to modify the code for any locked objects of your liking 😊 - the program logic following the locked object selection will not change, as we will soon see.&lt;/p&gt;
 &lt;h2&gt;Specific Problem&lt;/h2&gt;
 &lt;p&gt;At my company we had some batch jobs that were attempting to change orders, only to find that the users were locked by some of our employees in their own SAP GUI transactions. Nothing ‘bad’ per say was happening, we were just seeing in the protocol of those various batch jobs that the orders couldn’t be accessed. We realized a human user could easily forget they had a transaction open which locked an order, while they went off to work on something else, or were totally away from their work station.&lt;/p&gt;
 &lt;p&gt;We decided ultimately to build a timed warning system for users that happened to be locking orders, functioning as follows:&lt;/p&gt;
@@ -1716,7 +1716,7 @@ Viridian City (Kanto):
 &lt;li&gt;A second warning popup for the user warning at 10 minutes of lock time&lt;/li&gt;
 &lt;li&gt;Forcefully close the transaction that was locking the order at 15 minutes of lock time&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! :blush:&lt;/p&gt;
+&lt;p&gt;And yes, this can all be done from an automatic process with no overseeing required! 😊&lt;/p&gt;
 &lt;p&gt;Let’s get started!&lt;/p&gt;
 &lt;h2&gt;Identify Locked Objects&lt;/h2&gt;
 &lt;p&gt;The first thing we need to do is get the locked objects and times of all those locked objects across the whole system. As I said, for this example case, we are only interested in locked &lt;em&gt;orders&lt;/em&gt;. This is object type &lt;code class=&quot;language-text&quot;&gt;AUFK&lt;/code&gt; - the order head table. To get a list of all locked object across the system with this type, we can use function module &lt;code class=&quot;language-text&quot;&gt;ENQUEUE_READ&lt;/code&gt;&lt;/p&gt;
@@ -1733,7 +1733,7 @@ Viridian City (Kanto):
     system_failure        &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;OTHERS&lt;/span&gt;                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class &lt;code class=&quot;language-text&quot;&gt;cl_server_info&lt;/code&gt; (pretty obvious name, eh? :joy:). &lt;/p&gt;
+&lt;p&gt;So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class &lt;code class=&quot;language-text&quot;&gt;cl_server_info&lt;/code&gt; (pretty obvious name, eh? 😂). &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;&lt;span class=&quot;token eol-comment comment&quot;&gt;&quot; Get all user sessions&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OBJECT&lt;/span&gt; server_info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
@@ -1772,7 +1772,7 @@ gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; serv
   &lt;/span&gt;
   &lt;/p&gt;
 &lt;p&gt;You will see a giant list of multiple fields for each session number (0-6) that the user has open. So, what can we do with this giant technical information list of key value pairs? &lt;/p&gt;
-&lt;p&gt;In SAP, this works as follows: each &lt;em&gt;login&lt;/em&gt; by a user (not session number, we’re not there yet :smile:)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of &lt;code class=&quot;language-text&quot;&gt;TXX_UXXXXX&lt;/code&gt;, where &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; can be any number 0-9. &lt;/p&gt;
+&lt;p&gt;In SAP, this works as follows: each &lt;em&gt;login&lt;/em&gt; by a user (not session number, we’re not there yet 😄)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of &lt;code class=&quot;language-text&quot;&gt;TXX_UXXXXX&lt;/code&gt;, where &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; can be any number 0-9. &lt;/p&gt;
 &lt;p&gt;Each session then has a session ID which is comprised of first the login ID as described above, with an appended &lt;code class=&quot;language-text&quot;&gt;_MX&lt;/code&gt;, where &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; in this case is the session number, 0-6 (session 1-7). So, we are interested in the &lt;code class=&quot;language-text&quot;&gt;.session&lt;/code&gt; value of this technical list:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
@@ -1909,7 +1909,7 @@ gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; serv
   &lt;/p&gt;
 &lt;p&gt;Ok, so we’ve warned the users twice by now with our popup, but they still are blocking a dang order! Remember, each run we’ve still got their exact session number that is blocking the order, so let’s finally go in for the kill and shut down that session! Once we do that, we log which session/user/transaction combo we deleted to the spool, and this report is done!&lt;/p&gt;
 &lt;h2&gt;BDC Tricks To Finally Close The User Session&lt;/h2&gt;
-&lt;p&gt;I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there’s probably good reason for this! (Though I can’t &lt;em&gt;possibly&lt;/em&gt; think of why :thinking: :wink:) &lt;/p&gt;
+&lt;p&gt;I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there’s probably good reason for this! (Though I can’t &lt;em&gt;possibly&lt;/em&gt; think of why 🤔 😉) &lt;/p&gt;
 &lt;p&gt;I couldn’t even find another ‘forbidden’ &lt;code class=&quot;language-text&quot;&gt;Th****&lt;/code&gt; function module that can do this. However, this &lt;em&gt;is&lt;/em&gt; possible through the standard SAP GUI, and we’ve already mentioned it in this post, our friend transaction &lt;code class=&quot;language-text&quot;&gt;SM04&lt;/code&gt;. By double clicking on a user (using me for an example), we get a list like this (sorry for the black boxes - don’t want to inadvertantly reveal anything that may be proprietary):&lt;/p&gt;
 &lt;p&gt;
   &lt;span
@@ -1935,7 +1935,7 @@ gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; serv
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;Then you need only select the desired session number and click “Delete Session”, then :cloud:POOF!:cloud: that user’s session will be gone!&lt;/p&gt;
+&lt;p&gt;Then you need only select the desired session number and click “Delete Session”, then ☁POOF!☁ that user’s session will be gone!&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -2374,7 +2374,7 @@ gt_session_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; serv
 &lt;p&gt;I mean what the heck is that? The &lt;code class=&quot;language-text&quot;&gt;$(gcloud auth application-default print-access-token)&lt;/code&gt; did &lt;em&gt;not&lt;/em&gt; work for me. Even if it did, the following steps included extracting the base64 encoded string (which is only a part of the downloaded curl file) to another file, &lt;em&gt;and then&lt;/em&gt; converting that base64 file to an mp3 file. No thank you, I’m going to do it all at runtime!&lt;/p&gt;
 &lt;p&gt;Long story short, I’ve found that this time and like many times before, using Google’s APIs is usually a lot of trial and error to get the endpoints working. &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;It wasn’t until I got to Google’s interactive POST console for their TTS module which you can use to test endpoints that I got a basic request working. That’s how I determined the bare minimum API request required below.&lt;/p&gt;
-&lt;h1&gt;You’re in Luck :sunglasses:&lt;/h1&gt;
+&lt;h1&gt;You’re in Luck 😎&lt;/h1&gt;
 &lt;p&gt;There’s good news: luckily for you, I can spare you the migrain/hair pulling/rage that may ensue when trying to wrap your mind around Google’s often spotty documentation. I managed to get the TTS endpoint working, in Node.js nonetheless. In Node.js JavaScript, here is the code for converting some typed text to a tasty mp3 (granted you have a valid API key generated from googles cloud console for the )&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note that you need the following prerequisites for this to work!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2418,21 +2418,21 @@ axios&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Then it should run with a good ol’ &lt;code class=&quot;language-text&quot;&gt;node index.js&lt;/code&gt;! You’ll find a tasty mp3 with “hello world” being spoken - relatively better than Microsoft Sam i’d have to say! :joy:&lt;/p&gt;
+&lt;p&gt;Then it should run with a good ol’ &lt;code class=&quot;language-text&quot;&gt;node index.js&lt;/code&gt;! You’ll find a tasty mp3 with “hello world” being spoken - relatively better than Microsoft Sam i’d have to say! 😂&lt;/p&gt;
 &lt;p&gt;So I hoped I saved you some time and frustration with at least this Google API.&lt;/p&gt;
-&lt;p&gt;Enjoy, and Cheers! :beer:&lt;/p&gt;
+&lt;p&gt;Enjoy, and Cheers! 🍺&lt;/p&gt;
 &lt;p&gt;-Chris&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This is part of a longer project that I’m trying to build to get a market volatility news flash published as one of Amazon Alexa’s skills. More on that to come. - A link here will also come soon.&lt;/strong&gt;&lt;/p&gt;
 &lt;h1&gt;Footnotes&lt;/h1&gt;
 &lt;div id=&quot;footnote-1&quot;&gt;
 1. Some other APIs I&apos;ve found have example minimum required interface endpoints for every language they support - super clean and tasty. I&apos;m wondering if a lack of such clean documentation is because Google is focusing more on development than maintenance and documentation of their APIs. Perhaps the challenge itself is the vastness of the Google API library, and it would take nothing short of a genius to organize a proper strategy of attack on updating and cleaning up all the documentation.
 &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better]]></title><description><![CDATA[Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…]]></description><link>https://chrisfrew.in/some-tasty-bash-profile-commands/</link><guid isPermaLink="false">https://chrisfrew.in/some-tasty-bash-profile-commands/</guid><pubDate>Mon, 09 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!&lt;/h1&gt;
-&lt;p&gt;This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don’t necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? :smile:)&lt;/p&gt;
+&lt;p&gt;This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don’t necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? 😄)&lt;/p&gt;
 &lt;p&gt;For the following machines, the alias file can be found in these locations:&lt;/p&gt;
 &lt;p&gt;Mac: &lt;code class=&quot;language-text&quot;&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Linux: &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Raspberry Pi (with raspbian and other linux style builds): &lt;code class=&quot;language-text&quot;&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Here’s what I’ve got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been &lt;em&gt;clearly&lt;/em&gt; modified, they won’t work - what do you think I am, an idiot? :joy::joy::joy: )&lt;/p&gt;
+&lt;p&gt;Here’s what I’ve got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been &lt;em&gt;clearly&lt;/em&gt; modified, they won’t work - what do you think I am, an idiot? 😂😂😂 )&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# ~/.bashrc: executed by bash(1) for non-login shells.&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)&lt;/span&gt;
@@ -2785,13 +2785,13 @@ PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&qu
 &lt;span class=&quot;token comment&quot;&gt;# TORCH&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$PATH&lt;/span&gt;:/Users/chris/torch/install/bin&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn’t have to be that ‘sharp’! :joy:), you may have noticed I even have an alias for opening the bash profile itself (&lt;code class=&quot;language-text&quot;&gt;prof&lt;/code&gt;) and sourcing the profile (&lt;code class=&quot;language-text&quot;&gt;s&lt;/code&gt;) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):&lt;/p&gt;
+&lt;p&gt;For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn’t have to be that ‘sharp’! 😂), you may have noticed I even have an alias for opening the bash profile itself (&lt;code class=&quot;language-text&quot;&gt;prof&lt;/code&gt;) and sourcing the profile (&lt;code class=&quot;language-text&quot;&gt;s&lt;/code&gt;) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; prof&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;atom /Users/chris/.bash_profile&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# opens .bash_profile for editing&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; s&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;source /Users/chris/.bash_profile&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# sources .bash_profile (should be done every time after changing profile)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;So yes, you could say I modify and add stuff to my bash profile quite often - I recommend you do it too! Improve your workflow and ease of commanding a bash terminal!&lt;/p&gt;
-&lt;p&gt;-Cheers! :beer:&lt;/p&gt;
+&lt;p&gt;-Cheers! 🍺&lt;/p&gt;
 &lt;p&gt;Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Create Posts That Reach the Top of the Front Page on Subreddits (And How I Created Two of Them for /r/wallstreetbets)]]></title><description><![CDATA[The Posts So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody: Reddit Response: The…]]></description><link>https://chrisfrew.in/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/</link><guid isPermaLink="false">https://chrisfrew.in/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets/</guid><pubDate>Sun, 08 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;The Posts&lt;/h1&gt;
 &lt;p&gt;So, here are the two meme posts, in all their glory, the first of which is a Robinhood (albeit grim) Parody:&lt;/p&gt;
 &lt;p&gt;
@@ -2915,10 +2915,10 @@ PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&qu
 &lt;h1&gt;3. Publish it! (and Post Title selection)&lt;/h1&gt;
 &lt;p&gt;Once you’re satisfied with your content your going to post (whatever it be video, blog post, image, text, whatever), its time to post! I’ve found that despite what reddit recommends, as long as your title is somewhat creative, your super awesome creative post will do just fine. Also a note with post timing / and time of day of the post, I’ve found it doesn’t really matter - I just post whenever my post is ready, I don’t do any special timings. That first one for example was posted late on a Friday evening, and the S&amp;#x26;P Map on a  If it is truly a front page post, it will gain traction regardless - I suppose the posting time of day could control exactly &lt;em&gt;how&lt;/em&gt; fast.&lt;/p&gt;
 &lt;p&gt;As a final check you can review your own confidence at posting time - if you find yourself not worried at all, it’s going to do fine. If it’s a winner, you’ll know soon enough as you are bombarded with the replies to your post. I left my S&amp;#x26;P meme for 4 hours and when I can back to check on reddit I was welcomed with over 1300 upvotes and 60+ post replies.&lt;/p&gt;
-&lt;p&gt;If there is interest, I can go through my process of the technical graphic design portion of how I built these posts (I use Gimp and Inkscape - yes I’m a cheapass nerd who uses open source graphic design software :nerd:)&lt;/p&gt;
+&lt;p&gt;If there is interest, I can go through my process of the technical graphic design portion of how I built these posts (I use Gimp and Inkscape - yes I’m a cheapass nerd who uses open source graphic design software 🤓)&lt;/p&gt;
 &lt;p&gt;Hope you enjoyed and picked up a tip or two and got a laugh out of the memes!&lt;/p&gt;
-&lt;p&gt;-Cheers! :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[I Set Aside $1000 to Learn Options Trading]]></title><description><![CDATA[Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there…]]></description><link>https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</link><guid isPermaLink="false">https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</guid><pubDate>Sat, 07 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there will be plenty of new content coming soon. (I’ve been improving my development arsenal with Redux (haven’t had a need for it yet) and Redux Saga which leverages a lot of great JavaScript such as generator functions for async deliciousness, as well as joining a hackathon team to build a beerpong robot - but more of that in later posts.)&lt;/p&gt;
-&lt;h1&gt;Robinhood - Options! AHAHAHAH! Oh wait… my money is gone :sob::sob::sob:&lt;/h1&gt;
+&lt;p&gt;-Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[I Set Aside $1000 to Learn Options Trading]]></title><description><![CDATA[Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there…]]></description><link>https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</link><guid isPermaLink="false">https://chrisfrew.in/i-set-aside-1000-to-learn-options-trading/</guid><pubDate>Sat, 07 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whew. It’s been over a month since my last post! This is mainly because of some of the projects I’ve been working on; so rest assured there will be plenty of new content coming soon. (I’ve been improving my development arsenal with Redux (haven’t had a need for it yet) and Redux Saga which leverages a lot of great JavaScript such as generator functions for async deliciousness, as well as joining a hackathon team to build a beerpong robot - but more of that in later posts.)&lt;/p&gt;
+&lt;h1&gt;Robinhood - Options! AHAHAHAH! Oh wait… my money is gone 😭😭😭&lt;/h1&gt;
 &lt;p&gt;Like many millennials will experience in the coming months, my options trading got unlocked on Robinhood. Robinhood is a commission free broker that initial started as a mobile-only (as far as I know Robinhood is only available for United States Citizens - sorry for everyone else - but options are definitely in the cards if you find the right broker!) Anyway, as I experiment with everything, why not also with options? What I’ve seen places for example like &lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/&quot;&gt;https://www.reddit.com/r/wallstreetbets/&lt;/a&gt;, options trading can be extremely lucrative, but highly risky. I wanted to learn what they were all about and if it would be indeed possible for me to make some sustainable income - not in a risky YOLO method, but a calculated method that follows mathematical principles.&lt;/p&gt;
 &lt;h1&gt;The Posts - on Medium&lt;/h1&gt;
 &lt;p&gt;To spare you from more of my rambling, here’s the very first post of the series:&lt;/p&gt;
@@ -2926,10 +2926,10 @@ PS1&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&qu
 &lt;p&gt;and the master post that I will link all further posts to (check out my catastrophic Facebook call failure):&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863&quot;&gt;https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;you can follow my trades on twitter &lt;a href=&quot;https://twitter.com/Galt_&quot;&gt;@Galt_&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I hope you enjoy watching me lose all my money! :joy:&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;
+&lt;p&gt;I hope you enjoy watching me lose all my money! 😂&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;
 &lt;p&gt;-Chris&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)]]></title><description><![CDATA[chrisfrew.in as a company! Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup…]]></description><link>https://chrisfrew.in/introducing-chrisfrewin-productions/</link><guid isPermaLink="false">https://chrisfrew.in/introducing-chrisfrewin-productions/</guid><pubDate>Thu, 01 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;chrisfrew.in as a company!&lt;/h1&gt;
-&lt;p&gt;Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it’s still alive!) &lt;a href=&quot;https://sirenapparel.us&quot;&gt;https://sirenapparel.us&lt;/a&gt; with the more general name of this site, chrisfrew.in (that also is creatively my name of course :wink:). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, &lt;em&gt;chrisfrew.in&lt;/em&gt;. Tasty.&lt;/p&gt;
+&lt;p&gt;Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it’s still alive!) &lt;a href=&quot;https://sirenapparel.us&quot;&gt;https://sirenapparel.us&lt;/a&gt; with the more general name of this site, chrisfrew.in (that also is creatively my name of course 😉). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, &lt;em&gt;chrisfrew.in&lt;/em&gt;. Tasty.&lt;/p&gt;
 &lt;h1&gt;For New York state, how can you change your DBA name?&lt;/h1&gt;
 &lt;p&gt;To change your DBA name, it’s basically two steps, one at the federal level and one at the state level:&lt;/p&gt;
 &lt;ol&gt;
@@ -2947,7 +2947,7 @@ Kansas City, MO  64999-0002&lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;TL;DR;&lt;/h1&gt;
 &lt;p&gt;Fill out and send two forms; and you’re legally set!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;in other words,&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;:sunglasses: Its time to make some more startups. :sunglasses:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to be an American living in Austria and working in Liechtenstein]]></title><description><![CDATA[Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…]]></description><link>https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</link><guid isPermaLink="false">https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Hey, Want to be an American living in Austria and working in Liechtenstein?&lt;/h2&gt;
+&lt;p&gt;😎 Its time to make some more startups. 😎&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to be an American living in Austria and working in Liechtenstein]]></title><description><![CDATA[Hey, Want to be an American living in Austria and working in Liechtenstein? Look no further! This is a detailed how-to guide on applying and…]]></description><link>https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</link><guid isPermaLink="false">https://chrisfrew.in/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein/</guid><pubDate>Wed, 17 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Hey, Want to be an American living in Austria and working in Liechtenstein?&lt;/h2&gt;
 &lt;h2&gt;Look no further!&lt;/h2&gt;
 &lt;p&gt;This is a detailed how-to guide on applying and obtaining:&lt;/p&gt;
 &lt;ul&gt;
@@ -3081,14 +3081,14 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;I would recommend you check out the newest version on GitHub: &lt;a href=&quot;https://github.com/frewinchristopher/sapwebidecolors&quot;&gt;https://github.com/frewinchristopher/sapwebidecolors&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[Edit June 1st, 2018: There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Edit June 1st, 2018:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Calculating Activity Amounts for Production and Process Orders with SAP ABAP]]></title><description><![CDATA[Edit June 1st, 2018: There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements…]]></description><link>https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap/</guid><pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Edit June 1st, 2018:&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;There was ANOTHER issue with this code! There is something you need to add if you want to book custom goods movements for the retrograde materials. You can see how to do this in &lt;a href=&quot;#footnote-6&quot;&gt;footnote 6&lt;/a&gt; for more.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Edit April 19th, 2018:&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;There was a bug with this code! When we make the conversion to MIN, we forgot to overwrite&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;lv_unit&lt;/code&gt; &lt;em&gt;to&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;MIN&lt;/code&gt;&lt;em&gt;, so the conversion was correct, but the unit was left in hours, or&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;H&lt;/code&gt; &lt;em&gt;! You can see this in the code comments with date 2018.04.19.&lt;/em&gt;&lt;/p&gt;
-&lt;h1&gt;First off, Congratulations! :confetti_ball:&lt;/h1&gt;
-&lt;p&gt;&lt;sup&gt;And a happy new year! (If you’re viewing this in the summer or something, see the date! :wink:)&lt;/sup&gt;&lt;/p&gt;
-&lt;h2&gt;You’ve found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! :scream::scream::scream:&lt;/h2&gt;
-&lt;h2&gt;I hope you use this post to maximum effectiveness, because it took me &lt;em&gt;four&lt;/em&gt; days to find, build, and get a working answer. :smile:&lt;/h2&gt;
+&lt;h1&gt;First off, Congratulations! 🎊&lt;/h1&gt;
+&lt;p&gt;&lt;sup&gt;And a happy new year! (If you’re viewing this in the summer or something, see the date! 😉)&lt;/sup&gt;&lt;/p&gt;
+&lt;h2&gt;You’ve found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! 😱😱😱&lt;/h2&gt;
+&lt;h2&gt;I hope you use this post to maximum effectiveness, because it took me &lt;em&gt;four&lt;/em&gt; days to find, build, and get a working answer. 😄&lt;/h2&gt;
 &lt;h2&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Let’s jump right into ABAP programming: the go-to function module to calculate time ticket proposals for production orders is with function module &lt;code class=&quot;language-text&quot;&gt;BAPI_PRODORDCONF_GET_TT_PROP&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -3123,7 +3123,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;Unfortunately, with much more digging, the reason the two functions wouldn’t produce activity confirmation amounts never became quite clear to me. I realized I would have to calculate them in a more manual manner and then add them to those BAPI structures &lt;code class=&quot;language-text&quot;&gt;lt_timetickets&lt;/code&gt; manually.&lt;/p&gt;
 &lt;h2&gt;The Calculation Function Module&lt;/h2&gt;
 &lt;p&gt;Through SAP GUI in transaction &lt;code class=&quot;language-text&quot;&gt;CO11N&lt;/code&gt;, determining system-proposed confirmation amounts is easy enough by and asking the system to do the calculation for us &lt;sup&gt;&lt;a href=&quot;#footnote-2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. My struggle was finding the programmatic way to do this in ABAP.&lt;/p&gt;
-&lt;p&gt;Anyone with significant production planning experience (i.e., not me :joy: ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center &lt;em&gt;behind&lt;/em&gt; the activity &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Anyone with significant production planning experience (i.e., not me 😂 ) knows that the actual formula behind the activity calculation is not with the activity itself, but with the work center &lt;em&gt;behind&lt;/em&gt; the activity &lt;sup&gt;&lt;a href=&quot;#footnote-3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;In transaction &lt;code class=&quot;language-text&quot;&gt;CR03&lt;/code&gt; (display work center), in the ‘Costing’ Tab, there is a ‘Formula’ button with the check symbol on it:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
@@ -3173,7 +3173,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;:expressionless::expressionless::expressionless: shit… SAP, you had one job to do!&lt;/p&gt;
+&lt;p&gt;😑😑😑 shit… SAP, you had one job to do!&lt;/p&gt;
 &lt;p&gt;Fine. We’ll do it ourselves. We can open up the source code of &lt;code class=&quot;language-text&quot;&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt; and set a breakpoint in the first line:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
@@ -3207,7 +3207,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
     &lt;/span&gt;
   &lt;/span&gt;
    and…&lt;/p&gt;
-&lt;p&gt;:pray: Violá! :pray: We’ve found where &lt;code class=&quot;language-text&quot;&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt; is called out in the wild!&lt;/p&gt;
+&lt;p&gt;🙏 Violá! 🙏 We’ve found where &lt;code class=&quot;language-text&quot;&gt;CR_WORKCENTER_FORMULA_CALC&lt;/code&gt; is called out in the wild!&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -3300,7 +3300,7 @@ window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;span class=&quot;token comment&quot;&gt;*       PROD_REL_TOOL =&lt;/span&gt;
       &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;(There is plenty of SAP standard documentation and discussion on SCN on how to use &lt;code class=&quot;language-text&quot;&gt;BAPI_PRODORD_GET_DETAIL&lt;/code&gt;, so I’ll leave that to you if you need more info :wink:. Here we are just getting the operation information from the order - that’s all we need.)&lt;/p&gt;
+&lt;p&gt;(There is plenty of SAP standard documentation and discussion on SCN on how to use &lt;code class=&quot;language-text&quot;&gt;BAPI_PRODORD_GET_DETAIL&lt;/code&gt;, so I’ll leave that to you if you need more info 😉. Here we are just getting the operation information from the order - that’s all we need.)&lt;/p&gt;
 &lt;p&gt;We can finally move the corresponding fields of &lt;code class=&quot;language-text&quot;&gt;ls_plpo&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;ls_vgw&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;MOVE-CORRESPONDING&lt;/span&gt; ls_plpo &lt;span class=&quot;token keyword&quot;&gt;TO&lt;/span&gt; ls_vgw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -3423,7 +3423,7 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;lt_filters &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; io_tech_request_context&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&gt;&lt;/span&gt;get_filter&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;-&gt;get_filter_select_options&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;won’t be in scope and won’t compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the &lt;code class=&quot;language-text&quot;&gt;GET_ENTITYSET&lt;/code&gt; method :smile:&lt;/p&gt;
+&lt;p&gt;won’t be in scope and won’t compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the &lt;code class=&quot;language-text&quot;&gt;GET_ENTITYSET&lt;/code&gt; method 😄&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;DATA&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; lt_filters           &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt;           /iwbep/t_mgw_select_option&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
            ls_filters           &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; lt_filters&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -3790,7 +3790,7 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
 &lt;/table&gt;
 &lt;hr/&gt;
 &lt;p&gt;There are more, but you can find those in the code for yourself. The important thing to notice is that the key challenging part here, calculating the confirmation activity amounts, uses the same internal function module, &lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Here’s the code for calculating activities for process orders - &lt;em&gt;note the slight change in all the variable names!&lt;/em&gt; - and be careful with your types (carefully look over the &lt;code class=&quot;language-text&quot;&gt;DATA:&lt;/code&gt; statement), otherwise you’ll get :boom:&lt;strong&gt;exploding runtime errors&lt;/strong&gt;:boom: when you try to confirm something with one of our two main functions and you pass, for example, the  &lt;code class=&quot;language-text&quot;&gt;lt_timetickets&lt;/code&gt; with the production type &lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;, and you pass it into the of the &lt;em&gt;process&lt;/em&gt; order function module.&lt;/p&gt;
+&lt;p&gt;Here’s the code for calculating activities for process orders - &lt;em&gt;note the slight change in all the variable names!&lt;/em&gt; - and be careful with your types (carefully look over the &lt;code class=&quot;language-text&quot;&gt;DATA:&lt;/code&gt; statement), otherwise you’ll get 💥&lt;strong&gt;exploding runtime errors&lt;/strong&gt;💥 when you try to confirm something with one of our two main functions and you pass, for example, the  &lt;code class=&quot;language-text&quot;&gt;lt_timetickets&lt;/code&gt; with the production type &lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;, and you pass it into the of the &lt;em&gt;process&lt;/em&gt; order function module.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;DATA&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; lt_filters           &lt;span class=&quot;token keyword&quot;&gt;TYPE&lt;/span&gt;           /iwbep/t_mgw_select_option&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
          ls_filters           &lt;span class=&quot;token keyword&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;LINE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;OF&lt;/span&gt; lt_filters&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -4133,16 +4133,16 @@ ls_op&lt;span class=&quot;token token-operator punctuation&quot;&gt;-&lt;/span&g
       &lt;/div&gt;
 &lt;h2&gt;Final Comments&lt;/h2&gt;
 &lt;p&gt;Whew. Did it feel like a marathon? :runner: Because it felt to &lt;em&gt;me&lt;/em&gt; like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.&lt;/p&gt;
-&lt;p&gt;Another note and quick plug :smile: I hope everyone can appreciate the time I put into creating these posts (&lt;em&gt;hint:&lt;/em&gt; posts this long take a &lt;strong&gt;LONG&lt;/strong&gt; time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you’d consider donating (in the footer of any page on this blog) I have a &lt;a href=&quot;https://www.paypal.me/chrisfrewin&quot;&gt;PayPal.me link&lt;/a&gt;, and I’m also an Ethereum developer if you’d like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.&lt;/p&gt;
-&lt;p&gt;:poop: Ok, plug done! :poop:&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;
+&lt;p&gt;Another note and quick plug 😄 I hope everyone can appreciate the time I put into creating these posts (&lt;em&gt;hint:&lt;/em&gt; posts this long take a &lt;strong&gt;LONG&lt;/strong&gt; time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you’d consider donating (in the footer of any page on this blog) I have a &lt;a href=&quot;https://www.paypal.me/chrisfrewin&quot;&gt;PayPal.me link&lt;/a&gt;, and I’m also an Ethereum developer if you’d like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.&lt;/p&gt;
+&lt;p&gt;💩 Ok, plug done! 💩&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;
 &lt;hr/&gt;
 &lt;h1&gt;Footnotes&lt;/h1&gt;
 &lt;div id=&quot;footnote-1&quot;&gt;
 1. Activities/phases are for production orders; Operations are for process orders. From this point onward, I will refer just to activities, since this post focuses on production orders. I also post the adjacent code for process orders in this post.
 &lt;/div&gt;
 &lt;div id=&quot;footnote-2&quot;&gt;
-2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. :thumbsup:
+2. I have to give credit where credit is due! I received a lot of assistance from our production planning module supervisor - he showed me the transactions that finally got me to a working result. 👍
 &lt;/div&gt;
 &lt;div id=&quot;footnote-3&quot;&gt;
 3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction &lt;span style=&quot;font-family:&apos;Courier New&apos;&quot;&gt;CO11N&lt;/span&gt;:
@@ -4227,7 +4227,7 @@ If there is no entry in the LinkConfGoodsmov table for a
 confirmation, goods movements are determined for backflushing and
 automatic goods receipt using the standard logic.
 &lt;/pre&gt;
-&lt;p&gt;We needed to add the following too our goods movements loop (already added in the code above! :smile:):&lt;/p&gt;
+&lt;p&gt;We needed to add the following too our goods movements loop (already added in the code above! 😄):&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-abap&quot;&gt;&lt;code class=&quot;language-abap&quot;&gt;BLAH&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -4251,7 +4251,7 @@ WorkDir=\\SomePath\To_a_working_directory
 [Options]
 Reuse=0&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Note that the &lt;code class=&quot;language-text&quot;&gt;Name&lt;/code&gt; (under &lt;code class=&quot;language-text&quot;&gt;[System]&lt;/code&gt;), &lt;code class=&quot;language-text&quot;&gt;Client&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Name&lt;/code&gt; (under &lt;code class=&quot;language-text&quot;&gt;[User]&lt;/code&gt;), and &lt;code class=&quot;language-text&quot;&gt;WorkDir&lt;/code&gt; should all be set to your specific setup. (That’s why I’ve put obvious bogus names for each of them :smile: ).&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code class=&quot;language-text&quot;&gt;Name&lt;/code&gt; (under &lt;code class=&quot;language-text&quot;&gt;[System]&lt;/code&gt;), &lt;code class=&quot;language-text&quot;&gt;Client&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Name&lt;/code&gt; (under &lt;code class=&quot;language-text&quot;&gt;[User]&lt;/code&gt;), and &lt;code class=&quot;language-text&quot;&gt;WorkDir&lt;/code&gt; should all be set to your specific setup. (That’s why I’ve put obvious bogus names for each of them 😄 ).&lt;/p&gt;
 &lt;p&gt;I keep a copy of mine on my desktop and in my documents directory, as &lt;code class=&quot;language-text&quot;&gt;debugging.sap&lt;/code&gt;, so it’s always close at hand.&lt;/p&gt;
 &lt;p&gt;Whenever you need to debug something running from a popup, just drag and drop this shortcut into the window you want to debug! (either pressing enter in a field or pressing a button to continue the process in the GUI.)&lt;/p&gt;
 &lt;p&gt;*** Common gotchya: Things like pressing F4 or clicking the entry help button on any fields will also bring up the debugger after you have dragged and dropped this GUI shortcut - so, make sure you press the button/do the action of exactly what you want to debug!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[An NPM Christmas Easter Egg]]></title><description><![CDATA[No, It’s not Easter for Christmas… It’s a quick surprise for those celebrating christmas from npm! Simply issue   in your terminal: (You…]]></description><link>https://chrisfrew.in/an-npm-christmas-easter-egg/</link><guid isPermaLink="false">https://chrisfrew.in/an-npm-christmas-easter-egg/</guid><pubDate>Sun, 24 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;No, It’s not Easter for Christmas…&lt;/h2&gt;
@@ -4281,7 +4281,7 @@ Reuse=0&lt;/code&gt;&lt;/pre&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;(You would learned this only if you been a good boy or girl and read NPM’s recent Newsletter :smile::wink:)&lt;/p&gt;
+&lt;p&gt;(You would learned this only if you been a good boy or girl and read NPM’s recent Newsletter 😄😉)&lt;/p&gt;
 &lt;p&gt;Another fun fact - the tree is not deterministic! Give it a few runs and you’ll see what I mean.&lt;/p&gt;
 &lt;p&gt;Merry Christmas and a Happy New Year everyone!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Dropdowns in Markdown README's!]]></title><description><![CDATA[HTML in Markdown!? Well, it’s a little known fact (at least it was for me) that you can use native HTML tags are supported in Markdown…]]></description><link>https://chrisfrew.in/dropdowns-in-readmes/</link><guid isPermaLink="false">https://chrisfrew.in/dropdowns-in-readmes/</guid><pubDate>Fri, 22 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;HTML in Markdown!?&lt;/h2&gt;
 &lt;p&gt;Well, it’s a little known fact (at least it was for me) that you can use native HTML tags are supported in Markdown, though the support over different sites is varying. I would say the code presented here should work on about 99% of pages - let me know if that’s not the case&lt;/p&gt;
@@ -4313,7 +4313,7 @@ document.getElementById(&apos;root&apos;)
 &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Or a List
   &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; or a nested List
   &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; like this
-  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; with :smile: emojis
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; with 😄 emojis
 &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Like this
 
 Or even just normal text
@@ -4328,7 +4328,7 @@ More cool text hiding in my dropdown
 
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;details&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;summary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Cool Dropdown #3&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;summary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;br&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-Easter egg! :egg::egg::egg:
+Easter egg! 🥚🥚🥚
 
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;details&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -4347,7 +4347,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;or a nested List&lt;/li&gt;
 &lt;li&gt;like this&lt;/li&gt;
-&lt;li&gt;with :smile: emojis&lt;/li&gt;
+&lt;li&gt;with 😄 emojis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Like this&lt;/li&gt;
@@ -4358,7 +4358,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;More cool text hiding in my dropdown&lt;/p&gt;
 &lt;/details&gt;
 &lt;details&gt;&lt;summary&gt;Cool Dropdown #3&lt;/summary&gt;&lt;br&gt;
-&lt;p&gt;Easter egg! :egg::egg::egg:&lt;/p&gt;
+&lt;p&gt;Easter egg! 🥚🥚🥚&lt;/p&gt;
 &lt;/details&gt;
 &lt;/p&gt;
 ```
@@ -4375,7 +4375,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&quot;&gt;https://github.com/bitcoin/bitcoin/blob/c24337964f2d0500975abb4ef55c324daaf349b6/src/main.cpp#L123&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Go on. Give it a click. You know you want to! You’ll see your browser jumps down and highlights that line.&lt;/p&gt;
 &lt;hr/&gt;
-&lt;p&gt;* &lt;code class=&quot;language-text&quot;&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code class=&quot;language-text&quot;&gt;main.cpp&lt;/code&gt; is an attractive file name :smile:.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
+&lt;p&gt;* &lt;code class=&quot;language-text&quot;&gt;main.cpp&lt;/code&gt; doesn’t exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example &lt;code class=&quot;language-text&quot;&gt;main.cpp&lt;/code&gt; is an attractive file name 😄.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Laptop Stickers Arrived! Am I a Real Developer Now?!]]></title><description><![CDATA[Laptop Stickers! Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your…]]></description><link>https://chrisfrew.in/laptop-stickers/</link><guid isPermaLink="false">https://chrisfrew.in/laptop-stickers/</guid><pubDate>Tue, 19 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Laptop Stickers!&lt;/h1&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -4404,7 +4404,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &lt;/span&gt;
   &lt;/p&gt;
 &lt;p&gt;Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your really expensive laptop!&lt;/p&gt;
-&lt;p&gt;(Okay, I can’t be &lt;em&gt;that&lt;/em&gt; humble since I’m bragging about a few 50¢ stickers on a blog - and I’m even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 :smile:)&lt;/p&gt;
+&lt;p&gt;(Okay, I can’t be &lt;em&gt;that&lt;/em&gt; humble since I’m bragging about a few 50¢ stickers on a blog - and I’m even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 😄)&lt;/p&gt;
 &lt;h1&gt;Tech stack&lt;/h1&gt;
 &lt;p&gt;Okay, I’m lying; there are a few stickers there of tools I haven’t used in one of my applications yet, but am learning and plan to very soon:&lt;/p&gt;
 &lt;ul&gt;
@@ -4414,7 +4414,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;/ul&gt;
 &lt;p&gt;Otherwise, it’s my honest-to-goodness workflow tools.&lt;/p&gt;
 &lt;h1&gt;So You Wanna Be Cool Too, Eh?&lt;/h1&gt;
-&lt;p&gt;I ordered all of these on &lt;a href=&quot;redbubble.com&quot;&gt;redbubble.com&lt;/a&gt; No, no, it’s not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is &lt;a href=&quot;devstickers.com&quot;&gt;devstickers.com&lt;/a&gt;. Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, &lt;em&gt;obviously&lt;/em&gt; so I could fit as many dev stickers as possible on my laptop :joy: - see the picture for reference.&lt;/p&gt;
+&lt;p&gt;I ordered all of these on &lt;a href=&quot;redbubble.com&quot;&gt;redbubble.com&lt;/a&gt; No, no, it’s not what you think, its not an affiliate link! In fact, a good start portal for RedBubble is &lt;a href=&quot;devstickers.com&quot;&gt;devstickers.com&lt;/a&gt;. Unfortunately, I found I often had to find the 4-per-page stickers in order to have a sticker size that was suitable for me, &lt;em&gt;obviously&lt;/em&gt; so I could fit as many dev stickers as possible on my laptop 😂 - see the picture for reference.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;(Update as of March 16, 2018 - I just couldn’t resist buying more, and because of the multi-sticker / size of sticker struggles I had above, I ended up creating my own sticker sheet! (I wanted a weird mishmash of stickers for my development interests - spanning from perl to raiblocks to solidity - I know, weird) You can snag the same exact sticker sheet (I found the ‘medium’ sized sheet to produce the stickers with the best size for a laptop) &lt;a href=&quot;https://www.redbubble.com/people/chrisfrewin/works/30313316-dev-stickers?p=sticker&amp;#x26;size=small&amp;#x26;size=medium&quot;&gt;https://www.redbubble.com/people/chrisfrewin/works/30313316-dev-stickers?p=sticker&amp;#x26;size=small&amp;#x26;size=medium&lt;/a&gt; *Disclaimer: that is indeed my product on RedBubble!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Here’s how my mac looks now:&lt;/p&gt;
 &lt;p&gt;
@@ -4445,7 +4445,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &lt;/span&gt;
   &lt;/p&gt;
 &lt;p&gt;Yep, lots of tools.&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time :smile:) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First and Final Statement on Bitcoin for this Blog]]></title><description><![CDATA[Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain…]]></description><link>https://chrisfrew.in/final-say-bitcoin/</link><guid isPermaLink="false">https://chrisfrew.in/final-say-bitcoin/</guid><pubDate>Mon, 18 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time 😄) SOMEWHERE about Bitcoin. I decided that somewhere was here.&lt;/p&gt;
 &lt;h1&gt;My Promise to You&lt;/h1&gt;
 &lt;p&gt;Let me promise you, I won’t post about Bitcoin speculation on this blog ever again. (At least in relation to any sort of price speculation, maybe one day later I will post on some tech stuff)&lt;/p&gt;
 &lt;h1&gt;The Numbers&lt;/h1&gt;
@@ -4453,7 +4453,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;h1&gt;First to Market&lt;/h1&gt;
 &lt;p&gt;It’s important to remember, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below), Bitcoin has both the largest &lt;em&gt;and&lt;/em&gt; majority of the market caps among all the other cryptocurrencies. (Edit: December 19th! Bitcoin dipped just below 49.9% market capitilization in crypto! &lt;a href=&quot;frewinchristopher.github.io/markcap&quot;&gt;I built a small bookmarklet called MarkCap&lt;/a&gt; for &lt;a href=&quot;coinmarketcap.com&quot;&gt;coinmarketcap.com&lt;/a&gt; that puts the percent market cap next to the market cap number.)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./bitcoincomic.jpg&quot; alt=&quot;&amp;#x22;We&amp;#x27;ll give up the hostages if you send us 10000 Bitcoin!&amp;#x22; &amp;#x22;10000 Bitcoin? Does he think this is 2017? There&amp;#x27;s no single entity left in the world with that much!&amp;#x22;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;A comic I thought up about Bitcoin  :joy::joy::joy: (&lt;em&gt;comic is still not done, but it will show up here soon&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;A comic I thought up about Bitcoin  😂😂😂 (&lt;em&gt;comic is still not done, but it will show up here soon&lt;/em&gt;).&lt;/p&gt;
 &lt;p&gt;As cash flows from standard gold to Bitcoin, the market cap could approach the &lt;em&gt;trillions&lt;/em&gt; range. With that order of magnitude of market cap, 1 Bitcoin would have:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -4511,7 +4511,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;&lt;strong&gt;As of 16:08 UTC, Tuesday December 12, 2017 the mid-market price on GDAX for 1 Bitcoin was $17,450.&lt;/strong&gt;&lt;/p&gt;
 &lt;h1&gt;My Conclusions&lt;/h1&gt;
 &lt;p&gt;My overall thoughts are this: Bitcoin will continue to see a run up into very large numbers in the 50K-100K region, then stabilize as buying rates finally settle down to match that of selling rates. Then, at some point along this stagnation, there will be a slow starting decrease downtrend in Bitcoin’s price, then accelerating, bringing the price of Bitcoin back to its pre-boom levels (think: $5 - $10 range). When will this happen? I would say not within the next 5-10 years. But it’s my long term feeling.&lt;/p&gt;
-&lt;p&gt;Cheers! :beer:&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sending Windows Server Commands From SAP ABAP]]></title><description><![CDATA[Alright, let’s do a bit of applied stuff today. Backstory For a long time, I had a ticket open for our IT team (I am likewise in the SAP…]]></description><link>https://chrisfrew.in/sending-windows-commands-from-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/sending-windows-commands-from-sap-abap/</guid><pubDate>Wed, 13 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Alright, let’s do a bit of applied stuff today.&lt;/p&gt;
+&lt;p&gt;Cheers! 🍺&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sending Windows Server Commands From SAP ABAP]]></title><description><![CDATA[Alright, let’s do a bit of applied stuff today. Backstory For a long time, I had a ticket open for our IT team (I am likewise in the SAP…]]></description><link>https://chrisfrew.in/sending-windows-commands-from-sap-abap/</link><guid isPermaLink="false">https://chrisfrew.in/sending-windows-commands-from-sap-abap/</guid><pubDate>Wed, 13 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Alright, let’s do a bit of applied stuff today.&lt;/p&gt;
 &lt;h1&gt;Backstory&lt;/h1&gt;
 &lt;p&gt;For a long time, I had a ticket open for our IT team (I am likewise in the SAP team) for an automatic job that would restart a certain task on a Windows server we had - for reasons we still don’t know yet, this particular service would state that it was running, when in fact the job it was supposed to be orchestrating was clearly not running. We were able to verify if the service wasn’t working properly by pinging an RFC node. If the RFC ping returned with an error, then we knew the service was not working - don’t worry, this RFC ping will come into the code later.&lt;/p&gt;
 &lt;p&gt;One lazy Friday when I didn’t have much to do, I was brainstorming if it was possible that maybe I could take this ticket into my own hands, writing something on our ABAP stack that could do the trick.&lt;/p&gt;
@@ -4696,12 +4696,12 @@ start-----------Starts a service.&lt;/p&gt;
   &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;ENDIF&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;We set this report up as a batch job to run every 5 minutes, and the ticket was resolved :smile:&lt;/p&gt;
+&lt;p&gt;We set this report up as a batch job to run every 5 minutes, and the ticket was resolved 😄&lt;/p&gt;
 &lt;h1&gt;Review&lt;/h1&gt;
 &lt;p&gt;As a review, we determined the specific commands needed to be sent to the Windows Service Control Manager, maintained the needed commands in transaction SM69, and wrote a report that we ran as a batch job!&lt;/p&gt;
 &lt;h1&gt;Notes and Comments&lt;/h1&gt;
 &lt;p&gt;I hope everyone enjoyed this post and learned a thing or two. I’m going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I’ve found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I’ve done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with WebSockets, statistics, and SAPUI5. The bottom line is, I’ve got some great content in the coming months for everyone!&lt;/p&gt;
-&lt;p&gt;Cheers everyone! :beer:&lt;/p&gt;
+&lt;p&gt;Cheers everyone! 🍺&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Intellectual property/privacy disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, &lt;a href=&quot;https://www.ospelt.com/en/ospelt/info/home.html&quot;&gt;Ospelt&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Toast to Full Stack Developers]]></title><description><![CDATA[Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit…]]></description><link>https://chrisfrew.in/a-toast-to-full-stack-developers/</link><guid isPermaLink="false">https://chrisfrew.in/a-toast-to-full-stack-developers/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.&lt;/p&gt;
 &lt;h1&gt;The Full Stack Myth?&lt;/h1&gt;
 &lt;p&gt;Much to my surprise, throughout my various software engineering media consumption adventures - I’ve discovered there is a general consensus that the idea of ‘full stack’ is FAKE NEWS. Lots of people on podcasts say it I say screw that. That is a lot like saying, “oh hey, did you know it’s impossible to write great apps or games if you’re a solo developer?” or, “What?!?! A nice dynamic UI, &lt;em&gt;with&lt;/em&gt; a relational database backend &lt;em&gt;and&lt;/em&gt; a websocket to send messages between the two!?!? You’re a madman!!!“.&lt;/p&gt;
@@ -4711,4 +4711,4 @@ start-----------Starts a service.&lt;/p&gt;
 &lt;h1&gt;:wine: A Toast to Full Stack Developers :wine:&lt;/h1&gt;
 &lt;p&gt;Just because we’re not the greatest, most amazing expert in a certain language, just because we don’t know certain frameworks, just because we haven’t focused in one software engineering discipline our entire careers…&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Shouldn’t we still be able to call ourselves full stack developers?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Of course.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World - My First Post :)]]></title><description><![CDATA[I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for  nlp-champs.com…]]></description><link>https://chrisfrew.in/hello-world/</link><guid isPermaLink="false">https://chrisfrew.in/hello-world/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt; and &lt;a href=&quot;skillscout.herokuapp.com&quot;&gt;SkillScout&lt;/a&gt; (the original thing that brought on the need case for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt;. Plus, it &lt;em&gt;really&lt;/em&gt; doesn’t help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head :boom: :boom: :boom: daily.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;Of course.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World - My First Post :)]]></title><description><![CDATA[I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for  nlp-champs.com…]]></description><link>https://chrisfrew.in/hello-world/</link><guid isPermaLink="false">https://chrisfrew.in/hello-world/</guid><pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ll be writing here for sometime into the future now, though I’m not sure how often, as I’m rather busy with the work for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt; and &lt;a href=&quot;skillscout.herokuapp.com&quot;&gt;SkillScout&lt;/a&gt; (the original thing that brought on the need case for &lt;a href=&quot;nlp-champs.com&quot;&gt;nlp-champs.com&lt;/a&gt;. Plus, it &lt;em&gt;really&lt;/em&gt; doesn’t help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head 💥 💥 💥 daily.&lt;/p&gt;</content:encoded></item></channel></rss>
