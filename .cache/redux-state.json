@@ -2300,12 +2300,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-07T08:49:41.190Z",
+      "buildTime": "2018-11-07T10:49:49.198Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "dc97015618a44df94f08cc57ee1a41ad",
+        "contentDigest": "686531dff106309d9801bad865da3a64",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2315,7 +2315,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "28d943734447cbda9bbd06474c45b990",
+        "contentDigest": "9e9e89da4d72d3fdc1eed650e97d8000",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -2324,11 +2324,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 1376,
-      "prettySize": "1.38 kB",
-      "modifiedTime": "2018-11-07T08:20:32.585Z",
-      "accessTime": "2018-11-07T08:49:43.809Z",
-      "changeTime": "2018-11-07T08:20:32.585Z",
+      "size": 1408,
+      "prettySize": "1.41 kB",
+      "modifiedTime": "2018-11-07T10:19:21.931Z",
+      "accessTime": "2018-11-07T10:49:51.852Z",
+      "changeTime": "2018-11-07T10:19:21.931Z",
       "birthTime": "2018-11-07T08:20:32.483Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -2338,20 +2338,20 @@
       "relativeDirectory": "..",
       "dev": 16777221,
       "mode": 16877,
-      "nlink": 43,
+      "nlink": 44,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
       "ino": 8617882965,
       "blocks": 0,
-      "atimeMs": 1541580583808.7036,
-      "mtimeMs": 1541578832585.3074,
-      "ctimeMs": 1541578832585.3074,
+      "atimeMs": 1541587791852.0989,
+      "mtimeMs": 1541585961930.5168,
+      "ctimeMs": 1541585961930.5168,
       "birthtimeMs": 1541578832483.2556,
-      "atime": "2018-11-07T08:49:43.809Z",
-      "mtime": "2018-11-07T08:20:32.585Z",
-      "ctime": "2018-11-07T08:20:32.585Z",
+      "atime": "2018-11-07T10:49:51.852Z",
+      "mtime": "2018-11-07T10:19:21.931Z",
+      "ctime": "2018-11-07T10:19:21.931Z",
       "birthtime": "2018-11-07T08:20:32.483Z"
     },
     "33f3b147-ccc6-5eb2-852b-14e3bb3cec03": {
@@ -2359,7 +2359,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ca5f95bcc32961f0a70ae3a8c364d970",
+        "contentDigest": "7f3e1a38c5ebd61131c06f753d7a66de",
         "type": "Directory",
         "description": "Directory \"src/pages/abap-push-and-message-channels\"",
         "owner": "gatsby-source-filesystem"
@@ -2371,7 +2371,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.485Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.485Z",
       "birthTime": "2018-11-07T08:20:32.484Z",
       "root": "/",
@@ -2389,11 +2389,11 @@
       "blksize": 4096,
       "ino": 8617882969,
       "blocks": 0,
-      "atimeMs": 1541580583816.0823,
+      "atimeMs": 1541587791862.511,
       "mtimeMs": 1541578832484.8167,
       "ctimeMs": 1541578832484.8167,
       "birthtimeMs": 1541578832484.483,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.485Z",
       "ctime": "2018-11-07T08:20:32.485Z",
       "birthtime": "2018-11-07T08:20:32.484Z"
@@ -2403,7 +2403,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "27741d41ffd0a460ab89f7395baa9b82",
+        "contentDigest": "152555961ea0f168d19303e8f40803fe",
         "type": "Directory",
         "description": "Directory \"src/pages/a-toast-to-full-stack-developers\"",
         "owner": "gatsby-source-filesystem"
@@ -2415,7 +2415,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.484Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.862Z",
       "changeTime": "2018-11-07T08:20:32.484Z",
       "birthTime": "2018-11-07T08:20:32.484Z",
       "root": "/",
@@ -2433,11 +2433,11 @@
       "blksize": 4096,
       "ino": 8617882967,
       "blocks": 0,
-      "atimeMs": 1541580583816.0608,
+      "atimeMs": 1541587791862.4707,
       "mtimeMs": 1541578832484.2122,
       "ctimeMs": 1541578832484.2122,
       "birthtimeMs": 1541578832483.8997,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.862Z",
       "mtime": "2018-11-07T08:20:32.484Z",
       "ctime": "2018-11-07T08:20:32.484Z",
       "birthtime": "2018-11-07T08:20:32.484Z"
@@ -2447,7 +2447,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f9eb72436906e1a665851892e93560c5",
+        "contentDigest": "8ed972a0bfcadaa25bedee4543a49dbd",
         "type": "Directory",
         "description": "Directory \"src/pages/an-npm-christmas-easter-egg\"",
         "owner": "gatsby-source-filesystem"
@@ -2459,7 +2459,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.486Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.862Z",
       "changeTime": "2018-11-07T08:20:32.486Z",
       "birthTime": "2018-11-07T08:20:32.485Z",
       "root": "/",
@@ -2477,11 +2477,11 @@
       "blksize": 4096,
       "ino": 8617882971,
       "blocks": 0,
-      "atimeMs": 1541580583816.0935,
+      "atimeMs": 1541587791862.476,
       "mtimeMs": 1541578832486.309,
       "ctimeMs": 1541578832486.309,
       "birthtimeMs": 1541578832485.0596,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.862Z",
       "mtime": "2018-11-07T08:20:32.486Z",
       "ctime": "2018-11-07T08:20:32.486Z",
       "birthtime": "2018-11-07T08:20:32.485Z"
@@ -2491,7 +2491,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bcd7af4cc8d761f42c055ba18d31ed40",
+        "contentDigest": "7337b7eeb5b1a604f6ed7516ac1718f3",
         "type": "Directory",
         "description": "Directory \"src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2503,7 +2503,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-11-07T08:20:32.497Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.497Z",
       "birthTime": "2018-11-07T08:20:32.488Z",
       "root": "/",
@@ -2521,11 +2521,11 @@
       "blksize": 4096,
       "ino": 8617882975,
       "blocks": 0,
-      "atimeMs": 1541580583816.1165,
+      "atimeMs": 1541587791862.5186,
       "mtimeMs": 1541578832497.3992,
       "ctimeMs": 1541578832497.3992,
       "birthtimeMs": 1541578832487.563,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.497Z",
       "ctime": "2018-11-07T08:20:32.497Z",
       "birthtime": "2018-11-07T08:20:32.488Z"
@@ -2535,7 +2535,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5a0ba5cfd6c46db693bdf6c3a6c2f21b",
+        "contentDigest": "00ca1394a43dd69f6fc3a015c2a9f93d",
         "type": "Directory",
         "description": "Directory \"src/pages/colors-for-sap-web-ide\"",
         "owner": "gatsby-source-filesystem"
@@ -2547,7 +2547,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.503Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.862Z",
       "changeTime": "2018-11-07T08:20:32.503Z",
       "birthTime": "2018-11-07T08:20:32.498Z",
       "root": "/",
@@ -2565,11 +2565,11 @@
       "blksize": 4096,
       "ino": 8617882989,
       "blocks": 0,
-      "atimeMs": 1541580583816.105,
+      "atimeMs": 1541587791862.4958,
       "mtimeMs": 1541578832502.6987,
       "ctimeMs": 1541578832502.6987,
       "birthtimeMs": 1541578832497.7537,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.862Z",
       "mtime": "2018-11-07T08:20:32.503Z",
       "ctime": "2018-11-07T08:20:32.503Z",
       "birthtime": "2018-11-07T08:20:32.498Z"
@@ -2579,7 +2579,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4362217d630b94c2890cd3b448aaf731",
+        "contentDigest": "c7776bff623c933f78e41d91b3d23d91",
         "type": "Directory",
         "description": "Directory \"src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets\"",
         "owner": "gatsby-source-filesystem"
@@ -2591,7 +2591,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2018-11-07T08:20:32.514Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.514Z",
       "birthTime": "2018-11-07T08:20:32.507Z",
       "root": "/",
@@ -2609,11 +2609,11 @@
       "blksize": 4096,
       "ino": 8617882993,
       "blocks": 0,
-      "atimeMs": 1541580583816.1504,
+      "atimeMs": 1541587791862.5447,
       "mtimeMs": 1541578832513.9827,
       "ctimeMs": 1541578832513.9827,
       "birthtimeMs": 1541578832506.9055,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.514Z",
       "ctime": "2018-11-07T08:20:32.514Z",
       "birthtime": "2018-11-07T08:20:32.507Z"
@@ -2623,7 +2623,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8cb001ed2f5bf8af9a7b30bb7e000ff0",
+        "contentDigest": "d4d0145e8430daf10573887e44adfb8e",
         "type": "Directory",
         "description": "Directory \"src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon\"",
         "owner": "gatsby-source-filesystem"
@@ -2635,7 +2635,7 @@
       "size": 704,
       "prettySize": "704 B",
       "modifiedTime": "2018-11-07T08:20:32.541Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.541Z",
       "birthTime": "2018-11-07T08:20:32.524Z",
       "root": "/",
@@ -2653,11 +2653,11 @@
       "blksize": 4096,
       "ino": 8617882999,
       "blocks": 0,
-      "atimeMs": 1541580583816.1277,
+      "atimeMs": 1541587791862.631,
       "mtimeMs": 1541578832540.861,
       "ctimeMs": 1541578832540.861,
       "birthtimeMs": 1541578832523.7842,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.541Z",
       "ctime": "2018-11-07T08:20:32.541Z",
       "birthtime": "2018-11-07T08:20:32.524Z"
@@ -2667,7 +2667,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "92fadfe93860e6526e17805c115a4550",
+        "contentDigest": "8f97aca1cdb71c3cf0de272a32edc923",
         "type": "Directory",
         "description": "Directory \"src/pages/data-analysis-of-reddit-users\"",
         "owner": "gatsby-source-filesystem"
@@ -2679,7 +2679,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.541Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.541Z",
       "birthTime": "2018-11-07T08:20:32.541Z",
       "root": "/",
@@ -2697,11 +2697,11 @@
       "blksize": 4096,
       "ino": 8617883020,
       "blocks": 0,
-      "atimeMs": 1541580583816.1387,
+      "atimeMs": 1541587791862.5564,
       "mtimeMs": 1541578832541.3909,
       "ctimeMs": 1541578832541.3909,
       "birthtimeMs": 1541578832541.2776,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.541Z",
       "ctime": "2018-11-07T08:20:32.541Z",
       "birthtime": "2018-11-07T08:20:32.541Z"
@@ -2711,7 +2711,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e88890974633c7f9fb2bfa4dade2666a",
+        "contentDigest": "7da2718abc787c980add9694af5dede8",
         "type": "Directory",
         "description": "Directory \"src/pages/detailed-look-at-bdc-in-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2723,7 +2723,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2741,11 +2741,11 @@
       "blksize": 4096,
       "ino": 8617883024,
       "blocks": 0,
-      "atimeMs": 1541580583816.1726,
+      "atimeMs": 1541587791862.5867,
       "mtimeMs": 1541578832542.0154,
       "ctimeMs": 1541578832542.0154,
       "birthtimeMs": 1541578832541.9185,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2755,7 +2755,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fcd9596d62e458e6a148dd8dfe097761",
+        "contentDigest": "3de920790a0e735eeb9c318f71a37d03",
         "type": "Directory",
         "description": "Directory \"src/pages/dropdowns-in-readmes\"",
         "owner": "gatsby-source-filesystem"
@@ -2767,7 +2767,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2785,11 +2785,11 @@
       "blksize": 4096,
       "ino": 8617883026,
       "blocks": 0,
-      "atimeMs": 1541580583816.2175,
+      "atimeMs": 1541587791862.6091,
       "mtimeMs": 1541578832542.3738,
       "ctimeMs": 1541578832542.3738,
       "birthtimeMs": 1541578832542.299,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2799,7 +2799,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "47a5eb34cdc1b70edf5e92732795eb42",
+        "contentDigest": "7d8ed5c0257a597f9c2d13623a79cd98",
         "type": "Directory",
         "description": "Directory \"src/pages/debugging-abap-with-a-sap-shortcut\"",
         "owner": "gatsby-source-filesystem"
@@ -2811,7 +2811,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2829,11 +2829,11 @@
       "blksize": 4096,
       "ino": 8617883022,
       "blocks": 0,
-      "atimeMs": 1541580583816.1614,
+      "atimeMs": 1541587791862.5676,
       "mtimeMs": 1541578832541.589,
       "ctimeMs": 1541578832541.589,
       "birthtimeMs": 1541578832541.5212,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2843,7 +2843,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7efaed3c8d64cc85f7ad5995bf58dc2e",
+        "contentDigest": "dc17174ca81623f273b9d838bddc14a1",
         "type": "Directory",
         "description": "Directory \"src/pages/dynamically-assigning-variables-both-named-and-structured-in-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2855,7 +2855,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.543Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.543Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2873,11 +2873,11 @@
       "blksize": 4096,
       "ino": 8617883028,
       "blocks": 0,
-      "atimeMs": 1541580583816.195,
+      "atimeMs": 1541587791862.5984,
       "mtimeMs": 1541578832542.6348,
       "ctimeMs": 1541578832542.6348,
       "birthtimeMs": 1541578832542.5542,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.543Z",
       "ctime": "2018-11-07T08:20:32.543Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2887,7 +2887,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "534008cdc359434e4c6d05de49de24e1",
+        "contentDigest": "eab337a03500a1859d25cad4c574cf2f",
         "type": "Directory",
         "description": "Directory \"src/pages/final-say-bitcoin\"",
         "owner": "gatsby-source-filesystem"
@@ -2899,7 +2899,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.543Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.543Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2917,11 +2917,11 @@
       "blksize": 4096,
       "ino": 8617883030,
       "blocks": 0,
-      "atimeMs": 1541580583816.1833,
+      "atimeMs": 1541587791862.62,
       "mtimeMs": 1541578832542.903,
       "ctimeMs": 1541578832542.903,
       "birthtimeMs": 1541578832542.8225,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.543Z",
       "ctime": "2018-11-07T08:20:32.543Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2931,7 +2931,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7fd496721750c94bccfcd5386e08d41a",
+        "contentDigest": "d31d237bd0c42df5febb76e1c2c32ccb",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process\"",
         "owner": "gatsby-source-filesystem"
@@ -2943,7 +2943,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.544Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.544Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2961,11 +2961,11 @@
       "blksize": 4096,
       "ino": 8617883032,
       "blocks": 0,
-      "atimeMs": 1541580583816.229,
+      "atimeMs": 1541587791862.642,
       "mtimeMs": 1541578832543.8381,
       "ctimeMs": 1541578832543.8381,
       "birthtimeMs": 1541578832543.1003,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.544Z",
       "ctime": "2018-11-07T08:20:32.544Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2975,7 +2975,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1703550e74d80cd7f51cde4276f3292d",
+        "contentDigest": "6e758100caf17bdee0db76fae4fc7caf",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor\"",
         "owner": "gatsby-source-filesystem"
@@ -2987,7 +2987,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.547Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.547Z",
       "birthTime": "2018-11-07T08:20:32.547Z",
       "root": "/",
@@ -3005,11 +3005,11 @@
       "blksize": 4096,
       "ino": 8617883036,
       "blocks": 0,
-      "atimeMs": 1541580583816.2068,
+      "atimeMs": 1541587791862.6538,
       "mtimeMs": 1541578832547.1934,
       "ctimeMs": 1541578832547.1934,
       "birthtimeMs": 1541578832547.0417,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.547Z",
       "ctime": "2018-11-07T08:20:32.547Z",
       "birthtime": "2018-11-07T08:20:32.547Z"
@@ -3019,7 +3019,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "49baed09739fae1df55d31c3467c9f91",
+        "contentDigest": "b58c4a8732883f7a9f5e805767d6576c",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor\"",
         "owner": "gatsby-source-filesystem"
@@ -3031,7 +3031,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-07T08:20:32.548Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.548Z",
       "birthTime": "2018-11-07T08:20:32.547Z",
       "root": "/",
@@ -3049,11 +3049,11 @@
       "blksize": 4096,
       "ino": 8617883038,
       "blocks": 0,
-      "atimeMs": 1541580583816.2524,
+      "atimeMs": 1541587791862.6648,
       "mtimeMs": 1541578832548.039,
       "ctimeMs": 1541578832548.039,
       "birthtimeMs": 1541578832547.4238,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.548Z",
       "ctime": "2018-11-07T08:20:32.548Z",
       "birthtime": "2018-11-07T08:20:32.547Z"
@@ -3063,7 +3063,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "868d83d201a7c5a4cc7fd13d6513ce40",
+        "contentDigest": "44145429170db96804add64d50db6d02",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot\"",
         "owner": "gatsby-source-filesystem"
@@ -3075,7 +3075,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.548Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.548Z",
       "birthTime": "2018-11-07T08:20:32.548Z",
       "root": "/",
@@ -3093,11 +3093,11 @@
       "blksize": 4096,
       "ino": 8617883041,
       "blocks": 0,
-      "atimeMs": 1541580583816.2637,
+      "atimeMs": 1541587791862.7083,
       "mtimeMs": 1541578832548.475,
       "ctimeMs": 1541578832548.475,
       "birthtimeMs": 1541578832548.3984,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.548Z",
       "ctime": "2018-11-07T08:20:32.548Z",
       "birthtime": "2018-11-07T08:20:32.548Z"
@@ -3107,7 +3107,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b205862dde97fe49382c254d12965202",
+        "contentDigest": "6fcfed70ac313843cad24c516d64d7be",
         "type": "Directory",
         "description": "Directory \"src/pages/hello-world\"",
         "owner": "gatsby-source-filesystem"
@@ -3119,7 +3119,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3137,11 +3137,11 @@
       "blksize": 4096,
       "ino": 8617883043,
       "blocks": 0,
-      "atimeMs": 1541580583816.281,
+      "atimeMs": 1541587791862.6755,
       "mtimeMs": 1541578832548.695,
       "ctimeMs": 1541578832548.695,
       "birthtimeMs": 1541578832548.626,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3151,7 +3151,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d9b4b7863e71c2d821b10691ee74f842",
+        "contentDigest": "5da330dd7aedb6e198d12c3ed77569c2",
         "type": "Directory",
         "description": "Directory \"src/pages/hot-linking-to-lines-in-github\"",
         "owner": "gatsby-source-filesystem"
@@ -3163,7 +3163,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3181,11 +3181,11 @@
       "blksize": 4096,
       "ino": 8617883045,
       "blocks": 0,
-      "atimeMs": 1541580583816.3042,
+      "atimeMs": 1541587791862.6863,
       "mtimeMs": 1541578832548.8787,
       "ctimeMs": 1541578832548.8787,
       "birthtimeMs": 1541578832548.82,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3195,7 +3195,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "230a1d1b8c11c7c4daee6f63eb6f1661",
+        "contentDigest": "d275fe4521a9d4d4c4ccf8613cf16519",
         "type": "Directory",
         "description": "Directory \"src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein\"",
         "owner": "gatsby-source-filesystem"
@@ -3207,7 +3207,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3225,11 +3225,11 @@
       "blksize": 4096,
       "ino": 8617883047,
       "blocks": 0,
-      "atimeMs": 1541580583816.2922,
+      "atimeMs": 1541587791862.6975,
       "mtimeMs": 1541578832549.242,
       "ctimeMs": 1541578832549.242,
       "birthtimeMs": 1541578832549.15,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3239,7 +3239,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3ee3afa3ef5ba30cbe363838827fa04d",
+        "contentDigest": "b1f4d864a93812685031fcfa2443ec2a",
         "type": "Directory",
         "description": "Directory \"src/pages/how-to-convert-raw16-to-char22-material-ids-in-sap-ewm-and-vice-versa\"",
         "owner": "gatsby-source-filesystem"
@@ -3251,7 +3251,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3269,11 +3269,11 @@
       "blksize": 4096,
       "ino": 8617883049,
       "blocks": 0,
-      "atimeMs": 1541580583816.34,
+      "atimeMs": 1541587791862.7295,
       "mtimeMs": 1541578832549.5134,
       "ctimeMs": 1541578832549.5134,
       "birthtimeMs": 1541578832549.44,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3283,7 +3283,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "35444f5abbe4d0f4fc46b563e6911999",
+        "contentDigest": "e60ec75b40acb0999ad4840559e87e14",
         "type": "Directory",
         "description": "Directory \"src/pages/i-set-aside-1000-to-learn-options-trading\"",
         "owner": "gatsby-source-filesystem"
@@ -3295,7 +3295,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3313,11 +3313,11 @@
       "blksize": 4096,
       "ino": 8617883051,
       "blocks": 0,
-      "atimeMs": 1541580583816.316,
+      "atimeMs": 1541587791862.7512,
       "mtimeMs": 1541578832549.7168,
       "ctimeMs": 1541578832549.7168,
       "birthtimeMs": 1541578832549.6506,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3327,7 +3327,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "99809545ad6d95d798fe57936862515a",
+        "contentDigest": "671b4f2d8dbcbf53e7c383718309dbbe",
         "type": "Directory",
         "description": "Directory \"src/pages/introducing-chrisfrewin-productions\"",
         "owner": "gatsby-source-filesystem"
@@ -3339,7 +3339,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3357,11 +3357,11 @@
       "blksize": 4096,
       "ino": 8617883054,
       "blocks": 0,
-      "atimeMs": 1541580583816.3276,
+      "atimeMs": 1541587791862.7192,
       "mtimeMs": 1541578832550.2764,
       "ctimeMs": 1541578832550.2764,
       "birthtimeMs": 1541578832550.1912,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3371,7 +3371,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6b3b07915d17453e00b90cc3bb7b6640",
+        "contentDigest": "d844bdb6d24c320601a8b18fe0965387",
         "type": "Directory",
         "description": "Directory \"src/pages/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input\"",
         "owner": "gatsby-source-filesystem"
@@ -3383,7 +3383,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3401,11 +3401,11 @@
       "blksize": 4096,
       "ino": 8617883056,
       "blocks": 0,
-      "atimeMs": 1541580583816.3848,
+      "atimeMs": 1541587791862.785,
       "mtimeMs": 1541578832550.4834,
       "ctimeMs": 1541578832550.4834,
       "birthtimeMs": 1541578832550.4211,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3415,7 +3415,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c620f4d3847dc7fc7c5341d5b42337d5",
+        "contentDigest": "e9d22498951a5beac3dadb406232d5d7",
         "type": "Directory",
         "description": "Directory \"src/pages/laptop-stickers\"",
         "owner": "gatsby-source-filesystem"
@@ -3427,7 +3427,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.558Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.558Z",
       "birthTime": "2018-11-07T08:20:32.551Z",
       "root": "/",
@@ -3445,11 +3445,11 @@
       "blksize": 4096,
       "ino": 8617883058,
       "blocks": 0,
-      "atimeMs": 1541580583816.3584,
+      "atimeMs": 1541587791862.7405,
       "mtimeMs": 1541578832558.2292,
       "ctimeMs": 1541578832558.2292,
       "birthtimeMs": 1541578832550.8218,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.558Z",
       "ctime": "2018-11-07T08:20:32.558Z",
       "birthtime": "2018-11-07T08:20:32.551Z"
@@ -3459,7 +3459,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9085ea65f855e0f441370d325ebb9f3c",
+        "contentDigest": "0519aa4ad37d37bdf35636be6840ea4c",
         "type": "Directory",
         "description": "Directory \"src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration\"",
         "owner": "gatsby-source-filesystem"
@@ -3471,7 +3471,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.574Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.574Z",
       "birthTime": "2018-11-07T08:20:32.569Z",
       "root": "/",
@@ -3489,11 +3489,11 @@
       "blksize": 4096,
       "ino": 8617883062,
       "blocks": 0,
-      "atimeMs": 1541580583816.3716,
+      "atimeMs": 1541587791862.7742,
       "mtimeMs": 1541578832573.6719,
       "ctimeMs": 1541578832573.6719,
       "birthtimeMs": 1541578832569.2505,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.574Z",
       "ctime": "2018-11-07T08:20:32.574Z",
       "birthtime": "2018-11-07T08:20:32.569Z"
@@ -3503,7 +3503,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5e5ce831e03252b6dbd1312d0ab96003",
+        "contentDigest": "ac37a8bbd8567e54d5370f32f11f6a9c",
         "type": "Directory",
         "description": "Directory \"src/pages/market-news-feed\"",
         "owner": "gatsby-source-filesystem"
@@ -3515,7 +3515,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.577Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.577Z",
       "birthTime": "2018-11-07T08:20:32.575Z",
       "root": "/",
@@ -3533,11 +3533,11 @@
       "blksize": 4096,
       "ino": 8617883066,
       "blocks": 0,
-      "atimeMs": 1541580583816.3967,
+      "atimeMs": 1541587791862.7617,
       "mtimeMs": 1541578832576.5146,
       "ctimeMs": 1541578832576.5146,
       "birthtimeMs": 1541578832575.0752,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.577Z",
       "ctime": "2018-11-07T08:20:32.577Z",
       "birthtime": "2018-11-07T08:20:32.575Z"
@@ -3547,7 +3547,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "35a9e35b39e7a26a1c3c4a7465fd0538",
+        "contentDigest": "1ad09dd91419b050b68507b52e95859c",
         "type": "Directory",
         "description": "Directory \"src/pages/one-major-challenge-with-the-internet-and-society\"",
         "owner": "gatsby-source-filesystem"
@@ -3559,7 +3559,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.578Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.578Z",
       "birthTime": "2018-11-07T08:20:32.577Z",
       "root": "/",
@@ -3577,11 +3577,11 @@
       "blksize": 4096,
       "ino": 8617883072,
       "blocks": 0,
-      "atimeMs": 1541580583816.4294,
+      "atimeMs": 1541587791862.7964,
       "mtimeMs": 1541578832577.743,
       "ctimeMs": 1541578832577.743,
       "birthtimeMs": 1541578832577.472,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.578Z",
       "ctime": "2018-11-07T08:20:32.578Z",
       "birthtime": "2018-11-07T08:20:32.577Z"
@@ -3591,7 +3591,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "61f82c4f2d54c80a800da10a74d044dc",
+        "contentDigest": "aa397ae3699fabe1b8d22b03e5f77546",
         "type": "Directory",
         "description": "Directory \"src/pages/privacy-policy\"",
         "owner": "gatsby-source-filesystem"
@@ -3603,7 +3603,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.578Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.578Z",
       "birthTime": "2018-11-07T08:20:32.578Z",
       "root": "/",
@@ -3621,11 +3621,11 @@
       "blksize": 4096,
       "ino": 8617883074,
       "blocks": 0,
-      "atimeMs": 1541580583816.4404,
+      "atimeMs": 1541587791862.819,
       "mtimeMs": 1541578832578.4094,
       "ctimeMs": 1541578832578.4094,
       "birthtimeMs": 1541578832577.9507,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.578Z",
       "ctime": "2018-11-07T08:20:32.578Z",
       "birthtime": "2018-11-07T08:20:32.578Z"
@@ -3635,7 +3635,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8c199228245f3b9c9d3b1b2ef00bb6f0",
+        "contentDigest": "7556c6c1f1c9652016cd0e7af22e58ce",
         "type": "Directory",
         "description": "Directory \"src/pages/more-thoughts-on-early-retirement-financial-independence-and-making-a-living\"",
         "owner": "gatsby-source-filesystem"
@@ -3647,7 +3647,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.577Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.577Z",
       "birthTime": "2018-11-07T08:20:32.577Z",
       "root": "/",
@@ -3665,11 +3665,11 @@
       "blksize": 4096,
       "ino": 8617883070,
       "blocks": 0,
-      "atimeMs": 1541580583816.4092,
+      "atimeMs": 1541587791862.8076,
       "mtimeMs": 1541578832577.0596,
       "ctimeMs": 1541578832577.0596,
       "birthtimeMs": 1541578832576.9797,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.577Z",
       "ctime": "2018-11-07T08:20:32.577Z",
       "birthtime": "2018-11-07T08:20:32.577Z"
@@ -3679,7 +3679,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3bfe6864471ad8f1300084c145d3ad3f",
+        "contentDigest": "9a036ac58903eda3dfd632b9bed6afab",
         "type": "Directory",
         "description": "Directory \"src/pages/sending-windows-commands-from-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -3691,7 +3691,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3709,11 +3709,11 @@
       "blksize": 4096,
       "ino": 8617883078,
       "blocks": 0,
-      "atimeMs": 1541580583816.4844,
+      "atimeMs": 1541587791862.8525,
       "mtimeMs": 1541578832579.0117,
       "ctimeMs": 1541578832579.0117,
       "birthtimeMs": 1541578832578.9382,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3723,7 +3723,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "971fcb4fbf1014d836e505361d093d76",
+        "contentDigest": "9bd802c74e48787550cee62e000b510c",
         "type": "Directory",
         "description": "Directory \"src/pages/sec-filings\"",
         "owner": "gatsby-source-filesystem"
@@ -3735,7 +3735,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3753,11 +3753,11 @@
       "blksize": 4096,
       "ino": 8617883076,
       "blocks": 0,
-      "atimeMs": 1541580583816.4622,
+      "atimeMs": 1541587791862.841,
       "mtimeMs": 1541578832578.6465,
       "ctimeMs": 1541578832578.6465,
       "birthtimeMs": 1541578832578.5828,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3767,7 +3767,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e3c50c95557633c8282e794ab7a9d535",
+        "contentDigest": "a8e6f8724bf2be9b384a52b7ddef79cb",
         "type": "Directory",
         "description": "Directory \"src/pages/some-tasty-bash-profile-commands\"",
         "owner": "gatsby-source-filesystem"
@@ -3779,7 +3779,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3797,11 +3797,11 @@
       "blksize": 4096,
       "ino": 8617883080,
       "blocks": 0,
-      "atimeMs": 1541580583816.4514,
+      "atimeMs": 1541587791862.8303,
       "mtimeMs": 1541578832579.3713,
       "ctimeMs": 1541578832579.3713,
       "birthtimeMs": 1541578832579.2195,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3811,7 +3811,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5e930c054b605839945e1dff0ca9d039",
+        "contentDigest": "46d8303a3a7216a6dde5958ef32027bd",
         "type": "Directory",
         "description": "Directory \"src/pages/talk-shop\"",
         "owner": "gatsby-source-filesystem"
@@ -3823,7 +3823,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.580Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.580Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3841,11 +3841,11 @@
       "blksize": 4096,
       "ino": 8617883082,
       "blocks": 0,
-      "atimeMs": 1541580583816.473,
+      "atimeMs": 1541587791862.8628,
       "mtimeMs": 1541578832579.648,
       "ctimeMs": 1541578832579.648,
       "birthtimeMs": 1541578832579.5798,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.580Z",
       "ctime": "2018-11-07T08:20:32.580Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3855,7 +3855,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8705d4a3e8a4a228e43d9f750f816ed1",
+        "contentDigest": "daf948d5c5242cbda522fc2e998779f6",
         "type": "Directory",
         "description": "Directory \"src/pages/the-social-contract\"",
         "owner": "gatsby-source-filesystem"
@@ -3867,7 +3867,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.580Z",
-      "accessTime": "2018-11-07T08:49:43.816Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.580Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3885,11 +3885,11 @@
       "blksize": 4096,
       "ino": 8617883084,
       "blocks": 0,
-      "atimeMs": 1541580583816.495,
+      "atimeMs": 1541587791862.874,
       "mtimeMs": 1541578832580.2961,
       "ctimeMs": 1541578832580.2961,
       "birthtimeMs": 1541578832580.0205,
-      "atime": "2018-11-07T08:49:43.816Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.580Z",
       "ctime": "2018-11-07T08:20:32.580Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3899,7 +3899,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "31a0ff2842c8ff434149ea22fa8873fe",
+        "contentDigest": "afb6176525c418b796664ff575ef7711",
         "type": "Directory",
         "description": "Directory \"src/pages/towards-code-and-folder-organization-of-nodejs-server-applications\"",
         "owner": "gatsby-source-filesystem"
@@ -3911,7 +3911,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.581Z",
-      "accessTime": "2018-11-07T08:49:43.817Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.581Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3929,11 +3929,11 @@
       "blksize": 4096,
       "ino": 8617883086,
       "blocks": 0,
-      "atimeMs": 1541580583816.5063,
+      "atimeMs": 1541587791862.943,
       "mtimeMs": 1541578832580.731,
       "ctimeMs": 1541578832580.731,
       "birthtimeMs": 1541578832580.4846,
-      "atime": "2018-11-07T08:49:43.817Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.581Z",
       "ctime": "2018-11-07T08:20:32.581Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3943,7 +3943,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e7d7ad0b107a2c85e41a15b7290f2dee",
+        "contentDigest": "3b3eda9b449781a62d7c8ce1b0496791",
         "type": "Directory",
         "description": "Directory \"src/pages/using-google-clouds-text-to-speech-machine-learning-api\"",
         "owner": "gatsby-source-filesystem"
@@ -3955,7 +3955,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.581Z",
-      "accessTime": "2018-11-07T08:49:43.817Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.581Z",
       "birthTime": "2018-11-07T08:20:32.581Z",
       "root": "/",
@@ -3973,11 +3973,11 @@
       "blksize": 4096,
       "ino": 8617883088,
       "blocks": 0,
-      "atimeMs": 1541580583816.517,
+      "atimeMs": 1541587791862.8848,
       "mtimeMs": 1541578832581.324,
       "ctimeMs": 1541578832581.324,
       "birthtimeMs": 1541578832581.0793,
-      "atime": "2018-11-07T08:49:43.817Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.581Z",
       "ctime": "2018-11-07T08:20:32.581Z",
       "birthtime": "2018-11-07T08:20:32.581Z"
@@ -3987,7 +3987,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c58c90bb221b6aa3ba47649907146433",
+        "contentDigest": "5cea247a6bd0064110dc67dddf3072bd",
         "type": "Directory",
         "description": "Directory \"src/pages/warn-sap-users-of-locked-objects-then-kill-their-session\"",
         "owner": "gatsby-source-filesystem"
@@ -3999,7 +3999,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-11-07T08:20:32.585Z",
-      "accessTime": "2018-11-07T08:49:43.817Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.585Z",
       "birthTime": "2018-11-07T08:20:32.582Z",
       "root": "/",
@@ -4017,11 +4017,11 @@
       "blksize": 4096,
       "ino": 8617883090,
       "blocks": 0,
-      "atimeMs": 1541580583817.4763,
+      "atimeMs": 1541587791863.1877,
       "mtimeMs": 1541578832585.0796,
       "ctimeMs": 1541578832585.0796,
       "birthtimeMs": 1541578832581.573,
-      "atime": "2018-11-07T08:49:43.817Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.585Z",
       "ctime": "2018-11-07T08:20:32.585Z",
       "birthtime": "2018-11-07T08:20:32.582Z"
@@ -4031,7 +4031,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8e32dd6a94d89723198712e227647cbb",
+        "contentDigest": "0ae73222e8e0a4237ed31091ec15ffa7",
         "type": "Directory",
         "description": "Directory \"src/pages/welp-i-did-it-i-quit\"",
         "owner": "gatsby-source-filesystem"
@@ -4043,7 +4043,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.586Z",
-      "accessTime": "2018-11-07T08:49:43.817Z",
+      "accessTime": "2018-11-07T10:49:51.863Z",
       "changeTime": "2018-11-07T08:20:32.586Z",
       "birthTime": "2018-11-07T08:20:32.585Z",
       "root": "/",
@@ -4061,11 +4061,11 @@
       "blksize": 4096,
       "ino": 8617883099,
       "blocks": 0,
-      "atimeMs": 1541580583816.5552,
+      "atimeMs": 1541587791862.9895,
       "mtimeMs": 1541578832585.986,
       "ctimeMs": 1541578832585.986,
       "birthtimeMs": 1541578832585.2815,
-      "atime": "2018-11-07T08:49:43.817Z",
+      "atime": "2018-11-07T10:49:51.863Z",
       "mtime": "2018-11-07T08:20:32.586Z",
       "ctime": "2018-11-07T08:20:32.586Z",
       "birthtime": "2018-11-07T08:20:32.585Z"
@@ -9855,6 +9855,123 @@
         "slug": "/dynamically-assigning-variables-both-named-and-structured-in-sap-abap/"
       }
     },
+    "d854a1e4-aa5c-549a-a06a-d0c6870c3ecd": {
+      "id": "d854a1e4-aa5c-549a-a06a-d0c6870c3ecd",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "505ee3cdc39d07998f49a96b9b682a96",
+        "type": "Directory",
+        "description": "Directory \"src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "javascript-pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "relativePath": "a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-11-07T10:19:33.487Z",
+      "accessTime": "2018-11-07T10:49:51.862Z",
+      "changeTime": "2018-11-07T10:19:33.487Z",
+      "birthTime": "2018-11-07T10:19:21.930Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "ext": "",
+      "name": "a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 8617951075,
+      "blocks": 0,
+      "atimeMs": 1541587791862.4216,
+      "mtimeMs": 1541585973486.877,
+      "ctimeMs": 1541585973486.877,
+      "birthtimeMs": 1541585961930.492,
+      "atime": "2018-11-07T10:49:51.862Z",
+      "mtime": "2018-11-07T10:19:33.487Z",
+      "ctime": "2018-11-07T10:19:33.487Z",
+      "birthtime": "2018-11-07T10:19:21.930Z"
+    },
+    "9fadf5b6-ea5a-53d7-ba8b-8283e2a97fc2": {
+      "id": "9fadf5b6-ea5a-53d7-ba8b-8283e2a97fc2",
+      "children": [
+        "f31dadc5-0e90-5db4-b3ec-6545da1f9766"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2debce1808486558847c04e286a60231",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "markdown-pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux/index.md",
+      "relativePath": "a-detailed-tutorial-shopify-storefront-apireact-redux/index.md",
+      "extension": "md",
+      "size": 22017,
+      "prettySize": "22 kB",
+      "modifiedTime": "2018-11-07T10:49:35.844Z",
+      "accessTime": "2018-11-07T10:49:35.843Z",
+      "changeTime": "2018-11-07T10:49:35.844Z",
+      "birthTime": "2018-11-07T10:19:33.487Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "a-detailed-tutorial-shopify-storefront-apireact-redux",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 8617951084,
+      "blocks": 48,
+      "atimeMs": 1541587775843.4229,
+      "mtimeMs": 1541587775843.7244,
+      "ctimeMs": 1541587775843.7244,
+      "birthtimeMs": 1541585973486.8623,
+      "atime": "2018-11-07T10:49:35.843Z",
+      "mtime": "2018-11-07T10:49:35.844Z",
+      "ctime": "2018-11-07T10:49:35.844Z",
+      "birthtime": "2018-11-07T10:19:33.487Z"
+    },
+    "f31dadc5-0e90-5db4-b3ec-6545da1f9766": {
+      "id": "f31dadc5-0e90-5db4-b3ec-6545da1f9766",
+      "children": [],
+      "parent": "9fadf5b6-ea5a-53d7-ba8b-8283e2a97fc2",
+      "internal": {
+        "content": "\n_Originally published on the [Siren Apparel Press on Medium](https://medium.com/siren-apparel-press/adding-shopifys-storefront-api-to-an-existing-react-app-with-react-redux-ea442bd7543)_\n\n# A Detailed Tutorial: Shopify’s Storefront API + React + Redux\n\n## E-commerce for all! (…websites, that is 😄)\n\n*Written by *[Chris](https://medium.com/@frewin.christopher)* on Wednesday,\nAugust 22nd, 2018*\n\n![](https://cdn-images-1.medium.com/max/2000/1*HU6qT6c4a54QX-mnuPMj7w.jpeg)\n<span class=\"figcaption_hack\">Siren Apparel’s flagship shirt — Hydrant Removal.</span>\n\n#### Background and Motivation\n\nSo the motivation here was pretty simple. I wanted my users to be able to\nbrowse, search, and select products directly on my custom domain without having\nto go to Shopify.\n\nThe secondary motivation is that I’d much rather have my own codebase for a\nwebsite than use one of Shopify’s factory templates. No offence Shopify team!\nThe templates are modern and clean, but they are rather basic.\n\nSo this is the best of both worlds — my custom React site (already built and\nonline 😄), with the added API and checkout process of Shopify!\n\nBy the end of this tutorial, you’ll be able to add your Shopify products on\n*any* page of your site. The only part of the shopping process that will occur\non Shopify is when the user clicks ‘Checkout’.\n\nThe motivation specifically for writing here on Medium was simply that I\ncouldn’t find a tutorial on this process myself— so I decided to make one\nmyself!\n\nI’ve been a professional developer for 4 years now, and programming for 7. I’ve\nworked in tech stacks from old-school Fortran and Perl to React, Javascript, and\nNodejs.\n\nSiren Apparel is one of my side project / startup / maker company that I’ve run\nfor 5 years now, and we’ve donated to 5 different police and fire departments.\n\nLet’s finally get started with this tutorial.\n\n#### Shopify’s Storefront API\n\nThe wonderful folks at Shopify have put together the [Storefront\nAPI](https://help.shopify.com/en/api/custom-storefronts/storefront-api). With\nthe Storefront API, you can create React components to add product pictures,\nproduct variations, product sizes, a cart, and ‘add to cart’ and ‘checkout’\nbuttons into your own, non-Shopify site.\n\nNote that this tutorial is NOT about [Shopify\nPolaris](https://github.com/Shopify/polaris), which is used to create components\nin React for Shopify store management itself.\n\n#### Getting Started: `react-js-buy` Repository\n\nTake a look at [this React example built by the Shopify\nteam](https://github.com/Shopify/storefront-api-examples/tree/master/react-js-buy).\nMost of the code in this walkthrough tutorial comes from that repository.\n\n…Did you take a look? Good!\n\nNow we’re going to hop right into code! Head to your React site’s root folder\nand install the `shopify-buy` module via the terminal:\n\n```bash\ncd my-awesome-react-node-project/\nnpm install --save shopify-buy\n```\n\n(or `yarn add shopify-buy` if you prefer `yarn`)\n\nThen, in your frontend `index.js`, (note: NOT `App.js`!) you will need to import\n`Client` from the JS Buy SDK:\n\n```javascript\nimport Client from 'shopify-buy';\n```\n\nThen add the following configuration object above the `ReactDOM.render()`call:\n\n```javascript\nconst client = Client.buildClient({\n    storefrontAccessToken: 'your-access-token',\n    domain: 'your-shopify-url.myshopify.com'\n});\n```\n\nThat’s it for `index.js` for now — we’ll come back to it soon.\n\nNow we’re going to add in all the components needed for a smooth shopping and\ncheckout experience. Copy all the components from the `react-js-buy` repository:\n\n`Cart.js`\n\n`LineItem.js`\n\n`Product.js`\n\n`Products.js`\n\n`VariantSelector.js`\n\nWe will paste these components into a`components/shopify/` folder in your `src/`\nfolder. You could put these component files anywhere else in the `src/` folder,\nif you wished. The rest of the tutorial assumes you have put them in\n`components/shopify/` .\n\n#### Modifying App.js\n\n`App.js` will need extensive changes. First, import that Cart component you just\ncopied into your own project:\n\n    import Cart from './components/shopify/Cart';\n\nIf your `App.js` component was stateless, like mine, you should be safe copying\nthis entire `constructor()` function:\n\n```javascript\nconstructor() {\n    super();\n    this.updateQuantityInCart = this.updateQuantityInCart.bind(this);\n    this.removeLineItemInCart = this.removeLineItemInCart.bind(this);\n    this.handleCartClose = this.handleCartClose.bind(this);\n}\n```\n\nif you already have state, copy only those `bind` lines. They are event handler\nfunctions that the Shopify cart needs to function properly.\n\n“But what about state for the cart!?”\n\nYou may ask; or:\n\n“What about defining those four methods for the cart!?”\n\nIndeed, that’s coming, but not yet! 😄\n\nYou can then append the `<Cart/>` component to the bottom of your render()\nfunction, before the ending div. In my opinion, the cart should be accessible\nanywhere in your app. I think it makes sense then to put the `<Cart/>` component\nin the root component of your app:\n\n```javascript\n    return (\n    <div>\n    ...\n    <Cart\n        checkout={this.state.checkout}\n        isCartOpen={this.state.isCartOpen}\n        handleCartClose={this.handleCartClose}\n        updateQuantityInCart={this.updateQuantityInCart}\n        removeLineItemInCart={this.removeLineItemInCart}\n     />\n    </div>\n    );\n```\n\nSo, you may have noticed I didn’t include any code on the event handlers for the\ncart yet. Additionally, I didn’t address the lack of state components for the\ncart in App.js.\n\nWell, about halfway through this project, I realized my products component was\nnot in my `App.js` file.\n\nInstead, it was buried about three children components down.\n\nSo instead of passing products three levels down to children, and then function\nhandlers all the way back up…\n\nI decided to use…\n\n**😱 Redux!!! 😱**\n\nUgh! I know, I know, Redux, while not being very difficult, is a pain in the\n%*$! to wire up initially with all the boilerplate required. But, if you are a\ndeveloper working on an E-commerce store or an E-commerce store owner, think of\nit this way: Redux will enable you to access the state of the cart from any\ncomponent or page in our app.\n\nThis ability will be essential as Siren Apparel expands and we develop more\nproducts. As we create more products, I’ll make a seperate dedicated store page\nwith all products, while leaving just a handful of featured products on the\nhomepage.\n\nThe ability to access the cart is essential if a user shops around a bit, reads\nsome stories or info about Siren Apparel, and *then* decides to checkout. It\ndoesn’t matter how much they navigate around, nothing from their cart will be\nlost!\n\nSo, in short, I decided it’s probably better to implement Redux now while the\ncodebase for [our site](https://sirenapparel.us/) isn’t too large.\n\n#### Implementing Redux for Shopify Buy SDK With Bare Minimum Boilerplate\n\nInstall NPM packages `redux` and `react-redux`:\n\n    npm install --save redux react-redux\n\nIn `index.js` , import `Provider` from `react-redux`and your `store` from\n`./store`:\n\n```javascript\nimport { Provider } from 'react-redux';\nimport store from './store';\n```\n\nWrap the `<Provider>` component with the passed `store` around your`<App>`in\n`index.js`to hook up your App to your Redux store:\n\n```javascript\nReactDOM.render(\n<Provider store={store}>\n    <IntlProvider locale={locale} messages={flattenMessages(messages[locale.substring(0, 2)])}>\n      <App locale={locale}/>\n    </IntlProvider>\n </Provider>,\ndocument.getElementById('root')\n);\n```\n\nNote that I also have a `<IntlProvider>`, but that’s in [a different post about\nhow I applied internationalization and localization to dynamically render the\ncontent on Siren Apparel’s\nsite.](https://medium.com/@sirenapparel/internationalization-and-localization-of-sirenapparel-eu-sirenapparel-us-and-sirenapparel-asia-ddee266066a2)\nA different story for a different day.\n\nNow of course we haven’t made a `./store.js` file yet. Create your store in\n`store.js`in the `src/` root and put this in it:\n\n```javascript\nimport {createStore} from 'redux';\nimport reducer from './reducers/cart'; \n\nexport default createStore(reducer);\n```\n\nCreate your reducers file in `src/reducers/cart.js`and paste this code:\n\n```javascript\n// initial state\nconst initState = {\n  isCartOpen: false,\n  checkout: { lineItems: [] },\n  products: [],\n  shop: {}\n}\n\n// actions\nconst CLIENT_CREATED = 'CLIENT_CREATED'\nconst PRODUCTS_FOUND = 'PRODUCTS_FOUND'\nconst CHECKOUT_FOUND = 'CHECKOUT_FOUND'\nconst SHOP_FOUND = 'SHOP_FOUND'\nconst ADD_VARIANT_TO_CART = 'ADD_VARIANT_TO_CART'\nconst UPDATE_QUANTITY_IN_CART = 'UPDATE_QUANTITY_IN_CART'\nconst REMOVE_LINE_ITEM_IN_CART = 'REMOVE_LINE_ITEM_IN_CART'\nconst OPEN_CART = 'OPEN_CART'\nconst CLOSE_CART = 'CLOSE_CART'\n\n// reducers\nexport default (state = initState, action) => {\n  switch (action.type) {\n    case CLIENT_CREATED:\n      return {...state, client: action.payload}\n    case PRODUCTS_FOUND:\n      return {...state, products: action.payload}\n    case CHECKOUT_FOUND:\n      return {...state, checkout: action.payload}\n    case SHOP_FOUND:\n      return {...state, shop: action.payload}\n    case ADD_VARIANT_TO_CART:\n      return {...state, isCartOpen: action.payload.isCartOpen, checkout: action.payload.checkout}\n    case UPDATE_QUANTITY_IN_CART:\n      return {...state, checkout: action.payload.checkout}\n    case REMOVE_LINE_ITEM_IN_CART:\n      return {...state, checkout: action.payload.checkout}\n    case OPEN_CART:\n      return {...state, isCartOpen: true}\n    case CLOSE_CART:\n      return {...state, isCartOpen: false}\n    default:\n      return state\n  }\n}\n```\n\nDon’t worry, I’m not going to just post this big reducer and not discuss what is\ngoing on; we’ll get to each event! Note a few things:\n\nWe take the initial state from what the state is written as in the Shopify\nGitHub example and put it in our initState, namely the following four parts of\nstate:\n\n```javascript\nisCartOpen: false,\ncheckout: { lineItems: [] },\nproducts: [],\nshop: {}\n  ```\n\nHowever, in my implementation, I also create a `client` part of the state. I\ncall the `createClient()` function once and then immediately set it in the Redux\nstate in `index.js` . So let’s head into `index.js`:\n\n#### Back to index.js\n\n```javascript\nconst client = Client.buildClient({\n  storefrontAccessToken: 'your-shopify-token',\n  domain: 'your-shopify-url.myshopify.com'\n});\nstore.dispatch({type: 'CLIENT_CREATED', payload: client});\n```\n\nIn the Shopify buy SDK example, there are a few async calls to get information\nabout the products and store information in React’s `componentWillMount()`\nfunction. That code looks like this:\n\n```javascript\ncomponentWillMount() {\n    this.props.client.checkout.create().then((res) => {\n      this.setState({\n        checkout: res,\n      });\n    });\n\n    this.props.client.product.fetchAll().then((res) => {\n      this.setState({\n        products: res,\n      });\n    });\n\n    this.props.client.shop.fetchInfo().then((res) => {\n      this.setState({\n        shop: res,\n      });\n    });\n  }\n  ```\n\nI opted to do that instead as far upstream as possible, directly in `index.js`.\nThen, I issued a corresponding event when each part of the response has been\nreceived:\n\n```javascript\n// buildClient() is synchronous, so we can call all these after!\nclient.product.fetchAll().then((res) => {\n  store.dispatch({type: 'PRODUCTS_FOUND', payload: res});\n});\nclient.checkout.create().then((res) => {\n  store.dispatch({type: 'CHECKOUT_FOUND', payload: res});\n});\nclient.shop.fetchInfo().then((res) => {\n  store.dispatch({type: 'SHOP_FOUND', payload: res});\n});\n```\n\nBy now the reducer is created, and the initialization of the Shopify API\n`client` is complete all for`index.js`.\n\n#### Back to `App.js`\n\nNow in `App.js`, wire up Redux’s store to the App state:\n\n```javascript\nimport { connect } from 'react-redux';\n```\n\nand don’t forget to import the store as well:\n\n```javascript\nimport store from './store';\n```\n\nAt the bottom where `export default App` should be, modify it to this:\n\n```javascript\nexport default connect((state) => state)(App);\n```\n\nThis connects the redux state to the `App` component.\n\nNow in the `render()` function we are able to access the Redux’s state with\nRedux’s `getState()` (as apposed to using vanilla react’s `this.state`):\n\n```javascript\nrender() {\n    ...    \n    const state = store.getState();\n}\n```\n\n#### Finally: the Event Handlers (Still in App.js)\n\nFrom above, you know that there are only three event handlers that we need in\n`App.js`, because the cart uses only three: `updateQuantityInCart`,\n`removeLineItemInCart`, and `handleCartClose`. The original cart event handlers\nfrom the example GitHub repository, which used local component state looked like\nthis:\n\n```javascript\nupdateQuantityInCart(lineItemId, quantity) {\n  const checkoutId = this.state.checkout.id\n  const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]\n\nreturn this.props.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n\nremoveLineItemInCart(lineItemId) {\n  const checkoutId = this.state.checkout.id\n\nreturn this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n\nhandleCartClose() {\n  this.setState({\n    isCartOpen: false,\n  });\n}\n```\n\nWe can refactor them to dispatch events to the Redux store as follows:\n\n```javascript\nupdateQuantityInCart(lineItemId, quantity) {\n    const state = store.getState(); // state from redux store\n    const checkoutId = state.checkout.id\n    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]\n    state.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {\n      store.dispatch({type: 'UPDATE_QUANTITY_IN_CART', payload: {checkout: res}});\n    });\n}\nremoveLineItemInCart(lineItemId) {\n    const state = store.getState(); // state from redux store\n    const checkoutId = state.checkout.id\n    state.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {\n      store.dispatch({type: 'REMOVE_LINE_ITEM_IN_CART', payload: {checkout: res}});\n    });\n}\nhandleCartClose() {\n    store.dispatch({type: 'CLOSE_CART'});\n}\nhandleCartOpen() {\n    store.dispatch({type: 'OPEN_CART'});\n}\n```\n\nYou can add these between the `constructor()` and `render()` methods as usual.\n\nIf you were following along, I already mentioned that I added my own\n`handleCartOpen` function, because I pass that function down as a prop to my\n`<Nav/>` component, so a user is able to open and close the cart from a link in\nthe nav. At a future time, I could move that function to the Nav itself instead\nof passing it as a prop, since of course the Redux store will also be avaliable\nthere!\n\n#### Finally Add that <Products/> Component!\n\nSo, you’ve got a basic store maybe with some simple `href`’s that link to the\ncorresponding product on your Shopify store? Ha! Throw those out, and replace\nthem with your brand spankin’ new `<Products/>` component!\n\nFirst, import the component into wherever your store markup should be (remember,\nin my code base I’ve put the shopify example components in a folder called\n`shopify/`)\n\nThis will be where ever your products currently are. (In[ the boilerplate\nrepository](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example)\nI made, I put this in the `GenericProductsPage` component, to signal that this\ncode could be applied to any page that has a products section):\n\n    import Products from './shopify/Products';\n\nNow finally, that past 15–20 minutes of redux boilerplate code edits pays off:\nwe can grab the `products` component of our state — not from a vanilla React\nstate passed down over and over again through props — but through grabbing it in\na neat one liner `const state = store.getState();`:\n\n\nrender () {\nconst state = store.getState(); // state from redux store\nlet oProducts = <Products\n  products={state.products}\n  client={state.client}\n  addVariantToCart={this.addVariantToCart}\n/>;\n\n\nDon’t forget to drop the component itself into where it should go in your\n`render()` function. For me, that location was buried in Bootstrap style classes\nand HTML:\n\n```javascript\n...\n<div className=\"service-content-one\">\n    <div className=\"row\">\n        <Products/>\n    </div>{/*/.row*/}\n</div>{/*/.service-content-one*/}\n...\n```\n\nFinally, we will need a single event function `addVariantToCart` for the cart to\nwork with this products component. Again, for reference, here is the original,\nvanilla React local `state` version of `addVariantToCar`(again, from the shopify\nexample repository):\n\n```javascript\naddVariantToCart(variantId, quantity){\n  this.setState({\n    isCartOpen: true,\n  });\n\nconst lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]\nconst checkoutId = this.state.checkout.id\n\nreturn this.props.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n```\n\nand the new, Redux-friendly `store.dispatch()` version:\n\n```javascript\naddVariantToCart(variantId, quantity) {\n    const state = store.getState(); // state from redux store\n    const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]\n    const checkoutId = state.checkout.id\n    state.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {\n      store.dispatch({type: 'ADD_VARIANT_TO_CART', payload: {isCartOpen: true, checkout: res}});\n    });\n}\n```\n\nwhich is of course the one we will use 😄\n\ndon’t forget to bind it in the constructor:\n\n```javascript\nthis.addVariantToCart = this.addVariantToCart.bind(this);\n```\n\nDon’t forget, you’ll need to connect this component to the store like you did\n`App.js` , and import the store:\n\n```javascript\nimport { connect } from 'react-redux'\nimport store from '../store';\n```\n\nat the top, and (assuming the component where you put the Shopify `Product`\ncomponent name is `GenericProductPage`:\n\n    export default connect((state) => state)(GenericProductsPage);\n\nat the bottom.\n\nGreat! Now, no matter how deep in components or where ever your products\ncomponent is declared, it can communicate with the cart’s state!\n\n#### Final BONUS Example: Cart in Your Header or Nav\n\nIf you want to have a ‘Cart’ button in your header / nav, add this button in\nyour Nav component’s render function (again, an example from my current site,\nwhich has Bootstrap styles — a very simple version is in the [boilerplate\nexample](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example):\n\n```javascript\n<div className=\"App__view-cart-wrapper\">\n<button className=\"App__view-cart\" onClick={this.props.handleCartOpen}>\n    Cart\n    </button>\n</div>\n```\n\nwhere `handleCartOpen` is a new handler method you’ll have to add to `App.js`:\n\n```javascript\nthis.handleCartOpen = this.handleCartOpen.bind(this);\n```\n\nin the constructor. Then when you are referencing your Nav component in App.js\n(or wherever you place your Nav) you pass the function handler:\n\n```javascript\n<Nav handleCartOpen={this.handleCartOpen}/>\n```\n\n#### Styling Component(s)\n\nI relied on the CSS file, `app.css`, located in the`shared/` folder in th e\n`storefront-api-example` repository (you can’t miss it, it’s the only file in\n`shared/` ! Make sure to copy that into your `styles/` folder or wherever it\nneeds to be and include it in your `index.js`file. In my `index.js` it looks\nlike this:\n\n```javascript\nimport './styles/shopify.css';\n```\n\nSince I renamed the `app.css` which was in the Shopify example repository to\n`shopify.css` , and put it folder `styles`. This convention is also used in the\nboilerplate repository code.\n\nFrom here it’s pretty easy to identify where exactly in `shopify.css` the\ndefault bright blue color for the buttons is defined, and so on. I’m going to\nsave detailed CSS customization for you to handle. 😃\n\nBut who knows, maybe I’ll post on that eventually — but I find the styles from\nShopify pretty good and easy enough to modify.\n\n#### Takeaways\n\nIn my opinion, this is a perfect (non-todo list 😜) use of Redux. Redux cleanly\norganizes the event functions and state of the Shopify cart and makes it easy to\naccess the cart’s state from any other component. This is much easier to\nmaintain than passing pieces of state to children and using multiple event\nhandlers to pass events back up to parent functions all over a React app.\n\nAs shown as an example in the tutorial, the cart’s state is accessed easily in\nthe nav component and the shop section of the front page. I’ll also be able to\neasily add it to a sort of ‘featured’ product section as well, once we’re ready\nfor that.\n\n#### Find the Code\n\nA boilerplate repository of this implementation [can be found\nhere](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example).\nIt is a near blank create-react-app app, but with all the changes of this\ntutorial implemented in `index.js` and `App.js` , as well as a super basic\n`GenericStorePage` and `Nav` components.\n\nI built the code on the repo while re-reading and updating my own tutorial here,\nto make sure this tutorial makes sense.\n\nBecause I am crazy 😜, Siren Apparel’s website is all open-sourced. So if you\nwant to fool around with my implementation, [check out the\nrespository!](https://github.com/frewinchristopher/sirenapparel.us)\n\nI hope you enjoyed this tutorial! If anything isn’t clear or just plain not\nworking, let me know! I’ll try to assist you!\n\nThanks to [Lisa Catalano](http://css-snippets.com/author/lisa/) at CSS-Snippets\nfor [the simple Nav\nexample](http://css-snippets.com/simple-horizontal-navigation/#code)!\n\nCheers! 🍺\n\nChris\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "e468fed0ea8291e4bae119d3ad0ac360",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "A Detailed Tutorial - Shopify's Storefront API + React + Redux",
+        "date": "2018-11-07",
+        "draft": false,
+        "_PARENT": "9fadf5b6-ea5a-53d7-ba8b-8283e2a97fc2"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\n_Originally published on the [Siren Apparel Press on Medium](https://medium.com/siren-apparel-press/adding-shopifys-storefront-api-to-an-existing-react-app-with-react-redux-ea442bd7543)_\n\n# A Detailed Tutorial: Shopify’s Storefront API + React + Redux\n\n## E-commerce for all! (…websites, that is 😄)\n\n*Written by *[Chris](https://medium.com/@frewin.christopher)* on Wednesday,\nAugust 22nd, 2018*\n\n![](https://cdn-images-1.medium.com/max/2000/1*HU6qT6c4a54QX-mnuPMj7w.jpeg)\n<span class=\"figcaption_hack\">Siren Apparel’s flagship shirt — Hydrant Removal.</span>\n\n#### Background and Motivation\n\nSo the motivation here was pretty simple. I wanted my users to be able to\nbrowse, search, and select products directly on my custom domain without having\nto go to Shopify.\n\nThe secondary motivation is that I’d much rather have my own codebase for a\nwebsite than use one of Shopify’s factory templates. No offence Shopify team!\nThe templates are modern and clean, but they are rather basic.\n\nSo this is the best of both worlds — my custom React site (already built and\nonline 😄), with the added API and checkout process of Shopify!\n\nBy the end of this tutorial, you’ll be able to add your Shopify products on\n*any* page of your site. The only part of the shopping process that will occur\non Shopify is when the user clicks ‘Checkout’.\n\nThe motivation specifically for writing here on Medium was simply that I\ncouldn’t find a tutorial on this process myself— so I decided to make one\nmyself!\n\nI’ve been a professional developer for 4 years now, and programming for 7. I’ve\nworked in tech stacks from old-school Fortran and Perl to React, Javascript, and\nNodejs.\n\nSiren Apparel is one of my side project / startup / maker company that I’ve run\nfor 5 years now, and we’ve donated to 5 different police and fire departments.\n\nLet’s finally get started with this tutorial.\n\n#### Shopify’s Storefront API\n\nThe wonderful folks at Shopify have put together the [Storefront\nAPI](https://help.shopify.com/en/api/custom-storefronts/storefront-api). With\nthe Storefront API, you can create React components to add product pictures,\nproduct variations, product sizes, a cart, and ‘add to cart’ and ‘checkout’\nbuttons into your own, non-Shopify site.\n\nNote that this tutorial is NOT about [Shopify\nPolaris](https://github.com/Shopify/polaris), which is used to create components\nin React for Shopify store management itself.\n\n#### Getting Started: `react-js-buy` Repository\n\nTake a look at [this React example built by the Shopify\nteam](https://github.com/Shopify/storefront-api-examples/tree/master/react-js-buy).\nMost of the code in this walkthrough tutorial comes from that repository.\n\n…Did you take a look? Good!\n\nNow we’re going to hop right into code! Head to your React site’s root folder\nand install the `shopify-buy` module via the terminal:\n\n```bash\ncd my-awesome-react-node-project/\nnpm install --save shopify-buy\n```\n\n(or `yarn add shopify-buy` if you prefer `yarn`)\n\nThen, in your frontend `index.js`, (note: NOT `App.js`!) you will need to import\n`Client` from the JS Buy SDK:\n\n```javascript\nimport Client from 'shopify-buy';\n```\n\nThen add the following configuration object above the `ReactDOM.render()`call:\n\n```javascript\nconst client = Client.buildClient({\n    storefrontAccessToken: 'your-access-token',\n    domain: 'your-shopify-url.myshopify.com'\n});\n```\n\nThat’s it for `index.js` for now — we’ll come back to it soon.\n\nNow we’re going to add in all the components needed for a smooth shopping and\ncheckout experience. Copy all the components from the `react-js-buy` repository:\n\n`Cart.js`\n\n`LineItem.js`\n\n`Product.js`\n\n`Products.js`\n\n`VariantSelector.js`\n\nWe will paste these components into a`components/shopify/` folder in your `src/`\nfolder. You could put these component files anywhere else in the `src/` folder,\nif you wished. The rest of the tutorial assumes you have put them in\n`components/shopify/` .\n\n#### Modifying App.js\n\n`App.js` will need extensive changes. First, import that Cart component you just\ncopied into your own project:\n\n    import Cart from './components/shopify/Cart';\n\nIf your `App.js` component was stateless, like mine, you should be safe copying\nthis entire `constructor()` function:\n\n```javascript\nconstructor() {\n    super();\n    this.updateQuantityInCart = this.updateQuantityInCart.bind(this);\n    this.removeLineItemInCart = this.removeLineItemInCart.bind(this);\n    this.handleCartClose = this.handleCartClose.bind(this);\n}\n```\n\nif you already have state, copy only those `bind` lines. They are event handler\nfunctions that the Shopify cart needs to function properly.\n\n“But what about state for the cart!?”\n\nYou may ask; or:\n\n“What about defining those four methods for the cart!?”\n\nIndeed, that’s coming, but not yet! 😄\n\nYou can then append the `<Cart/>` component to the bottom of your render()\nfunction, before the ending div. In my opinion, the cart should be accessible\nanywhere in your app. I think it makes sense then to put the `<Cart/>` component\nin the root component of your app:\n\n```javascript\n    return (\n    <div>\n    ...\n    <Cart\n        checkout={this.state.checkout}\n        isCartOpen={this.state.isCartOpen}\n        handleCartClose={this.handleCartClose}\n        updateQuantityInCart={this.updateQuantityInCart}\n        removeLineItemInCart={this.removeLineItemInCart}\n     />\n    </div>\n    );\n```\n\nSo, you may have noticed I didn’t include any code on the event handlers for the\ncart yet. Additionally, I didn’t address the lack of state components for the\ncart in App.js.\n\nWell, about halfway through this project, I realized my products component was\nnot in my `App.js` file.\n\nInstead, it was buried about three children components down.\n\nSo instead of passing products three levels down to children, and then function\nhandlers all the way back up…\n\nI decided to use…\n\n**😱 Redux!!! 😱**\n\nUgh! I know, I know, Redux, while not being very difficult, is a pain in the\n%*$! to wire up initially with all the boilerplate required. But, if you are a\ndeveloper working on an E-commerce store or an E-commerce store owner, think of\nit this way: Redux will enable you to access the state of the cart from any\ncomponent or page in our app.\n\nThis ability will be essential as Siren Apparel expands and we develop more\nproducts. As we create more products, I’ll make a seperate dedicated store page\nwith all products, while leaving just a handful of featured products on the\nhomepage.\n\nThe ability to access the cart is essential if a user shops around a bit, reads\nsome stories or info about Siren Apparel, and *then* decides to checkout. It\ndoesn’t matter how much they navigate around, nothing from their cart will be\nlost!\n\nSo, in short, I decided it’s probably better to implement Redux now while the\ncodebase for [our site](https://sirenapparel.us/) isn’t too large.\n\n#### Implementing Redux for Shopify Buy SDK With Bare Minimum Boilerplate\n\nInstall NPM packages `redux` and `react-redux`:\n\n    npm install --save redux react-redux\n\nIn `index.js` , import `Provider` from `react-redux`and your `store` from\n`./store`:\n\n```javascript\nimport { Provider } from 'react-redux';\nimport store from './store';\n```\n\nWrap the `<Provider>` component with the passed `store` around your`<App>`in\n`index.js`to hook up your App to your Redux store:\n\n```javascript\nReactDOM.render(\n<Provider store={store}>\n    <IntlProvider locale={locale} messages={flattenMessages(messages[locale.substring(0, 2)])}>\n      <App locale={locale}/>\n    </IntlProvider>\n </Provider>,\ndocument.getElementById('root')\n);\n```\n\nNote that I also have a `<IntlProvider>`, but that’s in [a different post about\nhow I applied internationalization and localization to dynamically render the\ncontent on Siren Apparel’s\nsite.](https://medium.com/@sirenapparel/internationalization-and-localization-of-sirenapparel-eu-sirenapparel-us-and-sirenapparel-asia-ddee266066a2)\nA different story for a different day.\n\nNow of course we haven’t made a `./store.js` file yet. Create your store in\n`store.js`in the `src/` root and put this in it:\n\n```javascript\nimport {createStore} from 'redux';\nimport reducer from './reducers/cart'; \n\nexport default createStore(reducer);\n```\n\nCreate your reducers file in `src/reducers/cart.js`and paste this code:\n\n```javascript\n// initial state\nconst initState = {\n  isCartOpen: false,\n  checkout: { lineItems: [] },\n  products: [],\n  shop: {}\n}\n\n// actions\nconst CLIENT_CREATED = 'CLIENT_CREATED'\nconst PRODUCTS_FOUND = 'PRODUCTS_FOUND'\nconst CHECKOUT_FOUND = 'CHECKOUT_FOUND'\nconst SHOP_FOUND = 'SHOP_FOUND'\nconst ADD_VARIANT_TO_CART = 'ADD_VARIANT_TO_CART'\nconst UPDATE_QUANTITY_IN_CART = 'UPDATE_QUANTITY_IN_CART'\nconst REMOVE_LINE_ITEM_IN_CART = 'REMOVE_LINE_ITEM_IN_CART'\nconst OPEN_CART = 'OPEN_CART'\nconst CLOSE_CART = 'CLOSE_CART'\n\n// reducers\nexport default (state = initState, action) => {\n  switch (action.type) {\n    case CLIENT_CREATED:\n      return {...state, client: action.payload}\n    case PRODUCTS_FOUND:\n      return {...state, products: action.payload}\n    case CHECKOUT_FOUND:\n      return {...state, checkout: action.payload}\n    case SHOP_FOUND:\n      return {...state, shop: action.payload}\n    case ADD_VARIANT_TO_CART:\n      return {...state, isCartOpen: action.payload.isCartOpen, checkout: action.payload.checkout}\n    case UPDATE_QUANTITY_IN_CART:\n      return {...state, checkout: action.payload.checkout}\n    case REMOVE_LINE_ITEM_IN_CART:\n      return {...state, checkout: action.payload.checkout}\n    case OPEN_CART:\n      return {...state, isCartOpen: true}\n    case CLOSE_CART:\n      return {...state, isCartOpen: false}\n    default:\n      return state\n  }\n}\n```\n\nDon’t worry, I’m not going to just post this big reducer and not discuss what is\ngoing on; we’ll get to each event! Note a few things:\n\nWe take the initial state from what the state is written as in the Shopify\nGitHub example and put it in our initState, namely the following four parts of\nstate:\n\n```javascript\nisCartOpen: false,\ncheckout: { lineItems: [] },\nproducts: [],\nshop: {}\n  ```\n\nHowever, in my implementation, I also create a `client` part of the state. I\ncall the `createClient()` function once and then immediately set it in the Redux\nstate in `index.js` . So let’s head into `index.js`:\n\n#### Back to index.js\n\n```javascript\nconst client = Client.buildClient({\n  storefrontAccessToken: 'your-shopify-token',\n  domain: 'your-shopify-url.myshopify.com'\n});\nstore.dispatch({type: 'CLIENT_CREATED', payload: client});\n```\n\nIn the Shopify buy SDK example, there are a few async calls to get information\nabout the products and store information in React’s `componentWillMount()`\nfunction. That code looks like this:\n\n```javascript\ncomponentWillMount() {\n    this.props.client.checkout.create().then((res) => {\n      this.setState({\n        checkout: res,\n      });\n    });\n\n    this.props.client.product.fetchAll().then((res) => {\n      this.setState({\n        products: res,\n      });\n    });\n\n    this.props.client.shop.fetchInfo().then((res) => {\n      this.setState({\n        shop: res,\n      });\n    });\n  }\n  ```\n\nI opted to do that instead as far upstream as possible, directly in `index.js`.\nThen, I issued a corresponding event when each part of the response has been\nreceived:\n\n```javascript\n// buildClient() is synchronous, so we can call all these after!\nclient.product.fetchAll().then((res) => {\n  store.dispatch({type: 'PRODUCTS_FOUND', payload: res});\n});\nclient.checkout.create().then((res) => {\n  store.dispatch({type: 'CHECKOUT_FOUND', payload: res});\n});\nclient.shop.fetchInfo().then((res) => {\n  store.dispatch({type: 'SHOP_FOUND', payload: res});\n});\n```\n\nBy now the reducer is created, and the initialization of the Shopify API\n`client` is complete all for`index.js`.\n\n#### Back to `App.js`\n\nNow in `App.js`, wire up Redux’s store to the App state:\n\n```javascript\nimport { connect } from 'react-redux';\n```\n\nand don’t forget to import the store as well:\n\n```javascript\nimport store from './store';\n```\n\nAt the bottom where `export default App` should be, modify it to this:\n\n```javascript\nexport default connect((state) => state)(App);\n```\n\nThis connects the redux state to the `App` component.\n\nNow in the `render()` function we are able to access the Redux’s state with\nRedux’s `getState()` (as apposed to using vanilla react’s `this.state`):\n\n```javascript\nrender() {\n    ...    \n    const state = store.getState();\n}\n```\n\n#### Finally: the Event Handlers (Still in App.js)\n\nFrom above, you know that there are only three event handlers that we need in\n`App.js`, because the cart uses only three: `updateQuantityInCart`,\n`removeLineItemInCart`, and `handleCartClose`. The original cart event handlers\nfrom the example GitHub repository, which used local component state looked like\nthis:\n\n```javascript\nupdateQuantityInCart(lineItemId, quantity) {\n  const checkoutId = this.state.checkout.id\n  const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]\n\nreturn this.props.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n\nremoveLineItemInCart(lineItemId) {\n  const checkoutId = this.state.checkout.id\n\nreturn this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n\nhandleCartClose() {\n  this.setState({\n    isCartOpen: false,\n  });\n}\n```\n\nWe can refactor them to dispatch events to the Redux store as follows:\n\n```javascript\nupdateQuantityInCart(lineItemId, quantity) {\n    const state = store.getState(); // state from redux store\n    const checkoutId = state.checkout.id\n    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]\n    state.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {\n      store.dispatch({type: 'UPDATE_QUANTITY_IN_CART', payload: {checkout: res}});\n    });\n}\nremoveLineItemInCart(lineItemId) {\n    const state = store.getState(); // state from redux store\n    const checkoutId = state.checkout.id\n    state.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {\n      store.dispatch({type: 'REMOVE_LINE_ITEM_IN_CART', payload: {checkout: res}});\n    });\n}\nhandleCartClose() {\n    store.dispatch({type: 'CLOSE_CART'});\n}\nhandleCartOpen() {\n    store.dispatch({type: 'OPEN_CART'});\n}\n```\n\nYou can add these between the `constructor()` and `render()` methods as usual.\n\nIf you were following along, I already mentioned that I added my own\n`handleCartOpen` function, because I pass that function down as a prop to my\n`<Nav/>` component, so a user is able to open and close the cart from a link in\nthe nav. At a future time, I could move that function to the Nav itself instead\nof passing it as a prop, since of course the Redux store will also be avaliable\nthere!\n\n#### Finally Add that <Products/> Component!\n\nSo, you’ve got a basic store maybe with some simple `href`’s that link to the\ncorresponding product on your Shopify store? Ha! Throw those out, and replace\nthem with your brand spankin’ new `<Products/>` component!\n\nFirst, import the component into wherever your store markup should be (remember,\nin my code base I’ve put the shopify example components in a folder called\n`shopify/`)\n\nThis will be where ever your products currently are. (In[ the boilerplate\nrepository](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example)\nI made, I put this in the `GenericProductsPage` component, to signal that this\ncode could be applied to any page that has a products section):\n\n    import Products from './shopify/Products';\n\nNow finally, that past 15–20 minutes of redux boilerplate code edits pays off:\nwe can grab the `products` component of our state — not from a vanilla React\nstate passed down over and over again through props — but through grabbing it in\na neat one liner `const state = store.getState();`:\n\n\nrender () {\nconst state = store.getState(); // state from redux store\nlet oProducts = <Products\n  products={state.products}\n  client={state.client}\n  addVariantToCart={this.addVariantToCart}\n/>;\n\n\nDon’t forget to drop the component itself into where it should go in your\n`render()` function. For me, that location was buried in Bootstrap style classes\nand HTML:\n\n```javascript\n...\n<div className=\"service-content-one\">\n    <div className=\"row\">\n        <Products/>\n    </div>{/*/.row*/}\n</div>{/*/.service-content-one*/}\n...\n```\n\nFinally, we will need a single event function `addVariantToCart` for the cart to\nwork with this products component. Again, for reference, here is the original,\nvanilla React local `state` version of `addVariantToCar`(again, from the shopify\nexample repository):\n\n```javascript\naddVariantToCart(variantId, quantity){\n  this.setState({\n    isCartOpen: true,\n  });\n\nconst lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]\nconst checkoutId = this.state.checkout.id\n\nreturn this.props.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {\n    this.setState({\n      checkout: res,\n    });\n  });\n}\n```\n\nand the new, Redux-friendly `store.dispatch()` version:\n\n```javascript\naddVariantToCart(variantId, quantity) {\n    const state = store.getState(); // state from redux store\n    const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]\n    const checkoutId = state.checkout.id\n    state.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {\n      store.dispatch({type: 'ADD_VARIANT_TO_CART', payload: {isCartOpen: true, checkout: res}});\n    });\n}\n```\n\nwhich is of course the one we will use 😄\n\ndon’t forget to bind it in the constructor:\n\n```javascript\nthis.addVariantToCart = this.addVariantToCart.bind(this);\n```\n\nDon’t forget, you’ll need to connect this component to the store like you did\n`App.js` , and import the store:\n\n```javascript\nimport { connect } from 'react-redux'\nimport store from '../store';\n```\n\nat the top, and (assuming the component where you put the Shopify `Product`\ncomponent name is `GenericProductPage`:\n\n    export default connect((state) => state)(GenericProductsPage);\n\nat the bottom.\n\nGreat! Now, no matter how deep in components or where ever your products\ncomponent is declared, it can communicate with the cart’s state!\n\n#### Final BONUS Example: Cart in Your Header or Nav\n\nIf you want to have a ‘Cart’ button in your header / nav, add this button in\nyour Nav component’s render function (again, an example from my current site,\nwhich has Bootstrap styles — a very simple version is in the [boilerplate\nexample](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example):\n\n```javascript\n<div className=\"App__view-cart-wrapper\">\n<button className=\"App__view-cart\" onClick={this.props.handleCartOpen}>\n    Cart\n    </button>\n</div>\n```\n\nwhere `handleCartOpen` is a new handler method you’ll have to add to `App.js`:\n\n```javascript\nthis.handleCartOpen = this.handleCartOpen.bind(this);\n```\n\nin the constructor. Then when you are referencing your Nav component in App.js\n(or wherever you place your Nav) you pass the function handler:\n\n```javascript\n<Nav handleCartOpen={this.handleCartOpen}/>\n```\n\n#### Styling Component(s)\n\nI relied on the CSS file, `app.css`, located in the`shared/` folder in th e\n`storefront-api-example` repository (you can’t miss it, it’s the only file in\n`shared/` ! Make sure to copy that into your `styles/` folder or wherever it\nneeds to be and include it in your `index.js`file. In my `index.js` it looks\nlike this:\n\n```javascript\nimport './styles/shopify.css';\n```\n\nSince I renamed the `app.css` which was in the Shopify example repository to\n`shopify.css` , and put it folder `styles`. This convention is also used in the\nboilerplate repository code.\n\nFrom here it’s pretty easy to identify where exactly in `shopify.css` the\ndefault bright blue color for the buttons is defined, and so on. I’m going to\nsave detailed CSS customization for you to handle. 😃\n\nBut who knows, maybe I’ll post on that eventually — but I find the styles from\nShopify pretty good and easy enough to modify.\n\n#### Takeaways\n\nIn my opinion, this is a perfect (non-todo list 😜) use of Redux. Redux cleanly\norganizes the event functions and state of the Shopify cart and makes it easy to\naccess the cart’s state from any other component. This is much easier to\nmaintain than passing pieces of state to children and using multiple event\nhandlers to pass events back up to parent functions all over a React app.\n\nAs shown as an example in the tutorial, the cart’s state is accessed easily in\nthe nav component and the shop section of the front page. I’ll also be able to\neasily add it to a sort of ‘featured’ product section as well, once we’re ready\nfor that.\n\n#### Find the Code\n\nA boilerplate repository of this implementation [can be found\nhere](https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example).\nIt is a near blank create-react-app app, but with all the changes of this\ntutorial implemented in `index.js` and `App.js` , as well as a super basic\n`GenericStorePage` and `Nav` components.\n\nI built the code on the repo while re-reading and updating my own tutorial here,\nto make sure this tutorial makes sense.\n\nBecause I am crazy 😜, Siren Apparel’s website is all open-sourced. So if you\nwant to fool around with my implementation, [check out the\nrespository!](https://github.com/frewinchristopher/sirenapparel.us)\n\nI hope you enjoyed this tutorial! If anything isn’t clear or just plain not\nworking, let me know! I’ll try to assist you!\n\nThanks to [Lisa Catalano](http://css-snippets.com/author/lisa/) at CSS-Snippets\nfor [the simple Nav\nexample](http://css-snippets.com/simple-horizontal-navigation/#code)!\n\nCheers! 🍺\n\nChris\n",
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux/index.md",
+      "fields": {
+        "slug": "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "jsonName": "offline-plugin-app-shell-fallback-a30",
       "internalComponentName": "ComponentOfflinePluginAppShellFallback",
@@ -11077,7 +11194,18 @@
         "prev": {
           "$ref": "$[\"nodes\"][\"SitePage /using-google-clouds-text-to-speech-machine-learning-api/\"][\"context\"][\"next\"]"
         },
-        "next": null
+        "next": {
+          "fields": {
+            "slug": "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
+          },
+          "frontmatter": {
+            "date": "07 November, 2018",
+            "title": "A Detailed Tutorial - Shopify's Storefront API + React + Redux",
+            "draft": false,
+            "link": "https://chrisfrew.in/a-detailed-tutorial-shopify-storefront-apireact-redux/",
+            "relativeLink": "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
+          }
+        }
       },
       "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
@@ -11087,7 +11215,33 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5f52b01cd1f03f67d89a1ee85f7a087d",
+        "contentDigest": "cf116a8df4de3d3124313ccd79bedc73",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /a-detailed-tutorial-shopify-storefront-apireact-redux/": {
+      "jsonName": "a-detailed-tutorial-shopify-storefront-apireact-redux-198",
+      "internalComponentName": "ComponentADetailedTutorialShopifyStorefrontApireactRedux",
+      "path": "/a-detailed-tutorial-shopify-storefront-apireact-redux/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/a-detailed-tutorial-shopify-storefront-apireact-redux/",
+        "prev": {
+          "$ref": "$[\"nodes\"][\"SitePage /welp-i-did-it-i-quit/\"][\"context\"][\"next\"]"
+        },
+        "next": null
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /a-detailed-tutorial-shopify-storefront-apireact-redux/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2715a18ff1e6dd4710d98ce2b5720986",
         "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
         "owner": "internal-data-bridge"
       }
@@ -11273,7 +11427,8 @@
         "/towards-code-and-folder-organization-of-nodejs-server-applications/",
         "/using-google-clouds-text-to-speech-machine-learning-api/",
         "/welp-i-did-it-i-quit/",
-        "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+        "/warn-sap-users-of-locked-objects-then-kill-their-session/",
+        "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
       ],
       "c1c7ac29-b184-5fc6-a1b7-4f1a659ad325": [
         "/abap-push-and-message-channels/"
@@ -11373,6 +11528,9 @@
       ],
       "8b9df802-afd7-5ab9-9933-525548313895": [
         "/warn-sap-users-of-locked-objects-then-kill-their-session/"
+      ],
+      "f31dadc5-0e90-5db4-b3ec-6545da1f9766": [
+        "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
       ]
     },
     "connections": {
@@ -11389,7 +11547,7 @@
     }
   },
   "jsonDataPaths": {
-    "index": "59/path---index-6a9-Sos8ed1LaOofQJcsrgQEnCnYEM",
+    "index": "321/path---index-6a9-wgQYBeiUCt03PF3bAgZm43j8c0g",
     "abap-push-and-message-channels-6f8": "381/path---abap-push-and-message-channels-6-f-8-311-MiYwbGdM96si9ZXAdS8ZFCSSXDA",
     "a-toast-to-full-stack-developers-f96": "907/path---a-toast-to-full-stack-developers-f-96-e28-mUicuQyVQNxRGYAS9AGTf1rJ8w",
     "an-npm-christmas-easter-egg-58e": "157/path---an-npm-christmas-easter-egg-58-e-207-cROCzKFvTyX6Kpo0hauvWBW90",
@@ -11423,14 +11581,15 @@
     "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569": "91/path---led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569-e54-o1qQD6rip0Q81MzHGHt3blXlY",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "dynamically-assigning-variables-both-named-and-structured-in-sap-abap-439": "451/path---dynamically-assigning-variables-both-named-and-structured-in-sap-abap-439-65f-NZuapzHg3X9TaN1iIixfv1W23E",
-    "warn-sap-users-of-locked-objects-then-kill-their-session-1c8": "174/path---warn-sap-users-of-locked-objects-then-kill-their-session-1-c-8-c01-Qd1YeuxrBJaKPycAHaM7N9fw",
+    "warn-sap-users-of-locked-objects-then-kill-their-session-1c8": "118/path---warn-sap-users-of-locked-objects-then-kill-their-session-1-c-8-c01-f5qcG1VJjWcwuMwTTguudvgBBKQ",
     "welp-i-did-it-i-quit-6fd": "57/path---welp-i-did-it-i-quit-6-fd-711-H0UO6nGubwkLhAGW1pkwVGTVtg",
     "how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-d29": "938/path---how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-d-29-4f6-NZuapzHg3X9TaN1iIixfv1W23E",
     "market-news-feed-945": "381/path---market-news-feed-945-73e-NZuapzHg3X9TaN1iIixfv1W23E",
     "privacy-policy-6b7": "223/path---privacy-policy-6-b-7-610-NZuapzHg3X9TaN1iIixfv1W23E",
     "sec-filings-554": "914/path---sec-filings-554-374-NZuapzHg3X9TaN1iIixfv1W23E",
     "talk-shop-8cd": "967/path---talk-shop-8-cd-8f0-NZuapzHg3X9TaN1iIixfv1W23E",
-    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E"
+    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "a-detailed-tutorial-shopify-storefront-apireact-redux-198": "280/path---a-detailed-tutorial-shopify-storefront-apireact-redux-198-c5a-hzKcDF7786PkV4NCemHXAVVl9c"
   },
   "components": {
     "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js": {

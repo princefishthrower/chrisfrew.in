@@ -6,6 +6,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "a-detailed-tutorial-shopify-storefront-apireact-redux-198",
+        "path": "/a-detailed-tutorial-shopify-storefront-apireact-redux/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "a-toast-to-full-stack-developers-f96",
         "path": "/a-toast-to-full-stack-developers/"
     },

@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.38"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><title data-react-helmet="true">A Detailed Tutorial - Shopify&#x27;s Storefront API + React + Redux | Chris Frewin&#x27;s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, &amp; Natural Language Processing Blog.</title><meta data-react-helmet="true" name="description" content="Originally published on the  Siren Apparel Press on Medium A Detailed Tutorial: Shopify’s Storefront API + React + Redux E-commerce for all…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-42284710df4f041d8ded.js"/><link as="script" rel="preload" href="/app-13432db045243b83b867.js"/><link as="script" rel="preload" href="/1-73e9626bb6f3c18f4fc6.js"/><link as="script" rel="preload" href="/0-76a6cef713290ce3d60e.js"/><link as="script" rel="preload" href="/webpack-runtime-676c3d6234b7524e84f9.js"/><link rel="preload" href="/static/d/280/path---a-detailed-tutorial-shopify-storefront-apireact-redux-198-c5a-hzKcDF7786PkV4NCemHXAVVl9c.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/"><div>Chris&#x27;s <span style="color:#F92672">Full Stack</span>, <span style="color:#66D9EF">Web Development</span>, <span style="color:#A6E22E">ABAP</span>, <span style="color:#F92672">SAPUI5</span>, <span style="color:#66D9EF">Machine Learning</span>,  &amp; <span style="color:#A6E22E">Natural Language Processing</span> <span style="color:#F92672">Blog</span>.<br/></div></a></h3><h1>A Detailed Tutorial - Shopify&#x27;s Storefront API + React + Redux</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">November 07, 2018</p><div><p><em>Originally published on the <a href="https://medium.com/siren-apparel-press/adding-shopifys-storefront-api-to-an-existing-react-app-with-react-redux-ea442bd7543">Siren Apparel Press on Medium</a></em></p>
+<h1>A Detailed Tutorial: Shopify’s Storefront API + React + Redux</h1>
+<h2>E-commerce for all! (…websites, that is 😄)</h2>
+<p><em>Written by *<a href="https://medium.com/@frewin.christopher">Chris</a></em> on Wednesday,
+August 22nd, 2018*</p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*HU6qT6c4a54QX-mnuPMj7w.jpeg">
+<span class="figcaption_hack">Siren Apparel’s flagship shirt — Hydrant Removal.</span></p>
+<h4>Background and Motivation</h4>
+<p>So the motivation here was pretty simple. I wanted my users to be able to
+browse, search, and select products directly on my custom domain without having
+to go to Shopify.</p>
+<p>The secondary motivation is that I’d much rather have my own codebase for a
+website than use one of Shopify’s factory templates. No offence Shopify team!
+The templates are modern and clean, but they are rather basic.</p>
+<p>So this is the best of both worlds — my custom React site (already built and
+online 😄), with the added API and checkout process of Shopify!</p>
+<p>By the end of this tutorial, you’ll be able to add your Shopify products on
+<em>any</em> page of your site. The only part of the shopping process that will occur
+on Shopify is when the user clicks ‘Checkout’.</p>
+<p>The motivation specifically for writing here on Medium was simply that I
+couldn’t find a tutorial on this process myself— so I decided to make one
+myself!</p>
+<p>I’ve been a professional developer for 4 years now, and programming for 7. I’ve
+worked in tech stacks from old-school Fortran and Perl to React, Javascript, and
+Nodejs.</p>
+<p>Siren Apparel is one of my side project / startup / maker company that I’ve run
+for 5 years now, and we’ve donated to 5 different police and fire departments.</p>
+<p>Let’s finally get started with this tutorial.</p>
+<h4>Shopify’s Storefront API</h4>
+<p>The wonderful folks at Shopify have put together the <a href="https://help.shopify.com/en/api/custom-storefronts/storefront-api">Storefront
+API</a>. With
+the Storefront API, you can create React components to add product pictures,
+product variations, product sizes, a cart, and ‘add to cart’ and ‘checkout’
+buttons into your own, non-Shopify site.</p>
+<p>Note that this tutorial is NOT about <a href="https://github.com/Shopify/polaris">Shopify
+Polaris</a>, which is used to create components
+in React for Shopify store management itself.</p>
+<h4>Getting Started: <code class="language-text">react-js-buy</code> Repository</h4>
+<p>Take a look at <a href="https://github.com/Shopify/storefront-api-examples/tree/master/react-js-buy">this React example built by the Shopify
+team</a>.
+Most of the code in this walkthrough tutorial comes from that repository.</p>
+<p>…Did you take a look? Good!</p>
+<p>Now we’re going to hop right into code! Head to your React site’s root folder
+and install the <code class="language-text">shopify-buy</code> module via the terminal:</p>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code class="language-bash"><span class="token function">cd</span> my-awesome-react-node-project/
+<span class="token function">npm</span> <span class="token function">install</span> --save shopify-buy</code></pre>
+      </div>
+<p>(or <code class="language-text">yarn add shopify-buy</code> if you prefer <code class="language-text">yarn</code>)</p>
+<p>Then, in your frontend <code class="language-text">index.js</code>, (note: NOT <code class="language-text">App.js</code>!) you will need to import
+<code class="language-text">Client</code> from the JS Buy SDK:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> Client <span class="token keyword">from</span> <span class="token string">'shopify-buy'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Then add the following configuration object above the <code class="language-text">ReactDOM.render()</code>call:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> client <span class="token operator">=</span> Client<span class="token punctuation">.</span><span class="token function">buildClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    storefrontAccessToken<span class="token punctuation">:</span> <span class="token string">'your-access-token'</span><span class="token punctuation">,</span>
+    domain<span class="token punctuation">:</span> <span class="token string">'your-shopify-url.myshopify.com'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>That’s it for <code class="language-text">index.js</code> for now — we’ll come back to it soon.</p>
+<p>Now we’re going to add in all the components needed for a smooth shopping and
+checkout experience. Copy all the components from the <code class="language-text">react-js-buy</code> repository:</p>
+<p><code class="language-text">Cart.js</code></p>
+<p><code class="language-text">LineItem.js</code></p>
+<p><code class="language-text">Product.js</code></p>
+<p><code class="language-text">Products.js</code></p>
+<p><code class="language-text">VariantSelector.js</code></p>
+<p>We will paste these components into a<code class="language-text">components/shopify/</code> folder in your <code class="language-text">src/</code>
+folder. You could put these component files anywhere else in the <code class="language-text">src/</code> folder,
+if you wished. The rest of the tutorial assumes you have put them in
+<code class="language-text">components/shopify/</code> .</p>
+<h4>Modifying App.js</h4>
+<p><code class="language-text">App.js</code> will need extensive changes. First, import that Cart component you just
+copied into your own project:</p>
+<div class="gatsby-highlight">
+      <pre class="language-text"><code class="language-text">import Cart from &#39;./components/shopify/Cart&#39;;</code></pre>
+      </div>
+<p>If your <code class="language-text">App.js</code> component was stateless, like mine, you should be safe copying
+this entire <code class="language-text">constructor()</code> function:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>updateQuantityInCart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>updateQuantityInCart<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>removeLineItemInCart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>removeLineItemInCart<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleCartClose <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleCartClose<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>if you already have state, copy only those <code class="language-text">bind</code> lines. They are event handler
+functions that the Shopify cart needs to function properly.</p>
+<p>“But what about state for the cart!?”</p>
+<p>You may ask; or:</p>
+<p>“What about defining those four methods for the cart!?”</p>
+<p>Indeed, that’s coming, but not yet! 😄</p>
+<p>You can then append the <code class="language-text">&lt;Cart/&gt;</code> component to the bottom of your render()
+function, before the ending div. In my opinion, the cart should be accessible
+anywhere in your app. I think it makes sense then to put the <code class="language-text">&lt;Cart/&gt;</code> component
+in the root component of your app:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript">    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+    <span class="token operator">...</span>
+    <span class="token operator">&lt;</span>Cart
+        checkout<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>checkout<span class="token punctuation">}</span>
+        isCartOpen<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isCartOpen<span class="token punctuation">}</span>
+        handleCartClose<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleCartClose<span class="token punctuation">}</span>
+        updateQuantityInCart<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>updateQuantityInCart<span class="token punctuation">}</span>
+        removeLineItemInCart<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>removeLineItemInCart<span class="token punctuation">}</span>
+     <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>So, you may have noticed I didn’t include any code on the event handlers for the
+cart yet. Additionally, I didn’t address the lack of state components for the
+cart in App.js.</p>
+<p>Well, about halfway through this project, I realized my products component was
+not in my <code class="language-text">App.js</code> file.</p>
+<p>Instead, it was buried about three children components down.</p>
+<p>So instead of passing products three levels down to children, and then function
+handlers all the way back up…</p>
+<p>I decided to use…</p>
+<p><strong>😱 Redux!!! 😱</strong></p>
+<p>Ugh! I know, I know, Redux, while not being very difficult, is a pain in the
+%*$! to wire up initially with all the boilerplate required. But, if you are a
+developer working on an E-commerce store or an E-commerce store owner, think of
+it this way: Redux will enable you to access the state of the cart from any
+component or page in our app.</p>
+<p>This ability will be essential as Siren Apparel expands and we develop more
+products. As we create more products, I’ll make a seperate dedicated store page
+with all products, while leaving just a handful of featured products on the
+homepage.</p>
+<p>The ability to access the cart is essential if a user shops around a bit, reads
+some stories or info about Siren Apparel, and <em>then</em> decides to checkout. It
+doesn’t matter how much they navigate around, nothing from their cart will be
+lost!</p>
+<p>So, in short, I decided it’s probably better to implement Redux now while the
+codebase for <a href="https://sirenapparel.us/">our site</a> isn’t too large.</p>
+<h4>Implementing Redux for Shopify Buy SDK With Bare Minimum Boilerplate</h4>
+<p>Install NPM packages <code class="language-text">redux</code> and <code class="language-text">react-redux</code>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-text"><code class="language-text">npm install --save redux react-redux</code></pre>
+      </div>
+<p>In <code class="language-text">index.js</code> , import <code class="language-text">Provider</code> from <code class="language-text">react-redux</code>and your <code class="language-text">store</code> from
+<code class="language-text">./store</code>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Provider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Wrap the <code class="language-text">&lt;Provider&gt;</code> component with the passed <code class="language-text">store</code> around your<code class="language-text">&lt;App&gt;</code>in
+<code class="language-text">index.js</code>to hook up your App to your Redux store:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript">ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+<span class="token operator">&lt;</span>Provider store<span class="token operator">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>IntlProvider locale<span class="token operator">=</span><span class="token punctuation">{</span>locale<span class="token punctuation">}</span> messages<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">flattenMessages</span><span class="token punctuation">(</span>messages<span class="token punctuation">[</span>locale<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>App locale<span class="token operator">=</span><span class="token punctuation">{</span>locale<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>IntlProvider<span class="token operator">></span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>Provider<span class="token operator">></span><span class="token punctuation">,</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Note that I also have a <code class="language-text">&lt;IntlProvider&gt;</code>, but that’s in <a href="https://medium.com/@sirenapparel/internationalization-and-localization-of-sirenapparel-eu-sirenapparel-us-and-sirenapparel-asia-ddee266066a2">a different post about
+how I applied internationalization and localization to dynamically render the
+content on Siren Apparel’s
+site.</a>
+A different story for a different day.</p>
+<p>Now of course we haven’t made a <code class="language-text">./store.js</code> file yet. Create your store in
+<code class="language-text">store.js</code>in the <code class="language-text">src/</code> root and put this in it:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'redux'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> reducer <span class="token keyword">from</span> <span class="token string">'./reducers/cart'</span><span class="token punctuation">;</span> 
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span>reducer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Create your reducers file in <code class="language-text">src/reducers/cart.js</code>and paste this code:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token comment">// initial state</span>
+<span class="token keyword">const</span> initState <span class="token operator">=</span> <span class="token punctuation">{</span>
+  isCartOpen<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  checkout<span class="token punctuation">:</span> <span class="token punctuation">{</span> lineItems<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  products<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  shop<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// actions</span>
+<span class="token keyword">const</span> <span class="token constant">CLIENT_CREATED</span> <span class="token operator">=</span> <span class="token string">'CLIENT_CREATED'</span>
+<span class="token keyword">const</span> <span class="token constant">PRODUCTS_FOUND</span> <span class="token operator">=</span> <span class="token string">'PRODUCTS_FOUND'</span>
+<span class="token keyword">const</span> <span class="token constant">CHECKOUT_FOUND</span> <span class="token operator">=</span> <span class="token string">'CHECKOUT_FOUND'</span>
+<span class="token keyword">const</span> <span class="token constant">SHOP_FOUND</span> <span class="token operator">=</span> <span class="token string">'SHOP_FOUND'</span>
+<span class="token keyword">const</span> <span class="token constant">ADD_VARIANT_TO_CART</span> <span class="token operator">=</span> <span class="token string">'ADD_VARIANT_TO_CART'</span>
+<span class="token keyword">const</span> <span class="token constant">UPDATE_QUANTITY_IN_CART</span> <span class="token operator">=</span> <span class="token string">'UPDATE_QUANTITY_IN_CART'</span>
+<span class="token keyword">const</span> <span class="token constant">REMOVE_LINE_ITEM_IN_CART</span> <span class="token operator">=</span> <span class="token string">'REMOVE_LINE_ITEM_IN_CART'</span>
+<span class="token keyword">const</span> <span class="token constant">OPEN_CART</span> <span class="token operator">=</span> <span class="token string">'OPEN_CART'</span>
+<span class="token keyword">const</span> <span class="token constant">CLOSE_CART</span> <span class="token operator">=</span> <span class="token string">'CLOSE_CART'</span>
+
+<span class="token comment">// reducers</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span>state <span class="token operator">=</span> initState<span class="token punctuation">,</span> action<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>action<span class="token punctuation">.</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token constant">CLIENT_CREATED</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> client<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">PRODUCTS_FOUND</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> products<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">CHECKOUT_FOUND</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> checkout<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">SHOP_FOUND</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> shop<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">ADD_VARIANT_TO_CART</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> isCartOpen<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>isCartOpen<span class="token punctuation">,</span> checkout<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>checkout<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">UPDATE_QUANTITY_IN_CART</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> checkout<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>checkout<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">REMOVE_LINE_ITEM_IN_CART</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> checkout<span class="token punctuation">:</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>checkout<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">OPEN_CART</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> isCartOpen<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token constant">CLOSE_CART</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>state<span class="token punctuation">,</span> isCartOpen<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> state
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>Don’t worry, I’m not going to just post this big reducer and not discuss what is
+going on; we’ll get to each event! Note a few things:</p>
+<p>We take the initial state from what the state is written as in the Shopify
+GitHub example and put it in our initState, namely the following four parts of
+state:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript">isCartOpen<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+checkout<span class="token punctuation">:</span> <span class="token punctuation">{</span> lineItems<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+products<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+shop<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
+      </div>
+<p>However, in my implementation, I also create a <code class="language-text">client</code> part of the state. I
+call the <code class="language-text">createClient()</code> function once and then immediately set it in the Redux
+state in <code class="language-text">index.js</code> . So let’s head into <code class="language-text">index.js</code>:</p>
+<h4>Back to index.js</h4>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> client <span class="token operator">=</span> Client<span class="token punctuation">.</span><span class="token function">buildClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  storefrontAccessToken<span class="token punctuation">:</span> <span class="token string">'your-shopify-token'</span><span class="token punctuation">,</span>
+  domain<span class="token punctuation">:</span> <span class="token string">'your-shopify-url.myshopify.com'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'CLIENT_CREATED'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> client<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>In the Shopify buy SDK example, there are a few async calls to get information
+about the products and store information in React’s <code class="language-text">componentWillMount()</code>
+function. That code looks like this:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">componentWillMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        checkout<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>product<span class="token punctuation">.</span><span class="token function">fetchAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        products<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>shop<span class="token punctuation">.</span><span class="token function">fetchInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        shop<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre>
+      </div>
+<p>I opted to do that instead as far upstream as possible, directly in <code class="language-text">index.js</code>.
+Then, I issued a corresponding event when each part of the response has been
+received:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token comment">// buildClient() is synchronous, so we can call all these after!</span>
+client<span class="token punctuation">.</span>product<span class="token punctuation">.</span><span class="token function">fetchAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'PRODUCTS_FOUND'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'CHECKOUT_FOUND'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+client<span class="token punctuation">.</span>shop<span class="token punctuation">.</span><span class="token function">fetchInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'SHOP_FOUND'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>By now the reducer is created, and the initialization of the Shopify API
+<code class="language-text">client</code> is complete all for<code class="language-text">index.js</code>.</p>
+<h4>Back to <code class="language-text">App.js</code></h4>
+<p>Now in <code class="language-text">App.js</code>, wire up Redux’s store to the App state:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>and don’t forget to import the store as well:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>At the bottom where <code class="language-text">export default App</code> should be, modify it to this:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=></span> state<span class="token punctuation">)</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>This connects the redux state to the <code class="language-text">App</code> component.</p>
+<p>Now in the <code class="language-text">render()</code> function we are able to access the Redux’s state with
+Redux’s <code class="language-text">getState()</code> (as apposed to using vanilla react’s <code class="language-text">this.state</code>):</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>    
+    <span class="token keyword">const</span> state <span class="token operator">=</span> store<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<h4>Finally: the Event Handlers (Still in App.js)</h4>
+<p>From above, you know that there are only three event handlers that we need in
+<code class="language-text">App.js</code>, because the cart uses only three: <code class="language-text">updateQuantityInCart</code>,
+<code class="language-text">removeLineItemInCart</code>, and <code class="language-text">handleCartClose</code>. The original cart event handlers
+from the example GitHub repository, which used local component state looked like
+this:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">updateQuantityInCart</span><span class="token punctuation">(</span>lineItemId<span class="token punctuation">,</span> quantity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> checkoutId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+  <span class="token keyword">const</span> lineItemsToUpdate <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>id<span class="token punctuation">:</span> lineItemId<span class="token punctuation">,</span> quantity<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>quantity<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+
+<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">updateLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> lineItemsToUpdate<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      checkout<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">removeLineItemInCart</span><span class="token punctuation">(</span>lineItemId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> checkoutId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+
+<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">removeLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> <span class="token punctuation">[</span>lineItemId<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      checkout<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">handleCartClose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    isCartOpen<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>We can refactor them to dispatch events to the Redux store as follows:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">updateQuantityInCart</span><span class="token punctuation">(</span>lineItemId<span class="token punctuation">,</span> quantity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> store<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// state from redux store</span>
+    <span class="token keyword">const</span> checkoutId <span class="token operator">=</span> state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+    <span class="token keyword">const</span> lineItemsToUpdate <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>id<span class="token punctuation">:</span> lineItemId<span class="token punctuation">,</span> quantity<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>quantity<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+    state<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">updateLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> lineItemsToUpdate<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+      store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'UPDATE_QUANTITY_IN_CART'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> <span class="token punctuation">{</span>checkout<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">removeLineItemInCart</span><span class="token punctuation">(</span>lineItemId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> store<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// state from redux store</span>
+    <span class="token keyword">const</span> checkoutId <span class="token operator">=</span> state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+    state<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">removeLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> <span class="token punctuation">[</span>lineItemId<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+      store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'REMOVE_LINE_ITEM_IN_CART'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> <span class="token punctuation">{</span>checkout<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">handleCartClose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'CLOSE_CART'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">handleCartOpen</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'OPEN_CART'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>You can add these between the <code class="language-text">constructor()</code> and <code class="language-text">render()</code> methods as usual.</p>
+<p>If you were following along, I already mentioned that I added my own
+<code class="language-text">handleCartOpen</code> function, because I pass that function down as a prop to my
+<code class="language-text">&lt;Nav/&gt;</code> component, so a user is able to open and close the cart from a link in
+the nav. At a future time, I could move that function to the Nav itself instead
+of passing it as a prop, since of course the Redux store will also be avaliable
+there!</p>
+<h4>Finally Add that <Products/> Component!</h4>
+<p>So, you’ve got a basic store maybe with some simple <code class="language-text">href</code>’s that link to the
+corresponding product on your Shopify store? Ha! Throw those out, and replace
+them with your brand spankin’ new <code class="language-text">&lt;Products/&gt;</code> component!</p>
+<p>First, import the component into wherever your store markup should be (remember,
+in my code base I’ve put the shopify example components in a folder called
+<code class="language-text">shopify/</code>)</p>
+<p>This will be where ever your products currently are. (In<a href="https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example"> the boilerplate
+repository</a>
+I made, I put this in the <code class="language-text">GenericProductsPage</code> component, to signal that this
+code could be applied to any page that has a products section):</p>
+<div class="gatsby-highlight">
+      <pre class="language-text"><code class="language-text">import Products from &#39;./shopify/Products&#39;;</code></pre>
+      </div>
+<p>Now finally, that past 15–20 minutes of redux boilerplate code edits pays off:
+we can grab the <code class="language-text">products</code> component of our state — not from a vanilla React
+state passed down over and over again through props — but through grabbing it in
+a neat one liner <code class="language-text">const state = store.getState();</code>:</p>
+<p>render () {
+const state = store.getState(); // state from redux store
+let oProducts = <Products
+  products={state.products}
+  client={state.client}
+  addVariantToCart={this.addVariantToCart}
+/>;</p>
+<p>Don’t forget to drop the component itself into where it should go in your
+<code class="language-text">render()</code> function. For me, that location was buried in Bootstrap style classes
+and HTML:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token operator">...</span>
+<span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"service-content-one"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"row"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>Products<span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment">/*/.row*/</span><span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token punctuation">{</span><span class="token comment">/*/.service-content-one*/</span><span class="token punctuation">}</span>
+<span class="token operator">...</span></code></pre>
+      </div>
+<p>Finally, we will need a single event function <code class="language-text">addVariantToCart</code> for the cart to
+work with this products component. Again, for reference, here is the original,
+vanilla React local <code class="language-text">state</code> version of <code class="language-text">addVariantToCar</code>(again, from the shopify
+example repository):</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">addVariantToCart</span><span class="token punctuation">(</span>variantId<span class="token punctuation">,</span> quantity<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    isCartOpen<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> lineItemsToAdd <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>variantId<span class="token punctuation">,</span> quantity<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>quantity<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> checkoutId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+
+<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">addLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> lineItemsToAdd<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      checkout<span class="token punctuation">:</span> res<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>and the new, Redux-friendly <code class="language-text">store.dispatch()</code> version:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token function">addVariantToCart</span><span class="token punctuation">(</span>variantId<span class="token punctuation">,</span> quantity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> store<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// state from redux store</span>
+    <span class="token keyword">const</span> lineItemsToAdd <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>variantId<span class="token punctuation">,</span> quantity<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>quantity<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token keyword">const</span> checkoutId <span class="token operator">=</span> state<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span>id
+    state<span class="token punctuation">.</span>client<span class="token punctuation">.</span>checkout<span class="token punctuation">.</span><span class="token function">addLineItems</span><span class="token punctuation">(</span>checkoutId<span class="token punctuation">,</span> lineItemsToAdd<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=></span> <span class="token punctuation">{</span>
+      store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">'ADD_VARIANT_TO_CART'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> <span class="token punctuation">{</span>isCartOpen<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> checkout<span class="token punctuation">:</span> res<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>which is of course the one we will use 😄</p>
+<p>don’t forget to bind it in the constructor:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span>addVariantToCart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>addVariantToCart<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Don’t forget, you’ll need to connect this component to the store like you did
+<code class="language-text">App.js</code> , and import the store:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'../store'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>at the top, and (assuming the component where you put the Shopify <code class="language-text">Product</code>
+component name is <code class="language-text">GenericProductPage</code>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-text"><code class="language-text">export default connect((state) =&gt; state)(GenericProductsPage);</code></pre>
+      </div>
+<p>at the bottom.</p>
+<p>Great! Now, no matter how deep in components or where ever your products
+component is declared, it can communicate with the cart’s state!</p>
+<h4>Final BONUS Example: Cart in Your Header or Nav</h4>
+<p>If you want to have a ‘Cart’ button in your header / nav, add this button in
+your Nav component’s render function (again, an example from my current site,
+which has Bootstrap styles — a very simple version is in the <a href="https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example">boilerplate
+example</a>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"App__view-cart-wrapper"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>button className<span class="token operator">=</span><span class="token string">"App__view-cart"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>handleCartOpen<span class="token punctuation">}</span><span class="token operator">></span>
+    Cart
+    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+      </div>
+<p>where <code class="language-text">handleCartOpen</code> is a new handler method you’ll have to add to <code class="language-text">App.js</code>:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">this</span><span class="token punctuation">.</span>handleCartOpen <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleCartOpen<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>in the constructor. Then when you are referencing your Nav component in App.js
+(or wherever you place your Nav) you pass the function handler:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>Nav handleCartOpen<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleCartOpen<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span></code></pre>
+      </div>
+<h4>Styling Component(s)</h4>
+<p>I relied on the CSS file, <code class="language-text">app.css</code>, located in the<code class="language-text">shared/</code> folder in th e
+<code class="language-text">storefront-api-example</code> repository (you can’t miss it, it’s the only file in
+<code class="language-text">shared/</code> ! Make sure to copy that into your <code class="language-text">styles/</code> folder or wherever it
+needs to be and include it in your <code class="language-text">index.js</code>file. In my <code class="language-text">index.js</code> it looks
+like this:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token string">'./styles/shopify.css'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Since I renamed the <code class="language-text">app.css</code> which was in the Shopify example repository to
+<code class="language-text">shopify.css</code> , and put it folder <code class="language-text">styles</code>. This convention is also used in the
+boilerplate repository code.</p>
+<p>From here it’s pretty easy to identify where exactly in <code class="language-text">shopify.css</code> the
+default bright blue color for the buttons is defined, and so on. I’m going to
+save detailed CSS customization for you to handle. 😃</p>
+<p>But who knows, maybe I’ll post on that eventually — but I find the styles from
+Shopify pretty good and easy enough to modify.</p>
+<h4>Takeaways</h4>
+<p>In my opinion, this is a perfect (non-todo list 😜) use of Redux. Redux cleanly
+organizes the event functions and state of the Shopify cart and makes it easy to
+access the cart’s state from any other component. This is much easier to
+maintain than passing pieces of state to children and using multiple event
+handlers to pass events back up to parent functions all over a React app.</p>
+<p>As shown as an example in the tutorial, the cart’s state is accessed easily in
+the nav component and the shop section of the front page. I’ll also be able to
+easily add it to a sort of ‘featured’ product section as well, once we’re ready
+for that.</p>
+<h4>Find the Code</h4>
+<p>A boilerplate repository of this implementation <a href="https://github.com/frewinchristopher/react-redux-shopify-storefront-api-example">can be found
+here</a>.
+It is a near blank create-react-app app, but with all the changes of this
+tutorial implemented in <code class="language-text">index.js</code> and <code class="language-text">App.js</code> , as well as a super basic
+<code class="language-text">GenericStorePage</code> and <code class="language-text">Nav</code> components.</p>
+<p>I built the code on the repo while re-reading and updating my own tutorial here,
+to make sure this tutorial makes sense.</p>
+<p>Because I am crazy 😜, Siren Apparel’s website is all open-sourced. So if you
+want to fool around with my implementation, <a href="https://github.com/frewinchristopher/sirenapparel.us">check out the
+respository!</a></p>
+<p>I hope you enjoyed this tutorial! If anything isn’t clear or just plain not
+working, let me know! I’ll try to assist you!</p>
+<p>Thanks to <a href="http://css-snippets.com/author/lisa/">Lisa Catalano</a> at CSS-Snippets
+for <a href="http://css-snippets.com/simple-horizontal-navigation/#code">the simple Nav
+example</a>!</p>
+<p>Cheers! 🍺</p>
+<p>Chris</p></div><hr style="margin-bottom:1.75rem"/><p><a href="/warn-sap-users-of-locked-objects-then-kill-their-session/">Previous Post: <!-- -->Warn SAP Users of Locked Objects Then Kill Their Session</a></p><p></p><hr style="margin-bottom:1.75rem"/><div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-63301492-1', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"a-detailed-tutorial-shopify-storefront-apireact-redux-198","path":"/a-detailed-tutorial-shopify-storefront-apireact-redux/"};window.dataPath="280/path---a-detailed-tutorial-shopify-storefront-apireact-redux-198-c5a-hzKcDF7786PkV4NCemHXAVVl9c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-13432db045243b83b867.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-784c623eea3d512d4431.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css","/component---src-templates-blog-post-js-42284710df4f041d8ded.js"],"component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js":["/component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js-273d889f4ff698edb463.js"],"component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js":["/component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js-55731f6269036a17357b.js"],"component---src-pages-index-js":["/component---src-pages-index-js.0edd79b42c04d2aa468b.css","/component---src-pages-index-js-6094cee6a6473f5acc1e.js"],"component---src-pages-market-news-feed-index-js":["/component---src-pages-market-news-feed-index-js-17fd4bbabc70864b0b66.js"],"component---src-pages-privacy-policy-index-js":["/component---src-pages-privacy-policy-index-js-6c4a99e3b3142485ff8c.js"],"component---src-pages-sec-filings-index-js":["/component---src-pages-sec-filings-index-js-91773d911fec7c18b4b1.js"],"component---src-pages-talk-shop-index-js":["/component---src-pages-talk-shop-index-js-e9a9b8485ec28b37dfd6.js"]};/*]]>*/</script><script src="/webpack-runtime-676c3d6234b7524e84f9.js" async=""></script><script src="/0-76a6cef713290ce3d60e.js" async=""></script><script src="/1-73e9626bb6f3c18f4fc6.js" async=""></script><script src="/app-13432db045243b83b867.js" async=""></script><script src="/component---src-templates-blog-post-js-42284710df4f041d8ded.js" async=""></script></body></html>
