@@ -1,4 +1,5 @@
 import Emoji from 'react-emoji-render';
+import { rhythm, scale } from '../../utils/typography'
 
 // custom components
 import CodeCopier from '../../components/CodeCopier';
@@ -73,35 +74,44 @@ class Post extends React.Component {
   render () {
     return (
       <div>
-        <h1>Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP</h1>
-        <p className="jsPostsDate">12 October, 2018</p>
-        <p>So, let's say you've got some, uh, let's just say for now... <i>not perfectly written</i> ABAP code. Something that looks like this:</p>
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+          <h1>Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP</h1>
+          <p className="jsPostsDate">12 October, 2018</p>
+          <p>So, let's say you've got some, uh, let's just say for now... <i>not perfectly written</i> ABAP code. Something that looks like this:</p>
 
-        <CodeCopier sLanguage='abap' sCode={sCodeSnippet1}/>
+          <CodeCopier sLanguage='abap' sCode={sCodeSnippet1}/>
 
-        <br/>
+          <br/>
 
-        <p>Yep. Super repetitive variable names.</p>
+          <p>Yep. Super repetitive variable names.</p>
 
-        <p>We don't know why a developer wrote code like that, and we don't know why he or she wouldn't utilize a structure or table, but we don't really care. <Emoji text=":wink:"/></p>
+          <p>We don't know why a developer wrote code like that, and we don't know why he or she wouldn't utilize a structure or table, but we don't really care. <Emoji text=":wink:"/></p>
 
-        <p>Let's assume we've gotta make a modification to such a program and we need to loop through all those variables. Instead of otherwise copying a similiar pattern of all those variable names which would be horrible, we can apply dynamic variable assignment by building a string that is identical to the variables actual name in the ABAP source code, and reading that into a field symbol.</p>
+          <p>Let's assume we've gotta make a modification to such a program and we need to loop through all those variables. Instead of otherwise copying a similiar pattern of all those variable names which would be horrible, we can apply dynamic variable assignment by building a string that is identical to the variables actual name in the ABAP source code, and reading that into a field symbol.</p>
 
-        <p>Below are copy/pastable examples showing how to do this for both plain variables and components of a structure you may want to snag.</p>
+          <p>Below are copy/pastable examples showing how to do this for both plain variables and components of a structure you may want to snag.</p>
 
-        <h2>Dynamic Variable Assignment for Global Variables</h2>
+          <h2>Dynamic Variable Assignment for Global Variables</h2>
 
-        <CodeCopier sLanguage='abap' sCode={sCodeSnippet2}/>
+          <CodeCopier sLanguage='abap' sCode={sCodeSnippet2}/>
 
-        <h2>Dynamic Variable Assignment for Components of Line Structure Variables</h2>
+          <h2>Dynamic Variable Assignment for Components of Line Structure Variables</h2>
 
-        <CodeCopier sLanguage='abap' sCode={sCodeSnippet3}/>
+          <CodeCopier sLanguage='abap' sCode={sCodeSnippet3}/>
 
-        <p>And that's it!</p>
+          <p>And that's it!</p>
 
-        <p>Cheers! <Emoji text=":beer:"/></p>
+          <p>Cheers! <Emoji text=":beer:"/></p>
 
-        <p>Chris</p>
+          <p>Chris</p>
+        </div>
       </div>
     )
   }
