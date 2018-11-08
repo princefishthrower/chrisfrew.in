@@ -3,9 +3,13 @@ import React from 'react'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-
-import profilePic from '../images/defaultprofilepicture.png'
 import { rhythm } from '../utils/typography'
+
+// imaages
+import profilePic from '../images/defaultprofilepicture.png'
+
+// custom components
+import MailchimpSignup from './MailchimpSignup';
 
 const oBioPicture = (
   <img
@@ -73,6 +77,12 @@ const oBioText = (
   </p>
 );    
 
+const oRSSFeedInformation = (
+  <div>
+    <sub>(If email isn't your thing, no worries! You can subscribe to my RSS feed using <b>https://chrisfrew.in/rss.xml</b>)</sub>
+  </div>
+)
+
 class Bio extends React.Component {
   constructor() {
     super();
@@ -91,6 +101,7 @@ class Bio extends React.Component {
     let oBio;
     if (window.innerHeight >= 768) {
       oBio = ( // desktop and tablet configuration: split text + picture
+        <div>
         <div
           style={{
             display: 'flex',
@@ -98,8 +109,11 @@ class Bio extends React.Component {
           }}
         >
           {oBioPicture}
-          {oBioText}
+          {oBioText}      
         </div>
+        <MailchimpSignup/>
+        {oRSSFeedInformation}
+      </div>
       );
     } else {
       oBio = ( // mobile configuration
@@ -119,7 +133,10 @@ class Bio extends React.Component {
             }}
           >
             {oBioText}
+            
           </div>
+          <MailchimpSignup/>
+          {oRSSFeedInformation}
         </div>
       );
     }
