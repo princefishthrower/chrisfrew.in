@@ -1,5 +1,5 @@
 import Emoji from 'react-emoji-render';
-import { rhythm, scale } from '../../utils/typography'
+import { rhythm } from '../../utils/typography'
 
 // custom components
 import CodeCopier from '../../components/CodeCopier';

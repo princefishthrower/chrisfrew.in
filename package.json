@@ -65,7 +65,8 @@
     "eslint": "^4.11.0",
     "eslint-plugin-react": "^7.5.1",
     "loader-utils": "^1.1.0",
-    "prettier": "^1.8.2"
+    "prettier": "^1.8.2",
+    "react-image-webp": "^0.2.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

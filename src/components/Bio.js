@@ -1,19 +1,20 @@
 import React from 'react'
 
+// other third party
+import Image from 'react-image-webp';
+
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 import { rhythm } from '../utils/typography'
 
-// imaages
-import profilePic from '../images/defaultprofilepicture.png'
-
 // custom components
 import MailchimpSignup from './MailchimpSignup';
 
 const oBioPicture = (
-  <img
-    src={profilePic}
+  <Image
+    webp={require('../images/defaultprofilepicture.webp')}
+    src={require('../images/defaultprofilepicture.png')}
     alt={`Chris Frewin`}
     style={{
       marginRight: rhythm(1 / 2),
@@ -29,13 +30,13 @@ const oBioText = (
   <p>
     Hi, I'm <strong>Chris Frewin</strong>, I run and post on
     {' '}
-    <a href="https://nlp-champs.com" target="_blank">
+    <a href="https://nlp-champs.com" target="_blank" rel="noopener noreferrer">
       nlp-champs.com
     </a>
     {' '}
-    and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank">charity clothing company</a>
+    and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank" rel="noopener noreferrer">charity clothing company</a>
     {' '}
-    <a href="https://sirenapparel.us" target="_blank">
+    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">
       Siren Apparel
     </a>
     .
@@ -58,11 +59,11 @@ const oBioText = (
     <br/>
     I'm a proud member of Dev.to, Product Hunt's Makers Community, and Egghead.io's Community!
     <br/>
-    <a target="_blank" href="https://dev.to/frewinchristopher" style={{textDecoration:'none'}}>
+    <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher" style={{textDecoration:'none'}}>
       <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="fullStackChris's DEV Profile" height="30" width="30" />
     </a>
     &nbsp;
-    <a target="_blank" href="https://producthunt.com/@galt_" style={{textDecoration:'none'}}>
+    <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_" style={{textDecoration:'none'}}>
       <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
               <path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path>
@@ -71,15 +72,15 @@ const oBioText = (
       </svg>
     </a>
     &nbsp;
-    <a target="_blank" href="https://community.egghead.io/members/1420280">
-      <img src="https://egghead.io/favicon.ico?v=2" width="30"/>
+    <a target="_blank" rel="noopener noreferrer" href="https://community.egghead.io/members/1420280">
+      <img src="https://egghead.io/favicon.ico?v=2" alt="Egghead.io favicon" width="30"/>
     </a>
   </p>
 );    
 
 const oRSSFeedInformation = (
   <div>
-    <sub>(If email isn't your thing, no worries! You can subscribe to my RSS feed using <b>https://chrisfrew.in/rss.xml</b>)</sub>
+    <sub>If email isn't your thing, no worries! You can subscribe to my RSS feed using:<br/><br/><b>https://chrisfrew.in/rss.xml</b></sub>
   </div>
 )
 

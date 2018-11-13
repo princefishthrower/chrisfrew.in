@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import SyntaxHighlighter from "react-syntax-highlighter";
@@ -41,9 +40,9 @@ class CodeCopier extends React.Component {
         </SyntaxHighlighter>    
         <CopyToClipboard text={this.props.sCode}
           onCopy={this.notify}>
-          <a className="copyButton">
-            <span><img width="25px" style={{marginBottom: '0px'}} src={copySVG}/></span>
-          </a>
+          <button className="copyButton">
+            <span><img width="25px" alt="Copy icon" style={{marginBottom: '0px'}} src={copySVG}/></span>
+          </button>
         </CopyToClipboard>
         <ToastContainer autoClose={2000} hideProgressBar={true} pauseOnHover={false} closeButton={false}/>
       </div>

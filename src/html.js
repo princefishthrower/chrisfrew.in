@@ -4,16 +4,17 @@ import PropTypes from "prop-types"
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes}>
+      <html {...this.props.htmlAttributes} lang="en">
         <head>
+          <title>Chris Frewin's Full Stack Blog</title>
           <meta charSet="utf-8" />
+          <meta name="Description" content="Chris's full stack blog on topics including SAP ABAP, SAPUI5, OpenUI5, web development, backend development, machine learning, and natural language processing. Also always a bit about freelancing, work, money, and retirement, and life philosophy."/>
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"/>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

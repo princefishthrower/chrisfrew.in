@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
@@ -29,7 +28,7 @@ class MarketNews extends React.Component {
         let oDate = new Date(oNewsItem.iUnixDateTime*1000);
         this.setState({ [oNewsItem.sId]: "newNewsNotification" });
         console.log(oNewsItem);
-        aItems.unshift(<li key={oNewsItem.sId} className={this.state[oNewsItem.sId]}><a href={oNewsItem.sLink} target="_blank" className="newNewsNotification">{oNewsItem.sIdentifier}, {oDate.toLocaleString()}: {oNewsItem.sTitle}</a></li>);
+        aItems.unshift(<li key={oNewsItem.sId} className={this.state[oNewsItem.sId]}><a href={oNewsItem.sLink} target="_blank" rel="noopener noreferrer" className="newNewsNotification">{oNewsItem.sIdentifier}, {oDate.toLocaleString()}: {oNewsItem.sTitle}</a></li>);
         setTimeout(() => { this.setState({ [oNewsItem.sId]: "" }); }, 6000); // need to remove the animation class after it is done (5 seconds + 1 second buffer)
         this.setState({aListItems: aItems});
         if (Notification.permission === "granted") {
@@ -72,7 +71,7 @@ class MarketNews extends React.Component {
           let oDate;
           response.data.forEach((oNewsItem, iIndex) => {
             oDate = new Date(oNewsItem.unix_time_released*1000);
-            aItems.push(<li key={oNewsItem.id}><a href={oNewsItem.link} target="_blank">{oNewsItem.identifier}, {oDate.toLocaleString()}: {oNewsItem.title}</a></li>);
+            aItems.push(<li key={oNewsItem.id}><a href={oNewsItem.link} target="_blank" rel="noopener noreferrer">{oNewsItem.identifier}, {oDate.toLocaleString()}: {oNewsItem.title}</a></li>);
             if (iIndex + 1 === response.data.length) {
               that.setState({aListItems: aItems});
             }

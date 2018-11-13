@@ -5,8 +5,8 @@ const fs = require('fs') // added to write metadata file
 const { createFilePath } = require('gatsby-source-filesystem')
 fs.writeFile('./static/metadata.json', '[', function(){console.log('metadata.json cleared!')}) // clear
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
@@ -122,8 +122,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark` || node.internal.type === `JavascriptFrontmatter`) {
     const value = createFilePath({ node, getNode })

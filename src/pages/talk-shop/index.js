@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import axios from 'axios'
 import { rhythm, scale } from '../../utils/typography'
 
 class TalkShop extends React.Component {    
@@ -9,6 +7,12 @@ class TalkShop extends React.Component {
       return (
         <div>
            <Helmet title="Hire Me" />
+           <div style={{
+             ...scale(-1 / 5),
+             display: 'block',
+             marginBottom: rhythm(1),
+             marginTop: rhythm(-1),
+           }}>
            <h1>Hire Me</h1>
            <p>
              If you've been poking around my blog or found me some other way and think that my skills and interests could be of use to you or your company, feel free to send me an offer on <a href="https://www.moonlightwork.com/app/users/5107">my moonlightwork.com profile</a>.
@@ -30,6 +34,7 @@ class TalkShop extends React.Component {
            <p>
              If you just want to contact me directly with an idea or offer, send me an email at <a href="mailto:frewin.christopher@gmail.com">frewin.christopher@gmail.com</a> and let's see what we can do!
            </p>
+          </div>
         </div>
       );
     }

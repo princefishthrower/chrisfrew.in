@@ -5,10 +5,10 @@ import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
 import { graphql } from 'gatsby'
 
-const BlogPostTemplate = ({data, location, pathContext}) => {
+const BlogPostTemplate = ({data, location, pageContext}) => {
     const { markdownRemark: post } = data;
     const { frontmatter, html } = post;
-    const { next, prev } = pathContext;
+    const { next, prev } = pageContext;
     const { title, date } = frontmatter;
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;

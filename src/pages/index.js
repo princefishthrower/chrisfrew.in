@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
           <Bio />
           { sortedPosts.map(({ node }) => {
             if (node.frontmatter.draft) {
-              return; // if the markdown is still a 'draft post'
+              return null; // if the markdown is still a 'draft post'
             }
             if (i === aColors.length) {
               i = 0;
