@@ -2183,12 +2183,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-13T15:44:43.048Z",
+      "buildTime": "2018-11-17T13:07:04.938Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "da039d4cb016c44c10e9c758c93a15fe",
+        "contentDigest": "2f03a82a4bde218db498912ae785f97e",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2198,7 +2198,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6b84061693c612a9c3ec8e727b70a3b7",
+        "contentDigest": "f81d9fc91ca021063410b3b5224bb34e",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -2207,11 +2207,11 @@
       "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages",
       "relativePath": "",
       "extension": "",
-      "size": 1408,
-      "prettySize": "1.41 kB",
-      "modifiedTime": "2018-11-07T10:19:21.931Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
-      "changeTime": "2018-11-07T10:19:21.931Z",
+      "size": 1440,
+      "prettySize": "1.44 kB",
+      "modifiedTime": "2018-11-17T12:38:13.163Z",
+      "accessTime": "2018-11-17T13:07:07.571Z",
+      "changeTime": "2018-11-17T12:38:13.163Z",
       "birthTime": "2018-11-07T08:20:32.483Z",
       "root": "/",
       "dir": "/Users/chris/projects/chrisfrew.in/src",
@@ -2221,20 +2221,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 44,
+      "nlink": 45,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
       "ino": 8617882965,
       "blocks": 0,
-      "atimeMs": 1542123887158.9202,
-      "mtimeMs": 1541585961930.5168,
-      "ctimeMs": 1541585961930.5168,
+      "atimeMs": 1542460027571.4922,
+      "mtimeMs": 1542458293162.8298,
+      "ctimeMs": 1542458293162.8298,
       "birthtimeMs": 1541578832483.2556,
-      "atime": "2018-11-13T15:44:47.159Z",
-      "mtime": "2018-11-07T10:19:21.931Z",
-      "ctime": "2018-11-07T10:19:21.931Z",
+      "atime": "2018-11-17T13:07:07.571Z",
+      "mtime": "2018-11-17T12:38:13.163Z",
+      "ctime": "2018-11-17T12:38:13.163Z",
       "birthtime": "2018-11-07T08:20:32.483Z"
     },
     "d854a1e4-aa5c-549a-a06a-d0c6870c3ecd": {
@@ -2242,7 +2242,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "23bd6f2d0378adbb17264806c97bff26",
+        "contentDigest": "30be55a085dc28c7d406b46c13dffa12",
         "type": "Directory",
         "description": "Directory \"src/pages/a-detailed-tutorial-shopify-storefront-apireact-redux\"",
         "owner": "gatsby-source-filesystem"
@@ -2254,7 +2254,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T10:19:33.487Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T10:19:33.487Z",
       "birthTime": "2018-11-07T10:19:21.930Z",
       "root": "/",
@@ -2272,11 +2272,11 @@
       "blksize": 4096,
       "ino": 8617951075,
       "blocks": 0,
-      "atimeMs": 1542123887159.0432,
+      "atimeMs": 1542460027580.8196,
       "mtimeMs": 1541585973486.877,
       "ctimeMs": 1541585973486.877,
       "birthtimeMs": 1541585961930.492,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T10:19:33.487Z",
       "ctime": "2018-11-07T10:19:33.487Z",
       "birthtime": "2018-11-07T10:19:21.930Z"
@@ -2286,7 +2286,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4147721a0f8d4e6f1b4ca6e83546dc6a",
+        "contentDigest": "55abf13e4bbb9b749afdf895b5e982c7",
         "type": "Directory",
         "description": "Directory \"src/pages/a-toast-to-full-stack-developers\"",
         "owner": "gatsby-source-filesystem"
@@ -2298,7 +2298,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.484Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.484Z",
       "birthTime": "2018-11-07T08:20:32.484Z",
       "root": "/",
@@ -2316,11 +2316,11 @@
       "blksize": 4096,
       "ino": 8617882967,
       "blocks": 0,
-      "atimeMs": 1542123887159.107,
+      "atimeMs": 1542460027580.8608,
       "mtimeMs": 1541578832484.2122,
       "ctimeMs": 1541578832484.2122,
       "birthtimeMs": 1541578832483.8997,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.484Z",
       "ctime": "2018-11-07T08:20:32.484Z",
       "birthtime": "2018-11-07T08:20:32.484Z"
@@ -2330,7 +2330,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "3b4b0468a1e6749f7b5bd00d0087b5ee",
+        "contentDigest": "14d14c74bcd1d3af0941cb616f9d24aa",
         "type": "Directory",
         "description": "Directory \"src/pages/abap-push-and-message-channels\"",
         "owner": "gatsby-source-filesystem"
@@ -2342,7 +2342,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.485Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.485Z",
       "birthTime": "2018-11-07T08:20:32.484Z",
       "root": "/",
@@ -2360,11 +2360,11 @@
       "blksize": 4096,
       "ino": 8617882969,
       "blocks": 0,
-      "atimeMs": 1542123887159.1812,
+      "atimeMs": 1542460027580.8474,
       "mtimeMs": 1541578832484.8167,
       "ctimeMs": 1541578832484.8167,
       "birthtimeMs": 1541578832484.483,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.485Z",
       "ctime": "2018-11-07T08:20:32.485Z",
       "birthtime": "2018-11-07T08:20:32.484Z"
@@ -2374,7 +2374,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "cc3c330a47883f356dc97b972976de31",
+        "contentDigest": "d86d6a7e1ec59259b32589a549ccefa9",
         "type": "Directory",
         "description": "Directory \"src/pages/an-npm-christmas-easter-egg\"",
         "owner": "gatsby-source-filesystem"
@@ -2386,7 +2386,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.486Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.486Z",
       "birthTime": "2018-11-07T08:20:32.485Z",
       "root": "/",
@@ -2404,11 +2404,11 @@
       "blksize": 4096,
       "ino": 8617882971,
       "blocks": 0,
-      "atimeMs": 1542123887159.2678,
+      "atimeMs": 1542460027580.8735,
       "mtimeMs": 1541578832486.309,
       "ctimeMs": 1541578832486.309,
       "birthtimeMs": 1541578832485.0596,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.486Z",
       "ctime": "2018-11-07T08:20:32.486Z",
       "birthtime": "2018-11-07T08:20:32.485Z"
@@ -2418,7 +2418,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "183bb2694a46f4153b0693968a819545",
+        "contentDigest": "acba4c5ec696dca4f7ce8f35f810a992",
         "type": "Directory",
         "description": "Directory \"src/pages/calculating-activity-amounts-for-process-and-production-orders-with-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2430,7 +2430,7 @@
       "size": 480,
       "prettySize": "480 B",
       "modifiedTime": "2018-11-07T08:20:32.497Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.497Z",
       "birthTime": "2018-11-07T08:20:32.488Z",
       "root": "/",
@@ -2448,11 +2448,11 @@
       "blksize": 4096,
       "ino": 8617882975,
       "blocks": 0,
-      "atimeMs": 1542123887159.42,
+      "atimeMs": 1542460027580.929,
       "mtimeMs": 1541578832497.3992,
       "ctimeMs": 1541578832497.3992,
       "birthtimeMs": 1541578832487.563,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.497Z",
       "ctime": "2018-11-07T08:20:32.497Z",
       "birthtime": "2018-11-07T08:20:32.488Z"
@@ -2462,7 +2462,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d6db1f33c5ec466822eae32e795571b0",
+        "contentDigest": "d9ae33c4087fb8bc673623d73fe95b6e",
         "type": "Directory",
         "description": "Directory \"src/pages/colors-for-sap-web-ide\"",
         "owner": "gatsby-source-filesystem"
@@ -2474,7 +2474,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.503Z",
-      "accessTime": "2018-11-13T15:44:47.159Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.503Z",
       "birthTime": "2018-11-07T08:20:32.498Z",
       "root": "/",
@@ -2492,11 +2492,11 @@
       "blksize": 4096,
       "ino": 8617882989,
       "blocks": 0,
-      "atimeMs": 1542123887159.4875,
+      "atimeMs": 1542460027580.8884,
       "mtimeMs": 1541578832502.6987,
       "ctimeMs": 1541578832502.6987,
       "birthtimeMs": 1541578832497.7537,
-      "atime": "2018-11-13T15:44:47.159Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.503Z",
       "ctime": "2018-11-07T08:20:32.503Z",
       "birthtime": "2018-11-07T08:20:32.498Z"
@@ -2506,7 +2506,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b62900ef0e6fed17ee478d8c27229c3b",
+        "contentDigest": "3701b166c6836594d4386efe976587a9",
         "type": "Directory",
         "description": "Directory \"src/pages/creating-front-page-posts-on-subbreddit-and-how-i-created-two-of-them-for-wallstreetbets\"",
         "owner": "gatsby-source-filesystem"
@@ -2518,7 +2518,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2018-11-07T08:20:32.514Z",
-      "accessTime": "2018-11-13T15:44:47.160Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.514Z",
       "birthTime": "2018-11-07T08:20:32.507Z",
       "root": "/",
@@ -2536,11 +2536,11 @@
       "blksize": 4096,
       "ino": 8617882993,
       "blocks": 0,
-      "atimeMs": 1542123887159.561,
+      "atimeMs": 1542460027580.9153,
       "mtimeMs": 1541578832513.9827,
       "ctimeMs": 1541578832513.9827,
       "birthtimeMs": 1541578832506.9055,
-      "atime": "2018-11-13T15:44:47.160Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.514Z",
       "ctime": "2018-11-07T08:20:32.514Z",
       "birthtime": "2018-11-07T08:20:32.507Z"
@@ -2550,7 +2550,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e9883d9e8286c057761d3f89319f59a0",
+        "contentDigest": "a6a23cfb0a30aa28c6c338c163561e07",
         "type": "Directory",
         "description": "Directory \"src/pages/data-analysis-and-pixel-art-of-towns-and-cities-in-pokemon\"",
         "owner": "gatsby-source-filesystem"
@@ -2562,7 +2562,7 @@
       "size": 704,
       "prettySize": "704 B",
       "modifiedTime": "2018-11-07T08:20:32.541Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.541Z",
       "birthTime": "2018-11-07T08:20:32.524Z",
       "root": "/",
@@ -2580,11 +2580,11 @@
       "blksize": 4096,
       "ino": 8617882999,
       "blocks": 0,
-      "atimeMs": 1542123887146.6995,
+      "atimeMs": 1542460027581.023,
       "mtimeMs": 1541578832540.861,
       "ctimeMs": 1541578832540.861,
       "birthtimeMs": 1541578832523.7842,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.541Z",
       "ctime": "2018-11-07T08:20:32.541Z",
       "birthtime": "2018-11-07T08:20:32.524Z"
@@ -2594,7 +2594,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b19e5f3a2c96bce07c884d6bc8e8e0b4",
+        "contentDigest": "4a348c2146e737fdae8ca21d94f2bbb2",
         "type": "Directory",
         "description": "Directory \"src/pages/data-analysis-of-reddit-users\"",
         "owner": "gatsby-source-filesystem"
@@ -2606,7 +2606,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.541Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.541Z",
       "birthTime": "2018-11-07T08:20:32.541Z",
       "root": "/",
@@ -2624,11 +2624,11 @@
       "blksize": 4096,
       "ino": 8617883020,
       "blocks": 0,
-      "atimeMs": 1542123887146.6458,
+      "atimeMs": 1542460027580.9016,
       "mtimeMs": 1541578832541.3909,
       "ctimeMs": 1541578832541.3909,
       "birthtimeMs": 1541578832541.2776,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.541Z",
       "ctime": "2018-11-07T08:20:32.541Z",
       "birthtime": "2018-11-07T08:20:32.541Z"
@@ -2638,7 +2638,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1c0dc20e49a6e38dd100db07cba8b783",
+        "contentDigest": "4b8e1093395897c36987da32747c4424",
         "type": "Directory",
         "description": "Directory \"src/pages/debugging-abap-with-a-sap-shortcut\"",
         "owner": "gatsby-source-filesystem"
@@ -2650,7 +2650,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2668,11 +2668,11 @@
       "blksize": 4096,
       "ino": 8617883022,
       "blocks": 0,
-      "atimeMs": 1542123887146.621,
+      "atimeMs": 1542460027580.9822,
       "mtimeMs": 1541578832541.589,
       "ctimeMs": 1541578832541.589,
       "birthtimeMs": 1541578832541.5212,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2682,7 +2682,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f74a1a094a057ad7b69f23fa5d907d7e",
+        "contentDigest": "760f1ebebfff0752a5026db4e40bcb9e",
         "type": "Directory",
         "description": "Directory \"src/pages/detailed-look-at-bdc-in-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2694,7 +2694,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2712,11 +2712,11 @@
       "blksize": 4096,
       "ino": 8617883024,
       "blocks": 0,
-      "atimeMs": 1542123887146.6719,
+      "atimeMs": 1542460027580.969,
       "mtimeMs": 1541578832542.0154,
       "ctimeMs": 1541578832542.0154,
       "birthtimeMs": 1541578832541.9185,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2726,7 +2726,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "893372483be38ec41fe628d69f4d0768",
+        "contentDigest": "9666071e4f17d76b714ba8c55dcc9743",
         "type": "Directory",
         "description": "Directory \"src/pages/dropdowns-in-readmes\"",
         "owner": "gatsby-source-filesystem"
@@ -2738,7 +2738,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.542Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.542Z",
       "birthTime": "2018-11-07T08:20:32.542Z",
       "root": "/",
@@ -2756,11 +2756,11 @@
       "blksize": 4096,
       "ino": 8617883026,
       "blocks": 0,
-      "atimeMs": 1542123887146.6807,
+      "atimeMs": 1542460027581.0098,
       "mtimeMs": 1541578832542.3738,
       "ctimeMs": 1541578832542.3738,
       "birthtimeMs": 1541578832542.299,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.542Z",
       "ctime": "2018-11-07T08:20:32.542Z",
       "birthtime": "2018-11-07T08:20:32.542Z"
@@ -2770,7 +2770,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "60ad703fa21811322d9782ae5d994ab6",
+        "contentDigest": "e95b087e7eeab952efdf82156e538606",
         "type": "Directory",
         "description": "Directory \"src/pages/dynamically-assigning-variables-both-named-and-structured-in-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -2782,7 +2782,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.543Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.543Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2800,11 +2800,11 @@
       "blksize": 4096,
       "ino": 8617883028,
       "blocks": 0,
-      "atimeMs": 1542123887146.7097,
+      "atimeMs": 1542460027580.9958,
       "mtimeMs": 1541578832542.6348,
       "ctimeMs": 1541578832542.6348,
       "birthtimeMs": 1541578832542.5542,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.543Z",
       "ctime": "2018-11-07T08:20:32.543Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2814,7 +2814,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b2cf453c7fc83958b6c1898a7cbc519f",
+        "contentDigest": "4cd241077362170fd55a47f0c44b8587",
         "type": "Directory",
         "description": "Directory \"src/pages/final-say-bitcoin\"",
         "owner": "gatsby-source-filesystem"
@@ -2826,7 +2826,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.543Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.543Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2844,11 +2844,11 @@
       "blksize": 4096,
       "ino": 8617883030,
       "blocks": 0,
-      "atimeMs": 1542123887146.7285,
+      "atimeMs": 1542460027581.0547,
       "mtimeMs": 1541578832542.903,
       "ctimeMs": 1541578832542.903,
       "birthtimeMs": 1541578832542.8225,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.543Z",
       "ctime": "2018-11-07T08:20:32.543Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2858,7 +2858,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ea38f0a146f6954e369d78b87b008e80",
+        "contentDigest": "fc0fe6edb43a3127b7f6120eadcd9f26",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process\"",
         "owner": "gatsby-source-filesystem"
@@ -2870,7 +2870,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.544Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.544Z",
       "birthTime": "2018-11-07T08:20:32.543Z",
       "root": "/",
@@ -2888,11 +2888,11 @@
       "blksize": 4096,
       "ino": 8617883032,
       "blocks": 0,
-      "atimeMs": 1542123887146.7378,
+      "atimeMs": 1542460027581.0686,
       "mtimeMs": 1541578832543.8381,
       "ctimeMs": 1541578832543.8381,
       "birthtimeMs": 1541578832543.1003,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.544Z",
       "ctime": "2018-11-07T08:20:32.544Z",
       "birthtime": "2018-11-07T08:20:32.543Z"
@@ -2902,7 +2902,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "64a2a6eba5f0cd69cbaddca43d56a3cf",
+        "contentDigest": "591bf0558d643dcd69eea72614d099cb",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-2-of-building-a-node-js-server-monitor\"",
         "owner": "gatsby-source-filesystem"
@@ -2914,7 +2914,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.547Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.547Z",
       "birthTime": "2018-11-07T08:20:32.547Z",
       "root": "/",
@@ -2932,11 +2932,11 @@
       "blksize": 4096,
       "ino": 8617883036,
       "blocks": 0,
-      "atimeMs": 1542123887146.7776,
+      "atimeMs": 1542460027581.0364,
       "mtimeMs": 1541578832547.1934,
       "ctimeMs": 1541578832547.1934,
       "birthtimeMs": 1541578832547.0417,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.547Z",
       "ctime": "2018-11-07T08:20:32.547Z",
       "birthtime": "2018-11-07T08:20:32.547Z"
@@ -2946,7 +2946,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "603143e4e5346447aa93207a3e66125f",
+        "contentDigest": "e7e4551662c96dd5cd97f1d9cb5c52cb",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor\"",
         "owner": "gatsby-source-filesystem"
@@ -2958,7 +2958,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-11-07T08:20:32.548Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.548Z",
       "birthTime": "2018-11-07T08:20:32.547Z",
       "root": "/",
@@ -2976,11 +2976,11 @@
       "blksize": 4096,
       "ino": 8617883038,
       "blocks": 0,
-      "atimeMs": 1542123887146.7795,
+      "atimeMs": 1542460027581.097,
       "mtimeMs": 1541578832548.039,
       "ctimeMs": 1541578832548.039,
       "birthtimeMs": 1541578832547.4238,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.548Z",
       "ctime": "2018-11-07T08:20:32.548Z",
       "birthtime": "2018-11-07T08:20:32.547Z"
@@ -2990,7 +2990,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d5f12d4e9f4091cbacd5ffb307f2501d",
+        "contentDigest": "0536a516ccbd0b5f4e248d855b2b48ff",
         "type": "Directory",
         "description": "Directory \"src/pages/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot\"",
         "owner": "gatsby-source-filesystem"
@@ -3002,7 +3002,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.548Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.548Z",
       "birthTime": "2018-11-07T08:20:32.548Z",
       "root": "/",
@@ -3020,11 +3020,11 @@
       "blksize": 4096,
       "ino": 8617883041,
       "blocks": 0,
-      "atimeMs": 1542123887146.7864,
+      "atimeMs": 1542460027581.0908,
       "mtimeMs": 1541578832548.475,
       "ctimeMs": 1541578832548.475,
       "birthtimeMs": 1541578832548.3984,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.548Z",
       "ctime": "2018-11-07T08:20:32.548Z",
       "birthtime": "2018-11-07T08:20:32.548Z"
@@ -3034,7 +3034,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fc879a5a54cfdda10115f951294056fa",
+        "contentDigest": "de250b6148b72a29b76cbb9145853e94",
         "type": "Directory",
         "description": "Directory \"src/pages/hello-world\"",
         "owner": "gatsby-source-filesystem"
@@ -3046,7 +3046,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3064,11 +3064,11 @@
       "blksize": 4096,
       "ino": 8617883043,
       "blocks": 0,
-      "atimeMs": 1542123887146.8071,
+      "atimeMs": 1542460027581.1165,
       "mtimeMs": 1541578832548.695,
       "ctimeMs": 1541578832548.695,
       "birthtimeMs": 1541578832548.626,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3078,7 +3078,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0da9a4fec2199ad43559fc6bb3ad662e",
+        "contentDigest": "c9c2617a6f86512af16ec1b16208524e",
         "type": "Directory",
         "description": "Directory \"src/pages/hot-linking-to-lines-in-github\"",
         "owner": "gatsby-source-filesystem"
@@ -3090,7 +3090,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3108,11 +3108,11 @@
       "blksize": 4096,
       "ino": 8617883045,
       "blocks": 0,
-      "atimeMs": 1542123887146.8198,
+      "atimeMs": 1542460027581.1306,
       "mtimeMs": 1541578832548.8787,
       "ctimeMs": 1541578832548.8787,
       "birthtimeMs": 1541578832548.82,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3122,7 +3122,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f8bc1f87ef492c0d40cc8947d03dfc63",
+        "contentDigest": "8f1dfd17b7191ed8e01b6a686023d1c2",
         "type": "Directory",
         "description": "Directory \"src/pages/how-to-be-an-american-living-in-austria-and-working-in-liechtenstein\"",
         "owner": "gatsby-source-filesystem"
@@ -3134,7 +3134,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.549Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.549Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3152,11 +3152,11 @@
       "blksize": 4096,
       "ino": 8617883047,
       "blocks": 0,
-      "atimeMs": 1542123887146.8394,
+      "atimeMs": 1542460027581.183,
       "mtimeMs": 1541578832549.242,
       "ctimeMs": 1541578832549.242,
       "birthtimeMs": 1541578832549.15,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.549Z",
       "ctime": "2018-11-07T08:20:32.549Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3166,7 +3166,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b54da21a3a3c65bd22f266c714993ddb",
+        "contentDigest": "feb30ec762db1f6336b114804909d725",
         "type": "Directory",
         "description": "Directory \"src/pages/i-set-aside-1000-to-learn-options-trading\"",
         "owner": "gatsby-source-filesystem"
@@ -3178,7 +3178,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3196,11 +3196,11 @@
       "blksize": 4096,
       "ino": 8617883051,
       "blocks": 0,
-      "atimeMs": 1542123887146.8496,
+      "atimeMs": 1542460027581.2954,
       "mtimeMs": 1541578832549.7168,
       "ctimeMs": 1541578832549.7168,
       "birthtimeMs": 1541578832549.6506,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3210,7 +3210,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2046f9490f25ff8d814a84ebe5091710",
+        "contentDigest": "a9ebdc46795efc20e182ca2ecd0cd7ce",
         "type": "Directory",
         "description": "Directory \"src/pages/how-to-convert-raw16-to-char22-material-ids-in-sap-ewm-and-vice-versa\"",
         "owner": "gatsby-source-filesystem"
@@ -3222,7 +3222,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.549Z",
       "root": "/",
@@ -3240,11 +3240,11 @@
       "blksize": 4096,
       "ino": 8617883049,
       "blocks": 0,
-      "atimeMs": 1542123887146.869,
+      "atimeMs": 1542460027581.215,
       "mtimeMs": 1541578832549.5134,
       "ctimeMs": 1541578832549.5134,
       "birthtimeMs": 1541578832549.44,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.549Z"
@@ -3254,7 +3254,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "2489782e928da429b7f4152f516963da",
+        "contentDigest": "ac823c504e8817971036fd909fde6eec",
         "type": "Directory",
         "description": "Directory \"src/pages/introducing-chrisfrewin-productions\"",
         "owner": "gatsby-source-filesystem"
@@ -3266,7 +3266,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3284,11 +3284,11 @@
       "blksize": 4096,
       "ino": 8617883054,
       "blocks": 0,
-      "atimeMs": 1542123887146.878,
+      "atimeMs": 1542460027581.1902,
       "mtimeMs": 1541578832550.2764,
       "ctimeMs": 1541578832550.2764,
       "birthtimeMs": 1541578832550.1912,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3298,7 +3298,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7fbd970afc2c822de6a39e2ef129534a",
+        "contentDigest": "2aa7297b4d3b97a34841b0b60389a0d8",
         "type": "Directory",
         "description": "Directory \"src/pages/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input\"",
         "owner": "gatsby-source-filesystem"
@@ -3310,7 +3310,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.550Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.550Z",
       "birthTime": "2018-11-07T08:20:32.550Z",
       "root": "/",
@@ -3328,11 +3328,11 @@
       "blksize": 4096,
       "ino": 8617883056,
       "blocks": 0,
-      "atimeMs": 1542123887146.897,
+      "atimeMs": 1542460027581.2344,
       "mtimeMs": 1541578832550.4834,
       "ctimeMs": 1541578832550.4834,
       "birthtimeMs": 1541578832550.4211,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.550Z",
       "ctime": "2018-11-07T08:20:32.550Z",
       "birthtime": "2018-11-07T08:20:32.550Z"
@@ -3342,7 +3342,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b09c9feb73e23dc68c11703b93d8ec1a",
+        "contentDigest": "257e68978796cc3abfdca7d4d42f0142",
         "type": "Directory",
         "description": "Directory \"src/pages/laptop-stickers\"",
         "owner": "gatsby-source-filesystem"
@@ -3354,7 +3354,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.558Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.558Z",
       "birthTime": "2018-11-07T08:20:32.551Z",
       "root": "/",
@@ -3372,11 +3372,11 @@
       "blksize": 4096,
       "ino": 8617883058,
       "blocks": 0,
-      "atimeMs": 1542123887146.9045,
+      "atimeMs": 1542460027581.2385,
       "mtimeMs": 1541578832558.2292,
       "ctimeMs": 1541578832558.2292,
       "birthtimeMs": 1541578832550.8218,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.558Z",
       "ctime": "2018-11-07T08:20:32.558Z",
       "birthtime": "2018-11-07T08:20:32.551Z"
@@ -3386,7 +3386,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ec7f01611f212cd48f7a4e8fd2d732f0",
+        "contentDigest": "d59d168458c2b077e218703f81fa4db2",
         "type": "Directory",
         "description": "Directory \"src/pages/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration\"",
         "owner": "gatsby-source-filesystem"
@@ -3398,7 +3398,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.574Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.574Z",
       "birthTime": "2018-11-07T08:20:32.569Z",
       "root": "/",
@@ -3416,11 +3416,11 @@
       "blksize": 4096,
       "ino": 8617883062,
       "blocks": 0,
-      "atimeMs": 1542123887146.9973,
+      "atimeMs": 1542460027581.2585,
       "mtimeMs": 1541578832573.6719,
       "ctimeMs": 1541578832573.6719,
       "birthtimeMs": 1541578832569.2505,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.574Z",
       "ctime": "2018-11-07T08:20:32.574Z",
       "birthtime": "2018-11-07T08:20:32.569Z"
@@ -3430,7 +3430,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d1fb2393b4c3e1fcad8d6f89749a796b",
+        "contentDigest": "7b78b8c4a89c12ff74dcd18e19744e98",
         "type": "Directory",
         "description": "Directory \"src/pages/more-thoughts-on-early-retirement-financial-independence-and-making-a-living\"",
         "owner": "gatsby-source-filesystem"
@@ -3442,7 +3442,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.577Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.577Z",
       "birthTime": "2018-11-07T08:20:32.577Z",
       "root": "/",
@@ -3460,11 +3460,11 @@
       "blksize": 4096,
       "ino": 8617883070,
       "blocks": 0,
-      "atimeMs": 1542123887146.9285,
+      "atimeMs": 1542460027581.2883,
       "mtimeMs": 1541578832577.0596,
       "ctimeMs": 1541578832577.0596,
       "birthtimeMs": 1541578832576.9797,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.577Z",
       "ctime": "2018-11-07T08:20:32.577Z",
       "birthtime": "2018-11-07T08:20:32.577Z"
@@ -3474,7 +3474,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "271b9c6103114a03b6f7b757b8ab961a",
+        "contentDigest": "ef35cf538f2996312b6382e5f72b7c7a",
         "type": "Directory",
         "description": "Directory \"src/pages/market-news-feed\"",
         "owner": "gatsby-source-filesystem"
@@ -3486,7 +3486,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2018-11-07T08:20:32.577Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.577Z",
       "birthTime": "2018-11-07T08:20:32.575Z",
       "root": "/",
@@ -3504,11 +3504,11 @@
       "blksize": 4096,
       "ino": 8617883066,
       "blocks": 0,
-      "atimeMs": 1542123887146.9421,
+      "atimeMs": 1542460027581.2673,
       "mtimeMs": 1541578832576.5146,
       "ctimeMs": 1541578832576.5146,
       "birthtimeMs": 1541578832575.0752,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.577Z",
       "ctime": "2018-11-07T08:20:32.577Z",
       "birthtime": "2018-11-07T08:20:32.575Z"
@@ -3518,7 +3518,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5b72e6e9963b4fb7c0d6e9753905c282",
+        "contentDigest": "ecf22fe6cb14f493ed55fc544470734a",
         "type": "Directory",
         "description": "Directory \"src/pages/privacy-policy\"",
         "owner": "gatsby-source-filesystem"
@@ -3530,7 +3530,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.578Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.578Z",
       "birthTime": "2018-11-07T08:20:32.578Z",
       "root": "/",
@@ -3548,11 +3548,11 @@
       "blksize": 4096,
       "ino": 8617883074,
       "blocks": 0,
-      "atimeMs": 1542123887147.064,
+      "atimeMs": 1542460027581.3418,
       "mtimeMs": 1541578832578.4094,
       "ctimeMs": 1541578832578.4094,
       "birthtimeMs": 1541578832577.9507,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.578Z",
       "ctime": "2018-11-07T08:20:32.578Z",
       "birthtime": "2018-11-07T08:20:32.578Z"
@@ -3562,7 +3562,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f0d0dd3d26c24d9fb0685e27dc8fd7b3",
+        "contentDigest": "3f7b9f1053832a34841cade7c5b39420",
         "type": "Directory",
         "description": "Directory \"src/pages/one-major-challenge-with-the-internet-and-society\"",
         "owner": "gatsby-source-filesystem"
@@ -3574,7 +3574,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.578Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.578Z",
       "birthTime": "2018-11-07T08:20:32.577Z",
       "root": "/",
@@ -3592,11 +3592,11 @@
       "blksize": 4096,
       "ino": 8617883072,
       "blocks": 0,
-      "atimeMs": 1542123887146.968,
+      "atimeMs": 1542460027581.3198,
       "mtimeMs": 1541578832577.743,
       "ctimeMs": 1541578832577.743,
       "birthtimeMs": 1541578832577.472,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.578Z",
       "ctime": "2018-11-07T08:20:32.578Z",
       "birthtime": "2018-11-07T08:20:32.577Z"
@@ -3606,7 +3606,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "755bf8ce96e8a0832f92b77741719559",
+        "contentDigest": "781fb4625e59c68180f14506e1e95859",
         "type": "Directory",
         "description": "Directory \"src/pages/sec-filings\"",
         "owner": "gatsby-source-filesystem"
@@ -3618,7 +3618,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3636,11 +3636,11 @@
       "blksize": 4096,
       "ino": 8617883076,
       "blocks": 0,
-      "atimeMs": 1542123887147.0193,
+      "atimeMs": 1542460027581.3582,
       "mtimeMs": 1541578832578.6465,
       "ctimeMs": 1541578832578.6465,
       "birthtimeMs": 1541578832578.5828,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3650,7 +3650,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7031267daecf288c95a261430110bc41",
+        "contentDigest": "df3b3879d7688f0995374bee955e8998",
         "type": "Directory",
         "description": "Directory \"src/pages/sending-windows-commands-from-sap-abap\"",
         "owner": "gatsby-source-filesystem"
@@ -3662,7 +3662,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3680,11 +3680,11 @@
       "blksize": 4096,
       "ino": 8617883078,
       "blocks": 0,
-      "atimeMs": 1542123887147.0386,
+      "atimeMs": 1542460027581.385,
       "mtimeMs": 1541578832579.0117,
       "ctimeMs": 1541578832579.0117,
       "birthtimeMs": 1541578832578.9382,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3694,7 +3694,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a213eff220ffc6e561cc6006892e22f3",
+        "contentDigest": "57f183a82de7813a3efd1c899dbf142a",
         "type": "Directory",
         "description": "Directory \"src/pages/some-tasty-bash-profile-commands\"",
         "owner": "gatsby-source-filesystem"
@@ -3706,7 +3706,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.579Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.579Z",
       "birthTime": "2018-11-07T08:20:32.579Z",
       "root": "/",
@@ -3724,11 +3724,11 @@
       "blksize": 4096,
       "ino": 8617883080,
       "blocks": 0,
-      "atimeMs": 1542123887147.0754,
+      "atimeMs": 1542460027581.3733,
       "mtimeMs": 1541578832579.3713,
       "ctimeMs": 1541578832579.3713,
       "birthtimeMs": 1541578832579.2195,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.579Z",
       "ctime": "2018-11-07T08:20:32.579Z",
       "birthtime": "2018-11-07T08:20:32.579Z"
@@ -3738,7 +3738,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "01832d1049d6098292083131cb40ccc2",
+        "contentDigest": "2796cee9ad7c8be5cdf1f6e65a3490b5",
         "type": "Directory",
         "description": "Directory \"src/pages/the-social-contract\"",
         "owner": "gatsby-source-filesystem"
@@ -3750,7 +3750,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.580Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.580Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3768,11 +3768,11 @@
       "blksize": 4096,
       "ino": 8617883084,
       "blocks": 0,
-      "atimeMs": 1542123887147.1057,
+      "atimeMs": 1542460027581.4248,
       "mtimeMs": 1541578832580.2961,
       "ctimeMs": 1541578832580.2961,
       "birthtimeMs": 1541578832580.0205,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.580Z",
       "ctime": "2018-11-07T08:20:32.580Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3782,7 +3782,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c12dd359926bcda81bf23955649deec6",
+        "contentDigest": "d906fd16e7c8b5750cf24f926ecaa2dc",
         "type": "Directory",
         "description": "Directory \"src/pages/talk-shop\"",
         "owner": "gatsby-source-filesystem"
@@ -3794,7 +3794,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.580Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.580Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3812,11 +3812,11 @@
       "blksize": 4096,
       "ino": 8617883082,
       "blocks": 0,
-      "atimeMs": 1542123887147.096,
+      "atimeMs": 1542460027581.3982,
       "mtimeMs": 1541578832579.648,
       "ctimeMs": 1541578832579.648,
       "birthtimeMs": 1541578832579.5798,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.580Z",
       "ctime": "2018-11-07T08:20:32.580Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3826,7 +3826,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c0665bb0b15f2c49f3558cf023b66ca6",
+        "contentDigest": "37487b5dd1305267a9d194700617b421",
         "type": "Directory",
         "description": "Directory \"src/pages/towards-code-and-folder-organization-of-nodejs-server-applications\"",
         "owner": "gatsby-source-filesystem"
@@ -3838,7 +3838,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.581Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.581Z",
       "birthTime": "2018-11-07T08:20:32.580Z",
       "root": "/",
@@ -3856,11 +3856,11 @@
       "blksize": 4096,
       "ino": 8617883086,
       "blocks": 0,
-      "atimeMs": 1542123887147.125,
+      "atimeMs": 1542460027581.4119,
       "mtimeMs": 1541578832580.731,
       "ctimeMs": 1541578832580.731,
       "birthtimeMs": 1541578832580.4846,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.581Z",
       "ctime": "2018-11-07T08:20:32.581Z",
       "birthtime": "2018-11-07T08:20:32.580Z"
@@ -3870,7 +3870,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4d1d6e9caa689b63659cc6caffe0298b",
+        "contentDigest": "d3b070eb45f298d44524fbf1223719c0",
         "type": "Directory",
         "description": "Directory \"src/pages/using-google-clouds-text-to-speech-machine-learning-api\"",
         "owner": "gatsby-source-filesystem"
@@ -3882,7 +3882,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.581Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
       "changeTime": "2018-11-07T08:20:32.581Z",
       "birthTime": "2018-11-07T08:20:32.581Z",
       "root": "/",
@@ -3900,11 +3900,11 @@
       "blksize": 4096,
       "ino": 8617883088,
       "blocks": 0,
-      "atimeMs": 1542123887147.1338,
+      "atimeMs": 1542460027581.4995,
       "mtimeMs": 1541578832581.324,
       "ctimeMs": 1541578832581.324,
       "birthtimeMs": 1541578832581.0793,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.581Z",
       "mtime": "2018-11-07T08:20:32.581Z",
       "ctime": "2018-11-07T08:20:32.581Z",
       "birthtime": "2018-11-07T08:20:32.581Z"
@@ -3914,7 +3914,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "46e284225a7f4f76d211d2bf88455527",
+        "contentDigest": "cb34d7f10f358f3b2ab56c7b6a249cbd",
         "type": "Directory",
         "description": "Directory \"src/pages/warn-sap-users-of-locked-objects-then-kill-their-session\"",
         "owner": "gatsby-source-filesystem"
@@ -3926,7 +3926,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-11-07T08:20:32.585Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.582Z",
       "changeTime": "2018-11-07T08:20:32.585Z",
       "birthTime": "2018-11-07T08:20:32.582Z",
       "root": "/",
@@ -3944,11 +3944,11 @@
       "blksize": 4096,
       "ino": 8617883090,
       "blocks": 0,
-      "atimeMs": 1542123887147.2253,
+      "atimeMs": 1542460027581.933,
       "mtimeMs": 1541578832585.0796,
       "ctimeMs": 1541578832585.0796,
       "birthtimeMs": 1541578832581.573,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.582Z",
       "mtime": "2018-11-07T08:20:32.585Z",
       "ctime": "2018-11-07T08:20:32.585Z",
       "birthtime": "2018-11-07T08:20:32.582Z"
@@ -3958,7 +3958,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6188dec70ddcad614c10c3458037198f",
+        "contentDigest": "3f14f0dfbb522cdc50acfa0455992394",
         "type": "Directory",
         "description": "Directory \"src/pages/welp-i-did-it-i-quit\"",
         "owner": "gatsby-source-filesystem"
@@ -3970,7 +3970,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-11-07T08:20:32.586Z",
-      "accessTime": "2018-11-13T15:44:47.147Z",
+      "accessTime": "2018-11-17T13:07:07.582Z",
       "changeTime": "2018-11-07T08:20:32.586Z",
       "birthTime": "2018-11-07T08:20:32.585Z",
       "root": "/",
@@ -3988,11 +3988,11 @@
       "blksize": 4096,
       "ino": 8617883099,
       "blocks": 0,
-      "atimeMs": 1542123887147.1528,
+      "atimeMs": 1542460027581.9473,
       "mtimeMs": 1541578832585.986,
       "ctimeMs": 1541578832585.986,
       "birthtimeMs": 1541578832585.2815,
-      "atime": "2018-11-13T15:44:47.147Z",
+      "atime": "2018-11-17T13:07:07.582Z",
       "mtime": "2018-11-07T08:20:32.586Z",
       "ctime": "2018-11-07T08:20:32.586Z",
       "birthtime": "2018-11-07T08:20:32.585Z"
@@ -9855,6 +9855,123 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "8b698c4e-e4b9-595f-9023-cc2518987b17": {
+      "id": "8b698c4e-e4b9-595f-9023-cc2518987b17",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7dc1cc5ec7c652d598bba3f42a0a4a47",
+        "type": "Directory",
+        "description": "Directory \"src/pages/want-to-build-this-blog-now-you-can\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "markdown-pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/want-to-build-this-blog-now-you-can",
+      "relativePath": "want-to-build-this-blog-now-you-can",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-11-17T12:38:19.770Z",
+      "accessTime": "2018-11-17T13:07:07.581Z",
+      "changeTime": "2018-11-17T12:38:19.770Z",
+      "birthTime": "2018-11-17T12:38:13.163Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages",
+      "base": "want-to-build-this-blog-now-you-can",
+      "ext": "",
+      "name": "want-to-build-this-blog-now-you-can",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 8619119849,
+      "blocks": 0,
+      "atimeMs": 1542460027581.4404,
+      "mtimeMs": 1542458299770.1663,
+      "ctimeMs": 1542458299770.1663,
+      "birthtimeMs": 1542458293162.7922,
+      "atime": "2018-11-17T13:07:07.581Z",
+      "mtime": "2018-11-17T12:38:19.770Z",
+      "ctime": "2018-11-17T12:38:19.770Z",
+      "birthtime": "2018-11-17T12:38:13.163Z"
+    },
+    "4ef620b8-452c-5f74-aa86-85562476fe48": {
+      "id": "4ef620b8-452c-5f74-aa86-85562476fe48",
+      "children": [
+        "ffc352ee-c9ca-5076-8229-b94ce45d05ae"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "224e2420178bf2d4f3ae277840e862a3",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"src/pages/want-to-build-this-blog-now-you-can/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "markdown-pages",
+      "absolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/want-to-build-this-blog-now-you-can/index.md",
+      "relativePath": "want-to-build-this-blog-now-you-can/index.md",
+      "extension": "md",
+      "size": 2213,
+      "prettySize": "2.21 kB",
+      "modifiedTime": "2018-11-17T13:06:43.872Z",
+      "accessTime": "2018-11-17T13:06:43.872Z",
+      "changeTime": "2018-11-17T13:06:43.872Z",
+      "birthTime": "2018-11-17T12:38:19.770Z",
+      "root": "/",
+      "dir": "/Users/chris/projects/chrisfrew.in/src/pages/want-to-build-this-blog-now-you-can",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "want-to-build-this-blog-now-you-can",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 8619119852,
+      "blocks": 8,
+      "atimeMs": 1542460003872.2146,
+      "mtimeMs": 1542460003872.38,
+      "ctimeMs": 1542460003872.38,
+      "birthtimeMs": 1542458299770.1482,
+      "atime": "2018-11-17T13:06:43.872Z",
+      "mtime": "2018-11-17T13:06:43.872Z",
+      "ctime": "2018-11-17T13:06:43.872Z",
+      "birthtime": "2018-11-17T12:38:19.770Z"
+    },
+    "ffc352ee-c9ca-5076-8229-b94ce45d05ae": {
+      "id": "ffc352ee-c9ca-5076-8229-b94ce45d05ae",
+      "children": [],
+      "parent": "4ef620b8-452c-5f74-aa86-85562476fe48",
+      "internal": {
+        "content": "\nIf you've been wondering about how the internals of my blog are built and developed, you can now learn it from me, step by step, from [my very first course on Skillshare](https://skl.sh/2qGtFlG), titled \"Build Your Personal Blog Website with GatsbyJS\"! (Not to mention the source code of this site itself is all public [here on GitHub](https://github.com/frewinchristopher/chrisfrew.in)). \n\nFull disclosure, this blog _is_ a GatsbyJS site, which has been displayed in the footer since the blog first started.\n\nAt the end of October, I was invited to Skillshare to teach a course in web development. Over the past few years I've been taking out large amounts of free time to work towards being the best professional full stack developer that I can be. Today, this new stage of that goal has come to fruition. In the past three weeks, being new to video recording and editing, I built my course. Just yesterday, I finally published it. It was a great experience for me and I hope you give it a try if you are interested!\n\nI decided to make my first course on Skillshare about building a blog site because through this blog, I've already networked with a variety of very cool people, and it's been extremely rewarding and motivating to me that there are people who can benefit from what I share! \n\nOne kind soul has already donated to my blog for one of those detailed SAP ABAP posts. 🙏🙏🙏 I'm looking forward to make many more courses over the coming months (and years?!?) to give back to a community that has already given me so much! I'll be happy to post updates as this part of my career develops.\n\nIf you're interested, you can [use my promo link](https://skl.sh/2qGtFlG) to get 2 months of Skillshare for **FREE**, plus I'll get $10 for the referral! I'm pretty sure that is a win for you, me, and Skillshare!\n\nIf you decide to take the course, thank you! Be sure to tell me how I can improve, and what you don't like! Teaching software skills has been on my mind for a long time now, and Skillshare seemingly dropped out of the sky as a perfect platform to be able to do that.\n\nEnjoy! 🍺\n\nChris",
+        "type": "MarkdownRemark",
+        "contentDigest": "29e5095b57b2cc15520913130d1c975f",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Want to Build a Blog Just Like this One? Now You Can!",
+        "date": "2018-11-17",
+        "draft": false,
+        "_PARENT": "4ef620b8-452c-5f74-aa86-85562476fe48"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nIf you've been wondering about how the internals of my blog are built and developed, you can now learn it from me, step by step, from [my very first course on Skillshare](https://skl.sh/2qGtFlG), titled \"Build Your Personal Blog Website with GatsbyJS\"! (Not to mention the source code of this site itself is all public [here on GitHub](https://github.com/frewinchristopher/chrisfrew.in)). \n\nFull disclosure, this blog _is_ a GatsbyJS site, which has been displayed in the footer since the blog first started.\n\nAt the end of October, I was invited to Skillshare to teach a course in web development. Over the past few years I've been taking out large amounts of free time to work towards being the best professional full stack developer that I can be. Today, this new stage of that goal has come to fruition. In the past three weeks, being new to video recording and editing, I built my course. Just yesterday, I finally published it. It was a great experience for me and I hope you give it a try if you are interested!\n\nI decided to make my first course on Skillshare about building a blog site because through this blog, I've already networked with a variety of very cool people, and it's been extremely rewarding and motivating to me that there are people who can benefit from what I share! \n\nOne kind soul has already donated to my blog for one of those detailed SAP ABAP posts. 🙏🙏🙏 I'm looking forward to make many more courses over the coming months (and years?!?) to give back to a community that has already given me so much! I'll be happy to post updates as this part of my career develops.\n\nIf you're interested, you can [use my promo link](https://skl.sh/2qGtFlG) to get 2 months of Skillshare for **FREE**, plus I'll get $10 for the referral! I'm pretty sure that is a win for you, me, and Skillshare!\n\nIf you decide to take the course, thank you! Be sure to tell me how I can improve, and what you don't like! Teaching software skills has been on my mind for a long time now, and Skillshare seemingly dropped out of the sky as a perfect platform to be able to do that.\n\nEnjoy! :beer:\n\nChris",
+      "fileAbsolutePath": "/Users/chris/projects/chrisfrew.in/src/pages/want-to-build-this-blog-now-you-can/index.md",
+      "fields": {
+        "slug": "/want-to-build-this-blog-now-you-can/"
+      }
+    },
     "SitePage /offline-plugin-app-shell-fallback/": {
       "jsonName": "offline-plugin-app-shell-fallback-a30",
       "internalComponentName": "ComponentOfflinePluginAppShellFallback",
@@ -11114,7 +11231,18 @@
         "prev": {
           "$ref": "$[\"nodes\"][\"SitePage /welp-i-did-it-i-quit/\"][\"context\"][\"next\"]"
         },
-        "next": null
+        "next": {
+          "fields": {
+            "slug": "/want-to-build-this-blog-now-you-can/"
+          },
+          "frontmatter": {
+            "date": "17 November, 2018",
+            "title": "Want to Build a Blog Just Like this One? Now You Can!",
+            "draft": false,
+            "link": "https://chrisfrew.in/want-to-build-this-blog-now-you-can/",
+            "relativeLink": "/want-to-build-this-blog-now-you-can/"
+          }
+        }
       },
       "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
@@ -11124,7 +11252,33 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c14803825de804dc1a39f263ea1b0419",
+        "contentDigest": "11039b74d3597109f372a7424d829d57",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /want-to-build-this-blog-now-you-can/": {
+      "jsonName": "want-to-build-this-blog-now-you-can-908",
+      "internalComponentName": "ComponentWantToBuildThisBlogNowYouCan",
+      "path": "/want-to-build-this-blog-now-you-can/",
+      "component": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/want-to-build-this-blog-now-you-can/",
+        "prev": {
+          "$ref": "$[\"nodes\"][\"SitePage /warn-sap-users-of-locked-objects-then-kill-their-session/\"][\"context\"][\"next\"]"
+        },
+        "next": null
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js",
+      "id": "SitePage /want-to-build-this-blog-now-you-can/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c007911acfd66271c6b4a7604ab73224",
         "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
         "owner": "internal-data-bridge"
       }
@@ -11311,7 +11465,8 @@
         "/towards-code-and-folder-organization-of-nodejs-server-applications/",
         "/welp-i-did-it-i-quit/",
         "/warn-sap-users-of-locked-objects-then-kill-their-session/",
-        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+        "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/",
+        "/want-to-build-this-blog-now-you-can/"
       ],
       "c5083b9b-d5cc-5cf2-80f5-de0dc1e3554a": [
         "/an-npm-christmas-easter-egg/"
@@ -11414,21 +11569,26 @@
       ],
       "2a3e562a-eb4c-5b80-a4c4-edcd80928601": [
         "/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"
+      ],
+      "ffc352ee-c9ca-5076-8229-b94ce45d05ae": [
+        "/want-to-build-this-blog-now-you-can/"
       ]
     },
     "connections": {
       "MarkdownRemark": [
         null,
-        "/"
+        "/",
+        null
       ],
       "JavascriptFrontmatter": [
         null,
-        "/"
+        "/",
+        null
       ]
     }
   },
   "jsonDataPaths": {
-    "index": "820/path---index-6a9-nnhvsvrHeCAyu6AxEspVrGOQwk",
+    "index": "227/path---index-6a9-Kf9KPc12pH1gpqZMMCNserJM1FQ",
     "a-detailed-tutorial-shopify-storefront-apireact-redux-198": "144/path---a-detailed-tutorial-shopify-storefront-apireact-redux-198-c5a-H1v5nz28LHzK6CBOjzfwKok0t0",
     "a-toast-to-full-stack-developers-f96": "378/path---a-toast-to-full-stack-developers-f-96-e28-YKsb7wOZhLSPjhFTWMKMJhqQyk",
     "abap-push-and-message-channels-6f8": "130/path---abap-push-and-message-channels-6-f-8-311-IJxtU2OA3Ue9mAFnS7AdprW04",
@@ -11457,7 +11617,7 @@
     "some-tasty-bash-profile-commands-86b": "58/path---some-tasty-bash-profile-commands-86-b-53b-z5GHTEaOH9yVjUdGf9fqOWOAkyo",
     "hello-world-8bc": "666/path---hello-world-8-bc-b62-9mBteAakBRf80hEtnLYycv1ha8",
     "towards-code-and-folder-organization-of-nodejs-server-applications-ced": "458/path---towards-code-and-folder-organization-of-nodejs-server-applications-ced-6cd-4V563ZsnJwcejdvDkZ4IPoCvZkM",
-    "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569": "702/path---led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569-e54-xPn7E5cnDqhWlNdtFHcWWNtvA",
+    "led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569": "843/path---led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569-e54-gdzWQX6oIV44asu9w8r8eoJgZvA",
     "the-social-contract-7bf": "956/path---the-social-contract-7-bf-639-gRSZ9x3WmfYsXXLG2d6E7Q8cpM",
     "sending-windows-commands-from-sap-abap-86c": "455/path---sending-windows-commands-from-sap-abap-86-c-294-v0VzKXzvFnyJ2SFSDucPTW09f4",
     "using-google-clouds-text-to-speech-machine-learning-api-5b0": "122/path---using-google-clouds-text-to-speech-machine-learning-api-5-b-0-9a9-vON10h09xF1HJcL6abyjem8A00",
@@ -11470,13 +11630,10 @@
     "privacy-policy-6b7": "223/path---privacy-policy-6-b-7-610-NZuapzHg3X9TaN1iIixfv1W23E",
     "sec-filings-554": "914/path---sec-filings-554-374-NZuapzHg3X9TaN1iIixfv1W23E",
     "talk-shop-8cd": "967/path---talk-shop-8-cd-8f0-NZuapzHg3X9TaN1iIixfv1W23E",
-    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E"
+    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "want-to-build-this-blog-now-you-can-908": "251/path---want-to-build-this-blog-now-you-can-908-c70-qFoIWETYRcf1g0sSOX6vST3DG1s"
   },
   "components": {
-    "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js": {
-      "query": "",
-      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js"
-    },
     "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js": {
       "query": "query BlogPostBySlug(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n      author\n    }\n  }\n  markdownRemark(fields: {slug: {eq: $slug}}) {\n    id\n    excerpt\n    html\n    frontmatter {\n      title\n      date(formatString: \"MMMM DD, YYYY\")\n      draft\n    }\n  }\n}\n",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/templates/blog-post.js"
@@ -11508,6 +11665,10 @@
     "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js": {
       "query": "",
       "componentPath": "/Users/chris/projects/chrisfrew.in/src/pages/talk-shop/index.js"
+    },
+    "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-offline/app-shell.js"
     }
   },
   "staticQueryComponents": {}

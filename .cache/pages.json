@@ -201,6 +201,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "want-to-build-this-blog-now-you-can-908",
+        "path": "/want-to-build-this-blog-now-you-can/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "warn-sap-users-of-locked-objects-then-kill-their-session-1c8",
         "path": "/warn-sap-users-of-locked-objects-then-kill-their-session/"
     },

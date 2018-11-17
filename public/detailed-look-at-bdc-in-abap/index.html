@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="en"><head><title>Chris Frewin&#x27;s Full Stack Blog</title><meta charSet="utf-8"/><meta name="Description" content="Chris&#x27;s full stack blog on topics including SAP ABAP, SAPUI5, OpenUI5, web development, backend development, machine learning, and natural language processing. Also always a bit about freelancing, work, money, and retirement, and life philosophy."/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.38"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><title data-react-helmet="true">A Detailed Look at ABAP&#x27;s BDC Method | Chris Frewin&#x27;s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, &amp; Natural Language Processing Blog.</title><meta data-react-helmet="true" name="description" content="And some common gotchyas, too"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js"/><link as="script" rel="preload" href="/app-ad23b07ebfe18bbc8a3d.js"/><link as="script" rel="preload" href="/1-7689e40957fb9a593977.js"/><link as="script" rel="preload" href="/0-22e2c4f5cafcc425a132.js"/><link as="script" rel="preload" href="/webpack-runtime-38e0fc6dbde406d8fd9f.js"/><link rel="preload" href="/static/d/728/path---detailed-look-at-bdc-in-abap-425-4a2-prb0rULMNGoWtLfHylUwewFWI.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/"><div>Chris&#x27;s <span style="color:#F92672">Full Stack</span>, <span style="color:#66D9EF">Web Development</span>, <span style="color:#A6E22E">ABAP</span>, <span style="color:#F92672">SAPUI5</span>, <span style="color:#66D9EF">Machine Learning</span>,  &amp; <span style="color:#A6E22E">Natural Language Processing</span> <span style="color:#F92672">Blog</span>.<br/></div></a></h3><h1>A Detailed Look at ABAP&#x27;s BDC Method</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">January 24, 2018</p><div><h2>And some common gotchyas, too</h2>
+<div class="gatsby-highlight">
+      <pre class="language-abap"><code class="language-abap"><span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">*                          S A P M S S Y 0</span>
+<span class="token comment">*                  system routines for ABAP processing</span>
+<span class="token comment">*</span>
+<span class="token comment">*                  (must be declared as FUNCTION-POOL)</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">function-pool</span> sapmssy0  <span class="token keyword">message-id</span> <span class="token number">02</span><span class="token punctuation">.</span>
+<span class="token keyword">include</span> &lt;%_list><span class="token punctuation">.</span>
+<span class="token keyword">include</span> &lt;sys000><span class="token punctuation">.</span>
+<span class="token keyword">include</span> tskhincl<span class="token punctuation">.</span>
+<span class="token keyword">tables</span><span class="token punctuation">:</span> tfdir<span class="token punctuation">.</span>
+<span class="token keyword">data</span><span class="token punctuation">:</span>  orders          <span class="token keyword">type</span> <span class="token keyword">standard</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_commit_orders<span class="token punctuation">,</span>
+                                                  <span class="token eol-comment comment">"ON COMMIT orders</span>
+       rb_orders       <span class="token keyword">type</span> <span class="token keyword">standard</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_commit_orders<span class="token punctuation">,</span>
+                                                  <span class="token eol-comment comment">"ON ROLLBACK orders</span>
+       imode_orders    <span class="token keyword">type</span> <span class="token keyword">standard</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_commit_orders<span class="token punctuation">,</span>
+                                                  <span class="token eol-comment comment">"POC in CALL DIALOG</span>
+       imode_rb_orders <span class="token keyword">type</span> <span class="token keyword">standard</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_commit_orders<span class="token punctuation">.</span>
+<span class="token eol-comment comment">"POR in CALL DIALOG</span>
+<span class="token comment">* for RTM test concerning POC during OS event handling</span>
+<span class="token keyword">data</span><span class="token punctuation">:</span> os_orders        <span class="token keyword">type</span> <span class="token keyword">hashed</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_commit_orders
+                            <span class="token keyword">with</span> <span class="token keyword">unique</span> <span class="token keyword">key</span> prog rout<span class="token punctuation">.</span>      <span class="token eol-comment comment">"#EC NEEDED</span>
+<span class="token eol-comment comment">"OS ON COMMIT orders</span>
+<span class="token comment">* end RTM</span>
+
+<span class="token keyword">data</span><span class="token punctuation">:</span>  %_vbkey <span class="token keyword">type</span> %_vbkey <span class="token keyword">value</span> <span class="token string">'%_'</span><span class="token punctuation">,</span>                     <span class="token eol-comment comment">"#EC *</span>
+       %%vbkey <span class="token keyword">type</span> %_vbkey <span class="token keyword">value</span> <span class="token string">'%%'</span><span class="token punctuation">,</span>
+       %_vb_calls <span class="token keyword">type</span> %_vb_calls <span class="token keyword">occurs</span> <span class="token number">50</span> <span class="token keyword">with</span> <span class="token keyword">header</span> <span class="token keyword">line</span><span class="token punctuation">.</span>"#EC <span class="token operator">*</span>
+<span class="token keyword">data</span><span class="token punctuation">:</span>  i_level <span class="token keyword">type</span> <span class="token keyword">i</span> <span class="token keyword">value</span> <span class="token number">0</span><span class="token punctuation">.</span>
+
+<span class="token keyword">data</span> <span class="token punctuation">:</span> arfc_pending <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">,</span>
+       trfc_nowait_for_update <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">.</span>
+
+<span class="token comment">* bgRFC: something todo at COMMIT / ROLLBACK</span>
+<span class="token keyword">data</span> <span class="token punctuation">:</span> bgrfc_eot_action <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+
+<span class="token comment">* LDQ: something todo at COMMIT / ROLLBACK</span>
+<span class="token keyword">data</span> <span class="token punctuation">:</span> ldq_writer_eot_action <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+<span class="token keyword">data</span> <span class="token punctuation">:</span> ldq_reader_eot_action <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* O R D E R _ F O R M _ L E V E L</span>
+<span class="token comment">* order given form to be run when work is committed</span>
+<span class="token comment">*</span>
+<span class="token comment">* Input : program name, form name, execution level</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_order_form_level <span class="token keyword">using</span> prog rout u_level<span class="token punctuation">.</span>            <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> allow_nested_poc<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">,</span>
+        caller <span class="token keyword">type</span> sy<span class="token token-operator punctuation">-</span>repid<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> mpar1<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar2<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar3<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar4<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> imode_orders_wa <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">,</span>
+        orders_wa <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+    <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span> <span class="token keyword">field</span> get_vb_key  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+                    <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>  <span class="token keyword">field</span> %_vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">import</span> imode_orders imode_rb_orders <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">read</span> <span class="token keyword">table</span> imode_orders
+      <span class="token keyword">into</span> imode_orders_wa
+      <span class="token keyword">with</span> <span class="token keyword">key</span> prog <span class="token operator">=</span> prog
+               rout <span class="token operator">=</span> rout
+      <span class="token keyword">binary</span> <span class="token keyword">search</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> imode_orders <span class="token keyword">lines</span> i_level<span class="token punctuation">.</span>
+      imode_orders_wa<span class="token token-operator punctuation">-</span>prog <span class="token operator">=</span> prog<span class="token punctuation">.</span>
+      imode_orders_wa<span class="token token-operator punctuation">-</span>rout <span class="token operator">=</span> rout<span class="token punctuation">.</span>
+      imode_orders_wa<span class="token token-operator punctuation">-</span>i_level <span class="token operator">=</span> i_level<span class="token punctuation">.</span>
+      imode_orders_wa<span class="token token-operator punctuation">-</span>u_level <span class="token operator">=</span> u_level<span class="token punctuation">.</span>
+      <span class="token keyword">insert</span> imode_orders_wa <span class="token keyword">into</span> imode_orders <span class="token keyword">index</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span>
+      <span class="token keyword">export</span> imode_orders imode_rb_orders <span class="token keyword">to</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">else</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'P'</span><span class="token punctuation">.</span>
+<span class="token comment">*     already in PERFORM ON COMMIT</span>
+      <span class="token keyword">call</span> <span class="token string">'C_SAPGPARAM'</span> <span class="token keyword">id</span> <span class="token string">'NAME'</span>  <span class="token keyword">field</span> <span class="token string">'abap/allow_nested_poc'</span>  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+                         <span class="token keyword">id</span> <span class="token string">'VALUE'</span> <span class="token keyword">field</span> allow_nested_poc<span class="token punctuation">.</span>
+      <span class="token keyword">if</span> allow_nested_poc <span class="token operator">&lt;></span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+<span class="token comment">*       nested PERFORM ON COMMIT not allowed</span>
+        <span class="token keyword">call</span> <span class="token string">'AB_GET_CALLER'</span> <span class="token keyword">id</span> <span class="token string">'PROGRAM'</span> <span class="token keyword">field</span> caller<span class="token punctuation">.</span>  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+        <span class="token keyword">if</span> caller <span class="token operator">&lt;></span> <span class="token string">'SAPMSSY0'</span><span class="token punctuation">.</span>
+          mpar1 <span class="token operator">=</span> <span class="token string">'NESTED_PERFORM_ON_COMMIT'</span><span class="token punctuation">.</span>
+          <span class="token keyword">concatenate</span> <span class="token string">'caller:'</span>  caller <span class="token keyword">into</span> mpar2 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+          <span class="token keyword">concatenate</span> <span class="token string">'program:'</span> prog   <span class="token keyword">into</span> mpar3 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+          <span class="token keyword">concatenate</span> <span class="token string">'form:'</span>    rout   <span class="token keyword">into</span> mpar4 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token comment">*         switch back kernel flag: just for sure.</span>
+          <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">' '</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+<span class="token comment">*         issue short dump</span>
+          <span class="token keyword">message</span> x081<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span> <span class="token keyword">with</span> mpar1 mpar2 mpar3 mpar4<span class="token punctuation">.</span>
+        <span class="token keyword">endif</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">read</span> <span class="token keyword">table</span> orders
+      <span class="token keyword">into</span> orders_wa
+      <span class="token keyword">with</span> <span class="token keyword">key</span> prog <span class="token operator">=</span> prog
+               rout <span class="token operator">=</span> rout
+      <span class="token keyword">binary</span> <span class="token keyword">search</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> orders <span class="token keyword">lines</span> i_level<span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>prog <span class="token operator">=</span> prog<span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>rout <span class="token operator">=</span> rout<span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>i_level <span class="token operator">=</span> i_level<span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>u_level <span class="token operator">=</span> u_level<span class="token punctuation">.</span>
+      <span class="token keyword">insert</span> orders_wa <span class="token keyword">into</span> orders <span class="token keyword">index</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token comment">*   for RTM test concerning POC during OS event handling</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>prog <span class="token operator">=</span> prog<span class="token punctuation">.</span>
+      orders_wa<span class="token token-operator punctuation">-</span>rout <span class="token operator">=</span> rout<span class="token punctuation">.</span>
+      <span class="token keyword">insert</span> orders_wa <span class="token keyword">into</span> <span class="token keyword">table</span> os_orders<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token comment">*   end RTM</span>
+
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_order_form_level</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* O R D E R _ F O R M _ F O R _ R O L L B A C K</span>
+<span class="token comment">* order given form to be run when work is rolled back</span>
+<span class="token comment">* Input : program name, form name</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_order_form_for_rollback <span class="token keyword">using</span> prog rout<span class="token punctuation">.</span>             <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> mpar1<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar2<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar3<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mpar4<span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        caller <span class="token keyword">type</span> sy<span class="token token-operator punctuation">-</span>repid<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> rb_orders_wa       <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">,</span>
+        imode_rb_orders_wa <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+    <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span> <span class="token keyword">field</span> get_vb_key  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+                    <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>  <span class="token keyword">field</span> %_vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">import</span> imode_orders imode_rb_orders <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">read</span> <span class="token keyword">table</span> imode_rb_orders
+      <span class="token keyword">into</span> imode_rb_orders_wa
+      <span class="token keyword">with</span> <span class="token keyword">key</span> prog <span class="token operator">=</span> prog
+           rout <span class="token operator">=</span> rout
+      <span class="token keyword">binary</span> <span class="token keyword">search</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> imode_rb_orders <span class="token keyword">lines</span> i_level<span class="token punctuation">.</span>
+      imode_rb_orders_wa<span class="token token-operator punctuation">-</span>prog <span class="token operator">=</span> prog<span class="token punctuation">.</span>
+      imode_rb_orders_wa<span class="token token-operator punctuation">-</span>rout <span class="token operator">=</span> rout<span class="token punctuation">.</span>
+      imode_rb_orders_wa<span class="token token-operator punctuation">-</span>i_level <span class="token operator">=</span> i_level<span class="token punctuation">.</span>
+      imode_rb_orders_wa<span class="token token-operator punctuation">-</span>u_level <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">insert</span> imode_rb_orders_wa <span class="token keyword">into</span> imode_rb_orders <span class="token keyword">index</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span>
+      <span class="token keyword">export</span> imode_orders imode_rb_orders <span class="token keyword">to</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">else</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'P'</span><span class="token punctuation">.</span>
+      <span class="token keyword">call</span> <span class="token string">'AB_GET_CALLER'</span> <span class="token keyword">id</span> <span class="token string">'PROGRAM'</span> <span class="token keyword">field</span> caller<span class="token punctuation">.</span>  <span class="token eol-comment comment">"#EC CI_CCALL</span>
+      mpar1 <span class="token operator">=</span> <span class="token string">'NESTED_PERFORM_ON_ROLLBACK'</span><span class="token punctuation">.</span>
+      <span class="token keyword">concatenate</span> <span class="token string">'caller:'</span>  caller <span class="token keyword">into</span> mpar2 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+      <span class="token keyword">concatenate</span> <span class="token string">'program:'</span> prog   <span class="token keyword">into</span> mpar3 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+      <span class="token keyword">concatenate</span> <span class="token string">'form:'</span>    rout   <span class="token keyword">into</span> mpar4 <span class="token keyword">separated</span> <span class="token keyword">by</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token comment">*     switch back kernel flag: just for sure.</span>
+      <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token comment">*     already in PERFORM ON ROLLBACK issue short dump</span>
+      <span class="token keyword">message</span> x081<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span> <span class="token keyword">with</span> mpar1 mpar2 mpar3 mpar4<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">read</span> <span class="token keyword">table</span> rb_orders <span class="token keyword">into</span> rb_orders_wa
+      <span class="token keyword">with</span> <span class="token keyword">key</span> prog <span class="token operator">=</span> prog
+               rout <span class="token operator">=</span> rout
+      <span class="token keyword">binary</span> <span class="token keyword">search</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> rb_orders <span class="token keyword">lines</span> i_level<span class="token punctuation">.</span>
+      rb_orders_wa<span class="token token-operator punctuation">-</span>prog <span class="token operator">=</span> prog<span class="token punctuation">.</span>
+      rb_orders_wa<span class="token token-operator punctuation">-</span>rout <span class="token operator">=</span> rout<span class="token punctuation">.</span>
+      rb_orders_wa<span class="token token-operator punctuation">-</span>i_level <span class="token operator">=</span> i_level<span class="token punctuation">.</span>
+      <span class="token keyword">insert</span> rb_orders_wa <span class="token keyword">into</span> rb_orders <span class="token keyword">index</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_order_form_for_rollback</span>
+
+
+<span class="token comment">*---------------------------------------------------------------------*</span>
+<span class="token comment">*  %_COMMIT_PREPARE                                                   *</span>
+<span class="token comment">*  Set date and time for aRFC</span>
+<span class="token comment">*---------------------------------------------------------------------*</span>
+<span class="token keyword">form</span> %_commit_prepare <span class="token keyword">using</span> <span class="token keyword">date</span> <span class="token keyword">time</span><span class="token punctuation">.</span>                      <span class="token eol-comment comment">"#EC *</span>
+
+  %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time <span class="token operator">=</span> <span class="token keyword">time</span><span class="token punctuation">.</span>
+  %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date <span class="token operator">=</span> <span class="token keyword">date</span><span class="token punctuation">.</span>
+
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_commit_prepare</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_BEFORE_COMMIT</span>
+<span class="token comment">* called from RSYN commit.rs1</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_before_commit<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> txend <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">.</span>
+
+<span class="token comment">* forbid COMMIT if already in ON ROLLBACK handling</span>
+<span class="token comment">* allow COMMIT during ON COMMIT for backward compatibilty</span>
+  <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> txend<span class="token punctuation">.</span>
+  <span class="token keyword">if</span> txend <span class="token operator">=</span> <span class="token string">'R'</span><span class="token punctuation">.</span>
+    <span class="token keyword">message</span> x085<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* COMMIT during CALL DIALOG/SUBMIT, POC, Update task</span>
+<span class="token comment">* or End Transaction event?</span>
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'P'</span> <span class="token keyword">and</span>
+        sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'E'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'V'</span><span class="token punctuation">.</span>
+<span class="token comment">* change sy-oncom to avoid recursion</span>
+  l_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>                      <span class="token eol-comment comment">"E = Event Handling</span>
+
+<span class="token comment">* no escape out off this form other than ENDFORM</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+<span class="token comment">* Hook for Process Information Infrastructure</span>
+  <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'SPI_AGENT_COMMIT'</span><span class="token punctuation">.</span>
+<span class="token comment">* Raise event 'Commit Requested' for Object Manager</span>
+  <span class="token keyword">call</span> <span class="token keyword">method</span> cl_os_transaction_end_notifier<span class="token token-operator punctuation">=></span>raise_commit_requested<span class="token punctuation">.</span>
+<span class="token comment">* restore sy-oncom</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> l_oncom<span class="token punctuation">.</span>
+
+<span class="token comment">* reset marker on call stack.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_before_commit</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* C O M M I T</span>
+<span class="token comment">* commit work</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_commit<span class="token punctuation">.</span>                                              <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> %_state<span class="token punctuation">,</span> %_direct_utask_active<span class="token punctuation">.</span>                     <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_lines   <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>tabix<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> %_enqkey  <span class="token keyword">type</span> eqeusrvb<span class="token punctuation">.</span>                            <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> %_enqdone <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">.</span>                                   <span class="token eol-comment comment">"#EC *</span>
+
+<span class="token comment">* status processing of set update task local</span>
+<span class="token comment">* value 'E': local update is active. Export tRFC/qRFC to memory!</span>
+<span class="token comment">* value 'S': local update is active. Map the dialog tRFC/qRFC to called update trfc/qRFC.</span>
+<span class="token comment">*            Import tRFC/qRFC form memory! Save it to the Database.</span>
+<span class="token comment">* value 'X': local update is active. Execute the tRFC/qRFC within the Dialog workprocess.</span>
+
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_local_vb_status <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">.</span>
+
+<span class="token comment">* COMMIT during POC, Update task or End Transaction event?</span>
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'P'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'E'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'V'</span><span class="token punctuation">.</span>
+
+<span class="token comment">* no escape out off this form other than ENDFORM</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span>  <span class="token keyword">field</span> get_vb_key
+                  <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>   <span class="token keyword">field</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+<span class="token comment">*   Not in CALL DIALOG</span>
+    %_vbkey<span class="token token-operator punctuation">-</span>vbkey <span class="token operator">=</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+    <span class="token keyword">perform</span> %_process_p_o_c<span class="token punctuation">.</span>
+
+<span class="token comment">*   Check if local update task is switched on?</span>
+    <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_UTASK'</span> <span class="token keyword">id</span> <span class="token string">'MODE'</span>  <span class="token keyword">field</span> <span class="token string">'S'</span>
+                            <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> %_state<span class="token punctuation">.</span>
+    <span class="token keyword">if</span> %_state <span class="token keyword">eq</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+      <span class="token keyword">free</span> %_vb_calls<span class="token punctuation">.</span>
+      <span class="token keyword">import</span> %_vb_calls <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %%vbkey<span class="token punctuation">.</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> %_vb_calls <span class="token keyword">lines</span> l_lines<span class="token punctuation">.</span>
+      <span class="token keyword">if</span> l_lines <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+<span class="token comment">*       Local update task is active,</span>
+<span class="token comment">*       export the called tRFC/qRFCs from dialog to memory within arfc_end_transaction.</span>
+        l_local_vb_status <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">*     Within sapmssy4 (commit work) we have to import and save all dia tRFC/qRFC</span>
+<span class="token comment">*     in arfc_end_transaction</span>
+      <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>cprog <span class="token operator">=</span> <span class="token string">'SAPMSSY4'</span><span class="token punctuation">.</span>
+        l_local_vb_status <span class="token operator">=</span> <span class="token string">'S'</span><span class="token punctuation">.</span>
+        arfc_pending <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+
+    <span class="token keyword">if</span> arfc_pending <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+      arfc_pending <span class="token operator">=</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+      <span class="token keyword">if</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+        %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date  <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>datum<span class="token punctuation">.</span>
+        %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time  <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>uzeit <span class="token operator">+</span> <span class="token number">3600</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+      <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'ARFC_END_TRANSACTION'</span>
+        <span class="token keyword">exporting</span>
+          <span class="token keyword">mode</span>              <span class="token operator">=</span> <span class="token string">'COMMIT'</span>
+          starttime         <span class="token operator">=</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time
+          startdate         <span class="token operator">=</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date
+          utask_local_state <span class="token operator">=</span> l_local_vb_status
+          vbkey             <span class="token operator">=</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey
+          bgrfc_active      <span class="token operator">=</span> bgrfc_eot_action<span class="token punctuation">.</span>
+<span class="token comment">*      clear %_sys000-arfc-send_time.</span>
+<span class="token comment">*      clear %_sys000-arfc-send_date.</span>
+<span class="token comment">*      clear %_sys000-arfc-dontsend.</span>
+
+<span class="token comment">***************</span>
+<span class="token comment">*   bgRFC</span>
+<span class="token comment">***************</span>
+<span class="token comment">*     Update task in Asynchronous mode!</span>
+<span class="token comment">*     Wenn arfc_pending &lt;> SPACE dann wurde bereits durch classic qRFC der arfc_end_vb</span>
+<span class="token comment">*     getriggert, falls lokale Verbuchung nicht aktiv ist.</span>
+<span class="token comment">*     N = asynch. update task switched off: direct updates</span>
+      <span class="token keyword">if</span> bgrfc_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with bgRFC</span>
+<span class="token comment">*       In current LUW classic t/qRFC and bgRFC was called</span>
+
+        <span class="token keyword">if</span> trfc_nowait_for_update <span class="token operator">&lt;></span> <span class="token keyword">space</span> <span class="token keyword">OR</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token keyword">initial</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"ARFC_END_VB wurde nicht im tRFC/qRFC gerufen</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time<span class="token punctuation">.</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date<span class="token punctuation">.</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend<span class="token punctuation">.</span>
+          <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_BGRFC_DB_HELPER'</span><span class="token punctuation">)</span>=>on_commit
+            <span class="token keyword">exporting</span>
+              arfc_end_vb_already_called <span class="token operator">=</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+        <span class="token keyword">else</span><span class="token punctuation">.</span> <span class="token eol-comment comment">" ARFC_END_VB wurde bereits im tRFC/qrfc gerufen.</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time<span class="token punctuation">.</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date<span class="token punctuation">.</span>
+          <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend<span class="token punctuation">.</span>
+          <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_BGRFC_DB_HELPER'</span><span class="token punctuation">)</span>=>on_commit
+            <span class="token keyword">exporting</span>
+              arfc_end_vb_already_called <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+        <span class="token keyword">endif</span><span class="token punctuation">.</span>
+      <span class="token keyword">else</span><span class="token punctuation">.</span>
+        <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time<span class="token punctuation">.</span>
+        <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date<span class="token punctuation">.</span>
+        <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend<span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token comment">*      clear %_sys000-arfc-send_time.</span>
+<span class="token comment">*      clear %_sys000-arfc-send_date.</span>
+<span class="token comment">*      clear %_sys000-arfc-dontsend.</span>
+
+<span class="token comment">*   Wenn kein classic qRFC getriggert und keine lokale Verbuchung, dann</span>
+<span class="token comment">*   muss ARFC_END_VB von bgRFC getriggert werden.</span>
+    <span class="token keyword">else</span><span class="token punctuation">.</span>
+      <span class="token keyword">if</span> bgrfc_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with bgRFC</span>
+<span class="token comment">*       In current LUW only bgRFC was called</span>
+        <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_BGRFC_DB_HELPER'</span><span class="token punctuation">)</span>=>on_commit
+          <span class="token keyword">exporting</span>
+            arfc_end_vb_already_called <span class="token operator">=</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">***************************</span>
+<span class="token comment">*   Local Data Queue (LDQ)</span>
+<span class="token comment">***************************</span>
+    <span class="token keyword">if</span> ldq_writer_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with LDQ-Writer</span>
+      <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_WRITER'</span><span class="token punctuation">)</span>=>on_commit<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+    <span class="token keyword">if</span> ldq_reader_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with LDQ-Reader</span>
+      <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_READER'</span><span class="token punctuation">)</span>=>on_commit<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+    <span class="token keyword">if</span> %_state <span class="token keyword">eq</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+<span class="token comment">*     N = asynch. update task switched off: direct updates</span>
+<span class="token comment">*     free %_vb_calls.</span>
+<span class="token comment">*     import %_vb_calls from memory id %%vbkey.</span>
+<span class="token comment">*     describe table %_vb_calls lines l_lines.</span>
+      <span class="token keyword">if</span> l_lines <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+<span class="token comment">*       process direct updates (with the same vbkey)</span>
+        <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span>  <span class="token keyword">field</span> get_vb_key
+                        <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>   <span class="token keyword">field</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey
+                        <span class="token keyword">id</span> <span class="token string">'ENQKEY'</span>  <span class="token keyword">field</span> %_enqkey
+                        <span class="token keyword">id</span> <span class="token string">'ENQDONE'</span> <span class="token keyword">field</span> %_enqdone<span class="token punctuation">.</span>
+
+        <span class="token keyword">submit</span> sapmssy4 <span class="token keyword">with</span> vbkey_id <span class="token operator">=</span> %%vbkey
+                        <span class="token keyword">with</span> enqkey   <span class="token operator">=</span> %_enqkey
+                        <span class="token keyword">with</span> enqdone  <span class="token operator">=</span> %_enqdone <span class="token keyword">and</span> <span class="token keyword">return</span><span class="token punctuation">.</span>
+<span class="token comment">*       Start new LUW, release locks that were acquired during dialog part</span>
+        <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span>       <span class="token keyword">field</span> reset_vb_enq_key
+                        <span class="token keyword">id</span> <span class="token string">'SYNC_DEQUEUE'</span> <span class="token keyword">field</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* Call Dialog wurde gerufen; gerufene tRFC/qRFC Verarbeitung wie gehabt.</span>
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'N'</span> <span class="token keyword">or</span> l_local_vb_status <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> l_local_vb_status <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>
+<span class="token comment">*     Lokale Verbuchung ist aktiv Ausführung im Dialog und UPD.</span>
+      l_local_vb_status <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>     <span class="token eol-comment comment">"Umsetzen auf Ausführung der trfc/qRFC im Dialog.</span>
+      arfc_pending      <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> arfc_pending <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+      arfc_pending <span class="token operator">=</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+      <span class="token keyword">if</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+        %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date  <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>datum<span class="token punctuation">.</span>
+        %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time  <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>uzeit <span class="token operator">+</span> <span class="token number">3600</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+      <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'ARFC_END_TRANSACTION'</span>
+        <span class="token keyword">exporting</span>
+          <span class="token keyword">mode</span>              <span class="token operator">=</span> <span class="token string">'COMMIT'</span>
+          starttime         <span class="token operator">=</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time
+          startdate         <span class="token operator">=</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date
+          utask_local_state <span class="token operator">=</span> l_local_vb_status
+          vbkey             <span class="token operator">=</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey
+          bgrfc_active      <span class="token operator">=</span> bgrfc_eot_action<span class="token punctuation">.</span>
+      <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_time<span class="token punctuation">.</span>
+      <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>send_date<span class="token punctuation">.</span>
+      <span class="token keyword">clear</span> %_sys000<span class="token token-operator punctuation">-</span>arfc<span class="token token-operator punctuation">-</span>dontsend<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>binpt <span class="token keyword">eq</span> <span class="token string">'X'</span> <span class="token punctuation">.</span>
+    <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'BDC_END_TRANSACTION'</span><span class="token punctuation">.</span>       <span class="token eol-comment comment">"ende einer trans in BI</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* clear memory containing registrations for PERFORM ON ROLLBACK.</span>
+<span class="token comment">* delete imode_orders and imode_rb_orders only if not in CALL DIALOG</span>
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+    <span class="token keyword">free</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> rb_orders<span class="token punctuation">.</span>
+
+<span class="token comment">* reset marker on call stack.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_commit</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_AFTER_COMMIT</span>
+<span class="token comment">* called from RSYN commit.rs1</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_after_commit<span class="token punctuation">.</span>                                        <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> %_direct_utask_active<span class="token punctuation">,</span> %_task_state<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">type</span> <span class="token keyword">x</span><span class="token punctuation">.</span>      <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> <span class="token keyword">i</span> <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">,</span> j <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">,</span> x4<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">type</span> <span class="token keyword">x</span><span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_update_task <span class="token keyword">type</span> boolean <span class="token keyword">value</span> <span class="token string">'-'</span><span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_subrc <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>subrc<span class="token punctuation">.</span>
+
+<span class="token comment">* COMMIT during CALL DIALOG/SUBMIT, POC, Update task</span>
+<span class="token comment">* or End Transaction event?</span>
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'P'</span> <span class="token keyword">and</span>
+        sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'E'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'V'</span><span class="token punctuation">.</span>
+<span class="token comment">* change sy-oncom to avoid recursion</span>
+  l_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>                      <span class="token eol-comment comment">"E = Event Handling</span>
+  l_subrc <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>subrc<span class="token punctuation">.</span>
+
+<span class="token comment">* no escape out off this form other than ENDFORM</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+<span class="token comment">*</span>
+<span class="token comment">* bgRFC</span>
+<span class="token comment">*</span>
+  <span class="token keyword">if</span> bgrfc_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span> <span class="token eol-comment comment">"something happened with bgRFC</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_BGRFC_DB_HELPER'</span><span class="token punctuation">)</span>=>AFTER_COMMIT<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">*</span>
+<span class="token comment">* Local DATA Queue (LDQ)</span>
+<span class="token comment">*</span>
+  <span class="token keyword">if</span> ldq_writer_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span> <span class="token eol-comment comment">"something happened with LDW-Writer</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_WRITER'</span><span class="token punctuation">)</span>=>after_commit<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> ldq_reader_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span> <span class="token eol-comment comment">"something happened with LDW-Reader</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_READER'</span><span class="token punctuation">)</span>=>after_commit<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* Raise event 'Commit Finished' for Object Manager</span>
+<span class="token comment">* for synchronous update task this is after all database changes.</span>
+<span class="token comment">* for asynchronous update task this is after triggering the updates.</span>
+  <span class="token keyword">call</span> <span class="token keyword">method</span> cl_os_transaction_end_notifier<span class="token token-operator punctuation">=></span>raise_commit_finished<span class="token punctuation">.</span>
+
+<span class="token comment">* COMMIT in (classic) update task?</span>
+  <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'TH_USER_INFO'</span>
+    <span class="token keyword">importing</span>
+      task_state <span class="token operator">=</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+  %_task_state <span class="token operator">=</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+  j <span class="token operator">=</span> task_vb<span class="token punctuation">.</span> x4 <span class="token operator">=</span> j<span class="token punctuation">.</span>
+  <span class="token keyword">if</span> <span class="token keyword">not</span> %_task_state <span class="token keyword">z</span> x4<span class="token punctuation">.</span>            <span class="token eol-comment comment">"update task must not be active</span>
+    l_update_task <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> l_update_task <span class="token operator">&lt;></span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+<span class="token comment">*   COMMIT in local update task?</span>
+    <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_UTASK'</span> <span class="token keyword">id</span> <span class="token string">'MODE'</span>  <span class="token keyword">field</span> <span class="token string">'A'</span>          <span class="token eol-comment comment">"A = active?</span>
+                            <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> %_direct_utask_active<span class="token punctuation">.</span>
+    <span class="token keyword">if</span> %_direct_utask_active <span class="token operator">=</span> <span class="token string">'Y'</span> <span class="token keyword">or</span> sy<span class="token token-operator punctuation">-</span>cprog <span class="token operator">=</span> <span class="token string">'SAPMSSY4'</span><span class="token punctuation">.</span>
+      l_update_task <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* raise event 'transaction_finished' only if not in update task.</span>
+  <span class="token keyword">if</span> l_update_task <span class="token operator">&lt;></span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span>
+      cl_system_transaction_state<span class="token token-operator punctuation">=></span>raise_transaction_finished
+      <span class="token keyword">exporting</span>
+        <span class="token keyword">kind</span> <span class="token operator">=</span> cl_system_transaction_state<span class="token token-operator punctuation">=></span>commit_work<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* restore sy-oncom</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> l_oncom<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> l_subrc<span class="token punctuation">.</span>
+
+<span class="token comment">* reset marker on call stack.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                                                <span class="token eol-comment comment">"%_after_commit</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_PROCESS_P_O_C</span>
+<span class="token comment">* Process PERFORM ON COMMIT orders</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_process_p_o_c<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> last_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> imode_orders_wa <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">,</span>
+        orders_wa       <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">.</span>
+
+  last_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">import</span> imode_orders <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+  <span class="token keyword">sort</span> imode_orders <span class="token keyword">by</span> u_level i_level<span class="token punctuation">.</span>
+  <span class="token keyword">loop</span> <span class="token keyword">at</span> imode_orders <span class="token keyword">into</span> imode_orders_wa<span class="token punctuation">.</span>
+    <span class="token keyword">perform</span> %_order_form_level <span class="token keyword">using</span> imode_orders_wa<span class="token token-operator punctuation">-</span>prog
+                                     imode_orders_wa<span class="token token-operator punctuation">-</span>rout
+                                     imode_orders_wa<span class="token token-operator punctuation">-</span>u_level<span class="token punctuation">.</span>
+  <span class="token keyword">endloop</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> imode_orders<span class="token punctuation">.</span>
+  <span class="token keyword">sort</span> orders <span class="token keyword">by</span> u_level i_level<span class="token punctuation">.</span>
+
+<span class="token comment">* signal begin of ON COMMIT handling</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'P'</span><span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">'C'</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">loop</span> <span class="token keyword">at</span> orders <span class="token keyword">into</span> orders_wa<span class="token punctuation">.</span>
+    <span class="token keyword">perform</span> <span class="token punctuation">(</span>orders_wa<span class="token token-operator punctuation">-</span>rout<span class="token punctuation">)</span>
+          <span class="token keyword">in</span> <span class="token keyword">program</span> <span class="token punctuation">(</span>orders_wa<span class="token token-operator punctuation">-</span>prog<span class="token punctuation">)</span><span class="token punctuation">.</span>
+  <span class="token keyword">endloop</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> orders<span class="token punctuation">.</span>
+<span class="token comment">* for RTM test concerning POC during OS events</span>
+  <span class="token keyword">free</span> os_orders<span class="token punctuation">.</span>
+<span class="token comment">* end RTM</span>
+
+<span class="token comment">* signal end of ON COMMIT</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> last_oncom<span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_process_p_o_c</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_GET_VB_KEY</span>
+<span class="token comment">* Update task without update task</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_get_vb_key <span class="token keyword">using</span> vb_func_name <span class="token keyword">changing</span> vb_data_key<span class="token punctuation">.</span>  <span class="token eol-comment comment">"#EC *</span>
+
+  <span class="token keyword">data</span><span class="token punctuation">:</span> %_vb_calls    <span class="token keyword">type</span> <span class="token keyword">standard</span> <span class="token keyword">table</span> <span class="token keyword">of</span> %_vb_calls<span class="token punctuation">,</span>       <span class="token eol-comment comment">"#EC *</span>
+        %_vb_calls_wa <span class="token keyword">type</span> %_vb_calls<span class="token punctuation">.</span>
+
+  <span class="token keyword">data</span><span class="token punctuation">:</span> utask_on<span class="token punctuation">,</span>                  <span class="token eol-comment comment">"flag: asynchronous update task on?</span>
+        direct_utask_active<span class="token punctuation">.</span>       <span class="token eol-comment comment">"flag: already in local update task?</span>
+
+  <span class="token keyword">clear</span> vb_data_key<span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_UTASK'</span> <span class="token keyword">id</span> <span class="token string">'MODE'</span> <span class="token keyword">field</span> <span class="token string">'S'</span>
+                          <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> utask_on<span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_UTASK'</span> <span class="token keyword">id</span> <span class="token string">'MODE'</span>  <span class="token keyword">field</span> <span class="token string">'A'</span>
+                          <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> direct_utask_active<span class="token punctuation">.</span>
+  <span class="token keyword">if</span> utask_on <span class="token keyword">eq</span> <span class="token string">'N'</span> <span class="token keyword">and</span> direct_utask_active <span class="token keyword">eq</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+<span class="token comment">*   update task switched to "local", but not yet inside update task.</span>
+    <span class="token keyword">select</span> <span class="token keyword">single</span> <span class="token operator">*</span> <span class="token keyword">from</span> tfdir <span class="token keyword">where</span> funcname <span class="token operator">=</span> vb_func_name<span class="token punctuation">.</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>
+      <span class="token keyword">message</span> a400 <span class="token keyword">with</span> vb_func_name<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+    cl_abap_restrmode_utils<span class="token token-operator punctuation">=></span>check_in_restr_mode_updtask<span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+    <span class="token keyword">if</span> tfdir<span class="token token-operator punctuation">-</span>utask <span class="token operator">=</span> <span class="token string">'1'</span>     <span class="token eol-comment comment">"direct update task call</span>
+       <span class="token keyword">or</span> tfdir<span class="token token-operator punctuation">-</span>utask <span class="token operator">=</span> <span class="token string">'3'</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"direct update task call, no later update</span>
+
+<span class="token comment">*     get identifier for current LUW</span>
+      <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span> <span class="token keyword">field</span> get_vb_key
+                      <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>  <span class="token keyword">field</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+      <span class="token keyword">free</span> %_vb_calls<span class="token punctuation">.</span>
+      <span class="token keyword">clear</span> %_vb_calls_wa<span class="token punctuation">.</span>
+
+<span class="token comment">*     import table with already registered function modules</span>
+      <span class="token keyword">import</span> %_vb_calls <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %%vbkey<span class="token punctuation">.</span>
+
+      <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+<span class="token comment">*       already got UUID for the parameters of the function module</span>
+        <span class="token keyword">read</span> <span class="token keyword">table</span> %_vb_calls <span class="token keyword">index</span> <span class="token number">1</span>
+          <span class="token keyword">into</span> %_vb_calls_wa <span class="token keyword">transporting</span> daten_id<span class="token punctuation">.</span>
+        <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">&lt;></span> <span class="token number">0</span><span class="token punctuation">.</span>
+          <span class="token keyword">message</span> x675<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+        <span class="token keyword">endif</span><span class="token punctuation">.</span>
+      <span class="token keyword">else</span><span class="token punctuation">.</span>
+<span class="token comment">*       get new UUID as key for the parameters of the function module</span>
+        <span class="token keyword">try</span><span class="token punctuation">.</span>
+          %_vb_calls_wa<span class="token token-operator punctuation">-</span>daten_id<span class="token token-operator punctuation">-</span>vbkey <span class="token operator">=</span> cl_system_uuid<span class="token token-operator punctuation">=></span>create_uuid_c22_static<span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+        <span class="token keyword">catch</span> cx_uuid_error<span class="token punctuation">.</span>
+          <span class="token keyword">message</span> x675<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+        <span class="token keyword">endtry</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">*     fill in name of function module</span>
+      %_vb_calls_wa<span class="token token-operator punctuation">-</span>func_name <span class="token operator">=</span> vb_func_name<span class="token punctuation">.</span>
+<span class="token comment">*     identify the function call by consecutive number</span>
+      <span class="token keyword">describe</span> <span class="token keyword">table</span> %_vb_calls <span class="token keyword">lines</span> %_vb_calls_wa<span class="token token-operator punctuation">-</span>daten_id<span class="token token-operator punctuation">-</span>vbkey+<span class="token number">22</span><span class="token punctuation">.</span>
+      %_vb_calls_wa<span class="token token-operator punctuation">-</span>data_temperature <span class="token operator">=</span> cl_abap_stack_temperature<span class="token token-operator punctuation">=></span>get_temperature<span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+      <span class="token keyword">append</span> %_vb_calls_wa <span class="token keyword">to</span> %_vb_calls<span class="token punctuation">.</span>
+
+<span class="token comment">*     (re-) export the table to memory</span>
+      <span class="token keyword">export</span> %_vb_calls <span class="token keyword">to</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %%vbkey<span class="token punctuation">.</span>
+      <span class="token keyword">free</span> %_vb_calls<span class="token punctuation">.</span>
+<span class="token comment">*     return the identifier of this function call to call.rs1 to export</span>
+<span class="token comment">*     the corresponding parameters with the same identifier.</span>
+      vb_data_key <span class="token operator">=</span> %_vb_calls_wa<span class="token token-operator punctuation">-</span>daten_id<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_get_vb_key</span>
+
+<span class="token comment">*----------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_CALL_ROLLBACK</span>
+<span class="token comment">* Call ROLLBACK-Handling</span>
+<span class="token comment">* To be called by kernel code to perform rollback handling in ABAP</span>
+<span class="token comment">*----------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_call_rollback<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+<span class="token comment">* Save SUBRC for returncode after EXCEPTION ERROR_MESSAGE</span>
+  <span class="token keyword">local</span><span class="token punctuation">:</span> sy<span class="token token-operator punctuation">-</span>subrc<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgty<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgid<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgno<span class="token punctuation">,</span>
+         sy<span class="token token-operator punctuation">-</span>msgv1<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgv2<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgv3<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>msgv4<span class="token punctuation">.</span>
+<span class="token comment">* Perform ROLLBACK with all registered rollback hooks</span>
+  <span class="token keyword">rollback</span> <span class="token keyword">work</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_call_rollback</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* R O L L B A C K</span>
+<span class="token comment">* rollback work</span>
+<span class="token comment">* when called within CALL DIALOG --> no effect i.e. symmetrical to</span>
+<span class="token comment">* COMMIT WORK</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_rollback<span class="token punctuation">.</span>                                            <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> txend <span class="token keyword">type</span> <span class="token keyword">c</span><span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+
+<span class="token comment">* forbid ROLLBACK if already in ON COMMIT/ROLLBACK handling</span>
+  <span class="token keyword">call</span> <span class="token string">'GET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> txend<span class="token punctuation">.</span>
+  <span class="token keyword">if</span> txend <span class="token operator">=</span> <span class="token string">'C'</span> <span class="token keyword">or</span> txend <span class="token operator">=</span> <span class="token string">'R'</span><span class="token punctuation">.</span>
+    <span class="token keyword">message</span> x086<span class="token punctuation">(</span><span class="token number">00</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'V'</span> <span class="token keyword">and</span>
+        sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'E'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'P'</span><span class="token punctuation">.</span>
+
+<span class="token comment">* change sy-oncom to avoid recursion</span>
+  l_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>                      <span class="token eol-comment comment">"E = Event Handling</span>
+
+<span class="token comment">* no escape out off this form other than ENDFORM</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+<span class="token comment">* Hook for Process Information Infrastructure</span>
+  <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'SPI_AGENT_ROLLBACK'</span><span class="token punctuation">.</span>
+<span class="token comment">* restore sy-oncom</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> l_oncom<span class="token punctuation">.</span>
+
+  <span class="token keyword">call</span> <span class="token string">'ThVBCall'</span> <span class="token keyword">id</span> <span class="token string">'OPCODE'</span>  <span class="token keyword">field</span> get_vb_key
+                  <span class="token keyword">id</span> <span class="token string">'VBKEY'</span>  <span class="token keyword">field</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+  %_vbkey<span class="token token-operator punctuation">-</span>vbkey <span class="token operator">=</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+
+<span class="token comment">* perform ON ROLLBACK orders</span>
+  <span class="token keyword">perform</span> %_process_p_o_r<span class="token punctuation">.</span>
+<span class="token comment">* free contents of memory and tables for update task</span>
+  <span class="token keyword">free</span> %_vb_calls<span class="token punctuation">.</span>
+  <span class="token keyword">import</span> %_vb_calls <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %%vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">loop</span> <span class="token keyword">at</span> %_vb_calls<span class="token punctuation">.</span>
+    <span class="token keyword">free</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vb_calls<span class="token token-operator punctuation">-</span>daten_id<span class="token punctuation">.</span>
+  <span class="token keyword">endloop</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %%vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> %_vb_calls<span class="token punctuation">.</span>
+
+<span class="token comment">* free contents of memory and tables</span>
+  %_vbkey<span class="token token-operator punctuation">-</span>vbkey <span class="token operator">=</span> %%vbkey<span class="token token-operator punctuation">-</span>vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> imode_orders<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> orders<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> imode_rb_orders<span class="token punctuation">.</span>
+  <span class="token keyword">free</span> rb_orders<span class="token punctuation">.</span>
+<span class="token comment">* for RTM test concerning POC during OS events</span>
+  <span class="token keyword">free</span> os_orders<span class="token punctuation">.</span>
+<span class="token comment">* end RTM</span>
+
+  <span class="token keyword">if</span> arfc_pending <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+    arfc_pending <span class="token operator">=</span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+    <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'ARFC_END_TRANSACTION'</span>
+      <span class="token keyword">exporting</span>
+        <span class="token keyword">mode</span> <span class="token operator">=</span> <span class="token string">'ROLLBACK'</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">*</span>
+<span class="token comment">* bgRFC</span>
+<span class="token comment">*</span>
+  <span class="token keyword">if</span> bgrfc_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span> <span class="token eol-comment comment">"something happened with bgRFC</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_BGRFC_DB_HELPER'</span><span class="token punctuation">)</span>=>ON_ROLLBACK<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">*</span>
+<span class="token comment">* Local DATA Queue (LDQ)</span>
+<span class="token comment">*</span>
+  <span class="token keyword">if</span> ldq_writer_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with LDQ-Writer</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_WRITER'</span><span class="token punctuation">)</span>=>on_rollback<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">if</span> ldq_reader_eot_action  <span class="token keyword">ne</span> <span class="token number">0</span><span class="token punctuation">.</span>  <span class="token eol-comment comment">"something happened with LDQ-Writer</span>
+    <span class="token keyword">call</span> <span class="token keyword">method</span> <span class="token punctuation">(</span><span class="token string">'CL_LDQ_UNIT_READER'</span><span class="token punctuation">)</span>=>on_rollback<span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* reset marker on call stack.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_rollback</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_AFTER_ROLLBACK</span>
+<span class="token comment">* called from RSYN rollback.rs1</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_after_rollback<span class="token punctuation">.</span>                                      <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> l_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+
+<span class="token comment">* ROLLBACK during POC, Update task or End Transaction event?</span>
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'P'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'E'</span> <span class="token keyword">and</span>
+        sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'N'</span> <span class="token keyword">and</span> sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">&lt;></span> <span class="token string">'V'</span><span class="token punctuation">.</span>
+<span class="token comment">* change sy-oncom to avoid recursion</span>
+  l_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'E'</span><span class="token punctuation">.</span>                      <span class="token eol-comment comment">"E = Event Handling</span>
+<span class="token comment">* no escape out off this form other than ENDFORM</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token keyword">method</span> cl_os_transaction_end_notifier<span class="token token-operator punctuation">=></span>raise_rollback_finished<span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token keyword">method</span> cl_system_transaction_state<span class="token token-operator punctuation">=></span>raise_transaction_finished
+    <span class="token keyword">exporting</span>
+      <span class="token keyword">kind</span> <span class="token operator">=</span> cl_system_transaction_state<span class="token token-operator punctuation">=></span>rollback_work<span class="token punctuation">.</span>
+
+<span class="token comment">* switch local update task to 'inactive'</span>
+  <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_UTASK_OFF'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">'N'</span><span class="token punctuation">.</span>
+<span class="token comment">* restore sy-oncom</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> l_oncom<span class="token punctuation">.</span>
+
+<span class="token comment">* reset marker on call stack.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_after_rollback</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM %_PROCESS_P_O_R</span>
+<span class="token comment">* Process PERFORM ON ROLLBACK orders</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_process_p_o_r<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> last_oncom <span class="token keyword">like</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> rb_orders_wa       <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">,</span>
+        imode_rb_orders_wa <span class="token keyword">type</span> %_commit_orders<span class="token punctuation">.</span>
+
+  last_oncom <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>oncom<span class="token punctuation">.</span>
+  <span class="token keyword">import</span> imode_rb_orders <span class="token keyword">from</span> <span class="token keyword">memory</span> <span class="token keyword">id</span> %_vbkey<span class="token punctuation">.</span>
+  <span class="token keyword">loop</span> <span class="token keyword">at</span> imode_rb_orders <span class="token keyword">into</span> imode_rb_orders_wa<span class="token punctuation">.</span>
+    <span class="token keyword">perform</span> %_order_form_for_rollback
+      <span class="token keyword">using</span> imode_rb_orders_wa<span class="token token-operator punctuation">-</span>prog
+            imode_rb_orders_wa<span class="token token-operator punctuation">-</span>rout<span class="token punctuation">.</span>
+  <span class="token keyword">endloop</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> imode_rb_orders<span class="token punctuation">.</span>
+  <span class="token keyword">sort</span> rb_orders <span class="token keyword">by</span> u_level i_level<span class="token punctuation">.</span>
+
+<span class="token comment">* signal begin of ON ROLLBACK handling</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> <span class="token string">'P'</span><span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">'R'</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">set</span><span class="token punctuation">.</span>
+  <span class="token keyword">loop</span> <span class="token keyword">at</span> rb_orders <span class="token keyword">into</span> rb_orders_wa<span class="token punctuation">.</span>
+    <span class="token keyword">perform</span> <span class="token punctuation">(</span>rb_orders_wa<span class="token token-operator punctuation">-</span>rout<span class="token punctuation">)</span>
+          <span class="token keyword">in</span> <span class="token keyword">program</span> <span class="token punctuation">(</span>rb_orders_wa<span class="token token-operator punctuation">-</span>prog<span class="token punctuation">)</span><span class="token punctuation">.</span>
+  <span class="token keyword">endloop</span><span class="token punctuation">.</span>
+  <span class="token keyword">system-call</span> state_limit <span class="token keyword">reset</span><span class="token punctuation">.</span>
+  <span class="token keyword">free</span> rb_orders<span class="token punctuation">.</span>
+
+<span class="token comment">* signal end of ON ROLLBACK</span>
+  sy<span class="token token-operator punctuation">-</span>oncom <span class="token operator">=</span> last_oncom<span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token string">'SET_SWITCH_TXEND'</span> <span class="token keyword">id</span> <span class="token string">'STATE'</span> <span class="token keyword">field</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_process_p_o_r</span>
+
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token comment">* FORM SYSTEM_HOOK</span>
+<span class="token comment">* ---------------------------------------------------------------------</span>
+<span class="token keyword">form</span> system_hook<span class="token punctuation">.</span>                                           <span class="token eol-comment comment">"#EC CALLED</span>
+  sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"system_hook</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* R E G I S T E R _ A F R C</span>
+<span class="token comment">* register ARFC call</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_register_arfc<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  arfc_pending <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_register_arfc</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* R E G I S T E R _ t R F C / q R F C independent from Update TASK</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_register_trfc_no_wait_for_update<span class="token punctuation">.</span>                    <span class="token eol-comment comment">"#EC PREFIX_OK</span>
+  trfc_nowait_for_update <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>
+
+<span class="token comment">*-------------------------------------------------------------------</span>
+<span class="token comment">* register bgRFC actions</span>
+<span class="token comment">*-------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_register_bgrfc<span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  bgrfc_eot_action <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_register_bgrfc</span>
+
+<span class="token comment">*-------------------------------------------------------------------</span>
+<span class="token comment">* register Local Data Queue (ldq) actions</span>
+<span class="token comment">*-------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_register_ldq_writer<span class="token punctuation">.</span>                                 <span class="token eol-comment comment">"#EC *</span>
+  ldq_writer_eot_action <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_register_ldq_writer</span>
+
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Form  %_register_ldq_reader</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*       text</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token keyword">form</span> %_register_ldq_reader<span class="token punctuation">.</span>                                 <span class="token eol-comment comment">"#EC *</span>
+  ldq_reader_eot_action <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_register_ldq_reader</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* L I S T _ C O M M A N D</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">module</span> list_command <span class="token keyword">input</span><span class="token punctuation">.</span>                                  <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> <span class="token keyword">result</span> <span class="token keyword">type</span> <span class="token keyword">i</span><span class="token punctuation">.</span>
+<span class="token comment">*  IF sy-xcode(5) EQ 'PFILE'.</span>
+<span class="token comment">*    MESSAGE ID '02' TYPE 'I' NUMBER '016'.</span>
+<span class="token comment">*    CLEAR sy-xcode.</span>
+<span class="token comment">*  ENDIF.</span>
+  <span class="token keyword">result</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">call</span> <span class="token string">'QUERY_LIST_TO_MEMORY'</span> <span class="token keyword">id</span> <span class="token string">'RESULT'</span> <span class="token keyword">field</span> <span class="token keyword">result</span><span class="token punctuation">.</span>
+  <span class="token keyword">if</span> <span class="token keyword">result</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span>
+    sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'%SMEX'</span><span class="token punctuation">.</span>
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>xcode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token string">'%'</span><span class="token punctuation">.</span>
+  <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'LIST_COMMAND'</span>
+    <span class="token keyword">exporting</span>
+      command         <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>xcode
+    <span class="token keyword">exceptions</span>
+      unknown_command <span class="token operator">=</span> <span class="token number">4</span>
+      <span class="token keyword">others</span>          <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+  <span class="token keyword">check</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+  <span class="token keyword">clear</span><span class="token punctuation">:</span> sy<span class="token token-operator punctuation">-</span>ucomm<span class="token punctuation">,</span> sy<span class="token token-operator punctuation">-</span>xcode<span class="token punctuation">.</span>
+<span class="token keyword">endmodule</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"list_command INPUT</span>
+
+<span class="token comment">* R/3-Drucken Anfang</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* P R I N T _ S T A R T</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">module</span> print_start <span class="token keyword">input</span><span class="token punctuation">.</span>                                   <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> hex02 <span class="token keyword">type</span> <span class="token keyword">x</span> <span class="token keyword">value</span> <span class="token string">'02'</span><span class="token punctuation">.</span>
+  <span class="token keyword">data</span><span class="token punctuation">:</span> display_mode<span class="token punctuation">.</span>
+
+<span class="token comment">* Korrektur Ralf Wendelgaß 20.5.98</span>
+
+  <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'PRI'</span>   <span class="token keyword">or</span>
+     sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'PRINT'</span> <span class="token keyword">or</span>
+     sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'%PRI'</span> <span class="token keyword">or</span>
+     sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'%PRN'</span><span class="token punctuation">.</span>
+
+    display_mode <span class="token operator">=</span> cl_abap_list_layout<span class="token token-operator punctuation">=></span>get_display_mode<span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+
+    sy<span class="token token-operator punctuation">-</span>callr <span class="token operator">=</span> <span class="token string">'OKPRI'</span><span class="token punctuation">.</span>
+<span class="token comment">* no print dialog if print icon was pressed</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'%PRN'</span><span class="token punctuation">.</span>
+      <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'PRINT_REPORT_DEFAULT'</span>
+        <span class="token keyword">exporting</span>
+          <span class="token keyword">report</span> <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>cprog
+          uc_display_mode <span class="token operator">=</span> display_mode
+        <span class="token keyword">exceptions</span>
+          <span class="token keyword">others</span> <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">.</span>
+    <span class="token keyword">else</span><span class="token punctuation">.</span>
+      <span class="token keyword">call</span> <span class="token keyword">function</span> <span class="token string">'PRINT_REPORT'</span>
+        <span class="token keyword">exporting</span>
+          <span class="token keyword">report</span> <span class="token operator">=</span> sy<span class="token token-operator punctuation">-</span>cprog
+          uc_display_mode <span class="token operator">=</span> display_mode
+        <span class="token keyword">exceptions</span>
+          <span class="token keyword">others</span> <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token comment">* printing ok</span>
+    <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+
+<span class="token comment">* cover page</span>
+      <span class="token keyword">if</span> sy<span class="token token-operator punctuation">-</span>subty <span class="token keyword">o</span> hex02 <span class="token keyword">and</span> %_print<span class="token token-operator punctuation">-</span>prbig <span class="token operator">&lt;></span> <span class="token keyword">space</span><span class="token punctuation">.</span>
+        <span class="token keyword">perform</span> %_%_cover_page<span class="token punctuation">(</span>rsdbrunt<span class="token punctuation">)</span><span class="token punctuation">.</span>
+      <span class="token keyword">endif</span><span class="token punctuation">.</span>
+      sy<span class="token token-operator punctuation">-</span>xcode <span class="token operator">=</span> <span class="token string">'PRI'</span><span class="token punctuation">.</span>
+
+<span class="token comment">* errors occured or printout cancelled</span>
+    <span class="token keyword">else</span><span class="token punctuation">.</span>
+      <span class="token keyword">clear</span> sy<span class="token token-operator punctuation">-</span>xcode<span class="token punctuation">.</span>
+      <span class="token keyword">message</span> s015<span class="token punctuation">.</span>
+    <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">endif</span><span class="token punctuation">.</span>
+
+<span class="token keyword">endmodule</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"print_start INPUT</span>
+<span class="token comment">* R/3-Drucken Ende</span>
+
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* S Y N T A X C H E C K - Popup (143)</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">module</span> sc_init <span class="token keyword">output</span><span class="token punctuation">.</span>                                      <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">tables</span><span class="token punctuation">:</span> trdir<span class="token punctuation">,</span> abmsg<span class="token punctuation">.</span>
+  <span class="token keyword">set</span> <span class="token keyword">titlebar</span> <span class="token string">'001'</span><span class="token punctuation">.</span>                                       <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">set</span> <span class="token keyword">pf-status</span> <span class="token string">'SCMS'</span> <span class="token keyword">immediately</span><span class="token punctuation">.</span>                         <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">select</span> <span class="token keyword">single</span> <span class="token operator">*</span> <span class="token keyword">from</span> trdir <span class="token keyword">where</span> <span class="token keyword">name</span> <span class="token operator">=</span> abmsg<span class="token token-operator punctuation">-</span>irepid<span class="token punctuation">.</span>
+<span class="token keyword">endmodule</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"sc_init OUTPUT</span>
+
+<span class="token comment">*---------------------------------------------------------------------*</span>
+<span class="token comment">*       MODULE SC_RESET                                               *</span>
+<span class="token comment">*---------------------------------------------------------------------*</span>
+<span class="token comment">*       ........                                                      *</span>
+<span class="token comment">*---------------------------------------------------------------------*</span>
+<span class="token keyword">module</span> sc_reset<span class="token punctuation">.</span>                                            <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">leave</span> <span class="token keyword">to</span> <span class="token keyword">transaction</span> <span class="token string">' '</span><span class="token punctuation">.</span>
+<span class="token keyword">endmodule</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"sc_reset</span>
+
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* L I S T _ E X I T</span>
+<span class="token comment">* return from "Listprocessing" (main list of report -> LIST_RETURN)</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_list_exit<span class="token punctuation">.</span>                                           <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">leave</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_list_exit</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* L I S T _ R E T U R N</span>
+<span class="token comment">* return from main list of report -> selection screen</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> %_list_return<span class="token punctuation">.</span>                                         <span class="token eol-comment comment">"#EC *</span>
+  <span class="token keyword">perform</span> %_return_to_selscreen <span class="token keyword">in</span> <span class="token keyword">program</span> rsdbrunt <span class="token keyword">if</span> <span class="token keyword">found</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>                    <span class="token eol-comment comment">"%_list_return</span>
+
+<span class="token comment">*???????????????????????????????????????????????????????????????????????</span>
+<span class="token keyword">form</span> list_command ##NEEDED<span class="token punctuation">.</span>                                 <span class="token eol-comment comment">"#EC CALLED</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>
+
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token comment">* N E W - L I N E</span>
+<span class="token comment">* called by ab_trigg to force a line-skip after GET processing</span>
+<span class="token comment">* -------------------------------------------------------------------</span>
+<span class="token keyword">form</span> <span class="token keyword">new-line</span> ##FIELD_HYPHEN<span class="token punctuation">.</span>                               <span class="token eol-comment comment">"#EC CALLED</span>
+  <span class="token keyword">new-line</span><span class="token punctuation">.</span>
+<span class="token keyword">endform</span><span class="token punctuation">.</span>
+
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Module  LEAVE_LIST  OUTPUT</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*       text                                                           *</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token comment">*odule %_list_return output.</span>
+<span class="token comment">* perform %_return_to_selscreen in program rsdbrunt if found.</span>
+<span class="token comment">* leave screen.</span>
+<span class="token comment">*ndmodule.                             " LEAVE_LIST  OUTPUT</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Module  LIST_STRUCTURE_RECOGNIZER  OUTPUT</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*       text</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token keyword">module</span> list_structure_recognizer <span class="token keyword">output</span><span class="token punctuation">.</span>
+   cl_abap_list_parser<span class="token token-operator punctuation">=></span>refresh_lsr_container<span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>
+<span class="token keyword">endmodule</span><span class="token punctuation">.</span>                 <span class="token eol-comment comment">" LIST_STRUCTURE_RECOGNIZER  OUTPUT</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Form  thew_list_masking</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*       text</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token comment">*  -->  p1        text</span>
+<span class="token comment">*  &lt;--  p2        text</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token keyword">FORM</span> thew_list_masking <span class="token punctuation">.</span>
+
+  <span class="token keyword">DATA</span><span class="token punctuation">:</span>
+    lv_func       <span class="token keyword">TYPE</span> rs38l_fnam <span class="token keyword">VALUE</span> <span class="token string">'/UIM/PBO_120_HOOK_LIST'</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">TRY</span><span class="token punctuation">.</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'FUNCTION_EXISTS'</span>
+        <span class="token keyword">EXPORTING</span>
+          funcname           <span class="token operator">=</span> lv_func
+        <span class="token keyword">EXCEPTIONS</span>
+          function_not_exist <span class="token operator">=</span> <span class="token number">1</span>
+          <span class="token keyword">OTHERS</span>             <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>
+      <span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+        <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> lv_func<span class="token punctuation">.</span>
+      <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+    <span class="token keyword">CATCH</span> cx_root<span class="token punctuation">.</span>
+  <span class="token keyword">ENDTRY</span><span class="token punctuation">.</span>
+
+
+<span class="token keyword">ENDFORM</span><span class="token punctuation">.</span>
+
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*&amp;      Form  thew_list_masking2</span>
+<span class="token comment">*&amp;---------------------------------------------------------------------*</span>
+<span class="token comment">*       advanced UI masking of special fields with helpid</span>
+<span class="token comment">*       called from kernel by ab_rperf from abwrite</span>
+<span class="token comment">*----------------------------------------------------------------------*</span>
+<span class="token keyword">FORM</span> thew_list_masking2<span class="token punctuation">.</span>
+
+  <span class="token keyword">DATA</span><span class="token punctuation">:</span>
+    lv_func       <span class="token keyword">TYPE</span> rs38l_fnam <span class="token keyword">VALUE</span> <span class="token string">'/UIM/PBO_WRITE_HOOK'</span><span class="token punctuation">.</span>
+
+  <span class="token keyword">TRY</span><span class="token punctuation">.</span>
+      <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> <span class="token string">'FUNCTION_EXISTS'</span>
+        <span class="token keyword">EXPORTING</span>
+          funcname           <span class="token operator">=</span> lv_func
+        <span class="token keyword">EXCEPTIONS</span>
+          function_not_exist <span class="token operator">=</span> <span class="token number">1</span>
+          <span class="token keyword">OTHERS</span>             <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">.</span>
+      <span class="token keyword">IF</span> sy<span class="token token-operator punctuation">-</span>subrc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span>
+
+        <span class="token keyword">FIELD-SYMBOLS</span><span class="token punctuation">:</span>
+          &lt;in_p1>    <span class="token keyword">TYPE</span> <span class="token keyword">any</span><span class="token punctuation">,</span>
+          &lt;in_p2>    <span class="token keyword">TYPE</span> <span class="token keyword">any</span><span class="token punctuation">,</span>
+          &lt;inout_p3> <span class="token keyword">TYPE</span> <span class="token keyword">any</span><span class="token punctuation">,</span>
+          &lt;out_p4>   <span class="token keyword">TYPE</span> <span class="token keyword">any</span><span class="token punctuation">.</span>
+
+        <span class="token keyword">CALL</span> <span class="token string">'AB_GET_C_PARMS'</span> <span class="token keyword">ID</span> <span class="token string">'P1'</span> <span class="token keyword">FIELD</span> &lt;in_p1>    <span class="token eol-comment comment">"field name</span>
+                              <span class="token keyword">ID</span> <span class="token string">'P2'</span> <span class="token keyword">FIELD</span> &lt;in_p2>    <span class="token eol-comment comment">"ddic name</span>
+                              <span class="token keyword">ID</span> <span class="token string">'P3'</span> <span class="token keyword">FIELD</span> &lt;inout_p3>    <span class="token eol-comment comment">"field value</span>
+                              <span class="token keyword">ID</span> <span class="token string">'P4'</span> <span class="token keyword">FIELD</span> &lt;out_p4><span class="token punctuation">.</span>    <span class="token eol-comment comment">"flag is list masking</span>
+
+        <span class="token keyword">CALL</span> <span class="token keyword">FUNCTION</span> lv_func
+          <span class="token keyword">EXPORTING</span>
+            fieldname       <span class="token operator">=</span> &lt;in_p1>
+            ddicname        <span class="token operator">=</span> &lt;in_p2>
+          <span class="token keyword">IMPORTING</span>
+            is_list_masking <span class="token operator">=</span> &lt;out_p4>
+          <span class="token keyword">CHANGING</span>
+            fieldvalue      <span class="token operator">=</span> &lt;inout_p3><span class="token punctuation">.</span>
+
+        <span class="token keyword">CALL</span> <span class="token string">'AB_SET_C_PARMS'</span> <span class="token keyword">ID</span> <span class="token string">'P3'</span> <span class="token keyword">FIELD</span> &lt;inout_p3>
+                      <span class="token keyword">ID</span> <span class="token string">'P4'</span> <span class="token keyword">FIELD</span> &lt;out_p4><span class="token punctuation">.</span>    <span class="token eol-comment comment">"#EC CI_CCALL CI_CCALL</span>
+      <span class="token keyword">ENDIF</span><span class="token punctuation">.</span>
+
+    <span class="token keyword">CATCH</span> cx_root<span class="token punctuation">.</span>
+  <span class="token keyword">ENDTRY</span><span class="token punctuation">.</span>
+
+<span class="token keyword">ENDFORM</span><span class="token punctuation">.</span></code></pre>
+      </div></div><hr style="margin-bottom:1.75rem"/><p><a href="/final-say-bitcoin/">Previous Post: <!-- -->My First and Final Statement on Bitcoin for this Blog</a></p><p><a href="/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/">Next Post: <!-- -->Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot</a></p><hr style="margin-bottom:1.75rem"/><div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-63301492-1', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"detailed-look-at-bdc-in-abap-425","path":"/detailed-look-at-bdc-in-abap/"};window.dataPath="728/path---detailed-look-at-bdc-in-abap-425-4a2-prb0rULMNGoWtLfHylUwewFWI";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ad23b07ebfe18bbc8a3d.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-784c623eea3d512d4431.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css","/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js"],"component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js":["/component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js-3714908037b71d879a29.js"],"component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js":["/component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js-1443edc1afd4fd95408e.js"],"component---src-pages-index-js":["/component---src-pages-index-js.bf46f1f06251d66d0ae3.css","/component---src-pages-index-js-65af783329ecfb5d4583.js"],"component---src-pages-market-news-feed-index-js":["/component---src-pages-market-news-feed-index-js-491e4d2f7bea22c59b02.js"],"component---src-pages-privacy-policy-index-js":["/component---src-pages-privacy-policy-index-js-fbd51d3cd3801a96c7ec.js"],"component---src-pages-sec-filings-index-js":["/component---src-pages-sec-filings-index-js-66cd1a0bdfd16637e8f1.js"],"component---src-pages-talk-shop-index-js":["/component---src-pages-talk-shop-index-js-65dd8c308d8f4192a54d.js"]};/*]]>*/</script><script src="/webpack-runtime-38e0fc6dbde406d8fd9f.js" async=""></script><script src="/0-22e2c4f5cafcc425a132.js" async=""></script><script src="/1-7689e40957fb9a593977.js" async=""></script><script src="/app-ad23b07ebfe18bbc8a3d.js" async=""></script><script src="/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js" async=""></script></body></html>
