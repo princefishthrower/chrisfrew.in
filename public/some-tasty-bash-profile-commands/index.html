@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="en"><head><title>Chris Frewin&#x27;s Full Stack Blog</title><meta charSet="utf-8"/><meta name="Description" content="Chris&#x27;s full stack blog on topics including SAP ABAP, SAPUI5, OpenUI5, web development, backend development, machine learning, and natural language processing. Also always a bit about freelancing, work, money, and retirement, and life philosophy."/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.38"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><title data-react-helmet="true">Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better | Chris Frewin&#x27;s Full Stack, Web Development, ABAP, SAPUI5, Blockchain, Machine Learning, &amp; Natural Language Processing Blog.</title><meta data-react-helmet="true" name="description" content="Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels! This post is…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js"/><link as="script" rel="preload" href="/app-ad23b07ebfe18bbc8a3d.js"/><link as="script" rel="preload" href="/1-7689e40957fb9a593977.js"/><link as="script" rel="preload" href="/0-22e2c4f5cafcc425a132.js"/><link as="script" rel="preload" href="/webpack-runtime-51bb3fb70a7c1eaf419e.js"/><link rel="preload" href="/static/d/314/path---some-tasty-bash-profile-commands-86-b-53b-H1yXNTgVK1KcJhWNJtqfnuKRNWo.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/"><div>Chris&#x27;s <span style="color:#F92672">Full Stack</span>, <span style="color:#66D9EF">Web Development</span>, <span style="color:#A6E22E">ABAP</span>, <span style="color:#F92672">SAPUI5</span>, <span style="color:#66D9EF">Machine Learning</span>,  &amp; <span style="color:#A6E22E">Natural Language Processing</span> <span style="color:#F92672">Blog</span>.<br/></div></a></h3><h1>Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">April 09, 2018</p><div><h1>Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!</h1>
+<p>This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don’t necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? 😄)</p>
+<p>For the following machines, the alias file can be found in these locations:</p>
+<p>Mac: <code class="language-text">~/.bash_profile</code></p>
+<p>Linux: <code class="language-text">~/.bashrc</code></p>
+<p>Raspberry Pi (with raspbian and other linux style builds): <code class="language-text">~/.bashrc</code></p>
+<p>Here’s what I’ve got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been <em>clearly</em> modified, they won’t work - what do you think I am, an idiot? 😂😂😂 )</p>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code class="language-bash"><span class="token comment"># ~/.bashrc: executed by bash(1) for non-login shells.</span>
+<span class="token comment"># see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)</span>
+<span class="token comment"># for examples</span>
+
+<span class="token comment"># If not running interactively, don't do anything</span>
+<span class="token keyword">case</span> $- <span class="token keyword">in</span>
+    *i*<span class="token punctuation">)</span> <span class="token punctuation">;</span><span class="token punctuation">;</span>
+      *<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+esac
+
+<span class="token comment"># don't put duplicate lines or lines starting with space in the history.</span>
+<span class="token comment"># See bash(1) for more options</span>
+HISTCONTROL<span class="token operator">=</span>ignoreboth
+
+<span class="token comment"># append to the history file, don't overwrite it</span>
+<span class="token function">shopt</span> -s histappend
+
+<span class="token comment"># for setting history length see HISTSIZE and HISTFILESIZE in bash(1)</span>
+HISTSIZE<span class="token operator">=</span>1000
+HISTFILESIZE<span class="token operator">=</span>2000
+
+<span class="token comment"># check the window size after each command and, if necessary,</span>
+<span class="token comment"># update the values of LINES and COLUMNS.</span>
+<span class="token function">shopt</span> -s checkwinsize
+
+<span class="token comment"># If set, the pattern "**" used in a pathname expansion context will</span>
+<span class="token comment"># match all files and zero or more directories and subdirectories.</span>
+<span class="token comment">#shopt -s globstar</span>
+
+<span class="token comment"># make less more friendly for non-text input files, see lesspipe(1)</span>
+<span class="token punctuation">[</span> -x /usr/bin/lesspipe <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>SHELL<span class="token operator">=</span>/bin/sh lesspipe<span class="token variable">)</span></span>"</span>
+
+<span class="token comment"># fancy directory prompt</span>
+PS1<span class="token operator">=</span><span class="token string">'\[\033[01;32m\]\u@\h\[\033[01;34m\] [\w]\[\033[00m\] '</span>
+
+<span class="token comment"># Add an "alert" alias for long running commands.  Use like so:</span>
+<span class="token comment">#   sleep 10; alert</span>
+<span class="token function">alias</span> alert<span class="token operator">=</span><span class="token string">'notify-send --urgency=low -i "<span class="token variable"><span class="token variable">$(</span><span class="token punctuation">[</span> $? <span class="token operator">=</span> 0 <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">echo</span> terminal <span class="token operator">||</span> <span class="token keyword">echo</span> error<span class="token variable">)</span></span>" "<span class="token variable"><span class="token variable">$(</span><span class="token function">history</span><span class="token operator">|</span><span class="token function">tail</span> -n1<span class="token operator">|</span><span class="token function">sed</span> -e <span class="token string">'\''</span>s/^\s*<span class="token punctuation">[</span>0-9<span class="token punctuation">]</span>\+\s*//<span class="token punctuation">;</span>s/<span class="token punctuation">[</span><span class="token punctuation">;</span><span class="token operator">&amp;</span><span class="token operator">|</span><span class="token punctuation">]</span>\s*alert$//<span class="token string">'\''</span><span class="token variable">)</span></span>"'</span>
+
+<span class="token comment"># Alias definitions.</span>
+<span class="token comment"># You may want to put all your additions into a separate file like</span>
+<span class="token comment"># ~/.bash_aliases, instead of adding them here directly.</span>
+<span class="token comment"># See /usr/share/doc/bash-doc/examples in the bash-doc package.</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span> -f ~/.bash_aliases <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token keyword">.</span> ~/.bash_aliases
+<span class="token keyword">fi</span>
+
+<span class="token comment"># enable programmable completion features (you don't need to enable</span>
+<span class="token comment"># this, if it's already enabled in /etc/bash.bashrc and /etc/profile</span>
+<span class="token comment"># sources /etc/bash.bashrc).</span>
+<span class="token keyword">if</span> <span class="token operator">!</span> <span class="token function">shopt</span> -oq posix<span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> -f /usr/share/bash-completion/bash_completion <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token keyword">.</span> /usr/share/bash-completion/bash_completion
+  <span class="token keyword">elif</span> <span class="token punctuation">[</span> -f /etc/bash_completion <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token keyword">.</span> /etc/bash_completion
+  <span class="token keyword">fi</span>
+<span class="token keyword">fi</span>
+
+
+<span class="token comment">##########################################</span>
+<span class="token comment">### BEGIN CUSTOM ALIASES AND FUNCTIONS ###</span>
+<span class="token comment">##########################################</span>
+
+<span class="token comment">###########</span>
+<span class="token comment"># aliases #</span>
+<span class="token comment">###########</span>
+
+<span class="token comment"># productivity</span>
+<span class="token function">alias</span> prof<span class="token operator">=</span><span class="token string">'atom /Users/chris/.bash_profile'</span> <span class="token comment"># opens .bash_profile for editing</span>
+<span class="token function">alias</span> s<span class="token operator">=</span><span class="token string">'source /Users/chris/.bash_profile'</span> <span class="token comment"># sources .bash_profile (should be done every time after changing profile)</span>
+<span class="token function">alias</span> lk<span class="token operator">=</span><span class="token string">'ls -lhkart'</span>
+<span class="token function">alias</span> show<span class="token operator">=</span><span class="token string">'open .'</span>
+<span class="token function">alias</span> back<span class="token operator">=</span><span class="token string">'cd ..'</span>
+<span class="token function">alias</span> prev<span class="token operator">=</span><span class="token string">'cd -'</span>
+<span class="token function">alias</span> home<span class="token operator">=</span><span class="token string">'cd'</span>
+<span class="token function">alias</span> boot<span class="token operator">=</span><span class="token string">'sudo reboot'</span>
+<span class="token function">alias</span> shut<span class="token operator">=</span><span class="token string">'sudo shutdown -h now'</span>
+<span class="token function">alias</span> hidedesk<span class="token operator">=</span><span class="token string">'gsettings set org.gnome.desktop.background show-desktop-icons false'</span>
+<span class="token function">alias</span> showdesk<span class="token operator">=</span><span class="token string">'gsettings set org.gnome.desktop.background show-desktop-icons true'</span>
+<span class="token function">alias</span> de<span class="token operator">=</span><span class="token string">'xdg-open /Users/chris/Desktop/DE.desktop'</span>
+<span class="token function">alias</span> en<span class="token operator">=</span><span class="token string">'xdg-open /Users/chris/Desktop/EN.desktop'</span>
+<span class="token function">alias</span> duo<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ekajaiihjemkjldcienbdonodmbiklnb'</span>
+<span class="token function">alias</span> whats<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm'</span>
+<span class="token function">alias</span> sputnik<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'</span>
+<span class="token function">alias</span> robo<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'</span>
+<span class="token function">alias</span> roboton<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dailkpkcmcieildpjbiinmpllifajeoh'</span>
+<span class="token function">alias</span> slack<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=niopebapoomkfgpbhanlddcancjkjnkl'</span>
+<span class="token function">alias</span> sd<span class="token operator">=</span><span class="token string">'down;show;prev'</span>
+<span class="token function">alias</span> ipy<span class="token operator">=</span><span class="token string">'ipython'</span>
+<span class="token function">alias</span> py<span class="token operator">=</span><span class="token string">'python'</span>
+<span class="token function">alias</span> youtubemp3<span class="token operator">=</span><span class="token string">'youtube-dl --extract-audio --audio-format mp3'</span>
+<span class="token function">alias</span> getlines<span class="token operator">=</span><span class="token string">'find . -name "*.*" | xargs wc -l'</span>
+<span class="token function">alias</span> disabledchromium<span class="token operator">=</span><span class="token string">'chromium-browser --disable-web-security --user-data-dir'</span>
+<span class="token function">alias</span> phpserver<span class="token operator">=</span><span class="token string">'php -S localhost:8000'</span>
+<span class="token function">alias</span> phpserver2<span class="token operator">=</span><span class="token string">'php -S localhost:8001'</span>
+<span class="token function">alias</span> serv<span class="token operator">=</span><span class="token string">'cd; cd personalwebsite; phpserver'</span>
+<span class="token function">alias</span> feldkirch<span class="token operator">=</span><span class="token string">'/opt/google/chrome/google-chrome --profile-directory=Default --app-id=mnmkkpdekllmopechbcfhhhdojafalin'</span>
+<span class="token function">alias</span> coderesources<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/coderesources'</span>
+<span class="token function">alias</span> codestuff<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/codestuff'</span>
+<span class="token function">alias</span> gladysroot<span class="token operator">=</span><span class="token string">'cd /usr/local/lib/node_modules/gladys'</span>
+<span class="token function">alias</span> studio<span class="token operator">=</span><span class="token string">'sh /usr/local/android-studio/bin/studio.sh'</span>
+<span class="token function">alias</span> pl<span class="token operator">=</span><span class="token string">'perl'</span>
+<span class="token function">alias</span> haskell<span class="token operator">=</span><span class="token string">'ghci'</span>
+<span class="token function">alias</span> nexus<span class="token operator">=</span><span class="token string">'emulator @Nexus_5X_API_26'</span>
+<span class="token function">alias</span> iphone5<span class="token operator">=</span><span class="token string">'/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID EF585900-1164-4AF9-90FD-26B1DEC3DB66'</span>
+<span class="token function">alias</span> iphone6<span class="token operator">=</span><span class="token string">'/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID 3DC7A4A6-489F-4305-AFE8-53A8D1302E65'</span>
+<span class="token function">alias</span> nodecode<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/codestuff/node'</span>
+<span class="token function">alias</span> gittelluser<span class="token operator">=</span><span class="token string">'git config --global user.email'</span>
+<span class="token function">alias</span> nodesass<span class="token operator">=</span><span class="token string">'node-sass -wo ./src/styles ./src/styles-scss'</span>
+<span class="token function">alias</span> pj<span class="token operator">=</span><span class="token string">'cd /Users/chris/projects'</span>
+<span class="token function">alias</span> heroku-skillscout<span class="token operator">=</span><span class="token string">'heroku git:remote -a skillscout;git commit .;git push heroku master'</span>
+<span class="token function">alias</span> usbs<span class="token operator">=</span><span class="token string">'cd /Volumes/'</span>
+<span class="token function">alias</span> art<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/Art'</span>
+<span class="token function">alias</span> datasets<span class="token operator">=</span><span class="token string">'cd /Users/chris/datasets'</span>
+<span class="token function">alias</span> npmgloballist<span class="token operator">=</span><span class="token string">'npm list -g --depth=0'</span>
+
+<span class="token comment"># folder locations</span>
+<span class="token function">alias</span> cfpaper<span class="token operator">=</span><span class="token string">'cd /Users/chris/cf_tracer'</span>
+<span class="token function">alias</span> down<span class="token operator">=</span><span class="token string">'cd /Users/chris/Downloads'</span>
+<span class="token function">alias</span> desk<span class="token operator">=</span><span class="token string">'cd /Users/chris/Desktop'</span>
+<span class="token function">alias</span> sap<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/sap'</span>
+<span class="token function">alias</span> pic<span class="token operator">=</span><span class="token string">'cd /Users/chris/Pictures'</span>
+<span class="token function">alias</span> trans<span class="token operator">=</span><span class="token string">'ding'</span>
+<span class="token function">alias</span> lookup<span class="token operator">=</span><span class="token string">'grep -iR'</span>
+<span class="token function">alias</span> skimonitor<span class="token operator">=</span><span class="token string">'cd /Users/chris/personalwebsite/projects/skimonitor/skimonitor/webapp'</span>
+<span class="token function">alias</span> raphelper<span class="token operator">=</span><span class="token string">'cd /Users/chris/personalwebsite/projects/raphelper/raphelper/webapp'</span>
+<span class="token function">alias</span> ui5sdk<span class="token operator">=</span><span class="token string">'cd /Users/chris/Documents/OpenUI5/openui5-sdk-1.38.5'</span>
+<span class="token function">alias</span> play<span class="token operator">=</span><span class="token string">'cd /Users/chris/playground'</span>
+
+<span class="token comment"># Pi Logins - make sure to change IP when router IP changes!</span>
+<span class="token function">alias</span> pilocal<span class="token operator">=</span><span class="token string">'ssh pi@192.168.0.16'</span>
+<span class="token function">alias</span> pi<span class="token operator">=</span><span class="token string">'ssh pi@123.123.123.123 -p 22'</span>
+<span class="token function">alias</span> pidesk<span class="token operator">=</span><span class="token string">'ssh -XC pi@192.168.0.16 x2x -north -to :0.0'</span>
+
+<span class="token comment"># Linux Server Logins - make sure to change IP when router IP changes!</span>
+<span class="token function">alias</span> delllocal<span class="token operator">=</span><span class="token string">'ssh chris@192.168.0.20 -p 55555'</span>
+<span class="token function">alias</span> dell<span class="token operator">=</span><span class="token string">'ssh chris@123.123.123.123 -p 55555'</span>
+
+<span class="token comment"># Yoga Raiblocks</span>
+<span class="token function">alias</span> yoga<span class="token operator">=</span><span class="token string">'ssh chris@192.168.0.12 -p 44444'</span>
+
+<span class="token comment"># Devon's Server</span>
+<span class="token function">alias</span> stock<span class="token operator">=</span><span class="token string">'ssh devonsserverwhichiwontshowyouthenameorhost@host.com -p 24'</span>
+
+<span class="token function">alias</span> unlockiphone<span class="token operator">=</span><span class="token string">'sudo chmod 777 /var/lib/lockdown'</span>
+
+<span class="token function">alias</span> utorrent<span class="token operator">=</span><span class="token string">'utserver -settingspath /opt/utorrent-server-alpha-v3_3/'</span>
+
+<span class="token function">alias</span> vncconnect<span class="token operator">=</span><span class="token string">'ssh -L 5900:localhost:5900 pi@123.123.123.123 -p 1234'</span>
+
+<span class="token keyword">function</span> droiddev<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    galaxy<span class="token punctuation">;</span>
+    react-native start<span class="token punctuation">;</span>
+    react-native run-android<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> vid2mp4<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ffmpeg -i <span class="token variable">$1</span> -vcodec mpeg4 <span class="token variable">$2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> video2x<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ffmpeg -i <span class="token variable">$1</span> -vcodec h264 -an -vf <span class="token string">"fps=60, setpts=0.50*PTS"</span> <span class="token variable">$2</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># speed up input video by 4, export as 'outfast.ogv'</span>
+<span class="token keyword">function</span> video4x<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ffmpeg -i <span class="token variable">$1</span> -vcodec h264 -an -vf <span class="token string">"fps=60, setpts=0.25*PTS"</span> <span class="token variable">$2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> video10x<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ffmpeg -i <span class="token variable">$1</span> -vcodec h264 -an -vf <span class="token string">"fps=60, setpts=0.1*PTS"</span> <span class="token variable">$2</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># put bdc data in correct format</span>
+<span class="token keyword">function</span> bdc<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">awk</span> <span class="token string">'{for(i=1;i&lt;=NF;i++)printf("\"%s\" ",<span class="token variable">$i</span>);printf("\n");}'</span> <span class="token variable">$1</span> <span class="token operator">></span> temp1<span class="token punctuation">;</span> <span class="token comment"># wrap all words in double quotes</span>
+    <span class="token function">cat</span> temp1 <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">'"'</span> <span class="token string">"'"</span> <span class="token operator">></span> temp2<span class="token punctuation">;</span> <span class="token comment"># translate all double quotes to single quotes</span>
+    <span class="token function">awk</span> <span class="token string">'{ if (<span class="token variable">$3</span> != "") print "PERFORM bdcdaten USING:\n\t" <span class="token variable">$3</span> " " <span class="token variable">$1</span> " " <span class="token variable">$2</span> ","; else print "\t\t" "\47 \47 " <span class="token variable">$0</span>"," }'</span> temp2 <span class="token operator">></span> temp3<span class="token punctuation">;</span> <span class="token comment"># if there is no 3rd argument print PERFORM statement</span>
+    <span class="token comment"># cat temp3 | sed 's/ ,/,/' > bdcoutput.txt;</span>
+    <span class="token comment"># rm temp1;</span>
+    <span class="token comment"># rm temp2;</span>
+    <span class="token comment"># rm temp3;</span>
+    <span class="token comment"># echo "Done.";</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># $2 and $3 MUST be in '01:00:00' format, $1 and $4 are file names</span>
+<span class="token keyword">function</span> splitvid<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ffmpeg -v quiet -y -i <span class="token variable">$1</span> -vcodec copy -acodec copy -ss <span class="token variable">$2</span> -t <span class="token variable">$3</span> -sn <span class="token variable">$4</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> fm4<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token operator">=</span> <span class="token string">"on"</span> <span class="token punctuation">]</span>
+        <span class="token keyword">then</span>
+            <span class="token function">ssh</span> pi@192.168.0.16 <span class="token string">'tmux; fm4; exit; exit'</span>
+    <span class="token keyword">fi</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token operator">=</span> <span class="token string">"off"</span> <span class="token punctuation">]</span>
+        <span class="token keyword">then</span>
+            <span class="token function">ssh</span> pi@192.168.0.16 <span class="token string">'tmux kill-session'</span>
+    <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> lime<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    subl <span class="token variable">$1</span> <span class="token operator">&amp;</span> <span class="token comment">#  '&amp;' push everything to background</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> mynetworks<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment"># first lists all networks, then grep sorts for just the id and psk stuff. finally sed puts a space between each set</span>
+    <span class="token keyword">echo</span> <span class="token string">' '</span>
+    <span class="token function">sudo</span> <span class="token function">cat</span> /etc/NetworkManager/system-connections/* <span class="token operator">|</span> <span class="token function">grep</span> -Ew <span class="token string">'id|psk'</span> <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">'key'</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'/psk/s/$/ \n/'</span>
+    <span class="token keyword">echo</span> <span class="token string">' '</span>
+    <span class="token keyword">echo</span> <span class="token string">' '</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> fixjunkynetworking<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">sudo</span> modprobe -r rt2800pci
+    <span class="token function">sudo</span> modprobe -v rt2800pci nohwcrypt<span class="token operator">=</span>1
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> pushall<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">sudo</span> <span class="token function">git</span> add <span class="token keyword">.</span>
+    <span class="token function">sudo</span> <span class="token function">git</span> commit --all
+    <span class="token function">sudo</span> <span class="token function">git</span> push --all
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> showusb<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">cd</span> /media/chris/Banner
+    show
+<span class="token punctuation">}</span>
+
+<span class="token comment"># some git functinos because they're too damn long to remember</span>
+<span class="token keyword">function</span> gitchguser<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">git</span> config --global user.email <span class="token variable">$1</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># personal improvement of this gist: https://gist.github.com/dergachev/4627207</span>
+<span class="token keyword">function</span> mov2gif<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  width<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>mediainfo $1 <span class="token operator">|</span> <span class="token function">grep</span> Width <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">' Width:pixels'</span> <span class="token string">' '</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/ //g'</span><span class="token variable">)</span></span> <span class="token comment"># get the height/width metadata, grep out the spaces and crap</span>
+  height<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>mediainfo $1 <span class="token operator">|</span> <span class="token function">grep</span> Height <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">' Height:pixels'</span> <span class="token string">' '</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/ //g'</span><span class="token variable">)</span></span>
+  dimensionString<span class="token operator">=</span><span class="token variable">$width</span> <span class="token comment"># build a string to pass to the ffmpeg command</span>
+  dimensionString+<span class="token operator">=</span><span class="token string">"x"</span>
+  dimensionString+<span class="token operator">=</span><span class="token variable">$height</span>
+  <span class="token keyword">echo</span> <span class="token string">"Dimension determined as:"</span> <span class="token variable">$dimensionString</span> <span class="token comment"># notify user of dimensions found</span>
+  ffmpeg -i -nostats -loglevel 0 <span class="token variable">$1</span> -s <span class="token variable">$dimensionString</span> -pix_fmt rgb24 -r 10 -f gif - <span class="token operator">|</span> gifsicle --optimize<span class="token operator">=</span>3 --delay<span class="token operator">=</span>3 <span class="token operator">></span> <span class="token variable">$1</span>.gif <span class="token comment"># silent mode</span>
+  <span class="token keyword">echo</span> <span class="token string">"Saved gif as: <span class="token variable">$1</span>.gif"</span> <span class="token comment"># saved gif name</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#############################</span>
+<span class="token comment">### ENVIRONMENT VARIABLES ###</span>
+<span class="token comment">#############################</span>
+
+<span class="token comment"># keys for twitter access keys</span>
+<span class="token function">export</span> EGGHEAD_TWITTER_BOT_CONSUMER_KEY<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> EGGHEAD_TWITTER_BOT_CONSUMER_SECRET<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> EGGHEAD_TWITTER_BOT_CONSUMER_ACCESS_TOKEN_SECRET<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> EGGHEAD_TWITTER_BOT_NASA_API_KEY<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># google maps geocode API</span>
+<span class="token function">export</span> SKILLSCOUT_GOOGLE_GEOCODING_KEY<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># skillscout private postgresql tunnel server (local)</span>
+<span class="token function">export</span> SERVER_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SERVER_PORT<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SERVER_DB_PORT<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SERVER_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SERVER_PASSWORD<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># skillscout private postgresql credentials</span>
+<span class="token function">export</span> PRIVATE_RAIBLOCKS_DB_NAME<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> PRIVATE_RAIBLOCKS_DB_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> PRIVATE_RAIBLOCKS_DB_PASSWORD<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> PRIVATE_RAIBLOCKS_DB_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> PRIVATE_RAIBLOCKS_DB_PORT<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># skillscout website heroku postgresql DB</span>
+<span class="token function">export</span> SKILLSCOUT_DB_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_DB_NAME<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_DB_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_DB_PORT<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_DB_PASSWORD<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># skillscout website mongo mLab DB</span>
+<span class="token function">export</span> SKILLSCOUT_MONGODB_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_MONGODB_PASSWORD<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_MONGODB_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_MONGODB_PORT<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_MONGODB_DB_NAME<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># skillscout campaign - emails DB (heroku postrgesql)</span>
+<span class="token function">export</span> SKILLSCOUT_CAMPAIGN_DB_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_CAMPAIGN_DB_NAME<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_CAMPAIGN_DB_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_CAMPAIGN_DB_PORT<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> SKILLSCOUT_CAMPAIGN_DB_PASSWORD<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># nlpchamps - postgresql database (just saving member's emails for now)</span>
+<span class="token function">export</span> NLP_CHAMPS_DB<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> NLP_CHAMPS_DB_USER<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> NLP_CHAMPS_DB_PASSWORD<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> NLP_CHAMPS_DB_HOST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> NLP_CHAMPS_DB_PORT<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># export colors for mac</span>
+<span class="token function">export</span> CLICOLOR<span class="token operator">=</span>1
+<span class="token function">export</span> LSCOLORS<span class="token operator">=</span>GxFxCxDxBxegedabagaced
+
+<span class="token comment"># android paths</span>
+<span class="token function">export</span> ANDROID_HOME<span class="token operator">=</span>/Users/<span class="token variable">$USER</span>/Library/Android/sdk
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">${PATH}</span><span class="token keyword">:</span><span class="token variable">${ANDROID_HOME}</span>/emulator
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">${PATH}</span><span class="token keyword">:</span><span class="token variable">${ANDROID_HOME}</span>/tools
+
+<span class="token comment"># default editor</span>
+<span class="token function">export</span> EDITOR<span class="token operator">=</span>/usr/bin/nano
+
+<span class="token comment"># fucking homebrew</span>
+<span class="token function">export</span> PATH<span class="token operator">=</span>/usr/local/bin:/usr/local/sbin:~/bin:<span class="token variable">$PATH</span> <span class="token comment"># for proper ipython linking</span>
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"/usr/local/opt/python/libexec/bin:<span class="token variable">$PATH</span>"</span> <span class="token comment"># for proper python exectuble</span>
+
+<span class="token function">export</span> COSMIC_BUCKET<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> COSMIC_READ_KEY<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> COSMIC_WRITE_KEY<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># stripe payments key (TODO: copy to dell server!)</span>
+<span class="token function">export</span> STRIPE_SECRET_KEY<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> STRIPE_PUBLISHABLE_KEY<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># stripe payments test</span>
+<span class="token function">export</span> STRIPE_SECRET_KEY_TEST<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> STRIPE_PUBLISHABLE_KEY_TEST<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># raspberry pi password and user/host</span>
+<span class="token function">export</span> RASPBERRY_PI_SSH_PASSWORD<span class="token operator">=</span>lulz123456
+<span class="token function">export</span> RASPBERRY_PI_USER_AND_HOST<span class="token operator">=</span>lulz123456
+
+<span class="token comment"># npm packages</span>
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.npm-packages/bin:<span class="token variable">$PATH</span>"</span>
+
+<span class="token comment"># google cloud platform</span>
+<span class="token function">source</span> <span class="token string">'/Users/chris/opensource/google-cloud-sdk/completion.bash.inc'</span>
+<span class="token function">source</span> <span class="token string">'/Users/chris/opensource/google-cloud-sdk/path.bash.inc'</span>
+
+<span class="token comment"># added by Anaconda2 5.0.1 installer</span>
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"/Users/chris/anaconda2/bin:<span class="token variable">$PATH</span>"</span>
+
+<span class="token function">export</span> NVM_DIR<span class="token operator">=</span><span class="token string">"/Users/chris/.nvm"</span>
+<span class="token punctuation">[</span> -s <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">.</span> <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span>  <span class="token comment"># This loads nvm</span>
+
+<span class="token comment"># TORCH</span>
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">$PATH</span>:/Users/chris/torch/install/bin</code></pre>
+      </div>
+<p>For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn’t have to be that ‘sharp’! 😂), you may have noticed I even have an alias for opening the bash profile itself (<code class="language-text">prof</code>) and sourcing the profile (<code class="language-text">s</code>) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):</p>
+<div class="gatsby-highlight">
+      <pre class="language-bash"><code class="language-bash"><span class="token function">alias</span> prof<span class="token operator">=</span><span class="token string">'atom /Users/chris/.bash_profile'</span> <span class="token comment"># opens .bash_profile for editing</span>
+<span class="token function">alias</span> s<span class="token operator">=</span><span class="token string">'source /Users/chris/.bash_profile'</span> <span class="token comment"># sources .bash_profile (should be done every time after changing profile)</span></code></pre>
+      </div>
+<p>So yes, you could say I modify and add stuff to my bash profile quite often - I recommend you do it too! Improve your workflow and ease of commanding a bash terminal!</p>
+<p>-Cheers! 🍺</p>
+<p>Chris</p></div><hr style="margin-bottom:1.75rem"/><p><a href="/the-social-contract/">Previous Post: <!-- -->The Software Engineer&#x27;s Social Contract</a></p><p><a href="/sending-windows-commands-from-sap-abap/">Next Post: <!-- -->Sending Windows Server Commands From SAP ABAP</a></p><hr style="margin-bottom:1.75rem"/><div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-63301492-1', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"some-tasty-bash-profile-commands-86b","path":"/some-tasty-bash-profile-commands/"};window.dataPath="314/path---some-tasty-bash-profile-commands-86-b-53b-H1yXNTgVK1KcJhWNJtqfnuKRNWo";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ad23b07ebfe18bbc8a3d.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-784c623eea3d512d4431.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.76e6c55a11ab238cc939.css","/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js"],"component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js":["/component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js-3714908037b71d879a29.js"],"component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js":["/component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js-1443edc1afd4fd95408e.js"],"component---src-pages-index-js":["/component---src-pages-index-js.bf46f1f06251d66d0ae3.css","/component---src-pages-index-js-21e0ae84baa603ea762f.js"],"component---src-pages-market-news-feed-index-js":["/component---src-pages-market-news-feed-index-js-491e4d2f7bea22c59b02.js"],"component---src-pages-privacy-policy-index-js":["/component---src-pages-privacy-policy-index-js-fbd51d3cd3801a96c7ec.js"],"component---src-pages-sec-filings-index-js":["/component---src-pages-sec-filings-index-js-66cd1a0bdfd16637e8f1.js"],"component---src-pages-talk-shop-index-js":["/component---src-pages-talk-shop-index-js-65dd8c308d8f4192a54d.js"]};/*]]>*/</script><script src="/webpack-runtime-51bb3fb70a7c1eaf419e.js" async=""></script><script src="/0-22e2c4f5cafcc425a132.js" async=""></script><script src="/1-7689e40957fb9a593977.js" async=""></script><script src="/app-ad23b07ebfe18bbc8a3d.js" async=""></script><script src="/component---src-templates-blog-post-js-c78e770d2e3ae20710c2.js" async=""></script></body></html>

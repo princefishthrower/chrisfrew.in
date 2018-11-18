@@ -5,10 +5,6 @@ const fs = require('fs') // added to write metadata file
 const { createFilePath } = require('gatsby-source-filesystem')
 fs.writeFile('./static/metadata.json', '[', function(){console.log('metadata.json cleared!')}) // clear
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
