@@ -1,5 +1,5 @@
 ---
-title: Want to Build a Blog Just Like this One? Now You Can!
+title: Want to Build a Blog Just Like This One? Now You Can!
 date: "2018-11-17"
 draft: false
 ---
