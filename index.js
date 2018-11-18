@@ -15,13 +15,9 @@ app.use(bodyParser.json());
 // Setup logger
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
-// Serve public and static assets
-// app.use(express.static('./public'));
-// app.use(express.static('./static'));
-
-// serve with gzip compression?
+// serve public assets with gzip compression
 app.use('/', expressStaticGzip('./public'));
-app.use('/', expressStaticGzip('./static'));
+// app.use('/', expressStaticGzip('./static'));
 
 server = http.createServer(app);
 
