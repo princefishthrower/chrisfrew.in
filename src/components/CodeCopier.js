@@ -6,8 +6,6 @@ import { monokaiSublime } from 'react-syntax-highlighter/styles/hljs';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-let copySVG = require('../images/copy.svg');
-
 // style so it matches the CSS styles for gatsby prism plugin (oCustomStyle is applied to the wrapping <pre> tag of each code peice)
 const oCustomStyle = {
   'padding': '1em',
@@ -41,7 +39,7 @@ class CodeCopier extends React.Component {
         <CopyToClipboard text={this.props.sCode}
           onCopy={this.notify}>
           <button className="copyButton">
-            <span><img width="25px" alt="Copy icon" style={{marginBottom: '0px'}} src={copySVG}/></span>
+            <span><img width="25px" alt="Copy icon" style={{marginBottom: '0px'}} src={`${process.env.CDN_URL}/copy.svg`}/></span>
           </button>
         </CopyToClipboard>
         <ToastContainer autoClose={2000} hideProgressBar={true} pauseOnHover={false} closeButton={false}/>

@@ -1,8 +1,5 @@
 import React from 'react'
 
-// other third party
-import Image from 'react-image-webp';
-
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -12,9 +9,8 @@ import { rhythm } from '../utils/typography'
 import MailchimpSignup from './MailchimpSignup';
 
 const oBioPicture = (
-  <Image
-    webp={require('../images/defaultprofilepicture.webp')}
-    src={require('../images/defaultprofilepicture.png')}
+  <img
+    src={`${process.env.CDN_URL}/defaultprofilepicture.webp`}
     alt={`Chris Frewin`}
     style={{
       marginRight: rhythm(1 / 2),
