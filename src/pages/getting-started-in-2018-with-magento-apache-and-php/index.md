@@ -1,12 +1,14 @@
 ---
-title: Getting Started with Magento 2, Apache and PHP for MacOS in 2018 / 2019
+title: Run an Existing Magento 2 App with Homebrew Apache on MacOS in 2018 / 2019
 date: "2018-11-19"
 draft: false
 ---
 
+[_Also published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)
+
 So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. :joy: 
 
-This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 1-2 hours :smile:
+This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 30 minutes to an hour :smile:
 
 ## mcrypt and intl PHP Extensions
 
@@ -22,11 +24,11 @@ Your requirements could not be resolved to an installable set of packages.
 
 The MacOS system version of PHP doesn't ship with these! :scream: :scream: :scream:
 
-Luckily, the homebrew version does!
+Luckily, the Homebrew version does!
 
 ## Homebrew to the Rescue
 
-I'm going to show you how to get up and running developing your Magento app using homebrew packages. Note that the config files and start commands for Apache, as well as the path to the desired PHP location, are different than the standard system apache commands!
+I'm going to show you how to get up and running developing your Magento app using Homebrew packages. Note that the config files and start commands for Apache, as well as the path to the desired PHP location, are different than the standard system apache commands!
 
 So, before we do anything with brew, we need to shut down the system instance of Apache (mac normally ships with Apache, so let's do this now):
 
@@ -34,7 +36,7 @@ So, before we do anything with brew, we need to shut down the system instance of
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 ```
 
-Now we will install the the homebrew versions of Apache and PHP. And while we're at it, if you don't have it installed already, we will also need `composer`, the package manager for Magento, so let's just tack that on the end as well:
+Now we will install the the Homebrew versions of Apache and PHP. And while we're at it, if you don't have it installed already, we will also need `composer`, the package manager for Magento, so let's just tack that on the end as well:
 
 ```
 brew install php71 httpd composer
@@ -42,7 +44,7 @@ brew install php71 httpd composer
 
 ## Edits to Homebrew's Apache httpd.conf
 
-Edit the homebrew Apache .conf file with:
+Edit the Homebrew Apache .conf file with:
 
 ```
 sudo nano /usr/local/etc/httpd/httpd.conf
@@ -50,7 +52,7 @@ sudo nano /usr/local/etc/httpd/httpd.conf
 
 Now we need to make some changes to `httpd.conf`.
 
-Ensure that the PHP module points to the homebrew version of PHP (not the system version, which doesn't have `mcrypt` and `intl`)! and not commented out:
+Ensure that the PHP module points to the Homebrew version of PHP (not the system version, which doesn't have `mcrypt` and `intl`)! and not commented out:
 
 ```
 LoadModule php7_module /usr/local/opt/php@7.1/lib/httpd/modules/libphp7.so
@@ -117,7 +119,7 @@ Check that everything from composer update looks okay. Everything should be succ
 
 ## Checking the Site and Additional Magento Commands
 
-Finally, we can navigate to the site. As we left the homebrew defaults in our apache config, your site should be at `localhost:8080`. (System Apache is at port 80, but we deactivated it anyway). Then compile the Magento modules:
+Finally, we can navigate to the site. As we left the Homebrew defaults in our apache config, your site should be at `localhost:8080`. (System Apache is at port 80, but we deactivated it anyway). Then compile the Magento modules:
 
 ```
 bin/magento setup:di:compile
@@ -139,7 +141,7 @@ That's it! You should be all set to get developing with your Magento site on `lo
 
 ## Additional Troubleshooting and  Useful Info
 
-If, after all this config, you are getting something similiar to this error on `localhost:8080`:
+If, after all this config, you are getting something similar to this error on `localhost:8080`:
 
 ```
 Authentication plugin 'caching_sha2_password' cannot be loaded: dlopen(/usr/local/mysql/lib/plugin/caching_sha2_password.so, 2): image not found
@@ -699,3 +701,9 @@ SSLRandomSeed startup builtin
 SSLRandomSeed connect builtin
 </IfModule>
 ```
+
+I hope this was useful to those getting started with an existing Magento 2 project on macOS!
+
+Cheers! :beer:
+
+Chris

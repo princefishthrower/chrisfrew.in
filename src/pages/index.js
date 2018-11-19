@@ -83,10 +83,13 @@ class BlogIndex extends React.Component {
     </div>
     )
   }
-  componentWillMount() {
-    if (!this.state.snow && typeof window !== 'undefined') {
-      this.setState({ snow: new Snowflakes() });
+  static getDerivedStateFromProps(props, state) {
+    if (!state.snow && typeof window !== 'undefined') {
+      return {
+        snow: new Snowflakes() 
+      }
     }
+    return null; // standard if we didn't change state to return null that nothing has changed
   }
   componentDidMount() {
     // start fullscreen snow fall
