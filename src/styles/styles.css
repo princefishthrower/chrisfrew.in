@@ -25,14 +25,39 @@
   min-width: 100%;
 } */
 
+body {
+  background: #272822;
+  color: #F8F8F2;
+}
+
+a {
+color: #F92672;
+font-weight: bold;
+text-decoration: none !important;
+}
+
+blockquote {
+  color: #F8F8F2;
+  border-color: #F8F8F2;
+}
+
+small {
+  color: #F8F8F2;
+}
+
+/* add more space to the bottom of code snippets */
+pre[class*="language-"] {
+  margin-bottom: 2em;
+}
+
 /* p5 react wrapper JS style - make it absolute*/
 #defaultCanvas0 {
   position: absolute;
   z-index: -999;
 }
 
-a {
-  background-color: white;
+.postBackground {
+  background: #626F7A;
 }
 
 .newNewsNotification {
@@ -52,7 +77,7 @@ a {
 }
 
 .particlesCanvas {
-  border: solid 15px black;
+  border: solid 15px white;
   /* z-index:-99;  */
   position: absolute !important;
   /* width: 100% !important;
@@ -123,7 +148,7 @@ a {
 }
 
 #mc_embed_signup {
-  background:#fff;
+  /* background:#fff; */
   clear:left;
   font:14px Helvetica,Arial,sans-serif;
   width:100%;

@@ -1,5 +1,6 @@
 import Emoji from 'react-emoji-render';
-import { rhythm } from '../../utils/typography'
+import { rhythm } from '../../utils/typography';
+import { Link } from 'gatsby';
 
 // custom components
 import CodeCopier from '../../components/CodeCopier';
@@ -73,7 +74,7 @@ ENDDO.`
 class Post extends React.Component {
   render () {
     return (
-      <div>
+      <div className="postBackground">
         <div
           style={{
             marginLeft: 'auto',
@@ -82,6 +83,30 @@ class Post extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
+        <h3
+          style={{
+            fontFamily: 'Montserrat, sans-serif',
+            marginTop: 0,
+            marginBottom: rhythm(-1),
+          }}
+        >
+          <Link
+            style={{
+              boxShadow: 'none',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+            to={'/'}
+          >
+          <div>
+            Chris'<br/>
+            <span style={{color:'#F92672'}}>Full</span><br/>
+            <span style={{color:'#66D9EF'}}>Stack</span><br/>
+            <span style={{color:'#A6E22E'}}>Blog</span>.<br/>
+            <br/>
+          </div>
+          </Link>
+        </h3>
           <h1>Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP</h1>
           <p className="jsPostsDate">12 October, 2018</p>
           <p>So, let's say you've got some, uh, let's just say for now... <i>not perfectly written</i> ABAP code. Something that looks like this:</p>

@@ -55,6 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
         _.each(result.data.allMarkdownRemark.edges, (edge, index) => {
           
           if (process.env.NODE_ENV === 'production' && edge.node.fields.draft) { // (in production only) don't build pages for posts that are still drafts
+            console.warn(edge.node.fields.title + " still has draft status!");
             return;
           }
 

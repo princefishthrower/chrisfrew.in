@@ -6,13 +6,26 @@ import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 import { graphql } from "gatsby"
+import { Snowflakes } from 'xn-snowflakes';
 
 require('prismjs/themes/prism-okaidia.css');
 require('../styles/styles.css');
 
+
+
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 
 class BlogIndex extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      snow: false
+    }
+    this.pauseSnow = this.pauseSnow.bind(this);
+  }
+  pauseSnow() {
+    this.state.snow.pause();
+  }
   render() {
     let i = 0;
     let sColor = '';
@@ -49,15 +62,16 @@ class BlogIndex extends React.Component {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (
               <div key={node.fields.slug}>
-                <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug}>
-                <h3
+                <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug} onClick={this.pauseSnow}>
+                <h2
                   style={{
                     marginBottom: rhythm(1 / 4),
-                    color: sColor
+                    color: sColor,
+                    fontWeight: 1200
                   }}
                 >
                     {title}
-                </h3>
+                </h2>
                 <small>{node.frontmatter.date}</small>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                 </Link>
@@ -68,6 +82,15 @@ class BlogIndex extends React.Component {
       </Layout>
     </div>
     )
+  }
+  componentWillMount() {
+    if (!this.state.snow && typeof window !== 'undefined') {
+      this.setState({ snow: new Snowflakes() });
+    }
+  }
+  componentDidMount() {
+    // start fullscreen snow fall
+    this.state.snow.start();
   }
 }
 

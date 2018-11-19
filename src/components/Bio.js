@@ -34,7 +34,7 @@ const oBioText = (
       nlp-champs.com
     </a>
     {' '}
-    and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank" rel="noopener noreferrer">charity clothing company</a>
+    and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank" rel="noopener noreferrer">charity clothing</a> company
     {' '}
     <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">
       Siren Apparel
@@ -54,27 +54,11 @@ const oBioText = (
     <br/>
     <br/>
     {' '}
-    Got a project/job that needs doin'? <a href="https://chrisfrew.in/talk-shop" style={{color:'black',textDecorationColor:'black'}}><span style={{color:'black'}}>Get in contact with me</span></a> and let's get to it! I'm always looking to learn and build new things!
+    Got a project/job that needs doin'? <a href="https://chrisfrew.in/talk-shop">Get in contact with me</a> and let's get to it! I'm always looking to learn and build new things!
     <br/>
     <br/>
-    I'm a proud member of Dev.to, Product Hunt's Makers Community, and Egghead.io's Community!
+    I'm a proud member of <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://community.egghead.io/members/1420280">Egghead.io's Community</a>!
     <br/>
-    <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher" style={{textDecoration:'none'}}>
-      <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="fullStackChris's DEV Profile" height="30" width="30" />
-    </a>
-    &nbsp;
-    <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_" style={{textDecoration:'none'}}>
-      <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-              <path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path>
-              <path d="M22.667 20H17v-6h5.667a3 3 0 0 1 0 6m0-10H13v20h4v-6h5.667a7 7 0 1 0 0-14" fill="#FFF"></path>
-          </g>
-      </svg>
-    </a>
-    &nbsp;
-    <a target="_blank" rel="noopener noreferrer" href="https://community.egghead.io/members/1420280">
-      <img src="https://egghead.io/favicon.ico?v=2" alt="Egghead.io favicon" width="30"/>
-    </a>
   </p>
 );    
 

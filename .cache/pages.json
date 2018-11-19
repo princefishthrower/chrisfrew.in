@@ -96,6 +96,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "getting-started-in-2018-with-magento-apache-and-php-641",
+        "path": "/getting-started-in-2018-with-magento-apache-and-php/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "hello-world-8bc",
         "path": "/hello-world/"
     },

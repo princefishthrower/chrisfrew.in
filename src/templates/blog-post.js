@@ -14,7 +14,7 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
     const siteDescription = post.excerpt;
     
     return (
-      <div>
+      <div className="postBackground">
         <Helmet 
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -44,15 +44,10 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
             to={'/'}
           >
           <div>
-            Chris's&nbsp;
-            <span style={{color:'#F92672'}}>Full Stack</span>,&nbsp;
-            <span style={{color:'#66D9EF'}}>Web Development</span>,&nbsp;
-            <span style={{color:'#A6E22E'}}>ABAP</span>,&nbsp;
-            <span style={{color:'#F92672'}}>SAPUI5</span>,&nbsp;
-            <span style={{color:'#66D9EF'}}>Machine Learning</span>,&nbsp;
-            &&nbsp;
-            <span style={{color:'#A6E22E'}}>Natural Language Processing</span>&nbsp;
-            <span style={{color:'#F92672'}}>Blog</span>.
+            Chris'<br/>
+            <span style={{color:'#F92672'}}>Full</span><br/>
+            <span style={{color:'#66D9EF'}}>Stack</span><br/>
+            <span style={{color:'#A6E22E'}}>Blog</span>.<br/>
             <br/>
           </div>
           </Link>
