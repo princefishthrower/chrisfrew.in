@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('H:/Documents/projects/chrisfrew.in/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-63301492-1"},
     },{
-      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('H:/Documents/projects/chrisfrew.in/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ","feeds":[{"query":"\n              {\n                allMarkdownRemark(\n                  limit: 1000,\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                  filter: {frontmatter: { draft: { ne: true } }}\n                ) {\n                  edges {\n                    node {\n                      excerpt\n                      html\n                      fields { slug }\n                      frontmatter {\n                        title\n                        date\n                      }\n                    }\n                  }\n                }\n              }\n            ","output":"/rss.xml","title":"Gatsby RSS Feed"}]},
     },{
-      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('H:/Documents/projects/chrisfrew.in/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/chris/projects/chrisfrew.in/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('H:/Documents/projects/chrisfrew.in/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

@@ -4,9 +4,9 @@ date: "2018-11-19"
 draft: false
 ---
 
-[_Also published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)
+Originally published here, also [_published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)
 
-So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. :joy: 
+So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. :joy: :joy: :joy: While Magento provides a lot of powerful tools for building e-commerce sites, it's a beast to get started up, especially if one of you has only done it on Windows, and one of you has a Mac. :wink: I documented everything we sludged through in those 5 hours, and this post was born!
 
 This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 30 minutes to an hour :smile:
 
@@ -119,25 +119,49 @@ Check that everything from composer update looks okay. Everything should be succ
 
 ## Checking the Site and Additional Magento Commands
 
-Finally, we can navigate to the site. As we left the Homebrew defaults in our apache config, your site should be at `localhost:8080`. (System Apache is at port 80, but we deactivated it anyway). Then compile the Magento modules:
+So again, if you haven’t already, start with:
 
 ```
-bin/magento setup:di:compile
+composer update
 ```
 
-and just to make sure, enable all the modules:
+then enable all the modules:
 
 ```
 bin/magento module:enable --all
 ```
 
-Navigate to `localhost:8080` in a browser. Magento may then complain that you need to upgrade your modules. That can be done in the root project with:
+Then compile the modules:
+
+```
+bin/magento setup:di:compile
+```
+
+If you get a complaint about memory, run `bin/magento` with the PHP memory option:
+
+```
+php -d memory_limit=512M bin/magento setup:di:compile
+```
+
+To allot 512 Mb to the process (you may find you need more)
+
+Finally, we can navigate to the site. As we left the Homebrew defaults in our apache config, your site should be at localhost:8080. (System Apache is at port 80, but we deactivated it anyway). Magento may then complain that you need to upgrade your modules, something like this:
+
+```
+1 exception(s):
+Exception #0 (Magento\Framework\Exception\LocalizedException): Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+[redacted] schema: current version - 1.0.7, required version - 1.0.8
+[redacted] data: current version - 1.0.7, required version - 1.0.8
+```
+
+Just do what it says with:
 
 ```
 bin/magento setup:upgrade
 ```
 
-That's it! You should be all set to get developing with your Magento site on `localhost:8080`!
+In your root directory. That’s it! You should be all set to get developing with your Magento site on localhost:8080!
 
 ## Additional Troubleshooting and  Useful Info
 
