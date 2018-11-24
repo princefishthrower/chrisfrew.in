@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'Chris Frewin\'s Full Stack Blog.',
     author: 'Chris Frewin',
-    description: 'A friendly blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.',
+    description: 'A blog exploring full stack, web development, ABAP, SAPUI5, natural language processing, machine learning, and blockchain technology.',
     siteUrl: 'https://chrisfrew.in',
   },
   plugins: [
