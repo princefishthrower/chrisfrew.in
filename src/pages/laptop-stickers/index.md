@@ -2,6 +2,7 @@
 title: My Laptop Stickers Arrived! Am I a Real Developer Now?!
 date: "2017-12-19"
 draft: false
+starID: 5
 ---
 
 # Laptop Stickers!

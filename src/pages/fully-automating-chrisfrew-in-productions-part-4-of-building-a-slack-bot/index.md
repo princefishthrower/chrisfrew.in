@@ -2,6 +2,7 @@
 title: Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot
 date: "2018-07-21"
 draft: false
+starID: 23
 ---
 
 ## Slack Bot!

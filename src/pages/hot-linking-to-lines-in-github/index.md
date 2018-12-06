@@ -2,6 +2,7 @@
 title: How to Link to Lines of Code in a Github Repository!
 date: "2017-12-19"
 draft: false
+starID: 6
 ---
 
 This'll be a real short one; I just learned you can link to specific lines of code on GitHub!

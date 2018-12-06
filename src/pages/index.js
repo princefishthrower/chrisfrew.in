@@ -11,8 +11,6 @@ import { Snowflakes } from 'xn-snowflakes';
 require('prismjs/themes/prism-okaidia.css');
 require('../styles/styles.css');
 
-
-
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 
 class BlogIndex extends React.Component {

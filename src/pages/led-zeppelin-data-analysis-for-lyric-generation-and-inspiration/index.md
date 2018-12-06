@@ -2,6 +2,7 @@
 title: Led Zeppelin Data Analysis for Lyric Generation and Inspiration
 date: "2018-07-26"
 draft: false
+starID: 25
 ---
 
 \*\*\*Note: this post is mirrored on NLP Champs: [https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration](https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration)

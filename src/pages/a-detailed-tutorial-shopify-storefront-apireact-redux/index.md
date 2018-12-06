@@ -2,6 +2,7 @@
 title: A Detailed Tutorial - Shopify's Storefront API + React + Redux
 date: "2018-11-07"
 draft: false
+starID: 30
 ---
 
 _Originally published on the [Siren Apparel Press on Medium](https://medium.com/siren-apparel-press/adding-shopifys-storefront-api-to-an-existing-react-app-with-react-redux-ea442bd7543)_

@@ -2,6 +2,7 @@
 title: Sending Windows Server Commands From SAP ABAP
 date: "2017-12-13"
 draft: false
+starID: 3
 ---
 
 Alright, let's do a bit of applied stuff today.

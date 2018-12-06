@@ -2,6 +2,7 @@
 title: Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a Node.js Server Monitor
 date: "2018-05-11"
 draft: false
+starID: 20
 ---
 
 # Node.js Server Monitor

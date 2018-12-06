@@ -2,6 +2,7 @@
 title: Some Tasty Bash Profile / Bashrc Commands To Make Your Life Better
 date: "2018-04-09"
 draft: false
+starID: 16
 ---
 
 # Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!

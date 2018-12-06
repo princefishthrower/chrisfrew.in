@@ -2,6 +2,7 @@
 title: More Thoughts On Early Retirement, Financial Independence, and Making a Living That's Worth Living
 date: "2018-10-11"
 draft: false
+starID: 27
 ---
 
 I've been generating ideas for this post for quiet a while, namely from the depressing nonsense I've seen thrown around our very own interwebs. 

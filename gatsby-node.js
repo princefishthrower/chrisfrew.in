@@ -3,6 +3,10 @@ const Promise = require('bluebird')
 const path = require('path')
 const fs = require('fs') // added to write metadata file
 const { createFilePath } = require('gatsby-source-filesystem')
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 fs.writeFile('./static/metadata.json', '[', function(){console.log('metadata.json cleared!')}) // clear
 
 exports.createPages = ({ graphql, actions }) => {
@@ -24,6 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
                     date(formatString: "DD MMMM, YYYY")
                     title
                     draft
+                    starID
                   }
                 }
               }
@@ -38,6 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
                     date(formatString: "DD MMMM, YYYY")
                     title
                     draft
+                    starID
                   }
                 }
               }
@@ -54,12 +60,16 @@ exports.createPages = ({ graphql, actions }) => {
         var iCount = 1;
         _.each(result.data.allMarkdownRemark.edges, (edge, index) => {
           
-          if (process.env.NODE_ENV === 'production' && edge.node.fields.draft) { // (in production only) don't build pages for posts that are still drafts
+          if (process.env.NODE_ENV === 'production' && edge.node.frontmatter.draft) { // (in production only) don't build pages for posts that are still drafts
             return;
           }
           
-          if (edge.node.fields.draft) {
-            console.log(edge.node.fields.title + " still has draft status!");
+          if (edge.node.frontmatter.draft) {
+            console.warn(edge.node.frontmatter.title + " still has draft status!");
+          }
+          
+          if (!edge.node.frontmatter.starID) {
+            console.warn(edge.node.frontmatter.title + " has no starID!")
           }
 
           edge.node.frontmatter.link = "https://chrisfrew.in" + edge.node.fields.slug;

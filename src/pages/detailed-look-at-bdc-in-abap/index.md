@@ -2,6 +2,7 @@
 title: A Detailed Look at ABAP's BDC Method
 date: "2018-01-24"
 draft: true
+starID: 52
 ---
 
 ## And some common gotchyas, too

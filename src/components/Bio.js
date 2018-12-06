@@ -57,7 +57,14 @@ const oBioText = (
     Got a project/job that needs doin'? <a href="https://chrisfrew.in/talk-shop">Get in contact with me</a> and let's get to it! I'm always looking to learn and build new things!
     <br/>
     <br/>
-    I'm a proud member of <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://community.egghead.io/members/1420280">Egghead.io's Community</a>!
+    I'm a proud member of <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://community.egghead.io/members/1420280">Egghead.io's Community</a>!<br/><br/>
+    <span>Sites I've Built:</span><br/>
+    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">sirenapparel.us</a><br/>
+    <a href="https://sirenapparel.eu" target="_blank" rel="noopener noreferrer">sirenapparel.eu</a><br/>
+    <a href="https://nlp-champs.com" target="_blank" rel="noopener noreferrer">nlp-champs.com</a><br/>
+    <a href="https://how-do-i.app" target="_blank" rel="noopener noreferrer">how-do-i.app</a><br/>
+    <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
+    (Probably more fun to see through my <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">portfolio page</a>)
     <br/>
   </p>
 );    

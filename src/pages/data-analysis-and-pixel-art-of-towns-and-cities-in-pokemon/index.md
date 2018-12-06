@@ -2,6 +2,7 @@
 title: Data Analysis and Pixel Art of Towns and Cities in Pokemon
 date: "2018-07-15"
 draft: false
+starID: 21
 ---
 
 # A Real Treat!

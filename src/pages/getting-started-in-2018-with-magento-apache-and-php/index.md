@@ -2,6 +2,7 @@
 title: Run an Existing Magento 2 App with Homebrew Apache on MacOS in 2018 / 2019
 date: "2018-11-19"
 draft: false
+starID: 32
 ---
 
 Originally published here, also [_published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)

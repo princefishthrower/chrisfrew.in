@@ -2,6 +2,7 @@
 title: I Set Aside $1000 to Learn Options Trading
 date: "2018-04-07"
 draft: false
+starID: 14
 ---
 
 Whew. It's been over a month since my last post! This is mainly because of some of the projects I've been working on; so rest assured there will be plenty of new content coming soon. (I've been improving my development arsenal with Redux (haven't had a need for it yet) and Redux Saga which leverages a lot of great JavaScript such as generator functions for async deliciousness, as well as joining a hackathon team to build a beerpong robot - but more of that in later posts.)

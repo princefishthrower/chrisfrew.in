@@ -16,11 +16,6 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "abap-push-and-message-channels-6f8",
-        "path": "/abap-push-and-message-channels/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "an-npm-christmas-easter-egg-58e",
         "path": "/an-npm-christmas-easter-egg/"
     },
@@ -46,18 +41,8 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "data-analysis-of-reddit-users-87b",
-        "path": "/data-analysis-of-reddit-users/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "debugging-abap-with-a-sap-shortcut-787",
         "path": "/debugging-abap-with-a-sap-shortcut/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "detailed-look-at-bdc-in-abap-425",
-        "path": "/detailed-look-at-bdc-in-abap/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -131,11 +116,6 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "jump-from-sapui-5-to-transactions-in-web-gui-with-batch-input-9ab",
-        "path": "/jump-from-SAPUI5-to-transactions-in-web-gui-with-batch-input/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "jump-to-web-gui-using-sapui-5-or-openui-5-191",
         "path": "/jump-to-web-gui-using-sapui5-or-openui5/"
     },
@@ -163,11 +143,6 @@
         "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
         "jsonName": "offline-plugin-app-shell-fallback-a30",
         "path": "/offline-plugin-app-shell-fallback/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "one-major-challenge-with-the-internet-and-society-9ec",
-        "path": "/one-major-challenge-with-the-internet-and-society/"
     },
     {
         "componentChunkName": "component---src-pages-privacy-policy-index-js",
@@ -198,11 +173,6 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "the-social-contract-7bf",
         "path": "/the-social-contract/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "towards-code-and-folder-organization-of-nodejs-server-applications-ced",
-        "path": "/towards-code-and-folder-organization-of-nodejs-server-applications/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",

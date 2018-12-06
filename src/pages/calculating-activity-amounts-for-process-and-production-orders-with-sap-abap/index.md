@@ -2,6 +2,7 @@
 title: Calculating Activity Amounts for Production and Process Orders with SAP ABAP
 date: "2018-01-03"
 draft: false
+starID: 10
 ---
 
 _Edit June 1st, 2018:_

@@ -2,6 +2,7 @@
 title: Jump to Web GUI Using SAPUI5 Or OpenUI5
 date: "2018-11-23"
 draft: false
+starID: 33
 ---
 Jumping to the Web GUI from a SAPUI5 app can be helpful, since it will keep your user all in the same app (their browser), and they won't have to jump back and forth between the native SAP GUI and the browser.
 

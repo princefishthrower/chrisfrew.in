@@ -4,15 +4,15 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
 import { graphql } from 'gatsby'
+import Star from '../components/Star'
 
 const BlogPostTemplate = ({data, location, pageContext}) => {
     const { markdownRemark: post } = data;
     const { frontmatter, html } = post;
     const { next, prev } = pageContext;
-    const { title, date } = frontmatter;
+    const { title, date, starID } = frontmatter;
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
-    
     return (
       <div className="postBackground">
         <Helmet 
@@ -52,13 +52,16 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
           </div>
           </Link>
         </h3>
+        <br/>
+        <Star starID={starID}/>
+        <br/>
         <h1>{title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: 'block',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-1)
           }}
         >
           {date}
@@ -113,6 +116,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         draft
+        starID
       }
     }
   }

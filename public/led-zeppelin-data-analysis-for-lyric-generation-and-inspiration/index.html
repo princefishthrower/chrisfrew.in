@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="en"><head><title>Chris Frewin&#x27;s Full Stack Blog</title><meta charSet="utf-8"/><meta name="Description" content="Chris&#x27;s full stack blog on topics including SAP ABAP, SAPUI5, OpenUI5, web development, backend development, machine learning, and natural language processing. Also always a bit about freelancing, work, money, and retirement, and life philosophy."/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/18.bddaef654c66ded1434d.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.38"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><title data-react-helmet="true">Led Zeppelin Data Analysis for Lyric Generation and Inspiration | Chris Frewin&#x27;s Full Stack Blog.</title><meta data-react-helmet="true" name="description" content="* * * Note: this post is mirrored on NLP Champs:  https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-e9d7614f64702bd18ce7.js"/><link as="script" rel="preload" href="/app-f49ed333b638f3c018d7.js"/><link as="script" rel="preload" href="/0-41606b17fc2ec7cd8988.js"/><link as="script" rel="preload" href="/1-7657e28daf3e6821ab2d.js"/><link as="script" rel="preload" href="/18-00b792183ff9c81250b1.js"/><link as="script" rel="preload" href="/2-e4f4baebf4c524372c4e.js"/><link as="script" rel="preload" href="/webpack-runtime-97ebfb847117776802fd.js"/><link rel="preload" href="/static/d/95/path---led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569-e54-kZB84Lo9dYltXU7whtZapnBQxU.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="postBackground"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/"><div>Chris&#x27;<br/><span style="color:#F92672">Full</span><br/><span style="color:#66D9EF">Stack</span><br/><span style="color:#A6E22E">Blog</span>.<br/><br/></div></a></h3><br/><div><div style="font-size:0.83255rem;line-height:1.75rem;display:inline-block;float:left;margin-bottom:-1.3125rem;margin-left:0.875rem;width:3.5rem"><div id="star"><svg class="star" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 -256 1792 1792"><path fill="gold" d="M1198 799l306-297-422-62L893 58 704 440l-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500 1 20q0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-32-15-10-14-10-35l2-20 86-500L86 490q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path><path fill="transparent" stroke="gold" stroke-width="49" stroke-linecap="round" stroke-linejoin="round" d="M522 1204l35-206 34-198-151-148-152-148 210-31 210-30 92-189 92-190 95 189 95 190 207 30 208 30-151 148-151 147 33 195 36 209c3 11-12 6-74-28l-189-99-110-57-107 57c-220 117-262 137-262 129z"></path></svg><span id="star--count" class="star--count"><span>  </span>+<!-- -->0</span><span id="star--count-total" class="star--count-total">0</span></div></div><div style="font-size:0.83255rem;line-height:1.75rem;display:inline-block;margin-top:0.875rem;margin-left:0.875rem;float:left"><span>0</span></div><br/><br/><span class="starsInfoText">Give me some gold stars if you like this post - max 50 :)</span><br/><span class="starsInfoText">Stolen from Medium? Nooooooo :)</span></div><br/><h1>Led Zeppelin Data Analysis for Lyric Generation and Inspiration</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">July 26, 2018</p><div><p>***Note: this post is mirrored on NLP Champs: <a href="https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration">https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration</a></p>
+<h2>Inspiration and Motivation</h2>
+<p>I’ve been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I’ve even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so… <em>zepplin-ey</em> 😄</p>
+<h2>Important: I’m Lazy.</h2>
+<p>Yep, if anyone out there has been following along in my blogging adventures, you’ll know that I’m lazy. Anything that can be automated, I’m going to try to automate it! (Or in the very least, partially automate it or find a tool to use to make my life easier.) Actually, the entire concept of this post reflects my laziness: I’m willing to make a tool that generates lyrics <em>for</em> me before I visit my buddy this summer as we prepare to write an EP together! (Yikes! - I’ll let you know how <em>that</em> goes!)</p>
+<h2>Getting the List of Song Names</h2>
+<p>There’s this neat tool that I found that extracts lists from Wikipedia pages: <a href="http://wikitable2csv.ggor.de/">http://wikitable2csv.ggor.de/</a>, built by Gregor Weichbrodt. Nice one, Gregor! And… (yes you can see where this is going) of course, Wikipedia has a list for everything <sup>TM</sup> (no, that is not actually trademarked) And guess what? They have a “List of songs recorded by Led Zeppelin” page! <a href="https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin">https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Led_Zeppelin</a></p>
+<p>Throw that into Gregor’s tool, and you’ve got your .csv data, which with 5 seconds work with Sublime text, becomes our song list:</p>
+<div class="gatsby-highlight">
+      <pre class="language-python"><code class="language-python">lSongNames <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10 Ribs &amp; All/Carrot Pod Pod"</span><span class="token punctuation">,</span>
+<span class="token string">"Achilles Last Stand"</span><span class="token punctuation">,</span>
+<span class="token string">"All My Love"</span><span class="token punctuation">,</span>
+<span class="token string">"Babe I'm Gonna Leave You"</span><span class="token punctuation">,</span>
+<span class="token string">"Baby Come On Home"</span> <span class="token punctuation">,</span>
+<span class="token string">"Bathroom Sound"</span><span class="token punctuation">,</span>
+<span class="token string">"The Battle of Evermore"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Country Woman"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Dog"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Mountain Side"</span><span class="token punctuation">,</span>
+<span class="token string">"Blot"</span><span class="token punctuation">,</span>
+<span class="token string">"Bonzo's Montreux"</span><span class="token punctuation">,</span>
+<span class="token string">"Boogie with Stu"</span><span class="token punctuation">,</span>
+<span class="token string">"Brandy &amp; Coke"</span><span class="token punctuation">,</span>
+<span class="token string">"Bring It On Home"</span><span class="token punctuation">,</span>
+<span class="token string">"Bron-Y-Aur Stomp"</span><span class="token punctuation">,</span>
+<span class="token string">"Bron-Yr-Aur"</span><span class="token punctuation">,</span>
+<span class="token string">"Candy Store Rock"</span><span class="token punctuation">,</span>
+<span class="token string">"Carouselambra"</span><span class="token punctuation">,</span>
+<span class="token string">"Celebration Day"</span><span class="token punctuation">,</span>
+<span class="token string">"Communication Breakdown"</span><span class="token punctuation">,</span>
+<span class="token string">"The Crunge"</span><span class="token punctuation">,</span>
+<span class="token string">"Custard Pie"</span><span class="token punctuation">,</span>
+<span class="token string">"C'mon Everybody"</span><span class="token punctuation">,</span>
+<span class="token string">"Dancing Days"</span><span class="token punctuation">,</span>
+<span class="token string">"Darlene"</span><span class="token punctuation">,</span>
+<span class="token string">"Dazed and Confused"</span><span class="token punctuation">,</span>
+<span class="token string">"Desire"</span><span class="token punctuation">,</span>
+<span class="token string">"Down by the Seaside"</span><span class="token punctuation">,</span>
+<span class="token string">"Driving Through Kashmir"</span><span class="token punctuation">,</span>
+<span class="token string">"D'yer Mak'er"</span><span class="token punctuation">,</span>
+<span class="token string">"The Epic"</span><span class="token punctuation">,</span>
+<span class="token string">"Everybody Makes It Through"</span><span class="token punctuation">,</span>
+<span class="token string">"Fool in the Rain"</span><span class="token punctuation">,</span>
+<span class="token string">"For Your Life"</span><span class="token punctuation">,</span>
+<span class="token string">"Four Sticks"</span><span class="token punctuation">,</span>
+<span class="token string">"Four Hands"</span><span class="token punctuation">,</span>
+<span class="token string">"Friends"</span><span class="token punctuation">,</span>
+<span class="token string">"Gallows Pole"</span><span class="token punctuation">,</span>
+<span class="token string">"The Girl I Love She Got Long Black Wavy Hair"</span><span class="token punctuation">,</span>
+<span class="token string">"Going to California"</span><span class="token punctuation">,</span>
+<span class="token string">"Good Times Bad Times"</span><span class="token punctuation">,</span>
+<span class="token string">"Hats Off to (Roy) Harper"</span><span class="token punctuation">,</span>
+<span class="token string">"Heartbreaker"</span><span class="token punctuation">,</span>
+<span class="token string">"Hey, Hey, What Can I Do"</span><span class="token punctuation">,</span>
+<span class="token string">"The Hook"</span><span class="token punctuation">,</span>
+<span class="token string">"Hot Dog"</span><span class="token punctuation">,</span>
+<span class="token string">"Hots On for Nowhere"</span><span class="token punctuation">,</span>
+<span class="token string">"Houses of the Holy"</span><span class="token punctuation">,</span>
+<span class="token string">"How Many More Times"</span><span class="token punctuation">,</span>
+<span class="token string">"I Can't Quit You Baby"</span><span class="token punctuation">,</span>
+<span class="token string">"If It Keeps On Raining"</span><span class="token punctuation">,</span>
+<span class="token string">"I'm Gonna Crawl"</span><span class="token punctuation">,</span>
+<span class="token string">"Immigrant Song"</span><span class="token punctuation">,</span>
+<span class="token string">"In My Time of Dying"</span><span class="token punctuation">,</span>
+<span class="token string">"In the Evening"</span><span class="token punctuation">,</span>
+<span class="token string">"In the Light"</span><span class="token punctuation">,</span>
+<span class="token string">"Jennings Farm Blues"</span><span class="token punctuation">,</span>
+<span class="token string">"Kashmir"</span><span class="token punctuation">,</span>
+<span class="token string">"Key to the Highway/Trouble in Mind"</span><span class="token punctuation">,</span>
+<span class="token string">"LA Drone"</span><span class="token punctuation">,</span>
+<span class="token string">"La La"</span><span class="token punctuation">,</span>
+<span class="token string">"The Lemon Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Living Loving Maid (She's Just a Woman)"</span><span class="token punctuation">,</span>
+<span class="token string">"Misty Mountain Hop"</span><span class="token punctuation">,</span>
+<span class="token string">"Moby Dick"</span><span class="token punctuation">,</span>
+<span class="token string">"Night Flight"</span><span class="token punctuation">,</span>
+<span class="token string">"Nobody's Fault but Mine"</span><span class="token punctuation">,</span>
+<span class="token string">"No Quarter"</span><span class="token punctuation">,</span>
+<span class="token string">"The Ocean"</span><span class="token punctuation">,</span>
+<span class="token string">"Out on the Tiles"</span><span class="token punctuation">,</span>
+<span class="token string">"Over the Hills and Far Away"</span><span class="token punctuation">,</span>
+<span class="token string">"Ozone Baby"</span><span class="token punctuation">,</span>
+<span class="token string">"Poor Tom"</span><span class="token punctuation">,</span>
+<span class="token string">"The Rain Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Ramble On"</span><span class="token punctuation">,</span>
+<span class="token string">"Rock and Roll"</span><span class="token punctuation">,</span>
+<span class="token string">"The Rover"</span><span class="token punctuation">,</span>
+<span class="token string">"Royal Orleans"</span><span class="token punctuation">,</span>
+<span class="token string">"Sick Again"</span><span class="token punctuation">,</span>
+<span class="token string">"Since I've Been Loving You"</span><span class="token punctuation">,</span>
+<span class="token string">"Somethin' Else"</span><span class="token punctuation">,</span>
+<span class="token string">"The Song Remains the Same"</span><span class="token punctuation">,</span>
+<span class="token string">"South Bound Saurez"</span><span class="token punctuation">,</span>
+<span class="token string">"Southbound Piano"</span><span class="token punctuation">,</span>
+<span class="token string">"St. Tristan's Sword"</span><span class="token punctuation">,</span>
+<span class="token string">"Stairway to Heaven"</span><span class="token punctuation">,</span>
+<span class="token string">"Sugar Mama"</span><span class="token punctuation">,</span>
+<span class="token string">"Sunshine Woman"</span><span class="token punctuation">,</span>
+<span class="token string">"Tangerine"</span><span class="token punctuation">,</span>
+<span class="token string">"Tea for One"</span><span class="token punctuation">,</span>
+<span class="token string">"Ten Years Gone"</span><span class="token punctuation">,</span>
+<span class="token string">"Thank You"</span><span class="token punctuation">,</span>
+<span class="token string">"That's the Way"</span><span class="token punctuation">,</span>
+<span class="token string">"Trampled Under Foot"</span><span class="token punctuation">,</span>
+<span class="token string">"Travelling Riverside Blues"</span><span class="token punctuation">,</span>
+<span class="token string">"Two Ones Are Won"</span><span class="token punctuation">,</span>
+<span class="token string">"Walter's Walk"</span><span class="token punctuation">,</span>
+<span class="token string">"The Wanton Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Wearing and Tearing"</span><span class="token punctuation">,</span>
+<span class="token string">"We're Gonna Groove"</span><span class="token punctuation">,</span>
+<span class="token string">"What Is and What Should Never Be"</span><span class="token punctuation">,</span>
+<span class="token string">"When the Levee Breaks"</span><span class="token punctuation">,</span>
+<span class="token string">"White Summer/Black Mountain Side"</span><span class="token punctuation">,</span>
+<span class="token string">"Whole Lotta Love"</span><span class="token punctuation">,</span>
+<span class="token string">"You Shook Me"</span><span class="token punctuation">,</span>
+<span class="token string">"Your Time Is Gonna Come"</span><span class="token punctuation">]</span></code></pre>
+      </div>
+<h2>Getting Lyrics for Each Song</h2>
+<p>So great, we’ve got our list of songs in Python syntax. We need the actual <em>lyrics</em> now. And yes, I’m going to continue this post’s laziness theme! I could go to Google, copy, and paste song lyrics for each of those Led Zeppelin songs, but hey, zep has over 100 songs! No way I’m that un-lazy. Let’s automate it.</p>
+<p>Luckily, there is yet <em>another</em> tool that can help us! Enter <em>figurative drum roll please…</em> 🥁🥁🥁 LyricWikia, written by enricobacis on GitHub: <a href="https://github.com/enricobacis/lyricwikia">https://github.com/enricobacis/lyricwikia</a> (I mean, c’mon, the example in the README is even Led Zeppelin’s Stairway to Heaven!)</p>
+<p>So, we’re basically done. We loop over our songs and write the retrieved lyrics to their own file. We are also going to write a ‘global’ lyrics file - simply all the lyrics strings concatenated together to a file called <code class="language-text">input.txt</code> —> don’t worry; I’m not crazy, this will be important later. Data retrieval code is done and looks like this:</p>
+<p><code class="language-text">get_lyrics.py</code></p>
+<div class="gatsby-highlight">
+      <pre class="language-python"><code class="language-python"><span class="token keyword">import</span> lyricwikia
+
+lSongNames <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10 Ribs &amp; All/Carrot Pod Pod"</span><span class="token punctuation">,</span>
+<span class="token string">"Achilles Last Stand"</span><span class="token punctuation">,</span>
+<span class="token string">"All My Love"</span><span class="token punctuation">,</span>
+<span class="token string">"Babe I'm Gonna Leave You"</span><span class="token punctuation">,</span>
+<span class="token string">"Baby Come On Home"</span> <span class="token punctuation">,</span>
+<span class="token string">"Bathroom Sound"</span><span class="token punctuation">,</span>
+<span class="token string">"The Battle of Evermore"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Country Woman"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Dog"</span><span class="token punctuation">,</span>
+<span class="token string">"Black Mountain Side"</span><span class="token punctuation">,</span>
+<span class="token string">"Blot"</span><span class="token punctuation">,</span>
+<span class="token string">"Bonzo's Montreux"</span><span class="token punctuation">,</span>
+<span class="token string">"Boogie with Stu"</span><span class="token punctuation">,</span>
+<span class="token string">"Brandy &amp; Coke"</span><span class="token punctuation">,</span>
+<span class="token string">"Bring It On Home"</span><span class="token punctuation">,</span>
+<span class="token string">"Bron-Y-Aur Stomp"</span><span class="token punctuation">,</span>
+<span class="token string">"Bron-Yr-Aur"</span><span class="token punctuation">,</span>
+<span class="token string">"Candy Store Rock"</span><span class="token punctuation">,</span>
+<span class="token string">"Carouselambra"</span><span class="token punctuation">,</span>
+<span class="token string">"Celebration Day"</span><span class="token punctuation">,</span>
+<span class="token string">"Communication Breakdown"</span><span class="token punctuation">,</span>
+<span class="token string">"The Crunge"</span><span class="token punctuation">,</span>
+<span class="token string">"Custard Pie"</span><span class="token punctuation">,</span>
+<span class="token string">"C'mon Everybody"</span><span class="token punctuation">,</span>
+<span class="token string">"Dancing Days"</span><span class="token punctuation">,</span>
+<span class="token string">"Darlene"</span><span class="token punctuation">,</span>
+<span class="token string">"Dazed and Confused"</span><span class="token punctuation">,</span>
+<span class="token string">"Desire"</span><span class="token punctuation">,</span>
+<span class="token string">"Down by the Seaside"</span><span class="token punctuation">,</span>
+<span class="token string">"Driving Through Kashmir"</span><span class="token punctuation">,</span>
+<span class="token string">"D'yer Mak'er"</span><span class="token punctuation">,</span>
+<span class="token string">"The Epic"</span><span class="token punctuation">,</span>
+<span class="token string">"Everybody Makes It Through"</span><span class="token punctuation">,</span>
+<span class="token string">"Fool in the Rain"</span><span class="token punctuation">,</span>
+<span class="token string">"For Your Life"</span><span class="token punctuation">,</span>
+<span class="token string">"Four Sticks"</span><span class="token punctuation">,</span>
+<span class="token string">"Four Hands"</span><span class="token punctuation">,</span>
+<span class="token string">"Friends"</span><span class="token punctuation">,</span>
+<span class="token string">"Gallows Pole"</span><span class="token punctuation">,</span>
+<span class="token string">"The Girl I Love She Got Long Black Wavy Hair"</span><span class="token punctuation">,</span>
+<span class="token string">"Going to California"</span><span class="token punctuation">,</span>
+<span class="token string">"Good Times Bad Times"</span><span class="token punctuation">,</span>
+<span class="token string">"Hats Off to (Roy) Harper"</span><span class="token punctuation">,</span>
+<span class="token string">"Heartbreaker"</span><span class="token punctuation">,</span>
+<span class="token string">"Hey, Hey, What Can I Do"</span><span class="token punctuation">,</span>
+<span class="token string">"The Hook"</span><span class="token punctuation">,</span>
+<span class="token string">"Hot Dog"</span><span class="token punctuation">,</span>
+<span class="token string">"Hots On for Nowhere"</span><span class="token punctuation">,</span>
+<span class="token string">"Houses of the Holy"</span><span class="token punctuation">,</span>
+<span class="token string">"How Many More Times"</span><span class="token punctuation">,</span>
+<span class="token string">"I Can't Quit You Baby"</span><span class="token punctuation">,</span>
+<span class="token string">"If It Keeps On Raining"</span><span class="token punctuation">,</span>
+<span class="token string">"I'm Gonna Crawl"</span><span class="token punctuation">,</span>
+<span class="token string">"Immigrant Song"</span><span class="token punctuation">,</span>
+<span class="token string">"In My Time of Dying"</span><span class="token punctuation">,</span>
+<span class="token string">"In the Evening"</span><span class="token punctuation">,</span>
+<span class="token string">"In the Light"</span><span class="token punctuation">,</span>
+<span class="token string">"Jennings Farm Blues"</span><span class="token punctuation">,</span>
+<span class="token string">"Kashmir"</span><span class="token punctuation">,</span>
+<span class="token string">"Key to the Highway/Trouble in Mind"</span><span class="token punctuation">,</span>
+<span class="token string">"LA Drone"</span><span class="token punctuation">,</span>
+<span class="token string">"La La"</span><span class="token punctuation">,</span>
+<span class="token string">"The Lemon Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Living Loving Maid (She's Just a Woman)"</span><span class="token punctuation">,</span>
+<span class="token string">"Misty Mountain Hop"</span><span class="token punctuation">,</span>
+<span class="token string">"Moby Dick"</span><span class="token punctuation">,</span>
+<span class="token string">"Night Flight"</span><span class="token punctuation">,</span>
+<span class="token string">"Nobody's Fault but Mine"</span><span class="token punctuation">,</span>
+<span class="token string">"No Quarter"</span><span class="token punctuation">,</span>
+<span class="token string">"The Ocean"</span><span class="token punctuation">,</span>
+<span class="token string">"Out on the Tiles"</span><span class="token punctuation">,</span>
+<span class="token string">"Over the Hills and Far Away"</span><span class="token punctuation">,</span>
+<span class="token string">"Ozone Baby"</span><span class="token punctuation">,</span>
+<span class="token string">"Poor Tom"</span><span class="token punctuation">,</span>
+<span class="token string">"The Rain Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Ramble On"</span><span class="token punctuation">,</span>
+<span class="token string">"Rock and Roll"</span><span class="token punctuation">,</span>
+<span class="token string">"The Rover"</span><span class="token punctuation">,</span>
+<span class="token string">"Royal Orleans"</span><span class="token punctuation">,</span>
+<span class="token string">"Sick Again"</span><span class="token punctuation">,</span>
+<span class="token string">"Since I've Been Loving You"</span><span class="token punctuation">,</span>
+<span class="token string">"Somethin' Else"</span><span class="token punctuation">,</span>
+<span class="token string">"The Song Remains the Same"</span><span class="token punctuation">,</span>
+<span class="token string">"South Bound Saurez"</span><span class="token punctuation">,</span>
+<span class="token string">"Southbound Piano"</span><span class="token punctuation">,</span>
+<span class="token string">"St. Tristan's Sword"</span><span class="token punctuation">,</span>
+<span class="token string">"Stairway to Heaven"</span><span class="token punctuation">,</span>
+<span class="token string">"Sugar Mama"</span><span class="token punctuation">,</span>
+<span class="token string">"Sunshine Woman"</span><span class="token punctuation">,</span>
+<span class="token string">"Tangerine"</span><span class="token punctuation">,</span>
+<span class="token string">"Tea for One"</span><span class="token punctuation">,</span>
+<span class="token string">"Ten Years Gone"</span><span class="token punctuation">,</span>
+<span class="token string">"Thank You"</span><span class="token punctuation">,</span>
+<span class="token string">"That's the Way"</span><span class="token punctuation">,</span>
+<span class="token string">"Trampled Under Foot"</span><span class="token punctuation">,</span>
+<span class="token string">"Travelling Riverside Blues"</span><span class="token punctuation">,</span>
+<span class="token string">"Two Ones Are Won"</span><span class="token punctuation">,</span>
+<span class="token string">"Walter's Walk"</span><span class="token punctuation">,</span>
+<span class="token string">"The Wanton Song"</span><span class="token punctuation">,</span>
+<span class="token string">"Wearing and Tearing"</span><span class="token punctuation">,</span>
+<span class="token string">"We're Gonna Groove"</span><span class="token punctuation">,</span>
+<span class="token string">"What Is and What Should Never Be"</span><span class="token punctuation">,</span>
+<span class="token string">"When the Levee Breaks"</span><span class="token punctuation">,</span>
+<span class="token string">"White Summer/Black Mountain Side"</span><span class="token punctuation">,</span>
+<span class="token string">"Whole Lotta Love"</span><span class="token punctuation">,</span>
+<span class="token string">"You Shook Me"</span><span class="token punctuation">,</span>
+<span class="token string">"Your Time Is Gonna Come"</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> sSongName <span class="token keyword">in</span> lSongNames<span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        sLyrics <span class="token operator">=</span> lyricwikia<span class="token punctuation">.</span>get_lyrics<span class="token punctuation">(</span><span class="token string">'Led Zeppelin'</span><span class="token punctuation">,</span> sSongName<span class="token punctuation">)</span>
+    <span class="token keyword">except</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string">"Lyrics not found for "</span> <span class="token operator">+</span> sSongName
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        sFileName <span class="token operator">=</span> sSongName<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"'"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token comment"># will cause weird file names</span>
+        sFileName <span class="token operator">=</span> <span class="token string">"-"</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>sFileName<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># dashes where each space is</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"lyrics/"</span> <span class="token operator">+</span> sFileName <span class="token operator">+</span> <span class="token string">".txt"</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span> 
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>sLyrics<span class="token punctuation">)</span>
+            f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span> <span class="token string">"Lyrics saved for "</span> <span class="token operator">+</span> sSongName</code></pre>
+      </div>
+<p>The songs that failed through the first pass were:</p>
+<div class="gatsby-highlight">
+      <pre class="language-txt"><code class="language-txt">10 Ribs &amp; All/Carrot Pod Pod
+Bathroom Sound
+Blot
+Brandy &amp; Coke
+Desire
+Driving Through Kashmir
+The Epic
+Four Hands
+Hey, Hey, What Can I Do
+The Hook
+If It Keeps On Raining
+Jennings Farm Blues
+Key to the Highway/Trouble in Mind
+LA Drone
+La La
+Southbound Piano
+St. Tristan&#39;s Sword
+Two Ones Are Won</code></pre>
+      </div>
+<p>Not so bad- we’ve retrieved what is the vast majority of Led Zeppelin’s lyrics in a matter of minutes. However, I’m still too lazy to get these lyrics by hand - I’m not gonna add ‘em. 😂</p>
+<h2>Data Analysis - Word Occurrences</h2>
+<p>So we’ve retrieved our data. I wanted to count most common words as a simple start to analyze these lyrics. So, relying heavily on <code class="language-text">nltk</code> (Natural Language Toolkit) we build a corpus from all the lyrics, remove the stopwords, and count the occurrences with Python’s <code class="language-text">Counter</code> module. That is:</p>
+<p><code class="language-text">word_counts.py</code> </p>
+<div class="gatsby-highlight">
+      <pre class="language-python"><code class="language-python"><span class="token keyword">import</span> os
+<span class="token keyword">import</span> nltk
+<span class="token keyword">from</span> nltk<span class="token punctuation">.</span>corpus <span class="token keyword">import</span> stopwords
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> Counter
+
+<span class="token keyword">from</span> nltk<span class="token punctuation">.</span>corpus<span class="token punctuation">.</span>reader<span class="token punctuation">.</span>plaintext <span class="token keyword">import</span> PlaintextCorpusReader
+
+stop_words <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span>stopwords<span class="token punctuation">.</span>words<span class="token punctuation">(</span><span class="token string">'english'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># not interested in stop words</span>
+stop_words<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'.'</span><span class="token punctuation">,</span> <span class="token string">','</span><span class="token punctuation">,</span> <span class="token string">"',"</span><span class="token punctuation">,</span> <span class="token string">'"'</span><span class="token punctuation">,</span> <span class="token string">"'"</span><span class="token punctuation">,</span> <span class="token string">'?'</span><span class="token punctuation">,</span> <span class="token string">'!'</span><span class="token punctuation">,</span> <span class="token string">':'</span><span class="token punctuation">,</span> <span class="token string">';'</span><span class="token punctuation">,</span> <span class="token string">'('</span><span class="token punctuation">,</span> <span class="token string">')'</span><span class="token punctuation">,</span> <span class="token string">'['</span><span class="token punctuation">,</span> <span class="token string">']'</span><span class="token punctuation">,</span> <span class="token string">'{'</span><span class="token punctuation">,</span> <span class="token string">'}'</span><span class="token punctuation">,</span> <span class="token string">'-'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># ... or punctuation</span>
+
+corpusdir <span class="token operator">=</span> <span class="token string">'lyrics/'</span> <span class="token comment"># Directory of corpus.</span>
+oLedZeppelinCorpus <span class="token operator">=</span> PlaintextCorpusReader<span class="token punctuation">(</span>corpusdir<span class="token punctuation">,</span> <span class="token string">'.*'</span><span class="token punctuation">)</span>
+
+lNoStopWords <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> sWord <span class="token keyword">in</span> oLedZeppelinCorpus<span class="token punctuation">.</span>words<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> sWord <span class="token operator">not</span> <span class="token keyword">in</span> stop_words<span class="token punctuation">:</span>
+        lNoStopWords<span class="token punctuation">.</span>append<span class="token punctuation">(</span>sWord<span class="token punctuation">)</span>
+
+lNoStopWordsLength <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lNoStopWords<span class="token punctuation">)</span>
+wordCounts <span class="token operator">=</span> Counter<span class="token punctuation">(</span>lNoStopWords<span class="token punctuation">)</span>
+wordCountsLower <span class="token operator">=</span> Counter<span class="token punctuation">(</span>i<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> lNoStopWords<span class="token punctuation">)</span>
+
+<span class="token comment"># top 25</span>
+lCountLabels<span class="token punctuation">,</span> lCountValues <span class="token operator">=</span> <span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token operator">*</span>wordCountsLower<span class="token punctuation">.</span>most_common<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">25</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+lCountIndexes <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lCountLabels<span class="token punctuation">)</span><span class="token punctuation">)</span>
+iCountWidth <span class="token operator">=</span> <span class="token number">1</span>
+barlist <span class="token operator">=</span> plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>lCountIndexes<span class="token punctuation">,</span> lCountValues<span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>barlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># all bars to black</span>
+    barlist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>set_color<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xticks<span class="token punctuation">(</span>lCountIndexes<span class="token punctuation">,</span> lCountLabels<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"Word Occurrences in Led Zeppelin Lyrics"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Number of Occurrences Across All Songs'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Lyric'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># next 25</span>
+lCountLabels<span class="token punctuation">,</span> lCountValues <span class="token operator">=</span> <span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token operator">*</span>wordCountsLower<span class="token punctuation">.</span>most_common<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+lCountIndexes <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lCountLabels<span class="token punctuation">)</span><span class="token punctuation">)</span>
+iCountWidth <span class="token operator">=</span> <span class="token number">1</span>
+barlist <span class="token operator">=</span> plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>lCountIndexes<span class="token punctuation">,</span> lCountValues<span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>barlist<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># all bars to black</span>
+    barlist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>set_color<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xticks<span class="token punctuation">(</span>lCountIndexes<span class="token punctuation">,</span> lCountLabels<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"Word Occurrences in Led Zeppelin Lyrics"</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Number of Occurrences Across All Songs'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Lyric'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+      </div>
+<p>The first plot, of the top 25 most common words, looks like this:</p>
+<p>
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 55.78124999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAB7CAAAewgFu0HU+AAABRUlEQVQoz51SMY6CUBD1GFZ0VDSWJIQQQmElFQcgARLCETyBiZ2NHonSC1BZiKCQKCAo+jbzk0+QdTfuTvIC82fm/Zn3Z/R8PkHgxn2Otm1xv987DOPD+hF3rtcroihiRURCeDweqOsaRVF06Mc56IxyXwiTJMFqteoCfzGq+UaYpikjpBvfjf7bqC+E/OBwOGCz2XQJPHmoUd9+JLzdbjgej5jP56xTsv4D9Is/ImyaBmVZYjabwXEc7Ha7F31Iho9H5gEitCwLoihiMplgvV6zl//3o1RVBdM0IUkSBEHAeDyGLMtYLBYIw5BtweVyYatDuSRTf/S3hK7rwjAMaJoGRVEwnU6h6zpUVWVf27bheR5830cQBFgul+zC7XbbdTrqi04jUgfn85l1QzIQyD+dTsjzHFmWsf84jtlm7Pd7VsM5vgB/Ayjz76aRVwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="First 25 most common words"
+        title=""
+        src="/static/12e72a0d68fd999a22695459d1624a59/a408b/most_common.png"
+        srcset="/static/12e72a0d68fd999a22695459d1624a59/4eabf/most_common.png 148w,
+/static/12e72a0d68fd999a22695459d1624a59/5a375/most_common.png 295w,
+/static/12e72a0d68fd999a22695459d1624a59/a408b/most_common.png 590w,
+/static/12e72a0d68fd999a22695459d1624a59/9a0cc/most_common.png 885w,
+/static/12e72a0d68fd999a22695459d1624a59/aa987/most_common.png 1180w,
+/static/12e72a0d68fd999a22695459d1624a59/0c07a/most_common.png 1770w,
+/static/12e72a0d68fd999a22695459d1624a59/a6d2b/most_common.png 3840w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  </p>
+<p>In a way, I think we’ve found the ‘stop words’ of Led Zeppelin. 😂 I could have almost expected ‘babe’ and ‘baby’ - it’s repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more ‘meat’ of the lyrics:</p>
+<p>
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 55.78124999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAB7CAAAewgFu0HU+AAABpUlEQVQoz22SSarCQBCGPYSgCyccUCNOOKGiLoLgAC70CJ7AA3gC8SLizo03cCm49gQuRJzn3/cXdF7yfAWVTqWrv/6rKjb82Pv9Flf2fD7xeDzwer1kNTu/qXyzK7Op4Hq9YrVaYbPZwGyEn89nnE4nHI9H3G43w+/3u+UiC5CHer0eyuUyhsMhFosF1us1ttutHDar+Gvc+xfY7XYRjUbhcrng9XpRLBZRrVah6zra7TYGgwHG4zFGoxHm8zmWy6VUZFHIBz+wHCpMJBICDQQCyGazSKfTCAaDsNvt0DRN3n0+HxwOh+xnMhnMZjOjPQJkLw6HgwDj8TjC4bAAc7mcOEFUXCgUkM/nBeJ2uwXIvMlk8g2kQpasgH6/X2A8RMUKQFgymZS2cJ+50+n0F6jGrobCkiORiJRGNUqhx+MxLmAbeAFj5n4BaZfLBZ1ORxKojgdSqZSoCYVCcDqdRhyLxaSHjJlrKdk85X6/LxOtVCoolUpotVpoNpuo1WqijO+NRgP1et2ImWsZigJyZR85HOWM6fv9HrvdTlazM4cr/1PF+ADJnHZMFXLCDwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="25-50 most common words"
+        title=""
+        src="/static/364ec2203e6a65ee25e2a31d7c8729ca/a408b/most_common_lower.png"
+        srcset="/static/364ec2203e6a65ee25e2a31d7c8729ca/4eabf/most_common_lower.png 148w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/5a375/most_common_lower.png 295w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/a408b/most_common_lower.png 590w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/9a0cc/most_common_lower.png 885w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/aa987/most_common_lower.png 1180w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/0c07a/most_common_lower.png 1770w,
+/static/364ec2203e6a65ee25e2a31d7c8729ca/a6d2b/most_common_lower.png 3840w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  </p>
+<p>what I think is really neat here, almost zen-like, is that the group has managed to use the words ‘night’ and ‘day’ exactly the same number of times - 100.</p>
+<h2>Data Analysis - Markov Chains</h2>
+<p>Once again I revisited Markov Chains - what’s better than to get some inspiration from poorly written robot lyrics? Since I’ve only worked with Markov Chains in Nodejs before, I had to look around for a . I ended up borrowing a lot from this very basic implementation from Toward’s Data Science’s Medium channel: <a href="https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6">https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6</a></p>
+<blockquote>
+<p>- ma - ooh , in my heart You know the , didn ’ t take it told me go If it ’ t have to know where you there where the downhill slide Oh , make ya know , now I couldn ’ ve decided what the wind won ’</p>
+</blockquote>
+<blockquote>
+<p>’ d do , honey As we sweep with death The Queen of the storm who really good friend They give to care if you now , They say ” Take him by takin ’ m - la ) Spend it has ! Feel it ain ’ on the way back</p>
+</blockquote>
+<blockquote>
+<p>Groovin ’ s bright as the morning When ya no love for hesitatin ’ t no more times Keep thinkin ’ ya know it . We ’ baby , I oughta know where he told A - hah - take , love that girl , that set you babe Sugar mama</p>
+</blockquote>
+<blockquote>
+<p>- ooh - ha , take you stand it now ’ t unwind Get some good and you lovin ’, knowin ’ s my eye prevails upon us spin Sail away Oh , you take you from Tom , hey , Riding a little baby , down And if it ,</p>
+</blockquote>
+<blockquote>
+<p>Dewy eyes Said , throw your crying for what your name Hear them in my power I know my baby when she would never do , ” Then the gallows pole Yes , my very special smile Like a cloak of us to glitter I don ’ m a - hah</p>
+</blockquote>
+<p>Alright… they are a bit… weird. But inspiring a bit? At least? Maybe.<sup>Maybe.</sup></p>
+<h2>Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)</h2>
+<p>Turn on the 💻CPU fan - we’re going Tensorflow. 😂</p>
+<p>We’re going to use a nice Word level RNN for starters, from hunkim on GitHub: <a href="https://github.com/hunkim/word-rnn-tensorflow">https://github.com/hunkim/word-rnn-tensorflow</a></p>
+<p>For your convenience, I forked a version (basically with the Led Zeppelin corpus in the <code class="language-text">data/</code> folder and changing the hardcoded file names in <code class="language-text">train.py</code>) That’s here: <a href="https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin">https://github.com/frewinchristopher/word-rnn-tensorflow-led-zeppelin</a></p>
+<p>These look <em>much</em> better than the wacky Markov chains:</p>
+<blockquote>
+<p>tonight quarter) ‘The Little proud thunder We’ve follow A-poor Daw upon lonely, lovin’, can’t Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin’ Do some way. woman In the We’ve are ‘round a in-a please, is is, Beneath me light! that her have goin’ feel, though turn my friends don’t, I him fully same is don’t baby, oh it’s Lookin’ on the Shake of quarter) of in my dark for you, ‘em away I don’t don’t know from babe with in the smell the smile Now, awful tellin’ to Lord left to sung crawl See ya makes me lights my cut I do. truck Oh, know no? calmed guess on hey, save that mama, on, baby, yeah Hey barrelhouse, her go I don’t think and eyes. breakdown, is You know by she get goodbye yeah mama, movies run ‘bout the juice Down They don’t really do you see an’ my love and out that’s rock down, much, been Get you babe, I come with in a ground. times, a door Let me ‘Cause it feel, babe, the heathen snow drives that me</p>
+</blockquote>
+<blockquote>
+<p>sand lifetime do, fire more, begin? and do, yeah us, wanderings To higher, I have you’ve know they think hard they you ah, And if you come out me anything for our woman go Hey, a fool it, love, order gonna said, all my dear light, Uh-oh, little tune Ah-ah-ah-ah, (Ah~ah-hah-hah-hah) ding Hunter, She know yeah about, the moment Whoa I just want me and gonna turned Ooh, baby I been talkin’ la la ‘bout the mountains, I know an beyond knows you babe, my second Hey-yeah! yeah… all you can love Found ya can’t, really I oh ooh When my baby desire, far Rosie, baby, girl on my man to all “U-haul” and And down right? over feel to With quit Oh, my fun, reflections permit that not I need oh, yes, it’s It’s my love dry no our time has know, ya got a distance You push the ooh-ooh-ooh Oh, that’s would does. Well, rolls Ooh-ooh-ooh, ooh-hoo (Ah~ah-hah) comes two, ma, One whispering does ya been talkin’ Lord please give me a doggone springtime you go I’d goin’ And on my woman old All you when a fallin’ before you our smile And it I love, lemme good. We</p>
+</blockquote>
+<blockquote>
+<p>rolled very here? I am That See the door Do you drive so twirl and ooh, a rock in night sit soul Oh, there good She joy there, Oh, my hands, me, breakfast ‘Cause ya now, it’s yeah on baby, all ya know you, alright Oh, baby, an Go, Singing on the man When you stop I roll it’s you oh my seen oh, alright I can get I won’t don’t oh, darlin’ on the seeds of gold Ah, get a monkey is my go ‘round we means the money hey, now from the money A plot, it mama Ooh, Oh oh baby, my thrill I don’t leave you notice that me I stay” run, squeeze that Drop Oh, care said my love I still people blushin’ Sisters of Oh, didn’t once So a bridge roots, my shakin’ Oh what you know with it’s my soul and play today, the nose a time It’s yeah, do it, love me breaks Yes, through the train If my have An’ you oh, yeah When the bad bide you’re flowers again he was At for good stop I’m How nothing I’ll said, join same Mine’s so horn of beer on my knows Ooh, this</p>
+</blockquote>
+<p>I hope you enjoyed this post! Until next time!</p>
+<p>Cheers 🍺</p></div><hr style="margin-bottom:1.75rem"/><p><a href="/jump-to-web-gui-using-sapui5-or-openui5/">Previous Post: <!-- -->Jump to Web GUI Using SAPUI5 Or OpenUI5</a></p><p><a href="/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/">Next Post: <!-- -->More Thoughts On Early Retirement, Financial Independence, and Making a Living That&#x27;s Worth Living</a></p><hr style="margin-bottom:1.75rem"/><div></div></div></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-63301492-1', 'auto', {});
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569","path":"/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration/"};window.dataPath="95/path---led-zeppelin-data-analysis-for-lyric-generation-and-inspiration-569-e54-kZB84Lo9dYltXU7whtZapnBQxU";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-f49ed333b638f3c018d7.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-b4ef4dd1a0afedc5e8b7.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e9d7614f64702bd18ce7.js"],"component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js":["/component---src-pages-dynamically-assigning-variables-both-named-and-structured-in-sap-abap-index-js-7bbd633347290ece9725.js"],"component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js":["/component---src-pages-how-to-convert-raw-16-to-char-22-material-ids-in-sap-ewm-and-vice-versa-index-js-8b426a0c929b0a1d34d3.js"],"component---src-pages-index-js":["/component---src-pages-index-js.1a01807f17ad223318e7.css","/component---src-pages-index-js-1fd62353b449cc9cb5cc.js"],"component---src-pages-market-news-feed-index-js":["/component---src-pages-market-news-feed-index-js-ca31b051658a0393baf2.js"],"component---src-pages-privacy-policy-index-js":["/component---src-pages-privacy-policy-index-js-cf49be3d3be759fc9800.js"],"component---src-pages-sec-filings-index-js":["/component---src-pages-sec-filings-index-js-b8a66dc73c6072d98e0e.js"],"component---src-pages-talk-shop-index-js":["/component---src-pages-talk-shop-index-js-efd5519285f99638733f.js"]};/*]]>*/</script><script src="/webpack-runtime-97ebfb847117776802fd.js" async=""></script><script src="/2-e4f4baebf4c524372c4e.js" async=""></script><script src="/18-00b792183ff9c81250b1.js" async=""></script><script src="/1-7657e28daf3e6821ab2d.js" async=""></script><script src="/0-41606b17fc2ec7cd8988.js" async=""></script><script src="/app-f49ed333b638f3c018d7.js" async=""></script><script src="/component---src-templates-blog-post-js-e9d7614f64702bd18ce7.js" async=""></script></body></html>

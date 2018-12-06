@@ -146,7 +146,8 @@ class Post extends React.Component {
 export const frontmatter = {
   title: "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP",
   date: "2018-10-12",
-  draft: false
+  draft: false,
+  starID: 28
 }
 
 export default Post;

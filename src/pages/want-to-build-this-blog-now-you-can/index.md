@@ -2,6 +2,7 @@
 title: Want to Build a Blog Just Like This One? Now You Can!
 date: "2018-11-17"
 draft: false
+starID: 31
 ---
 
 If you've been wondering about how the internals of my blog are built and developed, you can now learn it from me, step by step, from [my very first course on Skillshare](https://skl.sh/2qGtFlG), titled "Build Your Personal Blog Website with GatsbyJS"! (Not to mention the source code of this site itself is all public [here on GitHub](https://github.com/frewinchristopher/chrisfrew.in)). 
