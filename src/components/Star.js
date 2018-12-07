@@ -2,8 +2,11 @@ import React from 'react'
 import { rhythm, scale } from '../utils/typography'
 
 const axios = require('axios');
-if (typeof window !== 'undefined') {
-  const mojs = require('mo-js');
+let mojs;
+try {
+  mojs = require('mo-js');
+} catch (e) {
+  console.log(e)
 }
 const LIGHT_GOLD = "#fff099";
 const GOLD = "gold";
@@ -120,76 +123,78 @@ class Star extends React.Component {
     // this.setState({iInterval: null});
   }
   componentDidMount() {
-    const tlDuration = 300
-    const triangleBurst = new mojs.Burst({
-      parent: '#star',
-      radius: {50:95},
-      count: 5,
-      angle: 30,
-      children: {
-        shape: 'polygon',
-        radius: {6: 0},
-        scale: 1,
-        stroke: 'gold',
-        strokeWidth: 2,
-        angle: 210,
-        delay: 30,
-        speed: 0.2,
-        easing: mojs.easing.bezier(0.1, 1, 0.3 ,1),
+    if (mojs) {
+      const tlDuration = 300;
+      const triangleBurst = new mojs.Burst({
+        parent: '#star',
+        radius: {50:95},
+        count: 5,
+        angle: 30,
+        children: {
+          shape: 'polygon',
+          radius: {6: 0},
+          scale: 1,
+          stroke: 'gold',
+          strokeWidth: 2,
+          angle: 210,
+          delay: 30,
+          speed: 0.2,
+          easing: mojs.easing.bezier(0.1, 1, 0.3 ,1),
+          duration: tlDuration
+        }
+      })
+      const circleBurst = new mojs.Burst({
+        parent: '#star',
+        radius: {50:75},
+        angle: 25,
+        duration: tlDuration,
+        children: {
+          shape: 'circle',
+          fill: 'gold',
+          delay: 30,
+          speed: 0.2,
+          radius: {3: 0},
+          easing: mojs.easing.bezier(0.1, 1, 0.3, 1),
+        }
+      })
+      const countAnimation = new mojs.Html({
+        el: '#star--count',
+        isShowStart: false,
+        isShowEnd: true,
+        y: {0: -30},
+        opacity: {0:1},
         duration: tlDuration
-      }
-    })
-    const circleBurst = new mojs.Burst({
-      parent: '#star',
-      radius: {50:75},
-      angle: 25,
-      duration: tlDuration,
-      children: {
-        shape: 'circle',
-        fill: 'gold',
-        delay: 30,
-        speed: 0.2,
-        radius: {3: 0},
-        easing: mojs.easing.bezier(0.1, 1, 0.3, 1),
-      }
-    })
-    const countAnimation = new mojs.Html({
-      el: '#star--count',
-      isShowStart: false,
-      isShowEnd: true,
-      y: {0: -30},
-      opacity: {0:1},
-      duration: tlDuration
-    }).then({
-      opacity: {1:0},
-      y: -80,
-      delay: tlDuration/2
-    })
-    const countTotalAnimation = new mojs.Html({
-      el: '#star--count-total',
-      isShowStart: false,
-      isShowEnd: true,
-      opacity: {0:1},
-      delay: 3*(tlDuration)/2,
-      duration: tlDuration,
-      y: {0: -3}
-    })
-    const scaleButton = new mojs.Html({
-      el: '#star',
-      duration: tlDuration,
-      scale: {1.3: 1},
-      easing: mojs.easing.out
-    })
-    const star = document.getElementById('star')
-    star.style.transform = "scale(1, 1)"
-    this._animationTimeline = new mojs.Timeline()
-    this._animationTimeline.add([
-      countAnimation,
-      countTotalAnimation,
-      scaleButton,
-      circleBurst,
-      triangleBurst
-    ])
+      }).then({
+        opacity: {1:0},
+        y: -80,
+        delay: tlDuration/2
+      })
+      const countTotalAnimation = new mojs.Html({
+        el: '#star--count-total',
+        isShowStart: false,
+        isShowEnd: true,
+        opacity: {0:1},
+        delay: 3*(tlDuration)/2,
+        duration: tlDuration,
+        y: {0: -3}
+      })
+      const scaleButton = new mojs.Html({
+        el: '#star',
+        duration: tlDuration,
+        scale: {1.3: 1},
+        easing: mojs.easing.out
+      })
+      const star = document.getElementById('star')
+      star.style.transform = "scale(1, 1)"
+      this._animationTimeline = new mojs.Timeline()
+      this._animationTimeline.add([
+        countAnimation,
+        countTotalAnimation,
+        scaleButton,
+        circleBurst,
+        triangleBurst
+      ])
+    }
   }
   render () {
     const { sOutlineFill, sBodyFill, sBodyStroke, iGlobalCount, sClassName, iLocalCount } = this.state;

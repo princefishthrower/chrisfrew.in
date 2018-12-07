@@ -10,7 +10,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const db = require('./db');
 const oCorsOptions = {
-  origin: ['https://chrisfrew.in', 'http://localhost:8000'],
+  origin: ['https://chrisfrew.in', 'http://localhost:8000', 'http://localhost:8081', 'http://localhost:8083'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 let server;
