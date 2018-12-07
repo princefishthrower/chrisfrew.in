@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5117 5467.8">
+  <defs>
+    <marker id="B" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="u" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="q" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="r" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="s" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="t" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="e" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="m" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="h" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="g" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="f" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="l" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="k" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="j" orient="auto" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="i" overflow="visible">
+      <path d="M-10 0l-4 4L0 0l-14-4 4 4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="b" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="d" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="c" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="a" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="n" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="o" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="p" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="v" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="w" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="x" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="y" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="z" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="A" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker orient="auto" id="C" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="D" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+    <marker id="E" orient="auto" overflow="visible">
+      <path d="M10 0l4-4L0 0l14 4-4-4z" fill-rule="evenodd" stroke="#000" stroke-width="1.1"/>
+    </marker>
+  </defs>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M1848 2058h861v1073.9h-861zM3496.2 669.4h870v2018h-870zm-1437.7 47.8h647.3V309.9h-647.3zm-2.8 746.7H2703v-407.3h-647.3zm-940.1 1058h647.3v-407.3h-647.3z"/>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M1944.2 2564.8h647.3v-407.3h-647.3zm1651.4 17.1h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="-310.4" y="-1255.3" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-310.4" y="-1255.3" style="text-align:center" text-anchor="middle">The internet, lulz</tspan><tspan x="-310.4" y="-1205.3" style="text-align:center" text-anchor="middle">THE ONE SOURCE OF TRUTH</tspan>
+  </text>
+  <text style="line-height:125%" x="-319.2" y="-577.1" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-319.2" y="-577.1" style="text-align:center" text-anchor="middle">Chrisfrew.in Productions</tspan><tspan x="-319.2" y="-527.1" style="text-align:center" text-anchor="middle">NGINX reverse proxy switch (nginx.conf)</tspan><tspan x="-319.2" y="-477.1" style="text-align:center" text-anchor="middle">Router</tspan><tspan x="-319.2" y="-427.1" style="text-align:center" text-anchor="middle">194.208.181.15</tspan><tspan x="-319.2" y="-377.1" style="text-align:center" text-anchor="middle">Ports 443 and 80</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M2768.2 2570.5h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="-1266" y="470.1" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1266" y="470.1" style="text-align:center" text-anchor="middle">chrisfrew.in</tspan><tspan x="-1266" y="520.1" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="-1266" y="570.1" style="text-align:center" text-anchor="middle">Gatsby.js</tspan><tspan x="-1266" y="620.1" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="-1266" y="670.1" style="text-align:center" text-anchor="middle">localhost:8081</tspan>
+  </text>
+  <text style="line-height:125%" x="-443.1" y="487.3" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-443.1" y="487.3" style="text-align:center" text-anchor="middle">sirenapparel.us</tspan><tspan x="-443.1" y="537.3" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="-443.1" y="587.3" style="text-align:center" text-anchor="middle">Yeoman</tspan><tspan x="-443.1" y="637.3" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="-443.1" y="687.3" style="text-align:center" text-anchor="middle">localhost:8082</tspan>
+  </text>
+  <text style="line-height:125%" x="392.3" y="518.7" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="392.3" y="518.7" style="text-align:center" text-anchor="middle">chrisfrewin.design</tspan><tspan x="392.3" y="568.7" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="392.3" y="618.7" style="text-align:center" text-anchor="middle">Yeoman</tspan><tspan x="392.3" y="668.7" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="392.3" y="718.7" style="text-align:center" text-anchor="middle">localhost:8083</tspan>
+  </text>
+  <text style="line-height:125%" x="1216.9" y="513" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1216.9" y="513" style="text-align:center" text-anchor="middle">nlp-champs.com</tspan><tspan x="1216.9" y="563" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="1216.9" y="613" style="text-align:center" text-anchor="middle">Gatsby.js</tspan><tspan x="1216.9" y="663" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="1216.9" y="713" style="text-align:center" text-anchor="middle">localhost:8084</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M4415.6 2587.6h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="2036.9" y="518.7" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="2036.9" y="518.7" style="text-align:center" text-anchor="middle">xn--seelengeflster-tirol-yec.com</tspan><tspan x="2036.9" y="568.7" style="text-align:center" text-anchor="middle">seelengefluester-tirol.com</tspan><tspan x="2036.9" y="618.7" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="2036.9" y="668.7" style="text-align:center" text-anchor="middle">create-react-app</tspan><tspan x="2036.9" y="718.7" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="2036.9" y="768.7" style="text-align:center" text-anchor="middle">localhost:8085</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M3594.7 1274.9H4242V867.6h-647.3z"/>
+  <text style="line-height:125%" x="1216" y="-794" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1216" y="-794" style="text-align:center" text-anchor="middle">South Park Markov Chains Mini App</tspan><tspan x="1216" y="-744" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="1216" y="-694" style="text-align:center" text-anchor="middle">Yeoman</tspan><tspan x="1216" y="-644" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="1216" y="-594" style="text-align:center" text-anchor="middle">localhost:9001</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M3596.9 1746.9h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="1218.2" y="-322" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1218.2" y="-322" style="text-align:center" text-anchor="middle">Job Description Classifier Mini App</tspan><tspan x="1218.2" y="-272" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="1218.2" y="-222" style="text-align:center" text-anchor="middle">Yeoman</tspan><tspan x="1218.2" y="-172" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="1218.2" y="-122" style="text-align:center" text-anchor="middle">localhost:9001</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M4241.9 3599h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="1863.2" y="1530.1" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1863.2" y="1530.1" style="text-align:center" text-anchor="middle">postgresql database</tspan><tspan x="1863.2" y="1580.1" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="1863.2" y="1630.1" style="text-align:center" text-anchor="middle">localhost:5432</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M1218.2 3272.7h427.2v-330h-427.2z"/>
+  <text style="line-height:125%" x="-1262" y="1359.5" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1262" y="1359.5" style="text-align:center" text-anchor="middle">metadata.json</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M626 4389.3h647.3V3982H626z"/>
+  <text style="line-height:125%" x="-1755.6" y="2337.6" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1755.6" y="2337.6" style="text-align:center" text-anchor="middle">Chrisfrew.in Productions &quot;Stirling Integrator&quot; Monitor</tspan><tspan x="-1755.6" y="2387.6" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="-1755.6" y="2437.6" style="text-align:center" text-anchor="middle">vanilla Node.js and WebSocket, Logs</tspan><tspan x="-1755.6" y="2487.6" style="text-align:center" text-anchor="middle">Pi</tspan><tspan x="-1755.6" y="2537.6" style="text-align:center" text-anchor="middle">localhost:8081</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M2938 4383.7h647.3v-407.3H2938z"/>
+  <text style="line-height:125%" x="556.4" y="2332" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="556.4" y="2332" style="text-align:center" text-anchor="middle">Chrisfrew.in Productions Twitter Bot</tspan><tspan x="556.4" y="2382" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="556.4" y="2432" style="text-align:center" text-anchor="middle">vanilla Node.js and WebSocket</tspan><tspan x="556.4" y="2482" style="text-align:center" text-anchor="middle">Pi</tspan><tspan x="556.4" y="2532" style="text-align:center" text-anchor="middle">localhost:8083</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M4034.6 4942h647.3v-407.2h-647.3z"/>
+  <text style="line-height:125%" x="1653" y="2890.3" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1653" y="2890.3" style="text-align:center" text-anchor="middle">Pi is Better than Alexa Artificial Intelligence</tspan><tspan x="1653" y="2940.3" style="text-align:center" text-anchor="middle">Node.js</tspan><tspan x="1653" y="2990.3" style="text-align:center" text-anchor="middle">Pi</tspan><tspan x="1653" y="3040.3" style="text-align:center" text-anchor="middle">localhost:8084</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M1858.9 4636h647.3v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="-522.6" y="2584.2" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-522.6" y="2584.2" style="text-align:center" text-anchor="middle">Bitbucket and GitHub Webhook Monitor</tspan><tspan x="-522.6" y="2634.2" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="-522.6" y="2684.2" style="text-align:center" text-anchor="middle">vanilla Node.js and WebSocket</tspan><tspan x="-522.6" y="2734.2" style="text-align:center" text-anchor="middle">Pi</tspan><tspan x="-522.6" y="2784.2" style="text-align:center" text-anchor="middle">localhost:8082</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M4028.6 4418.4h647.3V4011h-647.3z"/>
+  <text style="line-height:125%" x="1647" y="2366.6" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1647" y="2366.6" style="text-align:center" text-anchor="middle">Volatilty Standouts</tspan><tspan x="1647" y="2416.6" style="text-align:center" text-anchor="middle">Node.js</tspan><tspan x="1647" y="2466.6" style="text-align:center" text-anchor="middle">Vanilla NOde.js with Google Cloud</tspan><tspan x="1647" y="2516.6" style="text-align:center" text-anchor="middle">Pi</tspan><tspan x="1647" y="2566.6" style="text-align:center" text-anchor="middle">localhost:8085</tspan>
+  </text>
+  <path d="M730.3 2177.6l319.4-638.8" fill="none" stroke="#000" stroke-width="10" marker-start="url(#a)" transform="translate(2696.4 1745.9)"/>
+  <path d="M1137.6 1562L809 2177.5" fill="none" stroke="#000" stroke-width="10" marker-start="url(#b)" transform="translate(2696.4 1745.9)"/>
+  <path d="M360 2154.4l-1347.1-856.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#c)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1005.7 1386l1254.5 782.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#d)" transform="translate(2696.4 1745.9)"/>
+  <path d="M1674.6 1390.6l-176-527.7" fill="none" stroke="#000" stroke-width="10" marker-start="url(#e)" transform="translate(2696.4 1745.9)"/>
+  <path d="M82.6-432.7L736.4-605" fill="none" stroke="#000" stroke-width="10" marker-end="url(#f)" transform="translate(2696.4 1745.9)"/>
+  <path d="M127.3-313.4L787-192" fill="none" stroke="#000" stroke-width="10" marker-end="url(#g)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-329.8-229.5l-972.1 537" fill="none" stroke="#000" stroke-width="10" marker-end="url(#h)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-277.9-228.6L-367.5 249" fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round" marker-end="url(#i)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-112.2-225l328.6 569.5" fill="none" stroke="#000" stroke-width="10" marker-end="url(#j)" transform="translate(2696.4 1745.9)"/>
+  <path d="M3.5-229.5l1124.9 597.1" fill="none" stroke="#000" stroke-width="10" marker-end="url(#k)" transform="translate(2696.4 1745.9)"/>
+  <path d="M57-244.7l1935 611" fill="none" stroke="#000" stroke-width="10" marker-end="url(#l)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-320.5-757v-245.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#m)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="-1305.6" y="-1602.8" font-weight="400" font-size="188.3" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1305.6" y="-1602.8">Chisfrew.in Productions Full Stack Map</tspan>
+  </text>
+  <path d="M-1272.3 1080.4V835.1" fill="none" stroke="#000" stroke-width="10" marker-start="url(#n)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="-1057.5" y="961.1" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1051.1" y="961.1" style="text-align:center" text-anchor="middle">Built at </tspan><tspan x="-1057.5" y="1011.1" style="text-align:center" text-anchor="middle">production build</tspan>
+  </text>
+  <text style="line-height:125%" x="1005.9" y="1073.7" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1012.3" y="1073.7" style="text-align:center" text-anchor="middle">Built at </tspan><tspan x="1005.9" y="1123.7" style="text-align:center" text-anchor="middle">production build</tspan>
+  </text>
+  <text style="line-height:125%" x="2017.1" y="1094.3" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="2017.1" y="1094.3" style="text-align:center" text-anchor="middle">So far only used for email for newsletter</tspan>
+  </text>
+  <path d="M1202.4 1124.6V879.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#o)" transform="translate(2696.4 1745.9)"/>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M1931.8 3043.9H2579v-407.3h-647.3z"/>
+  <text style="line-height:125%" x="-446.9" y="975" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-446.9" y="975" style="text-align:center" text-anchor="middle">Stripe Server</tspan><tspan x="-446.9" y="1025" style="text-align:center" text-anchor="middle">Node.js server</tspan><tspan x="-446.9" y="1075" style="text-align:center" text-anchor="middle">Vanilla Node.js with Stripe</tspan><tspan x="-446.9" y="1125" style="text-align:center" text-anchor="middle">Dell</tspan><tspan x="-446.9" y="1175" style="text-align:center" text-anchor="middle">localhost:8082</tspan>
+  </text>
+  <path d="M163.3 2561.8H-82" fill="none" stroke="#000" stroke-width="10" marker-start="url(#p)" transform="translate(2696.4 1745.9)"/>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M580.7 5207.2h674v-359.3h-674z"/>
+  <text style="line-height:125%" x="-1785.3" y="3267.8" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1785.3" y="3267.8" style="text-align:center" text-anchor="middle">Chrisfrew.in Productsions</tspan><tspan x="-1785.3" y="3317.8" style="text-align:center" text-anchor="middle">Logs</tspan>
+  </text>
+  <text style="line-height:125%" x="864.5" y="-993.3" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width="10" transform="translate(2696.4 1745.9)">
+    <tspan x="864.5" y="-993.3">nlp-champs.com suite</tspan>
+  </text>
+  <text style="line-height:125%" x="-801.5" y="374" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width="10" transform="translate(2696.4 1745.9)">
+    <tspan x="-801.5" y="374">sirenapparel.us suite</tspan>
+  </text>
+  <path d="M-2005.5 2191.5L-1626 654.6" fill="none" stroke="#000" stroke-width="10" marker-start="url(#q)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1487 2177.6l981.3-745.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#r)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1385.2 2237.8L346 867.6" fill="none" stroke="#000" stroke-width="10" marker-start="url(#s)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1371.3 2376.6L739.5 946.2" fill="none" stroke="#000" stroke-width="10" marker-start="url(#t)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1334.3 2427.6L2031 886" fill="none" stroke="#000" stroke-width="10" marker-start="url(#u)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1536.4 737L-1916 2273.7" fill="none" stroke="#000" stroke-width="10" marker-start="url(#v)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-599.4 1396.5l-981.4 745.2" fill="none" stroke="#000" stroke-width="10" marker-start="url(#w)" transform="translate(2696.4 1745.9)"/>
+  <path d="M470 880.5l-1731.2 1370.2" fill="none" stroke="#000" stroke-width="10" marker-start="url(#x)" transform="translate(2696.4 1745.9)"/>
+  <path d="M789 1002.5L-1322 2433" fill="none" stroke="#000" stroke-width="10" marker-start="url(#y)" transform="translate(2696.4 1745.9)"/>
+  <path d="M2063.1 973.2l-3365.3 1541.5" fill="none" stroke="#000" stroke-width="10" marker-start="url(#z)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="72.9" y="2723.7" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="79.3" y="2723.7" style="text-align:center" text-anchor="middle">Notifies Twitter Bot of </tspan><tspan x="72.9" y="2773.7" style="text-align:center" text-anchor="middle">updates to repositories</tspan>
+  </text>
+  <text style="line-height:125%" x="-1140.6" y="2751.5" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-1134.2" y="2751.5" style="text-align:center" text-anchor="middle">Notifies &quot;stirling integrator of </tspan><tspan x="-1140.6" y="2801.5" style="text-align:center" text-anchor="middle">updates to repositories</tspan>
+  </text>
+  <path d="M-1262.7 2561.8h245.3" fill="none" stroke="#000" stroke-width="10" marker-start="url(#A)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1553.2 2710s1120.3 777.6 2092.4-32.5" fill="none" stroke="#000" stroke-width="10" marker-start="url(#B)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="130.8" y="3070.9" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="137.2" y="3070.9" style="text-align:center" text-anchor="middle">Notifies &quot;stirling integrator&quot; of </tspan><tspan x="130.8" y="3120.9" style="text-align:center" text-anchor="middle">failed or successfully posted posts</tspan>
+  </text>
+  <path d="M-1885.2 3045v-378.9" fill="none" stroke="#000" stroke-width="10" marker-start="url(#C)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="-2350.4" y="2802.4" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="-2350.4" y="2802.4" style="text-align:center" text-anchor="middle">&quot;Stirling Integrator&quot; is</tspan><tspan x="-2350.4" y="2852.4" style="text-align:center" text-anchor="middle">sole printer of all logs</tspan><tspan x="-2350.4" y="2902.4" style="text-align:center" text-anchor="middle">that occur in the Chrisfrew.in Suite</tspan>
+  </text>
+  <path d="M-1637.4 2760.2S118 4510 1391.6 3276.6" fill="none" stroke="#000" stroke-width="10" marker-start="url(#D)" transform="translate(2696.4 1745.9)"/>
+  <path d="M-1451 2836.3s1356.3 1245.2 2721.9-148.1" fill="none" stroke="#000" stroke-width="10" marker-start="url(#E)" transform="translate(2696.4 1745.9)"/>
+  <text style="line-height:125%" x="820.5" y="3293.1" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="826.9" y="3293.1" style="text-align:center" text-anchor="middle">Notifies &quot;stirling integrator&quot; of </tspan><tspan x="820.5" y="3343.1" style="text-align:center" text-anchor="middle">activity: failed or successful new generation of mp3</tspan>
+  </text>
+  <text style="line-height:125%" x="1452.9" y="3529.2" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1459.3" y="3529.2" style="text-align:center" text-anchor="middle">Notifies &quot;stirling integrator&quot; of </tspan><tspan x="1452.9" y="3579.2" style="text-align:center" text-anchor="middle">activity</tspan>
+  </text>
+  <path fill="#fff" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M3709.6 3245.4h427.2v-330h-427.2z"/>
+  <text style="line-height:125%" x="1229.5" y="1332.2" font-weight="400" font-size="40" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(2696.4 1745.9)">
+    <tspan x="1229.5" y="1332.2" style="text-align:center" text-anchor="middle">metadata.json</tspan>
+  </text>
+</svg>

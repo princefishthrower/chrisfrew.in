@@ -113,7 +113,8 @@ app.post('/star-add', function(req, res) {
 });
 
 // serve public assets with gzip compression
-app.use('/', expressStaticGzip('./public'));
+// app.use('/', expressStaticGzip('./public'));
+app.use('/', express.static('./public'));
 
 server = http.createServer(app);
 
