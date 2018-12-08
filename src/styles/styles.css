@@ -295,3 +295,12 @@ g .test rect {
 .starsInfoText {
   color: gold;
   font-size: 0.75rem; }
+
+p img {
+  display: block;
+  margin: 0 auto; }
+
+.subtitle {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }

@@ -161,6 +161,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "simple-things-you-can-do-right-now-to-help-environmental-efforts-c92",
+        "path": "/simple-things-you-can-do-right-now-to-help-environmental-efforts/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "some-tasty-bash-profile-commands-86b",
         "path": "/some-tasty-bash-profile-commands/"
     },
@@ -168,6 +173,11 @@
         "componentChunkName": "component---src-pages-talk-shop-index-js",
         "jsonName": "talk-shop-8cd",
         "path": "/talk-shop/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "the-dreaded-referenceerror-window-is-not-defined-88d",
+        "path": "/the-dreaded-referenceerror-window-is-not-defined/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
