@@ -176,6 +176,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "that-was-it-the-first-week-of-the-rest-of-my-life-d5e",
+        "path": "/that-was-it-the-first-week-of-the-rest-of-my-life/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "the-dreaded-referenceerror-window-is-not-defined-88d",
         "path": "/the-dreaded-referenceerror-window-is-not-defined/"
     },

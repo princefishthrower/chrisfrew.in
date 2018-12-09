@@ -3,6 +3,7 @@ title: Warn SAP Users of Locked Objects Then Kill Their Session
 date: "2018-05-09"
 draft: false
 starID: 18
+postType: dev
 ---
 
 ## SAP users lockin' up your objects?

@@ -3,6 +3,7 @@ title: Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input
 date: "2018-01-25"
 draft: true
 starID: 33
+postType: dev
 ---
 
 ## So, we don't want to be rebuilding SAP GUI transactions 1:1 in the Web...

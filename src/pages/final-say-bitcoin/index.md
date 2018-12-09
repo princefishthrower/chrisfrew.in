@@ -3,6 +3,7 @@ title: My First and Final Statement on Bitcoin for this Blog
 date: "2017-12-18"
 draft: false
 starID: 4
+postType: misc
 ---
 
 Lots of words have been thrown around Bitcoin recently. Tulip Madness. Silk Road. Ponzi Scheme. While this blog will (rest assured) remain about software development and programming, I had to give my final say (barring whatever crap I may spew on reddit from time to time :smile:) SOMEWHERE about Bitcoin. I decided that somewhere was here.

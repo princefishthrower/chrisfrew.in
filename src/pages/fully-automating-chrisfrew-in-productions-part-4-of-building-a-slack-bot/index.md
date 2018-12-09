@@ -3,6 +3,7 @@ title: Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Sl
 date: "2018-07-21"
 draft: false
 starID: 23
+postType: dev
 ---
 
 ## Slack Bot!

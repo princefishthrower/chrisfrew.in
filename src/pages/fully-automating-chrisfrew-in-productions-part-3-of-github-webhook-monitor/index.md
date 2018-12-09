@@ -3,6 +3,7 @@ title: Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a Gi
 date: "2018-07-20"
 draft: false
 starID: 22
+postType: dev
 ---
 
 ## Background and Overview of this Technologically Amazing Accomplishment

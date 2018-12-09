@@ -3,6 +3,7 @@ title: ABAP Push and Message Channels
 date: "2018-01-12"
 draft: true
 starID: 50
+postType: dev
 ---
 
 # Add some spice to your SAPUI5 apps!

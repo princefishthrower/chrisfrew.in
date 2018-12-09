@@ -63,7 +63,8 @@ export const frontmatter = {
   title: "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)",
   date: "2018-09-09",
   draft: false,
-  starID: 26
+  starID: 26,
+  postType: "dev"
 }
 
 export default Post;

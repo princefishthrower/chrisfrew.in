@@ -3,6 +3,7 @@ title: An NPM Christmas Easter Egg
 date: "2017-12-24"
 draft: false
 starID: 8
+postType: dev
 ---
 
 ## No, It's not Easter for Christmas...

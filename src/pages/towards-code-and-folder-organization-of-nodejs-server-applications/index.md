@@ -3,6 +3,7 @@ title: Towards Code and Folder Organization of NodeJS Server Applications
 date: "2018-10-28"
 draft: true
 starID: 56
+postType: dev
 ---
 
 # Giant `index.js`'s Got You Down?

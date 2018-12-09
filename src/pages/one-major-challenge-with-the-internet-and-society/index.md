@@ -3,6 +3,7 @@ title: The Internet, Subscriptions, Big Winners, the Networking Effect, Makers &
 date: "2018-10-19"
 draft: true
 starID: 55
+postType: misc
 ---
 
 <sup><i>\*In an amazingly ironic turn of events, I got my first donation from an ABAP post on this blog \*while\* I was drafting this post! However, while it gives me more hope personally, I think this post is still extremely relevant!</i><sup>

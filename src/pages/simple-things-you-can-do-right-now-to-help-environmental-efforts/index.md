@@ -3,6 +3,7 @@ title: Simple Actions You Can Take Right Now to Improve the Environment and Comb
 date: "2018-12-07"
 draft: false
 starID: 100
+postType: life
 ---
 
 The motivation to write this post has come to me over the past few weeks as there has been another [wave of scary environmental press from the UN](https://www.theguardian.com/environment/2018/dec/03/david-attenborough-collapse-civilisation-on-horizon-un-climate-summit), and of course the [next set of climate talks in Katowice, Poland that are currently taking place](https://unfccc.int/katowice)

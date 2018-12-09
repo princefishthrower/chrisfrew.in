@@ -3,6 +3,7 @@ title: All Time Blog Donations Flowchart
 date: "2018-11-26"
 draft: true
 starID: 53
+postType: blog
 ---
 
 Here's a running list of all time donations to this blog. As I outlined [in this post](), I would be 'paying it forward' by donating 90% of all donations to this blog to other creators that I feel are pushing the creative / maker / independent / consultant culture forward.

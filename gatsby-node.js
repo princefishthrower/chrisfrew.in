@@ -29,6 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     draft
                     starID
+                    postType
                   }
                 }
               }
@@ -44,6 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     draft
                     starID
+                    postType
                   }
                 }
               }

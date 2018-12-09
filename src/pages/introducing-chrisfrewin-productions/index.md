@@ -3,6 +3,7 @@ title: Introducing my (new / same?!) company chrisfrew.in! (and how to change yo
 date: "2018-03-01"
 draft: false
 starID: 13
+postType: misc
 ---
 
 # chrisfrew.in as a company!

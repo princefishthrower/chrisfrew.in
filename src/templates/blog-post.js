@@ -10,9 +10,11 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
     const { markdownRemark: post } = data;
     const { frontmatter, html } = post;
     const { next, prev } = pageContext;
-    const { title, date, starID } = frontmatter;
+    const { title, date, starID, postType } = frontmatter;
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
+    const sPostTypeLink = process.env.CLIENT_URL + "?post-type=" + postType;
+    const sTitle = "Go to all posts with the #" + postType + " tag";
     return (
       <div className="postBackground">
         <Helmet 
@@ -66,6 +68,16 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
         >
           {date}
         </p>
+        <p
+          style={{
+            ...scale(-1 / 5),
+            display: 'block',
+            marginBottom: rhythm(1),
+            marginTop: rhythm(-1)
+          }}
+        >
+          <a href={sPostTypeLink} ariaLabel={sTitle} title={sTitle}>#{postType}</a>
+        </p>
         <div dangerouslySetInnerHTML={{ __html: html }} />
           <hr
             style={{
@@ -117,6 +129,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         draft
         starID
+        postType
       }
     }
   }

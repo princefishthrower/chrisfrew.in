@@ -33,6 +33,9 @@ a {
   font-weight: 900;
   text-decoration: none !important; }
 
+hr {
+  color: #F8F8F2; }
+
 blockquote {
   color: #F8F8F2;
   border-color: #F8F8F2; }
@@ -304,3 +307,24 @@ p img {
   display: block;
   margin: 0 auto;
   text-align: center; }
+
+.postFilterText {
+  display: inline; }
+
+.postFilterList {
+  display: inline;
+  list-style-type: none;
+  vertical-align: middle; }
+
+.postFilterList li {
+  display: inline;
+  margin: 0.5rem; }
+
+.selected {
+  color: #F8F8F2;
+  background: black; }
+
+.selectable {
+  background: #F8F8F2;
+  color: black;
+  cursor: pointer; }

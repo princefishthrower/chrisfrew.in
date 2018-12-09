@@ -3,6 +3,7 @@ title: Welp, I Did It. I Quit.
 date: "2018-07-22"
 draft: false
 starID: 24
+postType: life
 ---
 
 ## Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.

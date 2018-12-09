@@ -3,6 +3,7 @@ title: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and L
 date: "2018-05-10"
 draft: false
 starID: 19
+postType: dev
 ---
 
 # Links to All Parts of the Process

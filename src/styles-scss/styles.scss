@@ -36,9 +36,13 @@ body {
 }
 
 a {
-color: #F92672;
-font-weight: 900;
-text-decoration: none !important;
+  color: #F92672;
+  font-weight: 900;
+  text-decoration: none !important;
+}
+
+hr {
+  color: #F8F8F2;
 }
 
 blockquote {
@@ -250,4 +254,29 @@ p img {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+
+// filter list
+.postFilterText {
+  display: inline;
+}
+.postFilterList {
+  display: inline;
+  list-style-type: none;
+  vertical-align: middle;
+}
+.postFilterList li {
+  display: inline;
+  margin: 0.5rem;
+}
+
+// filter buttons on homepage
+.selected {
+  color: #F8F8F2; 
+  background: black;
+}
+.selectable {
+  background: #F8F8F2; 
+  color: black;
+  cursor: pointer;
 }

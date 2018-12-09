@@ -3,6 +3,7 @@ title: Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a No
 date: "2018-05-11"
 draft: false
 starID: 20
+postType: dev
 ---
 
 # Node.js Server Monitor
