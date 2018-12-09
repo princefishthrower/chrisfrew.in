@@ -1,7 +1,7 @@
 ---
 title: That was it. The First Week of the Rest of My Life.
 date: "2018-12-08"
-draft: false
+draft: true
 starID: 102
 postType: life
 ---
