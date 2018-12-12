@@ -53,7 +53,8 @@ pre[class*="language-"] {
   z-index: -999; }
 
 .postBackground {
-  background: #626F7A; }
+  background: #626F7A;
+  min-height: 100vh; }
 
 .newNewsNotification {
   animation: yellowFade 5s ease-out 1; }

@@ -116,6 +116,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "its-my-blogs-birthday-f89",
+        "path": "/its-my-blogs-birthday/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "jump-to-web-gui-using-sapui-5-or-openui-5-191",
         "path": "/jump-to-web-gui-using-sapui5-or-openui5/"
     },
@@ -168,6 +173,11 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "some-tasty-bash-profile-commands-86b",
         "path": "/some-tasty-bash-profile-commands/"
+    },
+    {
+        "componentChunkName": "component---src-pages-stats-index-js",
+        "jsonName": "stats-296",
+        "path": "/stats/"
     },
     {
         "componentChunkName": "component---src-pages-talk-shop-index-js",

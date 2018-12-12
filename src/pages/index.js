@@ -13,7 +13,7 @@ require('../styles/styles.css');
 
 const ALL = 'all';
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
-const aTags = [ALL, 'dev', 'life', 'misc'];
+const aTags = [ALL, 'dev', 'life', 'blog', 'misc'];
 
 class BlogIndex extends React.Component {
   constructor() {
@@ -111,6 +111,10 @@ class BlogIndex extends React.Component {
             <ul className="postFilterList">
               {aLis}
             </ul>
+            <br/>
+            <br/>
+            <br/>
+            <Link to="/stats">Check out cool stats about this blog here!</Link>
           </div>
           { sortedPosts.map(({ node }) => {
             if (node.frontmatter.draft) {
