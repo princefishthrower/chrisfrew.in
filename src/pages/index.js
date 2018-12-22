@@ -6,23 +6,22 @@ import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 import { graphql } from "gatsby"
-import { Snowflakes } from 'xn-snowflakes';
 
 require('prismjs/themes/prism-okaidia.css');
 require('../styles/styles.css');
 
 const ALL = 'all';
+const DEV = 'dev';
+
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
-const aTags = [ALL, 'dev', 'life', 'blog', 'misc'];
+const aTags = [ALL, DEV, 'life', 'blog', 'misc'];
 
 class BlogIndex extends React.Component {
   constructor() {
     super();
     this.state = {
-      snow: false,
-      sPostTypeFilter: null
+      sPostTypeFilter: DEV
     }
-    this.pauseSnow = this.pauseSnow.bind(this);
     this.onClickFilter = this.onClickFilter.bind(this);
     this.getFilterParameter = this.getFilterParameter.bind(this);
     this.getFilterParameter();
@@ -34,22 +33,15 @@ class BlogIndex extends React.Component {
       if (oURL.searchParams.get("post-type")) {
         this.state.sPostTypeFilter = oURL.searchParams.get("post-type");
       } else {
-        this.state.sPostTypeFilter = "dev"; // default to dev
+        this.state.sPostTypeFilter = DEV; // default to 'dev'
       }
     }
-  }
-  pauseSnow() {
-    this.state.snow.pause();
   }
   onClickFilter(sFilter) {
     if (typeof window !== 'undefined') {
       window.history.pushState('', '', '/?post-type=' + sFilter);
     }
-    if (sFilter === ALL) {
-      this.setState({sPostTypeFilter: null});
-    } else {
-      this.setState({sPostTypeFilter: sFilter});
-    }
+    this.setState({sPostTypeFilter: sFilter});
   }
   render() {
     console.log("render yo!!!!");
@@ -65,7 +57,7 @@ class BlogIndex extends React.Component {
     let sortedPosts = posts.sort((a, b) => { // need to sort because markdown posts and JS posts are queried seperately
       return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date);
     });
-    if (sPostTypeFilter !== "" && sPostTypeFilter !== null && sPostTypeFilter !== ALL) { // now also filter by post type, if it was given
+    if (sPostTypeFilter !== ALL) {
       sortedPosts = sortedPosts.filter(oPost =>  oPost.node.frontmatter.postType === sPostTypeFilter);
     }
     aTags.forEach((sTag, iIndex) => {
@@ -75,6 +67,8 @@ class BlogIndex extends React.Component {
       } else {
         sText = '#' + sTag;
       }
+      console.log(sTag);
+      console.log(sPostTypeFilter);
       if (sTag === sPostTypeFilter) { // active button!
         aLis.push(
           <li key={iIndex}>
@@ -128,7 +122,7 @@ class BlogIndex extends React.Component {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (
               <div key={node.fields.slug}>
-                <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug} onClick={this.pauseSnow}>
+                <Link style={{ boxShadow: 'none', color: 'black' }} to={node.fields.slug}>
                 <h2
                   style={{
                     marginBottom: rhythm(1 / 4),
@@ -150,18 +144,6 @@ class BlogIndex extends React.Component {
       </Layout>
     </div>
     )
-  }
-  static getDerivedStateFromProps(props, state) {
-    if (!state.snow && typeof window !== 'undefined') {
-      return {
-        snow: new Snowflakes() 
-      }
-    }
-    return null; // standard if we didn't change state to return null that nothing has changed
-  }
-  componentDidMount() {
-    // start fullscreen snow fall
-    this.state.snow.start();
   }
 }
 
