@@ -119,8 +119,8 @@ app.use('/', express.static('./public'));
 server = http.createServer(app);
 
 // listening ports - reverse proxyed from nginx to chrisfrew.in
-if (process.env.NODE_ENV === 'production') {
-  server.listen(8081);
+if (process.env.NODE_ENV === 'development') {
+  server.listen(8083); // for dev because on my development machine 8081 is for apache for different customer project
 } else {
-  server.listen(8083);
+  server.listen(8081);
 }
