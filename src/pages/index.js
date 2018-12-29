@@ -14,7 +14,7 @@ const ALL = 'all';
 const DEV = 'dev';
 
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
-const aTags = [ALL, DEV, 'life', 'blog', 'misc'];
+const aTags = [ALL, DEV, 'data', 'life', 'blog', 'misc'];
 
 class BlogIndex extends React.Component {
   constructor() {

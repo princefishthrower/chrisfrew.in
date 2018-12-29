@@ -41,6 +41,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "data-challenge-rendering-all-32767-invaders-bff",
+        "path": "/data-challenge-rendering-all-32767-invaders/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "debugging-abap-with-a-sap-shortcut-787",
         "path": "/debugging-abap-with-a-sap-shortcut/"
     },
@@ -111,6 +116,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "interesting-monopoly-probabilities-to-defeat-your-relatives-552",
+        "path": "/interesting-monopoly-probabilities-to-defeat-your-relatives/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "introducing-chrisfrewin-productions-694",
         "path": "/introducing-chrisfrewin-productions/"
     },
@@ -143,6 +153,11 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "more-thoughts-on-early-retirement-financial-independence-and-making-a-living-dd7",
         "path": "/more-thoughts-on-early-retirement-financial-independence-and-making-a-living/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "new-data-tag-e25",
+        "path": "/new-data-tag/"
     },
     {
         "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",

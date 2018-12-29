@@ -6,6 +6,8 @@ import { rhythm, scale } from '../utils/typography'
 import { graphql } from 'gatsby'
 import Star from '../components/Star'
 
+require(`katex/dist/katex.min.css`) // css for latex style math
+
 const BlogPostTemplate = ({data, location, pageContext}) => {
     const { markdownRemark: post } = data;
     const { frontmatter, html } = post;
@@ -78,7 +80,7 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
         >
           <a href={sPostTypeLink} ariaLabel={sTitle} title={sTitle}>#{postType}</a>
         </p>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div dangerouslySetInnerHTML={{ __html: html }} /> 
           <hr
             style={{
               marginBottom: rhythm(1),

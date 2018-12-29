@@ -64,10 +64,11 @@ const oBioText = (
     <a href="https://nlp-champs.com" target="_blank" rel="noopener noreferrer">nlp-champs.com</a><br/>
     <a href="https://how-do-i.app" target="_blank" rel="noopener noreferrer">how-do-i.app</a><br/>
     <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
-    <a href="https://wallstreetbetswally.github.io/" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a>
+    <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a>
+    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a>
     <br/>
     <br/>
-    (Probably more fun to see through my <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">portfolio page</a>)
+    (Probably more fun to see through my <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">portfolio page</a>!)
     <br/>
   </p>
 );    
