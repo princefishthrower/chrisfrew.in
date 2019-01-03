@@ -24,7 +24,7 @@ Anyway, this year should be exciting in terms of goals, since I'm not bound to a
 
 ## Goals for 2019
 
-I've divided my goals into two halves: directly career-oriented goals and miscellaneous (mostly hobbies and )
+I've divided my goals into two halves: directly career-oriented goals and miscellaneous (mostly hobbies and fun stuff)
 
 ### Software Engineering and Career Goals
 
