@@ -12,6 +12,7 @@ require('../styles/styles.css');
 
 const ALL = 'all';
 const DEV = 'dev';
+const DEFAULT_FILTER_VALUE = ALL; // chris 2019.01.03 - not sure if i should make it dev or all...
 
 const aColors = ['#F92672', '#66D9EF', '#A6E22E'];
 const aTags = [ALL, DEV, 'data', 'life', 'blog', 'misc'];
@@ -20,7 +21,7 @@ class BlogIndex extends React.Component {
   constructor() {
     super();
     this.state = {
-      sPostTypeFilter: DEV
+      sPostTypeFilter: DEFAULT_FILTER_VALUE
     }
     this.onClickFilter = this.onClickFilter.bind(this);
     this.getFilterParameter = this.getFilterParameter.bind(this);
@@ -33,7 +34,7 @@ class BlogIndex extends React.Component {
       if (oURL.searchParams.get("post-type")) {
         this.state.sPostTypeFilter = oURL.searchParams.get("post-type");
       } else {
-        this.state.sPostTypeFilter = DEV; // default to 'dev'
+        this.state.sPostTypeFilter = DEFAULT_FILTER_VALUE; // default filter value
       }
     }
   }
@@ -98,9 +99,9 @@ class BlogIndex extends React.Component {
           <Bio />
           <br/>
           <div className="postFilterText">
-            <span>
+            <h2>
             Filter posts by tag: 
-            </span>
+            </h2>
             { typeof window !== 'undefined' && window.innerWidth <= 600 && <div><br/></div> }
             <ul className="postFilterList">
               {aLis}
