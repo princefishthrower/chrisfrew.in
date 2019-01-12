@@ -62,7 +62,7 @@ Of course, this is only the tip of the iceberg. You can build out and develop ar
 
 ## Motivation for this Data Challenge
 
-So, after learning the very basics about Processing and working through a few examples and a beginner generative art course by [Melissa Wiederrecth on Skillshare](https://www.skillshare.com/classes/Coding-Easy-Generative-Art-With-Processing-The-Basics/520946096), I started exploring other's work, also mostly on Skillshare. 
+So, after learning the very basics about Processing and working through a few examples and a beginner generative art course by [Melissa Wiederrecht on Skillshare](https://www.skillshare.com/classes/Coding-Easy-Generative-Art-With-Processing-The-Basics/520946096), I started exploring other's work, also mostly on Skillshare. 
 
 Being the video game nerd that I am, I took a particular liking to the 'Invaders' work by [Jerome Herr in 2013](https://www.skillshare.com/projects/Experimenting-with-Processing-and-HYPE/18021) and [code](https://pastebin.com/umz39Yus). He mentions for the Invaders that he was originally inspired by [Jared Tarbell's work in 2003](http://www.complexification.net/gallery/machines/invaderfractal/) who appears to be the first to work on the Invaders concept and even provides [an interactive fractal implementation of Invader generation](http://www.complexification.net/gallery/machines/invaderfractal/flash/invaderFractall.html).
 

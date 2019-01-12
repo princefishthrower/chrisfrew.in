@@ -29,6 +29,10 @@ body {
   background: #3A3B36;
   color: #F8F8F2; }
 
+@media (pointer: coarse) {
+  body {
+    max-width: 100%; } }
+
 a {
   color: #F92672;
   font-weight: 900;

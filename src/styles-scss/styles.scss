@@ -34,9 +34,17 @@ $secondary-color: gold;
 $monokai-white: #F8F8F2;
 $monokai-pink: #F92672;
 $monokai-dark-grey: #3A3B36;
+
 body {
   background: $monokai-dark-grey;
   color: $monokai-white;
+}
+
+// for all mobile or touch targets, the max-width of the body should be 100% (no horizontal scrolling!)
+@media (pointer:coarse) {
+    body {
+      max-width: 100%;
+    }
 }
 
 a {
