@@ -26,7 +26,7 @@
 /* chfe */
 /* vars */
 body {
-  background: #272822;
+  background: #3A3B36;
   color: #F8F8F2; }
 
 a {
@@ -54,7 +54,7 @@ pre[class*="language-"] {
   z-index: -999; }
 
 .postStyle {
-  background: #272822;
+  background: #3A3B36;
   color: #F8F8F2;
   min-height: 100vh; }
 
