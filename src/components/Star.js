@@ -3,10 +3,8 @@ import { rhythm, scale } from '../utils/typography'
 
 const axios = require('axios');
 let mojs;
-try {
+if (typeof window !== 'undefined') {
   mojs = require('mo-js');
-} catch (e) {
-  console.log(e)
 }
 const LIGHT_GOLD = "#fff099";
 const GOLD = "gold";
