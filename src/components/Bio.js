@@ -26,6 +26,9 @@ const oBioPicture = (
     }}
   />
 );
+
+// TODO: finish portfolio page!
+// (Probably more fun to see through my <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">portfolio page</a>!)
 const oBioText = (
   <p>
     Hi, I'm <strong>Chris Frewin</strong>, I run and post on
@@ -68,7 +71,6 @@ const oBioText = (
     <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a>
     <br/>
     <br/>
-    (Probably more fun to see through my <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">portfolio page</a>!)
     <br/>
   </p>
 );    
