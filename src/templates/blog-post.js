@@ -18,7 +18,7 @@ const BlogPostTemplate = ({data, location, pageContext}) => {
     const sPostTypeLink = process.env.CLIENT_URL + "?post-type=" + postType;
     const sTitle = "Go to all posts with the #" + postType + " tag";
     return (
-      <div className="postBackground">
+      <div className="postStyle">
         <Helmet 
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}

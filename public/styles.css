@@ -24,6 +24,7 @@
   min-width: 100%;
 } */
 /* chfe */
+/* vars */
 body {
   background: #272822;
   color: #F8F8F2; }
@@ -52,8 +53,8 @@ pre[class*="language-"] {
   position: absolute;
   z-index: -999; }
 
-.postBackground {
-  background: #626F7A;
+.postStyle {
+  background: #272822;
   min-height: 100vh; }
 
 .newNewsNotification {

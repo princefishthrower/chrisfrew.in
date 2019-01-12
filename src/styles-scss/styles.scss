@@ -30,28 +30,32 @@ $btn-dimension: 80px;
 $primary-color: rgba(189,195,199 ,1);
 $secondary-color: gold;
 
+/* vars */
+$monokai-white: #F8F8F2;
+$monokai-pink: #F92672;
+$monokai-dark-grey: #272822;
 body {
-  background: #272822;
-  color: #F8F8F2;
+  background: $monokai-dark-grey;
+  color: $monokai-white;
 }
 
 a {
-  color: #F92672;
+  color: $monokai-pink;
   font-weight: 900;
   text-decoration: none !important;
 }
 
 hr {
-  color: #F8F8F2;
+  color: $monokai-white;
 }
 
 blockquote {
-  color: #F8F8F2;
-  border-color: #F8F8F2;
+  color: $monokai-white;
+  border-color: $monokai-white;
 }
 
 small {
-  color: #F8F8F2;
+  color: $monokai-white;
 }
 
 /* add more space to the bottom of code snippets */
@@ -65,8 +69,8 @@ pre[class*="language-"] {
   z-index: -999;
 }
 
-.postBackground {
-  background: #626F7A;
+.postStyle {
+  background: $monokai-dark-grey;
   min-height: 100vh;
 }
 
@@ -273,11 +277,11 @@ p img {
 
 // filter buttons on homepage
 .selected {
-  color: #F8F8F2; 
+  color: $monokai-white; 
   background: black;
 }
 .selectable {
-  background: #F8F8F2; 
+  background: $monokai-white; 
   color: black;
   cursor: pointer;
 }
