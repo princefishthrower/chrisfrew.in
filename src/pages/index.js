@@ -31,9 +31,9 @@ class BlogIndex extends React.Component {
     if (typeof window !== 'undefined') {
       oURL = new URL(window.location.href);
       if (oURL.searchParams.get("post-type")) {
-        this.state.sPostTypeFilter = oURL.searchParams.get("post-type");
+        this.setState({sPostTypeFilter: oURL.searchParams.get("post-type")});
       } else {
-        this.state.sPostTypeFilter = DEFAULT_FILTER_VALUE; // default filter value
+        this.setState({sPostTypeFilter: DEFAULT_FILTER_VALUE}); // default filter value
       }
     }
   }

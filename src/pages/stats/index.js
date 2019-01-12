@@ -1,8 +1,5 @@
-import Emoji from 'react-emoji-render';
 import { rhythm } from '../../utils/typography';
 import { Link } from 'gatsby';
-
-
 
 const React = require('react');
 

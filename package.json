@@ -72,6 +72,7 @@
   "devDependencies": {
     "@mdx-js/loader": "^0.15.0",
     "@mdx-js/mdx": "^0.15.0",
+    "babel-preset-gatsby": "^0.1.6",
     "eslint": "^4.11.0",
     "eslint-plugin-react": "^7.5.1",
     "loader-utils": "^1.1.0",
@@ -99,7 +100,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "build": "NODE_ENV=production gatsby build",
+    "build": "NODE_ENV=production gatsby build && ./copy_css.sh",
     "transport": "node transport.js",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
