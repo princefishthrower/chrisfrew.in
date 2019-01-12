@@ -8,7 +8,6 @@ import { rhythm } from '../utils/typography'
 import { graphql } from "gatsby"
 
 require('prismjs/themes/prism-okaidia.css');
-require('../styles/styles.css');
 
 const ALL = 'all';
 const DEV = 'dev';

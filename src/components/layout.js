@@ -3,6 +3,8 @@ import { rhythm, scale } from '../utils/typography'
 import { CanvasSpace, Pt, World, Create, Particle, Num } from 'pts';
 import Emoji from 'react-emoji-render';
 
+require('../styles/styles.css');
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
