@@ -55,6 +55,7 @@ pre[class*="language-"] {
 
 .postStyle {
   background: #272822;
+  color: #F8F8F2;
   min-height: 100vh; }
 
 .newNewsNotification {
