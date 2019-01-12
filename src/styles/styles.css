@@ -58,6 +58,11 @@ pre[class*="language-"] {
   color: #F8F8F2;
   min-height: 100vh; }
 
+.postStyle a {
+  color: #F92672;
+  font-weight: 900;
+  text-decoration: none !important; }
+
 .newNewsNotification {
   animation: yellowFade 5s ease-out 1; }
 

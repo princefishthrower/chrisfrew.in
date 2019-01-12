@@ -1,22 +1,22 @@
 ---
 title: Data Challenge! Rendering all 32,767 Invaders!
-date: "2019-01-12"
+date: "2019-01-13"
 draft: false
 starID: 104
 postType: data
 ---
 
-This post is [also published on Medium](), if you prefer to read there, but it was posted here first :smile:.
+This post is [also published on Medium](https://medium.com/@frewin.christopher/data-challenge-rendering-all-32-767-invaders-d20e69e045f4), if you prefer to read there<sup>[1](#footnote-1)</sup>, but it was posted here first. :smile:
 
-# Results First, Technical Stuff Later
+## Results First, Technical Stuff Later
 
 If you're here just trying to find my Invader-rendering site, [that is here.](https://chrisfrew.in/invaders)
 
-Or, if you are looking for the repository for ^ that site, [that is here.](https://github.com/frewinchristopher/invaders)
+Or, if you are looking for the _repository_ for ^ that site, [that is here.](https://github.com/frewinchristopher/invaders)
 
 Finally, the backend code (in Python) to generate all 32,767 unique instances Invaders [is here.](https://github.com/frewinchristopher/invaders-data)
 
-# Background: Processing and p5.js
+## Background: Processing and p5.js
 
 I got into the whole Processing universe through a few generative art courses on Skillshare.  If you don't know yet, Processing is a Java library (I believe there is a Python library too) that makes drawing and creating both fixed and animated digital art very easy. To get started, you need only to download the IDE and fill out a few methods, which could look as simple as:
 
@@ -58,9 +58,9 @@ and already you've written code that generates an animation like this:
 
 ![Gif of randomly colored circles popping up all over the screen](./circles.gif)
 
-of course, this is only the tip of the iceberg. You can build out and develop art and patterns as complex as you want, [like these examples by Daniel Stewart.](https://www.skillshare.com/projects/Talkin-Bout-My-Generating/27908)
+Of course, this is only the tip of the iceberg. You can build out and develop art and patterns as complex as you want, [like these examples by Daniel Stewart.](https://www.skillshare.com/projects/Talkin-Bout-My-Generating/27908)
 
-# Motivation for this Data Challenge
+## Motivation for this Data Challenge
 
 So, after learning the very basics about Processing and working through a few examples and a beginner generative art course by [Melissa Wiederrecth on Skillshare](https://www.skillshare.com/classes/Coding-Easy-Generative-Art-With-Processing-The-Basics/520946096), I started exploring other's work, also mostly on Skillshare. 
 
@@ -74,7 +74,9 @@ It just so happens that completely by chance, the very cover animation on the ho
 
 ## The Decision to Switch to Javascript
 
-So I finally bit the bullet and said, "alright, I'm killin' myself here, I need do this in JavaScript, let's convert this Java code to Javascript."<sup>[1](#footnote-1)</sup>  Anyway, the reason I wanted to do this project in Javascript was to get more practice with p5.js. I'll likely be using in the future for even more generative art projects! This is the best path forward for me, because even if it is static artwork (like prints and such), I'll still have the p5.js version that can literally be shared in its pure form across the web!
+So I finally bit the bullet and said, "alright, I'm killin' myself here, I need do this in JavaScript, let's convert this Java code to Javascript."<sup>[2](#footnote-2)</sup>  
+
+Anyway, the reason I wanted to do this project in Javascript was to get more practice with p5.js. I'll likely be using in the future for even more generative art projects! This is the best path forward for me, because even if it is static artwork (like prints and such), I'll still have the p5.js version that can literally be shared in its pure form across the web!
 
 ## React and p5.js
 
@@ -88,11 +90,11 @@ So, I had an overview of all the scaffolding I needed. I then got started with t
 
 ### What is an Invader?
 
-Before we go any further, I'll explain mathematically what an Invader is. An Invader is an array of 15 independently activated or deactivated blocks, arranged in any order, which is then partially reflected along the y-axis, like so (1 reflecting to 1', 6 reflecting to 6', and so on):
+Before we go any further, I'll explain mathematically what an Invader is. An Invader is an array of 15 independently activated or deactivated blocks, arranged in any order, which is then partially reflected along the y-axis (1 reflecting to 1', 6 reflecting to 6', and so on) forming the complete 25 block, 5 x 5 group of blocks::
 
 ![Invader schematic](./invader.svg)
 
-There are 2<sup>15</sup>-1 possible unique combinations of this configuration, or 32,768 - 1 = 32,767. We have to subtract 1 from 32,768, since the Invader with all 15 blocks deactivated would be an empty 30 x 30 block. (Oppositely, an Invader with all 15 blocks activated is a solid 30 x 30 block.)
+There are 2<sup>15</sup>-1 possible unique combinations of this configuration, or 32,768 - 1 = 32,767. We have to subtract 1 from 32,768, since the Invader with all 15 blocks deactivated would be an empty 5 x 5 group of blocks. (Oppositely, an Invader with all 15 blocks activated is a solid 5 x 5 group of blocks.)
 
 A helpful analogy for me was to picture this array of 15 switches next to each other, each being switched on or off at random, until you have every possible combination - all 32,767 of them. This configuration can be realized as a binary list of length 15, where a `1` represents an activated, or turned on block, while a `0` represents a deactivated, or turned off block.
 
@@ -118,7 +120,7 @@ Yep. That's it. `lInvaders` is a list with all 32,767 unique Invaders in it.
 
 I also had the idea to create a 'rank' for each Invader - the number of total activated blocks in the array of 15. In other words, counting how many `1`'s that were in the binary string.
 
-One can imagine that for both ranks 1 and 14 there are 15 Invaders, since Rank 1 is the same as choosing any 1 of the 15 blocks and activating it, while Rank 14 is similar, but instead, 1 of the given 15 blocks is deactivated instead of activated. Rank 15 is also easy to imagine - there is only 1 combination - all 15 blocks activated. (As mentioned above in the description, I ignore the single Invader of Rank 0, because it is a 30x30 block with all block deactivated, thus it is an empty block.) 
+One can imagine that for both ranks 1 and 14 there are 15 Invaders, since Rank 1 is the same as choosing any 1 of the 15 blocks and activating it, while Rank 14 is similar, but instead, 1 of the given 15 blocks is deactivated instead of activated. Rank 15 is also easy to imagine - there is only 1 combination - all 15 blocks activated. (As mentioned above in the description, I ignore the single Invader of Rank 0, because it is a 5 x 5 group of blocks with all blocks deactivated, thus it is an empty block.) 
 
 However, for all the ranks from 2 to 13, trying to intuitively picture the number of Invaders becomes difficult. So I decided to add that into my code, by determining the count of `1`'s in each of the 32,767 Invader binary strings:
 
@@ -208,7 +210,7 @@ for i, x in oDataFrame.groupby('rank'):
 
 As always, the most up-to-date version will be [on the repository](https://github.com/frewinchristopher/invaders-data).
 
-## Frontend Fun
+## Frontend Development
 
 So now that I had the data for my Invaders, I needed to create a p5.js canvas for each of the per-rank json files. Let's get started!
 
@@ -363,7 +365,7 @@ Whew... we're done! That completes the deep-dive into code on this post!
 
 If you want to give it a shot yourself, you may want to add your own new columns from the (I'm sure a 'complexity' or 'sparsity' value could be generated for each Inavder - that would be another way to color Invaders! It might also be fun to look at invaders of different sizes, such as 6 blocks that are partially reflected, forming a 3 x 3 block, or 8 blocks partially reflected, forming a 4 x 4 block, and so on!)
 
-## Code and Site
+## Links to the Code and Site
 
 As always when I make big posts like these, the links to the repositories can be found below.
 
@@ -389,7 +391,7 @@ As stated way above, the final site can be found here:
 
 As always, thanks for reading and I hoped you enjoyed this in-depth post. Get out there and start generating your own spin on Invaders!
 
-I also think this **Data Challenge**<sup>TM</sup> theme will return to my blog. It helps me develop as a software engineer, and makes for really interesting posts. I'll be making another **Data Challenge**<sup>TM</sup> for sure, as soon as I find the next project enticing enough to tackle!
+I also think this **Data Challenge!**<sup>TM</sup> theme will return to my blog. It helps me develop as a software engineer, and makes for really interesting posts. I'll be making another **Data Challenge!**<sup>TM</sup> for sure, as soon as I find the next project enticing enough to tackle!
 
 Cheers! :beer:
 
@@ -398,5 +400,10 @@ Cheers! :beer:
 ## Footnotes
 
 <div id="footnote-1">
-1. Cuz, cmon, who _doesn't_ do things in Javascript these days? :joy: (Yes, a bit of sarcasm, but honestly... it's been fairly true - we'll see what happens in 2019)
+1. Cuz, cmon, who <i>doesn't</i> do things in Javascript these days? :joy: (Yes, a bit of sarcasm, but honestly... it's been fairly true - we'll see what happens in 2019)
 </div>
+<div id="footnote-2">
+<br/><br/>
+2. Prefer to read on Medium? No you don't. There's no code highlighting, superscript, or awesome footnotes. (Like these :wink:)
+</div>
+<br/><br/>

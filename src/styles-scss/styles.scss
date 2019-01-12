@@ -75,6 +75,12 @@ pre[class*="language-"] {
   min-height: 100vh;
 }
 
+.postStyle a {
+  color: $monokai-pink;
+  font-weight: 900;
+  text-decoration: none !important;
+}
+
 .newNewsNotification {
   animation: yellowFade 5s ease-out 1;
 }
