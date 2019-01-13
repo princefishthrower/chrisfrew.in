@@ -1,5 +1,5 @@
 ---
-title: Data Challenge! Rendering all 32,767 Invaders!
+title: Data Challenge! Rendering All 32,767 Invaders!
 date: "2019-01-13"
 draft: false
 starID: 104
