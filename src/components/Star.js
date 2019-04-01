@@ -234,7 +234,7 @@ class Star extends React.Component {
         <br/>
         <span className="starsInfoText">Give me some gold stars if you like this post - max 50 :)</span>
         <br/>
-        <span className="starsInfoText">Stolen from Medium? Nooooooo :)</span>
+        <span className="starsInfoText">Was this idea totally stolen from Medium? Nooooooo :)</span>
       </div>
     )
   }
