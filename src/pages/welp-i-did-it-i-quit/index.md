@@ -8,7 +8,7 @@ postType: life
 
 ## Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.
 
-\*\*\*Note: this post is mirrored on my Medium: https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1
+\*\*\*Note: this post is mirrored on Medium: https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1
 
 ## Welp.
 

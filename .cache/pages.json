@@ -238,5 +238,10 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "welp-i-did-it-i-quit-6fd",
         "path": "/welp-i-did-it-i-quit/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "welp-i-did-it-im-still-a-freelancer-c30",
+        "path": "/welp-i-did-it-im-still-a-freelancer/"
     }
 ]

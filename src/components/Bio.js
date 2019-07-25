@@ -68,7 +68,8 @@ const oBioText = (
     <a href="https://how-do-i.app" target="_blank" rel="noopener noreferrer">how-do-i.app</a><br/>
     <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
     <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a><br/>
-    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a>
+    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a><br/>
+    <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">chrisfrew.in/portfolio</a>
     <br/>
     <br/>
     <br/>
