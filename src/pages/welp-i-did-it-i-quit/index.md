@@ -1,6 +1,6 @@
 ---
 title: Welp, I Did It. I Quit.
-date: "2018-07-22"
+date: "2018-07-25"
 draft: false
 starID: 24
 postType: life

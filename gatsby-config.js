@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   pathPrefix: `/chrisfrew.in`,
   siteMetadata: {
@@ -10,8 +12,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: path.join(__dirname, `src`, `pages`),
         name: 'markdown-pages',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+        name: 'images',
       },
     },
     `gatsby-transformer-javascript-frontmatter`,
