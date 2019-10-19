@@ -12,18 +12,9 @@ import BioPicture from './BioPicture';
 // TODO: finish portfolio page!
 const BioText = (
   <p>
-    Hi, I'm <strong>Chris Frewin</strong>, I run and post on
-    {' '}
-    <a href="https://nlp-champs.com" target="_blank" rel="noopener noreferrer">
-      nlp-champs.com
-    </a>
-    {' '}
-    and own the <a href="https://medium.com/@sirenapparel/siren-apparel-all-about-us-43c99839de5d" target="_blank" rel="noopener noreferrer">charity clothing</a> company
-    {' '}
-    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">
-      Siren Apparel
-    </a>
-    .
+    Hi, I'm <strong>Chris Frewin</strong>, I spend far too much time working on a Magento project and wasting time on ideas that burn me out and which I ultimately abandon!<sup><sup><sup>hmmmm, this guy is super salty...</sup></sup></sup>
+    <br/>
+    <br/>
     I'm an ex-mechanical engineer gone full-remote, full-stack application software engineer, and a hobbyist machine learning/natural language processing developer.{' '}
     <br/>
     <br/>
@@ -47,7 +38,7 @@ const BioText = (
     I'm a proud member of the <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>!<br/><br/>
     <span>Sites I've Built:</span><br/>
     <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">sirenapparel.us</a><br/>
-    <a href="https://nlp-champs.com" target="_blank" rel="noopener noreferrer">nlp-champs.com</a><br/>
+    <a href="https://chrisfrew.in/nlp-champs" target="_blank" rel="noopener noreferrer">chrisfrew.in/nlp-champs (formerly nlp-champs.com)</a><br/>
     <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
     <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a><br/>
     <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a><br/>
