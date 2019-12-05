@@ -11,6 +11,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "a-single-bash-command-to-simultaneously-run-and-compile-a-csharp-file-308",
+        "path": "/a-single-bash-command-to-simultaneously-run-and-compile-a-csharp-file/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "a-toast-to-full-stack-developers-f96",
         "path": "/a-toast-to-full-stack-developers/"
     },
