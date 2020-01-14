@@ -1,22 +1,10 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Hello World - My First Post :)
+description:
+date: "2017-12-12"
+draft: false
+starID: 1
+postType: blog
 ---
 
-This is my first post on my new fake blog! How exciting!
-
-I'm sure I'll write a lot more interesting things in the future.
-
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
-
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./salty_egg.jpg)
+I'll be writing here for sometime into the future now, though I'm not sure how often, as I'm rather busy with the work for [nlp-champs.com](nlp-champs.com) and [SkillScout](skillscout.herokuapp.com) (the original thing that brought on the need case for [nlp-champs.com](nlp-champs.com). Plus, it _really_ doesn't help that I recently fell down the rabbit hole that is blockchain. That stuff makes my head :boom: :boom: :boom: daily.

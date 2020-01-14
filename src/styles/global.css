@@ -1,0 +1,77 @@
+html, body {
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+header, main {
+    pointer-events: none;
+}
+header {
+    z-index: 20;
+    position: relative;
+}
+footer {
+    margin-top: 6rem;
+    position: relative;
+    z-index: 10;
+}
+main {
+    position: relative;
+    z-index: 10;
+}
+a {
+    color: #F92672;
+    z-index: 10;
+    pointer-events: all;
+}
+canvas {
+    pointer-events: all;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+}
+.canvas-mask {
+    pointer-events: none;
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+.background-mask {
+    pointer-events: none;
+    background-color: rgba(0,0,0,1);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+}
+.twentytwenty-fun {
+    display: inline-block;
+    position: relative;
+    font-size: 0.75rem;
+    font-family: 'Courier New', Courier, monospace;
+    animation: hover 2s ease-in-out infinite alternate;
+    line-height: 0.75rem;
+    text-align: center;
+}
+h1 {
+    border-bottom: none;
+}
+
+@keyframes hover {
+    from {
+      transform: translateY(-10%);
+      transform: translateX(-10%);
+      transform: rotate(0deg);
+    }
+    to {
+      transform: translateY(10%);
+      transform: translateX(10%);
+      transform: rotate(30deg);
+    }
+  }

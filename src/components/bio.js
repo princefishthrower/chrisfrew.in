@@ -14,7 +14,7 @@ import { rhythm } from "../utils/typography"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/defaultprofilepicture.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -24,20 +24,19 @@ const Bio = () => {
       site {
         siteMetadata {
           author
-          social {
-            twitter
-          }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
+        position: `relative`, // for canvas issue
+        zIndex: 10, // for canvas issue
       }}
     >
       <Image
@@ -54,13 +53,42 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p>
+    Hi, I'm <strong>Chris Frewin</strong>, I'm going to be COURSE MASTER for 2020 (I hope)!<sup><sup><sup>please help me</sup></sup></sup>
+    <br/>
+    <br/>
+    I'm an ex-mechanical engineer gone full-remote, full-stack application software engineer, and a hobbyist machine learning/natural language processing developer.{' '}
+    <br/>
+    <br/>
+    If I'm not building software, I'll be found hiking, skiing, taking pictures, spoiling homebrew, or creating music and art. I (mostly) live in Austria.
+    <br/>
+    <br/>
+    <a href="https://instagram.com/_chrisfrewin_">
+      You can follow me on Instagram.
+    </a>
+    <br/>
+    <br/>
+     or,
+    <br/>
+    <br/>
+    <a href="mailto:frewin.christopher@gmail.com">
+      Send me an email.
+    </a>
+    <br/>
+    <br/>
+    <br/>
+    I'm a proud member of the <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>!<br/><br/>
+    <span>Sites I've Built:</span><br/>
+    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">sirenapparel.us</a><br/>
+    <a href="https://chrisfrew.in/nlp-champs" target="_blank" rel="noopener noreferrer">chrisfrew.in/nlp-champs (formerly nlp-champs.com)</a><br/>
+    <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
+    <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a><br/>
+    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a><br/>
+    <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">chrisfrew.in/portfolio</a><br/>
+    <a href="https://risch-shoes.com" target="_blank" rel="noopener noreferrer">risch-shoes.com</a>
+    <br/>
+    <br/>
+    <br/>
+  </p>
     </div>
   )
 }
