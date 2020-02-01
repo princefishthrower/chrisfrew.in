@@ -15,9 +15,15 @@ class Fluid extends React.Component {
   }
 
   render() {
+    let scriptExists;
+    try {
+      scriptExists = document.getElementById('fluid-src');
+    } catch (err) {
+      scriptExists = false;
+    }
     return (
     <div>
-        <div className="canvas-mask"></div>
+        {scriptExists && <div className="canvas-mask"></div>}
         <canvas className="fluid-canvas"></canvas>
     </div>
     );

@@ -1,13 +1,13 @@
 ---
 title: The Internet, Subscriptions, Big Winners, the Networking Effect, Makers & Creators, and Society Today 
 description:
-date: "2018-10-19"
-draft: true
+date: "2020-02-01"
+draft: false
 starID: 55
 postType: misc
 ---
 
-<sup><i>\*In an amazingly ironic turn of events, I got my first donation from an ABAP post on this blog \*while\* I was drafting this post! However, while it gives me more hope personally, I think this post is still extremely relevant!</i><sup>
+<sup><i>\*In an amazingly ironic turn of events, I got my first donation from an ABAP post on this blog \*while\* I was drafting this post! (Back in October 2018) However, while it gives me more hope personally, I think this post is still extremely relevant!</i><sup>
 
 ## Ads, Companies, Creators, Makers, the Network Effect, and Redistribution
 
@@ -23,19 +23,19 @@ This is a longer, non-dev post of mine, but I think these are very important iss
 
 ### The Network Effect 
 
-A very important paper that was one of the first items that got me thinking along the lines of these issues is this paper about the role of luck. While it is aimed at single individuals, if a company or organization is considered as an individual in the market, many of the same findings and principles can apply.
+[This paper]() about the role of luck was one of the first things that got me thinking along the lines of these issues. While it is aimed at single individuals, if a company or organization is considered as an individual in the market, many of the same findings and principles can apply.
 
-So the paper found that counterintuitively that people of only average intellegince . Unfortunately, most intelligent (or even most hard working!) were not those who were most succesful (granted, there was a skew of more intellegent people to do better on average, but overwhelmingly they were not the _most_ successful)
+So the paper found that counterintuitively that people of only average intelligence . Unfortunately, most intelligent (or even most hard working!) were not those who were most successful (granted, there was a skew of more intelligent people to do better on average, but overwhelmingly they were not the _most_ successful)
 
-Since the researches had of course total control over the experiment,  as the second half of hte paper, the examined what if the economic insentives were changed in . they tested a few capabilities:
+Since the researches had of course total control over the experiment,  as the second half of hte paper, the examined what if the economic incentives were changed in . they tested a few capabilities:
 
 -
 -
 -
 
- _This redistribution is exactly the issue I am going to get at in this post_
+ _This redistribution is the core issue I am going to get at in this post_
 
-But wait you say, "the internet is by definition a giant sharing and redistribution network!" Indeed, but let's be honest, it's the sharing and redistribution of _information_, not money or wealth. I beleive these two things, information and money, are impertive to reorganize the motives of creatives and 
+But wait you say, "the internet is by definition a giant sharing and redistribution network!" Indeed, but let's be honest, it's the sharing and redistribution of _information_, not money or wealth. I beleive these two things, information and money, are imperative to reorganize the motives of creatives and 
 
 ### The Subscription Based Web
 
@@ -113,22 +113,24 @@ Additionally, as I've frequently stated, being a software developer who is inter
 
 ## My Pledge
 
-Posting this giant post with all talk and no action would be pretty lame. Therefore, as of today 90% of all donations to this blog will be recycled into the maker and creative economy of awesome things out there that I deem valid to support. These include:
+Posting this giant post with all talk and no action would be pretty lame. Therefore, as of today ~~90% of all donations to this blog will be recycled into the maker and creative economy~~ that I deem valid to support. These include:
 
 - Sam Harris's Waking Up Podcast
 - Dan Carlin's Hardcore History (Which he made free and by volunteer donation only - excellent!)
 - The GatsbyJS Team - fantastic work they are doing - also and example of the full tool which is totally free and donations are optional
 - The `create-react-app` Team - another invaluable tool for developers like me who use React JS.
 
-I'm building out a page to track these recycled cash flows. I'm paying it forward in hopes to speed up my dream of a Maker, Consultant, and Creative economy a reality.
+~~I'm building out a page to track these recycled cash flows. I'm paying it forward in hopes to speed up my dream of a Maker, Consultant, and Creative economy a reality.~~
+
+*Update February 2020: You'll notice here there is some strikethrough. I let my ideals get to me! I realized after revising this post (which I wrote in fall of 2018, but finally made public in 2020) that I missed a key element of free markets. I though to myself, some great person donates to my blog. Who am I to automatically redistribute their donation. Theoretically. If someone's donating to a blog, its because they want to support the _blogger_, not to have them just redistribute to further makers and creators. I realized, if they wanted to donate to someone else, they would have done so themselves! Its not my call to make.
 
 ## Future Considerations and More Work
 
 This is an issue that I repeatedly think about, and will likely blog again.
 
-As I build out my arsenal of projects as a Maker (all credit to (https://producthunt.com)[Product Hunt] for that term), I think I will be opting for the one time charge - or in the worst case, a yearly subscription. 
+As I keep trying to build out an arsenal of projects as a Maker (all credit to (https://producthunt.com)[Product Hunt] for that term), I think I will be opting for the one time charge - or in the worst case, a yearly subscription. 
 
-A common complaint by software engineers is that they don't work on projects that are challenging and ground breaking, or for companies that by nature aren't pushing the cutting edge. This issue was discussed in depth in a Hacker News thread.
+A common complaint by software engineers is that they don't work on projects that are challenging and ground breaking, or for companies that by nature aren't pushing the cutting edge. This issue was discussed in depth in a highly upvoted 2018 [Hacker News thread](https://news.ycombinator.com/item?id=17235832).
 
 That the very nature of the network effect is a root cause of this issue. 
 

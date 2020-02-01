@@ -77,14 +77,14 @@ const Bio = () => {
     <br/>
     <br/>
     I'm a proud member of the <a target="_blank" rel="noopener noreferrer" href="https://dev.to/frewinchristopher">DEV Community</a>, and <a target="_blank" rel="noopener noreferrer" href="https://producthunt.com/@galt_">Product Hunt's Makers Community</a>!<br/><br/>
-    <span>Sites I've Built:</span><br/>
-    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">sirenapparel.us</a><br/>
-    <a href="https://chrisfrew.in/nlp-champs" target="_blank" rel="noopener noreferrer">chrisfrew.in/nlp-champs (formerly nlp-champs.com)</a><br/>
-    <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a><br/>
-    <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a><br/>
-    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a><br/>
-    <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">chrisfrew.in/portfolio</a><br/>
-    <a href="https://risch-shoes.com" target="_blank" rel="noopener noreferrer">risch-shoes.com</a>
+    <span>Sites and products I've built solo or co-developed:</span><br/><br/>
+    <a href="https://sirenapparel.us" target="_blank" rel="noopener noreferrer">sirenapparel.us</a> (Solo)<br/>
+    <a href="https://chrisfrew.in/nlp-champs" target="_blank" rel="noopener noreferrer">chrisfrew.in/nlp-champs (formerly nlp-champs.com)</a> (Solo)<br/>
+    <a href="https://seelengeflüster-tirol.com" target="_blank" rel="noopener noreferrer">seelengeflüster-tirol.com</a> (Solo)<br/>
+    <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a> (Solo)<br/>
+    <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a> (Solo)<br/>
+    <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">chrisfrew.in/portfolio</a> (Solo)<br/>
+    <a href="https://risch-shoes.com" target="_blank" rel="noopener noreferrer">risch-shoes.com</a> (Co-Developed)
     <br/>
     <br/>
     <br/>
