@@ -1,82 +1,196 @@
-html {
-    background-color: rgba(0,0,0,0);
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+.switch-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
 }
 
+.switch-text {
+  flex-basis: 100%;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  margin: 0.25rem;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 27px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+html,
 body {
-    background-color: rgba(0,0,0,0);
-    color: white;
+  font-family: "Nunito Sans", sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 1s;
+  transition: background-color 1s;
 }
-header, main {
-    pointer-events: none;
+html .dark-mode,
+body .dark-mode {
+  background-color: #272822;
+  color: white;
 }
-header {
-    z-index: 20;
-    position: relative;
+html .light-mode,
+body .light-mode {
+  background-color: white;
+  color: #272822;
 }
-footer {
-    margin-top: 6rem;
-    position: relative;
-    z-index: 10;
-}
-main {
-    position: relative;
-    z-index: 10;
-}
-a {
-    color: #F92672;
-    z-index: 10;
-    pointer-events: all;
-}
-canvas {
-    pointer-events: all;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    position: fixed;
-}
-.canvas-mask {
-    pointer-events: none;
-    background-color: rgba(0,0,0,.5);
-    height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-}
-.background-mask {
-    pointer-events: none;
-    background-color: rgba(0,0,0,1);
-    height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    position: fixed;
-}
-.twentytwenty-fun {
-    display: inline-block;
-    position: relative;
-    font-size: 0.75rem;
-    font-family: 'Courier New', Courier, monospace;
-    animation: hover 2s ease-in-out infinite alternate;
-    line-height: 0.75rem;
-    text-align: center;
-}
+
 h1 {
-    border-bottom: none;
+  border-bottom: none;
+}
+
+header,
+main {
+  pointer-events: none;
+}
+
+header {
+  z-index: 20;
+  position: relative;
+}
+
+footer {
+  margin-top: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+}
+
+a {
+  color: #f92672;
+  z-index: 10;
+  pointer-events: all;
+}
+
+label {
+  pointer-events: all;
+  z-index: 10;
+}
+
+input {
+  pointer-events: all;
+  z-index: 10;
+}
+
+canvas {
+  pointer-events: all;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+}
+
+.canvas-mask {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.background-mask {
+  pointer-events: none;
+  background-color: black;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+}
+
+.twentytwenty-fun {
+  display: inline-block;
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+  animation: hover 2s ease-in-out infinite alternate;
+  line-height: 0.75rem;
+  text-align: center;
 }
 
 @keyframes hover {
-    from {
-      transform: translateY(-10%);
-      transform: translateX(-10%);
-      transform: rotate(0deg);
-    }
-    to {
-      transform: translateY(10%);
-      transform: translateX(10%);
-      transform: rotate(30deg);
-    }
+  from {
+    transform: translateY(-10%);
+    transform: translateX(-10%);
+    transform: rotate(0deg);
   }
+  to {
+    transform: translateY(10%);
+    transform: translateX(10%);
+    transform: rotate(30deg);
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

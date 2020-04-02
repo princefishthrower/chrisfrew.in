@@ -1,0 +1,104 @@
+@use 'switcher';
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+
+html,
+body {
+  font-family: "Nunito Sans", sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 1s;
+transition: background-color 1s;
+
+  .dark-mode {
+    background-color: #272822;
+    color: white;
+    
+  }
+
+  .light-mode {
+    background-color: white;
+    color: #272822;
+  }
+}
+h1 {
+  border-bottom: none;
+}
+header,
+main {
+  pointer-events: none;
+}
+header {
+  z-index: 20;
+  position: relative;
+}
+footer {
+  margin-top: 6rem;
+  position: relative;
+  z-index: 10;
+}
+main {
+  position: relative;
+  z-index: 10;
+}
+a {
+  color: #f92672;
+  z-index: 10;
+  pointer-events: all;
+}
+label {
+    pointer-events: all;
+    z-index: 10;
+}
+input {
+    pointer-events: all;
+    z-index: 10;
+}
+canvas {
+  pointer-events: all;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+}
+.canvas-mask {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+.background-mask {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 1);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+}
+.twentytwenty-fun {
+  display: inline-block;
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+  animation: hover 2s ease-in-out infinite alternate;
+  line-height: 0.75rem;
+  text-align: center;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(-10%);
+    transform: translateX(-10%);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateY(10%);
+    transform: translateX(10%);
+    transform: rotate(30deg);
+  }
+}
