@@ -13,19 +13,24 @@ class Switcher extends React.Component {
 
     const { cookies } = this.props
 
-    let activeModeText
+    let activeModeText, activeMode
     if (cookies.get("user-theme-preference")) {
       // already set at some point by the user
       activeModeText =
         cookies.get("user-theme-preference") === "dark-mode" ? "Dark" : "Light"
+      activeMode =
+        cookies.get("user-theme-preference") === "dark-mode"
+          ? "dark-mode"
+          : "light-mode"
     } else {
-      // default
+      // default values
       activeModeText = "Dark"
+      activeMode = "dark-mode"
     }
 
     this.state = {
       activeModeText: activeModeText,
-      activeMode: cookies.get("user-theme-preference") || "dark-mode",
+      activeMode: activeMode,
     }
     this.handleInputChange = this.handleInputChange.bind(this)
   }
@@ -47,7 +52,11 @@ class Switcher extends React.Component {
       <div className="switch-container">
         <BodyClassName className={activeMode} />
         <label className="switch">
-          <input type="checkbox" onChange={this.handleInputChange} checked={activeMode === "dark-mode" ? false : true} />
+          <input
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={activeMode === "dark-mode" ? false : true}
+          />
           <span className="slider round" />
         </label>
         <span className="switch-text">
