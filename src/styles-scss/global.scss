@@ -1,9 +1,12 @@
 @use 'switcher';
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+@font-face {
+  font-family: "Nunito Sans", sans;
+  src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap); 
+  font-display: swap;
+}
 
 html,
 body {
-  font-family: "Nunito Sans", sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: color 1s;
