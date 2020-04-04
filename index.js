@@ -2,6 +2,7 @@
 
 const http = require('http');
 const express = require('express');
+const expressStaticGzip = require('express-static-gzip');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
@@ -107,7 +108,8 @@ app.use(bodyParser.json());
 //   });
 // });
 
-app.use('/', express.static('./public'));
+// app.use('/', express.static('./public'));
+app.use("/", expressStaticGzip("./public"));
 
 server = http.createServer(app);
 
