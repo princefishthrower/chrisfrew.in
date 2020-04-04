@@ -1,7 +1,11 @@
 import Typography from "typography"
-import GitHub from "typography-theme-github"
+import gitHubTheme from "typography-theme-github"
 
-const typography = new Typography(GitHub)
+// Custom font to boost font size before creating
+gitHubTheme.baseFontSize = '20px';
+
+// create typography
+const typography = new Typography(gitHubTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

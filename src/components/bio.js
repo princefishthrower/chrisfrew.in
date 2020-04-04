@@ -85,7 +85,8 @@ const Bio = () => {
     <a href="https://wallstreetbetswally.github.io" target="_blank" rel="noopener noreferrer">wallstreetbetswally.github.io</a> (Solo)<br/>
     <a href="https://chrisfrew.in/invaders" target="_blank" rel="noopener noreferrer">chrisfrew.in/invaders</a> (Solo)<br/>
     <a href="https://chrisfrew.in/portfolio" target="_blank" rel="noopener noreferrer">chrisfrew.in/portfolio</a> (Solo)<br/>
-    <a href="https://risch-shoes.com" target="_blank" rel="noopener noreferrer">risch-shoes.com</a> (Co-Developed)
+    <a href="https://risch-shoes.com" target="_blank" rel="noopener noreferrer">risch-shoes.com</a> (Co-Developed)<br/>
+    <a href="https://fullstackcraft.com" target="_blank" rel="noopener noreferrer">fullstackcraft.com</a> (Solo)
   </p>
     </div>
   )

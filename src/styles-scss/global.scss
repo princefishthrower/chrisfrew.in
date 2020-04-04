@@ -7,12 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: color 1s;
-transition: background-color 1s;
+  transition: background-color 1s;
 
   .dark-mode {
     background-color: #272822;
     color: white;
-    
   }
 
   .light-mode {
@@ -22,10 +21,6 @@ transition: background-color 1s;
 }
 h1 {
   border-bottom: none;
-}
-header,
-main {
-  pointer-events: none;
 }
 header {
   z-index: 20;
@@ -43,43 +38,14 @@ main {
 a {
   color: #f92672;
   z-index: 10;
-  pointer-events: all;
 }
 label {
-    pointer-events: all;
-    z-index: 10;
+  z-index: 10;
 }
 input {
-    pointer-events: all;
-    z-index: 10;
+  z-index: 10;
 }
-canvas {
-  pointer-events: all;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-}
-.canvas-mask {
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-}
-.background-mask {
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 1);
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-}
+
 .twentytwenty-fun {
   display: inline-block;
   position: relative;

@@ -103,11 +103,6 @@ h1 {
   border-bottom: none;
 }
 
-header,
-main {
-  pointer-events: none;
-}
-
 header {
   z-index: 20;
   position: relative;
@@ -127,47 +122,14 @@ main {
 a {
   color: #f92672;
   z-index: 10;
-  pointer-events: all;
 }
 
 label {
-  pointer-events: all;
   z-index: 10;
 }
 
 input {
-  pointer-events: all;
   z-index: 10;
-}
-
-canvas {
-  pointer-events: all;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-}
-
-.canvas-mask {
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-}
-
-.background-mask {
-  pointer-events: none;
-  background-color: black;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
 }
 
 .twentytwenty-fun {
