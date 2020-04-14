@@ -96,10 +96,20 @@ body .dark-mode {
   background-color: #272822;
   color: white;
 }
+html .dark-mode blockquote,
+body .dark-mode blockquote {
+  color: white;
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+}
 html .light-mode,
 body .light-mode {
   background-color: white;
   color: #272822;
+}
+html .light-mode blockquote,
+body .light-mode blockquote {
+  color: #272822;
+  border-left: 4px solid rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -136,8 +146,6 @@ input {
 }
 
 blockquote {
-  color: white;
-  border-left: 4px solid rgba(255, 255, 255, 0.5);
   font-style: italic !important;
 }
 
