@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "github-workflow-artifacts"
-          target: "/roots/projects/chrisfrew.in"
+          target: "/root/projects/chrisfrew.in"
           overwrite: true
       - name: Restart (or start when restart fails) node forever on the server via SSH
         uses: appleboy/ssh-action@master
@@ -39,7 +39,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             source /root/.bashrc
-            cd "/root/chrisfrew.in/github-workflow-artifacts/"
+            cd "/root/projects/chrisfrew.in/github-workflow-artifacts/"
             forever restart index.js || forever start index.js && echo 'Forever successfully running!'
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2.0.0
