@@ -270,7 +270,7 @@ for sSongName in lSongNames:
 
 The songs that failed through the first pass were:
 
-```txt
+```
 10 Ribs & All/Carrot Pod Pod
 Bathroom Sound
 Blot
