@@ -3,14 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
+  margin: 3rem;
 }
 
 .switch-text {
+  display: block;
   flex-basis: 100%;
   font-size: 0.5rem;
   text-transform: uppercase;
-  margin: 0.25rem;
   font-weight: bold;
 }
 
@@ -23,7 +23,6 @@ $darkModeActiveColor: white;
   position: relative;
   text-align: center;
   display: inline-block;
-  width: $width;
   height: $secondarySize;
 }
 
@@ -34,6 +33,8 @@ $darkModeActiveColor: white;
 }
 
 .slider {
+  width: $width;
+  transform: translateX(25px);
   position: absolute;
   cursor: pointer;
   top: 0;

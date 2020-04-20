@@ -45,4 +45,4 @@ jobs:
         uses: rtCamp/action-slack-notify@v2.0.0
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_TITLE: Build complete! Latest commit message on build
+          SLACK_TITLE: "Build complete! Latest commit message:"

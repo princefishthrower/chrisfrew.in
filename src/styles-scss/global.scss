@@ -60,16 +60,35 @@ blockquote {
   font-style: italic !important;
 }
 
+.bio-lead {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .twentytwenty-fun {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 26rem;
   font-size: 0.75rem;
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   animation: hover 2s ease-in-out infinite alternate;
   line-height: 0.75rem;
   text-align: center;
 }
 
+@media only screen and (max-width: 720px) {
+  .twentytwenty-fun {
+    display: table;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+}
 @keyframes hover {
   from {
     transform: translateY(-10%);

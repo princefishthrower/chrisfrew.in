@@ -3,14 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
+  margin: 3rem;
 }
 
 .switch-text {
+  display: block;
   flex-basis: 100%;
   font-size: 0.5rem;
   text-transform: uppercase;
-  margin: 0.25rem;
   font-weight: bold;
 }
 
@@ -18,7 +18,6 @@
   position: relative;
   text-align: center;
   display: inline-block;
-  width: 50px;
   height: 27px;
 }
 
@@ -29,6 +28,8 @@
 }
 
 .slider {
+  width: 50px;
+  transform: translateX(25px);
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -149,16 +150,35 @@ blockquote {
   font-style: italic !important;
 }
 
+.bio-lead {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .twentytwenty-fun {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 26rem;
   font-size: 0.75rem;
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   animation: hover 2s ease-in-out infinite alternate;
   line-height: 0.75rem;
   text-align: center;
 }
 
+@media only screen and (max-width: 720px) {
+  .twentytwenty-fun {
+    display: table;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+}
 @keyframes hover {
   from {
     transform: translateY(-10%);
