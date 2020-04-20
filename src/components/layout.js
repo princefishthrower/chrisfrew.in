@@ -33,8 +33,8 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-          <span className="twentytwenty-fun">2020 facelift<br/>version!</span>
         </h1>
+        <span className="twentytwenty-fun">2020 facelift<br/>version!</span>
         <Switcher/>
         </>
       )

@@ -3,6 +3,11 @@ import BodyClassName from "react-body-classname"
 import { instanceOf } from "prop-types"
 import { withCookies, Cookies } from "react-cookie"
 
+const DARK_TEXT = "Dark"
+const DARK_EMOJI = "👻"
+const LIGHT_TEXT = "Light"
+const LIGHT_EMOJI = "☀️"
+
 class Switcher extends React.Component {
   static propTypes = {
     cookies: instanceOf(Cookies).isRequired,
@@ -13,23 +18,21 @@ class Switcher extends React.Component {
 
     const { cookies } = this.props
 
-    let activeModeText, activeMode
+    let activeMode
+
+    // already set at some point by the user
     if (cookies.get("user-theme-preference")) {
-      // already set at some point by the user
-      activeModeText =
-        cookies.get("user-theme-preference") === "dark-mode" ? "Dark" : "Light"
       activeMode =
         cookies.get("user-theme-preference") === "dark-mode"
           ? "dark-mode"
           : "light-mode"
-    } else {
+
       // default values
-      activeModeText = "Dark"
+    } else {
       activeMode = "dark-mode"
     }
 
     this.state = {
-      activeModeText: activeModeText,
       activeMode: activeMode,
     }
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -38,16 +41,19 @@ class Switcher extends React.Component {
   handleInputChange(event) {
     const { cookies } = this.props
     if (event.target.checked) {
-      this.setState({ activeModeText: "Light", activeMode: "light-mode" })
+      this.setState({ LIGHT_TEXT, activeMode: "light-mode" })
       cookies.set("user-theme-preference", "light-mode", { path: "/" })
     } else {
-      this.setState({ activeModeText: "Dark", activeMode: "dark-mode" })
+      this.setState({ activeMode: "dark-mode" })
       cookies.set("user-theme-preference", "dark-mode", { path: "/" })
     }
   }
 
   render() {
-    const { activeModeText, activeMode } = this.state
+    const { activeMode } = this.state
+    const activeModeText = activeMode === "dark-mode" ? DARK_TEXT : LIGHT_TEXT
+    const activeModeEmoji =
+      activeMode === "dark-mode" ? DARK_EMOJI : LIGHT_EMOJI
     return (
       <div className="switch-container">
         <BodyClassName className={activeMode} />
@@ -58,10 +64,9 @@ class Switcher extends React.Component {
             checked={activeMode === "dark-mode" ? false : true}
           />
           <span className="slider round" />
+          <span className="switch-text">{activeModeEmoji}</span>
+          <span className="switch-text">{activeModeText} mode active</span>
         </label>
-        <span className="switch-text">
-          <b>{activeModeText} mode active</b>
-        </span>
       </div>
     )
   }
