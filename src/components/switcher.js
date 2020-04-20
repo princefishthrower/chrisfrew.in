@@ -64,7 +64,7 @@ class Switcher extends React.Component {
             checked={activeMode === "dark-mode" ? false : true}
           />
           <span className="slider round" />
-          <span className="switch-text">{activeModeEmoji}</span>
+          <span className="switch-text emoji-fix">{activeModeEmoji}</span>
           <span className="switch-text">{activeModeText} mode active</span>
         </label>
       </div>

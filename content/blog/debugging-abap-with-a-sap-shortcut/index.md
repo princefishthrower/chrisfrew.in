@@ -12,7 +12,7 @@ Did you ever find you wanted to debug something in SAP GUI right on a certain co
 
 Open any text editor and add the following:
 
-```txt
+```
 [System]
 Name=ERP
 Description=My company's super awesome ERP system name
