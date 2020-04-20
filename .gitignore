@@ -66,3 +66,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Github workflow artifacts folder
+github-workflow-artifacts
