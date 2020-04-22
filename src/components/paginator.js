@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Paginator = () => {
+const Paginator = ({ path }) => {
   const data = useStaticQuery(graphql`
     query PaginatorQuery {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -33,26 +33,28 @@ const Paginator = () => {
   const postCount = posts.length
   let paginations = []
   let pageCount = 1
-  for (let i = 1; i < postCount; i += 5) {
-    let pathName = "/blog-page-" + pageCount
-    let url = "/"
-    let isActive = false
-    if (i !== 1) {
-      url = pathName
+  if (typeof window !== 'undefined') {
+    for (let i = 1; i < postCount; i += 5) {
+      let pathName = "/blog-page-" + pageCount
+      let url = "/"
+      let isActive = false
+      if (i !== 1) {
+        url = pathName
+      }
+      if (
+        (i === 1 && window.location.pathname === "/") ||
+        window.location.pathname === pathName
+      ) {
+        isActive = true
+      }
+      const text = i.toString() + "-" + (i + 5).toString()
+      paginations.push({
+        url: url,
+        text: text,
+        isActive: isActive,
+      })
+      pageCount = pageCount + 1
     }
-    if (
-      (i === 1 && window.location.pathname === "/") ||
-      window.location.pathname === pathName
-    ) {
-      isActive = true
-    }
-    const text = i.toString() + "-" + (i + 5).toString()
-    paginations.push({
-      url: url,
-      text: text,
-      isActive: isActive,
-    })
-    pageCount = pageCount + 1
   }
   return (
     <>
@@ -62,9 +64,9 @@ const Paginator = () => {
       <div className="pagination">
         {paginations.map(pagination => {
           if (pagination.isActive) {
-            return <button>{pagination.text}</button>
+            return <button key={pagination.text}>{pagination.text}</button>
           } else {
-            return <a href={pagination.url}>{pagination.text}</a>
+            return <a key={pagination.text} href={pagination.url}>{pagination.text}</a>
           }
         })}
       </div>
