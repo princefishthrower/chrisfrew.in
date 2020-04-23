@@ -44,23 +44,25 @@ class Switcher extends React.Component {
   }
 
   setStyleLink(mode) {
-    const href =
-      mode === DARK_MODE
-        ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
-        : "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-material-light.css"
-    const cssId = "prism-styles" // you could encode the css path itself to generate id..
-    if (!document.getElementById(cssId)) {
-      const head = document.getElementsByTagName("head")[0]
-      const link = document.createElement("link")
-      link.id = cssId
-      link.rel = "stylesheet"
-      link.type = "text/css"
-      link.href = href
-      link.media = "all"
-      head.appendChild(link)
-    } else {
-      const link = document.getElementById(cssId)
-      link.href = href
+    if (typeof document !== "undefined") {
+      const href =
+        mode === DARK_MODE
+          ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
+          : "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-material-light.css"
+      const cssId = "prism-styles" // you could encode the css path itself to generate id..
+      if (!document.getElementById(cssId)) {
+        const head = document.getElementsByTagName("head")[0]
+        const link = document.createElement("link")
+        link.id = cssId
+        link.rel = "stylesheet"
+        link.type = "text/css"
+        link.href = href
+        link.media = "all"
+        head.appendChild(link)
+      } else {
+        const link = document.getElementById(cssId)
+        link.href = href
+      }
     }
   }
 
@@ -80,8 +82,7 @@ class Switcher extends React.Component {
   render() {
     const { activeMode } = this.state
     const activeModeText = activeMode === DARK_MODE ? DARK_TEXT : LIGHT_TEXT
-    const activeModeEmoji =
-      activeMode === DARK_MODE ? DARK_EMOJI : LIGHT_EMOJI
+    const activeModeEmoji = activeMode === DARK_MODE ? DARK_EMOJI : LIGHT_EMOJI
     return (
       <div className="switch-container">
         <BodyClassName className={activeMode} />
