@@ -3,8 +3,11 @@ import BodyClassName from "react-body-classname"
 import { instanceOf } from "prop-types"
 import { withCookies, Cookies } from "react-cookie"
 
+const DARK_MODE = "dark-mode"
 const DARK_TEXT = "Dark"
 const DARK_EMOJI = "👻"
+
+const LIGHT_MODE = "light-mode"
 const LIGHT_TEXT = "Light"
 const LIGHT_EMOJI = "☀️"
 
@@ -23,37 +26,62 @@ class Switcher extends React.Component {
     // already set at some point by the user
     if (cookies.get("user-theme-preference")) {
       activeMode =
-        cookies.get("user-theme-preference") === "dark-mode"
-          ? "dark-mode"
-          : "light-mode"
+        cookies.get("user-theme-preference") === DARK_MODE
+          ? DARK_MODE
+          : LIGHT_MODE
 
-      // default values
+      // default value = dark mode :)
     } else {
-      activeMode = "dark-mode"
+      activeMode = DARK_MODE
     }
 
     this.state = {
       activeMode: activeMode,
     }
     this.handleInputChange = this.handleInputChange.bind(this)
+    this.setStyleLink = this.setStyleLink.bind(this)
+    this.setStyleLink(activeMode)
+  }
+
+  setStyleLink(mode) {
+    const href =
+      mode === DARK_MODE
+        ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
+        : "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-material-light.css"
+    const cssId = "prism-styles" // you could encode the css path itself to generate id..
+    if (!document.getElementById(cssId)) {
+      const head = document.getElementsByTagName("head")[0]
+      const link = document.createElement("link")
+      link.id = cssId
+      link.rel = "stylesheet"
+      link.type = "text/css"
+      link.href = href
+      link.media = "all"
+      head.appendChild(link)
+    } else {
+      const link = document.getElementById(cssId)
+      link.href = href
+    }
   }
 
   handleInputChange(event) {
     const { cookies } = this.props
     if (event.target.checked) {
-      this.setState({ LIGHT_TEXT, activeMode: "light-mode" })
-      cookies.set("user-theme-preference", "light-mode", { path: "/" })
+      this.setState({ LIGHT_TEXT, activeMode: LIGHT_MODE })
+      cookies.set("user-theme-preference", LIGHT_MODE, { path: "/" })
+      this.setStyleLink(LIGHT_MODE)
     } else {
-      this.setState({ activeMode: "dark-mode" })
-      cookies.set("user-theme-preference", "dark-mode", { path: "/" })
+      this.setState({ activeMode: DARK_MODE })
+      cookies.set("user-theme-preference", DARK_MODE, { path: "/" })
+      this.setStyleLink(DARK_MODE)
     }
   }
 
   render() {
     const { activeMode } = this.state
-    const activeModeText = activeMode === "dark-mode" ? DARK_TEXT : LIGHT_TEXT
+    const activeModeText = activeMode === DARK_MODE ? DARK_TEXT : LIGHT_TEXT
     const activeModeEmoji =
-      activeMode === "dark-mode" ? DARK_EMOJI : LIGHT_EMOJI
+      activeMode === DARK_MODE ? DARK_EMOJI : LIGHT_EMOJI
     return (
       <div className="switch-container">
         <BodyClassName className={activeMode} />
@@ -61,7 +89,7 @@ class Switcher extends React.Component {
           <input
             type="checkbox"
             onChange={this.handleInputChange}
-            checked={activeMode === "dark-mode" ? false : true}
+            checked={activeMode === DARK_MODE ? false : true}
           />
           <span className="slider round" />
           <span className="switch-text emoji-fix">{activeModeEmoji}</span>

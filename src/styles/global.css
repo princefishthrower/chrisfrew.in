@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 .switch-container {
   text-align: center;
   display: flex;
@@ -91,14 +92,14 @@ input:checked + .slider:before {
 }
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
   transition: color 1s;
   transition: background-color 1s;
 }
 html .dark-mode,
 body .dark-mode {
-  background-color: #272822;
+  background-color: #42443a;
   color: white;
 }
 html .dark-mode blockquote,
@@ -109,11 +110,11 @@ body .dark-mode blockquote {
 html .light-mode,
 body .light-mode {
   background-color: white;
-  color: #272822;
+  color: #42443a;
 }
 html .light-mode blockquote,
 body .light-mode blockquote {
-  color: #272822;
+  color: #42443a;
   border-left: 4px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -152,6 +153,14 @@ input {
 
 blockquote {
   font-style: italic !important;
+}
+
+pre, code {
+  font-family: "Fira Code", monospace !important;
+  font-size: 0.7rem !important;
+  line-height: 1rem;
+  border: none !important;
+  padding: 0.3rem !important;
 }
 
 .bio-lead {

@@ -4,30 +4,34 @@
   src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
   font-display: swap;
 }
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
 
+$darkColor: #42443a;
+// $darkColor: #272822;
+$lightColor: white;
 $monokaiRed: #f92672;
 
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
   transition: color 1s;
   transition: background-color 1s;
 
   .dark-mode {
-    background-color: #272822;
-    color: white;
+    background-color: $darkColor;
+    color: $lightColor;
     blockquote {
-      color: white;
+      color: $lightColor;
       border-left: 4px solid rgba(255, 255, 255, 0.5);
     }
   }
 
   .light-mode {
-    background-color: white;
-    color: #272822;
+    background-color: $lightColor;
+    color: $darkColor;
     blockquote {
-      color: #272822;
+      color: $darkColor;
       border-left: 4px solid rgba(0, 0, 0, 0.5);
     }
   }
@@ -61,7 +65,13 @@ input {
 blockquote {
   font-style: italic !important;
 }
-
+pre, code {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.7rem !important;
+  line-height: 1rem;
+  border: none !important;
+  padding: 0.3rem !important;
+}
 .bio-lead {
   margin: 0 auto;
   max-width: 400px;
@@ -108,7 +118,7 @@ blockquote {
   a:hover {
     text-decoration: none;
     background-color: $monokaiRed;
-    color: white;
+    color: $lightColor;
   }
   button {
     text-decoration: none;
@@ -122,7 +132,7 @@ blockquote {
     transition: color 0.5s;
     transition: background-color 0.5s;
     background-color: $monokaiRed;
-    color: white;
+    color: $lightColor;
   }
 }
 
