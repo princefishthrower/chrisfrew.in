@@ -42,7 +42,8 @@
   },
   "devDependencies": {
     "minify": "^5.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "sass": "^1.26.5"
   },
   "homepage": "https://chrisfrew.in",
   "keywords": [
