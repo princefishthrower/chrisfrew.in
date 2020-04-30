@@ -99,7 +99,7 @@ body {
 }
 html .dark-mode,
 body .dark-mode {
-  background-color: #42443a;
+  background-color: #000000;
   color: white;
 }
 html .dark-mode blockquote,
@@ -110,11 +110,11 @@ body .dark-mode blockquote {
 html .light-mode,
 body .light-mode {
   background-color: white;
-  color: #42443a;
+  color: #000000;
 }
 html .light-mode blockquote,
 body .light-mode blockquote {
-  color: #42443a;
+  color: #000000;
   border-left: 4px solid rgba(0, 0, 0, 0.5);
 }
 
