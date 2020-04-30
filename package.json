@@ -55,7 +55,7 @@
   },
   "scripts": {
     "build": "rm -r public/ && gatsby build && gzip -r public/",
-    "dev": "sass --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
+    "dev": "git checkout develop && sass --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

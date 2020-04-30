@@ -1,3 +1,8 @@
+$width: 50px;
+$secondarySize: 27px;
+$lightModeActiveColor: #000000 !default;
+$darkModeActiveColor: #ffffff !default;
+
 .switch-container {
   text-align: center;
   display: flex;
@@ -17,11 +22,6 @@
 .emoji-fix {
   margin-right: 3px;
 }
-
-$width: 50px;
-$secondarySize: 27px;
-$lightModeActiveColor: black;
-$darkModeActiveColor: white;
 
 .switch {
   position: relative;
