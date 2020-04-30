@@ -84,6 +84,28 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.dark-mode .pagination a {
+  border: 1px solid #f92672;
+}
+.dark-mode .pagination a:hover {
+  background-color: #f92672;
+}
+.dark-mode .pagination button {
+  border: 1px solid #f92672;
+  background-color: #f92672;
+}
+
+.light-mode .pagination a {
+  border: 1px solid #e70457;
+}
+.light-mode .pagination a:hover {
+  background-color: #e70457;
+}
+.light-mode .pagination button {
+  border: 1px solid #e70457;
+  background-color: #e70457;
+}
+
 .pagination {
   font-weight: bold;
   margin: 0;
@@ -103,7 +125,6 @@ input:checked + .slider:before {
   max-width: 3rem;
   min-width: 3rem;
   text-align: center;
-  border: 1px solid #f92672;
   padding: 0.25rem;
   margin: 0.25rem;
   transition: color 0.5s;
@@ -111,7 +132,6 @@ input:checked + .slider:before {
 }
 .pagination a:hover {
   text-decoration: none;
-  background-color: #f92672;
   color: #000000;
 }
 .pagination button {
@@ -121,12 +141,10 @@ input:checked + .slider:before {
   max-width: 3rem;
   min-width: 3rem;
   text-align: center;
-  border: 1px solid #f92672;
   padding: 0.25rem;
   margin: 0.25rem;
   transition: color 0.5s;
   transition: background-color 0.5s;
-  background-color: #f92672;
 }
 
 @font-face {
@@ -156,6 +174,11 @@ body .dark-mode blockquote {
   color: white;
   border-left: 4px solid rgba(255, 255, 255, 0.5);
 }
+html .dark-mode a,
+body .dark-mode a {
+  color: #f92672;
+  z-index: 10;
+}
 html .light-mode,
 body .light-mode {
   background-color: white;
@@ -165,6 +188,11 @@ html .light-mode blockquote,
 body .light-mode blockquote {
   color: #000000;
   border-left: 4px solid rgba(0, 0, 0, 0.5);
+}
+html .light-mode a,
+body .light-mode a {
+  color: #e70457;
+  z-index: 10;
 }
 
 h1 {
@@ -184,11 +212,6 @@ footer {
 
 main {
   position: relative;
-  z-index: 10;
-}
-
-a {
-  color: #f92672;
   z-index: 10;
 }
 
@@ -261,5 +284,3 @@ pre, code {
     transform: rotate(30deg);
   }
 }
-
-/*# sourceMappingURL=global.css.map */
