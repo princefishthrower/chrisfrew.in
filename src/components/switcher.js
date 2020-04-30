@@ -54,7 +54,7 @@ class Switcher extends React.Component {
         const head = document.getElementsByTagName("head")[0]
         const link = document.createElement("link")
         link.id = cssId
-        link.rel = "stylesheet"
+        link.rel = "preload"
         link.type = "text/css"
         link.href = href
         link.media = "all"
