@@ -1,0 +1,48 @@
+$monokaiRed: #f92672 !default;
+$lightColor: #ffffff !default;
+$darkColor: #000000 !default;
+
+.pagination {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+    font-family: "Courier";
+    font-size: 0.75rem;
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      display: block;
+      max-width: 3rem;
+      min-width: 3rem;
+      text-align: center;
+      border: 1px solid $monokaiRed;
+      padding: 0.25rem;
+      margin: 0.25rem;
+      transition: color 0.5s;
+      transition: background-color 0.5s;
+    }
+    a:hover {
+      text-decoration: none;
+      background-color: $monokaiRed;
+      color: $darkColor;
+    }
+    button {
+      color: $darkColor;
+      text-decoration: none;
+      display: block;
+      max-width: 3rem;
+      min-width: 3rem;
+      text-align: center;
+      border: 1px solid $monokaiRed;
+      padding: 0.25rem;
+      margin: 0.25rem;
+      transition: color 0.5s;
+      transition: background-color 0.5s;
+      background-color: $monokaiRed;
+    }
+  }

@@ -1,4 +1,17 @@
-@use 'switcher';
+$darkColor: #000000;
+$lightColor: white;
+$monokaiRed: #f92672;
+
+// yes these are seemingly 'backwards, but think about what the switcher shows up as :)
+@use 'switcher' with (
+  $lightModeActiveColor: $darkColor,
+  $darkModeActiveColor: $lightColor
+);
+
+@use 'pagination' with (
+  $monokaiRed: $monokaiRed
+);
+
 @font-face {
   font-family: "Nunito Sans", sans;
   src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
@@ -9,10 +22,6 @@
   src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
   font-display: swap;
 }
-
-$darkColor: #000000;
-$lightColor: white;
-$monokaiRed: #f92672;
 
 html,
 body {
@@ -93,50 +102,6 @@ pre, code {
   animation: hover 2s ease-in-out infinite alternate;
   line-height: 0.75rem;
   text-align: center;
-}
-
-.pagination {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: left;
-  font-family: "Courier";
-  font-size: 0.75rem;
-  list-style-type: none;
-  a {
-    text-decoration: none;
-    display: block;
-    max-width: 3rem;
-    min-width: 3rem;
-    text-align: center;
-    border: 1px solid $monokaiRed;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-  }
-  a:hover {
-    text-decoration: none;
-    background-color: $monokaiRed;
-    color: $lightColor;
-  }
-  button {
-    text-decoration: none;
-    display: block;
-    max-width: 3rem;
-    min-width: 3rem;
-    text-align: center;
-    border: 1px solid $monokaiRed;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-    background-color: $monokaiRed;
-    color: $lightColor;
-  }
 }
 
 @media only screen and (max-width: 720px) {
