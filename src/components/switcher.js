@@ -10,6 +10,7 @@ const DARK_EMOJI = "👻"
 const LIGHT_MODE = "light-mode"
 const LIGHT_TEXT = "Light"
 const LIGHT_EMOJI = "☀️"
+const cssId = "prism-styles"
 
 class Switcher extends React.Component {
   static propTypes = {
@@ -49,12 +50,12 @@ class Switcher extends React.Component {
         mode === DARK_MODE
           ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
           : "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-material-light.css"
-      const cssId = "prism-styles" // you could encode the css path itself to generate id..
       if (!document.getElementById(cssId)) {
         const head = document.getElementsByTagName("head")[0]
         const link = document.createElement("link")
         link.id = cssId
-        link.rel = "preconnect"
+        link.async = true
+        link.rel = "stylesheet"
         link.type = "text/css"
         link.href = href
         link.media = "all"
