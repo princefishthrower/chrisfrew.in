@@ -54,7 +54,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "git checkout develop && rm -r public/ && gatsby build && gzip -r public/",
+    "build": "rm -r public/ && gatsby build && gzip -r public/",
     "dev": "sass --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
