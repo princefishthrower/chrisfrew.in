@@ -1,6 +1,38 @@
-$monokaiRed: #f92672 !default;
+$monokaiRedDarkMode: #f92672 !default;
+$monokaiRedLightMode: #e70457 !default;
 $lightColor: #ffffff !default;
 $darkColor: #000000 !default;
+
+// anything style involving monokai color needs to be theme depended due to WCAG contrast standards
+.dark-mode {
+  .pagination {
+    a {
+      border: 1px solid $monokaiRedDarkMode;
+    }
+    a:hover {
+      background-color: $monokaiRedDarkMode;
+    }
+    button {
+      border: 1px solid $monokaiRedDarkMode;
+      background-color: $monokaiRedDarkMode;
+    }
+  }
+}
+
+.light-mode {
+  .pagination {
+    a {
+      border: 1px solid $monokaiRedLightMode;
+    }
+    a:hover {
+      background-color: $monokaiRedLightMode;
+    }
+    button {
+      border: 1px solid $monokaiRedLightMode;
+      background-color: $monokaiRedLightMode;
+    }
+  }
+}
 
 .pagination {
     font-weight: bold;
@@ -20,7 +52,6 @@ $darkColor: #000000 !default;
       max-width: 3rem;
       min-width: 3rem;
       text-align: center;
-      border: 1px solid $monokaiRed;
       padding: 0.25rem;
       margin: 0.25rem;
       transition: color 0.5s;
@@ -28,7 +59,6 @@ $darkColor: #000000 !default;
     }
     a:hover {
       text-decoration: none;
-      background-color: $monokaiRed;
       color: $darkColor;
     }
     button {
@@ -38,11 +68,9 @@ $darkColor: #000000 !default;
       max-width: 3rem;
       min-width: 3rem;
       text-align: center;
-      border: 1px solid $monokaiRed;
       padding: 0.25rem;
       margin: 0.25rem;
       transition: color 0.5s;
       transition: background-color 0.5s;
-      background-color: $monokaiRed;
     }
   }

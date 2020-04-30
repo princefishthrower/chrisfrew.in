@@ -41,6 +41,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "minify": "^5.1.1",
     "prettier": "^1.19.1"
   },
   "homepage": "https://chrisfrew.in",
@@ -54,8 +55,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "rm -r public/ && gatsby build && gzip -r public/",
-    "dev": "git checkout develop && sass --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
+    "build": "rm -r public/ && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
+    "dev": "git checkout develop && sass --no-source-map --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
