@@ -4,7 +4,11 @@
   src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
   font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+@font-face {
+  font-family: "Fira Code", monospace;
+  src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
+  font-display: swap;
+}
 
 $darkColor: #000000;
 $lightColor: white;

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 .switch-container {
   text-align: center;
   display: flex;
@@ -88,6 +87,11 @@ input:checked + .slider:before {
 @font-face {
   font-family: "Nunito Sans", sans;
   src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Code", monospace;
+  src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
   font-display: swap;
 }
 html,
