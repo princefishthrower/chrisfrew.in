@@ -1,16 +1,18 @@
 ---
 title: Magento 2 IP Location Detection (GeoIP) and Store Context Control Using the ipstack API
-description: A 20 liner solution to get you started with international stores!
+description: A full code solution with example repository to get you started with international stores!
 date: "2020-05-06"
 ---
 
+[_This post is mirrored on my Medium account._](https://medium.com/@frewin.christopher/magento-2-ip-location-detection-geoip-and-store-context-control-using-the-ipstack-api-b48c17cc19c7)
+
 ## TL;DR
 
-Example code repository [is here.](https://github.com/princefishthrower/example-magento-2-geo-ip-redirect) But I'd at least skim some of the important caveats in this post here before implementing!
+The example code repository [is here.](https://github.com/princefishthrower/example-magento-2-geo-ip-redirect) But I'd at least skim some of the important caveats in this post here before implementing!
 
 ## A Final Step in a Big Project
 
-As I've subtly alluded to every so often, I spent most of 2019 working on a Magento 2 shop. I and collegues are _still_ working on that project to this day, but much less so, simply tying off a few loose tickets that are really just 'nice to haves' instead of critical business components that needed to be done.
+As I've subtly alluded to every so often, I spent most of 2019 working on a Magento 2 shop. I and colleagues are _still_ working on that project to this day, but much less so, simply tying off a few loose tickets that are really just 'nice to haves' instead of critical business components that needed to be done.
 
 However, one of the last critical business functions was dynamically setting the correct store context based on a user's location. Sure, you can always use Magento's [default switch component](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Store/view/frontend/templates/switch/stores.phtml) to change store scope, but it's a bit more user friendly to do it automatically :wink:.
 
@@ -35,16 +37,16 @@ No worries! The code in this post is organized to scale easily no matter how man
 
 ## Software Logic and Process
 
-So, back to the original task: we want to show the proper store, and automatically as well, based on their location. Sticking with our 'Widgy Widgets' example, if we detect the visitor's IP is from Germany, we want to show them the German store view. Likewise if we see a US IP, we want to show the US store view. Let's say in default cases we show the the US store.
+So, back to the original task: we want to show the proper store, and automatically as well, based on their location. Sticking with our 'Widgy Widgets' example, if we detect the visitor's IP is from Germany, we want to show them the German store view. Likewise, if we see a US IP, we want to show the US store view. Let's say in default cases we show the US store.
 
 We will use the ipstack API, [you can signup for free and get 10000 requests per month here](https://ipstack.com/product). 
-***Full disclosure, this website and blog post is NOT sponsored by ipstack in any way!
+***Full disclosure, this website and blog post are NOT sponsored by ipstack in any way!
 
 So, in summary, there are two key steps:
 1. Retrieve the customer's IP
-2. Use that IP and call an API to get the users location (for our purposes, we only needed country-level resolution, though this pattern of course works for any level of location - i.e. you could have separate store views per city, for example.)
+2. Use that IP and call an API to get the user's location (for our purposes, we only needed country-level resolution, though this pattern of course works for any level of location - i.e. you could have separate store views per city, for example.)
 
-The location detection and subsequent store setting should take place very early during a customer's visit to your website. In fact, since we will be potentially changing the store view of . It _must_ occur before any controller fires - subsequent controllers in the pipeline may be using store information, and we want to make sure it is the correct store. This led us to put our store switcher logic in a router.
+The location detection and subsequent store setting should take place very early in the processing pipeline during a customer's visit to your website. In fact, since we will be potentially changing the store view, it _must_ occur before any controller fires - subsequent controllers in the pipeline may be using store information, and we want to make sure it is the correct store. This led us to put our store switching logic in a router.
 
 Alright, sounds good! We can write our router to call the API for every page visit, and always set the store view! 
 
@@ -63,9 +65,9 @@ StartXfer time: 0.759128
 Total time:     0.761387
 ```
 
-So we can say the API call is going to delay page rendering by _at least_ 50 ms per page visit. So ideally, we should do this only once per visitor. In 99% of situations their IP won't be changing as they move from page to page on our site. This will ultimately reduce page loads (after the first visit), not to mention saving us on our ipstack monthly quota! We'll then need some sort of variable that is attached to our visitor's session. Then we can check this variable to see if it is set. We only call the geo IP API if it is set.
+So we can say the API call is going to delay page rendering by _at least_ 50 ms per page visit. So ideally, we should do this only once per visitor. In 99% of situations, their IP won't be changing as they move from page to page on our site. This will ultimately reduce page loads (after the first visit), not to mention saving us on our ipstack monthly quota! We'll then need some sort of variable that is attached to our visitor's session. Then we can check this variable to see if it is set. We only call the geo IP API if it is set.
 
-So how can we know when a visitor is visiting our shop for the first time? Surely magento must have this functionality already. They do! It's in the `SessionManager` class, method `start()`. In this case, we can tap into when Magento 2 creates a session via an `after` plugin. The full plugin class looks like this: 
+So how can we know when a visitor is visiting our shop for the first time? Surely Magento must have this functionality already. They do! It's in the `SessionManager` class, method `start()`. In this case, we can tap into when Magento 2 creates a session via an `after` plugin. The full plugin class looks like this: 
 
 ```php
 <?php
@@ -288,7 +290,7 @@ With this plugin written, we have a persistent value to check against to prevent
 
 ## The Router
 
-In our router we'll only need to inherit from a basic `RouterInterface`. The router logic looks like this:
+In our router, we'll only need to inherit from a basic `RouterInterface`. The router logic looks like this:
 
 ```php
 <?php
@@ -365,17 +367,19 @@ class GeoIpRouter implements RouterInterface
 }
 ```
 
-Keep in mind this isn't a router in the _true_ sense, since we're not routing to any specific controller. 
+Keep in mind this isn't a router in the _true_ sense since we're not routing to any specific controller. 
 
-However, since the `setCurrentStore()` call must occur before any controller is executed, I believe it must exist in a router. If you have a better alternative, please shoot me an email at `frewin.christopher@gmail.com`. 
+However, since the call to `setCurrentStore()` must occur before any controller is executed, I believe it must exist in a router. If you have a better alternative, please shoot me an email at `frewin.christopher@gmail.com`. 
 
-You may also want to add a default case after the `foreach` if you don't find a matching store, but that can anyway be configured admin - simply ensure your default store is correct, and magento will use that store context if `setCurrentStore()` is never touched in the router.
+You may also want to add a default case after the `foreach` if you don't find a matching store, but that can anyway be configured admin - simply ensure your default store is correct, and Magento will use that store context if `setCurrentStore()` is never touched in the router.
 
-Also note that we only set the store level context, not the store _view_ context. In our example, this is fine, since we have only one store view per store. But if you have multiple store views per store, you could go on to add another filter based on the visitors browser preferred language, for example, if you have multiple store views per language under a store. [Some hints on how to get the user's preferred browser language are here](https://stackoverflow.com/questions/3770513/detect-browser-language-in-php).
+Also note that we only set the store level context, not the store _view_ context. In our example, this is fine, since we have only one store view per store. But if you have multiple store views per store, you could go on to add another filter based on the visitor's browser preferred language, for example, if you have multiple store views per language under a store. [Some hints on how to get the user's preferred browser language are here](https://stackoverflow.com/questions/3770513/detect-browser-language-in-php).
 
 ## Thanks!
 
-That's about it for this one. We've built a SessionManager plugin and a router to dynamically set the correct Magento 2 store context via ipstack's Geo IP API, using our shopper's location. Please let me know of any errors or issues by sending me an email at <a href="mailto:frewin.christopher@gmail.com">frewin.christopher@gmail.com</a>
+That's about it for this one. We've built a SessionManager plugin and a router to dynamically set the correct Magento 2 store context via ipstack's Geo IP API, using our shopper's location. 
+
+Please let me know of any errors or issues by sending me an email at <a href="mailto:frewin.christopher@gmail.com">frewin.christopher@gmail.com</a>
 
 Cheers! :beer:
 
