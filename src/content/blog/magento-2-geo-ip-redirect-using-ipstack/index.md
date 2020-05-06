@@ -6,7 +6,7 @@ date: "2020-05-06"
 
 ## TL;DR
 
-Example code repository [is here.]() But I'd at least skim some of the important caveats in this post here before implementing!
+Example code repository [is here.](https://github.com/princefishthrower/example-magento-2-geo-ip-redirect) But I'd at least skim some of the important caveats in this post here before implementing!
 
 ## A Final Step in a Big Project
 
@@ -169,7 +169,7 @@ class SessionManagerPlugin
 }
 ```
 
-You probably noticed we have organized the actual geolocation work into `GeolocationService` (The interface `GeolcationServiceInterface` is trivial to implement, it only needs `getCountryCodeeByIp` in its contract). 
+You probably noticed we have organized the actual geolocation work into `GeolocationService` (The interface `GeolcationServiceInterface` is trivial to implement, it only needs `getCountryCodeeByIp` in its contract - it's anyway included in the [example code repository](https://github.com/princefishthrower/example-magento-2-geo-ip-redirect)). Don't forget of course to include that in the `di.xml` which is also included in the repository.
 
 Class `GeolocationService` looks like this:
 
