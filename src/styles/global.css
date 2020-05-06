@@ -179,6 +179,18 @@ body .dark-mode a {
   color: #f92672;
   z-index: 10;
 }
+html .dark-mode span.token.delimiter.important,
+body .dark-mode span.token.delimiter.important {
+  color: #F25A92 !important;
+}
+html .dark-mode span.token.keyword,
+body .dark-mode span.token.keyword {
+  color: #F25A92 !important;
+}
+html .dark-mode span.token.comment,
+body .dark-mode span.token.comment {
+  color: #92927C !important;
+}
 html .light-mode,
 body .light-mode {
   background-color: white;
@@ -193,6 +205,10 @@ html .light-mode a,
 body .light-mode a {
   color: #e70457;
   z-index: 10;
+}
+html .light-mode span.token.delimiter.important,
+body .light-mode span.token.delimiter.important {
+  font-weight: bold !important;
 }
 
 h1 {
@@ -227,12 +243,26 @@ blockquote {
   font-style: italic !important;
 }
 
-pre, code {
+pre,
+code {
   font-family: "Fira Code", monospace !important;
-  font-size: 0.7rem !important;
-  line-height: 1rem;
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
   border: none !important;
   padding: 0.3rem !important;
+}
+
+pre[class*=language-]:before {
+  display: none !important;
+}
+
+pre[class*=language-]:after {
+  display: none !important;
+}
+
+pre[class*=language-] > code {
+  box-shadow: none !important;
 }
 
 .bio-lead {

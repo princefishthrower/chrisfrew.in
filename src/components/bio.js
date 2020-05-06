@@ -70,13 +70,11 @@ const Bio = () => {
           </p>
           <br />
           <p>
-            I'm an ex-mechanical engineer gone full-remote, full-stack
-            application software engineer, and a hobbyist machine
-            learning/natural language processing developer. 
+            I'm an ex-mechanical engineer gone fullstack software engineer.
             <br />
             <br />
             If I'm not building software, I'll be found hiking, skiing, taking
-            pictures, spoiling homebrew, or creating music and art. I (mostly)
+            pictures, losing money on options, spoiling homebrew, or creating music and art. I (mostly)
             live in Austria.
             <br />
             <br />

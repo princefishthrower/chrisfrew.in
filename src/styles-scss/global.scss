@@ -43,6 +43,16 @@ body {
       color: $monokaiRedDarkMode;
       z-index: 10;
     }
+    // make those prism styles WCAG compliant!
+    span.token.delimiter.important {
+      color: #F25A92 !important;
+    }
+    span.token.keyword {
+      color: #F25A92 !important;
+    }
+    span.token.comment {
+      color: #92927C !important;
+    }
   }
 
   .light-mode {
@@ -55,6 +65,9 @@ body {
     a {
       color: $monokaiRedLightMode;
       z-index: 10;
+    }
+    span.token.delimiter.important {
+      font-weight: bold !important;
     }
   }
 }
@@ -83,13 +96,28 @@ input {
 blockquote {
   font-style: italic !important;
 }
-pre, code {
-  font-family: 'Fira Code', monospace !important;
-  font-size: 0.7rem !important;
-  line-height: 1rem;
+pre,
+code {
+  font-family: "Fira Code", monospace !important;
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
   border: none !important;
   padding: 0.3rem !important;
 }
+
+// prism overrides
+pre[class*="language-"]:before {
+  display: none !important;
+}
+pre[class*="language-"]:after {
+  display: none !important;
+}
+pre[class*="language-"] > code {
+  box-shadow: none !important;
+}
+
+// more classes...
 .bio-lead {
   margin: 0 auto;
   max-width: 400px;

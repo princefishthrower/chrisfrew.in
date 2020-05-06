@@ -1,0 +1,1 @@
+To 'publish' a blog post, simply drag and drop the post's folder into the content/blog folder!
