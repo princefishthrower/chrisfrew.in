@@ -49,7 +49,7 @@ class Switcher extends React.Component {
       const href =
         mode === DARK_MODE
           ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
-          : "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-material-light.css"
+          : "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-coy.css"
       if (!document.getElementById(cssId)) {
         const head = document.getElementsByTagName("head")[0]
         const link = document.createElement("link")

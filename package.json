@@ -23,7 +23,7 @@
     "gatsby-remark-images": "^3.2.4",
     "gatsby-remark-prismjs": "^3.4.4",
     "gatsby-remark-responsive-iframe": "^2.3.3",
-    "gatsby-remark-smartypants": "^2.2.3",
+    "gatsby-remark-smartypants": "^2.3.1",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",
@@ -57,7 +57,7 @@
   },
   "scripts": {
     "build": "rm -r public/ && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
-    "dev": "git checkout develop && sass --no-source-map --watch src/styles-scss/global.scss src/styles/global.css & gatsby develop",
+    "dev": "git checkout develop && sass --no-source-map --watch src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
