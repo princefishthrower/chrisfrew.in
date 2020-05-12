@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "disqus-react": "^1.0.8",
     "express-static-gzip": "^2.0.6",
     "gatsby": "^2.20.26",
     "gatsby-image": "^2.3.4",
