@@ -1,21 +1,26 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { DiscussionEmbed } from "disqus-react"
 
 class BlogPost extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const title = post.frontmatter.title
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const disqusConfig = {
+      shortname: process.env.GATSBY_CHRISFREW_IN_DISQUS_NAME,
+      config: { identifier: title },
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
+          title={title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
@@ -26,24 +31,21 @@ class BlogPost extends React.Component {
                 marginBottom: 0,
               }}
             >
-              {post.frontmatter.title}
+              {title}
             </h1>
             <p
               style={{
                 ...scale(-1 / 5),
                 display: `block`,
                 marginBottom: rhythm(1),
+                fontStyle: 'italic',
               }}
             >
-              {post.frontmatter.date}
+              Posted on {post.frontmatter.date}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <DiscussionEmbed {...disqusConfig} />
           <footer>
             <Bio />
           </footer>

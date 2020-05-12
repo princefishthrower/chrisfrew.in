@@ -33,23 +33,32 @@ const Paginator = ({ path }) => {
   const postCount = posts.length
   let paginations = []
   let pageCount = 1
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     for (let i = 1; i < postCount; i += 5) {
-      let pathName = "/blog-page-" + pageCount
-      let url = "/"
       let isActive = false
+      let pathName;
       if (i !== 1) {
-        url = pathName
+        pathName = "/blog-page-" + pageCount
+      } else {
+        pathName = "/"
       }
+
+      // removes trailing slash if there is one
+      const pathnameWithoutTrailingSlashes = window.location.pathname.replace(
+        /\/+$/,
+        ""
+      )
+
+      // set is active to true if we are on this nth page (or homepage)
       if (
-        (i === 1 && window.location.pathname === "/") ||
-        window.location.pathname === pathName
+        (i === 1 && pathnameWithoutTrailingSlashes === "") ||
+        pathnameWithoutTrailingSlashes === pathName
       ) {
         isActive = true
       }
       const text = i.toString() + "-" + (i + 5).toString()
       paginations.push({
-        url: url,
+        pathName: pathName,
         text: text,
         isActive: isActive,
       })
@@ -66,7 +75,11 @@ const Paginator = ({ path }) => {
           if (pagination.isActive) {
             return <button key={pagination.text}>{pagination.text}</button>
           } else {
-            return <a key={pagination.text} href={pagination.url}>{pagination.text}</a>
+            return (
+              <a key={pagination.text} href={pagination.pathName}>
+                {pagination.text}
+              </a>
+            )
           }
         })}
       </div>
