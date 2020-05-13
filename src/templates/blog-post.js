@@ -4,7 +4,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import { DiscussionEmbed } from "disqus-react"
+import { Disqus } from 'gatsby-plugin-disqus'
+
 
 class BlogPost extends React.Component {
   render() {
@@ -12,9 +13,14 @@ class BlogPost extends React.Component {
     const title = post.frontmatter.title
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    // const disqusConfig = {
+    //   shortname: process.env.GATSBY_CHRISFREW_IN_DISQUS_NAME,
+    //   config: { identifier: title },
+    // }
     const disqusConfig = {
-      shortname: process.env.GATSBY_CHRISFREW_IN_DISQUS_NAME,
-      config: { identifier: title },
+      url: `${this.props.data.site.siteMetadata.siteUrl+this.props.location.pathname}`,
+      identifier: post.id,
+      title: title,
     }
 
     return (
@@ -45,7 +51,7 @@ class BlogPost extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <DiscussionEmbed {...disqusConfig} />
+          <Disqus config={disqusConfig} />
           <footer>
             <Bio />
           </footer>
@@ -89,6 +95,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
