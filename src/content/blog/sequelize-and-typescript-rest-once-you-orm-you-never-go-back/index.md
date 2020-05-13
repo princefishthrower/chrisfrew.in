@@ -4,6 +4,8 @@ description: "Featuring Typescript and Sequelize: share types between the front-
 date: "2020-05-12"
 ---
 
+_[This post is mirrored on my Medium account.](https://medium.com/@frewin.christopher/introducing-the-full-stack-typing-boilerplate-once-you-orm-you-cant-go-back-e97b53a36f)_
+
 99% of the time when you do anything in the software world you need an API.
 
 Very often (maybe always :thinking:) the API needs to be able to execute a few CRUD operations (**C**reate, **R**ead, **U**pdate, and **D**elete) at the database level.
@@ -69,7 +71,7 @@ It's certainly not a state of the art way of doing things anymore. A few things 
 
 -   Lots of non-null and size checks required in order to finally get at the values you want
 -   Clunky promise syntax
--   Perhaps most heinous: raw SQL queries :scream:
+-   Perhaps most heinous: raw SQL queries :scream: - in this case, it's not so much of a security issue, as `pg` will still be properly escaping parameters, but it's bad in the case of developer experience - hard to read, hard to write, and syntax error-prone!
 
 At some point during the quarantine / lockdown / shelter-in-place I asked myself,
 
@@ -83,23 +85,23 @@ Of course there is!
 
 # Introducing Sequelize
 
-Over time in the software world, boilerplate code tends to be organized carefully and abstracted away, often becoming a package. For connecting and executing SQL in JavaScript, that package is [Sequelize](https://github.com/sequelize/sequelize). Out of the box, Sequelize can save you so much time and spare you so many headaches for any tasks related to SQL you may need to accomplish. Cheers 🍻 and respect to the [authors, maintainers, and contributors](https://github.com/sequelize/sequelize/graphs/contributors) of that package!
+Over time in the software world, boilerplate code tends to be organized carefully and abstracted away, often becoming a package. For connecting and executing SQL in JavaScript, that package is [Sequelize](https://github.com/sequelize/sequelize). Out of the box, Sequelize can save you so much time and spare you so many headaches for any tasks related to SQL you may need to accomplish. Cheers 🍻 and respect to the [authors, maintainers, and contributors](https://github.com/sequelize/sequelize/graphs/contributors)!
 
-When you add TypeScript's static typing to the mix, you have an even _stronger_ workflow with the ability to map a class - AKA a model - to a table! In fact, that's exactly what an ORM is: **O**bject **R**elational **M**apping. I remember the moment I realized all tables could be represented 1:1 through a class:
+If you take a step further and add TypeScript's static typing to the `sequelize` mix, you have an even _stronger_ workflow with the ability to map a class - AKA a model - to a table! In fact, that's exactly what an ORM is: **O**bject **R**elational **M**apping. I remember the moment I realized all tables could be represented 1:1 through a class...
 
 <br/>
 <div align="center"><b>My life was forever changed as a software engineer.</b></div>
 <br/>
 
-As the title states, once you ORM, you can't go back. Once you set it up, it just makes things too easy. I'll prove it, too - at the end of this guide, I'll give a bonus guide to show that you can add API endpoints in _literal minutes_! You can even be confident you haven't made any silly SQL syntax errors or typing errors - they are all handled by either Sequelize or Typescript! No more scratching your head at SQL errors, no more hunting down what the heck returned type that query is supposed to be!
+As the title states, once you ORM, you can't go back. It just makes things too easy. I'll prove it, too! At the end of this post, I'll give a bonus tutorial to show that you can add API endpoints in _literal minutes_! You can even be confident you haven't made any silly SQL syntax errors or typing errors - they are all handled or checked by either Sequelize or TypeScript! No more scratching your head at SQL errors, no more hunting down what the heck return type that query is supposed to be!
 
-From here on out in this post, when I mention the word 'model', it is interchangeable with the word 'table'.
+Also note, from here on out in this post, when I mention the word 'model', it is interchangeable with the word 'table'! :smile:
 
 # Getting Started
 
 During my initial research into upgrading a REST API for one of my projects, I found [this post by Loren Stewart](https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins). The post features a nice organization pattern to combine numerous API models into a single class. However, since it was posted in 2016, it is now a bit dated. (I know, I wince to hear it myself that a post merely 4 years old is 'dated', but that’s software 🤷‍♂️). I’ve converted his organization pattern from JavaScript to a TypeScript equivalent with help from the [newest version of the Typescript documents from Sequelize](https://sequelize.org/master/manual/typescript.html).
 
-:trumpet: :angel: Hark! I bring you now a <b>Modern API Backend Framework for 2020<sup>TM</sup></b>!
+:trumpet: :angel: Hark! I bring you a <b>Modern API Backend Framework for 2020<sup>TM</sup></b>!
 
 # Creating Our First Model
 
@@ -142,7 +144,7 @@ const users = <UsersStatic>sequelize.define("users", {
 })
 ```
 
-You may need to provide `// eslint-disable-next-line @typescript-eslint/consistent-type-assertions` above the `<UserStatic>` casting line depending on your formatter and/or linter rules. These complex typings follow the guidance of `sequelize`'s very own [TypeScript documentation](https://sequelize.org/master/manual/typescript.html). `IUser` is simply an interface defining the columns in our `user` table. Take note of it now - while being a simple interface, it will be _very_ :wink: useful to us later:
+You may need to provide `// eslint-disable-next-line @typescript-eslint/consistent-type-assertions` above the `<UserStatic>` casting line depending on your formatter and/or linter rules. These complex typings follow the guidance of `sequelize`'s very own [TypeScript documentation](https://sequelize.org/master/manual/typescript.html). `IUser` is simply an interface defining the columns in our `user` table. Take note of it now - while being a rather simple interface, it will be _very_ :wink: useful to us later:
 
 ```typescript
 export default interface IUser {
@@ -155,7 +157,9 @@ export default interface IUser {
 }
 ```
 
-Note that `createdAt` and `updatedAt` come by default with the Sequelize `define()` function, so we don't have to define them in our model definition. Let's stick with our user select example, and see how to make a select statement with our new `User` model. In this case, we can just write a query directly after declaring `users`:
+Note that `createdAt` and `updatedAt` come by default with the Sequelize `define()` function, so we don't have to declare them in our model definition. 
+
+Sticking with our user select example, let's see how to make a select statement with our new `User` model. Just for illustration and example, we can just write a query directly after declaring `users`:
 
 ```typescript
 import { Model, DataTypes, Sequelize, BuildOptions } from "sequelize"
@@ -203,18 +207,19 @@ const user = users.findOne({
 })
 
 if (!user) {
-    console.log("entry not found!")
+    console.log('User not found!')
 }
 
 if (user) {
-    const username = user.username
+    console.log('User is:')
+    console.log(user)
 }
 // <-- end new code
 ```
 
-Woah! we just jumped about 4+ years in software technology!
+Pretty 🌶️ spicy 🌶️, right? We just jumped about 4+ years in software technology!
 
-Note here the `[Op.eq]:` is not necessary. The alternative is to use a colon. In `sequelize` that means `=`, i.e. if we want the email column to be equal to the `email` variable, we could write:
+Note here the `[Op.eq]:` is not necessary. The alternative is to just use a colon. In `sequelize` a colon means `=`, i.e. if we want the email column to be equal to the `email` variable, we could write:
 
 ```typescript
 where: {
@@ -222,7 +227,7 @@ where: {
 }
 ```
 
-and because of shorthand syntax, we could even reduce it to:
+using shorthand object syntax, we could even reduce it to:
 
 ```typescript
 where: {
@@ -236,13 +241,13 @@ I find the `[Op.eq]` representation more explicit in describing exactly what is 
 
 # Centralize the Models!
 
-So we've got our nice typed model, but few APIs have only a single table their structure. It's easy to imagine, then, how much of a pain it would be to always declare the `sequelize` object _and_ repeatedly provide the model definition every time we need to connect to a table.
+So we've got our nice typed model, but few APIs have only a single table their structure. It's easy to imagine, then, how much of a pain it would be to always declare the `sequelize` object _and_ repeatedly provide the model definition every time we need to make a query on a table.
 
-It would be nice if we do all those initialization steps once and could organize all the models into a centralized class, right? Then we would access only _that_ class in all our other API classes. (Hats off to [Loren Stewart's post](https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins) for this organization idea).
+It would be nice if we could do all those initialization steps once and organize all the models into a centralized class, right? Then we would access only _that_ class wherever all our other API logic exists. (Hats off to [Loren Stewart's post](https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins) for this organization idea!)
 
-This organizational step will also be very helpful if we later need more complex `JOIN` queries - we will have all the tables immediately available for easy usage!
+This organizational step will also be very helpful if we later need more complex `JOIN` queries - we will have all the tables immediately available for easy reference and usage!
 
-First, we need to slightly refactor our `user` model definition - we want to take the query out, and wrap the declaration in a function that accepts the `sequelize` object and returns the `users` model. The `users` model file looks like this now:
+To get started with this centralization, we need to slightly refactor our `user` model definition. We want to take the example query out, wrap the declaration in a function that accepts the `sequelize` object, and have that function return the `users` model. The `users` model file looks like this now:
 
 ```typescript
 import { Model, DataTypes, Sequelize, BuildOptions } from "sequelize"
@@ -276,7 +281,7 @@ export default function Users(sequelize: Sequelize) {
 
 Now, let's assume we've created an additional model, called `posts`. We would go through the same model definition and interface declaration process as we did for `users` - wrapping the `posts` model in a function that accepts the `sequelize` object and exports it just the same.
 
-Now, we want to import our two models, `users` and `posts`, into a centralized class that we can use everywhere. We want to initialize the `sequelize` object only once, and pass it into all of our models. We can create a class, `DB` that does just that:
+Now, we want to import our two models, `users` and `posts`, into our centralized class that we can use everywhere. We want to initialize the `sequelize` object only once, and pass it into all of our models. We can create a class, `DB` that does just that:
 
 ```typescript
 import { Sequelize } from "sequelize"
@@ -303,7 +308,7 @@ class DB {
 export default DB
 ```
 
-Now, to the keen relational database user, you may notice a crucial piece of information is missing here. Model `posts` is probably related to model `users`, right? It's probably what we call a _one-to-many_ or _1:n_ relationship. We should also find a way to define this relationship once. To do that, we can create a `setRelations()` function to define these relations before we `export` the `DB` class. Now the full `DB.ts` file becomes:
+Now, to the keen relational database user, you may notice a crucial piece of information is missing here. Model `posts` is probably related to model `users`, right? It's probably what we call a _one-to-many_ or _1:n_ relationship. Like everything else so far, we should find a way to define this relationship only once. To do that, we can create a `setRelations()` function to define these relations before we `export` the `DB` class. Now the full `DB.ts` file becomes:
 
 ```typescript
 class DB {
@@ -368,7 +373,7 @@ const username = user.username
 // more logic...
 ```
 
-To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah okay technically a 5 liner - but you could put it on one line if you wanted :wink: :joy:):
+To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah, okay, technically a 5-liner - but you could put it on one line if you wanted :wink: :joy:):
 
 ```typescript
 import DB from "../DB"
@@ -381,11 +386,13 @@ const userWithPosts = await DB.users.findOne({
             [Op.eq]: email,
         },
     },
+    // This is all it takes to JOIN on table posts! Sequelize knows the JOIN should be on column userId!
     include: [
         {
-            model: DB.posts, // That's all it takes to JOIN on table posts! Sequelize knows the JOIN should be on column userId!
+            model: DB.posts, 
         },
     ],
+    // <-- end include
 })
 
 if (!userWithPosts) {
@@ -439,7 +446,7 @@ When I first realized this was possible with TypeScript, I was amazed by the imp
 
 It's so easy to track data flows when a single model and interface define your data - whether you find yourself on the backend or the frontend.
 
-I don't really care what the `vim` guys say; if you have a setup like this and are using a modern editor that has Intellisense, you can dig into an API's full type definition with just a few clicks - again, whether you start from the backend or the frontend.
+I don't really care what the `vim` guys say; if you have a setup like this and are using a modern editor that has IntelliSense, you can dig into an API's full type definition with just a few clicks - again, whether you start from a backend or a frontend file.
 
 As a frontend example, here's a `fetch()` call which we can type using our interface:
 
@@ -478,9 +485,9 @@ try {
 
 Of course in the response object you would have to pass an object with key `user` in the first example and `userWithPosts` in the second example - see the [example code repository](https://github.com/princefishthrower/full-stack-typing-boilerplate).
 
-# Full Stack Organization
+# Final Takeaway: Full Stack Organization!
 
-You may have noticed that this full stack typed pattern suggests three general areas, perhaps best collected into folders:
+You may have noticed that this full stack typed framework suggests three general areas, perhaps best collected into folders:
 
 -   `backend/` - routing, database queries, etc.
 -   `shared/` - interfaces, enums, types, etc.
@@ -494,11 +501,11 @@ There’s an [example repository here](https://github.com/princefishthrower/full
 
 You may also want to take a look at the [typescript-rest-boilerplate](https://github.com/vrudikov/typescript-rest-boilerplate) for additional backend implementation ideas and organization - though note that boilerplate does not include a frontend side of things.
 
-Do you know any other boilerplates or frameworks that have used a pattern like mine? I'd be curious to know. Leave a comment below!
+Do you know any other boilerplates or frameworks that have a framework like mine? I'd be curious to know. Leave a comment below!
 
 # 🥳BONUS!🥳
 
-_This section is an extension of this post and no longer includes the essential information and concepts. It takes a jump due to the introduction of an express router on the backend and a react app on the frontend. Interested readers are of course very welcome to read on!_
+_This section is an extension of this post and no longer includes the essential information and concepts. It takes a jump due to the introduction of an express router on the backend and a React app on the frontend. Interested readers are of course very welcome to read on!_
 
 I mentioned I would do a walkthrough of how to add an API endpoint in this type of framework, in what I quote as:
 
@@ -508,7 +515,7 @@ Let's see if I can hold up my end of the deal. I'm using the [example code repos
 
 Ready?!
 
-On your marks :clock:, get set 🤨, go :rocket:!
+On your marks ⌚, get set 🤨, go :rocket:!
 
 ### Minute 1: The Scenario / Spec
 
@@ -524,7 +531,7 @@ Router.get("/user-search", GetRoutes.userSearch)
 
 ### Minute 3: Write User Search Function
 
-Then we actually write the function `userSearch`. We add it to `Router/get/Users.ts` file, since the table we need to access is `users`:
+We need to write the actual `userSearch` function. We add it to `Router/get/Users.ts` file, since the table we need to access is `users`:
 
 ```typescript
 export async function userSearch(req: express.Request, res: express.Response) {
@@ -553,7 +560,7 @@ export async function userSearch(req: express.Request, res: express.Response) {
 
 ### Minute 4: Write Frontend Component Using Route
 
-And on the frontend, under `components/SearchUsers.tsx`, you could build such a react functional component with `fetch`. Note the `fetch` call is hardcoded, as it is the most simple illustration:
+And on the frontend, under `components/SearchUsers.tsx`, you could build the following React functional component and use `fetch`. Note the URL in the `fetch` call is hardcoded, as it is the most simple illustration:
 
 ```typescript
 import React, { useState, useEffect } from "react"
@@ -601,9 +608,9 @@ export default function GetUser() {
 
 Whew, that was fast! Less than 5 minutes! 🥵 I'm sweatin'!
 
-I know, I know, of course you would build an interactive input and render a list, but my _literal minutes_ claim was about building an API endpoints. That DOESN'T include frontend components :wink:. 
+I know, I know, of course in the functional component you would build an interactive input and render the corresponding list of users found, but my _literal minutes_ claim was about building an API endpoints. That DOESN'T include frontend components :wink:. 
 
-So, was that _literal minutes_? I think so :smile:
+So, was that _literal minutes_? I think so! :smile:
 
 # Thanks!
 
