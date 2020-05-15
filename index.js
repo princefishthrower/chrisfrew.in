@@ -108,12 +108,18 @@ app.use(bodyParser.json());
 //   });
 // });
 
-// app.use('/', express.static('./public'));
-app.use("/", expressStaticGzip("./public"));
+const options = {
+  setHeaders: function(res) {
+    res.set('X-Marco', "Polo")
+    res.set('X-Wow-Amazing', "Wow I'm so smart I can make a custom HTTP header! -_- smh")
+  }
+}
+
+app.use("/", expressStaticGzip("./public", options));
 
 server = http.createServer(app);
 
-// listening ports - reverse proxyed from nginx to chrisfrew.in
+// listening ports - reverse proxy from nginx to chrisfrew.in
 if (process.env.NODE_ENV === 'development') {
   server.listen(8083); // for dev because on my development machine 8081 is for apache for different customer project
 } else {
