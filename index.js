@@ -6,8 +6,6 @@ const expressStaticGzip = require('express-static-gzip');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
-
-// const db = require('./db');
 const oCorsOptions = {
   origin: ['https://chrisfrew.in', 'http://localhost:8000', 'http://localhost:8081', 'http://localhost:8083'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -15,6 +13,7 @@ const oCorsOptions = {
 
 // TODO: add star stuff back in (and refactor - dear god!)
 // util function
+// const db = require('./db');
 // function getIP(req) {
 //   return req.headers['x-forwarded-for'] || 
 //      req.connection.remoteAddress || 
