@@ -57,7 +57,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "git checkout develop && rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
+    "build": "rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
+    "build:local": "git checkout develop && rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
     "dev": "git checkout develop && rm -rf .cache/* && sass --no-source-map --watch src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css & gatsby develop"
   }
 }
