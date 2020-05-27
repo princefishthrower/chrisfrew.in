@@ -12,13 +12,6 @@ const oCorsOptions = {
   origin: ['https://chrisfrew.in', 'http://localhost:8000', 'http://localhost:8081', 'http://localhost:8083'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
-let server;
-
-// use the cors middleware
-app.use(cors(oCorsOptions));
-
-// bodyParser to get posts from $.ajax
-app.use(bodyParser.json());
 
 // TODO: add star stuff back in (and refactor - dear god!)
 // util function
@@ -115,9 +108,16 @@ const options = {
   }
 }
 
+// use the cors middleware
+app.use(cors(oCorsOptions));
+
+// bodyParser to get posts from $.ajax
+app.use(bodyParser.json());
+
+// static gzip serve
 app.use("/", expressStaticGzip("./public", options));
 
-server = http.createServer(app);
+const server = http.createServer(app);
 
 // listening ports - reverse proxy from nginx to chrisfrew.in
 if (process.env.NODE_ENV === 'development') {
