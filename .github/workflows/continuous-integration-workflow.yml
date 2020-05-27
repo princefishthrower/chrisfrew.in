@@ -17,7 +17,7 @@ jobs:
       - name: Install NPM modules and run Gatsby build
         uses: actions/setup-node@v1
         with:
-          node-version: '10.19.0'
+          node-version: '12.17.0'
       - run: cd github-workflow-artifacts/ && npm install
       - run: cd github-workflow-artifacts/ && npm run build
       - name: Copy public directory to the server
