@@ -105,6 +105,7 @@ const options = {
   setHeaders: function(res) {
     res.set('X-Marco', "Polo")
     res.set('X-Wow-Amazing', "Wow I'm so smart I can make a custom HTTP header! -_- smh")
+    res.set('X-Running-On', "Node.js Version " + process.version)
   }
 }
 
