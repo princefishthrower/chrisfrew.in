@@ -164,50 +164,50 @@ body {
   transition: color 1s;
   transition: background-color 1s;
 }
-html .dark-mode,
-body .dark-mode {
+html.dark-mode,
+body.dark-mode {
   background-color: #000000;
   color: white;
 }
-html .dark-mode blockquote,
-body .dark-mode blockquote {
+html.dark-mode blockquote,
+body.dark-mode blockquote {
   color: white;
   border-left: 4px solid rgba(255, 255, 255, 0.5);
 }
-html .dark-mode a,
-body .dark-mode a {
+html.dark-mode a,
+body.dark-mode a {
   color: #f92672;
   z-index: 10;
 }
-html .dark-mode span.token.delimiter.important,
-body .dark-mode span.token.delimiter.important {
-  color: #F25A92 !important;
+html.dark-mode span.token.delimiter.important,
+body.dark-mode span.token.delimiter.important {
+  color: #f25a92 !important;
 }
-html .dark-mode span.token.keyword,
-body .dark-mode span.token.keyword {
-  color: #F25A92 !important;
+html.dark-mode span.token.keyword,
+body.dark-mode span.token.keyword {
+  color: #f25a92 !important;
 }
-html .dark-mode span.token.comment,
-body .dark-mode span.token.comment {
-  color: #92927C !important;
+html.dark-mode span.token.comment,
+body.dark-mode span.token.comment {
+  color: #92927c !important;
 }
-html .light-mode,
-body .light-mode {
+html.light-mode,
+body.light-mode {
   background-color: white;
   color: #000000;
 }
-html .light-mode blockquote,
-body .light-mode blockquote {
+html.light-mode blockquote,
+body.light-mode blockquote {
   color: #000000;
   border-left: 4px solid rgba(0, 0, 0, 0.5);
 }
-html .light-mode a,
-body .light-mode a {
+html.light-mode a,
+body.light-mode a {
   color: #e70457;
   z-index: 10;
 }
-html .light-mode span.token.delimiter.important,
-body .light-mode span.token.delimiter.important {
+html.light-mode span.token.delimiter.important,
+body.light-mode span.token.delimiter.important {
   font-weight: bold !important;
 }
 

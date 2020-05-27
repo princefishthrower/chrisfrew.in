@@ -15,153 +15,164 @@ $monokaiRedLightMode: #e70457;
 );
 
 @font-face {
-  font-family: "Nunito Sans", sans;
-  src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
-  font-display: swap;
+    font-family: "Nunito Sans", sans;
+    src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
+    font-display: swap;
 }
 @font-face {
-  font-family: "Fira Code", monospace;
-  src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
-  font-display: swap;
+    font-family: "Fira Code", monospace;
+    src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
+    font-display: swap;
 }
 
 html,
 body {
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  transition: color 1s;
-  transition: background-color 1s;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    transition: color 1s;
+    transition: background-color 1s;
 
-  .dark-mode {
-    background-color: $darkColor;
-    color: $lightColor;
-    blockquote {
-      color: $lightColor;
-      border-left: 4px solid rgba(255, 255, 255, 0.5);
-    }
-    a {
-      color: $monokaiRedDarkMode;
-      z-index: 10;
-    }
-    // make those prism styles WCAG compliant!
-    span.token.delimiter.important {
-      color: #F25A92 !important;
-    }
-    span.token.keyword {
-      color: #F25A92 !important;
-    }
-    span.token.comment {
-      color: #92927C !important;
-    }
-  }
+    &.dark-mode {
+        background-color: $darkColor;
+        color: $lightColor;
 
-  .light-mode {
-    background-color: $lightColor;
-    color: $darkColor;
-    blockquote {
-      color: $darkColor;
-      border-left: 4px solid rgba(0, 0, 0, 0.5);
+        blockquote {
+            color: $lightColor;
+            border-left: 4px solid rgba(255, 255, 255, 0.5);
+        }
+
+        a {
+            color: $monokaiRedDarkMode;
+            z-index: 10;
+        }
+
+        // make those prism styles WCAG compliant!
+        span.token.delimiter.important {
+            color: #f25a92 !important;
+        }
+
+        span.token.keyword {
+            color: #f25a92 !important;
+        }
+
+        span.token.comment {
+            color: #92927c !important;
+        }
     }
-    a {
-      color: $monokaiRedLightMode;
-      z-index: 10;
+
+    &.light-mode {
+        background-color: $lightColor;
+        color: $darkColor;
+
+        blockquote {
+            color: $darkColor;
+            border-left: 4px solid rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: $monokaiRedLightMode;
+            z-index: 10;
+        }
+
+        span.token.delimiter.important {
+            font-weight: bold !important;
+        }
     }
-    span.token.delimiter.important {
-      font-weight: bold !important;
-    }
-  }
 }
+
 h1 {
-  border-bottom: none;
+    border-bottom: none;
 }
+
 header {
-  z-index: 20;
-  position: relative;
+    z-index: 20;
+    position: relative;
 }
+
 footer {
-  margin-top: 6rem;
-  position: relative;
-  z-index: 10;
+    margin-top: 6rem;
+    position: relative;
+    z-index: 10;
 }
 main {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 label {
-  z-index: 10;
+    z-index: 10;
 }
 input {
-  z-index: 10;
+    z-index: 10;
 }
 blockquote {
-  font-style: italic !important;
+    font-style: italic !important;
 }
 pre,
 code {
-  font-family: "Fira Code", monospace !important;
-  font-weight: bold !important;
-  font-size: 0.75rem !important;
-  line-height: 1rem !important;
-  border: none !important;
-  padding: 0.3rem !important;
+    font-family: "Fira Code", monospace !important;
+    font-weight: bold !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+    border: none !important;
+    padding: 0.3rem !important;
 }
 
 // prism overrides
 pre[class*="language-"]:before {
-  display: none !important;
+    display: none !important;
 }
 pre[class*="language-"]:after {
-  display: none !important;
+    display: none !important;
 }
 pre[class*="language-"] > code {
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 // more classes...
 .bio-lead {
-  margin: 0 auto;
-  max-width: 400px;
-  text-align: center;
-  font-weight: bold;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .twentytwenty-fun {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 26rem;
-  font-size: 0.75rem;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  animation: hover 2s ease-in-out infinite alternate;
-  line-height: 0.75rem;
-  text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 26rem;
+    font-size: 0.75rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    animation: hover 2s ease-in-out infinite alternate;
+    line-height: 0.75rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 720px) {
-  .twentytwenty-fun {
-    display: table;
-    position: relative;
-    top: auto;
-    left: auto;
-    margin: 0 auto;
-  }
-  .pagination a {
-    flex-basis: 33.33%;
-  }
-  .pagination a:last-child {
-    flex-grow: 0;
-  }
+    .twentytwenty-fun {
+        display: table;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+    }
+    .pagination a {
+        flex-basis: 33.33%;
+    }
+    .pagination a:last-child {
+        flex-grow: 0;
+    }
 }
 @keyframes hover {
-  from {
-    transform: translateY(-10%);
-    transform: translateX(-10%);
-    transform: rotate(0deg);
-  }
-  to {
-    transform: translateY(10%);
-    transform: translateX(10%);
-    transform: rotate(30deg);
-  }
+    from {
+        transform: translateY(-10%);
+        transform: translateX(-10%);
+        transform: rotate(0deg);
+    }
+    to {
+        transform: translateY(10%);
+        transform: translateX(10%);
+        transform: rotate(30deg);
+    }
 }
