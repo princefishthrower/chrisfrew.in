@@ -117,7 +117,7 @@ app.use(bodyParser.json());
 // static gzip serve
 app.use("/", expressStaticGzip("./public", options));
 
+// http server at port 8081
 const server = http.createServer(app);
-
 server.listen(8081);
 

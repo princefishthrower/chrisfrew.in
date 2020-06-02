@@ -12,22 +12,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          path: github-workflow-artifacts
-      - name: Install NPM modules and run Gatsby build
+      - name: Install NPM modules and build Gatsby site
         uses: actions/setup-node@v1
         with:
           node-version: '12.17.0'
-      - run: cd github-workflow-artifacts/ && npm install
-      - run: cd github-workflow-artifacts/ && npm run build
-      - name: Copy public directory to the server
+      - run: npm install
+      - run: npm run build
+      - name: Copy public (build) directory to the server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "github-workflow-artifacts"
+          source: "public"
           target: "/root/projects/chrisfrew.in"
           overwrite: true
       - name: Restart (or start when restart fails) node forever on the server via SSH
@@ -39,9 +37,9 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             source /root/.bashrc
-            cd "/root/projects/chrisfrew.in/github-workflow-artifacts/"
+            cd "/root/projects/chrisfrew.in/"
             forever restart index.js || forever start index.js && echo 'Forever successfully running!'
-      - name: Slack Notification
+      - name: Send slack notification
         uses: rtCamp/action-slack-notify@v2.0.0
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
