@@ -18,7 +18,7 @@ jobs:
           node-version: '12.17.0'
       - run: npm install
       - run: npm run build
-      - name: Copy public (build) directory to the server
+      - name: Copy public/ to the server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -28,7 +28,17 @@ jobs:
           source: "public"
           target: "/root/projects/chrisfrew.in"
           overwrite: true
-      - name: Restart (or start when restart fails) node forever on the server via SSH
+      - name: Copy node_modules/ to the server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "node_modules"
+          target: "/root/projects/chrisfrew.in"
+          overwrite: true
+      - name: Pull newest repository source and restart (or start) node forever on the server via SSH
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -38,6 +48,7 @@ jobs:
           script: |
             source /root/.bashrc
             cd "/root/projects/chrisfrew.in/"
+            git pull
             forever restart index.js || forever start index.js && echo 'Forever successfully running!'
       - name: Send slack notification
         uses: rtCamp/action-slack-notify@v2.0.0
