@@ -17,6 +17,14 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-footnotes`,
+            options: {
+              footnoteBackRefDisplay: `inline`,
+              footnoteBackRefInnerText: `\u21E7 Back Up`,
+              footnoteBackRefAnchorStyle: `font-size: 0.75rem;`
+            },
+          },
           `gatsby-remark-smartypants`,
           {
             resolve: `gatsby-remark-images`,

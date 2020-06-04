@@ -68,6 +68,9 @@ class Switcher extends React.Component {
   }
 
   handleInputChange(event) {
+    // add these nice transition properties to the html and body tags (we can't put it in the CSS directly because it will flash from white to black)
+    document.body.style.transition = 'color 1s, background-color 1s';
+
     const { cookies } = this.props
     if (event.target.checked) {
       this.setState({ LIGHT_TEXT, activeMode: LIGHT_MODE })
