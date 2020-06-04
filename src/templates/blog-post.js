@@ -8,15 +8,25 @@ import { Disqus } from 'gatsby-plugin-disqus'
 
 
 class BlogPost extends React.Component {
+  componentDidMount() {
+    const footnotes = document.getElementsByClassName('footnote-ref');
+    Array.prototype.forEach.call(footnotes, function(footnote) {
+      console.log(footnote.getAttribute("href").replace("#", ""));
+      footnote.addEventListener("click", function(e) {
+        e.preventDefault();
+        // The href value IS the id of the dif
+        const footnoteDiv = document.getElementById(footnote.getAttribute("href").replace("#", ""));
+        footnoteDiv.classList.add("highlight");
+        setTimeout(() => footnoteDiv.classList.remove("highlight"), 2000);
+      });
+  });
+    
+  }
   render() {
     const post = this.props.data.markdownRemark
     const title = post.frontmatter.title
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-    // const disqusConfig = {
-    //   shortname: process.env.GATSBY_CHRISFREW_IN_DISQUS_NAME,
-    //   config: { identifier: title },
-    // }
     const disqusConfig = {
       url: `${this.props.data.site.siteMetadata.siteUrl+this.props.location.pathname}`,
       identifier: post.id,
