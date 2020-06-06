@@ -59,10 +59,11 @@ module.exports = {
       options: {
         name: `Chris' Full Stack Blog`,
         short_name: `Chris' Full Stack Blog`,
+        icon: `src/images/icon.svg`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
-        display: `minimal-ui`,
+        display: `standalone`,
       },
     },
     `gatsby-plugin-react-helmet`,
