@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
+import monotizedLoop from "../images/monetized_loop.svg"
 
 class Layout extends React.Component {
     render() {
@@ -94,23 +95,14 @@ class Layout extends React.Component {
                     marginRight: `auto`,
                     maxWidth: rhythm(24),
                     padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+                    paddingBottom: 0
                 }}
             >
                 <header>{header}</header>
                 <main>{children}</main>
                 <footer>
-                    <h5>
-                        © 2016 - {new Date().getFullYear()}{" "}
-                        <a
-                            href="https://fullstackcraft.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Full Stack Craft
-                        </a>
-                        <br />
+                    <div>
                         Really like the blog? You can support it:
-                        <br />
                         <br />
                         <style
                             dangerouslySetInnerHTML={{
@@ -132,8 +124,45 @@ class Layout extends React.Component {
                                 Buy me a cappucino
                             </span>
                         </a>
+                    </div>
+                    <div>
+                        <span style={{ float: "right" }}>
+                            This blog is Web-Monotized by{" "}
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://coil.com/about"
+                                title="What's Coil?"
+                            >
+                                Coil
+                            </a>
+                        </span>
                         <br />
-                    </h5>
+
+                        <img
+                            src={monotizedLoop}
+                            alt="Buy me a cappucino"
+                            width="171"
+                            height="22"
+                            style={{
+                                marginTop: "0.5rem",
+                                marginBottom: "0",
+                                marginRight: "2rem",
+                                float: "right"
+                            }}
+                        />
+                    </div>
+                    <div >
+                    © 2016 - {new Date().getFullYear()}
+                    &nbsp;
+                    <a
+                        href="https://fullstackcraft.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Full Stack Craft
+                    </a>
+                    </div>
                 </footer>
             </div>
         )
