@@ -1,14 +1,6 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -70,9 +62,6 @@ const Bio = () => {
           </p>
           <br />
           <p>
-            I'm an ex-mechanical engineer gone fullstack software engineer.
-            <br />
-            <br />
             If I'm not building software, I'll be found hiking, skiing, taking
             pictures, losing money on options, spoiling homebrew, or creating music and art. I (mostly)
             live in Austria.
@@ -183,15 +172,6 @@ const Bio = () => {
             (Solo)
             <br />
             <a
-              href="https://risch-shoes.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              risch-shoes.com
-            </a>{" "}
-            (Co-Developed)
-            <br />
-            <a
               href="https://fullstackcraft.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -199,6 +179,15 @@ const Bio = () => {
               fullstackcraft.com
             </a>{" "}
             (Solo)
+            <br />
+            <a
+              href="https://risch-shoes.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              risch-shoes.com
+            </a>{" "}
+            (Co-Developed)
           </p>
         </div>
       </div>

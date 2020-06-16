@@ -9,11 +9,12 @@ import Paginator from "../components/paginator"
 class BlogPostListing extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const title = data.site.siteMetadata.title
+    const description = data.site.siteMetadata.description
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={title} description={description}>
         <SEO title="Chris' Full Stack Blog" />
         <Bio />
         {posts.map(({ node }) => {
@@ -55,6 +56,7 @@ export const blogListQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMarkdownRemark(

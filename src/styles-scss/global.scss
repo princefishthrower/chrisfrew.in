@@ -85,7 +85,7 @@ body {
     }
 }
 
-h1 {
+h1, h2 {
     border-bottom: none;
 }
 
@@ -95,9 +95,21 @@ header {
 }
 
 footer {
-    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
     position: relative;
     z-index: 10;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+footer>div {
+    flex: 0 50%;
+}
+footer>:nth-child(3) {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 2rem;
 }
 main {
     position: relative;
