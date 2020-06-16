@@ -26,6 +26,7 @@ class BlogPost extends React.Component {
     const post = this.props.data.markdownRemark
     const title = post.frontmatter.title
     const siteTitle = this.props.data.site.siteMetadata.title
+    const description = this.props.data.site.siteMetadata.description
     const { previous, next } = this.props.pageContext
     const disqusConfig = {
       url: `${this.props.data.site.siteMetadata.siteUrl+this.props.location.pathname}`,
@@ -34,7 +35,7 @@ class BlogPost extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} description={description}>
         <SEO
           title={title}
           description={post.frontmatter.description || post.excerpt}
@@ -106,6 +107,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         siteUrl
+        description
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

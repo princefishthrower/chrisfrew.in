@@ -2,10 +2,16 @@ module.exports = {
   siteMetadata: {
     title: `Chris' Full Stack Blog`,
     author: `Chris Frewin`,
-    description: `A blog exploring full stack development`,
+    description: `A professional software engineering blog.`,
     siteUrl: `https://chrisfrew.in/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-web-monetization`,
+      options: {
+        paymentPointer: `$ilp.uphold.com/BJGXHRXaMM8Z`,
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
