@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
-import monotizedLoop from "../images/monetized_loop.svg"
+import monetizedLoop from "../images/monetized_loop.svg"
 
 class Layout extends React.Component {
     render() {
@@ -95,19 +95,19 @@ class Layout extends React.Component {
                     marginRight: `auto`,
                     maxWidth: rhythm(24),
                     padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-                    paddingBottom: 0
+                    paddingBottom: 0,
                 }}
             >
                 <header>{header}</header>
                 <main>{children}</main>
                 <footer>
                     <div>
-                        Really like the blog? You can support it:
+                        <span>Really like the blog? You can support it:</span>
                         <br />
                         <style
                             dangerouslySetInnerHTML={{
                                 __html:
-                                    ".bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:#FFDD00 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family: cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}",
+                                    ".bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:#27DEA7 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family: cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}",
                             }}
                         />
                         <a
@@ -126,8 +126,8 @@ class Layout extends React.Component {
                         </a>
                     </div>
                     <div>
-                        <span style={{ float: "right" }}>
-                            This blog is Web-Monotized by{" "}
+                        <span>
+                            This blog is Web-Monetized by{" "}
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -140,28 +140,26 @@ class Layout extends React.Component {
                         <br />
 
                         <img
-                            src={monotizedLoop}
+                            src={monetizedLoop}
                             alt="Buy me a cappucino"
                             width="171"
                             height="22"
                             style={{
                                 marginTop: "0.5rem",
                                 marginBottom: "0",
-                                marginRight: "2rem",
-                                float: "right"
                             }}
                         />
                     </div>
-                    <div >
-                    © 2016 - {new Date().getFullYear()}
-                    &nbsp;
-                    <a
-                        href="https://fullstackcraft.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Full Stack Craft
-                    </a>
+                    <div>
+                        © 2016 - {new Date().getFullYear()}
+                        &nbsp;
+                        <a
+                            href="https://fullstackcraft.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Full Stack Craft
+                        </a>
                     </div>
                 </footer>
             </div>

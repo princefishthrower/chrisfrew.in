@@ -31,8 +31,10 @@ const Bio = () => {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          minWidth: 200,
-          minHeight: 200,
+          minWidth: 260,
+          maxWidth: 260,
+          minHeight: 260,
+          maxHeight: 260,
           borderRadius: `100%`,
           marginBottom: "1rem",
         }}

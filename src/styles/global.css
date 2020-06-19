@@ -244,10 +244,26 @@ footer > div {
   flex: 0 50%;
 }
 
+footer > :nth-child(1) > span {
+  margin-bottom: 1rem;
+}
+
+footer > :nth-child(2) {
+  float: right;
+}
+footer > :nth-child(2) > span {
+  float: right;
+}
+footer > :nth-child(2) > img {
+  float: right;
+  margin-right: 2rem;
+}
+
 footer > :nth-child(3) {
   flex: 0 0 100%;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 0.25rem;
 }
 
 main {
@@ -310,6 +326,24 @@ pre[class*=language-] > code {
 }
 
 @media only screen and (max-width: 720px) {
+  footer > div {
+    flex: 0 0 100%;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  footer > :nth-child(2) {
+    float: none;
+    margin-top: 2rem;
+  }
+  footer > :nth-child(2) > span {
+    float: none;
+  }
+  footer > :nth-child(2) > img {
+    float: none;
+    margin-right: 0;
+  }
+
   .twentytwenty-fun {
     display: table;
     position: relative;
