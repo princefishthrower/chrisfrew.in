@@ -147,16 +147,28 @@ input:checked + .slider:before {
   transition: background-color 0.5s;
 }
 
-.highlight {
-  animation: highlightAndFade 2s 1;
+.dark-mode .highlight {
+  animation: highlightAndFadeDark 2s 1;
 }
 
-@keyframes highlightAndFade {
+.light-mode .highlight {
+  animation: highlightAndFadeLight 2s 1;
+}
+
+@keyframes highlightAndFadeDark {
   from {
     background-color: #f92672;
   }
   to {
     background-color: #000000;
+  }
+}
+@keyframes highlightAndFadeLight {
+  from {
+    background-color: #e70457;
+  }
+  to {
+    background-color: white;
   }
 }
 @font-face {

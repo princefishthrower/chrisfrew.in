@@ -14,8 +14,9 @@ class BlogPost extends React.Component {
       console.log(footnote.getAttribute("href").replace("#", ""));
       footnote.addEventListener("click", function(e) {
         e.preventDefault();
-        // The href value IS the id of the dif
+        // The href value IS the id of the div
         const footnoteDiv = document.getElementById(footnote.getAttribute("href").replace("#", ""));
+        window.scrollTo(0, footnoteDiv.offsetTop);
         footnoteDiv.classList.add("highlight");
         setTimeout(() => footnoteDiv.classList.remove("highlight"), 2000);
       });
