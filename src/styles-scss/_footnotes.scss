@@ -3,15 +3,28 @@ $lightColor: white !default;
 $monokaiRedDarkMode: #f92672 !default;
 $monokaiRedLightMode: #e70457 !default;
 
-.highlight {
-    animation: highlightAndFade 2s 1;
+.dark-mode .highlight {
+    animation: highlightAndFadeDark 2s 1;
 }
 
-@keyframes highlightAndFade {
+.light-mode .highlight {
+    animation: highlightAndFadeLight 2s 1;
+}
+
+@keyframes highlightAndFadeDark {
     from {
         background-color: $monokaiRedDarkMode;
     }
     to {
         background-color: $darkColor;
+    }
+}
+
+@keyframes highlightAndFadeLight {
+    from {
+        background-color: $monokaiRedLightMode;
+    }
+    to {
+        background-color: $lightColor;
     }
 }
