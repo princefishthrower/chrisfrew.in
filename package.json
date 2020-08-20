@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Chris Frewin <frewin.christopher@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/princefishthrower/chrisfrew.in/issues"
   },
   "dependencies": {
     "express-static-gzip": "^2.0.6",
@@ -50,13 +50,13 @@
   },
   "homepage": "https://chrisfrew.in",
   "keywords": [
-    "gatsby"
+    "professional","full","stack","blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/princefishthrower/chrisfrew.in.git"
   },
   "scripts": {
     "build": "rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
