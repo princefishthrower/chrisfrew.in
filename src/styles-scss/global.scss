@@ -4,28 +4,23 @@ $monokaiRedDarkMode: #f92672;
 $monokaiRedLightMode: #e70457;
 
 // yes these are seemingly 'backwards, but think about what the switcher shows up as :)
-@use 'switcher' with (
-  $lightModeActiveColor: $darkColor,
-  $darkModeActiveColor: $lightColor
-);
+@use 'switcher'with ($lightModeActiveColor: $darkColor,
+    $darkModeActiveColor: $lightColor);
 
-@use 'pagination' with (
-  $monokaiRedDarkMode: $monokaiRedDarkMode,
-  $monokaiRedLightMode: $monokaiRedLightMode
-);
+@use 'pagination'with ($monokaiRedDarkMode: $monokaiRedDarkMode,
+    $monokaiRedLightMode: $monokaiRedLightMode);
 
-@use 'footnotes' with (
-  $darkColor: $darkColor,
-  $lightColor: $lightColor,
-  $monokaiRedDarkMode: $monokaiRedDarkMode,
-  $monokaiRedLightMode: $monokaiRedLightMode
-);
+@use 'footnotes'with ($darkColor: $darkColor,
+    $lightColor: $lightColor,
+    $monokaiRedDarkMode: $monokaiRedDarkMode,
+    $monokaiRedLightMode: $monokaiRedLightMode);
 
 @font-face {
     font-family: "Nunito Sans", sans;
     src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
     font-display: swap;
 }
+
 @font-face {
     font-family: "Fira Code", monospace;
     src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap);
@@ -85,7 +80,8 @@ body {
     }
 }
 
-h1, h2 {
+h1,
+h2 {
     border-bottom: none;
 }
 
@@ -103,41 +99,52 @@ footer {
     font-size: 0.75rem;
     font-weight: bold;
 }
-footer>div {
+
+footer > div {
     flex: 0 50%;
 }
-footer>:nth-child(1)>span {
+
+footer > :nth-child(1) > span {
     margin-bottom: 1rem;
 }
-footer>:nth-child(2) {
+
+footer > :nth-child(2) {
     float: right;
-    &>span {
-        float:right;
+
+    & > span {
+        float: right;
     }
-    &>img {
-        float:right;
+
+    & > img {
+        float: right;
         margin-right: 2rem;
     }
 }
-footer>:nth-child(3) {
+
+footer > :nth-child(3) {
     flex: 0 0 100%;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 0.25rem;
 }
+
 main {
     position: relative;
     z-index: 10;
 }
+
 label {
     z-index: 10;
 }
+
 input {
     z-index: 10;
 }
+
 blockquote {
     font-style: italic !important;
 }
+
 pre,
 code {
     font-family: "Fira Code", monospace !important;
@@ -152,9 +159,11 @@ code {
 pre[class*="language-"]:before {
     display: none !important;
 }
+
 pre[class*="language-"]:after {
     display: none !important;
 }
+
 pre[class*="language-"] > code {
     box-shadow: none !important;
 }
@@ -181,24 +190,27 @@ pre[class*="language-"] > code {
 }
 
 @media only screen and (max-width: 720px) {
-    
     // two left and write flex divs should go to full width in the footer in widths less than 720px
-    footer>div {
+    footer > div {
         flex: 0 0 100%;
         font-size: 0.6rem;
         text-align: center;
     }
-    footer>:nth-child(2) {
+
+    footer > :nth-child(2) {
         float: none;
         margin-top: 2rem;
-        &>span {
+
+        & > span {
             float: none;
         }
-        &>img {
-            float:none;
+
+        & > img {
+            float: none;
             margin-right: 0;
         }
     }
+
     .twentytwenty-fun {
         display: table;
         position: relative;
@@ -206,19 +218,68 @@ pre[class*="language-"] > code {
         left: auto;
         margin: 0 auto;
     }
+
     .pagination a {
         flex-basis: 33.33%;
     }
+
     .pagination a:last-child {
         flex-grow: 0;
     }
 }
+
+html,
+body {
+    &.dark-mode {
+        .gatsby-code-button {
+            margin-bottom: -10px;
+            margin-right: 5px;
+
+            &:hover {
+                background-color: none;
+                .gatsby-code-button-icon {
+                    fill: $monokaiRedDarkMode;
+                }
+            }
+
+            &::after {
+                background-color: transparent;
+            }
+
+            .gatsby-code-button-icon {
+                fill: $lightColor;
+            }
+        }
+    }
+    &.light-mode {
+        .gatsby-code-button {
+            margin-bottom: -20px;
+            margin-right: 10px;
+
+            &:hover {
+                .gatsby-code-button-icon {
+                    fill: $monokaiRedLightMode;
+                }
+            }
+
+            &::after {
+                background-color: transparent;
+            }
+
+            .gatsby-code-button-icon {
+                fill: $darkColor;
+            }
+        }
+    }
+}
+
 @keyframes hover {
     from {
         transform: translateY(-10%);
         transform: translateX(-10%);
         transform: rotate(0deg);
     }
+
     to {
         transform: translateY(10%);
         transform: translateX(10%);

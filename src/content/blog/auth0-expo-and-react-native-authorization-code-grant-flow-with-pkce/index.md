@@ -7,17 +7,25 @@ starID: 132231231123
 postType: dev
 ---
 
-## Motivation: Never Log in Again!
+## Motivation: Never Log In Again!
 
-I was trying to implement the PKCE flow on my react native application so that I could renew access tokens on the user's behalf. With this type of flow, a user only has to authenticate once&nbsp;[^1]. After this initial authentication, we securely store each user's refresh token, and can use it later to get another access token / refresh token pair exactly at the moment their current access token expires. (My application has an extra security step in that I have chosen to rotate the refresh tokens - with auth0 this is an optional setting, but recommended). 
+I was trying to implement the PKCE flow on my react native application so that I could renew access tokens on the user's behalf. With this type of flow, a user only has to authenticate once&nbsp;[^1]. After this initial authentication, we securely store each user's refresh token, and can use it later to get another access token / refresh token pair exactly at the moment their current access token expires. (My application has an extra security step in that I have chosen to rotate the refresh tokens - with Auth0 this is an optional setting, but recommended). 
 
 Alas, at the end of the day, my troubles had _nothing_ to do with all these big scary-sounding cryptography words. It was an issue with environments, deprecated libraries, and dependencies!
 
 ## Introducing PKCE: Proof Key for Code Exchange
 
-The aformentioned flow of 'renewing an access token on behalf of a user' is possible with a refresh token, and to get a refresh token via auth0, we can use Proof Key for Code Exchange, or PKCE. With auth0, the PKCE flow can be achieved by implementing a call to a pair of endpoints: a GET request on `/authorize`, and a POST request on `/oauth/token`. On the GET request you provide a `code_challenge` among a few other variables, getting a one time use authorization `code`. On the POST request you provide the `code_verifier` which was used to produce the `code_challenge` along with the `code` you just received, to get the access token / refresh token / id token combo.
+The aformentioned flow of 'renewing an access token on behalf of a user' is possible with a refresh token, and to get a refresh token via Auth0, we can use Proof Key for Code Exchange, or PKCE. With Auth0, the PKCE flow can be achieved by implementing a call to a pair of endpoints: 
 
-Sounds simple enough... but it's never _that_ easy, right? Here's some code that I hunted down [from this github thread](https://github.com/expo/auth0-example/issues/16) that I had for the GET endpoint:
+1. a GET request on `/authorize`
+2. a POST request on `/oauth/token` 
+
+The flow is as follows:
+
+- On the GET request you provide a `code_challenge` among a few other variables, getting a one time use authorization `code`
+- On the POST request you provide the `code_verifier` which was used to produce the `code_challenge` along with the `code` you just received, to get the `access_token`, `refresh_token`, and `id_token`.
+
+Sounds simple enough... but it's never _that_ easy, right? Here's some code that I hunted down [from this GitHub thread](https://github.com/expo/auth0-example/issues/16) for programming the GET endpoint within an Expo project:
 
 ```javascript
 import { AuthSession } from 'expo';
@@ -66,9 +74,9 @@ but then, upon using the returned `code` and my `code_verifier` in my POST reque
 
 `{"error":"access_denied","error_description":"Unauthorized"}`
 
-Shaking my head at the not very useful error message, I tried and tried with various combinations and slight tweaks, all to no avail. My frustration led me even to open [an issue on the auth0 community](https://community.auth0.com/t/react-native-with-expo-oauth-token-endpoint-always-results-in-access-denied-in-pkce-flow/48145)&nbsp;[^2].
+Shaking my head at the not very useful error message, I tried and tried with various combinations and slight tweaks, all to no avail. My frustration led me even to open [an issue on the Auth0 community](https://community.auth0.com/t/react-native-with-expo-oauth-token-endpoint-always-results-in-access-denied-in-pkce-flow/48145)&nbsp;[^2].
 
-`jmangelo` was the first to reply and said:
+`jmangelo` was the first to reply:
 
 > If you haven’t done so already I would suggest for you to do the flow outside of the application, for example Postman or another tool that can be used to perform the OAuth 2.0 flow. If you replicate the issue outside of the application you have reduced the scope of things to look for which may be useful.
 > 
@@ -78,7 +86,7 @@ I took his advice - taking a step back; going to a totally a clean slate. First,
 
 `Parameter 'code_verifier' must be between 43 and 128 characters long`
 
-I checked the length of our code_verifier: 157 characters. Yep. That's too long. So, to be fully sure of the expected shape of the `code_challenge` and `code_validator` parameter, I went ahead and created a blank npm project called `crypto-test`:
+I checked the length of the `code_verifier` variable: 157 characters. Yep. That's too long. So, to be fully sure of the expected shape of the `code_challenge` and `code_validator` parameter, I went ahead and created a blank npm project called `crypto-test`:
 
 ```bash
 mkdir crypto-test
@@ -86,7 +94,7 @@ cd crypto-test
 npm init -y
 ```
 
-I then put auth0's [javascript code examples to generate the `code_challenge` and `code_verifier` parameters](https://auth0.com/docs/flows/call-your-api-using-the-authorization-code-flow-with-pkce) verbatim into `index.js` and ran it:
+I then put Auth0's [javascript code examples to generate the `code_challenge` and `code_verifier` parameters](https://auth0.com/docs/flows/call-your-api-using-the-authorization-code-flow-with-pkce) verbatim into `index.js` and ran it:
 
 ```javascript
 const crypto = require("crypto");
@@ -121,25 +129,27 @@ So the ultimate question became:
 
 > Why the heck is our `expo-crypto` version of the code producing a 157 character length string for our `code_verifier`? We want the 44 character `code_verifier` that is produced by the vanilla node project.
 
-My first suspicion was that it was an issue with the package I was using to produce the `code_verifier` field. After all, auth0's official documentation for node recommends to use node's built in `crypto` package, and my code snippet was using `expo-crypto`... 
+My first suspicion was that it was an issue with the package I was using to produce the `code_verifier` field. After all, Auth0's official documentation for node recommends to use node's built in `crypto` package, and my code snippet was using `expo-crypto`... 
 
-"Hey", I hear you say, "an Expo project _is_ technically a node project... can't we just `npm install --save crypto` into our project and use the auth0 example code examples right away?!" Not so fast. The `crypto` package as a standalone is deprecated - and at the same time we can't use the standard included version of `crypto` from node since react native does not bundle a complete version of node!
+"Hey", I hear you say, "an Expo project _is_ technically a node project... can't we just `npm install --save crypto` into our project and use the Auth0 example code examples right away?!" Not so fast. The `crypto` package as a standalone is deprecated - and at the same time we can't use the standard included version of `crypto` from node since react native does not bundle a complete version of node!
 
 So I was kind of stuck. I needed to hunt down the reason why the `expo-crypto` and `expo-random` packages were producing an incorrect `code_verifier` value...
 
-I _did_ find [this blog post from Ryan Rampersad](https://blog.ryanrampersad.com/2018/02/01/expo-app-auth0-authorization-code-grant-flow-pkce/) which explained his similar troubles with the `crypto` and `expo-crypto` conundrum. Ultimately his mentioned solution is:
+I _did_ find [this blog post from Ryan Rampersad](https://blog.ryanrampersad.com/2018/02/01/expo-app-auth0-authorization-code-grant-flow-pkce/) which explained his similar troubles with the `crypto` and `expo-crypto` packages. Ultimately his mentioned solution is:
 
 > Our compromise in this situation was actually to request the random string and hash from our own API service. This way, we can have unique verifier and challenge strings ready for each user, without app locally making these strings up itself. This is probably secure enough, given that our API service is protected with HTTPS, and if these simple strings are comproised [sic] somehow over the wire, there are even larger targets when going through the Auth0 authentication itself.
 
-I think Ryan was being a little hard on himself, since even in the official auth0 tutorial documentation they _recommend_ generating a code verifier and challenge in-app (or _somewhere_ in your own code). Regardless, the post didn't address the specific I had encountered: why was this seemingly 'same' code using the `expo-crypto` and `expo-random` packages was not producing the same results I saw from the vanilla `crypto` package.
+I think Ryan was being a little hard on himself, since even in the [official Auth0 PKCE tutorial](https://auth0.com/docs/flows/call-your-api-using-the-authorization-code-flow-with-pkce) they recommend generating a code verifier and challenge in-app (or _somewhere_ in your own code). Regardless, Ryan's solution didn't address the specific issue I had encountered: why was this seemingly 'same' code using the `expo-crypto` and `expo-random` packages was not producing the same results I saw from the vanilla `crypto` package?
 
-So, I did the hard work. I went line by line, comparing auth0's example code with the code snippet of the expo equivalent function that I had found on Github. It turns out they weren't _exactly_ equivalent.
+So, I did the hard work. I went line by line, comparing Auth0's example code with the code snippet of the Expo-equivalent function that I had found on GitHub. It turns out they weren't _exactly_ equivalent.
 
 ## The Problem: Always Be Sure About the Types you are Working with!
 
-I saw in the vanilla node version that the `code_verifier` is of type `Buffer` before it runs through through the `base64URLEncode` function. However, we can see that expo's `expo-random` package  `getRandomBytesAsync` returns a Uint8Array (TypeScript and IntelliSense helped a lot here where I could see the types directly in code and didn't have to hunt down the documentation as I would if it were plain JavaScript). So in the end, we just need to convert the `Uint8Array` variable to a Base64 encoded `Buffer`.
+I saw in the vanilla node version that the `code_verifier` variable is of type `Buffer` before it runs through through the `base64URLEncode` function. However, we can see that Expo's `expo-random` package  `getRandomBytesAsync` returns a `Uint8Array` (TypeScript and IntelliSense helped a lot here where I could see the types directly in the code, and didn't have to hunt down the documentation as I would if it were plain JavaScript). 
 
-An additional problem was that the `btoa` function on the `Uint8Array` wasn't producing the correct results. So I looked for an alternative. I finally stumbled upon [this StackOverflow thread](https://stackoverflow.com/questions/12710001/how-to-convert-uint8-array-to-base64-encoded-string). I did not go with the accepted answer, but found the node based solution a bit further down, which is:
+So in the end, we just need to figure out how to convert the `Uint8Array` variable to a Base64 encoded `Buffer`.
+
+An additional problem was that the `btoa` function on the `Uint8Array` wasn't producing the expected 44 character result. So I looked for an alternative way to do it. I finally stumbled upon [this StackOverflow thread](https://stackoverflow.com/questions/12710001/how-to-convert-uint8-array-to-base64-encoded-string). I did not go with the accepted answer, but found the node based solution a bit further down, which is:
 
 ```javascript
 const base64String = Buffer.from(yourUint8Array).toString('base64');
@@ -157,7 +167,7 @@ The node `buffer` package, unlike the `crypto` package, is _not_ deprecated, and
 npm install --save buffer
 ```
 
-So the error in the original code I found was in these two lines:
+So the error in the original code was in these two lines:
 
 ```javascript
 const randomBytes = await Random.getRandomBytesAsync(32);
@@ -263,7 +273,7 @@ export async function loginPKCEFlow(): Promise<void> {
 }
 ```
 
-Note that you'll the variables `AUTH0_CLIENT_ID`, `ROOT_API_URL`, and `AUTH0_DOMAIN` all to be set in your environment! You can also see in the final code that I'm utilizing the recommended (though optional) `state` parameter, by creating a random small string with this little function:
+Note that you'll need the variables `AUTH0_CLIENT_ID`, `ROOT_API_URL`, and `AUTH0_DOMAIN` all to be set in your environment. You can also see in the final code that I'm utilizing the recommended (though optional) `state` parameter, by creating a random small string with this little function:
 
 ```typescript
 export function generateShortUUID(): string {
@@ -273,13 +283,17 @@ export function generateShortUUID(): string {
 }
 ```
 
-and ensuring the returned value from the GET call has the same `state` value. This is one way of reducing your app's vulnerability to cross-site request forgery (CSRF) attacks. Finally, my `AsyncStorageService` and `getServer` are just helpful wrappers of mine which go around React Native's `AsyncStorage` and a standard `fetch` GET request, respectively. I'll leave those for you to implement them how you'd like. :smile: And finally _finally_, the functions `toQueryString`, `URLEncode`, and `sha256` would probably best live in another util functions file. I've just put them all together for easy illustration.
+and ensuring the returned value from the GET call has the same `state` value. This is one way of reducing your app's vulnerability to cross-site request forgery (CSRF) attacks. My `AsyncStorageService` and `getServer` are just helpful wrappers of mine which go around React Native's `AsyncStorage` and a standard `fetch` GET request, respectively. I'll leave those for you to implement them how you'd like. :smile: 
 
-While not in the scope of this post, just a friendly reminder that the subsequent call to the `/oauth/token` endpoint _cannot_ be made from the frontend (nor should it ever, even if auth0 let you! Note: auth0 _doesn't_ let you.) You have to create your own endpoint on your server to forward the values of `code`, `code_verifier`, and `redirect_uri`. It's the only secure way to do get your hands at the refresh token, since you need to store the refresh tokens in a secure place.
+Finally, the functions `toQueryString`, `URLEncode`, and `sha256` would probably best live in another functions file, like `util.ts` or similar. I've just put them all together in the same snippet for easy illustration.
 
-Well, that's all. I hope others find this perhaps after the chain of blog posts and StackOverflows that I found. You _can_ get PKCE with React Native and Expo all working together in harmony. :thumbsup:
+While not in the scope of this post, just a friendly reminder that the subsequent call to the `/oauth/token` endpoint _cannot_ be made from the frontend (nor should it ever, even if Auth0 let you! To be clear: Auth0 _doesn't_ let you. :joy:)
 
-Cheers :beer:
+You have to create your own endpoint on your server to forward the values of `code`, `code_verifier`, and `redirect_uri`. It's the only secure way to get your hands on the refresh token, since you need to store the refresh tokens in a secure place.
+
+Well, that's all. I hope others find this post at some point from the chain of blog posts and StackOverflows that I found. You _can_ get PKCE with React Native and Expo all working together in harmony. :thumbsup:
+
+Cheers! :beer:
 
 -Chris
 
