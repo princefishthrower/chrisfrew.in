@@ -44,13 +44,17 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-remark-code-buttons": "^2.0.4",
     "minify": "^5.1.1",
     "prettier": "^1.19.1",
     "sass": "^1.26.8"
   },
   "homepage": "https://chrisfrew.in",
   "keywords": [
-    "professional","full","stack","blog"
+    "professional",
+    "full",
+    "stack",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",

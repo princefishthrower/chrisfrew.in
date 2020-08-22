@@ -233,7 +233,8 @@ body.light-mode span.token.delimiter.important {
   font-weight: bold !important;
 }
 
-h1, h2 {
+h1,
+h2 {
   border-bottom: none;
 }
 
@@ -372,6 +373,45 @@ pre[class*=language-] > code {
     flex-grow: 0;
   }
 }
+html.dark-mode .gatsby-code-button,
+body.dark-mode .gatsby-code-button {
+  margin-bottom: -10px;
+  margin-right: 5px;
+}
+html.dark-mode .gatsby-code-button:hover,
+body.dark-mode .gatsby-code-button:hover {
+  background-color: none;
+}
+html.dark-mode .gatsby-code-button:hover .gatsby-code-button-icon,
+body.dark-mode .gatsby-code-button:hover .gatsby-code-button-icon {
+  fill: #f92672;
+}
+html.dark-mode .gatsby-code-button::after,
+body.dark-mode .gatsby-code-button::after {
+  background-color: transparent;
+}
+html.dark-mode .gatsby-code-button .gatsby-code-button-icon,
+body.dark-mode .gatsby-code-button .gatsby-code-button-icon {
+  fill: white;
+}
+html.light-mode .gatsby-code-button,
+body.light-mode .gatsby-code-button {
+  margin-bottom: -20px;
+  margin-right: 10px;
+}
+html.light-mode .gatsby-code-button:hover .gatsby-code-button-icon,
+body.light-mode .gatsby-code-button:hover .gatsby-code-button-icon {
+  fill: #e70457;
+}
+html.light-mode .gatsby-code-button::after,
+body.light-mode .gatsby-code-button::after {
+  background-color: transparent;
+}
+html.light-mode .gatsby-code-button .gatsby-code-button-icon,
+body.light-mode .gatsby-code-button .gatsby-code-button-icon {
+  fill: #000000;
+}
+
 @keyframes hover {
   from {
     transform: translateY(-10%);
