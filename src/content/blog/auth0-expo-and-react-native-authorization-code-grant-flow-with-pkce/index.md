@@ -200,8 +200,8 @@ interface StringMap {
     [key: string]: string;
 }
 
-function toQueryString(params: StringMap) {
-    '?' +
+function toQueryString(params: StringMap): string {
+    return '?' +
         Object.entries(params)
             .map(
                 ([key, value]) =>
@@ -210,14 +210,14 @@ function toQueryString(params: StringMap) {
             .join('&');
 }
 
-function URLEncode(str) {
+function URLEncode(str): string {
     return str
         .replace(/\+/g, '-')
         .replace(/\//g, '_')
         .replace(/=/g, '');
 }
 
-async function sha256(buffer) {
+async function sha256(buffer): Promise<string> {
     return await Crypto.digestStringAsync(
         Crypto.CryptoDigestAlgorithm.SHA256,
         buffer,
