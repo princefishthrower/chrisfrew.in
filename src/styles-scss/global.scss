@@ -31,7 +31,7 @@ html,
 body {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
-
+    transition: all 0.4s !important;
     &.dark-mode {
         background-color: $darkColor;
         color: $lightColor;
@@ -58,6 +58,13 @@ body {
         span.token.comment {
             color: #92927c !important;
         }
+
+        .monokaiRedFont {
+            color: $monokaiRedDarkMode;
+        }
+        .switcherFont {
+            color: $lightColor;
+        }
     }
 
     &.light-mode {
@@ -76,6 +83,13 @@ body {
 
         span.token.delimiter.important {
             font-weight: bold !important;
+        }
+
+        .monokaiRedFont {
+            color: $monokaiRedLightMode;
+        }
+        .switcherFont {
+            color: $darkColor;
         }
     }
 }
@@ -153,6 +167,7 @@ code {
     line-height: 1rem !important;
     border: none !important;
     padding: 0.3rem !important;
+    transition: 0.4s !important;
 }
 
 // prism overrides
