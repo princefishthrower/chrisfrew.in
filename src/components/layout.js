@@ -12,6 +12,13 @@ class Layout extends React.Component {
         if (location.pathname === rootPath) {
             header = (
                 <>
+                <h3 className="monokaiRedFont" style={{
+                            ...scale(0.25),
+                            marginBottom: rhythm(0.25),
+                            marginTop: 0,
+                            position: `relative`,
+                            zIndex: 10,
+                        }}>chrisfrew.in <span className="switcherFont">/</span> chrisfrewin.com</h3>
                     <h1
                         style={{
                             ...scale(1.5),
@@ -34,10 +41,11 @@ class Layout extends React.Component {
                             {title}
                         </Link>
                     </h1>
+                    
                     <h2
                         style={{
                             ...scale(0.5),
-                            marginBottom: rhythm(0.5),
+                            marginBottom: 0,
                             marginTop: 0,
                             position: `relative`,
                             zIndex: 10,
@@ -45,6 +53,7 @@ class Layout extends React.Component {
                     >
                         {description}
                     </h2>
+                    
                     <span className="twentytwenty-fun">
                         2020 facelift
                         <br />

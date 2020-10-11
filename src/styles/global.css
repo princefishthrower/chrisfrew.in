@@ -185,6 +185,7 @@ html,
 body {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
+  transition: all 0.4s !important;
 }
 html.dark-mode,
 body.dark-mode {
@@ -213,6 +214,14 @@ html.dark-mode span.token.comment,
 body.dark-mode span.token.comment {
   color: #92927c !important;
 }
+html.dark-mode .monokaiRedFont,
+body.dark-mode .monokaiRedFont {
+  color: #f92672;
+}
+html.dark-mode .switcherFont,
+body.dark-mode .switcherFont {
+  color: white;
+}
 html.light-mode,
 body.light-mode {
   background-color: white;
@@ -231,6 +240,14 @@ body.light-mode a {
 html.light-mode span.token.delimiter.important,
 body.light-mode span.token.delimiter.important {
   font-weight: bold !important;
+}
+html.light-mode .monokaiRedFont,
+body.light-mode .monokaiRedFont {
+  color: #e70457;
+}
+html.light-mode .switcherFont,
+body.light-mode .switcherFont {
+  color: #000000;
 }
 
 h1,
@@ -304,6 +321,7 @@ code {
   line-height: 1rem !important;
   border: none !important;
   padding: 0.3rem !important;
+  transition: 0.4s !important;
 }
 
 pre[class*=language-]:before {
