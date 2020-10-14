@@ -1,103 +1,109 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
+import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
+import { CookiesProvider } from "react-cookie"
 
-class Layout extends React.Component {
-    render() {
-        const { location, title, description, children } = this.props
-        const rootPath = `${__PATH_PREFIX__}/`
-        let header
-        if (location.pathname === rootPath) {
-            header = (
-                <>
-                <h3 className="monokaiRedFont" style={{
-                            ...scale(0.25),
-                            marginBottom: rhythm(0.25),
-                            marginTop: 0,
-                            position: `relative`,
-                            zIndex: 10,
-                        }}>chrisfrew.in <span className="switcherFont">/</span> chrisfrewin.com</h3>
-                    <h1
+export default function Layout(props) {
+    const [shouldRun, setShouldRun] = useState(false);
+    const { location, title, description, children } = props
+    const rootPath = `${__PATH_PREFIX__}/`
+    let header
+    if (location.pathname === rootPath) {
+        header = (
+            <>
+                <h3
+                    className="monokaiRedFont"
+                    style={{
+                        ...scale(0.25),
+                        marginBottom: rhythm(0.25),
+                        marginTop: 0,
+                        position: `relative`,
+                        zIndex: 10,
+                        textAlign: `center`,
+                    }}
+                >
+                    chrisfrew.in <span className="switcherFont">/</span>{" "}
+                    chrisfrewin.com
+                </h3>
+                <h1
+                    style={{
+                        ...scale(1.5),
+                        marginBottom: 0,
+                        marginTop: 0,
+                        position: `relative`,
+                        zIndex: 10,
+                        textAlign: `center`,
+                    }}
+                >
+                    <Link
                         style={{
-                            ...scale(1.5),
-                            marginBottom: 0,
-                            marginTop: 0,
-                            position: `relative`,
-                            zIndex: 10,
-                        }}
-                    >
-                        <Link
-                            style={{
-                                boxShadow: `none`,
-                                textDecoration: `none`,
-                                color: `inherit`,
-                                position: `relative`,
-                                zIndex: 10,
-                            }}
-                            to={`/`}
-                        >
-                            {title}
-                        </Link>
-                    </h1>
-                    
-                    <h2
-                        style={{
-                            ...scale(0.5),
-                            marginBottom: 0,
-                            marginTop: 0,
+                            boxShadow: `none`,
+                            textDecoration: `none`,
+                            color: `inherit`,
                             position: `relative`,
                             zIndex: 10,
                         }}
+                        to={`/`}
                     >
-                        {description}
-                    </h2>
-                    
-                    <span className="twentytwenty-fun">
-                        2020 facelift
-                        <br />
-                        version!
-                    </span>
-                    <Switcher />
-                </>
-            )
-        } else {
-            header = (
-                <>
-                    <h3
+                        {title}
+                    </Link>
+                </h1>
+
+                <h2
+                    style={{
+                        ...scale(0.5),
+                        marginBottom: 0,
+                        marginTop: 0,
+                        position: `relative`,
+                        textAlign: `center`,
+                        zIndex: 10,
+                    }}
+                >
+                    {description}
+                </h2>
+            </>
+        )
+    } else {
+        header = (
+            <>
+                <h3
+                    style={{
+                        fontFamily: `Montserrat, sans-serif`,
+                        marginTop: 0,
+                    }}
+                >
+                    <Link
                         style={{
-                            fontFamily: `Montserrat, sans-serif`,
-                            marginTop: 0,
+                            boxShadow: `none`,
+                            textDecoration: `none`,
+                            color: `inherit`,
                         }}
+                        to={`/`}
                     >
-                        <Link
-                            style={{
-                                boxShadow: `none`,
-                                textDecoration: `none`,
-                                color: `inherit`,
-                            }}
-                            to={`/`}
-                        >
-                            {title}
-                        </Link>
-                    </h3>
-                    <h4
-                        style={{
-                            ...scale(0.5),
-                            marginBottom: rhythm(0.5),
-                            marginTop: 0,
-                            position: `relative`,
-                            zIndex: 10,
-                        }}
-                    >
-                        {description}
-                    </h4>
-                    <Switcher />
-                </>
-            )
-        }
-        return (
+                        {title}
+                    </Link>
+                </h3>
+                <h4
+                    style={{
+                        ...scale(0.5),
+                        marginBottom: rhythm(0.5),
+                        marginTop: 0,
+                        position: `relative`,
+                        zIndex: 10,
+                    }}
+                >
+                    {description}
+                </h4>
+            </>
+        )
+    }
+
+    return (
+        <>
+            {shouldRun && <ConfettiContainer onAnimationComplete={() => setShouldRun(false)}/> }
             <div
                 style={{
                     marginLeft: `auto`,
@@ -108,6 +114,9 @@ class Layout extends React.Component {
                 }}
             >
                 <header>{header}</header>
+                <CookiesProvider>
+                    <Switcher activateRun={() => setShouldRun(true)}/>
+                </CookiesProvider>
                 <main>{children}</main>
                 <footer>
                     <div>
@@ -172,8 +181,6 @@ class Layout extends React.Component {
                     </div>
                 </footer>
             </div>
-        )
-    }
+        </>
+    )
 }
-
-export default Layout
