@@ -72,7 +72,10 @@ module.exports = {
       options: {
         name: `Chris' Full Stack Blog`,
         short_name: `Chris' Full Stack Blog`,
-        icon: `src/images/icon.svg`,
+        icon: `src/images/maskable_icon.svg`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
