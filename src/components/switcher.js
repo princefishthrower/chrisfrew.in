@@ -1,7 +1,6 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import BodyClassName from "react-body-classname"
-import { instanceOf } from "prop-types"
-import { withCookies, Cookies } from "react-cookie"
+import { useCookies } from "react-cookie"
 
 const DARK_MODE = "dark-mode"
 const DARK_TEXT = "Dark"
@@ -12,96 +11,79 @@ const LIGHT_TEXT = "Light"
 const LIGHT_EMOJI = "☀️"
 const cssId = "prism-styles"
 
-class Switcher extends React.Component {
-  static propTypes = {
-    cookies: instanceOf(Cookies).isRequired,
-  }
-
-  constructor(props) {
-    super(props)
-
-    const { cookies } = this.props
-
-    let activeMode
-
-    // already set at some point by the user
-    if (cookies.get("user-theme-preference")) {
-      activeMode =
-        cookies.get("user-theme-preference") === DARK_MODE
-          ? DARK_MODE
-          : LIGHT_MODE
-
-      // default value = dark mode :)
-    } else {
-      activeMode = DARK_MODE
+export default function Switcher(props) {
+    const { activateRun } = props;
+    const [activeMode, setActiveMode] = useState("dark-mode")
+    const [cookies, setCookies] = useCookies(["user-theme-preference"])
+    useEffect(() => {
+        // already set at some point by the user
+        if (cookies) {
+            setActiveMode(cookies["user-theme-preference"] === DARK_MODE ? DARK_MODE : LIGHT_MODE)
+            // default value = dark mode :)
+        } else {
+            setActiveMode(DARK_MODE)
+        }
+    }, [cookies])
+    
+    const setStyleLink = mode => {
+        if (typeof document !== "undefined") {
+            const href =
+                mode === DARK_MODE
+                    ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
+                    : "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-coy.css"
+            if (!document.getElementById(cssId)) {
+                const head = document.getElementsByTagName("head")[0]
+                const link = document.createElement("link")
+                link.id = cssId
+                link.async = true
+                link.rel = "stylesheet"
+                link.type = "text/css"
+                link.href = href
+                link.media = "all"
+                head.appendChild(link)
+            } else {
+                const link = document.getElementById(cssId)
+                link.href = href
+            }
+        }
     }
 
-    this.state = {
-      activeMode: activeMode,
+    const handleInputChange = event => {
+        // add these nice transition properties to the html and body tags (we can't put it in the CSS directly because it will flash from white to black)
+        document.body.style.transition = "color 1s, background-color 1s"
+        if (event.target.checked) {
+            setActiveMode(LIGHT_MODE)
+            setCookies("user-theme-preference", LIGHT_MODE, { path: "/" })
+            setStyleLink(LIGHT_MODE)
+        } else {
+            setActiveMode(DARK_MODE)
+            setCookies("user-theme-preference", DARK_MODE, { path: "/" })
+            setStyleLink(DARK_MODE)
+        }
+        activateRun();
     }
-    this.handleInputChange = this.handleInputChange.bind(this)
-    this.setStyleLink = this.setStyleLink.bind(this)
-    this.setStyleLink(activeMode)
-  }
-
-  setStyleLink(mode) {
-    if (typeof document !== "undefined") {
-      const href =
-        mode === DARK_MODE
-          ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
-          : "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-coy.css"
-      if (!document.getElementById(cssId)) {
-        const head = document.getElementsByTagName("head")[0]
-        const link = document.createElement("link")
-        link.id = cssId
-        link.async = true
-        link.rel = "stylesheet"
-        link.type = "text/css"
-        link.href = href
-        link.media = "all"
-        head.appendChild(link)
-      } else {
-        const link = document.getElementById(cssId)
-        link.href = href
-      }
-    }
-  }
-
-  handleInputChange(event) {
-    // add these nice transition properties to the html and body tags (we can't put it in the CSS directly because it will flash from white to black)
-    document.body.style.transition = 'color 1s, background-color 1s';
-
-    const { cookies } = this.props
-    if (event.target.checked) {
-      this.setState({ LIGHT_TEXT, activeMode: LIGHT_MODE })
-      cookies.set("user-theme-preference", LIGHT_MODE, { path: "/" })
-      this.setStyleLink(LIGHT_MODE)
-    } else {
-      this.setState({ activeMode: DARK_MODE })
-      cookies.set("user-theme-preference", DARK_MODE, { path: "/" })
-      this.setStyleLink(DARK_MODE)
-    }
-  }
-
-  render() {
-    const { activeMode } = this.state
+    
     const activeModeText = activeMode === DARK_MODE ? DARK_TEXT : LIGHT_TEXT
     const activeModeEmoji = activeMode === DARK_MODE ? DARK_EMOJI : LIGHT_EMOJI
     return (
-      <div className="switch-container">
-        <BodyClassName className={activeMode} />
-        <label className="switch">
-          <input
-            type="checkbox"
-            onChange={this.handleInputChange}
-            checked={activeMode === DARK_MODE ? false : true}
-          />
-          <span className="slider round" />
-          <span className="switch-text emoji-fix">{activeModeEmoji}</span>
-          <span className="switch-text">{activeModeText} mode active</span>
-        </label>
-      </div>
+        <>
+            <div className="switch-container">
+                <BodyClassName className={activeMode} />
+                <label className="switch">
+                    <input
+                        type="checkbox"
+                        onChange={handleInputChange}
+                        checked={activeMode === DARK_MODE ? false : true}
+                    />
+                    <span className="slider round" />
+                    <span className="switch-text emoji-fix">
+                        {activeModeEmoji}
+                    </span>
+                    <span className="switch-text">
+                        {activeModeText} mode active
+                    </span>
+                </label>
+            </div>
+        </>
     )
-  }
 }
-export default withCookies(Switcher)

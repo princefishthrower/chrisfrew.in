@@ -12,11 +12,9 @@ class BlogPostListing extends React.Component {
     const title = data.site.siteMetadata.title
     const description = data.site.siteMetadata.description
     const posts = data.allMarkdownRemark.edges
-
     return (
       <Layout location={this.props.location} title={title} description={description}>
-        <SEO title="Chris' Full Stack Blog" />
-        <Bio />
+        <SEO title="Chris' Full Stack Blog. A professional software engineering blog." />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -44,6 +42,7 @@ class BlogPostListing extends React.Component {
           )
         })}
         <Paginator/>
+        <Bio />
       </Layout>
     )
   }
