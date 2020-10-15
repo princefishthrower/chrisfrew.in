@@ -4,7 +4,7 @@ description: An elegant React hook gets the job done!
 date: "2020-10-11"
 ---
 
-[This post is mirrored on my Medium Account](https://medium.com/@frewin.christopher/persist-and-remember-page-scroll-position-i-e-window-scrolly-using-react-hooks-f80884211f2d)
+[This post is mirrored on my Medium account.](https://medium.com/@frewin.christopher/persist-and-remember-page-scroll-position-i-e-window-scrolly-using-react-hooks-f80884211f2d)
 
 In a recent project, I was tasked with maintaining scroll position between pages. At first, I was certain the solution would have to be a complex one, where we would have to listen to `scroll` event listeners (always a critical task in terms of performance and efficiency), and share a complex state of various page scroll positions (the value of `window.scrollY`) for everything to work properly. 
 
