@@ -314,6 +314,10 @@ blockquote {
   font-style: italic !important;
 }
 
+strong {
+  font-weight: 900 !important;
+}
+
 pre,
 code {
   font-family: "Fira Code", monospace !important;
