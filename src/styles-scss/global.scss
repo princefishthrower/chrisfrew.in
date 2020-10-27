@@ -65,6 +65,11 @@ body {
         .switcherFont {
             color: $lightColor;
         }
+
+        table, th, td {
+            border: 1px solid $lightColor;
+        }
+
     }
 
     &.light-mode {
@@ -90,6 +95,10 @@ body {
         }
         .switcherFont {
             color: $darkColor;
+        }
+
+        table, th, td {
+            border: 1px solid $darkColor;
         }
     }
 }
@@ -159,7 +168,7 @@ blockquote {
     font-style: italic !important;
 }
 
-strong {
+th, strong {
     font-weight: 900 !important;
 }
 
@@ -172,6 +181,10 @@ code {
     border: none !important;
     padding: 0.3rem !important;
     transition: 0.4s !important;
+}
+
+th:first-child, td:first-child {
+    padding-left: 1rem;
 }
 
 // prism overrides
