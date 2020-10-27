@@ -223,6 +223,12 @@ html.dark-mode .switcherFont,
 body.dark-mode .switcherFont {
   color: white;
 }
+html.dark-mode table, html.dark-mode th, html.dark-mode td,
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+  border: 1px solid white;
+}
 html.light-mode,
 body.light-mode {
   background-color: white;
@@ -249,6 +255,12 @@ body.light-mode .monokaiRedFont {
 html.light-mode .switcherFont,
 body.light-mode .switcherFont {
   color: #000000;
+}
+html.light-mode table, html.light-mode th, html.light-mode td,
+body.light-mode table,
+body.light-mode th,
+body.light-mode td {
+  border: 1px solid #000000;
 }
 
 h1,
@@ -314,7 +326,7 @@ blockquote {
   font-style: italic !important;
 }
 
-strong {
+th, strong {
   font-weight: 900 !important;
 }
 
@@ -327,6 +339,10 @@ code {
   border: none !important;
   padding: 0.3rem !important;
   transition: 0.4s !important;
+}
+
+th:first-child, td:first-child {
+  padding-left: 1rem;
 }
 
 pre[class*=language-]:before {

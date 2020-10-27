@@ -4,7 +4,7 @@ import Confetti from "react-confetti"
 
 const colors = ["#F92672", "#27DDA6", "#66D9EF"]
 
-// setup a class here to get various special characters on a day
+// TODO: setup a class here to get various special characters on a day
 const codeCharacters = [
     "*",
     "@",
@@ -49,7 +49,9 @@ export default function ConfettiContainer(props) {
 
     useEffect(() => {
         if (opacity === 0) {
-            onAnimationComplete();
+            if (onAnimationComplete) {
+                onAnimationComplete();
+            }
         }
     }, [opacity, onAnimationComplete])
 
