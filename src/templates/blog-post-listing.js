@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Paginator from "../components/paginator"
+import EmailForm from "../components/email-form"
 
 class BlogPostListing extends React.Component {
   render() {
@@ -43,6 +44,7 @@ class BlogPostListing extends React.Component {
         })}
         <Paginator/>
         <Bio />
+        <EmailForm/>
       </Layout>
     )
   }

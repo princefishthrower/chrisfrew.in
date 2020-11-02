@@ -172,6 +172,56 @@ input:checked + .slider:before {
     background-color: white;
   }
 }
+#mc_embed_signup form {
+  margin: 0;
+}
+#mc_embed_signup input {
+  width: 100%;
+  border-radius: 5px;
+  margin: 2px;
+}
+#mc_embed_signup input[type=submit] {
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.4s, color 0.4s;
+}
+#mc_embed_signup .label {
+  display: block;
+  font-weight: 900;
+  text-align: center;
+}
+
+html.dark-mode #mc_embed_signup input[type=submit],
+body.dark-mode #mc_embed_signup input[type=submit] {
+  color: #000000;
+  background-color: #f92672;
+}
+html.dark-mode #mc_embed_signup input[type=submit]:hover,
+body.dark-mode #mc_embed_signup input[type=submit]:hover {
+  color: #e70457;
+  background-color: white;
+}
+html.dark-mode #mc_embed_signup .label,
+body.dark-mode #mc_embed_signup .label {
+  text-align: center;
+  color: #f92672;
+}
+html.light-mode #mc_embed_signup input[type=submit],
+body.light-mode #mc_embed_signup input[type=submit] {
+  color: white;
+  background-color: #e70457;
+}
+html.light-mode #mc_embed_signup input[type=submit]:hover,
+body.light-mode #mc_embed_signup input[type=submit]:hover {
+  color: #f92672;
+  background-color: #000000;
+}
+html.light-mode #mc_embed_signup .label,
+body.light-mode #mc_embed_signup .label {
+  text-align: center;
+  color: #e70457;
+}
+
 @font-face {
   font-family: "Nunito Sans", sans;
   src: url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap);
@@ -462,4 +512,21 @@ body.light-mode .gatsby-code-button .gatsby-code-button-icon {
     transform: translateX(10%);
     transform: rotate(30deg);
   }
+}
+.small {
+  font-size: 0.75rem;
+}
+
+.green-text {
+  color: #27DEA7;
+}
+
+.phrase-of-the-day {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 0.5rem;
+}
+
+.monokaiBlueFont {
+  color: #62D3E9;
 }

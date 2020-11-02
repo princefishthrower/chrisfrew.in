@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
@@ -6,8 +6,18 @@ import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
 import { CookiesProvider } from "react-cookie"
 
+const phraseOfTheDay = [
+    "💯 make strong types great again 💯",
+    "👨‍💻👩‍💻 because we have to 👨‍💻👩‍💻",
+    "💻 recursive recursion 💻",
+    "🐵 code monkey 🐵",
+    "🚀 my terminals are burnin'! 🚀",
+    "🍻 enjoy & cheers! 🍻",
+    "🤔 whats a software? 🤔",
+    "🤓 sir, best framework? 🤓",
+]
 export default function Layout(props) {
-    const [shouldRun, setShouldRun] = useState(false);
+    const [shouldRun, setShouldRun] = useState(false)
     const { location, title, description, children } = props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
@@ -64,6 +74,28 @@ export default function Layout(props) {
                 >
                     {description}
                 </h2>
+                <h3
+                    style={{
+                        ...scale(0.025),
+                        marginBottom: 0,
+                        marginTop: 0,
+                        position: `relative`,
+                        textAlign: `center`,
+                        zIndex: 10,
+                    }}
+                    className="phrase-of-the-day"
+                >
+                    <span className="monokaiBlueFont">{"~{/"}</span>
+                    <span className="green-text">{"* "}</span>
+                    <span className="monokaiRedFont">{
+                        phraseOfTheDay[
+                            Math.floor(Math.random() * phraseOfTheDay.length)
+                        ]
+                    }
+                    </span>
+                    <span className="green-text">{" *"}</span>
+                    <span className="monokaiBlueFont">{"/}~"}</span>
+                </h3>
             </>
         )
     } else {
@@ -103,7 +135,11 @@ export default function Layout(props) {
 
     return (
         <>
-            {shouldRun && <ConfettiContainer onAnimationComplete={() => setShouldRun(false)}/> }
+            {shouldRun && (
+                <ConfettiContainer
+                    onAnimationComplete={() => setShouldRun(false)}
+                />
+            )}
             <div
                 style={{
                     marginLeft: `auto`,
@@ -115,7 +151,7 @@ export default function Layout(props) {
             >
                 <header>{header}</header>
                 <CookiesProvider>
-                    <Switcher activateRun={() => setShouldRun(true)}/>
+                    <Switcher activateRun={() => setShouldRun(true)} />
                 </CookiesProvider>
                 <main>{children}</main>
                 <footer>
