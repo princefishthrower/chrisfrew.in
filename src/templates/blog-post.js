@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
+import EmailForm from "../components/email-form"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -84,6 +85,7 @@ class BlogPost extends React.Component {
                     <Disqus config={disqusConfig} />
                     <footer>
                         <Bio />
+                        <EmailForm/>
                     </footer>
                 </article>
 

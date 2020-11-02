@@ -2,6 +2,8 @@ $darkColor: #000000;
 $lightColor: white;
 $monokaiRedDarkMode: #f92672;
 $monokaiRedLightMode: #e70457;
+$monokaiGreen: #27DEA7;
+$monokaiBlue: #62D3E9;
 
 // yes these are seemingly 'backwards, but think about what the switcher shows up as :)
 @use 'switcher'with ($lightModeActiveColor: $darkColor,
@@ -11,6 +13,11 @@ $monokaiRedLightMode: #e70457;
     $monokaiRedLightMode: $monokaiRedLightMode);
 
 @use 'footnotes'with ($darkColor: $darkColor,
+    $lightColor: $lightColor,
+    $monokaiRedDarkMode: $monokaiRedDarkMode,
+    $monokaiRedLightMode: $monokaiRedLightMode);
+
+@use 'email_form'with ($darkColor: $darkColor,
     $lightColor: $lightColor,
     $monokaiRedDarkMode: $monokaiRedDarkMode,
     $monokaiRedLightMode: $monokaiRedLightMode);
@@ -317,4 +324,22 @@ body {
         transform: translateX(10%);
         transform: rotate(30deg);
     }
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.green-text {
+    color: $monokaiGreen;
+}
+
+.phrase-of-the-day {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 0.5rem;
+}
+
+.monokaiBlueFont {
+    color: $monokaiBlue;
 }
