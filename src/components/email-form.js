@@ -8,9 +8,9 @@ export default function EmailForm() {
                 method="post"
                 id="mc-embedded-subscribe-form"
                 name="mc-embedded-subscribe-form"
-                class="validate"
+                className="validate"
                 target="_blank"
-                novalidate
+                noValidate
             >
                 <div id="mc_embed_signup_scroll">
                     <label className="label" htmlFor="mce-EMAIL">
@@ -19,7 +19,7 @@ export default function EmailForm() {
                     <input
                         type="email"
                         name="EMAIL"
-                        class="email"
+                        className="email"
                         id="mce-EMAIL"
                         placeholder="awesome_dev@yourmail.com"
                         required
@@ -32,17 +32,17 @@ export default function EmailForm() {
                         <input
                             type="text"
                             name="b_5f7289fbe97df30f673068826_b1729bbdce"
-                            tabindex="-1"
-                            value=""
+                            tabIndex="-1"
+                            defaultValue=""
                         />
                     </div>
-                    <div class="clear">
+                    <div className="clear">
                         <input
                             type="submit"
-                            value="Submit"
+                            defaultValue="Submit"
                             name="subscribe"
                             id="mc-embedded-subscribe"
-                            class="button"
+                            className="button"
                         />
                     </div>
                 </div>
