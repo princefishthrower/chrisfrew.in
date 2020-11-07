@@ -1,23 +1,42 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
 import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
 import { CookiesProvider } from "react-cookie"
+import { useCookies } from "react-cookie"
 
-const phraseOfTheDay = [
-    "💯 make strong types great again 💯",
+const messageOfTheDay = [
+    "💯 make strong types great again! 💯",
     "👨‍💻👩‍💻 because we have to 👨‍💻👩‍💻",
     "💻 recursive recursion 💻",
     "🐵 code monkey 🐵",
     "🚀 my terminals are burnin'! 🚀",
     "🍻 enjoy & cheers! 🍻",
-    "🤔 whats a software? 🤔",
+    "🤔 what's a software? 🤔",
     "🤓 sir, best framework? 🤓",
 ]
+
+const messageOfTheDayIndexCookieKey = "message-of-the-day-index"
 export default function Layout(props) {
+    const [cookies, setCookies] = useCookies([messageOfTheDayIndexCookieKey])
     const [shouldRun, setShouldRun] = useState(false)
+
+    // if cookies not set, set as default to a random index 
+    useEffect(() => {
+        if (!cookies[messageOfTheDayIndexCookieKey]) {
+            console.log('setting initial')
+            setCookies(messageOfTheDayIndexCookieKey, Math.floor(Math.random() * messageOfTheDay.length), { path: "/" })
+        } else {
+            // get next index in circular fashion (appearing to be random but guaranteed always new)
+            const circularIndex = parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1 >= messageOfTheDay.length ? 0 : parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1
+            setCookies(messageOfTheDayIndexCookieKey, circularIndex, { path: "/" })
+        }
+    // We want this effect to truly only run once on mount (when page renders)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     const { location, title, description, children } = props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
@@ -88,8 +107,8 @@ export default function Layout(props) {
                     <span className="monokaiBlueFont">{"~{/"}</span>
                     <span className="green-text">{"* "}</span>
                     <span className="monokaiRedFont">{
-                        phraseOfTheDay[
-                            Math.floor(Math.random() * phraseOfTheDay.length)
+                        messageOfTheDay[
+                            cookies[messageOfTheDayIndexCookieKey]
                         ]
                     }
                     </span>

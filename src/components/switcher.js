@@ -15,8 +15,9 @@ const themeCookieKey = "user-theme-preference"
 export default function Switcher(props) {
     const { activateRun } = props
     const [cookies, setCookies] = useCookies([themeCookieKey])
+
+    // if cookies not set, set as default to DARK_MODE
     useEffect(() => {
-        // if cookies not set, set as default to DARK_MODE
         if (!cookies[themeCookieKey]) {
             setCookies(themeCookieKey, DARK_MODE, { path: "/" })
         }
