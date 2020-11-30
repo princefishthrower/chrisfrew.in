@@ -5,6 +5,8 @@ date: "2020-11-30"
 draft: false
 ---
 
+This post is mirrored on [my DEV account](https://dev.to/fullstackchris/net-nginx-kestrel-and-react-with-a-reverse-proxy-on-linux-ubuntu-3gob) and [my Medium Account](https://chrisfrewin.medium.com/net-nginx-kestrel-and-react-with-a-reverse-proxy-on-linux-ubuntu-6f3b7d882206).
+
 An example of what a final running result could look like is [here](https://chrisfrew.in/json-patch-filter-example/), and was built based on my [JSON Patch filtering blog post](https://chrisfrew.in/blog/filtering-json-patch-in-c-sharp/).
 
 **Please be respectful with the example site, just give it a test to see how it works. Spam and other nonsense will be quickly dealt with.**
