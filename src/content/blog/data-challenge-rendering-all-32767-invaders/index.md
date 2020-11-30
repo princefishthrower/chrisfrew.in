@@ -245,7 +245,7 @@ for (var j = 0; j < sz; j+=step) {
 
 For my project, it looks like I only needed to change that `c =` line, the line that defines if the given block in the Invader should be activated or not. Instead of using p5.js' `random()` function, I would need to load the "block string" for the given index of Invader. But let's take a step back. 
 
-We know we need to somehow add in the JSON data we generated with Python. We _could_ hardcode the correct data file for a sketch of a given Invader rank, but that would involve creating 15 separate `sketch.jsx` files, 15 hard-coded `prop` setups in the `P5Wrapper/index.js`, and _finally_ writing out 15 <P5Wrapper> components in `App/index.jsx`. Yeah... I don't want to do that because it's horrible style, would be a nightmare to maintain, and it would be annoying and take forever.
+We know we need to somehow add in the JSON data we generated with Python. We _could_ hardcode the correct data file for a sketch of a given Invader rank, but that would involve creating 15 separate `sketch.jsx` files, 15 hard-coded `prop` setups in the `P5Wrapper/index.js`, and _finally_ writing out 15 `<P5Wrapper/>` components in `App/index.jsx`. Yeah... I don't want to do that because it's horrible style, would be a nightmare to maintain, and it would be annoying and take forever.
 
 It makes way more sense to pass our data down as a React `prop`. From the boilerplate repository, that `data` prop flows through the following files, like so:
 
@@ -306,7 +306,7 @@ for (var j = 0; j < sz; j+=step) {
 
 and `aColors` is a constant array of `s.color` objects, defined in directly in the sketch file `P5Wrapper/sketch1/index.jsx`: 
 
-```
+```javascript
 const aColors = [s.color(132, 94, 194), s.color(214, 93, 177), s.color(255, 111, 145), s.color(255, 150, 113), s.color(255, 199, 95), s.color(249, 248, 113), s.color(44, 115, 210), s.color(0, 142, 155), s.color(0, 143, 122), s.color(155, 222, 126), s.color(75, 188, 142), s.color(3, 149, 144), s.color(28, 110, 125), s.color(47, 82, 107), s.color(26, 36, 120)]
 ```
 

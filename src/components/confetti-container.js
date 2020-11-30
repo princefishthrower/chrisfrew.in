@@ -1,9 +1,7 @@
 import React, { useEffect } from "react"
 import { useWindowSize, useTween } from "react-use"
 import Confetti from "react-confetti"
-
-const colors = ["#F92672", "#27DDA6", "#66D9EF"]
-
+import {colors} from "../constants/constants" 
 // TODO: setup a class here to get various special characters on a day
 const codeCharacters = [
     "*",

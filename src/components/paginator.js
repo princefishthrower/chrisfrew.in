@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Paginator = ({ path }) => {
     const data = useStaticQuery(graphql`
         query PaginatorQuery {
-            allMarkdownRemark(
+            allMdx(
                 sort: { fields: [frontmatter___date], order: DESC }
             ) {
                 edges {
@@ -31,7 +31,7 @@ const Paginator = ({ path }) => {
         }
     `)
 
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allMdx.edges
     const postCount = posts.length
     let paginations = []
     let pageCount = 1

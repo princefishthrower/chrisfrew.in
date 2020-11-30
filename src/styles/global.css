@@ -464,8 +464,7 @@ pre[class*=language-] > code {
 }
 html.dark-mode .gatsby-code-button,
 body.dark-mode .gatsby-code-button {
-  margin-bottom: -10px;
-  margin-right: 5px;
+  color: white;
 }
 html.dark-mode .gatsby-code-button:hover,
 body.dark-mode .gatsby-code-button:hover {
@@ -485,8 +484,7 @@ body.dark-mode .gatsby-code-button .gatsby-code-button-icon {
 }
 html.light-mode .gatsby-code-button,
 body.light-mode .gatsby-code-button {
-  margin-bottom: -20px;
-  margin-right: 10px;
+  color: #000000;
 }
 html.light-mode .gatsby-code-button:hover .gatsby-code-button-icon,
 body.light-mode .gatsby-code-button:hover .gatsby-code-button-icon {
@@ -529,4 +527,27 @@ body.light-mode .gatsby-code-button .gatsby-code-button-icon {
 
 .monokaiBlueFont {
   color: #62D3E9;
+}
+
+.code-copy-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: -1rem;
+}
+
+button.code-copy-button {
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-decoration: none;
+  margin-bottom: -0.75rem;
+  margin-right: 0rem;
+  padding: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Fira Code", monospace !important;
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  z-index: 1;
 }

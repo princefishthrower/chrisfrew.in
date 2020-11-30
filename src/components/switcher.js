@@ -1,20 +1,19 @@
-import React, { useEffect } from "react"
+import React, { useContext, useEffect } from "react"
 import BodyClassName from "react-body-classname"
 import { useCookies } from "react-cookie"
+import { DARK_MODE, LIGHT_MODE, themeCookieKey } from "../constants/constants";
+import { ThemeContext } from "../context/ThemeContext";
 
-const DARK_MODE = "dark-mode"
 const DARK_TEXT = "Dark"
 const DARK_EMOJI = "👻"
 
-const LIGHT_MODE = "light-mode"
 const LIGHT_TEXT = "Light"
 const LIGHT_EMOJI = "☀️"
-const cssId = "prism-styles"
-const themeCookieKey = "user-theme-preference"
 
 export default function Switcher(props) {
     const { activateRun } = props
     const [cookies, setCookies] = useCookies([themeCookieKey])
+    const { setTheme } = useContext(ThemeContext)
 
     // if cookies not set, set as default to DARK_MODE
     useEffect(() => {
@@ -30,35 +29,15 @@ export default function Switcher(props) {
 
     const activeTheme = cookies[themeCookieKey]
 
-    // set body css according to theme
-    if (typeof document !== "undefined") {
-        const href =
-            activeTheme === DARK_MODE
-                ? "https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-xonokai.css"
-                : "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-coy.css"
-        if (!document.getElementById(cssId)) {
-            const head = document.getElementsByTagName("head")[0]
-            const link = document.createElement("link")
-            link.id = cssId
-            link.async = true
-            link.rel = "stylesheet"
-            link.type = "text/css"
-            link.href = href
-            link.media = "all"
-            head.appendChild(link)
-        } else {
-            const link = document.getElementById(cssId)
-            link.href = href
-        }
-    }
-
     const handleInputChange = event => {
         // add these nice transition properties to the html and body tags (we can't put it in the CSS directly because it will flash from white to black)
         document.body.style.transition = "color 1s, background-color 1s"
         if (event.target.checked) {
             setCookies(themeCookieKey, LIGHT_MODE, { path: "/" })
+            setTheme(LIGHT_MODE)
         } else {
             setCookies(themeCookieKey, DARK_MODE, { path: "/" })
+            setTheme(DARK_MODE)
         }
         activateRun()
     }

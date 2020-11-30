@@ -27,7 +27,6 @@ class MarketNews extends React.Component {
         let aItems = this.state.aListItems;
         let oDate = new Date(oNewsItem.iUnixDateTime*1000);
         this.setState({ [oNewsItem.sId]: "newNewsNotification" });
-        console.log(oNewsItem);
         aItems.unshift(<li key={oNewsItem.sId} className={this.state[oNewsItem.sId]}><a href={oNewsItem.sLink} target="_blank" rel="noopener noreferrer" className="newNewsNotification">{oNewsItem.sIdentifier}, {oDate.toLocaleString()}: {oNewsItem.sTitle}</a></li>);
         setTimeout(() => { this.setState({ [oNewsItem.sId]: "" }); }, 6000); // need to remove the animation class after it is done (5 seconds + 1 second buffer)
         this.setState({aListItems: aItems});
@@ -79,7 +78,6 @@ class MarketNews extends React.Component {
         })
         .catch(function (error) {
           that.setState({aListItems: [<li key="error">Error loading feed :(</li>]});
-          console.log(error);
         });
     }
 }
