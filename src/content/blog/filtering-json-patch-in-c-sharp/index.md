@@ -58,7 +58,7 @@ The most correct HTTP method for this operation is a `PATCH`.
 
 `PATCH` is rather rare. How can we send commands of exactly what we want done to our object. There must be a standard, right?
 
-# Enter JSON Patch and JSONPatchDocument\<T\>
+# Enter JSON Patch and JSONPatchDocument
 
 A great (and now standard) way of modifying objects exactly like our `WidgetModel` is via a `JSON Patch`. This is a JSON way of describing changes, or 'operations' as they are known, on the object of interest. 
 

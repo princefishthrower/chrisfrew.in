@@ -27,10 +27,10 @@ DESCRIPTION:
         SC is a command line program used for communicating with the
         Service Control Manager and services.
 USAGE:
-        sc <server> [command] [service name] <option1> <option2>...
+        sc `<server/>` [command] [service name] <option1> <option2>...
 
 
-        The option <server> has the form "\\ServerName"
+        The option `<server/>` has the form "\\ServerName"
         Further help on commands can be obtained by typing: "sc [command]"
         Commands:
           query-----------Queries the status for a service, or enumerates the status for types of services.
@@ -72,7 +72,7 @@ USAGE:
           EnumDepend------Enumerates Service Dependencies.
 
         The following commands don't require a service name:
-        sc <server> <command> <option>
+        sc `<server/>` <command> <option>
           boot------------(ok | bad) Indicates whether the last boot should be saved as the last-known-good boot configuration
           Lock------------Locks the Service Database
           QueryLock-------Queries the LockStatus for the SCManager Database
@@ -90,7 +90,7 @@ Wow. That's a monster of a command documentation. Let's break down what we need.
 
 That's not a special setting for server names that we have at my company or anything like that, that's part of the `sc` command. Notice the line in the documentation that says exactly that:
 
-> > The option <server> has the form "\\\\ServerName"
+> > The option `<server/>` has the form "\\\\ServerName"
 
 Okay, now for our service name. Again, for instruction purposes of the command and for privacy sake, I'm going to call our service `ServiceName even with Whitespace`.
 

@@ -176,7 +176,7 @@ Cheers! :beer:
 ## Sources
 
 - Tabulated Card Data (I redacted the UK version titles in the names on my own chart, keeping only the US versions): http://www.falstad.com/monopoly.html
-- Converting HTML <table> tag to CSV data with: http://convertcsv.com/html-table-to-csv.htm
+- Converting the HTML `<table>` tag to CSV data with: http://convertcsv.com/html-table-to-csv.htm
 - Probabilities for 6 sided dice: http://alumnus.caltech.edu/~leif/FRP/probability.html
 - CSV to Markdown tables for those oh-so-sweet Markdown charts above: https://donatstudios.com/CsvToMarkdownTable
 

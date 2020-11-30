@@ -26,7 +26,6 @@ export default function Layout(props) {
     // if cookies not set, set as default to a random index 
     useEffect(() => {
         if (!cookies[messageOfTheDayIndexCookieKey]) {
-            console.log('setting initial')
             setCookies(messageOfTheDayIndexCookieKey, Math.floor(Math.random() * messageOfTheDay.length), { path: "/" })
         } else {
             // get next index in circular fashion (appearing to be random but guaranteed always new)

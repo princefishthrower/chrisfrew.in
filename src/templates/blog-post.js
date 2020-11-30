@@ -6,12 +6,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import { Disqus } from "gatsby-plugin-disqus"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 class BlogPost extends React.Component {
     componentDidMount() {
         const footnotes = document.getElementsByClassName("footnote-ref")
         Array.prototype.forEach.call(footnotes, function(footnote) {
-            console.log(footnote.getAttribute("href").replace("#", ""))
             footnote.addEventListener("click", function(e) {
                 e.preventDefault()
                 // The href value IS the id of the div
@@ -28,7 +28,7 @@ class BlogPost extends React.Component {
         })
     }
     render() {
-        const post = this.props.data.markdownRemark
+        const post = this.props.data.mdx
         const title = post.frontmatter.title
         const postDescription = post.frontmatter.description
         const siteTitle = this.props.data.site.siteMetadata.title
@@ -81,7 +81,7 @@ class BlogPost extends React.Component {
                             Posted on {post.frontmatter.date}
                         </p>
                     </header>
-                    <section dangerouslySetInnerHTML={{ __html: post.html }} />
+                    <MDXRenderer>{post.body}</MDXRenderer>
                     <Disqus config={disqusConfig} />
                     <footer>
                         <Bio />
@@ -131,10 +131,10 @@ export const pageQuery = graphql`
                 description
             }
         }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
+        mdx(fields: { slug: { eq: $slug } }) {
             id
             excerpt(pruneLength: 160)
-            html
+            body
             frontmatter {
                 title
                 date(formatString: "MMMM DD, YYYY")

@@ -16,9 +16,6 @@ _Originally published on the [Siren Apparel Press on Medium](https://medium.com/
 *Written by *[Chris](https://medium.com/@frewin.christopher)* on Wednesday,
 August 22nd, 2018*
 
-![](https://cdn-images-1.medium.com/max/2000/1*HU6qT6c4a54QX-mnuPMj7w.jpeg)
-<span class="figcaption_hack">Siren Apparel’s flagship shirt — Hydrant Removal.</span>
-
 #### Background and Motivation
 
 So the motivation here was pretty simple. I wanted my users to be able to
@@ -120,7 +117,9 @@ if you wished. The rest of the tutorial assumes you have put them in
 `App.js` will need extensive changes. First, import that Cart component you just
 copied into your own project:
 
-    import Cart from './components/shopify/Cart';
+```javascript
+import Cart from './components/shopify/Cart';
+```
 
 If your `App.js` component was stateless, like mine, you should be safe copying
 this entire `constructor()` function:
@@ -204,7 +203,9 @@ codebase for [our site](https://sirenapparel.us/) isn’t too large.
 
 Install NPM packages `redux` and `react-redux`:
 
-    npm install --save redux react-redux
+```bash
+npm install --save redux react-redux
+```
 
 In `index.js` , import `Provider` from `react-redux`and your `store` from
 `./store`:
@@ -305,7 +306,7 @@ isCartOpen: false,
 checkout: { lineItems: [] },
 products: [],
 shop: {}
-  ```
+```
 
 However, in my implementation, I also create a `client` part of the state. I
 call the `createClient()` function once and then immediately set it in the Redux
@@ -345,7 +346,7 @@ componentWillMount() {
       });
     });
   }
-  ```
+```
 
 I opted to do that instead as far upstream as possible, directly in `index.js`.
 Then, I issued a corresponding event when each part of the response has been
@@ -471,7 +472,7 @@ the nav. At a future time, I could move that function to the Nav itself instead
 of passing it as a prop, since of course the Redux store will also be avaliable
 there!
 
-#### Finally Add that <Products/> Component!
+#### Finally Add that Products Component!
 
 So, you’ve got a basic store maybe with some simple `href`’s that link to the
 corresponding product on your Shopify store? Ha! Throw those out, and replace
@@ -486,14 +487,16 @@ repository](https://github.com/frewinchristopher/react-redux-shopify-storefront-
 I made, I put this in the `GenericProductsPage` component, to signal that this
 code could be applied to any page that has a products section):
 
-    import Products from './shopify/Products';
+```javascript
+import Products from './shopify/Products';
+```
 
 Now finally, that past 15–20 minutes of redux boilerplate code edits pays off:
 we can grab the `products` component of our state — not from a vanilla React
 state passed down over and over again through props — but through grabbing it in
 a neat one liner `const state = store.getState();`:
 
-
+```javascript
 render () {
 const state = store.getState(); // state from redux store
 let oProducts = <Products
@@ -501,6 +504,7 @@ let oProducts = <Products
   client={state.client}
   addVariantToCart={this.addVariantToCart}
 />;
+```
 
 
 Don’t forget to drop the component itself into where it should go in your
@@ -571,7 +575,9 @@ import store from '../store';
 at the top, and (assuming the component where you put the Shopify `Product`
 component name is `GenericProductPage`:
 
-    export default connect((state) => state)(GenericProductsPage);
+```javascript
+export default connect((state) => state)(GenericProductsPage);
+```
 
 at the bottom.
 

@@ -14,13 +14,13 @@ Well, it's a little known fact (at least it was for me) that you can use native 
 To get this to work in most environments<sup>1</sup> all we have to do is to make use of the `<details>` tag. Since you probably want your dropdown to have a title, we also need to use the `<summary>` tag. So a cool markdown dropdown could look as simple as this:
 
 ```markdown
-<details><summary>Cool Dropdown</summary><br>
+<details><summary>Cool Dropdown</summary><br/>
 blah blah blah blah you found me!
 </details>
 ```
 
 Or, rendered (go on and give the arrow a click!):
-<details><summary>Cool Dropdown</summary><br>
+<details><summary>Cool Dropdown</summary><br/>
 blah blah blah blah you found me!
 </details>
 
@@ -30,7 +30,7 @@ Of course, all goodies of markdown will work inside of this dropdown - lists, li
 Here's a bigger example for your copypasta pleasure:
 ```markdown
 <p>
-<details><summary>Cool Dropdown #1</summary><br>
+<details><summary>Cool Dropdown #1</summary><br/>
 
 ```js
 // so wow, much amazing... you can even put code in these drop downs!
@@ -66,7 +66,7 @@ Easter egg! :egg::egg::egg:
 Rendered on this page, that snippet looks like this:
 
 <p>
-<details><summary>Cool Dropdown #1</summary><br>
+<details><summary>Cool Dropdown #1</summary><br/>
 
 ```js
 // so wow, much amazing... you can even put code in these drop downs!
@@ -85,13 +85,13 @@ Or even just normal text
 
 </details>
 
-<details><summary>Cool Dropdown #2</summary><br>
+<details><summary>Cool Dropdown #2</summary><br/>
 
 More cool text hiding in my dropdown
 
 </details>
 
-<details><summary>Cool Dropdown #3</summary><br>
+<details><summary>Cool Dropdown #3</summary><br/>
 
 Easter egg! :egg::egg::egg:
 

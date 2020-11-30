@@ -12,7 +12,7 @@ class BlogPostListing extends React.Component {
     const { data } = this.props
     const title = data.site.siteMetadata.title
     const description = data.site.siteMetadata.description
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allMdx.edges
     return (
       <Layout location={this.props.location} title={title} description={description}>
         <SEO title="Chris' Full Stack Blog. A professional software engineering blog." />
@@ -60,7 +60,7 @@ export const blogListQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
