@@ -61,15 +61,17 @@ class BlogPost extends React.Component {
                         >
                             {title}
                         </h1>
-                        {postDescription && <h3
+                        {postDescription && <p
                             className="monokaiRedFont"
                             style={{
+                                ...scale(0.37),
                                 marginTop: 0,
                                 marginBottom: 0,
+                                fontWeight: 'bold',
                             }}
                         >
                             {postDescription}
-                        </h3>}
+                        </p>}
                         <p
                             style={{
                                 ...scale(-1 / 5),
