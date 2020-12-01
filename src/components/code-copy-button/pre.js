@@ -41,7 +41,7 @@ const ConfettiWrapper = props => (
     <div style={{ position: "absolute", top: 0, right: 0 }} {...props} />
 )
 
-const Button = props => <button className="code-copy-button" {...props} />
+const Button = props => <button aria-label="Copy" className="code-copy-button" {...props} />
 
 export const Pre = ({ codeString, children, language, ...props }) => {
     const [isCopied, setIsCopied] = useState(false)
