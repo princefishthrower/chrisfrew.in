@@ -65,7 +65,7 @@ As I did for 2019, I will separate my goals for 2020 first listing my 'Software 
 
 - Work 'for the man' less - maybe even 'work' less
 
-What I mean by this one is not working all the time for projects I get payed for directly on a contract or hourly basis. In 2019, due to a monster project, I experienced far too many 10-12 hour days which left me with no brain capacity left to work on producing other things I care about - such as opensource projects, my education and tutorial software courses, and just plain hacking for fun. 
+What I mean by this one is not working all the time for projects I get payed for directly on a contract or hourly basis. In 2019, due to a monster project, I experienced far too many 10-12 hour days which left me with no brain capacity left to work on producing other things I care about - such as open source projects, my education and tutorial software courses, and just plain hacking for fun. 
 
 I'm in a point in my career where I know enough to share my skills and work on more diverse projects. I just have to finally say enough is enough and take charge of what I want to produce out of my career. I understand there is a high demand for software developers who can get the job done, but there comes a point where I have to fix the balance of projects I work on. I have to take some time for myself and produce what I think is valuable. 2020 is that year.
 
