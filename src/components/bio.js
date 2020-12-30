@@ -93,7 +93,7 @@ export default function Bio() {
                                 Medium
                             </a>
                             &nbsp; | &nbsp;
-                            <a href="https://chrisfrewin.medium.com" rel="me">
+                            <a href="https://twitter.com/Galt_" rel="me">
                                 Twitter
                             </a>
                             &nbsp; | &nbsp;
