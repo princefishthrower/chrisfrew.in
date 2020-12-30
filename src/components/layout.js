@@ -23,17 +23,27 @@ export default function Layout(props) {
     const [cookies, setCookies] = useCookies([messageOfTheDayIndexCookieKey])
     const [shouldRun, setShouldRun] = useState(false)
 
-    // if cookies not set, set as default to a random index 
+    // if cookies not set, set as default to a random index
     useEffect(() => {
         if (!cookies[messageOfTheDayIndexCookieKey]) {
-            setCookies(messageOfTheDayIndexCookieKey, Math.floor(Math.random() * messageOfTheDay.length), { path: "/" })
+            setCookies(
+                messageOfTheDayIndexCookieKey,
+                Math.floor(Math.random() * messageOfTheDay.length),
+                { path: "/" }
+            )
         } else {
             // get next index in circular fashion (appearing to be random but guaranteed always new)
-            const circularIndex = parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1 >= messageOfTheDay.length ? 0 : parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1
-            setCookies(messageOfTheDayIndexCookieKey, circularIndex, { path: "/" })
+            const circularIndex =
+                parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1 >=
+                messageOfTheDay.length
+                    ? 0
+                    : parseInt(cookies[messageOfTheDayIndexCookieKey]) + 1
+            setCookies(messageOfTheDayIndexCookieKey, circularIndex, {
+                path: "/",
+            })
         }
-    // We want this effect to truly only run once on mount (when page renders)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // We want this effect to truly only run once on mount (when page renders)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const { location, title, description, children } = props
@@ -64,6 +74,7 @@ export default function Layout(props) {
                         position: `relative`,
                         zIndex: 10,
                         textAlign: `center`,
+                        paddingBottom: 0,
                     }}
                 >
                     <Link
@@ -79,7 +90,26 @@ export default function Layout(props) {
                         {title}
                     </Link>
                 </h1>
+                <div style={{ textAlign: "center" }}>
+                    <a
+                        className="h-card"
+                        href="https://chrisfrew.in/"
+                        rel="me"
+                        style={{
+                            boxShadow: `none`,
+                            textDecoration: `none`,
+                            color: `inherit`,
+                            position: `relative`,
+                            zIndex: 10,
+                            fontSize: "0.7rem",
+                            fontWeight: "bold",
+                            lineHeight: '0.5rem'
 
+                        }}
+                    >
+                        by Chris Frewin
+                    </a>
+                </div>
                 <h2
                     style={{
                         ...scale(0.5),
@@ -105,11 +135,12 @@ export default function Layout(props) {
                 >
                     <span className="monokaiBlueFont">{"~{/"}</span>
                     <span className="green-text">{"* "}</span>
-                    <span className="monokaiRedFont">{
-                        messageOfTheDay[
-                            cookies[messageOfTheDayIndexCookieKey]
-                        ]
-                    }
+                    <span className="monokaiRedFont">
+                        {
+                            messageOfTheDay[
+                                cookies[messageOfTheDayIndexCookieKey]
+                            ]
+                        }
                     </span>
                     <span className="green-text">{" *"}</span>
                     <span className="monokaiBlueFont">{"/}~"}</span>
