@@ -3,8 +3,9 @@ const emoji = require(`remark-emoji`)
 module.exports = {
   siteMetadata: {
     title: `Chris' Full Stack Blog`,
+    subtitle: `A professional software engineering blog.`,
     author: `Chris Frewin`,
-    description: `A professional software engineering blog.`,
+    description: `Explore a variety of in-depth and professional software engineering tutorials. Featuring JavaScript, React, C#, ABAP, SAPUI5, and everything in between.`,
     siteUrl: `https://chrisfrew.in/`,
   },
   plugins: [

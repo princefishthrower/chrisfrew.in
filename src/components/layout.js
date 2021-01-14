@@ -46,7 +46,7 @@ export default function Layout(props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    const { location, title, description, children } = props
+    const { location, title, subtitle, children } = props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
     if (location.pathname === rootPath) {
@@ -120,7 +120,7 @@ export default function Layout(props) {
                         zIndex: 10,
                     }}
                 >
-                    {description}
+                    {subtitle}
                 </h2>
                 <h3
                     style={{
@@ -176,7 +176,7 @@ export default function Layout(props) {
                         zIndex: 10,
                     }}
                 >
-                    {description}
+                    {subtitle}
                 </h4>
             </>
         )
