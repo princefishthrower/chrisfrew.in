@@ -6,7 +6,7 @@ date: "2020-10-16"
 
 [This post is mirrored on my Medium account.]()
 
-We're going to do some advanced Typescript-ing today! We already know from awesome blogs like [Fettblog]() on [how to type components with children](). I'm glad to tell you. What if we need an additional type. For example, we are manipulating children via a sort like so:
+We're going to do some advanced TypeScript-ing today! We already know from awesome blogs like [Fettblog]() on [how to type components with children](https://fettblog.eu/typescript-react/children/). I'm glad to tell you. What if we need an additional type. For example, we are manipulating children via a sort like so:
 
 ```
 <SortableComponent>
@@ -20,7 +20,7 @@ _"Ah, c'mon"_ I hear you say, _"`ReactNode` is enough for me! Why would I need t
 
 Well, let me show you.
 
-We were working on some sorting functionality that would sort any given child components, based on a 'template', if you will, of that given child. We don't want to rely on what kind of component the child is, only the the type of list that will be used to generate that list of components. First we looked here. This is valid javascript, but TypeScript will complain saying that  there is no instance of `children` that is callable.
+We were working on some sorting functionality that would sort any given child components, based on a 'template', if you will, of that given child. We don't want to rely on what kind of component the child is, only the the type of list that will be used to generate that list of components. First we looked here. This is valid javascript, but TypeScript will complain saying that there is no instance of `children` that is callable.
 
 Thats fine. Let's copy the pattern of `ReactWithChildren` and create our own `PropsWithFunctionalChildren`:
 
