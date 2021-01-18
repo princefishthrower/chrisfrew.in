@@ -76,8 +76,8 @@
     "url": "https://github.com/princefishthrower/chrisfrew.in.git"
   },
   "scripts": {
-    "build": "rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build",
-    "build:local": "git checkout develop && rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build",
+    "build": "rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
+    "build:local": "git checkout develop && rm -rf public/* && rm -rf .cache/* && sass --no-source-map src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css && gatsby build && gzip -r public/",
     "styles": "sass --no-source-map --watch src/styles-scss/global.scss src/styles/global.css && minify src/styles/global.css > src/styles/global.min.css",
     "dev": "git checkout develop && rm -rf .cache/* && npm run styles & gatsby develop"
   }

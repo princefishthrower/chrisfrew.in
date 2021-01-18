@@ -33,7 +33,7 @@ const BlogPostListing = props => {
             title={title}
             subtitle={subtitle}
         >
-            <SEO schemaMarkup={schema} />
+            <SEO title={title} schemaMarkup={schema} />
             {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
