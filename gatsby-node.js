@@ -1,5 +1,7 @@
+const constants = require('./src/constants/constants.json')
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -35,15 +37,14 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMdx.edges
 
   // Create blog-list pages
-  const postsPerPage = 5
-  const numPages = Math.ceil(posts.length / postsPerPage)
+  const numPages = Math.ceil(posts.length / constants.postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/blog-page-${i + 1}`,
       component: blogPostListing,
       context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
+        limit: constants.postsPerPage,
+        skip: i * constants.postsPerPage,
         numPages,
         currentPage: i + 1,
       },

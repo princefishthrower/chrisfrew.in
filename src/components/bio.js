@@ -55,22 +55,20 @@ export default function Bio() {
             >
                 <div>
                     <p className="bio-lead">
-                        Hi!
-                        <br />
-                        I'm Chris Frewin, I'm going to be COURSE MASTER for
+                        Hi! I'm Chris Frewin, I'm going to be COURSE MASTER for
                         2021!
-                        <sup>
-                            <sup>
-                                <sup>
-                                    (It's really gonna happen this year, I
-                                    promise.)
-                                </sup>
-                            </sup>
-                        </sup>
                     </p>
                     <br />
                     <p>
-                        If I'm not building software, I'll be found hiking,
+                        Ha! I can prove that I'm a <span style={{fontWeight: 'bold'}}>COURSE MASTER</span> now! Check out all my courses and content on:<br/>
+                        <a href="https://www.skillshare.com/user/christopherfrewin">Skillshare</a><br/>
+                        <a href="https://www.udemy.com/user/chris-frewin">Udemy</a><br/>
+                        <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">YouTube</a><br/>
+                        You can also check out the website for <span className="linear-wipe">Full Stack Craft</span>, the company I put all my full stack educational content under at:<br/>
+                        <a href="https://fullstackcraft.com">fullstackcraft.com</a><br/>
+                    </p>
+                    <p>
+                        If I'm not building or teaching full stack software, I'll be found hiking,
                         skiing, taking pictures, losing money on options,
                         spoiling homebrew, or creating music and art. I (mostly)
                         live in Austria.
