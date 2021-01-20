@@ -7,6 +7,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+const constants = require('../constants/constants.json')
 
 const Paginator = ({ path }) => {
     const data = useStaticQuery(graphql`
@@ -36,7 +37,7 @@ const Paginator = ({ path }) => {
     let paginations = []
     let pageCount = 1
     if (typeof window !== "undefined") {
-        for (let i = 1; i < postCount; i += 5) {
+        for (let i = 1; i < postCount; i += constants.postsPerPage) {
             let isActive = false
             let pathName
             if (i !== 1) {

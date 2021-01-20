@@ -273,7 +273,9 @@ html.dark-mode .switcherFont,
 body.dark-mode .switcherFont {
   color: white;
 }
-html.dark-mode table, html.dark-mode th, html.dark-mode td,
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td,
 body.dark-mode table,
 body.dark-mode th,
 body.dark-mode td {
@@ -306,7 +308,9 @@ html.light-mode .switcherFont,
 body.light-mode .switcherFont {
   color: #000000;
 }
-html.light-mode table, html.light-mode th, html.light-mode td,
+html.light-mode table,
+html.light-mode th,
+html.light-mode td,
 body.light-mode table,
 body.light-mode th,
 body.light-mode td {
@@ -376,7 +380,8 @@ blockquote {
   font-style: italic !important;
 }
 
-th, strong {
+th,
+strong {
   font-weight: 900 !important;
 }
 
@@ -391,7 +396,8 @@ code {
   transition: 0.4s !important;
 }
 
-th:first-child, td:first-child {
+th:first-child,
+td:first-child {
   padding-left: 1rem;
 }
 
@@ -410,8 +416,25 @@ pre[class*=language-] > code {
 .bio-lead {
   margin: 0 auto;
   max-width: 400px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+}
+
+.linear-wipe {
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(to right, #e0ffff 33%, #000080 66%, #00ffff 99%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .twentytwenty-fun {
@@ -516,7 +539,7 @@ body.light-mode .gatsby-code-button .gatsby-code-button-icon {
 }
 
 .green-text {
-  color: #27DEA7;
+  color: #27dea7;
 }
 
 .phrase-of-the-day {
@@ -526,7 +549,7 @@ body.light-mode .gatsby-code-button .gatsby-code-button-icon {
 }
 
 .monokaiBlueFont {
-  color: #62D3E9;
+  color: #62d3e9;
 }
 
 .code-copy-button-wrapper {
