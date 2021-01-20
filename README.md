@@ -1,4 +1,4 @@
 #  chrisfrew.in Full Stack Blog Website Source
 
-This blog is based off of the [Gatsby Start Blog](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/), and has been optimized for lighthouse by following WCAG standards and doing things like GZIP compression and pagination to make each page load in milliseconds.
+This blog was once, in a galaxy far far away, based off of the [Gatsby Start Blog](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/), and has been optimized for lighthouse by following WCAG standards and doing things like GZIP compression and pagination to make each page load extremely fast. Typical Google Lighthouse scores are 100 across the board.
 
