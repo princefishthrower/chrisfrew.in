@@ -51,6 +51,7 @@
     "react-typography": "^0.16.19",
     "react-use": "^15.3.4",
     "remark-emoji": "^2.1.0",
+    "styled-components": "^5.2.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
