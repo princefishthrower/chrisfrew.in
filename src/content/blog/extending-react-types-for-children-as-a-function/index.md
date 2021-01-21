@@ -6,6 +6,7 @@ date: "2021-01-19"
 
 [This post is mirrored on my Medium account.](https://chrisfrewin.medium.com/extending-react-standard-types-to-allow-for-children-as-a-function-ba7fdde52e0b)
 
+
 # Example Repository
 
 This code is on my GitHub account at [react-typescript-generic-search-sort-and-filter-children-function](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter-children-function).
