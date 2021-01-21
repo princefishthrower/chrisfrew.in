@@ -423,7 +423,7 @@ pre[class*=language-] > code {
 .linear-wipe {
   font-weight: 900;
   text-align: center;
-  background: linear-gradient(to right, #e0ffff 33%, #000080 66%, #00ffff 99%);
+  background: linear-gradient(to right, #00ff80 33%, #000080 66%, #00ffff 99%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;

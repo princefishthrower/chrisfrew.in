@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
+import Sparkles from "./Sparkles"
 
 export default function Bio() {
     const data = useStaticQuery(graphql`
@@ -64,7 +65,7 @@ export default function Bio() {
                         <a href="https://www.skillshare.com/user/christopherfrewin">Skillshare</a><br/>
                         <a href="https://www.udemy.com/user/chris-frewin">Udemy</a><br/>
                         <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">YouTube</a><br/>
-                        You can also check out the website for <span className="linear-wipe">Full Stack Craft</span>, the company I put all my full stack educational content under at:<br/>
+                        You can also check out the website for <Sparkles><span className="linear-wipe">Full Stack Craft</span></Sparkles>, the company I put all my full stack educational content under at:<br/>
                         <a href="https://fullstackcraft.com">fullstackcraft.com</a><br/>
                     </p>
                     <p>
