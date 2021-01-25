@@ -8,7 +8,11 @@ date: "2020-10-27"
 
 # Example Repository
 
-[The example repository is here](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter).
+[The example repository is here.](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter).
+
+# Live Demo
+
+[The live demo is on GitHub Pages.](https://princefishthrower.github.io/react-typescript-generic-search-sort-and-filter/build/)
 
 # Motivation
 
