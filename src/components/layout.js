@@ -222,6 +222,8 @@ export default function Layout(props) {
                             <img
                                 src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
                                 alt="Buy me a cappucino"
+                                width="27px"
+                                height="23.75px"
                             />
                             <span style={{ marginLeft: 5 }}>
                                 Buy me a cappucino
