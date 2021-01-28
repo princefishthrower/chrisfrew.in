@@ -34,6 +34,12 @@ $monokaiBlue: #62d3e9;
     font-display: swap;
 }
 
+@font-face {
+    font-family: "CooperBlackRegular";
+    src: url("../fonts/CooperBlackRegular.ttf");
+    font-display: swap;
+}
+
 html,
 body {
     -webkit-font-smoothing: antialiased !important;
@@ -221,14 +227,15 @@ pre[class*="language-"] > code {
 }
 
 .linear-wipe {
+    font-family: 'CooperBlackRegular';
     font-weight: 900;
     text-align: center;
 
     background: linear-gradient(
         to right,
-        #00ff80 33%,
-        #000080 66%,
-        #00ffff 99%,       
+        #00ffff 0%,
+        #d7fc03 50%,
+        #00ffff 100%
     );
     background-size: 200% auto;
 

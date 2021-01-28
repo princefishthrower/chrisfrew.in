@@ -8,10 +8,10 @@ export default function Bio() {
     const data = useStaticQuery(graphql`
         query BioQuery {
             avatar: file(
-                absolutePath: { regex: "/defaultprofilepicture.jpg/" }
+                absolutePath: { regex: "/profile-pic.jpg/" }
             ) {
                 childImageSharp {
-                    fixed(width: 200, height: 200) {
+                    fixed(width: 500, height: 500) {
                         ...GatsbyImageSharpFixed
                     }
                 }
@@ -65,7 +65,7 @@ export default function Bio() {
                         <a href="https://www.skillshare.com/user/christopherfrewin">Skillshare</a><br/>
                         <a href="https://www.udemy.com/user/chris-frewin">Udemy</a><br/>
                         <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">YouTube</a><br/>
-                        You can also check out the website for <Sparkles><span className="linear-wipe">Full Stack Craft</span></Sparkles>, the company I put all my full stack educational content under at:<br/>
+                        You can also check out the website for <a href="https://fullstackcraft.com" target="_blank" rel="noreferrer"> <Sparkles>Full Stack Craft</Sparkles></a>, the company I put all my full stack educational content under at:<br/>
                         <a href="https://fullstackcraft.com">fullstackcraft.com</a><br/>
                     </p>
                     <p>
@@ -75,7 +75,7 @@ export default function Bio() {
                         live in Austria.
                         <br />
                         <br />
-                        <div
+                        <span
                             style={{
                                 textAlign: "center",
                                 border: "1px solid #f92672",
@@ -111,13 +111,13 @@ export default function Bio() {
                             </a>
                             &nbsp; | &nbsp;
                             <a
-                                class="u-email"
+                                className="u-email"
                                 href="mailto:frewin.christopher@gmail.com"
                                 rel="me"
                             >
                                 Email
                             </a>
-                        </div>
+                        </span>
                         <br />
                         I'm a proud member of the{" "}
                         <a

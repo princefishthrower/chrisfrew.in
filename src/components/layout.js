@@ -6,6 +6,7 @@ import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
 import { CookiesProvider } from "react-cookie"
 import { useCookies } from "react-cookie"
+import Sparkles from "./Sparkles"
 
 const messageOfTheDay = [
     "💯 make strong types great again! 💯",
@@ -87,7 +88,7 @@ export default function Layout(props) {
                         }}
                         to={`/`}
                     >
-                        {title}
+                        Chris' <Sparkles>Full Stack</Sparkles> Blog
                     </Link>
                 </h1>
                 <div style={{ textAlign: "center" }}>
