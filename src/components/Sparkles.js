@@ -1,23 +1,22 @@
 import React from "react"
-import styled, { keyframes } from 'styled-components'
-import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion'
-import useRandomInterval from '../hooks/useRandomInterval'
+import styled, { keyframes } from "styled-components"
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion"
+import useRandomInterval from "../hooks/useRandomInterval"
 
-const DEFAULT_COLOR = "#00ffff"
+const DEFAULT_SPARKLE_COLORS = ["#00ffff", "00ff80", "#d7fc03"]
 
-const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+const random = (min, max) => Math.floor(Math.random() * (max - min)) + min
 const range = (start, end, step = 1) => {
-    let output = [];
-    if (typeof end === 'undefined') {
-      end = start;
-      start = 0;
+    let output = []
+    if (typeof end === "undefined") {
+        end = start
+        start = 0
     }
     for (let i = start; i < end; i += step) {
-      output.push(i);
+        output.push(i)
     }
-    return output;
-  };
-
+    return output
+}
 
 const generateSparkle = color => {
     const sparkle = {
@@ -32,13 +31,20 @@ const generateSparkle = color => {
     }
     return sparkle
 }
-const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
+const Sparkles = ({
+    colors = DEFAULT_SPARKLE_COLORS,
+    children,
+    ...delegated
+}) => {
+    
     const [sparkles, setSparkles] = React.useState(() => {
+        const color = colors[Math.floor(Math.random() * colors.length)];
         return range(3).map(() => generateSparkle(color))
     })
     const prefersReducedMotion = usePrefersReducedMotion()
     useRandomInterval(
         () => {
+            const color = colors[Math.floor(Math.random() * colors.length)];
             const sparkle = generateSparkle(color)
             const now = Date.now()
             const nextSparkles = sparkles.filter(sp => {
@@ -61,7 +67,9 @@ const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
                     style={sparkle.style}
                 />
             ))}
-            <ChildWrapper>{children}</ChildWrapper>
+            <ChildWrapper>
+                <span className="linear-wipe">{children}</span>
+            </ChildWrapper>
         </Wrapper>
     )
 }
