@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: '14.15.0'
       - run: npm install
+      - run: cp src/config/ProductionConfig.json src/config/Config.json
       - run: npm run build
       - name: Empty public/ artifact folder
         uses: appleboy/ssh-action@master

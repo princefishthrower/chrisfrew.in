@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
 import Sparkles from "./Sparkles"
+import Config from "../config/Config.json"
 
 export default function LinkPreview(props) {
-    const { url, fallbackTitle } = props
+    const { url, fallbackTitle, fallbackDescription, fallbackImage } = props
     const [preview, setPreview] = useState({
         isLoading: true,
         title: "",
@@ -27,7 +28,7 @@ export default function LinkPreview(props) {
     const fetchSiteData = async () => {
         try {
             const response = await fetch(
-                `${process.env.GATSBY_CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
+                `${Config.CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
             )
             const data = await response.json()
             setPreview({ ...data, isLoading: false })
@@ -53,36 +54,37 @@ export default function LinkPreview(props) {
         )
     }
 
-    if (preview.title && preview.description && preview.image) {
-        // shorten description so it looks nice
-        const maxLength = 150;
-        const description = preview.description.length > maxLength ? `${preview.description.substring(0, maxLength)}...` : preview.description
-        return (
-            <a className="plain-link" href={url}>
-                <div className="linkPreviewWrapper">
-                    <div className="col-left">
-                        <div className="text-container">
-                            <p className="title">
-                                <b>{preview.title}</b>
-                            </p>
-                            <p className="description">{description}</p>
-                            <p className="url">{getHostName(url)}</p>
-                        </div>
-                    </div>
-                    <div className="col-right">
-                        <img src={preview.image} alt={preview.title} />
+    const renderData =
+        preview.title && preview.description && preview.image
+            ? { ...preview }
+            : {
+                  title: fallbackTitle,
+                  description: fallbackDescription,
+                  image: fallbackImage,
+              }
+
+    // shorten description so it looks nice
+    const maxLength = 150
+    const description =
+        renderData.description.length > maxLength
+            ? `${renderData.description.substring(0, maxLength)}...`
+            : renderData.description
+    return (
+        <a className="plain-link" href={url}>
+            <div className="linkPreviewWrapper">
+                <div className="col-left">
+                    <div className="text-container">
+                        <p className="title">
+                            <b>{renderData.title}</b>
+                        </p>
+                        <p className="description">{description}</p>
+                        <p className="url">{getHostName(url)}</p>
                     </div>
                 </div>
-            </a>
-        )
-    }
-
-    return (
-        <>
-            <a className="plain-link" href={url}>
-                {fallbackTitle}
-            </a>
-            <br />
-        </>
+                <div className="col-right">
+                    <img src={renderData.image} alt={renderData.title} />
+                </div>
+            </div>
+        </a>
     )
 }
