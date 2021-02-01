@@ -8,7 +8,6 @@ export default function LinkPreview(props) {
         title: "",
         description: "",
         image: "",
-        url,
     })
 
     const getHostName = url => {
@@ -26,15 +25,13 @@ export default function LinkPreview(props) {
     }
 
     const fetchSiteData = async () => {
-        console.log(process.env)
         try {
             const response = await fetch(
-                `http://api.linkpreview.net/?key=${process.env.GATSBY_LINK_PREVIEW_API_KEY}&q=${url}`
+                `${process.env.GATSBY_CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
             )
             const data = await response.json()
             setPreview({ ...data, isLoading: false })
         } catch (error) {
-            console.log(error)
             setPreview({
                 ...preview,
                 isLoading: false,
@@ -56,7 +53,7 @@ export default function LinkPreview(props) {
         )
     }
 
-    if (preview.title && preview.description && preview.url && preview.image) {
+    if (preview.title && preview.description && preview.image) {
         // shorten description so it looks nice
         const maxLength = 150;
         const description = preview.description.length > maxLength ? `${preview.description.substring(0, maxLength)}...` : preview.description
@@ -69,7 +66,7 @@ export default function LinkPreview(props) {
                                 <b>{preview.title}</b>
                             </p>
                             <p className="description">{description}</p>
-                            <p className="url">{getHostName(preview.url)}</p>
+                            <p className="url">{getHostName(url)}</p>
                         </div>
                     </div>
                     <div className="col-right">

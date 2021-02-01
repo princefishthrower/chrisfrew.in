@@ -15,7 +15,7 @@ jobs:
       - name: Install NPM modules and build Gatsby site
         uses: actions/setup-node@v1
         with:
-          node-version: '12.17.0'
+          node-version: '14.15.0'
       - run: npm install
       - run: npm run build
       - name: Empty public/ artifact folder
@@ -66,3 +66,4 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: "Build complete! Latest commit message:"
+          SLACK_ICON: "https://avatars.slack-edge.com/2021-02-01/1723555500368_e97655869409251d202e_96.jpg"
