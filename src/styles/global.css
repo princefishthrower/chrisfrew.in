@@ -260,15 +260,37 @@ body.dark-mode a {
 }
 html.dark-mode span.token.delimiter.important,
 body.dark-mode span.token.delimiter.important {
-  color: #f25a92 !important;
+  color: #f92672 !important;
 }
 html.dark-mode span.token.keyword,
 body.dark-mode span.token.keyword {
-  color: #f25a92 !important;
+  color: #f92672 !important;
 }
 html.dark-mode span.token.comment,
 body.dark-mode span.token.comment {
   color: #92927c !important;
+}
+html.dark-mode span.token.string,
+html.dark-mode span.token.tag,
+body.dark-mode span.token.string,
+body.dark-mode span.token.tag {
+  color: #ff79c6 !important;
+}
+html.dark-mode span.token.punctuation,
+html.dark-mode span.token.class-name,
+html.dark-mode span.token.operator,
+body.dark-mode span.token.punctuation,
+body.dark-mode span.token.class-name,
+body.dark-mode span.token.operator {
+  color: #8be9fd !important;
+}
+html.dark-mode code,
+body.dark-mode code {
+  color: #8be9fd !important;
+}
+html.dark-mode span.token.function,
+body.dark-mode span.token.function {
+  color: #f1fa8c !important;
 }
 html.dark-mode .monokaiRedFont,
 body.dark-mode .monokaiRedFont {
@@ -285,6 +307,33 @@ body.dark-mode table,
 body.dark-mode th,
 body.dark-mode td {
   border: 1px solid white;
+}
+html.dark-mode .socials-container,
+body.dark-mode .socials-container {
+  text-align: "center";
+  border: 1px solid #e70457;
+  padding: 0.5rem;
+}
+html.dark-mode .linkPreviewWrapper,
+body.dark-mode .linkPreviewWrapper {
+  border: 1px solid white;
+}
+html.dark-mode .linkPreviewWrapper:hover,
+body.dark-mode .linkPreviewWrapper:hover {
+  background-color: #2a2a2a;
+}
+html.dark-mode .linkPreviewWrapper .title,
+body.dark-mode .linkPreviewWrapper .title {
+  font-weight: 900;
+  color: white;
+}
+html.dark-mode .linkPreviewWrapper .description,
+body.dark-mode .linkPreviewWrapper .description {
+  color: white;
+}
+html.dark-mode .linkPreviewWrapper .url,
+body.dark-mode .linkPreviewWrapper .url {
+  color: #f92672;
 }
 html.light-mode,
 body.light-mode {
@@ -320,6 +369,33 @@ body.light-mode table,
 body.light-mode th,
 body.light-mode td {
   border: 1px solid #000000;
+}
+html.light-mode .socials-container,
+body.light-mode .socials-container {
+  text-align: "center";
+  border: 1px solid #f92672;
+  padding: 0.5rem;
+}
+html.light-mode .linkPreviewWrapper,
+body.light-mode .linkPreviewWrapper {
+  border: 1px solid #000000;
+}
+html.light-mode .linkPreviewWrapper:hover,
+body.light-mode .linkPreviewWrapper:hover {
+  background-color: #d3d3d3;
+}
+html.light-mode .linkPreviewWrapper .title,
+body.light-mode .linkPreviewWrapper .title {
+  font-weight: 900;
+  color: #000000;
+}
+html.light-mode .linkPreviewWrapper .description,
+body.light-mode .linkPreviewWrapper .description {
+  color: #000000;
+}
+html.light-mode .linkPreviewWrapper .url,
+body.light-mode .linkPreviewWrapper .url {
+  color: #e70457;
 }
 
 h1,
@@ -490,6 +566,17 @@ pre[class*=language-] > code {
   .pagination a:last-child {
     flex-grow: 0;
   }
+
+  html.dark-mode .linkPreviewWrapper .col-right, html.light-mode .linkPreviewWrapper .col-right,
+body.dark-mode .linkPreviewWrapper .col-right,
+body.light-mode .linkPreviewWrapper .col-right {
+    display: none;
+  }
+  html.dark-mode .linkPreviewWrapper .description, html.light-mode .linkPreviewWrapper .description,
+body.dark-mode .linkPreviewWrapper .description,
+body.light-mode .linkPreviewWrapper .description {
+    display: none;
+  }
 }
 html.dark-mode .gatsby-code-button,
 body.dark-mode .gatsby-code-button {
@@ -579,4 +666,56 @@ button.code-copy-button {
   font-weight: bold !important;
   font-size: 0.75rem !important;
   z-index: 1;
+}
+
+.linkPreviewWrapper {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0;
+  border-radius: 5px;
+  max-height: 160px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.linkPreviewWrapper > h3 {
+  margin: 0;
+}
+.linkPreviewWrapper .col-left {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 16px 20px;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: inherit;
+}
+.linkPreviewWrapper .col-left .text-container {
+  font-size: 15px;
+}
+.linkPreviewWrapper .col-left .text-container > p {
+  margin: 0;
+  padding: 0;
+}
+.linkPreviewWrapper .col-right {
+  display: block;
+  width: 160px;
+  height: 160px;
+  min-width: 160px;
+  min-height: 160px;
+}
+.linkPreviewWrapper .col-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plain-link {
+  color: auto;
+}
+.plain-link:hover {
+  text-decoration: none;
+}
+
+p > img {
+  display: block;
+  margin: 0 auto;
 }

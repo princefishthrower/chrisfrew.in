@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Switcher from "../components/switcher"
 import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
 import { CookiesProvider } from "react-cookie"
+import Image from "gatsby-image"
 import { useCookies } from "react-cookie"
 import Sparkles from "./Sparkles"
 
@@ -21,6 +22,23 @@ const messageOfTheDay = [
 
 const messageOfTheDayIndexCookieKey = "message-of-the-day-index"
 export default function Layout(props) {
+    const data = useStaticQuery(graphql`
+        query LayoutQuery {
+            avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+                childImageSharp {
+                    fixed(width: 500, height: 500) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
+            site {
+                siteMetadata {
+                    author
+                }
+            }
+        }
+    `)
+
     const [cookies, setCookies] = useCookies([messageOfTheDayIndexCookieKey])
     const [shouldRun, setShouldRun] = useState(false)
 
@@ -49,9 +67,8 @@ export default function Layout(props) {
 
     const { location, title, subtitle, children } = props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
-    if (location.pathname === rootPath) {
-        header = (
+    const header =
+        location.pathname === rootPath ? (
             <>
                 <h3
                     className="monokaiRedFont"
@@ -92,11 +109,30 @@ export default function Layout(props) {
                     </Link>
                 </h1>
                 <div style={{ textAlign: "center" }}>
+                <Image
+                        fixed={data.avatar.childImageSharp.fixed}
+                        alt={data.site.siteMetadata.author}
+                        style={{
+                            display: "inline-block",
+                            minWidth: 75,
+                            maxWidth: 75,
+                            minHeight: 75,
+                            maxHeight: 75,
+                            borderRadius: `100%`,
+                            
+                        }}
+                        imgStyle={{
+                            display: "inline-block",
+                            borderRadius: `50%`,
+                            margin: 0
+                        }}
+                    />
                     <a
                         className="h-card"
                         href="https://chrisfrew.in/"
                         rel="me"
                         style={{
+                            display: 'block',
                             boxShadow: `none`,
                             textDecoration: `none`,
                             color: `inherit`,
@@ -104,8 +140,8 @@ export default function Layout(props) {
                             zIndex: 10,
                             fontSize: "0.7rem",
                             fontWeight: "bold",
-                            lineHeight: '0.5rem'
-
+                            lineHeight: "0.5rem",
+                            marginBottom: "0.5rem"
                         }}
                     >
                         by Chris Frewin
@@ -147,27 +183,48 @@ export default function Layout(props) {
                     <span className="monokaiBlueFont">{"/}~"}</span>
                 </h3>
             </>
-        )
-    } else {
-        header = (
+        ) : (
             <>
-                <h3
+                <Link
                     style={{
-                        fontFamily: `Montserrat, sans-serif`,
-                        marginTop: 0,
+                        boxShadow: `none`,
+                        textDecoration: `none`,
+                        color: `inherit`,
                     }}
+                    to={`/`}
                 >
-                    <Link
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center'
+                    }}>
+                    <Image
+                        fixed={data.avatar.childImageSharp.fixed}
+                        alt={data.site.siteMetadata.author}
                         style={{
-                            boxShadow: `none`,
-                            textDecoration: `none`,
-                            color: `inherit`,
+                            display: "inline-block",
+                            minWidth: 50,
+                            maxWidth: 50,
+                            minHeight: 50,
+                            maxHeight: 50,
+                            borderRadius: `100%`,
+                            marginRight: '1rem'
                         }}
-                        to={`/`}
+                        imgStyle={{
+                            display: "inline-block",
+                            borderRadius: `50%`,
+                        }}
+                    />
+                    <h3
+                        style={{
+                            display: "inline-block",
+                            fontFamily: `Montserrat, sans-serif`,
+                            marginTop: 0,
+                        }}
                     >
                         {title}
-                    </Link>
-                </h3>
+                    </h3>
+                    </div>
+                </Link>
                 <h4
                     style={{
                         ...scale(0.5),
@@ -181,7 +238,6 @@ export default function Layout(props) {
                 </h4>
             </>
         )
-    }
 
     return (
         <>
