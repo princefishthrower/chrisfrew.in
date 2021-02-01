@@ -7,9 +7,7 @@ import Sparkles from "./Sparkles"
 export default function Bio() {
     const data = useStaticQuery(graphql`
         query BioQuery {
-            avatar: file(
-                absolutePath: { regex: "/profile-pic.jpg/" }
-            ) {
+            avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
                 childImageSharp {
                     fixed(width: 500, height: 500) {
                         ...GatsbyImageSharpFixed
@@ -24,12 +22,11 @@ export default function Bio() {
         }
     `)
 
-    const { author } = data.site.siteMetadata
     return (
         <>
             <Image
                 fixed={data.avatar.childImageSharp.fixed}
-                alt={author}
+                alt={data.site.siteMetadata.author}
                 style={{
                     display: "block",
                     marginLeft: "auto",
@@ -61,63 +58,82 @@ export default function Bio() {
                     </p>
                     <br />
                     <p>
-                        Ha! I can prove that I'm a <span style={{fontWeight: 'bold'}}>COURSE MASTER</span> now! Check out all my courses and content on:<br/>
-                        <a href="https://www.skillshare.com/user/christopherfrewin">Skillshare</a><br/>
-                        <a href="https://www.udemy.com/user/chris-frewin">Udemy</a><br/>
-                        <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">YouTube</a><br/>
-                        You can also check out the website for <a href="https://fullstackcraft.com" target="_blank" rel="noreferrer"> <Sparkles>Full Stack Craft</Sparkles></a>, the company I put all my full stack educational content under at:<br/>
-                        <a href="https://fullstackcraft.com">fullstackcraft.com</a><br/>
+                        Ha! I can prove that I'm a{" "}
+                        <span style={{ fontWeight: "bold" }}>
+                            COURSE MASTER
+                        </span>{" "}
+                        now! Check out all my courses and content on:
+                        <br />
+                        <a href="https://www.skillshare.com/user/christopherfrewin">
+                            Skillshare
+                        </a>
+                        <br />
+                        <a href="https://www.udemy.com/user/chris-frewin">
+                            Udemy
+                        </a>
+                        <br />
+                        <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">
+                            YouTube
+                        </a>
+                        <br />
+                        You can also check out the website for{" "}
+                        <a
+                            href="https://fullstackcraft.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            {" "}
+                            <Sparkles>Full Stack Craft</Sparkles>
+                        </a>
+                        , the company I put all my full stack educational
+                        content under at:
+                        <br />
+                        <a href="https://fullstackcraft.com">
+                            fullstackcraft.com
+                        </a>
+                        <br />
                     </p>
                     <p>
-                        If I'm not building or teaching full stack software, I'll be found hiking,
-                        skiing, taking pictures, losing money on options,
-                        spoiling homebrew, or creating music and art. I (mostly)
-                        live in Austria.
-                        <br />
-                        <br />
-                        <span
-                            style={{
-                                textAlign: "center",
-                                border: "1px solid #f92672",
-                            }}
+                        If I'm not building or teaching full stack software,
+                        I'll be found hiking, skiing, taking pictures, losing
+                        money on options, spoiling homebrew, or creating music
+                        and art. I (mostly) live in Austria.
+                    </p>
+                    <br />
+                    <br />
+                    <div className="socials-container">
+                        <a href="https://instagram.com/_chrisfrewin_" rel="me">
+                            Instagram
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a href="https://chrisfrewin.medium.com" rel="me">
+                            Medium
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a href="https://twitter.com/Galt_" rel="me">
+                            Twitter
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a href="https://github.com/princefishthrower" rel="me">
+                            GitHub
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a
+                            href="https://reddit.com/user/trollerroller"
+                            rel="me"
                         >
-                            <a
-                                href="https://instagram.com/_chrisfrewin_"
-                                rel="me"
-                            >
-                                Instagram
-                            </a>
-                            &nbsp; | &nbsp;
-                            <a href="https://chrisfrewin.medium.com" rel="me">
-                                Medium
-                            </a>
-                            &nbsp; | &nbsp;
-                            <a href="https://twitter.com/Galt_" rel="me">
-                                Twitter
-                            </a>
-                            &nbsp; | &nbsp;
-                            <a
-                                href="https://github.com/princefishthrower"
-                                rel="me"
-                            >
-                                GitHub
-                            </a>
-                            &nbsp; | &nbsp;
-                            <a
-                                href="https://reddit.com/user/trollerroller"
-                                rel="me"
-                            >
-                                Reddit
-                            </a>
-                            &nbsp; | &nbsp;
-                            <a
-                                className="u-email"
-                                href="mailto:frewin.christopher@gmail.com"
-                                rel="me"
-                            >
-                                Email
-                            </a>
-                        </span>
+                            Reddit
+                        </a>
+                        &nbsp; | &nbsp;
+                        <a
+                            className="u-email"
+                            href="mailto:frewin.christopher@gmail.com"
+                            rel="me"
+                        >
+                            Email
+                        </a>
+                    </div>
+                    <p>
                         <br />
                         I'm a proud member of the{" "}
                         <a

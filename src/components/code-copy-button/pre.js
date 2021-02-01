@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import github from "prism-react-renderer/themes/github"
-import nightOwl from "prism-react-renderer/themes/nightOwl"
+import nightOwl from "prism-react-renderer/themes/dracula"
 import Confetti from "react-dom-confetti"
 import { colors } from "../../constants/constants"
 import { ThemeContext } from "../../context/ThemeContext"
