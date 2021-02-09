@@ -218,7 +218,7 @@ export default function Layout(props) {
                         style={{
                             display: "inline-block",
                             fontFamily: `Montserrat, sans-serif`,
-                            marginTop: 0,
+                            margin: 0,
                         }}
                     >
                         {title}
