@@ -1,4 +1,6 @@
 #  chrisfrew.in Full Stack Blog Website Source
 
-This blog was once, in a galaxy far far away, based off of the [Gatsby Start Blog](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/), and has been optimized for lighthouse by following WCAG standards and doing things like GZIP compression and pagination to make each page load extremely fast. Typical Google Lighthouse scores are 100 across the board.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43adef7d-ab80-4c63-80cb-f820c5a3b613/deploy-status)](https://app.netlify.com/sites/chrisfrewin/deploys)
+
+The source for my personal blog, chrisfrew.in and chrisfrewin.com
 
