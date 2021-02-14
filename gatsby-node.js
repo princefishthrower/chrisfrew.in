@@ -38,20 +38,18 @@ exports.createPages = async ({ graphql, actions }) => {
     // Create blog listing pages
     const numPages = Math.ceil(posts.length / constants.postsPerPage)
     Array.from({ length: numPages }).forEach((_, i) => {
-        if (i !== 0) {
-            const path = `/blog-page-${i + 1}`
-            createPage({
-                path,
-                component: blogPostListing,
-                context: {
-                    limit: constants.postsPerPage,
-                    skip: i * constants.postsPerPage,
-                    numPages,
-                    currentPage: i + 1,
-                },
-            })
-            console.log(`created page at "${path}" !`)
-        }
+        const path = i === 0 ? `/` : `/blog-page-${i + 1}`
+        createPage({
+            path,
+            component: blogPostListing,
+            context: {
+                limit: constants.postsPerPage,
+                skip: i * constants.postsPerPage,
+                numPages,
+                currentPage: i + 1,
+            },
+        })
+        console.log(`created page at "${path}" !`)
     })
 
     // Create blog posts pages.
