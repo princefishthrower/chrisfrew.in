@@ -7,8 +7,7 @@ import { rhythm } from "../utils/typography"
 import Paginator from "../components/paginator"
 import EmailForm from "../components/email-form"
 
-const BlogPostListing = props => {
-    const { data, location } = props
+const BlogPostListing = ({ data, location }) => {
     const title = data.site.siteMetadata.title
     const description = data.site.siteMetadata.description
     const subtitle = data.site.siteMetadata.subtitle
