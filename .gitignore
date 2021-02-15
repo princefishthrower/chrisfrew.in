@@ -72,3 +72,6 @@ yarn-error.log
 
 # Github workflow artifacts folder
 github-workflow-artifacts
+
+# Local Netlify folder
+.netlify

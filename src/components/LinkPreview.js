@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import Sparkles from "./Sparkles"
-import Config from "../config/Config.json"
 
 export default function LinkPreview(props) {
     const { url, fallbackTitle, fallbackDescription, fallbackImage } = props
@@ -28,7 +27,7 @@ export default function LinkPreview(props) {
     const fetchSiteData = async () => {
         try {
             const response = await fetch(
-                `${Config.CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
+                `${process.env.CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
             )
             const data = await response.json()
             setPreview({ ...data, isLoading: false })
