@@ -53,13 +53,13 @@
   width: 20px;
   left: 4px;
   bottom: 4px;
-  background-color: #000000;
+  background-color: #191919;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #000000;
+  background-color: #191919;
 }
 
 input:checked + .slider:before {
@@ -67,7 +67,7 @@ input:checked + .slider:before {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #000000;
+  box-shadow: 0 0 1px #191919;
 }
 
 input:checked + .slider:before {
@@ -133,10 +133,10 @@ input:checked + .slider:before {
 }
 .pagination a:hover {
   text-decoration: none;
-  color: #000000;
+  color: #191919;
 }
 .pagination button {
-  color: #000000;
+  color: #191919;
   text-decoration: none;
   display: block;
   max-width: 3rem;
@@ -161,7 +161,7 @@ input:checked + .slider:before {
     background-color: #f92672;
   }
   to {
-    background-color: #000000;
+    background-color: #191919;
   }
 }
 @keyframes highlightAndFadeLight {
@@ -193,7 +193,7 @@ input:checked + .slider:before {
 
 html.dark-mode #mc_embed_signup input[type=submit],
 body.dark-mode #mc_embed_signup input[type=submit] {
-  color: #000000;
+  color: #191919;
   background-color: #f92672;
 }
 html.dark-mode #mc_embed_signup input[type=submit]:hover,
@@ -214,7 +214,7 @@ body.light-mode #mc_embed_signup input[type=submit] {
 html.light-mode #mc_embed_signup input[type=submit]:hover,
 body.light-mode #mc_embed_signup input[type=submit]:hover {
   color: #f92672;
-  background-color: #000000;
+  background-color: #191919;
 }
 html.light-mode #mc_embed_signup .label,
 body.light-mode #mc_embed_signup .label {
@@ -245,7 +245,7 @@ body {
 }
 html.dark-mode,
 body.dark-mode {
-  background-color: #000000;
+  background-color: #191919;
   color: white;
 }
 html.dark-mode blockquote,
@@ -338,11 +338,11 @@ body.dark-mode .linkPreviewWrapper .url {
 html.light-mode,
 body.light-mode {
   background-color: white;
-  color: #000000;
+  color: #191919;
 }
 html.light-mode blockquote,
 body.light-mode blockquote {
-  color: #000000;
+  color: #191919;
   border-left: 4px solid rgba(0, 0, 0, 0.5);
 }
 html.light-mode a,
@@ -360,7 +360,7 @@ body.light-mode .monokaiRedFont {
 }
 html.light-mode .switcherFont,
 body.light-mode .switcherFont {
-  color: #000000;
+  color: #191919;
 }
 html.light-mode table,
 html.light-mode th,
@@ -368,7 +368,7 @@ html.light-mode td,
 body.light-mode table,
 body.light-mode th,
 body.light-mode td {
-  border: 1px solid #000000;
+  border: 1px solid #191919;
 }
 html.light-mode .socials-container,
 body.light-mode .socials-container {
@@ -378,7 +378,7 @@ body.light-mode .socials-container {
 }
 html.light-mode .linkPreviewWrapper,
 body.light-mode .linkPreviewWrapper {
-  border: 1px solid #000000;
+  border: 1px solid #191919;
 }
 html.light-mode .linkPreviewWrapper:hover,
 body.light-mode .linkPreviewWrapper:hover {
@@ -387,11 +387,11 @@ body.light-mode .linkPreviewWrapper:hover {
 html.light-mode .linkPreviewWrapper .title,
 body.light-mode .linkPreviewWrapper .title {
   font-weight: 900;
-  color: #000000;
+  color: #191919;
 }
 html.light-mode .linkPreviewWrapper .description,
 body.light-mode .linkPreviewWrapper .description {
-  color: #000000;
+  color: #191919;
 }
 html.light-mode .linkPreviewWrapper .url,
 body.light-mode .linkPreviewWrapper .url {
@@ -600,7 +600,7 @@ body.dark-mode .gatsby-code-button .gatsby-code-button-icon {
 }
 html.light-mode .gatsby-code-button,
 body.light-mode .gatsby-code-button {
-  color: #000000;
+  color: #191919;
 }
 html.light-mode .gatsby-code-button:hover .gatsby-code-button-icon,
 body.light-mode .gatsby-code-button:hover .gatsby-code-button-icon {
@@ -612,7 +612,7 @@ body.light-mode .gatsby-code-button::after {
 }
 html.light-mode .gatsby-code-button .gatsby-code-button-icon,
 body.light-mode .gatsby-code-button .gatsby-code-button-icon {
-  fill: #000000;
+  fill: #191919;
 }
 
 @keyframes hover {

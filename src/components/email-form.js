@@ -48,8 +48,8 @@ export default function EmailForm() {
                 </div>
             </form>
             <span className="small">
-                <span className="green-text"><b>I keep it super simple:</b></span> you'll get an email from me <span className="green-text"><b>once every Wednesday
-                at 7 AM (EST; +5 UTC)</b></span> if there were any new blog posts in the past week! I don't run annoying popups or marketing banners. This little form right here is the only way to subscribe.
+                <span className="green-text"><b>I keep it super simple:</b></span> you'll get an email from this blog <span className="green-text"><b>once every Wednesday
+                at 7 AM EST (+5 UTC)</b></span> if there were any new blog posts in the past week! I don't run annoying popups or marketing banners. This little form right here is the only way to subscribe.
                 Thanks for subscribing!
             </span>
         </div>

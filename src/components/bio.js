@@ -154,7 +154,7 @@ export default function Bio() {
                         !<br />
                         <br />
                         <span>
-                            Sites and products I've built solo or co-developed:
+                            Sites and products I've built solo:
                         </span>
                         <br />
                         <br />
@@ -173,7 +173,7 @@ export default function Bio() {
                         >
                             rœst.coffee
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
                             href="https://sirenapparel.us"
@@ -182,16 +182,16 @@ export default function Bio() {
                         >
                             sirenapparel.us
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
-                            href="https://chrisfrew.in/nlp-champs"
+                            href="https://nlp-champs.chrisfrew.in"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            chrisfrew.in/nlp-champs (formerly nlp-champs.com)
+                            nlp-champs.chrisfrew.in (formerly nlp-champs.com)
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
                             href="https://seelengeflüster-tirol.com"
@@ -200,7 +200,7 @@ export default function Bio() {
                         >
                             seelengeflüster-tirol.com
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
                             href="https://wallstreetbetswally.github.io"
@@ -209,25 +209,25 @@ export default function Bio() {
                         >
                             wallstreetbetswally.github.io
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
-                            href="https://chrisfrew.in/invaders"
+                            href="https://princefishthrower.github.io/invaders/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            chrisfrew.in/invaders
+                            princefishthrower.github.io/invaders
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
-                            href="https://chrisfrew.in/portfolio"
+                            href="https://portfolio.chrisfrew.in/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            chrisfrew.in/portfolio
+                            portfolio.chrisfrew.in
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
                             href="https://fullstackcraft.com"
@@ -236,16 +236,16 @@ export default function Bio() {
                         >
                             fullstackcraft.com
                         </a>{" "}
-                        (Solo)
+                        
                         <br />
                         <a
-                            href="https://risch-shoes.com"
+                            href="https://wheelscreener.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            risch-shoes.com
+                            wheelscreener.com
                         </a>{" "}
-                        (Co-Developed)
+                        
                     </p>
                 </div>
             </div>
