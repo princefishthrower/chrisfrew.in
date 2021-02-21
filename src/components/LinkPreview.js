@@ -27,7 +27,7 @@ export default function LinkPreview(props) {
     const fetchSiteData = async () => {
         try {
             const response = await fetch(
-                `${process.env.CHRISFREW_IN_API_URL}LinkPreview?url=${url}`
+                `${process.env.GATSBY_CHRISFREW_IN_API_URL}/LinkPreview?url=${url}`
             )
             const data = await response.json()
             setPreview({ ...data, isLoading: false })
