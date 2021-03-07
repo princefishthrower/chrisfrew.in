@@ -5,16 +5,18 @@ import Switcher from "../components/switcher"
 import ConfettiContainer from "./confetti-container"
 import monetizedLoop from "../images/monetized_loop.svg"
 import { CookiesProvider } from "react-cookie"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useCookies } from "react-cookie"
 import Sparkles from "./Sparkles"
 
 const messageOfTheDay = [
     "💯 make strong types great again! 💯",
     "👨‍💻👩‍💻 because we have to 👨‍💻👩‍💻",
-    "💻 recursive recursion 💻",
+    "💻 recursively recurring 💻",
     "🐵 code monkey 🐵",
     "🚀 my terminals are burnin'! 🚀",
+    "⏫ stacking the full stack ⏫",
+    "💥 bashing the bash [~]$> 💥",
     "🍻 enjoy & cheers! 🍻",
     "🤔 what's a software? 🤔",
     "🤓 sir, best framework? 🤓",
@@ -26,9 +28,7 @@ export default function Layout(props) {
         query LayoutQuery {
             avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
                 childImageSharp {
-                    fixed(width: 500, height: 500) {
-                        ...GatsbyImageSharpFixed
-                    }
+                    gatsbyImageData(layout: FIXED)
                 }
             }
             site {
@@ -109,8 +109,8 @@ export default function Layout(props) {
                     </Link>
                 </h1>
                 <div style={{ textAlign: "center" }}>
-                <Image
-                        fixed={data.avatar.childImageSharp.fixed}
+                <GatsbyImage
+                        image={data.avatar.childImageSharp.gatsbyImageData}
                         alt={data.site.siteMetadata.author}
                         style={{
                             display: "inline-block",
@@ -197,8 +197,8 @@ export default function Layout(props) {
                         display: 'flex',
                         alignItems: 'center'
                     }}>
-                    <Image
-                        fixed={data.avatar.childImageSharp.fixed}
+                    <GatsbyImage
+                        image={data.avatar.childImageSharp.gatsbyImageData}
                         alt={data.site.siteMetadata.author}
                         style={{
                             display: "inline-block",

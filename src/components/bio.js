@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { rhythm } from "../utils/typography"
 import Sparkles from "./Sparkles"
 
@@ -9,9 +9,7 @@ export default function Bio() {
         query BioQuery {
             avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
                 childImageSharp {
-                    fixed(width: 500, height: 500) {
-                        ...GatsbyImageSharpFixed
-                    }
+                    gatsbyImageData(layout: FIXED)
                 }
             }
             site {
@@ -24,8 +22,8 @@ export default function Bio() {
 
     return (
         <>
-            <Image
-                fixed={data.avatar.childImageSharp.fixed}
+            <GatsbyImage
+                image={data.avatar.childImageSharp.gatsbyImageData}
                 alt={data.site.siteMetadata.author}
                 style={{
                     display: "block",
