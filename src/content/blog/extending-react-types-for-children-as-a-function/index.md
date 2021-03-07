@@ -4,14 +4,6 @@ description: Sorting or filtering child components? You've come to the right pla
 date: "2021-01-19"
 ---
 
-```typescript
-type ObjectKeys<T> = 
-  T extends object ? (keyof T)[] :
-  T extends number ? [] :
-  T extends Array<any> | string ? string[] :
-  never;
-```
-
 [This post is mirrored on my Medium account.](https://chrisfrewin.medium.com/extending-react-standard-types-to-allow-for-children-as-a-function-ba7fdde52e0b)
 
 
