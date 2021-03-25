@@ -70,11 +70,15 @@ export default function Bio() {
                             Udemy
                         </a>
                         <br />
+                        <a href="https://www.tutorialspoint.com/videotutorials/profile/christopher_frewin">
+                            Tutorialspoint
+                        </a>
+                        <br />
                         <a href="https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw">
                             YouTube
                         </a>
                         <br />
-                        You can also check out the website for{" "}
+                        You can also check out
                         <a
                             href="https://fullstackcraft.com"
                             target="_blank"
@@ -84,11 +88,7 @@ export default function Bio() {
                             <Sparkles>Full Stack Craft</Sparkles>
                         </a>
                         , the company I put all my full stack educational
-                        content under at:
-                        <br />
-                        <a href="https://fullstackcraft.com">
-                            fullstackcraft.com
-                        </a>
+                        content under!
                         <br />
                     </p>
                     <p>
@@ -97,8 +97,6 @@ export default function Bio() {
                         money on options, spoiling homebrew, or creating music
                         and art. I (mostly) live in Austria.
                     </p>
-                    <br />
-                    <br />
                     <div className="socials-container">
                         <a href="https://instagram.com/_chrisfrewin_" rel="me">
                             Instagram
@@ -156,6 +154,14 @@ export default function Bio() {
                         </span>
                         <br />
                         <br />
+                        <a
+                            href="https://wheelscreener.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            wheelscreener.com
+                        </a>{" "}
+                        <br/>
                         <a
                             href="https://rœst.com"
                             target="_blank"
@@ -236,13 +242,7 @@ export default function Bio() {
                         </a>{" "}
                         
                         <br />
-                        <a
-                            href="https://wheelscreener.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            wheelscreener.com
-                        </a>{" "}
+                        
                         
                     </p>
                 </div>

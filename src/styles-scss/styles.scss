@@ -184,6 +184,14 @@ body {
     }
 }
 
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 h1,
 h2 {
     border-bottom: none;
@@ -192,6 +200,14 @@ h2 {
 header {
     z-index: 20;
     position: relative;
+}
+
+.blog-post-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 footer {
