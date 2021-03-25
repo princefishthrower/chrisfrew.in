@@ -1,0 +1,64 @@
+import React from "react"
+import { Link } from "gatsby"
+export default function FivePartProductSeries(props) {
+    const { dontLinkURL, isProductPage } = props
+    const thisPostText = "(This Post!)"
+
+    const configs = [
+        {
+            link: "/blog/im-launching-five-profitable-products-in-2021",
+            label: "Introduction and Overview Post",
+        },
+        {
+            link: "/blog/releasing-5-products-in-2021-part-1-the-wheel-screener",
+            label: "Product 1: The Wheel Screener",
+        },
+        { link: "", label: "Product 2: ReduxPlate (Details Coming Soon!)" },
+        { link: "", label: "Product 3: Mail Your Rep (Details Coming Soon!)" },
+        { link: "", label: "Product 4: ??? (Undetermined) " },
+        {
+            link: "",
+            label:
+                "Product 5: Five Grand Challenges for the Next Five Decades: A Novel (Stretch goal to try and reach by the end of 2021)",
+        },
+    ]
+
+    return (
+        <>
+            <i>
+                <p>
+                    This "Products of 2021" series will be a total of six posts. The first is the introduction to the series itself. The five product links will be updated
+                    throughout 2021 as I release the products to the world. These links will be pinned to the
+                    top of each post in the series.
+                </p>
+                <ul>
+                    {configs.map((config, index) => {
+                        const text =
+                            dontLinkURL === config.link
+                                ? `${config.label} ${thisPostText}`
+                                : config.label
+                        if (config.link === "" || dontLinkURL === config.link) {
+                            return <li key={index}>{text}</li>
+                        }
+
+                        return (
+                            <li key={index}>
+                                <Link to={config.link}>{text}</Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+                {isProductPage && (
+                    <p>
+                        These product posts will all have the same format for
+                        readability. They will always have the same three sections:<br/><br/>1. 'Product
+                        Overview', where I describe the product itself.<br/>2. 'Key
+                        Takeaways From Launch', where I discuss everything I've learned from
+                        before and after launch.<br/>3. 'Next Steps', where I
+                        mention what I am planning to develop further for the product.
+                    </p>
+                )}
+            </i>
+        </>
+    )
+}

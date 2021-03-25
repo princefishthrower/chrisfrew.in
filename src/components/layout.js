@@ -109,7 +109,7 @@ export default function Layout(props) {
                     </Link>
                 </h1>
                 <div style={{ textAlign: "center" }}>
-                <GatsbyImage
+                    <GatsbyImage
                         image={data.avatar.childImageSharp.gatsbyImageData}
                         alt={data.site.siteMetadata.author}
                         style={{
@@ -119,12 +119,11 @@ export default function Layout(props) {
                             minHeight: 75,
                             maxHeight: 75,
                             borderRadius: `100%`,
-                            
                         }}
                         imgStyle={{
                             display: "inline-block",
                             borderRadius: `50%`,
-                            margin: 0
+                            margin: 0,
                         }}
                     />
                     <a
@@ -132,7 +131,7 @@ export default function Layout(props) {
                         href="https://chrisfrew.in/"
                         rel="me"
                         style={{
-                            display: 'block',
+                            display: "block",
                             boxShadow: `none`,
                             textDecoration: `none`,
                             color: `inherit`,
@@ -141,10 +140,43 @@ export default function Layout(props) {
                             fontSize: "0.7rem",
                             fontWeight: "bold",
                             lineHeight: "0.5rem",
-                            marginBottom: "0.5rem"
+                            marginBottom: "0.5rem",
                         }}
                     >
                         by Chris Frewin
+                    </a>
+                    <a
+
+                        href="https://twitter.com/fullStackChris_"
+                        rel="me"
+                        style={{
+                            display: "flex",
+                            flexDirection: "flex-row",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            boxShadow: `none`,
+                            textDecoration: `none`,
+                            color: `inherit`,
+                            position: `relative`,
+                            zIndex: 10,
+                            fontSize: "0.7rem",
+                            fontWeight: "bold",
+                            lineHeight: "0.5rem",
+                            marginBottom: "0.5rem",
+                            color: '#3BA9EE'
+                        }}
+                    >
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{ height: "20px", width: "20px" }}
+                        viewBox="328 355 335 276"
+                    >
+                        <path
+                            fill="#3BA9EE"
+                            d="M630 425a195 195 0 01-299 175 142 142 0 0097-30 70 70 0 01-58-47 70 70 0 0031-2 70 70 0 01-57-66 70 70 0 0028 5 70 70 0 01-18-90 195 195 0 00141 72 67 67 0 01116-62 117 117 0 0043-17 65 65 0 01-31 38 117 117 0 0039-11 65 65 0 01-32 35z"
+                        />
+                    </svg>
+                        @fullStackChris_
                     </a>
                 </div>
                 <h2
@@ -193,36 +225,38 @@ export default function Layout(props) {
                     }}
                     to={`/`}
                 >
-                    <div style={{
-                        display: 'flex',
-                        alignItems: 'center'
-                    }}>
-                    <GatsbyImage
-                        image={data.avatar.childImageSharp.gatsbyImageData}
-                        alt={data.site.siteMetadata.author}
+                    <div
                         style={{
-                            display: "inline-block",
-                            minWidth: 50,
-                            maxWidth: 50,
-                            minHeight: 50,
-                            maxHeight: 50,
-                            borderRadius: `100%`,
-                            marginRight: '1rem'
-                        }}
-                        imgStyle={{
-                            display: "inline-block",
-                            borderRadius: `50%`,
-                        }}
-                    />
-                    <h3
-                        style={{
-                            display: "inline-block",
-                            fontFamily: `Montserrat, sans-serif`,
-                            margin: 0,
+                            display: "flex",
+                            alignItems: "center",
                         }}
                     >
-                        {title}
-                    </h3>
+                        <GatsbyImage
+                            image={data.avatar.childImageSharp.gatsbyImageData}
+                            alt={data.site.siteMetadata.author}
+                            style={{
+                                display: "inline-block",
+                                minWidth: 50,
+                                maxWidth: 50,
+                                minHeight: 50,
+                                maxHeight: 50,
+                                borderRadius: `100%`,
+                                marginRight: "1rem",
+                            }}
+                            imgStyle={{
+                                display: "inline-block",
+                                borderRadius: `50%`,
+                            }}
+                        />
+                        <h3
+                            style={{
+                                display: "inline-block",
+                                fontFamily: `Montserrat, sans-serif`,
+                                margin: 0,
+                            }}
+                        >
+                            {title}
+                        </h3>
                     </div>
                 </Link>
                 <h4
