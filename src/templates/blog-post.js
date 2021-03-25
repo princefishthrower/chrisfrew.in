@@ -85,10 +85,10 @@ class BlogPost extends React.Component {
                     </header>
                     <MDXRenderer>{post.body}</MDXRenderer>
                     <Disqus config={disqusConfig} />
-                    <footer>
+                    <div className="blog-post-footer">
                         <Bio />
                         <EmailForm/>
-                    </footer>
+                    </div>
                 </article>
 
                 <nav>
