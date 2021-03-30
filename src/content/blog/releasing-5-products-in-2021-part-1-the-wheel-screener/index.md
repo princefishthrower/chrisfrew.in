@@ -1,11 +1,11 @@
 ---
-title: "Releasing 5 Products in 2021, Part 1: The Wheel Screener"
+title: "Releasing Five Products in 2021, Part 1: The Wheel Screener"
 description: "Insights from the frontlines of a SaaS product release: an advanced cash secured put (CSP) and covered call (CC) options screener."
 date: "2021-03-25"
 draft: false
 ---
 
-import FivePartProductSeries from "../../../components/FivePartProductSeries"
+import FivePartProductSeries from "../../../components/utils/FivePartProductSeries"
 
 <FivePartProductSeries dontLinkURL="/blog/releasing-5-products-in-2021-part-1-the-wheel-screener" isProductPage="true"/>
 

@@ -1,0 +1,44 @@
+---
+title: "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)"
+description: "How to Convert RAW16 to CHAR22 Material IDs in SAP EWM (and vice-versa)"
+date: "2018-09-09"
+---
+
+So, in SAP EWM, there are a few formats that material IDs, MATID are stored (similar to material numbers, MATNR, in ERP systems). Some of the two most popular formats are the `RAW16` format, as is used many EWM monitor functions usually, in the export structure that is often named simply `et_data`, for example in the EWM monitor function module `/SCWM/HUITM_OVERVIEW_MON`, of type `/scwm/tt_huitm_mon`, in which it's line type `/SCWM/S_HUITM_MON` uses the `RAW16` type `/SCWM/DE_MATID`. Then there is the larger `CHAR22` format, which is used as the type for the key field of MATID in the database table `/SAPAPO/MARM`.
+
+I'll admit, this is nearly a copy of the post by John Kristensen at [https://sap.sd/matid](https://sap.sd/matid), and I give him 99% of the credit, _however,_ for your benefit, I've provided **complete copy-paste-able code examples** so you can see exactly how the function works:
+          
+```abap
+DATA: lv_matid_16 TYPE /SCWM/DE_MATID, " used in EWM monitor fields like 
+lv_matid_22 TYPE /SAPAPO/MATID. " used in database table key field as in database table /SAPAPO/MARM
+
+CALL FUNCTION '/SCMB/MDL_GUID_CONVERT'
+  EXPORTING
+    IV_GUID16       = lv_matid_16
+  IMPORTING
+    EV_GUID22       = lv_matid_22.
+```
+
+...and, the nice thing about this function is that it can do the conversion the other way around (note the change in the name of the input and output parameters):
+
+```abap
+CALL FUNCTION '/SCMB/MDL_GUID_CONVERT'
+  EXPORTING
+    IV_GUID22       = lv_matid_22
+  IMPORTING
+    EV_GUID16       = lv_matid_16.
+```
+
+And that's it!
+
+I know in starting this blog I originally stated I would be adding a lot more about SAPUI5 and EWM and other neat ERP programs. While I <em>have</em> written some posts on ERP-sided programs, I've yet to touch SAPUI5 or EWM. I promise I'll get to it at some point!
+
+Cheers! 🍺
+
+Chris
+
+
+
+
+
+

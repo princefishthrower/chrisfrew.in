@@ -1,63 +1,46 @@
-const emoji = require(`remark-emoji`)
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
     title: `Chris' Full Stack Blog`,
     subtitle: `A professional software engineering blog.`,
     author: `Chris Frewin`,
-    description: `Explore a variety of in-depth and professional software engineering tutorials. Featuring JavaScript, React, C#, ABAP, SAPUI5, and everything in between.`,
+    description: `A professional, high-quality, full stack software engineering blog. Featuring JavaScript, TypeScript, React, C#, ABAP, SAPUI5, and everything in between.`,
     siteUrl: `https://chrisfrew.in/`,
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-web-monetization`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        paymentPointer: `$ilp.uphold.com/BJGXHRXaMM8Z`,
-      }
+        name: `content`,
+        path: path.join(__dirname, `src`, `content`),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content`,
-        name: `content`,
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        remarkPlugins: [emoji],
+        remarkPlugins: [require(`remark-math`), require(`remark-html-katex`)],
         gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`
-            }
-          },
-          {
-            resolve: `gatsby-remark-footnotes`,
-            options: {
-              footnoteBackRefDisplay: `inline`,
-              footnoteBackRefInnerText: `\u21E7 Back Up`,
-              footnoteBackRefAnchorStyle: `font-size: 0.75rem;`
-            },
-          },
-          `gatsby-remark-smartypants`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
+          // {
+          //   resolve: `gatsby-remark-footnotes`,
+          //   options: {
+          //     footnoteBackRefDisplay: `inline`,
+          //     footnoteBackRefInnerText: `\u21E7 Back Up`,
+          //     footnoteBackRefAnchorStyle: `font-size: 0.75rem;`
+          //   },
+          // },
+          `gatsby-remark-images`
         ],
       },
     },
@@ -104,7 +87,9 @@ module.exports = {
                     node {
                       excerpt
                       body
-                      fields { slug }
+                      fields { 
+                        slug 
+                      }
                       frontmatter {
                         title
                         date
@@ -141,18 +126,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `chrisfrew-in`
-      }
-    },
   ],
 }

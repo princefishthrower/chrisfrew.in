@@ -1,0 +1,149 @@
+// universal nav styles
+.nav {
+    transition: all 0.4s !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    .tiny {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    a {
+        font-weight: 900;
+    }
+}
+
+.dark-mode .nav {
+    background-color: $darkColor;
+    border-left-color: $monokaiRedDarkMode;
+    border-bottom-color: $monokaiBlue;
+    border-right-color: $monokaiYellow;
+    border-top-color: $monokaiGreen;
+}
+
+.light-mode .nav {
+    background-color: $lightColor;
+    border-left-color: $monokaiRedLightMode;
+    border-bottom-color: $monokaiBlue;
+    border-right-color: $monokaiYellow;
+    border-top-color: $monokaiGreen;
+}
+
+.nav-large {
+    
+    height: $navHeight;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100;
+    padding: 0.5rem;
+    border: $borderThickness dashed;
+    box-sizing: border-box;
+}
+
+.dark-mode .nav-large {
+    background-color: $darkColor;
+    border-left-color: $monokaiRedDarkMode;
+    border-bottom-color: $monokaiBlue;
+    border-right-color: $monokaiYellow;
+    border-top-color: $monokaiGreen;
+
+    .tiny {
+        color: $monokaiRedDarkMode;
+    }
+
+    a:nth-child(2) {
+        color: $monokaiRedDarkMode;
+    }
+
+    a:nth-child(3) {
+        color: $monokaiYellow;
+    }
+
+    a:nth-child(4) {
+        color: $monokaiBlue;
+    }
+}
+
+.light-mode .nav-large {
+    .tiny {
+        color: $monokaiRedLightMode;
+    }
+}
+
+.dark-mode .nav-large {
+    .tiny {
+        color: $monokaiRedDarkMode;
+    }
+}
+
+.nav-medium {
+    width: $navWidthMedium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 100;
+    padding: 0.5rem;
+    border: $borderThickness dashed;
+    box-sizing: border-box;
+
+    .tiny {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    a, h3 {
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+    a:not(:first-child) {
+        transform: rotate(270deg) translate(1rem);
+    }
+}
+
+
+.nav-small {
+    width: $navWidthSmall;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 100;
+    padding: 0.5rem;
+    border: $borderThickness dashed;
+    box-sizing: border-box;
+
+    .tiny {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    a, h3 {
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+    a {
+        transform: rotate(270deg);
+    }
+    a:first-child {
+        transform: rotate(270deg) translate(-0.5rem);
+    }
+    span.emoji {
+        cursor: pointer;
+        font-size: 0.7rem;
+        margin-right: 0.2rem;
+    }
+}

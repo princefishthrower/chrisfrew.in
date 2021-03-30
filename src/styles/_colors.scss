@@ -1,0 +1,34 @@
+$darkColor: #191919;
+$lightColor: white;
+$monokaiRedDarkMode: #f92672;
+$monokaiRedLightMode: #e70457;
+$monokaiGreen: #27dea7;
+$monokaiBlue: #62d3e9;
+$monokaiYellow: #F7D163;
+$monokaiOrange: #FD9720;
+$typeScriptBlue: #2F74C0; 
+$javaScriptYellow: #EFD81C;
+// some color utils
+.fillMonokaiBlue {
+    fill: $monokaiBlue;
+}
+
+.fillMonokaiYellow {
+    fill: $monokaiYellow;
+}
+
+.fillMonokaiOrange {
+    fill: $monokaiOrange;
+}
+
+.fillMonokaiRedDarkMode {
+    fill: $monokaiRedDarkMode;
+}
+
+.typescript {
+    color: $typeScriptBlue;
+}
+
+.javascript {
+    color: $javaScriptYellow;
+}

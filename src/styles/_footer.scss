@@ -1,0 +1,72 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    justify-content: space-around;
+    border: $borderThickness dashed;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+// large screens (width greater than 1400px)
+@media only screen and (min-width: $large) {
+    footer {
+        width: 100%;
+    }
+}
+
+// medium screens (width less than 1400px but greater than 600px)
+@media only screen and (max-width: $largeOffset) and (min-width: $medium) {
+    footer {
+        width: calc(100% - #{$navWidthMedium} + #{$borderThickness});
+        margin-left: calc(#{$navWidthMedium} - #{$borderThickness});
+    }
+}
+
+// small styles (width less than 600px)
+@media only screen and (max-width: $mediumOffset) {
+    footer {
+        // width: calc(100% - #{$navWidthSmall} + 3*#{$borderThickness});
+        margin-left: calc(#{$navWidthSmall} - #{$borderThickness});
+    }
+}
+
+.dark-mode footer {
+    background-color: $darkColor;
+    border-left-color: $monokaiRedDarkMode;
+    border-bottom-color: $monokaiBlue;
+    border-right-color: $monokaiYellow;
+    border-top-color: $monokaiGreen;
+}
+
+.light-mode footer {
+    background-color: $lightColor;
+    border-left-color: $monokaiRedLightMode;
+    border-bottom-color: $monokaiBlue;
+    border-right-color: $monokaiGreen;
+    border-top-color: $monokaiYellow;
+}
+
+// subscribe form can be full width
+footer > :nth-child(1) {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+footer > :nth-child(2) {
+    margin: 1rem;
+}
+
+footer > :nth-child(3) {
+    margin: 1rem;
+}
+
+footer > :nth-child(4) {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+}

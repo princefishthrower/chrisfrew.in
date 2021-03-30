@@ -1,0 +1,30 @@
+.page-wrapper {
+    padding: 2rem;
+}
+
+// large styles
+@media only screen and (min-width: $large) {
+    .page-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $navHeight;
+        max-width: 960px;
+    }
+}
+
+// medium screens (width less than 1400px but greater than 600px)
+@media only screen and (max-width: $largeOffset) and (min-width: $medium) {
+    .page-wrapper {
+        margin-left: $navWidthMedium;
+        max-width: calc(100% - #{$navWidthMedium})
+    }
+}
+
+// small styles (width less than 600px)
+@media only screen and (max-width: $mediumOffset) {
+    .page-wrapper {
+        margin-left: $navWidthSmall;
+        max-width: calc(100% - #{$navWidthSmall})
+    }
+}
+

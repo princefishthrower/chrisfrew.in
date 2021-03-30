@@ -1,0 +1,96 @@
+---
+title: "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP"
+description: "Dynamically Assigning and Retrieving Variables- Both Named and Structured in SAP ABAP"
+date: "2018-10-12"
+---
+
+So, let's say you've got some, uh, let's just say for now... _not perfectly written_ ABAP code. Something that looks like this:
+
+```abap
+" Ack! my eyes!
+
+TYPES: BEGIN OF gty_zstructure,
+var1 type i,
+var2 type i,
+var3 type i,
+var4 type i,
+end of gty_zstructure.
+
+DATA: gv_badcodevar1 TYPE i VALUE 10,
+gv_badcodevar2 TYPE i VALUE 11,
+gv_badcodevar3 TYPE i VALUE 12,
+gv_badcodevar4 TYPE i VALUE 13,
+gs_zstructure type gty_zstructure.
+
+gs_zstructure-var1 = 96.
+gs_zstructure-var2 = 97.
+gs_zstructure-var3 = 98.
+gs_zstructure-var4 = 99.
+```
+Yep. Super repetitive variable names.
+
+We don't know why a developer wrote code like that, and we don't know why he or she wouldn't utilize a structure or table, but we don't really care. 😉
+
+Let's assume we've gotta make a modification to such a program and we need to loop through all those variables. Instead of otherwise copying a similiar pattern of all those variable names which would be horrible, we can apply dynamic variable assignment by building a string that is identical to the variables actual name in the ABAP source code, and reading that into a field symbol.
+
+Below are copy/pastable examples showing how to do this for both plain variables and components of a structure you may want to snag.
+
+## Dynamic Variable Assignment for Global Variables
+
+```abap
+" Just to demonstrate the code sample, we'll use these variables which are all integer type with various values, but this process works for any variable type
+
+DATA: gv_badcodevar1 TYPE i VALUE 10,
+gv_badcodevar2 TYPE i VALUE 11,
+gv_badcodevar3 TYPE i VALUE 12,
+gv_badcodevar4 TYPE i VALUE 13,
+gv_sy_index_string TYPE string,
+gv_variable_name TYPE string.
+
+FIELD-SYMBOLS: <fs_variable_value> TYPE any.
+
+DO 4 TIMES. " (or however many times you need to build a string for such patterned variables)
+gv_sy_index_string = sy-index. " convert the sy-index to string type so we can use it in the CONCATENATE statement
+CONCATENATE 'GV_BADCODEVAR' gv_sy_index_string INTO gv_variable_name. " build variable name
+ASSIGN (gv_variable_name) TO <fs_variable_value>. " the parenthesis, without any spaces from the variable, are required here otherwise this dynamic method wont work!!!!
+WRITE: / gv_variable_name, ' has a value of ', <fs_variable_value>. " should be 'GV_BADCODEVAR1 has a value of 10' and so on
+ENDDO.
+```
+
+## Dynamic Variable Assignment for Components of Line Structure Variables
+
+```abap
+" Just to demonstrate the code sample, we'll use this simple structure variable (again, it will work with any structure types)
+
+TYPES: BEGIN OF gty_zstructure,
+var1 TYPE i,
+var2 TYPE i,
+var3 TYPE i,
+var4 TYPE i,
+END OF gty_zstructure.
+
+DATA:
+gs_zstructure TYPE gty_zstructure,
+gv_sy_index_string TYPE string,
+gv_component_name TYPE string.
+
+gs_zstructure-var1 = 96.
+gs_zstructure-var2 = 97.
+gs_zstructure-var3 = 98.
+gs_zstructure-var4 = 99.
+
+FIELD-SYMBOLS: <fs_component_value> TYPE any.
+
+DO 4 TIMES. " (or however many times you need to build a string for such patterned variables)
+gv_sy_index_string = sy-index. " convert the sy-index to string type so we can use it in the CONCATENATE statement
+CONCATENATE 'VAR' gv_sy_index_string INTO gv_component_name. " build variable name
+ASSIGN COMPONENT gv_component_name OF STRUCTURE gs_zstructure TO <fs_component_value>.
+WRITE: / 'Component ', gv_component_name, ' of structure gs_zstructure has a value of ', <fs_component_value>. " should be 'GV_BADCODEVAR1 has a value of 10' and so on
+ENDDO.
+```
+
+And that's it!
+
+Cheers! 🍺
+
+Chris
