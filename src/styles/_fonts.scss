@@ -16,12 +16,13 @@
     font-display: swap;
 }
 
-
 html,
 body {
-    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+        "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
     font-size: 21px;
-    
+
     h1 {
         font-size: 2rem;
         &.big {
@@ -38,6 +39,23 @@ body {
     }
 
     .cooper {
-        font-family: 'CooperBlackRegular';
+        font-family: "CooperBlackRegular";
+    }
+
+    // small screens, make big a bit smaller
+    // small styles (width less than 600px)
+    @media only screen and (max-width: $mediumOffset) {
+        h1 {
+            &.big {
+                font-size: 1.25rem;
+            }
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
     }
 }

@@ -80,6 +80,7 @@ export function NavLogo(props: INavLogoProps) {
                             size === Size.MEDIUM ? "block" : "inline-block",
                         borderRadius: `100%`,
                         marginRight: size === Size.MEDIUM ? "0" : "1rem",
+                        
                     }}
                 />
                 <h3
@@ -88,6 +89,7 @@ export function NavLogo(props: INavLogoProps) {
                             size === Size.MEDIUM ? "block" : "inline-block",
                         fontFamily: `Montserrat, sans-serif`,
                         margin: 0,
+                        textAlign: size === Size.MEDIUM ? "center" : "left"
                     }}
                 >
                     {isBlogPage ? (
@@ -106,7 +108,7 @@ export function NavLogo(props: INavLogoProps) {
                     )}
                     {size === Size.LARGE && (
                         <div className="tiny">
-                            chrisfrew.in / chrisfrewin.com
+                            • chrisfrew.in • chrisfrewin.com • chrisfrewin.eu •
                         </div>
                     )}
                 </h3>

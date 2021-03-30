@@ -8,7 +8,7 @@ export interface ICoursesProps {
 export function Courses (props: ICoursesProps) {
   return (
     <>
-      <h1 className="cooper">{colorizeStringBySeparator("Full Stack Courses.","")}</h1>
+      <h1 className="cooper big">{colorizeStringBySeparator("Full Stack Courses.","")}</h1>
       <h2>Courses for software developers who want to launch their skills beyond the basics.</h2>
       <p>I got tired of seeing the same React todo list app or simple SPA refactoring courses over and over again all over the web. That's why I started my series of Full Stack Courses.</p><p>In each course, I take a deep dive on a specific topic that I've actually used in at least one, but often multiple, production products. In each course, you'll gain insights and wisdom I've gathered over the years as a professional full stack developer.</p>
       <p>Sound interesting? Here are all of the Full Stack Courses I offer:</p>

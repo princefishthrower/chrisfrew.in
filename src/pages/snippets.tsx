@@ -7,7 +7,7 @@ const SnippetsPage = ({ location }) => {
     return (
         <Layout location={location}>
             <SEO title="Full Stack Snippets" />
-            <Snippets />
+            <Snippets pdfMode={false} />
         </Layout>
     )
 }

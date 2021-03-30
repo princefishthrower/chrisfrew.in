@@ -59,7 +59,7 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
 
     if (size === Size.LARGE || size === Size.MEDIUM) {
         return (
-            <div className="switch-container">
+            <div>
                 <BodyClassName className={activeTheme} />
                 <label className="switch">
                     <input

@@ -1,14 +1,17 @@
 footer {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 2rem;
     position: relative;
     z-index: 10;
     font-weight: bold;
-    justify-content: space-around;
     border: $borderThickness dashed;
     padding: 0.5rem;
     box-sizing: border-box;
+}
+
+.inner-footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 // large screens (width greater than 1400px)
@@ -29,8 +32,11 @@ footer {
 // small styles (width less than 600px)
 @media only screen and (max-width: $mediumOffset) {
     footer {
-        // width: calc(100% - #{$navWidthSmall} + 3*#{$borderThickness});
-        margin-left: calc(#{$navWidthSmall} - #{$borderThickness});
+        width: calc(100%);
+        padding-left: calc(#{$navWidthSmall});
+    }
+    .inner-footer-wrapper {
+        padding-left: $borderThickness;
     }
 }
 
@@ -50,23 +56,30 @@ footer {
     border-top-color: $monokaiYellow;
 }
 
-// subscribe form can be full width
-footer > :nth-child(1) {
+// subscribe form and description div can be full width
+footer div div:nth-child(1) {
     width: 100%;
     padding-bottom: 1rem;
 }
 
-footer > :nth-child(2) {
-    margin: 1rem;
-}
-
-footer > :nth-child(3) {
-    margin: 1rem;
-}
-
-footer > :nth-child(4) {
-    flex: 0 0 100%;
+// buy me a coffee div
+footer div div:nth-child(2) {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    flex: 0 50%;
+}
+
+// web monotization div
+footer div div:nth-child(3) {
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 0 50%;
+}
+
+// copywrite div
+footer div div:nth-child(4) {
+    width: 100%;
+    text-align: center;
+    // margin: 1rem;
+    font-size: 0.7rem;
 }

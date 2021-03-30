@@ -1,0 +1,50 @@
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .email-label {
+        font-family: 'CooperBlackRegular';
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+
+    .email-input {
+        width: 250px;
+        height: 40px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        width: 250px;
+        height: 40px;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: 'CooperBlackRegular';
+        font-weight: 500;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }    
+}
+
+.light-mode .submit-button  {
+    background-color: $monokaiRedLightMode !important;
+    color: $darkColor;
+}
+
+.light-mode .email-input {
+    border: 1px solid gray;
+}
+
+.dark-mode .submit-button {
+    background-color: $monokaiRedDarkMode !important;
+    color: $lightColor;
+}

@@ -34,7 +34,6 @@
 }
 
 .nav-large {
-    
     height: $navHeight;
     display: flex;
     flex-direction: row;
@@ -42,9 +41,12 @@
     justify-content: space-around;
     width: 100%;
     z-index: 100;
-    padding: 0.5rem;
     border: $borderThickness dashed;
     box-sizing: border-box;
+    & > a,
+    & > div {
+        padding: 1rem;
+    }
 }
 
 .dark-mode .nav-large {
@@ -136,9 +138,6 @@
         font-size: 0.8rem;
     }
     a {
-        transform: rotate(270deg);
-    }
-    a:first-child {
         transform: rotate(270deg) translate(-0.5rem);
     }
     span.emoji {

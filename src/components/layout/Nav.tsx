@@ -60,9 +60,6 @@ export function Nav() {
                 <Link to="/stats">
                     {colorizeStringBySeparator("Stats", " ", 3)}
                 </Link>
-                <Link to="/chris">
-                    {colorizeStringBySeparator("Chris", " ", 4)}
-                </Link>
                 <ThemeSwitcherContainer size={Size.SMALL}/>
             </nav>
         </>
