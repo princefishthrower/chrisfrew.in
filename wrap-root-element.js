@@ -1,6 +1,6 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-import { Pre } from "./src/components/code-copy-button/pre"
+import { Pre } from "./src/components/CodeCopyButton/Pre"
 import { preToCodeBlock } from "mdx-utils"
 import ThemeProvider from "./src/context/ThemeProvider"
 
@@ -13,7 +13,7 @@ const components = {
         if (props) {
             return <Pre {...props} />
         } else {
-            // it's possible to have a pre without a code in it
+            // it's possible to have a pre without a code in it - render as normal pre
             return <pre {...preProps} />
         }
     },
