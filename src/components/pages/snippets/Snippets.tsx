@@ -25,7 +25,7 @@ export function Snippets(props: ISnippetsProps) {
         : colorizeStringBySeparator(title, "")
     return (
         <>
-            <h1 className="cooper">{titleText}</h1>
+            <h1 className="cooper big">{titleText}</h1>
             {pdfMode && <p>😁 PDF Mode! 😁</p>}
             {!pdfMode && (
                 <>

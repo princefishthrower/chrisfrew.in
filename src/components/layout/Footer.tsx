@@ -5,10 +5,11 @@ import EmailForm from "../utils/EmailForm"
 export function Footer() {
     return (
         <footer>
+            <div className="inner-footer-wrapper">
             <EmailForm/>
             <div>
                 <span>Really like the blog? You can support it:</span>
-                <div style={{textAlign: 'center'}}>
+                <div>
                 <a
                     className="bmc-button"
                     target="_blank"
@@ -37,8 +38,7 @@ export function Footer() {
                         Coil
                     </a>
                 </span>
-                <br />
-                <div style={{textAlign: 'center'}}>
+                <div>
                 <img
                     src={monetizedLoop}
                     alt="Monetization by Coil"
@@ -57,6 +57,7 @@ export function Footer() {
                 >
                     Full Stack Craft
                 </a>
+            </div>
             </div>
         </footer>
     )

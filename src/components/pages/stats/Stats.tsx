@@ -49,7 +49,7 @@ export function Stats(props: IStatsProps) {
 
     return (
         <>
-            <h1 className="cooper">{colorizeStringBySeparator("Blog Stats", "")}</h1>
+            <h1 className="cooper big">{colorizeStringBySeparator("Blog Stats", "")}</h1>
             <p>
                 These stats are generated at build time through GraphQL queries,
                 so you can be sure they are up to date!
