@@ -373,7 +373,7 @@ const username = user.username
 // more logic...
 ```
 
-To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah, okay, technically a 5-liner - but you could put it on one line if you wanted :wink: :joy:):
+To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah, okay, technically a 5-liner - but you could put it on one line if you wanted :wink: 😂):
 
 ```typescript
 import DB from "../DB"
@@ -618,6 +618,6 @@ I hope this post helps make your full stack application development much more en
 
 I know that I've been having an absolute blast with this setup! :rocket: :rocket: :rocket:
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

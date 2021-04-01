@@ -5,12 +5,6 @@
     top: 0;
     bottom: 0;
     left: 0;
-    .tiny {
-        font-size: 0.75rem;
-        line-height: 0.75rem;
-        margin: 0 auto;
-        font-weight: bold;
-    }
 
     a {
         font-weight: 900;
@@ -97,13 +91,6 @@
     border: $borderThickness dashed;
     box-sizing: border-box;
 
-    .tiny {
-        font-size: 0.75rem;
-        line-height: 0.75rem;
-        margin: 0 auto;
-        font-weight: bold;
-    }
-
     a, h3 {
         font-weight: 900;
         font-size: 0.8rem;
@@ -126,13 +113,6 @@
     border: $borderThickness dashed;
     box-sizing: border-box;
 
-    .tiny {
-        font-size: 0.75rem;
-        line-height: 0.75rem;
-        margin: 0 auto;
-        font-weight: bold;
-    }
-
     a, h3 {
         font-weight: 900;
         font-size: 0.8rem;
@@ -144,5 +124,20 @@
         cursor: pointer;
         font-size: 0.7rem;
         margin-right: 0.2rem;
+    }
+}
+
+// special styles 
+.tiny {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+// everything below extra large screens (width less than 1400px)
+@media only screen and (max-width: $extralarge) {
+    .tiny {
+        display: none;
     }
 }

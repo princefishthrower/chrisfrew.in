@@ -19,7 +19,7 @@ Linux: `~/.bashrc`
 
 Raspberry Pi (with raspbian and other linux style builds): `~/.bashrc`
 
-Here's what I've got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been _clearly_ modified, they won't work - what do you think I am, an idiot? :joy::joy::joy: )
+Here's what I've got (compiled and selected as only the tastiest after 5+ of full stack dev work! oh also, the IPs for SSH and passwords for my databases / APIs have been _clearly_ modified, they won't work - what do you think I am, an idiot? 😂😂😂 )
 
 ```bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -374,7 +374,7 @@ export NVM_DIR="/Users/chris/.nvm"
 export PATH=$PATH:/Users/chris/torch/install/bin
 ```
 
-For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn't have to be that 'sharp'! :joy:), you may have noticed I even have an alias for opening the bash profile itself (`prof`) and sourcing the profile (`s`) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):
+For those sharp eagle-eyed readers out there (actually, I now realize they are the very first aliases in my profile, you wouldn't have to be that 'sharp'! 😂), you may have noticed I even have an alias for opening the bash profile itself (`prof`) and sourcing the profile (`s`) - this adds any of the changes you made in your bash profile - any new commands and whatnot - into the current terminal):
 
 ```bash
 alias prof='atom /Users/chris/.bash_profile' # opens .bash_profile for editing
@@ -383,6 +383,6 @@ alias s='source /Users/chris/.bash_profile' # sources .bash_profile (should be d
 
 So yes, you could say I modify and add stuff to my bash profile quite often - I recommend you do it too! Improve your workflow and ease of commanding a bash terminal!
 
--Cheers! :beer:
+-Cheers! 🍺
 
 Chris

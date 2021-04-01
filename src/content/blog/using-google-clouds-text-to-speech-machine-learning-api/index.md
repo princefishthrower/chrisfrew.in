@@ -78,11 +78,11 @@ axios.post("https://texttospeech.googleapis.com/v1beta1/text:synthesize?fields=a
   console.log(error);
 });
 ```
-Then it should run with a good ol' `node index.js`! You'll find a tasty mp3 with "hello world" being spoken - relatively better than Microsoft Sam i'd have to say! :joy:
+Then it should run with a good ol' `node index.js`! You'll find a tasty mp3 with "hello world" being spoken - relatively better than Microsoft Sam i'd have to say! 😂
 
 So I hoped I saved you some time and frustration with at least this Google API.
 
-Enjoy, and Cheers! :beer:
+Enjoy, and Cheers! 🍺
 
 -Chris
 

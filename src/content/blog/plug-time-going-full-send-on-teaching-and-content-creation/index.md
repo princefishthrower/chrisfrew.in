@@ -9,7 +9,7 @@ postType: misc
 
 ## Let's Do This! 🚀
 
-2021 is my year! Uh oh, I should probably avoid that phrase... we all know what happened in 2020 with too many people saying that! :joy: 
+2021 is my year! Uh oh, I should probably avoid that phrase... we all know what happened in 2020 with too many people saying that! 😂 
 
 Anyways, I wanted to create an update already in this third week of January on my 2021 goal of doing more course work. I've already released a new course this month, and am well positioned to release at least two more courses this January and February!
 

@@ -7,5 +7,6 @@ export default class Constants {
     public static readonly COLOR_CLASS_NAMES = ["monokaiRedFont", "monokaiOrangeFont", "monokaiBlueFont", "monokaiGreenFont", "monokaiYellowFont"]
     public static readonly DEFAULT_SPARKLE_CLASS_NAMES = ["fillMonokaiBlue", "fillMonokaiYellow", "fillMonokaiBlue"]
     public static readonly ALT_SPARKLE_CLASS_NAMES = ["fillMonokaiOrange", "fillMonokaiRedDarkMode", "fillMonokaiOrange"]
+    public static readonly LOVE_SPARKLE_CLASS_NAMES = ["fillMonokaiPink", "fillMonokaiBlue", "fillMonokaiPink"]
     public static readonly GUMROAD_COURSE_PRODUCT_IDS = ["advanced-typescript", "bash-commands-and-scripting", "mastering-pipelines"]
 }

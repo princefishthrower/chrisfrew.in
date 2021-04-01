@@ -25,8 +25,8 @@ and the master post that I will link all further posts to (check out my catastro
 
 you can follow my trades on twitter [@Galt_](https://twitter.com/Galt_).
 
-I hope you enjoy watching me lose all my money! :joy:
+I hope you enjoy watching me lose all my money! 😂
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

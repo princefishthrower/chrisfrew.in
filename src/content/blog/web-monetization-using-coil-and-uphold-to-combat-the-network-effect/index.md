@@ -158,9 +158,9 @@ As part of this challenge, **I've already pledged myself to subscribe to Coil fo
 
 `$ilp.uphold.com/BJGXHRXaMM8Z`
 
-Want to check that it's valid? Better send me some money to be sure! :joy: :wink: You'll see I also added some bling to the footer of the blog, simply, um "borrowing" the nice animated svg from the [Chrome Coil extension](https://chrome.google.com/webstore/detail/coil/locbifcbeldmnphbgkdigjmkbfkhbnca). :smile:
+Want to check that it's valid? Better send me some money to be sure! 😂 :wink: You'll see I also added some bling to the footer of the blog, simply, um "borrowing" the nice animated svg from the [Chrome Coil extension](https://chrome.google.com/webstore/detail/coil/locbifcbeldmnphbgkdigjmkbfkhbnca). :smile:
 
-Cheers! :beer:
+Cheers! 🍺
 
 Chris
 

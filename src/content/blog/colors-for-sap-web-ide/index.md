@@ -61,4 +61,4 @@ window.setTimeout(function() {
 
 I would recommend you check out the newest version on GitHub: [https://github.com/frewinchristopher/sapwebidecolors](https://github.com/frewinchristopher/sapwebidecolors)
 
-Cheers! :beer:
+Cheers! 🍺

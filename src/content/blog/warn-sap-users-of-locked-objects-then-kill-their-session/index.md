@@ -58,7 +58,7 @@ CALL FUNCTION 'ENQUEUE_READ'
     OTHERS                = 3.
 ```
 
-So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class `cl_server_info` (pretty obvious name, eh? :joy:). 
+So, by now we have our table of objects, and the users who are locking them. We will also need all the sessions open across the system. We can get that with the nice SAP Standard class `cl_server_info` (pretty obvious name, eh? 😂). 
 
 ```abap
 " Get all user sessions

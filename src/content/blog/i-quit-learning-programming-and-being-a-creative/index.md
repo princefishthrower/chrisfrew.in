@@ -27,12 +27,12 @@ So, I can hear you nearly closing your tab (if you haven't already) rolling your
 
 Sorry if I've offended you in this post, but there's even better news:
 
-this is an April fool's post. :joy:
+this is an April fool's post. 😂
 
 Oh, it's also my birthday (NOT an April fools joke = trust me I've heard that one just a few times :wink:). 
 
-I'm 27. And old. :skull:
+I'm 27. And old. ☠️
 
-:beer: Cheers!
+🍺 Cheers!
 
 -Chris

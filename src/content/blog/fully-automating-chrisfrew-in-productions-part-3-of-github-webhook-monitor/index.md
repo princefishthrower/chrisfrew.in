@@ -83,7 +83,7 @@ const determineWebhook = (oData) => {
 
 ## GitHub Integration
 
-With our subdomain set up and our express server serving there, we can start processing requests for `webhooks.chrisfrew.in`. The important thing here is to validate requests. Imagine what could happen without validation, (if I eventualy do hook this up to my twitter bot to post every time a repository is updated) just anyone could send random github-ish looking json data to `webhooks.chrisfrew.in`, and my server would take action, even when its not coming from a validate That would be really annoying, and plus, it would make me seem _way_ more productive than I am with my repositories. :joy::joy::joy: So yeah, validation is an important step. 
+With our subdomain set up and our express server serving there, we can start processing requests for `webhooks.chrisfrew.in`. The important thing here is to validate requests. Imagine what could happen without validation, (if I eventualy do hook this up to my twitter bot to post every time a repository is updated) just anyone could send random github-ish looking json data to `webhooks.chrisfrew.in`, and my server would take action, even when its not coming from a validate That would be really annoying, and plus, it would make me seem _way_ more productive than I am with my repositories. 😂😂😂 So yeah, validation is an important step. 
 
 GitHub's way of doing authentication for webhooks is to take the content of the payload, concatenate that with the secret key, and then hash it. You then do the same on your server, since you yourself also know the secret key, and if the hashes match, violá! You know it's coming from GitHub. We accomplish this in Nodejs in a function called `verifySignature` like so:
 
@@ -303,4 +303,4 @@ console.log('Webhook service running at http://localhost:' + iPort.toString());
 
 And again, don't forget the updated code is all available on GitHub: https://github.com/frewinchristopher/chrisfrew.in-productions-github-bitbucket-monitor
 
-Cheers! :beer:
+Cheers! 🍺

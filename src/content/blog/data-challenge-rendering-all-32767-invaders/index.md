@@ -394,14 +394,14 @@ As always, thanks for reading and I hoped you enjoyed this in-depth post. Get ou
 
 I also think this **Data Challenge!**<sup>TM</sup> theme will return to my blog. It helps me develop as a software engineer, and makes for really interesting posts. I'll be making another **Data Challenge!**<sup>TM</sup> for sure, as soon as I find the next project enticing enough to tackle!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris
 
 ## Footnotes
 
 <div id="footnote-1">
-1. Cuz, cmon, who <i>doesn't</i> do things in Javascript these days? :joy: (Yes, a bit of sarcasm, but honestly... it's been fairly true - we'll see what happens in 2019)
+1. Cuz, cmon, who <i>doesn't</i> do things in Javascript these days? 😂 (Yes, a bit of sarcasm, but honestly... it's been fairly true - we'll see what happens in 2019)
 </div>
 <div id="footnote-2">
 <br/><br/>

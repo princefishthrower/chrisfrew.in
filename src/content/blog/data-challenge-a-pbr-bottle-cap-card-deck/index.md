@@ -104,12 +104,12 @@ Typically, I'm getting mean values around 235 'draws' so to speak, or bottles yo
 
 I'm still searching for an analytical solution to this problem, but *gasp* I'm finding the internet doesn't have the solution on a platter for me! Curse you, Stack Overflow!
 
-The challenge is that this problem doesn't quite follow the requirements of a binomial distribution, that is, the probability of getting the card face you need doesn't remain constant. The first one has a probability of $\frac{52}{52} = 1$ (we don't care what first card we get), the second is $\frac{51}{52}$, the third $\frac{50}{52}$, and so on, until the last card, which is $\frac{1}{52}$. The best I can think of is a sum of each of these 52 scenarios, which individually could be classified as binomial distributions. I'll update this post if I figure out how to describe that analytical solution without writing out 52 separate equations :joy:.
+The challenge is that this problem doesn't quite follow the requirements of a binomial distribution, that is, the probability of getting the card face you need doesn't remain constant. The first one has a probability of $\frac{52}{52} = 1$ (we don't care what first card we get), the second is $\frac{51}{52}$, the third $\frac{50}{52}$, and so on, until the last card, which is $\frac{1}{52}$. The best I can think of is a sum of each of these 52 scenarios, which individually could be classified as binomial distributions. I'll update this post if I figure out how to describe that analytical solution without writing out 52 separate equations 😂.
 
 # Thanks!
 
 As always, I hope you enjoyed!
 
-Cheers! :beer: :beer: :beer:
+Cheers! 🍺 🍺 🍺
 
 

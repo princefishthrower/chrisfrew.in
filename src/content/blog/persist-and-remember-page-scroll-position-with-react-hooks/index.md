@@ -119,6 +119,6 @@ export default function MyAwesomeComponent() {
 
 As always, thank you for your time! I hope this hook is useful to you.
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

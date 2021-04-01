@@ -17,6 +17,6 @@ Anyway, as a celebration, I built out a stats page for the blog, found at [https
 
 Thats all for now!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

@@ -40,7 +40,8 @@ module.exports = {
           //     footnoteBackRefAnchorStyle: `font-size: 0.75rem;`
           //   },
           // },
-          `gatsby-remark-images`
+          `gatsby-remark-images`,
+          `gatsby-remark-copy-linked-files`
         ],
       },
     },

@@ -255,12 +255,12 @@ I break down this full solution in my course "Advanced TypeScript: Generic Searc
 
 As a full example of what was described in this post, I went through [the original generic search, sort, and filter repository](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter) and refactored it to take on the function children form using `PropsWithChildrenFunction`. 
 
-Note, however, due to the composition issue mentioned above, that the search, filter, and sort now are forced to operate on their own copies of the render list. You can check out what I mean by looking into `App.tsx` in the code in detail. The **new** repository is at [react-typescript-generic-search-sort-and-filter-children-function](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter-children-function) GitHub repository. (I know, long name, but it works, right? :joy:)
+Note, however, due to the composition issue mentioned above, that the search, filter, and sort now are forced to operate on their own copies of the render list. You can check out what I mean by looking into `App.tsx` in the code in detail. The **new** repository is at [react-typescript-generic-search-sort-and-filter-children-function](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter-children-function) GitHub repository. (I know, long name, but it works, right? 😂)
 
 # Thanks!
 
 As always, a sincere thanks for taking the time to read this post. I hope it was useful to you, and that you learned a thing or two about generics and extending standard React types!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

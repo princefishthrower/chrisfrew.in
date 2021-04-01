@@ -38,7 +38,7 @@ export function genericSearch<T>(object: T, properties: Array<keyof T>, query: s
 }
 ```
 
-Notice the nice `keyof T` typing here. That's of _key_ importance! :joy: 
+Notice the nice `keyof T` typing here. That's of _key_ importance! 😂 
 
 TypeScript will only let us pass string values which represent the key names in object `T`. And remember, we said we wanted to allow _multiple_ properties of type `T`, so the properties are an `Array` of `keyof T`, i.e. `Array<keyof T>`. So the very first thing we'll need to do here is loop over those properties. `map` should do:
 
@@ -230,7 +230,7 @@ Any property of `T` can have any type. To avoid writing a fancy filter function 
 | `object`   | `undefined`, `null`, `NaN`  |
 | `string`   | `""`                        |
 | `number`   | `0`                         |
-| `boolean`  | `false` (duh! :joy:)        |
+| `boolean`  | `false` (duh! 😂)        |
 
 Where any other value for each type will evaluate to `true` in a boolean evaluation. 
 
@@ -344,6 +344,6 @@ If there's interest, with further cleanup and option setups, and some fine-tunin
 
 I hope you enjoyed this post. I'm really enjoying TypeScript and the power of its generics abilities. I hope this post was useful to you!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

@@ -19,6 +19,9 @@ export function Nav() {
                 <Link to="/goodies">
                     {colorizeStringBySeparator("Full Stack Goodies", " ", 1)}
                 </Link>
+                <Link to="/book">
+                    {colorizeStringBySeparator("Full Stack SaaS Book", " ", 1)}
+                </Link>
                 <Link to="/stats">
                     {colorizeStringBySeparator("Blog Stats", " ", 4)}
                 </Link>
@@ -35,14 +38,17 @@ export function Nav() {
                 <Link to="/snippets">
                     {colorizeStringBySeparator("Snippets", " ", 1)}
                 </Link>
+                <Link to="/book">
+                    {colorizeStringBySeparator("Book", " ", 2)}
+                </Link>
                 <Link to="/goodies">
-                    {colorizeStringBySeparator("Goodies", " ", 2)}
+                    {colorizeStringBySeparator("Goodies", " ", 3)}
                 </Link>
                 <Link to="/stats">
-                    {colorizeStringBySeparator("Stats", " ", 3)}
+                    {colorizeStringBySeparator("Stats", " ", 4)}
                 </Link>
                 <Link to="/chris">
-                    {colorizeStringBySeparator("Chris", " ", 4)}
+                    {colorizeStringBySeparator("Chris", " ", 5)}
                 </Link>
                 <ThemeSwitcherContainer size={Size.MEDIUM}/>
             </nav>
@@ -54,11 +60,11 @@ export function Nav() {
                 <Link to="/snippets">
                     {colorizeStringBySeparator("Snippets", " ", 1)}
                 </Link>
-                <Link to="/goodies">
-                    {colorizeStringBySeparator("Goodies", " ", 2)}
+                <Link to="/book">
+                    {colorizeStringBySeparator("Book", " ", 2)}
                 </Link>
-                <Link to="/stats">
-                    {colorizeStringBySeparator("Stats", " ", 3)}
+                <Link to="/goodies">
+                    {colorizeStringBySeparator("Goodies", " ", 3)}
                 </Link>
                 <ThemeSwitcherContainer size={Size.SMALL}/>
             </nav>

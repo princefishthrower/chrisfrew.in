@@ -60,7 +60,7 @@ I've also gotten in a habit of blogging here anything new that I learn, which re
 
 ### Courses, YouTube Presence, and Digital Art
 
-As a result of 2020, my fellow Americans, in my **first 100 days<sup>TM</sup> of 2021** :joy: (read: by April 11th, 2021), I'll be releasing no less than 5 SkillShare courses - no excuses this time, not even ANOTHER global pandemic. I also want to release these courses in more channels than just SkillShare, perhaps free samples on YouTube which can drive interested software developers to my courses and some developer digital art. 
+As a result of 2020, my fellow Americans, in my **first 100 days<sup>TM</sup> of 2021** 😂 (read: by April 11th, 2021), I'll be releasing no less than 5 SkillShare courses - no excuses this time, not even ANOTHER global pandemic. I also want to release these courses in more channels than just SkillShare, perhaps free samples on YouTube which can drive interested software developers to my courses and some developer digital art. 
 
 ### Wait, a House?!
 
@@ -70,11 +70,11 @@ This also isn't to say that I'm looking to buy a house just to "keep up with the
 
 As a side note: interest rates for mortgages have never been lower, and inflation is also a risk into the future with all this quantitative easing (AKA money printing) that's going around. So if you were near pulling the trigger for a home, I would strongly consider it with those two pieces of information!
 
-Knowing my luck, inflation will start early and screw me just as I start looking at houses next year. :joy:
+Knowing my luck, inflation will start early and screw me just as I start looking at houses next year. 😂
 
 ### Fasting and Meditation
 
-I listen to a lot of podcasts where either the guests or hosts frequently meditate. In a smaller vein, a subset of others also do some sort of fasting routine. I seem to remember in my undergrad studies I did this type of fasting, whether by not having enough time to eat or opting out of eating to see if I could go a bit longer. I remember some boosts of energy associated with this behaviour, but I'm not sure if this haphazard method was from my 'fasting' or may have just been the simple fact that I was younger back then :joy:. We'll see. I'm curious to see the effects of doing both meditation and fasting in 2021.
+I listen to a lot of podcasts where either the guests or hosts frequently meditate. In a smaller vein, a subset of others also do some sort of fasting routine. I seem to remember in my undergrad studies I did this type of fasting, whether by not having enough time to eat or opting out of eating to see if I could go a bit longer. I remember some boosts of energy associated with this behaviour, but I'm not sure if this haphazard method was from my 'fasting' or may have just been the simple fact that I was younger back then 😂. We'll see. I'm curious to see the effects of doing both meditation and fasting in 2021.
 
 ### Writing
 
@@ -88,6 +88,6 @@ We'll see how much I 'enjoy' the attempted publishing journey in 2021, but so fa
 
 Well, that's it. Looking forward to 2021 and getting my act together as an adult.
 
-Cheers :beer:
+Cheers 🍺
 
 -Chris

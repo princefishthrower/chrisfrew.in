@@ -87,6 +87,6 @@ My girlfriend and I have brewed 5 batches of beer since 2016. They were all _dec
 
 Well that's it. 2019 was a _really_ hard year with that project I mentioned - it was easily the hardest project I've ever did (even more so than my [master's thesis](https://www.sciencedirect.com/science/article/abs/pii/S0010218016302279)) in terms of length and arduous labor. But out of it came a huge learning experience that was all about the Magento 2 framework, and of course I have the added benefit of being able to add that project to my portfolio. It's certainly a project I won't forget.
 
--Cheers! :beer:
+-Cheers! 🍺
 
 Chris

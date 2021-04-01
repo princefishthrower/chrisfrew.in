@@ -8,7 +8,7 @@ postType: dev
 ---
 
 ## The Root Issue
-If you're reading this in 2018, 2019, and 2020, the statement shown next to that error is likely an npm module that hasn't yet been built for SSR or static page generation (think NextJS or GatsbyJS. Also, I'm being optimistic and arbitrarily picking the year 2021 as the year that everything will be optimized for web AND non-web rendering... whatever) :joy:. 
+If you're reading this in 2018, 2019, and 2020, the statement shown next to that error is likely an npm module that hasn't yet been built for SSR or static page generation (think NextJS or GatsbyJS. Also, I'm being optimistic and arbitrarily picking the year 2021 as the year that everything will be optimized for web AND non-web rendering... whatever) 😂. 
 
 The only problem when you see that fateful error is that you may see a `require()` or `import` statement as the location of the error. Then you'd say, huh, I don't see any `window` object immediately... whats going on?
 For example:
@@ -56,6 +56,6 @@ Personally I find option \#1 a bit cleaner, but again, you may find one or the o
 
 That's all for this post. Enjoy your SSR!
 
-Cheers! :beer:
+Cheers! 🍺
 
 Chris

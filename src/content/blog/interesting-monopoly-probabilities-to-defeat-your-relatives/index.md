@@ -7,7 +7,7 @@ starID: 103
 postType: data
 ---
 
-## Holiday Break = Monopoly (Logically) :joy:
+## Holiday Break = Monopoly (Logically) 😂
 
 Ahhh, it's that :snowflake: time :snowflake: of year again - a break from work with lots of time with the family.
 
@@ -21,9 +21,9 @@ For my family at least, we'll play Monopoly at least once during the Christmas -
 
 ## Motivation and Backstory
 
-So, in a recent bout (like, last Wednesday :joy:), my brother had snagged both the brown / dark purple properties (Mediterranean and Baltic) as well as the light blues (Oriental, Vermont, and Connecticut). If a player owns both of these adjacent monopolies, we cherishingly call them the 'slum lord'). 
+So, in a recent bout (like, last Wednesday 😂), my brother had snagged both the brown / dark purple properties (Mediterranean and Baltic) as well as the light blues (Oriental, Vermont, and Connecticut). If a player owns both of these adjacent monopolies, we cherishingly call them the 'slum lord'). 
 
-My girlfriend ended up with the greens and blues, what we call the 'high roller' properties. I initially thought she had the advantage. But as the game went on, we realized just how high maintenance (the properties, not my girlfriend :joy:) those expensive green and blue properties are. First, they cost a fortune to buy, and at $200 dollars per house, cost _another_ fortune to build on. There's the additional detriment that Boardwalk and Park Place are only a two-property set.
+My girlfriend ended up with the greens and blues, what we call the 'high roller' properties. I initially thought she had the advantage. But as the game went on, we realized just how high maintenance (the properties, not my girlfriend 😂) those expensive green and blue properties are. First, they cost a fortune to buy, and at $200 dollars per house, cost _another_ fortune to build on. There's the additional detriment that Boardwalk and Park Place are only a two-property set.
 
 In the end, my girlfriend was actually one of the first players to go out, while my brother lasted until the end, securing 2nd place (I actually ended up winning due to massive luck with the magenta properties: Virginia, States, and St. Charles Place).
 
@@ -138,7 +138,7 @@ From both this analysis and have a lot of experience being a huge Monopoly nerd 
 - Seek first to own the orange properties (as the nearly unanimously accepted best property by more people other than just me) 
 - Seek second to own the light blues (from a pure return on investment perspective) 
 - Seek then any of the magenta, yellow, or red property sets (in that order, based on nothing more than the ROI calculations mixed with my weak probability-of-landing intuition)
-- The browns are cheap, but truly not worth their own investment. I suppose they are so cheap that you might as well buy them if you land on either, to use as trade bargaining chips for... \*ahem\*... less "enlightened" Monopoly players :joy:
+- The browns are cheap, but truly not worth their own investment. I suppose they are so cheap that you might as well buy them if you land on either, to use as trade bargaining chips for... \*ahem\*... less "enlightened" Monopoly players 😂
 - While I think it's okay to try to buy and build on the greens or blues later on in the game, don't bother with them in the 'early game'<sup>[3](#footnote-3)</sup>. If landing on an unpurchased green or blue early in the game, I often let them be auctioned off by other players. Many times I see players nearly bankrupting themselves in the early game to buy and build houses on these properties, only to get knocked off by an albiet more modest, yet still sizable rent from a light blue, magenta, orange, red, or yellow property with some houses.
 
 ### Detailed Ranking
@@ -169,7 +169,7 @@ Of course, in the end, Monopoly is a game highly based on chance, so after all t
 
 However, by subscribing to these general concepts, I've had great success playing Monopoly (and this holiday season) :wink:. Have fun, and good luck if you're playing any time over the holidays!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris
 
@@ -184,7 +184,7 @@ Cheers! :beer:
 
 Truman Collins already did [a massive probability analysis of Monopoly in his blog in 2005.](http://www.tkcs-collins.com/truman/monopoly/monopoly.shtml#Markov).
 
-Jim Slater, the famous English bank businessman, [provides a breakdown of the expected returns of some of the monopolies (and independently matches what was found by me, I'll be proud to admit! (though the ROIs he mentions are different - perhaps he is calculating them without considering hotels/houses? :smile:) in the fourth episode of "The Mayfair Set" documentaries by Adam Curtis](https://www.youtube.com/watch?v=PdQ3ztGk0D4&t=57m38s), (though in the video he is referring to the English names of the properties, it's helpful that he still mentions the colors :joy:).
+Jim Slater, the famous English bank businessman, [provides a breakdown of the expected returns of some of the monopolies (and independently matches what was found by me, I'll be proud to admit! (though the ROIs he mentions are different - perhaps he is calculating them without considering hotels/houses? :smile:) in the fourth episode of "The Mayfair Set" documentaries by Adam Curtis](https://www.youtube.com/watch?v=PdQ3ztGk0D4&t=57m38s), (though in the video he is referring to the English names of the properties, it's helpful that he still mentions the colors 😂).
 
 ## Footnotes
 
@@ -201,6 +201,6 @@ Jim Slater, the famous English bank businessman, [provides a breakdown of the ex
 </div>
 <br/>
 <div id="footnote-4">
-4. See footnote 4 above. 'Late game' begins the moment 'early game' ends :joy:
+4. See footnote 4 above. 'Late game' begins the moment 'early game' ends 😂
 </div>
 

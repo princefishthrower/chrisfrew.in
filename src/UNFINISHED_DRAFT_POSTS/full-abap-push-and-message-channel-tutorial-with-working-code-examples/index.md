@@ -125,7 +125,7 @@ Finally, I want to be very clear - in no way should websockets replace _all_ of 
 
 Whew - that was a fun one! Tune in for more blog posts AND video tutorials on ABAP, SAPUI5 / OpenUI5 in 2020. I've got my own SAPUI5 Web IDE / ABAP Server / Cloud Connector stack now, so there's nothing stopping me!
 
-Cheers! :beer:
+Cheers! 🍺
 
 Chris
 

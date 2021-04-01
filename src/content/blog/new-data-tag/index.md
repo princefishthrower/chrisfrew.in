@@ -11,6 +11,6 @@ There's a new '#data' tag here on my blog, since I've realized a lot of my proje
 
 Anyway, this is just a simple housekeeping post - look for more #data tagged posts to come!
 
-Cheers! :beer:
+Cheers! 🍺
 
 Chris

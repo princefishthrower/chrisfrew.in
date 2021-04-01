@@ -289,13 +289,13 @@ and ensuring the returned value from the GET call has the same `state` value. Th
 
 Finally, the functions `toQueryString`, `URLEncode`, and `sha256` would probably best live in another functions file, like `util.ts` or similar. I've just put them all together in the same snippet for easy illustration.
 
-While not in the scope of this post, just a friendly reminder that the subsequent call to the `/oauth/token` endpoint _cannot_ be made from the frontend (nor should it ever, even if Auth0 let you! To be clear: Auth0 _doesn't_ let you. :joy:)
+While not in the scope of this post, just a friendly reminder that the subsequent call to the `/oauth/token` endpoint _cannot_ be made from the frontend (nor should it ever, even if Auth0 let you! To be clear: Auth0 _doesn't_ let you. 😂)
 
 You have to create your own endpoint on your server to forward the values of `code`, `code_verifier`, and `redirect_uri`. It's the only secure way to get your hands on the refresh token, since you need to store the refresh tokens in a secure place.
 
 Well, that's all. I hope others find this post at some point from the chain of blog posts and StackOverflows that I found. You _can_ get PKCE with React Native and Expo all working together in harmony. :thumbsup:
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris
 

@@ -16,6 +16,6 @@ Simply scroll all the way down to check it out - and of course, consider subscri
 
 Welp, that's all for now!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris
