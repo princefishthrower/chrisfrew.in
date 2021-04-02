@@ -1,5 +1,5 @@
 const path = require(`path`)
-const spawnSync = require('child_process').spawnSync;
+const spawn = require("child_process").spawn
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -84,8 +84,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 }
 
-exports.onPostBuild = () => {
-    console.log("Creating PDF from snippets page...")
-    spawnSync("node create-snippets-pdf.js", { shell: true, detached: true })
-    console.log("PDF export successful!")
+exports.onPostBuild = async () => {
+    await spawnChild();
 }
+
+async function spawnChild() {
+    const child = spawn("node", ["create-snippets-pdf.js"])
+    for await (const chunk of child.stdout) {
+        console.log(chunk.toString())
+    }
+    let error = ""
+    for await (const chunk of child.stderr) {
+        console.error(chunk.toString())
+    }
+    const exitCode = await new Promise((resolve) => {
+        child.on("close", resolve)
+    })
+    if (exitCode) {
+        throw new Error(`Subprocess error exit ${exitCode}, ${error}`)
+    }
+    console.log("All PDF exports successful!")
+}
+
+
