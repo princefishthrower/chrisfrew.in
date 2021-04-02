@@ -41,12 +41,6 @@ body {
             border: 1px solid $lightColor;
         }
 
-        .socials-container {
-            text-align: "center";
-            border: 1px solid $monokaiRedLightMode;
-            padding: 0.5rem;
-        }
-
         .linkPreviewWrapper {
             border: 1px solid $lightColor;
             &:hover {
@@ -96,12 +90,6 @@ body {
             border: 1px solid $darkColor;
         }
 
-        .socials-container {
-            text-align: "center";
-            border: 1px solid $monokaiRedDarkMode;
-            padding: 0.5rem;
-        }
-
         .linkPreviewWrapper {
             border: 1px solid $darkColor;
             &:hover {
@@ -126,7 +114,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 1rem;
 }
 
 h1,
@@ -207,58 +196,6 @@ pre[class*="language-"] > code {
     margin: 0 auto;
     max-width: 400px;
     font-weight: bold;
-    text-align: center;
-}
-
-.linear-wipe {
-    font-family: "CooperBlackRegular";
-    font-weight: 900;
-    text-align: center;
-    color: #000;
-    animation: shine 2s linear infinite;
-    &.normal {
-        background: linear-gradient(
-            to right,
-            $monokaiBlue 0%,
-            $monokaiYellow 50%,
-            $monokaiBlue 100%
-        );
-        background-size: 200% auto;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    &.alt {
-        background: linear-gradient(
-            to right,
-            $monokaiRedDarkMode 0%,
-            $monokaiOrange 50%,
-            $monokaiRedDarkMode 100%
-        );
-        background-size: 200% auto;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-@keyframes shine {
-    to {
-        background-position: 200% center;
-    }
-}
-
-.twentytwenty-fun {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 26rem;
-    font-size: 0.75rem;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    animation: hover 2s ease-in-out infinite alternate;
-    line-height: 0.75rem;
     text-align: center;
 }
 

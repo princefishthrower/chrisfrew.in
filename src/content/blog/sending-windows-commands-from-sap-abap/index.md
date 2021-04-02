@@ -219,6 +219,6 @@ As a review, we determined the specific commands needed to be sent to the Window
 
 I hope everyone enjoyed this post and learned a thing or two. I'm going to be posting a lot more ABAP as well as SAPUI5 content in the coming months. I've found that the learning curve for SAPUI5 is a lot higher than other frontend frameworks like React, Vue, or Cycle. I've done specialized projects with SAPUI5 is both the EWM and PP modules - There is A LOT of really cool stuff you can do, (especially in EWM) with WebSockets, statistics, and SAPUI5. The bottom line is, I've got some great content in the coming months for everyone!
 
-Cheers everyone! :beer:
+Cheers everyone! 🍺
 
 _Intellectual property/privacy disclaimer: the exact source code and use case have been modified from the real use case at the company I work for, [Ospelt](https://www.ospelt.com/en/ospelt/info/home.html)._

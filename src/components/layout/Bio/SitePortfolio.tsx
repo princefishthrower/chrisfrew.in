@@ -8,22 +8,13 @@ export function SitePortfolio(props: ISitePortfolioProps) {
             <div>Sites I've built solo:</div>
             <div>
                 <a
-                    href="https://wheelscreener.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    wheelscreener.com
-                </a>
-            </div>
-            <div>
-                <a
                     href="https://rœst.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     rœst.com
                 </a>
-                /
+                &nbsp;/&nbsp;
                 <a
                     href="https://rœst.com"
                     target="_blank"

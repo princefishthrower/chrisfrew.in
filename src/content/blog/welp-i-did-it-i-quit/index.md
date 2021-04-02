@@ -90,7 +90,7 @@ And so I'm doing it - Its time for me to spread my wings and fly. I'll check bac
 
 Hopefully it won't be me that the post-mortem is written about.
 
--Cheers! :beer:
+-Cheers! 🍺
 
 Chris
 

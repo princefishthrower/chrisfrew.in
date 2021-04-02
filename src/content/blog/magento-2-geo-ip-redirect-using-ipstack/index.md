@@ -381,6 +381,6 @@ That's about it for this one. We've built a SessionManager plugin and a router t
 
 Please let me know of any errors or issues by sending me an email at <a href="mailto:frewin.christopher@gmail.com">frewin.christopher@gmail.com</a>
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

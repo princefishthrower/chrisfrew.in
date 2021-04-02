@@ -25,7 +25,7 @@ export function Chris (props: IChrisProps) {
 return (
     <>
         <StaticImage
-            src={"../../images/avatar.jpg"}
+            src={"../../../images/avatar.jpg"}
             alt={data.site.siteMetadata.author}
             width={260}
             height={260}
@@ -36,7 +36,6 @@ return (
                 marginLeft: "auto",
                 marginRight: "auto",
                 borderRadius: `100%`,
-                marginTop: "2rem",
                 marginBottom: "1rem",
             }}
         />
@@ -51,8 +50,9 @@ return (
         >
             <BioLead/>
             <TeachingPortfolio/>
+            <SocialsContainer/>
             <p>
-                You can also check out
+                You can also check out the homepage for
                 <a
                     href="https://fullstackcraft.com"
                     target="_blank"
@@ -66,12 +66,11 @@ return (
             </p>
 
             <p>
-                If I'm not building or teaching full stack software, I'll be
+                If I'm not building SaaS Products or teaching the full stack, I'll be
                 found hiking, skiing, taking pictures, losing money on
                 options, spoiling homebrew, or creating music and art. I
                 (mostly) live in Austria.
             </p>
-            <SocialsContainer/>
             <p>
                 I'm a proud member of the{" "}
                 <a

@@ -156,7 +156,7 @@ If you'd like, request a boilerplate repo and I'll put one together on GitHub re
 
 That's it for this post! Hope it was helpful!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris
 

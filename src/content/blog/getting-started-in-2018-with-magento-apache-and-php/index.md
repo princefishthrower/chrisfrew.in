@@ -9,7 +9,7 @@ postType: dev
 
 Originally published here, also [_published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)
 
-So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. :joy: :joy: :joy: While Magento provides a lot of powerful tools for building e-commerce sites, it's a beast to get started up, especially if one of you has only done it on Windows, and one of you has a Mac. :wink: I documented everything we sludged through in those 5 hours, and this post was born!
+So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. 😂 😂 😂 While Magento provides a lot of powerful tools for building e-commerce sites, it's a beast to get started up, especially if one of you has only done it on Windows, and one of you has a Mac. :wink: I documented everything we sludged through in those 5 hours, and this post was born!
 
 This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 30 minutes to an hour :smile:
 
@@ -731,6 +731,6 @@ SSLRandomSeed connect builtin
 
 I hope this was useful to those getting started with an existing Magento 2 project on macOS!
 
-Cheers! :beer:
+Cheers! 🍺
 
 Chris

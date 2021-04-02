@@ -1,11 +1,17 @@
+// base dark and light colors
 $darkColor: #191919;
-$lightColor: white;
+$lightColor: #ffffff;
+
+// monokai colors
 $monokaiRedDarkMode: #f92672;
 $monokaiRedLightMode: #e70457;
 $monokaiGreen: #27dea7;
 $monokaiBlue: #62d3e9;
 $monokaiYellow: #F7D163;
 $monokaiOrange: #FD9720;
+$monokaiPink: #FD5FF0;
+
+// for javascript / typescript toggler
 $typeScriptBlue: #2F74C0; 
 $javaScriptYellow: #EFD81C;
 // some color utils
@@ -23,6 +29,10 @@ $javaScriptYellow: #EFD81C;
 
 .fillMonokaiRedDarkMode {
     fill: $monokaiRedDarkMode;
+}
+
+.fillMonokaiPink {
+    fill: $monokaiPink;
 }
 
 .typescript {

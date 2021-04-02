@@ -329,6 +329,6 @@ As always, thanks for reading and stay tuned - I've always got more blog posts i
 
 🌊 A rising tide lifts all boats. 🛶
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

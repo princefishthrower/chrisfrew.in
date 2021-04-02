@@ -39,6 +39,6 @@ function cs() {
 
 I haven't tested it too extensively, but it's working for me as long as the script to be compiled has a `static main` method. (I think `csc` warns you or throws an error otherwise). Go ahead and copy that into your `.profile`, `.bashrc`, or similar, and get rippin' with C# scripts!
 
--Cheers! :beer:
+-Cheers! 🍺
 
 Chris

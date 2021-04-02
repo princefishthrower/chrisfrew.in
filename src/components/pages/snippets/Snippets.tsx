@@ -13,6 +13,11 @@ const sendSlackMessageFrontendJS = require("!!raw-loader!../../../content/snippe
 const sendSlackMessageBackendTS = require("!!raw-loader!../../../content/snippets/backend/node/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageBackendJS = require("!!raw-loader!../../../content/snippets/backend/node/javascript/utils/sendSlackMessage.js")
 
+const patchFiltererService = require("!!raw-loader!../../../content/snippets/backend/csharp/dotnet/utils/PatchFiltererService.cs")
+
+const buildColorPromptBash = require("!!raw-loader!../../../content/snippets/devops/bash/buildColorPrompt.sh")
+const buildColorPromptZsh = require("!!raw-loader!../../../content/snippets/devops/zsh/buildColorPrompt.sh")
+
 export interface ISnippetsProps {
     pdfMode: boolean
 }
@@ -20,9 +25,7 @@ export interface ISnippetsProps {
 export function Snippets(props: ISnippetsProps) {
     const { pdfMode } = props
     const title = "Full Stack Snippets."
-    const titleText = pdfMode
-        ? title
-        : colorizeStringBySeparator(title, "")
+    const titleText = pdfMode ? title : colorizeStringBySeparator(title, "")
     return (
         <>
             <h1 className="cooper big">{titleText}</h1>
@@ -77,6 +80,30 @@ export function Snippets(props: ISnippetsProps) {
                 pdfMode={pdfMode}
             />
             <h3>C# (.NET)</h3>
+            <SnippetToggler
+                snippetLabel="PatchFiltererService"
+                fileLabels={["PatchFiltererService.cs"]}
+                otherCode={patchFiltererService.default.toString()}
+                otherLanguage="csharp"
+                pdfMode={pdfMode}
+            />
+            <h2>Devops</h2>
+            <h3>Bash</h3>
+            <SnippetToggler
+                snippetLabel="buildColorPrompt()"
+                fileLabels={["buildColorPrompt.sh"]}
+                otherCode={buildColorPromptBash.default.toString()}
+                otherLanguage="bash"
+                pdfMode={pdfMode}
+            />
+            <h3>zsh</h3>
+            <SnippetToggler
+                snippetLabel="buildColorPrompt()"
+                fileLabels={["buildColorPrompt.sh"]}
+                otherCode={buildColorPromptZsh.default.toString()}
+                otherLanguage="bash"
+                pdfMode={pdfMode}
+            />
         </>
     )
 }

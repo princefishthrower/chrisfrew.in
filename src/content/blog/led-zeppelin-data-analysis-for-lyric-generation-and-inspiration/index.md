@@ -291,7 +291,7 @@ St. Tristan's Sword
 Two Ones Are Won
 ```
 
-Not so bad- we've retrieved what is the vast majority of Led Zeppelin's lyrics in a matter of minutes. However, I'm still too lazy to get these lyrics by hand - I'm not gonna add 'em. :joy:
+Not so bad- we've retrieved what is the vast majority of Led Zeppelin's lyrics in a matter of minutes. However, I'm still too lazy to get these lyrics by hand - I'm not gonna add 'em. 😂
 
 ## Data Analysis - Word Occurrences
 
@@ -354,7 +354,7 @@ The first plot, of the top 25 most common words, looks like this:
 
 ![First 25 most common words](most_common.png)
 
-In a way, I think we've found the 'stop words' of Led Zeppelin. :joy: I could have almost expected 'babe' and 'baby' - it's repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more 'meat' of the lyrics:
+In a way, I think we've found the 'stop words' of Led Zeppelin. 😂 I could have almost expected 'babe' and 'baby' - it's repeated so many times in so many of their songs. However, if we go a bit further down in the most common words, namely to the next set of 25 most common words, we see a bit more 'meat' of the lyrics:
 
 ![25-50 most common words](most_common_lower.png)
 
@@ -378,7 +378,7 @@ Alright... they are a bit... weird. But inspiring a bit? At least? Maybe.<sup>Ma
 
 ## Data Analysis - More Advanced - Word Level Recurring Neural Network (RNN)
 
-Turn on the :computer:CPU fan - we're going Tensorflow. :joy:
+Turn on the :computer:CPU fan - we're going Tensorflow. 😂
 
 We're going to use a nice Word level RNN for starters, from hunkim on GitHub: [https://github.com/hunkim/word-rnn-tensorflow](https://github.com/hunkim/word-rnn-tensorflow)
 
@@ -394,5 +394,5 @@ These look _much_ better than the wacky Markov chains:
 
 I hope you enjoyed this post! Until next time!
 
-Cheers :beer:
+Cheers 🍺
 

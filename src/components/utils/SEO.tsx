@@ -55,7 +55,7 @@ export default function SEO(props: ISEOProps) {
 
                 {/* Gumroad JS - 1990s style */}
                 <script src="https://gumroad.com/js/gumroad.js"></script>
-                <script src="https://gumroad.com/js/gumroad-embed.js"></script>
+                <script data-cfasync="false" src="https://gumroad.com/js/gumroad-embed.js"></script>
             </Helmet>
             <SchemaOrg
                 title={title}

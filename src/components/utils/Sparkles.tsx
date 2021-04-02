@@ -22,7 +22,6 @@ const generateSparkle = color => {
 }
 const Sparkles = ({
     colors = Constants.DEFAULT_SPARKLE_CLASS_NAMES,
-    alternateColorScheme = false,
     children,
     ...delegated
 }) => {
@@ -47,8 +46,10 @@ const Sparkles = ({
         prefersReducedMotion ? null : 50,
         prefersReducedMotion ? null : 450
     )
+// take only the first two to form our wipe class
+    const wipeClassName = colors.slice(0, 2).join('-').toLowerCase();
 
-    const className = alternateColorScheme ? 'linear-wipe alt' : 'linear-wipe normal';
+    const className = `linear-wipe ${wipeClassName}`;
     return (
         <Wrapper {...delegated}>
             {sparkles.map(sparkle => (

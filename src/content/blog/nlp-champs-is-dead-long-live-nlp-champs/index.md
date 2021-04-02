@@ -20,7 +20,7 @@ I think that's clear - not just in cutting edge research - but in industry as we
 
 The knowledge I gained was useful, and I may even bring it into something I create in the future. Frankly, I just need to get away a bit more from my current project and get back to slowing down and tinkering, putting interesting stuff together. Looking back at some of the posts and code I made... I really there was some neat stuff!
 
-However, since I haven't bothered to check our Google Analytics (actually, I don't even know if we have one for nlp-champs.com), our Gmail account, or really anything NLP Champs related to the site for...<sup><sup>hmmmmmmmmmmmmmmmmmm</sup></sup> about half a year now, its time to abandon it. (It also has largely to do with the fact that I'm a cheap ass and don't want to renew the domain :joy:)
+However, since I haven't bothered to check our Google Analytics (actually, I don't even know if we have one for nlp-champs.com), our Gmail account, or really anything NLP Champs related to the site for...<sup><sup>hmmmmmmmmmmmmmmmmmm</sup></sup> about half a year now, its time to abandon it. (It also has largely to do with the fact that I'm a cheap ass and don't want to renew the domain 😂)
 
 Still... I'll always be fond of that gold and black design. :thumbsup:
 

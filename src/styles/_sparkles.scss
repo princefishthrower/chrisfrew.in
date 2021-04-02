@@ -1,0 +1,53 @@
+.linear-wipe {
+    font-family: "CooperBlackRegular";
+    letter-spacing: 0.075rem;
+    font-weight: 900;
+    text-align: center;
+    color: #000;
+    animation: shine 2s linear infinite;
+
+    &.fillmonokaipink-fillmonokaiblue {
+        background: linear-gradient(
+            to right,
+            $monokaiPink 0%,
+            $monokaiBlue 50%,
+            $monokaiPink 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.fillmonokaiblue-fillmonokaiyellow {
+        background: linear-gradient(
+            to right,
+            $monokaiBlue 0%,
+            $monokaiYellow 50%,
+            $monokaiBlue 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.fillmonokaiorange-fillmonokaireddarkmode {
+        background: linear-gradient(
+            to right,
+            $monokaiRedDarkMode 0%,
+            $monokaiOrange 50%,
+            $monokaiRedDarkMode 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}

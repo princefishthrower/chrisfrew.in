@@ -87,7 +87,7 @@ public function setShoeSize(string $internalID, string $shoeSize)
     $customerBundleMaintainConfirmationMessage_sync_V1 = $this->soapService->MaintainBundle_V1($customerBundleMaintainRequestMessage_sync_V1);
     $customerBundleMaintainConfirmationMessage_sync_V1->getLog()->getMaximumLogItemSeverityCode();
 }
-// can you guess what the 'setAddress' function looks like? :joy:
+// can you guess what the 'setAddress' function looks like? 😂
 ```
 
 You can see in each function, there is only a single internal SOAP function that is _actually_ in the snippets above, those are `setBelt_length` and `setShoe_Size` methods, respectively. 
@@ -161,6 +161,6 @@ public function parseResponse() {
 
 In any case, while the fluent method has been around for a while, the fluent methodology definitely has value - and I think my code snippets illustrate that fact pretty well! :smile:
 
-Enjoy, and Cheers! :beer:
+Enjoy, and Cheers! 🍺
 
 -Chris

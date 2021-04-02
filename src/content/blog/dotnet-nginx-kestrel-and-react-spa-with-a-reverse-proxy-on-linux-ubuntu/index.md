@@ -168,6 +168,6 @@ Note that with this setup, you can leave all `fetch` calls in your React SPA rel
 
 Let me know in the comments!
 
-Cheers! :beer:
+Cheers! 🍺
 
 -Chris

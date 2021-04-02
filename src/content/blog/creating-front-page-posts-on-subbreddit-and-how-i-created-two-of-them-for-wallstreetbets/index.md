@@ -52,4 +52,4 @@ If there is interest, I can go through my process of the technical graphic desig
 
 Hope you enjoyed and picked up a tip or two and got a laugh out of the memes!
 
--Cheers! :beer:
+-Cheers! 🍺

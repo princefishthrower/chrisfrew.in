@@ -22,7 +22,7 @@ It's important to remember, Bitcoin was the first of its kind (certainly not the
 
 !["We'll give up the hostages if you send us 10000 Bitcoin!" "10000 Bitcoin? Does he think this is 2017? There's no single entity left in the world with that much!"](./bitcoincomic.jpg)
 
-A comic I thought up about Bitcoin  :joy::joy::joy: (_comic is still not done, but it will show up here soon_).
+A comic I thought up about Bitcoin  😂😂😂 (_comic is still not done, but it will show up here soon_).
 
 As cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:
 
@@ -63,4 +63,4 @@ But, for the present, let the following stand:
 
 My overall thoughts are this: Bitcoin will continue to see a run up into very large numbers in the 50K-100K region, then stabilize as buying rates finally settle down to match that of selling rates. Then, at some point along this stagnation, there will be a slow starting decrease downtrend in Bitcoin's price, then accelerating, bringing the price of Bitcoin back to its pre-boom levels (think: $5 - $10 range). When will this happen? I would say not within the next 5-10 years. But it's my long term feeling.
 
-Cheers! :beer:
+Cheers! 🍺
