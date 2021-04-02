@@ -8,10 +8,7 @@ import { SocialsContainer } from '../../layout/Bio/SocialsContainer';
 import { TeachingPortfolio } from '../../layout/Bio/TeachingPortfolio';
 import Sparkles from '../../utils/Sparkles';
 
-export interface IChrisProps {
-}
-
-export function Chris (props: IChrisProps) {
+export function Chris () {
     const data = useStaticQuery(graphql`
     query ChrisQuery {
         site {

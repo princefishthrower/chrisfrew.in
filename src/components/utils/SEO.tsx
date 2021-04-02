@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import SchemaOrg from "./SchemaOrg"
+import { TwitterMetaTags } from "./TwitterMetaTags"
 
 export interface ISEOProps {
     title: string
@@ -41,17 +42,7 @@ export default function SEO(props: ISEOProps) {
                 <meta name="og:description" content={description} />
                 <meta name="og:type" content="website" />
                 <meta name="twitter:title" content="Chris' Full Stack Blog" />
-                <meta
-                    name="twitter:card"
-                    content="A professional software engineering blog."
-                />
-                <meta
-                    name="twitter:site"
-                    content="https://chrisfrew.in"
-                />
-                <meta name="twitter:creator" content={author} />
-                <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content={"../../images/twitter.png"} />
+                <TwitterMetaTags author={author} description={description}/>
 
                 {/* Gumroad JS - 1990s style */}
                 <script src="https://gumroad.com/js/gumroad.js"></script>

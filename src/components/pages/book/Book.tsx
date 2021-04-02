@@ -7,11 +7,12 @@ export function Book() {
         <>
             <h1 className="cooper big">
                 {colorizeStringBySeparator(
-                    "Build Your Own Full Stack SaaS Product Book",
+                    "📘 Full Stack SaaS Product Cookbook",
                     ""
                 )}
             </h1>
-            <p>In my book "Build Your Own Full Stack SaaS Product", you'll learn the following skills:</p>
+            <h2>From Soup 🍜 to Nuts 🥜 - Creating a Profitable SaaS Product as a Solo Developer in Days</h2>
+            <p>In the <i>Full Stack SaaS Product Cookbook</i>, you'll learn in step-by-step tutorials how to do the following:</p>
                 <ul>
                     <li>Frontend: how to build an amazing Gatsby site using TypeScript and React, and use Netlify as your frontend CI / CD framework.</li> 
                     <li>Backend: how to use FaunaDB for user data storage and your own .NET 5.0 API runing on an Ubuntu 20.04 Digital Ocean Droplet with PostgreSQL 13 for anything more advanced that you may need, and use BitBucket Pipelines as your backend CI / CD framework.</li> 

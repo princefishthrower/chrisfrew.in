@@ -23,7 +23,7 @@ export function Goodies() {
                 </a>
             </div>
             {/* TODO: use a query string on the snippets page to filter which parts are shown, then refactor the puppeteer script for that */}
-            {/* <p>Looking for a specific set of my snippets? Here they are:</p>
+            <p>Looking for a specific set of my snippets? Here they are:</p>
             <div>
                 <a
                     href="/exports/full-stack-snippets-typescript.pdf"
@@ -44,22 +44,22 @@ export function Goodies() {
             </div>
             <div>
                 <a
-                    href="/exports/full-stack-snippets-dotnet.pdf"
+                    href="/exports/full-stack-snippets-csharp.pdf"
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - .NET Only!
+                    📜 &nbsp; Full Stack Snippets - C# Only!
                 </a>
             </div>
             <div>
                 <a
-                    href="/exports/full-stack-snippets-bash.pdf"
+                    href="/exports/full-stack-snippets-shell.pdf"
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - Bash Only!
+                    📜 &nbsp; Full Stack Snippets - Shell Scripts (so far bash and zsh) Only!
                 </a>
-            </div> */}
+            </div>
             These snippet PDFs are generated every time I post or update a snippet{" "}
             <Link to="/snippets">on the snippets page</Link>, so you can be sure
             it has the most up-to-date code in it! 👍
