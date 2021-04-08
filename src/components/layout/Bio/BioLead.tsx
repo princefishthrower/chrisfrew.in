@@ -1,11 +1,9 @@
 import * as React from "react"
 
-export interface IBioLeadProps {}
-
-export function BioLead(props: IBioLeadProps) {
+export function BioLead() {
     return (
-        <p className="bio-lead">
-            Hi! I'm Chris Frewin, I'm going to be COURSE MASTER for 2021!
+        <p className="bio-lead font-weight-bold">
+            Hi! I'm Chris Frewin, Full Stack Software Engineer & Educator!
         </p>
     )
 }

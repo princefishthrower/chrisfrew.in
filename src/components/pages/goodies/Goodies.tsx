@@ -7,11 +7,11 @@ export function Goodies() {
         <>
             <h1 className="cooper big">
                 {colorizeStringBySeparator(
-                    "Full Stack Downloadables, Freebies, N' More.",
+                    "Full Stack Downloadables, Freebies, N' More",
                     ""
                 )}
             </h1>
-            <h2>A variety of downloads, freebies, and more!</h2>
+            <h2>A variety of downloads, freebies, and more.</h2>
             <p>Full Stack Snippets as a PDF.</p>
             <div>
                 <a
@@ -19,7 +19,7 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; All Full Stack Snippets!
+                    📜 &nbsp; Full Stack Snippets
                 </a>
             </div>
             {/* TODO: use a query string on the snippets page to filter which parts are shown, then refactor the puppeteer script for that */}
@@ -30,7 +30,7 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - TypeScript Only!
+                    📜 &nbsp; Full Stack Snippets - TypeScript Only
                 </a>
             </div>
             <div>
@@ -39,7 +39,7 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - JavaScript Only!
+                    📜 &nbsp; Full Stack Snippets - JavaScript Only
                 </a>
             </div>
             <div>
@@ -48,7 +48,7 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - C# Only!
+                    📜 &nbsp; Full Stack Snippets - C# Only
                 </a>
             </div>
             <div>
@@ -57,12 +57,12 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - Shell Scripts (so far bash and zsh) Only!
+                    📜 &nbsp; Full Stack Snippets - Shell Only (so far only bash and zsh)
                 </a>
             </div>
             These snippet PDFs are generated every time I post or update a snippet{" "}
             <Link to="/snippets">on the snippets page</Link>, so you can be sure
-            it has the most up-to-date code in it! 👍
+            it has the most up-to-date code in it. 👍
         </>
     )
 }

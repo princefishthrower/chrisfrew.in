@@ -1,0 +1,51 @@
+.dark-mode .signature {
+    g {
+        stroke: $lightColor;
+    }
+}
+
+.light-mode .signature {
+    g {
+        stroke: $darkColor;
+    }
+}
+
+.signature {
+    .animate {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation-name: dash;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        &.first {
+            animation-delay: 0s;
+            animation-duration: 2s;
+        }
+        &.second {
+            animation-delay: 2.5s;
+            animation-duration: 2s;
+        }
+        &.third {
+            animation-delay: 3s;
+            animation-duration: 2s;
+        }
+        &.fourth {
+            animation-delay: 4.5s;
+            animation-duration: 2s;
+        }
+        &.fifth {
+            animation-delay: 6s;
+            animation-duration: 2s;
+        }
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Sparkles from "../utils/Sparkles"
 import Constants from "../../constants/Constants"
+import { Signature } from "./Bio/Signature"
 
 export default function Bio() {
     const data = useStaticQuery(graphql`
@@ -42,20 +43,23 @@ export default function Bio() {
                     zIndex: 10, // for canvas issue
                 }}
             >
-                <p style={{ textAlign: "center", fontWeight: "900" }}>
+                <p style={{ textAlign: "center", fontWeight: "bolder" }}>
                     Hi! I'm Chris!
                 </p>
                 <p>
-                    After opening up my first Bash terminal while at Cornell, studying
-                    for my M.S. in Mechanical Engineering (
-                    <a href="https://pepiot.mae.cornell.edu/pdf/Laurent_CF_2016.pdf">
-                        thesis publication here if you are interested
-                    </a>
-                    ),{" "}
-                    <Sparkles colors={Constants.LOVE_SPARKLE_CLASS_NAMES}>
-                        it was software love at first sight!
-                    </Sparkles>{" "}
-                    I've since learned a variety of frameworks, , databases,
+                    <strong>
+                        Ah... 😌 I still remember opening up my very first Bash
+                        terminal... it was a late summer day in September in
+                        Cornell's Engineering Quad...
+                    </strong>
+                </p>
+                <div className="text-center">
+                    <h3><Sparkles colors={Constants.LOVE_SPARKLE_CLASS_NAMES}>
+                        It was the start of a software love story!
+                    </Sparkles></h3>
+                </div>
+                <p>
+                    I've since learned a variety of frameworks, databases,
                     design patterns, and languages, including TypeScript,
                     JavaScript, .NET, Python, React, Redux, ABAP, SAPUI5 UI5,
                     C#, PHP7, Postgresql, and Magento. I love the challenge of
@@ -70,21 +74,22 @@ export default function Bio() {
                     course always is considered as part of a wider scope of the
                     full stack software ecosystem. If such courses sound
                     interesting to you, please checkout{" "}
-                    <Link to="/courses">the Full Stack Courses page</Link>!
+                    <Link to="/courses">my Full Stack Courses page</Link>!
                 </p>
                 <p>
                     I don't want anyone to be intimated by the noise of the
                     software world - I too struggle and reach out from time to
-                    time for help and mentoring. To this end, I try to make my courses as
-                    clear as possible so you don't get lost or confused.
+                    time for help and mentoring. To this end, I try to make my
+                    courses as clear as possible so you don't get lost or
+                    confused.
                 </p>
                 <p>
-                    You can read more about my SaaS products, site portfolio, and more
-                    on <Link to="/chris">the about page</Link>.
+                    You can read more about my SaaS products, site portfolio,
+                    and more on <Link to="/chris">my bio page</Link>.
                 </p>
-                <p>
-                    Enjoy the blog!
-                </p>
+                <p><strong>I sincerely hope you enjoy the blog!</strong></p>
+                <Signature/>
+                <p>- Chris</p>
             </div>
         </>
     )

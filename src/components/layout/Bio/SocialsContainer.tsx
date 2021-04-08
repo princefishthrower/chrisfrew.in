@@ -1,37 +1,62 @@
 import * as React from "react"
 
-export interface ISocialsContainerProps {}
-
-export function SocialsContainer(props: ISocialsContainerProps) {
+export function SocialsContainer() {
     return (
-        <div className="socials-container">
-            <a href="https://instagram.com/_chrisfrewin_" rel="me">
-                Instagram
-            </a>
-            &nbsp; | &nbsp;
-            <a href="https://chrisfrewin.medium.com" rel="me">
-                Medium
-            </a>
-            &nbsp; | &nbsp;
-            <a href="https://twitter.com/Galt_" rel="me">
-                Twitter
-            </a>
-            &nbsp; | &nbsp;
-            <a href="https://github.com/princefishthrower" rel="me">
-                GitHub
-            </a>
-            &nbsp; | &nbsp;
-            <a href="https://reddit.com/user/trollerroller" rel="me">
-                Reddit
-            </a>
-            &nbsp; | &nbsp;
-            <a
-                className="u-email"
-                href="mailto:frewin.christopher@gmail.com"
-                rel="me"
-            >
-                Email
-            </a>
-        </div>
+        <>
+            <p className="text-center font-weight-bold">Socials</p>
+            <div className="flex-container">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://dev.to/frewinchristopher"
+                >
+                    DEV
+                </a>
+                 • 
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.producthunt.com/@galt_"
+                >
+                    Product Hunt
+                </a>
+                 • 
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.indiehackers.com/fullStackChris"
+                >
+                    Indie Hackers
+                </a>
+                 • 
+                <a href="https://instagram.com/_chrisfrewin_" rel="me">
+                    Instagram
+                </a>
+                 • 
+                <a href="https://chrisfrewin.medium.com" rel="me">
+                    Medium
+                </a>
+                 • 
+                <a href="https://twitter.com/Galt_" rel="me">
+                    Twitter
+                </a>
+                 • 
+                <a href="https://github.com/princefishthrower" rel="me">
+                    GitHub
+                </a>
+                 • 
+                <a href="https://reddit.com/user/trollerroller" rel="me">
+                    Reddit
+                </a>
+                 • 
+                <a
+                    className="u-email"
+                    href="mailto:frewin.christopher@gmail.com"
+                    rel="me"
+                >
+                    Email
+                </a>
+            </div>
+        </>
     )
 }
