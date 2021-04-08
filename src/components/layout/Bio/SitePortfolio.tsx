@@ -1,50 +1,27 @@
 import * as React from "react"
 
-export interface ISitePortfolioProps {}
 
-export function SitePortfolio(props: ISitePortfolioProps) {
+export function SitePortfolio() {
     return (
         <>
-            <div>Sites I've built solo:</div>
-            <div>
-                <a
-                    href="https://rœst.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    rœst.com
-                </a>
-                &nbsp;/&nbsp;
-                <a
-                    href="https://rœst.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    rœst.coffee
-                </a>
-            </div>
-
-            <div>
-                <a
+            <p className="text-center font-weight-bold">Sites</p>
+            <div className="flex-container">
+                 <a
                     href="https://sirenapparel.us"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    sirenapparel.us
+                    Siren Apparel
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://nlp-champs.chrisfrew.in"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    nlp-champs.chrisfrew.in (formerly nlp-champs.com)
+                    NLP Champs
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://seelengeflüster-tirol.com"
                     target="_blank"
@@ -52,9 +29,7 @@ export function SitePortfolio(props: ISitePortfolioProps) {
                 >
                     seelengeflüster-tirol.com
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://wallstreetbetswally.github.io"
                     target="_blank"
@@ -62,9 +37,7 @@ export function SitePortfolio(props: ISitePortfolioProps) {
                 >
                     wallstreetbetswally.github.io
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://princefishthrower.github.io/invaders/"
                     target="_blank"
@@ -72,9 +45,7 @@ export function SitePortfolio(props: ISitePortfolioProps) {
                 >
                     princefishthrower.github.io/invaders
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://portfolio.chrisfrew.in/"
                     target="_blank"
@@ -82,9 +53,7 @@ export function SitePortfolio(props: ISitePortfolioProps) {
                 >
                     portfolio.chrisfrew.in
                 </a>
-            </div>
-
-            <div>
+                 • 
                 <a
                     href="https://fullstackcraft.com"
                     target="_blank"

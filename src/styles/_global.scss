@@ -109,14 +109,24 @@ body {
     }
 }
 
-.socials-container {
+// util classes used in many places
+
+.text-center {
+    text-align: center;
+}
+.font-weight-bold {
+    font-weight: 900;
+}
+
+.flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1rem;
 }
+
+// more tag styles
 
 h1,
 h2 {
@@ -195,7 +205,6 @@ pre[class*="language-"] > code {
 .bio-lead {
     margin: 0 auto;
     max-width: 400px;
-    font-weight: bold;
     text-align: center;
 }
 

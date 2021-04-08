@@ -67,7 +67,7 @@ Last but not least: my community presence! I'm going to try and share my courses
 
 Product Hunt Makers:
 
-[https://www.producthunt.com/@galt_](https://www.producthunt.com/@galt_)
+https://www.producthunt.com/@galt_
 
 DEV Community:
 
