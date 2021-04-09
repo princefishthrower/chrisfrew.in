@@ -4,11 +4,10 @@
     align-items: center;
 
     .email-label {
-        font-family: 'CooperBlackRegular';
+        font-family: "CooperBlackRegular";
         font-weight: 500;
         font-size: 0.7rem;
     }
-
 
     .email-input {
         width: 250px;
@@ -28,23 +27,41 @@
         border: none;
         border-radius: 5px;
         box-sizing: border-box;
-        font-family: 'CooperBlackRegular';
+        font-family: "CooperBlackRegular";
         font-weight: 500;
         font-size: 0.7rem;
         cursor: pointer;
-    }    
+    }
 }
 
-.light-mode .submit-button  {
-    background-color: $monokaiRedLightMode !important;
-    color: $darkColor;
+.dark-theme {
+    .submit-button {
+        background-color: $monokaiRedDarkMode !important;
+        color: $darkColor;
+    }
 }
 
-.light-mode .email-input {
-    border: 1px solid gray;
+.light-theme {
+    .submit-button {
+        background-color: $monokaiRedLightMode !important;
+        color: $lightColor;
+    }
+    .email-input {
+        border: 1px solid $blackWhiteGray;
+    }
 }
 
-.dark-mode .submit-button {
-    background-color: $monokaiRedDarkMode !important;
-    color: $lightColor;
+.outrun-theme {
+    .submit-button {
+        background-color: $outrunPink !important;
+        color: $outrunDarkPurple;
+    }
 }
+
+.black-white-theme {
+    .submit-button {
+        background-color: $blackWhiteGray !important;
+        color: $lightColor;
+    }
+}
+

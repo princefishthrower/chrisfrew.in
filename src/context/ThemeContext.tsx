@@ -1,7 +1,7 @@
 import { createContext } from 'react';
-import Constants from '../constants/Constants';
+import { themeConfig } from '../config/ThemeConfig';
 
 export const ThemeContext = createContext({
-    theme: Constants.DARK_MODE,
-    setTheme: (theme: string) => {},
+    themeBodyClass: themeConfig[0].themeBodyClass,
+    setThemeBodyClass: (themeBodyClass: string) => {},
 });

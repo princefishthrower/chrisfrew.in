@@ -1,0 +1,29 @@
+html,
+body {
+    &.outrun-theme {
+        background-color: $outrunDarkPurple;
+        color: $outrunLightOrange;
+
+        h3 {
+            color: $outrunOrange;
+        }
+
+        blockquote {
+            color: $outrunPink;
+            border-left: 4px solid rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: $outrunOrange;
+            z-index: 10;
+            text-shadow: 0 0 5px $outrunOrange, 0 0 10px $outrunPurple,
+            0 0 20px $outrunPink, 0 0 30px $outrunPink, 0 0 40px $outrunPink;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid $outrunPink;
+        }
+    }
+}

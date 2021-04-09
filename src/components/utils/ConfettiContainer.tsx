@@ -1,7 +1,9 @@
 import React, { useEffect } from "react"
 import { useWindowSize, useTween } from "react-use"
 import Confetti from "react-confetti"
-import Constants from "../../constants/Constants"
+import { useContext } from "react"
+import { ThemeContext } from "../../context/ThemeContext"
+import { getConfettiColorHexCodes } from "../../utils/getConfettiColorHexCodes"
 
 // TODO: setup a class here to get various special characters on a day
 const codeCharacters = [
@@ -37,6 +39,8 @@ export default function ConfettiContainer(props) {
     const frictionTween = useTween('outQuad', duration, 0)
     const opacityTween = useTween('linear', duration, duration / 2)
     const windTween = useTween('outQuart', duration*2, duration / 3)
+    const { themeBodyClass } = useContext(ThemeContext)
+    const colors = getConfettiColorHexCodes(themeBodyClass);
 
     // friction tweens from .99 to .79 (solved system of equations, hehe)
     const friction = -0.2 * frictionTween + .99;
@@ -66,7 +70,7 @@ export default function ConfettiContainer(props) {
                 friction={friction}
                 opacity={opacity}
                 initialVelocityY={90}
-                colors={Constants.COLORS}
+                colors={colors}
                 wind={wind}
                 recycle={false}
                 tweenDuration={1}
@@ -86,7 +90,7 @@ export default function ConfettiContainer(props) {
                 friction={friction}
                 opacity={opacity}
                 initialVelocityY={90}
-                colors={Constants.COLORS}
+                colors={colors}
                 recycle={false}
                 wind={wind}
                 tweenDuration={1}

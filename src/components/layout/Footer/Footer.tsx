@@ -1,12 +1,11 @@
 import * as React from "react"
-import monetizedLoop from "../../images/monetized_loop.svg"
-import EmailForm from "../utils/EmailForm"
+import monetizedLoop from "../../../images/monetized_loop.svg"
+import { MonetizedLoop } from "./MonetizedLoop"
 
 export function Footer() {
     return (
         <footer>
             <div className="inner-footer-wrapper">
-            <EmailForm/>
             <div>
                 <span>Really like the blog? You can support it:</span>
                 <div>
@@ -39,12 +38,13 @@ export function Footer() {
                     </a>
                 </span>
                 <div>
-                <img
+                {/* <img
                     src={monetizedLoop}
                     alt="Monetization by Coil"
                     width="171"
                     height="22"
-                />
+                /> */}
+                <MonetizedLoop/>
                 </div>
             </div>
             <div>

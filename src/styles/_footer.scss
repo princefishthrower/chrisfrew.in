@@ -1,5 +1,5 @@
 footer {
-    margin-top: 2rem;
+    margin-top: -$borderThickness;
     position: relative;
     z-index: 10;
     font-weight: bold;
@@ -40,44 +40,81 @@ footer {
     }
 }
 
-.dark-mode footer {
+// // mobile styles
+// @media only screen and (max-width: $medium) {
+//     // two left and write flex divs should go to full width in the footer in widths less than 720px
+//     footer > div {
+//         flex: 0 0 100%;
+//         font-size: 0.6rem;
+//         text-align: center;
+//     }
+
+//     footer > :nth-child(2) {
+//         float: none;
+//         margin-top: 2rem;
+
+//         & > span {
+//             float: none;
+//         }
+
+//         & > img {
+//             float: none;
+//             margin-right: 0;
+//         }
+//     }
+// }
+
+.dark-theme footer {
     background-color: $darkColor;
     border-left-color: $monokaiRedDarkMode;
-    border-bottom-color: $monokaiBlue;
-    border-right-color: $monokaiYellow;
-    border-top-color: $monokaiGreen;
+    border-bottom-color: $monokaiBlueDarkMode;
+    border-right-color: $monokaiYellowDarkMode;
+    border-top-color: $monokaiGreenDarkMode;
 }
 
-.light-mode footer {
+.light-theme footer {
     background-color: $lightColor;
     border-left-color: $monokaiRedLightMode;
-    border-bottom-color: $monokaiBlue;
-    border-right-color: $monokaiGreen;
-    border-top-color: $monokaiYellow;
+    border-bottom-color: $monokaiBlueLightMode;
+    border-right-color: $monokaiGreenLightMode;
+    border-top-color: $monokaiYellowLightMode;
 }
 
-// subscribe form and description div can be full width
-footer div div:nth-child(1) {
-    width: 100%;
-    padding-bottom: 1rem;
+.outrun-theme footer {
+    background-color: $outrunDarkPurple;
+    border-left-color: $outrunOrange;
+    border-bottom-color: $outrunPink;
+    border-right-color: $outrunPurple;
+    border-top-color: $outrunOrange;
 }
+
+.black-white-theme footer {
+    background-color: $lightColor;
+    border-color: $blackWhiteGray;
+}
+
+// // subscribe form and description div can be full width
+// footer div div:nth-child(1) {
+//     width: 100%;
+//     padding-bottom: 1rem;
+// }
 
 // buy me a coffee div
-footer div div:nth-child(2) {
+footer div div:nth-child(1) {
     text-align: center;
     margin-bottom: 1rem;
     flex: 0 50%;
 }
 
 // web monotization div
-footer div div:nth-child(3) {
+footer div div:nth-child(2) {
     text-align: center;
     margin-bottom: 1rem;
     flex: 0 50%;
 }
 
 // copywrite div
-footer div div:nth-child(4) {
+footer div div:nth-child(3) {
     width: 100%;
     text-align: center;
     // margin: 1rem;

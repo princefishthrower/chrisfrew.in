@@ -1,4 +1,4 @@
-.dark-mode {
+.dark-theme, .outrun-theme {
     // make those prism styles WCAG compliant!
     span.token.delimiter.important {
         color: $monokaiRedDarkMode !important;
@@ -20,11 +20,11 @@
     span.token.punctuation,
     span.token.class-name,
     span.token.operator {
-        color: $monokaiBlue !important;
+        color: $monokaiBlueDarkMode !important;
     }
 
     code {
-        color: $monokaiBlue !important;
+        color: $monokaiBlueDarkMode !important;
     }
 
     code.typescript {
@@ -36,11 +36,11 @@
     }
 
     span.token.function {
-        color: $monokaiYellow !important;
+        color: $monokaiYellowDarkMode !important;
     }
 }
 
-.light-mode {
+.light-theme, .black-white-theme {
     span.token.delimiter.important {
         font-weight: bold !important;
     }

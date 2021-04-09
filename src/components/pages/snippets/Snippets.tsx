@@ -1,5 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
+import { useContext } from "react"
+import { ThemeContext } from "../../../context/ThemeContext"
 import URLSearchParamKey from "../../../enums/URLSearchParamKey"
 import URLSearchParamValue from "../../../enums/URLSearchParamValue"
 import { useSearchParam } from "../../../hooks/useSearchParam"
@@ -27,8 +29,9 @@ export interface ISnippetsProps {
 
 export function Snippets(props: ISnippetsProps) {
     const { pdfMode } = props
+    const { themeBodyClass } = useContext(ThemeContext)
     const title = "👩‍💻👨‍💻 Full Stack Snippets."
-    const titleText = pdfMode ? title : colorizeStringBySeparator(title, "")
+    const titleText = pdfMode ? title : colorizeStringBySeparator(themeBodyClass, title, "")
     const languageFilter = pdfMode
         ? useSearchParam(URLSearchParamKey.LANGUAGE_FILTER)
         : URLSearchParamValue.ALL
@@ -42,6 +45,7 @@ export function Snippets(props: ISnippetsProps) {
                         A variety of code snippets, from backend to frontend,
                         written in a&nbsp;
                         {colorizeStringBySeparator(
+                            themeBodyClass,
                             "clean-as-I-can-make-it",
                             "-"
                         )}{" "}

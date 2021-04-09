@@ -1,9 +1,8 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import Sparkles from "../utils/Sparkles"
-import Constants from "../../constants/Constants"
-import Size from "../../enums/Size"
+import Sparkles from "../../utils/Sparkles"
+import Size from "../../../enums/Size"
 
 export interface INavLogoProps {
     size: Size
@@ -41,8 +40,7 @@ export function NavLogo(props: INavLogoProps) {
                     ) : (
                         <>
                             <Sparkles
-                                alternateColorScheme={true}
-                                colors={Constants.ALT_SPARKLE_CLASS_NAMES}
+                                wipeType="alternate"
                             >
                                 Home
                             </Sparkles>{" "}
@@ -98,8 +96,7 @@ export function NavLogo(props: INavLogoProps) {
                         <>
                             Chris'{" "}
                             <Sparkles
-                                alternateColorScheme={true}
-                                colors={Constants.ALT_SPARKLE_CLASS_NAMES}
+                                wipeType="default"
                             >
                                 Full Stack
                             </Sparkles>{" "}

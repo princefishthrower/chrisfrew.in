@@ -1,8 +1,9 @@
 import React from "react"
-import { Nav } from "./Nav"
-import { Footer } from "./Footer"
-import { Header } from "./Header"
+import { Nav } from "./Nav/Nav"
+import { Footer } from "./Footer/Footer"
+import { Header } from "./Header/Header"
 import { CookiesProvider } from "react-cookie"
+import EmailForm from "../utils/EmailForm"
 
 export default function Layout(props) {
     const { children, location } = props
@@ -13,6 +14,7 @@ export default function Layout(props) {
                 <Header location={location} />
                 <main>{children}</main>
             </div>
+            <EmailForm/>
             <Footer />
         </CookiesProvider>
     )

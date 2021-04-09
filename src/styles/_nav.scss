@@ -11,20 +11,33 @@
     }
 }
 
-.dark-mode .nav {
+.dark-theme .nav {
     background-color: $darkColor;
     border-left-color: $monokaiRedDarkMode;
-    border-bottom-color: $monokaiBlue;
-    border-right-color: $monokaiYellow;
-    border-top-color: $monokaiGreen;
+    border-bottom-color: $monokaiBlueDarkMode;
+    border-right-color: $monokaiYellowDarkMode;
+    border-top-color: $monokaiGreenDarkMode;
 }
 
-.light-mode .nav {
+.light-theme .nav {
     background-color: $lightColor;
     border-left-color: $monokaiRedLightMode;
-    border-bottom-color: $monokaiBlue;
-    border-right-color: $monokaiYellow;
-    border-top-color: $monokaiGreen;
+    border-bottom-color: $monokaiBlueDarkMode;
+    border-right-color: $monokaiYellowDarkMode;
+    border-top-color: $monokaiGreenDarkMode;
+}
+
+.outrun-theme .nav {
+    background-color: $outrunDarkPurple;
+    border-left-color: $outrunOrange;
+    border-bottom-color: $outrunPink;
+    border-right-color: $outrunPurple;
+    border-top-color: $outrunOrange;
+}
+
+.black-white-theme .nav {
+    background-color: $lightColor;
+    border-color: $blackWhiteGray;
 }
 
 .nav-large {
@@ -43,12 +56,12 @@
     }
 }
 
-.dark-mode .nav-large {
+.dark-theme .nav-large {
     background-color: $darkColor;
     border-left-color: $monokaiRedDarkMode;
-    border-bottom-color: $monokaiBlue;
-    border-right-color: $monokaiYellow;
-    border-top-color: $monokaiGreen;
+    border-bottom-color: $monokaiBlueDarkMode;
+    border-right-color: $monokaiYellowDarkMode;
+    border-top-color: $monokaiGreenDarkMode;
 
     .tiny {
         color: $monokaiRedDarkMode;
@@ -59,21 +72,21 @@
     }
 
     a:nth-child(3) {
-        color: $monokaiYellow;
+        color: $monokaiYellowDarkMode;
     }
 
     a:nth-child(4) {
-        color: $monokaiBlue;
+        color: $monokaiBlueDarkMode;
     }
 }
 
-.light-mode .nav-large {
+.light-theme .nav-large {
     .tiny {
         color: $monokaiRedLightMode;
     }
 }
 
-.dark-mode .nav-large {
+.dark-theme .nav-large {
     .tiny {
         color: $monokaiRedDarkMode;
     }

@@ -2,7 +2,7 @@ import React from "react"
 
 export default function EmailForm() {
     return (
-        <div>
+        <div className="pre-footer">
             <form
                 action="https://chrisfrew.us19.list-manage.com/subscribe/post?u=5f7289fbe97df30f673068826&amp;id=b1729bbdce"
                 method="post"
@@ -10,13 +10,13 @@ export default function EmailForm() {
                 noValidate
                 className="email-form"
             >
-                <label className="email-label">Subscribe!</label>
-                <input
+                {/* <label className="email-label">Subscribe!</label> */}
+                {/* <input
                     type="email"
                     placeholder="awesome_dev@yourmail.com"
                     required
                     className="email-input"
-                />
+                /> */}
                 {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                 <div
                     style={{ position: "absolute", left: "-5000px" }}
@@ -31,12 +31,12 @@ export default function EmailForm() {
                 </div>
                 <input
                     type="submit"
-                    defaultValue="Subscribe"
+                    value="Subscribe to Blog Updates!"
                     name="subscribe"
                     className="submit-button"
                 />
             </form>
-            <div className="small" style={{ textAlign: "center" }}>
+            <div className="small" style={{ textAlign: "center", maxWidth: "960px", margin: "0 auto" }}>
                 <span className="monokaiGreenFont">
                     <b>I keep it super simple:</b>
                 </span>{" "}
@@ -52,8 +52,8 @@ export default function EmailForm() {
                     This little form right here is the only way to subscribe.
                 </span>{" "}
                 If you decide to subscribe,{" "}
-                <span className="monokaiGreenFont">thank you so much</span>, and
-                I hope you enjoy! ❤️
+                <span className="monokaiGreenFont">
+                I sincerly hope you enjoy! ❤️</span>
             </div>
         </div>
     )

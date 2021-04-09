@@ -1,9 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Sparkles from "../utils/Sparkles"
-import Constants from "../../constants/Constants"
-import { Signature } from "./Bio/Signature"
+import Sparkles from "../../utils/Sparkles"
+import { Signature } from "./Signature"
 
 export default function Bio() {
     const data = useStaticQuery(graphql`
@@ -54,16 +53,18 @@ export default function Bio() {
                     </strong>
                 </p>
                 <div className="text-center">
-                    <h3><Sparkles colors={Constants.LOVE_SPARKLE_CLASS_NAMES}>
-                        It was the start of a software love story!
-                    </Sparkles></h3>
+                    <h3>
+                        <Sparkles wipeType="love">
+                            It was love at first sight!
+                        </Sparkles>
+                    </h3>
                 </div>
                 <p>
-                    I've since learned a variety of frameworks, databases,
-                    design patterns, and languages, including TypeScript,
-                    JavaScript, .NET, Python, React, Redux, ABAP, SAPUI5 UI5,
-                    C#, PHP7, Postgresql, and Magento. I love the challenge of
-                    building profitable SaaS products!
+                    From that first Bash terminal, I've since learned a variety
+                    of frameworks, databases, design patterns, and languages,
+                    including TypeScript, JavaScript, .NET, Python, React,
+                    Redux, ABAP, SAPUI5 UI5, C#, PHP7, Postgresql, and Magento.
+                    I love the challenge of building profitable SaaS products!
                 </p>
                 <p>
                     I'm also a full stack software educator: I cherish teaching
@@ -87,8 +88,10 @@ export default function Bio() {
                     You can read more about my SaaS products, site portfolio,
                     and more on <Link to="/chris">my bio page</Link>.
                 </p>
-                <p><strong>I sincerely hope you enjoy the blog!</strong></p>
-                <Signature/>
+                <p>
+                    <strong>I sincerely hope you enjoy the blog!</strong>
+                </p>
+                <Signature />
                 <p>- Chris</p>
             </div>
         </>

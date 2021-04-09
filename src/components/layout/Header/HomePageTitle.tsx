@@ -1,9 +1,9 @@
 import * as React from "react"
 import { MessageOfTheDay } from "./MessageOfTheDay"
-import { TwitterIcon } from "./TwitterIcon"
+import { TwitterIcon } from "../TwitterIcon"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Sparkles from "../utils/Sparkles"
+import Sparkles from "../../utils/Sparkles"
 
 
 export function HomePageTitle() {
@@ -41,15 +41,15 @@ export function HomePageTitle() {
                     }}
                     to={`/`}
                 >
-                    Chris' <Sparkles alternateColorScheme={false}>Full Stack</Sparkles> Blog
+                    Chris' <Sparkles wipeType="alternate">Full Stack</Sparkles> Blog
                 </Link>
             </h1>
             <div style={{ textAlign: "center" }}>
                 <StaticImage
                     src={"../../images/avatar.jpg"}
                     alt={data.site.siteMetadata.author}
-                    width={75}
-                    height={75}
+                    width={200}
+                    height={200}
                     layout="fixed"
                     placeholder="blurred"
                     style={{
@@ -81,7 +81,7 @@ export function HomePageTitle() {
                     rel="me"
                     style={{
                         display: "flex",
-                        flexDirection: "flex-row",
+                        flexDirection: "row",
                         alignItems: "center",
                         justifyContent: "center",
                         boxShadow: `none`,

@@ -1,0 +1,73 @@
+.dark-theme .gatsby-code-button {
+    color: $lightColor;
+
+    &:hover {
+        background-color: none;
+        .gatsby-code-button-icon {
+            fill: $monokaiRedDarkMode;
+        }
+    }
+
+    &::after {
+        background-color: transparent;
+    }
+
+    .gatsby-code-button-icon {
+        fill: $lightColor;
+    }
+}
+
+.light-theme .gatsby-code-button {
+    color: $darkColor;
+
+    &:hover {
+        .gatsby-code-button-icon {
+            fill: $monokaiRedLightMode;
+        }
+    }
+
+    &::after {
+        background-color: transparent;
+    }
+
+    .gatsby-code-button-icon {
+        fill: $darkColor;
+    }
+}
+
+
+.outrun-theme .gatsby-code-button {
+    color: $darkColor;
+
+    &:hover {
+        .gatsby-code-button-icon {
+            fill: $outrunPink;
+        }
+    }
+
+    &::after {
+        background-color: transparent;
+    }
+
+    .gatsby-code-button-icon {
+        fill: $darkColor;
+    }
+}
+
+.black-white-theme .gatsby-code-button {
+    color: $darkColor;
+
+    &:hover {
+        .gatsby-code-button-icon {
+            fill: $blackWhiteGray;
+        }
+    }
+
+    &::after {
+        background-color: transparent;
+    }
+
+    .gatsby-code-button-icon {
+        fill: $darkColor;
+    }
+}

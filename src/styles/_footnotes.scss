@@ -3,11 +3,11 @@ $lightColor: white !default;
 $monokaiRedDarkMode: #f92672 !default;
 $monokaiRedLightMode: #e70457 !default;
 
-.dark-mode .highlight {
+.dark-theme .highlight {
     animation: highlightAndFadeDark 2s 1;
 }
 
-.light-mode .highlight {
+.light-theme .highlight {
     animation: highlightAndFadeLight 2s 1;
 }
 
