@@ -1,17 +1,19 @@
 import * as React from "react"
-import { useEffect } from "react"
+import { useContext, useEffect } from "react"
 import { useCookies } from "react-cookie"
-import Constants from "../../constants/Constants"
-import { colorizeStringBySeparator } from "../../utils/colorizeStringBySeparator"
+import Constants from "../../../constants/Constants"
+import { ThemeContext } from "../../../context/ThemeContext"
+import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 
 export function MessageOfTheDay() {
     const [cookies, setCookies] = useCookies([
         Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY,
     ])
+    const { themeBodyClass } = useContext(ThemeContext)
 
     const messagesOfTheDay = [
         "💯 make strong types great again! 💯",
-        "👨‍💻👩‍💻 because we have to 👨‍💻👩‍💻",
+        "👨‍💻👩‍💻 because somebody has to! 👨‍💻👩‍💻",
         "💻 recursively recurring 💻",
         "🐵 code monkey 🐵",
         "🚀 my terminals are burnin'! 🚀",
@@ -53,8 +55,6 @@ export function MessageOfTheDay() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    
-
     return (
         <h3
             style={{
@@ -73,6 +73,7 @@ export function MessageOfTheDay() {
             <span className="monokaiYellowFont">{"* "}</span>
             <>
                 {colorizeStringBySeparator(
+                    themeBodyClass,
                     messagesOfTheDay[
                         cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]
                     ], ""

@@ -15,8 +15,52 @@ $secondarySize: 27px;
 
 .emoji-fix {
     margin-right: 3px;
-    margin-top: 7px;
     margin-bottom: 2px;
+}
+
+.switcher-circle {
+    cursor: pointer;
+    transition: 0.4s !important;
+}
+
+.dark-theme {
+    .switcher-circle {
+        fill: $darkColor;
+        stroke: $lightColor;
+    }
+    .switcherFont {
+        color: $lightColor;
+    }
+}
+
+.light-theme {
+    .switcher-circle {
+        fill: $lightColor;
+        stroke: $darkColor;
+    }
+    .switcherFont {
+        color: $darkColor;
+    }
+}
+
+.outrun-theme {
+    .switcher-circle {
+        fill: $outrunPurple;
+        stroke: $outrunPink;
+    }
+    .switcherFont {
+        color: $outrunPurple;
+    }
+}
+
+.black-white-theme {
+    .switcher-circle {
+        fill: $blackWhiteGray;
+        stroke: $darkColor;
+    }
+    .switcherFont {
+        color: $darkColor;
+    }
 }
 
 .switch {

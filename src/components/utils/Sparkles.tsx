@@ -1,11 +1,11 @@
-import React from "react"
+import React, { useContext, useState } from "react"
 import styled, { keyframes } from "styled-components"
-import Constants from "../../constants/Constants"
+import { themeConfig } from "../../config/ThemeConfig"
+import { ThemeContext } from "../../context/ThemeContext"
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion"
 import useRandomInterval from "../../hooks/useRandomInterval"
 import { random } from "../../utils/random"
 import { range } from "../../utils/range"
-
 
 const generateSparkle = color => {
     const sparkle = {
@@ -21,12 +21,14 @@ const generateSparkle = color => {
     return sparkle
 }
 const Sparkles = ({
-    colors = Constants.DEFAULT_SPARKLE_CLASS_NAMES,
+    wipeType = "default",
     children,
     ...delegated
 }) => {
-    
-    const [sparkles, setSparkles] = React.useState(() => {
+    const { themeBodyClass } = useContext(ThemeContext);
+    const activeTheme = themeConfig.find(x => x.themeBodyClass === themeBodyClass);
+    const colors = activeTheme ? activeTheme.linearWipeClasses[wipeType] : themeConfig[0].linearWipeClasses[wipeType]
+    const [sparkles, setSparkles] = useState(() => {
         const color = colors[Math.floor(Math.random() * colors.length)];
         return range(3).map(() => generateSparkle(color))
     })

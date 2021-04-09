@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/layout/Bio"
+import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 // import { Disqus } from "gatsby-plugin-disqus"
@@ -9,8 +9,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 class BlogPost extends React.Component {
     componentDidMount() {
         const footnotes = document.getElementsByClassName("footnote-ref")
-        Array.prototype.forEach.call(footnotes, function(footnote) {
-            footnote.addEventListener("click", function(e) {
+        Array.prototype.forEach.call(footnotes, function (footnote) {
+            footnote.addEventListener("click", function (e) {
                 e.preventDefault()
                 // The href value IS the id of the div
                 const footnoteDiv = document.getElementById(
@@ -59,20 +59,20 @@ class BlogPost extends React.Component {
                         >
                             {title}
                         </h1>
-                        {postDescription && <p
-                            className="monokaiRedFont"
-                            style={{
-                                
-                                marginTop: 0,
-                                marginBottom: 0,
-                                fontWeight: 'bold',
-                            }}
-                        >
-                            {postDescription}
-                        </p>}
+                        {postDescription && (
+                            <p
+                                className="monokaiRedFont"
+                                style={{
+                                    marginTop: 0,
+                                    marginBottom: 0,
+                                    fontWeight: "bold",
+                                }}
+                            >
+                                {postDescription}
+                            </p>
+                        )}
                         <p
                             style={{
-                                
                                 display: `block`,
                                 marginBottom: `1rem`,
                                 fontStyle: "italic",
@@ -88,31 +88,66 @@ class BlogPost extends React.Component {
                     </div>
                 </article>
 
+                <h3>Next / Previous Posts:</h3>
                 <nav>
-                    <ul
+                    <div
                         style={{
                             display: `flex`,
                             flexWrap: `wrap`,
-                            justifyContent: `space-between`,
-                            listStyle: `none`,
+                            justifyContent: `space-around`,
+                            alignContent: "center",
                             padding: 0,
                         }}
                     >
-                        <li>
-                            {previous && (
-                                <Link to={previous.fields.slug} rel="prev">
-                                    ← {previous.frontmatter.title}
-                                </Link>
-                            )}
-                        </li>
-                        <li>
-                            {next && (
-                                <Link to={next.fields.slug} rel="next">
-                                    {next.frontmatter.title} →
-                                </Link>
-                            )}
-                        </li>
-                    </ul>
+                        {previous && (
+                            <Link to={previous.fields.slug} rel="prev">
+                                <div
+                                    style={{
+                                        display: `flex`,
+                                        flex: `flex-row`,
+                                        justifyContent: `space-around`,
+                                        alignItems: "center",
+                                        padding: 0,
+                                    }}
+                                >
+                                    <div>⬅️</div>
+                                    <div
+                                        style={{
+                                            maxWidth: "400px",
+                                            padding: "1rem",
+                                        }}
+                                    >
+                                        {previous.frontmatter.title}
+                                    </div>
+                                </div>
+                            </Link>
+                        )}
+
+                        {next && (
+                            <Link to={next.fields.slug} rel="next">
+                                <div
+                                    style={{
+                                        display: `flex`,
+                                        flex: `flex-row`,
+                                        justifyContent: `space-around`,
+                                        alignItems: "center",
+                                        padding: 0,
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            maxWidth: "400px",
+                                            padding: "1rem",
+                                            textAlign: "right",
+                                        }}
+                                    >
+                                        {next.frontmatter.title}
+                                    </div>
+                                    <div>➡️</div>
+                                </div>
+                            </Link>
+                        )}
+                    </div>
                 </nav>
             </Layout>
         )

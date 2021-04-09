@@ -1,11 +1,11 @@
 import { useStaticQuery, graphql, Link } from "gatsby"
 import * as React from "react"
+import { useContext } from "react"
+import { ThemeContext } from "../../../context/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 import Sparkles from "../../utils/Sparkles"
 
-export interface IStatsProps {}
-
-export function Stats(props: IStatsProps) {
+export function Stats() {
     const data = useStaticQuery(graphql`
         query StatsQuery {
             allMdx(
@@ -26,6 +26,8 @@ export function Stats(props: IStatsProps) {
             }
         }
     `)
+
+    const { themeBodyClass } = useContext(ThemeContext)
 
     // some calculations on all the posts
     const posts = data.allMdx.edges
@@ -49,7 +51,7 @@ export function Stats(props: IStatsProps) {
 
     return (
         <>
-            <h1 className="cooper big">{colorizeStringBySeparator("Blog Stats", "")}</h1>
+            <h1 className="cooper big">{colorizeStringBySeparator(themeBodyClass, "Blog Stats", "")}</h1>
             <p>
                 These stats are generated at build time through GraphQL queries,
                 so you can be sure they are up to date!

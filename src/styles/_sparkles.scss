@@ -1,4 +1,4 @@
-.linear-wipe {
+.dark-theme .linear-wipe {
     font-family: "CooperBlackRegular";
     letter-spacing: 0.075rem;
     font-weight: 900;
@@ -9,9 +9,9 @@
     &.fillmonokaipink-fillmonokaiblue {
         background: linear-gradient(
             to right,
-            $monokaiPink 0%,
-            $monokaiBlue 50%,
-            $monokaiPink 100%
+            $monokaiPinkDarkMode 0%,
+            $monokaiBlueDarkMode 50%,
+            $monokaiPinkDarkMode 100%
         );
         background-size: 200% auto;
         background-clip: text;
@@ -22,9 +22,9 @@
     &.fillmonokaiblue-fillmonokaiyellow {
         background: linear-gradient(
             to right,
-            $monokaiBlue 0%,
-            $monokaiYellow 50%,
-            $monokaiBlue 100%
+            $monokaiBlueDarkMode 0%,
+            $monokaiYellowDarkMode 50%,
+            $monokaiBlueDarkMode 100%
         );
         background-size: 200% auto;
         background-clip: text;
@@ -32,12 +32,143 @@
         -webkit-text-fill-color: transparent;
     }
 
-    &.fillmonokaiorange-fillmonokaireddarkmode {
+    &.fillmonokaiorange-fillmonokaired {
         background: linear-gradient(
             to right,
             $monokaiRedDarkMode 0%,
-            $monokaiOrange 50%,
+            $monokaiOrangeDarkMode 50%,
             $monokaiRedDarkMode 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.light-theme .linear-wipe {
+    font-family: "CooperBlackRegular";
+    letter-spacing: 0.075rem;
+    font-weight: 900;
+    text-align: center;
+    color: #000;
+    animation: shine 2s linear infinite;
+
+    &.fillmonokaipink-fillmonokaiblue {
+        background: linear-gradient(
+            to right,
+            $monokaiPinkLightMode 0%,
+            $monokaiBlueLightMode 50%,
+            $monokaiPinkLightMode 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.fillmonokaiblue-fillmonokaiyellow {
+        background: linear-gradient(
+            to right,
+            $monokaiBlueLightMode 0%,
+            $monokaiYellowLightMode 50%,
+            $monokaiBlueLightMode 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.fillmonokaiorange-fillmonokaired {
+        background: linear-gradient(
+            to right,
+            $monokaiRedLightMode 0%,
+            $monokaiOrangeLightMode 50%,
+            $monokaiRedLightMode 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.outrun-theme .linear-wipe {
+    font-family: "CooperBlackRegular";
+    letter-spacing: 0.075rem;
+    font-weight: 900;
+    text-align: center;
+    color: #000;
+    animation: shine 2s linear infinite;
+
+    &.filloutrunorange-filloutrunpink {
+        background: linear-gradient(
+            to right,
+            $outrunOrange 0%,
+            $outrunPink 50%,
+            $outrunOrange 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.filloutrunpink-filloutrunpurple {
+        background: linear-gradient(
+            to right,
+            $outrunPink 0%,
+            $outrunPurple 50%,
+            $outrunPink 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.filloutrunorange-filloutrunpink {
+        background: linear-gradient(
+            to right,
+            $outrunOrange 0%,
+            $outrunPink 50%,
+            $outrunOrange 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.black-white-theme .linear-wipe {
+    font-family: "CooperBlackRegular";
+    letter-spacing: 0.075rem;
+    font-weight: 900;
+    text-align: center;
+    color: #000;
+    animation: shine 2s linear infinite;
+
+    &.fillblack-fillgray {
+        background: linear-gradient(
+            to right,
+            $darkColor 0%,
+            $blackWhiteGray 50%,
+            $darkColor 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.fillwhite-fillgray {
+        background: linear-gradient(
+            to right,
+            $lightColor 0%,
+            $blackWhiteGray 50%,
+            $lightColor 100%
         );
         background-size: 200% auto;
         background-clip: text;

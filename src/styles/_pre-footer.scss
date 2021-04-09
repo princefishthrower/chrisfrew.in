@@ -1,0 +1,38 @@
+.pre-footer {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    border: $borderThickness dashed;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.dark-theme .pre-footer {
+    background-color: $darkColor;
+    border-bottom-color: $monokaiRedDarkMode;
+    border-left-color: $monokaiBlueDarkMode;
+    border-top-color: $monokaiYellowDarkMode;
+    border-right-color: $monokaiGreenDarkMode;
+}
+
+.light-theme .pre-footer {
+    background-color: $lightColor;
+    border-bottom-color: $monokaiRedLightMode;
+    border-left-color: $monokaiBlueLightMode;
+    border-top-color: $monokaiYellowLightMode;
+    border-right-color: $monokaiGreenLightMode;
+}
+
+.outrun-theme .pre-footer {
+    background-color: $outrunDarkPurple;
+    border-bottom-color: $outrunOrange;
+    border-left-color: $outrunPink;
+    border-top-color: $outrunPurple;
+    border-right-color: $outrunOrange;
+}
+
+.black-white-theme .pre-footer {
+    background-color: $lightColor;
+    border-color: $blackWhiteGray;
+}

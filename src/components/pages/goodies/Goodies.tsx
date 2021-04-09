@@ -1,12 +1,16 @@
 import { Link } from "gatsby"
 import * as React from "react"
+import { useContext } from "react"
+import { ThemeContext } from "../../../context/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 
 export function Goodies() {
+    const { themeBodyClass } = useContext(ThemeContext)
     return (
         <>
             <h1 className="cooper big">
                 {colorizeStringBySeparator(
+                    themeBodyClass,
                     "Full Stack Downloadables, Freebies, N' More",
                     ""
                 )}

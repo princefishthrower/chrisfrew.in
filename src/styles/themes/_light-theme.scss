@@ -1,0 +1,27 @@
+html,
+body {
+    &.light-theme {
+        background-color: $lightColor;
+        color: $darkColor;
+
+        h3 {
+            color: $darkColor;
+        }
+
+        blockquote {
+            color: $darkColor;
+            border-left: 4px solid rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: $monokaiRedLightMode;
+            z-index: 10;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid $darkColor;
+        }
+    }
+}

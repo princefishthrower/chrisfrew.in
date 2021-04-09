@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import BodyClassName from "react-body-classname"
 import { useCookies } from "react-cookie"
+import { themeConfig } from "../../config/ThemeConfig"
 import Constants from "../../constants/Constants"
 import { ThemeContext } from "../../context/ThemeContext"
 import Size from "../../enums/Size"
@@ -13,63 +14,71 @@ export interface ISwitcherProps {
 export default function ThemeSwitcher(props: ISwitcherProps) {
     const { size, activateRun } = props
     const [cookies, setCookies] = useCookies([Constants.THEME_COOKIE_KEY])
-    const { setTheme } = useContext(ThemeContext)
+    const { setThemeBodyClass } = useContext(ThemeContext)
 
-    const DARK_TEXT = "Dark"
-    const DARK_EMOJI = "👻"
-
-    const LIGHT_TEXT = "Light"
-    const LIGHT_EMOJI = "☀️"
-        
-    // if cookies not set, set as default to Constants.DARK_MODE
+    // if cookies not set, set as default to dark theme
     useEffect(() => {
         if (!cookies[Constants.THEME_COOKIE_KEY]) {
-            setCookies(Constants.THEME_COOKIE_KEY, Constants.DARK_MODE, {
+            setCookies(Constants.THEME_COOKIE_KEY, themeConfig[0].themeBodyClass, {
                 path: "/",
             })
         }
     }, [cookies, setCookies])
 
+    
     // cookies still not set, render nothing
     if (!cookies[Constants.THEME_COOKIE_KEY]) {
         return <></>
     }
 
-    const activeTheme = cookies[Constants.THEME_COOKIE_KEY]
+    const activeThemeBodyClass = cookies[Constants.THEME_COOKIE_KEY]
+
+    const getActiveThemeIndex = () => {
+        const tryIndex = themeConfig
+        .map((x) => x.themeBodyClass)
+        .indexOf(activeThemeBodyClass)
+        
+        return tryIndex === -1 ? 0 : tryIndex
+    }
+
+    const activeThemeIndex = getActiveThemeIndex();
 
     const switchTheme = () => {
-        if (activeTheme === Constants.DARK_MODE) {
-            setCookies(Constants.THEME_COOKIE_KEY, Constants.LIGHT_MODE, {
-                path: "/",
-            })
-            setTheme(Constants.LIGHT_MODE)
-        } else {
-            setCookies(Constants.THEME_COOKIE_KEY, Constants.DARK_MODE, {
-                path: "/",
-            })
-            setTheme(Constants.DARK_MODE)
-        }
+        const nextIndex =
+            activeThemeIndex === themeConfig.length - 1 ? 0 : activeThemeIndex + 1
+        const nextTheme = themeConfig[nextIndex]
+        setCookies(Constants.THEME_COOKIE_KEY, nextTheme.themeBodyClass, {
+            path: "/",
+        })
+        setThemeBodyClass(nextTheme.themeBodyClass)
         activateRun()
     }
 
-    const activeModeText =
-        activeTheme === Constants.DARK_MODE ? DARK_TEXT : LIGHT_TEXT
-    const activeModeEmoji =
-        activeTheme === Constants.DARK_MODE ? DARK_EMOJI : LIGHT_EMOJI
+    const activeModeText = themeConfig[activeThemeIndex].label
+    const activeModeEmoji = themeConfig[activeThemeIndex].emoji
 
     if (size === Size.LARGE || size === Size.MEDIUM) {
         return (
             <div>
-                <BodyClassName className={activeTheme} />
+                <BodyClassName className={activeThemeBodyClass} />
                 <label className="switch">
-                    <input
-                        type="checkbox"
-                        onChange={switchTheme}
-                        checked={
-                            activeTheme === Constants.DARK_MODE ? false : true
-                        }
-                    />
-                    <span className="slider round" />
+                    <svg
+                        onClick={switchTheme}
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="20"
+                    >
+                        <circle
+                            className="switcher-circle"
+                            cx="10"
+                            cy="10"
+                            r="9"
+                            strokeWidth="2"
+                            fill="red"
+                            stroke="white"
+                        />
+                    </svg>
                     <span className="switch-text emoji-fix">
                         {activeModeEmoji}
                     </span>
@@ -81,10 +90,10 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
         )
     }
     // small style - show emoji only :)
-    const smallText = `${activeModeEmoji}`;
+    const smallText = `${activeModeEmoji}`
     return (
         <>
-            <BodyClassName className={activeTheme} />
+            <BodyClassName className={activeThemeBodyClass} />
             <span className="emoji" onClick={switchTheme}>
                 {smallText}
             </span>

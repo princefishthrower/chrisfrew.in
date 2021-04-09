@@ -1,8 +1,10 @@
 import * as React from "react"
 import { Fragment, ReactNode } from "react"
-import Constants from "../constants/Constants"
+import ThemeBodyClass from "../enums/ThemeBodyClass";
+import { getConfettiColorClasses } from "./getConfettiColorClasses";
 
 export const colorizeStringBySeparator = (
+    themeBodyClass: ThemeBodyClass,
     text: string,
     separator: string,
     offset: number = 0
@@ -11,18 +13,19 @@ export const colorizeStringBySeparator = (
         return <></>;
     }
     const entities = text.split(separator)
+    const colors = getConfettiColorClasses(themeBodyClass)
     let colorIndex = -1 + offset
     return (
         <>
             {entities.map((letter, index) => {
-                if (colorIndex === Constants.COLOR_CLASS_NAMES.length - 1) {
+                if (colorIndex === colors.length - 1) {
                     colorIndex = -1
                 }
                 return (
                     <Fragment key={index}>
                         <span
                             className={
-                                Constants.COLOR_CLASS_NAMES[++colorIndex]
+                                colors[++colorIndex]
                             }
                         >
                             {letter}

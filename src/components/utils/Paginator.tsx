@@ -63,7 +63,7 @@ const Paginator = () => {
     }
     return (
         <div style={{ marginTop: "2rem" }}>
-            <p>More posts:</p>
+            <h3>More posts:</h3>
             <div className="pagination">
                 {paginations.map(pagination => {
                     if (pagination.isActive) {

@@ -1,12 +1,24 @@
-.dark-mode .signature {
+.dark-theme .signature {
     g {
         stroke: $lightColor;
     }
 }
 
-.light-mode .signature {
+.light-theme .signature {
     g {
         stroke: $darkColor;
+    }
+}
+
+.outrun-theme .signature {
+    g {
+        stroke: $outrunOrange;
+    }
+}
+
+.black-white-theme .signature {
+    g {
+        stroke: $blackWhiteGray;
     }
 }
 

@@ -1,28 +1,14 @@
 import React, { useState, useContext } from "react"
-import Highlight, { defaultProps } from "prism-react-renderer"
+import Highlight, { defaultProps, Language } from "prism-react-renderer"
 import github from "prism-react-renderer/themes/github"
-import nightOwl from "prism-react-renderer/themes/dracula"
+import dracula from "prism-react-renderer/themes/dracula"
+import okaidia from "prism-react-renderer/themes/okaidia"
 import Confetti from "react-dom-confetti"
 import { ThemeContext } from "../../context/ThemeContext"
-import Constants from "../../constants/Constants"
+import ThemeBodyClass from "../../enums/ThemeBodyClass"
+import { getConfettiColorHexCodes } from "../../utils/getConfettiColorHexCodes"
 
-// TODO: Add support for prism-coy and xonokai from prismJS - use the themefromvscode maybe
-
-const config = {
-    angle: 90,
-    spread: 360,
-    startVelocity: 40,
-    elementCount: 70,
-    dragFriction: 0.12,
-    duration: 3000,
-    stagger: 3,
-    width: "10px",
-    height: "10px",
-    perspective: "500px",
-    colors: Constants.COLORS,
-}
-
-const copyToClipboard = (str) => {
+const copyToClipboard = (str: string) => {
     const el = document.createElement("textarea")
     el.value = str
     el.setAttribute("readonly", "")
@@ -34,32 +20,58 @@ const copyToClipboard = (str) => {
     document.body.removeChild(el)
 }
 
-const Wrapper = (props) => <div style={{ position: "relative" }} {...props} />
+const Wrapper = (props: any) => <div style={{ position: "relative" }} {...props} />
 
-const ConfettiWrapper = (props) => (
+const ConfettiWrapper = (props: any) => (
     <div style={{ position: "absolute", top: 0, right: 0 }} {...props} />
 )
 
-const Button = (props) => (
+const Button = (props: any) => (
     <button aria-label="Copy" className="code-copy-button" {...props} />
 )
 
 export interface IPreProps {
     codeString: string
-    language: string
+    language: Language
     pdfMode?: boolean
 }
 
 export const Pre = (props: IPreProps) => {
     const { codeString, language, pdfMode } = props
     const [isCopied, setIsCopied] = useState(false)
-    const { theme } = useContext(ThemeContext)
+    const { themeBodyClass } = useContext(ThemeContext)
+    const colors = getConfettiColorHexCodes(themeBodyClass);
+    console.log(colors)
+
+    const confettiConfig = {
+        angle: 90,
+        spread: 360,
+        startVelocity: 40,
+        elementCount: 70,
+        dragFriction: 0.12,
+        duration: 3000,
+        stagger: 3,
+        width: "10px",
+        height: "10px",
+        perspective: "500px",
+        colors
+    }
 
     const resolveTheme = () => {
+        // always want github styles for pre when in pdf mode
         if (pdfMode) {
             return github
         }
-        return theme === Constants.DARK_MODE ? nightOwl : github
+        // else resolve various themes - TODO: configure
+        switch (themeBodyClass) {
+            case ThemeBodyClass.DARK_THEME:
+                return dracula;
+            case ThemeBodyClass.OUTRUN_THEME:
+                return okaidia;
+            case ThemeBodyClass.LIGHT_THEME:
+            default:
+                return github;
+        }
     }
 
     const dynamicTheme = resolveTheme();
@@ -133,7 +145,7 @@ export const Pre = (props: IPreProps) => {
                 )}
             </Highlight>
             <ConfettiWrapper>
-                <Confetti active={isCopied} config={config} />
+                <Confetti active={isCopied} config={confettiConfig} />
             </ConfettiWrapper>
         </Wrapper>
     )
