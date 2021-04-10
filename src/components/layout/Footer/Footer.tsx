@@ -7,13 +7,14 @@ export function Footer() {
         <footer>
             <div className="inner-footer-wrapper">
             <div>
-                <span>Really like the blog? You can support it:</span>
+                <span>Really like the blog? You can buy me a coffee:</span>
                 <div>
                 <a
                     className="bmc-button"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.buymeacoffee.com/chrisfrewin"
+                    style={{width: '200px'}}
                 >
                     <img
                         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
@@ -21,7 +22,7 @@ export function Footer() {
                         width="27px"
                         height="23.75px"
                     />
-                    <span style={{ marginLeft: 5 }}>Buy me a cappucino</span>
+                    <span>Coffee!</span>
                 </a>
                 </div>
             </div>

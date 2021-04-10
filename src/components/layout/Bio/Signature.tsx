@@ -20,7 +20,6 @@ export function Signature() {
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 237.114 62.184"
-                height="4rem"
                 className="signature"
             >
                 <g fill="none" strokeLinecap="round" strokeWidth="1.323">
