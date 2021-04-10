@@ -18,7 +18,7 @@ export default function Bio() {
     return (
         <>
             <StaticImage
-                src={"../../images/avatar.jpg"}
+                src={"../../../images/avatar.jpg"}
                 alt={data.site.siteMetadata.author}
                 width={200}
                 height={200}

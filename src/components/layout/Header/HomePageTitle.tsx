@@ -46,7 +46,7 @@ export function HomePageTitle() {
             </h1>
             <div style={{ textAlign: "center" }}>
                 <StaticImage
-                    src={"../../images/avatar.jpg"}
+                    src={"../../../images/avatar.jpg"}
                     alt={data.site.siteMetadata.author}
                     width={200}
                     height={200}

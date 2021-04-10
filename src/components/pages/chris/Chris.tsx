@@ -7,7 +7,6 @@ import { ProductPortfolio } from "../../layout/Bio/ProductPortfolio"
 import { SitePortfolio } from "../../layout/Bio/SitePortfolio"
 import { SocialsContainer } from "../../layout/Bio/SocialsContainer"
 import { TeachingPortfolio } from "../../layout/Bio/TeachingPortfolio"
-import Sparkles from "../../utils/Sparkles"
 
 export function Chris() {
     const data = useStaticQuery(graphql`
