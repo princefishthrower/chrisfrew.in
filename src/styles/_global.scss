@@ -160,8 +160,9 @@ button.code-copy-button {
     display: inline;
 }
 
+// to work on safari, this has to be !important (why - who knows?)
 .gatsby-image-wrapper img {
-    border-radius: 100%;
+    border-radius: 100% !important;
 }
 
 // large screens (width greater than 1400px)
