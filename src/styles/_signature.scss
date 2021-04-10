@@ -23,6 +23,7 @@
 }
 
 .signature {
+    height: 4rem;
     .animate {
         stroke-dasharray: 500;
         stroke-dashoffset: 500;
@@ -50,6 +51,13 @@
             animation-delay: 6s;
             animation-duration: 2s;
         }
+    }
+}
+
+// small styles (width less than 600px)
+@media only screen and (max-width: $mediumOffset) {
+    .signature {
+        height: 3rem;
     }
 }
 

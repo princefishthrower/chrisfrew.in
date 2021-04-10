@@ -87,6 +87,7 @@ p > img {
 .text-center {
     text-align: center;
 }
+
 .font-weight-bold {
     font-weight: 900;
 }
@@ -157,6 +158,10 @@ button.code-copy-button {
 
 .inline {
     display: inline;
+}
+
+.gatsby-image-wrapper img {
+    border-radius: 100%;
 }
 
 // large screens (width greater than 1400px)

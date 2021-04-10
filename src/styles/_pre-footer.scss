@@ -36,3 +36,11 @@
     background-color: $lightColor;
     border-color: $blackWhiteGray;
 }
+
+// small styles (width less than 600px)
+@media only screen and (max-width: $mediumOffset) {
+    .pre-footer {
+        width: calc(100%);
+        padding-left: calc(#{$navWidthSmall} + #{$borderThickness});
+    }
+}

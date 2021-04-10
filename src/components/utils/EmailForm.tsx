@@ -31,20 +31,28 @@ export default function EmailForm() {
                 </div>
                 <input
                     type="submit"
-                    value="Subscribe to Blog Updates!"
+                    value="Subscribe!"
                     name="subscribe"
                     className="submit-button"
                 />
             </form>
-            <div className="small" style={{ textAlign: "center", maxWidth: "960px", margin: "0 auto" }}>
-                <span className="monokaiGreenFont">
-                    <b>I keep it super simple:</b>
-                </span>{" "}
-                you'll get an email from this blog{" "}
+            <div
+                className="small"
+                style={{
+                    textAlign: "center",
+                    maxWidth: "960px",
+                    margin: "0 auto",
+                }}
+            >
+                <b>
+                    My blog newsletter is{" "}
+                    <span className="monokaiGreenFont">super simple: </span>
+                </b>
+                you'll get an email from me{" "}
                 <span className="monokaiGreenFont">
                     <b>once every Wednesday at 7 AM EST (+5 UTC)</b>
                 </span>{" "}
-                if there were any new blog posts in the past week!{" "}
+                only if there were new posts in the past week!{" "}
                 <span className="monokaiRedFont">
                     I don't run annoying popups or marketing banners.
                 </span>{" "}
@@ -53,7 +61,8 @@ export default function EmailForm() {
                 </span>{" "}
                 If you decide to subscribe,{" "}
                 <span className="monokaiGreenFont">
-                I sincerly hope you enjoy! ❤️</span>
+                    I sincerely hope you enjoy! ❤️
+                </span>
             </div>
         </div>
     )
