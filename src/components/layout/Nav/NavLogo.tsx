@@ -68,7 +68,7 @@ export function NavLogo(props: INavLogoProps) {
                 }}
             >
                 <StaticImage
-                    src="../../images/avatar.jpg"
+                    src="../../../images/avatar.jpg"
                     alt={data.site.siteMetadata.author}
                     height={50}
                     width={50}
