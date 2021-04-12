@@ -7,6 +7,7 @@ module.exports = {
     author: `Chris Frewin`,
     description: `A professional, high-quality, full stack software engineering blog. Featuring JavaScript, TypeScript, React, C#, ABAP, SAPUI5, and everything in between.`,
     siteUrl: `https://chrisfrew.in/`,
+    lang: `en`
   },
   plugins: [
     {
