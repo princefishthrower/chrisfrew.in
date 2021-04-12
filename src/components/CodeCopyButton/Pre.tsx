@@ -41,7 +41,6 @@ export const Pre = (props: IPreProps) => {
     const [isCopied, setIsCopied] = useState(false)
     const { themeBodyClass } = useContext(ThemeContext)
     const colors = getConfettiColorHexCodes(themeBodyClass);
-    console.log(colors)
 
     const confettiConfig = {
         angle: 90,

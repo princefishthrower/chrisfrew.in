@@ -4,6 +4,8 @@ import { Footer } from "./Footer/Footer"
 import { Header } from "./Header/Header"
 import { CookiesProvider } from "react-cookie"
 import EmailForm from "../utils/EmailForm"
+// TODO: clean up styles and add!
+import { LaptopSubscriber } from "./LaptopSubscriber/LaptopSubscriber"
 
 export default function Layout(props) {
     const { children, location } = props
@@ -16,6 +18,7 @@ export default function Layout(props) {
             </div>
             <EmailForm/>
             <Footer />
+            {/* <LaptopSubscriber/> */}
         </CookiesProvider>
     )
 }

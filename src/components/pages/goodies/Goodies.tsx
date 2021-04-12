@@ -1,19 +1,31 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
+import { Fade } from "react-awesome-reveal"
 import { ThemeContext } from "../../../context/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 
 export function Goodies() {
     const { themeBodyClass } = useContext(ThemeContext)
+    const titleContent = colorizeStringBySeparator(
+        themeBodyClass,
+        "🎉 Full Stack Downloadables, Freebies, N' More",
+        "",
+        0,
+        true
+    )
     return (
         <>
             <h1 className="cooper big">
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    "Full Stack Downloadables, Freebies, N' More",
-                    ""
-                )}
+                <Fade
+                    cascade={true}
+                    damping={0.025}
+                    duration={1000}
+                    direction="up"
+                    style={{ display: "inline" }}
+                >
+                    {titleContent}
+                </Fade>
             </h1>
             <h2>A variety of downloads, freebies, and more.</h2>
             <p>Full Stack Snippets as a PDF.</p>
@@ -61,12 +73,13 @@ export function Goodies() {
                     className="button-as-link"
                     download
                 >
-                    📜 &nbsp; Full Stack Snippets - Shell Only (so far only bash and zsh)
+                    📜 &nbsp; Full Stack Snippets - Shell Only (so far only bash
+                    and zsh)
                 </a>
             </div>
-            These snippet PDFs are generated every time I post or update a snippet{" "}
-            <Link to="/snippets">on the snippets page</Link>, so you can be sure
-            it has the most up-to-date code in it. 👍
+            These snippet PDFs are generated every time I post or update a
+            snippet <Link to="/snippets">on the snippets page</Link>, so you can
+            be sure it has the most up-to-date code in it. 👍
         </>
     )
 }

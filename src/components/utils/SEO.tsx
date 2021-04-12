@@ -44,9 +44,6 @@ export default function SEO(props: ISEOProps) {
                 <meta name="twitter:title" content="Chris' Full Stack Blog" />
                 <TwitterMetaTags author={author} description={description}/>
 
-                {/* Gumroad JS and gumroad embed */}
-                <script defer={true} src="https://gumroad.com/js/gumroad.js"></script>
-                <script defer={true} src="https://gumroad.com/js/gumroad-embed.js"></script>
             </Helmet>
             <SchemaOrg
                 title={title}

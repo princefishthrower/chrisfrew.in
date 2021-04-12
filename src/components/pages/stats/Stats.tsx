@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql, Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
+import { Fade } from "react-awesome-reveal"
 import { ThemeContext } from "../../../context/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 import Sparkles from "../../utils/Sparkles"
@@ -27,7 +28,15 @@ export function Stats() {
         }
     `)
 
+    // work for the fancy colored text
     const { themeBodyClass } = useContext(ThemeContext)
+    const titleContent = colorizeStringBySeparator(
+        themeBodyClass,
+        "📊 Blog Stats",
+        "",
+        0,
+        true
+    )
 
     // some calculations on all the posts
     const posts = data.allMdx.edges
@@ -51,19 +60,30 @@ export function Stats() {
 
     return (
         <>
-            <h1 className="cooper big">{colorizeStringBySeparator(themeBodyClass, "Blog Stats", "")}</h1>
+            <h1 className="cooper big">
+                <Fade
+                    cascade={true}
+                    damping={0.025}
+                    duration={1000}
+                    direction="up"
+                    style={{ display: "inline" }}
+                >
+                    {titleContent}
+                </Fade>
+            </h1>
             <p>
                 These stats are generated at build time through GraphQL queries,
                 so you can be sure they are up to date!
             </p>
             <h2>General Stats</h2>
             <p>
-                <Link to={firstPost.node.fields.slug}>First post</Link>{" "}
-                publish date: <b>{firstPublishDate.toLocaleDateString()}</b>
+                <Link to={firstPost.node.fields.slug}>First post</Link> publish
+                date: <b>{firstPublishDate.toLocaleDateString()}</b>
             </p>
             <p>
                 <Link to={newestPost.node.fields.slug}>Most recent post</Link>{" "}
-                publish date: <b>{mostRecentPublishDate.toLocaleDateString()}</b>
+                publish date:{" "}
+                <b>{mostRecentPublishDate.toLocaleDateString()}</b>
             </p>
             <>
                 {yearData.map((x) => {
@@ -78,13 +98,19 @@ export function Stats() {
                     return (
                         <p key={x.year}>
                             Number of posts created in {x.year}:{" "}
-                            <b>{x.count} (and counting - the year's not over yet!)</b>
+                            <b>
+                                {x.count} (and counting - the year's not over
+                                yet!)
+                            </b>
                         </p>
                     )
                 })}
             </>
             <p>
-                Total Number of Posts: <span style={{fontSize: '1.3rem', letterSpacing: '0.1rem'}}><Sparkles>{totalPosts}</Sparkles></span>
+                Total Number of Posts:{" "}
+                <span style={{ fontSize: "1.3rem", letterSpacing: "0.1rem" }}>
+                    <Sparkles>{totalPosts}</Sparkles>
+                </span>
             </p>
 
             {/* TODO: ADD TAGS AND SEARCH AND FILTER */}
