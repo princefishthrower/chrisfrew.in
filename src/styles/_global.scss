@@ -61,6 +61,10 @@ td:first-child {
     padding-left: 1rem;
 }
 
+ul {
+    list-style-position: inside
+}
+
 // prism overrides
 pre[class*="language-"]:before {
     display: none !important;

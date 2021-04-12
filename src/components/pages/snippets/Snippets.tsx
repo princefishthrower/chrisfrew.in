@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
+import { Fade } from "react-awesome-reveal"
 import { ThemeContext } from "../../../context/ThemeContext"
 import URLSearchParamKey from "../../../enums/URLSearchParamKey"
 import URLSearchParamValue from "../../../enums/URLSearchParamValue"
@@ -30,15 +31,31 @@ export interface ISnippetsProps {
 export function Snippets(props: ISnippetsProps) {
     const { pdfMode } = props
     const { themeBodyClass } = useContext(ThemeContext)
-    const title = "👩‍💻👨‍💻 Full Stack Snippets."
-    const titleText = pdfMode ? title : colorizeStringBySeparator(themeBodyClass, title, "")
+    const title = pdfMode ? "Full Stack Snippets." : "👩‍💻👨‍💻 Full Stack Snippets."
+    const titleText = pdfMode
+        ? title
+        : colorizeStringBySeparator(themeBodyClass, title, "", 0, true)
     const languageFilter = pdfMode
         ? useSearchParam(URLSearchParamKey.LANGUAGE_FILTER)
         : URLSearchParamValue.ALL
-
+    const titleComponent = pdfMode ? (
+        <h1 className="cooper big">{titleText}</h1>
+    ) : (
+        <h1 className="cooper big">
+            <Fade
+                cascade={true}
+                damping={0.025}
+                duration={1000}
+                direction="up"
+                style={{ display: "inline" }}
+            >
+                {titleText}
+            </Fade>
+        </h1>
+    )
     return (
         <>
-            <h1 className="cooper big">{titleText}</h1>
+            {titleComponent}
             {!pdfMode && (
                 <>
                     <h2>
@@ -92,7 +109,9 @@ export function Snippets(props: ISnippetsProps) {
                 </>
             )}
             {languageFilter === URLSearchParamValue.ALL && <h2>Backend</h2>}
-            {languageFilter === URLSearchParamValue.ALL && <h3>JavaScript (Node.js)</h3>}
+            {languageFilter === URLSearchParamValue.ALL && (
+                <h3>JavaScript (Node.js)</h3>
+            )}
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.NODE) && (
                 <SnippetToggler

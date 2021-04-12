@@ -1,0 +1,28 @@
+.laptop-subscriber {
+    position: fixed;
+    left: 10px;
+    top: 150px;
+    pre {
+        font-size: 12px !important;
+        // line-height: 0  !important;
+        margin: 0  !important;
+        padding: 0  !important;
+    }
+    input,
+    button {
+        font-family: "Fira Code", monospace;
+        font-size: 12px;
+        background-color: transparent !important;
+        color: $lightColor;
+        font-weight: bold;
+        border: none  !important;
+        margin: 0  !important;
+        padding: 0  !important;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: inline;
+    }
+    button {
+        display: block;
+    }
+}

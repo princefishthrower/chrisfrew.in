@@ -47,7 +47,7 @@ export function Nav() {
                     {colorizeStringBySeparator(themeBodyClass, "Blog Stats", " ", offsetArray[4])}
                 </Link>
                 <Link to="/chris">
-                    {colorizeStringBySeparator(themeBodyClass, "Chris", " ", offsetArray[5])}
+                    {colorizeStringBySeparator(themeBodyClass, "About Me", " ", offsetArray[5])}
                 </Link>
                 <ThemeSwitcherContainer size={Size.LARGE}/>
             </nav>

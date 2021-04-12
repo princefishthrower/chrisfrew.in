@@ -4,7 +4,7 @@ import { TwitterIcon } from "../TwitterIcon"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Sparkles from "../../utils/Sparkles"
-
+import { Fade } from "react-awesome-reveal"
 
 export function HomePageTitle() {
     const data = useStaticQuery(graphql`
@@ -41,7 +41,8 @@ export function HomePageTitle() {
                     }}
                     to={`/`}
                 >
-                    Chris' <Sparkles wipeType="alternate">Full Stack</Sparkles> Blog
+                    Chris' <Sparkles wipeType="alternate">Full Stack</Sparkles>{" "}
+                    Blog
                 </Link>
             </h1>
             <div style={{ textAlign: "center" }}>
@@ -100,6 +101,7 @@ export function HomePageTitle() {
                     @fullStackChris_
                 </a>
             </div>
+
             <h2
                 style={{
                     marginBottom: 0,
@@ -109,7 +111,14 @@ export function HomePageTitle() {
                     zIndex: 10,
                 }}
             >
-                {data.site.siteMetadata.subtitle}
+                <Fade
+                    cascade={true}
+                    damping={0.05}
+                    duration={1000}
+                    direction="up"
+                >
+                    {data.site.siteMetadata.subtitle}
+                </Fade>
             </h2>
             <MessageOfTheDay />
         </>
