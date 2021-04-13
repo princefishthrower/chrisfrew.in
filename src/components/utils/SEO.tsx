@@ -17,6 +17,7 @@ export default function SEO(props: ISEOProps) {
                         title
                         description
                         author
+                        lang
                     }
                 }
             }

@@ -12,7 +12,7 @@ import { SignatureText } from "../../layout/Bio/SignatureText"
 import { SitePortfolio } from "../../layout/Bio/SitePortfolio"
 import { SocialsContainer } from "../../layout/Bio/SocialsContainer"
 import { TeachingPortfolio } from "../../layout/Bio/TeachingPortfolio"
-
+import { AvatarPicture } from "../../utils/AvatarPicture"
 export function Chris() {
     const data = useStaticQuery(graphql`
         query ChrisQuery {
@@ -34,7 +34,7 @@ export function Chris() {
 
     return (
         <>
-        <h1 className="cooper big">
+            <h1 className="cooper big">
                 <Fade
                     cascade={true}
                     damping={0.025}
@@ -45,37 +45,36 @@ export function Chris() {
                     {titleContent}
                 </Fade>
             </h1>
-            <StaticImage
-                src={"../../../images/avatar.jpg"}
-                alt={data.site.siteMetadata.author}
-                width={260}
-                height={260}
-                layout="fixed"
-                placeholder="blurred"
+            <AvatarPicture
                 style={{
                     display: "block",
                     marginLeft: "auto",
                     marginRight: "auto",
                     borderRadius: `100%`,
                     marginBottom: "1rem",
+                    width: "200px",
+                    height: "auto",
                 }}
             />
             <div
                 style={{
                     display: `flex`,
                     flexDirection: `column`,
-                    textAlign: 'center',
+                    textAlign: "center",
                     marginBottom: `2.5rem`,
                     position: `relative`, // for canvas issue
                     zIndex: 10, // for canvas issue
                 }}
             >
                 <BioLead />
-                <BioSharedText/>
-                <p><strong>
-                    If I'm not building SaaS Products or teaching full stack
-                    software engineering, I'll can be found doing any or all of the following:
-                    </strong></p>
+                <BioSharedText />
+                <p>
+                    <strong>
+                        If I'm not building SaaS Products or teaching full stack
+                        software engineering, I'll can be found doing any or all
+                        of the following:
+                    </strong>
+                </p>
                 <ul>
                     <li>🚶‍♂️ hiking</li>
                     <li> ⛷️ skiing</li>
@@ -94,7 +93,7 @@ export function Chris() {
                 <ProductPortfolio />
                 <SitePortfolio />
                 <SocialsContainer />
-                <SignatureText/>
+                <SignatureText />
             </div>
         </>
     )

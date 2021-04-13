@@ -5,6 +5,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Sparkles from "../../utils/Sparkles"
 import { Fade } from "react-awesome-reveal"
+import { AvatarPicture } from "../../utils/AvatarPicture"
 
 export function HomePageTitle() {
     const data = useStaticQuery(graphql`
@@ -46,18 +47,12 @@ export function HomePageTitle() {
                 </Link>
             </h1>
             <div style={{ textAlign: "center" }}>
-                <StaticImage
-                    src={"../../../images/avatar.jpg"}
-                    alt={data.site.siteMetadata.author}
-                    width={200}
-                    height={200}
-                    layout="fixed"
-                    placeholder="blurred"
-                    style={{
+                <AvatarPicture style={{
                         display: "inline-block",
                         borderRadius: `100%`,
-                    }}
-                />
+                        width: "200px",
+                        height: 'auto'
+                    }}/>
                 <a
                     className="h-card"
                     href="https://chrisfrew.in/"
@@ -101,25 +96,25 @@ export function HomePageTitle() {
                     @fullStackChris_
                 </a>
             </div>
-
-            <h2
-                style={{
-                    marginBottom: 0,
-                    marginTop: 0,
-                    position: `relative`,
-                    textAlign: `center`,
-                    zIndex: 10,
-                }}
-            >
-                <Fade
-                    cascade={true}
-                    damping={0.05}
-                    duration={1000}
-                    direction="up"
+            <div>
+                <h2
+                    style={{
+                        margin: 0,
+                        marginBottom: "1rem",
+                        textAlign: "center",
+                    }}
                 >
-                    {data.site.siteMetadata.subtitle}
-                </Fade>
-            </h2>
+                    <Fade
+                        cascade={true}
+                        damping={0.05}
+                        duration={1000}
+                        direction="up"
+                        style={{ display: "inline", whiteSpace: "inherit" }}
+                    >
+                        {data.site.siteMetadata.subtitle}
+                    </Fade>
+                </h2>
+            </div>
             <MessageOfTheDay />
         </>
     )

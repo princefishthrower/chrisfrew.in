@@ -16,7 +16,7 @@
 @media only screen and (max-width: $largeOffset) and (min-width: $medium) {
     .page-wrapper {
         margin-left: $navWidthMedium;
-        max-width: calc(100% - #{$navWidthMedium})
+        max-width: calc(100% - #{$navWidthMedium});
     }
 }
 
@@ -24,7 +24,8 @@
 @media only screen and (max-width: $mediumOffset) {
     .page-wrapper {
         margin-left: $navWidthSmall;
-        max-width: calc(100% - #{$navWidthSmall})
+        max-width: calc(100% - #{$navWidthSmall});
+        padding: 1rem;
     }
 }
 

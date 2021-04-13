@@ -17,13 +17,29 @@ export const colorizeStringBySeparator = (
     const colors = getConfettiColorClasses(themeBodyClass)
     let colorIndex = -1 + offset
 
-    const fragmentArray = entities.map((letter, index) => {
+    // note that an entity can be a single character, or an entire word, depending on the separator
+    const fragmentArray = entities.map((entity, index) => {
+        // regex to check . add characters to the range as needed
+        const entitiesToColor = /[a-zA-Z0-9,'.-/\/~&!?{}\[\]$<>]/gm;
+
         if (colorIndex === colors.length - 1) {
             colorIndex = -1
         }
+
+        // don't color non-alphanumerics - just return a span
+        if (!entity.match(entitiesToColor)) {
+            return (
+                <Fragment key={index}>
+                    <span>{entity}</span>
+                </Fragment>
+            )
+        }
+
+        // otherwise color - pre increment color index before accessing
+        // also render the separator if it is not empty string and not last entity
         return (
             <Fragment key={index}>
-                <span className={colors[++colorIndex]}>{letter}</span>
+                <span className={colors[++colorIndex]}>{entity}</span>
                 {separator !== "" && index !== entities.length - 1 && (
                     <>{separator}</>
                 )}
@@ -37,5 +53,4 @@ export const colorizeStringBySeparator = (
 
     // return as react node
     return <>{fragmentArray}</>
-
 }

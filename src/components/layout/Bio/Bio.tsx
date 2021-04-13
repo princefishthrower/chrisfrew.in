@@ -5,6 +5,7 @@ import Sparkles from "../../utils/Sparkles"
 import { Signature } from "./Signature"
 import { BioSharedText } from "./BioSharedText"
 import { SignatureText } from "./SignatureText"
+import { AvatarPicture } from "../../utils/AvatarPicture"
 
 export default function Bio() {
     const data = useStaticQuery(graphql`
@@ -19,22 +20,16 @@ export default function Bio() {
 
     return (
         <>
-            <StaticImage
-                src={"../../../images/avatar.jpg"}
-                alt={data.site.siteMetadata.author}
-                width={200}
-                height={200}
-                layout="fixed"
-                placeholder="blurred"
-                style={{
+            <AvatarPicture style={{
                     display: "block",
                     marginLeft: "auto",
                     marginRight: "auto",
                     borderRadius: `100%`,
                     marginTop: "2rem",
                     marginBottom: "1rem",
-                }}
-            />
+                    width: "200px",
+                    height: "auto"
+                }}/>
             <div
                 style={{
                     display: `flex`,
