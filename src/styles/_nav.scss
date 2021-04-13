@@ -149,7 +149,7 @@
 }
 
 // everything below extra large screens (width less than 1400px)
-@media only screen and (max-width: $extralarge) {
+@media only screen and (max-width: $extraLarge) {
     .tiny {
         display: none;
     }

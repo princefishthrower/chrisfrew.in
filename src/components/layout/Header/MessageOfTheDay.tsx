@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useContext, useEffect } from "react"
+import { Fade } from "react-awesome-reveal"
 import { useCookies } from "react-cookie"
 import Constants from "../../../constants/Constants"
 import { ThemeContext } from "../../../context/ThemeContext"
@@ -71,14 +72,23 @@ export function MessageOfTheDay() {
             <span className="monokaiBlueFont">{"{"}</span>
             <span className="monokaiGreenFont">{"/"}</span>
             <span className="monokaiYellowFont">{"* "}</span>
-            <>
+            <Fade
+                cascade={true}
+                damping={0.05}
+                duration={1300}
+                direction="left"
+                style={{ display: "inline", whiteSpace: "inherit" }}
+            >
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     messagesOfTheDay[
                         cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]
-                    ], ""
+                    ],
+                    "",
+                    0,
+                    true
                 )}
-                </>
+            </Fade>
             <span className="monokaiYellowFont">{" *"}</span>
             <span className="monokaiGreenFont">{"/"}</span>
             <span className="monokaiBlueFont">{"}"}</span>

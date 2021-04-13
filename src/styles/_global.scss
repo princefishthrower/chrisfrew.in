@@ -62,7 +62,29 @@ td:first-child {
 }
 
 ul {
-    list-style-position: inside
+    list-style-position: inside;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+main {
+    margin-top: 2rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+article header h3 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.blog-post-date {
+    font-style: italic;
 }
 
 // prism overrides

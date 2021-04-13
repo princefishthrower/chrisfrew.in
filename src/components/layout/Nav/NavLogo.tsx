@@ -1,9 +1,8 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import Sparkles from "../../utils/Sparkles"
 import Size from "../../../enums/Size"
-
+import { AvatarPicture } from "../../utils/AvatarPicture"
 export interface INavLogoProps {
     size: Size
 }
@@ -39,11 +38,7 @@ export function NavLogo(props: INavLogoProps) {
                         <>Home</>
                     ) : (
                         <>
-                            <Sparkles
-                                wipeType="alternate"
-                            >
-                                Home
-                            </Sparkles>{" "}
+                            <Sparkles wipeType="alternate">Home</Sparkles>{" "}
                         </>
                     )}
                 </Link>
@@ -67,18 +62,14 @@ export function NavLogo(props: INavLogoProps) {
                     alignItems: "center",
                 }}
             >
-                <StaticImage
-                    src="../../../images/avatar.jpg"
-                    alt={data.site.siteMetadata.author}
-                    height={50}
-                    width={50}
-                    placeholder="blurred"
+                <AvatarPicture
                     style={{
                         display:
                             size === Size.MEDIUM ? "block" : "inline-block",
                         borderRadius: `100%`,
                         marginRight: size === Size.MEDIUM ? "0" : "1rem",
-                        
+                        width: "50px",
+                        height: 'auto',
                     }}
                 />
                 <h3
@@ -87,7 +78,7 @@ export function NavLogo(props: INavLogoProps) {
                             size === Size.MEDIUM ? "block" : "inline-block",
                         fontFamily: `Montserrat, sans-serif`,
                         margin: 0,
-                        textAlign: size === Size.MEDIUM ? "center" : "left"
+                        textAlign: size === Size.MEDIUM ? "center" : "left",
                     }}
                 >
                     {isBlogPage ? (
@@ -95,11 +86,7 @@ export function NavLogo(props: INavLogoProps) {
                     ) : (
                         <>
                             Chris'{" "}
-                            <Sparkles
-                                wipeType="default"
-                            >
-                                Full Stack
-                            </Sparkles>{" "}
+                            <Sparkles wipeType="default">Full Stack</Sparkles>{" "}
                             Blog
                         </>
                     )}
