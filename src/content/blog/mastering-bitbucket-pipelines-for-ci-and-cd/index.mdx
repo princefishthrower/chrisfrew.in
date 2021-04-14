@@ -3,6 +3,7 @@ title: "The Last Bitbucket Pipelines Tutorial You'll Ever Need: Mastering CI and
 description: An incredibly powerful tool that saves time, headaches, and much more!
 date: "2021-02-01"
 draft: false
+tags: bitbucket pipelines,automation,CI/CD
 ---
 
 import LinkPreview from '../../../components/utils/LinkPreview';
@@ -109,7 +110,7 @@ Ok, so we set up some 'real' build commands, and now we should actually do somet
 
 A common pattern with TypeScript is to put all build artifacts into the `dist/` folder (via the [`outDir` config setting](https://www.typescriptlang.org/tsconfig#outDir)), so let's assume we have such settings ourselves. We'll use the `artifacts` directive right after the `script` directive in our pipelines config to tell Bitbucket that we want to hold on to both the `dist/` and `node_modules/` folders.
 
-Let's also assume we've built a simple static server with express, and put that in an `index.js` file. This file won't be built during the process, it will just be a normal file checked into our repository - files that already exist in your repository are fine to declare as artifacts as well, of course! :smile:
+Let's also assume we've built a simple static server with express, and put that in an `index.js` file. This file won't be built during the process, it will just be a normal file checked into our repository - files that already exist in your repository are fine to declare as artifacts as well, of course! 😊
 
 ```yml
 pipelines:
@@ -270,7 +271,7 @@ env
 └── .env.staging.json
 ```
 
-Alternatively, you could make a series of TypeScript files, each with a class with `public static readonly` variables in it - though that is obviously much more dependent on if you are actually in a project using TypeScript. :smile:
+Alternatively, you could make a series of TypeScript files, each with a class with `public static readonly` variables in it - though that is obviously much more dependent on if you are actually in a project using TypeScript. 😊
 
 Note that any of these env or config files _would_ be checked in to git, so they are valid only for public variables - perhaps titles, styles, etc. For secret variables, you'll still need to use other tools like `dotenv` or bash environment variables (`process.env` in Node.js, for example).
 

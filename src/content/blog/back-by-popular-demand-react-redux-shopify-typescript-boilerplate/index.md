@@ -4,7 +4,7 @@ description: "Now with TypeScript: Strongly typed E-commerce for all!"
 date: "2020-07-21"
 draft: false
 starID: 12345999
-postType: dev
+tags: react,redux,shopify,typescript
 ---
 
 *This is a 2020 followup to my original article [A detailed tutorial: how to use Shopify’s Storefront API with React and Redux](https://www.freecodecamp.org/news/a-detailed-tutorial-how-to-use-shopifys-storefront-api-with-react-and-redux-37f95cbab7f/), featured on freeCodeCamp.*

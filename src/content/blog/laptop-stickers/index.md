@@ -4,7 +4,7 @@ description:
 date: "2017-12-19"
 draft: false
 starID: 5
-postType: misc
+tags: miscellaneous
 ---
 
 # Laptop Stickers!
@@ -13,7 +13,7 @@ postType: misc
 
 Nothing shows others better that you are a humble, totally epic developer, than putting really cheap stickers on your really expensive laptop!
 
-(Okay, I can't be _that_ humble since I'm bragging about a few 50&cent; stickers on a blog - and I'm even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 :smile:)
+(Okay, I can't be _that_ humble since I'm bragging about a few 50&cent; stickers on a blog - and I'm even wrong on a second account - my Mac here is used, from 2013, and only set me back about $700 😊)
 
 # Tech stack
 

@@ -4,7 +4,7 @@ description:
 date: "2017-12-12"
 draft: false
 starID: 2
-postType: dev
+tags: Blog Meta,life
 ---
 
 Warning everyone - this is a bit of rant post - but I hope some of you will agree and we can turn the tables of a stubborn community a bit.

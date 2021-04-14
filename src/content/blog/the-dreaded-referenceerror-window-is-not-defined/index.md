@@ -4,7 +4,7 @@ description:
 date: "2018-12-08"
 draft: false
 starID: 101
-postType: dev
+tags: javascript,ssr
 ---
 
 ## The Root Issue

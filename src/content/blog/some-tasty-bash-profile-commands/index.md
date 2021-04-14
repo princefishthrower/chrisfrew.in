@@ -4,12 +4,12 @@ description:
 date: "2018-04-09"
 draft: false
 starID: 16
-postType: dev
+tags: bash
 ---
 
 # Bash Profile / Bashrc - Aliases, Terminal Prompt, Terminal Prompt Colors, the Works to Get Your Workflow to God-Like Levels!
 
-This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don't necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? :smile:)
+This post is gonna get right to it - if you use machines that have a Bash terminal, you should build custom aliases to get around faster, do stuff faster, or just plain have a bit of fun! (you don't necessarily have to use mine, but these aliases and functions could get you started on your own machine - and hey, besides, my aliases are pretty intuitive right? 😊)
 
 For the following machines, the alias file can be found in these locations:
 

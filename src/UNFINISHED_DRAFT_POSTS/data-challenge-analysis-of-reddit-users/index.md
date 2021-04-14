@@ -4,7 +4,7 @@ description:
 date: "2018-08-01"
 draft: true
 starID: 51
-postType: dev
+tags: dev
 ---
 
 # Data analysis

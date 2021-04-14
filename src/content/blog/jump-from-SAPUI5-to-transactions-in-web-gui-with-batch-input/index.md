@@ -4,7 +4,7 @@ description:
 date: "2018-01-25"
 draft: true
 starID: 33
-postType: dev
+tags: SAP,SAPUI5,OpenUI5
 ---
 
 ## So, we don't want to be rebuilding SAP GUI transactions 1:1 in the Web...

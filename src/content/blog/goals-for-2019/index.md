@@ -4,7 +4,7 @@ description:
 date: "2019-01-03"
 draft: false
 starID: 105
-postType: misc
+tags: Yearly Goals,Blog Meta
 ---
 
 ## Every Dev's Doing It!
@@ -15,9 +15,9 @@ I find that making _goals_ works best for me, as they are more concrete than res
 
 Seems to me then, that new year's 'resolutions' are something that can quickly be 'broken', and that's at the moment you go against your original 'decision'. 
 
-Goals are typically bigger in scope, and they are something to actively work _towards_, you can't really 'break' your goal. I suppose you can just make no effort to work towards them, but then they'll make you feel very guilty as they stare at you from their list :smile:. 
+Goals are typically bigger in scope, and they are something to actively work _towards_, you can't really 'break' your goal. I suppose you can just make no effort to work towards them, but then they'll make you feel very guilty as they stare at you from their list 😊. 
 
-So make goals for 2019! :wink:
+So make goals for 2019! 😉
 
 :rolling_eyes: Okay, enough with the New Year's philosophy already...  :rolling_eyes:
 

@@ -4,7 +4,7 @@ description:
 date: "2018-07-25"
 draft: false
 starID: 24
-postType: life
+tags: life
 ---
 
 ## Thoughts of yet another full-time worker going full-time freelance / tinkerer / creative / nomad.

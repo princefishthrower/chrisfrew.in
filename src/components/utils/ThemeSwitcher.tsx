@@ -3,7 +3,7 @@ import BodyClassName from "react-body-classname"
 import { useCookies } from "react-cookie"
 import { themeConfig } from "../../config/ThemeConfig"
 import Constants from "../../constants/Constants"
-import { ThemeContext } from "../../context/ThemeContext"
+import { ThemeContext } from "../../context/theme/ThemeContext"
 import Size from "../../enums/Size"
 
 export interface ISwitcherProps {

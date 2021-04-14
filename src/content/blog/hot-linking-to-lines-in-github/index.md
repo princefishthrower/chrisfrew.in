@@ -4,7 +4,7 @@ description:
 date: "2017-12-19"
 draft: false
 starID: 6
-postType: dev
+tags: github
 ---
 
 This'll be a real short one; I just learned you can link to specific lines of code on GitHub!
@@ -21,4 +21,4 @@ Go on. Give it a click. You know you want to! You'll see your browser jumps down
 
 <hr/>
 
-\* `main.cpp` doesn't exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example `main.cpp` is an attractive file name :smile:.
+\* `main.cpp` doesn't exist anymore in the current codebase; it has been reorganized into various other parts of the code, but as an example `main.cpp` is an attractive file name 😊.

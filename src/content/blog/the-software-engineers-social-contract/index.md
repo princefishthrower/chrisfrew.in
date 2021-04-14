@@ -4,7 +4,7 @@ description:
 date: "2018-10-28"
 draft: false
 starID: 29
-postType: life
+tags: life
 ---
 
 This is going to be an ongoing bullet point of some of my own personal guidelines as a Software Engineer. They probably relate to most other, if not all, professions and occupations. Each point has a bit of justification and reasoning behind it. This list may grow.

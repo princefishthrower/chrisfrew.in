@@ -4,7 +4,7 @@ description:
 date: "2018-01-11"
 draft: false
 starID: 11
-postType: dev
+tags: javascript,tampermonkey
 ---
 
 # Dude, where's my color scheme?!

@@ -6,6 +6,7 @@ export const themeConfig: Array<IThemeConfig> = [
         label: "Monokai Dark",
         emoji: "👻",
         themeBodyClass: ThemeBodyClass.DARK_THEME,
+        defaultHexColor: "#191919",
         linearWipeClasses: {
             default: [
                 "fillMonokaiBlue",
@@ -19,7 +20,7 @@ export const themeConfig: Array<IThemeConfig> = [
             ],
             love: ["fillMonokaiPink", "fillMonokaiBlue", "fillMonokaiPink"],
         },
-        confettiColorClasses: [
+        themeColorClasses: [
             "monokaiRedFont",
             "monokaiOrangeFont",
             "monokaiYellowFont",
@@ -27,7 +28,7 @@ export const themeConfig: Array<IThemeConfig> = [
             "monokaiBlueFont",
             "monokaiPinkFont",
         ],
-        confettiColorHexCodes: [
+        themeColorHexCodes: [
             "#f92672",
             "#27dea7",
             "#62d3e9",
@@ -40,6 +41,7 @@ export const themeConfig: Array<IThemeConfig> = [
         label: "Monokai Light",
         emoji: "☀️",
         themeBodyClass: ThemeBodyClass.LIGHT_THEME,
+        defaultHexColor: "#ffffff",
         linearWipeClasses: {
             default: [
                 "fillMonokaiBlue",
@@ -53,7 +55,7 @@ export const themeConfig: Array<IThemeConfig> = [
             ],
             love: ["fillMonokaiPink", "fillMonokaiBlue", "fillMonokaiPink"],
         },
-        confettiColorClasses: [
+        themeColorClasses: [
             "monokaiRedFont",
             "monokaiOrangeFont",
             "monokaiYellowFont",
@@ -61,7 +63,7 @@ export const themeConfig: Array<IThemeConfig> = [
             "monokaiBlueFont",
             "monokaiPurpleFont",
         ],
-        confettiColorHexCodes: [
+        themeColorHexCodes: [
             "#e70457",
             "#168362",
             "#157e93",
@@ -74,6 +76,7 @@ export const themeConfig: Array<IThemeConfig> = [
         label: "Outrun",
         emoji: "🍧",
         themeBodyClass: ThemeBodyClass.OUTRUN_THEME,
+        defaultHexColor: "#201138",
         linearWipeClasses: {
             default: ["fillOutrunPink", "fillOutrunPurple", "fillOutrunPink"],
             alternate: [
@@ -83,23 +86,24 @@ export const themeConfig: Array<IThemeConfig> = [
             ],
             love: ["fillOutrunPink", "fillOutrunPurple", "fillOutrunPink"],
         },
-        confettiColorClasses: [
+        themeColorClasses: [
             "outrunOrangeFont",
             "outrunPinkFont",
             "outrunPurpleFont",
         ],
-        confettiColorHexCodes: ["#ff467d", "#ff9928", "#d023df"],
+        themeColorHexCodes: ["#ff467d", "#ff9928", "#d023df"],
     },
     {
         label: "B/W",
         emoji: "⚫⚪",
         themeBodyClass: ThemeBodyClass.BLACK_WHITE_THEME,
+        defaultHexColor: "#ffffff",
         linearWipeClasses: {
             default: ["fillBlack", "fillGray", "fillBlack"],
             alternate: ["fillGray", "fillBlack", "fillGray"],
             love: ["fillBlack", "fillGray", "fillBlack"],
         },
-        confettiColorClasses: ["blackFont", "grayFont", "lightGrayFont"],
-        confettiColorHexCodes: ["#000000", "#808080", "#BCBCBC"],
+        themeColorClasses: ["blackFont", "grayFont", "lightGrayFont"],
+        themeColorHexCodes: ["#000000", "#808080", "#BCBCBC"],
     },
 ]

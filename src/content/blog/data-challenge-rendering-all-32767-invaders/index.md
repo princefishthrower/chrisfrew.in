@@ -4,10 +4,10 @@ description:
 date: "2019-01-13"
 draft: false
 starID: 104
-postType: data
+tags: data,data challenge,react,python
 ---
 
-This post is [also published on Medium](https://medium.com/@frewin.christopher/data-challenge-rendering-all-32-767-invaders-d20e69e045f4), if you prefer to read there<sup>[1](#footnote-1)</sup>, but it was posted here first. :smile:
+This post is [also published on Medium](https://medium.com/@frewin.christopher/data-challenge-rendering-all-32-767-invaders-d20e69e045f4), if you prefer to read there<sup>[1](#footnote-1)</sup>, but it was posted here first. 😊
 
 ## Results First, Technical Stuff Later
 
@@ -107,7 +107,7 @@ The math behind Invader generation is briefly discussed directly on the [Invader
 
 So we know what an Invader is now. But how can exactly are we going to generate every possible binary string of length 15? We need to generate what I call in the code "block strings" (or `block_strings`).
 
-I'll admit, I struggled for a while on how to do this without writing custom Python. I went immediately to the `itertools` library, trying to work some magic with the `permutations` and/or `combinations` functions, but Python kept thinking it should count each `0` in the list as unique, so I kept getting what I considered 'repeat' entries, for example: `'100000000000000'` and `'10000000000000'` - they of course appear identical to us, but not to Python :smile:) 
+I'll admit, I struggled for a while on how to do this without writing custom Python. I went immediately to the `itertools` library, trying to work some magic with the `permutations` and/or `combinations` functions, but Python kept thinking it should count each `0` in the list as unique, so I kept getting what I considered 'repeat' entries, for example: `'100000000000000'` and `'10000000000000'` - they of course appear identical to us, but not to Python 😊) 
 
 Anyway, after lots of Google and Stack Overflow, it turns out that there _is_ a one-liner that can do this, which actually _is_ in the itertools library, it's just a not-so-commonly seen method, `product()`:
 
@@ -405,6 +405,6 @@ Cheers! 🍺
 </div>
 <div id="footnote-2">
 <br/><br/>
-2. Prefer to read on Medium? No you don't. There's no code highlighting, superscript, or awesome footnotes. (Like these :wink:)
+2. Prefer to read on Medium? No you don't. There's no code highlighting, superscript, or awesome footnotes. (Like these 😉)
 </div>
 <br/><br/>

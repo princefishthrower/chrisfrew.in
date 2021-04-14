@@ -4,7 +4,7 @@ description:
 date: "2017-12-24"
 draft: false
 starID: 8
-postType: dev
+tags: npm,javascript
 ---
 
 ## No, It's not Easter for Christmas...
@@ -13,7 +13,7 @@ Simply issue `npm xmas` in your terminal:
 
 ![A nice little Christmas tree](npm-christmas.png)
 
-(You would learned this only if you been a good boy or girl and read NPM's recent Newsletter :smile::wink:)
+(You would learned this only if you been a good boy or girl and read NPM's recent Newsletter 😊)
 
 Another fun fact - the tree is not deterministic! Give it a few runs and you'll see what I mean.
 

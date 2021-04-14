@@ -4,14 +4,14 @@ description:
 date: "2018-11-19"
 draft: false
 starID: 32
-postType: dev
+tags: magento,apache
 ---
 
 Originally published here, also [_published on Medium._](https://medium.com/@frewin.christopher/run-an-existing-magento-2-app-for-development-with-homebrew-apache-on-macos-in-2018-2019-9d40bc1e823a)
 
-So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. 😂 😂 😂 While Magento provides a lot of powerful tools for building e-commerce sites, it's a beast to get started up, especially if one of you has only done it on Windows, and one of you has a Mac. :wink: I documented everything we sludged through in those 5 hours, and this post was born!
+So, I started working on a new Magento project with my boss this past weekend, and sitting together at a café, it took us about 5 hours to get the site fully working for development. 😂 😂 😂 While Magento provides a lot of powerful tools for building e-commerce sites, it's a beast to get started up, especially if one of you has only done it on Windows, and one of you has a Mac. 😉 I documented everything we sludged through in those 5 hours, and this post was born!
 
-This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 30 minutes to an hour :smile:
+This is a tutorial that boils down the steps that worked for us (trust me when I say there were many steps we took that _didn't_ work), so hopefully it can take _you_ only 30 minutes to an hour 😊
 
 ## mcrypt and intl PHP Extensions
 
@@ -116,7 +116,7 @@ In the least, Magento will prompt in the terminal if you would like to save thos
 Do you want to store credentials for repo.magento.com in /Users/chris/.composer/auth.json ? [Yn]
 ```
 
-(I said `Y` :smile:)
+(I said `Y` 😊)
 
 Check that everything from composer update looks okay. Everything should be successful, at the worst some warnings at the end.
 

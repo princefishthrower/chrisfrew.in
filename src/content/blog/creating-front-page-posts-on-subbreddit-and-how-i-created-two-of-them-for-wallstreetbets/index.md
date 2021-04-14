@@ -4,7 +4,7 @@ description:
 date: "2018-04-08"
 draft: false
 starID: 15
-postType: misc
+tags: Blog Meta,miscellaneous
 ---
 
 # The Posts

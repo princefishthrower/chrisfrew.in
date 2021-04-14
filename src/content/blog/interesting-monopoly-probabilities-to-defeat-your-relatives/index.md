@@ -4,7 +4,7 @@ description:
 date: "2018-12-29"
 draft: false
 starID: 103
-postType: data
+tags: data,Blog Meta,life
 ---
 
 ## Holiday Break = Monopoly (Logically) 😂
@@ -167,7 +167,7 @@ To make it really simple, let's categorize the 8 monopolies into 'best', 'better
 
 Of course, in the end, Monopoly is a game highly based on chance, so after all this analysis, actual game outcomes and mileage explained here will always vary. 
 
-However, by subscribing to these general concepts, I've had great success playing Monopoly (and this holiday season) :wink:. Have fun, and good luck if you're playing any time over the holidays!
+However, by subscribing to these general concepts, I've had great success playing Monopoly (and this holiday season) 😉. Have fun, and good luck if you're playing any time over the holidays!
 
 Cheers! 🍺
 
@@ -184,7 +184,7 @@ Cheers! 🍺
 
 Truman Collins already did [a massive probability analysis of Monopoly in his blog in 2005.](http://www.tkcs-collins.com/truman/monopoly/monopoly.shtml#Markov).
 
-Jim Slater, the famous English bank businessman, [provides a breakdown of the expected returns of some of the monopolies (and independently matches what was found by me, I'll be proud to admit! (though the ROIs he mentions are different - perhaps he is calculating them without considering hotels/houses? :smile:) in the fourth episode of "The Mayfair Set" documentaries by Adam Curtis](https://www.youtube.com/watch?v=PdQ3ztGk0D4&t=57m38s), (though in the video he is referring to the English names of the properties, it's helpful that he still mentions the colors 😂).
+Jim Slater, the famous English bank businessman, [provides a breakdown of the expected returns of some of the monopolies (and independently matches what was found by me, I'll be proud to admit! (though the ROIs he mentions are different - perhaps he is calculating them without considering hotels/houses? 😊) in the fourth episode of "The Mayfair Set" documentaries by Adam Curtis](https://www.youtube.com/watch?v=PdQ3ztGk0D4&t=57m38s), (though in the video he is referring to the English names of the properties, it's helpful that he still mentions the colors 😂).
 
 ## Footnotes
 

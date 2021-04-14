@@ -4,7 +4,7 @@ description:
 date: "2017-12-13"
 draft: false
 starID: 3
-postType: dev
+tags: SAP,ABAP
 ---
 
 Alright, let's do a bit of applied stuff today.
@@ -209,7 +209,7 @@ IF sy-subrc <> 0.
 ENDIF.
 ```
 
-We set this report up as a batch job to run every 5 minutes, and the ticket was resolved :smile:
+We set this report up as a batch job to run every 5 minutes, and the ticket was resolved 😊
 
 # Review
 

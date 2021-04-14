@@ -3,6 +3,7 @@ title: .NET, NGINX, Kestrel, and React with a Reverse Proxy on Linux Ubuntu
 description: A bare-bones, 5 step tutorial.
 date: "2020-11-30"
 draft: false
+tags: dotnet,nginx,kestrel,react
 ---
 
 This post is mirrored on [my DEV account](https://dev.to/fullstackchris/net-nginx-kestrel-and-react-with-a-reverse-proxy-on-linux-ubuntu-3gob) and [my Medium Account](https://chrisfrewin.medium.com/net-nginx-kestrel-and-react-with-a-reverse-proxy-on-linux-ubuntu-6f3b7d882206).
@@ -19,7 +20,7 @@ On my own server, I have a unique setup, with proxies to multiple site URLs to v
 
 I am familiar with building proxies to node servers, but for the first time I was trying out running a .NET server with a react SPA - and uh, ran into some troubles. :sob:
 
-I am going to be _explicitly_ clear with all file naming, URLs, paths, and ports, because I was scratching my head for too long based on all the oversimplified examples I read online! Hopefully, this can save you from my struggles. :smile:
+I am going to be _explicitly_ clear with all file naming, URLs, paths, and ports, because I was scratching my head for too long based on all the oversimplified examples I read online! Hopefully, this can save you from my struggles. 😊
 
 Here's the bare minimum of steps you need to proxy a .NET 5.0 app with React SPA on a Linux machine with NGINX.
 
@@ -93,7 +94,7 @@ Hop into your `package.json` of your React SPA (under `ClientApp`), and add the 
 "homepage": "https://mysite.com/my-first-dotnet-app",
 ```
 
-This tells React to build the site assuming that it is hosted at `/my-first-dotnet-app/`, which is exactly what we are doing :smile:. Because React builds a static `index.html` with all file paths (`.js` and `.css` for example) relative to `index.html`, **this step is a must**, even with the reverse proxy in NGINX.
+This tells React to build the site assuming that it is hosted at `/my-first-dotnet-app/`, which is exactly what we are doing 😊. Because React builds a static `index.html` with all file paths (`.js` and `.css` for example) relative to `index.html`, **this step is a must**, even with the reverse proxy in NGINX.
 
 # Step 5 - Create a Service File to Run the .NET Project
 

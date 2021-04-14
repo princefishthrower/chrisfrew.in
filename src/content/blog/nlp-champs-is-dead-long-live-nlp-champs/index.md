@@ -4,7 +4,7 @@ description:
 date: "2019-10-18"
 draft: false
 starID: 1234
-postType: misc
+tags: Blog Meta
 ---
 
 ## It Was... Inevitable...

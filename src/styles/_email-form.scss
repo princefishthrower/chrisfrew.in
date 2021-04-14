@@ -6,7 +6,7 @@
     .email-label {
         font-family: "CooperBlackRegular";
         font-weight: 500;
-        font-size: 0.7rem;
+        font-size: 2rem;
     }
 
     .email-input {
@@ -22,15 +22,15 @@
     .submit-button {
         width: 250px;
         height: 40px;
-        padding: 0.5rem;
         margin-bottom: 0.5rem;
         border: none;
         border-radius: 5px;
         box-sizing: border-box;
         font-family: "CooperBlackRegular";
         font-weight: 500;
-        font-size: 0.7rem;
+        font-size: 1.25rem;
         cursor: pointer;
+        transition: 0.4s !important;
     }
 }
 
@@ -38,6 +38,9 @@
     .submit-button {
         background-color: $monokaiRedDarkMode !important;
         color: $darkColor;
+        &:hover {
+            background-color: $monokaiGreenDarkMode !important;
+        }
     }
 }
 
@@ -45,6 +48,9 @@
     .submit-button {
         background-color: $monokaiRedLightMode !important;
         color: $lightColor;
+        &:hover {
+            background-color: $monokaiGreenLightMode !important;
+        }
     }
     .email-input {
         border: 1px solid $blackWhiteGray;

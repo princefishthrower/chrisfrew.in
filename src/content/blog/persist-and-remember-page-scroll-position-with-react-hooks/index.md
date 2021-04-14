@@ -2,6 +2,7 @@
 title: "Persist and Remember Page Scroll Position, i.e. window.scrollY Using React Hooks"
 description: An elegant React hook gets the job done!
 date: "2020-10-11"
+tags: typescript,react,react hooks
 ---
 
 [This post is mirrored on my Medium account.](https://medium.com/@frewin.christopher/persist-and-remember-page-scroll-position-i-e-window-scrolly-using-react-hooks-f80884211f2d)

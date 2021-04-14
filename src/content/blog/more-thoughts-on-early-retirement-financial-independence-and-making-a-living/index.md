@@ -4,7 +4,7 @@ description:
 date: "2018-10-11"
 draft: false
 starID: 27
-postType: life
+tags: life,Blog Meta,miscellaneous
 ---
 
 I've been generating ideas for this post for quiet a while, namely from the depressing nonsense I've seen thrown around our very own interwebs. 

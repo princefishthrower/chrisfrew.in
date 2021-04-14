@@ -1,0 +1,143 @@
+$searchWidth: 300px;
+$searchHeight: 40px;
+$transformHeight: -135px;
+
+$searchWidthMobile: 225px;
+$searchHeightMobile: $searchHeight;
+$transformHeightMobile: -100px;
+
+// remove chromes annoying hihgliht
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.search-container {
+    text-align: center;
+    margin: 1rem;
+}
+
+.search-div {
+    height: 40px;
+    &.closed {
+        cursor: pointer;
+    }
+    &.open {
+        cursor: auto;
+    }
+}
+
+.input {
+    box-sizing: border-box;
+    border: 5px solid $monokaiRedDarkMode;
+    background: $darkColor;
+    color: $monokaiRedDarkMode;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.6s;
+    &.open {
+        width: $searchWidth;
+        height: $searchHeight;
+        border-radius: 5px;
+        cursor: auto;
+    }
+}
+
+.handle {
+    background: $monokaiGreenDarkMode;
+    margin: 0 auto;
+    width: 5px;
+    height: 15px;
+    transform: translate(11px, -9px) rotate(-45deg);
+    transition: 0.6s;
+    &.open {
+        background: $monokaiBlueDarkMode;
+        width: 10px;
+        height: $searchWidth;
+        transform: translate(0px, $transformHeight) rotate(-90deg);
+        cursor: pointer;
+    }
+}
+
+.dark-theme {
+    .input {
+        border: 5px solid $monokaiRedDarkMode;
+        color: $monokaiRedDarkMode;
+        background: $darkColor;
+    }
+
+    .handle {
+        background: $monokaiGreenDarkMode;
+        &.open {
+            background: $monokaiBlueDarkMode;
+        }
+    }
+}
+
+.light-theme {
+    .input {
+        border: 5px solid $monokaiRedLightMode;
+        color: $monokaiRedLightMode;
+        background: $lightColor;
+    }
+
+    .handle {
+        background: $monokaiOrangeLightMode;
+        &.open {
+            background: $monokaiBlueLightMode;
+        }
+    }
+}
+
+.outrun-theme {
+    .input {
+        border: 5px solid $outrunOrange;
+        color: $outrunOrange;
+        background: $darkColor;
+    }
+
+    .handle {
+        background: $outrunPink;
+        &.open {
+            background: $outrunPurple;
+        }
+    }
+}
+.black-white-theme {
+    .input {
+        border: 5px solid $darkColor;
+        color: $darkColor;
+        background: $lightColor;
+    }
+
+    .handle {
+        background: $blackWhiteGray;
+        &.open {
+            background: $blackWhiteGray;
+        }
+    }
+}
+
+// small styles (width less than 600px)
+@media only screen and (max-width: $mediumOffset) {
+    .input {
+        width:$searchHeightMobile;
+        height: $searchHeightMobile;
+        border-radius: 100px;
+        &.open {
+            width: $searchWidthMobile;
+            height: $searchHeightMobile;
+        }
+    }
+    .handle {
+        &.open {
+            height: $searchWidthMobile;
+            transform: translate(0px, $transformHeightMobile) rotate(-90deg);
+        }
+    }
+}

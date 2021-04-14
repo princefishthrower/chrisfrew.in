@@ -1,9 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { Fade } from "react-awesome-reveal"
-import { ThemeContext } from "../../../context/ThemeContext"
-import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 import { BioLead } from "../../layout/Bio/BioLead"
 import { BioSharedText } from "../../layout/Bio/BioSharedText"
 import { CompanyPortfolio } from "../../layout/Bio/CompanyPortfolio"
@@ -13,38 +8,11 @@ import { SitePortfolio } from "../../layout/Bio/SitePortfolio"
 import { SocialsContainer } from "../../layout/Bio/SocialsContainer"
 import { TeachingPortfolio } from "../../layout/Bio/TeachingPortfolio"
 import { AvatarPicture } from "../../utils/AvatarPicture"
+import { ColoredTitle } from "../../utils/ColoredTitle"
 export function Chris() {
-    const data = useStaticQuery(graphql`
-        query ChrisQuery {
-            site {
-                siteMetadata {
-                    author
-                }
-            }
-        }
-    `)
-    const { themeBodyClass } = React.useContext(ThemeContext)
-    const titleContent = colorizeStringBySeparator(
-        themeBodyClass,
-        "👨‍💻 About Me",
-        "",
-        0,
-        true
-    )
-
     return (
         <>
-            <h1 className="cooper big">
-                <Fade
-                    cascade={true}
-                    damping={0.025}
-                    duration={1000}
-                    direction="up"
-                    style={{ display: "inline" }}
-                >
-                    {titleContent}
-                </Fade>
-            </h1>
+            <ColoredTitle title="👨‍💻 About Me"/>
             <AvatarPicture
                 style={{
                     display: "block",

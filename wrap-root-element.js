@@ -2,7 +2,8 @@ import React from "react"
 import { MDXProvider } from "@mdx-js/react"
 import { Pre } from "./src/components/CodeCopyButton/Pre"
 import { preToCodeBlock } from "mdx-utils"
-import ThemeProvider from "./src/context/ThemeProvider"
+import ThemeProvider from "./src/context/theme/ThemeProvider"
+import SearchProvider from "./src/context/search/SearchProvider"
 
 // components is its own object outside of render so that the references to
 // components are stable
@@ -21,7 +22,9 @@ const components = {
 export const wrapRootElement = ({ element }) => {
     return (
         <ThemeProvider>
-            <MDXProvider components={components}>{element}</MDXProvider>
+            <SearchProvider>
+                <MDXProvider components={components}>{element}</MDXProvider>
+            </SearchProvider>
         </ThemeProvider>
     )
 }

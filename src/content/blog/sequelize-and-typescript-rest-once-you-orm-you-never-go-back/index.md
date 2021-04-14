@@ -2,6 +2,7 @@
 title: "Introducing the Full Stack Typing Boilerplate: Once You ORM, You Can't Go Back!"
 description: "Featuring Typescript and Sequelize: share types between the front- and back- ends for ultimate development productivity."
 date: "2020-05-12"
+tags: typescript,orm,Node.js
 ---
 
 _[This post is mirrored on my Medium account.](https://medium.com/@frewin.christopher/introducing-the-full-stack-typing-boilerplate-once-you-orm-you-cant-go-back-e97b53a36f)_
@@ -95,7 +96,7 @@ If you take a step further and add TypeScript's static typing to the `sequelize`
 
 As the title states, once you ORM, you can't go back. It just makes things too easy. I'll prove it, too! At the end of this post, I'll give a bonus tutorial to show that you can add API endpoints in _literal minutes_! You can even be confident you haven't made any silly SQL syntax errors or typing errors - they are all handled or checked by either Sequelize or TypeScript! No more scratching your head at SQL errors, no more hunting down what the heck return type that query is supposed to be!
 
-Also note, from here on out in this post, when I mention the word 'model', it is interchangeable with the word 'table'! :smile:
+Also note, from here on out in this post, when I mention the word 'model', it is interchangeable with the word 'table'! 😊
 
 # Getting Started
 
@@ -144,7 +145,7 @@ const users = <UsersStatic>sequelize.define("users", {
 })
 ```
 
-You may need to provide `// eslint-disable-next-line @typescript-eslint/consistent-type-assertions` above the `<UserStatic>` casting line depending on your formatter and/or linter rules. These complex typings follow the guidance of `sequelize`'s very own [TypeScript documentation](https://sequelize.org/master/manual/typescript.html). `IUser` is simply an interface defining the columns in our `user` table. Take note of it now - while being a rather simple interface, it will be _very_ :wink: useful to us later:
+You may need to provide `// eslint-disable-next-line @typescript-eslint/consistent-type-assertions` above the `<UserStatic>` casting line depending on your formatter and/or linter rules. These complex typings follow the guidance of `sequelize`'s very own [TypeScript documentation](https://sequelize.org/master/manual/typescript.html). `IUser` is simply an interface defining the columns in our `user` table. Take note of it now - while being a rather simple interface, it will be _very_ 😉 useful to us later:
 
 ```typescript
 export default interface IUser {
@@ -373,7 +374,7 @@ const username = user.username
 // more logic...
 ```
 
-To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah, okay, technically a 5-liner - but you could put it on one line if you wanted :wink: 😂):
+To show a `JOIN` example, let's get all posts for a given user, via the Sequelize `include` directive. Since we've defined our one-to-many relationship already, this `JOIN` becomes a one-liner (yeah, okay, technically a 5-liner - but you could put it on one line if you wanted 😉 😂):
 
 ```typescript
 import DB from "../DB"
@@ -608,9 +609,9 @@ export default function GetUser() {
 
 Whew, that was fast! Less than 5 minutes! 🥵 I'm sweatin'!
 
-I know, I know, of course in the functional component you would build an interactive input and render the corresponding list of users found, but my _literal minutes_ claim was about building an API endpoints. That DOESN'T include frontend components :wink:. 
+I know, I know, of course in the functional component you would build an interactive input and render the corresponding list of users found, but my _literal minutes_ claim was about building an API endpoints. That DOESN'T include frontend components 😉. 
 
-So, was that _literal minutes_? I think so! :smile:
+So, was that _literal minutes_? I think so! 😊
 
 # Thanks!
 

@@ -4,12 +4,12 @@ description:
 date: "2018-12-12"
 draft: false
 starID: 102
-postType: blog
+tags: Blog Meta
 ---
 
 ## Today is the exact Birthday Date of my Blog!
 
-If you go to my very first post, my 'Hello World - My First Post' post - you'll see the date is the 12th of December 2017 :smile: 
+If you go to my very first post, my 'Hello World - My First Post' post - you'll see the date is the 12th of December 2017 😊 
 
 (You may have also noticed I silently added some nice filter functionality to the site - I figured mostly devs are probably visiting my site, and don't want to always see my life and random rants / ideas mixed in.) So to see that 'Hello World' post, you'll need to click either the 'all' or 'blog' tag, and scroll all the way down.
 

@@ -1,11 +1,14 @@
 const path = require(`path`)
 const spawn = require("child_process").spawn
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const getTagDataFromEdges = require(`./utils/tags/getTagDataFromEdges`)
+const shared = require(`./src/constants/shared.json`)
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const blogPost = path.resolve(`./src/templates/BlogPost.tsx`)
     const blogPostListing = path.resolve("./src/templates/BlogPostListing.tsx")
+    const blogTagListing = path.resolve("./src/templates/BlogTagListing.tsx")
     const result = await graphql(
         `
             {
@@ -20,6 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
                             }
                             frontmatter {
                                 title
+                                tags
                             }
                         }
                     }
@@ -51,24 +55,37 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         })
     })
-
-    // TODO: This 10 posts per page won't work as a process.env. variable... why?
-    const postsPerPageInt = parseInt(10)
+    
     // Create blog listing pages
-    const numPages = Math.ceil(posts.length / postsPerPageInt)
+    const numPages = Math.ceil(posts.length / shared.POSTS_PER_PAGE)
     Array.from({ length: numPages }).forEach((_, i) => {
         const path = i === 0 ? `/` : `/blog-page-${i + 1}`
         createPage({
             path,
             component: blogPostListing,
             context: {
-                limit: postsPerPageInt,
-                skip: i * postsPerPageInt,
+                path,
+                limit: shared.POSTS_PER_PAGE,
+                skip: i * shared.POSTS_PER_PAGE,
                 numPages,
                 currentPage: i + 1,
             },
         })
-        console.log(`created page at "${path}" !`)
+        console.log(`Created blog listing page at "${path}" !`)
+    })
+
+    // Create tag listing pages
+    const tagData = getTagDataFromEdges(posts);
+    tagData.forEach(x => {
+        createPage({
+            path: x.link,
+            component: blogTagListing,
+            context: {
+                tag: x.label,
+                tagRegex: x.tagRegex
+            }
+        })
+        console.log(`Created tag listing page at "${x.link}" (Tag regex was "${x.tagRegex}", clean tag label was "${x.label}") !`)
     })
 }
 

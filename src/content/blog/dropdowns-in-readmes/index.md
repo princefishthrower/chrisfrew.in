@@ -4,7 +4,7 @@ description:
 date: "2017-12-22"
 draft: false
 starID: 7
-postType: dev
+tags: markdown,Blog Meta
 ---
 
 ## HTML in Markdown!?
@@ -42,7 +42,7 @@ document.getElementById('root')
 - Or a List
   - or a nested List
   - like this
-  - with :smile: emojis
+  - with 😊 emojis
 - Like this
 
 Or even just normal text
@@ -78,7 +78,7 @@ document.getElementById('root')
 - Or a List
   - or a nested List
   - like this
-  - with :smile: emojis
+  - with 😊 emojis
 - Like this
 
 Or even just normal text

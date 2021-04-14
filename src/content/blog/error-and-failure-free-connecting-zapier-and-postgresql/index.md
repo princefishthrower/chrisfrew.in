@@ -4,7 +4,7 @@ description: A Five-Step Tutorial as an Antidote to Incorrect Documentation
 date: "2020-04-14"
 draft: false
 starID: 4
-postType: dev
+tags: zapier,postgresql
 ---
 
 ### A Five-Step Tutorial as an Antidote to Incorrect Documentation

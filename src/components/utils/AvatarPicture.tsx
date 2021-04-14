@@ -24,8 +24,6 @@ export function AvatarPicture(props: IAvatarPictureProps) {
         }
     `)
 
-    console.log(data)
-
     return (
         <GatsbyImage
             image={data.avatar.childImageSharp.gatsbyImageData}

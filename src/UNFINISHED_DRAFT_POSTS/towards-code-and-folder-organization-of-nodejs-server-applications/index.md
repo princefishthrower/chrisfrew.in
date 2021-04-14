@@ -4,7 +4,7 @@ description:
 date: "2018-10-28"
 draft: true
 starID: 56
-postType: dev
+tags: dev
 ---
 
 # Giant `index.js`'s Got You Down?

@@ -1,32 +1,11 @@
 import * as React from "react"
-import { useContext } from "react"
-import { Fade } from "react-awesome-reveal"
-import { ThemeContext } from "../../../context/ThemeContext"
-import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
+import { ColoredTitle } from "../../utils/ColoredTitle"
 import { CourseTiles } from "./CourseTiles"
 
 export function Courses() {
-    const { themeBodyClass } = useContext(ThemeContext)
-    const titleContent = colorizeStringBySeparator(
-        themeBodyClass,
-        "📝 Full Stack Courses.",
-        "",
-        0,
-        true
-    )
     return (
         <>
-            <h1 className="cooper big">
-                <Fade
-                    cascade={true}
-                    damping={0.025}
-                    duration={1000}
-                    direction="up"
-                    style={{ display: "inline" }}
-                >
-                    {titleContent}
-                </Fade>
-            </h1>
+            <ColoredTitle title="📝 Full Stack Courses"/>
             <h2>
                 Courses for software developers who want to launch their skills
                 beyond the basics.

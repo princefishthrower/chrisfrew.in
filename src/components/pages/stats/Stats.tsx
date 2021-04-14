@@ -1,10 +1,15 @@
 import { useStaticQuery, graphql, Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
-import { Fade } from "react-awesome-reveal"
-import { ThemeContext } from "../../../context/ThemeContext"
-import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
+import { ThemeContext } from "../../../context/theme/ThemeContext"
+import { getThemeColorHexCodes } from "../../../utils/getThemeColorHexCodes"
 import Sparkles from "../../utils/Sparkles"
+import { Tag } from "../../utils/tags/Tag"
+import { AllTags } from "../../utils/tags/AllTags"
+import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdges"
+import { getTagDataFromEdges } from "../../../utils/tags/getTagDataFromEdges"
+import { ColoredTitle } from "../../utils/ColoredTitle"
+import { getActiveTheme } from "../../../utils/getActiveTheme"
 
 export function Stats() {
     const data = useStaticQuery(graphql`
@@ -21,6 +26,7 @@ export function Stats() {
                         frontmatter {
                             title
                             date
+                            tags
                         }
                     }
                 }
@@ -28,15 +34,10 @@ export function Stats() {
         }
     `)
 
-    // work for the fancy colored text
+    // work for the fancy colored tags
     const { themeBodyClass } = useContext(ThemeContext)
-    const titleContent = colorizeStringBySeparator(
-        themeBodyClass,
-        "📊 Blog Stats",
-        "",
-        0,
-        true
-    )
+    const activeTheme = getActiveTheme(themeBodyClass)
+    const hexColorsLength = activeTheme.themeColorHexCodes.length
 
     // some calculations on all the posts
     const posts = data.allMdx.edges
@@ -58,19 +59,25 @@ export function Stats() {
         })
     }
 
+    // some calculations and manipulations on the post tags
+    const uniqueTags = getUniqueTagsFromEdges(posts);
+    const uniqueTagData = getTagDataFromEdges(posts);
+    
+    const tagDataByCount = uniqueTagData.sort((a, b) => {
+        if (b.count > a.count) {
+            return 1
+        }
+        if (a.count > b.count) {
+            return -1
+        }
+        return 0
+    })
+
+    
+
     return (
         <>
-            <h1 className="cooper big">
-                <Fade
-                    cascade={true}
-                    damping={0.025}
-                    duration={1000}
-                    direction="up"
-                    style={{ display: "inline" }}
-                >
-                    {titleContent}
-                </Fade>
-            </h1>
+            <ColoredTitle title="📊 Blog Stats"/>
             <p>
                 These stats are generated at build time through GraphQL queries,
                 so you can be sure they are up to date!
@@ -108,21 +115,48 @@ export function Stats() {
             </>
             <p>
                 Total Number of Posts:{" "}
-                <span style={{ fontSize: "1.3rem", letterSpacing: "0.1rem" }}>
+                <span style={{ fontSize: "2rem", letterSpacing: "0.1rem" }}>
                     <Sparkles>{totalPosts}</Sparkles>
                 </span>
             </p>
 
             {/* TODO: ADD TAGS AND SEARCH AND FILTER */}
             <h2>Tag Stats</h2>
-            <p>Coming soon!</p>
-            {/* <p>Number of Posts tagged #dev 24</p>
-            
-            <p>Number of Posts tagged #life 4</p>
-            
-            <p>Number of Posts tagged #misc 6</p>
-            
-            <p>Number of Posts tagged #blog 2</p> */}
+            <p>
+                Unique tags:{" "}
+                <span style={{ fontSize: "2rem", letterSpacing: "0.1rem" }}>
+                    <Sparkles>{uniqueTags.length}</Sparkles>
+                </span>
+            </p>
+            <AllTags/>
+            {tagDataByCount.map((x, index) => {
+                const nextIndex = index + 1
+                return (
+                    <p>
+                        Number of posts tagged with{" "}
+                        <Tag
+                            tag={x.label}
+                            linkToTagPage={true}
+                            backgroundColor={
+                                activeTheme.themeColorHexCodes[
+                                    ((index % hexColorsLength) +
+                                        hexColorsLength) %
+                                        hexColorsLength
+                                ]
+                            }
+                            hoverBackgroundColor={
+                                activeTheme.themeColorHexCodes[
+                                    ((nextIndex % hexColorsLength) +
+                                        hexColorsLength) %
+                                        hexColorsLength
+                                ]
+                            }
+                            defaultColor={activeTheme.defaultHexColor}
+                        />
+                        : {x.count}
+                    </p>
+                )
+            })}
         </>
     )
 }

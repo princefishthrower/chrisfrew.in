@@ -4,7 +4,7 @@ description:
 date: "2018-01-24"
 draft: true
 starID: 52
-postType: dev
+tags: dev
 ---
 
 ## And some common gotchyas, too

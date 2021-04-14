@@ -4,8 +4,15 @@ import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import Paginator from "../components/utils/Paginator"
+import { AllTags } from "../components/utils/tags/AllTags"
+import { useContext } from "react"
+import { SearchContext } from "../context/search/SearchContext"
+import shared from "../constants/shared.json"
+import { ColoredTitle } from "../components/utils/ColoredTitle"
 
-const BlogPostListing = ({ data, location }) => {
+const BlogPostListing = ({ data, location, pageContext }) => {
+    const { query } = useContext(SearchContext)
+    const { currentPage, limit, skip } = pageContext
     const title = data.site.siteMetadata.title
     const description = data.site.siteMetadata.description
     const subtitle = data.site.siteMetadata.subtitle
@@ -24,37 +31,86 @@ const BlogPostListing = ({ data, location }) => {
             "https://instagram.com/fullstackcraft",
         ],
     }
+
+    const getPostsToRender = () => {
+        // search is allowed on the homepage
+        if (currentPage === 1) {
+            return query === ""
+                ? posts.slice(skip, limit)
+                : posts.filter(({ node }) => {
+                      return (
+                          node.excerpt
+                              .toLowerCase()
+                              .includes(query.toLowerCase()) ||
+                          node.frontmatter.title
+                              .toLowerCase()
+                              .includes(query.toLowerCase()) ||
+                          node.frontmatter.tags
+                              .toLowerCase()
+                              .includes(query.toLowerCase())
+                      )
+                  })
+        }
+        return posts.slice(skip, skip + limit)
+    }
+    const postsToRender = getPostsToRender()
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
+            {currentPage !== 1 && (
+                <ColoredTitle title={`🔢 Posts Page No. ${currentPage}`} style={{marginBottom: 0}}/>
+            )}
+            {currentPage !== 1 && (
+                <div style={{marginBottom: '3rem'}}>
+                    <small className="blog-post-date">
+                        {postsToRender[0].node.frontmatter.date}
+                    </small>{" "}
+                    -{" "}
+                    <small className="blog-post-date">
+                        {
+                            postsToRender[postsToRender.length-1].node.frontmatter
+                                .date
+                        }
+                    </small>
+                </div>
+            )}
+
             <SEO title={title} schemaMarkup={schema} />
-            {posts.map(({ node }) => {
-                const title = node.frontmatter.title || node.fields.slug
-                return (
-                    <article key={node.fields.slug}>
-                        <header>
-                            <h3>
-                                <Link
-                                    style={{ boxShadow: `none` }}
-                                    to={node.fields.slug}
-                                >
-                                    {title}
-                                </Link>
-                            </h3>
-                            <small className="blog-post-date">{node.frontmatter.date}</small>
-                        </header>
-                        <section>
-                            <p
-                                dangerouslySetInnerHTML={{
-                                    __html:
-                                        node.frontmatter.description ||
-                                        node.excerpt,
-                                }}
-                            />
-                        </section>
-                    </article>
-                )
-            })}
+            {postsToRender.length === 0 ? (
+                <p>No posts found for your query! 😞</p>
+            ) : (
+                postsToRender.map(({ node }) => {
+                    const title = node.frontmatter.title || node.fields.slug
+                    return (
+                        <article key={node.fields.slug}>
+                            <header>
+                                <h3>
+                                    <Link
+                                        style={{ boxShadow: `none` }}
+                                        to={node.fields.slug}
+                                    >
+                                        {title}
+                                    </Link>
+                                </h3>
+                                <small className="blog-post-date">
+                                    {node.frontmatter.date}
+                                </small>
+                            </header>
+                            <section>
+                                <p
+                                    dangerouslySetInnerHTML={{
+                                        __html:
+                                            node.frontmatter.description ||
+                                            node.excerpt,
+                                    }}
+                                />
+                            </section>
+                        </article>
+                    )
+                })
+            )}
             <Paginator />
+            <h3>Posts by tag:</h3>
+            <AllTags />
             <Bio />
         </Layout>
     )
@@ -63,7 +119,7 @@ const BlogPostListing = ({ data, location }) => {
 export default BlogPostListing
 
 export const blogListQuery = graphql`
-    query blogListQuery($skip: Int!, $limit: Int!) {
+    query blogListQuery {
         site {
             siteMetadata {
                 title
@@ -71,11 +127,7 @@ export const blogListQuery = graphql`
                 subtitle
             }
         }
-        allMdx(
-            sort: { fields: [frontmatter___date], order: DESC }
-            limit: $limit
-            skip: $skip
-        ) {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
                 node {
                     excerpt
@@ -86,6 +138,7 @@ export const blogListQuery = graphql`
                         date(formatString: "MMMM D, YYYY")
                         title
                         description
+                        tags
                     }
                 }
             }

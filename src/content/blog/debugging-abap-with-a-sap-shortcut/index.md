@@ -4,7 +4,7 @@ description:
 date: "2017-12-27"
 draft: false
 starID: 9
-postType: dev
+tags: SAP,ABAP
 ---
 
 ## This is a Must-Have Tool for any ABAP Developer!
@@ -30,7 +30,7 @@ WorkDir=\\SomePath\To_a_working_directory
 Reuse=0
 ```
 
-Note that the `Name` (under `[System]`), `Client`, `Name` (under `[User]`), and `WorkDir` should all be set to your specific setup. (That's why I've put obvious bogus names for each of them :smile: ).
+Note that the `Name` (under `[System]`), `Client`, `Name` (under `[User]`), and `WorkDir` should all be set to your specific setup. (That's why I've put obvious bogus names for each of them 😊 ).
 
 I keep a copy of mine on my desktop and in my documents directory, as `debugging.sap`, so it's always close at hand.
 
