@@ -4,7 +4,7 @@ description:
 date: "2020-01-14"
 draft: true
 starID: 50
-postType: dev
+tags: dev
 ---
 
 # Add some spice to your SAPUI5 apps!

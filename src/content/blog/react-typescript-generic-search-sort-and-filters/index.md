@@ -2,6 +2,7 @@
 title: "React and TypeScript: Generic Search, Sort, and Filter"
 description: A step-by-step guide leveraging the awesome powers of TypeScript generics to implement reusable searching, sorting, and filtering.
 date: "2020-10-27"
+tags: react,typescript,typescript generics
 ---
 
 [_This post is mirrored on my Medium account._](https://chrisfrewin.medium.com/react-and-typescript-generic-search-sort-and-filter-879c5c3e2f0e)
@@ -146,7 +147,7 @@ export function genericSearch<T>(
 }
 ```
 
-:smile: beautiful!
+😊 beautiful!
 
 # Second: Generic Sorters!
 
@@ -234,7 +235,7 @@ Any property of `T` can have any type. To avoid writing a fancy filter function 
 
 Where any other value for each type will evaluate to `true` in a boolean evaluation. 
 
-I realize providing the user with both truthy and falsy options for each property may be overkill. You may decide for certain properties to only provide a filter for one or the other. This depends on the actual items you are filtering and what you want in your UI. I've implemented both for completeness and your convenience. :smile:
+I realize providing the user with both truthy and falsy options for each property may be overkill. You may decide for certain properties to only provide a filter for one or the other. This depends on the actual items you are filtering and what you want in your UI. I've implemented both for completeness and your convenience. 😊
 
 With that said, we can expect what kind of signature we need for our `genericFilter`. We need the object of type `T` that will be present in the `filter()` callback, and the active filters themselves:
 
@@ -267,7 +268,7 @@ Back to the truthy and falsy options for each property: I generate a pair of rad
 
 For example, for our `IWidget`'s `title` property, the user can explicitly choose to show all results in which the `title` is truthy. The 'is falsy' labeled radio button of course then provides the inverse results (displaying the widgets where `title` is an empty string - only one so far in my mock data in the [example repository](https://github.com/princefishthrower/react-typescript-generic-search-sort-and-filter)). Alternatively, when no radio buttons are selected for the given property of course there is no effect on filtering for that property. 
 
-You maybe would want to also implement a clear all button which would remove all items from the `filters` array (which would be stateful, see next section for more details) used in the `genericSearch`, but I'll leave that to you. :smile:
+You maybe would want to also implement a clear all button which would remove all items from the `filters` array (which would be stateful, see next section for more details) used in the `genericSearch`, but I'll leave that to you. 😊
 
 All in all our `genericFilter` function looks like this:
 

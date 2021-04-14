@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react"
 import styled, { keyframes } from "styled-components"
 import { themeConfig } from "../../config/ThemeConfig"
-import { ThemeContext } from "../../context/ThemeContext"
+import { ThemeContext } from "../../context/theme/ThemeContext"
 import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion"
 import useRandomInterval from "../../hooks/useRandomInterval"
 import { random } from "../../utils/random"

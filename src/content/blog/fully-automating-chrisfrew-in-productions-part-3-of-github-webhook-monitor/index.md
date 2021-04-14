@@ -4,7 +4,7 @@ description:
 date: "2018-07-20"
 draft: false
 starID: 22
-postType: dev
+tags: automation,github,webhook
 ---
 
 ## Background and Overview of this Technologically Amazing Accomplishment
@@ -148,7 +148,7 @@ const build = () => {
 }
 ```
 
-The _very_ cool thing here, at least I think, is that since I run my `index.js` servers with `forever`, when the source is built, whatever `index.js` is serving is updated, without affecting the runtime of `index.js` itself! So, I am nearly approaching a fully integrated build system that was all custom built. :smile:
+The _very_ cool thing here, at least I think, is that since I run my `index.js` servers with `forever`, when the source is built, whatever `index.js` is serving is updated, without affecting the runtime of `index.js` itself! So, I am nearly approaching a fully integrated build system that was all custom built. 😊
 
 ## Other Fun stuff
 

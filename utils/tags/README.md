@@ -1,0 +1,1 @@
+These files are currently ported from the src/utils/tags folder, since we can't seem to import typescript functions directly into gatsby-node. Sad!

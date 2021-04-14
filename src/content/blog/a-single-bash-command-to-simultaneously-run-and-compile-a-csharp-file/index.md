@@ -4,7 +4,7 @@ description:
 date: "2019-12-05"
 draft: false
 starID: 12345
-postType: dev
+tags: csharp,bash
 ---
 
 ## Background: 2019 Advent of Code and Microsoft Troubles

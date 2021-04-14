@@ -4,7 +4,7 @@ description:
 date: "2019-02-27"
 draft: true
 starID: 500
-postType: dev
+tags: dev
 ---
 
 # The Stack's Changed, Dude!
@@ -31,7 +31,7 @@ $response = callSoap($customerObject);
 $parsedResponse = parseResponse($response);
 ```
 
-(Since the original project is in PHP, i'll be keeping my snippets likewise in PHP - I hope that's ok :smile:.)
+(Since the original project is in PHP, i'll be keeping my snippets likewise in PHP - I hope that's ok 😊.)
 
 We could implement a fluent interface for these actions and write it like this:
 
@@ -50,7 +50,7 @@ As we will see, not only does the code look and feel better on the top side, but
 
 It's still probably not totally clear why we chose to opt for a fluent implementation. 
 
-SAP By Design uses a SOAP interface to interact with the data programmatically. To generated PHP classes from the WSDL interfaces, we used this excellent tool called [wsdl2phpgenerator](https://github.com/wsdl2phpgenerator/wsdl2phpgenerator), which generates php classes for a given WSDL file. The good thing with SOAP is (I'll grudgingly admit it, as much as I like to think it is a kind of stone-age technology) that it is an immutable fixed-version API. Indeed, things can be updated for SAP By Design's API, but the WSDL interface that YOU are using is a fixed interface. That means for that interface (if SAP is maintaining good SOAP standards :wink:), you can call any method on SAP's side and be sure to get a response in the given response format - even if the WSDL is a few years old. 
+SAP By Design uses a SOAP interface to interact with the data programmatically. To generated PHP classes from the WSDL interfaces, we used this excellent tool called [wsdl2phpgenerator](https://github.com/wsdl2phpgenerator/wsdl2phpgenerator), which generates php classes for a given WSDL file. The good thing with SOAP is (I'll grudgingly admit it, as much as I like to think it is a kind of stone-age technology) that it is an immutable fixed-version API. Indeed, things can be updated for SAP By Design's API, but the WSDL interface that YOU are using is a fixed interface. That means for that interface (if SAP is maintaining good SOAP standards 😉), you can call any method on SAP's side and be sure to get a response in the given response format - even if the WSDL is a few years old. 
 
 With all of that said, while SOAP is a 'rock-solid' API, _because_ it is 'rock-solid', the generated classes for a given WSDL file interface are extremely type specific, leave you to construct really annoying method chaining to finally drill down to the things you need, which for us 99% of the time  _very_ simple actions, such as setting a user's shoe size, address, and things like that. Just to show you how comical this is I managed to find a kind of worst-case scenario example of this necessary method chaining, in address retrieval:
 
@@ -135,7 +135,7 @@ public function callSOAPAndParseResponse() {
 }
 ```
 
-By introducing a private variable $maintenanceCustomer, slightly modifying `setMaintenanceCustomer`, and adding a new method, `callSOAPAndParseResponse`, we reduce our setter methods to single parameter, 2 line functions :smile:. Not bad!
+By introducing a private variable $maintenanceCustomer, slightly modifying `setMaintenanceCustomer`, and adding a new method, `callSOAPAndParseResponse`, we reduce our setter methods to single parameter, 2 line functions 😊. Not bad!
 
 # Bonus Extension
 
@@ -159,7 +159,7 @@ public function parseResponse() {
 }
 ```
 
-In any case, while the fluent method has been around for a while, the fluent methodology definitely has value - and I think my code snippets illustrate that fact pretty well! :smile:
+In any case, while the fluent method has been around for a while, the fluent methodology definitely has value - and I think my code snippets illustrate that fact pretty well! 😊
 
 Enjoy, and Cheers! 🍺
 

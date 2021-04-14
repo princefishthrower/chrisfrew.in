@@ -4,7 +4,7 @@ description: "Previously titled: \"The Internet, Subscriptions, Big Winners, the
 date: "2020-06-19"
 draft: true
 starID: 55
-postType: misc
+tags: life,Blog Meta
 ---
 
 This post has two parts. 
@@ -19,7 +19,7 @@ Whew. Still with me? Let's go!
 
 I've been mulling over this thread of thought for months now. After enough rumination, I've finally been able to pull it all together into this fairly large post. I've collected a variety of fairly recent sources that convey the fact that these issues have been trending for a while and are coming to a point in the digital economy[^1]. 
 
-I'll start off with what is going on with creators or creative entities - whether companies or individual Makers (all credit to [Product Hunt](https://producthunt.com) for that term :wink:), and then shifting to how everything appears to everyone on the other side so to speak, i.e. consumers in 2018, 2019, and 2020. I finish with some suggested solutions to the problem, and things that I am continuing to consider, even after distilling my thoughts into this post.
+I'll start off with what is going on with creators or creative entities - whether companies or individual Makers (all credit to [Product Hunt](https://producthunt.com) for that term 😉), and then shifting to how everything appears to everyone on the other side so to speak, i.e. consumers in 2018, 2019, and 2020. I finish with some suggested solutions to the problem, and things that I am continuing to consider, even after distilling my thoughts into this post.
 
 This is a longer, non-technical post of mine, but I think these are very important issues that need to be discussed more often. So grab a :coffee: and put your thinking cap on!
 
@@ -112,7 +112,7 @@ Still, I think one of these methods is in the right direction of creative and Ma
 
 You're probably thinking at this point, "this guy is crazy; I'm not going to read his blog anymore". Good ma'am or sir, I laugh at you! :monocle_face: In all seriousness, to me, the prospect of having a huge economy where experts of all shapes and sizes can thrive based off donations and commission work is the ideal. Indeed, the Maker movement, Digital Nomads, the [exploding size of the freelance workforce](https://www.forbes.com/sites/brianrashid/2016/01/26/the-rise-of-the-freelancer-economy/#5512d2693bdf) are all sounding like the markets are already stepping in that direction anyway.
 
-Additionally, as I've frequently stated, being a software developer who is interested and always willing to learn in 2018[^5], I will never be short of having a 'job that pays the bills', although the vision in this post is to create an economy where that wont be needed anyway. :wink:
+Additionally, as I've frequently stated, being a software developer who is interested and always willing to learn in 2018[^5], I will never be short of having a 'job that pays the bills', although the vision in this post is to create an economy where that wont be needed anyway. 😉
 
 # My Pledge (EDIT: not really though, this section is simply preserved for history) [^6]
 
@@ -158,7 +158,7 @@ As part of this challenge, **I've already pledged myself to subscribe to Coil fo
 
 `$ilp.uphold.com/BJGXHRXaMM8Z`
 
-Want to check that it's valid? Better send me some money to be sure! 😂 :wink: You'll see I also added some bling to the footer of the blog, simply, um "borrowing" the nice animated svg from the [Chrome Coil extension](https://chrome.google.com/webstore/detail/coil/locbifcbeldmnphbgkdigjmkbfkhbnca). :smile:
+Want to check that it's valid? Better send me some money to be sure! 😂 😉 You'll see I also added some bling to the footer of the blog, simply, um "borrowing" the nice animated svg from the [Chrome Coil extension](https://chrome.google.com/webstore/detail/coil/locbifcbeldmnphbgkdigjmkbfkhbnca). 😊
 
 Cheers! 🍺
 
@@ -173,13 +173,13 @@ Chris
     Five years now, as of 2020.
 
 [^3]:
-    Summer of 2018 now, that is :wink:
+    Summer of 2018 now, that is 😉
 
 [^4]:
     Recall in 2018 when I wrote this, cryptocurrency was still a very hot topic.
 
 [^5]:
-    Still true in 2020. :smile:
+    Still true in 2020. 😊
 
 [^6]:
     Update February 2020: You'll notice here there is some strikethrough. I let my ideals get to me! I realized after revising this post in 2020, that I missed a key element of free markets. I thought to myself, if some amazingly kind person donates to my blog, who am I to automatically redistribute their donation? If someone's donating to a blog, its because they want to support the _blogger_, not to have them just redistribute to further makers and creators. I realized, if they wanted to donate to someone else, they would have done so themselves (and are free to do so)! It's not my call to make. In the end, it appears that my first presented solution - the automated microtransactions, seems to be the way to go (indeed, easy to say in hindsight as it begins to be adopted in realtime across the web in 2020).

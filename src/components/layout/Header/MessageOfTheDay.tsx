@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react"
 import { Fade } from "react-awesome-reveal"
 import { useCookies } from "react-cookie"
 import Constants from "../../../constants/Constants"
-import { ThemeContext } from "../../../context/ThemeContext"
+import { ThemeContext } from "../../../context/theme/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 
 export function MessageOfTheDay() {

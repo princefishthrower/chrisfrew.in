@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
-import { Fade } from "react-awesome-reveal"
-import { ThemeContext } from "../../../context/ThemeContext"
+import { ThemeContext } from "../../../context/theme/ThemeContext"
 import URLSearchParamKey from "../../../enums/URLSearchParamKey"
 import URLSearchParamValue from "../../../enums/URLSearchParamValue"
 import { useSearchParam } from "../../../hooks/useSearchParam"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
+import { ColoredTitle } from "../../utils/ColoredTitle"
 import { SnippetToggler } from "./SnippetToggler"
 
 // special raw-loader requires - pulls in file as string
@@ -32,26 +32,13 @@ export function Snippets(props: ISnippetsProps) {
     const { pdfMode } = props
     const { themeBodyClass } = useContext(ThemeContext)
     const title = pdfMode ? "Full Stack Snippets." : "👩‍💻👨‍💻 Full Stack Snippets."
-    const titleText = pdfMode
-        ? title
-        : colorizeStringBySeparator(themeBodyClass, title, "", 0, true)
     const languageFilter = pdfMode
         ? useSearchParam(URLSearchParamKey.LANGUAGE_FILTER)
         : URLSearchParamValue.ALL
     const titleComponent = pdfMode ? (
-        <h1 className="cooper big">{titleText}</h1>
+        <h1 className="cooper big">{title}</h1>
     ) : (
-        <h1 className="cooper big">
-            <Fade
-                cascade={true}
-                damping={0.025}
-                duration={1000}
-                direction="up"
-                style={{ display: "inline" }}
-            >
-                {titleText}
-            </Fade>
-        </h1>
+        <ColoredTitle title={title}/>
     )
     return (
         <>

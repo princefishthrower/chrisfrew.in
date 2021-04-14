@@ -4,9 +4,9 @@ import github from "prism-react-renderer/themes/github"
 import dracula from "prism-react-renderer/themes/dracula"
 import okaidia from "prism-react-renderer/themes/okaidia"
 import Confetti from "react-dom-confetti"
-import { ThemeContext } from "../../context/ThemeContext"
+import { ThemeContext } from "../../context/theme/ThemeContext"
 import ThemeBodyClass from "../../enums/ThemeBodyClass"
-import { getConfettiColorHexCodes } from "../../utils/getConfettiColorHexCodes"
+import { getThemeColorHexCodes } from "../../utils/getThemeColorHexCodes"
 
 const copyToClipboard = (str: string) => {
     const el = document.createElement("textarea")
@@ -40,7 +40,7 @@ export const Pre = (props: IPreProps) => {
     const { codeString, language, pdfMode } = props
     const [isCopied, setIsCopied] = useState(false)
     const { themeBodyClass } = useContext(ThemeContext)
-    const colors = getConfettiColorHexCodes(themeBodyClass);
+    const colors = getThemeColorHexCodes(themeBodyClass);
 
     const confettiConfig = {
         angle: 90,

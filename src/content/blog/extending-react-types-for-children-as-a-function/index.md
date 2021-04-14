@@ -2,6 +2,7 @@
 title: "Extending React Standard Types to Allow for Children as a Function"
 description: Sorting or filtering child components? You've come to the right place!
 date: "2021-01-19"
+tags: react,typescript
 ---
 
 [This post is mirrored on my Medium account.](https://chrisfrewin.medium.com/extending-react-standard-types-to-allow-for-children-as-a-function-ba7fdde52e0b)
@@ -198,9 +199,9 @@ So what do we get in the end? A generic sorting component which can be wrapped a
 </GenericSorter>
 ```
 
-The only reference to the `IFooBarItem` is as the type passed into the `GenericSorter`, which is anyway in the parent component, and the typing itself and never enters or affects the logic of `GenericSorter`! Yay! :smile: 
+The only reference to the `IFooBarItem` is as the type passed into the `GenericSorter`, which is anyway in the parent component, and the typing itself and never enters or affects the logic of `GenericSorter`! Yay! 😊 
 
-Also note that because of the way we designed `PropsWithChildrenFunction`, our renderer component couldn't have something like `otherProp={item.otherProp}` because we know explicitly that item _must_ take on the type `IFooBarItem`, and `IFooBarItem` only has properties `foo` and `bar`! Double yay! :smile: :smile:
+Also note that because of the way we designed `PropsWithChildrenFunction`, our renderer component couldn't have something like `otherProp={item.otherProp}` because we know explicitly that item _must_ take on the type `IFooBarItem`, and `IFooBarItem` only has properties `foo` and `bar`! Double yay! 😊 😊
 
 # But... There's a Composition Issue Here...
 

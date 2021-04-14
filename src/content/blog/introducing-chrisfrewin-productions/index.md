@@ -4,12 +4,12 @@ description:
 date: "2018-03-01"
 draft: false
 starID: 13
-postType: misc
+tags: miscellaneous,companies,life,Blog Meta
 ---
 
 # chrisfrew.in as a company!
 
-Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it's still alive!) [https://sirenapparel.us](https://sirenapparel.us) with the more general name of this site, chrisfrew.in (that also is creatively my name of course :wink:). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, *chrisfrew.in*. Tasty.
+Hello there! In March of 2018 I streamlined my business process from my old doing business as (DBA) startup, Siren Apparel (it's still alive!) [https://sirenapparel.us](https://sirenapparel.us) with the more general name of this site, chrisfrew.in (that also is creatively my name of course 😉). This DBA name will make more sense to spin off multiple websites, apps, and digital products all under the new DBA name, *chrisfrew.in*. Tasty.
 
 # For New York state, how can you change your DBA name?
 

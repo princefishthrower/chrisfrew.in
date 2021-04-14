@@ -4,7 +4,7 @@ description: One of the most devious software problems I've encountered in some 
 date: "2020-08-20"
 draft: false
 starID: 132231231123
-postType: dev
+tags: auth0,expo,react native
 ---
 
 _[This post is mirrored on my Medium account](https://medium.com/@frewin.christopher/auth0-expo-and-react-native-authorization-code-grant-flow-with-pkce-d612d098f5f3)_
@@ -285,7 +285,7 @@ export function generateShortUUID(): string {
 }
 ```
 
-and ensuring the returned value from the GET call has the same `state` value. This is one way of reducing your app's vulnerability to cross-site request forgery (CSRF) attacks. My `AsyncStorageService` and `getServer` are just helpful wrappers of mine which go aroundRReactNNative's `AsyncStorage` and a standard `fetch` GET request, respectively. I'll leave those for you to implement them how you'd like. :smile: 
+and ensuring the returned value from the GET call has the same `state` value. This is one way of reducing your app's vulnerability to cross-site request forgery (CSRF) attacks. My `AsyncStorageService` and `getServer` are just helpful wrappers of mine which go aroundRReactNNative's `AsyncStorage` and a standard `fetch` GET request, respectively. I'll leave those for you to implement them how you'd like. 😊 
 
 Finally, the functions `toQueryString`, `URLEncode`, and `sha256` would probably best live in another functions file, like `util.ts` or similar. I've just put them all together in the same snippet for easy illustration.
 
@@ -305,4 +305,4 @@ Cheers! 🍺
     There are, of course, technically a few edge cases to this. One case, of course, is if the refresh token _itself_ expires. Then we have no choice but to ask the user to authenticate with an OAuth method again.
 
 [^2]:
-    Which now has a link to this blog post in hopes to help those in the future! :smile:
+    Which now has a link to this blog post in hopes to help those in the future! 😊

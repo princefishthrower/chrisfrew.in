@@ -4,7 +4,7 @@ description:
 date: "2018-05-11"
 draft: false
 starID: 20
-postType: dev
+tags: automation,Node.js
 ---
 
 # Node.js Server Monitor

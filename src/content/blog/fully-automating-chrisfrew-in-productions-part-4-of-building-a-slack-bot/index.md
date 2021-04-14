@@ -4,7 +4,7 @@ description:
 date: "2018-07-21"
 draft: false
 starID: 23
-postType: dev
+tags: automation,slack
 ---
 
 ## Slack Bot!

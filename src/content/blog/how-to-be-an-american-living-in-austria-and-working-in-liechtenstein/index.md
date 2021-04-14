@@ -4,7 +4,7 @@ description:
 date: "2018-01-17"
 draft: false
 starID: 12
-postType: misc
+tags: miscellaneous,life
 ---
 
 ## Hey, Want to be an American living in Austria and working in Liechtenstein?

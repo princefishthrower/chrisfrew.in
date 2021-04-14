@@ -4,7 +4,7 @@ description:
 date: "2021-01-18"
 draft: false
 starID: 2389428394
-postType: misc
+tags: products,miscellaneous
 ---
 
 ## Let's Do This! 🚀
@@ -45,7 +45,7 @@ I haven't a live stream yet, but I've got plenty of ideas for it! Expect them in
 
 ## Instagram Presence
 
-I've also finally created an Instagram account for Full Stack Craft (sheesh, took long enough! I know, I know.). Some of the content on this account will match and blend from both my YouTube channel and Twitch live streams, but obviously much shorter and Instagram-friendly posts. Expect some dev memes posted in Instagram as well! :wink:
+I've also finally created an Instagram account for Full Stack Craft (sheesh, took long enough! I know, I know.). Some of the content on this account will match and blend from both my YouTube channel and Twitch live streams, but obviously much shorter and Instagram-friendly posts. Expect some dev memes posted in Instagram as well! 😉
 
 ## Art and Design Presence
 

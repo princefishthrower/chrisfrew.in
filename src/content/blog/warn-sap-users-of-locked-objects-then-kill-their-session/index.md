@@ -4,7 +4,7 @@ description:
 date: "2018-05-09"
 draft: false
 starID: 18
-postType: dev
+tags: SAP,ABAP,Windows
 ---
 
 ## SAP users lockin' up your objects?
@@ -85,7 +85,7 @@ What this kernel call retrieves and puts in table `gt_user_info` can be also fou
 
 You will see a giant list of multiple fields for each session number (0-6) that the user has open. So, what can we do with this giant technical information list of key value pairs? 
 
-In SAP, this works as follows: each _login_ by a user (not session number, we're not there yet :smile:)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of `TXX_UXXXXX`, where `X` can be any number 0-9. 
+In SAP, this works as follows: each _login_ by a user (not session number, we're not there yet 😊)  is assigned a unique login ID which is generated based on things you log in with: the client number, system, and language. This session ID has the form of `TXX_UXXXXX`, where `X` can be any number 0-9. 
 
 Each session then has a session ID which is comprised of first the login ID as described above, with an appended `_MX`, where `X` in this case is the session number, 0-6 (session 1-7). So, we are interested in the `.session` value of this technical list:
 
@@ -175,7 +175,7 @@ Ok, so we've warned the users twice by now with our popup, but they still are bl
 
 ## BDC Tricks To Finally Close The User Session
 
-I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there's probably good reason for this! (Though I can't _possibly_ think of why :thinking: :wink:) 
+I searched and searched, but there seems to be no function module that can explicitely close a specific user session - there's probably good reason for this! (Though I can't _possibly_ think of why :thinking: 😉) 
 
 I couldn't even find another 'forbidden' `Th****` function module that can do this. However, this _is_ possible through the standard SAP GUI, and we've already mentioned it in this post, our friend transaction `SM04`. By double clicking on a user (using me for an example), we get a list like this (sorry for the black boxes - don't want to inadvertantly reveal anything that may be proprietary):
 

@@ -4,14 +4,14 @@ description:
 date: "2018-07-26"
 draft: false
 starID: 25
-postType: dev
+tags: machine learning, natural language processing, data
 ---
 
 \*\*\*Note: this post is mirrored on NLP Champs: [https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration](https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration)
 
 ## Inspiration and Motivation
 
-I've been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I've even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so... _zepplin-ey_ :smile:
+I've been recently inspired by Greta Van Fleet, basically the latest band since the Black Keys that can truly rock. This naturally has gotten me listening to Led Zeppelin again as well, and I've even been getting back to writing a few classic rock style tunes with my acoustic guitar. This was a neat little project I threw together in order to try to generate some new lyrics, and also to see what could make those Led Zeppelin / Greta Van Fleet lyrics just so... _zepplin-ey_ 😊
 
 ## Important: I'm Lazy.
 

@@ -2,6 +2,7 @@
 title: "Saving Images In Node.js: Using Fetch with arrayBuffer() and Buffer"
 description: A quick example on the hurdles of binary buffers in JavaScript!
 date: "2020-06-04"
+tags: Node.js,javascript
 ---
 
 The idea behind this post presented itself to me when I realized nobody had the full A to Z example of saving an image via some binary data.

@@ -1,32 +1,11 @@
 import * as React from "react"
-import { useContext } from "react"
-import { Fade } from "react-awesome-reveal"
-import { ThemeContext } from "../../../context/ThemeContext"
-import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
+import { ColoredTitle } from "../../utils/ColoredTitle"
 import Sparkles from "../../utils/Sparkles"
 
 export function Book() {
-    const { themeBodyClass } = useContext(ThemeContext)
-    const titleContent = colorizeStringBySeparator(
-        themeBodyClass,
-        "📘 Full Stack SaaS Product Cookbook",
-        "",
-        0,
-        true
-    )
     return (
         <>
-            <h1 className="cooper big">
-                <Fade
-                    cascade={true}
-                    damping={0.025}
-                    duration={1000}
-                    direction="up"
-                    style={{ display: "inline" }}
-                >
-                    {titleContent}
-                </Fade>
-            </h1>
+            <ColoredTitle title="📘 Full Stack SaaS Product Cookbook"/>
             <h2>
                 From Soup 🍜 to Nuts 🥜 - Creating a Profitable SaaS Product as
                 a Solo Developer in Days

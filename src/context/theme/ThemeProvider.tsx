@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useCookies } from "react-cookie"
-import { themeConfig } from "../config/ThemeConfig";
-import Constants from "../constants/Constants";
+import { themeConfig } from "../../config/ThemeConfig";
+import Constants from "../../constants/Constants";
 import { ThemeContext } from "./ThemeContext"
 export default function ThemeProvider(props) {
     const { children } = props;

@@ -2,6 +2,7 @@
 title: Magento 2 IP Location Detection (GeoIP) and Store Context Control Using the ipstack API
 description: A full code solution with example repository to get you started with international stores!
 date: "2020-05-06"
+tags: magento
 ---
 
 [_This post is mirrored on my Medium account._](https://medium.com/@frewin.christopher/magento-2-ip-location-detection-geoip-and-store-context-control-using-the-ipstack-api-b48c17cc19c7)
@@ -14,7 +15,7 @@ The example code repository [is here.](https://github.com/princefishthrower/exam
 
 As I've subtly alluded to every so often, I spent most of 2019 working on a Magento 2 shop. I and colleagues are _still_ working on that project to this day, but much less so, simply tying off a few loose tickets that are really just 'nice to haves' instead of critical business components that needed to be done.
 
-However, one of the last critical business functions was dynamically setting the correct store context based on a user's location. Sure, you can always use Magento's [default switch component](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Store/view/frontend/templates/switch/stores.phtml) to change store scope, but it's a bit more user friendly to do it automatically :wink:.
+However, one of the last critical business functions was dynamically setting the correct store context based on a user's location. Sure, you can always use Magento's [default switch component](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Store/view/frontend/templates/switch/stores.phtml) to change store scope, but it's a bit more user friendly to do it automatically 😉.
 
 Alright, let's get started.
 
@@ -282,7 +283,7 @@ class GeolocationService implements GeolocationServiceInterface
 }
 ```
 
-Don't forget to replace `YOUR_ACCESS_KEY_HERE` with your actual access key :wink:
+Don't forget to replace `YOUR_ACCESS_KEY_HERE` with your actual access key 😉
 
 The private function `getClientIp()` was shamelessly copied from [this stack overflow question](https://stackoverflow.com/questions/15699101/get-the-client-ip-address-using-php/19189952). Read the comments there to see the caveats to this using this method. At the end of the day, you can never _definitively_ know where a customer is coming from; it can always be masked via VPN, for example. This code is a best guess. For 99% of users who are browsing the site as normal shoppers, this method of IP determination will work.
 

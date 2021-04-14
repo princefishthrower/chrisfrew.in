@@ -4,7 +4,7 @@ description:
 date: "2018-01-03"
 draft: false
 starID: 10
-postType: dev
+tags: SAP,ABAP
 ---
 
 _Edit June 1st, 2018:_
@@ -16,9 +16,9 @@ _Edit April 19th, 2018:_
 _There was a bug with this code! When we make the conversion to MIN, we forgot to overwrite_ `lv_unit` _to_ `MIN`_, so the conversion was correct, but the unit was left in hours, or_ `H` _! You can see this in the code comments with date 2018.04.19._
 
 # First off, Congratulations! :confetti_ball:
-<sup>And a happy new year! (If you're viewing this in the summer or something, see the date! :wink:)</sup>
+<sup>And a happy new year! (If you're viewing this in the summer or something, see the date! 😉)</sup>
 ## You've found the only post on the entire internet that describes the full process of calculating activity amounts for production order confirmations by programming it directly using SAP ABAP! :scream::scream::scream:
-## I hope you use this post to maximum effectiveness, because it took me _four_ days to find, build, and get a working answer. :smile:
+## I hope you use this post to maximum effectiveness, because it took me _four_ days to find, build, and get a working answer. 😊
 
 ## The Problem
 
@@ -141,7 +141,7 @@ The routing number `ls_operation-routing_no` and counter `ls_operation-counter` 
       .
 ```
 
-(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info :wink:. Here we are just getting the operation information from the order - that's all we need.)
+(There is plenty of SAP standard documentation and discussion on SCN on how to use `BAPI_PRODORD_GET_DETAIL`, so I'll leave that to you if you need more info 😉. Here we are just getting the operation information from the order - that's all we need.)
 
 We can finally move the corresponding fields of `ls_plpo` to `ls_vgw`:
 
@@ -281,7 +281,7 @@ In summary, the full code looks like this:
 lt_filters = io_tech_request_context->get_filter( )->get_filter_select_options( ).
 ```
 
-won't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method :smile:
+won't be in scope and won't compile without errors! However, if you are familiar with the CRUD based methods of the SAP Gateway backend, these will fit nicely into the `GET_ENTITYSET` method 😊
 
 ```abap
 DATA : lt_filters           TYPE           /iwbep/t_mgw_select_option,
@@ -971,7 +971,7 @@ Here's the code for calculating activities for process orders - _note the slight
 
 Whew. Did it feel like a marathon? :runner: Because it felt to _me_ like a marathon all that time I was scratching my head. I hope you all enjoyed and found this post useful for a not-so-often programmed function of this production planning section of SAP.
 
-Another note and quick plug :smile: I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.
+Another note and quick plug 😊 I hope everyone can appreciate the time I put into creating these posts (_hint:_ posts this long take a **LONG** time to write!). It would make me happy and give me the motivation to keep writing these detailed ABAP posts if you'd consider donating (in the footer of any page on this blog) I have a [PayPal.me link](https://www.paypal.me/chrisfrewin), and I'm also an Ethereum developer if you'd like to donate Ether or if you would like to donate some RaiBlocks, as I am a RaiBlocks enthusiast if you would prefer to donate in that way.
 
 :poop: Ok, plug done! :poop:
 
@@ -1035,7 +1035,7 @@ confirmation, goods movements are determined for backflushing and
 automatic goods receipt using the standard logic.
 </pre>
 
-We needed to add the following too our goods movements loop (already added in the code above! :smile:):
+We needed to add the following too our goods movements loop (already added in the code above! 😊):
 
 ```abap
 BLAH

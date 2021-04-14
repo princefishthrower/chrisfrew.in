@@ -2,10 +2,10 @@ import * as React from "react"
 import { MessageOfTheDay } from "./MessageOfTheDay"
 import { TwitterIcon } from "../TwitterIcon"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Sparkles from "../../utils/Sparkles"
 import { Fade } from "react-awesome-reveal"
 import { AvatarPicture } from "../../utils/AvatarPicture"
+import { Search } from "../../utils/search/Search"
 
 export function HomePageTitle() {
     const data = useStaticQuery(graphql`
@@ -116,6 +116,7 @@ export function HomePageTitle() {
                 </h2>
             </div>
             <MessageOfTheDay />
+            <Search />
         </>
     )
 }

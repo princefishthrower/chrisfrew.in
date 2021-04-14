@@ -4,16 +4,18 @@ description:
 date: "2019-07-25"
 draft: false
 starID: 24
-postType: life
+tags: life
 ---
 
-## Part II and the promised post-mortem of ‘Welp I Did It. I Quit My Job.’
+## Part II 
+
+The promised post-mortem of [Welp, I Did It. I Quit My Job.](https://chrisfrew.in/blog/welp-i-did-it-i-quit/)
 
 ![Some newer digital art of mine. Actually somewhat relevant to this story this time. Read on.](https://cdn-images-1.medium.com/max/4096/1*3rkEp5AAhZKS542vbKCedA.png)*Some newer digital art of mine. Actually somewhat relevant to this story this time. Read on.*
 
 \*\*\*Note: this post is mirrored on Medium: https://medium.com/@frewin.christopher/welp-i-did-it-im-still-a-freelancer-7480a19297c7
 
-Exactly a year has passed from my [‘I Quit My Job’ post](https://medium.com/@frewin.christopher/welp-i-did-it-24505dff1bd1), in which I promised I would write upba post-mortem — so here it is.
+Exactly a year has passed from my [‘I Quit My Job’ post](https://chrisfrew.in/blog/welp-i-did-it-i-quit/), in which I promised I would write up a post-mortem — so here it is.
 
 Ironically, I realize I’ve been off the grid ever *since* that post. All will be explained. (Note: I can hear you: *Aren’t you freelance types supposed to have more freetime?*) Well, here’s the thing…
 

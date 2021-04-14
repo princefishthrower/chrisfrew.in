@@ -4,7 +4,7 @@ description:
 date: "2018-04-14"
 draft: false
 starID: 17
-postType: dev
+tags: machine learning, APIs
 ---
 
 # Google Cloud

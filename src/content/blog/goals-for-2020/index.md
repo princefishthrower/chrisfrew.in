@@ -4,7 +4,7 @@ description:
 date: "2020-01-12"
 draft: false
 starID: 456789
-postType: misc
+tags: Yearly Goals,Blog Meta
 ---
 
 Though it's only the second year of doing this, I really enjoy this yearly review and will likely be doing it for the forseeable coming years. Since I have my (one) past post, let's review my progress from 2019 first:

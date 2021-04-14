@@ -16,8 +16,8 @@ body {
         a {
             color: $outrunOrange;
             z-index: 10;
-            text-shadow: 0 0 5px $outrunOrange, 0 0 10px $outrunPurple,
-            0 0 20px $outrunPink, 0 0 30px $outrunPink, 0 0 40px $outrunPink;
+            text-shadow: 0 0 5px $outrunPurple, 0 0 10px $outrunPurple,
+            0 0 15px $outrunPurple, 0 0 20px;
         }
 
         table,

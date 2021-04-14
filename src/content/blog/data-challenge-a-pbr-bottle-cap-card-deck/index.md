@@ -3,6 +3,7 @@ title: Data Challenge! Building a PBR Bottle Cap Card Deck!
 description: How many brews must be cracked open to build a full deck of 52?
 date: "2020-12-19"
 draft: false
+tags: data challenge,csharp,.NET
 ---
 
 # Motivation

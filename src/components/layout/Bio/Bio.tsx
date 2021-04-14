@@ -1,23 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import Sparkles from "../../utils/Sparkles"
-import { Signature } from "./Signature"
+import { Link } from "gatsby"
 import { BioSharedText } from "./BioSharedText"
 import { SignatureText } from "./SignatureText"
 import { AvatarPicture } from "../../utils/AvatarPicture"
 
 export default function Bio() {
-    const data = useStaticQuery(graphql`
-        query BioQuery {
-            site {
-                siteMetadata {
-                    author
-                }
-            }
-        }
-    `)
-
     return (
         <>
             <AvatarPicture style={{

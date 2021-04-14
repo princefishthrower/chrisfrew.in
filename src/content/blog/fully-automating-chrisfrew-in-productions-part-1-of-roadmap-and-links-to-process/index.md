@@ -4,7 +4,7 @@ description:
 date: "2018-05-10"
 draft: false
 starID: 19
-postType: dev
+tags: automation,Blog Meta
 ---
 
 # Links to All Parts of the Process

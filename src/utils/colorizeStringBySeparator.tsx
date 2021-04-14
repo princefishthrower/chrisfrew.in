@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Fragment, ReactNode } from "react"
 import ThemeBodyClass from "../enums/ThemeBodyClass"
-import { getConfettiColorClasses } from "./getConfettiColorClasses"
+import { getThemeColorClasses } from "./getThemeColorClasses"
 
 export const colorizeStringBySeparator = (
     themeBodyClass: ThemeBodyClass,
@@ -14,7 +14,7 @@ export const colorizeStringBySeparator = (
         return <></>
     }
     const entities = text.split(separator)
-    const colors = getConfettiColorClasses(themeBodyClass)
+    const colors = getThemeColorClasses(themeBodyClass)
     let colorIndex = -1 + offset
 
     // note that an entity can be a single character, or an entire word, depending on the separator

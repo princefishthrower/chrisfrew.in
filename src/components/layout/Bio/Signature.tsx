@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-hook-inview"
 
 export function Signature() {
@@ -7,20 +7,25 @@ export function Signature() {
         threshold: 1,
     })
     const [alreadyTriggered, setAlreadyTriggered] = useState<boolean>(false);
+    const [leaveVisible, setLeaveVisible] = useState<boolean>(false);
 
-    if(isVisible) {
-        setTimeout(() => {
-            setAlreadyTriggered(true);
-        }, 8000)
-    }
+    useEffect(() => {
+        if(isVisible) {
+            setLeaveVisible(true);
+            setTimeout(() => {
+                setAlreadyTriggered(true);
+            }, 8000)
+        }
+    }, [isVisible])
 
     const className = !alreadyTriggered && isVisible ? "animate" : ""
+    const svgClassName = leaveVisible ? "leave-visible" : ""
     return (
         <div ref={ref}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 237.114 62.184"
-                className="signature"
+                className={`signature ${svgClassName}`}
             >
                 <g fill="none" strokeLinecap="round" strokeWidth="1.323">
                     <path

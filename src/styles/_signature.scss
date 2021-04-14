@@ -23,6 +23,10 @@
 }
 
 .signature {
+    opacity: 0;
+    &.leave-visible {
+        opacity: 1;
+    }
     height: 4rem;
     .animate {
         stroke-dasharray: 500;
