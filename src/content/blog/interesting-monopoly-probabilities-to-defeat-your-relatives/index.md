@@ -4,7 +4,7 @@ description:
 date: "2018-12-29"
 draft: false
 starID: 103
-tags: data,Blog Meta,life
+tags: data,life
 ---
 
 ## Holiday Break = Monopoly (Logically) 😂

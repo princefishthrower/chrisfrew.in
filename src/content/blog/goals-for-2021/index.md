@@ -3,7 +3,7 @@ title: Goals for 2021
 description:
 date: "2020-12-20"
 draft: false
-tags: Yearly Goals,Blog Meta
+tags: Yearly Goals
 ---
 
 # Yep, It's that Time of the Year Again!

@@ -1,10 +1,10 @@
 ---
-title: Obligatory 'Goals for 2019' Post
+title: Goals for 2019
 description:
 date: "2019-01-03"
 draft: false
 starID: 105
-tags: Yearly Goals,Blog Meta
+tags: Yearly Goals
 ---
 
 ## Every Dev's Doing It!

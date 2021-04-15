@@ -50,7 +50,7 @@ const createPdfs = async () => {
         process.kill(-child.pid)
         console.log("Killed gatsby server.")
     }
-    console.log("Done with all PDF exporrts! Exiting process...")
+    console.log("Done with all PDF exports! Exiting process...")
     process.exit()
 }
 

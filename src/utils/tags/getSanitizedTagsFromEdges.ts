@@ -59,5 +59,11 @@ export const sanitizeTag = (rawTag: string) => {
     if (rawTag === "orm") {
         return "Object-Relational Mapping"
     }
+    if (rawTag === "Node.js") {
+        return "Node"
+    }
+    if (rawTag === "devops") {
+        return "DevOps"
+    }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }

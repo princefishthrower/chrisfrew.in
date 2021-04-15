@@ -152,6 +152,7 @@ export function Stats() {
                                 ]
                             }
                             defaultColor={activeTheme.defaultHexColor}
+                            tagClassName="tag"
                         />
                         : {x.count}
                     </p>
