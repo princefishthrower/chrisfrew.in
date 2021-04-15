@@ -5,6 +5,8 @@ import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 // import { Disqus } from "gatsby-plugin-disqus"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { TagRenderer } from "../components/utils/tags/TagRenderer"
+import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 
 class BlogPost extends React.Component {
     componentDidMount() {
@@ -32,6 +34,8 @@ class BlogPost extends React.Component {
         const siteTitle = this.props.data.site.siteMetadata.title
         const description = this.props.data.site.siteMetadata.description
         const { previous, next } = this.props.pageContext
+        const tags = post.frontmatter.tags.split(",").map(x => sanitizeTag(x))
+    
         // const disqusConfig = {
         //     url: `${this.props.data.site.siteMetadata.siteUrl +
         //         this.props.location.pathname}`,
@@ -80,6 +84,15 @@ class BlogPost extends React.Component {
                         >
                             Posted on {post.frontmatter.date}
                         </p>
+                        <p
+                            style={{
+                                display: `block`,
+                                marginBottom: `1rem`,
+                                
+                            }}
+                        >
+                            <i>Tags: </i><TagRenderer linkToTagPage={true} tags={tags}/></p>
+                        
                     </header>
                     <MDXRenderer>{post.body}</MDXRenderer>
                     {/* <Disqus config={disqusConfig} /> */}
@@ -173,6 +186,7 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "MMMM D, YYYY")
                 description
+                tags
             }
         }
     }

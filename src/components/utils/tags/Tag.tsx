@@ -3,29 +3,40 @@ import * as React from "react"
 import { useState } from "react"
 import { generateTagURI } from "../../../utils/tags/generateTagURI"
 
-export interface ITagRendererProps {
+export interface ITagProps {
     tag: string
     linkToTagPage: boolean
     backgroundColor: string
     hoverBackgroundColor: string
     defaultColor: string
+    tagClassName: string
 }
 
-export function Tag(props: ITagRendererProps) {
-    const { tag, linkToTagPage, backgroundColor, hoverBackgroundColor, defaultColor } = props
+export function Tag(props: ITagProps) {
+    const { tag, linkToTagPage, backgroundColor, hoverBackgroundColor, defaultColor, tagClassName } = props
     const [isHover, setIsHover] = useState<boolean>(false)
     if (!tag) {
         return <></>
     }
     const link = generateTagURI(tag)
-    const style = isHover
+
+    const getStyle = () => {
+        if (tagClassName === "tag-small") {
+            return isHover
+            ? { color: hoverBackgroundColor, backgroundColor: defaultColor, borderColor: hoverBackgroundColor }
+            : { color: defaultColor, backgroundColor, borderColor: backgroundColor }
+        }
+        return isHover
         ? { color: hoverBackgroundColor, backgroundColor: defaultColor, borderColor: hoverBackgroundColor, borderWidth: '3px', padding: '0.45rem', margin: '.05rem' }
         : { color: defaultColor, backgroundColor, borderColor: backgroundColor, borderWidth: '3px' }
+    }
+
+    const style = getStyle()
     if (linkToTagPage) {
         return (
             <Link
                 to={link}
-                className="tag"
+                className={tagClassName}
                 style={style}
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
@@ -34,5 +45,5 @@ export function Tag(props: ITagRendererProps) {
             </Link>
         )
     }
-    return <div className="tag">{tag}</div>
+    return <div className={tagClassName}>{tag}</div>
 }
