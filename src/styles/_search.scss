@@ -1,12 +1,12 @@
 $searchWidth: 300px;
 $searchHeight: 40px;
-$transformHeight: -135px;
+$transformHeight: -150px;
 
 $searchWidthMobile: 225px;
 $searchHeightMobile: $searchHeight;
-$transformHeightMobile: -100px;
+$transformHeightMobile: -115px;
 
-// remove chromes annoying hihgliht
+// remove chromes annoying highlight
 input:focus,
 textarea:focus,
 select:focus {
@@ -16,6 +16,23 @@ select:focus {
 .search-container {
     text-align: center;
     margin: 1rem;
+    .search-label {
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 900;
+        transition: 0.6s;
+        cursor: pointer;
+        &.open {
+            margin-top: 1rem; 
+        }
+    }
+    .search-clearer {
+        margin-left: 10px;
+        cursor: pointer;
+        & svg path {
+           fill: $lightColor 
+        }
+    }
 }
 
 .search-div {
@@ -58,7 +75,7 @@ select:focus {
     &.open {
         background: $monokaiBlueDarkMode;
         width: 10px;
-        height: $searchWidth;
+        height: $searchWidth + 25px;
         transform: translate(0px, $transformHeight) rotate(-90deg);
         cursor: pointer;
     }
@@ -136,7 +153,7 @@ select:focus {
     }
     .handle {
         &.open {
-            height: $searchWidthMobile;
+            height: $searchWidthMobile + 25px;
             transform: translate(0px, $transformHeightMobile) rotate(-90deg);
         }
     }
