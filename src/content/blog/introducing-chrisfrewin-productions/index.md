@@ -1,10 +1,10 @@
 ---
-title: Introducing my (new / same?!) company chrisfrew.in! (and how to change your DBA name)
+title: Introducing My (New / Same?!) Company chrisfrew.in! (and how to change your DBA name)
 description:
 date: "2018-03-01"
 draft: false
 starID: 13
-tags: miscellaneous,companies,life,Blog Meta
+tags: miscellaneous,companies,life
 ---
 
 # chrisfrew.in as a company!
