@@ -4,11 +4,12 @@ import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import Paginator from "../components/utils/Paginator"
-import { AllTags } from "../components/utils/tags/AllTags"
+import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { useContext } from "react"
 import { SearchContext } from "../context/search/SearchContext"
 import shared from "../constants/shared.json"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
+import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 
 const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
@@ -80,6 +81,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
             ) : (
                 postsToRender.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
+                    const tags = node.frontmatter.tags.split(",").map(x => sanitizeTag(x))
                     return (
                         <article key={node.fields.slug}>
                             <header>
@@ -94,6 +96,9 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                                 <small className="blog-post-date">
                                     {node.frontmatter.date}
                                 </small>
+                                <div>
+                                <TagRenderer linkToTagPage={true} tags={tags}/>
+                                </div>
                             </header>
                             <section>
                                 <p
@@ -110,7 +115,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
             )}
             <Paginator />
             <h3>Posts by tag:</h3>
-            <AllTags />
+            <TagRenderer linkToTagPage={true}/>
             <Bio />
         </Layout>
     )

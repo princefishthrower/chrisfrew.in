@@ -6,7 +6,15 @@ import { getActiveTheme } from "../../../utils/getActiveTheme"
 import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdges"
 import { Tag } from "./Tag"
 
-export function AllTags() {
+export interface ITagRendererProps {
+    linkToTagPage: boolean;
+    tags?: string[];
+}
+
+// renders tags. if the 'tags' prop is provided, renders only those Tags
+// otherwise renders all
+export function TagRenderer(props: ITagRendererProps) {
+    const { tags, linkToTagPage } = props;
     const data = useStaticQuery(graphql`
         query AllTagsQuery {
             allMdx(
@@ -23,11 +31,13 @@ export function AllTags() {
             }
         }
     `)
+    const uniqueTags = tags ? tags : getUniqueTagsFromEdges(data.allMdx.edges)
+    const tagContainerClass = tags ? "tag-container-small" : "tag-container"
+    const tagClassName = tags ? "tag-small" : "tag"
 
     const { themeBodyClass } = useContext(ThemeContext)
     const activeTheme = getActiveTheme(themeBodyClass)
     const hexColorsLength = activeTheme.themeColorHexCodes.length
-    const uniqueTags = getUniqueTagsFromEdges(data.allMdx.edges);
 
     // sort alphabetically before rendering
     uniqueTags.sort((a, b) => {
@@ -43,13 +53,13 @@ export function AllTags() {
     })
 
     return (
-        <div className="tag-container">
+        <div className={tagContainerClass}>
             {uniqueTags.map((uniqueTag, index) => {
                 const nextIndex = index + 1
                 return (
                     <Tag
                         tag={uniqueTag}
-                        linkToTagPage={true}
+                        linkToTagPage={linkToTagPage}
                         backgroundColor={
                             activeTheme.themeColorHexCodes[
                                 ((index % hexColorsLength) + hexColorsLength) %
@@ -64,6 +74,7 @@ export function AllTags() {
                             ]
                         }
                         defaultColor={activeTheme.defaultHexColor}
+                        tagClassName={tagClassName}
                     />
                 )
             })}

@@ -5,7 +5,7 @@ import { ThemeContext } from "../../../context/theme/ThemeContext"
 import { getThemeColorHexCodes } from "../../../utils/getThemeColorHexCodes"
 import Sparkles from "../../utils/Sparkles"
 import { Tag } from "../../utils/tags/Tag"
-import { AllTags } from "../../utils/tags/AllTags"
+import { TagRenderer } from "../../utils/tags/TagRenderer"
 import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdges"
 import { getTagDataFromEdges } from "../../../utils/tags/getTagDataFromEdges"
 import { ColoredTitle } from "../../utils/ColoredTitle"
@@ -128,7 +128,7 @@ export function Stats() {
                     <Sparkles>{uniqueTags.length}</Sparkles>
                 </span>
             </p>
-            <AllTags/>
+            <TagRenderer linkToTagPage={true}/>
             {tagDataByCount.map((x, index) => {
                 const nextIndex = index + 1
                 return (

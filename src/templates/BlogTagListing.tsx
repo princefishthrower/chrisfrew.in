@@ -4,8 +4,9 @@ import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import Paginator from "../components/utils/Paginator"
-import { AllTags } from "../components/utils/tags/AllTags"
+import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
+import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 
 const BlogTagListing = ({ data, location, pageContext }) => {
     const { tag } = pageContext;
@@ -32,9 +33,10 @@ const BlogTagListing = ({ data, location, pageContext }) => {
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
             <SEO title={title} schemaMarkup={schema} />
-            <ColoredTitle title={`#️⃣ Posts Tagged With ${tag}`}/>
+            <ColoredTitle title={`#️⃣ Posts Tagged With "${tag}"`}/>
             {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
+                const tags = node.frontmatter.tags.split(",").map(x => sanitizeTag(x))
                 return (
                     <article key={node.fields.slug}>
                         <header>
@@ -47,6 +49,9 @@ const BlogTagListing = ({ data, location, pageContext }) => {
                                 </Link>
                             </h3>
                             <small className="blog-post-date">{node.frontmatter.date}</small>
+                            <div>
+                                <TagRenderer linkToTagPage={true} tags={tags}/>
+                                </div>
                         </header>
                         <section>
                             <p
@@ -61,7 +66,7 @@ const BlogTagListing = ({ data, location, pageContext }) => {
                 )
             })}
             <h3>All Post Tags:</h3>
-            <AllTags/>
+            <TagRenderer linkToTagPage={true}/>
             <Bio />
         </Layout>
     )
@@ -92,6 +97,7 @@ export const blogTagListQuery = graphql`
                         date(formatString: "MMMM D, YYYY")
                         title
                         description
+                        tags
                     }
                 }
             }

@@ -84,7 +84,10 @@ article header h3 {
 }
 
 .blog-post-date {
+    display: block;
     font-style: italic;
+    margin-top: 0.2rem;
+    margin-bottom: 0.25rem;
 }
 
 // prism overrides
