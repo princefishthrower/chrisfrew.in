@@ -95,6 +95,27 @@ export function HomePageTitle() {
                     <TwitterIcon />
                     @fullStackChris_
                 </a>
+                <a
+                    href="/exports/chris-frewin-cv.pdf"
+                    download
+                    style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        boxShadow: `none`,
+                        textDecoration: `none`,
+                        color: `inherit`,
+                        position: `relative`,
+                        zIndex: 10,
+                        fontSize: "0.7rem",
+                        fontWeight: "bold",
+                        lineHeight: "0.5rem",
+                        marginBottom: "0.5rem",
+                    }}
+                >
+                    📜 CV
+                </a>
             </div>
             <div>
                 <h2

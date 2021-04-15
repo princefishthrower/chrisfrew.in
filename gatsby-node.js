@@ -1,5 +1,5 @@
 const path = require(`path`)
-const spawn = require("child_process").spawn
+const { exec, spawn } = require("child_process")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const getTagDataFromEdges = require(`./utils/tags/getTagDataFromEdges`)
 const shared = require(`./src/constants/shared.json`)
@@ -102,15 +102,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.onPostBuild = async () => {
-    await spawnChild();
+    // build all code snippet pdfs
+    await spawnChild("node", ["create-snippets-pdf.js"], "All PDF exports successful!\n");
+
+    // copy cv from dev folder to the exports folder with all the other pdfs
+    await spawnChild("cp", ["dev/chris-frewin-cv.pdf", "public/exports/"], "CV successfully copied to public/exports!");
 }
 
-async function spawnChild() {
-    const child = spawn("node", ["create-snippets-pdf.js"])
+async function spawnChild(command, arguments, successConsoleLog) {
+    const child = spawn(command, arguments)
     for await (const chunk of child.stdout) {
         console.log(chunk.toString())
     }
-    let error = ""
     for await (const chunk of child.stderr) {
         console.error(chunk.toString())
     }
@@ -118,9 +121,10 @@ async function spawnChild() {
         child.on("close", resolve)
     })
     if (exitCode) {
-        throw new Error(`Subprocess error exit ${exitCode}, ${error}`)
+        throw new Error(`Child exited with error code ${exitCode}!`)
+    } else {
+        console.log(successConsoleLog)
     }
-    console.log("All PDF exports successful!")
 }
 
 
