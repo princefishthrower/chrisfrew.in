@@ -74,7 +74,7 @@ export const themeConfig: Array<IThemeConfig> = [
     },
     {
         label: "Outrun",
-        emoji: "🍧",
+        emoji: "🏎️",
         themeBodyClass: ThemeBodyClass.OUTRUN_THEME,
         defaultHexColor: "#201138",
         linearWipeClasses: {

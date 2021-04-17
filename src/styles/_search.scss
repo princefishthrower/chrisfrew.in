@@ -23,15 +23,12 @@ select:focus {
         transition: 0.6s;
         cursor: pointer;
         &.open {
-            margin-top: 1rem; 
+            margin-top: 1rem;
         }
     }
     .search-clearer {
         margin-left: 10px;
         cursor: pointer;
-        & svg path {
-           fill: $lightColor 
-        }
     }
 }
 
@@ -94,6 +91,12 @@ select:focus {
             background: $monokaiBlueDarkMode;
         }
     }
+
+    .search-clearer {
+        & svg path {
+            fill: $lightColor;
+        }
+    }
 }
 
 .light-theme {
@@ -107,6 +110,12 @@ select:focus {
         background: $monokaiOrangeLightMode;
         &.open {
             background: $monokaiBlueLightMode;
+        }
+    }
+
+    .search-clearer {
+        & svg path {
+            fill: $darkColor;
         }
     }
 }
@@ -124,6 +133,12 @@ select:focus {
             background: $outrunPurple;
         }
     }
+
+    .search-clearer {
+        & svg path {
+            fill: $outrunLightOrange;
+        }
+    }
 }
 .black-white-theme {
     .input {
@@ -138,12 +153,18 @@ select:focus {
             background: $blackWhiteGray;
         }
     }
+
+    .search-clearer {
+        & svg path {
+            fill: $blackWhiteGray;
+        }
+    }
 }
 
 // small styles (width less than 600px)
 @media only screen and (max-width: $mediumOffset) {
     .input {
-        width:$searchHeightMobile;
+        width: $searchHeightMobile;
         height: $searchHeightMobile;
         border-radius: 100px;
         &.open {

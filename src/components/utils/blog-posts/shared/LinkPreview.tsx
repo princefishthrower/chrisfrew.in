@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import Sparkles from "./Sparkles"
+import Sparkles from "../../Sparkles"
 
 export interface ILinkPreviewProps {
     url: string;

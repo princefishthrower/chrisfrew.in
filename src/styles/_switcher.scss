@@ -1,5 +1,5 @@
 $width: 50px;
-$secondarySize: 27px;
+$height: 27px;
 
 .switch-text {
     display: block;
@@ -67,7 +67,7 @@ $secondarySize: 27px;
     position: relative;
     text-align: center;
     display: inline-block;
-    height: $secondarySize;
+    height: $height;
 
     & input {
         opacity: 0;
@@ -120,7 +120,7 @@ $secondarySize: 27px;
 
     /* Rounded sliders */
     & .slider.round {
-        border-radius: $secondarySize;
+        border-radius: $height;
     }
 
     & .slider.round:before {
