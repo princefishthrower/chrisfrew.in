@@ -1,0 +1,70 @@
+---
+title: Beware of CSV Copies in PostgreSQL Which Include a Primary Key!
+description:
+date: "2021-04-18"
+draft: false
+starID: 10
+tags: Postgresql,Bash,DevOps
+---
+
+import { Link } from 'gatsby'
+
+While working on the hackathon project behind my blog post <Link to="blog/analyzing-park-and-rail-availabilities-across-switzerland/">"Analyzing Park and Rail (P+Rail) Parking Availability Across The Entirety of Switzerland"</Link>, I had to migrate some calculations I had stored in a table on my local machine to my production server. (I ran them locally since my processor is way faster on my laptop than the small single CPU droplet I had [for the production site](https://park-and-rail.netlify.app).
+
+Not really thinking ahead, I naïvely generated a `.csv` with the following command:
+
+```sql
+COPY "ParkingAvailabilities" TO '/Users/chris/downloads/ParkingAvailabilities.csv' DELIMITER ',' CSV HEADER;
+```
+
+I then sent my `.csv` file to the droplet using the `scp` command:
+
+```bash
+scp -r /Users/chris/Downloads/ParkingAvailabilities.csv root@<<DROPLET IP HERE>>:/root
+```
+
+Logging into the droplet, I first moved the `.csv` file from the root to the `tmp` folder, since the `postgres` user won't be able to access a file in the `root/` folder:
+
+```bash
+mv ~/ParkingAvailabilities.csv /tmp/
+```
+
+I then attempted to import the `.csv` directly into my production table:
+
+```sql
+COPY "ParkingAvailabilities" FROM '/tmp/ParkingAvailabilitiesNoID.csv' WITH (FORMAT csv, HEADER true);
+```
+
+Unfortunately, when I tried this command, I noticed a strange problem: the command successfully dispatched, but knowing that this dataset was 3 million+ rows, I kept monitoring the progress of the import with:
+
+```sql
+SELECT COUNT(*) FROM "ParkingAvailabilities";
+```
+
+I saw that about 4000 rows were rapidly inserted, but then the progress was much slower, showing things like 5000, then 5100, and slower and slower until insert progress nearly halted. I had never seen this before, so I browsed around the ever-lovely stack overflow and found [this post](). It turns out what PostgreSQl is doing in the background is this: it is examining every primary key for each new CSV row that it tries to import. (Essentially in this case, for each new row it tries to import, it will check the primary key against all 3 million rows.) This gets slower and slower for each incremental row that is inserted! 
+
+For a development to production migration, this doesn't make sense anyway: we should let PostgreSQL manage it's own primary key creation.
+
+Luckily, I didn't have to re-export the data and move it to the production server with SCP again. I used a handy Bash commad `cut` to strip off that first ID column:
+
+```bash
+cut -d, -f 1 —complements mydata.csv > noprimarykey.csv
+```
+
+Here, I used the `-d` flag which is for delete, and the `-f` flag which is for field. We specify field `1`, which is the ID, and then write the file to a new csv file, `noprimarykey.csv`
+
+I then unfortunately have to modify our `COPY` command as well, explicitly specifying the columns I wanted to import from the `csv` file, since PostgreSQL will complain since it will see a mismatch between the table and the number of columsn in the `.csv` file. The `COPY` command with these columns specified looks like this:
+
+```sql
+COPY "ParkingAvailabilities" ("DateCalculatedFor", "DayOfWeek", "FacilityName","EstimatedParkingSpacesAvailable", "ParkingSpacesTotal", "ParkingForecastData", "Created", "Updated") FROM '/tmp/ParkingAvailabilitiesNoID.csv' WITH (FORMAT csv, HEADER true);
+```
+
+With the ID column removed, this command successfully completed in a matter of seconds - no hangs or memory explosions since PostgreSQL doesn't have to make primary key checks anymore!
+
+# Thanks!
+
+That's it for this quick post! I hope you learned a little bit in this post, and that you can use this pattern of commands or recipe for when you
+
+Cheers 🍻
+
+-Chris
