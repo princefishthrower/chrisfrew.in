@@ -240,6 +240,19 @@ button.code-copy-button {
     .medium-only {
         display: none;
     }
+
+    main, h1 {
+        margin-top: 0;
+    }
+
+    // break annoyingness in links and code - there may be more here!
+    main a {
+        line-break: word;
+    }
+    code {
+        line-break: anywhere;
+    }
+
 }
 
 // keyframes

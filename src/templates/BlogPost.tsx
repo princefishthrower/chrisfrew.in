@@ -66,10 +66,6 @@ class BlogPost extends React.Component {
                 <article>
                     <header>
                         <h1
-                            style={{
-                                marginTop: `1rem`,
-                                marginBottom: 0,
-                            }}
                         >
                             {title}
                         </h1>

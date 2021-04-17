@@ -44,7 +44,7 @@ export const sanitizeTag = (rawTag: string) => {
     if (rawTag === "redux") {
         return "Redux"
     }
-    if (rawTag === "postgresql") {
+    if (rawTag === "postgresql" || rawTag === "Postgresql") {
         return "PostgreSQL"
     }
     if (rawTag === "npm") {
