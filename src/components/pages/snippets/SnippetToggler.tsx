@@ -1,3 +1,4 @@
+import { Language } from "prism-react-renderer"
 import * as React from "react"
 import { useState } from "react"
 import URLSearchParamValue from "../../../enums/URLSearchParamValue"
@@ -9,8 +10,8 @@ export interface ISnippetTogglerProps {
     typeScriptCode?: string
     javaScriptCode?: string
     otherCode?: string
-    otherLanguage?: string
-    pdfMode: boolean
+    otherLanguage?: Language
+    pdfMode?: boolean,
     languageFilter?: URLSearchParamValue
 }
 

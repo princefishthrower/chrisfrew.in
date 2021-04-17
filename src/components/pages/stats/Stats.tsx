@@ -10,6 +10,7 @@ import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdg
 import { getTagDataFromEdges } from "../../../utils/tags/getTagDataFromEdges"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import { getActiveTheme } from "../../../utils/getActiveTheme"
+import BlogTagClass from "../../../enums/BlogTagClass"
 
 export function Stats() {
     const data = useStaticQuery(graphql`
@@ -152,7 +153,7 @@ export function Stats() {
                                 ]
                             }
                             defaultColor={activeTheme.defaultHexColor}
-                            tagClassName="tag"
+                            tagClassName={BlogTagClass.BLOG_TAG}
                         />
                         : {x.count}
                     </p>

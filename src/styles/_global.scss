@@ -90,7 +90,7 @@ article header h3 {
     margin-bottom: 0.25rem;
 }
 
-// prism overrides
+// prism overrides and extensions
 pre[class*="language-"]:before {
     display: none !important;
 }
@@ -101,6 +101,30 @@ pre[class*="language-"]:after {
 
 pre[class*="language-"] > code {
     box-shadow: none !important;
+}
+
+.dark-theme {
+    pre .code-line-added {
+            background-color: $codeLineAddedDarkMode !important;
+    }
+}
+
+.light-theme {
+    pre .code-line-added {
+            background-color: $codeLineAddedLightMode !important;
+    }
+}
+
+.outrun-theme {
+    pre .code-line-added {
+            background-color: $codeLineAddedOutrunMode !important;
+    }
+}
+
+.black-white-theme {
+    pre .code-line-added {
+            background-color: $codeLineAddedBlackWhiteMode !important;
+    }
 }
 
 a {

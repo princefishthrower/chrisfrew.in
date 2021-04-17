@@ -10,6 +10,8 @@ $monokaiYellowDarkMode: #f7d163;
 $monokaiOrangeDarkMode: #fd9720;
 $monokaiPinkDarkMode: #fd5ff0;
 
+$codeLineAddedDarkMode: #093b2c;
+
 // monokai light theme colors
 $monokaiRedLightMode: #e70457;
 $monokaiGreenLightMode: #168362;
@@ -17,6 +19,8 @@ $monokaiBlueLightMode: #157e93;
 $monokaiYellowLightMode: #8e6c06;
 $monokaiOrangeLightMode: #b15f02;
 $monokaiPinkLightMode: #d402c3;
+
+$codeLineAddedLightMode: #dbfff4;
 
 // outrun theme colors
 $outrunOrange: #ff9928;
@@ -27,11 +31,16 @@ $outrunLightPurple: #f585ff;
 $outrunPurple: #d023df;
 $outrunDarkPurple: #201138;
 
+$codeLineAddedOutrunMode: #093b2c;
+
 // black white theme colors
 
 // this is the "middle" gray ie. RGB 128,128,128
 $blackWhiteGray: #808080;
 $blackWhiteLightGray: #BCBCBC;
+
+$codeLineAddedBlackWhiteMode: #dbfff4;
+
 
 // for javascript / typescript toggler
 $typeScriptBlue: #2f74c0;

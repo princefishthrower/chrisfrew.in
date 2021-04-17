@@ -64,7 +64,6 @@ exports.createPages = async ({ graphql, actions }) => {
             path,
             component: blogPostListing,
             context: {
-                path,
                 limit: shared.POSTS_PER_PAGE,
                 skip: i * shared.POSTS_PER_PAGE,
                 numPages,

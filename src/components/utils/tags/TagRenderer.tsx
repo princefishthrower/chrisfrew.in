@@ -2,6 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
 import { ThemeContext } from "../../../context/theme/ThemeContext"
+import BlogTagClass from "../../../enums/BlogTagClass"
 import { getActiveTheme } from "../../../utils/getActiveTheme"
 import { getRandomInt } from "../../../utils/getRandomInt"
 import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdges"
@@ -38,7 +39,7 @@ export function TagRenderer(props: ITagRendererProps) {
 
     const uniqueTags = tags ? tags : getUniqueTagsFromEdges(data.allMdx.edges)
     const tagContainerClass = tags ? "tag-container-small" : "tag-container"
-    const tagClassName = tags ? "tag-small" : "tag"
+    const tagClassName = tags ? BlogTagClass.BLOG_TAG_SMALL : BlogTagClass.BLOG_TAG
     const randomOffset = tags ? getRandomInt(hexColorsLength - 1) : 0
 
     // sort alphabetically before rendering

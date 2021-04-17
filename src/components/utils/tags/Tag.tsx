@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
+import BlogTagClass from "../../../enums/BlogTagClass"
 import { generateTagURI } from "../../../utils/tags/generateTagURI"
 
 export interface ITagProps {
@@ -21,7 +22,7 @@ export function Tag(props: ITagProps) {
     const link = generateTagURI(tag)
 
     const getStyle = () => {
-        if (tagClassName === "tag-small") {
+        if (tagClassName === BlogTagClass.BLOG_TAG_SMALL) {
             return isHover
             ? { color: hoverBackgroundColor, backgroundColor: defaultColor, borderColor: hoverBackgroundColor }
             : { color: defaultColor, backgroundColor, borderColor: backgroundColor }

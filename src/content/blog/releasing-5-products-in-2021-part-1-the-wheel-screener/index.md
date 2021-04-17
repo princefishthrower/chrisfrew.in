@@ -6,7 +6,7 @@ draft: false
 tags: products,miscellaneous,companies
 ---
 
-import FivePartProductSeries from "../../../components/utils/FivePartProductSeries"
+import FivePartProductSeries from "../../../components/utils/blog-posts/shared/FivePartProductSeries"
 
 <FivePartProductSeries dontLinkURL="/blog/releasing-5-products-in-2021-part-1-the-wheel-screener" isProductPage="true"/>
 

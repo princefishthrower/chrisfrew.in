@@ -43,6 +43,16 @@ class BlogPost extends React.Component {
         //     title: title,
         // }
 
+        const getNextPreviousText = () => {
+            if (previous && next) {
+                return "Next or Previous Post:"
+            }
+            if (previous && !next) {
+                return "Previous Post:"
+            }
+            return "Next Post:"
+        }
+
         return (
             <Layout
                 location={this.props.location}
@@ -101,7 +111,7 @@ class BlogPost extends React.Component {
                     </div>
                 </article>
 
-                <h3>Next / Previous Posts:</h3>
+                <h3>{getNextPreviousText()}</h3>
                 <nav>
                     <div
                         style={{

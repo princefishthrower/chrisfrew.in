@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { BioSharedText } from "./BioSharedText"
 import { SignatureText } from "./SignatureText"
 import { AvatarPicture } from "../../utils/AvatarPicture"
+import { BioLead } from "./BioLead"
 
 export default function Bio() {
     return (
@@ -26,9 +27,7 @@ export default function Bio() {
                     zIndex: 10, // for canvas issue
                 }}
             >
-                <p style={{ textAlign: "center" }}>
-                    <strong>Hi! I'm Chris!</strong>
-                </p>
+                <BioLead/>
                 <BioSharedText/>
                 <p>
                     You can checkout more about my company, SaaS products, and

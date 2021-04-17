@@ -20,7 +20,9 @@ const copyToClipboard = (str: string) => {
     document.body.removeChild(el)
 }
 
-const Wrapper = (props: any) => <div style={{ position: "relative" }} {...props} />
+const Wrapper = (props: any) => (
+    <div style={{ position: "relative" }} {...props} />
+)
 
 const ConfettiWrapper = (props: any) => (
     <div style={{ position: "absolute", top: 0, right: 0 }} {...props} />
@@ -40,7 +42,7 @@ export const Pre = (props: IPreProps) => {
     const { codeString, language, pdfMode } = props
     const [isCopied, setIsCopied] = useState(false)
     const { themeBodyClass } = useContext(ThemeContext)
-    const colors = getThemeColorHexCodes(themeBodyClass);
+    const colors = getThemeColorHexCodes(themeBodyClass)
 
     const confettiConfig = {
         angle: 90,
@@ -53,7 +55,7 @@ export const Pre = (props: IPreProps) => {
         width: "10px",
         height: "10px",
         perspective: "500px",
-        colors
+        colors,
     }
 
     const resolveTheme = () => {
@@ -64,50 +66,65 @@ export const Pre = (props: IPreProps) => {
         // else resolve various themes - TODO: configure
         switch (themeBodyClass) {
             case ThemeBodyClass.DARK_THEME:
-                return dracula;
+                return dracula
             case ThemeBodyClass.OUTRUN_THEME:
-                return okaidia;
+                return okaidia
             case ThemeBodyClass.LIGHT_THEME:
             default:
-                return github;
+                return github
         }
     }
 
-    const dynamicTheme = resolveTheme();
+    const getAddedData = (lineTokens: Array<any>): { isAdded: boolean, shiftCount: number } => {
+        if (lineTokens.length > 0 && lineTokens[0].content === "+") {
+            return { isAdded: true, shiftCount: 1 }
+        }
+        if (lineTokens.length > 1 && lineTokens[0].content === "" && lineTokens[1].content === "+") {
+            return { isAdded: true, shiftCount: 2 }
+        }
+        return { isAdded: false, shiftCount: 0 }
+    }
+
+    const dynamicTheme = resolveTheme()
 
     return (
         <Wrapper>
-            {!pdfMode && <div className="code-copy-button-wrapper">
-                <Button
-                    onClick={() => {
-                        copyToClipboard(codeString)
-                        setIsCopied(true)
-                        setTimeout(() => setIsCopied(false), 3000)
-                    }}
-                >
-                    {isCopied ? (
-                        <div className="gatsby-code-button">
-                            <span role="img" aria-label="confetti">
-                                🎉
-                            </span>{" "}
-                            Copied!
-                        </div>
-                    ) : (
-                        <div className="gatsby-code-button">
-                            <svg
-                                className="gatsby-code-button-icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                            >
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M16 1H2v16h2V3h12V1zm-1 4l6 6v12H6V5h9zm-1 7h5.5L14 6.5V12z"></path>
-                            </svg>
-                        </div>
-                    )}
-                </Button>
-            </div>}
+            {!pdfMode && (
+                <div className="code-copy-button-wrapper">
+                    <Button
+                        onClick={() => {
+                            copyToClipboard(codeString)
+                            setIsCopied(true)
+                            setTimeout(() => setIsCopied(false), 3000)
+                        }}
+                    >
+                        {isCopied ? (
+                            <div className="gatsby-code-button">
+                                <span role="img" aria-label="confetti">
+                                    🎉
+                                </span>{" "}
+                                Copied!
+                            </div>
+                        ) : (
+                            <div className="gatsby-code-button">
+                                <svg
+                                    className="gatsby-code-button-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="none"
+                                        d="M0 0h24v24H0V0z"
+                                    ></path>
+                                    <path d="M16 1H2v16h2V3h12V1zm-1 4l6 6v12H6V5h9zm-1 7h5.5L14 6.5V12z"></path>
+                                </svg>
+                            </div>
+                        )}
+                    </Button>
+                </div>
+            )}
             <Highlight
                 {...defaultProps}
                 code={codeString}
@@ -130,16 +147,28 @@ export const Pre = (props: IPreProps) => {
                             overflowX: "scroll",
                         }}
                     >
-                        {tokens.map((line, i) => (
-                            <div
-                                {...getLineProps({ line, key: i })}
-                                style={style}
-                            >
-                                {line.map((token, key) => (
-                                    <span {...getTokenProps({ token, key })} />
-                                ))}
-                            </div>
-                        ))}
+                        {tokens.map((lineTokens, i) => {
+                            const addedData = getAddedData(lineTokens) ;
+                            const lineClassName = addedData.isAdded ? "code-line-added" : ""
+                            if (addedData.isAdded) {
+                                for (let i = 0; i < addedData.shiftCount; i++) {
+                                    lineTokens.shift()
+                                }
+                            } 
+                            return (
+                                <div
+                                    {...getLineProps({ line: lineTokens, key: i })}
+                                    style={style}
+                                    className={lineClassName}
+                                >
+                                    {lineTokens.map((token, key) => (
+                                        <span
+                                            {...getTokenProps({ token, key })}
+                                        />
+                                    ))}
+                                </div>
+                            )
+                        })}
                     </pre>
                 )}
             </Highlight>
