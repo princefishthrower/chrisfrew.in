@@ -15,7 +15,7 @@ import { javaScriptCode } from '../../../components/utils/blog-posts/import-a-fi
 
 Some readers have may have already explored the <Link to="/snippets">snippets page</Link>, where I've collected key snippets from across all my blog posts in the cleanest form possible. This was heavily inspired by [the snippets page on Josh Comeau's blog](https://www.joshwcomeau.com/snippets/). 
 
-I've added my own flair to my own snippets page: I have snippets from all around the stack, including snippets from languages like C#, Python, and Node.js, and I think the TypeScript / JavaScript toggler I built is particularly cool! Later in this post I'll go through a tutorial on how you can implement your own language toggler.
+I've added my own flair to my snippets page: I have snippets from all around the stack, including snippets from languages like C#, Python, and Node.js, and I think the TypeScript / JavaScript toggler I built is particularly cool! Later in this post, we'll go through a tutorial on how you can implement your own language toggler.
 
 If you check out [the repo for this blog](https://github.com/princefishthrower/chrisfrew.in), you'll see that I have a folder with each snippet actually as a normal code file in it's own language (`.py` for python, `.cs` for C#, `.ts` for TypeScript, and so on). As we'll see by the end of this post, I actually import each of these files as a raw string and then syntax highlight them using the [`prism-react-renderer`](https://github.com/FormidableLabs/prism-react-renderer) library.
 
@@ -98,7 +98,7 @@ I created [a Stack Overflow question for this, which I answered myself](https://
 
 So, with the knowledge we've learned so far in this post, I'll now provide a tutorial of how I actually build those snippet togglers on the <Link to="snippets">snippets page</Link>. 
 
-The name I chose for my snippet toggler is... `SnippetToggler`! Essentially, we will need a label for what we want to call our snippet, the two file labels (one for javascript and one for TypeScript) and then the actual two code sources - which will come from the headache that was the whole `raw-loader` issue.
+The name I chose for my snippet toggler component was... `SnippetToggler`! Essentially, we will need a label for what we want to call our snippet, the two file labels (one for javascript and one for TypeScript) and then the actual two code sources - which will come from the headache that was the whole `raw-loader` issue.
 
 So, let's start with a skeleton of our component, setting up the interface contract for the props we will need:
 
@@ -316,7 +316,7 @@ export function SnippetToggler(props: ISnippetTogglerProps) {
 
 **Nice, we're done! 🎉**
 
-Here's the SCSS I have for the colors and switch used in our `<SnippetToggler/>`, If you're interested:
+Here's the SCSS I have for the colors and switch used in our `<SnippetToggler/>`, if you're interested:
 
 ```scss
 $typeScriptBlue: #2f74c0;
@@ -417,7 +417,7 @@ $darkColor: #191919;
 
 # Working Example
 
-I've put up [a CodeSandbox with the full code referenced](https://codesandbox.io/s/boring-surf-tqtkc) in this blog post if you'd like to take a look and fool around with it yourself. The SCSS is the minimum working example, so of course it won't look _exactly_ like the togglers you see on this blog, but it's pretty close!
+I've put up [a CodeSandbox](https://codesandbox.io/s/boring-surf-tqtkc) with the full code referenced in this blog post if you'd like to take a look and fool around with it yourself. The SCSS is the minimum working example, so of course it won't look _exactly_ like the togglers you see on this blog, but it's pretty close!
 
 Since I'm here in an MDX blog post, I can include the `<SnippetToggler/>` component right in this post! Here's one you can play with, identical to the CodeSandbox one:
 
