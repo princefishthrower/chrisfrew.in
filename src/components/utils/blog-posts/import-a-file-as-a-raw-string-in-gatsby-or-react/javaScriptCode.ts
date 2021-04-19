@@ -11,5 +11,4 @@ export const useDidMount = () => {
   }, [])
 
   return didMount
-}
-`
+}`

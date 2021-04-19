@@ -2,15 +2,15 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import * as React from "react"
 import { useContext } from "react"
 import { ThemeContext } from "../../../context/theme/ThemeContext"
-import { getThemeColorHexCodes } from "../../../utils/getThemeColorHexCodes"
-import Sparkles from "../../utils/Sparkles"
 import { Tag } from "../../utils/tags/Tag"
-import { TagRenderer } from "../../utils/tags/TagRenderer"
 import { getUniqueTagsFromEdges } from "../../../utils/tags/getUniqueTagsFromEdges"
 import { getTagDataFromEdges } from "../../../utils/tags/getTagDataFromEdges"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import { getActiveTheme } from "../../../utils/getActiveTheme"
 import BlogTagClass from "../../../enums/BlogTagClass"
+import { StatTile } from "./StatTile"
+import { getDaysLeftInYear } from "../../../utils/getDaysLeftInYear"
+import Sparkles from "../../utils/Sparkles"
 
 export function Stats() {
     const data = useStaticQuery(graphql`
@@ -61,9 +61,9 @@ export function Stats() {
     }
 
     // some calculations and manipulations on the post tags
-    const uniqueTags = getUniqueTagsFromEdges(posts);
-    const uniqueTagData = getTagDataFromEdges(posts);
-    
+    const uniqueTags = getUniqueTagsFromEdges(posts)
+    const uniqueTagData = getTagDataFromEdges(posts)
+
     const tagDataByCount = uniqueTagData.sort((a, b) => {
         if (b.count > a.count) {
             return 1
@@ -74,91 +74,109 @@ export function Stats() {
         return 0
     })
 
-    
+    const postsLeft = (30 - yearData.find(x => x.year === 2021)?.count)
+    const hundredPostChallenge =  Math.round(getDaysLeftInYear() / postsLeft);
 
     return (
         <>
-            <ColoredTitle title="📊 Blog Stats"/>
+            <ColoredTitle title="📊 Blog Stats" />
             <p>
                 These stats are generated at build time through GraphQL queries,
                 so you can be sure they are up to date!
             </p>
-            <h2>General Stats</h2>
-            <p>
-                <Link to={firstPost.node.fields.slug}>First post</Link> publish
-                date: <b>{firstPublishDate.toLocaleDateString()}</b>
-            </p>
-            <p>
-                <Link to={newestPost.node.fields.slug}>Most recent post</Link>{" "}
-                publish date:{" "}
-                <b>{mostRecentPublishDate.toLocaleDateString()}</b>
-            </p>
-            <>
-                {yearData.map((x) => {
-                    if (x.year !== currentYear) {
-                        return (
-                            <p key={x.year}>
-                                Number of posts created in {x.year}:{" "}
-                                <b>{x.count}</b>
-                            </p>
-                        )
+            <div className="stat-tile-container">
+                
+                <StatTile
+                    stat={mostRecentPublishDate.toLocaleDateString()}
+                    label={
+                        <>
+                            <Link to={newestPost.node.fields.slug}>
+                                Most recent post
+                            </Link>{" "}
+                            publish date
+                        </>
                     }
+                />
+                <StatTile
+                    stat={firstPublishDate.toLocaleDateString()}
+                    label={
+                        <>
+                            <Link to={firstPost.node.fields.slug}>
+                                First post
+                            </Link>{" "}
+                            publish date
+                        </>
+                    }
+                />
+                <>
+                    {yearData.map((x) => {
+                        if (x.year !== currentYear) {
+                            return (
+                                <StatTile
+                                    stat={x.count}
+                                    label={`Posts created in ${x.year}`}
+                                />
+                            )
+                        }
+                        return (
+                            <StatTile
+                                stat={x.count}
+                                label={`Posts created in ${x.year} (and
+                                        counting - the year's not over yet!)`}
+                            />
+                        )
+                    })}
+                </>
+                <StatTile stat={totalPosts} label="Total Posts" />
+                <StatTile
+                    stat={uniqueTags.length}
+                    label="Unique Tags"
+                />
+                <StatTile
+                    stat={hundredPostChallenge}
+                    label={<>Uh oh! Days that Chris has per post for the <Link to="one-hundred-posts-challenge"><Sparkles>One Hundred Posts Challenge!</Sparkles></Link></>}
+                />
+                <StatTile
+                    stat={postsLeft}
+                    label={<>Posts of the <Sparkles>30</Sparkles> that Chris still needs to write for the <Link to="one-hundred-posts-challenge"><Sparkles>One Hundred Posts Challenge!</Sparkles></Link></>}
+                />
+                {/* <TagRenderer linkToTagPage={true} /> */}
+                {tagDataByCount.map((x, index) => {
+                    const nextIndex = index + 1
                     return (
-                        <p key={x.year}>
-                            Number of posts created in {x.year}:{" "}
-                            <b>
-                                {x.count} (and counting - the year's not over
-                                yet!)
-                            </b>
-                        </p>
+                        <StatTile
+                            stat={x.count}
+                            label={
+                                <>
+                                    <p>Posts tagged with</p>
+                                    <Tag
+                                        tag={x.label}
+                                        linkToTagPage={true}
+                                        backgroundColor={
+                                            activeTheme.themeColorHexCodes[
+                                                ((index % hexColorsLength) +
+                                                    hexColorsLength) %
+                                                    hexColorsLength
+                                            ]
+                                        }
+                                        hoverBackgroundColor={
+                                            activeTheme.themeColorHexCodes[
+                                                ((nextIndex % hexColorsLength) +
+                                                    hexColorsLength) %
+                                                    hexColorsLength
+                                            ]
+                                        }
+                                        defaultColor={
+                                            activeTheme.defaultHexColor
+                                        }
+                                        tagClassName={BlogTagClass.BLOG_TAG}
+                                    />
+                                </>
+                            }
+                        />
                     )
                 })}
-            </>
-            <p>
-                Total Number of Posts:{" "}
-                <span style={{ fontSize: "2rem", letterSpacing: "0.1rem" }}>
-                    <Sparkles>{totalPosts}</Sparkles>
-                </span>
-            </p>
-
-            {/* TODO: ADD TAGS AND SEARCH AND FILTER */}
-            <h2>Tag Stats</h2>
-            <p>
-                Unique tags:{" "}
-                <span style={{ fontSize: "2rem", letterSpacing: "0.1rem" }}>
-                    <Sparkles>{uniqueTags.length}</Sparkles>
-                </span>
-            </p>
-            <TagRenderer linkToTagPage={true}/>
-            {tagDataByCount.map((x, index) => {
-                const nextIndex = index + 1
-                return (
-                    <p>
-                        Number of posts tagged with{" "}
-                        <Tag
-                            tag={x.label}
-                            linkToTagPage={true}
-                            backgroundColor={
-                                activeTheme.themeColorHexCodes[
-                                    ((index % hexColorsLength) +
-                                        hexColorsLength) %
-                                        hexColorsLength
-                                ]
-                            }
-                            hoverBackgroundColor={
-                                activeTheme.themeColorHexCodes[
-                                    ((nextIndex % hexColorsLength) +
-                                        hexColorsLength) %
-                                        hexColorsLength
-                                ]
-                            }
-                            defaultColor={activeTheme.defaultHexColor}
-                            tagClassName={BlogTagClass.BLOG_TAG}
-                        />
-                        : {x.count}
-                    </p>
-                )
-            })}
+            </div>
         </>
     )
 }

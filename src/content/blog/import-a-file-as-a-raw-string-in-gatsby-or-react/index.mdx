@@ -1,15 +1,15 @@
 ---
-title: Import a File as a Raw String in Gatsby or React 
+title: Import a File as a Raw String in Gatsby or React
 description: "...and how to create advanced code snippets with Gatsby or React!"
 date: "2021-04-17"
 draft: false
 tags: Gatsby,React,Webpack,TypeScript
 ---
 
-import { Link } from 'gatsby'
-import { SnippetToggler } from '../../../components/pages/snippets/SnippetToggler'
-import { typeScriptCode } from '../../../components/utils/blog-posts/import-a-file-as-a-raw-string-in-gatsby-or-react/typeScriptCode'
-import { javaScriptCode } from '../../../components/utils/blog-posts/import-a-file-as-a-raw-string-in-gatsby-or-react/javaScriptCode'
+import { Link } from "gatsby"
+import { SnippetToggler } from "../../../components/pages/snippets/SnippetToggler"
+import { typeScriptCode } from "../../../components/utils/blog-posts/import-a-file-as-a-raw-string-in-gatsby-or-react/typeScriptCode"
+import { javaScriptCode } from "../../../components/utils/blog-posts/import-a-file-as-a-raw-string-in-gatsby-or-react/javaScriptCode"
 
 # Right to the Example
 
@@ -17,7 +17,7 @@ The [fully working CodeSandbox is here](https://codesandbox.io/s/boring-surf-tqt
 
 # Why Did I Need to Import Files as a Raw String?
 
-Some readers have may have already explored the <Link to="/snippets">snippets page</Link>, where I've collected key snippets from across all my blog posts in the cleanest form possible. This was heavily inspired by [the snippets page on Josh Comeau's blog](https://www.joshwcomeau.com/snippets/). 
+Some readers have may have already explored the <Link to="/snippets">snippets page</Link>, where I've collected key snippets from across all my blog posts in the cleanest form possible. This was heavily inspired by [the snippets page on Josh Comeau's blog](https://www.joshwcomeau.com/snippets/).
 
 I've added my own flair to my snippets page: I have snippets from all around the stack, including snippets from languages like C#, Python, and Node.js, and I think the TypeScript / JavaScript toggler I built is particularly cool! Later in this post, we'll go through a tutorial on how you can implement your own language toggler.
 
@@ -25,19 +25,19 @@ If you check out [the repo for this blog](https://github.com/princefishthrower/c
 
 # Walkthrough of My First (Failed) Attempt
 
-As a walkthrough, let's assume we want to just render a single snippet, which will be a React hook, just a normal ol' TypeScript file (`.ts` extension), `useDidMount.ts`. The actual code of the hook itself is the following: 
+As a walkthrough, let's assume we want to just render a single snippet, which will be a React hook, just a normal ol' TypeScript file (`.ts` extension), `useDidMount.ts`. The actual code of the hook itself is the following:
 
 ```ts
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
 export const useDidMount = (): boolean => {
-  const [didMount, setDidMount] = useState<boolean>(false)
+    const [didMount, setDidMount] = useState<boolean>(false)
 
-  useEffect(() => {
-    setDidMount(true)
-  }, [])
+    useEffect(() => {
+        setDidMount(true)
+    }, [])
 
-  return didMount
+    return didMount
 }
 ```
 
@@ -45,7 +45,7 @@ To try to render this file on my blog here, I tried first naïvely to import the
 
 ```tsx
 import * as React from "react"
-import { useDidMount } from '../snippets/useDidMount';
+import { useDidMount } from "../snippets/useDidMount"
 
 const ExampleComponent = () => {
     return (
@@ -65,22 +65,22 @@ The result of this component ends up looking like this if you were actually to s
 
 Yeah... the original source code of the snippet has been transformed and become all Webpack-y. Not useful at all for the developer visiting the site who wants the clean snippet code!
 
-So it's clear that we can't use the standard `import` method to import our code snippets for rendering. 
+So it's clear that we can't use the standard `import` method to import our code snippets for rendering.
 
 **We need to import them as raw strings.**
 
 # The Solution
 
-The solution was more challenging to find than I thought. There _is_ a package, [gatsby-remark-embed-snippet](https://www.gatsbyjs.com/plugins/gatsby-remark-embed-snippet/), which helps you embed code snippets from a file in Gatsby, but that is a remark plugin intended only for use in markdown (or MDX) files, and anyway as of writing this, that package's dependencies were not yet upgraded to be compatible with Gatsby V3, which my blog is using. My snippets page is _not_ an `.md` or `.mdx` file; it's a typescript react component, in a `.tsx` file, and I didn't want to refactor the entire page to `.md` or `.mdx`. 
+The solution was more challenging to find than I thought. There _is_ a package, [gatsby-remark-embed-snippet](https://www.gatsbyjs.com/plugins/gatsby-remark-embed-snippet/), which helps you embed code snippets from a file in Gatsby, but that is a remark plugin intended only for use in markdown (or MDX) files, and anyway as of writing this, that package's dependencies were not yet upgraded to be compatible with Gatsby V3, which my blog is using. My snippets page is _not_ an `.md` or `.mdx` file; it's a typescript react component, in a `.tsx` file, and I didn't want to refactor the entire page to `.md` or `.mdx`.
 
 So, with some searching, I first found [this Stackoverflow post about importing a CSS file in a raw fashion](https://stackoverflow.com/questions/55205774/how-to-import-a-css-file-in-a-react-component-as-raw-text), as the original poster was creating a WYSIWYG editor, and wanted to render the CSS exactly as it was written in the editor. In that post, I found the answer:
 
-**You need to use `require` with Webpack's `raw-loader` to import files as a raw string!** 
+**You need to use `require` with Webpack's `raw-loader` to import files as a raw string!**
 
 Following the `useDidMount` example we've been using, that would be:
 
 ```typescript
-const useDidMount = require("!!raw-loader!./useDidMount");
+const useDidMount = require("!!raw-loader!./useDidMount")
 ```
 
 We can then render this variable using `useDidMount.default.toString()`, for example in a `<pre>` tag:
@@ -100,7 +100,7 @@ I created [a Stack Overflow question for this, which I answered myself](https://
 
 ## The Fun Part: How I make those fancy TypeScript / JavaScript Togglers on the Snippets Page!
 
-So, with the knowledge we've learned so far in this post, I'll now provide a tutorial of how I actually build those snippet togglers on the <Link to="snippets">snippets page</Link>. 
+So, with the knowledge we've learned so far in this post, I'll now provide a tutorial of how I actually build those snippet togglers on the <Link to="snippets">snippets page</Link>.
 
 The name I chose for my snippet toggler component was... `SnippetToggler`! Essentially, we will need a label for what we want to call our snippet, the two file labels (one for javascript and one for TypeScript) and then the actual two code sources - which will come from the headache that was the whole `raw-loader` issue.
 
@@ -115,7 +115,7 @@ export interface ISnippetTogglerProps {
 }
 
 export function SnippetToggler(props: ISnippetTogglerProps) {
-  return <></>
+    return <></>
 }
 ```
 
@@ -216,50 +216,50 @@ export function SnippetToggler(props: ISnippetTogglerProps) {
 where the `<Pre/>` component is yet another react component (it's rather involved due to the fact that we need javascript based, not markdown based syntax highlighting - here I've left out various parts of my own `<Pre/>` component, like a copy button and showing confetti when it is clicked. I've also fixed the syntax highlighting theme as `github`, but there are many other themes to choose from. See [my `<Pre/>` component on the repository to explore the full one](https://github.com/princefishthrower/chrisfrew.in/blob/master/src/components/CodeCopyButton/Pre.tsx).
 
 ```tsx
-import React from "react";
-import Highlight, { defaultProps, Language } from "prism-react-renderer";
-import github from "prism-react-renderer/themes/github";
+import React from "react"
+import Highlight, { defaultProps, Language } from "prism-react-renderer"
+import github from "prism-react-renderer/themes/github"
 
 export interface IPreProps {
-  codeString: string;
-  language: Language;
+    codeString: string
+    language: Language
 }
 
 export const Pre = (props: IPreProps) => {
-  const { codeString, language } = props;
+    const { codeString, language } = props
 
-  return (
-    <Highlight
-      {...defaultProps}
-      code={codeString}
-      language={language}
-      theme={github}
-    >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre
-          className={className}
-          style={{
-            ...style,
-            padding: "2rem",
-            position: "relative",
-            overflowX: "scroll"
-          }}
+    return (
+        <Highlight
+            {...defaultProps}
+            code={codeString}
+            language={language}
+            theme={github}
         >
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })} style={style}>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </pre>
-      )}
-    </Highlight>
-  );
-};
+            {({ className, style, tokens, getLineProps, getTokenProps }) => (
+                <pre
+                    className={className}
+                    style={{
+                        ...style,
+                        padding: "2rem",
+                        position: "relative",
+                        overflowX: "scroll",
+                    }}
+                >
+                    {tokens.map((line, i) => (
+                        <div {...getLineProps({ line, key: i })} style={style}>
+                            {line.map((token, key) => (
+                                <span {...getTokenProps({ token, key })} />
+                            ))}
+                        </div>
+                    ))}
+                </pre>
+            )}
+        </Highlight>
+    )
+}
 ```
 
-Returning to our `<SnippetToggler/>` component, we can get to the `return` statement, adding in the actual switch component, and use the state variable `showJavaScript` to determine which of those `const` variables to render. 
+Returning to our `<SnippetToggler/>` component, we can get to the `return` statement, adding in the actual switch component, and use the state variable `showJavaScript` to determine which of those `const` variables to render.
 
 **We've arrived at the final version of our SnippetToggler component:**
 
@@ -337,8 +337,8 @@ $darkColor: #191919;
     height: $height;
 
     & .switch-text {
-      margin-top: 1rem;
-      display: block;
+        margin-top: 1rem;
+        display: block;
     }
 
     & input {
@@ -427,20 +427,29 @@ Since I'm here in an MDX blog post, I can include the `<SnippetToggler/>` compon
 
 <SnippetToggler
     snippetLabel="useDidMount()"
-    fileLabels={["useDidMount.ts", "useDidMount.js"]}
-    typeScriptCode={typeScriptCode}
-    javaScriptCode={javaScriptCode}
+    snippetInfos={[
+        {
+            fileLabel: "useDidMount.ts",
+            code: typeScriptCode,
+            language: "typescript",
+        },
+        {
+            fileLabel: "useDidMount.js",
+            code: javaScriptCode,
+            language: "javascript",
+        },
+    ]}
     pdfMode={false}
 />
 
-Pretty neat, right!? 
+Pretty neat, right!?
 
-I still have future work planned for this component. Some ideas: 
+I still have future work planned for this component. Some ideas:
 
-- `context` prop, where I can reference what blog post or posts that I've used or shown the snippet
-- `description` prop that gives a brief overview of what the snippet does
-- `usage` prop that shows the function being called in some realistic looking context 
-- `id` prop, so I can link to specific snippets, as I expect <Link to="snippets">the snippets page</Link> to get quite long
+-   `context` prop, where I can reference what blog post or posts that I've used or shown the snippet
+-   `description` prop that gives a brief overview of what the snippet does
+-   `usage` prop that shows the function being called in some realistic looking context
+-   `id` prop, so I can link to specific snippets, as I expect <Link to="snippets">the snippets page</Link> to get quite long
 
 # Thanks!
 
