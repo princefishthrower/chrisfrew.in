@@ -12,17 +12,24 @@ import { SnippetToggler } from "./SnippetToggler"
 // special raw-loader requires - pulls in file as string
 const useDidMountTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useDidMount.ts")
 const useDidMountJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/hooks/useDidMount.js")
+const useDidMountUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useDidMountUsage.tsx")
 
 const sendSlackMessageFrontendTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageFrontendJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/sendSlackMessage.js")
-
 const sendSlackMessageBackendTS = require("!!raw-loader!../../../content/snippets/backend/node/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageBackendJS = require("!!raw-loader!../../../content/snippets/backend/node/javascript/utils/sendSlackMessage.js")
+const sendSlackMessageUsage = require("!!raw-loader!../../../content/snippets/usage/shared/sendSlackMessageUsage.ts")
+
+const sendSlackMessageBash = require("!!raw-loader!../../../content/snippets/devops/bash/sendSlackMessage.sh")
+const sendSlackMessageUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/sendSlackMessageUsage.sh")
 
 const patchFiltererService = require("!!raw-loader!../../../content/snippets/backend/csharp/dotnet/utils/PatchFiltererService.cs")
+const patchFiltererServiceUsage = require("!!raw-loader!../../../content/snippets/usage/backend/csharp/dotnet/utils/PatchFiltererServiceUsage.cs")
 
 const buildColorPromptBash = require("!!raw-loader!../../../content/snippets/devops/bash/buildColorPrompt.sh")
+const buildColorPromptUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/buildColorPromptUsage.sh")
 const buildColorPromptZsh = require("!!raw-loader!../../../content/snippets/devops/zsh/buildColorPrompt.sh")
+const buildColorPromptUsageZsh = require("!!raw-loader!../../../content/snippets/usage/devops/zsh/buildColorPromptUsage.sh")
 
 export interface ISnippetsProps {
     pdfMode: boolean
@@ -38,7 +45,7 @@ export function Snippets(props: ISnippetsProps) {
     const titleComponent = pdfMode ? (
         <h1 className="cooper big">{title}</h1>
     ) : (
-        <ColoredTitle title={title}/>
+        <ColoredTitle title={title} />
     )
     return (
         <>
@@ -69,33 +76,64 @@ export function Snippets(props: ISnippetsProps) {
                     </p>
                 </>
             )}
-            {languageFilter === URLSearchParamValue.ALL && <h2>Client</h2>}
+            {languageFilter === URLSearchParamValue.ALL && <h2><u>Client</u></h2>}
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.TYPESCRIPT ||
                 languageFilter === URLSearchParamValue.JAVASCRIPT) && (
                 <>
                     <SnippetToggler
                         snippetLabel="useDidMount()"
-                        fileLabels={["useDidMount.ts", "useDidMount.js"]}
-                        typeScriptCode={useDidMountTS.default.toString()}
-                        javaScriptCode={useDidMountJS.default.toString()}
+                        snippetDescription="Tiny hook to know when a React component has mounted."
+                        seenInPosts={[
+                            {
+                                title: "Let's Build a Snazzy Animated Sticky Footer For GDPR Compliance!",
+                                slug: "/blog/lets-build-a-sticky-footer-for-gdpr-compliance"
+                            }
+                        ]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "useDidMount.ts",
+                                code: useDidMountTS.default.toString(),
+                                usageCode: useDidMountUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "useDidMount.js",
+                                code: useDidMountJS.default.toString(),
+                                usageCode: useDidMountUsage.default.toString(),
+                                language: "javascript",
+                            },
+                        ]}
                         pdfMode={pdfMode}
                         languageFilter={languageFilter}
                     />
                     <SnippetToggler
                         snippetLabel="sendSlackMessage()"
-                        fileLabels={[
-                            "sendSlackMessage.ts",
-                            "sendSlackMessage.js",
+                        snippetDescription="Leverages the fetch API to post a slack message to your Slack webhook with a one-liner."
+                        seenInPosts={[{
+                            title: "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+                            slug: "/blog/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot"
+                        }]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "sendSlackMessage.ts",
+                                code: sendSlackMessageFrontendTS.default.toString(),
+                                usageCode: sendSlackMessageUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "sendSlackMessage.js",
+                                code: sendSlackMessageFrontendJS.default.toString(),
+                                usageCode: sendSlackMessageUsage.default.toString(),
+                                language: "javascript",
+                            },
                         ]}
-                        typeScriptCode={sendSlackMessageFrontendTS.default.toString()}
-                        javaScriptCode={sendSlackMessageFrontendJS.default.toString()}
                         pdfMode={pdfMode}
                         languageFilter={languageFilter}
                     />
                 </>
             )}
-            {languageFilter === URLSearchParamValue.ALL && <h2>Backend</h2>}
+            {languageFilter === URLSearchParamValue.ALL && <h2><u>Backend</u></h2>}
             {languageFilter === URLSearchParamValue.ALL && (
                 <h3>JavaScript (Node.js)</h3>
             )}
@@ -103,41 +141,104 @@ export function Snippets(props: ISnippetsProps) {
                 languageFilter === URLSearchParamValue.NODE) && (
                 <SnippetToggler
                     snippetLabel="sendSlackMessage()"
-                    fileLabels={["sendSlackMessage.ts", "sendSlackMessage.js"]}
-                    typeScriptCode={sendSlackMessageBackendTS.default.toString()}
-                    javaScriptCode={sendSlackMessageBackendJS.default.toString()}
+                    snippetDescription="A Node.js compatible (using node-fetch) function that lets you send a Slack message with a one-liner."
+                    seenInPosts={[{
+                        title: "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
+                        slug: "/blog/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot"
+                    }]}
+                    snippetInfos={[
+                        {
+                            fileLabel: "sendSlackMessage.ts",
+                            code: sendSlackMessageBackendTS.default.toString(),
+                            usageCode: sendSlackMessageUsage.default.toString(),
+                            language: "typescript",
+                        },
+                        {
+                            fileLabel: "sendSlackMessage.js",
+                            code: sendSlackMessageBackendJS.default.toString(),
+                            usageCode: sendSlackMessageUsage.default.toString(),
+                            language: "javascript",
+                        },
+                    ]}
                     pdfMode={pdfMode}
                 />
             )}
-            {languageFilter === URLSearchParamValue.ALL && <h3>C#</h3>}
+            {languageFilter === URLSearchParamValue.ALL && <h3><u>C#</u></h3>}
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.CSHARP) && (
                 <SnippetToggler
                     snippetLabel="PatchFiltererService"
-                    fileLabels={["PatchFiltererService.cs"]}
-                    otherCode={patchFiltererService.default.toString()}
-                    otherLanguage="csharp"
+                    snippetDescription="Filter out unwanted properties from your models on the server side in .NET."
+                    seenInPosts={[{
+                        title: "C# .NET Core and TypeScript: Using Generics and LINQ to Secure and Filter Operations on Your JSONPatchDocuments",
+                        slug: "/blog/filtering-json-patch-in-c-sharp"
+                    }]}
+                    snippetInfos={[
+                        {
+                            fileLabel: "PatchFiltererService.cs",
+                            code: patchFiltererService.default.toString(),
+                            usageCode: patchFiltererServiceUsage.default.toString(),
+                            language: "csharp",
+                        },
+                    ]}
                     pdfMode={pdfMode}
                 />
             )}
-            {languageFilter === URLSearchParamValue.ALL && <h2>Devops</h2>}
+            {languageFilter === URLSearchParamValue.ALL && <h2><u>Devops</u></h2>}
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.SHELL) && (
                 <>
                     <h3>Bash</h3>
                     <SnippetToggler
                         snippetLabel="buildColorPrompt()"
-                        fileLabels={["buildColorPrompt.sh"]}
-                        otherCode={buildColorPromptBash.default.toString()}
-                        otherLanguage="bash"
+                        snippetDescription="Letter-level color changes for your bash prompt!"
+                        seenInPosts={[{
+                            title: "Awesome Colors for Shell Prompts!",
+                            slug: "/blog/awesome-colors-for-shell-prompts"
+                        }]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "buildColorPrompt.sh",
+                                code: buildColorPromptBash.default.toString(),
+                                usageCode: buildColorPromptUsageBash.default.toString(),
+                                language: "bash",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                    />
+                    <SnippetToggler
+                        snippetLabel="sendSlackMessage()"
+                        snippetDescription="Util function to send a Slack message from bash."
+                        seenInPosts={[{
+                            title: "The Last Bitbucket Pipelines Tutorial You'll Ever Need: Mastering CI and CD",
+                            slug: "/blog/mastering-bitbucket-pipelines-for-ci-and-cd"
+                        }]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "sendSlackMessage.sh",
+                                code: sendSlackMessageBash.default.toString(),
+                                usageCode: sendSlackMessageUsageBash.default.toString(),
+                                language: "bash",
+                            },
+                        ]}
                         pdfMode={pdfMode}
                     />
                     <h3>zsh</h3>
                     <SnippetToggler
                         snippetLabel="buildColorPrompt()"
-                        fileLabels={["buildColorPrompt.sh"]}
-                        otherCode={buildColorPromptZsh.default.toString()}
-                        otherLanguage="bash"
+                        snippetDescription="Letter-level color changes for your zsh prompt!"
+                        seenInPosts={[{
+                            title: "Awesome Colors for Shell Prompts!",
+                            slug: "/blog/awesome-colors-for-shell-prompts"
+                        }]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "buildColorPrompt.sh",
+                                code: buildColorPromptZsh.default.toString(),
+                                usageCode: buildColorPromptUsageZsh.default.toString(),
+                                language: "bash",
+                            },
+                        ]}
                         pdfMode={pdfMode}
                     />
                 </>

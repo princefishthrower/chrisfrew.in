@@ -6,6 +6,9 @@
     border: $borderThickness dashed;
     padding: 0.5rem;
     box-sizing: border-box;
+    h3 {
+        margin: 0
+    }
 }
 
 .dark-theme .pre-footer {

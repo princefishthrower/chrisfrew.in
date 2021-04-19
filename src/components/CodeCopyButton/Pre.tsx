@@ -34,7 +34,7 @@ const Button = (props: any) => (
 
 export interface IPreProps {
     codeString: string
-    language: Language
+    language: Language | "csharp"
     pdfMode?: boolean
 }
 

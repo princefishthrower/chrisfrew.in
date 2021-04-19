@@ -34,8 +34,8 @@ class BlogPost extends React.Component {
         const siteTitle = this.props.data.site.siteMetadata.title
         const description = this.props.data.site.siteMetadata.description
         const { previous, next } = this.props.pageContext
-        const tags = post.frontmatter.tags.split(",").map(x => sanitizeTag(x))
-    
+        const tags = post.frontmatter.tags.split(",").map((x) => sanitizeTag(x))
+
         // const disqusConfig = {
         //     url: `${this.props.data.site.siteMetadata.siteUrl +
         //         this.props.location.pathname}`,
@@ -65,10 +65,7 @@ class BlogPost extends React.Component {
                 />
                 <article>
                     <header>
-                        <h1
-                        >
-                            {title}
-                        </h1>
+                        <h1>{title}</h1>
                         {postDescription && (
                             <p
                                 className="monokaiRedFont"
@@ -94,11 +91,11 @@ class BlogPost extends React.Component {
                             style={{
                                 display: `block`,
                                 marginBottom: `1rem`,
-                                
                             }}
                         >
-                            <i>Tags: </i><TagRenderer linkToTagPage={true} tags={tags}/></p>
-                        
+                            <i>Tags: </i>
+                            <TagRenderer linkToTagPage={true} tags={tags} />
+                        </p>
                     </header>
                     <MDXRenderer>{post.body}</MDXRenderer>
                     {/* <Disqus config={disqusConfig} /> */}
@@ -168,6 +165,8 @@ class BlogPost extends React.Component {
                         )}
                     </div>
                 </nav>
+                <h3>Or find more posts by tag:</h3>
+                <TagRenderer linkToTagPage={true} />
             </Layout>
         )
     }

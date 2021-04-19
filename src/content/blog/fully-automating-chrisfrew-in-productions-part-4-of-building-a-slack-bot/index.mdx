@@ -7,6 +7,10 @@ starID: 23
 tags: automation,slack
 ---
 
+import { SnippetToggler } from '../../../components/pages/snippets/SnippetToggler'
+import { sendSlackMessageTS } from '../../../components/utils/blog-posts/fully-automating-chrisfrew-in-productions-part-4/sendSlackMessageTS'
+import { sendSlackMessageJS } from '../../../components/utils/blog-posts/fully-automating-chrisfrew-in-productions-part-4/sendSlackMessageJS'
+
 ## Slack Bot!
 
 You may have read [Part 3](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-3-of-github-webhook-monitor/) of [my giant automation undertaking](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-1-of-roadmap-and-links-to-process/) about. Maybe not.
@@ -35,6 +39,27 @@ axios.post(process.env.CHRISFREW_IN_SLACK_BOT_WEBHOOK_URL, {
   text: "Hello Word"
 });
 ```
+
+EDIT: time warp all the way to 2021!
+
+I no longer use the `axios` API, since the `fetch` API is supported nearly everywhere now. That snippet above can be ported to TypeScript or JavaScript like so:
+
+<SnippetToggler
+    snippetLabel="sendSlackMessage()"
+    snippetInfos={[
+        {
+            fileLabel: "sendSlackMessage.ts",
+            code: sendSlackMessageTS,
+            language: "typescript",
+        },
+        {
+            fileLabel: "sendSlackMessage.js",
+            code: sendSlackMessageJS,
+            language: "javascript",
+        },
+    ]}
+    pdfMode={false}
+/>
 
 ## Step 3: Just kidding, there is no step 3!
 

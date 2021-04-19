@@ -128,20 +128,58 @@ $height: 27px;
     }
 }
 
-.switch.typescript {
-    & .switch-text {
-        color: $typeScriptBlue;
+.dark-theme {
+    .switch.typescript {
+        & .switch-text {
+            color: $monokaiBlueDarkMode;
+        }
+        & .slider {
+            background-color: $monokaiBlueDarkMode;
+        }
     }
-    & .slider {
-        background-color: $typeScriptBlue;
+    .switch.javascript {
+        & .switch-text {
+            color: $javaScriptYellow;
+        }
+        & input:checked + .slider {
+            background-color: $javaScriptYellow;
+        }
     }
 }
 
-.switch.javascript {
-    & .switch-text {
-        color: $javaScriptYellow;
+.light-theme {
+    .switch.typescript {
+        & .switch-text {
+            color: $typeScriptBlue;
+        }
+        & .slider {
+            background-color: $typeScriptBlue;
+        }
     }
-    & input:checked + .slider {
-        background-color: $javaScriptYellow;
+    .switch.javascript {
+        & .switch-text {
+            color: $monokaiYellowLightMode;
+        }
+        & input:checked + .slider {
+            background-color: $monokaiYellowLightMode;
+        }
+    }
+}
+.outrun-theme {
+    .switch.typescript {
+        & .switch-text {
+            color: $typeScriptBlue;
+        }
+        & .slider {
+            background-color: $typeScriptBlue;
+        }
+    }
+    .switch.javascript {
+        & .switch-text {
+            color: $javaScriptYellow;
+        }
+        & input:checked + .slider {
+            background-color: $javaScriptYellow;
+        }
     }
 }

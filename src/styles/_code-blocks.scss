@@ -28,7 +28,7 @@
     }
 
     code.typescript {
-        color: $typeScriptBlue !important;
+        color: $monokaiBlueDarkMode !important;
     }
 
     code.javascript {
@@ -43,5 +43,13 @@
 .light-theme, .black-white-theme {
     span.token.delimiter.important {
         font-weight: bold !important;
+    }
+
+    code.typescript {
+        color: $typeScriptBlue !important;
+    }
+
+    code.javascript {
+        color: $monokaiYellowLightMode !important;
     }
 }
