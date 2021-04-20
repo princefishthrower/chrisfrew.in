@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import Constants from "../../../../constants/Constants"
 import Sparkles from "../../Sparkles"
 
 export interface ILinkPreviewProps {
@@ -34,7 +35,7 @@ export default function LinkPreview(props: ILinkPreviewProps) {
     const fetchSiteData = async () => {
         try {
             const response = await fetch(
-                `${process.env.GATSBY_CHRISFREW_IN_API_URL}/LinkPreview?url=${url}`
+                `${Constants.CHRISFREW_IN_API_URL}/LinkPreview?url=${url}`
             )
             const data = await response.json()
             setPreview({ ...data, isLoading: false })

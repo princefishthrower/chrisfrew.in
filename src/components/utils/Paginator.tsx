@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import shared from "../../constants/shared.json"
 
 const Paginator = () => {
     const data = useStaticQuery(graphql`
@@ -26,11 +27,10 @@ const Paginator = () => {
 
     const posts = data.allMdx.edges
     const postCount = posts.length
-    const postsPerPageInt = parseInt(process.env.GATSBY_POSTS_PER_PAGE)
     let paginations = []
     let pageCount = 1
     if (typeof window !== "undefined") {
-        for (let i = 1; i < postCount; i += postsPerPageInt) {
+        for (let i = 1; i < postCount; i += shared.POSTS_PER_PAGE) {
             let isActive = false
             let pathName
             if (i !== 1) {
@@ -61,6 +61,7 @@ const Paginator = () => {
             pageCount = pageCount + 1
         }
     }
+    
     return (
         <div style={{ marginTop: "2rem" }}>
             <h3>More posts:</h3>
