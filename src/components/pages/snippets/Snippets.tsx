@@ -43,7 +43,10 @@ export function Snippets(props: ISnippetsProps) {
         ? useSearchParam(URLSearchParamKey.LANGUAGE_FILTER)
         : URLSearchParamValue.ALL
     const titleComponent = pdfMode ? (
+        <>
         <h1 className="cooper big">{title}</h1>
+        <p>From <a href="https://chrisfrew.in">Chris' Full Stack Blog</a>.</p>
+        </>
     ) : (
         <ColoredTitle title={title} />
     )

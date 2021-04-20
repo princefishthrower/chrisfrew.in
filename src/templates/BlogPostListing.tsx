@@ -7,7 +7,6 @@ import Paginator from "../components/utils/Paginator"
 import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { useContext } from "react"
 import { SearchContext } from "../context/search/SearchContext"
-import shared from "../constants/shared.json"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 

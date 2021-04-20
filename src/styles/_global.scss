@@ -52,10 +52,6 @@ code {
     transition: 0.4s !important;
 }
 
-pre {
-    overflow-x: auto !important;
-}
-
 th:first-child,
 td:first-child {
     padding-left: 1rem;
@@ -125,6 +121,10 @@ pre[class*="language-"] > code {
     pre .code-line-added {
             background-color: $codeLineAddedBlackWhiteMode !important;
     }
+}
+
+pre .code-line-pdf-mode {
+    white-space: pre-wrap;
 }
 
 a {
