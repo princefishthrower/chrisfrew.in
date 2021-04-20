@@ -32,8 +32,35 @@ export function Stats() {
                     }
                 }
             }
+            allGithubData {
+                edges {
+                    node {
+                        id
+                        rawResult {
+                            data {
+                                repository {
+                                    object {
+                                        history {
+                                            edges {
+                                                node {
+                                                    commitUrl
+                                                    committedDate
+                                                }
+                                            }
+                                            totalCount
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     `)
+
+    const totalCommits = data.allGithubData.edges[0].node.rawResult.data.repository.object.history.totalCount
+    const latestCommitDate = new Date(data.allGithubData.edges[0].node.rawResult.data.repository.object.history.edges[0].node.committedDate)
 
     // work for the fancy colored tags
     const { themeBodyClass } = useContext(ThemeContext)
@@ -74,8 +101,8 @@ export function Stats() {
         return 0
     })
 
-    const postsLeft = (30 - yearData.find(x => x.year === 2021)?.count)
-    const hundredPostChallenge =  Math.round(getDaysLeftInYear() / postsLeft);
+    const postsLeft = 30 - yearData.find((x) => x.year === 2021)?.count
+    const hundredPostChallenge = Math.round(getDaysLeftInYear() / postsLeft)
 
     return (
         <>
@@ -85,7 +112,6 @@ export function Stats() {
                 so you can be sure they are up to date!
             </p>
             <div className="stat-tile-container">
-                
                 <StatTile
                     stat={mostRecentPublishDate.toLocaleDateString()}
                     label={
@@ -128,17 +154,35 @@ export function Stats() {
                     })}
                 </>
                 <StatTile stat={totalPosts} label="Total Posts" />
-                <StatTile
-                    stat={uniqueTags.length}
-                    label="Unique Tags"
-                />
+                <StatTile stat={totalCommits} label="Total Commits" />
+                <StatTile stat={latestCommitDate.toLocaleDateString()} label="Latest Commit" />
+                <StatTile stat={uniqueTags.length} label="Unique Tags" />
                 <StatTile
                     stat={hundredPostChallenge}
-                    label={<>Uh oh! Days that Chris has per post for the <Link to="one-hundred-posts-challenge"><Sparkles>One Hundred Posts Challenge!</Sparkles></Link></>}
+                    label={
+                        <>
+                            Uh oh! Days that Chris has per post for the{" "}
+                            <Link to="/blog/one-hundred-posts-challenge">
+                                <Sparkles>
+                                    One Hundred Posts Challenge!
+                                </Sparkles>
+                            </Link>
+                        </>
+                    }
                 />
                 <StatTile
                     stat={postsLeft}
-                    label={<>Posts of the <Sparkles>30</Sparkles> that Chris still needs to write for the <Link to="one-hundred-posts-challenge"><Sparkles>One Hundred Posts Challenge!</Sparkles></Link></>}
+                    label={
+                        <>
+                            Posts of the <Sparkles>30</Sparkles> that Chris
+                            still needs to write for the{" "}
+                            <Link to="/blog/one-hundred-posts-challenge">
+                                <Sparkles>
+                                    One Hundred Posts Challenge!
+                                </Sparkles>
+                            </Link>
+                        </>
+                    }
                 />
                 {/* <TagRenderer linkToTagPage={true} /> */}
                 {tagDataByCount.map((x, index) => {

@@ -7,6 +7,7 @@ import Confetti from "react-dom-confetti"
 import { ThemeContext } from "../../context/theme/ThemeContext"
 import ThemeBodyClass from "../../enums/ThemeBodyClass"
 import { getThemeColorHexCodes } from "../../utils/getThemeColorHexCodes"
+import ICodeLineData from "../../interfaces/ICodeLineData"
 
 const copyToClipboard = (str: string) => {
     const el = document.createElement("textarea")
@@ -75,7 +76,17 @@ export const Pre = (props: IPreProps) => {
         }
     }
 
-    const getAddedData = (lineTokens: Array<any>): { isAdded: boolean, shiftCount: number } => {
+    const getLineClassName = (addedData: ICodeLineData) => {
+        if(addedData.isAdded)  {
+            return "code-line-added"
+        }
+        if (pdfMode) {
+            return "code-line-pdf-mode"
+        }
+        return ""
+    }
+
+    const getAddedData = (lineTokens: Array<any>): ICodeLineData => {
         if (lineTokens.length > 0 && lineTokens[0].content === "+") {
             return { isAdded: true, shiftCount: 1 }
         }
@@ -88,7 +99,7 @@ export const Pre = (props: IPreProps) => {
     const dynamicTheme = resolveTheme()
 
     return (
-        <Wrapper>
+        <>
             {!pdfMode && (
                 <div className="code-copy-button-wrapper">
                     <Button
@@ -144,12 +155,13 @@ export const Pre = (props: IPreProps) => {
                             ...style,
                             padding: "2rem",
                             position: "relative",
-                            overflowX: "scroll",
+                            overflowX: "auto",
+                            maxWidth: pdfMode ? "750px" : ""
                         }}
                     >
                         {tokens.map((lineTokens, i) => {
-                            const addedData = getAddedData(lineTokens) ;
-                            const lineClassName = addedData.isAdded ? "code-line-added" : ""
+                            const addedData = getAddedData(lineTokens);
+                            const lineClassName = getLineClassName(addedData);
                             if (addedData.isAdded) {
                                 for (let i = 0; i < addedData.shiftCount; i++) {
                                     lineTokens.shift()
@@ -158,7 +170,7 @@ export const Pre = (props: IPreProps) => {
                             return (
                                 <div
                                     {...getLineProps({ line: lineTokens, key: i })}
-                                    style={style}
+                                    style={{...style, maxWidth: pdfMode ? "750px" : "" }}
                                     className={lineClassName}
                                 >
                                     {lineTokens.map((token, key) => (
@@ -175,6 +187,6 @@ export const Pre = (props: IPreProps) => {
             <ConfettiWrapper>
                 <Confetti active={isCopied} config={confettiConfig} />
             </ConfettiWrapper>
-        </Wrapper>
+        </>
     )
 }

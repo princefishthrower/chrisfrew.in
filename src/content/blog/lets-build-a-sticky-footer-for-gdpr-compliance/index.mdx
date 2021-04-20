@@ -1,6 +1,6 @@
 ---
 title: Let's Build a Snazzy Animated Sticky Footer For GDPR Compliance!
-description: Leveraging react-reveal, react-cookie and Bootstrap styles.
+description: Leveraging react-reveal, react-cookie, and Bootstrap styles.
 date: "2021-04-19"
 tags: Bootstrap,Gatsby,React,TypeScript
 ---
@@ -9,7 +9,7 @@ tags: Bootstrap,Gatsby,React,TypeScript
 
 [Check out the GitHub Pages site running an example of the cookie component!](https://princefishthrower.github.io/gatsby-animated-gdpr-banner/)
 
-_Disclaimer: I'm not a legal expert, so do your own due digilance for what is required for proper GDPR compliance._
+_Disclaimer: I'm not a legal expert, so do your own due diligence for what is required for proper GDPR compliance._
 
 # Prerequisites
 
@@ -179,7 +179,7 @@ As it is now, the footer will animate into view every time someone visits the si
 
 Luckily, `react-reveal` has a prop called `when`, if set to `true`, will fire the animation. Even better, the reverse also occurs: when the `when` prop goes from `true` to `false`, it will animate in reverse - in our case, leaving the screen.
 
-Before doing anything complex in terms of cookie logic, we first need to know if the component is mounted - only then should we fire the fade animation - otherwise, we may get ugly animation flashing. For this, I use a nice utiliy hook I call `useDidMount`:
+Before doing anything complex in terms of cookie logic, we first need to know if the component is mounted - only then should we fire the fade animation - otherwise, we may get ugly animation flashing. For this, I use a nice utility hook I call `useDidMount`:
 
 ```ts
 import { useState, useEffect } from 'react'
