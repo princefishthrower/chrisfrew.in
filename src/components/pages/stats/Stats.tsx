@@ -11,6 +11,7 @@ import BlogTagClass from "../../../enums/BlogTagClass"
 import { StatTile } from "./StatTile"
 import { getDaysLeftInYear } from "../../../utils/getDaysLeftInYear"
 import Sparkles from "../../utils/Sparkles"
+import { HundredPostChallengeStat } from "./HundredPostChallengeStat"
 
 export function Stats() {
     const data = useStaticQuery(graphql`
@@ -76,6 +77,7 @@ export function Stats() {
     const mostRecentPublishDate = new Date(newestPost.node.frontmatter.date)
     const firstPublishYear = firstPublishDate.getFullYear()
     const currentYear = mostRecentPublishDate.getFullYear()
+    
     const yearData = []
     for (let year = firstPublishYear; year <= currentYear; year++) {
         yearData.push({
@@ -157,19 +159,7 @@ export function Stats() {
                 <StatTile stat={totalCommits} label="Total Commits" />
                 <StatTile stat={latestCommitDate.toLocaleDateString()} label="Latest Commit" />
                 <StatTile stat={uniqueTags.length} label="Unique Tags" />
-                <StatTile
-                    stat={hundredPostChallenge}
-                    label={
-                        <>
-                            Uh oh! Days that Chris has per post for the{" "}
-                            <Link to="/blog/one-hundred-posts-challenge">
-                                <Sparkles>
-                                    One Hundred Posts Challenge!
-                                </Sparkles>
-                            </Link>
-                        </>
-                    }
-                />
+                <HundredPostChallengeStat/>
                 <StatTile
                     stat={postsLeft}
                     label={
