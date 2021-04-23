@@ -9,6 +9,7 @@ import { useContext } from "react"
 import { SearchContext } from "../context/search/SearchContext"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
+import { DuckContainer } from "../components/layout/Duck/DuckContainer"
 
 const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
@@ -116,6 +117,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
             <h3>Posts by tag:</h3>
             <TagRenderer linkToTagPage={true}/>
             <Bio />
+            <DuckContainer/>
         </Layout>
     )
 }

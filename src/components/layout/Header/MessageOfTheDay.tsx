@@ -73,6 +73,8 @@ export function MessageOfTheDay() {
             <span className="monokaiGreenFont">{"/"}</span>
             <span className="monokaiYellowFont">{"* "}</span>
             <Fade
+                        triggerOnce={true}
+
                 cascade={true}
                 damping={0.05}
                 duration={1300}

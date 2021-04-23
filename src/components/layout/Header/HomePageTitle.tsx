@@ -126,6 +126,7 @@ export function HomePageTitle() {
                     }}
                 >
                     <Fade
+                        triggerOnce={true}
                         cascade={true}
                         damping={0.05}
                         duration={1000}

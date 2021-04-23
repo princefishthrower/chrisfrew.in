@@ -54,7 +54,6 @@ export function Goodies() {
                     📜 &nbsp; Full Stack Snippets
                 </a>
             </div>
-            {/* TODO: use a query string on the snippets page to filter which parts are shown, then refactor the puppeteer script for that */}
             <p>Looking for a specific set of my snippets? Here they are:</p>
             <div>
                 <a

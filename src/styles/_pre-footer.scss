@@ -40,6 +40,14 @@
     border-color: $blackWhiteGray;
 }
 
+// medium screens (width less than 1400px but greater than 600px)
+@media only screen and (max-width: $largeOffset) and (min-width: $medium) {
+    .pre-footer  {
+        width: calc(100% - #{$navWidthMedium} + #{$borderThickness});
+        margin-left: calc(#{$navWidthMedium} - #{$borderThickness});
+    }
+}
+
 // small styles (width less than 600px)
 @media only screen and (max-width: $mediumOffset) {
     .pre-footer {

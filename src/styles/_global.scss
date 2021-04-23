@@ -153,6 +153,14 @@ p > img {
     justify-content: space-around;
 }
 
+.duck-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
 .blog-post-footer {
     display: flex;
     flex-wrap: wrap;

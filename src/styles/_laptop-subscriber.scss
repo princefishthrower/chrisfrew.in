@@ -1,12 +1,12 @@
 .laptop-subscriber {
     position: fixed;
     left: 10px;
-    top: 150px;
+    top: 30%;
     pre {
         font-size: 12px !important;
-        // line-height: 0  !important;
-        margin: 0  !important;
-        padding: 0  !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     input,
     button {
@@ -15,14 +15,39 @@
         background-color: transparent !important;
         color: $lightColor;
         font-weight: bold;
-        border: none  !important;
-        margin: 0  !important;
-        padding: 0  !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
         cursor: pointer;
         text-transform: uppercase;
         display: inline;
+        line-height: 1 !important;
+        transition: 0.4s;
     }
     button {
         display: block;
+        &:hover {
+            color: lightcoral;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    input {
+        &:hover {
+            color: lightgreen;
+        }
+    }
+    &.animated {
+        animation: flyInFromTop 3s linear 1 forwards;
+    }
+}
+
+@keyframes flyInFromTop {
+    0% {
+        top: -30%;
+    }
+    100% {
+        top: 30%;
     }
 }

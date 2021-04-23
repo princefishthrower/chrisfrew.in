@@ -9,7 +9,7 @@ export default function Revealer(props) {
         components.push(component)
     }
     return (
-        <Fade left>
+        <Fade direction="right" triggerOnce={true}>
             <div>{components}</div>
         </Fade>
     )
