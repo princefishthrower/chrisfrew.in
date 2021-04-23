@@ -64,7 +64,7 @@ export const Pre = (props: IPreProps) => {
         if (pdfMode) {
             return github
         }
-        // else resolve various themes - TODO: configure
+        // else resolve various themes
         switch (themeBodyClass) {
             case ThemeBodyClass.DARK_THEME:
                 return dracula
