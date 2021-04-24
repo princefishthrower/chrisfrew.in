@@ -5,8 +5,7 @@ import { Header } from "./Header/Header"
 import { CookiesProvider } from "react-cookie"
 import EmailForm from "../utils/EmailForm"
 import { LaptopSubscriber } from "./LaptopSubscriber/LaptopSubscriber"
-import { usePleaseStay } from "react-use-please-stay"
-import { AnimationType } from "../../hooks/usePleaseStay/AnimationType"
+import { AnimationType, usePleaseStay } from "react-use-please-stay"
 
 export default function Layout(props) {
     const { children, location } = props
