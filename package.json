@@ -1,6 +1,5 @@
 {
   "name": "chris-full-stack-blog",
-  "private": true,
   "description": "Chris' Full Stack Blog",
   "version": "2.0.0",
   "author": "Chris Frewin <frewin.christopher@gmail.com>",
@@ -44,7 +43,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-inview": "^4.3.8",
     "react-use": "^17.2.1",
-    "react-use-please-stay": "^1.5.1",
+    "react-use-please-stay": "^1.6.6",
     "remark-html-katex": "^3.0.0",
     "remark-math": "^4.0.0",
     "sass": "^1.32.8",

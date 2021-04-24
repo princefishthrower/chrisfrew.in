@@ -48,14 +48,14 @@ export function HundredPostChallengeStat() {
     }
 
     const postsLeft = 30 - yearData.find((x) => x.year === 2021)?.count
-    const hundredPostChallenge = Math.round(getDaysLeftInYear() / postsLeft)
+    const hundredPostChallenge = Math.round(getDaysLeftInYear() / postsLeft * 100) / 100
 
     return (
         <StatTile
             stat={hundredPostChallenge}
             label={
                 <>
-                    Days that Chris has to publish, per post, to achieve the{" "}
+                    Days on average that Chris has to publish, per post, to achieve the{" "}
                     <Link to="/blog/one-hundred-posts-challenge">
                         <Sparkles>One Hundred Posts Challenge!</Sparkles>
                     </Link>
