@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const ChrisPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO />
+            <SEO frontmatter={{title: "About Chris", description: "Chris' About Page"}}/>
             <Chris />
         </Layout>
     )

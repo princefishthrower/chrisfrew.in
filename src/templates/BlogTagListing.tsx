@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
-import Paginator from "../components/utils/Paginator"
 import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
@@ -11,29 +10,17 @@ import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 const BlogTagListing = ({ data, location, pageContext }) => {
     const { tag } = pageContext;
     const title = data.site.siteMetadata.title
-    const description = data.site.siteMetadata.description
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "chrisfrew.in",
-        alternateName: "Chris' Full Stack Blog",
-        description: description,
-        url: "https://chrisfrew.in",
-        logo: "https://chrisfrew.in/favicon.ico",
-        sameAs: [
-            "https://github.com/princefishthrower",
-            "https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw",
-            "https://instagram.com/fullstackcraft",
-        ],
-    }
+    
     // only take those
     // const postsToRender = posts.filter(({ node }) => { node.frontmatter.tags.includes(tag) })
+    const cleanTitle = `Posts Tagged With ${tag}`
+    const cleanDescription = `All posts on Chris' Full Stack Blog tagged with "${tag}"`
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
-            <SEO title={title} schemaMarkup={schema} />
-            <ColoredTitle title={`#️⃣ Posts Tagged With "${tag}"`}/>
+            <SEO frontmatter={{title: cleanTitle, description: cleanDescription}} />
+            <ColoredTitle title={`#️⃣ ${cleanTitle}`}/>
             {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 const tags = node.frontmatter.tags.split(",").map(x => sanitizeTag(x))

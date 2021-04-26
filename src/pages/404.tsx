@@ -17,7 +17,7 @@ export default function NotFoundPage(props) {
                 title={title}
                 description={description}
             >
-                <SEO />
+                <SEO frontmatter={{title: "Not Found", description: "The site you are requesting on Chris' Full Stack Blog was not found."}} />
                 <h1 style={{ textAlign: "center" }}>Not Found!</h1>
                 <h2 style={{ textAlign: "center" }}>
                     Yay! You get some confetti!
