@@ -16,6 +16,10 @@ body {
         a {
             color: $monokaiRedDarkMode;
             z-index: 10;
+            transition: 0.4s;
+            &:hover {
+                filter: brightness(75%)
+            }
         }
 
         table,

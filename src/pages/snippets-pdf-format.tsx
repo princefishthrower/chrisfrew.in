@@ -4,6 +4,7 @@ import SEO from "../components/utils/SEO"
 import BodyClassName from "react-body-classname"
 import ThemeBodyClass from "../enums/ThemeBodyClass"
 
+// Body class name imported directly here since we always want the light theme for PDF!
 const SnippetsPage = () => {
     return (
         <>

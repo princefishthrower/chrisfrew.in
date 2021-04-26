@@ -1,0 +1,198 @@
+---
+title: A React Hook to Animate the Page (Document) Title and Favicon
+description: "Introducing react-use-please-stay: Animate the document title and favicon in your React projects with ease using this powerful hook!"
+date: "2021-04-26"
+draft: false
+tags: TypeScript, React, React Hook, Package
+---
+
+# TL;DR - Demo, npm Package, and Code
+
+Here's a gif of what the hook looks like in action:
+
+![react-use-please-stay at work](./example.gif)
+
+[The interactive demo is here.](https://princefishthrower.github.io/react-use-please-stay/)
+
+[The npm package is here.](https://www.npmjs.com/package/react-use-please-stay)
+
+[The GitHub Repo is here.](https://github.com/princefishthrower/react-use-please-stay)
+
+Enjoy!
+
+# Background Behind react-use-please-stay
+
+Though I'm sure it's something I'm sure I've seen before, I stumbled upon an animated title and changing favicon while recently visiting the [Dutch version of the Mikkeller Web Shop](https://shop.mikkeller.dk/). The favicon changes to a sad-looking Henry ([Henry and Sally are the famous Mikkeller mascots](https://www.google.com/search?q=henry+and+sally&sxsrf=ALeKk00N9zVdsht4oto1yj8qxXC7R5x-KQ:1619419497927&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmyqnfp5vwAhVFCewKHbnJDLQQ_AUoAXoECAEQAw&cshid=1619419527383437&biw=1920&bih=969)), and the tab title swaps between: 
+
+<strong>Henry is Sad.</strong> 
+
+and
+
+<strong>Remember your beers</strong>
+
+Not sure if the strange grammar is by design, but the whole thing cracked me up. 😂 After downloading the source and doing a bit of snooping around, (AKA by searching for `document.title`), all I could manage to find was a file called `pleasestay.js`, which contained the visibility change event listener, but it was all modularized and over 11000 lines long! It was definitely not in its usable form, and after a Google search, I could only find [this GitHub gist with a JQuery implementation](https://gist.github.com/sonnm/fcaaf616e62cc46e8756599306f4e1ad) of the functionality.
+
+# Creation of the Package
+
+I have to admit - the little animation on Mikkeler's Shop _did_ pull me back to the site. At the very least, it's a nice touch that you don't see on very many websites. I thought it would make a great React hook - especially if I could make it configurable with multiple options and titles. So I built the [react-use-please-stay](https://www.npmjs.com/package/react-use-please-stay) package to do just that!
+
+As I often do, I'm using my blog as a testbed for the hook. If you go to any other tab in your browser right now, you'll see my blog's favicon and title start animating.
+
+# Source Code as Of Writing this Post
+
+Again, the package is [completely open source](https://github.com/princefishthrower/react-use-please-stay), where you'll find the most up-to-date code, but if you'd like to get an idea of how the hook works right away, here it is:
+
+```ts
+import { useEffect, useRef, useState } from 'react';
+import { getFavicon } from '../../helpers/getFavicon';
+import { AnimationType } from '../../enums/AnimationType';
+import { UsePleaseStayOptions } from '../../types/UsePleaseStayOptions';
+import { useInterval } from '../useInterval';
+
+export const usePleaseStay = ({
+  titles,
+  animationType = AnimationType.LOOP,
+  interval = 1000,
+  faviconURIs = [],
+  alwaysRunAnimations = false,
+}: UsePleaseStayOptions): void => {
+  if (animationType === AnimationType.CASCADE && titles.length > 1) {
+    console.warn(
+      `You are using animation type '${animationType}' but passed more than one title in the titles array. Only the first title will be used.`,
+    );
+  }
+
+  // State vars
+  const [shouldAnimate, setShouldAnimate] = useState<boolean>(false);
+
+  // On cascade mode, we substring at the first character (0, 1).
+  // Otherwise start at the first element in the titles array.
+  const [titleIndex, setTitleIndex] = useState<number>(0);
+  const [faviconIndex, setFaviconIndex] = useState<number>(0);
+  const [isAppendMode, setIsAppendMode] = useState<boolean>(true);
+  const [faviconURIsState, setFaviconURIsState] = useState<Array<string>>([]);
+
+  // Ref vars
+  const originalDocumentTitle = useRef<string>();
+  const originalFaviconHref = useRef<string>();
+  const faviconRef = useRef<HTMLLinkElement>();
+
+  // Handler for visibility change - only needed when alwaysRunAnimations is false
+  const handleVisibilityChange = () => {
+    document.visibilityState === 'visible'
+      ? restoreDefaults()
+      : setShouldAnimate(true);
+  };
+
+  // The logic to modify the document title in cascade mode.
+  const runCascadeLogic = () => {
+    document.title = titles[0].substring(0, titleIndex);
+    setTitleIndex(isAppendMode ? titleIndex + 1 : titleIndex - 1);
+    if (titleIndex === titles[0].length - 1 && isAppendMode) {
+      setIsAppendMode(false);
+    }
+    if (titleIndex - 1 === 0 && !isAppendMode) {
+      setIsAppendMode(true);
+    }
+  };
+
+  // The logic to modify the document title in loop mode.
+  const runLoopLogic = () => {
+    document.title = titles[titleIndex];
+    setTitleIndex(titleIndex === titles.length - 1 ? 0 : titleIndex + 1);
+  };
+
+  // The logic to modify the document title.
+  const modifyDocumentTitle = () => {
+    switch (animationType) {
+      // Cascade letters in the title
+      case AnimationType.CASCADE:
+        runCascadeLogic();
+        return;
+      // Loop over titles
+      case AnimationType.LOOP:
+      default:
+        runLoopLogic();
+        return;
+    }
+  };
+
+  // The logic to modify the favicon.
+  const modifyFavicon = () => {
+    if (faviconRef && faviconRef.current) {
+      faviconRef.current.href = faviconURIsState[faviconIndex];
+      setFaviconIndex(
+        faviconIndex === faviconURIsState.length - 1 ? 0 : faviconIndex + 1,
+      );
+    }
+  };
+
+  // The logic to restore default title and favicon.
+  const restoreDefaults = () => {
+    setShouldAnimate(false);
+    setTimeout(() => {
+      if (
+        faviconRef &&
+        faviconRef.current &&
+        originalDocumentTitle.current &&
+        originalFaviconHref.current
+      ) {
+        document.title = originalDocumentTitle.current;
+        faviconRef.current.href = originalFaviconHref.current;
+      }
+    }, interval);
+  };
+
+  // On mount of this hook, save current defaults of title and favicon. also add the event listener. on un mount, remove it
+  useEffect(() => {
+    // make sure to store originals via useRef
+    const favicon = getFavicon();
+    if (favicon === undefined) {
+      console.warn('We could not find a favicon in your application.');
+      return;
+    }
+    // save originals - these are not to be manipulated
+    originalDocumentTitle.current = document.title;
+    originalFaviconHref.current = favicon.href;
+    faviconRef.current = favicon;
+
+    // TODO: small preload logic for external favicon links? (if not a local URI)
+    // Build faviconLinksState
+    // Append current favicon href, since this is needed for an expected favicon toggle or animation pattern
+    setFaviconURIsState([...faviconURIs, favicon.href]);
+
+    // also add visibilitychange event listener
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  // State change effects
+  useEffect(() => {
+    // Change in alwaysRunAnimations change the shouldAnimate value
+    setShouldAnimate(alwaysRunAnimations);
+
+    // Update title index
+    setTitleIndex(animationType === AnimationType.CASCADE ? 1 : 0);
+  }, [animationType, alwaysRunAnimations]);
+
+  // Change title and favicon at specified interval
+  useInterval(
+    () => {
+      modifyDocumentTitle();
+      // this is 1 because we append the existing favicon on mount - see above
+      faviconURIsState.length > 1 && modifyFavicon();
+    },
+    shouldAnimate ? interval : null,
+  );
+};
+```
+
+# Thanks!
+
+This was a fun little hook that took more than a few hours to work out all the kinks for. So far it has been stable on my site, and I'm open to pull requests, critiques, and further features!
+
+Cheers! 🍺
+
+-Chris
