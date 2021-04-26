@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const SnippetsPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Snippets" />
+            <SEO />
             <Snippets pdfMode={false} />
         </Layout>
     )

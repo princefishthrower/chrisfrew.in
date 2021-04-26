@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const CoursesPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Courses" />
+            <SEO />
             <Courses />
         </Layout>
     )

@@ -17,7 +17,7 @@ export default function NotFoundPage(props) {
                 title={title}
                 description={description}
             >
-                <SEO title="404: Not Found" />
+                <SEO />
                 <h1 style={{ textAlign: "center" }}>Not Found!</h1>
                 <h2 style={{ textAlign: "center" }}>
                     Yay! You get some confetti!

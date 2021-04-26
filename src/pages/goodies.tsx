@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const GoodiesPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Downloadables, Freebies, N' More!" />
+            <SEO/>
             <Goodies />
         </Layout>
     )

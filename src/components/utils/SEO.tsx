@@ -1,57 +1,113 @@
-import React from "react"
-import Helmet from "react-helmet"
+import * as React from "react"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 import SchemaOrg from "./SchemaOrg"
-import { TwitterMetaTags } from "./TwitterMetaTags"
+import config from "../../../config/website"
+import defaultMetaImage from "../../images/avatar.jpg"
 
-export interface ISEOProps {
-    title: string
-}
-export default function SEO(props: ISEOProps) {
-    const { title } = props
-    const { site } = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                        description
-                        author
-                        lang
-                    }
-                }
-            }
-        `
-    )
-
-    const description = site.siteMetadata.description
-    const organization = site.siteMetadata.organization
-    const author = site.siteMetadata.author
-    const lang = site.siteMetadata.lang
-
+function SEO({
+    siteMetadata: seo,
+    postData,
+    metaImage,
+    isBlogPost,
+    frontmatter: postMeta = postData.childMarkdownRemark.frontmatter || {},
+    title = postMeta.title || config.siteTitle,
+    description = postMeta.plainTextDescription ||
+        postMeta.description ||
+        seo.description,
+    image = `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
+    url = postMeta.slug
+        ? `${seo.canonicalUrl}${postMeta.slug}`
+        : seo.canonicalUrl,
+    datePublished = isBlogPost ? postMeta.datePublished : false,
+}) {
     return (
         <>
-            <Helmet
-                htmlAttributes={{
-                    lang,
-                }}
-            >
-                {/* SEO Stuff */}
+            <Helmet>
+                {/* General tags */}
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                <meta name="og:title" content={title} />
-                <meta name="og:description" content={description} />
-                <meta name="og:type" content="website" />
-                <meta name="twitter:title" content="Chris' Full Stack Blog" />
-                <TwitterMetaTags author={author} description={description}/>
+                <meta name="image" content={image} />
 
+                {/* OpenGraph tags */}
+                <meta property="og:url" content={url} />
+                {isBlogPost ? (
+                    <meta property="og:type" content="article" />
+                ) : null}
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={image} />
+                <meta property="fb:app_id" content={seo.social.fbAppID} />
+
+                {/* Twitter Card tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:creator" content={seo.social.twitter} />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:image" content={image} />
             </Helmet>
             <SchemaOrg
+                isBlogPost={isBlogPost}
+                url={url}
                 title={title}
+                image={image}
                 description={description}
-                author={author}
-                organization={organization}
+                datePublished={datePublished}
+                canonicalUrl={seo.canonicalUrl}
+                author={seo.author}
+                organization={seo.organization}
+                defaultTitle={seo.title}
             />
         </>
     )
 }
+
+function SEOWithQuery(props) {
+    const {
+        site: { siteMetadata },
+    } = useStaticQuery(graphql`
+        {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    canonicalUrl
+                    image
+                    author {
+                        name
+                    }
+                    organization {
+                        name
+                        url
+                        logo
+                    }
+                    social {
+                        twitter
+                        fbAppID
+                    }
+                }
+            }
+        }
+    `)
+    return <SEO siteMetadata={siteMetadata} {...props} />
+}
+
+SEOWithQuery.propTypes = {
+    isBlogPost: PropTypes.bool,
+    postData: PropTypes.shape({
+        childMarkdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.any,
+            excerpt: PropTypes.any,
+        }),
+    }),
+    metaImage: PropTypes.string,
+}
+
+SEOWithQuery.defaultProps = {
+    isBlogPost: false,
+    postData: { childMarkdownRemark: {} },
+    metaImage: null,
+}
+
+export default SEOWithQuery

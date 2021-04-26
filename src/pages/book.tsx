@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const BookPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO title="Build Your Own Full Stack SaaS Product - A Book" />
+            <SEO />
             <Book />
         </Layout>
     )

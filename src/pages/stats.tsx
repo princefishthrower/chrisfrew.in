@@ -6,7 +6,7 @@ import SEO from "../components/utils/SEO"
 const StatsPage = ({ location }) => {
     return (
         <Layout location={location}>
-            <SEO title="Chris' Full Stack Blog Stats" />
+            <SEO/>
             <Stats />
         </Layout>
     )

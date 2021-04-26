@@ -13,7 +13,9 @@ export function AvatarPicture(props: IAvatarPictureProps) {
         query AuthorQuery {
             site {
                 siteMetadata {
-                    author
+                    author {
+                        name
+                    }
                 }
             }
             avatar: file(relativePath: { eq: "avatar.jpg" }) {
@@ -27,7 +29,7 @@ export function AvatarPicture(props: IAvatarPictureProps) {
     return (
         <GatsbyImage
             image={data.avatar.childImageSharp.gatsbyImageData}
-            alt={data.site.siteMetadata.author}
+            alt={data.site.siteMetadata.author.name}
             style={style}
         />
     )

@@ -12,7 +12,9 @@ export function HomePageTitle() {
         query HomePageTitleQuery {
             site {
                 siteMetadata {
-                    author
+                    author {
+                        name
+                    }
                     subtitle
                 }
             }
