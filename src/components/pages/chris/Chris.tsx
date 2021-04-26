@@ -2,7 +2,9 @@ import * as React from "react"
 import { BioLead } from "../../layout/Bio/BioLead"
 import { BioSharedText } from "../../layout/Bio/BioSharedText"
 import { CompanyPortfolio } from "../../layout/Bio/CompanyPortfolio"
+import { PackagePortfolio } from "../../layout/Bio/PackagePortfolio"
 import { ProductPortfolio } from "../../layout/Bio/ProductPortfolio"
+import { RepoPortfolio } from "../../layout/Bio/RepoPortfolio"
 import { SignatureText } from "../../layout/Bio/SignatureText"
 import { SitePortfolio } from "../../layout/Bio/SitePortfolio"
 import { SocialsContainer } from "../../layout/Bio/SocialsContainer"
@@ -60,6 +62,8 @@ export function Chris() {
                 <TeachingPortfolio />
                 <ProductPortfolio />
                 <SitePortfolio />
+                <PackagePortfolio />
+                <RepoPortfolio />
                 <SocialsContainer />
                 <SignatureText />
             </div>

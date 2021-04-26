@@ -17,6 +17,7 @@
     .page-wrapper {
         margin-left: $navWidthMedium;
         max-width: calc(100% - #{$navWidthMedium});
+        padding-top: 0;
     }
 }
 

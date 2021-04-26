@@ -153,12 +153,20 @@ p > img {
     justify-content: space-around;
 }
 
+.packages-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .duck-flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .blog-post-footer {
