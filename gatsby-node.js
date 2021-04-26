@@ -1,5 +1,5 @@
 const path = require(`path`)
-const { exec, spawn } = require("child_process")
+const { spawn } = require("child_process")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const getTagDataFromEdges = require(`./utils/tags/getTagDataFromEdges`)
 const shared = require(`./src/constants/shared.json`)

@@ -13,7 +13,9 @@ export function NavLogo(props: INavLogoProps) {
         query NavLogoQuery {
             site {
                 siteMetadata {
-                    author
+                    author {
+                        name
+                    }
                     subtitle
                 }
             }
