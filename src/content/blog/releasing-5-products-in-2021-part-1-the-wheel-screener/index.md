@@ -79,7 +79,7 @@ I face this sad fate in two communities I've loved in the past - both /r/algotra
 
 ## 6. A Staging or Testing Environment is Essential
 
-This one is rather painful, but is really a requirement for anybody serious in releasing a SaaS product. Alongside the production site of The Wheel Screener, I have a staging site for it: [staging.wheelscreener.com](staging.wheelscreener.com). All the backend is in a staging environment as well - Stripe is in its test mode, PayPal is in its Sandbox mode, and even the PostgreSQL database has its own staging version of the database. 
+This one is rather painful, but is really a requirement for anybody serious in releasing a SaaS product. Alongside the production site of The Wheel Screener, I have a staging site for it: [staging.wheelscreener.com](https://staging.wheelscreener.com). All the backend is in a staging environment as well - Stripe is in its test mode, PayPal is in its Sandbox mode, and even the PostgreSQL database has its own staging version of the database. 
 
 Last week when I released a flurry of new features, I uncovered numerous bugs that were only revealed in such a "production-like" but "not quite production" environment - I didn't see them on my development machine. **I guarantee this is true for any SaaS product that anyone wishes to build, and so a real staging/test site is essential to catch these bugs before they move into the production product.** 
 

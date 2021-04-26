@@ -15,23 +15,8 @@ const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
     const { currentPage, limit, skip } = pageContext
     const title = data.site.siteMetadata.title
-    const description = data.site.siteMetadata.description
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "chrisfrew.in",
-        alternateName: "Chris' Full Stack Blog",
-        description: description,
-        url: "https://chrisfrew.in",
-        logo: "https://chrisfrew.in/favicon.ico",
-        sameAs: [
-            "https://github.com/princefishthrower",
-            "https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw",
-            "https://instagram.com/fullstackcraft",
-        ],
-    }
 
     const getPostsToRender = () => {
         // search is allowed on the homepage
@@ -55,27 +40,27 @@ const BlogPostListing = ({ data, location, pageContext }) => {
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
+    const cleanTitle = `Posts Page No. ${currentPage}`
+    const cleanDescription = `All posts from ${postsToRender[0].node.frontmatter.date} to ${
+        postsToRender[postsToRender.length-1].node.frontmatter
+            .date
+    }`
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
             {currentPage !== 1 && (
-                <ColoredTitle title={`🔢 Posts Page No. ${currentPage}`} style={{marginBottom: 0}}/>
+                <ColoredTitle title={`🔢 ${cleanTitle}`} style={{marginBottom: 0}}/>
             )}
             {currentPage !== 1 && (
                 <div style={{marginBottom: '3rem'}}>
                     <small className="blog-post-date">
-                        {postsToRender[0].node.frontmatter.date}
-                    </small>{" "}
-                    -{" "}
-                    <small className="blog-post-date">
-                        {
+                        All posts from <b>{postsToRender[0].node.frontmatter.date}</b> to <b>{
                             postsToRender[postsToRender.length-1].node.frontmatter
                                 .date
-                        }
+                        }</b>
                     </small>
                 </div>
             )}
-
-            <SEO title={title} schemaMarkup={schema} />
+            <SEO frontmatter={{title: cleanTitle, description: cleanDescription}} />
             {postsToRender.length === 0 ? (
                 <p>No posts found for your query! 😞</p>
             ) : (

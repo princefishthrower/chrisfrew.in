@@ -9,7 +9,7 @@ const SnippetsPage = () => {
     return (
         <>
             <BodyClassName className={ThemeBodyClass.LIGHT_THEME} />
-            <SEO />
+            <SEO frontmatter={{title: "Full Stack Snippets - PDF Mode", description: "Chris' Full Stack Snippets as a PDF."}}/>
             <Snippets pdfMode={true} />
         </>
     )

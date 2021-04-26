@@ -20,10 +20,6 @@ The most basic key economics of Bitcoin for determining it's price are: 1. there
 # First to Market
 It's important to remember, Bitcoin was the first of its kind (certainly not the best - many improvements in other coins and blockchain protocols exist - more on that below), Bitcoin has both the largest _and_ majority of the market caps among all the other cryptocurrencies. (Edit: December 19th! Bitcoin dipped just below 49.9% market capitilization in crypto! [I built a small bookmarklet called MarkCap](frewinchristopher.github.io/markcap) for [coinmarketcap.com](coinmarketcap.com) that puts the percent market cap next to the market cap number.)
 
-!["We'll give up the hostages if you send us 10000 Bitcoin!" "10000 Bitcoin? Does he think this is 2017? There's no single entity left in the world with that much!"](./bitcoincomic.jpg)
-
-A comic I thought up about Bitcoin  😂😂😂 (_comic is still not done, but it will show up here soon_).
-
 As cash flows from standard gold to Bitcoin, the market cap could approach the _trillions_ range. With that order of magnitude of market cap, 1 Bitcoin would have:
 
 | Market Capitalization | Bitcoin price* |

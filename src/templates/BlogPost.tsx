@@ -60,8 +60,9 @@ class BlogPost extends React.Component {
                 description={description}
             >
                 <SEO
-                    title={title}
+                    frontmatter={post.frontmatter}
                     description={postDescription || post.excerpt}
+                    isBlogPost={true}
                 />
                 <article>
                     <header>
