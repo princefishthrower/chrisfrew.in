@@ -28,4 +28,4 @@ And who knows - NLP Champs could always be revived, and I may even post there fr
 
 ## Aww, Can I Still See the NLP Champs Site Somewhere?
 
-You sure can! NLP Champs has been permanently enshrined in a reverse proxy at [https://chrisfrew.in/nlp-champs](https://chrisfrew.in/nlp-champs)!
+You sure can! NLP Champs has been permanently enshrined in a reverse proxy at [NLP Champs](https://nlp-champs.chrisfrew.in)!

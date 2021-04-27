@@ -37,8 +37,8 @@ In my case, I need those multiple 12 hour, interrupted days, diving deep and bui
 
 But hey, it's 2018, and "quitting your day job", especially as a software engineer, doesn't really mean you're immediately 'unemployed' - right? There were a large number of supporting variables and events over the past few months that have led me to my decision:
 
-- talking to [torch.io](torch.io) over a possible part time frontend consulting work
-- being added to the [Moonlight Community](moonlightwork.com)
+- talking to [torch.io](https://torch.io) over a possible part time frontend consulting work
+- being added to the [Moonlight Community](https://moonlightwork.com)
 - talking to a colleague about a fixed part-time position at his software company
 - working with a friend to build a keyboard that charges as you type (I know it sounds like magic but the science and numbers show it can work) [charge-keyboard.com](https://charge-keyboard.com)
 - building out and advertising my startup Siren Apparel, and expanding to the EU [https://sirenapparel.us](https://sirenapparel.us), [https://sirenapparel.eu](https://sirenapparel.eu)
