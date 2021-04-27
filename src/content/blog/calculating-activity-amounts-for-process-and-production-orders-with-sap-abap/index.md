@@ -82,7 +82,7 @@ Fine. We'll do it ourselves. We can open up the source code of `CR_WORKCENTER_FO
 
 ![The first possible line in the function we can breakpoint](./function-breakpoint.png)
 
-and in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src="return.png"/> and...
+and in CR03, drag our [debugging shortcut into the calculation window](https://chrisfrew.in/blog/debugging-abap-with-sap-shortcut), and we press return SAP debugging's return button to jump out to whatever parent program is calling this function... <img src="return.png"/> and...
 
 :pray: Violá! :pray: We've found where `CR_WORKCENTER_FORMULA_CALC` is called out in the wild!
 

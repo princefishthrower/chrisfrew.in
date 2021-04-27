@@ -11,7 +11,7 @@ This post is [also published on Medium](https://medium.com/@frewin.christopher/d
 
 ## Results First, Technical Stuff Later
 
-If you're here just trying to find my Invader-rendering site, [that is here.](https://chrisfrew.in/invaders)
+If you're here just trying to find my Invader-rendering site, [that is here.](https://princefishthrower.github.io/invaders/)
 
 Or, if you are looking for the _repository_ for ^ that site, [that is here.](https://github.com/frewinchristopher/invaders)
 
@@ -101,7 +101,7 @@ A helpful analogy for me was to picture this array of 15 switches next to each o
 
 ## Math and Data Generation
 
-The math behind Invader generation is briefly discussed directly on the [Invaders page](https://chrisfrew.in/invaders), but I'll go into detail here.
+The math behind Invader generation is briefly discussed directly on the [Invaders page](https://princefishthrower.github.io/invaders/), but I'll go into detail here.
 
 ### Block Data
 
@@ -386,7 +386,7 @@ The front end code is a React app bootstrapped by `create-react-app`, using p5.j
 
 As stated way above, the final site can be found here:
 
-[https://chrisfrew.in/invaders](https://chrisfrew.in/invaders)
+[https://chrisfrew.in/invaders](https://princefishthrower.github.io/invaders/)
 
 ## Thanks!
 

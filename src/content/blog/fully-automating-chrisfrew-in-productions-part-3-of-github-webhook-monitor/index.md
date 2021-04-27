@@ -9,7 +9,7 @@ tags: automation,github,webhook
 
 ## Background and Overview of this Technologically Amazing Accomplishment
 
-After a bit of thinking about my automation project, I settled on a single subdomain (at least for now), fittedly named [https://webhooks.chrisfrew.in](https://webhooks.chrisfrew.in). (Go on, you can try clicking on it). However, if you're not an authorized party (which I check via a _secret key_) you'll just be redirected to the plain ol' [https://chrisfrew.in](https://chrisfrew.in) - yeah I know, what a crappy blog.
+After a bit of thinking about my automation project, I settled on a single subdomain (at least for now), fittedly named webhooks.chrisfrew.in. However, if you're not an authorized party (which I check via a _secret key_) you'll just be redirected to the plain ol' [https://chrisfrew.in](https://chrisfrew.in) - yeah I know, what a crappy blog.
 
 If any of this stuff sounds cool, or perhaps more importantly, sounds like a foreign language, then c'mon in and dive in - we'll get into the technical details and all steps of how all of this can be set up.
 
@@ -19,7 +19,7 @@ Remember, all this stuff is open source too. The repository for the monitor is h
 
 ## Setting Up a Catch-All webhooks subdomain
 
-So [chrisfrew.in](chrisfrew.in) is registered on Namecheap. We have to just setup two A Records, both for webhooks www.webhooks. It looks like this:
+So [chrisfrew.in](https://chrisfrew.in) is registered on Namecheap. We have to just setup two A Records, both for webhooks www.webhooks. It looks like this:
 
 ![Namecheap configuration](namecheap_config.png)
 
@@ -156,7 +156,7 @@ You know how when your `npm start` wont work, only because of a missing module? 
 
 You'll notice a lot of the code is parsing `stdout` as strings - I realize out to an infinite time scale, this isn't a most robust way of checking error messages, so I'm working towards parsing the actual errors codes from Nodejs and reacting from those, instead of the error text itself.
 
-You may have also noticed the function messageHub for nearly every logging type message. Indeed, we do log to the console, but I built this hub-type function so we could add more ways of messaging, one of them is through a Slack bot, which I show how to do in [Part 4](https://chrisfrew.in/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/)
+You may have also noticed the function messageHub for nearly every logging type message. Indeed, we do log to the console, but I built this hub-type function so we could add more ways of messaging, one of them is through a Slack bot, which I show how to do in [Part 4](https://chrisfrew.in/blog/fully-automating-chrisfrew-in-productions-part-4-of-building-a-slack-bot/)
 
 You'll see I have logging util and twitter util functions commented out - they are coming - all with good time!
 

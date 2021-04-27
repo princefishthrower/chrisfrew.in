@@ -7,7 +7,7 @@ starID: 25
 tags: machine learning, natural language processing, data
 ---
 
-\*\*\*Note: this post is mirrored on NLP Champs: [https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration](https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration)
+\*\*\*Note: this post is mirrored on NLP Champs: [https://nlp-champs.chrisfrew.in/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration](https://nlp-champs.com/led-zeppelin-data-analysis-for-lyric-generation-and-inspiration)
 
 ## Inspiration and Motivation
 

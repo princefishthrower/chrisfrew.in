@@ -187,7 +187,7 @@ function sortFunc(a: T, b: T): number {
 }
 ```
 
-(Much like [the generic search, sort, and filter functions I wrote about previously.](blog/react-typescript-generic-search-sort-and-filters/)).
+(Much like [the generic search, sort, and filter functions I wrote about previously.](/blog/react-typescript-generic-search-sort-and-filters/)).
 
 So what do we get in the end? A generic sorting component which can be wrapped around a child generation function, where our only reliance on the type of items is by passing `items` into the `data` prop on the rest. Incredible. The logic in the `GenericSorter` component does the rest! So really, the true way this looks in its final form is like this:
 
