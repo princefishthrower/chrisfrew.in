@@ -23,7 +23,7 @@ Before I get into the description, you may be here just to get the links. Well, 
 
 # Automation To The Moon :rocket:
 
-As an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.
+As an attempt to make my [doing business as (DBA) company](https://chrisfrew.in/blog/introducing-chrisfrewin-productions/) more automated, and to make myself a better developer, I've decided to take steps to automate as many technical processes as possible, as well as build out a few automated things that could support the business, such as a twitter bot and analytics that will be on public display.
 
 # Current Full Stack Map (Will Change As I update it!)
 

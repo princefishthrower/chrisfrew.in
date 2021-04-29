@@ -9,11 +9,7 @@ _This post is mirrored on my [Medium Account](https://chrisfrewin.medium.com/c-n
 
 # Show Me the Code!
 
-As always, the code is in the [example repository](https://github.com/princefishthrower/json-patch-filter-example).
-
-I've also hosted the repository as an [example site](https://chrisfrew.in/json-patch-filter-example/). 
-
-**Please be respectful with the example site, just give it a test to see how it works. Spam and other nonsense will be quickly dealt with.**
+As always, the code is in the [example repository](https://github.com/princefishthrower/json-patch-filter-example). 
 
 I've named the .NET project `JsonPatchFilterExample`, and all the namespaces in the code snippets below reflect that. If you start up the code in the repository, you'll have your browser open up right away with the working, real-time edit form!
 

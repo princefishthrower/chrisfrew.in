@@ -3,9 +3,6 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    transition: all 0.4s !important;
 }
 
 // more tag styles
@@ -230,9 +227,9 @@ button.code-copy-button {
 }
 
 // to work on safari, this has to be !important (why - who knows?)
-.gatsby-image-wrapper img {
-    border-radius: 100% !important;
-}
+// .gatsby-image-wrapper img {
+//     border-radius: 100% !important;
+// }
 
 // large screens (width greater than 1400px)
 @media only screen and (min-width: $large) {

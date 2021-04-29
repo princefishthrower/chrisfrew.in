@@ -10,13 +10,6 @@ export default function EmailForm() {
                 noValidate
                 className="email-form"
             >
-                {/* <label className="email-label">Subscribe!</label> */}
-                {/* <input
-                    type="email"
-                    placeholder="awesome_dev@yourmail.com"
-                    required
-                    className="email-input"
-                /> */}
                 {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                 <div
                     style={{ position: "absolute", left: "-5000px" }}
