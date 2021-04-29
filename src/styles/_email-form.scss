@@ -3,12 +3,6 @@
     flex-direction: column;
     align-items: center;
 
-    .email-label {
-        font-family: "CooperBlackRegular";
-        font-weight: 500;
-        font-size: 2rem;
-    }
-
     .email-input {
         width: 250px;
         height: 40px;
@@ -26,8 +20,8 @@
         border: none;
         border-radius: 5px;
         box-sizing: border-box;
-        font-family: "CooperBlackRegular";
-        font-weight: 500;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 900;
         font-size: 1.25rem;
         cursor: pointer;
         transition: 0.4s !important;

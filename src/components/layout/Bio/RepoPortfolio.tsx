@@ -7,6 +7,7 @@ export function RepoPortfolio() {
         "react-redux-shopify-storefront-api-example",
         "react-redux-typescript-shopify-storefront-api-example",
         "react-typescript-generic-search-sort-and-filter",
+        "instagramize"
     ]
     return (
         <>

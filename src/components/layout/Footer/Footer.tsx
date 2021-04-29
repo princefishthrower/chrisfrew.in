@@ -39,12 +39,6 @@ export function Footer() {
                     </a>
                 </span>
                 <div>
-                {/* <img
-                    src={monetizedLoop}
-                    alt="Monetization by Coil"
-                    width="171"
-                    height="22"
-                /> */}
                 <MonetizedLoop/>
                 </div>
             </div>

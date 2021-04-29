@@ -20,7 +20,7 @@ export function ColoredTitle(props: IColoredTitleProps) {
         true
     )
     return (
-        <h1 className="cooper big" style={style}>
+        <h1 className="big monospace" style={style}>
             <Fade
                 triggerOnce={true}
                 cascade={true}

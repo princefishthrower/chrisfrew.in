@@ -9,18 +9,6 @@ export interface INavLogoProps {
 
 export function NavLogo(props: INavLogoProps) {
     const { size } = props
-    const data = useStaticQuery(graphql`
-        query NavLogoQuery {
-            site {
-                siteMetadata {
-                    author {
-                        name
-                    }
-                    subtitle
-                }
-            }
-        }
-    `)
     const isBlogPage =
         typeof window !== "undefined" &&
         window.location.pathname.includes("/blog/")

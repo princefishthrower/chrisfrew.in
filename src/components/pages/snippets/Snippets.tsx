@@ -44,7 +44,7 @@ export function Snippets(props: ISnippetsProps) {
         : URLSearchParamValue.ALL
     const titleComponent = pdfMode ? (
         <>
-        <h1 className="cooper big">{title}</h1>
+        <h1 className="big monospace">{title}</h1>
         <p>From <a href="https://chrisfrew.in">Chris' Full Stack Blog</a>.</p>
         </>
     ) : (

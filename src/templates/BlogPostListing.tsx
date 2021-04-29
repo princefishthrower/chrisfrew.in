@@ -40,7 +40,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
-    const cleanTitle = `Posts Page No. ${currentPage}`
+    const cleanTitle = currentPage !== 1 ? `Posts Page No. ${currentPage}` : `Chris' Full Stack Blog`
     const cleanDescription = `All posts from ${postsToRender[0].node.frontmatter.date} to ${
         postsToRender[postsToRender.length-1].node.frontmatter
             .date

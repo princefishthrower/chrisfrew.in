@@ -1,10 +1,12 @@
-.dark-theme .linear-wipe {
-    font-family: "CooperBlackRegular";
-    letter-spacing: 0.075rem;
+.linear-wipe {
+    font-family: "Courier New", Courier, monospace;
     font-weight: 900;
     text-align: center;
-    color: #000;
     animation: shine 2s linear infinite;
+}
+
+.dark-theme .linear-wipe {
+    color: #000;
 
     &.fillmonokaipink-fillmonokaiblue {
         background: linear-gradient(
@@ -47,12 +49,7 @@
 }
 
 .light-theme .linear-wipe {
-    font-family: "CooperBlackRegular";
-    letter-spacing: 0.075rem;
-    font-weight: 900;
-    text-align: center;
     color: #000;
-    animation: shine 2s linear infinite;
 
     &.fillmonokaipink-fillmonokaiblue {
         background: linear-gradient(
@@ -95,12 +92,7 @@
 }
 
 .outrun-theme .linear-wipe {
-    font-family: "CooperBlackRegular";
-    letter-spacing: 0.075rem;
-    font-weight: 900;
-    text-align: center;
     color: #000;
-    animation: shine 2s linear infinite;
 
     &.filloutrunorange-filloutrunpink {
         background: linear-gradient(
@@ -143,12 +135,7 @@
 }
 
 .black-white-theme .linear-wipe {
-    font-family: "CooperBlackRegular";
-    letter-spacing: 0.075rem;
-    font-weight: 900;
-    text-align: center;
     color: #000;
-    animation: shine 2s linear infinite;
 
     &.fillblack-fillgray {
         background: linear-gradient(

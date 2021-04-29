@@ -1,4 +1,6 @@
+import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { Fade } from "react-awesome-reveal"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import Sparkles from "../../utils/Sparkles"
 
@@ -6,6 +8,9 @@ export function Book() {
     return (
         <>
             <ColoredTitle title="📘 Full Stack SaaS Product Cookbook"/>
+            <Fade triggerOnce={true} direction="down" delay={1000} style={{textAlign: 'center'}}>
+            <StaticImage src="../../../images/saas-cookbook.png" placeholder="blurred" alt="Chris" width={400} height={400} />
+            </Fade>
             <h2>
                 From Soup 🍜 to Nuts 🥜 - Creating a Profitable SaaS Product as
                 a Solo Developer in Days
@@ -42,7 +47,7 @@ export function Book() {
                     Good, because this isn't a get rich quick scheme. These full
                     stack SaaS products take an enormous amount of work to
                     develop and deploy. My book will show you every step along
-                    the way.
+                    the way, with plenty of real working code snippets and recipes for anything you may need during the development process.
                 </strong>
             </p>
             <p>
