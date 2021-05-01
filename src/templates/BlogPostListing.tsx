@@ -10,6 +10,8 @@ import { SearchContext } from "../context/search/SearchContext"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 import { DuckContainer } from "../components/layout/Duck/DuckContainer"
+import { ThemeContext } from "../context/theme/ThemeContext"
+import { getActiveTheme } from "../utils/getActiveTheme"
 
 const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
@@ -17,6 +19,10 @@ const BlogPostListing = ({ data, location, pageContext }) => {
     const title = data.site.siteMetadata.title
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
+
+    const { themeBodyClass } = useContext(ThemeContext)
+    const activeTheme = getActiveTheme(themeBodyClass)
+    const hexColorsLength = activeTheme.themeColorHexCodes.length
 
     const getPostsToRender = () => {
         // search is allowed on the homepage
@@ -40,69 +46,104 @@ const BlogPostListing = ({ data, location, pageContext }) => {
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
-    const cleanTitle = currentPage !== 1 ? `Posts Page No. ${currentPage}` : `Chris' Full Stack Blog`
-    const cleanDescription = `All posts from ${postsToRender[0].node.frontmatter.date} to ${
-        postsToRender[postsToRender.length-1].node.frontmatter
-            .date
-    }`
+    const cleanTitle =
+        currentPage !== 1
+            ? `Posts Page No. ${currentPage}`
+            : `Chris' Full Stack Blog`
+    const cleanDescription = `All posts from ${
+        postsToRender[0].node.frontmatter.date
+    } to ${postsToRender[postsToRender.length - 1].node.frontmatter.date}`
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
             {currentPage !== 1 && (
-                <ColoredTitle title={`🔢 ${cleanTitle}`} style={{marginBottom: 0}}/>
+                <ColoredTitle
+                    title={`🔢 ${cleanTitle}`}
+                    style={{ marginBottom: 0 }}
+                />
             )}
             {currentPage !== 1 && (
-                <div style={{marginBottom: '3rem'}}>
+                <div style={{ marginBottom: "3rem" }}>
                     <small className="blog-post-date">
-                        All posts from <b>{postsToRender[0].node.frontmatter.date}</b> to <b>{
-                            postsToRender[postsToRender.length-1].node.frontmatter
-                                .date
-                        }</b>
+                        All posts from{" "}
+                        <b>{postsToRender[0].node.frontmatter.date}</b> to{" "}
+                        <b>
+                            {
+                                postsToRender[postsToRender.length - 1].node
+                                    .frontmatter.date
+                            }
+                        </b>
                     </small>
                 </div>
             )}
-            <SEO frontmatter={{title: cleanTitle, description: cleanDescription}} />
+            <SEO
+                frontmatter={{
+                    title: cleanTitle,
+                    description: cleanDescription,
+                }}
+            />
             {postsToRender.length === 0 ? (
                 <p>No posts found for your query! 😞</p>
             ) : (
-                postsToRender.map(({ node }) => {
+                postsToRender.map(({ node }, index) => {
                     const title = node.frontmatter.title || node.fields.slug
-                    const tags = node.frontmatter.tags.split(",").map(x => sanitizeTag(x))
+                    const tags = node.frontmatter.tags
+                        .split(",")
+                        .map((x) => sanitizeTag(x))
+
+                    // for the bottom border color: cycle through hex colors in cyclic fashtion
+                    const color =
+                        activeTheme.themeColorHexCodes[
+                            ((index % hexColorsLength) + hexColorsLength) %
+                                hexColorsLength
+                        ]
                     return (
-                        <article key={node.fields.slug}>
-                            <header>
-                                <h3>
-                                    <Link
-                                        style={{ boxShadow: `none` }}
-                                        to={node.fields.slug}
-                                    >
-                                        {title}
-                                    </Link>
-                                </h3>
-                                <small className="blog-post-date">
-                                    {node.frontmatter.date}
-                                </small>
-                                <div>
-                                <TagRenderer linkToTagPage={true} tags={tags}/>
-                                </div>
-                            </header>
-                            <section>
-                                <p
-                                    dangerouslySetInnerHTML={{
-                                        __html:
-                                            node.frontmatter.description ||
-                                            node.excerpt,
-                                    }}
-                                />
-                            </section>
-                        </article>
+                        <>
+                            
+                            <article key={node.fields.slug}>
+                                <header>
+                                <div
+                                className="blog-post-separator-top small-only"
+                                style={{ borderColor: color }}
+                            />
+                                    <h3>
+                                        <Link
+                                            style={{ boxShadow: `none`, color }}
+                                            to={node.fields.slug}
+                                        >
+                                            {title}
+                                        </Link>
+                                    </h3>
+                                    <div
+                                className="blog-post-separator-bottom small-only"
+                                style={{ borderColor: color }}
+                            />
+                                    <small className="blog-post-date">
+                                        {node.frontmatter.date}
+                                    </small>
+                                    
+                                </header>
+                                <section>
+                                    <p
+                                        dangerouslySetInnerHTML={{
+                                            __html:
+                                                node.frontmatter.description ||
+                                                node.excerpt,
+                                        }}
+                                    />
+                                </section>
+                                <TagRenderer linkToTagPage={true} tags={tags} />
+                            </article>
+                            <div style={{marginBottom: '3rem'}} className="large-only"/>
+                            <div style={{marginBottom: '3rem'}} className="medium-only"/>
+                        </>
                     )
                 })
             )}
             <Paginator />
             <h3>Posts by tag:</h3>
-            <TagRenderer linkToTagPage={true}/>
+            <TagRenderer linkToTagPage={true} />
             <Bio />
-            <DuckContainer/>
+            <DuckContainer />
         </Layout>
     )
 }

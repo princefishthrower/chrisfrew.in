@@ -68,9 +68,6 @@ main {
     margin-top: 2rem;
 }
 
-article {
-    margin-bottom: 3rem;
-}
 article header h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -131,6 +128,7 @@ a {
 p > img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 // util classes used in many places
@@ -213,6 +211,23 @@ button.code-copy-button {
     font-size: 0.75rem !important;
     z-index: 1;
 }
+
+.blog-post-separator-top,
+.blog-post-separator-bottom {
+    border-bottom: $borderThickness dashed;
+    width: 50%;
+}
+
+.blog-post-separator-top {
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.blog-post-separator-bottom {
+    margin-top: 0.25rem;
+}
+
+
 
 
 .plain-link {

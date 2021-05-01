@@ -24,6 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
                             frontmatter {
                                 title
                                 tags
+                                draft
                             }
                         }
                     }
@@ -41,6 +42,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Create blog post pages.
     posts.forEach((post, index) => {
+
+        if (post.node.frontmatter.draft !== undefined && post.node.frontmatter.draft === false) {
+            console.log(`Post "${post.node.title}" has draft status and will not be published.`)
+        }
+
         const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
         const next = index === 0 ? null : posts[index - 1].node

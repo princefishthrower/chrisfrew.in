@@ -2,8 +2,7 @@
 title: Web Monetization - Using Coil and Uphold to Combat the Network Effect
 description: "Previously titled: \"The Internet, Subscriptions, Big Winners, the Networking Effect, Makers & Creators, and Society Today\"" 
 date: "2020-06-19"
-draft: true
-starID: 55
+draft: false
 tags: life,Blog Meta
 ---
 
