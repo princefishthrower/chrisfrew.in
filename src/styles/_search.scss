@@ -1,10 +1,11 @@
+// note: interestingly, whether due to math or coincidence, the transform height is half the width in both cases
 $searchWidth: 300px;
 $searchHeight: 40px;
 $transformHeight: -150px;
 
-$searchWidthMobile: 225px;
+$searchWidthMobile: 200px;
 $searchHeightMobile: $searchHeight;
-$transformHeightMobile: -115px;
+$transformHeightMobile: -100px;
 
 // remove chromes annoying highlight
 input:focus,

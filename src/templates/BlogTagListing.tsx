@@ -15,7 +15,7 @@ const BlogTagListing = ({ data, location, pageContext }) => {
     
     // only take those
     // const postsToRender = posts.filter(({ node }) => { node.frontmatter.tags.includes(tag) })
-    const cleanTitle = `Posts Tagged With ${tag}`
+    const cleanTitle = `Posts Tagged With "${tag}"`
     const cleanDescription = `All posts on Chris' Full Stack Blog tagged with "${tag}"`
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
