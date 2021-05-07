@@ -1,5 +1,5 @@
 import * as React from "react"
-import Sparkles from "../../utils/Sparkles"
+import Sparkles from "../../../utils/Sparkles"
 
 export function CompanyPortfolio() {
     return (

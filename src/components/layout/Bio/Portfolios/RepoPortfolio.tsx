@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GitHubItem } from "./GitHubIcons/GitHubItem"
+import { GitHubItem } from "../GitHubIcons/GitHubItem"
 
 export function RepoPortfolio() {
     const repoNames = [
