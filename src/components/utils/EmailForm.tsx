@@ -23,7 +23,7 @@ export default function EmailForm() {
                     />
                 </div>
                 <h3>Become a better developer.</h3>
-                <p className="small"><b>Learn the methods of my full stack madness around all parts of the stack with my +10 years of diverse software experience!</b></p>
+                <p className="small"><b>Learn the methods of my full stack madness around all parts of the stack with my 10+ years of diverse software experience!</b></p>
                 <input
                     type="submit"
                     value="Subscribe!"

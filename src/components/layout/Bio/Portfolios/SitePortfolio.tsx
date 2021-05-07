@@ -60,12 +60,13 @@ export function SitePortfolio() {
                 >
                     fullstackcraft.com
                 </a>
+                •
                 <a
                     href="https://princefishthrower.github.io/invaders/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    All 32,767 Invaders!
+                    Invaders!
                 </a>
             </div>
         </>
