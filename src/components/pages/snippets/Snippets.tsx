@@ -10,6 +10,10 @@ import { ColoredTitle } from "../../utils/ColoredTitle"
 import { SnippetToggler } from "./SnippetToggler"
 
 // special raw-loader requires - pulls in file as string
+const updateArrayTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/updateArray.ts")
+const updateArrayJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/updateArray.js")
+const updateArrayUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/utils/updateArrayUsage.ts")
+
 const useDidMountTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useDidMount.ts")
 const useDidMountJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/hooks/useDidMount.js")
 const useDidMountUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useDidMountUsage.tsx")
@@ -84,6 +88,32 @@ export function Snippets(props: ISnippetsProps) {
                 languageFilter === URLSearchParamValue.TYPESCRIPT ||
                 languageFilter === URLSearchParamValue.JAVASCRIPT) && (
                 <>
+                <SnippetToggler
+                        snippetLabel="updateArray()"
+                        snippetDescription="Updates an object array at the specified update key with the update value, if the specified test key matches the test value. Optionally pass 'testFailValue' to set a default value if the test fails."
+                        seenInPosts={[
+                            {
+                                title: "Advanced TypeScript: A Generic Function to Update and Manipulate Object Arrays",
+                                slug: "/blog/advanced-typescript-a-generic-function-to-update-and-manipulate-object-arrays"
+                            }
+                        ]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "updateArray.ts",
+                                code: updateArrayTS.default.toString(),
+                                usageCode: updateArrayUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "updateArray.js",
+                                code: updateArrayJS.default.toString(),
+                                usageCode: updateArrayUsage.default.toString(),
+                                language: "javascript",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                        languageFilter={languageFilter}
+                    />
                     <SnippetToggler
                         snippetLabel="useDidMount()"
                         snippetDescription="Tiny hook to know when a React component has mounted."

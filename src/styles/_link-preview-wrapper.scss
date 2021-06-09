@@ -1,13 +1,18 @@
-.dark-theme .linkPreviewWrapper {
-    border: 1px solid $lightColor;
-    &:hover {
-        background-color: #2a2a2a;
-    }
+.linkPreviewWrapper {
+    transition: background-color 0.4s;
     & .title {
         font-weight: 900;
-        color: $lightColor;
     }
-    & .description {
+}
+
+.dark-theme .linkPreviewWrapper {
+    border: 1px solid $lightColor;
+    background-color: $offsetDark;
+    &:hover {
+        background-color: $darkColor;
+    }
+    & .title, & .description {
+        color: $lightColor;
         color: $lightColor;
     }
     & .url {
@@ -17,18 +22,46 @@
 
 .light-theme .linkPreviewWrapper {
     border: 1px solid $darkColor;
+    background-color: $offsetLight;
     &:hover {
-        background-color: #d3d3d3;
+        background-color: $blackWhiteLightGray;
     }
-    & .title {
-        font-weight: 900;
+    & .title, & .description {
         color: $darkColor;
-    }
-    & .description {
         color: $darkColor;
     }
     & .url {
         color: $monokaiRedLightMode;
+    }
+}
+
+.outrun-theme .linkPreviewWrapper {
+    border: 1px solid $outrunLightPurple;
+    background-color: $outrunDarkPurple;
+    &:hover {
+        background-color: $offsetDark;
+    }
+    & .title, & .description {
+        color: $outrunLightOrange;
+        color: $outrunLightOrange;
+    }
+    & .url {
+        color: $outrunPink;
+    }
+}
+
+.black-white-theme .linkPreviewWrapper {
+    border: 1px solid $darkColor;
+    background-color: $lightColor;
+    &:hover {
+        background-color: $blackWhiteLightGray;
+    }
+    & .title, & .description {
+        color: $darkColor;
+        color: $darkColor;
+    }
+    & .url {
+        color: $blackWhiteGray;
     }
 }
 

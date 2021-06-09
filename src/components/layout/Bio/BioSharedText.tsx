@@ -35,10 +35,22 @@ export function BioSharedText() {
                 cherish teaching what I've learned over the years, because I
                 think software development is especially difficult these days,
                 with all the new tools and frameworks that seem to come out
-                daily. I focus both advanced and niche topics in my courses and
-                each course always considers its place in the backdrop of the
-                wider full stack software ecosystem. If such courses sound
-                interesting to you, please checkout my{" "}
+                daily.
+            </p>
+            <p>
+                My current teaching efforts are being poured into drafting my book and course,{" "}
+                <Link to="/book">Full Stack SaaS Product Cookbook</Link>, which
+                will be released soon. In this book, I take you step by step
+                from boilerplate to finished product, on the entire software
+                development lifecycle behind{" "}
+                <a href="https://reduxplate.com">ReduxPlate</a>, a Redux code
+                generator.
+            </p>
+            <p>
+                With all my courses, I focus on both advanced and niche topics and
+                in each course I always make considerations into the broader
+                backdrop of the entire full stack software ecosystem. If such
+                courses sound interesting to you, please checkout my{" "}
                 <Link to="/courses">Full Stack Courses</Link>.
             </p>
             <p>
