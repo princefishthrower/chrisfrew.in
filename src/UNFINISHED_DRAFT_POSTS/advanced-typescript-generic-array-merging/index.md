@@ -6,13 +6,13 @@ draft: false
 tags: TypeScript, TypeScript Generics
 ---
 
-import FullStackSaasProductCookbook from "../../../components/FullStackSaasProductCookBookLinks/FullStackSaasProductCookBookLinks"
+import FullStackSaasProductCookbookLinks from "../../../components/FullStackSaasProductCookBookLinks/FullStackSaasProductCookBookLinks"
 
 # TypeScript Generics Madness
 
 This post will following what I thought was a very elegant solution in my previous post on [building a generic function to update an array at a specific key according to a specific test value](/blog/advanced-typescript-a-generic-function-to-update-and-manipulate-object-arrays/). As I continue to try and maintain the cleanest codebase as possible for [ReduxPlate](https://reduxplate.com), I continue to see the power of these easy to use generic functions, and how much repetitive code they save me from.
 
-<FullStackSaasProductCookbook/>
+<FullStackSaasProductCookbookLinks/>
 
 # Motivation
 
