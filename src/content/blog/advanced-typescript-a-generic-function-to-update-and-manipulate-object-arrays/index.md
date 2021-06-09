@@ -6,13 +6,13 @@ draft: false
 tags: TypeScript, TypeScript Generics
 ---
 
-import FullStackSaasProductCookbook from "../../../components/FullStackSaasProductCookBookLinks/FullStackSaasProductCookBookLinks"
+import FullStackSaasProductCookbookLinks from "../../../components/FullStackSaasProductCookBookLinks/FullStackSaasProductCookBookLinks"
 
 # Always Pushing for Cleaner Code
 
 While building my newest SaaS product, [ReduxPlate](https://reduxplate.com), I realized a common pattern kept cropping up in my array manipulation functions. I was always updating a specific value at a specific key, based on a specific test on some _other_ key.
 
-<FullStackSaasProductCookbook/>
+<FullStackSaasProductCookbookLinks/>
 
 For example, for the editor widget on the [ReduxPlate homepage](https://reduxplate.com), I use a stateful array of type IEditorSettings to determine which editor is currently active and what the actual code value is in the editor: 
 
