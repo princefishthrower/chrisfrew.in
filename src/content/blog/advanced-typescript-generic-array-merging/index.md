@@ -1,6 +1,6 @@
 ---
 title: "Advanced TypeScript: A Generic Function to Merge Object Arrays"
-description: "Yet another powerful generic function."
+description: "Another powerful generic function from the SaaS product archives."
 date: "2021-06-14"
 draft: false
 tags: TypeScript, TypeScript Generics
