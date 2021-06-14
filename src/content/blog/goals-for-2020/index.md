@@ -12,15 +12,15 @@ Though it's only the second year of doing this, I really enjoy this yearly revie
 ## 2019: Software Engineering and Career Goals
 - Learn Typescript and incorporate it into my personal stack of choice 
 
-:white_check_mark: Done. I've learned TypeScript. However, I admit I 'cheat' by continuing to work in node projects that I started in normal JavaScript, which doesn't help my case. For example this blog isn't TypeScript yet. (I need to upgrade the gatsby version anyway, I think I'm like one whole major version behind). I say it with a bit of apprehension, but any future projects that I do with node, I pledge to do what would be the JavaScript parts with TypeScript.
+✅ Done. I've learned TypeScript. However, I admit I 'cheat' by continuing to work in node projects that I started in normal JavaScript, which doesn't help my case. For example this blog isn't TypeScript yet. (I need to upgrade the gatsby version anyway, I think I'm like one whole major version behind). I say it with a bit of apprehension, but any future projects that I do with node, I pledge to do what would be the JavaScript parts with TypeScript.
 
 - Find a paying freelance employer or project 
 
-:white_check_mark: Technically acheived through SkillShare. Read on to learn more about my course situation and further goals for courses / tutorials in 2020.
+✅ Technically acheived through SkillShare. Read on to learn more about my course situation and further goals for courses / tutorials in 2020.
 
 - Finally build a profitable side hustle! 
 
-:white_check_mark: Also technically done through SkillShare?
+✅ Also technically done through SkillShare?
 
 - Earn at least $1000 through my Skillshare course(s) 
 
@@ -29,7 +29,7 @@ Though it's only the second year of doing this, I really enjoy this yearly revie
 ## 2019: Miscellaneous Goals
  - Read more.
 
-:white_check_mark: For 2019, 'Read more' was also achieved, but my actual numerical goal to read 30 books was a total fail. I only managed 14. For 2020 I've made the same goal of 30 books. I'm trying harder this year to achieve it - though it really _is_ quite a lot - nearly 3 books per month! Whew! :sweat_smile:
+✅ For 2019, 'Read more' was also achieved, but my actual numerical goal to read 30 books was a total fail. I only managed 14. For 2020 I've made the same goal of 30 books. I'm trying harder this year to achieve it - though it really _is_ quite a lot - nearly 3 books per month! Whew! :sweat_smile:
 
 Somehow it took the whole 2019 to get my reading muscles back - but I'm sitting strong here in mid-January already having finished my first book last week and halfway done with two more (that's right, I'm multitasking with two completely different books!!!)
 
@@ -47,7 +47,7 @@ Somehow it took the whole 2019 to get my reading muscles back - but I'm sitting 
 
 - More winter hiking/ski touring (this may seem like a random one, but I realized in all of 2018 I used my snowshoes twice for two winter hikes… granted, I went skiing a lot as well last year, but, I mean, I live in Austria, there is really no excuse not to be out and about in the mountains on the weekend, including hiking!)
 
-:white_check_mark: Definitely got this one in 2019, and hopefully there will be even more winter trips in 2020, since I've planned some more ski tours and even some mountain hut overnighters!
+✅ Definitely got this one in 2019, and hopefully there will be even more winter trips in 2020, since I've planned some more ski tours and even some mountain hut overnighters!
 
 ## 2019 Review
 

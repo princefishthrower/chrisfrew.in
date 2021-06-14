@@ -14,21 +14,21 @@ Each year I set a set of goals or resolutions for the coming year, and also revi
 
 - Work 'for the man' less - maybe even 'work' less
 
-:white_check_mark: Achieved! At some point work was fairly slow, and my coworker and I agreed I would work on his projects Wednesday - Friday, while I could use Monday and Tuesday to work on my own projects. That has stuck through all of 2020, and has provided me plenty of time to work on my blog posts, further learnings in Generics and TypeScript, and nearly finishing my social coffee app, RŒST.
+✅ Achieved! At some point work was fairly slow, and my coworker and I agreed I would work on his projects Wednesday - Friday, while I could use Monday and Tuesday to work on my own projects. That has stuck through all of 2020, and has provided me plenty of time to work on my blog posts, further learnings in Generics and TypeScript, and nearly finishing my social coffee app, RŒST.
 
 - Make more software engineering tutorial videos and blog posts
 
-:white_check_mark: Halfway achieved, at least in terms of the blog posts. I've posted dozens of TypeScript and Generics type blog posts around the web this year, which is why it's finally time to hook up to other channels like YouTube, Design by Humans, Redbubble, and Dribbble. (see below to see where I'm hope to go with this)
+✅ Halfway achieved, at least in terms of the blog posts. I've posted dozens of TypeScript and Generics type blog posts around the web this year, which is why it's finally time to hook up to other channels like YouTube, Design by Humans, Redbubble, and Dribbble. (see below to see where I'm hope to go with this)
 
 - Improve cooking skills 
 
-:white_check_mark: Achieved! I've found and developed numerous tasty recipes this year, though I want to get even better! It's a continuous work in progress.
+✅ Achieved! I've found and developed numerous tasty recipes this year, though I want to get even better! It's a continuous work in progress.
 
 - Homebrew an _amazing_ beer
 
-:white_check_mark: Achieved! Towards the end of 2020, we brewed a milkshake IPA, which was completely inundated with dry hops, resulting in what I called a 'mango bomb' beer, on par with some IPAs I've had from a variety of craft breweries.
+✅ Achieved! Towards the end of 2020, we brewed a milkshake IPA, which was completely inundated with dry hops, resulting in what I called a 'mango bomb' beer, on par with some IPAs I've had from a variety of craft breweries.
 
-Well, I gotta say I was going pretty easy on myself in 2020. Time to revert to the mean this year! :smiling_imp:
+Well, I gotta say I was going pretty easy on myself in 2020. Time to revert to the mean this year! 😈
 
 # 2020, Full of So Much Hope... Then... Nothing
 

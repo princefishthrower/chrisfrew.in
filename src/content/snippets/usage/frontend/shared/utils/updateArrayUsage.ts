@@ -30,7 +30,7 @@ const code = "<p>some new HTML code for the html editor</p>"
 
 // This will return a new array of type Array<IEditorSetting>,
 // with the code updated the code ONLY for the editor(s) which isActive = true
-const updatedArray = updateArray<IEditorSetting, "isActive", "code">({
+const updatedArray = updateArray({
     array: editorSettingsState,
     testKey: "isActive",
     testValue: true,

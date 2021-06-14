@@ -14,6 +14,11 @@ const updateArrayTS = require("!!raw-loader!../../../content/snippets/frontend/t
 const updateArrayJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/updateArray.js")
 const updateArrayUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/utils/updateArrayUsage.ts")
 
+const mergeArraysTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/mergeArrays.ts")
+const mergeArraysJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/mergeArrays.js")
+const mergeArraysUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/utils/mergeArraysUsage.ts")
+
+
 const useDidMountTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useDidMount.ts")
 const useDidMountJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/hooks/useDidMount.js")
 const useDidMountUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useDidMountUsage.tsx")
@@ -89,7 +94,33 @@ export function Snippets(props: ISnippetsProps) {
                 languageFilter === URLSearchParamValue.JAVASCRIPT) && (
                 <>
                 <SnippetToggler
-                        snippetLabel="updateArray()"
+                        snippetLabel="mergeArrays"
+                        snippetDescription="Merges all properties of all objects from a less complex object array to the more complex object array. The more complex object type must extend the less complex type."
+                        seenInPosts={[
+                            {
+                                title: "Advanced TypeScript: A Generic Function to Merge Object Arrays",
+                                slug: "/blog/advanced-typescript-generic-array-merging/"
+                            }
+                        ]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "mergeArrays.ts",
+                                code: mergeArraysTS.default.toString(),
+                                usageCode: mergeArraysUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "mergeArrays.js",
+                                code: mergeArraysJS.default.toString(),
+                                usageCode: mergeArraysUsage.default.toString(),
+                                language: "javascript",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                        languageFilter={languageFilter}
+                    />
+                <SnippetToggler
+                        snippetLabel="updateArray"
                         snippetDescription="Updates an object array at the specified update key with the update value, if the specified test key matches the test value. Optionally pass 'testFailValue' to set a default value if the test fails."
                         seenInPosts={[
                             {
@@ -115,7 +146,7 @@ export function Snippets(props: ISnippetsProps) {
                         languageFilter={languageFilter}
                     />
                     <SnippetToggler
-                        snippetLabel="useDidMount()"
+                        snippetLabel="useDidMount"
                         snippetDescription="Tiny hook to know when a React component has mounted."
                         seenInPosts={[
                             {
@@ -141,7 +172,7 @@ export function Snippets(props: ISnippetsProps) {
                         languageFilter={languageFilter}
                     />
                     <SnippetToggler
-                        snippetLabel="sendSlackMessage()"
+                        snippetLabel="sendSlackMessage"
                         snippetDescription="Leverages the fetch API to post a slack message to your Slack webhook with a one-liner."
                         seenInPosts={[{
                             title: "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
@@ -173,7 +204,7 @@ export function Snippets(props: ISnippetsProps) {
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.NODE) && (
                 <SnippetToggler
-                    snippetLabel="sendSlackMessage()"
+                    snippetLabel="sendSlackMessage"
                     snippetDescription="A Node.js compatible (using node-fetch) function that lets you send a Slack message with a one-liner."
                     seenInPosts={[{
                         title: "Fully Automating Chrisfrew.in Productions - Part 4 of ??? - Building a Slack Bot",
@@ -223,7 +254,7 @@ export function Snippets(props: ISnippetsProps) {
                 <>
                     <h3>Bash</h3>
                     <SnippetToggler
-                        snippetLabel="buildColorPrompt()"
+                        snippetLabel="buildColorPrompt"
                         snippetDescription="Letter-level color changes for your bash prompt!"
                         seenInPosts={[{
                             title: "Awesome Colors for Shell Prompts!",
@@ -240,7 +271,7 @@ export function Snippets(props: ISnippetsProps) {
                         pdfMode={pdfMode}
                     />
                     <SnippetToggler
-                        snippetLabel="sendSlackMessage()"
+                        snippetLabel="sendSlackMessage"
                         snippetDescription="Util function to send a Slack message from bash."
                         seenInPosts={[{
                             title: "The Last Bitbucket Pipelines Tutorial You'll Ever Need: Mastering CI and CD",
@@ -258,7 +289,7 @@ export function Snippets(props: ISnippetsProps) {
                     />
                     <h3>zsh</h3>
                     <SnippetToggler
-                        snippetLabel="buildColorPrompt()"
+                        snippetLabel="buildColorPrompt"
                         snippetDescription="Letter-level color changes for your zsh prompt!"
                         seenInPosts={[{
                             title: "Awesome Colors for Shell Prompts!",
