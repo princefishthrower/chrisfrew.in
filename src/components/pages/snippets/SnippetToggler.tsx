@@ -42,7 +42,7 @@ export function SnippetToggler(props: ISnippetTogglerProps) {
     const headerContent = (
         <>
             <hr />
-            <h3 className={className}>{snippetLabel}</h3>
+            <h3 id={snippetLabel} className={className}>{snippetLabel}</h3>
             {snippetDescription && <p>{snippetDescription}</p>}
             {seenInPosts && (
                 <p>
