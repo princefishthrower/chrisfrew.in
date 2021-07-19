@@ -1,0 +1,117 @@
+---
+title: Biking into Fission
+description: Just How Powerful are Our World's Power Plants?
+date: "2021-07-19"
+draft: false
+tags: Environment, Data Challenge, Sustainability
+---
+
+import Revealer from '../../../components/RevealComponents/Revealer';
+import goldbike from './goldbike.png';
+
+## What Does Biking Have to Do With Nuclear Fission?
+
+In a recent discussion, I realized the overwhelming misconceptions uninformed people may have about power generation techniques - not only the confusion of terms and ideas - but sheer number differentials (which humans are notoriously bad at anyway). 
+
+This post is finally the first installment of a few visualization posts I have in my writing queue which all deal with big numbers. Hopefully the attached graphics and animations can help our feeble human brains understand the huge numbers that are essential in understanding these data-driven issues. Coincidently, the posts I currently have in my queue (including this one) surround topics of the environment and sustainability. Our troubles with big numbers may be quite a significant contributing factor as to why these large global style issues seem so intractable and may be the most difficult of our time.
+
+So, let's get started.
+
+## You and Your Bike
+
+This is you and your bike:
+
+<Revealer count={1} component={<img src={goldbike}/>}/>
+
+You start biking at 20 kilometers per hour (12 miles per hour) - a decent clip. After 1 hour, you've gone 20 kilometers, and generated 75 watt hours.
+
+Okay. Already the numbers are getting big. Let's start visualizing them.
+
+For kilometers (🚲) and miles (📏):
+
+<Revealer count={20} component={"🚲"}/>
+<br/>
+<Revealer count={12} component={"📏"}/>
+
+For watts (🔋):
+
+<Revealer count={75} component={"🔋"}/>
+
+## The Contender
+
+Now, our contender. This is a nuclear fission power plant:
+
+<Revealer count={1} component={"🏭"}/>
+
+Doesn't seem so powerful right? 😂 On average, fission power plants are sized at 1 _gigawatt_, so a fission plant running at full capacity for 1 hour generates 1 gigawatt hour of power. I'm not going to post 1 billion battery emojis on the screen here, but I will break it down for you, showing the following conversions to get us there:
+
+1000 watts is 1 kilowatt (💡):
+
+<Revealer count={1000} component={"🔋"}/>
+ = 💡
+
+1000 kilowatts is 1 megawatt (🔌):
+
+<Revealer count={1000} component={"💡"}/>
+= 🔌
+
+and 1000 megawatt is 1 gigawatt (⚡):
+
+<Revealer count={1000} component={"🔌"}/>
+ = ⚡
+
+In otherwords, 1 gigawatt is _1 billion_ (1,000,000,000) watts.
+
+## Comparison to Other Power Generation Techniques
+
+Let's compare this number with some other traditional power plants, by seeing what we would need to match the capacity of a single fission power plant. 
+
+"King Coal" (👑) power plants average about 59 megawatts, so we would need about 17 coal power plants to match that of 1 fission plant:
+
+<Revealer count={17} component={"👑"}/>
+
+Not so much of a "King" anymore, eh? 😂
+
+Newer natural gas powerplants (⛽) are about 800 megawatts in size, but you would still at least two to exceed the level of a single fission powerplant:
+
+<Revealer count={2} component={"⛽"}/>
+
+Hydro powerplants (💧) vary widely in size, but to give them the benefit of the doubt let's say around 50 megawatt, so we would need 20 hydropower plants to match a fission reactor:
+
+<Revealer count={20} component={"💧"}/>
+
+A single windmill (🌪️) is about 3 megawatt, so we would need 333 windmills in a wind farm to match the size of a fission plant:
+
+<Revealer count={333} component={"🌪️"}/>
+
+And your average home solar system (☀️) is about 5 kilowatts (💡💡💡💡💡), so we would need 200000 homes to install solar systems to match that. Since I don't want to break the internet, let's divide that by 200, to represent an entire _town_ which somehow had all it's members installing solar power on their homes. We would still need 1000 towns of 200 homes to install solar systems:
+
+<Revealer count={1000} component={"☀️"}/>
+
+## Back to Biking
+
+Let's see how far and how long you have to bike to match the power generation of what a fission power plant generates _in just one hour_.
+
+Simple division should suffice. 1 gigawatt hour per hour of fission plant operation divided by your 75 watts per hour biked:
+
+1 gigawatt hour / 75 watts = 1,333,333 hours
+
+This 1,333,333 hours is 55,555 days, or 152 years: 
+
+<Revealer count={152} component={"🗓️"}/>
+
+That's a lot of years.
+
+Maintaining your 20 kilometers per hour (12 miles per hour) pace for that long, you would end up biking 26,666,660 km, or 16,569,894 miles - equivalent to biking the world's equator 665 times: 
+
+<Revealer count={665} component={"🌎"}/>
+
+Remember, that's just to match _one hour_ of fission power plant operation. Even if we want to meet the power output of a fission plant operation _for a single second_, you would still have to bike for _15 days_, the equivalent of biking 7400 kilometers, or 4600 miles.
+
+You'd better start biking.
+
+## Thanks!
+
+I hope this was interesting and educational. Maybe it helped you reframe how overwhelming the renewables question is and how much effort it will take to shift to a 100% renewable energy system. I'll be making more of these animated posts in the coming months!
+
+-Chris 🍻
