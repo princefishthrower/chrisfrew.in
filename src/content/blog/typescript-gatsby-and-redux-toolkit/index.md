@@ -9,7 +9,7 @@ tags: typescript, gatsby, react, redux, redux toolkit, react hooks, server side 
 
 ## Redux Toolkit
 
-The software world has slowly been catching on to start using the Redux Toolkit patterns of doing things. In short, the new paradigm relies on writing single files or "slices", which combines types, actions, and reducers all into one. These responsibilities were traditionally separated into `actions`, `reducers`, and `types` files for each 'slice' - which originally made Redux so famous for it's boilerplate 😄.
+The software world has slowly been recognizing and migrating to the relatively new Redux Toolkit way of writing Redux. In short, the new way relies on writing single files or "slices", which combines types, actions, and reducers all into one. These responsibilities were traditionally separated into `actions`, `reducers`, and `types` files for each 'slice' - which originally made Redux so famous for it's boilerplate 😄.
 
 ## Current Redux with TypeScript Recommendations
 
