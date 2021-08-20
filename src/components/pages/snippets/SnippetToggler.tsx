@@ -83,7 +83,7 @@ export function SnippetToggler(props: ISnippetTogglerProps) {
                     language={snippetInfos[1].language}
                     pdfMode={pdfMode}
                 />
-                <h3>Usage</h3>
+                { snippetInfos[1].usageCode !== "" && <h3>Usage</h3> }
                 {snippetInfos[1].usageCode && (
                     <Pre
                         codeString={snippetInfos[1].usageCode}

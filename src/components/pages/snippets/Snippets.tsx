@@ -18,10 +18,15 @@ const mergeArraysTS = require("!!raw-loader!../../../content/snippets/frontend/t
 const mergeArraysJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/mergeArrays.js")
 const mergeArraysUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/utils/mergeArraysUsage.ts")
 
-
 const useDidMountTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useDidMount.ts")
 const useDidMountJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/hooks/useDidMount.js")
 const useDidMountUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useDidMountUsage.tsx")
+
+const useAppSelectorTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useAppSelector.ts")
+const useAppSelectorUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useAppSelectorUsage.tsx")
+
+const useAppDispatchTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/hooks/useAppDispatch.ts")
+const useAppDispatchUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/hooks/useAppDispatchUsage.tsx")
 
 const sendSlackMessageFrontendTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageFrontendJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/sendSlackMessage.js")
@@ -93,7 +98,7 @@ export function Snippets(props: ISnippetsProps) {
                 languageFilter === URLSearchParamValue.TYPESCRIPT ||
                 languageFilter === URLSearchParamValue.JAVASCRIPT) && (
                 <>
-                <SnippetToggler
+                    <SnippetToggler
                         snippetLabel="mergeArrays"
                         snippetDescription="Merges all properties of all objects from a less complex object array to the more complex object array. The more complex object type must extend the less complex type."
                         seenInPosts={[
@@ -119,7 +124,7 @@ export function Snippets(props: ISnippetsProps) {
                         pdfMode={pdfMode}
                         languageFilter={languageFilter}
                     />
-                <SnippetToggler
+                    <SnippetToggler
                         snippetLabel="updateArray"
                         snippetDescription="Updates an object array at the specified update key with the update value, if the specified test key matches the test value. Optionally pass 'testFailValue' to set a default value if the test fails."
                         seenInPosts={[
@@ -165,6 +170,58 @@ export function Snippets(props: ISnippetsProps) {
                                 fileLabel: "useDidMount.js",
                                 code: useDidMountJS.default.toString(),
                                 usageCode: useDidMountUsage.default.toString(),
+                                language: "javascript",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                        languageFilter={languageFilter}
+                    />
+                    <SnippetToggler
+                        snippetLabel="useAppSelector"
+                        snippetDescription="Officially recommended hook to get a typed selector when using Redux with TypeScript."
+                        seenInPosts={[
+                            {
+                                title: "TypeScript, Redux Toolkit, React Hooks, and Gatsby",
+                                slug: "/blog/typescript-gatsby-and-redux-toolkit"
+                            }
+                        ]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "useAppSelector.ts",
+                                code: useAppSelectorTS.default.toString(),
+                                usageCode: useAppSelectorUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "useAppSelector.js",
+                                code: "// This hook only makes sense to use in TypeScript code :(",
+                                usageCode: "",
+                                language: "javascript",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                        languageFilter={languageFilter}
+                    />
+                    <SnippetToggler
+                        snippetLabel="useAppDispatch"
+                        snippetDescription="Officially recommended hook to get a typed dispatch when using Redux with TypeScript."
+                        seenInPosts={[
+                            {
+                                title: "TypeScript, Redux Toolkit, React Hooks, and Gatsby",
+                                slug: "/blog/typescript-gatsby-and-redux-toolkit"
+                            }
+                        ]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "useAppDispatch.ts",
+                                code: useAppDispatchTS.default.toString(),
+                                usageCode: useAppDispatchUsage.default.toString(),
+                                language: "typescript",
+                            },
+                            {
+                                fileLabel: "useAppDispatch.js",
+                                code: "// This hook only makes sense to use in TypeScript code :(",
+                                usageCode: "",
                                 language: "javascript",
                             },
                         ]}
