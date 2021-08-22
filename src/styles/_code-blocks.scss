@@ -1,3 +1,7 @@
+strong > code {
+    font-size: 1rem !important;
+}
+
 .dark-theme, .outrun-theme {
     // make those prism styles WCAG compliant!
     span.token.delimiter.important {

@@ -1,0 +1,122 @@
+---
+title: Converting a Large Create React App Project from JavaScript to TypeScript
+description:
+date: "2021-08-21"
+draft: false
+starID: 11
+tags: typescript,javascript,react
+---
+
+## The TypeScript Addiction
+
+I'm working on a large industrial react project, scaffolded by [`create-react-app`.](https://github.com/facebook/create-react-app) The project was started in 2018, _just_ before TypeScript really started becoming well known and used. Using TypeScript is nearly a must for me - so I took some time to convert all the JavaScript to TypeScript across 300+ files.
+
+Here's how I did it.
+
+## Converting the Project to TypeScript... Incremental Method
+
+Sure, there are (in my opinion somewhat convoluted) ways to [convert your create react app project incrementally to TypeScript](https://eder-chamale.medium.com/incremental-migration-of-create-react-app-javascript-project-to-typescript-without-eject-8aefb5a4d317) - but let's be honest, _that's boring!_ I want ALL THE TYPESCRIPT! Ultimately, that linked example is more of a way to trick VS Code into liking both your JavaScript and TypeScript files. So again, in my opinion, it's not the best solution. 
+
+## Converting the Project to TypeScript... Brute Force Method
+
+My way, which may _also_ not be the best solution, is a relatively easy way to convert your entire code base to TypeScript. It is a two step process coordinated by two shell scripts:
+
+1. `rename-to-js-and-jsx.sh` - Convert all .js and .jsx files to .ts and .tsx files respectively.
+2. `prepend-ts-nocheck.sh` - Add //@ts-nocheck to the top of every file
+
+It ain't pretty, but it gets the job done.
+
+This method rapidly gets you to a fair starting point to being able to write anything new with TypeScript, and legacy code can be carefully and systematically updated to TypeScript as needed by removing the `//@ts-nocheck` at the top of each file.
+
+The only thing I struggled with was a global variable as a counter in the bash script. Unfortunately, because `find` spawns a sub process, you can't use a variable. So I ended up using a sort of hack: just reading and writing on a temporary text file to keep track of the value.
+
+Note also how I distinguish how to convert a .jsx (or .js) file to a `.tsx` file: If the first like includes `import React`. You may want to improve this yourself if `react` is not always the top import in your JSX files, or if you are using `import * from` or `require` syntax.
+
+## The Scripts
+
+Probably what you've been waiting for!
+
+Note that these scripts will operate on all files within the `src/` folder - which _should_ be where all your source code is in a project that was scaffolded by `create-react-app`.
+
+⚠️ **Warning: these scripts use `mv` and quite literally replace the `.js` or `.jsx` files with their TypeScript counterparts. Proceed at your own risk, use git or backup your work, and read through these scripts. You have been warned!** ⚠️
+
+Here's the first step script `rename-to-js-and-jsx.sh`:
+
+```bash
+#!/bin/bash
+
+rename() {
+  extension="${1##*.}"
+  contents=$(cat $1)
+  if [[ $contents == *"import React"* ]]
+  then
+    mv "$1" "${1%.$extension}.tsx"
+    echo "Renamed $1 to ${1%.$extension}.tsx"
+    tsCount=$(cat tsCount.temp)
+    ((tsCount++))
+    echo $tsCount > tsCount.temp
+  else
+    mv "$1" "${1%.$extension}.ts"
+    echo "Renamed $1 to ${1%.$extension}.ts"
+    tsxCount=$(cat tsxCount.temp)
+    ((tsxCount++))
+    echo $tsxCount > tsxCount.temp
+  fi
+}
+
+runFindCommand() {
+  echo "0" > tsCount.temp
+  echo "0" > tsxCount.temp
+  find src \( -name "*.js" -o -name "*.jsx" \) -exec bash -c 'rename "$@"' bash {} \;
+  tsCount=$(cat tsCount.temp)
+  tsxCount=$(cat tsxCount.temp)
+  totalFiles=$((tsCount + tsxCount))
+  echo "Done. Renamed $totalFiles files:"
+  echo "- $tsCount files from .js to .ts"
+  echo "- $tsxCount files from .js (or .jsx) to .tsx"
+  rm tsCount.temp
+  rm tsxCount.temp
+}
+
+export -f rename
+runFindCommand
+```
+
+and the second step script, `prepend-ts-nocheck.sh`:
+
+```bash
+#!/bin/bash
+
+prependNoCheck() {
+  extension="${1##*.}"
+  contents=$(cat $1)
+  echo "Prepending $1 with '// @ts-nocheck'"
+  echo '// @ts-nocheck' | cat - $1 > temp && mv temp $1
+  count=$(cat count.temp)
+  ((count++))
+  echo $count > count.temp
+}
+
+runFindCommand() {
+  echo "0" > count.temp
+  find src \( -name "*.ts" -o -name "*.tsx" \) -exec bash -c 'prependNoCheck "$@"' bash {} \;
+  count=$(cat count.temp)
+  echo "Done. Prepended $count files."
+  rm count.temp
+}
+
+export -f prependNoCheck
+runFindCommand
+```
+
+## Thanks!
+
+Thanks for reading and I hope you enjoyed. Remember: 
+
+⚠️ **Use these scripts at your own risk!** ⚠️
+
+But that's what we have git for! 😉
+
+Cheers! 🍻
+
+-Chris
