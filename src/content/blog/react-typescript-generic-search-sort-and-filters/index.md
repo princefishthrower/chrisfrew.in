@@ -2,7 +2,7 @@
 title: "React and TypeScript: Generic Search, Sort, and Filter"
 description: A step-by-step guide leveraging the awesome powers of TypeScript generics to implement reusable searching, sorting, and filtering.
 date: "2020-10-27"
-tags: react,typescript,typescript generics
+tags: react,typescript,TypeScript Generics
 ---
 
 [_This post is mirrored on my Medium account._](https://chrisfrewin.medium.com/react-and-typescript-generic-search-sort-and-filter-879c5c3e2f0e)
