@@ -21,10 +21,11 @@ function SEO({
         ? `${seo.canonicalUrl}${postMeta.slug}`
         : seo.canonicalUrl,
     datePublished = isBlogPost ? postMeta.datePublished : false,
+    lang = config.lang
 }) {
     return (
         <>
-            <Helmet>
+            <Helmet htmlAttributes={{lang}}>
                 {/* General tags */}
                 <title>{title}</title>
                 <meta name="description" content={description} />
