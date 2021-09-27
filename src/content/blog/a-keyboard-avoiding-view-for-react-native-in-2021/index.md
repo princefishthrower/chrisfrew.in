@@ -137,6 +137,10 @@ export default function YourCoolKeyboardScreen () {
 }
 ```
 
+## Dependencies and Notes
+
+Note that this solution relies on two additional libraries, `@react-navigation/elements` for the header height, and `@react-native-community/hooks` for the keyboard height. A repeating theme I've found in `KeyboardAvoidingView` issues is the presence of react-navigation in a react native project - so if you are in fact _not_ using `react-navigation` in your app (in all reality, not many apps go without this dependency anymore in 2021) - you could try React Native's standard `KeyboardAvoidingView` solution for both iOS and Android. Otherwise, I of course suggest my solution. 😄 It's works well and we are using it in production.
+
 ## Thanks and Stay Tuned 📻
 
 I'll likely be posting plenty more about React Native in the coming weeks months and years as we continue to build out the [InClub](https://inclub-app.com) mobile app.
