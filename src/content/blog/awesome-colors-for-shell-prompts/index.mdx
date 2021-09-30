@@ -1,6 +1,6 @@
 ---
-title: "Awesome Colors for Shell Prompts!"
-description: Letter-level alternating colors for the bash and zsh shells.
+title: "Complex Color Patterns for Shell Prompts"
+description: Letter-level alternating colors for bash and zsh shells.
 date: "2021-04-01"
 tags: bash
 ---
@@ -12,11 +12,11 @@ import LinkPreview from "../../../components/utils/blog-posts/shared/LinkPreview
 
 No, that's not an April Fool's joke, and yes, I've heard them all before, har, har, har 😑.
 
-Anyway, I typically like to make a nice little blog post on my birthday. My previous birthday posts have included [a post about giving up as a creator and that I was shutting down the blog](https://chrisfrew.in/blog/i-quit-learning-programming-and-being-a-creative/) (which obvious to see at this point _was_ an April Fool's joke).
+Anyway, I typically like to make a nice little blog post on my birthday. My previous birthday posts have included [a post about giving up as a creator and that I was shutting down the blog](https://chrisfrew.in/blog/i-quit-learning-programming-and-being-a-creative/) (which is obvious to see at this point _was_ an April Fool's joke).
 
-# Colored Shell Prompts
+# Colored Shell Prompts?! With Emojis?!
 
-Most of us devs know we can color our shell prompts with various colors, and typically in shell syntax it is some sort of ugly looking formatting string like `\e[31m` - that one is for the color red, which I'm sure you knew right away, right? 😂
+Most of us devs know we can color our shell prompts with various colors, and in shell syntax it is some sort of ugly looking formatting string like `\e[31m` - that one is for the color red, which I'm sure you had memorized and knew right away, right? 😂
 
 Well, I took a deep dive recently on the whole shell prompt formatting story recently, after creating my Full Stack Course "Bash Commands and Scripting - from Beginner to Expert":
 
@@ -39,11 +39,17 @@ or, my current setup, like this:
 
 ![A rainbow bash prompt.](rainbow.png)
 
+# The Repository
+
+The [repository is here](https://github.com/princefishthrower/awesome-shell-prompt-colors). There you'll find all the details about the actual color implementation and the steps you need to take to get these cool colors to show up in your shell!
+
+As far as I know, I'm the first person to _ever_ have done this! (Or at least published it) 😎 I know why now - because bash and zsh syntax makes creating such color patterns a massive headache! 😅
+
+I believe I've saved you that headache by [creating a repository for the snippets](https://github.com/princefishthrower/awesome-shell-prompt-colors) and have also pasted the code snippets below.
+
 # The Code
 
-The code [repository is here](https://github.com/princefishthrower/awesome-shell-prompt-colors). There you'll find all the details about the actual color implementation and the steps you need to take to get these cool colors to show up in your shell!
-
-# The Implementations
+The [repository is here](https://github.com/princefishthrower/awesome-shell-prompt-colors). There you'll find all the details about the actual color implementation and the steps you need to take to get these cool colors to show up in your shell! For the impatient, a working script for both bash and zsh shells is below, but I can't promise that these following snippets are the most up-to-date versions.
 
 ## bash
 
@@ -238,12 +244,12 @@ precmd() {
 
 You'll also find these snippets <Link to="/snippets">under the devops section of the snippets page.</Link>
 
-Go ahead and paste these right into your `.bash_profile` or `.zprofile`, respectively, depending on what terminal you are using. Or, <a href="https://github.com/princefishthrower/awesome-shell-prompt-colors">make a pull request on the repsoitory to submit the code for a new shell!</a>
+Go ahead and paste these right into your `.bash_profile` or `.zprofile`, respectively, depending on what terminal you are using. Or, <a href="https://github.com/princefishthrower/awesome-shell-prompt-colors">make a pull request on the repository to submit the code for a new shell!</a>
 
 # Thanks!
 
-That's all for now. I'm off to enjoy my birthday, but I may improve this post with a walkthrough of both functions very soon - as it turns out, there are some annoying and interesting differences between bash and zsh - the most unforgivable that loops in zsh start at 1 🙄.
+That's all for now. I'm off to enjoy my birthday, but I may at some point write an additional post with a walkthrough of both functions - as it turns out, there are some annoying and interesting differences between bash and zsh - the most unforgivable is that loops in zsh start at 1 🙄.
 
-Cheers 🍺
+Cheers! 🍺
 
 Chris
