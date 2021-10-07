@@ -1,0 +1,200 @@
+---
+title: "Introduction to TypeScript Generics: A Beginner's Guide"
+description: "Do not overlook them! Do not think they are too advanced for you!"
+date: "2021-10-07"
+draft: false
+tags: TypeScript, TypeScript Generics, React
+---
+
+import LinkPreview from '../../../components/utils/blog-posts/shared/LinkPreview'
+
+## Back to the Basics
+
+I thought my guides on neat generic TypeScript functions would be loved around the software world. Posts like my [Generic Search, Sort, and Filter](https://chrisfrew.in/blog/react-typescript-generic-search-sort-and-filters/), or my [Generic Function to Merge Object Arrays](https://chrisfrew.in/blog/advanced-typescript-generic-array-merging/), or my [Generic Function to Update and Manipulate Object Arrays](https://chrisfrew.in/blog/advanced-typescript-a-generic-function-to-update-and-manipulate-object-arrays/), all in TypeScript, all generic, and (I thought!) were super cool.
+
+But... maybe I need to just give a beginner-level, step-by-step tutorial for the concept of TypeScript Generics to really click. Then there will be more interest for writing these super clean functional TypeScript techniques! Here's my attempt (for like, the fourth time now) to convince YOU!
+
+## Why Use Generics?
+
+When writing frontend UIs in React, we often hear that it's important to design components that are reusable, whether by keeping components small or composing them in a nice way, or, for example, using props to pull out any parts that can be modified for any use case.
+
+But the same is true for non-component code in our codebase: things like _functions_ and _classes_ that we build alongside or outside of our React components. If you've ever built a large application, you often use similar functionalities (for example, sorting, as we'll see soon) all across the app on multiple pages, areas, and most importantly, for a variety of different data types. In this post, I'm going to highlight how generics help us solve the challenge of reusability for these valuable functionalities across the app.
+
+## Interface FooBar
+
+I'm going to start by defining a simple interface `IFooBar`:
+
+```typescript
+interface IFooBar {
+    foo: string;
+    bar: string;
+}
+```
+
+This basic interface has only two properties, `foo` and `bar`, both of type `string`.
+
+To get some concrete data associated with this type, I'm going to define a `const fooBars`, which will be an `Array` of `IFooBar`:
+
+```typescript
+const fooBars: Array<IFooBar> = [
+    {
+        foo: "foo1",
+        bar: "bar1"
+    },
+    {
+        foo: "i am foo two",
+        bar: "i am bar two"
+    },
+    {
+        foo: "foo three",
+        bar: "bar three"
+    }
+]
+```
+
+
+Let's imagine that for some reason somewhere in our app, we would want to sort a datatype like this. We could imagine we receive from an API endpoint an array of `IFooBar`. We could write a `sortByFoo` function to accomplish this:
+
+```typescript
+function sortByFoo(fooBars: Array<IFooBar>) {
+    fooBars.sort((a, b) => {
+        if (a.foo > b.foo) {
+            return 1;
+        }
+        if (a.foo < b.foo) {
+            return -1;
+        }
+        return 0;
+    })
+}
+```
+
+The same logic would follow if we wanted to sort by the other property, `bar`, creating a function `sortByBar`:
+
+```typescript
+function sortByBar(fooBars: Array<IFooBar>) {
+    fooBars.sort((a, b) => {
+        if (a.bar > b.bar) {
+            return 1;
+        }
+        if (a.bar < b.bar) {
+            return -1;
+        }
+        return 0;
+    })
+}
+```
+
+These solutions would work great for data that only has properties `foo` and `bar`, but it's easy to imagine more complex types with dozens of properties. It's clear then we can't spend all of our days writing explicit sort functions for all our properties! 😄 This would be problematic for two reasons:
+
+1. It would take _a lot_ of time
+
+2. It would introduce a large amount of repetitive code that does nearly the same task (sorting)
+
+## Enter Generics
+
+This is a perfect use case for TypeScript's generic abilities. We can create a generic function `sortByKey` that will be able to replace both `sortByFoo` and `sortByBar`, and also be easily extendible later, if for example, an additional property `hello` is added `IFooBar`:
+
+```typescript
+interface IFooBar {
+    foo: string;
+    bar: string;
+    hello: string;
+}
+```
+
+Let's see how we can write this generic function!
+
+## Getting Started: Your First Generic Function
+
+To signify that generics are being used in TypeScript code, angle bracket (i.e. `<` and `>`) syntax is used. A common pattern of generics is to start with the capital letter `T` for this generic 'type' that needs to be provided. So to start our sorting function, we'll add a `<T>` after the function name:
+
+```typescript
+function sortByKey<T>() {
+
+}
+```
+
+> *Note: In the case where more than one generic type is needed, the most common pattern is to continue on in the alphabet with capital letters `U`, `V`, and so on, separating by a comma. If we needed three generic types for `sortByKey`, for example, the function signature would look like this: `sortByKey<T, U, V>` . This is present for example when creating a class component in React. you may have noticed that the typings for react components are as follows: `class React.Component<P = {}, S = {}, SS = any>` In this example, `P` is being used to signify the `props` type, `S` is for `state`, and `SS`, which is rarely used, is for the `snapshot` type.
+
+Following how we wrote `sortByFoo` and `sortByBar`, we need to add the parameters to our function. While in the case of `sortByFoo` and `sortByBar` we explicitly provided `Array<IFooBar>`, we want to use our generic type `T` as the parameter type. In other words, our function should be able to handle an array of any type `T`, or in TypeScript notation, `Array<T>`. Since this array can be of any type, I think a fitting variable name would be `data`. Thus we can add `data` to the signature of our `sortByKey` function:
+
+```typescript
+function sortByKey<T>(data: Array<T>) {
+
+}
+```
+
+Hmmm... there is still something missing 🤔... we need to add the ability to pass a key name to sort on! Again I'm going to rely on the power of TypeScript and use TypeScript's `keyof` type operator. The `keyof` type takes a literal union of the types keys. But what type are we going to take? Ah, yes, our generic type `T`! TypeScript is smart enough that we can use the `keyof` type operator even on generic types. So let's finish the signature of our function `sortByKey`:
+
+```typescript
+function sortByKey<T>(data: Array<T>, key: keyof T) {
+
+}
+```
+
+Let's write the body now!
+
+## Writing the Body of sortByKey
+
+The body of `sortByKey` won't be too different from that of `sortByFoo` or `sortByBar`, except that we need to trade out the explicitly used keys of `bar` or `foo` for our `key` variable. Since we've used `keyof T`, Typescript won't object when we use syntax like: `a[key]` or `b[key]`, because `key` is quite literally `key of T`:
+
+```typescript
+function sortByKey<T>(data: Array<T>, key: keyof T) {
+    data.sort((a, b) => {
+        if (a[key] > b[key]) {
+            return 1;
+        }
+        if (a[key] < b[key]) {
+            return -1;
+        }
+        return 0;
+    })
+}
+```
+
+That's it! We can now generically sort _any_ data type _anywhere_ in our app!
+
+## Twofold Benefits
+
+
+Not only have we written a function that is reusable across our entire app - but we've also written a function that helps us from making runtime errors when we try and sort data.
+
+These two example lines below are both fine. TypeScript won't complain, because `foo` and `bar` are keys of the `IFooBar` interface:
+
+```typescript
+// Both fine: foo and bar are properties of IFooBar!
+sortByKey<IFooBar>(fooBars, "foo")
+sortByKey<IFooBar>(fooBars, "bar")
+```
+
+But if I try and sort my `fooBars` by, say, property `cat`:
+
+```typescript
+// TypeScript complains: cat is not a property of IFooBar!
+sortByKey<IFooBar>(fooBars, "cat")
+```
+
+TypeScript will immediately underline `cat` in red, and hovering over the error would show the following warning:
+
+![The official TypeScript error we see when hovering over `cat`:`
+Argument of type '"cat"' is not assignable to parameter of type 'keyof IFooBar'.ts(2345)`](error.png)
+
+This is a warning you just wouldn't see in Javascript, only running into it later at runtime, likely crashing your app.
+
+## Generics Are Awesome!
+
+Pretty awesome, right? The best part? This is only the tip of the iceberg with TypeScript generics! If you're hooked, check out some other awesome posts and courses I've put together leveraging TypeScript Generics:
+
+<LinkPreview url="https://www.udemy.com/course/advanced-typescript-generic-search-sorting-and-filtering/?referralCode=22441D8B6B06045473D2" fallbackTitle="Udemy" fallbackDescription="Advanced TypeScript: Generic Search, Sorting, and Filtering" fallbackImage="https://img-c.udemycdn.com/course/240x135/3822500_a577.jpg"/>
+
+<LinkPreview url="https://skl.sh/3oGQMbr" fallbackTitle="Skillshare" fallbackDescription="Advanced TypeScript: Generic Search, Sorting, and Filtering" fallbackImage="https://img-c.udemycdn.com/course/240x135/3822500_a577.jpg"/>
+
+<LinkPreview url="https://chrisfrew.in/blog/advanced-typescript-generic-array-merging/" fallbackTitle="chrisfrew.in" fallbackDescription="Another powerful generic function from the SaaS product archives." fallbackImage="https://img-c.udemycdn.com/course/240x135/3822500_a577.jpg"/>
+
+<LinkPreview url="https://chrisfrew.in/blog/advanced-typescript-a-generic-function-to-update-and-manipulate-object-arrays/" fallbackTitle="chrisfrew.in" fallbackDescription="Another fancy generic function of ultimate power!" fallbackImage="https://img-c.udemycdn.com/course/240x135/3822500_a577.jpg"/>
+
+<LinkPreview url="https://chrisfrew.in/blog/react-typescript-generic-search-sort-and-filters/" fallbackTitle="chrisfrew.in" fallbackDescription="A step-by-step guide leveraging the awesome powers of TypeScript generics to implement reusable searching, sorting, and filtering." fallbackImage="https://img-c.udemycdn.com/course/240x135/3822500_a577.jpg"/>
+
+
+
