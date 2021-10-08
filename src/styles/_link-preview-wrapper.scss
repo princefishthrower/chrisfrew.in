@@ -22,9 +22,9 @@
 
 .light-theme .linkPreviewWrapper {
     border: 1px solid $darkColor;
-    background-color: $offsetLight;
+    background-color: $lightColor;
     &:hover {
-        background-color: $blackWhiteLightGray;
+        background-color: $offsetLight;
     }
     & .title, & .description {
         color: $darkColor;
