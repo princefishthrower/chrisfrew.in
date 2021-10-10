@@ -51,6 +51,10 @@ code {
     transition: 0.4s !important;
 }
 
+a > code {
+    text-decoration: underline;
+}
+
 th:first-child,
 td:first-child {
     padding-left: 1rem;

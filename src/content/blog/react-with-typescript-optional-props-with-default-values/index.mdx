@@ -1,0 +1,115 @@
+---
+title: "React with TypeScript: Optional Props with Default Values"
+description: An Elegant Solution to a Common Problem
+date: "2021-10-10"
+tags: react,typescript
+---
+
+## Straight to the Code
+
+There's an [example repository](https://github.com/princefishthrower/react-with-typescript-optional-props-with-default-values) scaffolded with `create-react-app` which I've created for this blog post. Probably of most interest is [the component `FancyTitle`](https://github.com/princefishthrower/react-with-typescript-optional-props-with-default-values/blob/master/src/components/FancyTitle.tsx) which uses the default props pattern discussed in this blog post.
+
+Now let's get into the details of the pattern.
+
+## Optional Props Pattern
+
+When using TypeScript with React, it's easy enough to define optional props. With your props interface, you simply apply the optional parameter symbol `?`:
+
+```typescript
+interface IMyComponentRequiredProps {
+  someRequiredProp: string;
+  someOptionalProp?: string;
+}
+```
+
+## Optional Props with Default Values Pattern
+
+But what if we want default values for our optional props in the case when they are not specified? 
+
+A rather elegant way to do it is to define two separate interfaces, one for the required props, and one for the optional props. For example, if our component is called `MyComponent`:
+
+```typescript
+// Required props
+interface IMyComponentRequiredProps {
+
+}
+
+// Optional props
+interface IMyComponentOptionalProps {
+
+}
+```
+
+We can then use the TypeScript `extends` operator to combine these two interfaces to the final props interface we would use to actually type the `props` parameter:
+
+```typescript
+interface IMyComponentProps
+  extends IMyComponentRequiredProps,
+    IMyComponentOptionalProps {}
+```
+
+We can then define our default props values by only taking the `IMyComponentOptionalProps`:
+
+```typescript
+const defaultProps: IMyComponentOptionalProps = {
+  color: "red",
+  fontSize: 40,
+};
+```
+
+and then being sure to set these `defaultProps` to the component's `defaultProps`:
+
+```tsx
+MyComponent.defaultProps = defaultProps;
+```
+
+## All Together Now...
+
+Let's see this pattern in an actual React component. Here's the example component `FancyTitle` from the [example repository](https://github.com/princefishthrower/react-with-typescript-optional-props-with-default-values) which renders a customizable `<h1>` tag. The component has a required title string, and then a few optional style options. We can leverage the pattern discussed in the post to build the following:
+
+```tsx
+import * as React from "react";
+
+// Required props
+interface IFancyTitleRequiredProps {
+  title: string;
+}
+
+// Optional props
+interface IFancyTitleOptionalProps {
+  color: string;
+  fontSize: number;
+}
+
+// Combine required and optional props to build the full prop interface
+interface IFancyTitleProps
+  extends IFancyTitleRequiredProps,
+    IFancyTitleOptionalProps {}
+
+// Use the optional prop interface to define the default props
+const defaultProps: IFancyTitleOptionalProps = {
+  color: "red",
+  fontSize: 40,
+};
+
+// Use the full props within the actual component
+const FancyTitle = (props: IFancyTitleProps) => {
+  const { title, color, fontSize } = props;
+  return <h1 style={{ color, fontSize }}>{title}</h1>;
+};
+
+// Be sure to set the default props
+FancyTitle.defaultProps = defaultProps;
+
+export default FancyTitle;
+```
+
+That's it! Required, optional, and default values for props in a React functional component with TypeScript!
+
+## Thanks!
+
+I hope you enjoyed this post and you find this pattern useful.
+
+Cheers 🍺
+
+-Chris
