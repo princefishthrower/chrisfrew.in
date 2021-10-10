@@ -44,8 +44,7 @@ export function HomePageTitle() {
                     }}
                     to={`/`}
                 >
-                    Chris' <Sparkles wipeType="alternate">Full Stack</Sparkles>{" "}
-                    Blog
+                    Chris' Full Stack Blog
                 </Link>
             </h1>
             <div style={{ textAlign: "center" }}>
