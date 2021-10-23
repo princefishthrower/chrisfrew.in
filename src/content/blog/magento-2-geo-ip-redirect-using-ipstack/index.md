@@ -43,7 +43,15 @@ So, back to the original task: we want to show the proper store, and automatical
 We will use the ipstack API, [you can signup for free and get 10000 requests per month here](https://ipstack.com/product). 
 ***Full disclosure, this website and blog post are NOT sponsored by ipstack in any way!
 
-So, in summary, there are two key steps:
+<div style="padding:1rem;padding-bottom:0;border:1px solid white;border-radius:15px;">
+<div style="text-align:center">
+    <img style="background:white;max-width:500px;padding:2rem" src="/AbstractAPI.png" alt="The Abstract API logo"/>
+</div>
+
+In case you're expecting the need for more requests, you can use Abstract's [IP geolocation API](https://www.abstractapi.com/ip-geolocation-api) for up to 20000 per month (with the free plan).
+</div>
+
+To restate the process, there are two key steps:
 1. Retrieve the customer's IP
 2. Use that IP and call an API to get the user's location (for our purposes, we only needed country-level resolution, though this pattern of course works for any level of location - i.e. you could have separate store views per city, for example.)
 
@@ -53,7 +61,7 @@ Alright, sounds good! We can write our router to call the API for every page vis
 
 **Not so fast!**
 
-What would that mean? We would be calling the API _every_ time a site was visited. It takes tie to call this API, right? Let's see how long. For checking my own IP I get this for total time (in ms):
+What would that mean? We would be calling the API _every_ time a site was visited. It takes time to call this API, right? Let's see how long. For checking my own IP I get this for total time (in ms):
 
 ```bash
 Lookup time:    0.061647
@@ -65,6 +73,8 @@ StartXfer time: 0.759128
 
 Total time:     0.761387
 ```
+
+(By the way, this command comes from my `supercurl` function, which you can find [on the snippets page.](/snippets#supercurl))
 
 So we can say the API call is going to delay page rendering by _at least_ 50 ms per page visit. So ideally, we should do this only once per visitor. In 99% of situations, their IP won't be changing as they move from page to page on our site. This will ultimately reduce page loads (after the first visit), not to mention saving us on our ipstack monthly quota! We'll then need some sort of variable that is attached to our visitor's session. Then we can check this variable to see if it is set. We only call the geo IP API if it is set.
 

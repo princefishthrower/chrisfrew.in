@@ -83,7 +83,6 @@ export function HomePageTitle() {
                         justifyContent: "center",
                         boxShadow: `none`,
                         textDecoration: `none`,
-                        color: `inherit`,
                         position: `relative`,
                         zIndex: 10,
                         fontSize: "0.7rem",
@@ -97,7 +96,7 @@ export function HomePageTitle() {
                     @fullStackChris_
                 </a>
                 <a
-                    href="/exports/chris-frewin-cv.pdf"
+                    href="/exports/cv.pdf"
                     download
                     style={{
                         display: "flex",
