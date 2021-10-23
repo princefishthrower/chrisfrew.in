@@ -4,7 +4,7 @@ import { useContext, useState } from "react"
 import { SearchContext } from "../../../context/search/SearchContext"
 
 export function Search() {
-    const inputRef = useRef<HTMLInputElement>()
+    const inputRef = useRef<HTMLInputElement | undefined>()
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const inputClassName = isOpen ? "input open" : "input"
     const handleClassName = isOpen ? "handle open" : "handle"

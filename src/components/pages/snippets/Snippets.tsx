@@ -44,6 +44,8 @@ const buildColorPromptBash = require("!!raw-loader!../../../content/snippets/dev
 const buildColorPromptUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/buildColorPromptUsage.sh")
 const buildColorPromptZsh = require("!!raw-loader!../../../content/snippets/devops/zsh/buildColorPrompt.sh")
 const buildColorPromptUsageZsh = require("!!raw-loader!../../../content/snippets/usage/devops/zsh/buildColorPromptUsage.sh")
+const supercurlBash = require("!!raw-loader!../../../content/snippets/devops/bash/supercurl.sh")
+const supercurlUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/supercurlUsage.sh")
 
 export interface ISnippetsProps {
     pdfMode: boolean
@@ -339,6 +341,23 @@ export function Snippets(props: ISnippetsProps) {
                                 fileLabel: "sendSlackMessage.sh",
                                 code: sendSlackMessageBash.default.toString(),
                                 usageCode: sendSlackMessageUsageBash.default.toString(),
+                                language: "bash",
+                            },
+                        ]}
+                        pdfMode={pdfMode}
+                    />
+                    <SnippetToggler
+                        snippetLabel="supercurl"
+                        snippetDescription="Get detailed network times for a website."
+                        seenInPosts={[{
+                            title: "Magento 2 IP Location Detection (GeoIP) and Store Context Control Using the ipstack API",
+                            slug: "/blog/magento-2-geo-ip-redirect-using-ipstack"
+                        }]}
+                        snippetInfos={[
+                            {
+                                fileLabel: "supercurl.sh",
+                                code: supercurlBash.default.toString(),
+                                usageCode: supercurlUsageBash.default.toString(),
                                 language: "bash",
                             },
                         ]}

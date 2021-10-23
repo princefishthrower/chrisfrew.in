@@ -247,6 +247,10 @@ button.code-copy-button {
     display: inline;
 }
 
+.white-background {
+    background: white !important;
+}
+
 // to work on safari, this has to be !important (why - who knows?)
 // .gatsby-image-wrapper img {
 //     border-radius: 100% !important;

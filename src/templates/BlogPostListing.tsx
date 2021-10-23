@@ -23,6 +23,10 @@ const BlogPostListing = ({ data, location, pageContext }) => {
     const { themeBodyClass } = useContext(ThemeContext)
     const activeTheme = getActiveTheme(themeBodyClass)
     const hexColorsLength = activeTheme.themeColorHexCodes.length
+    const cleanTitle =
+    currentPage !== 1
+        ? `Posts Page No. ${currentPage}`
+        : `Chris' Full Stack Blog`
 
     const getPostsToRender = () => {
         // search is allowed on the homepage
@@ -46,13 +50,12 @@ const BlogPostListing = ({ data, location, pageContext }) => {
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
-    const cleanTitle =
-        currentPage !== 1
-            ? `Posts Page No. ${currentPage}`
-            : `Chris' Full Stack Blog`
-    const cleanDescription = `All posts from ${
+    
+    
+    const cleanDescription = postsToRender.length > 0 ? `All posts from ${
         postsToRender[0].node.frontmatter.date
-    } to ${postsToRender[postsToRender.length - 1].node.frontmatter.date}`
+    } to ${postsToRender[postsToRender.length - 1].node.frontmatter.date}` : `No posts found :(`
+    
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
             {currentPage !== 1 && (

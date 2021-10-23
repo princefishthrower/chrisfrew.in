@@ -111,7 +111,7 @@ exports.onPostBuild = async () => {
     await spawnChild("node", ["create-snippets-pdf.js"], "All PDF exports successful!\n");
 
     // copy cv from dev folder to the exports folder with all the other pdfs
-    await spawnChild("cp", ["dev/chris-frewin-cv.pdf", "public/exports/"], "CV successfully copied to public/exports!");
+    await spawnChild("cp", ["dev/cv.pdf", "public/exports/"], "CV successfully copied to public/exports!");
 }
 
 async function spawnChild(command, arguments, successConsoleLog) {
