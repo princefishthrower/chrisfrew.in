@@ -15,15 +15,15 @@ export default function FivePartProductSeries(props) {
             label: "Product 1: The Wheel Screener",
         },
         {
-            link: "/blog/releasing-5-products-in-2021-part-2-reduxplate",
-            label: "Product 2: ReduxPlate",
+            link: "/blog/releasing-5-products-in-2021-part-2-moniter",
+            label: "Product 2: Moniter",
         },
-        { link: "", label: "Product 3: Full Stack SaaS Product Cookbook (Details Coming Soon!)" },
+        { link: "", label: "Product 3: ReduxPlate (Details Coming Soon!)" },
         { link: "", label: "Product 4: Advanced TypeScript Cookbook (Details Coming Soon!)" },
         {
             link: "",
             label:
-                "Product 5: Mail Your Rep (Details Coming Soon!)",
+                "Product 5: Git Stickers (Details Coming Soon!)",
         },
     ]
 
