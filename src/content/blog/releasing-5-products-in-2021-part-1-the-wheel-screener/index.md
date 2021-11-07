@@ -3,7 +3,7 @@ title: "Releasing Five Products in 2021, Part 1: The Wheel Screener"
 description: "Insights from the frontlines of a SaaS product release: an advanced cash secured put (CSP) and covered call (CC) options screener."
 date: "2021-03-25"
 draft: false
-tags: products,miscellaneous,companies
+tags: products,miscellaneous,companies,saas
 ---
 
 import FivePartProductSeries from "../../../components/utils/blog-posts/shared/FivePartProductSeries"

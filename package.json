@@ -77,7 +77,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "type-check": "tsc --noEmit"
   },
   "resolutions": {
     "graphql": "^15.4.0",
