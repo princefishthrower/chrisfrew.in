@@ -3,7 +3,6 @@ title: Fully Automating Chrisfrew.in Productions - Part 1 of ??? - Roadmap and L
 description:
 date: "2018-05-10"
 draft: false
-starID: 19
 tags: automation,Blog Meta
 ---
 

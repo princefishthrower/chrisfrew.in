@@ -1,9 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
-import Paginator from "../components/utils/Paginator"
 import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { useContext } from "react"
 import { SearchContext } from "../context/search/SearchContext"
@@ -12,6 +10,8 @@ import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 import { DuckContainer } from "../components/layout/Duck/DuckContainer"
 import { ThemeContext } from "../context/theme/ThemeContext"
 import { getActiveTheme } from "../utils/getActiveTheme"
+import { MostRecentPostWidget } from "../components/utils/PostsWidgets/LatestPostWidget/LatestPostWidget"
+import { TopPostsWidget } from "../components/utils/PostsWidgets/TopPostsWidget/TopPostsWidget"
 
 const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
@@ -24,9 +24,9 @@ const BlogPostListing = ({ data, location, pageContext }) => {
     const activeTheme = getActiveTheme(themeBodyClass)
     const hexColorsLength = activeTheme.themeColorHexCodes.length
     const cleanTitle =
-    currentPage !== 1
-        ? `Posts Page No. ${currentPage}`
-        : `Chris' Full Stack Blog`
+        currentPage !== 1
+            ? `Posts Page No. ${currentPage}`
+            : `Chris' Full Stack Blog`
 
     const getPostsToRender = () => {
         // search is allowed on the homepage
@@ -50,12 +50,14 @@ const BlogPostListing = ({ data, location, pageContext }) => {
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
-    
-    
-    const cleanDescription = postsToRender.length > 0 ? `All posts from ${
-        postsToRender[0].node.frontmatter.date
-    } to ${postsToRender[postsToRender.length - 1].node.frontmatter.date}` : `No posts found :(`
-    
+
+    const cleanDescription =
+        postsToRender.length > 0
+            ? `All posts from ${postsToRender[0].node.frontmatter.date} to ${
+                  postsToRender[postsToRender.length - 1].node.frontmatter.date
+              }`
+            : `No posts found :(`
+
     return (
         <Layout location={location} title={title} subtitle={subtitle}>
             {currentPage !== 1 && (
@@ -84,68 +86,33 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     description: cleanDescription,
                 }}
             />
-            {postsToRender.length === 0 ? (
-                <p>No posts found for your query! 😞</p>
-            ) : (
-                postsToRender.map(({ node }, index) => {
-                    const title = node.frontmatter.title || node.fields.slug
-                    const tags = node.frontmatter.tags
-                        .split(",")
-                        .map((x) => sanitizeTag(x))
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                }}
+            >
+                <MostRecentPostWidget />
+            </div>
+            <h2>Popular Posts:</h2>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                }}
+            >
+                <TopPostsWidget />
+            <Link to="/posts"><h2 className="monokaiRedFont">View All Posts</h2></Link>
 
-                    // for the bottom border color: cycle through hex colors in cyclic fashtion
-                    const color =
-                        activeTheme.themeColorHexCodes[
-                            ((index % hexColorsLength) + hexColorsLength) %
-                                hexColorsLength
-                        ]
-                    return (
-                        <>
-                            
-                            <article key={node.fields.slug}>
-                                <header>
-                                <div
-                                className="blog-post-separator-top small-only"
-                                style={{ borderColor: color }}
-                            />
-                                    <h3>
-                                        <Link
-                                            style={{ boxShadow: `none`, color }}
-                                            to={node.fields.slug}
-                                        >
-                                            {title}
-                                        </Link>
-                                    </h3>
-                                    <div
-                                className="blog-post-separator-bottom small-only"
-                                style={{ borderColor: color }}
-                            />
-                                    <small className="blog-post-date">
-                                        {node.frontmatter.date}
-                                    </small>
-                                    
-                                </header>
-                                <section>
-                                    <p
-                                        dangerouslySetInnerHTML={{
-                                            __html:
-                                                node.frontmatter.description ||
-                                                node.excerpt,
-                                        }}
-                                    />
-                                </section>
-                                <TagRenderer linkToTagPage={true} tags={tags} />
-                            </article>
-                            <div style={{marginBottom: '3rem'}} className="large-only"/>
-                            <div style={{marginBottom: '3rem'}} className="medium-only"/>
-                        </>
-                    )
-                })
-            )}
-            <Paginator />
-            <h3>Posts by tag:</h3>
-            <TagRenderer linkToTagPage={true} />
-            <Bio />
+            </div>
+            <h2>Post Learning Series:</h2>
+            <p><b>Clean React TypeScript</b> - coming soon!</p>
+            <p><b>Clean Functional JavaScript</b> - coming soon!</p>
+            <h2>Posts By Tag:</h2>
+            <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />
         </Layout>
     )
@@ -160,6 +127,7 @@ export const blogListQuery = graphql`
                 title
                 description
                 subtitle
+                subsubtitle
             }
         }
         allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

@@ -3,7 +3,6 @@ title: Sending Windows Server Commands From SAP ABAP
 description:
 date: "2017-12-13"
 draft: false
-starID: 3
 tags: SAP,ABAP
 ---
 

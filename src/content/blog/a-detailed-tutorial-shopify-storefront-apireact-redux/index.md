@@ -3,7 +3,6 @@ title: A Detailed Tutorial - Shopify's Storefront API + React + Redux
 description: A Detailed Tutorial - Shopify's Storefront API + React + Redux
 date: "2018-11-07"
 draft: false
-starID: 30
 tags: shopify,react,redux
 ---
 

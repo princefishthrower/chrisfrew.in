@@ -4,7 +4,7 @@ import { useContext, useState } from "react"
 import { SearchContext } from "../../../context/search/SearchContext"
 
 export function Search() {
-    const inputRef = useRef<HTMLInputElement | undefined>()
+    const inputRef = useRef<HTMLInputElement>(null)
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const inputClassName = isOpen ? "input open" : "input"
     const handleClassName = isOpen ? "handle open" : "handle"
@@ -18,15 +18,13 @@ export function Search() {
         }
     }
 
-    const handleLabelClick = (e: any) => {
-        e.preventDefault()
-        setIsOpen(!isOpen)
+    const onClickClear = () => {
+        setQuery("")
+        setIsOpen(false)
     }
 
     const renderQuery = isOpen ? query : ""
     const renderPlaceHolder = isOpen ? ".NET, TypeScript..." : ""
-    const labelClass = isOpen ? "search-label open" : "search-label"
-    const labelContent = isOpen ? "close" : "search"
 
     return (
         <div className="search-container">
@@ -43,12 +41,7 @@ export function Search() {
                 {isOpen && (
                     <span
                         className="search-clearer"
-                        onClick={() => {
-                            setQuery("")
-                            if (inputRef.current) {
-                                inputRef.current.focus()
-                            }
-                        }}
+                        onClick={onClickClear}
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -66,13 +59,6 @@ export function Search() {
                     className={handleClassName}
                 />
             </div>
-            <label
-                className={labelClass}
-                onClick={handleLabelClick}
-                htmlFor="input"
-            >
-                {labelContent}
-            </label>
         </div>
     )
 }

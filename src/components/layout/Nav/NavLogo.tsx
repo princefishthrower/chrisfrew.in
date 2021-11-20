@@ -1,8 +1,7 @@
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import * as React from "react"
 import Sparkles from "../../utils/Sparkles"
 import Size from "../../../enums/Size"
-import { AvatarPicture } from "../../utils/AvatarPicture"
 export interface INavLogoProps {
     size: Size
 }
@@ -48,44 +47,27 @@ export function NavLogo(props: INavLogoProps) {
             <div
                 style={{
                     display: "flex",
-                    flexDirection: size === Size.MEDIUM ? "column" : "row",
+                    flexDirection: size === Size.MEDIUM ? "column" : "column",
                     alignItems: "center",
+                    justifyContent: "center",
                 }}
             >
-                <AvatarPicture
-                    style={{
-                        display:
-                            size === Size.MEDIUM ? "block" : "inline-block",
-                        borderRadius: `100%`,
-                        marginRight: size === Size.MEDIUM ? "0" : "1rem",
-                        width: "50px",
-                        height: 'auto',
-                    }}
-                />
                 <h3
+                    className="whiteFont"
                     style={{
                         display:
                             size === Size.MEDIUM ? "block" : "inline-block",
-                        fontFamily: `Montserrat, sans-serif`,
                         margin: 0,
                         textAlign: size === Size.MEDIUM ? "center" : "left",
                     }}
                 >
-                    {isBlogPage ? (
-                        <>Chris' Full Stack Blog</>
-                    ) : (
-                        <>
-                            Chris'{" "}
-                            <Sparkles wipeType="default">Full Stack</Sparkles>{" "}
-                            Blog
-                        </>
-                    )}
-                    {size === Size.LARGE && (
-                        <div className="tiny">
-                            • chrisfrew.in • chrisfrewin.com • chrisfrewin.eu •
-                        </div>
-                    )}
+                    <>Chris' Full Stack Blog</>
                 </h3>
+                {size === Size.LARGE && (
+                    <div className="tiny">
+                        • chrisfrew.in • chrisfrewin.com • chrisfrewin.eu •
+                    </div>
+                )}
             </div>
         </Link>
     )

@@ -3,7 +3,6 @@ title: I Set Aside $1000 to Learn Options Trading
 description: 
 date: "2018-04-07"
 draft: false
-starID: 14
 tags: markets,life,miscellaneous
 ---
 

@@ -8,7 +8,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: $navHeight;
-        max-width: 960px;
+        max-width: 1200px;
     }
 }
 
@@ -21,12 +21,9 @@
     }
 }
 
-// small styles (width less than 600px)
-@media only screen and (max-width: $mediumOffset) {
+@media only screen and (max-width: $medium) {
     .page-wrapper {
-        margin-left: $navWidthSmall;
-        max-width: calc(100% - #{$navWidthSmall});
-        padding: 0.5rem;
+        padding: 1rem;
     }
 }
 

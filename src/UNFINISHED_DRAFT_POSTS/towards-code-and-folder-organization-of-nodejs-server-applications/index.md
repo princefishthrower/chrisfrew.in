@@ -3,7 +3,6 @@ title: Towards Code and Folder Organization of NodeJS Server Applications
 description:
 date: "2018-10-28"
 draft: true
-starID: 56
 tags: dev
 ---
 

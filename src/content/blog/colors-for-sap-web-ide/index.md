@@ -3,7 +3,6 @@ title: Colors For SAP Web IDE!
 description:
 date: "2018-01-11"
 draft: false
-starID: 11
 tags: javascript,tampermonkey
 ---
 

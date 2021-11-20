@@ -6,6 +6,8 @@ import { CookiesProvider } from "react-cookie"
 import EmailForm from "../utils/EmailForm"
 import { LaptopSubscriber } from "./LaptopSubscriber/LaptopSubscriber"
 import { AnimationType, usePleaseStay } from "react-use-please-stay"
+import BodyClassName from "react-body-classname"
+import ThemeBodyClass from "../../enums/ThemeBodyClass"
 
 export default function Layout(props) {
     const { children, location } = props
@@ -23,18 +25,20 @@ export default function Layout(props) {
             "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_down.png",
             "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_right.png",
         ],
-        alwaysRunAnimations: false
+        alwaysRunAnimations: false,
     })
     return (
-        <CookiesProvider>
-            <Nav />
-            <div className="page-wrapper">
-                <Header location={location} />
-                <main>{children}</main>
-            </div>
-            <EmailForm />
-            <Footer />
-            <LaptopSubscriber />
-        </CookiesProvider>
+        <>
+            <BodyClassName className={ThemeBodyClass.DARK_THEME} />
+            <CookiesProvider>
+                <Nav />
+                <div className="page-wrapper">
+                    <Header location={location} />
+                    <main>{children}</main>
+                </div>
+                <Footer />
+                <LaptopSubscriber />
+            </CookiesProvider>
+        </>
     )
 }

@@ -19,13 +19,16 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
     // if cookies not set, set as default to dark theme
     useEffect(() => {
         if (!cookies[Constants.THEME_COOKIE_KEY]) {
-            setCookies(Constants.THEME_COOKIE_KEY, themeConfig[0].themeBodyClass, {
-                path: "/",
-            })
+            setCookies(
+                Constants.THEME_COOKIE_KEY,
+                themeConfig[0].themeBodyClass,
+                {
+                    path: "/",
+                }
+            )
         }
     }, [cookies, setCookies])
 
-    
     // cookies still not set, render nothing
     if (!cookies[Constants.THEME_COOKIE_KEY]) {
         return <></>
@@ -35,17 +38,19 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
 
     const getActiveThemeIndex = () => {
         const tryIndex = themeConfig
-        .map((x) => x.themeBodyClass)
-        .indexOf(activeThemeBodyClass)
-        
+            .map((x) => x.themeBodyClass)
+            .indexOf(activeThemeBodyClass)
+
         return tryIndex === -1 ? 0 : tryIndex
     }
 
-    const activeThemeIndex = getActiveThemeIndex();
+    const activeThemeIndex = getActiveThemeIndex()
 
     const switchTheme = () => {
         const nextIndex =
-            activeThemeIndex === themeConfig.length - 1 ? 0 : activeThemeIndex + 1
+            activeThemeIndex === themeConfig.length - 1
+                ? 0
+                : activeThemeIndex + 1
         const nextTheme = themeConfig[nextIndex]
         setCookies(Constants.THEME_COOKIE_KEY, nextTheme.themeBodyClass, {
             path: "/",
@@ -54,7 +59,6 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
         activateRun()
     }
 
-    const activeModeText = themeConfig[activeThemeIndex].label
     const activeModeEmoji = themeConfig[activeThemeIndex].emoji
 
     if (size === Size.LARGE || size === Size.MEDIUM) {
@@ -62,29 +66,33 @@ export default function ThemeSwitcher(props: ISwitcherProps) {
             <div>
                 <BodyClassName className={activeThemeBodyClass} />
                 <label className="switch">
-                    <svg
-                        onClick={switchTheme}
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="20"
-                        width="20"
-                    >
-                        <circle
-                            className="switcher-circle"
-                            cx="10"
-                            cy="10"
-                            r="9"
-                            strokeWidth="2"
-                            fill="red"
-                            stroke="white"
-                        />
-                    </svg>
-                    <span className="switch-text emoji-fix">
-                        {activeModeEmoji}
-                    </span>
-                    <span className="switch-text">
-                        {activeModeText} Theme Active
-                    </span>
+                    <div onClick={switchTheme}>
+                        <svg
+                            viewBox="0 0 25 25"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="25"
+                            width="25"
+                        >
+                            <circle
+                                className="switcher-circle"
+                                cx="12.5"
+                                cy="12.5"
+                                r="11"
+                                strokeWidth="2"
+                                fill="red"
+                                stroke="white"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="50%"
+                                y="50%"
+                                dy=".35em"
+                                fontSize={13}
+                            >
+                                {activeModeEmoji}
+                            </text>
+                        </svg>
+                    </div>
                 </label>
             </div>
         )

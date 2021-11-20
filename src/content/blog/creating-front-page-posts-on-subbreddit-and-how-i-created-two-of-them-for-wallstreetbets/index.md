@@ -3,7 +3,6 @@ title: How to Create Posts That Reach the Top of the Front Page on Subreddits (A
 description:
 date: "2018-04-08"
 draft: false
-starID: 15
 tags: miscellaneous
 ---
 

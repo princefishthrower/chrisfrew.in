@@ -47,7 +47,7 @@ export function HundredPostChallengeStat() {
         })
     }
 
-    const postsLeft = 30 - yearData.find((x) => x.year === 2021)?.count
+    const postsLeft = 40 - yearData.find((x) => x.year === 2021)?.count
     const hundredPostChallenge = Math.round(getDaysLeftInYear() / postsLeft * 100) / 100
 
     return (

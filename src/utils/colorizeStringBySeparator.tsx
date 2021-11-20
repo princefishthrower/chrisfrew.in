@@ -20,7 +20,7 @@ export const colorizeStringBySeparator = (
     // note that an entity can be a single character, or an entire word, depending on the separator
     const fragmentArray = entities.map((entity, index) => {
         // regex to check . add characters to the range as needed
-        const entitiesToColor = /[a-zA-Z0-9,'.-/\/~&!?{}\[\]$<>"]/gm;
+        const entitiesToColor = /[a-zA-Z0-9,'.-/\/~&!?{}\[\]$<>©"]/gm;
 
         if (colorIndex === colors.length - 1) {
             colorIndex = -1

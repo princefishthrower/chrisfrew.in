@@ -3,7 +3,6 @@ title: Fully Automating Chrisfrew.in Productions - Part 3 of ??? - Building a Gi
 description: 
 date: "2018-07-20"
 draft: false
-starID: 22
 tags: automation,github,webhook
 ---
 

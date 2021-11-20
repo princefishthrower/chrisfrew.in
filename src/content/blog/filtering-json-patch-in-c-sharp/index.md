@@ -3,6 +3,7 @@ title: "C# .NET Core and TypeScript: Using Generics and LINQ to Secure and Filte
 description: "Full stack: React with TypeScript frontend, .NET backend!"
 date: "2020-11-23"
 tags: csharp,.NET,typescript
+topPostOrder: 3
 ---
 
 _This post is mirrored on my [Medium Account](https://chrisfrewin.medium.com/c-net-core-and-typescript-using-generics-and-linq-to-secure-and-filter-operations-on-your-e85e23e065c3) and my [DEV Community Account](https://dev.to/fullstackchris/c-net-core-and-typescript-using-generics-and-linq-to-secure-and-filter-operations-on-your-jsonpatchdocuments-4cl4)._

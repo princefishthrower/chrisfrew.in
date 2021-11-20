@@ -3,7 +3,6 @@ title: Jump from SAPUI5 Apps to Transactions in Web GUI with Batch Input
 description:
 date: "2018-01-25"
 draft: true
-starID: 33
 tags: SAP,SAPUI5,OpenUI5
 ---
 

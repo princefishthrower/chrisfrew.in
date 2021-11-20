@@ -3,7 +3,6 @@ title: New Data Tag
 description:
 date: "2018-12-28"
 draft: false
-starID: 105
 tags: Blog Meta
 ---
 

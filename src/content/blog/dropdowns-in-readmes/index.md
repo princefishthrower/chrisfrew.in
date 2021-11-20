@@ -3,7 +3,6 @@ title: Dropdowns in Markdown README's!
 description:
 date: "2017-12-22"
 draft: false
-starID: 7
 tags: devops,Blog Meta
 ---
 

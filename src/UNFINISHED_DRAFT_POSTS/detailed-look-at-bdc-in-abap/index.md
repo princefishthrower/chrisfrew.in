@@ -3,7 +3,6 @@ title: A Detailed Look at ABAP's BDC Method
 description:
 date: "2018-01-24"
 draft: true
-starID: 52
 tags: dev
 ---
 

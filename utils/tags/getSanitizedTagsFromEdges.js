@@ -48,6 +48,9 @@ const sanitizeTag = (rawTag) => {
     if (rawTag === "NPM") {
         return "npm"
     }
+    if (rawTag === "Npm") {
+        return "npm"
+    }
     if (rawTag === "github") {
         return "GitHub"
     }

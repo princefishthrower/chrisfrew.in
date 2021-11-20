@@ -3,7 +3,6 @@ title: My First and Final Statement on Bitcoin for this Blog
 description:
 date: "2017-12-18"
 draft: false
-starID: 4
 tags: bitcoin,crypto,miscellaneous
 ---
 

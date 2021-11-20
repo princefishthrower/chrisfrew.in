@@ -3,7 +3,6 @@ title: Full ABAP Push and Message Channel Tutorial With Working Code Examples
 description: 
 date: "2020-01-14"
 draft: true
-starID: 50
 tags: dev
 ---
 

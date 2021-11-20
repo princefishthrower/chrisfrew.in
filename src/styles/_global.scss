@@ -233,21 +233,6 @@ button.code-copy-button {
     z-index: 1;
 }
 
-.blog-post-separator-top,
-.blog-post-separator-bottom {
-    border-bottom: $borderThickness dashed;
-    width: 50%;
-}
-
-.blog-post-separator-top {
-    margin-top: 1rem;
-    margin-bottom: 0.1rem;
-}
-
-.blog-post-separator-bottom {
-    margin-top: 0.25rem;
-}
-
 .plain-link {
     color: auto;
     &:hover {

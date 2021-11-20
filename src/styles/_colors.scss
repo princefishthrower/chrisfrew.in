@@ -8,10 +8,10 @@ $offsetLight: #d3d3d3;
 
 // monokai dark theme colors
 $monokaiRedDarkMode: #f92672;
+$monokaiOrangeDarkMode: #fd9720;
+$monokaiYellowDarkMode: #f7d163;
 $monokaiGreenDarkMode: #27dea7;
 $monokaiBlueDarkMode: #62d3e9;
-$monokaiYellowDarkMode: #f7d163;
-$monokaiOrangeDarkMode: #fd9720;
 $monokaiPinkDarkMode: #fd5ff0;
 
 $codeLineAddedDarkMode: #005c40;
@@ -76,31 +76,31 @@ $javaScriptYellow: #efd81c;
     // fonts
     .monokaiRedFont {
         color: $monokaiRedDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
     .monokaiBlueFont {
         color: $monokaiBlueDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiOrangeFont {
         color: $monokaiOrangeDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiGreenFont {
         color: $monokaiGreenDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiYellowFont {
         color: $monokaiYellowDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiPinkFont {
         color: $monokaiPinkDarkMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 }
 
@@ -128,31 +128,31 @@ $javaScriptYellow: #efd81c;
     // fonts
     .monokaiRedFont {
         color: $monokaiRedLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
     .monokaiBlueFont {
         color: $monokaiBlueLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiOrangeFont {
         color: $monokaiOrangeLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiGreenFont {
         color: $monokaiGreenLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiYellowFont {
         color: $monokaiYellowLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .monokaiPinkFont {
         color: $monokaiPinkLightMode;
-        font-weight: 900;
+        // font-weight: 900;
     }
 }
 
@@ -173,19 +173,19 @@ $javaScriptYellow: #efd81c;
     // fonts
     .outrunOrangeFont {
         color: $outrunLightOrange;
-        font-weight: 900;
+        // font-weight: 900;
         text-shadow: 0 0 5px $outrunLightOrange, 0 0 10px $outrunLightOrange,
             0 0 15px $outrunLightOrange, 0 0 25px $outrunOrange;
     }
     .outrunPinkFont {
         color: $outrunLightPink;
-        font-weight: 900;
+        // font-weight: 900;
         text-shadow: 0 0 5px $outrunLightPink, 0 0 10px $outrunLightPink,
             0 0 15px $outrunLightPink, 0 0 25px $outrunPink;
     }
     .outrunPurpleFont {
         color: $outrunLightPurple;
-        font-weight: 900;
+        // font-weight: 900;
         text-shadow: 0 0 5px $outrunLightPurple, 0 0 10px $outrunLightPurple,
             0 0 15px $outrunLightPurple, 0 0 25px $outrunPurple;
     }
@@ -208,22 +208,22 @@ $javaScriptYellow: #efd81c;
     // fonts
     .blackFont {
         color: $darkColor;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .grayFont {
         color: $blackWhiteGray;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .lightGrayFont {
         color: $blackWhiteLightGray;
-        font-weight: 900;
+        // font-weight: 900;
     }
 
     .whiteFont {
         color: $lightColor;
-        font-weight: 900;
+        // font-weight: 900;
     }
 }
 

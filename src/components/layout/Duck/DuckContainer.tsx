@@ -1,12 +1,10 @@
 import * as React from "react"
 import { Duck } from "./Duck"
 
-export interface IDuckContainerProps {}
-
-export function DuckContainer(props: IDuckContainerProps) {
+export function DuckContainer() {
     return (
         <>
-            <p className="text-center"><strong>Enjoy these three ducks:</strong></p>
+            <h2 style={{ textAlign: 'center', marginTop: "10rem"}}>You made it all the way down here?! Well then, please enjoy these three ducks:</h2>
             <div className="duck-flex-container">
                 <Duck delay={0} />
                 <Duck delay={200} />
