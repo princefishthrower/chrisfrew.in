@@ -7,6 +7,7 @@ module.exports = {
     siteMetadata: {
         siteUrl,
         subtitle: config.subtitle,
+        subsubtitle: config.subsubtitle,
         title: config.siteTitle,
         twitterHandle: config.twitterHandle,
         description: config.siteDescription,

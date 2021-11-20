@@ -1,44 +1,35 @@
 footer {
-    margin-top: -$borderThickness;
-    position: relative;
-    z-index: 10;
     font-weight: bold;
     border: $borderThickness dashed;
     padding: 0.5rem;
     box-sizing: border-box;
-}
-
-.inner-footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 1rem;
+    border-radius: 50px;
+    width: calc(100% - 2rem);
 }
 
 // large screens (width greater than 1400px)
-@media only screen and (min-width: $large) {
-    footer {
-        width: 100%;
-    }
-}
+// @media only screen and (min-width: $large) {
+//     footer {
+//         width: calc(100% - 2rem);
+//     }
+// }
 
 // medium screens (width less than 1400px but greater than 600px)
-@media only screen and (max-width: $largeOffset) and (min-width: $medium) {
-    footer {
-        width: calc(100% - #{$navWidthMedium} + #{$borderThickness});
-        margin-left: calc(#{$navWidthMedium} - #{$borderThickness});
-    }
-}
+// @media only screen and (max-width: $largeOffset) and (min-width: $medium) {
+//     footer {
+//         width: calc(100% - #{$navWidthMedium} + #{$borderThickness});
+//         margin-left: calc(#{$navWidthMedium} - #{$borderThickness});
+//     }
+// }
 
 // small styles (width less than 600px)
-@media only screen and (max-width: $mediumOffset) {
-    footer {
-        width: calc(100%);
-        padding-left: calc(#{$navWidthSmall});
-    }
-    .inner-footer-wrapper {
-        padding-left: $borderThickness;
-    }
-}
+// @media only screen and (max-width: $mediumOffset) {
+//     footer {
+//         width: calc(100%);
+//         padding-left: calc(#{$navWidthSmall});
+//     }
+// }
 
 // // mobile styles
 // @media only screen and (max-width: $medium) {
@@ -65,7 +56,7 @@ footer {
 // }
 
 .dark-theme footer {
-    background-color: $darkColor;
+    background-color: #272A2A;
     border-left-color: $monokaiRedDarkMode;
     border-bottom-color: $monokaiBlueDarkMode;
     border-right-color: $monokaiYellowDarkMode;

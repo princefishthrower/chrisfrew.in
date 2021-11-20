@@ -1,14 +1,9 @@
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { CSSProperties } from "react"
 
-export interface IAvatarPictureProps {
-    style: CSSProperties
-}
 
-export function AvatarPicture(props: IAvatarPictureProps) {
-    const { style } = props
+export function AvatarPicture() {
     const data = useStaticQuery(graphql`
         query AuthorQuery {
             site {
@@ -28,9 +23,9 @@ export function AvatarPicture(props: IAvatarPictureProps) {
 
     return (
         <GatsbyImage
+            className="title-avatar-picture"
             image={data.avatar.childImageSharp.gatsbyImageData}
             alt={data.site.siteMetadata.author.name}
-            style={style}
         />
     )
 }

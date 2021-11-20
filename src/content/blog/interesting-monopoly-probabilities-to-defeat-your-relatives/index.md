@@ -3,7 +3,6 @@ title: Interesting Monopoly Probabilities (To Defeat your Relatives For the Holi
 description: 
 date: "2018-12-29"
 draft: false
-starID: 103
 tags: data,life
 ---
 

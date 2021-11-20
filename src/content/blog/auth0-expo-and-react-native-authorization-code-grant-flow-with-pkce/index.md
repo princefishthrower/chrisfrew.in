@@ -3,7 +3,6 @@ title: "Auth0, Expo, and React Native: Authorization Code Grant Flow with PKCE"
 description: One of the most devious software problems I've encountered in some time.
 date: "2020-08-20"
 draft: false
-starID: 132231231123
 tags: auth0,expo,react native
 ---
 

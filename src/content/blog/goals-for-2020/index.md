@@ -3,7 +3,6 @@ title: Goals For 2020
 description:
 date: "2020-01-12"
 draft: false
-starID: 456789
 tags: Yearly Goals
 ---
 

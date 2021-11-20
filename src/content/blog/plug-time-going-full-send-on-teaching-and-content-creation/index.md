@@ -3,7 +3,6 @@ title: "Plug Time: Going Full Send on Teaching and Content Creation"
 description:
 date: "2021-01-18"
 draft: false
-starID: 2389428394
 tags: products,miscellaneous
 ---
 

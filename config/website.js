@@ -1,6 +1,7 @@
 module.exports = {
     siteTitle: "Chris' Full Stack Blog", // Navigation and Site Title
     subtitle: 'A professional full stack software engineering blog.', // Alternative Site title for SEO
+    subsubtitle: 'Detailed - and working! - full stack software tutorials, walk-throughs, and more - directly from the front lines of industrial, startup, and SaaS product full stack software development.',
     description: 'A professional, high-quality, full stack software engineering blog. Featuring JavaScript, TypeScript, React, C#, ABAP, and everything in between.',
     siteTitleShort: 'chrisfrew.in', // short_name for manifest
     siteUrl: process.env.ROOT_URL || 'https://chrisfrew.in', // Domain of your site. No trailing slash!

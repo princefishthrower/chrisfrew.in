@@ -50,6 +50,9 @@ export const sanitizeTag = (rawTag: string) => {
     if (rawTag === "NPM") {
         return "npm"
     }
+    if (rawTag === "Npm") {
+        return "npm"
+    }
     if (rawTag === "github") {
         return "GitHub"
     }
@@ -64,6 +67,9 @@ export const sanitizeTag = (rawTag: string) => {
     }
     if (rawTag === "devops") {
         return "DevOps"
+    }
+    if (rawTag === "saas") {
+        return "SaaS"
     }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }

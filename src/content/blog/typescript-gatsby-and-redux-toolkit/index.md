@@ -3,7 +3,6 @@ title: TypeScript, Redux Toolkit, React Hooks, and Gatsby
 description: How to use the recommended Redux typings in harmony with your server side rendered frameworks.
 date: "2021-08-03"
 draft: false
-starID: 29
 tags: typescript, gatsby, react, redux, redux toolkit, react hooks, server side rendering
 ---
 

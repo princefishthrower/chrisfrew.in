@@ -3,7 +3,6 @@ title: Goals for 2019
 description:
 date: "2019-01-03"
 draft: false
-starID: 105
 tags: Yearly Goals
 ---
 

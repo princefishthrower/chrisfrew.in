@@ -3,7 +3,6 @@ title: Hello World - My First Post :)
 description:
 date: "2017-12-11"
 draft: false
-starID: 1
 tags: Blog Meta
 ---
 

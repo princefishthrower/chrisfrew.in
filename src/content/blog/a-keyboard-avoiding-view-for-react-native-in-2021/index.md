@@ -4,6 +4,7 @@ description: "A Copy-and-Paste Solution that Supports all iOS and Android keyboa
 date: "2021-09-22"
 draft: false
 tags: TypeScript, React, React Native, React Hook, UI/UX
+topPostOrder: 1
 ---
 
 ## Back in the React Native World

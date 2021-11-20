@@ -25,6 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
                                 title
                                 tags
                                 draft
+                                topPostOrder
                             }
                         }
                     }

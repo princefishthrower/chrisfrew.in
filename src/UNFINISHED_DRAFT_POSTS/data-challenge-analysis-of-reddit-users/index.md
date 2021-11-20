@@ -3,7 +3,6 @@ title: Data Challenge! Analysis of Reddit Users!
 description:
 date: "2018-08-01"
 draft: true
-starID: 51
 tags: dev
 ---
 

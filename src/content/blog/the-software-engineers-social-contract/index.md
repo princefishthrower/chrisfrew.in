@@ -3,7 +3,6 @@ title: The Software Engineer's Social Contract
 description:
 date: "2018-10-28"
 draft: false
-starID: 29
 tags: life
 ---
 

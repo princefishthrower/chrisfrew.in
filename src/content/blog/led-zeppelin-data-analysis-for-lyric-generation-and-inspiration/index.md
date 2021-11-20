@@ -3,7 +3,6 @@ title: Led Zeppelin Data Analysis for Lyric Generation and Inspiration
 description:
 date: "2018-07-26"
 draft: false
-starID: 25
 tags: machine learning, NLP, data
 ---
 

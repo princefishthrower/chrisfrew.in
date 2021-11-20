@@ -16,17 +16,15 @@ export function Chris() {
     return (
         <>
             <ColoredTitle title="👨‍💻 About Me"/>
-            <AvatarPicture
-                style={{
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    borderRadius: `100%`,
-                    marginBottom: "1rem",
-                    width: "200px",
-                    height: "auto",
-                }}
-            />
+            <div style={{
+                    display: `flex`,
+                    flexDirection: `column`,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    marginBottom: '3rem'
+                }}>
+            <AvatarPicture/>
+            </div>
             <div
                 style={{
                     display: `flex`,

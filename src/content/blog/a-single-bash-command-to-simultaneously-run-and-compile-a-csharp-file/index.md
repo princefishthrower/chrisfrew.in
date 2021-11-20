@@ -3,7 +3,6 @@ title: A Single Bash Command To Simultaneously Run and Compile a CSharp (.cs) Fi
 description:
 date: "2019-12-05"
 draft: false
-starID: 12345
 tags: csharp,bash
 ---
 

@@ -3,7 +3,6 @@ title: Data Challenge! Rendering All 32,767 Invaders!
 description:
 date: "2019-01-13"
 draft: false
-starID: 104
 tags: data,data challenge,react,python
 ---
 

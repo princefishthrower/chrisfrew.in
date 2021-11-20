@@ -5,14 +5,12 @@
     top: 0;
     bottom: 0;
     left: 0;
-
-    a {
-        font-weight: 900;
-    }
+    margin: 1rem;
+    border-radius: 50px;
 }
 
 .dark-theme .nav {
-    background-color: $darkColor;
+    background-color: #272A2A;
     border-left-color: $monokaiRedDarkMode;
     border-bottom-color: $monokaiBlueDarkMode;
     border-right-color: $monokaiYellowDarkMode;
@@ -46,7 +44,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: calc(100% - 2rem);
     z-index: 100;
     border: $borderThickness dashed;
     box-sizing: border-box;
@@ -57,7 +55,7 @@
 }
 
 .dark-theme .nav-large {
-    background-color: $darkColor;
+    background-color: #272A2A;
     border-left-color: $monokaiRedDarkMode;
     border-bottom-color: $monokaiBlueDarkMode;
     border-right-color: $monokaiYellowDarkMode;
@@ -98,7 +96,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: calc(100% - 5rem);
     z-index: 100;
     padding: 0.5rem;
     border: $borderThickness dashed;

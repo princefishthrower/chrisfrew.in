@@ -3,7 +3,6 @@ title: Fully Automating Chrisfrew.in Productions - Part 2 of ??? - Building a No
 description: 
 date: "2018-05-11"
 draft: false
-starID: 20
 tags: automation,Node.js
 ---
 

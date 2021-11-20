@@ -103,8 +103,7 @@ export function Stats() {
         return 0
     })
 
-    const postsLeft = 30 - yearData.find((x) => x.year === 2021)?.count
-    const hundredPostChallenge = Math.round(getDaysLeftInYear() / postsLeft)
+    const postsLeft = 40 - yearData.find((x) => x.year === 2021)?.count
 
     return (
         <>
@@ -164,7 +163,7 @@ export function Stats() {
                     stat={postsLeft}
                     label={
                         <>
-                            Posts of the <Sparkles>30</Sparkles> that Chris
+                            Posts of the <Sparkles>40</Sparkles> that Chris
                             still needs to write for the{" "}
                             <Link to="/blog/one-hundred-posts-challenge">
                                 <Sparkles>
@@ -174,7 +173,6 @@ export function Stats() {
                         </>
                     }
                 />
-                {/* <TagRenderer linkToTagPage={true} /> */}
                 {tagDataByCount.map((x, index) => {
                     const nextIndex = index + 1
                     return (

@@ -37,7 +37,7 @@ const BlogTagListing = ({ data, location, pageContext }) => {
                             </h3>
                             <small className="blog-post-date">{node.frontmatter.date}</small>
                             <div>
-                                <TagRenderer linkToTagPage={true} tags={tags}/>
+                                <TagRenderer withTitle={false} linkToTagPage={true} tags={tags}/>
                                 </div>
                         </header>
                         <section>
@@ -68,6 +68,7 @@ export const blogTagListQuery = graphql`
                 title
                 description
                 subtitle
+                subsubtitle
             }
         }
         allMdx(

@@ -3,7 +3,6 @@ title: Introducing My (New / Same?!) Company chrisfrew.in! (and how to change yo
 description:
 date: "2018-03-01"
 draft: false
-starID: 13
 tags: miscellaneous,companies,life
 ---
 

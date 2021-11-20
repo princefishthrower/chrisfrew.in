@@ -95,7 +95,7 @@ class BlogPost extends React.Component {
                             }}
                         >
                             <i>Tags: </i>
-                            <TagRenderer linkToTagPage={true} tags={tags} />
+                            <TagRenderer withTitle={false} linkToTagPage={true} tags={tags} />
                         </p>
                     </header>
                     <MDXRenderer>{post.body}</MDXRenderer>
@@ -167,7 +167,7 @@ class BlogPost extends React.Component {
                     </div>
                 </nav>
                 <h3>Or find more posts by tag:</h3>
-                <TagRenderer linkToTagPage={true} />
+                <TagRenderer withTitle={false} linkToTagPage={true} />
             </Layout>
         )
     }

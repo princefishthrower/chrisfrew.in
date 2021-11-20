@@ -3,7 +3,6 @@ title: Calculating Activity Amounts for Production and Process Orders with SAP A
 description:
 date: "2018-01-03"
 draft: false
-starID: 10
 tags: SAP,ABAP
 ---
 

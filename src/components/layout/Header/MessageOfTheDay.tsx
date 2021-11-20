@@ -1,12 +1,12 @@
 import * as React from "react"
-import { useContext, useEffect } from "react"
-import { Fade } from "react-awesome-reveal"
+import { useContext, useEffect, useState } from "react"
 import { useCookies } from "react-cookie"
 import Constants from "../../../constants/Constants"
 import { ThemeContext } from "../../../context/theme/ThemeContext"
 import { colorizeStringBySeparator } from "../../../utils/colorizeStringBySeparator"
 
 export function MessageOfTheDay() {
+    const [messageOfTheDay, setMessageOfTheDay] = useState("")
     const [cookies, setCookies] = useCookies([
         Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY,
     ])
@@ -23,9 +23,10 @@ export function MessageOfTheDay() {
         "🍻 enjoy & cheers! 🍻",
         "🤔 what's a software? 🤔",
         "🤓 sir, best framework? 🤓",
+        "☠️ framework X is better than Y! ☠️",
     ]
 
-    useEffect(() => {
+    const incrementMessage = () => {
         if (!cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]) {
             setCookies(
                 Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY,
@@ -52,18 +53,31 @@ export function MessageOfTheDay() {
                 }
             )
         }
+        setMessageOfTheDay(
+            `© 2016 - 2021 Full Stack Craft - ${
+                messagesOfTheDay[
+                    cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]
+                ]
+            }`
+        )
+    }
+
+    useEffect(() => {
+        incrementMessage()
         // We want this effect to truly only run once on mount (when page renders)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
         <h3
+            onClick={incrementMessage}
             style={{
                 marginBottom: 0,
                 marginTop: 0,
                 position: `relative`,
                 textAlign: `center`,
                 zIndex: 10,
+                cursor: "pointer",
             }}
             className="message-of-the-day"
         >
@@ -72,25 +86,13 @@ export function MessageOfTheDay() {
             <span className="monokaiBlueFont">{"{"}</span>
             <span className="monokaiGreenFont">{"/"}</span>
             <span className="monokaiYellowFont">{"* "}</span>
-            <Fade
-                        triggerOnce={true}
-
-                cascade={true}
-                damping={0.05}
-                duration={1300}
-                direction="left"
-                style={{ display: "inline", whiteSpace: "inherit" }}
-            >
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    messagesOfTheDay[
-                        cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]
-                    ],
-                    "",
-                    0,
-                    true
-                )}
-            </Fade>
+            {colorizeStringBySeparator(
+                themeBodyClass,
+                messageOfTheDay,
+                "",
+                0,
+                true
+            )}
             <span className="monokaiYellowFont">{" *"}</span>
             <span className="monokaiGreenFont">{"/"}</span>
             <span className="monokaiBlueFont">{"}"}</span>
