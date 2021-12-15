@@ -73,12 +73,20 @@ export function NavLinks() {
                     offsetArray[5]
                 )}
             </Link>
+            <Link to="/podcasts">
+                {colorizeStringBySeparator(
+                    themeBodyClass,
+                    "Podcasts",
+                    " ",
+                    offsetArray[0]
+                )}
+            </Link>
             <Link to="/chris">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "About",
                     " ",
-                    offsetArray[6]
+                    offsetArray[1]
                 )}
             </Link>
         </>

@@ -15,7 +15,7 @@
     }
 }
 
-.top-post-container {
+.standard-post-container {
     flex-basis: 33.3333333%;
     background: #272a2a;
     padding-left: 2rem;
@@ -33,13 +33,13 @@
 }
 
 @media only screen and (max-width: $mediumOffset) {
-    .latest-post-container, .top-post-container {
+    .latest-post-container, .standard-post-container {
         padding: 1rem;
         padding-top: 0.25rem;
         margin: 0;
         margin-bottom: 1rem;
     }
-    .top-post-container {
+    .standard-post-container {
         flex-basis: 100%;
     }
 }

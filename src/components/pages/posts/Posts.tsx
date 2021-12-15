@@ -1,20 +1,33 @@
-import * as React from 'react';
-import { ColoredTitle } from '../../utils/ColoredTitle';
-import { AllPostsWidget } from '../../utils/PostsWidgets/AllPostsWidget/AllPostsWidget';
-import { Search } from '../../utils/search/Search';
+import * as React from "react"
+import PostListingType from "../../../enums/PostListingType"
+import { ColoredTitle } from "../../utils/ColoredTitle"
+import { FilterableAndSortablePostsWidget } from "../../utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
+import { Search } from "../../utils/search/Search"
 
-export interface IPostsProps {
-}
+export interface IPostsProps {}
 
-export function Posts (props: IPostsProps) {
-  // TODO: graphql
-  const totalPosts = 85;
-  return (
-    <>
-      <ColoredTitle title="📜 All Posts From All Time"/>
-      <Search/>
-      <p style={{textAlign: 'center'}}>Search all <b>{totalPosts}</b> posts!</p>
-      <AllPostsWidget/>
-    </>
-  );
+export function Posts(props: IPostsProps) {
+    // TODO: graphql, or delegate down to FilterableAndSortablePostsWidget
+    const totalPosts = 85
+    return (
+        <>
+            <ColoredTitle title="📜 All Posts From All Time" />
+            <p style={{ textAlign: "center" }}>
+                Search all <b>{totalPosts}</b> posts!*
+            </p>
+            <Search />
+            <p style={{ textAlign: "center" }}>* Doesn't work for the time being as I continue to rewrite my site :)</p>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    flexWrap: "wrap",
+                }}
+            >
+            <FilterableAndSortablePostsWidget
+                postListingType={PostListingType.ALL}
+            />
+            </div>
+        </>
+    )
 }

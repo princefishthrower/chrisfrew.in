@@ -6,12 +6,9 @@ import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { useContext } from "react"
 import { SearchContext } from "../context/search/SearchContext"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
-import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 import { DuckContainer } from "../components/layout/Duck/DuckContainer"
-import { ThemeContext } from "../context/theme/ThemeContext"
-import { getActiveTheme } from "../utils/getActiveTheme"
-import { MostRecentPostWidget } from "../components/utils/PostsWidgets/LatestPostWidget/LatestPostWidget"
-import { TopPostsWidget } from "../components/utils/PostsWidgets/TopPostsWidget/TopPostsWidget"
+import { FilterableAndSortablePostsWidget } from "../components/utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
+import PostListingType from "../enums/PostListingType"
 
 const BlogPostListing = ({ data, location, pageContext }) => {
     const { query } = useContext(SearchContext)
@@ -20,9 +17,6 @@ const BlogPostListing = ({ data, location, pageContext }) => {
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
 
-    const { themeBodyClass } = useContext(ThemeContext)
-    const activeTheme = getActiveTheme(themeBodyClass)
-    const hexColorsLength = activeTheme.themeColorHexCodes.length
     const cleanTitle =
         currentPage !== 1
             ? `Posts Page No. ${currentPage}`
@@ -93,7 +87,10 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     flexWrap: "wrap",
                 }}
             >
-                <MostRecentPostWidget />
+                <h2>Most Recent Post:</h2>
+                <FilterableAndSortablePostsWidget
+                    postListingType={PostListingType.LATEST}
+                />
             </div>
             <h2>Popular Posts:</h2>
             <div
@@ -104,13 +101,27 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     flexWrap: "wrap",
                 }}
             >
-                <TopPostsWidget />
-            <Link to="/posts"><h2 className="monokaiRedFont">View All Posts</h2></Link>
-
+                <FilterableAndSortablePostsWidget
+                    postListingType={PostListingType.TOP}
+                />
+                <Link to="/posts">
+                    <h2 className="monokaiRedFont">View All Posts</h2>
+                </Link>
             </div>
-            <h2>Post Learning Series:</h2>
-            <p><b>Clean React TypeScript</b> - coming soon!</p>
-            <p><b>Clean Functional JavaScript</b> - coming soon!</p>
+            <h2>Post Series:</h2>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                }}
+            >
+            {/* <Link to="/series/clean-react-typescript-hooks">
+                <h2 className="monokaiRedFont">Clean React TypeScript Hooks</h2>
+            </Link> */}
+            <h2 className="monokaiRedFont">Coming Soon</h2>
+            </div>
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />

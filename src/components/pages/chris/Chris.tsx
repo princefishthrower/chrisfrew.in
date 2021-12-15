@@ -15,15 +15,17 @@ import { BookPortfolio } from "../../layout/Bio/Portfolios/BookPortfolio"
 export function Chris() {
     return (
         <>
-            <ColoredTitle title="👨‍💻 About Me"/>
-            <div style={{
+            <ColoredTitle title="👨‍💻 About Me" />
+            <div
+                style={{
                     display: `flex`,
                     flexDirection: `column`,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    marginBottom: '3rem'
-                }}>
-            <AvatarPicture/>
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginBottom: "3rem",
+                }}
+            >
+                <AvatarPicture />
             </div>
             <div
                 style={{
