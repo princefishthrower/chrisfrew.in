@@ -8,16 +8,18 @@ import { BioLead } from "./BioLead"
 export default function Bio() {
     return (
         <>
-            <AvatarPicture style={{
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    borderRadius: `100%`,
-                    marginTop: "2rem",
+            <div
+                style={{
+                    display: `flex`,
+                    flexDirection: `column`,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginTop: "1rem",
                     marginBottom: "1rem",
-                    width: "200px",
-                    height: "auto"
-                }}/>
+                }}
+            >
+                <AvatarPicture />
+            </div>
             <div
                 style={{
                     display: `flex`,

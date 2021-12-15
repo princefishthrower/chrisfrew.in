@@ -13,6 +13,19 @@ body {
             border-left: 4px solid rgba(255, 255, 255, 0.5);
         }
 
+        p a {
+          overflow: hidden;
+          position: relative;
+          color: $monokaiRedDarkMode;
+          text-decoration: underline;
+          &:hover {
+            color: $monokaiBlueDarkMode;
+            text-decoration-color: $monokaiPinkDarkMode;
+          }
+        }
+        
+        
+
         a {
             color: $lightColor;
             z-index: 10;
