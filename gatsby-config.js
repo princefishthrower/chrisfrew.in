@@ -44,6 +44,7 @@ module.exports = {
                 token: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
 
                 // graphQLQuery: defaults to a search query
+                // comment out when working offline
                 graphQLQuery: githubApiQuery,
 
                 // variables: defaults to variables needed for a search query
