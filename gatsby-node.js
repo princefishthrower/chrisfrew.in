@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
                                 draft
                                 topPostOrder
                                 cleanReactTypeScriptHooksOrder
+                                cleanCrudApisOrder
                             }
                         }
                     }

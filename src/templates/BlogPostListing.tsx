@@ -112,15 +112,18 @@ const BlogPostListing = ({ data, location, pageContext }) => {
             <div
                 style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: "column",
                     justifyContent: "center",
+                    alignItems: "center",
                     flexWrap: "wrap",
                 }}
             >
-            {/* <Link to="/series/clean-react-typescript-hooks">
+            <Link to="/series/clean-react-typescript-hooks">
                 <h2 className="monokaiRedFont">Clean React TypeScript Hooks</h2>
-            </Link> */}
-            <h2 className="monokaiRedFont">Coming Soon</h2>
+            </Link>
+            <Link to="/series/clean-crud-apis">
+                <h2 className="monokaiRedFont">Clean CRUD APIs</h2>
+            </Link>
             </div>
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />

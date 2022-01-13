@@ -1,0 +1,75 @@
+---
+title: Braiding, Combining, Zipping, or Merging Arrays in C# Generically
+description: A fancy technique for arranging API data.
+date: "2022-01-13"
+draft: false
+tags: C#, Algorithms, Utils, .NET
+---
+
+import { Link } from "gatsby"
+
+## "Braiding"? How Does One "Braid" an Array?
+
+Sometimes, we want to combine arrays in such a way that they are "braided" or "zipped" together, so that they alternate back and forth between various types of entities. We could imagine some function `BraidArrays` that could do this for us. (I'll do it in C#, since thats the language this blog post is headed in):
+
+```csharp
+var abc = new List { "a", "b", "c" };
+var xyz = new List { "x", "y", "z" };
+var braidedArray = BraidArrays(new List { abc, xyz });
+Console.WriteLine(string.Join(",", braidedArray));
+//a,x,b,y,c,z
+```
+
+Unfortunately, most languages do not provide this type of functionality out of the box. In my case, I was organizing objects on my .NET Core backend to be returned to my client, so I was looking to write this in C#.
+
+I did find [this nice JavaScript implementation](https://stackoverflow.com/a/57748845/2805387), of such a functionality, which was a good starting point. When I ported it to C#, I also thought it might be nice along the way and made it generic so it can work for arrays of any type. I opted to make it a static method in a class I called `ArrayUtils`. All together, it looks like this:
+
+```csharp
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FullStackCraft.Utils
+{
+    public class ArrayUtils
+    {
+        // "Braids" two arrays together in an every-other fashion. 
+        // Works for 1 to N lists
+        public static List<T> BraidArrays<T>(List<List<T>> lists)
+        {
+            // declare our braided list we are about to build
+            var braided = new List<T> { };
+
+            // find the length of the longest list - project the length then call Max() to find it
+            var longestListLength = lists.Select(x => x.Count).Max();
+
+            // will  need to loop for the longest list
+            for (var i = 0; i < longestListLength; i++)
+            {
+                // take the value at each index in order (if it exists)
+                foreach (var list in lists)
+                {
+                    if (list.ElementAtOrDefault(i) != null)
+                    {
+                        braided.Add(list[i]);
+                    }
+                }
+            }
+
+            // return the list!
+            return braided;
+        }
+    }
+}
+```
+
+I've put together [a .NET Fiddle](https://dotnetfiddle.net/Aq2CSg) so you can fool around with `BraidArrays` yourself.
+
+I think I'll start porting these functions to multiple languages. Perhaps you'd instead take the pattern where the two types of array are taken from different endpoints, in which you would do this sort of braiding in the client once receiving the data. I could envision that a function like this would be useful in Go as well as TypeScript. Soon they will all be added to the <Link to="/snippets">snippets page</Link>. 
+
+# Thanks!
+
+Hope you can use this little function whenever you need to "braid" arrays!
+
+Cheers 🍺
+
+Chris

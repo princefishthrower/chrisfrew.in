@@ -1,0 +1,66 @@
+---
+title: "Lesson 1: The CRUD Lexicon"
+description: "Create, Read, Update, Delete"
+date: "2021-12-22"
+tags: Clean CRUD APIs,API,Learning Series
+cleanCrudApisOrder: 1
+---
+
+# Create, Read, Update, Delete
+
+In nearly any application you have some 'domain' - it could be anything, a user, a post, a payment. It represents some real life object and has some purpose. This domain is usually represented by one or more objects in actual code. In almost any application, you need the following functionalities for those objects, and typically in this order:
+
+1. **Create** that object
+2. **Read** that object
+3. **Update** that object
+4. **Delete** that object
+
+Thus the CRUD acryonym.
+
+If we're talking to our domain via HTTP protocol, these CRUD operatios map 1:1 with the following HTTP methods:
+
+1. POST
+2. GET
+3. PATCH
+4. DELETE
+
+Therefore, we only need a single accessible endpoint, where the actual logic behind the domain is determined at the HTTP method level.
+
+# Weapon of Choice: Go
+
+I used to write backends in Node. Then I wrote them in .NET. Now I write them in Go. Why Go? With just one file, and a single command to start it up, we can create a HTTP CRUD service for our domains.
+
+Let's imagine our domain is a user - this one is common enough. We'll first define our user type:
+
+```go
+// User represents data about a user.
+type User struct {
+	ID        int64  `json:"id"`
+	FirstName string `json:"firstName"`
+	LastName  string `json:"lastName"`
+	Email     string `json:"email"`
+}
+```
+
+```go
+package main
+
+import (
+	"github.com/gin-gonic/gin"
+
+	"example/api/services/albumservice"
+)
+
+func main() {
+	router := gin.Default()
+
+	// User CRUD operations
+	router.POST("/users", userService.CreateUser)
+	router.GET("/users/:id", userService.GetUser)
+	router.PATCH("/users/:id", userService.UpdateUser)
+	router.DELETE("/users/:id", userService.DeleteUser)
+
+	// Listening Host
+	router.Run("localhost:8080")
+}
+```
