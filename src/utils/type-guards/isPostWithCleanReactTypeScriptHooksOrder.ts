@@ -20,3 +20,4 @@ export interface IPostWithCleanReactTypeScriptHooksOrder {
 export const isPostWithCleanReactTypeScriptHooksOrder = (post: IPost): post is IPostWithCleanReactTypeScriptHooksOrder => {
     return "cleanReactTypeScriptHooksOrder" in post.node.frontmatter;
 }
+

@@ -64,6 +64,7 @@ class BlogPost extends React.Component {
                     description={postDescription || post.excerpt}
                     isBlogPost={true}
                 />
+                <div className="blog-article-wrapper">
                 <article>
                     <header>
                         <h1>{title}</h1>
@@ -168,6 +169,7 @@ class BlogPost extends React.Component {
                 </nav>
                 <h3>Or find more posts by tag:</h3>
                 <TagRenderer withTitle={false} linkToTagPage={true} />
+                </div>
             </Layout>
         )
     }

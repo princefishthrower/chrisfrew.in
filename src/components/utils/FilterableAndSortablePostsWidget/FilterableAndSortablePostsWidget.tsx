@@ -25,6 +25,7 @@ export interface IPost {
             date: string
             topPostOrder?: number
             cleanReactTypeScriptHooksOrder?: number
+            cleanCrudApisOrder?: number
         }
     }
 }
@@ -57,6 +58,7 @@ export function FilterableAndSortablePostsWidget(
                             tags
                             topPostOrder
                             cleanReactTypeScriptHooksOrder
+                            cleanCrudApisOrder
                         }
                     }
                 }

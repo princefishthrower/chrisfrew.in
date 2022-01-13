@@ -3,14 +3,14 @@ import PostListingType from "../../../enums/PostListingType"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import { FilterableAndSortablePostsWidget } from "../../utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
 
-export interface ICleanReactTypeScriptHooksProps {}
+export interface ICleanCrudApisProps {}
 
-export function CleanReactTypeScriptHooks(
-    props: ICleanReactTypeScriptHooksProps
+export function CleanCrudApis(
+    props: ICleanCrudApisProps
 ) {
     return (
         <>
-            <ColoredTitle title="📜 Series: Clean React TypeScript Hooks" />
+            <ColoredTitle title="📜 Series: Clean CRUD APIs" />
             <div
                 style={{
                     display: "flex",
@@ -20,7 +20,7 @@ export function CleanReactTypeScriptHooks(
             >
                 <FilterableAndSortablePostsWidget
                     postListingType={
-                        PostListingType.CLEAN_REACT_TYPESCRIPT_HOOKS
+                        PostListingType.CLEAN_CRUD_APIS
                     }
                 />
             </div>

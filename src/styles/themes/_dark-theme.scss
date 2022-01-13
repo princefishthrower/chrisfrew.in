@@ -23,9 +23,18 @@ body {
             text-decoration-color: $monokaiPinkDarkMode;
           }
         }
-        
-        
 
+        i a {
+          overflow: hidden;
+          position: relative;
+          color: $monokaiRedDarkMode;
+          text-decoration: underline;
+          &:hover {
+            color: $monokaiBlueDarkMode;
+            text-decoration-color: $monokaiPinkDarkMode;
+          }
+        }
+        
         a {
             color: $lightColor;
             z-index: 10;
@@ -33,7 +42,6 @@ body {
             // &:hover {
             //     filter: brightness(100%)
             // }
-            
           }
           
           a:hover,

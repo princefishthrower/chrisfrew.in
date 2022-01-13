@@ -4,7 +4,6 @@ description: Neglecting a simple functionality.
 date: "2020-11-02"
 draft: false
 tags: Blog Meta,blog
-cleanReactTypeScriptHooksOrder: 1
 ---
 
 To anyone who may visit my blog more often than just finding it's results through google, I have to extend a small apology. 

@@ -1,6 +1,6 @@
 ---
 title: I Applied to Five Senior Full Stack Software Engineering in Five Days
-description: Jobs rant, but then, actionable training materials and questions.
+description: A rant on getting jobs in the software world, but then actionable training materials and questions.
 date: "2021-04-30"
 draft: true
 tags: Life
@@ -38,10 +38,10 @@ Anyways, when looking for a houses, I've heard I need to convince banks that I h
 
 My requirements were:
 
--   Companies using technologies I use and love (TypeScript, React, Python, C#, PostgreSQL)
--   100% Remote (Simply easier with my complicated Austria / United States situation)
--   100K+ USD Salary (I've been writing software for 7+ years now, and categorize myself as at the senior level. This is the starting salary for these senior positions)
--   Job title somewhere along the lines of "Senior Full Stack" (See above bullet)
+- Companies using technologies I use and love (TypeScript, React, Python, C#, PostgreSQL)
+- 100% Remote (Simply easier with my complicated Austria / United States situation)
+- 100K+ USD Salary (I've been writing software for 7+ years now, and categorize myself as at the senior level. This is the starting salary for these senior positions)
+- Job title somewhere along the lines of "Senior Full Stack" (See above bullet)
 
 Ultimately, I applied to 5 companies that had very enticing job descriptions and matched this criteria. 
 
@@ -57,13 +57,13 @@ _"What is event bubbling? What are the differences between `preventDefault()` an
 
 I want to say a question about event bubbling was asked by 2-3 of the 5 companies, so it' my first one to highlight here.
 
-It turns out in JavaScript, you can write a . This of course prevents a lot of memory usage as you 
+Depending on the functionality you need in the browser, you could write your event handler higher up in the tree, as events will otherwise 'bubble' all the way to the root node, `html`. This of course prevents a lot of memory usage as you 
 
 ### HTML
 
 "What is HTML? Can you give an overview of its structure?"
 
-HTML is essentially a tree of elements.
+HTML is essentially a tree of elements, with each element (except the root element) having a parent node, and each element also potentially having a child element.
 
 ### Flux vs Redux
 
@@ -83,19 +83,30 @@ _"What does the following output?"_
 [[..."1"]].length
 ```
 
+Starting from the inside and working out, spread of "1" is just "1", so we have:
+
+```js
+[[1]].length
+```
+
+It is then easier to see the outermost array has a length of `1` - so the entire expression evaluates to just `1`.
+
 ### Big O
 
+Essentially you should be able to recognize a forloop is O(n), double is O(n^2), things like that. Like many of the other questions, this is usually I don't worry about or need to consider in my day to day work. I'm much more of a guy to write clean readable code that fits the business functionality, where worrying about the Big O can come later if you actually run in to performance issues. (Hint: 99% of the time you don't!)
 
 Looking at some of these questions here in my quiet studio, with plenty of time to think, a lot of these are no brainers, or easy enought to solve. But when you have 2-3 devs watching you, and you are thinking of how to word the answer exactly as the thoughts come to your mind, it sometimes feels like the difficulty doubles.
+
+All in all, I'd say they are kind of dumb, and don't really reflect any real world work you do day to day as a developer. I didn't like most of them.
 
 # Not All is Lost
 
 There are a few silver outlines from my first batch attempt:
 
--    One company kept my information on file for any future offers
--    One company said they would consider me for a more junior-level position, at 55K EUR (~66K USD) per year.*
--    Most teams were quite impressed with my DevOps experience - managing all parts of an application, as well as automatically breaking out testing and production environments. However, it's natural that I have such strong skills in this area because leveraging powerful CI and CD tools is the only way you'll be efficient as a solo dev or member of a two part team.
--    I now know what to expect at all stages of the interview process for these types of positions!
+- One company kept my information on file for any future offers
+- One company said they would consider me for a more junior-level position, at 55K EUR (~66K USD) per year.*
+- Most teams were quite impressed with my DevOps experience - managing all parts of an application, as well as automatically breaking out testing and production environments. However, it's natural that I have such strong skills in this area because leveraging powerful CI and CD tools is the only way you'll be efficient as a solo dev or member of a two part team.
+- I now know what to expect at all stages of the interview process for these types of positions!
 
 <small>*(I just want to highlight here how much of a bummer that is for me - I could have gotten a 66K salary in the US <i>with my bachelor's degree</i>. I now have a master's degree and 7+ years of industry experience. Sometimes I feel like I'm making hard for myself by making these requirements, but compensation <i>is</i> important!)</small>
 
@@ -103,9 +114,9 @@ There are a few silver outlines from my first batch attempt:
 
 I have some other ideas as to why I may not have 'fit' at these companies:
 
--   Not enough expereince developing on a big team or in corporate software culture. This is probably my biggest disadvantage. My first position out of university was about 3 years as a solo developer, purely because my previous employer didn't have the resources to higher _n_ full stack developers. Today, my current daily team is only _two_ people - me and another senior engineer. I could totally picture the hesitation from companies with larger developer teams, concerned if I would fit into them well.
--   No hard CS degree or deep theoretical education. I was getting the sense that these positions were searching for candidates like this by some of the theoretical questions asked. I can't tell you when the last time I had to consider Big O notation, write a JavaScript prototype function, think about the structure of the DOM, consider event bubbling, or examine a memory leak in my app with the React Chrome extension. All of these things came up in my interviews, but all of these things just don't come up in my day-to-day writing of my full stack apps, and if they do, I'm probably doing something _really_ wrong somewhere else before they become an issue. 
--   Not enough experience in general. I have a few full stack apps (corporate and private) under my belt. Perhaps its was not enough (and something my interviewers detected). Sure I know about event queues and dispatching, and things like a hook based API, but I've never had to. I've always used a service for something like that.
+- Not enough experience developing on a big team or in corporate software culture. This is probably my biggest disadvantage. My first position out of university was about 3 years as a solo developer, purely because my previous employer didn't have the resources to higher _n_ full stack developers. Today, my current daily team is only _two_ people - me and another senior engineer. I could totally picture the hesitation from companies with larger developer teams, concerned if I would fit into them well.
+- No hard CS degree or deep theoretical education. I was getting the sense that these positions were searching for candidates like this by some of the theoretical questions asked. I can't tell you when the last time I had to consider Big O notation, write a JavaScript prototype function, think about the structure of the DOM, consider event bubbling, or examine a memory leak in my app with the React Chrome extension. All of these things came up in my interviews, but all of these things just don't come up in my day-to-day writing of my full stack apps, and if they do, I'm probably doing something _really_ wrong somewhere else before they become an issue. 
+- Not enough experience in general. I have a few full stack apps (corporate and private) under my belt. Perhaps its was not enough (and something my interviewers detected). Sure I know about event queues and dispatching, and things like a hook based API, but I've never had to. I've always used a service for something like that.
 
 Perhaps I'm just too much a "jack of all trades" - I can imagine for one position I didn't really have the styling experience they wanted to see immediately, for one I didn't have the python knowledge, and for another the deeper DOM or HTML knowledge. But I'm a bit at a loss here - you can't realistically expect a full stack software engineer to recall every example of every language they've ever written, can you?
 
