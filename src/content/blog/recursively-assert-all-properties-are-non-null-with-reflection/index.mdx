@@ -1,0 +1,101 @@
+---
+title: Recursively Assert All Properties Are Non-null Using Reflection
+description: A valuable method that can be used to improve testing strength.
+date: "2022-02-22"
+draft: false
+tags: C#, Algorithms, Utils, .NET, Reflection, Testing, Generics
+---
+
+import { Link } from "gatsby"
+
+## On The Test Grind
+
+![On the grind like Rocky. Who doesn't like Rocky?](./rocky.gif)
+
+I've been on my testing grind recently for my [startup work](https://inclub-app.com/). I've been writing tests all over the 'testing pyramid' (end-to-end, integration, and unit) at the API, mobile application, and web layers. Over the past few months, I've seen (and read) everything under the sun (curse you, jest mocks!) that has to do with testing codebases.
+
+But this post isn't going to be a rant or discussion about what the "golden standard" for testing is, how many of each type of tests you should write, etc. The more I read about testing software, the more I realize there is no one 'correct' way to do testing. Perhaps the most important testing takeaway I can impart to you from all that I've read is that **testing's main purpose should be for you and your team to feel confident about shipping your code to who really matters: your customers.** Have you hammerred the most-used customer-facing and customer-critical features with the most tests? Are you sure that when you encounter a bug, you write a test to ensure that bug doesn't pop up again? Questions like these are the _right_ questions, while "how much code coverage should I acheive?" and "what is the 'best' testing framework" are essentially the _wrong_ question.
+
+## The Use Case
+
+Anyway, this post concerns mainly the integration testing of the API layer. At the API (think: backend) layer, you may have some _nice_ objects that represent your domain entities. When I say 'nice' objects, I mean _big_ objects. Maybe they have `List`s or `Collections`s in them, and `string`s, and `int`s and everything in between. While you may have defined only certain fields as 'required', such as the `Id`, perhaps in testing you want to be sure that simply _every single field_ is non-null. 
+
+With C#'s reflection abilities, we can recursively inspect every property in a given object and report if that property is null or not. Further more, I think in some cases, you may want to check the required properties only to be non-null. This closer reflects (no pun intended) validations required in your actual codebase, where as a full check of _every_ property is more of a 'human' check, or perhaps a check of what an end customer would see, if you are shipping this particular domain to the client. 
+
+I call it... `AssertPropertiesAreNonNull` !
+
+## `AssertPropertiesAreNonNull`
+
+Here it is:
+
+```csharp
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+
+// Asserts that all required properties (via the 'Required' attribute) 
+// be non null using Shouldly
+// Optionally include all properties if desired
+private static void AssertPropertiesAreNonNull<T>(T obj, bool onlyRequiredProperties = true)
+{
+    if (obj == null)
+    {
+        return;
+    }
+
+    var objType = obj.GetType();
+
+    // Get either only required properties or ALL properties
+    var properties = onlyRequiredProperties ? objType.GetProperties()
+        .Where(x => x.GetCustomAttributes(false).OfType<RequiredAttribute>().Any()) : 
+    objType.GetProperties();
+
+    foreach (var property in properties)
+    {
+        var propValue = property.GetValue(obj, null);
+        var elems = propValue as IList<object>;
+
+        // Another layer 
+        if (elems != null)
+        {
+            foreach (var item in elems)
+            {
+                AssertPropertiesAreNonNull(item, onlyRequiredProperties);
+            }
+        }
+        else
+        {
+            if (property.PropertyType.Assembly == objType.Assembly)
+            {
+                AssertPropertiesAreNonNull(propValue, onlyRequiredProperties);
+            }
+            // Reached the end of the tree
+            else
+            {
+                // Use Shouldly to assert that the propValue should not be null
+                propValue.ShouldNotBeNull();
+            }
+        }
+    }
+}
+```
+
+The reflection code used here is very similar to <Link to="/blog/filtering-json-patch-in-c-sharp">the reflection-based JSON patch filter I've built previously</Link>.
+
+Also note the final assertion step. I'm using the [`Shouldly` framework](https://github.com/shouldly/shouldly), a LINQ-like way of doing asserts, since it's commonly used in tandem with a test library like `xUnit` or `nUnit`. If you check out [the .NET Fiddle](https://dotnetfiddle.net/lH6ahG) I've created, I provide other options at the assertion step: Maybe you just want to log what properties are null, or maybe you just want to throw an `Exception` altogether. It's up to you.
+
+## Example
+
+I've created [a .NET Fiddle](https://dotnetfiddle.net/lH6ahG) for your enjoyment, and also a cleaner, copy-paste ready version on the <Link to="/snippets#AssertPropertiesAreNonNullService">snippets page</Link>.
+
+## Possible Improvements
+
+If we see a `List`, we should probably loop through each element in that list and check if any of those elements are `null` as well - you'll note that in [the .NET Fiddle example](https://dotnetfiddle.net/lH6ahG) this is currently not the case.
+
+## Thanks!
+
+Hope you enjoyed this post, and that you can use this in your automated testing.
+
+Cheers! 🍻
+
+-Chris
