@@ -10,6 +10,8 @@ import { ColoredTitle } from "../../utils/ColoredTitle"
 import { SnippetToggler } from "./SnippetToggler"
 
 // special raw-loader requires - pulls in file as string
+
+// Frontend
 const updateArrayTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/updateArray.ts")
 const updateArrayJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/updateArray.js")
 const updateArrayUsage = require("!!raw-loader!../../../content/snippets/usage/frontend/shared/utils/updateArrayUsage.ts")
@@ -30,20 +32,30 @@ const useAppDispatchUsage = require("!!raw-loader!../../../content/snippets/usag
 
 const sendSlackMessageFrontendTS = require("!!raw-loader!../../../content/snippets/frontend/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageFrontendJS = require("!!raw-loader!../../../content/snippets/frontend/javascript/utils/sendSlackMessage.js")
+
 const sendSlackMessageBackendTS = require("!!raw-loader!../../../content/snippets/backend/node/typescript/utils/sendSlackMessage.ts")
 const sendSlackMessageBackendJS = require("!!raw-loader!../../../content/snippets/backend/node/javascript/utils/sendSlackMessage.js")
+
 const sendSlackMessageUsage = require("!!raw-loader!../../../content/snippets/usage/shared/sendSlackMessageUsage.ts")
 
+// # Shell snippets
 const sendSlackMessageBash = require("!!raw-loader!../../../content/snippets/devops/bash/sendSlackMessage.sh")
 const sendSlackMessageUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/sendSlackMessageUsage.sh")
 
+// C# snippets
 const patchFiltererService = require("!!raw-loader!../../../content/snippets/backend/csharp/dotnet/utils/PatchFiltererService.cs")
 const patchFiltererServiceUsage = require("!!raw-loader!../../../content/snippets/usage/backend/csharp/dotnet/utils/PatchFiltererServiceUsage.cs")
 
+const assertPropertiesAreNonNullService = require("!!raw-loader!../../../content/snippets/backend/csharp/dotnet/utils/AssertPropertiesAreNonNullService.cs")
+const assertPropertiesAreNonNullServiceUsage = require("!!raw-loader!../../../content/snippets/usage/backend/csharp/dotnet/utils/AssertPropertiesAreNonNullServiceUsage.cs")
+
+
+// # Shell snippets
 const buildColorPromptBash = require("!!raw-loader!../../../content/snippets/devops/bash/buildColorPrompt.sh")
 const buildColorPromptUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/buildColorPromptUsage.sh")
 const buildColorPromptZsh = require("!!raw-loader!../../../content/snippets/devops/zsh/buildColorPrompt.sh")
 const buildColorPromptUsageZsh = require("!!raw-loader!../../../content/snippets/usage/devops/zsh/buildColorPromptUsage.sh")
+
 const supercurlBash = require("!!raw-loader!../../../content/snippets/devops/bash/supercurl.sh")
 const supercurlUsageBash = require("!!raw-loader!../../../content/snippets/usage/devops/bash/supercurlUsage.sh")
 
@@ -55,10 +67,12 @@ export function Snippets(props: ISnippetsProps) {
     const { pdfMode } = props
     const { themeBodyClass } = useContext(ThemeContext)
     const title = pdfMode ? "Full Stack Snippets." : "👩‍💻👨‍💻 Full Stack Snippets."
+    
     const languageFilter = pdfMode
         ? useSearchParam(URLSearchParamKey.LANGUAGE_FILTER)
         : URLSearchParamValue.ALL
-    const titleComponent = pdfMode ? (
+    
+        const titleComponent = pdfMode ? (
         <>
         <h1 className="big monospace">{title}</h1>
         <p>From <a href="https://chrisfrew.in">Chris' Full Stack Blog</a>.</p>
@@ -66,6 +80,7 @@ export function Snippets(props: ISnippetsProps) {
     ) : (
         <ColoredTitle title={title} />
     )
+    
     return (
         <>
             {titleComponent}
@@ -289,6 +304,7 @@ export function Snippets(props: ISnippetsProps) {
             {languageFilter === URLSearchParamValue.ALL && <h3><u>C#</u></h3>}
             {(languageFilter === URLSearchParamValue.ALL ||
                 languageFilter === URLSearchParamValue.CSHARP) && (
+                    <>
                 <SnippetToggler
                     snippetLabel="PatchFiltererService"
                     snippetDescription="Filter out unwanted properties from your models on the server side in .NET."
@@ -306,6 +322,24 @@ export function Snippets(props: ISnippetsProps) {
                     ]}
                     pdfMode={pdfMode}
                 />
+                <SnippetToggler
+                    snippetLabel="AssertPropertiesAreNonNullService"
+                    snippetDescription="Assert that all required, or simple all properties on your objects are not null."
+                    seenInPosts={[{
+                        title: "Recursively Assert All Properties Are Non-null Using Reflection",
+                        slug: "/blog/recursively-assert-all-properties-are-non-null-with-reflection"
+                    }]}
+                    snippetInfos={[
+                        {
+                            fileLabel: "AssertPropertiesAreNonNullService.cs",
+                            code: assertPropertiesAreNonNullService.default.toString(),
+                            usageCode: assertPropertiesAreNonNullServiceUsage.default.toString(),
+                            language: "csharp",
+                        },
+                    ]}
+                    pdfMode={pdfMode}
+                />
+                </>
             )}
             {languageFilter === URLSearchParamValue.ALL && <h2><u>Devops</u></h2>}
             {(languageFilter === URLSearchParamValue.ALL ||
