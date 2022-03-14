@@ -1,0 +1,83 @@
+---
+title: "Converting a UTC DateTime to string and back again for quality API design in C# / .NET!"
+description: "A key design pattern when building proper APIs."
+date: "2022-03-14"
+tags: C#, .NET
+---
+
+_🥧 obligatory pie emoji for Pi day pun - all nerds unite!_
+
+Recently I had to build an endpoint where a datetime would be passed in from the frontend and would have to be retrieved later. This is a super thing in API design, but I was running into an overload of ways to do it in .NET. I knew by best practices that I should be forming the actual `DateTime` objects with UTC time, and then serializing them to a string according to the ISO 8601 standard. 
+
+The possibilities and combinations of parameters seemed endless, and I was seeing a variety of answers. Should I use:
+
+- `ToString()`?
+- `Convert.ToDateTime()`?
+- `DateTime.Parse()`?
+
+It was only after some significant trial and error that I got to the final solution as presented here, and it's something I don't remember learning about in the common tutorials about C# and .NET when I was first learning about them.
+
+## `DateTime` to `string` and back Again, a Hobbit's Tale
+
+I recommend the following. Given a variable of type `DateTime`:
+
+```csharp
+var myDatetime = DateTime.UtcNow;
+```
+
+### `DateTime` to `string`
+
+When we want to form an ISO 8601 `string` from a `DateTime`, we should use `ToString("o")`:
+
+```csharp
+var myDatetimeIsoString = myDatetime.ToString("o");
+// "2022-03-14T15:21:41.227Z"
+```
+
+Where the ["o" format specifier](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip) tells C# to use the round-trip format (why this is not default, I don't know!)
+
+### `string` to `DateTime`
+
+When we want to go back to the exact representation of that `string` to `DateTime`, we should use `DateTime.Parse`:
+
+```csharp
+var myDatetimeAgain = DateTime.Parse(myDatetimeIsoString, null, System.Globalization.DateTimeStyles.RoundtripKind);
+```
+
+Here, `null` is for the culture, and the third parameter is the 'kind', which of course we want as the `RoundtripKind`.
+
+## In Summary
+
+Using `ToString("o")` and `DateTime.Parse()`, you can convert between `string `to `DateTime`, over and over again and can be sure you'll never lose information or find them to be unequal! Perfect.
+
+## Test It!
+
+Nowadays, I almost feel like I can't write any code without having a test to confirm it. It helps me design my systems and gives me reassurance whenever I do any renames or refactors.
+
+```csharp
+using System;
+using System.Diagnostics;
+
+public class Program
+{
+	public static void Main()
+	{
+		var myDateTime = DateTime.UtcNow;
+		var myDateTimeIsoString = myDateTime.ToString("o");
+		var myDateTimeAgain = DateTime.Parse(myDateTimeIsoString, null, System.Globalization.DateTimeStyles.RoundtripKind);
+		
+		// Doesn't throw :)
+		Debug.Assert(myDateTime == myDateTimeAgain);
+	}
+}
+```
+
+Here's a [.NET Fiddle](https://dotnetfiddle.net/WlV6S3) if you want to run this yourself.
+
+## This is the Way
+
+Using this method (and our test to confirm it) you are sure your API deals with UTC `Datetime`s only, and that they can always be properly converted to the ISO 8601 datetime string, and subsequently to xthe correct timezone in your various clients, no matter where (and when 😄) they may be around the world.
+
+## Thanks!
+
+Hope you enjoyed this post and that it saves you from scratching your head in the innumerable ways of converting `DateTime` to `string` in C# (and vice versa).
