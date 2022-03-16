@@ -1,0 +1,99 @@
+---
+title: "Advanced Code Organization Patterns: The Case For One Function Per File"
+description: "Back to the basics with this pattern."
+date: "2022-03-16"
+draft: false
+tags: Code Organization, System Design, Functional Programming, JavaScript, TypeScript, Object Oriented Programming
+---
+
+_Disclaimer: this post was written with frontend projects in mind, like websites, React Native mobile apps, and Electron apps. Though there are some transferrable skills to backend programming, as I mention further down. Also, the title is a bit of a joke. 😄 This is not that advanced, but it IS often overlooked._
+
+In this post, I'm going to talk about a pattern for organizing functional code in frontend projects, that is very basic, but often totally overlooked... it's called... _one function per file!_
+
+"You must be joking, right? File organization? Such a basic concept, can't believe this guy is posting about this..." Well, I'll push back and say its something that is considered _so_ simple that it is often overlooked and forgotten about, and can lead to monster 'god' files filled with dozens and dozens of functions over the long run. So consider reading this post! And respect the basics!
+
+## Two Code Organization Patterns
+
+Consider two ways to organize your code's functions: 
+
+1. Grouping several related functions into one file. Example: A file called `math.js`, under the `utils/` folder, filled with functions `add`, `subtract`, `multiply`, and `divide`:
+
+```
+utils
+└── math.js
+    ^ contains functions add, subtract, multiply, and divide
+```
+
+
+2. Placing each and every function in it's own file. Example: Files `add.js`, `subject.js`, `multiply.js`, `divide.js`, all under the `utils/math/` folder:
+
+```
+utils
+└── math
+    ├── add.js
+    ├── divide.js
+    ├── multiply.js
+    └── subtract.js
+```
+
+For quite some time, I used to think option 1. was better. Organizing related functions into the same file! Fancy! It seems to make sense, right? Fewer files, less complexity?
+
+Over time, working with larger and larger projects, the more refreshing it is to work with small, managable building blocks of code. We can anyway abstract the concept of 'similar' or 'related' functions by using a variety of folders to name the groupings. 
+
+Let's take a look at three reasons I've learned over my decade+ career as a software engineer that single function files are better.
+
+## Three Reasons Case for Single Function Files
+
+### 1. Tests
+
+When you want to unit test your functions, it's very clear when reading test code exactly what singular function you are importing - nothing more, nothing less. For integration tests, it's just as clear - we would expect to see an import for each function that is required for the integration test.
+
+### 2. Code Merging
+
+If you have a complex git tree with features and hotfix branches, putting many functions in a big 'utils' file or similar will only lead to headaches when you want to preserve the functionality (no pun intended) of each of the functions. When each of your functions is isolated to a single file, it is much easier to go through the git history per file and see what changes were made to the given function (and _only_ that function).
+
+### 3. Organization
+
+It's easier to grok the organization of your code base by being immediately able to understand where the function is based on the `import` statement alone. With option 1., the `add` function is in its own self-named file, as is `subtract`, and so on. With option 2., There is an extra mental leap required to go from thinking "ok... `utils/`, `math.js`... aha! `add` is within `math.js`!" 
+
+If you're writing any modern app that has any sort of complexity at all, trust me: you're going to have _a lot_ of utility functions, all collected around various actions, tasks, and activities - easily north of 50 or even 100 functions if you're compartmentalizing your code properly.
+
+## Drawbacks
+
+There aren't many drawbacks to this pattern - there is only one I can think of, which is that your `import` statements (or `require`) will be more numerous if you compartmentalize each of your functions into a separate file. _However_, most linters and formatters are going to make an `import` multi-line anyway if you choose to take the path of option 1. above, i.e. formatting like:
+
+```ts
+import {
+    add,
+    subtract,
+    multiple,
+    divide
+} from "./utils/math"
+```
+
+Instead of the organization pattern (option 2.) that I suggest:
+
+```ts
+import { add } from "./utils/math/add"
+import { subtract } from "./utils/math/subtract"
+import { multiply } from "./utils/math/multiply"
+import { divide } from "./utils/math/divide"
+```
+
+And in fact, it's a line shorter for all you line hounds out there 😉
+
+## Other Considerations
+
+Note that this pattern is for your own internal code. If you were shipping a library or package it would make sense to make all your exports from the same file, like and `index.js` or `index.ts`. Even then, this is only for the export interfacing and the source code of the library itself could (and in my opinion, should) use this pattern.
+
+Again, the entirety of this post may seem very obvious. But I've seen a lack of code organization arise again and again in so many different projects that I thought I would reiterate on the importance of this pattern.
+
+This pattern is also transferrable to object-oriented programming. If you find you are writing too many private (or even public) methods in a class, it's a sign that you should break some of that logic into yet another class, ultimately leading to smaller, more readable, and easier-to-understand code.
+
+## Thanks!
+
+How do you like to organize your functions in your client-facing apps? Would you choose option 1. or 2., and why?
+
+Cheers,
+
+-Chris 🍺

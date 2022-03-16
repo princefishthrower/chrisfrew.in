@@ -1,0 +1,47 @@
+---
+title: Get All Properties of a Type with this Fancy Utility Type
+description: Introducing... PropertiesOfType!
+date: "2022-03-15"
+draft: false
+tags: typescript, generics
+---
+
+
+
+Let's say we've got a function for which only comparison operators make sense. In this case, a function that compares a given property of two same-typed objects and tells you if the first is greater than the second:
+
+```typescript
+function greaterThan<T>(a: T, b: T, property: any): boolean {
+    return a[property] > b[property];
+}
+```
+
+Instead of that ugly looking (and incorrect) `any` type for `property`, we should instead allow only the types that make sense for the greater than (`>`) operator: `string`, `Date`, and `number`.
+
+## Introducing `PropertiesOfType`
+
+I introduce to you the type util, `PropertiesOfType`:
+
+```typescript
+type PropertiesOfType<Type, ValueTypes> = { [K in keyof Type]: Type[K] extends ValueTypes ? K : never }[keyof Type];
+```
+
+This type can select the keys of any type according to the value of `ValueTypes`. Because TypeScript is amazing, `Type` can be generic! So for our example, we could use:
+
+```typescript
+property: PropertiesOfType<T, string | Date | number>
+```
+
+Or incorporated into `greaterThan`:
+
+```typescript
+function greaterThan<T>(a: T, b: T, property: PropertiesOfType<T, >): boolean {
+    return a[property] > b[property];
+}
+```
+
+Many thanks to `carlvincentld` [on the TypeScript GitHub](https://github.com/microsoft/TypeScript/issues/24560) for clarifying how `Extract` works and providing me with this solution!
+
+## Thanks!
+
+Chris
