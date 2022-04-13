@@ -35,7 +35,7 @@
     "mdx-utils": "^0.2.0",
     "netlify-cli": "^8.8.1",
     "prism-react-renderer": "^1.2.0",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.27.0",
     "raw-loader": "^4.0.2",
     "react": "^17.0.1",
     "react-awesome-reveal": "^3.7.1",
