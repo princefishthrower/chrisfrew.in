@@ -6,9 +6,7 @@ draft: false
 tags: typescript, generics
 ---
 
-
-
-Let's say we've got a function for which only comparison operators make sense. In this case, a function that compares a given property of two same-typed objects and tells you if the first is greater than the second:
+Let's say we've got a function for which only comparison operators make sense. In this case, a function that compares a given property of two objects with the same type and tells you if the first is greater than the second:
 
 ```typescript
 function greaterThan<T>(a: T, b: T, property: any): boolean {
@@ -39,6 +37,8 @@ function greaterThan<T>(a: T, b: T, property: PropertiesOfType<T, >): boolean {
     return a[property] > b[property];
 }
 ```
+
+and we're all set!
 
 Many thanks to `carlvincentld` [on the TypeScript GitHub](https://github.com/microsoft/TypeScript/issues/24560) for clarifying how `Extract` works and providing me with this solution!
 
