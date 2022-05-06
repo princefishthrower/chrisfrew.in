@@ -1,0 +1,143 @@
+---
+title: The Quest for the Lowest Latency, Highest Load, Highest Flexibility, Highest Functionality, Read-Only API
+description:
+date: "2022-04-20"
+draft: true
+tags: go, fasthttp, c#, .NET, Node.js, System Architecture
+---
+
+## The Quest 🧙‍♂️
+
+I'm on a quest 🔮✨ to build the fastest technologically possible read-only API possible. Here's my journey so far.
+
+## Benchmarks
+### Or, how is the weather today?
+
+Before picking what framework to use, I always read (probably way too much) about the current benchmarks. According to [this excellent site](https://web-frameworks-benchmark.netlify.app/result), last updated on April 4th, 2022, [httpbeast](https://github.com/dom96/httpbeast), written in nim, is the "fastest" one, or at least the one that can handle the most requests per second. On [the httpbeast GitHub README](https://github.com/dom96/httpbeast), they link to [TechEmpower's benchmark site](https://www.techempower.com/benchmarks/#section=data-r18&hw=ph&test=json), touting that they are within the top 10, but that was 'Round 18' and those benchmarks were done in July of 2019. Even on `httpbeast`'s README, the following is written:
+
+> ℹ️ Unless you know what you're doing (for example writing something resource constrained or your own web framework), you are better off using Jester (which is built on Httpbeast) or another web framework.
+
+Ideally, I'd like to _not_ build another custom framework off of `httpbeast` itself (talk about reinventing the wheel!) _and_ I'd like not to be 'resource constrained'. So in short, looks like `httpbeast` is an insanely performant framework, but has absolutely none of the bells and whistles an average dev would come to expect in a web "framework" in 2022.
+
+_Furthermore_, when you look at this `httpbeast`, `fiber` (my current favorite candidate), and some other web frameworks which I think are quite popular - `gin`, `aspnet-mvc`, `django`, and `express`, [the story becomes a bit different](https://web-frameworks-benchmark.netlify.app/compare?f=gin,fiber,aspnet-mvc,express,django,httpbeast). Indeed, this `httpbeast` continually scores the best for all areas, but we start to see this `fiber` framework sneak in quite powerfully in almost all metrics.
+
+## The Problem With Benchmarks
+
+Benchmark are anyway a problem in general because they depend on many many many variables, not limited to:
+
+- What hardware the benchmark is run on
+- The way the actual benchmark is tested
+- The actual implementation in the code of each framework (are best practices being followed, etc)
+
+Of course, nowadays, developers which create these benchmarks are well aware of these problems and try to keep the code implementations as effective as possible and in as much an isolated method as possible. But nonetheless, there are certainly small fluctuations and changes in averages of these benchmark tests over time.
+
+Returning to the benchmarks themselves, [here's the link to the global benchmark list sorted by requests per second for reference](https://web-frameworks-benchmark.netlify.app/result) Here's my reasoning for each:
+
+- No. 1 - `httpbeast` in nim - I don't know nim, I'm not sure about the community, and at this point in my career I'm just too busy to learn yet another language
+- No. 2 - `activej` in Java - Likewise, it's been years since I've written a line of Java, and especially with the recent log4j exploit, I get the heebie jeebies when thinking of writing a backend in Java.
+- No. 3 - `nanoexpress` in JavaScript - I'm not writing a backend in JavaScript.
+- No. 4 - `sifrr` in JavaScript - See No. 3.
+- No. 5 - `undertow` in Java - See No. 2.
+- No. 6 - `whip` in nim - See No. 1.
+- No. 7 - `drogon` in C++ - See No. 1. or No. 6. Likewise, I don't want to write a backend in C++, nor do I know it as a language.
+- No. 8 - `simps` in PHP - I've had my fair share of backend PHP experience. Like JavaScript, it is not strictly typed and thus not my choice for backend.
+- No. 9 - `rapidoid` in Java - See No. 2. or No. 5.
+- No. 10 - `workerman` in PHP - See No. 8.
+- No. 11 - `fiber` in Go - 🔔🔔🔔 Ding ding ding! We finally have a winner. Go's minimalist philosophy, and easy portability in general have always had me intrigued since I started to learn about it. Plus, clocking in at 11th place, it's request per second are only 12% off `httpbeast`, still at a whopping 169455 requests per second.
+
+## Why All the Rules?
+
+I know, I hear you:
+
+> "Wow, all these language constraints and rules you've set for yourself. You truly are an idiot!"
+
+Let me explain: I'm not a language or framework purist in any sense. I'm a practical full stack software engineer that ships functional code. Frankly, I don't have time to dick around with complex tooling and purist frameworks for a mere few percent increase in metric performance. As the title states, I'm searching for a juicy framework confined by a variety of requirements (latency, load, flexibility, and functionality).
+
+In this sense, I truly beleive that `fiber` is the best choice, simply because it is written in go, and go is infinitely practical in all other areas other than pure performance. (But let's be clear: `fiber` appears to be damn good in the performant sense as well.)
+
+## HTTP/1, HTTP/2, gRPC, REST, JSON RPC, Cap'n Proto, WebSockets?!
+
+Ok, so I've settled with `fiber` as the web framework to use for my read-only API. But now what protocol to use to communicate with the clients?
+
+### HTTP/1
+
+What is this, 1980? Throwing this one out immediately as a protocol choice.
+
+### WebSockets
+
+Websockets are great , but I think for a read-only API, WebSockets are overqualified provide to wide a range of functionality (a classic case of 'overqualified', if you will) [This article](https://msmechatronics.medium.com/data-streaming-via-grpc-vs-mqtt-vs-5c30dd205193) has a nice benchmark comparing MQTT, WebSockets, and gRPC. In the end, gRPC is still faster than websockets at all scales.
+
+### HTTP/2 & gRPC
+
+These two are grouped together since gRPC is HTTP/2 under the hood.
+
+I had in my mind that the go language, created at Google, would be the most performant with gRPC, also developed at google. It turns out this isn't exactly the case.
+
+_Wait a second..._ what do we have here? Perhaps go _isn't_ the best choice in the case of gRPC, [Rust, Scala, C++, Java, and .NET are all kicking it's ass at all CPU sizes](https://github.com/LesnyRumcajs/grpc_bench/wiki/2022-03-15-bench-results)
+
+### Cap'n Proto
+
+Cap'n Proto claims to be even faster than gRPC, but at the moment it's unclear to me how compatible (if at all) or what sort of tooling is required to get web or JavaScript based clients to commmunicate with a Cap'n Proto backend. I think I'll leave this one on the back burner.
+
+## Moving forward with `fiber`
+
+Now I'm quite torn. I could build a `fasthttp-prefork` cached REST API, with GET only endpoints, with the following numbers:
+
+8 Cores, 16 GB RAM, concurrency 512
+name             request/s     avg. latencency
+fasthttp         177780        3220.3 ms
+
+Source: https://web-frameworks-benchmark.netlify.app/result?asc=0&f=fasthttp&metric=totalRequestsPerS&order_by=level64 and https://web-frameworks-benchmark.netlify.app/result?asc=0&f=fasthttp&metric=averageLatency&order_by=level64
+
+But the story for `fasthttp-prefork` with cached items is a bit different:
+
+Dell R440 Xeon Gold + 10 GbE, concurrency 512
+name             response/s     avg. latencency
+fasthttp         353311       1.5 ms (!!!)
+
+Source: https://www.techempower.com/benchmarks/#section=data-r20&hw=ph&test=cached-query
+
+Or, I could build a gRPC protocol API in .NET, with the following numbers:
+
+3 Cores, 32 GB RAM, concurrency 1000
+name        request/s     avg. latencency
+dotnet_grpc 77111         10.13 ms
+
+Source: https://github.com/LesnyRumcajs/grpc_bench/wiki/2022-03-15-bench-results
+
+Note here that number is only with 3 core. With a whopping 8 cores to make it comparable to the `fasthttp` test, gRPC would be able to handle even more messages albiet with the same latencency (I assume).
+
+One main concern is that if I want to stick with Go as my main language but take the gRPC path, I have to take a performance hit against .NET, then I could expect something like these numbers:
+
+3 Cores, 32 GB RAM, concurrency 1000
+name        request/s     avg. latencency
+go_grpc     50784         16.00 ms
+
+Source: https://github.com/LesnyRumcajs/grpc_bench/wiki/2022-03-15-bench-results
+
+However, those `fasthttp-prefork` responses per second and latency numbers are _insane_! It's hard to say however, how important the small differences in latency between the `fasthttp` and `gRPC` benchmarks are at a full server-to-client point of view, since it would quickly become negligble by internet connection speeds and network lookups anyway, which will always be our case in a consumer-facing API. However, it would still seem despite the trends and hype for gRPC, it still loses out to some traditional and optimized server techniques implemented by `fasthttp-prefork`. Granted in this case, my comparison is only referring to my goal of a read-only API. With two way streaming and multi directional communication, gRPC likely is better (and still has insane numbers while still including these extra functionalities).
+
+Another thing to consider here is the "hipster" value of the languages and tools. If I go the gRPC route I'm learning a new useful and flexible protocol that will likely be useful elsewhere.
+
+## And the Winner is... 🥁
+
+Actually, there are two! 
+
+The true winner for a read-only API for me would be `fasthttp-prefork` (or `httpbeast`, if you know the nim language). _However_, such an implementation would be read-only API, period. It would not be extensible or . It would have to truly remain this power house work horse of a service. Which is fine, following the single responsibility principle (though that is usually applied to code design and not for infrastructure / framework choice)
+
+I think the winner in my case is to take the performance "hit" and build my read-only API in `go_grpc`. Why?
+
+- More practice with go (which I want)
+- Learning gRPC (which I also want)
+- Possible extensibility later with the great flexibility that gRPC grants
+- Building my first gRPC API in a very friendly environment (a unary, request only service)
+
+Plus, are we going to say that 50784 req/s with 16.00 ms latency is really that bad? I should think not! 😄
+
+## Conclusion
+
+Let's all have a round of applaus for these benchmarks, many of which are still insanely impressive (even for many of the frameworks at the middle and bottom of the charts on all the linked sites!) It's always important to remember for 90% of systems, premature optimization is the wrong way to go, because nowadays even single machines can handle thousands and thousands of requests per second, which even medium to large orgs should find is more than enough. This long discussion and investigation was also on my part for my self learning and research on what is currently possible with the variety of web frameworks and . Usually I'd just start up a new .NET API if I wanted to move quickly and effectively.
+
+What do you think? Am I making a mistake not going with `nim` and `httpbeast`, or any of the other frameworks mentioned? Would you choose a cached REST API with `fasthttp-prefork` or a gRPC implementation in .NET or go? What do you think could be the most powerful read only API?
+
+Chris
