@@ -37,7 +37,7 @@ export function SocialsContainer() {
                     Medium
                 </a>
                  • 
-                <a href="https://twitter.com/Galt_" rel="me">
+                <a href="https://twitter.com/fullStackChris_" rel="me">
                     Twitter
                 </a>
                  • 
