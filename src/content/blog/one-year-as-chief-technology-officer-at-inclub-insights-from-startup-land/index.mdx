@@ -1,0 +1,128 @@
+---
+title: One Year as the Chief Technology Officer at InClub
+description: Insights from startup land!
+date: "2022-06-08"
+draft: false
+tags: Startup,Life,TDD,Automation,Companies,Testing
+---
+
+## It's My 1 Year Anniversary at InClub!
+
+So, today (June 8th, 2022) marks exactly my one year anniversary of my first commit to the InClub codebase:
+
+![My very first commit to the InClub backend codebase.](commit.png)
+
+## What is InClub?
+
+[InClub](https://inclub-app.com) is a platform that enables you to participate in [a wide variety of experiences](https://app.inclub-app.com) in your local area - or if you're traveling or otherwise abroad - experiences in the city or town you are residing. Our slogan is "Join & Host private experiences". 
+
+One reason of many that I joined InClub was because I began to notice the slowly decaying popularity of traditional "1.0 social" networks like Facebook, Instagram, and Snapchat. (If we had a secondary slogan, it might be "the anti-trend to Facebook"). InClub is an app that truly brings people back together again, in person, to participate in a variety of experiences, events, parties, and festivals - from experiences as local as going on a walk or drive with an InClub member, to exciting as sky diving.
+
+I also had a great experience from a similar app [Party with a Local](https://en.wikipedia.org/wiki/Party_with_a_Local) which is mysteriously no longer available. It was great though - I still have a friend I met through this app and we've met a few times since. (If anyone has more information about what happened to this neat app I'd definitely be interested!)
+
+## What We've Accomplished at InClub in the Past Year
+
+As the only contributing software engineer in the last year to the InClub software ecosystem, I'm proud to say that we've shipped:
+
+- A chat system that helps participants and organizers get to know each other before taking part in the experience together
+- A completely automated payment system using TWINT payments and IBAN payouts, whereby participants can request and pay for participation, and organizers can confirm or deny transactions, triggering the corresponding three-way settlement to the organizer, charity / NGO, and InClub.
+- A filtering / suggestion system based on nearby experiences, your preferences, or interests
+- A search system that highlights all matching tokens of your search terms, whether it be the experience name, category, or even name of the organizer
+- An experience template function, where you can take a huge variety of experience ideas and make it your very own as an organizer
+- A variety of emailing, cleanup, and update batch jobs that keep our infrastructure and ecosystem up-to-date to best serve experience participants and organizers alike
+
+## Main Takeaways and Tips for Tech Leads, Engineers, and Developers at Startups
+
+Over last year's ups and downs, I'm happy to share the insights we've gained as a team when it comes to how to best run operations around our application and tech infrastructure. Here are the most important topics and points that I could think of:
+
+### 1. Having Many Tests and Test-Driven Development (TDD) is Both Underrated and Truly Invaluable
+
+There are many software engineers, developers, and coders out there who scoff at test-driven development. Indeed, TDD is _a lot_ of additional work on top of the actual code behind business logic and features your company may need. But for small teams, especially expanding and growing small teams, the benefits of TDD are numerous:
+
+- You have clear, in-code documentation of how your system should work, on both the frontend and backend, as TDD should be applied to all parts of your software
+- With the help of tools like Gherkin and Cucumber, you have the descriptions of all your features written in steps, in plain English, and you can drive most tests _directly from_ these features with the correct tools
+- Your tests inform and show any new onboarding employee, whether they be a developer or product manager, the exact current state of the system and product and how it works
+- The benefit of running all your tests before each release, so that you as a team are more sure and confident that your customers won't experience any bugs as they use your product
+- The requirement to write and think about tests while designing a new feature help improve the feature design itself, as well as cooperation between the product / management team and the software / engineering team - you will catch edge cases and challenges in the design more often when thinking about the feature in a TDD way
+- When or if a bug is found (let's be honest- it's always _when_!), writing a test against it prevents future regressions of said bug 🐛 - trust your tests, see and check why any of them are failing, and adapt and refine as necessary
+
+### 2. Design, Build, and Run Many Tests... But Think About Your Tests!
+
+What do I mean by this? For a B2C business, customers are king, and without fail or excuses, the product should _always_ (ideally) ship with 0 known bugs for each release. The only way to do this realistically with a small startup team is to have a significant amount of automated tests, and I harped about the many advantages of many tests and TDD in point #1. 
+
+The challenge we, as engineers, have, _especially_ in a startup environment, is to design our tests so that they don't take _too_ much work to refactor or change as the business changes. In this way, we are nimble to modify the tests later as features grow, change, or are removed completely. I believe the typical industry rule of thumb is something like "80% unit tests, 15% integration tests, and 5% end-to-end tests". This is a good rule - unit tests are smaller and easier to refactor, change, and remove completely - just like your features. But likely your features are comprised of many unit tests - and you'll need to know what unit, integration, and end-to-end tests are touched by changing these features.
+
+Furthermore, this 80-15-5 "rule" is just a rule of thumb. On our backend, we have about 90% unit tests and 10% integration tests, while on our React Native mobile app, we have some sort of gray area of almost 50 / 50 ratio of unit to integration tests.
+
+### 3. UI/UX Testing is Hard... Very Hard
+
+> How do we test that timed animation? 
+
+> What about that app switch to that payment platform which doesn't provide any sandbox or out-of-the-box mocks for us to use? 
+
+> What about translated strings? Should we test those?
+
+> What about that WebView that interacts with 3rd party APIs? We don't need to test the third party stuff, right? Just how the WebView acts?
+
+> How much of our staging API should we mock, and for which test? All of them? Some of them? None of them? 
+
+These questions, as well as thousands of others, must at some point be answered as you build out tests on your UI. The challenge here actually isn't so much about the answers to each question, as they relate to tests in general which (should) have little risk of blowing up your customer's experience and or your production environment. (If you designed your systems and tests properly, your tests should never need to touch or run on a production instance anyway.) The challenge is more about documenting each choice and explaining why you made each choice. Often there are no "right" or "better" answers here... just... answers. Take a decision on what is mocked where and document why that decision was taken.
+
+In addition to the complex animation, various libraries, and API calls from a client, another main challenge with UI testing is the impressive number of user journeys that are possible. Think about having just 3 or 4 yes/no decisions that dictate what screen your user sees next. If you want to run full integration tests on all of these paths, they quickly become numerous if you wish to test all paths:
+
+```txt
+2^4 = 16
+2^5 = 32
+2^6 = 64 (!!!)
+```
+
+You can see that the number of branches to test when it comes to user-based choices increases geometrically. Again, with a small team, this becomes a bit of a compromise. Do you try and keep the cool UI/UX of having multiple flexible flows, or simplify the choices themselves? Or, as an alternative (a strategy we've taken at InClub) tests each binary choice logic in isolation in a unit test, thereby testing "all" branches by proxy. We then pick 5-10 of the 'heaviest path' taken by the majority of users in our integration tests. Then even further, you would pick 1-3 of these branches to be run by your end-to-end tests (still getting there for InClub).
+
+It also comes to how you implement your UI. Typically, the wisdom at large is to create UIs with components as reusable as possible, when using component-based frameworks like React, Angular, Vue, and the like. However, when it comes to a business heave component, like a payment button, or a share button, I encourage you to think a bit differently: leverage your UI as much as possible to control the UI flow of your application itself. Don't have a button that when pressed, calls a function, where a giant complex function determines what needs to happen with a specific behavior, action, or navigation side effect. 
+
+Rather, couple these business logic-heavy functions directly _with_ the UI element. This way, even if you have many functionalities for a given button location on a screen where its functionality depends on the user or app state, then you are sure when that button is tapped, _only_ that specific business logic associated with that button will be executed. While there will indeed be a bit more code for this type of component design pattern (and use this pattern sparingly!), you will benefit immensely overall from a component architecture that allows you to quickly rearrange UI screen flows and the like, while also being easier to test (and even rearrange your tests!)
+
+### 4. Test Code Coverage... 🤷‍♂️
+
+At InClub, we don't have any pipe dreams of 100% code coverage with our tests. Sure, if we had an army of engineers, this might be within the realm of possibility. However, we were (until about 2 weeks ago!) an Army of One™️ engineer, and we simply don't have the time as a team for me to spend hacking away to get the elusive 100% code coverage. Others argue that 100% code coverage through tests is _always_ possible if you write your code in a very testable way. But I believe this to mostly be snake oil, or if it is the case, only for specific embedded or backend codebases. I would love to see the test coverage figures of extremely complex and dynamic social apps like Airbnb, Facebook, or Discord. I can almost guarantee they aren't hitting 100%, or even close to that.
+
+After reading quite a lot on this topic, I've ultimately come to an engineer's favorite phrase, that for code coverage, "it depends". Unfortunately, I've lost the reference, but I recall reading somewhere that internally at Google, achieving even a 75% code coverage are considered _outstanding_. So, if you're on a small team that has even 40% or 50% code coverage in your tests, be proud. (As long as those tests correspond to the most important customer-facing features!)
+
+### 5. Be a Perfectionist... a Perfectionist at Being Pragmatic
+
+At a startup, you don't have time to build the "perfect, infinite scale, 0 bugs, 0 latency, 100% uptime" solution. (Ok, all technicalities aside, you _could_, but that would mean totally blocking all other business tasks for perhaps 2-3 months per feature... good luck!) 
+
+At a startup that is hopefully consistently growing, and consistently wanting to make its customers happy, and reap all the benefits that come with that (word of mouth / organic growth, etc.), you need to respond quickly to what the customers are asking for. To address these competing needs of infrastructure vs feature building, I've developed a sort of hierarchy of importance for each line of code that is written into the InClub ecosystem:
+
+1. functional (it works)
+2. commented (can other _engineers_ in the organization immediately understand what the code does?) 
+3. documented (can other _owners or product managers_ in the organization get exposure to or understand what this does?) 
+4. fully tested (is there an automated test that hits this specific line of code?)
+
+I believe these four points are a sort of "pragmatic programmer's compass" for writing any line of code at a startup.
+
+As a much more fun and realistic alternative to perfectionism, I recommend you to start thinking of your codebases as systems to manage, not inflexible perfect lines of text which never produce errors. _Trust me_, no matter how good you think you are or how many years of experience you have, you _will_ write code either with bugs in it, unexpected behavior, memory issues, or reliability problems. If you haven't, please write to me, we would like to hire you! 😊 
+
+A company's tech infrastructure is just like a garden: you have to trim the hedges, do some weeding, and sometimes a plant or two will get sick, or brown spots on your grass will start cropping up. With time, you can fix and restore each of these problems, keeping your garden healthy overall. Neglecting any portion for too long, however, and you start to have larger problems. You also _can't_ solve all problems simultaneously or all in one day, you have to plan strategically and move step by step to tackle each problem, keeping at it constantly to keep your garden looking sharp!
+
+### 6. Address Tech Debt, and Address it Often
+
+Following this metaphor of "garden maintenance" - you need to reserve days (or even a week sometimes) to address the technical debt at a growing startup. This of course blocks the time you have to build new features, and so it becomes a constant battle between the two. At InClub, we are still struggling to balance this perfectly, and based on what I've been reading, I'm starting to think it is _impossible_ to balance perfectly because it is simply impossible to predict how your organization's tech debt will grow and change through time. 
+
+As your business changes along with your customers' needs, older features of the business may stay the same, change, or fall out of use entirely. The easy tech debt refactors are modules that you can just remove completely. This gives your engineers a sigh of relief as it's just one less thing to monitor and maintain. The features which will remain customer-facing but also need to be upgraded or cleaned up are more complex, however. You need to plan your changes and refactors in a way that they won't cause breaking changes for the customers, and these considerations make these sorts of tech debt challenges doubly long.
+
+That's why it's so important to adhere to some of the modularization techniques and design patterns presented in literature like [the gang of four](https://springframework.guru/gang-of-four-design-patterns/). The cleaner and more isolated parts of your code are from one another, the easier it is to snip away old and unused parts, as well as improve and modify existing parts, or as all businesses may eventually need, breaking out modules into their own isolated microservices. Pair this clean design with all the tests you and your team should be writing (see points 1, 2, 3, and 4) and you should never be worried about how refactoring might break parts of your product or business logic!
+
+## What's Coming Up Next with InClub
+
+This year will be one of the most challenging for InClub, at least from a technological perspective. 
+
+The challenge is that we need to successfully execute essentially two parallel tech paths: while we seek to expand and build on our customer base, behind the scenes we are also building out the next version of infrastructure, which we are simply calling internally "InClub Infrastructure 2.0". The nice advantage with the 2.0 infrastructure is that we can build the services we need from scratch, now that we better know and understand our customer's needs, as well as our own needs for exactly what each business logic needs to succeed. This code base is also going to be much more cloud-friendly and scalable than our current infrastructure - a system that will be tuned to handle hundreds of thousands to even (hopefully) millions of customers as we look to expand globally in 2023.
+
+## Thanks for Reading!
+
+Whether you are an owner, product manager, or engineer at a startup, I hope these points and tips can help your teams build your product better.
+
+Cheers 🍻
+
+-Chris

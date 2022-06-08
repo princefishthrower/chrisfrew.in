@@ -1,0 +1,94 @@
+---
+title: A Shell Script to Show the Source Code of Any Docker Tag
+description: "Export the source code of any Docker tag!"
+date: "2022-06-05"
+draft: false
+tags: Shell Script, Docker, Kubernetes, Go, Google Cloud Platform, Cloud
+---
+
+## Why?
+
+I'm currently learning quite a lot about a Kubernetes, as I push to release the backend codebase for [Kurynt](kurynt.com), the first application that will have a backend completely written in Go. I want to publish the various microservices that Kurynt uses to the Google Cloud Platform, or GCP. One tutorial I was looking into was a [simple guestbook application using PHP and Redis](https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook). 
+
+One concept I am still trying to understand with a Kubernetes deployed stack is how the code has to be written to consider not just one instance of the code, but multiple instances running in parallel. (Since a Kubernetes deployed stack can autoscale). Although Kubernetes can autoscale for you when resources are approaching their limit, Kubernetes itself can't ensure that your code is written to ensure that things like [atomicity](https://en.wikipedia.org/wiki/Atomicity_(database_systems)) are still ensured throughout the system.
+
+## Good Artists Borrow, Great Artists Steal
+
+In order to try and gain more insight into possible code changes required for such parallel execution, I wanted to look into the the source code of the Google tutorial I was running. Thanks to [Sambhav Jain's post on DEV](https://dev.to/sambhav2612/reverse-engineering-a-docker-image-i8c) I was able to build a shell script that can provide the source code given any valid Docker tag.
+
+My only difficulty was silencing the `docker create` command so my script wouldn't annoyingly output the container ID. I [even opened an issue on the Docker CLI repo asking if they would consider introducing `--silent` flag](https://github.com/docker/cli/issues/3596). The feature was ultimately rejected, since I realized redirecting standard out with `1>/dev/null`, and the Docker CLI team agreed that was probably also the correct solution to my problem.
+
+## How the Script Works
+
+You can get to the source code of any docker image with these few simple steps:
+
+1. Get the path to the `WorkingDir` of the image
+2. Create a container with the provided Docker Tag
+3. Export the container as a tarball
+4. Extract the `WorkingDir` contents to a location of your choice
+
+## The Script
+
+_Note: This is accurate of the publishing date (June 5th, 2022), but to see the latest and most up-to-date source code, [please refer to this gist](https://gist.github.com/princefishthrower/81bc574c747b2a9f37bd2ed70d847d87)._
+
+
+```shell
+#!/bin/bash
+#
+# Extracts the source code of any Docker tag!
+# Inspired by Sambhav Jain's post on DEV: https://dev.to/sambhav2612/reverse-engineering-a-docker-image-i8c
+# Simply pass: 
+# 1. The desired Docker image tag you want to get the source code for 
+# 2. The target folder to put the source code in
+#
+# Example usage:
+# ./export-source-from-docker-tag.sh gcr.io/google-samples/gb-frontend:v4 docker-source
+# 
+#Produces output:
+# WorkingDir of image is var/www/html
+# Creating temporary container...
+# Exporting temporary container...
+# Extracting contents of WorkingDir to "docker-source"...
+# Done. Source code from Docker tag "gcr.io/google-samples/gb-frontend:v4" successfully exported into folder "docker-source".
+
+# Grep out the "WorkingDir", only first match, then remove everything uneeded, including leading slash (for tar later), and trim out leading or trailing spaces
+# workingDir=$(docker image inspect gcr.io/google-samples/gb-frontend:v4 | grep -m 1 WorkingDir | sed 's/"WorkingDir"://g; s/"//g; s/,//g; s/\///; s/^[[:space:]]*//')
+workingDir=$(docker image inspect $1 | grep -m 1 WorkingDir | sed 's/"WorkingDir"://g; s/"//g; s/,//g; s/\///; s/^[[:space:]]*//')
+echo WorkingDir of image is $workingDir
+
+# Count the number of nested folders this folder may be in, this is used for cleaner export further down
+componentCount=$(echo $workingDir | tr -cd '/' | wc -c)
+componentCount=$((componentCount+1))
+
+# create a temporary container, redirect hash output to /dev/null
+echo Creating temporary container...
+docker create --name="tmp" $1 1>/dev/null
+
+# export the container as a tar
+echo Exporting temporary container...
+docker export "tmp" > tmp.tar
+
+# remove temp container
+docker rm "tmp" 1>/dev/null
+
+# make a folder named by the second argument to move files into
+echo Extracting contents of WorkingDir to \"$2\"...
+sourceCodeFolderName=$2
+mkdir -p $sourceCodeFolderName
+
+# extract the working dir into a folder called 'tmp'
+tar -xf tmp.tar --strip-components=$componentCount -C $sourceCodeFolderName $workingDir 
+
+# clean up the no longer needed tar
+rm tmp.tar
+
+echo Done. Source code from Docker tag \"$1\" successfully exported into folder \"$2\".
+```
+
+## Thanks!
+
+I believe this script is helpful in many ways, and hope it is useful for you no matter what you may be doing with Docker.
+
+Cheers! 🍻
+
+-Chris
