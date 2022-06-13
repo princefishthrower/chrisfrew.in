@@ -1,6 +1,4 @@
-import {
-    IPost,
-} from "../components/utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
+import { IPost } from "../components/utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
 import PostListingType from "../enums/PostListingType"
 import { isPostWithCleanCrudApisOrder } from "./type-guards/isPostWithCleanCrudApisOrder"
 import { isPostWithCleanReactTypeScriptHooksOrder } from "./type-guards/isPostWithCleanReactTypeScriptHooksOrder"
@@ -12,8 +10,8 @@ export const applyPostListingTypeToPosts = (
 ): Array<IPost> => {
     switch (postListingType) {
         case PostListingType.LATEST:
-            return [
-                allPosts.sort((a, b) => {
+            const latestPost = allPosts
+                .sort((a, b) => {
                     if (
                         new Date(a.node.frontmatter.date) >
                         new Date(b.node.frontmatter.date)
@@ -27,8 +25,29 @@ export const applyPostListingTypeToPosts = (
                         return 1
                     }
                     return 0
-                })[0],
-            ]
+                })
+                .slice(0, 1)
+            return latestPost ? latestPost : []
+
+        case PostListingType.RECENTS:
+            const recentPosts = allPosts
+                .sort((a, b) => {
+                    if (
+                        new Date(a.node.frontmatter.date) >
+                        new Date(b.node.frontmatter.date)
+                    ) {
+                        return -1
+                    }
+                    if (
+                        new Date(a.node.frontmatter.date) <
+                        new Date(b.node.frontmatter.date)
+                    ) {
+                        return 1
+                    }
+                    return 0
+                })
+                .slice(1, 6)
+            return recentPosts ? recentPosts : []
         case PostListingType.TOP:
             const postsWithTopPostOrder = allPosts.filter(
                 isPostWithTopPostOrder

@@ -92,6 +92,18 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     postListingType={PostListingType.LATEST}
                 />
             </div>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                }}
+            >
+                <h2>Recent Posts:</h2>
+                <FilterableAndSortablePostsWidget
+                    postListingType={PostListingType.RECENTS}
+                />
+            </div>
             <h2>Popular Posts:</h2>
             <div
                 style={{
@@ -125,6 +137,8 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                 <h2 className="monokaiRedFont">Clean CRUD APIs</h2>
             </Link>
             </div>
+            <h2>Things I'm Working On:</h2>
+            <TagRenderer withTitle={false} linkToTagPage={true} tags={["Go", "gRPC", "Testing", "Microservices", "Cloud Architecture", "System Design"]}/>
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />

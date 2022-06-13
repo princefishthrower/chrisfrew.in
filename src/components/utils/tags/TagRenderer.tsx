@@ -49,9 +49,10 @@ export function TagRenderer(props: ITagRendererProps) {
     const randomOffset = tags ? getRandomInt(hexColorsLength - 1) : 0
 
     // sort alphabetically before rendering
+    // ensure they are in upper case so sort works even for acryonyms like SaaS and gRPC
     uniqueTags.sort((a, b) => {
-        const useA = a.replace(".", "")
-        const useB = b.replace(".", "")
+        const useA = a.replace(".", "").toUpperCase()
+        const useB = b.replace(".", "").toUpperCase()
         if (useB > useA) {
             return -1
         }

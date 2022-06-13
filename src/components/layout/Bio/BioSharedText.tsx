@@ -50,8 +50,8 @@ export function BioSharedText() {
                 With all my courses, I focus on both advanced and niche topics and
                 in each course I always make considerations into the broader
                 backdrop of the entire full stack software ecosystem. If such
-                courses sound interesting to you, please checkout my{" "}
-                <Link to="/courses">Full Stack Courses</Link>.
+                courses sound interesting to you, please check out the{" "}
+                <Link to="/courses">Full Stack Courses</Link> page. One final note: I don't want money to be the reason you can't learn from my courses, <b>so if you can't afford a course for whatever reason, simply send me an email and I can get you the course for free.</b>
             </p>
             <p>
                 I don't want anyone to be intimated by the noise of the software

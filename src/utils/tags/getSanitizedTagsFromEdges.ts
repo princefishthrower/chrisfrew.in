@@ -71,5 +71,8 @@ export const sanitizeTag = (rawTag: string) => {
     if (rawTag === "saas") {
         return "SaaS"
     }
+    if (rawTag === "gRPC") {
+        return "gRPC"
+    }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }

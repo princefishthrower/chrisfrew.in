@@ -72,7 +72,7 @@ export function FilterableAndSortablePostsWidget(
 
     const hexColorsLength = activeTheme.themeColorHexCodes.length
     const wrapperClassName =
-        postListingType === PostListingType.LATEST
+        postListingType === PostListingType.LATEST || PostListingType.RECENTS
             ? "latest-post-container"
             : "standard-post-container"
     return (
