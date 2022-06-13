@@ -2,6 +2,7 @@
 // determines what posts to sort and or filter out with
 enum PostListingType {
     LATEST = 'LATEST',
+    RECENTS = 'RECENTS',
     TOP = 'TOP',
     ALL = 'ALL',
     CLEAN_REACT_TYPESCRIPT_HOOKS = 'CLEAN_REACT_TYPESCRIPT_HOOKS',

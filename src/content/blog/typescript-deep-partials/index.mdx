@@ -1,10 +1,12 @@
 ---
 title: Deep Partials In TypeScript
-description: Perfect for mocking complex types for unit tests
+description: Perfect for mocking complex types in unit or integration tests!
 date: "2022-03-21"
 draft: false
-tags: typescript, generics, unit tests
+tags: typescript, generics, unit tests, integration tests, testing
 ---
+
+If you've been writing Jest tests with mock objects and so on, you know how much of a headache it is to mock objects. Of course in your testing code, you are often only concerned with testing specific properties of your object per test. TypeScript, however, doesn't really know or care about this fact, and will complain if you include . Luckily, there is a nice way to mock all these properties to keep TypeScript happy - no matter how deeply nested or complex your object is. To be able to fully mock _any_ possible object that can exist in JavaScript, three parts are needed: type `DeepPartial` type: `DeepPartialObject`, and interface `IDeepPartialArray`:
 
 ```typescript
 interface IDeepPartialArray<T> extends Array<DeepPartial<T>> {}
@@ -20,4 +22,14 @@ export type DeepPartial<T> = T extends Function
 ? DeepPartialObject<T>
 : T | undefined;
 ```
+
+All credit to Matt Pocock](https://www.mattpocock.com/) and [his short video Tweet](https://twitter.com/mattpocockuk/status/1505892984658743300) about this utility type and interface. (I recommend following him on Twitter and checking out his TypeScript content in general; it's fantastic!)
+
+## Thanks!
+
+I hope this snippet is useful for you. We're definitely making use of it in our Jest tests at [InClub](https://inclub-app.com)
+
+Cheers! 🍻
+
+-Chris
 

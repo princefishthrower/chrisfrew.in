@@ -1,0 +1,166 @@
+---
+title: "Full Stack Forays with Go and gRPC: An Initial Look"
+description: "From Frontend to Backend: Using gRPC (Bonus: gRPC with React Hooks!)"
+date: "2022-06-13"
+draft: false
+tags: Go,gRPC,Microservices,WebSockets,React,React Hooks,TypeScript,Cloud Architecture
+---
+
+## Go, gRPC, Microservices?! Oh, My!
+
+As the CTO at [InClub](https://inclub-app.com), a good amount of my time is learning about and planning scaling out our sort of 'seed stage' architecture (monolithic, managed servers, C# API) to a more 'Series A' and beyond architecture (for us, this means: Go, cloud servers, Kubernetes, and distributed microservices). 
+
+(I'm also going to use this type of distributed architecture for my newest SaaS product, [Kurynt](https://kurynt.com/)!)
+
+I always find it fun to do some experiments when getting into a new language or technology! This post is about my latest full-stack experiment using Go, gRPC, WebSockets, TypeScript, and React.
+
+## What is gRPC?
+
+If you're like me, you may have never even heard of gRPC, let alone know what some of it's advantages and disadvantages are. gRPC is a recursive acronym that stands for **gRPC Remote Procedure Call**. It is a combination of the HTTP 2.0 protocol and protocol buffers, also know as protobufs.
+
+## What is gRPC Good For?
+
+A main advantage of gRPC is that it is a universal communication protocol, due to proto buffers being encoded down to binary (and you can't get much simpler than that!). Thus it is perfect for distributed computing and exchanging messages between systems that are written in different languages or frameworks but need to nonetheless communicate. While something like an HTTP protocol could be used also for this cross system communication, this comes with the overhead that each system must also have a server exposing some sort of REST or REST like service with valid endpoints and so on. Protobufs, while being at some levels even more strict than REST over HTTP, can be in code as easy as a one-liner.
+
+gRPC is also much faster than HTTP - again thanks to the binary format of the messages being transferred. This makes it excellent for low-latency communication between services.
+
+## Disadvantages of gRPC
+
+Like everything in tech, nothing is a silver bullet, and gRPC is no exception, even with it's impressive list of benefits. As of June 13th, 2022, when this post was published, there are two key disadvantages with gRPC (all client side issues, specifically web):
+
+1. [TypeScript support remains as an experimental feature of gRPC.](https://github.com/grpc/grpc-web/blob/master/doc/roadmap.md)
+2. [A proxy is required to communicate from web clients to a server running gRPC](https://grpc.io/blog/state-of-grpc-web/), and there are only two choices for this proxy: 
+    
+    a. [The Improbable gRPC-Web client](https://github.com/improbable-eng/grpc-web/tree/master/client/grpc-web)
+    
+    or
+    
+    b. [The Google gRPC-Web client](https://github.com/grpc/grpc-web/tree/master/javascript/net/grpc/web)
+    
+    Furthermore, currently [neither implementation conforms completely to the full gRPC specification](https://grpc.io/blog/state-of-grpc-web).
+3. [WebSocket support as the transport layer is only available in the Improbable gRPC-Web client, and remains as experimental, not recommended for production use.](https://grpc.io/blog/state-of-grpc-web/)
+
+(By the way, if you're wondering which to choose, only the [Improbable gRPC-Web client](https://github.com/grpc/grpc-web/tree/master/javascript/net/grpc/web) supports bi-directional streaming at the moment, which is closer to the full spec of gRPC.)
+
+## Get Started
+
+### Backend Implementation
+
+First, I started with gRPC's recommended starter repository for learning gRPC, [their `helloworld` example, which is a part of the official gRPC repository](https://github.com/grpc/grpc-go/tree/master/examples/helloworld). 
+
+Using that code, I added a new utility method in Go called `Reverse`:
+
+```go
+package utils
+
+// Reverse returns its argument string reversed rune-wise left to right.
+func Reverse(s string) string {
+	r := []rune(s)
+	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
+		r[i], r[j] = r[j], r[i]
+	}
+	return string(r)
+}
+```
+
+And modified the original implementation of the `SayHello` function to use this `Reverse` function:
+
+```go
+func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+	log.Printf("Received: %v", in.GetName())
+	log.Printf("Returning: %v", utils.Reverse(in.GetName()))
+	return &pb.HelloReply{Message: utils.Reverse(in.GetName())}, nil
+}
+```
+
+### Frontend Implementation
+
+I scaffolded a React app with `create-react-app`, removed all extra fluff (styles, images, and such), and added some description text with a `<textarea>`.
+
+Now the cool part: I decided to use a custom React Hook to control the state of the message, the response, _and_ interact with the gRPC call. The hook listens to the value of the message the user provides, and whenever it changes, the gRPC method reverser service is called. This comes out quite succinctly as a hook I called `useGreeterService`:
+
+```ts
+import { useEffect, useState } from "react";
+import { sayHello } from "../services/greeterService";
+
+export const useGreeterService = (): [
+  string,
+  React.Dispatch<React.SetStateAction<string>>,
+  string
+] => {
+  const [message, setMessage] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
+  useEffect(() => {
+    sayHello(message, setResponseMessage);
+  }, [message]);
+
+  return [message, setMessage, responseMessage];
+};
+```
+
+Note the subtle power in that `sayHello` call - a one liner! No `fetch`, no configuring headers, cookies, HTTP methods, or building up some custom API service.
+
+Usage of `useGreeterService` in `App.tsx` looks like this:
+
+```tsx
+import { useState } from "react"
+import { useGreeterService } from "./hooks/useGreeterService";
+
+const App = () => {
+  const [message, setMessage, responseMessage] = useGreeterService();
+  
+  return (
+    <>
+    <h1>Simple message reverser over gRPC</h1>
+    <p>(Don't ask me why you would actually want to reverse a string server-side, this is just for fun!</p>
+    <label title="Type a message in realtime over the gRPC wire">Type a message in realtime over the gRPC wire:</label>
+    <br/>
+    <textarea value={message} onChange={(event) => setMessage(event.target.value)}/>
+    <p>And see the response message here: {responseMessage}</p>
+    </>
+  );
+}
+
+export default App;
+```
+
+### gRPC Web Proxy
+
+Once your backend and frontend are up and running, there is still one item that needs to be added: the gRPC Proxy. Luckily we have Improbable's proxy ready to be used. First install it with:
+
+```shell
+GOPATH=~/go ; export GOPATH
+git clone https://github.com/improbable-eng/grpc-web.git $GOPATH/src/github.com/improbable-eng/grpc-web
+cd $GOPATH/src/github.com/improbable-eng/grpc-web
+dep ensure # after installing dep
+go install ./go/grpcwebproxy # installs into $GOPATH/bin/grpcwebproxy
+```
+
+Then run it with:
+
+```shell
+GOPATH=~/go ; export GOPATH
+$GOPATH/bin/grpcwebproxy \
+    --backend_addr=localhost:50051 \
+    --run_tls_server=false \
+    --use_websockets \
+    --allow_all_origins
+```
+
+*Note: in my original experiment, I wanted to use WebSockets as the transport layer for optimum performance. However, upon further review into gRPC (and as mentioned above), using WebSockets as a transport layer is still technically an experimental feature, and so I would recommend removing the `--use_websockets` flag from the command above when running the web proxy in production. 
+
+(Though it's unclear to me exactly _what_ is experimental about using WebSockets as the transport layer. For this simple example I experienced no issues!)
+
+## Example code
+
+The [code from this little experiment can be found on GitHub](https://github.com/princefishthrower/grpc-go-react-typescript). The README can give you even more detailed information on how to get it all up and running. 
+
+I have to say, from my initial fooling around, I was amazed by the performance I was seeing. From my perspective, I couldn't have told you I saw any difference from just calling `string.reverse()` in the client on each keystroke - and yet those strings were produced by two gRPC calls making a round trip - first a call to the server with the string, and the server responding with the reversed string. (Granted, this was all running over localhost, so I'm not sure how this would look on a real server, but I can imagine it is nearly as fast). But like I said, from an initial feeling, it does feel _fast_!
+
+## Thanks!
+
+If you were looking to dive into the world of gRPC, I hope this post convinced you to try and showed how easy it is to get up and running with a full stack gRPC call!
+
+Cheers! 🍻
+
+-Chris
