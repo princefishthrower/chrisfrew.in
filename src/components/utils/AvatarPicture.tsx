@@ -28,6 +28,11 @@ export function AvatarPicture() {
                     gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                 }
             }
+            avatarSummerHoliday: file(relativePath: { eq: "avatarSummerHoliday.png" }) {
+                childImageSharp {
+                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                }
+            }
         }
     `)
 
@@ -36,7 +41,7 @@ export function AvatarPicture() {
     const epiphany = new Date(`${year}-01-06`)
     const easter = getEasterByYear(year)
     const saintPatricksDay = new Date(`${year}-03-17`);
-    const firstOfJuly = new Date(`${year}-07-01`);
+    const firstOfJune = new Date(`${year}-06-01`);
     const lastOfAugust = new Date(`${year}-08-31`);
 
     // if we are between november 28th (the latest Thanksgiving can be)
@@ -78,12 +83,12 @@ export function AvatarPicture() {
     }
 
     // TODO:
-    // july and august
-    if (now >= firstOfJuly && now <= lastOfAugust) {
+    // june, july and august - summer holiday
+    if (now >= firstOfJune && now <= lastOfAugust) {
         return (
             <GatsbyImage
                 className="title-avatar-picture"
-                image={data.avatarChristmas.childImageSharp.gatsbyImageData}
+                image={data.avatarSummerHoliday.childImageSharp.gatsbyImageData}
                 alt={`${data.site.siteMetadata.author.name} is in summer chill mode.`}
             />
         )
