@@ -4,7 +4,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import SchemaOrg from "./SchemaOrg"
 import config from "../../../config/website"
-import defaultMetaImage from "../../images/avatar.jpg"
+
+// TODO: ensure this one matches the logic in component AvatarPicture
+// import defaultMetaImage from "../../images/avatar.jpg"
+import defaultMetaImage from "../../images/avatarSummerHoliday.png"
 
 function SEO({
     siteMetadata: seo,
