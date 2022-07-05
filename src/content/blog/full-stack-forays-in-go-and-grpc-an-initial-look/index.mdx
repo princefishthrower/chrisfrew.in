@@ -1,6 +1,6 @@
 ---
-title: "Full Stack Forays with Go and gRPC: An Initial Look"
-description: "From Frontend to Backend: Using gRPC (Bonus: gRPC with React Hooks!)"
+title: "Full Stack Forays with Go and gRPC"
+description: "From Frontend to Backend: Using gRPC (Bonus: How to Use gRPC with React Hooks!)"
 date: "2022-06-13"
 draft: false
 tags: Go,gRPC,Microservices,WebSockets,React,React Hooks,TypeScript,Cloud Architecture
@@ -8,7 +8,7 @@ tags: Go,gRPC,Microservices,WebSockets,React,React Hooks,TypeScript,Cloud Archit
 
 ## Go, gRPC, Microservices?! Oh, My!
 
-As the CTO at [InClub](https://inclub-app.com), a good amount of my time is learning about and planning scaling out our sort of 'seed stage' architecture (monolithic, managed servers, C# API) to a more 'Series A' and beyond architecture (for us, this means: Go, cloud servers, Kubernetes, and distributed microservices). 
+As the CTO at [InClub](https://inclub-app.com), a good amount of my time is learning about and planning to scale out our sort of 'seed stage' architecture (monolithic, managed servers, C# API) to a more 'Series A' and beyond architecture (for us, this means: Go, cloud servers, Kubernetes, and distributed microservices). 
 
 (I'm also going to use this type of distributed architecture for my newest SaaS product, [Kurynt](https://kurynt.com/)!)
 
@@ -16,19 +16,19 @@ I always find it fun to do some experiments when getting into a new language or 
 
 ## What is gRPC?
 
-If you're like me, you may have never even heard of gRPC, let alone know what some of it's advantages and disadvantages are. gRPC is a recursive acronym that stands for **gRPC Remote Procedure Call**. It is a combination of the HTTP 2.0 protocol and protocol buffers, also know as protobufs.
+If you're like me, you may have never even heard of gRPC, let alone know what some of its advantages and disadvantages are. gRPC is a recursive acronym that stands for **gRPC Remote Procedure Call**. It is a combination of the HTTP 2.0 protocol and protocol buffers, also known as protobufs.
 
 ## What is gRPC Good For?
 
-A main advantage of gRPC is that it is a universal communication protocol, due to proto buffers being encoded down to binary (and you can't get much simpler than that!). Thus it is perfect for distributed computing and exchanging messages between systems that are written in different languages or frameworks but need to nonetheless communicate. While something like an HTTP protocol could be used also for this cross system communication, this comes with the overhead that each system must also have a server exposing some sort of REST or REST like service with valid endpoints and so on. Protobufs, while being at some levels even more strict than REST over HTTP, can be in code as easy as a one-liner.
+A main advantage of gRPC is that it is a universal communication protocol, due to proto buffers being encoded down to binary (and you can't get much simpler than that!). Thus it is perfect for distributed computing and exchanging messages between systems that are written in different languages or frameworks but need to nonetheless communicate. While something like an HTTP protocol could be used also for this crosss-ystem communication, this comes with the overhead that each system must also have a server exposing some sort of REST or REST-like service with valid endpoints and so on. Protobufs, while being at some levels even more strict than REST over HTTP, can be in code as easy as a one-liner.
 
 gRPC is also much faster than HTTP - again thanks to the binary format of the messages being transferred. This makes it excellent for low-latency communication between services.
 
 ## Disadvantages of gRPC
 
-Like everything in tech, nothing is a silver bullet, and gRPC is no exception, even with it's impressive list of benefits. As of June 13th, 2022, when this post was published, there are two key disadvantages with gRPC (all client side issues, specifically web):
+Like everything in tech, nothing is a silver bullet, and gRPC is no exception, even with its impressive list of benefits. As of June 13th, 2022, when this post was published, there are two key disadvantages with gRPC (all client-side issues, specifically web):
 
-1. [TypeScript support remains as an experimental feature of gRPC.](https://github.com/grpc/grpc-web/blob/master/doc/roadmap.md)
+1. [TypeScript support remains an experimental feature of gRPC.](https://github.com/grpc/grpc-web/blob/master/doc/roadmap.md)
 2. [A proxy is required to communicate from web clients to a server running gRPC](https://grpc.io/blog/state-of-grpc-web/), and there are only two choices for this proxy: 
     
     a. [The Improbable gRPC-Web client](https://github.com/improbable-eng/grpc-web/tree/master/client/grpc-web)
@@ -37,7 +37,7 @@ Like everything in tech, nothing is a silver bullet, and gRPC is no exception, e
     
     b. [The Google gRPC-Web client](https://github.com/grpc/grpc-web/tree/master/javascript/net/grpc/web)
     
-    Furthermore, currently [neither implementation conforms completely to the full gRPC specification](https://grpc.io/blog/state-of-grpc-web).
+    Furthermore, currently, [neither implementation conforms completely to the full gRPC specification](https://grpc.io/blog/state-of-grpc-web).
 3. [WebSocket support as the transport layer is only available in the Improbable gRPC-Web client, and remains as experimental, not recommended for production use.](https://grpc.io/blog/state-of-grpc-web/)
 
 (By the way, if you're wondering which to choose, only the [Improbable gRPC-Web client](https://github.com/grpc/grpc-web/tree/master/javascript/net/grpc/web) supports bi-directional streaming at the moment, which is closer to the full spec of gRPC.)
@@ -98,7 +98,7 @@ export const useGreeterService = (): [
 };
 ```
 
-Note the subtle power in that `sayHello` call - a one liner! No `fetch`, no configuring headers, cookies, HTTP methods, or building up some custom API service.
+Note the subtle power in that `sayHello` call - a one-liner! No `fetch`, no configuring headers, cookies, HTTP methods, or building up some custom API service - gRPC abstracts all of that away for us.
 
 Usage of `useGreeterService` in `App.tsx` looks like this:
 
@@ -126,7 +126,7 @@ export default App;
 
 ### gRPC Web Proxy
 
-Once your backend and frontend are up and running, there is still one item that needs to be added: the gRPC Proxy. Luckily we have Improbable's proxy ready to be used. First install it with:
+Once your backend and frontend are up and running, there is still one item that needs to be added: the gRPC Proxy. Luckily we have Improbable's proxy ready to be used. First, install it with:
 
 ```shell
 GOPATH=~/go ; export GOPATH
