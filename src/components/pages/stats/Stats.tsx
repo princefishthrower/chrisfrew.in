@@ -33,6 +33,7 @@ export function Stats() {
                     }
                 }
             }
+            # comment this whole block when working offline:
             allGithubData {
                 edges {
                     node {
