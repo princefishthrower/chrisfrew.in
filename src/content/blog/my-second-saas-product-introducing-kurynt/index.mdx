@@ -1,0 +1,68 @@
+---
+title: "My Second Indy SaaS Product: Introducing Kurynt!"
+description: The last tool you will ever need to manage third-party code.
+date: "2022-07-27"
+draft: false
+tags: Supabase, Node, TypeScript, Saas, Netlify
+---
+
+![The Kurynt logo. They're currants! Get it? Hehe.](logo.png)
+
+Today's the day I release <a href="https://kurynt.com">Kurynt</a>! 
+
+I'm excited, but I'm also feeling sketched out; Kurynt is _way_ more complex than my first successful SaaS product, <a href="https://wheelscreener">The Wheel Screener</a>. Additionally, I've built Kurynt only in my free time in between massive engineering work at <a href="https://inclub-app.com">InClub</a>. I was able to build The Wheel Screener more or less full time for about 4 weeks when I was in between jobs in 2021. Kurynt has ultimate also been in about 4 weeks of total time, but in a much more on and off fashion, with the initial formulation in April 2022 (this year as of writing this post).
+
+## What is Kurynt?
+
+Kurynt, pronounced "current", aims to fix a problem that software engineers know all too well: You've inherited a legacy codebase, and shrink at even thinking about trying to upgrade any packages. Or perhaps you've got that one package in an existing project you know has long needed to be upgraded, but you haven't even begun to pour into the docs and breaking changes of what an upgrade might entail. As a final example, there are the famous stories that in some projects there is always "that one" _ancient_ package that "we don't touch because it immediately breaks everything for an unknown reason". Such behavior is just asking for security exploits and poor users experiences. We can do better.
+
+I've long been unimpressed by similar tools like Dependabot and Snyk which only give, in my opinion, relatively 'dumb' upgrade suggestions. Those tools simply recommend you upgrade to the latest version, and even more heinously, simply spam your git repository with a pull request that includes nothing more than the package version updated. These tools don't analyze your codebase and warn you if parts of the package it has upgraded may break completely and essentially bring down your app. I know this all to well from development time at InClub, where a seemingly benign upgrade to a package in our React Native application causes the entire app to crash or even unable to boot up. Of course, we've caught these in our development and staging systems before any release, but this is essentially a trial-and-error pattern that is often frustrating. **I wanted to build a tool that can manage everything about package upgrades, deprecations, and end-of-lfe entirely for you.**
+
+Kurynt gives you more intelligent and more detailed upgrade suggestions. In fact, you don't even need to upgrade to the latest version of any given package, you can go step by step, or even from any "source" version to a different "destination" version. Kurynt is also not very opinionated - you can think of it more as a collector and distiller of a variety of platforms. It's optimized to collect and crunch data to help you:
+
+1. Upgrade your third-party software as quickly and safely as possible
+2. Identify regressions or bugs in recently updated packages
+3. Help you schedule and plan for future upgrades so your software is never using software that has been deprecated or worse - already reached end of life.
+
+## Lean Release
+
+While reading the <a href="https://www.goodreads.com/book/show/10127019-the-lean-startup">Lean Startup by Eric Ries</a> (also partially as homework for <a href="https://inclub-app.com">InClub</a>), I'm releasing Kurynt in a lean fashion (a _very_ lean fashion). There are hints to many of the features I'd _like_ to build, but hints only. Kurynt again differs significantly from <a href="https://wheelscreener.com">The Wheel Screener</a>, which was more or less a full SaaS product at the time I released it. Kurynt has very far to go until it's in a state that I think provides the most value, but I'd like to do this part in step with my early adopters.
+
+## Pushing Forward Despite Minor Bugs and Annoyances
+
+Kurynt is also my first SaaS product which is directly built for developers. I'm excited to see how people react to it. Again, I'm quite nervous, as I expect engineers and developers to be the most critical - and Kurynt, as it is now, is riddled with minor bugs and annoyances. _But it's usable_. 
+
+Ultimately, despite these problems, I hope everyone who uses Kurynt can see the future vision and recognize its value and potential. At least on my side, it's something I use daily for <a href="https://inclub-app.com">InClub</a>, and I've got a growing list of ideas I'd like to implement on the Kurynt platform. However (in the Lean Startup world), I'm going to wait to see what initial feedback I get from early adopters and the community at large. As far as I know, Kurynt is the first and only tool of its kind, combining analytics, some number crunching, and (eventually) natural language processing machine learning models to help you manage all the packages used in your codebases.
+
+## The Value-Add of Kurynt
+
+My main assumptions about the market advantage of Kurynt are:
+
+1. There is no service out there that combines analytics and NLP / machine learning to manage third-party packages.
+
+2. There is no tool that combines upgrading, regression monitoring, and end of life guidance in a single spot for major frameworks, for example, Node.js, .NET, Go, and so on. Check the <a href="https://kurynt.com/framework-manager">Framework Manager</a> page on Kurynt to see what I'm getting at here).
+
+For more information on the technical details of how Kurynt works, check out the <a href="https://kurynt.com/about">about page on the Kurynt website</a>.
+
+## Shortcuts and Missing Features
+
+Just to get Kurynt to a state where I could actually release it to get feedback (I still consider it 'super-beta' in my opinion), I've had to take the following shortcuts:
+
+- Supporting only `package.json` parsing with NPM packages - (I started writing flows for `requirements.txt` (Python), `.csproj` files, and so on, but quickly realized the complexity would extend the beta release to months instead of weeks 😊)
+- Supporting only those NPM packages which have a corresponding GitHub repository
+- Not supporting any alerts or notifications yet
+- Not supporting any syncing of codebases from places like GitHub, GitLab, or Bitbucket, for example
+
+## So... Why are you Releasing Kurynt in Such a State?
+
+Two reasons. The first is just a lame one, which is that next week I'm on vacation. I long said I would have this product 'ready' before this vacation, so the time has finally come. Second is that I've been reading more and more about shipping earlier rather than later, and while I could see hundreds of more hours of development time that could be put in to building new features for Kurynt, I want to see how people use it and what features are the most valuable. I've got the proof of concept up and working, and anything additional not informed by customers is just time which will likely take me away from my vision with Kurynt.
+
+So, in conclusion, I'm at least mentally prepared for a bumpy release, but overall looking forward to it. It may seem to you that Kurynt does nothing right now! 😂 But I encourage you to check out <a href="https://kurynt.com">Kurynt</a> and give it a test drive. Any and all feedback is welcome - check out the <a href="https://kurynt.com/contact">contact page</a> to do that.
+
+With that, I'm going to enjoy my upcoming vacation. 😎
+
+Cheers! 🍺
+
+-Chris
+
+_P.S.: Fun fact: the final cracking dev week to push the release of Kurynt was accomplished only through playing <a href="https://www.youtube.com/watch?v=3euJsXpXRzQ">Megadeth's Rust In Peace Album</a> on near-repeat. (Heck, it's playing right now as I write this post!)_
