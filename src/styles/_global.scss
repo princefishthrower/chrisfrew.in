@@ -215,7 +215,8 @@ p > img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: -1rem;
+    margin-bottom: -1.25rem;
+    height: 1rem;
 }
 
 button.code-copy-button {

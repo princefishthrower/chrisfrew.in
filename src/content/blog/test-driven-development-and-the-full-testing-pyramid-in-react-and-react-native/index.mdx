@@ -1,0 +1,989 @@
+---
+title: Test Driven Development and The Full Testing Pyramid in React and React Native
+description: Unifying Gherkin, Cucumber, Jest, Cypress, Detox for a one-stop full pyramid testing suite.
+date: "2022-10-02"
+draft: false
+tags: typescript, generics
+---
+
+## Important Information About this Post
+
+This isn't a 'hype' or 'discussion only' blog post. This post goes into step-by-step detail on exactly how you can setup unit, integration, and end to end tests for both React web and React Native applications. By the end of this tutorial, you'll be able to write Gherkin specifications and their corresponding TypeScript code implementations in Jest, Cypress, or Detox, depending on what platform and area of the pyramid you are testing. Finally, you'll be able to run this full testing suite with a single npm script, so that it will be trivial to add to a build pipeline or similar. Please be sure to also check out the fully working example repositories for [React on the web](https://github.com/princefishthrower/full-testing-pyramid-react-web) and [React Native](https://github.com/princefishthrower/full-testing-pyramid-react-native).
+
+This post assumes you are using Visual Studio and are writing all source code in either plain TypeScript or TSX for components.
+
+## Automated Testing and Test Driven Development
+
+Automated testing is slowly becoming more and more commonplace in applications of all shapes and sizes. Over my past year at InClub, I've spent a significant amount of time building out and maturing our tests. I'm proud to say we have built a rich testing suite of unit, integration, and end-to-end tests for both our React Native mobile application and our React website.
+
+It's important to note that these tests aren't just obscure automated tools known only to the development team. There is a special specification language called **Gherkin** that can bridge the gap between the product team and the engineering team.
+
+## Gherkin
+
+The Gherkin language is a sort of pseudo programming language that describes how features in the application should work. The most important key words in the Gherkin language `Given`, `When`, and `Then`. These correspond to their software testing world counterparts: _Arrange_, _Act_, and _Assert_:
+
+`Given` -> _Arrange_
+
+`When` -> _Act_
+
+`Then` -> _Assert_
+
+A nice aspect of the Gherkin language is that it can be used to write both high-level feature specifications, such as user flows and stories, to very low-level specifications, such as a specific function or single component, and everything in between. A common practice is to use the `.feature` file extension for these files, so at InClub, we call them colloquially 'feature files', and I'll continue to use that name throughout the rest of this post. At InClub, We have over 60 of these feature files, of all shapes and sizes, describing nearly every facet of how our application and website should work.
+
+This post is a tutorial on how to get everything up and running to get started building your own testing suite for any application you may need to test.
+
+## React on the Web
+
+First, we'll cover all that is needed to get a full testing pyramid up and running for vanilla React running on the web. We'll use Jest for unit and integration tests, and Cypress for end-to-end tests.
+
+### Jest with React
+
+To get started with Jest unit and integration tests written in TypeScript and driven by Gherkin features in a React web application, you'll need to install the following dev dependencies:
+
+-   jest
+-   @types/jest
+-   jest-cucumber
+-   babel-jest
+-   @testing-library/react
+-   @testing-library/jest-dom
+-   @testing-library/user-event
+
+In the shell, that's:
+
+```shell
+npm install --save-dev jest @types/jest jest-cucumber babel-jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
+```
+
+We then need to point Jest to our test files, and configure it for Gatsby. Add the following to your `jest.config.js` file:
+
+```js
+module.exports = {
+    transform: {
+        "^.+\\.[jt]sx?$": "<rootDir>/jest-preprocess.js",
+    },
+    testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
+    transformIgnorePatterns: [
+        `node_modules/(?!(gatsby|gatsby-script|gatsby-link)/)`,
+    ],
+    moduleNameMapper: {
+        // ignore this ESM module:
+        "^uuid$": require.resolve("uuid"),
+    },
+    globals: {
+        __PATH_PREFIX__: ``,
+    },
+    testEnvironmentOptions: {
+        url: `http://localhost`,
+    },
+    setupFiles: [`<rootDir>/loadershim.js`],
+    testMatch: ["**/*.steps.ts?(x)"],
+    testEnvironment: `jsdom`,
+    setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
+}
+```
+
+We will also need to tell Jest to transform our test files. Jest recommends creating a `babel.config.js` file in the root of your project, but since we are using a Gatsby site, we need to be sure that Gatsby's preset, `babel-preset-gatsby`, also makes it into the transform. Create a file called `jest-preprocess.js`, and add the following:
+
+```js
+const babelOptions = {
+    presets: ["babel-preset-gatsby", "@babel/preset-typescript"],
+}
+
+module.exports = require("babel-jest").default.createTransformer(babelOptions)
+```
+
+> Note: for people using plain React without any additional frameworks, such as `create-react-app`, you should be able to use the following `babel.config.js`:
+>
+> ```js
+> module.exports = {
+>     presets: [
+>         ["@babel/preset-env", { targets: { node: "current" } }],
+>         "@babel/preset-typescript",
+>     ],
+> }
+> ```
+>
+> If there's enough interest, I could create an example repo specifically for other React frameworks (`create-react-app`, Next.js, etc.) though the changes would be minimal, mostly concerning these configuration settings.
+
+We need to add two more additional support files for testing within the Gatsby environment: `loadershim.js`:
+
+```js
+global.___loader = {
+    enqueue: jest.fn(),
+}
+```
+
+and `setup-test-env.js`:
+
+```js
+import "@testing-library/jest-dom/extend-expect"
+```
+
+### Cypress
+
+To use Cypress driven by Gherkin features in a React web application, you'll need to install the following dev dependencies:
+
+-   cypress
+-   @badeball/cypress-cucumber-preprocessor
+-   @cypress/browserify-preprocessor
+
+In the shell, that's:
+
+```shell
+npm install --save-dev cypress @badeball/cypress-cucumber-preprocessor @cypress/browserify-preprocessor
+```
+
+We need to then setup some tooling to be sure that Cypress can find and be driven by our Gherkin feature files. First create a file `cypress.config.ts` with the following:
+
+```ts
+import { defineConfig } from "cypress"
+import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor"
+import browserify from "@badeball/cypress-cucumber-preprocessor/browserify"
+
+async function setupNodeEvents(
+    on: Cypress.PluginEvents,
+    config: Cypress.PluginConfigOptions
+): Promise<Cypress.PluginConfigOptions> {
+    await addCucumberPreprocessorPlugin(on, config)
+
+    on(
+        "file:preprocessor",
+        browserify(config, {
+            typescript: require.resolve("typescript"),
+        })
+    )
+
+    return config
+}
+
+export default defineConfig({
+    e2e: {
+        specPattern: "features/e2e/**/*.feature",
+        supportFile: false,
+        setupNodeEvents,
+    },
+})
+```
+
+Most important here is the line `specPattern: "features/e2e/**/*.feature"`. This tells Cypress to look for feature files only in the `features/e2e` directory. Then, we need to tell cypress where the test implementations are. Create a new file in the root called `.cypress-cucumber-preprocessorrc.json`, and add the following:
+
+```ts
+{
+  "stepDefinitions": "__tests__/e2e/**/*.ts"
+}
+```
+
+Finally, we'll need an npm script to run cypress. We can add the following script to package.json: `
+
+```json
+"cypress:run": "cypress run"
+```
+
+### Script Utility for Cypress Tests
+
+Since Cypress will literally run our tests on the browser, we need to make sure that each time we use it as our end-to-end test runner, that the site is already up. There is a nice utility script quite literally called `start-server-and-test` that ships as an npm package and does exactly what is sounds like: it waits for a given server, by way of pinging a URL, to become live before running a testing script. We can install it with:
+
+```shell
+npm install --save-dev start-server-and-test
+```
+
+We'll make use this later in our end-to-end test `package.json` script.
+
+### Finish Configuring Tests for React on the Web
+
+With Jest and Cypress installed and configured, we can begin scaffolding our folder structure. First create a `features` directory in the root of your project and add the folders and add four folders: `unit`, `integration`, `e2e`. Then add a folder `__tests__`, also in the root of your project directory in your project and add the following folders: `unit`, `integration`, `e2e`, and `utils`. So far the new folders added should look like this:
+
+```
+├── __tests__
+│   ├── e2e
+│   ├── integration
+│   ├── unit
+│   └── utils
+├── features
+│   ├── e2e
+│   ├── integration
+│   └── unit
+```
+
+The great thing with this setup is that we are still free to organize within the `unit`, `integration`, and `e2e` folders as we please. A common practice is to group all associated tests into a specific feature, for example `Payments/` or `Search`. This can also be helpful because you may have tests across the pyramid that relate to a single feature.
+
+### Helpful Visual Studio Extensions
+
+We're nearly done with our setup and we're ready to write our tests. Before we do, we'll want to make sure we have some helpful extensions installed in Visual Studio Code.
+
+- The [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete) extension so that we can get syntax highlighting and autocompletion for our feature files.
+
+- The [Jest-Cucumber code generator](https://marketplace.visualstudio.com/items?itemName=Piotr-Porzuczek.jest-cucumber-code-generator-extension) extension so that we can generate jest code from our feature files.
+
+### Add npm Scripts for Tests
+
+As the final step, let's add some scripts to our `package.json` to make it easy to run our tests. Add the following to the `scripts` section of your `package.json`:
+
+```json
+"test-unit": "jest --verbose ./__tests__/unit",
+"test-integration": "jest --verbose ./__tests__/integration",
+"test-e2e": "start-server-and-test develop http://localhost:8000 cypress:run"
+```
+
+We can then refactor the default `test` script to run the pyramid in series:
+
+```
+"test": "npm run test-unit && npm run test-integration && npm run test-e2e"
+```
+
+Now that we've installed, configured, and scaffolded everything we need for our tests, we can get started writing our tests.
+
+<!-- TODO: uncomment when ready! -->
+
+<!-- ## React Native
+
+Note: this section concerns engineers who want to setup tests for their React Native project. If you are interested in writing tests for web, jump down to the [implementation section]() For React Native, we'll use Jest for unit and integration tests, and Detox for end-to-end tests.
+
+### Jest with React Native
+
+To get started with Jest in a React Native application, you'll first need to install the `jest` package:
+
+```bash
+
+npm install jest --save-dev
+
+```
+
+then add the following script to your package.json file: "scripts": { "test": "jest" }
+
+### Detox
+
+We'll then include Detox as the end-to-end test runner. First install Detox with:
+
+```bash
+npm install detox-cli --save-dev
+```
+
+and then add the following to the `scripts` section of your package.json file:
+
+```json
+"test-e2e": "detox test"
+```
+
+You should now be all set up to write unit, integration, and e2e tests in your React and React Native applications.
+
+Now that we've got our testing tools configured, let's take a look at how we write tests. In the next section, we'll cover the different levels of the testing pyramid and some examples of what kinds of tests you might want to write at each level. -->
+
+## Implementing Tests
+
+In this section, we'll write both a feature file and code implementation for all three parts of the testing pyramid: unit, integration, and end to end. Note that for React on the web and React Native, the code based implementation will be nearly identical aside from using the library `react-testing-library/native` instead of `react-testing-library` which is by default for the DOM. For the e2e tests, the code implementation will vary significantly between the two platforms, as the web end to end test is written using the Cypress library, and the React Native test is written using the Detox library. When in doubt, you can refer to the [React web](https://github.com/princefishthrower/full-testing-pyramid-react-web) and [React Native](https://github.com/princefishthrower/full-testing-pyramid-react-native) repositories for the complete implementation.
+
+## Unit Tests: Writing a Feature and Test File
+
+Unit tests focus on small, isolated pieces of code, typically a single function or class, i.e. a 'unit' of your codebase.
+
+First, let's write a feature file for such a test. Let's imagine we have a function `generateDaysUntilOfferExpirationLabel`, which, given an expiration date, will produce a string stating how many days are left before an offer expires. My implementation ended up looking like this (and full disclosure, I had to run our unit test below finding small bugs until everything passed 😉 - this is why test driven development is so useful and powerful!):
+
+```ts
+export const generateDaysUnTilOfferExpirationLabel = (
+    expirationDate: Date
+): string => {
+    const now = new Date()
+    const difference = expirationDate.getTime() - now.getTime()
+    const differenceInDays = Math.ceil(difference / (1000 * 3600 * 24))
+
+    // More than one day but less than seven - show number of days remaining
+    if (differenceInDays > 1 && differenceInDays < 7) {
+        return `Offer expires in ${differenceInDays} days`
+    }
+
+    // Less than one day - show that the offer has less than a day
+    if (differenceInDays > 0 && differenceInDays <= 1) {
+        return "Offer expires in less than a day"
+    }
+
+    // expired
+    if (difference < 0) {
+        return "Offer expired"
+    }
+
+    // remaining case - further than 7 days out, show nothing
+    return ""
+}
+```
+
+In summary, If it is more than 7 days (a week) out, we would return an empty string. If it is less than 7 days away but more than 1 day away, it shows how many days are remaining. If there is one day left, it says 'expiring tomorrow'. Finally, if the offer has expired, it should show that the offer is expired.
+
+It's already difficult understanding and reading this specification in this paragraph, isn't it? Let's write a `.feature` file in the Gherkin language to make the exact functionality of this function clear to everybody. Typically, I name the file according to the title of the feature. Since this is a feature file for a unit test, let's save the file at `features/unit/days-until-offer-expires-label.feature`. Put the following in it:
+
+```gherkin
+Feature: Days Until Offer Expires Label
+
+    Our customers want to know how many day there are until an offer expires.
+    If it is less than 7 days, we show a label, and if there is less than 1 day left.
+    If it is more than 7 days out or has already expired, we show nothing.
+
+    Scenario: More than Seven Days Away
+        Given an offer date expiring more than seven days from today
+        When the label is generated for this date
+        Then the label is an empty string
+
+    Scenario Outline: Less than Seven Days But More than One Day Away
+        Given an offer date expiring in <days> days
+        When the label is generated for this date
+        Then the label shows <label>
+
+    Examples:
+        | days | label |
+        | 6    | 6 days remaining |
+        | 5    | 5 days remaining |
+        | 4    | 4 days remaining |
+        | 3    | 3 days remaining |
+        | 2    | 2 days remaining |
+
+    Scenario: Less than One Day Until Expiry
+        Given an offer date expiring in less than one day
+        When the label is generated for this date
+        Then the label states that the expiry is less than a day away
+
+    Scenario: Offer Expired
+        Given an offer date in the past
+        When the label is generated for this date
+        Then the label shows that the offer expired
+```
+
+If you've already installed the [Jest-Cucumber code generator](https://marketplace.visualstudio.com/items?itemName=Piotr-Porzuczek.jest-cucumber-code-generator-extension), you can simply select the entire contents of `days-until-offer-expires-label.feature`, right click, and select "Generate code from feature". If your feature file correct Gherkin syntax, you should see a message toast with "Commands are in clipboard!" appear. We can then paste these commands into our jest test file. Recall that we've told jest to look for test files with the `.steps.ts` or `.steps.tsx` file extension. Since this is a unit test testing a function, we shouldn't need any sort of React TSX syntax, we can use the normal `.steps.ts` file extension. I also typically mirror the file name of the feature file. So, create a new file at `__tests__/unit/days-until-offer-expires-label.steps.ts` and paste the generated code into it:
+
+```typescript
+defineFeature(feature, (test) => {
+    test("More than Seven Days Away", ({ given, when, then }) => {
+        given(
+            "an offer date expiring more than seven days from today",
+            () => {}
+        )
+
+        when("the label is generated for this date", () => {})
+
+        then("the label is an empty string", () => {})
+    })
+    test("Less than Seven Days But More than One Day Away", ({
+        given,
+        when,
+        then,
+    }) => {
+        given(/^an offer date expiring in (.*) days$/, (arg0) => {})
+
+        when("the label is generated for this date", () => {})
+
+        then(/^the label shows (.*)$/, (arg0) => {})
+    })
+    test("Less than One Day Until Expiry", ({ given, when, then }) => {
+        given("an offer date expiring in less than one day", () => {})
+
+        when("the label is generated for this date", () => {})
+
+        then(
+            "the label states that the expiry is less than a day away",
+            () => {}
+        )
+    })
+    test("Offer Expired", ({ given, when, then }) => {
+        given("an offer date in the past", () => {})
+
+        when("the label is generated for this date", () => {})
+
+        then("the label shows that the offer expired", () => {})
+    })
+})
+```
+
+You may notice for the `Scenario Outline`, the syntax generated for the variables is automatically named `arg0`. I typically like to change the name to what is reflected in feature file, which in this case would be `days` and `label`, respectively:
+
+```typescript
+// ...rest of test file...
+
+given(/^an offer date expiring in (.*) days$/, (day) => {})
+
+when("the label is generated for this date", () => {})
+
+then(/^the label shows (.*)$/, (label) => {})
+
+// ...rest of test file...
+```
+
+Next, and very importantly, we'll need to link this test file to the feature file, by using `jest-cucumber`'s `loadFeature` function:
+
+```typescript
+const feature = loadFeature(
+    "features/unit/days-until-offer-expires-label.feature"
+)
+```
+
+Note that `loadFeature` will work by using the path relative to the root of the project, so there is no need to include `../../` in the path - just be sure to include the `unit/` folder in the path since this test is considered a unit test.
+
+We'll also need to import `defineFeature`, which the visual Studio Code plugin includes, but for some reason doesn't include the import:
+
+```typescript
+import { loadFeature, defineFeature } from "jest-cucumber"
+```
+
+You may also find that you need to import the `@types/jest` library to have Visual Studio code's Intellisense play nicely with Jest's `expect` types:
+
+```
+import "@types/jest"
+```
+
+Remember that you'll need to do these steps for each Gherkin driven test you write in Jest.
+
+Let's get on with implementing this test. I mentioned the function was `generateDaysUntilOfferExpirationLabel`, so let's import that:
+
+```typescript
+import { generateDaysUntilOfferExpirationLabel } from "../../src/utils/generateDaysUntilOfferExpirationLabel"
+```
+
+For unit tests, the recipe for each test is as follows:
+
+-   For each test, use `let` to define the inputs and outputs of the function or class under tests (in our case an expiration date and a resulting label)
+-   _Arrange_ inputs in the `given` step
+-   _Act_ by calling the function or class under test in the `when` step
+-   _Assert_ using Jest's `assert` function in the `then` step
+
+Following these steps, your implementation of the test might end up looking something like this:
+
+```typescript
+import "@types/jest"
+import { defineFeature, loadFeature } from "jest-cucumber"
+import { generateDaysUnTilOfferExpirationLabel } from "../../src/utils/generateDaysUnTilOfferExpirationLabel"
+
+const feature = loadFeature(
+    "features/unit/days-until-offer-expires-label.feature"
+)
+
+defineFeature(feature, (test) => {
+    test("More than Seven Days Away", ({ given, when, then }) => {
+        let expirationDate: Date
+        let result: string
+        given("an offer date expiring more than seven days from today", () => {
+            expirationDate = new Date()
+            expirationDate.setDate(expirationDate.getDate() + 8)
+        })
+
+        when("the label is generated for this date", () => {
+            result = generateDaysUnTilOfferExpirationLabel(expirationDate)
+        })
+
+        then("the label is an empty string", () => {
+            expect(result).toBe("")
+        })
+    })
+
+    test("Less than Seven Days But More than One Day Away", ({
+        given,
+        when,
+        then,
+    }) => {
+        let expirationDate: Date
+        let result: string
+        given(/^an offer date expiring in (.*) days$/, (day) => {
+            expirationDate = new Date()
+            expirationDate.setDate(expirationDate.getDate() + parseInt(day))
+        })
+
+        when("the label is generated for this date", () => {
+            result = generateDaysUnTilOfferExpirationLabel(expirationDate)
+        })
+
+        then(/^the label shows (.*)$/, (label) => {
+            expect(result).toBe(label)
+        })
+    })
+
+    test("Less than One Day Until Expiry", ({ given, when, then }) => {
+        let expirationDate: Date
+        let result: string
+        given("an offer date expiring in less than one day", () => {
+            expirationDate = new Date()
+            expirationDate.setHours(expirationDate.getHours() + 2)
+        })
+
+        when("the label is generated for this date", () => {
+            result = generateDaysUnTilOfferExpirationLabel(expirationDate)
+        })
+
+        then("the label states that the expiry is less than a day away", () => {
+            expect(result).toBe("Offer expires in less than a day")
+        })
+    })
+
+    test("Offer Expired", ({ given, when, then }) => {
+        let expirationDate: Date
+        let result: string
+        given("an offer date in the past", () => {
+            expirationDate = new Date()
+            expirationDate.setDate(expirationDate.getDate() - 1)
+        })
+
+        when("the label is generated for this date", () => {
+            result = generateDaysUnTilOfferExpirationLabel(expirationDate)
+        })
+
+        then("the label shows that the offer expired", () => {
+            expect(result).toBe("Offer expired")
+        })
+    })
+})
+```
+
+Let's run our unit test by issuing the `test-unit` script we set up:
+
+```shell
+npm run test-unit
+```
+
+Which should give you something like this:
+
+```shell
+ PASS  __tests__/unit/days-until-offer-expires-label.steps.ts
+  Days Until Offer Expires Label
+    ✓ More than Seven Days Away (3 ms)
+    ✓ Less than Seven Days But More than One Day Away
+    ✓ Less than Seven Days But More than One Day Away
+    ✓ Less than Seven Days But More than One Day Away (1 ms)
+    ✓ Less than Seven Days But More than One Day Away
+    ✓ Less than Seven Days But More than One Day Away
+    ✓ Less than One Day Until Expiry (1 ms)
+    ✓ Offer Expired
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.613 s, estimated 1 s
+Ran all test suites matching /.\/__tests__\/unit/i.
+```
+
+All tests are passing! Nice!
+
+> Note that even with this in-depth example, it isn't 100% real-world in my opinion. The main issue I have is the heavy reliance on hardcoded strings to generate the label. In a true production scenario, you would (or should!) have a string template or translation library to represent each message instead of hardcoding the actual values directly in `generateDaysUntilOfferExpirationLabel`. However, this added complexity is outside the scope of this post, and ultimately, if implemented, would only change the `assert` logic within the test itself.
+
+## Integration Tests: Writing a Feature and Test
+
+Now let's move on to the middle of the testing pyramid: the integration level. In my opinion, these tests are the most challenging to write and are more or less an art to master. Modern frameworks like React, Vue, or Angular essentially mix business logic with components themselves. Therefore, testing even single "isolated" UI components can be often considered an integration test. For larger integration tests, when testing flows and navigation, between screens or pages, it becomes even more challenging. You constantly have to think about your system under test, what can be mocked out and what shouldn't be. It may take you and your team a while to select what to mock and where.
+
+For our example, we'll be testing a single react component, `<AppointmentList/>` that can be found on the dashboard page. This component does what is in it's name: it shows all your appointments. By default it shows the day's appointments, but can be filtered to show tomorrow's appointments, next week, or anything further than next week. Any appointment in the past should be shown in a faded style, while any currently running appointment should be shown in an active style, and any future appointment will be shown in a default style. Let's write up a feature file to describe this component. We can place it under `features/integration/appointment-list.feature`:
+
+```feature
+Feature: Appointment List component
+
+    As a user I want to see a list of all my appointments
+    So I can better organize my day and know what's coming up in the future
+
+    Scenario: Today's Appointments as Default
+        Given I can see the appointments list component
+        Then I see todays appointments
+
+    Scenario: Current Appointments
+        Given I can see the appointments list component
+        And there are appointments going on right now
+        Then I see the appointment in an active style
+
+    Scenario: Past Appointments
+        Given I can see the appointments list component
+        And there are appointments in the past
+        Then I see past appointments in a faded style
+
+    Scenario: Filter for Tomorrows Appointments
+        Given I can see the appointment list component
+        When I click the filter for tomorrow
+        Then The list only shows tomorrow's appointments
+
+    Scenario: Filter for Next Week's Appointments
+        Given I can see the appointment list component
+        When I click the filter for next week
+        Then The list only shows next week's appointments
+```
+
+Now let's write tests for this feature. Again, using the [Jest-Cucumber code generator](https://marketplace.visualstudio.com/items?itemName=Piotr-Porzuczek.jest-cucumber-code-generator-extension), let's generate the code for this test and paste it into a new file. Since we'll be rendering react components within our tests, we'll need JSX syntax, and thus have to use the corresponding `.tsx` file extension, so let's name our test file `__tests__/integration/appointment-list.steps.tsx`, and add all the needed imports:
+
+```typescript
+import "@types/jest"
+import { defineFeature, loadFeature } from "jest-cucumber"
+
+const feature = loadFeature("features/integration/appointment-list.feature")
+
+defineFeature(feature, (test) => {
+    test("Today's Appointments as Default", ({ given, then }) => {
+        given("I can see the appointments list component", () => {})
+
+        then("I see todays appointments", () => {})
+    })
+
+    test("Current Appointments", ({ given, and, then }) => {
+        given("I can see the appointments list component", () => {})
+
+        and("there are appointments going on right now", () => {})
+
+        then("I see the appointment in an active style", () => {})
+    })
+
+    test("Past Appointments", ({ given, and, then }) => {
+        given("I can see the appointments list component", () => {})
+
+        and("there are appointments in the past", () => {})
+
+        then("I see past appointments in a faded style", () => {})
+    })
+
+    test("Filter for Tomorrows Appointments", ({ given, when, then }) => {
+        given("I can see the appointment list component", () => {})
+
+        when("I click the filter for tomorrow", () => {})
+
+        then("The list only shows tomorrow's appointments", () => {})
+    })
+
+    test("Filter for Next Week's Appointments", ({ given, when, then }) => {
+        given("I can see the appointment list component", () => {})
+
+        when("I click the filter for next week", () => {})
+
+        then("The list only shows next week's appointments", () => {})
+    })
+})
+```
+
+Typically in integration tests for React, in the `given` step, we _Arrange_ by rendering our component, in the `then` we _Act_ upon our component, and finally in the `when` step we _Assert_ that the component behaves as expected. We'll be using the React Testing Library's `render` function in the first step. We'll also need to add react to allow for JSX syntax in this file:
+
+```typescript
+import React from "react"
+import { render } from "@testing-library/react"
+
+test("Today's Appointments as Default", ({ given, then }) => {
+    let renderAPI: RenderResult
+    given("I can see the appointments list component", () => {
+        renderAPI = render(<AppointmentList appointments={testAppointments} />)
+    })
+
+    then("I see todays appointments", () => {
+        // expect all appointment titles and locations from today to be rendered
+        expect(screen.getByText()).toBeInTheDocument()
+    })
+})
+```
+
+**_(Final integration test implementation still pending, sorry!)_**
+
+## End to End Tests: Writing a Feature and Test
+
+We've finally come to the top of the pyramid, end to end tests. These tests are sometimes also referred to as 'black box' tests, because you aren't so concerned with the low-level or even interaction (integration) level, but literally how a user sees and interacts with your app: (i.e. a user doesn't care or even know at all about the technology or stack behind your app!) These end-to-end checks are your final check to make sure everything from your UI flows to backend API calls are working (thus the name, end to end).
+
+At InClub, most of our end to end tests are high level user stories. We don't worry about the text values of small formatter functions, or the design or animations of screens, as those type of things would fall.
+
+For this example, let's consider a basic user story of an onboarding of an application. Create a new file called `__tests__/e2e/user-onboarding-flow.feature`.
+
+```gherkin
+Feature: User Onboarding Flow
+
+    In our amazing app, users need to fill out a first name and email
+    before they can use the dashboard.
+
+    Scenario: User Onboarding Flow
+        Given I am on the homepage of my awesome app
+        When I click start
+        Then I am navigated to the first name screen
+        When I enter my name
+        Then a continue button appears after entering my name
+        When I click the continue button
+        Then I am navigated to the email screen
+        When I enter my email
+        Then a continue button appears after entering my email
+        When I click continue
+        Then I am navigated to the dashboard page
+```
+
+Important note before I am berated by the strict _Arrange_, _Act_, & _Assert_ folks: indeed, we're NOT building multiple scenarios with a single Given, When, Then trio, and there is reason for this: From our now year+ experience writing end to end tests, we've found trying to write in this 'perfect trio' fashion introduces redundant steps and creates a much larger length of tests, not to mention a headache of additional considerations to make.
+
+Again using the [Jest-Cucumber code generator](https://marketplace.visualstudio.com/items?itemName=Piotr-Porzuczek.jest-cucumber-code-generator-extension) generator, we can make a file at `__tests__/e2e/user-onboarding-flow.ts` and paste in what was generated:
+
+```typescript
+defineFeature(feature, (test) => {
+    test("User Onboarding Flow", ({ given, when, then }) => {
+        given("I am on the homepage of my awesome app", () => {})
+
+        when("I click start", () => {})
+
+        then("I am navigated to the first name screen", () => {})
+
+        when("I enter my name", () => {})
+
+        then("a continue button appears after entering my name", () => {})
+
+        when("I click the continue button", () => {})
+
+        then("I am navigated to the email screen", () => {})
+
+        when("I enter my email", () => {})
+
+        then("a continue button appears after entering my email", () => {})
+
+        when("I click continue", () => {})
+
+        then("I am navigated to the dashboard page", () => {})
+    })
+})
+```
+
+This now needs to be converted to be run by the `cypress-cucumber-preprocessor` library. First, we can remove the `defineFeature` boilerplate code, since Cypress does not use or need this function:
+
+```typescript
+// remove this chunk
+defineFeature(feature, test => {
+    test('User Onboarding Flow', ({
+      given,
+      when,
+      then
+    }) => {
+```
+
+Then, we need to capitalize all `Given`, `When`, and `Then` statements:
+
+```typescript
+Given("I am on the homepage of my awesome app", () => {})
+
+When("I click start", () => {})
+
+Then("I am navigated to the first name screen", () => {})
+
+Given("I am on the first name screen", () => {})
+
+When("I enter my name", () => {})
+
+Then("a continue button appears", () => {})
+
+When("I click the continue button", () => {})
+
+Then("I am navigated to the email screen", () => {})
+
+When("I enter my email", () => {})
+
+Then("a continue button appears", () => {})
+
+When("I click continue", () => {})
+
+Then("I am navigated to the dashboard page", () => {})
+```
+
+We can import these `Given`, `When`, and `Then` functions from the `cypress-cucumber-preprocessor` library:
+
+```typescript
+import { Given, When, Then, And } from "@badeball/cypress-cucumber-preprocessor"
+```
+
+> ⚠️ A common gotchya when writing end to end tests for Cypress and driven by Cucumber is that every step name needs to be unique. This is for example why I have the rather verbose names `a continue button appears after entering my name` and `a continue button appears after entering my email`. If we had just put `a continue button appears` for both steps, Cucumber would yell at us saying we have an ambiguous step name.
+
+Now we are ready to write the body of each of our steps. With Cypress we can very often rely on `cy.get()`, paired with a test ID that lives somewhere in our application. This pattern is considered a poor testing pattern by some, but our logic is the following: if test IDs remain coupled to our components, then the tests are less likely to break by refactored user flows or design changes. We don't want to relying on, in our opinion, flakey values such as text values or element types (e.g. `<a>` vs `<button>` vs. `<p>` or `<span>`, which are more than likely to change as the design of our product changes. These make the tests more brittle. So we will go on by writing the tests and inserting needed test IDs as we go. It becomes useful to build a catalog of these test IDs, which we can put in `src/constants/TestIDConstants.ts`:
+
+```typescript
+export const TestIDConstants = {}
+```
+
+We'll add values to this file as needed as we go through our tests.
+
+Let's start with the first step:
+
+```typescript
+Given("I am on the homepage of my awesome app", () => {
+    cy.visit("http://localhost:8000")
+})
+```
+
+For the second step, it's clear we'll need a test ID to identify the start button. Let's add it to the `src/components/HomePage.tsx` component:
+
+```typescript
+import React from "react"
+import { TestIDConstants } from "../constants/TestIDConstants"
+
+export default function HomePage() {
+    return (
+        <>
+            <div>Welcome to my awesome app!</div>
+            <button data-testid={TestIDConstants.START_BUTTON}>
+                Get started!
+            </button>
+        </>
+    )
+}
+```
+
+and also to our `TestIDConstants`:
+
+```typescript
+export const TestIDConstants = {
+    START_BUTTON: "START_BUTTON",
+}
+```
+
+Now we can write the second step:
+
+```typescript
+When("I click start", () => {
+    cy.get(`[data-testid=${TestIDConstants.START_BUTTON}]`).click()
+})
+```
+
+On the third step, we expect to be on the `/first-name` page and thus by proxy see the input with test ID `FIRST_NAME_INPUT`:
+
+```typescript
+Then("I am navigated to the first name screen", () => {
+    cy.get(`[data-testid=${TestIDConstants.FIRST_NAME_INPUT}]`).should("exist")
+})
+```
+
+We can continue on with similar rules and patterns to complete our test. The final test should look like this:
+
+```typescript
+import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor"
+import { TestIDConstants } from "../../src/constants/TestIDConstants"
+
+Given("I am on the homepage of my awesome app", () => {
+    cy.visit("http://localhost:8000")
+})
+
+When("I click start", () => {
+    cy.get(`[data-testid=${TestIDConstants.START_BUTTON}]`).click()
+})
+
+Then("I am navigated to the first name screen", () => {
+    cy.get(`[data-testid=${TestIDConstants.FIRST_NAME_INPUT}]`).should("exist")
+})
+
+When("I enter my name", () => {
+    cy.get(`[data-testid=${TestIDConstants.FIRST_NAME_INPUT}]`).type("Chris")
+})
+
+Then("a continue button appears after entering my name", () => {
+    cy.get(
+        `[data-testid=${TestIDConstants.FIRST_NAME_CONTINUE_BUTTON}]`
+    ).should("exist")
+})
+
+When("I click the continue button", () => {
+    cy.get(
+        `[data-testid=${TestIDConstants.FIRST_NAME_CONTINUE_BUTTON}]`
+    ).click()
+})
+
+Then("I am navigated to the email screen", () => {
+    cy.get(`[data-testid=${TestIDConstants.EMAIL_INPUT}]`).should("exist")
+})
+
+When("I enter my email", () => {
+    cy.get(`[data-testid=${TestIDConstants.EMAIL_INPUT}]`).type("test@test.com")
+})
+
+Then("a continue button appears after entering my email", () => {
+    cy.get(`[data-testid=${TestIDConstants.EMAIL_CONTINUE_BUTTON}]`).should(
+        "exist"
+    )
+})
+
+When("I click continue", () => {
+    cy.get(`[data-testid=${TestIDConstants.EMAIL_CONTINUE_BUTTON}]`).click()
+})
+
+Then("I am navigated to the dashboard page", () => {
+    cy.get(`[data-testid=${TestIDConstants.DASHBOARD}]`).should("exist")
+})
+```
+
+When in doubt of any of the actual application implementation that corresponds to this test, please refer to the [example repository](https://github.com/princefishthrower/full-testing-pyramid-react-web)
+
+Let's try running this test:
+
+```
+npm run test-e2e
+```
+
+and you should see something like this:
+
+```
+ (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        10.6.0                                                                         │
+  │ Browser:        Electron 102 (headless)                                                        │
+  │ Node Version:   v16.15.1 (/Users/chris/.nvm/versions/node/v16.15.1/bin/node)                   │
+  │ Specs:          1 found (user-onboarding-flow.feature)                                         │
+  │ Searched:       features/e2e/**/*.feature                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  user-onboarding-flow.feature                                                    (1 of 1)
+
+
+  User Onboarding Flow
+    ✓ User Onboarding Flow (1634ms)
+
+
+  1 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     user-onboarding-flow.feature                                                     │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF
+  -  Finished processing: /Users/chris/projects/full-testing-pyramid-react-web/cypres    (0 seconds)
+                          s/videos/user-onboarding-flow.feature.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  user-onboarding-flow.feature             00:02        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:02        1        1        -        -        -
+```
+
+Nice! Now we have a passing end-to-end test. An amazing feature of Cypress is that it also creates a video artifact for each test, right out of the box without any additional configuration. Check out the artifact that should have been produced at `full-testing-pyramid-react-web/cypress/videos/user-onboarding-flow.feature.mp4`! Pretty amazing tool, isn't it?
+
+## Bringing it All Together
+
+Now that we have a testing unit, integration, and end-to-end test, we can run all of them with the npm script we created:
+
+```
+npm run test
+```
+
+This will first run the unit test, then the integration test, and finally the end to end test. Feel free to use this script wherever you may needed it, such as in a CI/CD pipeline.
+
+## Conclusion
+
+In this post, we've setup all the tools necessary to write unit, integration, and end to end tests in React and React Native applications. We've covered the three levels of the testing pyramid and written an example feature file and test implementation for each level. For both React on the web and React Native projects, we took time and effort to carefully organize our tests such that all feature files could be organized into folders `features/unit`, `features/integration`, and `features/e2e` to drive test files written in `__tests__/unit`, `__tests__/integration`, and `__tests__/e2e` respectively. While unit tests were nearly identical between the two projects, integration and end to end tests were slightly different, with the end to end tests being even more different than the integration tests in their implementations.
+
+Test Driven Development is a powerful tool that can help you build high quality and stable software. When used correctly, it can help you catch bugs before even shipping features or products, and prevent regressions as your application grows in complexity. It can also make your code more maintainable and easier to read. However, it's important to remember that TDD is just one tool in your toolbox and should be used in conjunction with other forms of testing: smoke testing (manual testing), anonymous user testing, and so on.
+
+As a recap of tools used, I recommend using Jest for unit and integration tests for React and React Native projects alike. For React projects on the web, you can use Cypress to drive end to end tests. For React Native applications, I recommend Detox as your end-to-end test driver.
+
+In the end, it's important to know what your tests are testing exactly (knowing what they mock) and what perhaps still is missing in your testing ecosystem. If you want to learn more about testing in general, I recommend reading the following resources:
+
+-   [Structure and Interpretation of Test Cases by Kevlin Henney](https://www.youtube.com/watch?v=tWn8RA_DEic)
+-   [Excuses by Robert C. Martin (Uncle Bob)](https://blog.cleancoder.com/uncle-bob/2017/12/18/Excuses.html)
+-   [I Have Complicated Feelings About TDD by Hillel Wayne](https://buttondown.email/hillelwayne/archive/i-have-complicated-feelings-about-tdd-8403/)
+
+Cheers! 🍻
+
+-Chris

@@ -74,14 +74,14 @@ export const Pre = (props: IPreProps) => {
     const confettiConfig = {
         angle: 90,
         spread: 360,
-        startVelocity: 40,
-        elementCount: 70,
-        dragFriction: 0.12,
+        startVelocity: 50,
+        elementCount: 100,
+        dragFriction: 0.10,
         duration: 3000,
         stagger: 3,
         width: "10px",
         height: "10px",
-        perspective: "500px",
+        // perspective: "500px",
         colors,
     }
 
@@ -210,7 +210,7 @@ export const Pre = (props: IPreProps) => {
                     </pre>
                 )}
             </Highlight>
-            <ConfettiWrapper>
+            <ConfettiWrapper style={{position: 'fixed', top: 0, left: 0, width: "100vw", height: "100vh"}}>
                 <Confetti active={isCopied} config={confettiConfig} />
             </ConfettiWrapper>
         </>
