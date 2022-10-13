@@ -13,10 +13,9 @@ export function Posts(props: IPostsProps) {
         <>
             <ColoredTitle title="📜 All Posts From All Time" />
             <p style={{ textAlign: "center" }}>
-                Search all <b>{totalPosts}</b> posts!*
+                Search all <b>{totalPosts}</b> posts!
             </p>
             <Search />
-            <p style={{ textAlign: "center" }}>* Doesn't work for the time being as I continue to rewrite my site :)</p>
             <div
                 style={{
                     display: "flex",

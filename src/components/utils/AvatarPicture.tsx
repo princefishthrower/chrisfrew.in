@@ -40,6 +40,13 @@ export function AvatarPicture() {
                     gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                 }
             }
+            avatarHalloweenZombie: file(
+                relativePath: { eq: "avatarHalloweenZombie.png" }
+            ) {
+                childImageSharp {
+                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                }
+            }
         }
     `)
 
@@ -53,6 +60,8 @@ export function AvatarPicture() {
         const saintPatricksDay = new Date(`${year}-03-17`)
         const firstOfJune = new Date(`${year}-06-01`)
         const lastOfAugust = new Date(`${year}-08-31`)
+        const firstOfOctober = new Date(`${year}-10-01`) // throw in halloween, easter and whatever we feel like next
+        const lastOfOctober = new Date(`${year}-10-31`) // throw in halloween, easter and whatever we feel like next
 
         // if we are between november 28th (the latest Thanksgiving can be)
         // and before January 6th (the epiphany AKA three kings day)
@@ -109,9 +118,9 @@ export function AvatarPicture() {
             ]
         }
 
-        // TODO:
         // june, july and august - summer holiday
         if (now >= firstOfJune && now <= lastOfAugust) {
+            console.log('found summer chill picture')
             const titleAndAlt = `${firstName} is in summer chill mode!`
             return [
                 <GatsbyImage
@@ -119,6 +128,22 @@ export function AvatarPicture() {
                     className="title-avatar-picture"
                     image={
                         data.avatarSummerHoliday.childImageSharp.gatsbyImageData
+                    }
+                    alt={titleAndAlt}
+                />,
+                titleAndAlt,
+            ]
+        }
+
+        // all of october
+        if (now >= firstOfOctober && now <= lastOfOctober) {
+            const titleAndAlt = `${firstName} is in zombie hacker mode for Hacktoberfest!`
+            return [
+                <GatsbyImage
+                    onMouseEnter={() => setShowNormalAvatar(true)}
+                    className="title-avatar-picture"
+                    image={
+                        data.avatarHalloweenZombie.childImageSharp.gatsbyImageData
                     }
                     alt={titleAndAlt}
                 />,

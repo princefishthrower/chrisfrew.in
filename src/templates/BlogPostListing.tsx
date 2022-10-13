@@ -130,15 +130,26 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     flexWrap: "wrap",
                 }}
             >
-            <Link to="/series/clean-react-typescript-hooks">
-                <h2 className="monokaiRedFont">Clean React TypeScript Hooks</h2>
-            </Link>
-            <Link to="/series/clean-crud-apis">
-                <h2 className="monokaiRedFont">Clean CRUD APIs</h2>
-            </Link>
+                <Link to="/series/clean-react-typescript-hooks">
+                    <h2 className="monokaiRedFont">
+                        Clean React TypeScript Hooks
+                    </h2>
+                </Link>
+                <Link to="/series/clean-crud-apis">
+                    <h2 className="monokaiRedFont">Clean CRUD APIs</h2>
+                </Link>
             </div>
-            <h2>Things I'm Working On:</h2>
-            <TagRenderer withTitle={false} linkToTagPage={true} tags={["Go", "gRPC", "Testing", "Microservices", "Cloud Architecture", "System Design"]}/>
+            <h2>Things I'm Working On / In:</h2>
+            <TagRenderer
+                withTitle={false}
+                linkToTagPage={true}
+                tags={[
+                    "Go",
+                    "React Native",
+                    "Gatsby",
+                    "TypeScript"
+                ]}
+            />
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />
