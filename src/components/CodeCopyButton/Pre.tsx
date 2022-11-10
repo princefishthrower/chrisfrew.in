@@ -210,7 +210,7 @@ export const Pre = (props: IPreProps) => {
                     </pre>
                 )}
             </Highlight>
-            <ConfettiWrapper style={{position: 'fixed', top: 0, left: 0, width: "100vw", height: "100vh"}}>
+            <ConfettiWrapper style={{position: 'fixed', top: 0, left: 0, width: "100vw", height: "100vh", pointerEvents: "none"}}>
                 <Confetti active={isCopied} config={confettiConfig} />
             </ConfettiWrapper>
         </>

@@ -1,0 +1,388 @@
+---
+title: "Golang: A Powerful Generic Function to Make HTTP Requests"
+description: This function handles any HTTP request you can throw at it!
+date: "2022-11-10"
+draft: false
+tags: Go,Golang,Generics
+---
+
+During my work at [InClub](https://inclub-app.com), I constructed a generic REST API helper function that we use all around our backend. So far, this function has worked for every type of HTTP call we've thrown at it. Some examples:
+
+-   POSTing to [DeepL's translate text API](https://www.deepl.com/docs-api/translate-text/)
+-   GET / POST to [Instagram's Graph API](https://developers.facebook.com/docs/instagram-api/)
+-   GET / POST to [Sendbird's Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/overview).
+
+I figured I'd share this function with the world, as it's a great real-world example of how to use Go's generic capabilities. I' going to do a full walk-through of how the function is built, but if you just want the function, hop down to the [full code snippet](#full-code-snippet).
+
+For the remainder of this post, I'll assume that we write the generic function in a package called `http_helper`. This is what is used in [the example repository](https://github.com/princefishthrower/golang-generic-http-helper-function.git).
+
+## Getting Started - Function Signature
+
+Let's start with a signature for the function. Let's name the function `MakeHTTPRequest`; that's pretty straightforward. This is a very flexible function, but as such we have a laundry list of parameters to accept:
+
+- We'll need the desired endpoint, which we call `fullUrl`, type `string`
+- I claim that we can handle GETs, POSTs, and any other HTTP method, we need also accept an HTTP method as a parameter - we called it `httpMethod`, type `string` (see further down why we chose to go with `string`)
+- `headers`, type `map[string]string` to apply to the HTTP call
+- query parameters (in the case of GET), called `queryParameters`, type `url.Values`, 
+- a body (in the case of POST or PUT), called body, type `io.Reader`
+- Finally, the generic type comes into play for the type we expect to receive - we'll call this `T`
+- For the return type we have to handle any errors that may occur, so we'll use the classic go pattern of returning an error as the last return value
+
+Altogether, the signature of this powerful function looks like this:
+
+```go
+func MakeHTTPRequest[T any](fullUrl string, httpMethod string, headers map[string]string, queryParameters url.Values, body io.Reader, responseType T) (T, error)
+```
+
+## Writing the Body of the Function
+
+Let's get into the body of the function. To construct the http client, we'll use Go's built in `net/http` package:
+
+```go
+client := http.Client{}
+```
+
+Then we need to parse the URL to be sure that it is even valid:
+
+```go
+u, err := url.Parse(fullUrl)
+if err != nil {
+    return responseType, err
+}
+```
+
+Now we can handle the GET case, using this url object to add the query parameters:
+
+```go
+// if it's a GET, we need to append the query parameters.
+if httpMethod == "GET" {
+    q := u.Query()
+
+    for k, v := range queryParameters {
+        // this depends on the type of api, you may need to do it for each of v
+        q.Set(k, strings.Join(v, ","))
+    }
+    // set the query to the encoded parameters
+    u.RawQuery = q.Encode()
+}
+```
+
+We can create the request, passing the `body` parameter in:
+
+```go
+// regardless of GET or POST, we can safely add the body
+req, err := http.NewRequest(httpMethod, u.String(), body)
+if err != nil {
+    return responseType, err
+}
+```
+
+Now we can add the headers:
+
+```go
+// for each header passed, add the header value to the request
+for k, v := range headers {
+    req.Header.Set(k, v)
+}
+```
+
+Using `net/http`'s `Do` function, we can make the request:
+
+```go
+// finally, do the request
+res, err := client.Do(req)
+```
+
+We then do a variety of checks to validate that the request was successful:
+
+```go
+if err != nil {
+    return responseType, err
+}
+
+if res == nil {
+    return responseType, fmt.Errorf("error: calling %s returned empty response", u.String())
+}
+
+responseData, err := io.ReadAll(res.Body)
+if err != nil {
+    return responseType, err
+}
+
+defer res.Body.Close()
+
+if res.StatusCode != http.StatusOK {
+    return responseType, fmt.Errorf("error calling %s:\nstatus: %s\nresponseData: %s", u.String(), res.Status, responseData)
+}
+```
+
+Finally getting to the powerful generic part of this function, we used the `encoding/json` package to unmarshal the response data into the type we expect. We throw an error if the `encoding/json` package is unable to unmarshal to the type specified:
+
+
+```go
+var responseObject T
+err = json.Unmarshal(responseData, &responseObject)
+
+if err != nil {
+    log.Printf("error unmarshaling response: %+v", err)
+    return responseType, err
+}
+```
+
+If the unmarshaling was successful, we can return the response object and a `nil` error:
+
+```go
+return responseObject, nil
+```
+
+<a name="full-code-snippet"></a>
+
+## Full Code Snippet
+
+That's it! We've constructed a generic function that can handle any type of HTTP call. Here's the full code:
+
+
+```go
+package http_helper
+
+import (
+	"encoding/json"
+	"fmt"
+	"io"
+	"log"
+	"net/http"
+	"net/url"
+	"strings"
+)
+
+// in the case of GET, the parameter queryParameters is transferred to the URL as query parameters
+// in the case of POST, the parameter body, an io.Reader, is used
+func MakeHTTPRequest[T any](fullUrl string, httpMethod string, headers map[string]string, queryParameters url.Values, body io.Reader, responseType T) (T, error) {
+	client := http.Client{}
+	u, err := url.Parse(fullUrl)
+	if err != nil {
+		return responseType, err
+	}
+
+	// if it's a GET, we need to append the query parameters.
+	if httpMethod == "GET" {
+		q := u.Query()
+
+		for k, v := range queryParameters {
+			// this depends on the type of api, you may need to do it for each of v
+			q.Set(k, strings.Join(v, ","))
+		}
+		// set the query to the encoded parameters
+		u.RawQuery = q.Encode()
+	}
+
+    // regardless of GET or POST, we can safely add the body
+	req, err := http.NewRequest(httpMethod, u.String(), body)
+	if err != nil {
+		return responseType, err
+	}
+
+	// for each header passed, add the header value to the request
+	for k, v := range headers {
+		req.Header.Set(k, v)
+	}
+
+    // optional: log the request for easier stack tracing
+	log.Printf("%s %s\n", httpMethod, req.URL.String())
+
+	// finally, do the request
+	res, err := client.Do(req)
+	if err != nil {
+		return responseType, err
+	}
+
+	if res == nil {
+		return responseType, fmt.Errorf("error: calling %s returned empty response", u.String())
+	}
+
+	responseData, err := io.ReadAll(res.Body)
+	if err != nil {
+		return responseType, err
+	}
+
+	defer res.Body.Close()
+
+	if res.StatusCode != http.StatusOK {
+		return responseType, fmt.Errorf("error calling %s:\nstatus: %s\nresponseData: %s", u.String(), res.Status, responseData)
+	}
+
+	var responseObject T
+	err = json.Unmarshal(responseData, &responseObject)
+
+	if err != nil {
+		log.Printf("error unmarshaling response: %+v", err)
+		return responseType, err
+	}
+
+	return responseObject, nil
+}
+```
+
+## Usage Examples
+
+**GET Request:**
+
+```go
+package main
+
+import (
+    "net/url"
+    "http_helper/http_helper"
+)
+
+func main() {
+    // the url to call
+    url := "https://api.github.com/users/alexellis"
+
+    // the headers to pass
+    headers := map[string]string{
+        "Accept": "application/vnd.github.v3+json",
+    }
+
+    // the query parameters to pass
+    queryParameters := url.Values{}
+    queryParameters.Add("per_page", "1")
+
+    // the type to unmarshal the response into
+    var response map[string]interface{}
+
+    // call the function
+    response, err := http_helper.MakeHTTPRequest(url, "GET", headers, queryParameters, nil, response)
+    if err != nil {
+        panic(err)
+    }
+
+    // do something with the response
+    fmt.Printf("response: %+v", response)
+}
+```
+
+**POST Request:**
+
+```go
+package main
+
+import (
+    "bytes"
+    "net/url"
+    "http_helper/http_helper"
+)
+
+func main() {
+    // the url to call
+    url := "https://api.github.com/users/alexellis"
+
+    // the headers to pass
+    headers := map[string]string{
+        "Accept": "application/vnd.github.v3+json",
+    }
+
+    // the query parameters to pass
+    queryParameters := url.Values{}
+    queryParameters.Add("per_page", "1")
+
+    // the body to pass
+    body := bytes.NewBufferString(`{"name": "test"}`)
+
+    // the type to unmarshal the response into
+    var response map[string]interface{}
+
+    // call the function
+    response, err := http_helper.MakeHTTPRequest(url, "POST", headers, queryParameters, body, response)
+    if err != nil {
+        panic(err)
+    }
+
+    // do something with the response
+    fmt.Printf("response: %+v", response)
+}
+```
+
+## Example Repository
+
+The generic function, as well as the use cases above, can be found [in the example Repository](https://github.com/princefishthrower/golang-generic-http-helper-function.git). The most up to date instructions on running the code can be found there in the README.
+
+## Bonus: Properly Checking or Typing the `httpMethod` Parameter
+
+As we saw in our original implementation, even in the official go typings of `http.NewRequest`, the HTTP method is simply type `string`. The reason we have decided not to implement any check is because the there are only five methods - `GET`, `POST`, `PUT`, `PATCH`, and `DELETE`, and they aren't likely to change at all any time soon! However, it _is_ of course still possible to make typos on the method field when calling this function (i.e. `GET`), so you and your team may decide to make the type a bit more strict. You have two options:
+
+**Option 1. The simple one - a regex**
+
+Match the passed string against a regex with all five HTTP methods. This is the less complex option, but it's not as type-safe. We can use the following regex:
+
+```go
+// compile regex to test httpMethod
+regex := regexp.MustCompile(`^(GET|POST|PUT|PATCH|DELETE)$`)
+
+// check if httpMethod is valid
+if !regex.MatchString(httpMethod) {
+    return responseType, fmt.Errorf("invalid HTTP method: %s", httpMethod)
+}
+```
+
+**Option 2. The more involved one - enum option**
+
+We can create an enum and `String` method like so:
+
+```go
+type HTTPMethod int
+
+const (
+	GET HTTPMethod = iota
+	POST
+	PUT
+	PATCH
+	DELETE
+)
+
+func (s HTTPMethod) String() string {
+	switch s {
+	case GET:
+		return "GET"
+	case POST:
+		return "POST"
+	case PUT:
+		return "PUT"
+	case PATCH:
+		return "PATCH"
+	case DELETE:
+		return "DELETE"
+	}
+	return "unknown"
+}
+```
+
+Then, change the type of `httpMethod` from `string` to `HTTPMethod`:
+
+```go
+func MakeHTTPRequest[T any](fullUrl string, httpMethod HTTPMethod, headers map[string]string, queryParameters url.Values, body io.Reader, responseType T) (T, error) {
+```
+
+And we'll have change the if statement to compare against the new `GET` type instead of the string `"GET"`:
+
+```go
+if httpMethod == GET {
+	// ...code here...
+}
+```
+
+and we need to cast `httpMethod` to a string when we call `http.NewRequest`:
+
+```go
+req, err := http.NewRequest(string(httpMethod), u.String(), body)
+```
+
+Option #2 may be a bit of over-engineering, but it's also the most type-safe. It's up to you to decide which one you want to use. As mentioned, our team has decided to forgo any checks on the `httpMethod` parameter, as we do extensive [unit and integration testing](http://localhost:8000/blog/one-year-as-chief-technology-officer-at-inclub-insights-from-startup-land/) on our backend that would catch, by way of request errors, any typos in the http method passed to `MakeHTTPRequest`.
+
+## Thanks!
+
+I hope you enjoyed this post! I'm really loving how amazingly easy it is to build backend infrastructure with golang. I'm looking forward to posting more golang posts in the future.
+
+Cheers!
+
+Chris
