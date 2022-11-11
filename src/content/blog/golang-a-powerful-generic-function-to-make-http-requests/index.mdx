@@ -1,32 +1,32 @@
 ---
-title: "Golang: A Powerful Generic Function to Make HTTP Requests"
+title: "Golang: A Powerful Generic Function to Make Any HTTP Request"
 description: This function handles any HTTP request you can throw at it!
-date: "2022-11-10"
+date: "2022-11-11"
 draft: false
 tags: Go,Golang,Generics
 ---
 
 During my work at [InClub](https://inclub-app.com), I constructed a generic REST API helper function that we use all around our backend. So far, this function has worked for every type of HTTP call we've thrown at it. Some examples:
 
--   POSTing to [DeepL's translate text API](https://www.deepl.com/docs-api/translate-text/)
--   GET / POST to [Instagram's Graph API](https://developers.facebook.com/docs/instagram-api/)
--   GET / POST to [Sendbird's Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/overview).
+-   `POST`ing to [DeepL's translate text API](https://www.deepl.com/docs-api/translate-text/)
+-   `GET` / `POST` to [Instagram's Graph API](https://developers.facebook.com/docs/instagram-api/)
+-   `GET` / `POST` / `DELETE` to [Sendbird's Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/overview).
 
-I figured I'd share this function with the world, as it's a great real-world example of how to use Go's generic capabilities. I' going to do a full walk-through of how the function is built, but if you just want the function, hop down to the [full code snippet](#full-code-snippet).
+I figured I'd share this function with the world, as it's a great real-world example of how to use Go's generic capabilities. I'm going to do a full walk-through of how to build the function, but if you just want the function, hop down to the [full code snippet](#full-code-snippet).
 
-For the remainder of this post, I'll assume that we write the generic function in a package called `http_helper`. This is what is used in [the example repository](https://github.com/princefishthrower/golang-generic-http-helper-function.git).
+For the rest of this post, I'll assume that we write the generic function in a package called `http_helper`. This is the name used in [the example repository](https://github.com/princefishthrower/golang-generic-http-helper-function.git).
 
 ## Getting Started - Function Signature
 
 Let's start with a signature for the function. Let's name the function `MakeHTTPRequest`; that's pretty straightforward. This is a very flexible function, but as such we have a laundry list of parameters to accept:
 
 - We'll need the desired endpoint, which we call `fullUrl`, type `string`
-- I claim that we can handle GETs, POSTs, and any other HTTP method, we need also accept an HTTP method as a parameter - we called it `httpMethod`, type `string` (see further down why we chose to go with `string`)
+- I claim that we can handle `GET`s, `POST`s, and any other HTTP method, we need also to accept an HTTP method as a parameter - we called it `httpMethod`, type `string` (see further down why we chose to go with `string`)
 - `headers`, type `map[string]string` to apply to the HTTP call
-- query parameters (in the case of GET), called `queryParameters`, type `url.Values`, 
-- a body (in the case of POST or PUT), called body, type `io.Reader`
+- query parameters (in the case of `GET`), called `queryParameters`, type `url.Values`, 
+- a body (in the case of `POST` or `PUT`), called `body`, type `io.Reader`
 - Finally, the generic type comes into play for the type we expect to receive - we'll call this `T`
-- For the return type we have to handle any errors that may occur, so we'll use the classic go pattern of returning an error as the last return value
+- For the return type we have to handle any errors that may occur, so we'll use the classic go pattern of returning an `error` as the last return value
 
 Altogether, the signature of this powerful function looks like this:
 
@@ -36,7 +36,7 @@ func MakeHTTPRequest[T any](fullUrl string, httpMethod string, headers map[strin
 
 ## Writing the Body of the Function
 
-Let's get into the body of the function. To construct the http client, we'll use Go's built in `net/http` package:
+Let's get into the body of the function. To construct the HTTP client, we'll use Go's built-in `net/http` package:
 
 ```go
 client := http.Client{}
@@ -51,7 +51,7 @@ if err != nil {
 }
 ```
 
-Now we can handle the GET case, using this url object to add the query parameters:
+Now we can handle the GET case, using this URL variable `u` to add the query parameters:
 
 ```go
 // if it's a GET, we need to append the query parameters.
@@ -67,7 +67,7 @@ if httpMethod == "GET" {
 }
 ```
 
-We can create the request, passing the `body` parameter in:
+We can create the request by passing the `body` parameter in:
 
 ```go
 // regardless of GET or POST, we can safely add the body
@@ -116,7 +116,7 @@ if res.StatusCode != http.StatusOK {
 }
 ```
 
-Finally getting to the powerful generic part of this function, we used the `encoding/json` package to unmarshal the response data into the type we expect. We throw an error if the `encoding/json` package is unable to unmarshal to the type specified:
+We've finally gotten to the powerful generic part of this function. We used the `encoding/json` package to unmarshal the response data into the type we expect. We throw an error if the `encoding/json` package is unable to unmarshal to the type specified:
 
 
 ```go
@@ -309,9 +309,9 @@ The generic function, as well as the use cases above, can be found [in the examp
 
 ## Bonus: Properly Checking or Typing the `httpMethod` Parameter
 
-As we saw in our original implementation, even in the official go typings of `http.NewRequest`, the HTTP method is simply type `string`. The reason we have decided not to implement any check is because the there are only five methods - `GET`, `POST`, `PUT`, `PATCH`, and `DELETE`, and they aren't likely to change at all any time soon! However, it _is_ of course still possible to make typos on the method field when calling this function (i.e. `GET`), so you and your team may decide to make the type a bit more strict. You have two options:
+As we saw in our original implementation, even in the official go typings for `http.NewRequest`, the HTTP method is simply type `string`. The reason we have decided not to implement any check is that there are only five methods - `GET`, `POST`, `PUT`, `PATCH`, and `DELETE`, and they aren't likely to change at all any time soon! However, it _is_ of course still possible to make typos on the method field when calling this function (i.e. `GET`), so you and your team may decide to make the type a bit more strict. You have two options:
 
-**Option 1. The simple one - a regex**
+**Option 1. The simple option - a regex**
 
 Match the passed string against a regex with all five HTTP methods. This is the less complex option, but it's not as type-safe. We can use the following regex:
 
@@ -325,7 +325,7 @@ if !regex.MatchString(httpMethod) {
 }
 ```
 
-**Option 2. The more involved one - enum option**
+**Option 2. The more involved option - an enum**
 
 We can create an enum and `String` method like so:
 
@@ -363,7 +363,7 @@ Then, change the type of `httpMethod` from `string` to `HTTPMethod`:
 func MakeHTTPRequest[T any](fullUrl string, httpMethod HTTPMethod, headers map[string]string, queryParameters url.Values, body io.Reader, responseType T) (T, error) {
 ```
 
-And we'll have change the if statement to compare against the new `GET` type instead of the string `"GET"`:
+And we'll have to change the `if` statement to compare against the new `GET` type instead of the string `"GET"`:
 
 ```go
 if httpMethod == GET {
@@ -377,11 +377,11 @@ and we need to cast `httpMethod` to a string when we call `http.NewRequest`:
 req, err := http.NewRequest(string(httpMethod), u.String(), body)
 ```
 
-Option #2 may be a bit of over-engineering, but it's also the most type-safe. It's up to you to decide which one you want to use. As mentioned, our team has decided to forgo any checks on the `httpMethod` parameter, as we do extensive [unit and integration testing](http://localhost:8000/blog/one-year-as-chief-technology-officer-at-inclub-insights-from-startup-land/) on our backend that would catch, by way of request errors, any typos in the http method passed to `MakeHTTPRequest`.
+Option #2 may be a bit over-engineered, but it's also the most type-safe. It's up to you to decide which one you want to use. As mentioned, our team has decided to forgo any checks on the `httpMethod` parameter, as we do extensive [unit and integration testing](http://localhost:8000/blog/one-year-as-chief-technology-officer-at-inclub-insights-from-startup-land/) on our backend that would catch, by way of request errors, any typos in the HTTP method passed to `MakeHTTPRequest`.
 
 ## Thanks!
 
-I hope you enjoyed this post! I'm really loving how amazingly easy it is to build backend infrastructure with golang. I'm looking forward to posting more golang posts in the future.
+I hope you enjoyed this post! I'm really loving how amazingly easy it is to build backend infrastructure with Go. I'm looking forward to posting more Go content in the future.
 
 Cheers!
 
