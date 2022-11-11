@@ -99,7 +99,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                     flexWrap: "wrap",
                 }}
             >
-                <h2>Recent Posts:</h2>
+                <h2>Other Recent Posts:</h2>
                 <FilterableAndSortablePostsWidget
                     postListingType={PostListingType.RECENTS}
                 />
