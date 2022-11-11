@@ -6,11 +6,11 @@ draft: false
 tags: Go,Golang,Generics
 ---
 
-During my work at [InClub](https://inclub-app.com), I constructed a generic REST API helper function that we use all around our backend. So far, this function has worked for every type of HTTP call we've thrown at it. Some examples:
+During my work at [InClub](https://inclub-app.com), I constructed a generic HTTP request helper function that we use all around our backend. So far, this function has worked for every type of HTTP call we've thrown at it. Some examples:
 
 -   `POST`ing to [DeepL's translate text API](https://www.deepl.com/docs-api/translate-text/)
 -   `GET` / `POST` to [Instagram's Graph API](https://developers.facebook.com/docs/instagram-api/)
--   `GET` / `POST` / `DELETE` to [Sendbird's Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/overview).
+-   `GET` / `POST` / `DELETE` to [Sendbird's Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/overview)
 
 I figured I'd share this function with the world, as it's a great real-world example of how to use Go's generic capabilities. I'm going to do a full walk-through of how to build the function, but if you just want the function, hop down to the [full code snippet](#full-code-snippet).
 
