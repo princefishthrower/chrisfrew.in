@@ -45,7 +45,7 @@ class BlogPost extends React.Component {
 
         const getNextPreviousText = () => {
             if (previous && next) {
-                return "Next or Previous Post:"
+                return "Next / Previous Post:"
             }
             if (previous && !next) {
                 return "Previous Post:"
@@ -125,7 +125,10 @@ class BlogPost extends React.Component {
                                         flex: `flex-row`,
                                         justifyContent: `space-around`,
                                         alignItems: "center",
-                                        padding: 0,
+                                        padding: "1rem",
+                                        margin: "1rem",
+                                        backgroundColor: "#272A2A",
+                                        borderRadius: '50px'
                                     }}
                                 >
                                     <div>⬅️</div>
@@ -149,7 +152,10 @@ class BlogPost extends React.Component {
                                         flex: `flex-row`,
                                         justifyContent: `space-around`,
                                         alignItems: "center",
-                                        padding: 0,
+                                        padding: "1rem",
+                                        margin: "1rem",
+                                        backgroundColor: "#272A2A",
+                                        borderRadius: '50px'
                                     }}
                                 >
                                     <div
