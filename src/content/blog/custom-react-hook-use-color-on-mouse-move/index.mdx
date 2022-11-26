@@ -1,0 +1,173 @@
+---
+title: "Custom React Hook: Use Color on Mouse Move"
+description: This powerful configurable hook returns a color based on the mouse's x and y coordinates.
+date: "2022-11-16"
+draft: false
+tags: React, React Hook, TypeScript
+---
+
+[Watch the related tutorial on Full Stack Craft's YouTube!](https://www.youtube.com/watch?v=a7Aro0q6X1c)
+
+## React Hooks
+
+React Hooks are extremely powerful - they allow you to build reactive code that can dropped into as many components as you want, all in one line. In this code walk-through, we'll be building a hook that returns a color based on the mouse's x and y coordinates. We'll first build a naïve implementation that gets the job done, but leaves many functionalities to be desired.
+
+## A Naive Implementation of the Hook
+
+With our defined idea, we can already get started. Let's allow two colors that we want
+
+Altogether, our initial implementation of this hook looks like this:
+
+```ts
+import { useCallback, useEffect, useRef, useState } from "react"
+import chroma from "chroma-js"
+
+export type ArrayOfTwoOrMore<T> = {
+    0: T
+    1: T
+} & Array<T>
+
+// this function takes the current x and y coordinates of the mouse and produces a color based on them
+export const useColorOnMouseMove = (colors: ArrayOfTwoOrMore<string>) => {
+    const [color, setColor] = useState<string>(colors[0])
+    const maxX = useRef(0)
+    const maxY = useRef(0)
+    const scale = chroma.scale([colors[0], colors[1]])
+
+    const onMouseMove = useCallback(
+        (e: MouseEvent) => {
+            if (maxX.current > 0 && maxY.current > 0) {
+                const percentX = e.clientX / maxX.current
+                const percentY = e.clientY / maxY.current
+
+                const average = (percentX + percentY) / 2
+
+                const color = scale(average).hex()
+                setColor(color)
+            }
+        },
+        [scale]
+    )
+
+    const onResize = () => {
+        maxX.current = window.innerWidth
+        maxY.current = window.innerHeight
+    }
+
+    useEffect(() => {
+        window.addEventListener("mousemove", onMouseMove)
+        window.addEventListener("resize", onResize)
+        return () => {
+            window.removeEventListener("mousemove", onMouseMove)
+        }
+    }, [onMouseMove])
+
+    return color
+}
+```
+
+## Adding Various Improvements
+
+What we've built so far "works", but in my opinion the hook needs a few
+
+1. More color interpolation algorithms - change in X only, change in Y only, radial
+2. What if the user doesn't want to use the whole background? Ideally the user could pass a ref to define which dimensions to use to calculate the color change
+3. What about multiple colors and coordinates?
+4. Performance issues, directly updating state every time the browser
+
+We'll address each of these points in the next sections.
+
+(_TO BE CONTINUED_)
+
+<!-- ## 1. More Color Interpolation Algorithms
+
+Currently we've implemented.
+
+First, let's define a new enum that can track all the color interpolation algorithms. I'll name it, fittingly, `ColorInterpolationAlgorithm`:
+
+```ts
+export enum ColorInterpolationAlgorithm {
+    X_DIRECTION = "X_DIRECTION",
+    Y_DIRECTION = "Y_DIRECTION",
+    DIAGONAL = "DIAGONAL",
+}
+```
+
+For simplicity I'll keep it in the same file as the hook, but typically I would put this in a folder called `enums`.
+
+Now, all that matters is what's passed into our `scale` call. In other words, depending on what `ColorInterpolationAlgorithm` the user passes in, we need to calculate the color differently. we have currently in our hook can be
+
+## 1. Allow a ref to be passed in
+
+Currently our hook automatically takes the entire screen for the color calculation. We should treat this as an edge case of how to use our hook, rather than the only case. In order to calculate the color based on a bounding box, we can allow our hook to use a ref of any element that we want mouse movement to trigger color changes. Let's first introduce two more refs, which now become important: `minX` and `minY`.
+
+```ts
+
+```
+
+Since it was 0 previously, it fell out of all our calculations, but we need to consider this new minX and minY everywhere now:
+
+```ts
+const calculateScalePercentX = (e: MouseEvent) => {
+    const percentX = e.clientX / (minX.current - maxX.current)
+    return percentX
+}
+```
+
+Since we're expecting bounding boxes, it also makes sense to build a small util function `isWithinBoundingBox`
+
+We can even make the element ref optional. So far, the only place we take the `window.innerWidth` and `window.innerHeight` values are in the `onResize` function. We're not going to use the `window` object anymore, but refactor our initialization to be based off of a bounding client rect entirely. If we see that `element` was defined, we use it's bounding rect coordinates, otherwise, we revert to the old logic using `window.innerWidth` and `window.innerHeight`:
+
+```ts
+if (element && element.current) {
+    // element based coordinates - use bounding rect
+    const boundingRect = element.current.getBoundingClientRect()
+    console.log(boundingRect)
+    minX.current = boundingRect.x
+    minY.current = Math.abs(boundingRect.y)
+    maxX.current = minX.current + boundingRect.width
+    maxY.current = minY.current + boundingRect.height
+    midX.current = boundingRect.width / 2 + minX.current
+    midY.current = boundingRect.height / 2 + minY.current
+} else {
+    // fallback calculation - entire window
+    minX.current = 0
+    minY.current = 0
+    maxX.current = window.innerWidth
+    maxY.current = window.innerHeight
+    midX.current = maxX.current / 2
+    midY.current = maxY.current / 2
+}
+```
+
+## 2. Multiple Colors and Coordinates
+
+Our previous work on the different interpolation algorithms is still mostly valid, but only if they provide 2 colors
+
+## 3. Performance Issues
+
+The final polish we can add to the hook is introducing debounce. We don't need to update the color absolutely every time x or y changes. We probably only need to do it every 500 millisconds or so. Regardless, let's expose this debounce time as a parameter
+
+Finally, let's leverage CSS's ability to transition the background color on the element we've applied our hook to:
+
+```tsx
+<div style={{ transition: "background-color 0.5s" }}></div>
+```
+
+This will smooth out any color change transitions that might otherwise appear janky due to our debounce function.
+
+## Review
+
+In summary, we:
+
+-   built a naive implementation of this hook
+-   reiterated and rethought a few features that could be added
+-   allowed our hook to use the dimensions of a ref that was passed in
+-   created a `ColorConfig` type that allowed our hook to accept any number of coordinates and colors
+-   optimized the hook by pairing debouncing with the CSS transition property
+
+## Thanks!
+
+I hope you enjoyed this code walk-through. As you build out your React and React TypeScript projects, I encourage you to think about what sorts of logic you can encapsulate into a React Hook. It's a great way to encapsulate powerful functionality that is reusable across your app and also a one-liner to add in.
+
+-Chris 🍻 -->

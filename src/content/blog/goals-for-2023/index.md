@@ -1,0 +1,86 @@
+---
+title: Goals for 2023
+description:
+date: "2022-11-23"
+draft: false
+tags: Yearly Goals
+---
+
+# Ah, it's that Time of Year Again ☕🍫
+
+Late November: that quite time of year between a busy fall and the start of winter. A great time for reflection and future plans. Looking back on 2022:
+
+- I launched my second SaaS product, [Kurynt](https://kurynt.com)
+- Completed a text-based course on a large education platform (more information later)
+- Guided InClub through a successful TV airing, with no downtime or degradation of any services (here I cannot take full credit, as we've added a new engineer to our team)
+- [Restarted creating YouTube videos and content after nearly a year away](https://www.youtube.com/watch?v=E7NTiRAXRGA)
+
+As we come to the end of this year I'm really excited and refreshed to be taking time for myself and refusing to work overtime for any non-critical day job stuff and / or .
+
+# Goals for 2022, Reviewed
+
+- No drinking from the new year until April 1st (my birthday!)
+
+✅ Did this one, and am going to repeat again for 2023, perhaps even longer.
+
+- "Disconnect Weeks", where I put away my phone and avoid all social media
+
+❌ Somehow I couldn't escape the constantly connected world that is our reality. But I don't like it, it's not healthy and it's not normal. So for 2023 I will make a concrete start to this: for the second week of January (January 9th-15th), I will put away my phone and limit screen time strictly to an 8 hour work day.
+
+- Say "no" more
+
+✅ This is still a work in progress for me, but I've gotten much better at it. I've really started to prioritize my own plans over hype, cold calls, and general random requests from others. This sounds perhaps a bit rude, but professionally I think it is completely fair. I've just seen my track record in the past and nearly every time I'm just faster when I work on my own content and projects.
+
+- Write a cool backend in Go
+
+✅ At InClub, we've completely ported our legacy .NET codebase to a much more lightweight Go codebase. I love Goland and am looking forward to using it more in the future, especially for my SaaS products.
+
+- In addition to the two "secret" courses I'm currently working on, publish one (yes, only _one_) course
+
+✅ This is a "soft" green check here, as one of the courses is "done", but I'm waiting from the internal team to do the final steps to make it public. More information here later.
+
+- Use my Klimaticket to tramp / camp / explore Austria
+
+❌ Unfortunately did not do as much as I wanted here, but I am looking into traveling and camping more next year, including some 🥶 cold 🥶 winter camping coming up.
+
+# Goals for 2023
+
+- Climb a 4000er
+- Climb the Matterhorn
+- No drinking from the new year until April 1st (my birthday!)
+- Disconnect weeks, where I put away my phone and avoid all social media
+- Publish a new SaaS product
+- Publish at least 2 new courses
+- Use my Klimaticket to travel and camp more
+
+### Climb a 4000er & Climb the Matterhorn
+
+I want to increase my mountain climbing abilities in 2022. To start I want to climb a 4000er, perhaps Monte Rosa or Gran Paradiso, and build up to reach my ultimate goal: the Matterhorn. This will take some training, as I have to practice my pickaxe skills, ice, and rope work.
+
+### No drinking from the new year until April 1st (my birthday!)
+
+As I've said previously I enjoy this challenge, and will likely continue into the forseeable future.
+
+### Disconnect weeks, where I put away my phone and avoid all social media
+
+As mentioned, I failed at doing this last year, so I'm going to already to an experimental week the second week of January.
+
+### Publish a new SaaS product
+
+I have quite a few ideas here - stay tuned. If I'm efficient, one may become my first "built in public" product.
+
+### Publish at least 2 new courses
+
+I'm building a course on my custom hook `react-use-please-stay` for [Newline](https://www.newline.co/courses/react-use-please-stay-with-react-and-typescript/welcome), and I'll also soon be starting a "TypeScript Web Utils" course, which will likely be available on Udemy and Skillshare.
+
+### Use my Klimaticket to travel and camp more
+
+I did this sort of "tramping" only about twice last year, and I am planning to do it much more in 2023. In "off" seasons in Austria (essentially any non-holiday and non-summer dates), there are very affordable (sub $200) three day weekend or midweek escape possibilities. I can also tie these travels into my [photography](https://photography.chrisfrew.in) work as well.
+
+# Thanks!
+
+I'm very excited to be making courses and content in 2023, and continually expanding my software skills and knowledge.
+
+Cheers 🍺
+
+-Chris
