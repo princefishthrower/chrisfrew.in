@@ -20,10 +20,7 @@ export function TagRenderer(props: ITagRendererProps) {
     const { tags, linkToTagPage, withTitle } = props
     const data = useStaticQuery(graphql`
         query AllTagsQuery {
-            allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
-                limit: 1000
-            ) {
+            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
                 edges {
                     node {
                         frontmatter {
@@ -71,6 +68,7 @@ export function TagRenderer(props: ITagRendererProps) {
                     const nextIndex = index + randomOffset + 1
                     return (
                         <Tag
+                            key={uniqueTag}
                             tag={uniqueTag}
                             linkToTagPage={linkToTagPage}
                             backgroundColor={

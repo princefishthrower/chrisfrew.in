@@ -1,0 +1,35 @@
+---
+title: "My Third Indy SaaS Product: Squawk Market"
+description: The best real-time & market-wide audio feed.
+date: "2023-03-13"
+draft: false
+tags: Supabase, Go, Golang, TypeScript, Saas, Netlify, Stripe
+---
+
+_I apologize for my long absence. After leaving the last startup I was working at, I've been taking a deep dive into day trading, markets, and working on [Wheel Screener](https://wheelscreener.com) as well as this new product I'm about to talk about. My goal is to make this a full time occupation: building market and trading SaaS products 50% of the time, and actually getting my hands dirty and really trading the other 50% of the time. This way I can't be called an infamous 'armchair' analyst that is all too infamous on communities like stocktwits or fintwit (financial Twitter). Once I establish a more standardized trading strategy and get all my products to a sustainable level, I'll try to get back to the education front in terms of courses and Youtube. I'll shamelessly admit it's a touch grind, I'm trying to do the best I can right now._
+
+<div style={{background:"white", display:'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+<img style={{maxWidth: '100%'}} alt="The Squawk Market logo." src="/squawkMarketLogo.png"/>
+</div>
+
+Over the past few weeks I've been promoting my latest SaaS product, <a href="https://squawk-market.com">Squawk Market</a>! 
+
+## What is Squawk Market?
+
+Squawk market is a voice and text based market news aggregator. It's a tool for traders to get the latest market news from the top sources in the industry. The goal is to collect breaking stories as fast as possible and deliver them to traders who can catch any sort of momentum in the market.
+
+## Tech Stack
+
+Squawk Market is built with the following tech stack:
+
+- React TypeScript for the frontend
+- Supabase for profiles and subscription roles (premium or not)
+- Stripe for payments
+- Golang with SignalR (websocket library) for the backend
+- I use the Amazon Polly API to convert text to speech
+
+I designed the backend in a way that it is trivial for me to add new feeds. I leverage signalR's concept of 'groups' to emit relevant messages to connected clients. When you connect to a specific feed on Squawk Market, you're added to a group with exactly that feed's name. This way, when a squawk is produced, I can emit it to all clients that are connected, and even for multiple feeds. (For example, we have our free 'market-wide' feed for everyone, which includes the 'fear and greed' index, but we also have a separate feed for the 'fear and greed' index itself. This way, if you're only interested in the fear and greed index, you can connect to that feed and only get those messages.)
+
+Cheers! 🍺
+
+-Chris

@@ -46,7 +46,7 @@ export function FilterableAndSortablePostsWidget(
                     subsubtitle
                 }
             }
-            allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+            allMdx(sort: {frontmatter: {date: DESC}}) {
                 edges {
                     node {
                         excerpt
@@ -100,6 +100,7 @@ export function FilterableAndSortablePostsWidget(
                         ]
                     return (
                         <Link
+                            key={node.fields.slug}
                             className={wrapperClassName}
                             to={node.fields.slug}
                         >

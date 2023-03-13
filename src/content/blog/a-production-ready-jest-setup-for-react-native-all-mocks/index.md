@@ -16,7 +16,9 @@ Take a framework like React Native that interfaces with native code (on multiple
 
 ![_😵‍💫 When I say a lot, I mean A LOT. Mocks... so many mocks... 😵‍💫_](./equations.gif)
 
-<div style="text-align:center"><i>😵‍💫 When I say a lot, I mean <u>A LOT</u>. Mocks... so many mocks... 😵‍💫</i></div>
+<div style={{textAlign:"center"}}>
+<i>😵‍💫 When I say a lot, I mean <u>A LOT</u>. Mocks... so many mocks... 😵‍💫</i>
+</div>
 
 # Integration Testing on the Entire `<App/>` Component
 

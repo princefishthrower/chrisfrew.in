@@ -7,10 +7,7 @@ import { StatTile } from "./StatTile"
 export function HundredPostChallengeStat() {
     const data = useStaticQuery(graphql`
         query HundredPostsChallengeQuery {
-            allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
-                limit: 1000
-            ) {
+            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
                 edges {
                     node {
                         fields {

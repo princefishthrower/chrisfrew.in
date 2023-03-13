@@ -75,22 +75,6 @@ module.exports = {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.mdx`, `.md`],
-                remarkPlugins: [
-                    require(`remark-math`),
-                    require(`remark-html-katex`),
-                ],
-                gatsbyRemarkPlugins: [
-                    // {
-                    //   resolve: `gatsby-remark-footnotes`,
-                    //   options: {
-                    //     footnoteBackRefDisplay: `inline`,
-                    //     footnoteBackRefInnerText: `\u21E7 Back Up`,
-                    //     footnoteBackRefAnchorStyle: `font-size: 0.75rem;`
-                    //   },
-                    // },
-                    `gatsby-remark-images`,
-                    `gatsby-remark-copy-linked-files`,
-                ],
             },
         },
         {
@@ -177,9 +161,6 @@ function getBlogFeed({ filePathRegex, blogUrl, ...overrides }) {
          {
            allMdx(
              limit: 25,
-             filter: {
-               fileAbsolutePath: {regex: "${filePathRegex}"}
-             }
              sort: { order: DESC, fields: [frontmatter___date] }
            ) {
              edges {
@@ -200,76 +181,3 @@ function getBlogFeed({ filePathRegex, blogUrl, ...overrides }) {
         ...overrides,
     }
 }
-
-// old feed (doesn't work anymore after mdx migration)
-//   {
-//     resolve: `gatsby-plugin-feed-mdx`,
-//     options: {
-//         query: `
-//   {
-//     site {
-//       siteMetadata {
-//         title
-//         description
-//         siteUrl
-//         site_url: siteUrl
-//       }
-//     }
-//   }
-// `,
-//         feeds: [
-//             {
-//                 serialize: ({ query: { site, allMdx } }) => {
-//                     return allMdx.edges.map((edge) => {
-//                         return Object.assign(
-//                             {},
-//                             edge.node.frontmatter,
-//                             {
-//                                 description: edge.node.excerpt,
-//                                 date: edge.node.frontmatter.date,
-//                                 url:
-//                                     site.siteMetadata.siteUrl +
-//                                     "/blog" +
-//                                     edge.node.fields.slug,
-//                                 guid:
-//                                     site.siteMetadata.siteUrl +
-//                                     "/blog" +
-//                                     edge.node.fields.slug,
-//                                 custom_elements: [
-//                                     {
-//                                         "content:encoded":
-//                                             edge.node.body,
-//                                     },
-//                                 ],
-//                             }
-//                         )
-//                     })
-//                 },
-//                 query: `
-//       {
-//         allMdx(
-//           sort: { order: DESC, fields: [frontmatter___date] },
-//         ) {
-//           edges {
-//             node {
-//               excerpt
-//               body
-//               fields {
-//                 slug
-//               }
-//               frontmatter {
-//                 title
-//                 date
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `,
-//                 output: "/rss.xml",
-//                 title: "Chris' Full Stack Blog",
-//                 match: "^/blog/",
-//             },
-//         ],
-//     },
-// },

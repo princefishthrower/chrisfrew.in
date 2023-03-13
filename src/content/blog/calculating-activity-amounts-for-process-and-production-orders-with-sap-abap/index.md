@@ -989,7 +989,7 @@ Cheers! 🍺
 </div>
 
 <div id="footnote-3">
-3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction <span style="font-family:'Courier New'">CO11N</span>:
+3. You can set up your production planning (PP) module to give you a proposal amount for the activities, directly when you are doing confirmations transaction `CO11N`:
 
 Upon pressing 'enter' for with a new amount:
 ![Automatic calculation of confirmation activities by the System in transaction CO11N](./co11n-1.jpg)
@@ -1010,7 +1010,7 @@ We see that the Labor time is provided here. It's likely 30 min for a full 100 K
 </div>
 
 <div id="footnote-6">
-6. This issue does not affect the confirmation formulas, but rather the goods movements in the retrograde ingredients - specifically when the goods movements are to be overridden, for example with a batch split for a retrograde material, or a custom under- or over- amount of a retrograde material. For the rare case where an employee wanted to book some of our retrograde materials from various batch numbers and warehouse locations, they noticed in these custom goods movements with the confirmation were not being added; but rather always the default SAP-calculated amounts. After some head scratching, I found it all has to do with function module <span style="font-family:'Courier New'">BAPI_PRODORDCONF_CREATE_TT</span> (or <span style="font-family:'Courier New'">BAPI_PROCORDCONF_CREATE_TT</span> depending on your use case) - I was not passing in an important parameter which allows exactly this desired override behavior:
+6. This issue does not affect the confirmation formulas, but rather the goods movements in the retrograde ingredients - specifically when the goods movements are to be overridden, for example with a batch split for a retrograde material, or a custom under- or over- amount of a retrograde material. For the rare case where an employee wanted to book some of our retrograde materials from various batch numbers and warehouse locations, they noticed in these custom goods movements with the confirmation were not being added; but rather always the default SAP-calculated amounts. After some head scratching, I found it all has to do with function module `BAPI_PRODORDCONF_CREATE_TT` (or `BAPI_PROCORDCONF_CREATE_TT` depending on your use case) - I was not passing in an important parameter which allows exactly this desired override behavior:
 
 <pre>
 LinkConfGoodsmov
