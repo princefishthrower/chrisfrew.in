@@ -36,21 +36,21 @@ I call a 'rent style' property any of the non-utility or railroad properties, i.
 
 I calculated the percent return on investment (ROI) for these properties as follows: 
 
-$
-ROI = \frac{COST_{TOTAL}}{PROFIT_{TOTAL}} \times 100
-$
+
+ROI = COST_TOTAL / PROFIT_TOTAL * 100
+
 
 where
 
-$
-COST_{TOTAL} = \textrm{total price per property} + \textrm{the cost of building to hotel}
-$
+
+COST_TOTAL= total price per property + the cost of building to hotel
+
 
 and
 
-$
-PROFIT_{TOTAL} = \textrm{rent cost of property with hotel} \times \textrm{number of times a player lands on the hotel property}
-$
+
+PROFIT_TOTAL = rent cost of property with hotel * number of times a player lands on the hotel property
+
 
 I calculated and plotted this value changing the number of times a player lands on the property, for 1,2, and 3 times:
 

@@ -1,23 +1,24 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React, { useEffect } from "react"
 import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
-// import { Disqus } from "gatsby-plugin-disqus"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
+import { TagRenderer } from "../components/utils/tags/TagRenderer"
+import { Link,  graphql } from "gatsby"
 
-class BlogPost extends React.Component {
-    componentDidMount() {
+export default function BlogPost({ location, pageContext, data, children }: any) {
+    useEffect(() => {
         const footnotes = document.getElementsByClassName("footnote-ref")
         Array.prototype.forEach.call(footnotes, function (footnote) {
-            footnote.addEventListener("click", function (e) {
+            footnote.addEventListener("click", function (e: any) {
                 e.preventDefault()
                 // The href value IS the id of the div
                 const footnoteDiv = document.getElementById(
                     footnote.getAttribute("href").replace("#", "")
                 )
+                if (!footnoteDiv) {
+                    return
+                }
                 window.scrollTo(0, footnoteDiv.offsetTop)
                 footnoteDiv.classList.add("highlight")
                 setTimeout(
@@ -26,45 +27,35 @@ class BlogPost extends React.Component {
                 )
             })
         })
-    }
-    render() {
-        const post = this.props.data.mdx
-        const title = post.frontmatter.title
-        const postDescription = post.frontmatter.description
-        const siteTitle = this.props.data.site.siteMetadata.title
-        const description = this.props.data.site.siteMetadata.description
-        const { previous, next } = this.props.pageContext
-        const tags = post.frontmatter.tags.split(",").map((x) => sanitizeTag(x))
+    }, [])
 
-        // const disqusConfig = {
-        //     url: `${this.props.data.site.siteMetadata.siteUrl +
-        //         this.props.location.pathname}`,
-        //     identifier: post.id,
-        //     title: title,
-        // }
+    const title = data.mdx.frontmatter.title
+    const postDescription = data.mdx.frontmatter.description
+    const siteTitle = data.site.siteMetadata.title
+    const description = data.site.siteMetadata.description
+    const { previous, next } = pageContext
+    const tags = data.mdx.frontmatter.tags
+        .split(",")
+        .map((x: any) => sanitizeTag(x))
 
-        const getNextPreviousText = () => {
-            if (previous && next) {
-                return "Next / Previous Post:"
-            }
-            if (previous && !next) {
-                return "Previous Post:"
-            }
-            return "Next Post:"
+    const getNextPreviousText = () => {
+        if (previous && next) {
+            return "Next / Previous Post:"
         }
+        if (previous && !next) {
+            return "Previous Post:"
+        }
+        return "Next Post:"
+    }
 
-        return (
-            <Layout
-                location={this.props.location}
-                title={siteTitle}
-                description={description}
-            >
-                <SEO
-                    frontmatter={post.frontmatter}
-                    description={postDescription || post.excerpt}
-                    isBlogPost={true}
-                />
-                <div className="blog-article-wrapper">
+    return (
+        <Layout location={location} title={siteTitle} description={description}>
+            <SEO
+                frontmatter={data.mdx.frontmatter}
+                description={postDescription || data.mdx.excerpt}
+                isBlogPost={true}
+            />
+            <div className="blog-article-wrapper">
                 <article>
                     <header>
                         <h1>{title}</h1>
@@ -87,25 +78,24 @@ class BlogPost extends React.Component {
                                 fontStyle: "italic",
                             }}
                         >
-                            Posted on {post.frontmatter.date}
+                            Posted on {data.mdx.frontmatter.date}
                         </p>
-                        <p
+                        <div
                             style={{
                                 display: `block`,
                                 marginBottom: `1rem`,
                             }}
                         >
                             <i>Tags: </i>
-                            <TagRenderer withTitle={false} linkToTagPage={true} tags={tags} />
-                        </p>
+                            <TagRenderer
+                                withTitle={false}
+                                linkToTagPage={true}
+                                tags={tags}
+                            />
+                        </div>
                     </header>
-                    <MDXRenderer>{post.body}</MDXRenderer>
-                    {/* <Disqus config={disqusConfig} /> */}
-                    <div className="blog-post-footer">
-                        <Bio />
-                    </div>
+                    {children}
                 </article>
-
                 <h3>{getNextPreviousText()}</h3>
                 <nav>
                     <div
@@ -128,7 +118,7 @@ class BlogPost extends React.Component {
                                         padding: "1rem",
                                         margin: "1rem",
                                         backgroundColor: "#272A2A",
-                                        borderRadius: '50px'
+                                        borderRadius: "50px",
                                     }}
                                 >
                                     <div>⬅️</div>
@@ -143,7 +133,6 @@ class BlogPost extends React.Component {
                                 </div>
                             </Link>
                         )}
-
                         {next && (
                             <Link to={next.fields.slug} rel="next">
                                 <div
@@ -155,7 +144,7 @@ class BlogPost extends React.Component {
                                         padding: "1rem",
                                         margin: "1rem",
                                         backgroundColor: "#272A2A",
-                                        borderRadius: '50px'
+                                        borderRadius: "50px",
                                     }}
                                 >
                                     <div
@@ -173,15 +162,15 @@ class BlogPost extends React.Component {
                         )}
                     </div>
                 </nav>
-                <h3>Or find more posts by tag:</h3>
-                <TagRenderer withTitle={false} linkToTagPage={true} />
+                <div className="blog-post-footer">
+                    <Bio />
                 </div>
-            </Layout>
-        )
-    }
+                <h3>Find more posts by tag:</h3>
+                <TagRenderer withTitle={false} linkToTagPage={true} />
+            </div>
+        </Layout>
+    )
 }
-
-export default BlogPost
 
 export const pageQuery = graphql`
     query BlogPostBySlug($slug: String!) {
@@ -195,13 +184,13 @@ export const pageQuery = graphql`
         mdx(fields: { slug: { eq: $slug } }) {
             id
             excerpt(pruneLength: 160)
-            body
             frontmatter {
                 title
                 date(formatString: "MMMM D, YYYY")
                 description
                 tags
             }
+            body
         }
     }
 `

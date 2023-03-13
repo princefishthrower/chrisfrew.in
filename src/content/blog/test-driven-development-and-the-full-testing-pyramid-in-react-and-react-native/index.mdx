@@ -22,11 +22,11 @@ It's important to note that these tests aren't just obscure automated tools know
 
 The Gherkin language is a sort of pseudo programming language that describes how features in the application should work. The most important key words in the Gherkin language `Given`, `When`, and `Then`. These correspond to their software testing world counterparts: _Arrange_, _Act_, and _Assert_:
 
-`Given` -> _Arrange_
+`Given` {'->'} _Arrange_
 
-`When` -> _Act_
+`When` {'->'} _Act_
 
-`Then` -> _Assert_
+`Then` {'->'} _Assert_
 
 A nice aspect of the Gherkin language is that it can be used to write both high-level feature specifications, such as user flows and stories, to very low-level specifications, such as a specific function or single component, and everything in between. A common practice is to use the `.feature` file extension for these files, so at InClub, we call them colloquially 'feature files', and I'll continue to use that name throughout the rest of this post. At InClub, We have over 60 of these feature files, of all shapes and sizes, describing nearly every facet of how our application and website should work.
 
@@ -233,9 +233,7 @@ We can then refactor the default `test` script to run the pyramid in series:
 
 Now that we've installed, configured, and scaffolded everything we need for our tests, we can get started writing our tests.
 
-<!-- TODO: uncomment when ready! -->
-
-<!-- ## React Native
+## React Native
 
 Note: this section concerns engineers who want to setup tests for their React Native project. If you are interested in writing tests for web, jump down to the [implementation section]() For React Native, we'll use Jest for unit and integration tests, and Detox for end-to-end tests.
 
@@ -249,7 +247,7 @@ npm install jest --save-dev
 
 ```
 
-then add the following script to your package.json file: "scripts": { "test": "jest" }
+then add the following script to your package.json file: `"scripts": { "test": "jest" }`
 
 ### Detox
 

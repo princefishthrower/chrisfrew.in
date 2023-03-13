@@ -12,10 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const result = await graphql(
         `
             {
-                allMdx(
-                    sort: { fields: [frontmatter___date], order: DESC }
-                    limit: 1000
-                ) {
+                allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
                     edges {
                         node {
                             fields {
@@ -28,6 +25,9 @@ exports.createPages = async ({ graphql, actions }) => {
                                 topPostOrder
                                 cleanReactTypeScriptHooksOrder
                                 cleanCrudApisOrder
+                            }
+                            internal {
+                                contentFilePath
                             }
                         }
                     }
@@ -57,7 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
         console.log(post.node.fields.slug)
         createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: `${blogPost}?__contentFilePath=${post.node.internal.contentFilePath}`,
             context: {
                 slug: post.node.fields.slug,
                 previous,

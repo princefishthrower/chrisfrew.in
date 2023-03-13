@@ -5,9 +5,7 @@ import shared from "../../constants/shared.json"
 const Paginator = () => {
     const data = useStaticQuery(graphql`
         query PaginatorQuery {
-            allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
-            ) {
+            allMdx(sort: {frontmatter: {date: DESC}}) {
                 edges {
                     node {
                         excerpt

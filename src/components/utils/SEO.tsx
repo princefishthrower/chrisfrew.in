@@ -67,7 +67,7 @@ function SEO({
     )
 }
 
-function SEOWithQuery(props) {
+function SEOWithQuery(props: any) {
     const {
         site: { siteMetadata },
     } = useStaticQuery(graphql`

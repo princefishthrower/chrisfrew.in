@@ -43,14 +43,6 @@ So, back to the original task: we want to show the proper store, and automatical
 We will use the ipstack API, [you can signup for free and get 10000 requests per month here](https://ipstack.com/product). 
 ***Full disclosure, this website and blog post are NOT sponsored by ipstack in any way!
 
-<div style="padding:1rem;padding-bottom:0;border:1px solid white;border-radius:15px;">
-<div style="text-align:center">
-    <img style="background:white;max-width:500px;padding:2rem" src="/AbstractAPI.png" alt="The Abstract API logo"/>
-</div>
-
-In case you're expecting the need for more requests, you can use Abstract's [IP geolocation API](https://www.abstractapi.com/ip-geolocation-api) for up to 20000 per month (with the free plan).
-</div>
-
 To restate the process, there are two key steps:
 1. Retrieve the customer's IP
 2. Use that IP and call an API to get the user's location (for our purposes, we only needed country-level resolution, though this pattern of course works for any level of location - i.e. you could have separate store views per city, for example.)

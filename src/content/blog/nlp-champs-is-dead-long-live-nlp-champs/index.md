@@ -13,7 +13,7 @@ Like many hobby programming things I get into, my interests burn bright, then fa
 I think that's clear - not just in cutting edge research - but in industry as well - we all know too well that talking / listening 'AIs' like Siri or Alexa are _still_ not rock solid and get a lot of things wrong many times - and that's even when speaking very clearly! 
 
 ![Dammit Siri! I asked about the SPURS game! The SPURS! Its a BASKETBALL TEAM!!!](siri_lol.png)
-<sub style="text-align:center;">Dammit Siri! I asked about the SPURS game! The SPURS! Its a friggin' BASKETBALL TEAM!!!</sub>
+<sub style={{textAlign:"center"}}>Dammit Siri! I asked about the SPURS game! The SPURS! Its a friggin' BASKETBALL TEAM!!!</sub>
 
 ## In Any Event
 

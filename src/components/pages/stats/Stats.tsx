@@ -16,10 +16,7 @@ import { HundredPostChallengeStat } from "./HundredPostChallengeStat"
 export function Stats() {
     const data = useStaticQuery(graphql`
         query StatsQuery {
-            allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
-                limit: 1000
-            ) {
+            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
                 edges {
                     node {
                         fields {

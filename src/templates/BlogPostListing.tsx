@@ -169,7 +169,7 @@ export const blogListQuery = graphql`
                 subsubtitle
             }
         }
-        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
             edges {
                 node {
                     excerpt

@@ -72,8 +72,8 @@ export const blogTagListQuery = graphql`
             }
         }
         allMdx(
-            sort: { fields: [frontmatter___date], order: DESC },
-            filter: { frontmatter: { tags: { regex: $tagRegex}}}
+            sort: {frontmatter: {date: DESC}}
+            filter: {frontmatter: {tags: {regex: $tagRegex}}}
         ) {
             edges {
                 node {
