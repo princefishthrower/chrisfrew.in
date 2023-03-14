@@ -22,7 +22,7 @@ and the master post that I will link all further posts to (check out my catastro
 
 [https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863](https://medium.com/@frewin.christopher/i-set-aside-1000-to-learn-options-trading-53b934e55863)
 
-you can follow my trades on twitter [@Galt_](https://twitter.com/Galt_).
+you can follow my trades on twitter [@wheelscreener](https://twitter.com/wheelscreener).
 
 I hope you enjoy watching me lose all my money! 😂
 
