@@ -15,7 +15,7 @@ The book template repository is [on GitHub](https://github.com/princefishthrower
 
 ## Motivation
 
-I've been drafting various software engineer and developer-targeted books and guides for the past few years, focusing on hands-on code snippets and applications I've used in real-world applications than theoretical-based books that so many books have. Often, developer or engineering-oriented books show you all the details of *how* to use a software language or library but do not actually show real-world use cases of the tools or libraries *in action*. My books focus on real-world recipes and examples that I've deployed to real apps — from startups to industry — in my 10+ year software career. I've returned to these books in the past few weeks and brushed up on a LaTeX template that I'll probably start with for all my books going forward. I'm also planning from here on out to create a PDF walkthrough or tutorial book for each video-based course I release. This way learners of different styles can purchase the book instead of the video if they so choose. Now that my template is fully functional, I figured I'd share it with everybody else!
+I've been drafting various software engineer and developer-targeted books and guides for the past few years, focusing on hands-on code snippets and applications I've used in real-world applications than theoretical-based books that so many books have. Often, developer or engineering-oriented books show you all the details of *how* to use a software language or library but do not actually show real-world use cases of the tools or libraries *in action*. My books focus on real-world recipes and examples that I've deployed to real apps — from startups to industry — in my 10+ year software career. I've returned to these books in the past few weeks and brushed up on a LaTeX template that I'll probably start with for all my books going forward. I'm also planning from here on out to create a PDF walkthrough or tutorial book for each video-based course I release. This way learners of different styles can purchase the book instead of the videos if they so choose. Now that my template is fully functional, I figured I'd share it with everybody else!
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ These tools are available for all operating systems — refer to their websites 
 
 ### Title Page
 
-The title page has its own folder and .tex file due to its special formatting. You'll find in the README how to set your own color and image. Then, simply. If you like the O'Reilly format, you can use [dev.to's O'Reilly parody generator](https://dev.to/rly) for image and color inspiration — they use the clip art images from the [USF ClipArt ETC](https://etc.usf.edu/clipart) project.
+The title page has its own folder and .tex file due to its special formatting. You'll find in the README how to set your own color and image. If you like the O'Reilly format, you can use [dev.to's O'Reilly parody generator](https://dev.to/rly) for image and color inspiration — they use the clip art images from the [USF ClipArt ETC](https://etc.usf.edu/clipart) project.
 
 ### Book
 
@@ -43,11 +43,11 @@ LaTeX itself deserves its own section. If you've never worked in higher areas of
 
 ### What Is LaTeX?
 
-LaTeX defines itself as a “document preparation system”. Think of it like a very very fancy Microsoft Word. If you've ever seen an academic paper that had very complex glyphs of equations and matrices, that document was very likely prepared in LaTeX. Most academic journals share their preamble (you can think of a “preamble” as simply the header of the .tex file, with all its packages and rules defined) so authors can write their articles in a format
+LaTeX defines itself as a “document preparation system”. Think of it like a very very fancy Microsoft Word. If you've ever seen an academic paper that had very complex glyphs of equations and matrices, that document was very likely prepared in LaTeX. Most academic journals share their preamble (you can think of a “preamble” as simply the header of the .tex file, with all its packages and rules defined) so authors can write their articles in a format that is consistent with the journal's style.
 
 ### The LaTeX Language
 
-LaTeX is… finicky to say the least. I've never really understood a lot of its rules from time to time, and it's rather easy to break your entire build. More often than not I find the rules and settings very brittle, and prone to breaking by mixing certain libraries with others. Think of CSS but worse. (Unfortunately yes, I think it's that bad, but this is just my personal opinion of LaTeX — you may love it! It could also be the fact that I haven't used LaTeX heavily for many years now.)
+LaTeX is... finicky to say the least. I've never really understood a lot of its rules from time to time, and it's rather easy to break your entire build. More often than not I find the rules and settings very brittle, and prone to breaking by mixing certain libraries with others. Think of CSS but worse. (Unfortunately yes, I think it's that bad, but this is just my personal opinion of LaTeX — you may love it! It could also be the fact that I haven't used LaTeX heavily for many years now.)
 
 Here is a bit of an introduction:
 
@@ -56,7 +56,6 @@ Here is a bit of an introduction:
 Creating custom commands can be done using the `\newcommand` directive, for example, if you forget that for LaTeX a hyperlink is always `\href{text}{link}`:
 
 ```latex
-% for the dollar symbol
 \newcommand{\link}[2]{\textbf{\textcolor{blue}{\href{#2}{#1}}}}
 ```
 
@@ -79,7 +78,7 @@ I'll leave it at that for now. Learning LaTeX is a whole endeavor in and of itse
 
 ## Other Helpful (But Not Required) Tools
 
-When I write in LaTex, I use VS Code with the [LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). This extension creates a new pdf every time you save your .tex file. I then only have to run the custom bash script to combine the title page with the rest of the book to have a shippable book each time.
+When I write in LaTex, I use VS Code with the [LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). This extension creates a new pdf every time you save your .tex file. I then only have to run the custom bash script (also included in the template repository) to combine the title page with the rest of the book to have a shippable book each time.
 
 ## Start Writing!
 
@@ -92,7 +91,7 @@ As I said, I've already gotten started on a book of my own, **The Full Stack Saa
 
 This is actually my first true video-and-book course, and though it's still a work in progress, it's a monster — over 300 pages in the book and over 50 videos already. ☠️
 
-This was probably too ambitious for my very first book, so I'm stepping back and will be publishing a much shorter and more focused book by this summer — stay tuned.
+This was probably too ambitious for my very first book, so I'm stepping back and will be publishing a much shorter and more focused book / course combo by this summer — stay tuned.
 
 ## Thanks!
 
