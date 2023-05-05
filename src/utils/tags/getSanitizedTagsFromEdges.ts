@@ -2,8 +2,8 @@ import ISanitizedTag from "../../interfaces/ISanitizedTag"
 
 // cleans any typos or laziness in my tag conventions - keep a reference to the original 
 // for things like regex needed later
-export const getSanitizedTagsFromEdges = (edges): Array<ISanitizedTag> => {
-    const rawTags = edges.flatMap((x) => x.node.frontmatter.tags.split(","))
+export const getSanitizedTagsFromEdges = (edges: any): Array<ISanitizedTag> => {
+    const rawTags = edges.flatMap((x: any) => x.node.frontmatter.tags.split(","))
 
     return rawTags.map((rawTag: string) => {
         return {
@@ -73,6 +73,9 @@ export const sanitizeTag = (rawTag: string) => {
     }
     if (rawTag === "gRPC") {
         return "gRPC"
+    }
+    if (rawTag === "latex") {
+        return "LaTeX"
     }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }

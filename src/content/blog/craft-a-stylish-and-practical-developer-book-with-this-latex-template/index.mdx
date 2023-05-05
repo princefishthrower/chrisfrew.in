@@ -1,0 +1,101 @@
+---
+title: "Craft a Stylish and Practical Developer Book with this LaTeX Template"
+description: "Leverage the powers of LaTeX and impress readers with your next-level developer book — example repository included!"
+date: "2023-05-04"
+draft: false
+tags: latex,writing,books
+---
+
+<img width="100%" src="https://cdn-images-1.medium.com/max/6528/1*zOJIUq1CfOlJwUVul7B0pw.jpeg"/>
+[Photo by Gül Işik](https://www.pexels.com/photo/books-file-on-book-shelves-2128249)
+
+## The Code
+
+The book template repository is [on GitHub](https://github.com/princefishthrower/dev-book-template). **There are some prerequisite steps to compile your first PDF book, so be sure you read the README in the repository or read on in this post!**
+
+## Motivation
+
+I've been drafting various software engineer and developer-targeted books and guides for the past few years, focusing on hands-on code snippets and applications I've used in real-world applications than theoretical-based books that so many books have. Often, developer or engineering-oriented books show you all the details of *how* to use a software language or library but do not actually show real-world use cases of the tools or libraries *in action*. My books focus on real-world recipes and examples that I've deployed to real apps — from startups to industry — in my 10+ year software career. I've returned to these books in the past few weeks and brushed up on a LaTeX template that I'll probably start with for all my books going forward. I'm also planning from here on out to create a PDF walkthrough or tutorial book for each video-based course I release. This way learners of different styles can purchase the book instead of the video if they so choose. Now that my template is fully functional, I figured I'd share it with everybody else!
+
+## Prerequisites
+
+You'll need two libraries installed on your system before this book template will work:
+
+-[latex](https://www.latex-project.org/)
+
+-[ghostscript](https://www.ghostscript.com/)
+
+These tools are available for all operating systems — refer to their websites for installation information.
+
+## Template Layout
+
+### Title Page
+
+The title page has its own folder and .tex file due to its special formatting. You'll find in the README how to set your own color and image. Then, simply. If you like the O'Reilly format, you can use [dev.to's O'Reilly parody generator](https://dev.to/rly) for image and color inspiration — they use the clip art images from the [USF ClipArt ETC](https://etc.usf.edu/clipart) project.
+
+### Book
+
+In another folder is the actual book content. Here's where you'll do your actual writing! In the repository, I've given examples of how to add titles, subtitles, bullet points, figures (i.e. images), and most importantly, code snippets. The code snippets can be written directly in the .tex file, or loaded from an external file. There are also some other goodies included in the .tex file, like how to include inline emojis, appendices, and an “about the author” section.
+
+## LaTeX 101
+
+LaTeX itself deserves its own section. If you've never worked in higher areas of academia, you've probably never dealt with it, or maybe even heard of it before.
+
+### What Is LaTeX?
+
+LaTeX defines itself as a “document preparation system”. Think of it like a very very fancy Microsoft Word. If you've ever seen an academic paper that had very complex glyphs of equations and matrices, that document was very likely prepared in LaTeX. Most academic journals share their preamble (you can think of a “preamble” as simply the header of the .tex file, with all its packages and rules defined) so authors can write their articles in a format
+
+### The LaTeX Language
+
+LaTeX is… finicky to say the least. I've never really understood a lot of its rules from time to time, and it's rather easy to break your entire build. More often than not I find the rules and settings very brittle, and prone to breaking by mixing certain libraries with others. Think of CSS but worse. (Unfortunately yes, I think it's that bad, but this is just my personal opinion of LaTeX — you may love it! It could also be the fact that I haven't used LaTeX heavily for many years now.)
+
+Here is a bit of an introduction:
+
+`\documentclass` — defines what type of document you are creating, for example, an article, a book, a letter, and so on.
+
+Creating custom commands can be done using the `\newcommand` directive, for example, if you forget that for LaTeX a hyperlink is always `\href{text}{link}`:
+
+```latex
+% for the dollar symbol
+\newcommand{\link}[2]{\textbf{\textcolor{blue}{\href{#2}{#1}}}}
+```
+
+This command would create a blue text with a hyperlink. It can be used in the rest of the .tex file like so:
+
+```latex
+\link{The Google homepage.}{https://google.com}
+```
+
+Like any language or framework, there are a variety of packages you can use via the \usepackage command, some you'll see often are:
+
+```latex
+\usepackage{tikz}
+\usepackage{color}
+```
+
+The tikz library is a drawing library, used to create lines, shapes, and so on on the document. The color library simply allows us to use colors (and define new ones via a hex or RGB code) around the document.
+
+I'll leave it at that for now. Learning LaTeX is a whole endeavor in and of itself, and would need a whole series of other posts to get through.
+
+## Other Helpful (But Not Required) Tools
+
+When I write in LaTex, I use VS Code with the [LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). This extension creates a new pdf every time you save your .tex file. I then only have to run the custom bash script to combine the title page with the rest of the book to have a shippable book each time.
+
+## Start Writing!
+
+Sounds good? I'm certain there are thousands of developers out there with a unique skill set and they can share their knowledge with the developer and engineering world! I hope my template repository can help jump-start your writing process.
+
+## The Template in Action
+
+As I said, I've already gotten started on a book of my own, **The Full Stack SaaS Product Cookbook — From Soup 🍜 to Nuts 🥜 — Create a Profitable SaaS Product as a Solo Developer in Days!** Check it out here:
+[Full Stack SaaS Product Cookbook](https://chrisfrew.in/book)
+
+This is actually my first true video-and-book course, and though it's still a work in progress, it's a monster — over 300 pages in the book and over 50 videos already. ☠️
+
+This was probably too ambitious for my very first book, so I'm stepping back and will be publishing a much shorter and more focused book by this summer — stay tuned.
+
+## Thanks!
+
+Enjoy the template, and enjoy writing!
+
+-Chris

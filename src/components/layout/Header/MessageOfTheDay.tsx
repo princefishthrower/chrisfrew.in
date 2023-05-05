@@ -12,6 +12,8 @@ export function MessageOfTheDay() {
     ])
     const { themeBodyClass } = useContext(ThemeContext)
 
+    const currentYear = new Date().getFullYear()
+
     const messagesOfTheDay = [
         "💯 make strong types great again! 💯",
         "👨‍💻👩‍💻 because somebody has to! 👨‍💻👩‍💻",
@@ -24,6 +26,7 @@ export function MessageOfTheDay() {
         "🤔 what's a software? 🤔",
         "🤓 sir, best framework? 🤓",
         "☠️ framework X is better than Y! ☠️",
+        "👓 RTFD - I won't do it for you 👓"
     ]
 
     const incrementMessage = () => {
@@ -54,7 +57,7 @@ export function MessageOfTheDay() {
             )
         }
         setMessageOfTheDay(
-            `© 2016 - 2021 Full Stack Craft - ${
+            `© 2020 - ${currentYear} Full Stack Craft - ${
                 messagesOfTheDay[
                     cookies[Constants.MESSAGE_OF_THE_DAY_INDEX_COOKIE_KEY]
                 ]
