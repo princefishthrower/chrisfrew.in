@@ -9,10 +9,21 @@ import { SignatureText } from "../../layout/Bio/SignatureText"
 import { SitePortfolio } from "../../layout/Bio/Portfolios/SitePortfolio"
 import { SocialsContainer } from "../../layout/Bio/Portfolios/SocialsContainer"
 import { TeachingPortfolio } from "../../layout/Bio/Portfolios/TeachingPortfolio"
-import { AvatarPicture } from "../../utils/AvatarPicture"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import { BookPortfolio } from "../../layout/Bio/Portfolios/BookPortfolio"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
+
 export function Chris() {
+    const data = useStaticQuery(graphql`
+    query YouTubeQuery {
+        youtube: file(relativePath: { eq: "youtube.png" }) {
+            childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
+        }
+    }
+`)
     return (
         <>
             <ColoredTitle title="👨‍💻 About Me" />
@@ -25,7 +36,11 @@ export function Chris() {
                     marginBottom: "3rem",
                 }}
             >
-                <AvatarPicture />
+                <GatsbyImage
+                    className="title-youtube-picture"
+                    image={data.youtube.childImageSharp.gatsbyImageData}
+                    alt={"Chris on Full Stack Craft's YouTube channel."}
+                />
             </div>
             <div
                 style={{
