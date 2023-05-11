@@ -9,7 +9,6 @@ import { ColoredTitle } from "../../utils/ColoredTitle"
 import { getActiveTheme } from "../../../utils/getActiveTheme"
 import BlogTagClass from "../../../enums/BlogTagClass"
 import { StatTile } from "./StatTile"
-import { getDaysLeftInYear } from "../../../utils/getDaysLeftInYear"
 import Sparkles from "../../utils/Sparkles"
 import { HundredPostChallengeStat } from "./HundredPostChallengeStat"
 

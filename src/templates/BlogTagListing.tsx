@@ -1,16 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, PageProps, graphql } from "gatsby"
 import Bio from "../components/layout/Bio/Bio"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import { TagRenderer } from "../components/utils/tags/TagRenderer"
 import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
+import { PageContext } from "../types/PageContext"
+import { PageData } from "../types/PageData"
 
-const BlogTagListing = ({ data, location, pageContext }) => {
+const BlogTagListing = ({ data, location, pageContext }: PageProps<PageData, PageContext>) => {
     const { tag } = pageContext;
-    const title = data.site.siteMetadata.title
-    const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
     
     // only take those
@@ -18,12 +18,12 @@ const BlogTagListing = ({ data, location, pageContext }) => {
     const cleanTitle = `Posts Tagged With "${tag}"`
     const cleanDescription = `All posts on Chris' Full Stack Blog tagged with "${tag}"`
     return (
-        <Layout location={location} title={title} subtitle={subtitle}>
-            <SEO frontmatter={{title: cleanTitle, description: cleanDescription}} />
+        <Layout location={location}>
+            <SEO title={cleanTitle} description={cleanDescription} />
             <ColoredTitle title={`#️⃣ ${cleanTitle}`}/>
-            {posts.map(({ node }) => {
+            {posts.map(({ node }: any) => {
                 const title = node.frontmatter.title || node.fields.slug
-                const tags = node.frontmatter.tags.split(",").map(x => sanitizeTag(x))
+                const tags = node.frontmatter.tags.split(",").map((x: any) => sanitizeTag(x))
                 return (
                     <article key={node.fields.slug}>
                         <header>
@@ -53,7 +53,7 @@ const BlogTagListing = ({ data, location, pageContext }) => {
                 )
             })}
             <h3>All Post Tags:</h3>
-            <TagRenderer linkToTagPage={true}/>
+            <TagRenderer withTitle={false} linkToTagPage={true}/>
             <Bio />
         </Layout>
     )
@@ -69,6 +69,7 @@ export const blogTagListQuery = graphql`
                 description
                 subtitle
                 subsubtitle
+                subsubsubtitle
             }
         }
         allMdx(

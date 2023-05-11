@@ -8,6 +8,7 @@ module.exports = {
         siteUrl,
         subtitle: config.subtitle,
         subsubtitle: config.subsubtitle,
+        subsubsubtitle: config.subsubsubtitle,
         title: config.siteTitle,
         twitterHandle: config.twitterHandle,
         description: config.siteDescription,
@@ -23,11 +24,6 @@ module.exports = {
         author: {
             name: config.author,
             minibio: config.minibio,
-        },
-        organization: {
-            name: config.organization,
-            url: siteUrl,
-            logo: config.siteLogo,
         },
         social: {
             twitter: config.twitterHandle,

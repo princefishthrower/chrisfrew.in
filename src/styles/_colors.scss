@@ -78,6 +78,10 @@ $javaScriptYellow: #efd81c;
         color: $monokaiRedDarkMode;
         // font-weight: 900;
     }
+    .monokaiRedUnderline {
+        text-decoration: underline;
+        text-decoration-color: $monokaiRedDarkMode;
+    }
     .monokaiBlueFont {
         color: $monokaiBlueDarkMode;
         // font-weight: 900;
@@ -129,6 +133,10 @@ $javaScriptYellow: #efd81c;
     .monokaiRedFont {
         color: $monokaiRedLightMode;
         // font-weight: 900;
+    }
+    .monokaiRedUnderline {
+        text-decoration: underline;
+        text-decoration-color: $monokaiRedLightMode;
     }
     .monokaiBlueFont {
         color: $monokaiBlueLightMode;

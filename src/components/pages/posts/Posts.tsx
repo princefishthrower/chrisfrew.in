@@ -4,10 +4,7 @@ import { ColoredTitle } from "../../utils/ColoredTitle"
 import { FilterableAndSortablePostsWidget } from "../../utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
 import { Search } from "../../utils/search/Search"
 
-export interface IPostsProps {}
-
-export function Posts(props: IPostsProps) {
-    // TODO: graphql, or delegate down to FilterableAndSortablePostsWidget
+export function Posts() {
     const totalPosts = 85
     return (
         <>

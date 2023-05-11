@@ -9,12 +9,13 @@ import { ColoredTitle } from "../components/utils/ColoredTitle"
 import { DuckContainer } from "../components/layout/Duck/DuckContainer"
 import { FilterableAndSortablePostsWidget } from "../components/utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
 import PostListingType from "../enums/PostListingType"
+import type { PageProps } from "gatsby"
+import { PageData } from "../types/PageData"
+import { PageContext } from "../types/PageContext"
 
-const BlogPostListing = ({ data, location, pageContext }) => {
+const BlogPostListing = ({ data, location, pageContext }: PageProps<PageData, PageContext>) => {
     const { query } = useContext(SearchContext)
     const { currentPage, limit, skip } = pageContext
-    const title = data.site.siteMetadata.title
-    const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
 
     const cleanTitle =
@@ -53,7 +54,7 @@ const BlogPostListing = ({ data, location, pageContext }) => {
             : `No posts found :(`
 
     return (
-        <Layout location={location} title={title} subtitle={subtitle}>
+        <Layout location={location}>
             {currentPage !== 1 && (
                 <ColoredTitle
                     title={`🔢 ${cleanTitle}`}
@@ -75,10 +76,8 @@ const BlogPostListing = ({ data, location, pageContext }) => {
                 </div>
             )}
             <SEO
-                frontmatter={{
-                    title: cleanTitle,
-                    description: cleanDescription,
-                }}
+                title={cleanTitle}
+                description={cleanDescription}
             />
             <div
                 style={{
@@ -167,6 +166,7 @@ export const blogListQuery = graphql`
                 description
                 subtitle
                 subsubtitle
+                subsubsubtitle
             }
         }
         allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {

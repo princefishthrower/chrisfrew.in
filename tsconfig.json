@@ -16,5 +16,6 @@
         "resolveJsonModule": true
     },
     "include": ["./src/**/*"],
-    "exclude": ["node_modules"]
+    // ignore snippets and node modules
+    "exclude": ["node_modules", "./src/content/snippets/**/*"]
 }

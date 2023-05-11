@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useState } from "react"
-import { CookiesProvider } from "react-cookie"
 import Size from "../../enums/Size"
 import ConfettiContainer from "./ConfettiContainer"
 import ThemeSwitcher from "./ThemeSwitcher"

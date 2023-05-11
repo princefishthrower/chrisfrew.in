@@ -1,11 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { BioSharedText } from "./BioSharedText"
 import { SignatureText } from "./SignatureText"
-import { AvatarPicture } from "../../utils/AvatarPicture"
 import { BioLead } from "./BioLead"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Bio() {
+    const data = useStaticQuery(graphql`
+        query YouTubeQuery {
+            youtube: file(relativePath: { eq: "youtube.png" }) {
+                childImageSharp {
+                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                }
+            }
+        }
+    `)
+
     return (
         <>
             <div
@@ -18,7 +28,11 @@ export default function Bio() {
                     marginBottom: "1rem",
                 }}
             >
-                <AvatarPicture />
+                <GatsbyImage
+                    className="title-youtube-picture"
+                    image={data.youtube.childImageSharp.gatsbyImageData}
+                    alt={"Chris on Full Stack Craft's YouTube channel."}
+                />
             </div>
             <div
                 style={{
@@ -29,13 +43,13 @@ export default function Bio() {
                     zIndex: 10, // for canvas issue
                 }}
             >
-                <BioLead/>
-                <BioSharedText/>
+                <BioLead />
+                <BioSharedText />
                 <p>
                     You can checkout more about my company, SaaS products, and
                     site portfolio on <Link to="/chris">my bio page</Link>.
                 </p>
-                <SignatureText/>
+                <SignatureText />
             </div>
         </>
     )

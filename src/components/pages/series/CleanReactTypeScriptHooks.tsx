@@ -3,10 +3,8 @@ import PostListingType from "../../../enums/PostListingType"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import { FilterableAndSortablePostsWidget } from "../../utils/FilterableAndSortablePostsWidget/FilterableAndSortablePostsWidget"
 
-export interface ICleanReactTypeScriptHooksProps {}
-
 export function CleanReactTypeScriptHooks(
-    props: ICleanReactTypeScriptHooksProps
+
 ) {
     return (
         <>

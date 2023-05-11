@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import { Language } from "prism-react-renderer"
 import * as React from "react"
 import { useState } from "react"
 import URLSearchParamValue from "../../../enums/URLSearchParamValue"
@@ -9,7 +8,7 @@ export interface ISnippetInfo {
     fileLabel: string
     code: string
     usageCode?: string
-    language: Language | "csharp"
+    language: string
 }
 
 export interface ISeenInInfo {

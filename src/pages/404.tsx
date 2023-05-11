@@ -1,23 +1,20 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
 import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import ConfettiContainer from "../components/utils/ConfettiContainer"
+import type { PageProps } from "gatsby"
+import { PageData } from "../types/PageData"
 
-export default function NotFoundPage(props) {
-    const { data, location } = props
-    const title = data.site.siteMetadata.title
-    const description = data.site.siteMetadata.description
-
+export default function NotFoundPage(props: PageProps<PageData>) {
+    const { location } = props
     return (
         <>
             <Layout
                 location={location}
-                title={title}
-                description={description}
             >
-                <SEO frontmatter={{title: "Not Found", description: "The site you are requesting on Chris' Full Stack Blog was not found."}} />
+                <>
+                <SEO title="Not Found" description="The site you are requesting on Chris' Full Stack Blog was not found." />
                 <h1 style={{ textAlign: "center" }}>Not Found!</h1>
                 <h2 style={{ textAlign: "center" }}>
                     Yay! You get some confetti!
@@ -32,6 +29,7 @@ export default function NotFoundPage(props) {
                         </Link>
                     </b>
                 </p>
+                </>
             </Layout>
             <ConfettiContainer />
         </>

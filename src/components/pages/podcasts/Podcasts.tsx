@@ -2,9 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 
-export interface IPodcastsProps {}
-
-export function Podcasts(props: IPodcastsProps) {
+export function Podcasts() {
     return (
         <>
             <ColoredTitle title="🎙️ Podcasts" />

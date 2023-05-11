@@ -9,13 +9,6 @@ export function AvatarPicture() {
 
     const data = useStaticQuery(graphql`
         query AuthorQuery {
-            site {
-                siteMetadata {
-                    author {
-                        name
-                    }
-                }
-            }
             avatar: file(relativePath: { eq: "avatar.jpg" }) {
                 childImageSharp {
                     gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
@@ -50,8 +43,6 @@ export function AvatarPicture() {
         }
     `)
 
-    const firstName = data.site.siteMetadata.author.name.split(" ")[0]
-
     const resolveAvatarData = (): [ReactNode, string] => {
         const now = new Date()
         const year = now.getFullYear()
@@ -67,7 +58,7 @@ export function AvatarPicture() {
         // and before January 6th (the epiphany AKA three kings day)
         // render the christmas avatar!!!
         if (now <= epiphany || now >= new Date(`${year}-11-28`)) {
-            const titleAndAlt = `${firstName} is in the holiday spirit!`
+            const titleAndAlt = `Chris is in the holiday spirit!`
 
             return [
                 <GatsbyImage
@@ -83,7 +74,7 @@ export function AvatarPicture() {
         // between january 6th and march 17th (saint patricks day)
         // render the saint patrick's day avatar!
         if (now >= epiphany && now <= saintPatricksDay) {
-            const titleAndAlt = `${firstName} is thinking about St. Patrick's Day!`
+            const titleAndAlt = `Chris is thinking about St. Patrick's Day!`
 
             return [
                 <GatsbyImage
@@ -103,7 +94,7 @@ export function AvatarPicture() {
         // This one is a bit more complex - easter does not have a fixed date
         // between saint patricks day and easter, render bunny ears avatar
         if (now >= saintPatricksDay && now <= easter) {
-            const titleAndAlt = `${firstName} is thinking about Easter!`
+            const titleAndAlt = `Chris is thinking about Easter!`
             return [
                 <GatsbyImage
                     onMouseEnter={() => setShowNormalAvatar(true)}
@@ -121,7 +112,7 @@ export function AvatarPicture() {
         // june, july and august - summer holiday
         if (now >= firstOfJune && now <= lastOfAugust) {
             console.log('found summer chill picture')
-            const titleAndAlt = `${firstName} is in summer chill mode!`
+            const titleAndAlt = `Chris is in summer chill mode!`
             return [
                 <GatsbyImage
                     onMouseEnter={() => setShowNormalAvatar(true)}
@@ -137,7 +128,7 @@ export function AvatarPicture() {
 
         // all of october
         if (now >= firstOfOctober && now <= lastOfOctober) {
-            const titleAndAlt = `${firstName} is in zombie hacker mode for Hacktoberfest!`
+            const titleAndAlt = `Chris is in zombie hacker mode for Hacktoberfest!`
             return [
                 <GatsbyImage
                     onMouseEnter={() => setShowNormalAvatar(true)}
@@ -152,7 +143,7 @@ export function AvatarPicture() {
         }
 
         // default: return normal avatar
-        const titleAndAlt = firstName
+        const titleAndAlt = "Chris"
         return [
             <GatsbyImage
                 onMouseEnter={() => setShowNormalAvatar(true)}

@@ -3,7 +3,7 @@ import { generateTagURI } from "./generateTagURI"
 import { getSanitizedTagsFromEdges } from "./getSanitizedTagsFromEdges";
 import { getUniqueTagsFromEdges } from "./getUniqueTagsFromEdges"
 
-export const getTagDataFromEdges = (edges): Array<ITagData> => {
+export const getTagDataFromEdges = (edges: any): Array<ITagData> => {
 
     const uniqueTags = getUniqueTagsFromEdges(edges);
     const allSanitizedTags = getSanitizedTagsFromEdges(edges);
