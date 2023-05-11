@@ -18,12 +18,23 @@
     height: 300px;
 }
 
+.title-youtube-picture {
+    display: block;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+}
+
 @media only screen and (max-width: $mediumOffset) {
     .title-container {
         flex-wrap: wrap;
         justify-content: center;
     }
     .title-avatar-picture {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .title-youtube-picture {
         max-width: 250px;
         max-height: 250px;
     }

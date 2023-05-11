@@ -1,16 +1,20 @@
-import React from "react"
+import React, { PropsWithChildren } from "react"
 import { Nav } from "./Nav/Nav"
 import { Footer } from "./Footer/Footer"
 import { Header } from "./Header/Header"
 import { CookiesProvider } from "react-cookie"
-import EmailForm from "../utils/EmailForm"
 import { LaptopSubscriber } from "./LaptopSubscriber/LaptopSubscriber"
 import { AnimationType, usePleaseStay } from "react-use-please-stay"
 import BodyClassName from "react-body-classname"
 import ThemeBodyClass from "../../enums/ThemeBodyClass"
+import { PageProps } from "gatsby"
 
-export default function Layout(props) {
-    const { children, location } = props
+export interface ILayoutProps {
+    location: PageProps["location"]
+}
+
+export default function Layout(props: PropsWithChildren<ILayoutProps>) {
+    const { location, children } = props
     usePleaseStay({
         titles: [
             "Chris'",
@@ -20,7 +24,7 @@ export default function Layout(props) {
         ],
         interval: 1000,
         animationType: AnimationType.LOOP,
-        faviconLinks: [
+        faviconURIs: [
             "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_left.png",
             "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_down.png",
             "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_right.png",

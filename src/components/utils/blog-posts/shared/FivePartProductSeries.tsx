@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-export default function FivePartProductSeries(props) {
+
+export interface IFivePartProductSeriesProps {
+    dontLinkURL: string
+    isProductPage: boolean
+}
+
+export default function FivePartProductSeries(props: IFivePartProductSeriesProps) {
     const { dontLinkURL, isProductPage } = props
     const thisPostText = "(This Post!)"
 

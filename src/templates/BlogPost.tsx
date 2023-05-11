@@ -31,8 +31,6 @@ export default function BlogPost({ location, pageContext, data, children }: any)
 
     const title = data.mdx.frontmatter.title
     const postDescription = data.mdx.frontmatter.description
-    const siteTitle = data.site.siteMetadata.title
-    const description = data.site.siteMetadata.description
     const { previous, next } = pageContext
     const tags = data.mdx.frontmatter.tags
         .split(",")
@@ -49,11 +47,10 @@ export default function BlogPost({ location, pageContext, data, children }: any)
     }
 
     return (
-        <Layout location={location} title={siteTitle} description={description}>
+        <Layout location={location}>
             <SEO
-                frontmatter={data.mdx.frontmatter}
+                title={title}
                 description={postDescription || data.mdx.excerpt}
-                isBlogPost={true}
             />
             <div className="blog-article-wrapper">
                 <article>

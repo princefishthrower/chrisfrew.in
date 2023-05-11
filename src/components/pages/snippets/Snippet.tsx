@@ -1,4 +1,4 @@
-import Highlight, { defaultProps } from "prism-react-renderer"
+import {Highlight} from "prism-react-renderer"
 import * as React from "react"
 
 export interface ISnippetProps {
@@ -9,7 +9,6 @@ export function Snippet(props: ISnippetProps) {
     const { code } = props
     return (
         <Highlight
-            {...defaultProps}
             code={code.default.toString()}
             language="typescript"
         >

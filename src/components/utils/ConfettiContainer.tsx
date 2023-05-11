@@ -21,19 +21,21 @@ const codeCharacters = [
     "=",
 ]
 
-function draw(ctx) {
-    if (!this.character) {
-        this.character =
+const draw = (context: CanvasRenderingContext2D) => {
+    const character =
             codeCharacters[Math.floor(Math.random() * codeCharacters.length)]
-    }
-    ctx.font = "normal 900 20pt Monaco"
-    ctx.fillText(this.character, 0, 0)
-    ctx.restore()
+    context.font = "normal 900 20pt Monaco"
+    context.fillText(character, 0, 0)
+    context.restore()
 }
 
 const duration = 2000;
 
-export default function ConfettiContainer(props) {
+export interface IConfettiContainerProps {
+    onAnimationComplete?: () => void;
+}
+
+export default function ConfettiContainer(props: IConfettiContainerProps) {
     const { onAnimationComplete } = props;
     const { width, height } = useWindowSize()
     const frictionTween = useTween('outQuad', duration, 0)

@@ -1,117 +1,38 @@
-import * as React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import PropTypes from "prop-types"
-import SchemaOrg from "./SchemaOrg"
-import config from "../../../config/website"
+import React, { PropsWithChildren } from 'react'
 
-// TODO: ensure this one matches the logic in component AvatarPicture
-// import defaultMetaImage from "../../images/avatar.jpg"
-import defaultMetaImage from "../../images/avatarSummerHoliday.png"
-
-function SEO({
-    siteMetadata: seo,
-    postData,
-    metaImage,
-    isBlogPost,
-    frontmatter: postMeta = postData.childMarkdownRemark.frontmatter || {},
-    title = postMeta.title || config.siteTitle,
-    description = postMeta.plainTextDescription ||
-        postMeta.description ||
-        seo.description,
-    image = `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
-    url = postMeta.slug
-        ? `${seo.canonicalUrl}${postMeta.slug}`
-        : seo.canonicalUrl,
-    datePublished = isBlogPost ? postMeta.datePublished : false,
-    lang = config.lang
-}) {
-    return (
-        <>
-            <Helmet htmlAttributes={{lang}}>
-                {/* General tags */}
-                <title>{title}</title>
-                <meta name="description" content={description} />
-                <meta name="image" content={image} />
-
-                {/* OpenGraph tags */}
-                <meta property="og:url" content={url} />
-                {isBlogPost ? (
-                    <meta property="og:type" content="article" />
-                ) : null}
-                <meta property="og:title" content={title} />
-                <meta property="og:description" content={description} />
-                <meta property="og:image" content={image} />
-                <meta property="fb:app_id" content={seo.social.fbAppID} />
-
-                {/* Twitter Card tags */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:creator" content={seo.social.twitter} />
-                <meta name="twitter:title" content={title} />
-                <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content={image} />
-            </Helmet>
-            <SchemaOrg
-                isBlogPost={isBlogPost}
-                url={url}
-                title={title}
-                image={image}
-                description={description}
-                datePublished={datePublished}
-                canonicalUrl={seo.canonicalUrl}
-                author={seo.author}
-                organization={seo.organization}
-                defaultTitle={seo.title}
-            />
-        </>
-    )
+export interface ISEOProps {
+  title: string
+  description: string
 }
 
-function SEOWithQuery(props: any) {
-    const {
-        site: { siteMetadata },
-    } = useStaticQuery(graphql`
-        {
-            site {
-                siteMetadata {
-                    title
-                    description
-                    canonicalUrl
-                    image
-                    author {
-                        name
-                    }
-                    organization {
-                        name
-                        url
-                        logo
-                    }
-                    social {
-                        twitter
-                        fbAppID
-                    }
-                }
-            }
-        }
-    `)
-    return <SEO siteMetadata={siteMetadata} {...props} />
-}
+export default function SEO(props: PropsWithChildren<ISEOProps>) {
+  const { title, description, children } = props
+  return (
+    <>
+      <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta name="description" content={description} />
 
-SEOWithQuery.propTypes = {
-    isBlogPost: PropTypes.bool,
-    postData: PropTypes.shape({
-        childMarkdownRemark: PropTypes.shape({
-            frontmatter: PropTypes.any,
-            excerpt: PropTypes.any,
-        }),
-    }),
-    metaImage: PropTypes.string,
-}
+      {/*  Google / Search Engine Tags  */}
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content="https://chrisfrew.in/meta.png" />
 
-SEOWithQuery.defaultProps = {
-    isBlogPost: false,
-    postData: { childMarkdownRemark: {} },
-    metaImage: null,
-}
+      <meta property="og:url" content="https://chrisfrew.in" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:image" content="https://chrisfrew.in/meta.png" />
+      <meta property="og:description" content={description} />
 
-export default SEOWithQuery
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:title" content={"Chris' Full Stack Blog"} />
+      <meta name="twitter:card" content="A professional full stack software engineering blog." />
+      <meta name="twitter:creator" content="Chris Frewin" />
+      <meta name="twitter:description" content={description} />
+
+      {/* Gumroad JS - 1990s style */}
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+      {children}
+    </>
+  )
+}

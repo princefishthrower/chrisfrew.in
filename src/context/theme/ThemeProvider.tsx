@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React, { useState, PropsWithChildren } from "react"
 import { useCookies } from "react-cookie"
 import { themeConfig } from "../../config/ThemeConfig";
 import Constants from "../../constants/Constants";
 import { ThemeContext } from "./ThemeContext"
-export default function ThemeProvider(props) {
+export default function ThemeProvider(props: PropsWithChildren<{}>) {
     const { children } = props;
     const [cookies] = useCookies([Constants.THEME_COOKIE_KEY])
     const [themeBodyClass, setThemeBodyClass] = useState(

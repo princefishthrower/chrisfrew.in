@@ -18,7 +18,7 @@ export default function LinkPreview(props: ILinkPreviewProps) {
         image: "",
     })
 
-    const getHostName = url => {
+    const getHostName = (url: string) => {
         var match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i)
         if (
             match != null &&
