@@ -18,7 +18,7 @@ module.exports = {
     subscriptionUrl: 'https://chrisfrew.us19.list-manage.com/subscribe/post?u=5f7289fbe97df30f673068826&amp;id=b1729bbdce',
   
     // siteFBAppID: '123456789', // Facebook App ID - Optional
-    userTwitter: '@fullStackChris_', // Twitter Username
+    userTwitter: '@wheelscreener', // Twitter Username
     ogSiteName: "Chris' Full Stack Blog", // Facebook Site Name
     ogLanguage: 'en_US',
   
@@ -27,8 +27,8 @@ module.exports = {
     backgroundColor: '#191919',
   
     // Social component
-    twitter: 'https://twitter.com/fullStackChris_',
-    twitterHandle: '@fullStackChris_',
+    twitter: 'https://twitter.com/wheelscreener',
+    twitterHandle: '@wheelscreener',
     github: 'https://github.com/princefishthrower/',
     linkedin: 'https://www.linkedin.com/in/frewinchristopher/',
     youtube: 'https://www.youtube.com/channel/UCLaNEXFBI1wpGtxvGVjfHKw',
