@@ -25,6 +25,7 @@ export interface IPreProps {
 }
 
 export const Pre = (props: IPreProps) => {
+    console.log("Pre props", props)
     const { codeString, language, pdfMode } = props
     const [isCopied, setIsCopied] = useState(false)
     const { themeBodyClass } = useContext(ThemeContext)

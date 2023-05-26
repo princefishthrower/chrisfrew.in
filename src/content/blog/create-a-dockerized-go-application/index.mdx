@@ -1,0 +1,667 @@
+---
+title: "Create a Dockerized Go Application - With a Cron Job, Slack Messaging, and Test the Whole Thing"
+description: "Docker, Golang, Cron Jobs, Slack messaging, AND Tests? Say no more, writing software doesn't get much better than this!"
+date: "2023-05-25"
+draft: false
+tags: go,golang,Docker,slack,testing,automation,CI/CD,Unit Tests
+---
+
+![Photo from: [Somkiat.cc](https://www.somkiat.cc/reload-with-go-and-docker/)](https://cdn-images-1.medium.com/max/2048/1*DuCudrkOX6hpjzKzAZipsQ.png)
+
+For the past few years, I've been using Go more and more to write backend software. I've been wanting to write a more in-depth article on Go for quite a while now and thought of a fun little application we could make together to illustrate some of the ways I write real-world production-ready Go apps.
+
+This article corresponds with [the e-book "Go for Real World Applications" on Gumroad](https://fullstackcraft.gumroad.com/l/go-for-real-world-applications)
+
+As well as the [full course on Udemy](https://www.udemy.com/course/draft/5345060/?referralCode=B3389465AD5035F656ED)
+
+And the course preview [on YouTube (first 9 of 19 lessons)](https://medium.com/media/d7eb3bfc598f1315b88dcaca5b13c69b)
+
+The [example repository, one branch per lesson, is on GitHub](https://github.com/princefishthrower/go-for-real-world-applications-course)
+
+This article is only an overview of all the details that are in the full course and book, which does not include:
+
+-Removing hardcoded variables and moving them to an environment file
+
+-Adding more fancy formatting and style to the Slack messages
+
+-Creating an automated CI/CD pipeline with Circle CI
+
+## Why Go?
+
+If you've read my blog or some of my other articles, you may have realized I am not any sort of language or framework evangelist — in fact, I try to stay language or framework agnostic: picking the right tool for the right job. However, there are many enticing reasons to consider adding Go to your stack:
+
+### 1. Go is extremely performant
+
+Reading files, mathematical operations, you name it- I'm often extremely impressed with the speeds at which Go operates and so far have never had to do deep dives on my code to improve performance — and even some of the stuff that I've built for [The Wheel Screener](https://wheelscreener.com) and other finance apps, I was doing 10,000+ options contract calculations *every second* with nearly no slowdown or latency on a fairly average 4 core machine.
+
+### 2. Go is extremely compact
+
+Go projects compile down to a single binary. That means no monster external files, a no-headache package system all held within go.mod , and that's it. For Dockerizing these apps, as we'll see later in this article, it's the perfect scenario.
+
+### 3. Go is extremely testable
+
+Go has a testing framework *built in*. This alone should signal to you what kind of language Go is — one to get stuff done and get stuff done effectively and robustly.
+
+### 4. Go is extremely API friendly
+
+Go also has JSON support for types, serializing, and deserializing (known as marshaling and unmarshalling in the Go world) right out of the box. Go is the only language I know that can do this, and if you've done API stuff in something like JavaScript or C# when there is no client library to use, you know the pain it can be to properly serialize and deserialize JSON payloads. (Perhaps Rust or some other newer languages have built-in JSON support as well — leave a note in the comments if this is true!)
+
+## What We're Going to Build
+
+So, I have hay fever. If you're one of the millions of people around the world with this annoying allergy, you may also know my pain :). In the northern hemisphere, it's a battle for me from about mid-May to mid-June every year. Luckily, where I live, in Austria, the Medizinische Universität Wien (Medical University of Vienna) has a neat website that predicts the "allergy risk" for the day, i.e. how much of the pollen is going to be in the air that day. (Things like rain and prevailing winds can actually reduce or increase the pollen in the air for a given day). I've sniffed around their website and found a few API calls that deliver this information. The first URL delivers an hourly risk level for the given day:
+
+    https://www.pollenwarndienst.at/index.php?eID=appinterface&action=getHourlyLoadData&type=zip&value=6800&country=AT&lang_id=0&pure_json=1&day=0
+
+and the response looks like this:
+
+```json
+{
+    "success": 1,
+    "result": {
+        "total": 8,
+        "dayrisk_personalized": false,
+        "hourly": [
+            5,
+            4,
+            4,
+            3,
+            5,
+            4,
+            3,
+            2,
+            3,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+        ]
+    }
+}
+```
+
+and the second gives the historical average and the actual pollen amounts that day:
+
+    https://www.pollenwarndienst.at/index.php?eID=appinterface&action=getCurrentChartData&poll_id=5&region_id=&zip=6800&season=2&lang_id=1&pure_json=1
+
+this one's response shape looks like this:
+
+```json
+{
+    "success": 1,
+    "results": [
+    {
+        "date": "2023-04-05",
+        "current": 0.4,
+        "average": 0.6,
+        "season": "false",
+        "datetime": 1680652800000
+    },
+    {
+        "date": "2023-04-06",
+        "current": 0.5,
+        "average": 0.7,
+        "season": "false",
+        "datetime": 1680739200000
+    },
+    {
+        "date": "2023-04-07",
+        "current": 0.6,
+        "average": 0.7,
+        "season": "false",
+        "datetime": 1680825600000
+    },
+    {
+        "date": "2023-04-08",
+        "current": 0.6,
+        "average": 0.7,
+        "season": "false",
+        "datetime": 1680912000000
+    },
+    {
+        "date": "2023-04-09",
+        "current": 0.5,
+        "average": 0.7,
+        "season": "false",
+        "datetime": 1680998400000
+    },
+    {
+        "date": "2023-04-10",
+        "current": 0.9,
+        "average": 0.8,
+        "season": "false",
+        "datetime": 1681084800000
+    }
+    ]
+}
+```
+
+However, it seems like the "current" value is typically delayed 4-5 days, so for real-time updates we'll have to rely on the hourly endpoint.
+
+## Requirements
+
+We're going to build an app that does the following:
+
+ 1. At a specified time, call the previously shown allergy API endpoints
+
+ 2. Parse the response from each call and format it into a nice human-readable message
+
+ 3. Send that message via Slack
+
+All clear? Let's build this thing!
+
+## Writing the App
+
+### Install Go
+
+First, you should ensure you have Go installed on your system. You may have it already, you can check by issuing:
+
+
+```shell
+go version
+```
+
+and you should get some sort of output similar to this:
+
+```shell
+go version go1.20.2 darwin/amd64
+```
+
+If you don't have Go installed yet, [you can install it for Mac, Linux, or Windows by following the documenation on the official Go site.](https://go.dev/doc/install)
+
+Now let's start building our app!
+
+### Scaffold The App
+
+I almost always forget how to do this in Go, and still think it is weird so I'll add it to this article as a reference. We'll create our Go app in a new folder called `allergycron/`. Then, we just need to initialize our module and we'll also create a new main.go file:
+
+```shell
+mkdir allergycron
+cd allergycron
+go mod init allergycron
+touch main.go
+```
+
+I'd probably then open up the whole project in Visual Studio code:
+
+```shell
+open .
+```
+
+and open up main.go to get ready to write code.
+
+### Cron Job
+
+Let's first add the cron job to our main.go file. For cron jobs in Go, I use the popular `github.com/robfig/cron/v3` library. Adding a cron for a specific timezone, (I'd like for Vienna time, AKA Central European Time or CET, at 08:00:00 AM), can be done like so:
+
+```go
+package main
+
+import (
+    "time"
+
+    "github.com/robfig/cron"
+)
+
+func main() {
+    // be sure to modify to run your desired timezone!
+    loc, err := time.LoadLocation("Europe/Vienna")
+    if err != nil {
+    panic(err)
+    }
+
+    cronJob := cron.NewWithLocation(loc)
+
+    cronJob.AddFunc("0 0 8 * * *", func() {
+
+    })
+
+    cronJob.Start()
+
+    // run forever
+    select {}
+}
+```
+
+The time zones are looked up from the IANA Time Zone database. You can check out [the names of all of them on Noda Time](https://nodatime.org/timezones). With the cron job configured in this fashion, it will run in your desired timezone, regardless of where it is deployed in the world (like to the cloud as we'll see later). The cron string itself is comprised of six separate elements: seconds, minutes, hours, day of month, month, and day of the week, [as specified in the cron godoc](https://pkg.go.dev/github.com/robfig/cron#hdr-CRON_Expression_Format).
+
+### HTTP Utility
+
+I'll be using [my generic HTTP function](https://medium.com/better-programming/golang-a-powerful-generic-function-to-make-any-http-request-b4d660834c10) to call the allergy API as well as sending the Slack message. This generic function is highly flexible, reusable, and is a staple in almost all of my Go codebases. We'll make a new folder `utils/` and add a file `make_http_request.go`:
+
+```go
+package utils
+
+import (
+    "encoding/json"
+    "fmt"
+    "io"
+    "log"
+    "net/http"
+    "net/url"
+    "strings"
+)
+
+// in the case of GET, the parameter queryParameters is transferred to the URL as query parameters
+// in the case of POST, the parameter body, an io.Reader, is used
+func MakeHTTPRequest[T any](fullUrl string, httpMethod string, headers map[string]string, queryParameters url.Values, body io.Reader, responseType T) (T, error) {
+    client := http.Client{}
+    u, err := url.Parse(fullUrl)
+    if err != nil {
+    return responseType, err
+    }
+
+    // if it's a GET, we need to append the query parameters.
+    if httpMethod == "GET" {
+    q := u.Query()
+
+    for k, v := range queryParameters {
+    // this depends on the type of api, you may need to do it for each of v
+    q.Set(k, strings.Join(v, ","))
+    }
+    // set the query to the encoded parameters
+    u.RawQuery = q.Encode()
+    }
+
+    // regardless of GET or POST, we can safely add the body
+    req, err := http.NewRequest(httpMethod, u.String(), body)
+    if err != nil {
+    return responseType, err
+    }
+
+    // for each header passed, add the header value to the request
+    for k, v := range headers {
+    req.Header.Set(k, v)
+    }
+
+    // optional: log the request for easier stack tracing
+    log.Printf("%s %s\n", httpMethod, req.URL.String())
+
+    // finally, do the request
+    res, err := client.Do(req)
+    if err != nil {
+    return responseType, err
+    }
+
+    if res == nil {
+    return responseType, fmt.Errorf("error: calling %s returned empty response", u.String())
+    }
+
+    responseData, err := io.ReadAll(res.Body)
+    if err != nil {
+    return responseType, err
+    }
+
+    defer res.Body.Close()
+
+    if res.StatusCode != http.StatusOK {
+    return responseType, fmt.Errorf("error calling %s:\nstatus: %s\nresponseData: %s", u.String(), res.Status, responseData)
+    }
+
+    var responseObject T
+    err = json.Unmarshal(responseData, &responseObject)
+
+    if err != nil {
+    log.Printf("error unmarshaling response: %+v", err)
+    return responseType, err
+    }
+
+    return responseObject, nil
+}
+```
+
+I won't go into the steps of this function here- if you are interested you can read about that in detail in [my other article published under Better Programming](https://betterprogramming.pub/golang-a-powerful-generic-function-to-make-any-http-request-b4d660834c10)
+
+### API Response Parsing
+
+Parsing the response payload is also little trouble, as we mentioned above, we just need to utilize Go's built-in JSON features when defining our response type. We'll first make a new folder called `allergy_api/` and create a new file called `call_allergy_api.go`. Let's first define the response types needed:
+
+```go
+package allergy_api
+
+type AllergyAPIResult struct {
+    Total int `json:"total"`
+    Hourly []int `json:"hourly"`
+}
+
+type AllergyAPIResponse struct {
+    Success int `json:"success"`
+    Result AllergyAPIResult `json:"result"`
+}
+```
+
+Interestingly, on the University's website only shows the 'risk' level from 0 to 4, but the API numbers range anywhere from 0 to 8, so the UI on the website is doing some sort of normalization of the data. For now we'll assume that the 'normalization' is simply dividing by 2 and rounding to the nearest integer:
+
+```go
+func GetHourlyLoadData() (*string, error) {
+    queryParameters := url.Values{}
+    queryParameters.Add("eID", "appinterface")
+    queryParameters.Add("action", "getHourlyLoadData")
+    queryParameters.Add("type", "zip")
+    queryParameters.Add("zip", "6800")
+    queryParameters.Add("country", "AT")
+    queryParameters.Add("pure_json", "1")
+
+    response, err := utils.MakeHTTPRequest("https://www.pollenwarndienst.at/index.php", "GET", nil, queryParameters, nil, HourlyLoadResponse{})
+    if err != nil {
+    return nil, err
+    }
+
+    // loop over hours and calculate the average
+    averageLoad := 0
+    for _, hour := range response.Result.Hourly {
+    averageLoad += hour
+    }
+    averageLoad = averageLoad / len(response.Result.Hourly)
+
+    scaledAverageLoad := averageLoad / 2
+
+    formattedMessage := fmt.Sprintf("The average pollen load for today is %d", scaledAverageLoad)
+
+    return &formattedMessage, nil
+
+}
+```
+
+And for the current chart data endpoint:
+
+```go
+func GetCurrentChartData() (*string, error) {
+    queryParameters := url.Values{}
+    queryParameters.Add("eID", "appinterface")
+    queryParameters.Add("action", "getCurrentChartData")
+    queryParameters.Add("poll_id", "5")
+    queryParameters.Add("zip", "6800")
+    queryParameters.Add("season", "2")
+    queryParameters.Add("pure_json", "1")
+
+    // use the utils.MakeHTTPRequest function to call the allergy api and return the result
+    response, err := utils.MakeHTTPRequest("https://www.pollenwarndienst.at/index.php", "GET", nil, queryParameters, nil, CurrentChartDataResponse{})
+    if err != nil {
+    panic(err)
+    }
+
+    // get the average historical by matching the YYYY-MM-DD value
+    currentYYYYMMDD := time.Now().Format("2006-01-02")
+    averageHistorical := 0.0
+    for _, result := range response.Results {
+    if result.Date == currentYYYYMMDD {
+    averageHistorical = result.Average
+    }
+    }
+
+    scaledAverageHistorical := int(math.Round(averageHistorical / 2.0))
+
+    formattedMessage := fmt.Sprintf("Historically, the average pollen load for today is %d", scaledAverageHistorical)
+
+    return &formattedMessage, nil
+}
+```
+
+### Slack Messaging
+
+Now let's get to the final step, messaging the predicted "allergy risk" for the day. We'll create a new file under the `utils/` folder called `send_slack_message.go`:
+
+```shell
+cd utils
+touch send_slack_message.go
+```
+
+Add the following to send_slack_message.go :
+
+```go
+package utils
+
+import (
+    "bytes"
+    "encoding/json"
+    "os"
+)
+
+func SendSlackMessage(message string) error {
+    body, err := json.Marshal(map[string]string{"text": message})
+    if err != nil {
+    return err
+    }
+
+    MakeHTTPRequest(os.Getenv("SLACK_WEBHOOK_URL"), "POST", nil, nil, bytes.NewBuffer(body), "")
+
+    return nil
+}
+```
+
+This code requires that we have SLACK_WEBHOOK_URL defined in our environment. You can create and set up your Slack app at [api.slack.com](https://api.slack.com)
+
+### Hooking it All Together
+
+Let's get back to main.go and connect all the functions we've written. Within the cron function, add the following:
+
+```go
+dailyAverageMessage, err := allergy_api.GetHourlyLoadData()
+if err != nil {
+    panic(err)
+}
+
+historicalAverageMessage, err := allergy_api.GetCurrentChartData()
+if err != nil {
+    panic(err)
+}
+
+slackMessage := *dailyAverageMessage + "\n" + *historicalAverageMessage
+err = utils.SendSlackMessage(slackMessage)
+if err != nil {
+    panic(err)
+}
+// log the message to the console as well
+println("Successfully sent Slack message: " + slackMessage)
+```
+
+Note here we also log the constructed Slack message to the console for debugging.
+
+### Run It!
+
+Let's try and run what we've built so far! To test 'immediately', you can modify the cron message to include the next minute and hour, i.e. for 10:35:00 AM:
+
+```go
+cronJob.AddFunc("0 35 10 * * *", func() {
+    // ...
+})
+```
+
+and then run the main script:
+
+```shell
+go run main.go
+```
+
+Almost immediately after the clock hits 10:35:00 in the timezone we specified, we should see our Slack message in the console, and receive our Slack message on Slack!
+
+```
+2023/05/12 10:47:04 Successfully sent Slack message: The average pollen load for today is 3
+Historically, the average pollen load for today is 4
+```
+
+### Tests
+
+Let's write a test for each of our functions. I like to put all my tests in a separate folder, let's call it — you guessed it — `tests/` :
+
+```shell
+mkdir tests
+```
+
+Within this folder, we'll make a test for each of the functions we've made:
+
+```shell
+touch allergy_api_test.go
+touch send_slack_message_test.go
+```
+
+**Note that the file name must end with _test.go to be considered a valid test file by Go.**
+
+We won't make a test function explicitly for `MakeHTTPRequest`, because that function is called by the others that we are testing.
+
+As mentioned, Go has testing built-in, and it's only a matter of importing the testing package and passing it to our test function:
+
+```go
+package tests
+
+import "testing"
+
+func TestAllergyApi(t *testing.T) {
+
+}
+```
+
+and:
+
+```go
+package tests
+
+import "testing"
+
+func TestSendSlackMessage(t *testing.T) {
+
+}
+```
+
+**Note that the name of the function must start with the capitalized word 'Test' to be considered a valid test function by Go.**
+
+Now, within our test files, we call the function and see if there is an error or not:
+
+```go
+func TestAllergyApi(t *testing.T) {
+    message, err := allergy_api.GetHourlyLoadData()
+    if err != nil {
+    t.Errorf("Error getting hourly load data: %s", err)
+    }
+    if message == nil {
+    t.Errorf("Error getting hourly load data: message is nil")
+    }
+    if *message == "" {
+    t.Errorf("Error getting hourly load data: message is empty")
+    }
+
+    message, err = allergy_api.GetCurrentChartData()
+    if err != nil {
+    t.Errorf("Error getting current chart data: %s", err)
+    }
+    if message == nil {
+    t.Errorf("Error getting current chart data: message is nil")
+    }
+    if *message == "" {
+    t.Errorf("Error getting current chart data: message is empty")
+    }
+}
+```
+
+and for sending the Slack messages:
+
+```go
+func TestSendSlackMessage(t *testing.T) {
+    err := utils.SendSlackMessage("Test message!")
+    if err != nil {
+    t.Errorf("Error sending Slack message: %s", err)
+    }
+}
+```
+
+Our tests are done. To run our tests, we can use Go's built-in test command:
+
+```go
+go test -p 1 -v ./tests
+```
+
+The flags here are as follows:
+
+* -p 1: Sets the number of parallel test workers to 1. This means that Go will run only one test at a time. If you have multiple tests, they will run one after the other, in serial.
+
+* -v: Enables verbose output. When you run your tests with this flag, Go will print detailed information about each test, including its name, its status (pass or fail), and any error messages.
+
+Hopefully, if we're any good at our jobs, you should see output like the following:
+
+```
+=== RUN   TestAllergyApi
+--- PASS: TestAllergyApi (1.17s)
+=== RUN   TestSendSlackMessage
+--- PASS: TestSendSlackMessage (0.00s)
+PASS
+ok      allergycron/tests        1.498s
+```
+
+### Dockerize the Application
+
+Putting our whole app in a Docker container is as easy as defining aDockerfile and docker-compose.yml :
+
+```
+FROM golang:1.20-alpine
+
+WORKDIR /app
+COPY . .
+
+RUN go build -o /allergycron
+
+CMD [ "/allergycron" ]
+```
+
+and:
+
+```yaml
+    version: "3.9"
+    services:
+      allergycron:
+        build: .
+        restart: unless-stopped
+```
+
+With those files created, you can build and run the docker container with either:
+
+```shell
+docker compose build --no-cache && docker compose up -d
+```
+
+Or:
+
+```shell
+docker-compose build --no-cache && docker-compose up -d
+```
+
+Depending on if you have docker or docker-compose installed. After a bit of build output, you should finally see something like this:
+
+```
+[+] Running 2/2
+    ⠿ Network "allergycron_default"  Created                                                                     4.8s
+    ⠿ Container allergycron_allergycron_1    Started
+```
+
+Check that your application is running with:
+
+```shell
+docker ps -a
+```
+
+and you should see something like this:
+
+```shell
+CONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS                      PORTS                    NAMES
+b35e7c28d564   alergycron_allergycron          "/allergycron"           21 seconds ago   Up 18 seconds                                        alergycron_allergycron_1
+```
+
+### Done! Fin! Finito!
+
+In just 20 minutes, you've got a Go application that is Dockerized, with a cron job sending Slack messages that calls an API, parses the response, and sends you a summarized Slack message! Oh, the wonders of Go! Hopefully, as I've pointed out throughout the article, this application would be easy to refactor to ping a different API URL and send a different type of Slack message.
+
+## Thanks!
+
+I hope this article enticed you to try out the powers of Go for yourself — and showed you with what ease we can create Dockerized, tested, and robust backend applications!
+
+-Chris 🍻
