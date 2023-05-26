@@ -4,10 +4,76 @@ import { Fade } from "react-awesome-reveal"
 import { ColoredTitle } from "../../utils/ColoredTitle"
 import Sparkles from "../../utils/Sparkles"
 
-export function Book() {
+export function Books() {
     return (
         <>
-            <ColoredTitle title="📘 Full Stack SaaS Product Cookbook" />
+            <ColoredTitle title="Go for Real World Applications" />
+            <Fade
+                triggerOnce={true}
+                direction="down"
+                delay={1000}
+                style={{ textAlign: "center" }}
+            >
+                <StaticImage
+                    src="../../../images/go-book.jpg"
+                    placeholder="blurred"
+                    alt="Go for Real World Applications Book"
+                    width={400}
+                    height={400}
+                />
+            </Fade>
+            <h2>Learn to write Go from building a real app!</h2>
+            <p>
+                Go is a powerful backend language that is an asset to any
+                developer's toolkit. It is extremely performant, a relatively
+                easy language in terms of syntax, and has many valuable features
+                like testing and JSON serialization and deserialization built
+                in.  In this practical, hands-on, step-by-step style book, we'll
+                build a fully functioning Go application from complete scratch
+                along these steps:
+            </p>
+            <ul>
+                <li>Scaffolding the Go application and writing main.go</li>
+                <li>Writing cron jobs in Go</li>
+                <li>Writing a powerful generic HTTP function</li>
+                <li>
+                    Using that HTTP function to call an API and serialize the
+                    response into Go object's using Go
+                </li>
+                <li>
+                    Use that HTTP function to POST messages to a Slack channel
+                </li>
+                <li>Write tests using Go's built in testing module</li>
+                <li>
+                    Dockerize the application so that it can be run with docker
+                    compose
+                </li>
+                <li>
+                    Round off the book by crafting a complete CI/CD pipeline
+                    that first builds and tests our application, then Dockerizes
+                    and uploads the application to Docker Hub
+                </li>
+                <li>
+                    We'll see that once the Circle CI pipeline is setup, we can
+                    control the entire pipeline process through pushing to a git
+                    branch alone, and never have to manually do any sort of
+                    configuration or commands for our deploys
+                </li>
+            </ul>
+            <p>
+                By the end of the book, you will have the confidence and know
+                how to build Go applications from start to finish - including
+                testing, Dockerizing, and deploying them!
+            </p>
+            <p>
+                <a
+                    href="https://fullstackcraft.gumroad.com/l/go-for-real-world-applications"
+                    target="_blank"
+                >
+                    Buy the book on Gumroad for $25
+                </a>
+            </p>
+            <ColoredTitle title="Full Stack SaaS Product Cookbook" />
             <Fade
                 triggerOnce={true}
                 direction="down"
@@ -17,7 +83,7 @@ export function Book() {
                 <StaticImage
                     src="../../../images/saas-cookbook.png"
                     placeholder="blurred"
-                    alt="Chris"
+                    alt="Full Stack SaaS Product Cookbook Cover"
                     width={400}
                     height={400}
                 />
@@ -111,19 +177,6 @@ export function Book() {
                     </Sparkles>
                 </a>
             </h2>
-            {/* Uncomment here on july 2nd! */}
-            {/* <p>and</p>
-            <h2 style={{ textAlign: "center" }}>
-                <a
-                    href="https://www.amazon.com/dp/B0949HXN63"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Sparkles>
-                        Paperback to be launched with Kindle E-Book (July 2nd)!
-                    </Sparkles>
-                </a>
-            </h2> */}
             <p>
                 I've also created a{" "}
                 <a

@@ -57,10 +57,10 @@ export function NavLinks() {
                     offsetArray[3]
                 )}
             </Link>
-            <Link to="/book">
+            <Link to="/books">
                 {colorizeStringBySeparator(
                     themeBodyClass,
-                    "Book",
+                    "Books",
                     " ",
                     offsetArray[4]
                 )}

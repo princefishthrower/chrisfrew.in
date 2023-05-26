@@ -30,7 +30,6 @@
     "gatsby-source-graphql": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "katex": "^0.16.4",
-    "mdx-utils": "^0.2.0",
     "netlify-cli": "^13.1.2",
     "prism-react-renderer": "^2.0.4",
     "prismjs": "^1.29.0",
