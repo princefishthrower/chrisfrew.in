@@ -14,7 +14,7 @@ export function Signature() {
             setLeaveVisible(true);
             setTimeout(() => {
                 setAlreadyTriggered(true);
-            }, 8000)
+            }, 6000)
         }
     }, [isVisible])
 
