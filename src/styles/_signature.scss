@@ -37,23 +37,23 @@
         animation-iteration-count: 1;
         &.first {
             animation-delay: 0s;
-            animation-duration: 2s;
+            animation-duration: 1s;
         }
         &.second {
-            animation-delay: 2.5s;
-            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-duration: 1s;
         }
         &.third {
-            animation-delay: 3s;
-            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-duration: 1s;
         }
         &.fourth {
-            animation-delay: 4.5s;
-            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-duration: 1s;
         }
         &.fifth {
-            animation-delay: 6s;
-            animation-duration: 2s;
+            animation-delay: 4s;
+            animation-duration: 1s;
         }
     }
 }
