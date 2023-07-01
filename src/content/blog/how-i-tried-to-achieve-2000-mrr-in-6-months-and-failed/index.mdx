@@ -1,0 +1,109 @@
+---
+title: How I Tried to Achieve $2000 MRR in 6 Months and Failed
+description: My story of everything I built, all that I tried, and how it all played out.
+date: "2023-07-01"
+draft: false
+tags: Yearly Goals, Startup, Life, Go, Golang, TypeScript, React
+---
+
+## The Plan
+
+I gave myself from January 1st, 2023 until July 1st, 2023 — exactly half of a year — to try and reach $2000 monthly recurring revenue.
+
+## Why $2000 Per Month?
+
+I calculated my health insurance, rent, food costs, and other general costs of living per month, and found that my bare minimum for survival was this $2000 — keep in mind this is my benchmark for surviving — this does not include any extra expenses like eating out, entertainment (concerts/parties/etc.) or traveling.
+
+This post is also going to suffice as a log of everything I've accomplished since January.
+
+## The Bye-Bye & Start
+
+Since January, after a sort of cold shoulder / abrupt end to the startup I was working for, I was extremely motivated to make it on my own, as I thought I had the skills to do it. Perhaps I _did_ have the skills, but as you read on, skills unfortunately aren't the only thing you need to make it as an independent developer or otherwise solo freelancer.
+
+A lot of my friends say, "Well, you went into this startup fully knowing the risks!". Sure, this is easy to say from the outside, but put yourself in my shoes, working overtime and long hours for almost 2 years, ultimately never given a raise or improved compensation of any sort, and only to be given a cold shoulder / no sort of goodbye in the end when funding dried up. I was left embittered, to say the least. Thus the challenge began. I was determined to make it out on my own.
+
+## Project \#1: CodeVideo
+
+As an almost sort of rebound project after my time at InClub, I built [CodeVideo](https://codevideo.io) — a way to convert code snippets into animated videos.
+
+Ultimately, I didn't really know how to monetize this product and it's currently on hold — but I still think it's an interesting idea! One very cool takeaway from CodeVideo is that I was able to achieve an automated 100% code coverage with tests on the project every time it was deployed.
+
+## Project \#2: Newline Course: Craft a Custom React Hook npm Package with React and TypeScript
+
+In an exclusive partnership with Newline, I created a course []"Craft a Custom React Hook npm Package with React TypeScript"](https://www.newline.co/courses/react-use-please-stay-with-react-and-typescript).
+
+This reminded me again that with a bit of effort, nice courses take me only about 3–4 weeks to build. This was the first course where I had a full script written in markdown files before I even began recording video — this greatly increased my video recording and editing efficiency.
+
+## Project \#3: Revitalizing and Revamping The Wheel Screener
+
+Following a friend's suggestion, I also restyled [The Wheel Screener](https://wheelscreener.com) to be easier on the eyes and easier to use. (Full disclosure: I basically copied the styles from [CoinMarketCap](https://coinmarketcap.com/), as per my friend's suggestion!) I also gave the backend a much-needed upgrade to .NET 6, added some additional tests, and automated the deployment pipeline. I've become more and more satisfied with The Wheel Screener's infrastructure, as I've had nearly no downtime or major failures with it in the past year. It requires a maximum of 5 minutes of my time per day and is one of my key SaaS products.
+
+## Project \#4: 0DTE VIX and S&P Options Exposure Data Crunching
+
+After revamping The Wheel Screener, and taking a look at how the market had essentially gone nowhere in the past few years, I returned to fintwit (read: **Fin**ancial **Twi**tter) and went headlong into the markets and trading again. I hadn't touched the markets since a massively discouraging 10K loss in GME in 2021, thinking that was finally it for my trading career. However, I got sucked into the community and everything that was going on, with new zero-expiration (0DTE) options on major indices and lots of new tools being developed. I saw via some live streams that there were audio-based tools that fed the news, or 'market squawk'
+
+## Project \#5: Squawk Market
+
+Seeing little interest in my new VIX or exposure tools, which were initially offered for free, I decided to build my own version of these market squawk tools, that would aggregate news from a variety of sites. [Read here about the release of Squawk Market](https://chrisfrewin.medium.com/we-built-an-ai-powered-market-squawk-service-thats-50-cheaper-than-competitors-171430fbfa30) and [ultimately the death of Squawk Market here](https://chrisfrewin.medium.com/tales-from-the-software-graveyard-the-birth-and-death-of-squawk-market-649c6a119e1f).
+
+However, this project was still a 'win' in my book, as I discovered and developed a variety of very cool Golang code and tools that may be useful later.
+
+## Project \#6: Algorithmic S&P Futures Trend Following Trader
+
+Ultimately with my new options style scalping, I had some initial successes and initial failures, but I think ultimately I am still missing any sort of edge in the markets and was growing weary from watching screens for hours and hours per day. Naturally, my software brain went into brainstorming ways in which I could automate this (often) boring process.
+
+I'd never prior understood or traded futures before (and was mostly scared of them, hearing horror stories), but I learned quite a lot about them for their API purposes and tax advantages. I ended up with futures because I didn't want to risk $25,000+ (what you would need for a high-frequency algorithm to trade stocks).
+
+After opening a futures account with Tradovate (no affiliation) I built what I now know (didn't know at the time — even more credit to my ignorance) was a rudimentary trend-following algorithm. This algorithm made me a lot of money at the beginning of April and subsequently lost me a lot of money at the end of April and early May. If I had read all the books and literature I had since read for my blog posts for The Wheel Screener, I'd probably have realized an algorithm developed in a few months with no discretionary (i.e. by hand) trading experience or discretionary-styled rules (i.e., my algorithm was purely technically implemented) would fail miserably in the long run.
+
+Ironically, despite my initial ignorance and forays with futures, I'm starting to love futures for a lot of the advantages they provide:
+
+-unlimited day trades with no pattern day trading rule
+
+-tax advantages on capital gains
+
+-Can trade micro contracts with as little as $50, and swing trade them (holding positions overnight or across multiple days) for as little as $1232 - very little risk to large amounts of capital, you can focus on your trading process, strategy, and discipline, and try to grow your small account
+
+-in the case of E-mini contracts, immense leverage (50:1)
+
+and, particularly for S&P500 futures:
+
+-nearly 24/7 liquidity — no worrying about poor or no fills and huge bid-ask spreads on your trades as is sometimes the case with other leveraged instruments like options
+
+My mind has been opened immensely to the power (and great responsibility) of these instruments. S&P futures have become my instrument of choice going forward for trading, though I'm still learning my place as a trader and trying to develop an edge.
+
+## Project \#7: Book & Video Course: Go For Real-World Applications
+
+Go has slowly replaced C# (and the .NET framework altogether) as my go-to backend language. Go is super performant, and includes things like JSON serialization and deserialization, as well as testing, out of the box. Since I've been using Go so often, I wanted to share my learnings and created a course in which I show how one can build a full stack cron-style backend app that sends daily messages via Slack, and how this can be Dockerized, as well as include tests and then put the entire building, testing, and deploying process in a Circle CI pipeline.
+
+<img style={{width:'100%'}} src="https://cdn-images-1.medium.com/max/2560/1*oozQNxTLCiqEUO4BAXBq3A.jpeg" alt="The Go for Real World Applications Book"/>
+
+This was also the first video-based course that I released alongside an identical book. This is a win-win scenario: writing the book first before making the video-based lessons helps speed up the video recording process immensely, as I have a sort of written "script" to go off of. Additionally, anyone wanting to take the course now also has the opportunity to buy the book instead of the video-based course. I plan on sticking with this pattern of making both a book and video course together for all future courses I make.
+
+## Project \#8: Near Weekly Blog Posts for The Wheel Screener
+
+As an additional attempt to bring more traffic to The Wheel Screener, I began writing near-weekly blog posts in hopes to bring more interest to the platform and more traffic to the site overall. Most recently have been our "Trader's Summer Reading Series" posts that highlight and rate market and trading-based books for traders looking to improve their trading techniques and psychology.
+
+I'm also thinking of finally getting into TikTok marketing, as I have some comedic ideas that may attract some younger investors looking to learn about options trading.
+
+## Project #9: Day Trading Prop Challenge
+
+Following my failures with the rudimentary algorithmic trading strategy, I was adamant about learning more about markets inside and out. Through Apex Funding (no affiliation) for a monthly subscription fee, you are able to work with a demo 50K account and try to achieve $3,000 in profits without exceeding a trailing drawdown of $2,500 in losses. This is extremely challenging and I'm still trying to pass this account. I was extremely close to passing this 'evaluation stage' on my first account when a streak of bad trades caused me hit the trailing drawdown. I've since gotten a new account and am looking forward to trying again. I'm not going to give up here until I have a strategy that I can feel confident in and trust for all trades.
+
+## What Went Wrong?
+
+Nine whole projects! With all these projects and courses successfully completed — what went wrong?! I think mainly the issue is the concept of "if you build it, they will come" no longer applies to our new-tool-or-app-everyday modern world. You have to not only market, but you also have to market really f**** well to find exactly the customers you want to use your product. This is still an area I am exploring and learning about.
+
+As for the trading areas, profitable trading is *extremely* difficult. I'll tell you, even *if* you have a system which your sure is profitable (hint: I'm not sure I have one!) you *will* still struggle when you see any drawdowns or losses. You begin to question your system, your time, and your decisions in general — It's human nature, and profitable day trading is a profession of combating this human nature on a daily basis.
+
+## In Conclusion...
+
+I accomplished and built a lot of products since January! The main problem was that not enough customers/learners/clients were willing to pay for my products, and/or I just didn't market them enough. I'll likely return eventually to freelancing and teaching full-time again at some point, but for now, it just isn't in the monetary cards so to speak...
+
+If there is a sliver of hope on the horizon, I will note that through various trading, course selling, and client work this first half of the year, it was the longest I've ever been able to last on my solo income as a completely independent software engineer. But the coffers of these meager profits are starting to go empty, and it's time to start interviewing again...
+
+## Thanks!
+
+So once again, I'm back to the full-time job hunt to support myself- but I wouldn't take a minute of the last 6 months away, with all the tools I built and new concepts I learned.
+
+-Chris 🍻
