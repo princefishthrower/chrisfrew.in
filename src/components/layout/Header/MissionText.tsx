@@ -16,7 +16,9 @@ const totalSum =
     codedamnCount +
     tutorialspointCount +
     newlineCount
-const roundedPercentage = Math.round((totalSum / 1000000) * 1000) / 10
+// round to nearest whole number percentage that we are to 1,000,000
+const roundedPercentage = Math.round((totalSum / 1000000) * 100)
+// and the last updated string... ex. "June 2023" or "July 2023"
 const lastUpdated = "June 2023"
 
 export function MissionText() {
@@ -89,7 +91,7 @@ export function MissionText() {
                 >
                     Newline
                 </a>{" "}
-                = {totalSum}/1,000,000 = {roundedPercentage}%
+                = {totalSum.toLocaleString("en-US")}/1,000,000 = {roundedPercentage}%
                 <span className="monokaiRedFont">**</span>
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
