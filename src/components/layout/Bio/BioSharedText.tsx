@@ -38,15 +38,6 @@ export function BioSharedText() {
                 daily.
             </p>
             <p>
-                My current teaching efforts are being poured into drafting my book and course,{" "}
-                <Link to="/book">Full Stack SaaS Product Cookbook</Link>, which
-                will be released soon. In this book, I take you step by step
-                from boilerplate to finished product, on the entire software
-                development lifecycle behind{" "}
-                <a href="https://reduxplate.com">ReduxPlate</a>, a Redux code
-                generator.
-            </p>
-            <p>
                 With all my courses, I focus on both advanced and niche topics and
                 in each course I always make considerations into the broader
                 backdrop of the entire full stack software ecosystem. If such
