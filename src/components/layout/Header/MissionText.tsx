@@ -19,7 +19,7 @@ const totalSum =
 // round to nearest whole number percentage that we are to 1,000,000
 const roundedPercentage = Math.round((totalSum / 1000000) * 100)
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "June 2023"
+const lastUpdated = "July 1st, 2023"
 
 export function MissionText() {
     return (
