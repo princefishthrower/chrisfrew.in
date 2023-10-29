@@ -1,6 +1,6 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import * as React from "react"
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { ThemeContext } from "../../../context/theme/ThemeContext"
 import PostListingType from "../../../enums/PostListingType"
 import { getActiveTheme } from "../../../utils/getActiveTheme"
@@ -35,6 +35,14 @@ export interface IPost {
 export function FilterableAndSortablePostsWidget(
     props: IFilterableAndSortablePostsWidgetProps
 ) {
+    const { setQuery } = useContext(SearchContext)
+    // on unmount, reset the search query
+    useEffect(() => {
+        return () => {
+            setQuery("")
+        }
+    }, [])
+
     const { postListingType } = props
     const allPosts = useStaticQuery(graphql`
         query allPostsQuery {
@@ -46,7 +54,7 @@ export function FilterableAndSortablePostsWidget(
                     subsubtitle
                 }
             }
-            allMdx(sort: {frontmatter: {date: DESC}}) {
+            allMdx(sort: { frontmatter: { date: DESC } }) {
                 edges {
                     node {
                         excerpt
@@ -78,69 +86,91 @@ export function FilterableAndSortablePostsWidget(
         postListingType === PostListingType.LATEST || PostListingType.RECENTS
             ? "latest-post-container"
             : "standard-post-container"
+    const filteredAndSearchedPosts = filteredPosts.filter((filteredPost) =>
+        genericSearch(
+            filteredPost.node.frontmatter,
+            ["title", "description", "tags"],
+            query
+        )
+    )
+    if (filteredAndSearchedPosts.length === 0) {
+        return (
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "1rem",
+                }}
+            >
+                <h3>No posts matching "{query}"!</h3>
+                <p>
+                    Try searching for something else, or{" "}
+                    <Link to="/">head back to the homepage</Link> for most posts.
+                </p>
+            </div>
+        )
+    }
+
     return (
         <>
-            {filteredPosts
-                .filter((filteredPost) =>
-                    genericSearch(
-                        filteredPost.node.frontmatter,
-                        ["title", "description", "tags"],
-                        query
-                    )
-                )
-                .map(({ node }, index) => {
-                    const title = node.frontmatter.title || node.fields.slug
-                    const tags = node.frontmatter.tags
-                        .split(",")
-                        .map((x) => sanitizeTag(x))
-                    const color =
-                        activeTheme.themeColorHexCodes[
-                            ((index % hexColorsLength) + hexColorsLength) %
-                                hexColorsLength
-                        ]
-                    return (
-                        <Link
-                            key={node.fields.slug}
-                            className={wrapperClassName}
-                            to={node.fields.slug}
-                        >
-                            <article key={node.fields.slug}>
-                                <header>
-                                    <div style={{ borderColor: color }} />
-                                    <h3
-                                        style={{
-                                            marginTop: "1rem",
-                                            fontWeight: 700,
-                                        }}
-                                    >
-                                        {title}
-                                    </h3>
-                                    <div style={{ borderColor: color }} />
-                                    <small
-                                        className="blog-post-date"
-                                        style={{ color }}
-                                    >
-                                        {node.frontmatter.date}
-                                    </small>
-                                </header>
-                                <section>
-                                    <p
-                                        dangerouslySetInnerHTML={{
-                                            __html:
-                                                node.frontmatter.description ||
-                                                node.excerpt,
-                                        }}
-                                    />
-                                </section>
-                                <TagRenderer
-                                    withTitle={false}
-                                    linkToTagPage={true}
-                                    tags={tags}
+            {filteredAndSearchedPosts.map(({ node }, index) => {
+                const title = node.frontmatter.title || node.fields.slug
+                const tags = node.frontmatter.tags
+                    .split(",")
+                    .map((x) => sanitizeTag(x))
+                const color =
+                    activeTheme.themeColorHexCodes[
+                        ((index % hexColorsLength) + hexColorsLength) %
+                            hexColorsLength
+                    ]
+                return (
+                    <div
+                        key={node.fields.slug}
+                        className={wrapperClassName}
+                        onClick={() => {
+                            // redirect to the post page
+                            window.location.href = node.fields.slug
+                        }}
+                    >
+                        <article key={node.fields.slug}>
+                            <header>
+                                <div style={{ borderColor: color }} />
+                                <h3
+                                    style={{
+                                        marginTop: "1rem",
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    {title}
+                                </h3>
+                                <div style={{ borderColor: color }} />
+                                <small
+                                    className="blog-post-date"
+                                    style={{ color }}
+                                >
+                                    {node.frontmatter.date}
+                                </small>
+                            </header>
+                            <section>
+                                <p
+                                    dangerouslySetInnerHTML={{
+                                        __html:
+                                            node.frontmatter.description ||
+                                            node.excerpt,
+                                    }}
                                 />
-                            </article>
-                        </Link>
-                    )
-                })}
+                            </section>
+                            <TagRenderer
+                                withTitle={false}
+                                linkToTagPage={true}
+                                tags={tags}
+                            />
+                        </article>
+                    </div>
+                )
+            })}
         </>
     )
 }
