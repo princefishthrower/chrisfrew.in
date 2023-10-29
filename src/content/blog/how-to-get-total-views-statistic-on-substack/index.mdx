@@ -1,0 +1,49 @@
+---
+title: How to Get Total Views Statistic on Substack
+description: A simple script gets the job done!
+date: "2023-10-29"
+draft: false
+tags: JavaScript, Substack, Writing
+---
+
+
+<img style={{maxWidth:"100%"}} src="https://cdn-images-1.medium.com/max/2048/1*YPiiFfZPepQd-4N3qmPZ9A.png"/>
+_DreamStudio prompt: "Photorealistic chalkboard with complex calculus and matrix math equations on it."_
+
+On [my blog](https://chrisfrew.in), I like to keep track of all those who (I hope) I've educated or informed over the years over a variety of education and blogging platforms. I noticed that for Substack, however, there seems to be no “total views” statistic. (Much like Medium — indeed, this post was inspired by [Kevin Peter's post on how to calculate this for Medium](https://www.kevinpeters.net/how-to-get-total-views-and-reads-statistics-on-medium) — currently no longer works anymore because of how Medium has changed their stats, but that's another story for another time.)
+
+Anyway, getting that total view count from all sources is one short script away!
+
+## The Script
+
+Just head to your traffic stats page, i.e. yoursubstack.substack.com/publish/stats/traffic, and paste this code snippet into the browser console (Ctrl+I on Windows, / Cmd+I on Mac):
+
+```javascript
+function calculateTotalViews() {
+    // Get all the "View" columns
+    var viewElements = document.querySelectorAll('.custom.data-table tbody tr td:nth-child(3) .content');
+    var totalViews = 0;
+    viewElements.forEach(function(element) {
+    // Parse the text content as an integer and add to totalViews
+    totalViews += parseInt(element.textContent, 10) || 0;
+    });
+
+    // Log out the total views
+    console.log('Total Views:', totalViews);
+}
+
+// Call the function to calculate and display the total views
+calculateTotalViews();
+```
+
+You should get something like this printed out to your console:
+
+```
+Total Views: 893
+```
+
+Thats it! Hope this helped you get that juicy total views stat!
+
+Cheers 🍻
+
+-Chris

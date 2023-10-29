@@ -1,25 +1,29 @@
 import * as React from "react"
 
 // update once per month :)
-const mediumCount = 315559
-const youtubeCount = 40774
-const udemyCount = 3596
-const skillshareCount = 665
-const codedamnCount = 68
-const tutorialspointCount = 17
-const newlineCount = 6
+const mediumCount = 325559 // was 315559, going to bump 10000 because mediums stats page is broken right now
+const youtubeCount = 47958
+const blogCount = 25700 // from google search console, 25.7K in the past 16 months
+const udemyCount = 3871
+const skillshareCount = 687
+const substackCount = 571
+const codedamnCount = 134
+const tutorialspointCount = 18
+const newlineCount = 10 // had 6 here, not sure where the analytics on, going to bump to 10
 const totalSum =
     mediumCount +
     youtubeCount +
+    blogCount +
     udemyCount +
     skillshareCount +
+    substackCount +
     codedamnCount +
     tutorialspointCount +
     newlineCount
 // round to nearest whole number percentage that we are to 1,000,000
 const roundedPercentage = Math.round((totalSum / 1000000) * 100)
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "July 1st, 2023"
+const lastUpdated = "October 2023"
 
 export function MissionText() {
     return (
@@ -56,6 +60,13 @@ export function MissionText() {
                 >
                     YouTube
                 </a>{" "}
+                + {blogCount.toLocaleString("en-US")}{" "}
+                <a
+                    className="monokaiRedFont"
+                    href="https://chrisfrew.in/"
+                >
+                    This Blog :)
+                </a>{" "}
                 + {udemyCount.toLocaleString("en-US")}{" "}
                 <a
                     className="monokaiRedFont"
@@ -69,6 +80,13 @@ export function MissionText() {
                     href="https://www.skillshare.com/en/user/christopherfrewin"
                 >
                     Skillshare
+                </a>{" "}
+                + {substackCount.toLocaleString("en-US")}{" "}
+                <a
+                    className="monokaiRedFont"
+                    href="https://amtjoy.substack.com"
+                >
+                    Substack
                 </a>{" "}
                 + {codedamnCount.toLocaleString("en-US")}{" "}
                 <a

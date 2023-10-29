@@ -55,7 +55,7 @@ export default function BlogPost({ location, pageContext, data, children }: any)
             <div className="blog-article-wrapper">
                 <article>
                     <header>
-                        <h1>{title}</h1>
+                        <h1 style={{marginBottom:"0.8rem"}}>{title}</h1>
                         {postDescription && (
                             <p
                                 className="monokaiRedFont"

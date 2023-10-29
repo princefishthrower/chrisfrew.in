@@ -10,7 +10,6 @@ import { getActiveTheme } from "../../../utils/getActiveTheme"
 import BlogTagClass from "../../../enums/BlogTagClass"
 import { StatTile } from "./StatTile"
 import Sparkles from "../../utils/Sparkles"
-import { HundredPostChallengeStat } from "./HundredPostChallengeStat"
 
 export function Stats() {
     const data = useStaticQuery(graphql`
@@ -155,7 +154,6 @@ export function Stats() {
                 <StatTile stat={totalCommits} label="Total Commits" />
                 <StatTile stat={latestCommitDate.toLocaleDateString()} label="Latest Commit" />
                 <StatTile stat={uniqueTags.length} label="Unique Tags" />
-                <HundredPostChallengeStat/>
                 <StatTile
                     stat={postsLeft}
                     label={
