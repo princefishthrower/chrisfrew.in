@@ -1,6 +1,7 @@
 import * as React from "react"
 
 // update once per month :)
+const stackOverflowCount = 572000
 const mediumCount = 325559 // was 315559, going to bump 10000 because mediums stats page is broken right now
 const youtubeCount = 47958
 const blogCount = 25700 // from google search console, 25.7K in the past 16 months
@@ -11,6 +12,7 @@ const codedamnCount = 134
 const tutorialspointCount = 18
 const newlineCount = 10 // had 6 here, not sure where the analytics on, going to bump to 10
 const totalSum =
+stackOverflowCount +
     mediumCount +
     youtubeCount +
     blogCount +
@@ -23,7 +25,7 @@ const totalSum =
 // round to nearest whole number percentage that we are to 1,000,000
 const roundedPercentage = Math.round((totalSum / 1000000) * 100)
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "October 2023"
+const lastUpdated = "November 2023"
 
 export function MissionText() {
     return (
@@ -46,6 +48,13 @@ export function MissionText() {
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
                 <span className="monokaiRedFont">*</span>
+                {stackOverflowCount.toLocaleString("en-US")}{" "}
+                <a
+                    className="monokaiRedFont"
+                    href="https://stackoverflow.com/users/2805387/fullstackchris"
+                >
+                    Stack Overflow
+                </a>{" "}
                 {mediumCount.toLocaleString("en-US")}{" "}
                 <a
                     className="monokaiRedFont"
