@@ -9,10 +9,14 @@ import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 import { PageContext } from "../types/PageContext"
 import { PageData } from "../types/PageData"
 
-const BlogTagListing = ({ data, location, pageContext }: PageProps<PageData, PageContext>) => {
-    const { tag } = pageContext;
+const BlogTagListing = ({
+    data,
+    location,
+    pageContext,
+}: PageProps<PageData, PageContext>) => {
+    const { tag } = pageContext
     const posts = data.allMdx.edges
-    
+
     // only take those
     // const postsToRender = posts.filter(({ node }) => { node.frontmatter.tags.includes(tag) })
     const cleanTitle = `Posts Tagged With "${tag}"`
@@ -20,10 +24,12 @@ const BlogTagListing = ({ data, location, pageContext }: PageProps<PageData, Pag
     return (
         <Layout location={location}>
             <SEO title={cleanTitle} description={cleanDescription} />
-            <ColoredTitle title={`#️⃣ ${cleanTitle}`}/>
+            <ColoredTitle title={`#️⃣ ${cleanTitle}`} />
             {posts.map(({ node }: any) => {
                 const title = node.frontmatter.title || node.fields.slug
-                const tags = node.frontmatter.tags.split(",").map((x: any) => sanitizeTag(x))
+                const tags = node.frontmatter.tags
+                    .split(",")
+                    .map((x: any) => sanitizeTag(x))
                 return (
                     <article key={node.fields.slug}>
                         <header>
@@ -35,10 +41,16 @@ const BlogTagListing = ({ data, location, pageContext }: PageProps<PageData, Pag
                                     {title}
                                 </Link>
                             </h3>
-                            <small className="blog-post-date">{node.frontmatter.date}</small>
+                            <small className="blog-post-date">
+                                {node.frontmatter.date}
+                            </small>
                             <div>
-                                <TagRenderer withTitle={false} linkToTagPage={true} tags={tags}/>
-                                </div>
+                                <TagRenderer
+                                    withTitle={false}
+                                    linkToTagPage={true}
+                                    tags={tags}
+                                />
+                            </div>
                         </header>
                         <section>
                             <p
@@ -53,7 +65,7 @@ const BlogTagListing = ({ data, location, pageContext }: PageProps<PageData, Pag
                 )
             })}
             <h3>All Post Tags:</h3>
-            <TagRenderer withTitle={false} linkToTagPage={true}/>
+            <TagRenderer withTitle={false} linkToTagPage={true} />
             <Bio />
         </Layout>
     )
@@ -73,8 +85,8 @@ export const blogTagListQuery = graphql`
             }
         }
         allMdx(
-            sort: {frontmatter: {date: DESC}}
-            filter: {frontmatter: {tags: {regex: $tagRegex}}}
+            sort: { frontmatter: { date: DESC } }
+            filter: { frontmatter: { tags: { regex: $tagRegex } } }
         ) {
             edges {
                 node {

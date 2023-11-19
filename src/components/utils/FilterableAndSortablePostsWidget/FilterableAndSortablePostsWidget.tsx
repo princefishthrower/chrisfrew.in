@@ -9,6 +9,7 @@ import { sanitizeTag } from "../../../utils/tags/getSanitizedTagsFromEdges"
 import { TagRenderer } from "../tags/TagRenderer"
 import { genericSearch } from "../../../utils/genericSearch"
 import { SearchContext } from "../../../context/search/SearchContext"
+import { HighlightText } from "../HighlightText"
 
 export interface IFilterableAndSortablePostsWidgetProps {
     postListingType: PostListingType
@@ -143,7 +144,7 @@ export function FilterableAndSortablePostsWidget(
                                         fontWeight: 700,
                                     }}
                                 >
-                                    {title}
+                                    <HighlightText text={title} highlights={[query]} />
                                 </h3>
                                 <div style={{ borderColor: color }} />
                                 <small
@@ -154,13 +155,15 @@ export function FilterableAndSortablePostsWidget(
                                 </small>
                             </header>
                             <section>
-                                <p
+                                {/* <p
                                     dangerouslySetInnerHTML={{
                                         __html:
                                             node.frontmatter.description ||
                                             node.excerpt,
                                     }}
-                                />
+                                /> */}
+                                <HighlightText text={node.frontmatter.description ||
+                                            node.excerpt} highlights={[query]} />
                             </section>
                             <TagRenderer
                                 withTitle={false}
