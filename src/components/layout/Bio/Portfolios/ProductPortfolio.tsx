@@ -3,16 +3,9 @@ import * as React from "react"
 export function ProductPortfolio() {
     return (
         <>
-            <p className="text-center font-weight-bold">Products</p>
+            <h2 className="font-weight-bold">Products</h2>
             <div className="flex-container">
-            <a
-                    href="https://reduxplate.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    ReduxPlate
-                </a>
-                 • 
+
                 <a
                     href="https://wheelscreener.com"
                     target="_blank"
@@ -20,13 +13,26 @@ export function ProductPortfolio() {
                 >
                     The Wheel Screener
                 </a>
-                 • 
                 <a
-                    href="https://rœst.com"
+                    href="https://option-screener.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    RŒST
+                    Option Screener
+                </a>
+                <a
+                    href="https://amtjoy.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    AMT JOY
+                </a>
+                <a
+                    href="https://codevideo.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CodeVideo
                 </a>
             </div>
         </>

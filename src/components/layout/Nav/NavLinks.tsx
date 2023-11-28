@@ -25,7 +25,7 @@ export function NavLinks() {
     const offsetArray = getOffsetArray()
     return (
         <>
-            <Link to="/posts">
+            <Link style={{fontWeight: "bold"}} to="/posts">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Posts",
@@ -33,7 +33,7 @@ export function NavLinks() {
                     offsetArray[0]
                 )}
             </Link>
-            <Link to="/courses">
+            <Link style={{fontWeight: "bold"}} to="/courses">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Courses",
@@ -41,7 +41,7 @@ export function NavLinks() {
                     offsetArray[1]
                 )}
             </Link>
-            <Link to="/snippets">
+            <Link style={{fontWeight: "bold"}} to="/snippets">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Snippets",
@@ -49,7 +49,7 @@ export function NavLinks() {
                     offsetArray[2]
                 )}
             </Link>
-            <Link to="/goodies">
+            <Link style={{fontWeight: "bold"}} to="/goodies">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Goodies",
@@ -57,7 +57,7 @@ export function NavLinks() {
                     offsetArray[3]
                 )}
             </Link>
-            <Link to="/books">
+            <Link style={{fontWeight: "bold"}} to="/books">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Books",
@@ -65,7 +65,7 @@ export function NavLinks() {
                     offsetArray[4]
                 )}
             </Link>
-            <Link to="/stats">
+            <Link style={{fontWeight: "bold"}} to="/stats">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Stats",
@@ -73,7 +73,7 @@ export function NavLinks() {
                     offsetArray[5]
                 )}
             </Link>
-            <Link to="/podcasts">
+            <Link style={{fontWeight: "bold"}} to="/podcasts">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Podcasts",
@@ -81,7 +81,7 @@ export function NavLinks() {
                     offsetArray[0]
                 )}
             </Link>
-            <Link to="/chris">
+            <Link style={{fontWeight: "bold"}} to="/chris">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "About",

@@ -11,7 +11,7 @@ export function RepoPortfolio() {
     ]
     return (
         <>
-            <p className="text-center font-weight-bold">Selected Repositories</p>
+            <h2 className="font-weight-bold">Selected Repositories</h2>
             <div className="packages-flex-container">
                 {repoNames.map((repoName) => {
                     return <GitHubItem repoName={repoName} hasNpmBadge={false} />

@@ -4,7 +4,7 @@ import Sparkles from "../../../utils/Sparkles"
 export function CompanyPortfolio() {
     return (
         <>
-            <p className="text-center font-weight-bold">Companies</p>
+            <h2 className="font-weight-bold">Company</h2>
             <div className="flex-container">
                 <a
                     href="https://fullstackcraft.com"
