@@ -13,7 +13,7 @@ body {
             border-left: 4px solid rgba(255, 255, 255, 0.5);
         }
 
-        p a, li a {
+        h2 a, h3 a, p a, li a {
           overflow: hidden;
           position: relative;
           color: $monokaiRedDarkMode;

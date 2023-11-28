@@ -27,6 +27,12 @@ const sanitizeTag = (rawTag) => {
     if (rawTag === "nginx") {
         return "NGINX"
     }
+    if (rawTag === "rag") {
+        return "RAG"
+    }
+    if (rawTag === "ai") {
+        return "AI"
+    }
     if (rawTag === "bitcoin") {
         return "Bitcoin"
     }

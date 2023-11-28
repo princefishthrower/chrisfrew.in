@@ -1,16 +1,13 @@
 import * as React from "react"
 import { Signature } from "./Signature"
 
-
 export function SignatureText() {
     return (
         <>
-            <p>
-                <strong>
-                    I consistently put a lot of effort into this site and it's
-                    content - I sincerely hope you enjoy the blog!
-                </strong>
-            </p>
+            <h2>
+                I <span className="monokaiRedUnderline">sincerely</span> hope
+                you enjoy the blog!
+            </h2>
             <Signature />
             <p>- Chris</p>
         </>

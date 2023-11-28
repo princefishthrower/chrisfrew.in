@@ -6,13 +6,11 @@ export function Podcasts() {
     return (
         <>
             <ColoredTitle title="🎙️ Podcasts" />
-            <p>
-                A likely overly-zealous page I've created in hopes that I'll be
-                featured in many more podcasts throughout my career. Only time
-                will tell!
-            </p>
-            <p>Here's all the podcasts I've been featured in:</p>
-            <h2 style={{ textDecoration: "underline" }}>
+            <h2>
+                I'm a host of <a href="https://topenddevs.com/podcasts/react-round-up">React Round Up</a>, a podcast focusing on React!
+            </h2>
+            <p>Here's all the past podcasts I've been featured in:</p>
+            <h3 style={{ textDecoration: "underline" }}>
                 <a
                     href="https://topenddevs.com/podcasts/react-round-up/episodes/4096"
                     target="_blank"
@@ -20,7 +18,7 @@ export function Podcasts() {
                 >
                     React Round Up 196: Gherkin with Chris Frewin from InClub
                 </a>
-            </h2>
+            </h3>
             <p>
                 I was invited back again at React Round Up! In this episode, I
                 talk with Jack Herrington, Paige Niedringhaus, and TJ Van Toll
@@ -37,7 +35,7 @@ export function Podcasts() {
                 </Link>
                 .
             </p>
-            <h2 style={{ textDecoration: "underline" }}>
+            <h3 style={{ textDecoration: "underline" }}>
                 <a
                     href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5mZWVkd3JlbmNoLmNvbS9yZWFjdC1yb3VuZC11cC5yc3M/episode/YTM5ZmQ2NzUtMGI4OC00ZGZhLTg3YWItOTJmY2I4MTllYmFh"
                     target="_blank"
@@ -46,7 +44,7 @@ export function Podcasts() {
                     React Round Up 163: Modernizing Your React Apps with
                     TypeScript ft. Chris Frewin
                 </a>
-            </h2>
+            </h3>
             <p>
                 React Round Up was the first developer podcast I've was ever
                 asked to participate in! In this episode, I talk with Jack
@@ -56,7 +54,7 @@ export function Podcasts() {
                 <Link to="/blog/converting-a-large-project-from-javascript-to-typescript/">
                     Converting a Large Create React App Project from JavaScript
                     to TypeScript
-                </Link>
+                </Link>.
             </p>
         </>
     )
