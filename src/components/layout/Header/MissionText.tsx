@@ -1,14 +1,14 @@
 import * as React from "react"
 
 // update once per month :)
-const stackOverflowCount = 572000
-const mediumCount = 325559 // was 315559, going to bump 10000 because mediums stats page is broken right now
-const youtubeCount = 47958
-const blogCount = 25700 // from google search console, 25.7K in the past 16 months
-const udemyCount = 3871
-const skillshareCount = 687
-const substackCount = 571
-const codedamnCount = 134
+const stackOverflowCount = 576000
+const mediumCount = 325559 + 4808 // was 315559, going to bump 10000 because mediums stats page is broken right now, added 4808 for nov 2023
+const youtubeCount = 50300
+const blogCount = 26300 // from google search console, 25.7K in the past 16 months
+const udemyCount = 3913
+const skillshareCount = 695
+const substackCount = 738
+const codedamnCount = 155
 const tutorialspointCount = 18
 const newlineCount = 10 // had 6 here, not sure where the analytics on, going to bump to 10
 const totalSum =
@@ -22,10 +22,10 @@ stackOverflowCount +
     codedamnCount +
     tutorialspointCount +
     newlineCount
-// round to nearest whole number percentage that we are to 1,000,000
-const roundedPercentage = Math.round((totalSum / 1000000) * 100)
+// round to one decimal place
+const roundedPercentage = Math.round((totalSum / 1000000) * 1000) / 10
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "November 2023"
+const lastUpdated = "December 2023"
 
 export function MissionText() {
     return (
@@ -40,14 +40,14 @@ export function MissionText() {
                 >
                     I'm on a mission to educate{" "}
                     <span className="monokaiRedUnderline">1,000,000</span>
-                    <span className="monokaiRedFont">*</span> full stack
+                    <sup><span className="monokaiRedFont">*</span></sup> full stack
                     software engineers around the world. Build your skills with
                     hundreds of hours of video content, hundreds of pages of
                     tutorials, and more.
                 </h3>
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
-                <span className="monokaiRedFont">*</span>
+                <sup><span className="monokaiRedFont">*</span></sup>
                 {stackOverflowCount.toLocaleString("en-US")}{" "}
                 <a
                     className="monokaiRedFont"
@@ -55,7 +55,7 @@ export function MissionText() {
                 >
                     Stack Overflow
                 </a>{" "}
-                {mediumCount.toLocaleString("en-US")}{" "}
+                + {mediumCount.toLocaleString("en-US")}{" "}
                 <a
                     className="monokaiRedFont"
                     href="https://chrisfrewin.medium.com/"
@@ -119,11 +119,13 @@ export function MissionText() {
                     Newline
                 </a>{" "}
                 = {totalSum.toLocaleString("en-US")}/1,000,000 = {roundedPercentage}%
-                <span className="monokaiRedFont">**</span>
+                <sup><span className="monokaiRedFont">✞</span></sup>
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
-                <span className="monokaiRedFont">**</span>Numbers last updated
-                {" "}{lastUpdated}
+                <small>
+                <i><sup><span className="monokaiRedFont">✞</span></sup>Numbers last updated
+                {" "}{lastUpdated}</i>
+                </small>
             </div>
         </>
     )

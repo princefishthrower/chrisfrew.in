@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1: The ABCs of React Hooks"
+title: "The ABCs of React Hooks"
 description: "React Hooks are like alphabet soup - it's easy as A, B, C!"
 date: "2021-12-22"
 tags: Clean React TypeScript Hooks,React Hooks,Learning Series
@@ -7,12 +7,6 @@ cleanReactTypeScriptHooksOrder: 1
 ---
 
 import { Link } from 'gatsby'
-
-<i>
-    Note: this is part of a larger series, "Clean React TypeScript Hooks". If
-    you're interested, check out{" "}
-    <Link to="/blog/series/clean-react-typescript-hooks">the series overview</Link>.
-</i>
 
 Blog readers, it's come to my attention that far too many devs get mucked down in new languages, syntax, tools, and endless engineering debates while skipping a critical lesson: _learning the very basic concepts_. So here is my remedy (or attempt) at correct that problem, at least for React hooks. Through a handful of lessons, I'm going to teach you how to write super clean, super cool React Hooks using TypeScript. But again, we're going to start with the basics, and you can't get much more basic than the ABC's. 
 
@@ -38,20 +32,24 @@ Seems too simple right? I'll prove it, explaining each React Hook with our belov
 
 ## useState In ABC's:
 
+`useState` just has to be the first hook we mention, right? It's React's entire bread and butter; the very things that cause components to re-render and are the foundation of our UIs in the first place! So let's start with it.
+
 > Give me a value A and setter function B, where I want my initial value of A to be C
 
 ```tsx
 const [A, B] = useState(C)
 ```
 
-## useEffect In In ABC's:
+## useEffect In ABC's:
+
+Of course, we need to have side effects as well. Sometimes, when a state variable changes, we want to do something not directly affecting our markup or UI, but something additional like call an API or trigger a different state change somewhere else. How can we do this in a functional way? The answer is `useEffect`. It's a way to run a function when something changes. Let's add more letters to our alphabet soup, this time a function `D`, that will be run when something changes:
 
 > Run function D when E changes
 
 ```tsx
 useEffect(() => {
    D()
-}, [E]
+}, [E])
 ```
 
 but we of course note `useEffect()` seems to have an array for the "when E changes" part, so let's imagine we have also a value `F` we want to detect changes in. Well, simply add this to the change array:
@@ -61,25 +59,98 @@ but we of course note `useEffect()` seems to have an array for the "when E chang
 ```tsx
 useEffect(() => {
    D()
-}, [E, F]
+}, [E, F])
 ```
 
-Want to run function `D` when _nothing_ changes? That's fine too, just empty out your dependency array. The change here is then implicit, in that it will only fire once, when the hook mounts. This is the equivalent of the (now infamous) `componentDidMount`:
+Want to run function `D` when _nothing_ changes? That's fine too, just empty out your dependency array. The change here is then implicitly interpreted by React, in this case that the body of the hook will only fire once - when the hook mounts. This is the equivalent of the (now infamous) `componentDidMount`:
 
 > Run function D on mount
 
 ```tsx
 useEffect(() => {
     D()
-}, []
+}, [])
 ```
 
-So, you may be asking, well if there is a hook equivalent for `componentDidMount`, there certainly should be one for `componentWillUnmount`, right? Yep! This is done by using `return` in `useEffect`. Let's add more letters to our alphabet, this time a function `G`:
+So, you may be asking, well if there is a hook equivalent for `componentDidMount`, there certainly should be one for `componentWillUnmount`, right? Yep! This is done by using `return` with a function in `useEffect`. Let's add more letters to our alphabet soup, this time a function `G`, that will be run when this hook unmounts:
 
 > Run function G on unmount
 
 ```tsx
 useEffect(() => {
-    return G()
-}, []
+    return () => G()
+}, [])
 ```
+
+So far so good, right? To tell you the truth, you can tackle 90% of application-like logic that you may need with just the `useState` and `useEffect` Hooks. But there are a few more hooks that are worth knowing, so let's continue.
+
+## useRef In ABC's:
+
+Sometimes we need to store a value that we want to persist across renders, but we don't want to trigger a re-render when that value changes. This is where `useRef` comes in. It's a way to store a value that is not part of the state of the component, and it's a way to store a value that will not trigger a re-render when it changes.
+
+> Give me a value S, where I want my initial value of H to be I
+
+```tsx
+const H = useRef(I)
+```
+
+## useContext In ABC's:
+
+We all know the pain and mess that can be created by passing props too deeply or in an overly complicated manner in our React apps. This is where `useContext` comes in. It allows you to pass a value from a parent component to a child component without having to pass it through all the components in between. Simply create a context, we'll call it `J`, with property `K`. Then, in the child component, you can use `useContext` to get the value from the context. Alternatively, you may want to consider using Redux, which can give you a more global state management solution, where `useSelector` would be used to select the desired value from the Redux store.
+
+> Create a context J with property K, where I want my initial value of K to be "hello world!"
+
+```tsx
+const J = createContext({ K: "hello world!" })
+```
+
+Child component:
+
+> Give me the property K from the context J
+
+```tsx
+const { K } = useContext(J)
+console.log(K) // "hello world!"
+```
+
+## useReducer In ABC's:
+
+Like `useContext`, you may not need to use this hook very often, if at all, if you are using Redux, but for completeness, here it is.
+
+> Give me a value L and dispatcher function M, where reducer function N uses initial argument O
+
+```tsx
+const [L, M] = useReducer(N, O)
+```
+
+## useMemo In ABC's:
+
+Sometimes we have a function that is computationally expensive, and we don't want to re-run it every time the component re-renders. This is where `useMemo` comes in. It's a way to store a value that is not part of the state of the component, and it's a way to store a value that will not trigger a re-render when it changes - it will only re-run when the dependencies change.
+
+> Give me a value P as a result of function Q, which uses variable R, and I want to re-calculate memoized value P with function Q every time R changes
+
+```tsx
+const P = useMemo(func Q() { 
+    // do something computationally expensive based on variable R (slow)
+}, [R])
+```
+
+## useCallback In ABC's:
+
+Now, let's take a closer look at the `useCallback` hook. This hook is particularly useful for memoizing functions, ensuring that a function reference remains constant across renders unless its dependencies change. It's similar to `useMemo`, but would be used in the case where for example you are passing an entire function as a prop to a component as apposed to just a value:
+
+> Give me a memoized function S, which is a result of function T, which uses variable U, and I want to re-memoize function T every time U changes
+
+```tsx
+const S = useCallback(T, [U])
+```
+
+You may notice that `useMemo` and `useCallback` are very similar. The difference between them is that `useMemo` returns a memoized _value_, while `useCallback` returns a memoized _function_. So, if you want to memoize a function, use `useCallback`, and if you want to memoize a value returned by a function, use `useMemo`!
+
+## Thanks!
+
+I hope this post helped you start to wrap you mind. When you abstract the actual business logic and actual functions that might be used in a React app, you can see that the React Hooks are actually not too hard to get a hang of. Again, just like any other function in JavaScript, they have some sort of input and provide output. And, they are just functions that run when something changes. That's it. 😉
+
+Cheers!
+
+-Chris
