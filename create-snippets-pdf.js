@@ -27,7 +27,7 @@ const createPdfs = async () => {
 
         console.log("Launching puppeteer...")
 
-        const browser = await puppeteer.launch()
+        const browser = await puppeteer.launch({headless: "new"})
         const page = await browser.newPage()
 
         await page.goto(url, {
