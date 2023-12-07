@@ -1,39 +1,12 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import { BioSharedText } from "./BioSharedText"
 import { SignatureText } from "./SignatureText"
 import { BioLead } from "./BioLead"
-import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Bio() {
-    const data = useStaticQuery(graphql`
-        query YouTubeQuery {
-            youtube: file(relativePath: { eq: "youtube.png" }) {
-                childImageSharp {
-                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-                }
-            }
-        }
-    `)
-
     return (
         <>
-            <div
-                style={{
-                    display: `flex`,
-                    flexDirection: `column`,
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                }}
-            >
-                <GatsbyImage
-                    className="title-youtube-picture"
-                    image={data.youtube.childImageSharp.gatsbyImageData}
-                    alt={"Chris on Full Stack Craft's YouTube channel."}
-                />
-            </div>
             <div
                 style={{
                     display: `flex`,
