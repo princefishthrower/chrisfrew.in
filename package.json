@@ -55,7 +55,7 @@
     "@types/react-helmet": "^6.1.6",
     "@types/styled-components": "^5.1.26",
     "prettier": "2.8.4",
-    "puppeteer": "^20.7.4",
+    "puppeteer": "^21.6.0",
     "typescript": "^5.0.4"
   },
   "homepage": "https://chrisfrew.in",
