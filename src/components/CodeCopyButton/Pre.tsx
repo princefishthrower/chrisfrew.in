@@ -90,6 +90,7 @@ export const Pre = (props: IPreProps) => {
 
     return (
         <>
+            <div style={{fontSize: "0.5rem", fontFamily: "Fira Code", marginBottom: "-0.4rem"}}><i>{language}</i></div>
             {!pdfMode && (
                 <div className="code-copy-button-wrapper">
                     <Button
@@ -100,27 +101,15 @@ export const Pre = (props: IPreProps) => {
                         }}
                     >
                         {isCopied ? (
-                            <div className="gatsby-code-button">
+                            <div className="gatsby-code-button blog-tag-small">
                                 <span role="img" aria-label="confetti">
                                     🎉
                                 </span>{" "}
                                 Copied!
                             </div>
                         ) : (
-                            <div className="gatsby-code-button">
-                                <svg
-                                    className="gatsby-code-button-icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        fill="none"
-                                        d="M0 0h24v24H0V0z"
-                                    ></path>
-                                    <path d="M16 1H2v16h2V3h12V1zm-1 4l6 6v12H6V5h9zm-1 7h5.5L14 6.5V12z"></path>
-                                </svg>
+                            <div className="gatsby-code-button blog-tag-small">
+                                Copy
                             </div>
                         )}
                     </Button>
@@ -148,7 +137,7 @@ export const Pre = (props: IPreProps) => {
                             maxWidth: pdfMode ? "750px" : "",
                         }}
                     >
-                        {tokens.map((lineTokens, i) => {
+                        {tokens.map((lineTokens, index) => {
                             const addedData = getAddedData(lineTokens)
                             const lineClassName = getLineClassName(addedData)
                             if (addedData.isAdded) {
@@ -156,11 +145,15 @@ export const Pre = (props: IPreProps) => {
                                     lineTokens.shift()
                                 }
                             }
+                            // for some reason almost every code snippet is shipping with a trailing newline...
+                            if (index === tokens.length - 1 && lineTokens.length === 1 && lineTokens[0].content === "\n") {
+                                return <></>
+                            }
                             return (
                                 <div
                                     {...getLineProps({
                                         line: lineTokens,
-                                        key: i,
+                                        key: index,
                                     })}
                                     style={{
                                         ...style,

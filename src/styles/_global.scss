@@ -59,7 +59,6 @@ strong {
 pre,
 code {
     font-family: "Fira Code", monospace !important;
-    font-weight: bold !important;
     line-height: 1rem !important;
     border: none !important;
     padding: 0.3rem !important;
@@ -225,13 +224,12 @@ button.code-copy-button {
     box-shadow: none;
     text-decoration: none;
     margin-bottom: -1.5rem;
-    margin-right: 0.5rem;
-    margin-top: 1rem;
+    margin-right: 0.1rem;
+    margin-top: 0.6rem;
     padding: 0px;
     border-radius: 5px;
     cursor: pointer;
     font-family: "Fira Code", monospace !important;
-    font-weight: bold !important;
     font-size: 0.75rem !important;
     z-index: 1;
 }

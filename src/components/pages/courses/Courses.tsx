@@ -29,10 +29,9 @@ export function Courses() {
             <p>
                 <i>
                     While selling these Full Stack Courses is a primary source
-                    of my income and enables me make <b> even more</b> Full
+                    of Full Stack Craft's income and enables us make <b> even more</b> Full
                     Stack Courses, I understand if you can't afford a course at
-                    any time. Reach out to me at frewin.christopher@gmail.com or
-                    hi@fullstackcraft.com and I can grant you access to the full
+                    any time. Reach out to us at hi@fullstackcraft.com and I can grant you access to the full
                     course for free.
                 </i>
             </p>

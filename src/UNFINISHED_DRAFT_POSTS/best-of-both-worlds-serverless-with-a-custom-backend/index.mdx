@@ -1,0 +1,47 @@
+---
+title: "Best of Both Worlds: Serverless Static Websites with a Custom API and Backend!?"
+description: "An insanely powerful architecture."
+date: "2023-12-08"
+draft: true
+tags: Netlify,Docker,NGINX,React,Gatsby,Serverless,AWS,Lambda,TypeScript
+---
+
+_Note: this post will likely eventually be developed into one of my full fledged "Full Stack Courses", so stay tuned!_
+
+On [my very first episode as one of the new hosts of React Round Up, where we delved into deployment architecture](https://topenddevs.com/podcasts/react-round-up/episodes/exploring-implications-for-software-development-and-system-architecture-rru-239), I realized I failed to mention a powerful architecture that perhaps many people don't even know is possible. Our conversation revolved around a sort of two sides of architecture: dockerizing everything into containers on a backend, where you have complete control of your tech stack, or deploying (at least the frontend), on a platform like Netlify or Vercel, where you get builds, deploys, and cdn hosting all in one. That's when I realized - I've been using a hybrid of these two architectures for a while now!
+
+With this powerful configuration, you get all the SEO and performance benefits of a static website, but also the power and flexibility of having your backend containerized with whatever tech you need. This means that these "static" pages are in fact dynamic as needed, and can retrieve data from your containerized backend(s)! Even more interesting, I claim we can do all of this without a huge mess, or a huge number of lambda functions, and instead, just a few simple ones!
+
+Don't assume that just because the word "static" or "serverless" is in the name that you are stuck with boring and non-dynamic websites. In fact, I've been able to build some of the most dynamic websites I've ever built using this architecture. Let's dive in!
+
+## So let's review what we want:
+
+1. As many static pages for SEO and performance. For this you can use many of the popular static site generators like Gatsby, Next, or even just plain old HTML/CSS/JS. I use Gatsby personally.
+
+2. The ability to have dynamic content on some pages as needed. For this, we can use a simple lambda function that can be called from the client or server side. I use Next.js for this.
+
+## What we don't want is:
+
+1. A seemingly infinite number of lambda functions
+
+I claim we do all these things, and even better, as a solo or near solo dev.
+
+## Getting the dynamic content
+
+So how exactly can we call our. Typically, I like following the subdomain pattern, that is `api.yourdomain.com`. This is a great pattern because it allows us to have a separate domain for our API, and it also allows us to have a separate domain for our static site. In all platforms nowadays, you should be able to specify these custom subdomains for your page.
+
+In some cases, you may want to call your custom api directly - again, this is totally allowed for sites that are created with a static site generator. However, in some cases, you may be using something like Netlify's Identity solution, and you need to carry permissions and roles to your API around certain endpoints.
+
+In this case, you need to build a bridge through a lambda function. I use something like this:
+
+```typescript
+const test = "test"
+```
+
+## Thanks!
+
+As always, hope this post was helpful in the rare case you're like me developing WPF on a Mac! WPF still lives on in late 2023! 😃
+
+Cheers 🍻
+
+-Chris
