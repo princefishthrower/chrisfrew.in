@@ -30,8 +30,6 @@ export default function SEO(props: PropsWithChildren<ISEOProps>) {
       <meta name="twitter:creator" content="Chris Frewin" />
       <meta name="twitter:description" content={description} />
 
-      {/* Gumroad JS - 1990s style */}
-      <script src="https://gumroad.com/js/gumroad.js"></script>
       {children}
     </>
   )

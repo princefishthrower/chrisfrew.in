@@ -1,0 +1,107 @@
+---
+title: "Blazor on Netlify With Environment Variables!"
+description: "Make one of Microsoft's newer technologies configurable!"
+date: "2023-12-19"
+draft: true
+tags: Netlify,Blazor,.NET,JavaScript,Serverless
+---
+
+<img src="https://cdn-images-1.medium.com/max/2000/1*9BNitqUAXcI-Xg9PHOIP_A.png" alt="Blazor and Netlify in perfect harmony." width="100%"/>
+
+## Is it Even Possible?
+
+Yes, it *can* be done! You *can* inject Netlify environment variables into your Blazor applications!
+
+Check out the example site:
+[https://blazor-netlify-env-injection.netlify.app/](https://blazor-netlify-env-injection.netlify.app/)
+
+Or the repo behind the site:
+[https://github.com/princefishthrower/blazor-netlify-env-injection](https://github.com/princefishthrower/blazor-netlify-env-injection)
+
+In the example, I set the value of `testEnvironmentVariable`, which lives in JavaScript and Blazor, to `my_super_cool_test_environment_variable_set_in_the_netlify_guid`. And... it works!
+
+## First One?
+
+Now, I *really* like to make posts like this... posts that I think are the first of their kind on the web! So, as far as I know, I'm the only one who has a solution for [this Stack Overflow question](https://stackoverflow.com/questions/76215221/netlifys-environmental-variable-value-retrieval-on-c-sharp-using-blazor-webasse/77440968#77440968)
+
+The original poster wants to know how to retrieve environment variables set in Netlify from a Blazor application. Seems trivial, right? The problem is that Blazor is a fairly ‘new' technology, and as such (I have to admit I am impressed by Microsoft) they leverage the powers of [WebAssembly](https://en.wikipedia.org/wiki/WebAssembly) to load and run an entire C# runtime *right in the browser*!
+
+So, no, you won't have access to `process.env` at build time like you would with a Node-based project (think `create-react-app` or even something like a static site builder like Gatsby or Next).
+
+So the question remains... how do we get environment variables into Blazor before the site is built?
+
+## The Process
+
+This solution at the end of the day is essentially a JavaScript solution. You inject variables into a JavaScript config file at build time that can be used in the browser by the Blazor application. Voilà! A Netlify — Blazor bridge, built with JavaScript.
+
+First, in your Blazor app, create a config.js file:
+
+```javascript
+window.config = {
+    testEnvironmentVariable: "<TEST_ENVIRONMENT_VARIABLE>"
+};
+```
+
+Make sure to include this file in your Blazor's index.html file:
+
+```html
+<head>
+    <script src="config.js"></script>
+</head>
+```
+
+Then, create a bash script to replace each variable in `config.js` (I call mine `update-config.sh`):
+
+```bash
+#!/bin/bash
+
+# Read the existing content of config.js
+content=$(cat wwwroot/config.js)
+
+# Replace the placeholder with the actual environment variable value
+updated_content="${content//<TEST_ENVIRONMENT_VARIABLE>/$TEST_ENVIRONMENT_VARIABLE}"
+
+# Write the updated content back to config.js
+echo "$updated_content" > wwwroot/config.js
+```
+
+Then, update your `netlify.toml` file to run update-config.sh as part of the `[build]` directive:
+
+```toml
+[dev]
+    command = "dotnet watch"
+[build]
+    command = "./update-config.sh && dotnet publish -c Release -o release"
+[publish]
+    directory = "release/wwwroot"
+```
+
+Finally, (and the why we're all here!), we can read those config.js files from within our Blazor C# code like so:
+
+```csharp
+@code {
+    private string? _testEnvironmentVariable;
+    protected override async Task OnInitializedAsync()
+    {
+        var testEnvironmentVariable = await JSRuntime.InvokeAsync<string>("eval", "window.config.testEnvironmentVariable");
+        if (testEnvironmentVariable != null)
+        {
+            _testEnvironmentVariable = testEnvironmentVariable;
+        }
+    }
+}
+```
+
+With this configuration, you can add more key value pairs to config.js , and you only need to update update-config.sh correspondingly. If you wanted to get fancy, you could even build a dynamic getter function in Blazor that tries to retrieve the variables in config.js as needed, instead of hardcoding them like I have in the example above.
+
+## Thanks!
+
+Credits and props to [Niels Swimberghe at Swimburger](https://swimburger.net/blog/dotnet/how-to-deploy-blazor-webassembly-to-netlify) for the initial guidance on how to setup a Netlify deploy for a Blazor WebAssembly app.
+
+I hope this post helps anyone trying to access their Netlify environment variables from Blazor.
+
+Know a better way to do this? Please let me know! I'm also wondering why my WORKING Stack Overflow answer was downvoted without comment or alternative solution — yet another post for another time on my general feelings towards Stack Overflow 😃
+
+🍻 Cheers!
+
+-Chris
