@@ -1,18 +1,18 @@
 import * as React from "react"
 
 // update once per month :)
-const stackOverflowCount = 576000
-const mediumCount = 325559 + 4808 // was 315559, going to bump 10000 because mediums stats page is broken right now, added 4808 for nov 2023
-const youtubeCount = 50300
-const blogCount = 26300 // from google search console, 25.7K in the past 16 months
-const udemyCount = 3913
-const skillshareCount = 696
-const substackCount = 738
-const codedamnCount = 155
-const tutorialspointCount = 18
+const stackOverflowCount = 586000
+const mediumCount = 325559 + 4808 + 4000 + 4600 + 319 // was 315559, going to bump 10000 because mediums stats page is broken right now, adding for dec 2023, jan 2024
+const youtubeCount = 53500
+const blogCount = 27000 // from google search console, 25.7K in the past 16 months
+const udemyCount = 3969
+const skillshareCount = 708
+const substackCount = 792
+const codedamnCount = 193
+const tutorialspointCount = 19
 const newlineCount = 10 // had 6 here, not sure where the analytics on, going to bump to 10
 const totalSum =
-stackOverflowCount +
+    stackOverflowCount +
     mediumCount +
     youtubeCount +
     blogCount +
@@ -25,7 +25,7 @@ stackOverflowCount +
 // round to one decimal place
 const roundedPercentage = Math.round((totalSum / 1000000) * 1000) / 10
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "December 2023"
+const lastUpdated = "January 2024"
 
 export function MissionText() {
     return (
@@ -33,21 +33,33 @@ export function MissionText() {
             <div>
                 <h3
                     style={{
-                        margin: "2rem",
-                        marginBottom: "1rem",
+                        margin: "1rem",
                         textAlign: "center",
                     }}
                 >
                     I'm on a mission to educate{" "}
                     <span className="monokaiRedUnderline">1,000,000</span>
-                    <sup><span className="monokaiRedFont">*</span></sup> full stack
-                    software engineers around the world. Build your skills with
-                    hundreds of hours of video content, hundreds of pages of
-                    tutorials, and more.
+                    <sup>
+                        <span className="monokaiRedFont">*</span>
+                    </sup>{" "}
+                    full stack software engineers around the world. Build your
+                    skills with hundreds of hours of video content, hundreds of
+                    pages of tutorials, and more.
+                </h3>
+                <h3
+                    style={{
+                        margin: "1rem",
+                        textAlign: "center",
+                    }}
+                    className="monokaiYellowFont"
+                >
+                    <i>UPDATE JANUARY 2024</i>: We've done it! A heartfelt thanks to everyone who has visited the blog, taken a course, or otherwise supported my work.
                 </h3>
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
-                <sup><span className="monokaiRedFont">*</span></sup>
+                <sup>
+                    <span className="monokaiRedFont">*</span>
+                </sup>
                 {stackOverflowCount.toLocaleString("en-US")}{" "}
                 <a
                     className="monokaiRedFont"
@@ -70,10 +82,7 @@ export function MissionText() {
                     YouTube
                 </a>{" "}
                 + {blogCount.toLocaleString("en-US")}{" "}
-                <a
-                    className="monokaiRedFont"
-                    href="https://chrisfrew.in/"
-                >
+                <a className="monokaiRedFont" href="https://chrisfrew.in/">
                     This Blog :)
                 </a>{" "}
                 + {udemyCount.toLocaleString("en-US")}{" "}
@@ -118,13 +127,23 @@ export function MissionText() {
                 >
                     Newline
                 </a>{" "}
-                = {totalSum.toLocaleString("en-US")}/1,000,000 = {roundedPercentage}%
-                <sup><span className="monokaiRedFont">✞</span></sup>
+                ={" "}
+                <span className="monokaiYellowFont" style={{ fontWeight: 700 }}>
+                    {totalSum.toLocaleString("en-US")}/1,000,000 ={" "}
+                    {roundedPercentage}%!!!!
+                </span>
+                <sup>
+                    <span className="monokaiYellowFont">✞</span>
+                </sup>
             </div>
             <div style={{ margin: "1rem", textAlign: "center" }}>
                 <small>
-                <i><sup><span className="monokaiRedFont">✞</span></sup>Numbers last updated
-                {" "}{lastUpdated}</i>
+                    <i>
+                        <sup>
+                            <span className="monokaiYellowFont">✞</span>
+                        </sup>
+                        Numbers last updated {lastUpdated}
+                    </i>
                 </small>
             </div>
         </>

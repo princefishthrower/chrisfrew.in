@@ -73,7 +73,8 @@ export const Pre = (props: IPreProps) => {
     }
 
     const getAddedData = (lineTokens: Array<any>): ICodeLineData => {
-        if (lineTokens.length > 0 && lineTokens[0].content === "+") {
+        if (lineTokens.length > 0 && lineTokens[0].content === "+" || lineTokens[0].content.includes("+")) {
+            console.log("detected 'add' line; shift 1")
             return { isAdded: true, shiftCount: 1 }
         }
         if (
@@ -81,6 +82,7 @@ export const Pre = (props: IPreProps) => {
             lineTokens[0].content === "" &&
             lineTokens[1].content === "+"
         ) {
+            console.log("detected 'add' line; shift 2")
             return { isAdded: true, shiftCount: 2 }
         }
         return { isAdded: false, shiftCount: 0 }
@@ -140,12 +142,14 @@ export const Pre = (props: IPreProps) => {
                         {tokens.map((lineTokens, index) => {
                             const addedData = getAddedData(lineTokens)
                             const lineClassName = getLineClassName(addedData)
-                            if (addedData.isAdded) {
-                                for (let i = 0; i < addedData.shiftCount; i++) {
-                                    lineTokens.shift()
-                                }
-                            }
-                            // for some reason almost every code snippet is shipping with a trailing newline...
+                            // if (addedData.isAdded) {
+                            //     for (let i = 0; i < addedData.shiftCount; i++) {
+                            //         console.log("shifting lineTokens")
+                            //         lineTokens.shift()
+                            //     }
+                            // }
+                            // for some reason almost every code snippet is shipping with a newline at the very bottom...
+                            // build this check to eliminate that
                             if (index === tokens.length - 1 && lineTokens.length === 1 && lineTokens[0].content === "\n") {
                                 return <></>
                             }

@@ -1,0 +1,190 @@
+---
+title: "Valuable Enum Extensions in C#"
+description: "Get a string representation of an enum value, and parse a string into an enum value."
+date: "2024-01-30"
+draft: false
+tags: csharp, Enums
+---
+
+## EnumExtensions Class
+
+Very often in C# you want a string representation or "human readable" version of your enums. Likewise, you may want to parse a string into an enum value. This is a common scenario when working with APIs that return enum values as strings. In this article, I'll show you how to create two enum extensions so that you can accomplish both of these tasks in a generic way. Unfortunately, there seems to be [only too many ways to do this in C#](). With some careful effort and though, I believe I've arrived at the cleanest and most robust solution.
+
+To be fair, the solution posted here comes with a caveat (alas, not _everything_ we do can work fully with magic...). The caveat is that you must decorate your enum values with a `DescriptionAttribute` attribute. This is a fairly common practice, and is the same attribute used by the `Enum.GetDescription` method. If you're not familiar with this attribute, it's very simple to use. Here's an example:
+
+```csharp
+public enum MyEnum
+{
+    [Description("The Human Readable Representation of MyEnumValue")]
+    MyEnumValue
+}
+```
+
+Let's start by defining a static class named EnumExtensions.
+
+```csharp
+public static class EnumExtensions
+{
+
+}
+```
+
+## GetDescriptionFromAttribute Method
+
+Let's tackle the first functionality which we would like - getting a string representation of our enum members. 
+
+```csharp
+public static string GetDescriptionFromAttribute(this Enum value)
+{
+
+}
+```
+
+The `this Enum` value syntax indicates that this method can be called on an instance of any enum.
+
+Now, using reflection, we'll first retrieve the FieldInfo object for the enum value:
+
+```csharp
+var fieldInfo = value.GetType().GetField(value.ToString());
+```
+
+We should check if the fieldInfo is null. If true, it means the enum value does not exist, so the method returns the enum value's name as a string:
+
+```csharp
+if (fieldInfo == null) return value.ToString();
+```
+
+Next, we'll retrieve the DescriptionAttribute object associated with the enum value:
+
+```csharp
+var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+```
+
+Now we'll check if the attributes array has any description property. If it does, we return the description from the first attribute found, otherwise it means the enum value does not have a DescriptionAttribute, so the method returns the enum value's name as a string, which is the best we can do:
+
+```csharp
+return attributes.Any() ? attributes[0].Description : value.ToString();
+```
+
+And that's it! All together, the `GetDescriptionFromAttribute` looks like this:
+
+```csharp
+public static string GetDescriptionFromAttribute(this Enum value)
+{
+    var fieldInfo = value.GetType().GetField(value.ToString());
+    if (fieldInfo == null) return value.ToString();
+    var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+    return attributes.Any() ? attributes[0].Description : value.ToString();
+}
+```
+
+## CustomParse Method
+
+Now onto our second functionality - parsing a string into an enum value. This is a bit more complicated, but still not too bad. We'll start by defining a generic method that takes a string to parse and a default value to return if the parsing fails:
+
+```csharp
+public static T CustomParse<T>(string? stringValue, T defaultValue) where T : Enum
+{
+
+}
+```
+
+We also define the stringValue itself as nullable, as this makes using this `CustomParse` method much better from a DX perspective, at least for application engineers where it may very well be the case that the application consuming `CustomParse` is not able to guarantee that the string value is not null. Not to worry, we'll handle this case in the method! We'll simply return the default value if the string is null:
+
+```csharp
+if (stringValue == null) return defaultValue;
+```
+
+If the `stringValue` is not null, we'll move on, getting the Type object for the enum using the `typeof` operator:
+
+```csharp
+var enumType = typeof(T);
+```
+
+Now that we have the enum type, we can iterate through all of its fields using reflection:
+
+```csharp
+foreach (var fieldInfo in enumType.GetFields())
+{
+
+}
+```
+
+Let's fill in the body of that loop. First, we'll retrieve the DescriptionAttribute object associated with the current enum value:
+
+
+```csharp
+var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+```
+
+Similar to the `GetDescriptionFromAttribute` method, this line retrieves an array of `DescriptionAttribute` objects associated with the current enum value. Likewise we'll check if the attributes array has any description property. If it does, we'll check if the description matches the input string. If true, it means we've found the enum value that matches the input string, so we return it:
+
+```csharp
+if (attributes.Any() && attributes[0].Description == stringValue)
+    return (T)fieldInfo.GetValue(null)!;
+```
+
+Notice that we're using the `GetValue` method on the `fieldInfo` object. This is because the `fieldInfo` object is a `FieldInfo` object, which is a base class for all fields. We need to cast it to the specific enum type, which is why we use the `T` generic type parameter. The `!` operator is used to indicate that we know the value is not null, as we've already checked for this case.
+
+If the description does not match the input string, we'll check if the enum value's name matches the input string. If true, we've found the enum value that matches the input string, so we return it:
+
+```csharp
+if (fieldInfo.Name == stringValue) return (T)fieldInfo.GetValue(null)!;
+```
+
+Finally, if no match is found, it returns the default value.
+
+```csharp
+return defaultValue;
+```
+
+And that's it! All together, the `CustomParse` method looks like this:
+
+```csharp
+public static T CustomParse<T>(string? stringValue, T defaultValue) where T : Enum
+{
+    if (stringValue == null) return defaultValue;
+    var enumType = typeof(T);
+    foreach (var fieldInfo in enumType.GetFields())
+    {
+        var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+        if (attributes.Any() && attributes[0].Description == stringValue)
+            return (T)fieldInfo.GetValue(null)!;
+        if (fieldInfo.Name == stringValue) return (T)fieldInfo.GetValue(null)!;
+    }
+    return defaultValue;
+}
+```
+
+And, for completeness, here's the full EnumExtensions class:
+
+```csharp
+public static class EnumExtensions
+{
+    public static string GetDescriptionFromAttribute(this Enum value)
+    {
+        var fieldInfo = value.GetType().GetField(value.ToString());
+        if (fieldInfo == null) return value.ToString();
+        var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+        return attributes.Any() ? attributes[0].Description : value.ToString();
+    }
+
+    public static T CustomParse<T>(string? stringValue, T defaultValue) where T : Enum
+    {
+        if (stringValue == null) return defaultValue;
+        var enumType = typeof(T);
+        foreach (var fieldInfo in enumType.GetFields())
+        {
+            var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+            if (attributes.Any() && attributes[0].Description == stringValue)
+                return (T)fieldInfo.GetValue(null)!;
+            if (fieldInfo.Name == stringValue) return (T)fieldInfo.GetValue(null)!;
+        }
+        return defaultValue;
+    }
+}
+```
+
+## Conclusion
+
+That's it! We've created two enum extensions that allow us to get a string representation of an enum value, and parse a string into an enum value. I hope you found this article helpful. If you have any questions or comments, please leave them below. Thanks for reading!
