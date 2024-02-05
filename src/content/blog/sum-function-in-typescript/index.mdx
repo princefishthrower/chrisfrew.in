@@ -1,0 +1,59 @@
+---
+title: "Creating a Simple Sum Function in TypeScript"
+description: "Learn how to create a basic sum function in TypeScript with step-by-step instructions."
+date: "2024-01-30"
+draft: false
+tags: typescript, functions
+---
+
+## Creating a Simple Sum Function in TypeScript
+
+In this tutorial, we'll walk through the steps to create a straightforward sum function in TypeScript. Follow along to understand the process and enhance your TypeScript skills.
+
+## Function Signature
+
+Let's start with the signature of the function:
+
+```typescript
+const sum = (a: number, b: number) => {
+
+};
+```
+
+## Add JS Doc Comment
+For better documentation, let's add a short JSDoc comment to the function:
+
+```typescript
+
+/**
+ * Adds two numbers together.
+ * @param a The first number to add.
+ * @param b The second number to add.
+ */
+const sum = (a: number, b: number) => {
+
+};
+```
+
+## Implement the Function Body
+
+Now, let's add the body of the function. For this simple function, we'll use the built-in 'plus' operator to return the sum of a and b:
+
+```typescript
+const sum = (a: number, b: number) => {
+  return a + b;
+};
+```
+
+## Refactoring - Implicit Return
+For a concise and readable code, we can use an implicit return for a single-line arrow function. Remove the curly braces and 'return' keyword:
+
+```typescript
+const sum = (a: number, b: number) => a + b;
+```
+
+This is called an implicit return, making the code shorter and more readable.
+
+## Conclusion
+
+And that's it! You've successfully created a simple sum function in TypeScript!

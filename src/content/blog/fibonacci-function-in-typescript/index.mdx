@@ -1,0 +1,73 @@
+---
+title: "Recursive Fibonacci Calculation in TypeScript"
+description: "Learn how to create a Fibonacci calculation function using a recursive approach with memoization in TypeScript."
+date: "2024-01-30"
+draft: false
+tags: typescript, recursion, fibonacci
+---
+
+## Recursive Fibonacci Calculation in TypeScript
+
+In this quick tutorial, we'll walk through the creation of a Fibonacci calculation function in TypeScript. We'll be using a recursive approach with memoization to optimize the performance of our function.
+
+## File Setup
+
+Let's create a file named `fibonacci.ts`:
+
+```typescript
+// fibonacci.ts
+```
+
+This comment signifies that this file is called fibonacci.ts.
+
+### Function Signature
+
+Now, let's define the function signature. Our function will calculate the nth Fibonacci number, taking a single parameter 'n' of type 'number' and returning a number:
+
+```typescript
+const fibonacci = (n: number): number => {
+
+};
+```
+
+## Add JS Doc Comment
+For better documentation, let's add a brief JSDoc comment explaining the purpose of the function and the meaning of the 'n' parameter:
+
+```typescript
+/**
+ * Calculates the nth Fibonacci number.
+ * @param n The position in the Fibonacci sequence.
+ */
+const fibonacci = (n: number): number => {
+
+};
+```
+
+## Implement Fibonacci Logic
+Now, let's implement the Fibonacci logic inside our function. We'll use a recursive approach:
+
+```typescript
+const fibonacci = (n: number): number => {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
+This recursive implementation checks if 'n' is '0' or '1'; if true, it returns 'n'. Otherwise, it recursively calls the Fibonacci function for n minus 1 and n minus 2, then adds them together.
+
+## Optimize with Memoization
+To improve performance, let's introduce memoization to our function:
+
+```typescript
+const fibonacci = (n: number): number => {
+  const memo: Record<number, number> = {};
+  if (n <= 1) return n;
+  if (memo[n]) return memo[n];
+  return memo[n] = fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
+Here, the 'memo' object stores previously calculated Fibonacci values, reducing redundant calculations and improving efficiency.
+
+## Conclusion
+Great! You've successfully created a Fibonacci calculation function in TypeScript using a recursive approach with memoization. This optimization enhances the performance of the function. Feel free to explore and experiment with different approaches. Until next time - cheers!
