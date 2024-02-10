@@ -10,22 +10,13 @@ tags: csharp, Enums
 
 Very often in C# you want a string representation or "human readable" version of your enums. Likewise, you may want to parse a string into an enum value. This is a common scenario when working with APIs that return enum values as strings. In this article, I'll show you how to create two enum extensions so that you can accomplish both of these tasks in a generic way. Unfortunately, there seems to be [only too many ways to do this in C#](). With some careful effort and though, I believe I've arrived at the cleanest and most robust solution.
 
-To be fair, the solution posted here comes with a caveat (alas, not _everything_ we do can work fully with magic...). The caveat is that you must decorate your enum values with a `DescriptionAttribute` attribute. This is a fairly common practice, and is the same attribute used by the `Enum.GetDescription` method. If you're not familiar with this attribute, it's very simple to use. Here's an example:
+To be fair, the solution posted here comes with a caveat (alas, not _everything_ we do can work fully with magic...). The caveat is that you must decorate your enum values with a `Description` attribute. This is a fairly common practice, and is the same attribute used by the `Enum.GetDescription` method. If you're not familiar with this attribute, it's very simple to use. Here's an example:
 
 ```csharp
 public enum MyEnum
 {
     [Description("The Human Readable Representation of MyEnumValue")]
     MyEnumValue
-}
-```
-
-Let's start by defining a static class named EnumExtensions.
-
-```csharp
-public static class EnumExtensions
-{
-
 }
 ```
 
