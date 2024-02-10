@@ -1,0 +1,83 @@
+---
+title: "A Zero Burnrate SaaS or Startup in 2024 - The Don't Be an Idiot Edition"
+description: Is it really possible to build a startup with a max a burn rate of 1M _per year_, and _not spend a dime on **any** infrastructure_?
+date: "2024-02-10"
+tags: saas, startup, infrastructure, devops
+---
+
+# Full Disclosure
+
+Disclaimer: I am NOT sponsored by any tools or services mentioned in this post. These are just
+
+This is a push back against on the recent front page Hacker News post [https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/](Every Infrastructure Decision I Endorse or Regret After 4 Years Running Infrastructure at a Startup). To be blatantly honest, the amount of tools presented in that list looks like a nightmare that was not clearly thought out. I've also learned in the meanwhile, through separate conversations, that some of these "west-coast-hipster-style-startups" have burn rates of $1M+ _per month_. In this post, I'll show you how its possible to build a startup with a max a burn rate of 1M _per year_, and _not spend a dime on **any** infrastructure_. I want to be very clear:
+
+**The only thing that should apply to your burn rate is the salary for your employees.**
+
+If you are laughing reading this, thinking that it's impossible, I'm going to tell you, you most likely don't know what you are talking about or what you are doing :) You are more interested in following the latest hype of the latest tool XYZ.
+
+## Keep it Simple: Start with Web, or at the Very Least, Something Cross Platform (i.e. Electron)
+
+I'm partial to apps for the web, but electron works as well as (though here you have hurdles like resistance to desktop apps in general, licensing questions, and so on. Really, just go web.) With web or desktop, you don't have to worry about fighting Google or Apple's policies to get on their store. Furthermore, you have to always wait for store approval which can delay entire releases for your product. For web, you need a domain and a way to host your website, and your available to the entire world from day one. I'd recommend using [https://www.netlify.com/](Netlify). It's free for the first 100GB of bandwidth and 300 build minutes per month.
+
+## A Domain
+
+So yeah, you need a domain. (If you're truly scrappy, this is also optional, you get free domains from Netlify or GitHub pages). But for the sake of looking halfway professional, let's say you want your own website. I like NamecheapYou can get one for $10-$25 per year from Namecheap.
+
+## Devops Madness
+
+But my infrastructure! My pipelines! You cry out. Not to worry.
+
+Take your pick of GitLab, GitHub Actions, or Circle CI. All have more than enough free build minutes (in the hundreds or even thousands) per month - more than enough for any startup. Don't worry about the "tech" either - they're all some variation or flavor of a yaml config file.
+
+## Feature Issue Tracking
+
+Use linear. Its free for unlimited users and up to 250 issues. If you have more than 250 issues, you're doing something wrong, or not very focused :)
+
+## Database
+
+So you need a database. You can use Supabase, which is essentially a postgres-as-a-service service. It's free for the first 10GB of storage and 1GB of database transfer per month. Fair enough, the free tier for Supabase is only up to 500 MB of storage, so this may not be enough for some sort of edge case application where you need a lot of storage. But Postgresql did a recent survey on the size of the database companies were running, [and more than 50% of the responses were less than 500MB](https://www.postgresql.org/community/survey/26-how-large-is-your-postgresql-database/)
+
+## Sending Emails
+
+Use Mailjet - it's free for the first 6,000 emails per month. (And you get all transactional emails from Supabase for free, so you don't even need to use Mailjet for those.)
+
+## A Review of all Costs
+
+So, let's review our monthly costs, at best case:
+
+- Domain - $10-$25 via Namecheap
+- Hosting + Lambda Functions + Site Builds Netlify (free)
+- Storage / Account Emailing / Account Management / Persistence - Supabase (free)
+- Feature / Issue / Bug Tracking - Linear (free)
+- Additional testing CI/CD - GitLab, GitHub Actions, or Circle CI (all free)
+
+Would you look at that... everything is _free!_ And it's only 3-5 tools maximum.
+
+Let's be benevolent and give all our employees equally a $100K yearly salary. As a startup with $1M in funding, this gives you a runway of:
+
+5 years with 2 employees
+3 years with 3 employees
+2 years with 5 employees
+1 year with 10 employees
+
+Compare that to Clown Co. which burns 100K _per month_, which fizzles out in 10 months regardless of how many employees they have, and even then, confuses and overwhelms their employees with a myriad of tools.
+
+## But what about the worst case?
+
+At worst case:
+
+- Netlify: $19 per user per month
+- Supabase (Postgres): $25 per month
+- Linear: $8 per user per month
+- Mailjet: $15 per month for 15,000 emails
+
+Total: 
+
+
+## But my scale! My Millions of Users!
+
+Sigh, here we go again. First off, you're not the next Zuckerburg. And hey, if you are, by the time you have 1M users, you'll have the revenue to pay for the infrastructure. 
+
+## Bonus - Languages
+
+One piece I _do_ have to agree on from that original post is about Go. Go is indeed a great language for building backend services rapidly. Otherwise, for the frontend, I have to take the React TypeScript path. React still remains in my eyes the most flexible and powerful frontend framework. TypeScript is a must for any serious project, where you know at any given time that your entire project is clean from a type standpoint with `tsc --noEmit`.
