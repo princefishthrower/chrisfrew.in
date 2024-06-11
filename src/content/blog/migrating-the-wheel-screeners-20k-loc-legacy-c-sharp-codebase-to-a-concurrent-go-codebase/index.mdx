@@ -1,0 +1,175 @@
+---
+title: Migrating The Wheel Screener's Twenty Thousand + LOC Legacy C# Codebase To A Shiny New Concurrent Two Thousand LOC Go Codebase
+description: ...and how it accomplishes the same number of tasks in a fraction of the time, with a fraction of the CPU load!
+date: "2024-06-09"
+tags: C#,.NET,Go,Postgres,Supabase
+---
+
+## Digital Gold?
+
+If this post sounds too good to be true, you're right! I am still continually wondering about the powers of Go — I swear it's doing some magic over the metal.
+
+## The Use Case
+
+For [The Wheel Screener](https://wheelscreener.com), I process anywhere from 3000 to 4000 underlying symbols, leading to 100,000 to 200,000 options contracts after the U.S. market closes daily, down to anywhere from 15,000 to 30,000 contracts that could be candidates for [the wheel options strategy](https://wheelscreener.com/what-is-the-wheel/). Launched in 2021, this product is no longer in its early days. However, with that said, the entire situation of the codebase was a double-edged sword:
+
+ 1. After years of tinkering with the C# codebase, my domain knowledge of the whole application is extremely high: what is in use, and what the key features are
+
+ 2. The compiled effort of over 3 years of tinkering and experimenting with various features to get The Wheel Screener to where it is today have all been piled into this C# codebase
+
+As we gain more and more customers and traffic in our latest advertising push, we face constant delays and even timeouts from our server (imagine hundreds of folks sorting, filtering, and ordering a 20,000 item paginated dataset simultaneously). Agreed, I could spend the time hunting down these inefficiencies, but in a 20K line codebase that is using patterns from the .NET 5 era (anyone remember Automapper?!), this is a codebase I think I'd rather just rewrite.
+
+## Rewrites are OK!
+
+There is a stigma in the dev community that feeling the need to rewrite a codebase is the sign of a junior dev or otherwise lazy / ignorant developer. As I've matured as an engineer, I do agree if you encounter a legacy codebase, you need to spend some time with it for a while, even if it is frustrating. I used to be a junior dev myself of course, always thinking "I wouldn't do it this way — let's rewrite it all!". Now, it's become much more of a gut feeling based on experience when I finally know that it is time to do something as extensive as a full rewrite. Some criteria for considering a rewrite might include:
+
+-you keep noticing code that is "in the way" of the main logic, and this code is hard to read and you can easily see ways it is inefficient
+
+-dependencies and packages that are no longer in use but somehow are floating around here and there in the codebase
+
+-each new bug takes longer and longer to find, and then longer and longer to fix, despite if it was in the end a "small" or "easy" bug
+
+When I start seeing all these types of problems crop up, that's when it's time to consider a rewrite, or at least a big refactoring / tech debt push.
+
+In the case of The Wheel Screener, many of these were my fault, due to being a solo dev, exploring the product space, and often using band-aide fixes for whatever bugs cropped up. I also never really took time to do tech debt weeks or days; I just focused on keeping the main functionality running while at the same time adding more and more features on top.
+
+## Philosophy for the Rewrite
+
+So, the decision was made. It's time to rewrite! Here are a few main ideas I had for the rewrite:
+
+-Use Golang with a Supabase Postgres instance as the main source of truth
+
+-Remove anything not currently in use — any halfway, dead, or otherwise unused backend feature — just get rid of it
+
+-No half-assed implementations — either implement the full feature or not at all — no band-aide patches or fixes now that we have full domain knowledge
+
+-Parellelize as much as possible
+
+## Getting Started: One Model At A Time
+
+The Wheel Screener focuses on two options strategies, cash secured puts, and covered calls. As I usually build my SaaS apps to maintain speed and reduce complexity, both of these strategies are represented by a *single model*, which in turn forms the key feature of The Wheel Screener: [the dashboard](https://wheelscreener.com/dashboard). This model, which originally had around 20 metrics, has grown to nearly 70 metrics over the years, now coming from half a dozen various data vendors, many of which are custom calculations by us, at the request of various customers. 
+
+I did an audit on all the metrics we had in this model, put them into a Google Sheet, and started to break down what logical categories each fell into (directly from the vendor, computed, dependent on other fields first, etc.). From there, I arrived at around 5 technical groupings of metrics, which helped me create my packages for my go project, each one being rarely more than 100 lines of code.
+
+With this organization, I also realized a huge majority of the calculations could be done concurrently: what I was doing before in serial simply out of laziness or lack of inspection could easily be done in parallel — many of the metrics rely only on data at the ticker (stock) level, not at the contract level!
+
+## New Architecture: Prioritize 'Data Being There' Before 'Dating Being the Most Up To Date'
+
+The previous architecture used to build the dataset was a long list of steps that followed logically after one another to build the final dataset. By now, we have over 70 metrics to sort contracts from, and this data comes from a variety of providers. From a step-by-step standpoint, this process was extremely logical and in some ways, correct. From a reliability (and customer!) standpoint, it's horrible! A step-by-step process is very fragile and any broken step in the chain puts the daily dataset's completion at risk. I remember mornings when I would wake up and see messages from Slack that a total of 0 contracts had been processed overnight... Then would come the stress and scramble to investigate and fix the error, all before the market would open or traders started waking up in the US. (I'm very happy I live in Europe 😉).
+
+With the new framework, I incrementally update the dataset ticker by ticker, so if there are any major errors, much of the data from the previous day is still there, and the dataset can still be used. This is a huge improvement in reliability and customer satisfaction, as the dataset is always there, even if it is not the most up-to-date.
+
+## So How Does the Completed Rewrite Look?
+
+When all was said and done, I ended up with a solid codebase of under 2000 lines of Go code:
+
+```
+[/Users/chris/enterprise/wheelscreenerbackend] cloc .
+      30 text files.
+      26 unique files.
+       6 files ignored.
+
+github.com/AlDanial/cloc v 1.96  T=0.06 s (445.5 files/s, 47894.1 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Go                              22            303            227           1700
+Text                             2              0              0            511
+Markdown                         1             17              0             29
+JSON                             1              0              0              8
+-------------------------------------------------------------------------------
+SUM:                            26            320            227           2248
+-------------------------------------------------------------------------------
+```
+
+Compared to the horror of the legacy .NET codebase:
+
+```
+[/Users/chris/enterprise/wheelscreener/WheelScreenerApi] cloc .
+     525 text files.
+     374 unique files.
+    2531 files ignored.
+
+github.com/AlDanial/cloc v 1.96  T=1.90 s (197.1 files/s, 82785.6 lines/s)
+------------------------------------------------------------------------------------
+Language                          files          blank        comment           code
+------------------------------------------------------------------------------------
+JSON                                 69              8              0         118808
+C#                                  248           7498           2051          22030
+Text                                 11             83              0           3571
+XML                                  24              0              0           2272
+MSBuild script                        2              6              0            172
+YAML                                  6              5              1            152
+Markdown                              2             59              0            122
+C# Generated                         10             40             91             78
+Visual Studio Solution                2              2              2             52
+------------------------------------------------------------------------------------
+SUM:                                374           7701           2145         147257
+------------------------------------------------------------------------------------
+```
+
+![The old C# codebase for The Wheel Screener](https://cdn-images-1.medium.com/max/2000/1*7)
+
+Yikes. I have no idea where those 100K lines of JSON are coming from — but soon it won't matter 😂. Things in the Go world are looking pretty good in comparison!
+
+## Performance = 🚀
+
+Oh yeah, with one of my better performing tests, the new codebase managed to rip through over 100K contracts in less than a minute:
+
+![Golang always ceases to amaze me; incredible performance!](https://cdn-images-1.medium.com/max/2000/1*eBxDfbAvhux80xbGES0ltg.png)
+
+While monitoring top the whole time this was running, I was staggered to see that go barely made the top process for more than a few seconds at a time; in fact, chrome was frequently the #1 CPU hog. 😂
+
+This just goes to show how efficient your software can be if you carefully plan it out and write clean code to execute.
+
+I'm sure there are [big brain developers](https://grugbrain.dev/) out there who are saying "If you were a good engineer, you could have easily built it this way the *first time!*". [Grug find himself slowly reaching for club but grug stay quiet](https://grugbrain.dev/). I strongly doubt that any SaaS app can be written the "right way" the first time. By now I've seen one almost always needs the domain experience (i.e. at least a year) in whatever you are doing to know how to refactor something cleanly. By "domain experience" I mean not only what sector the product is in — fintech in this case —  *but additionally, the domain knowledge of the product itself*: the way the product works, how customers use it, and the most important features. These aspects, by definition, are impossible to know when you're building the product for the first time.
+
+## Reduce Complexity and Just Use Postgres as the One Source of Truth
+
+After choosing to go to a cloud-based solution like Supabase, I realized many many areas of complexity and pain for a solo developer like myself simply disappear, including:
+
+-maintaining a server (whether it be EC2, a droplet, or anywhere else around the web) — don't forget this includes costs, the occasional package updates, SSL key generation, and any other downtime issues that may arise from your provider's side
+
+-server CI/CD — always fun :)
+
+-the ever painful nginx config + and reverse proxy nightmare
+
+-docker configuration and other fun networking issues encountered there
+
+In return, many advantages present themselves:
+
+-ability to build small distributed jobs that can run anywhere to interact with the database (I cringe to say microservices — I think of them more as small jobs that are in charge of a specific data-driven task)
+
+-as long as Postgres is up, your rest API and real-time services are always up — you can tinker with your data uploading and downloading services at your leisure
+
+-no more need for separate servers, databases, or endpoints for various environments — we use this single instance for application data in our development, staging, and production instances (if you *really- wanted to or needed, you could make a discrepancy here, perhaps by creating separate tables for each environment) granted, we are not doing anything to do with customer accounts or billing with this instance, it is purely for the application's data. You'd likely have to consider other tactics if you had stuff like that in your database.
+
+-no more .NET tooling, no bin, obj, or whatever, just a single binary from Go, I mean just look at the server commands I ended up arriving at with .NET to be 100% sure the new API instance was deployed:
+
+```shell
+rm -R /var/www/WheelScreenerApi &&
+rm -R obj &&
+rm -R bin && 
+dotnet publish --configuration Release -p:EnvironmentName=Production && 
+cp -r bin/Release/net8.0/publish/ /var/www/WheelScreenerApi &&
+cp .env.json /var/www/WheelScreenerApi/ &&
+cp -r App_Data/* /var/www/WheelScreenerApi/App_Data && 
+systemctl restart WheelScreenerApi && 
+systemctl status WheelScreenerApi &&
+systemctl restart nginx &&
+systemctl status nginx
+```
+
+Catastrophic! Absolute insanity!
+
+Granted, the advantages listed here for a Postgresql-only 'backend' can't work well for *every* application — for example where you may need to do some other sort of interactions with hardware or operating systems and so on, but for a data-driven web app like The Wheel Screener, it's a perfect use case! I'm happy with the result.
+
+## Thanks!
+
+Thanks for stopping by and I hope you were able to take a few things away from this post.
+
+Of course, even after this rewrite, we're only getting started, and are interested to explore the possibilities this flexible architecture affords.
+
+Until the next rewrite 😉
+
+-Chris

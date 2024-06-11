@@ -1,0 +1,127 @@
+# Efficient JSON Deserialization in .NET: A Modern Approach
+
+In .NET applications, dealing with HTTP responses often involves deserializing JSON data into objects. Traditionally, this process involved reading the entire response content as a string and then deserializing it. However, this approach can be inefficient, especially for large responses, as it requires allocating memory for the entire string.
+
+In this blog post, we'll explore a more efficient way to deserialize JSON directly from an HTTP response content in .NET, avoiding unnecessary memory allocations.
+
+## The Old Way
+
+Previously, we would commonly use `ReadAsStringAsync()` to read the response content as a string and then deserialized it using libraries like Newtonsoft.Json. In many backend methods of my SaaS product, [The Wheel Screener](https://wheelscreener.com), I was using this method:
+
+```csharp
+var apiResponse = await response.Content.ReadAsStringAsync();
+if (response.IsSuccessStatusCode)
+{
+    // We need our custom decimal converter to handle those pesky "NaN" strings
+    var settings = new JsonSerializerSettings
+    {
+        NullValueHandling = NullValueHandling.Ignore,
+        MissingMemberHandling = MissingMemberHandling.Ignore,
+        Formatting = Formatting.None,
+        DateFormatHandling = DateFormatHandling.IsoDateFormat,
+        Converters = new List<JsonConverter> { new DecimalConverter() }
+    };
+    return JsonConvert.DeserializeObject<OptionChainResponseModel>(apiResponse, settings);
+}
+```
+
+In this code snippet, `ReadAsStringAsync()` is used to read the entire response content as a string, which can be memory-intensive, especially for large responses (and trust me when I say an option chain is a LARGE response!). Then, `JsonConvert.DeserializeObject()` from Newtonsoft.Json is used to deserialize the JSON string into the desired object type.
+
+## The Modern Approach
+
+With the advancements in .NET, particularly in ASP.NET Core, there's a more efficient and convenient way to deserialize JSON directly from an HTTP response content. You can use the `HttpContentExtensions.GetFromJsonAsync<T>` method, which handles the deserialization process internally, without the need to read the entire content as a string manually.
+
+Here's how you can do it:
+
+```csharp
+using System.Net.Http;
+using System.Net.Http.Json;
+
+// Assuming 'response' is your HttpResponseMessage
+var result = await response.Content.ReadFromJsonAsync<OptionChainResponseModel>();
+```
+
+This method directly deserializes the JSON content of the HTTP response into the specified type, without the need for intermediate steps such as reading the content as a string manually.
+
+## But those Newtonsoft.Json settings?
+
+Let's go through one by one and tackle each of the custom settings I had in the old code.
+
+### NullValueHandling
+
+In the new method, `null` values are ignored by default, which is the same as `NullValueHandling.Ignore` in Newtonsoft.Json. So we're good here.
+
+### MissingMemberHandling
+
+In the new method, missing members are ignored by default, which is the same as `MissingMemberHandling.Ignore` in Newtonsoft.Json. So, once again, we're good here.
+
+### Formatting
+
+In the new method, the default formatting is `None`, which is the same as `Formatting.None` in Newtonsoft.Json. So, we're good here.
+
+### DateFormatHandling
+
+In the new method, the default date format handling is automatically according to ISO standards. All set.
+
+### Converters
+
+Converters are ever so slightly different. I need one because the default value for some of the decimal values in various option metrics are "NaN". These need to be converted to `null` in my application. Here's what my old Newtonsoft.Json converter looked like:
+
+```csharp
+public class DecimalConverter : JsonConverter
+{
+
+    public override bool CanConvert(Type objectType)
+    {
+        return (objectType == typeof(decimal) || objectType == typeof(decimal?));
+    }
+
+    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+    {
+        try
+        {
+            JToken token = JToken.Load(reader);
+            if (token.Type == JTokenType.Float || token.Type == JTokenType.Integer)
+            {
+                return token.ToObject<decimal>();
+            }
+            if (token.Type == JTokenType.String)
+            {
+                if (token.ToString() == "NaN")
+                {
+                    return null;
+                }
+                // customize this to suit your needs
+                return Decimal.Parse(token.ToString());
+            }
+            if (token.Type == JTokenType.Null && objectType == typeof(decimal?))
+            {
+                return null;
+            }
+            
+        } catch
+        {
+            return null;
+        }
+        return null;
+    }
+
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    {
+        throw new NotImplementedException();
+    }
+
+}
+```
+
+In the new method, you can use the `JsonConverter` attribute to specify a custom converter for a specific property. Here's how you can do it:
+
+```csharp
+// TODO: Add a custom converter for the decimal properties
+```
+
+## Conclusion
+
+In summary, when deserializing JSON responses in .NET applications, it's essential to consider memory efficiency, especially for handling large responses. By adopting modern approaches like `HttpContentExtensions.GetFromJsonAsync<T>` or directly deserializing from a stream with `System.Text.Json`, you can improve the performance and memory usage of your application.
+
+Upgrade your codebase to leverage these modern techniques and enjoy more efficient JSON deserialization in your .NET projects.
