@@ -1,11 +1,11 @@
 import * as React from "react"
 
 // update once per month :)
-const stackOverflowCount = 586000
-const mediumCount = 325559 + 4808 + 4000 + 4600 + 319 // was 315559, going to bump 10000 because mediums stats page is broken right now, adding for dec 2023, jan 2024
-const youtubeCount = 53500
+const stackOverflowCount = 613000
+const mediumCount = 362479 // stats are back on medium!
+const youtubeCount = 60807
 const blogCount = 27000 // from google search console, 25.7K in the past 16 months
-const udemyCount = 3969
+const udemyCount = 4153
 const skillshareCount = 708
 const substackCount = 792
 const codedamnCount = 193
@@ -25,7 +25,7 @@ const totalSum =
 // round to one decimal place
 const roundedPercentage = Math.round((totalSum / 1000000) * 1000) / 10
 // and the last updated string... ex. "June 2023" or "July 2023"
-const lastUpdated = "January 2024"
+const lastUpdated = "June 2024"
 
 export function MissionText() {
     return (

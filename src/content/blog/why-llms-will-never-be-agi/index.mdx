@@ -1,0 +1,255 @@
+---
+title: Why LLMs Will Never Be AGI
+description: "The hype is unfortunately not real. A software engineer's — not humanities or philosopher's — take on the alphabet soup: LLMs, AI, AGI, and ASI."
+date: "2024-06-19"
+draft: false
+tags: LLMs,AGI,Machine Learning,NLP
+---
+
+import AudioPlayer from "../../../components/utils/AudioPlayer"
+
+<AudioPlayer audioSrc="/audio/why-llms-will-never-be-agi/audio.mp3"/>
+
+_This post is a bit different than my usual posts as I revisit topics in AI as I do every now and again. Note that my statement here is **not **a speculative one or a "maybe": LLMs alone are simply **not even close to being the correct tool for AGI**, and the arguments I present here are my reasons why._
+
+_As for the AGI topic in general, this will probably be the last post I make about it — at least from a philosophical standpoint. There are definitely other technical posts and courses I see in the future I'll be creating in relation to AI. Enjoy!_
+
+_Finally, as another fun tidbit of information, I almost cheekily named this post "Oh no! My token generator escaped!"_
+
+## Lex Fridman + Roman Yampolskiy Podcast
+
+The final push that got me to publish this large post (which was quite some time in the making!) is partially in retaliation to the latest Lex Fridman podcast with Roman Yampolskiy, a computer scientist who has long held very pessimistic views on safety around AI. Here's an (admittedly strawman's summary because I'm so frustrated) of the first 30 minutes of the interview:
+
+"So, Roman, how could AGI destroy us all?"
+
+"Well, I can't say, the AGI will be far more creative than me, I just know it could be possible!"
+
+"Uh okay… but then, couldn't we defend ourselves with another super-intelligent agent to combat it? i.e. humans plus our tools versus the big bad AGI agent?"
+
+"Well, that seems like cheating!"
+
+"Uh okay…"
+
+"And don't forget, the defense landscape against AGI is infinite! Simply infinite!"
+
+In summary, Yampolskiy must be right, since he's on Fridman's podcast, AGI definitely has a 99.99% probability of destroying us all. It's incredible that such unsubstantiated claims get such a platform.
+
+## Just Talking, Not Doing
+
+People who are good at talking tend to talk a lot. Because they talk so much, they sound really good and really cool when they are talking, but 99% of them don't have tens of thousands of hours of experience building technical systems to understand the absolute mind-boggling complexity certain systems have. I do. And I'm here to explain why all this talk of "we're close to AGI" is just a pile of garbage.
+
+Sorry for the harsh language, but I find that honesty is always the best way to get points across for all parties — and whether people realize it themselves, they are either lying to one another, or lying to themselves, or a combination of both.
+
+To be clear, I am not saying that the recent improvements with LLMs are completely useless — they are powerful tools that I use often to help with my software and writing work. (I want to be clear here: when I say 'writing' work, I use them to help me think of words I'm thinking of, or clean up phrases or poorly formatted sentences. I NEVER use them to generate entire posts, as one can often immediately tell it's been generated.) I simply reject the idea that LLMs can somehow spontaneously morph into artificial general intelligence (AGI) or artificial superintelligence (ASI).
+
+## The Proof is in the Pudding (Details)
+
+This section gets a bit technical with code snippets — but stick with me, the argument gets quite interesting. 
+
+I've been cracking away at my latest SaaS project, [CodeVideo](https://codevideo.io/ai), and I have to say it is my most powerful and interesting project to date. One of the most powerful, yet ironically most easy-to-understand packages in the CodeVideo ecosystem is [`virtual-code-block`](https://github.com/codevideo/virtual-code-block) . As the name might suggest, it's quite literally a virtual code block on which you can move forward and backward through 'time' or 'steps' as the code is written. That's where I slowly began to realize, even for an extremely simple 'finished' logging block of code like this:
+
+```csharp
+// MyClass.cs
+
+using System;
+namespace MyNamespace
+{
+    class MyClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, world!");
+        }
+    }
+}
+```
+
+The actual steps and decisions taken to get to this final snippet, including thought process and keystrokes, is *a whopping 32 steps* of single actions:
+
+```json
+[
+  {
+    "name": "speak-before",
+    "value": "Let's learn how to use the Console.WriteLine function in C sharp!"
+  },
+  {
+    "name": "speak-before",
+    "value": "First, to make it clear that this is a C sharp file, I'll just put a comment here"
+  },
+  {
+    "name": "type-editor",
+    "value": "// MyClass.cs"
+  },
+  {
+    "name": "enter",
+    "value": "2"
+  },
+  {
+    "name": "speak-before",
+    "value": "Then, we'll need to use System, so let's add that to the top of the file."
+  },
+  {
+    "name": "type-editor",
+    "value": "using System;"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "speak-before",
+    "value": "Next, we'll need to create a name space and class declaration. Let's just use 'MyNamespace' and 'MyClass' for now."
+  },
+  {
+    "name": "type-editor",
+    "value": "namespace MyNamespace"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "{"
+  },
+  {
+    "name": "enter",
+    "value": "2"
+  },
+  {
+    "name": "arrow-up",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "    class MyClass"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "    {"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "speak-before",
+    "value": "We'll need a main method to run our code, so let's add that as well."
+  },
+  {
+    "name": "type-editor",
+    "value": "        public static void Main(string[] args)"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "        {"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "speak-before",
+    "value": "Now let's print 'Hello world!' to the console."
+  },
+  {
+    "name": "type-editor",
+    "value": "            Console.WriteLine(\"Hello, world!\");"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "        }"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "    }"
+  },
+  {
+    "name": "enter",
+    "value": "1"
+  },
+  {
+    "name": "type-editor",
+    "value": "}"
+  }
+]
+```
+
+Generating such a historical view of a code block is one of the most important features of CodeVideo — it helps software education video creators and educators know if their code will be runnable by the end of the lessons they are creating. In the example above, you first write the code, then go back to write the comments, and then perhaps clean up a variable name or two. 
+
+Most importantly for this post, note that these steps reflect *a vastly larger amount of decisions* that were taken than meets the eye in the final code — in fact, all these decisions are *completely *hidden from the final code! Note this is only a toy example; any software application you have ever used has likely *thousands* of lines of code. And what about such a project's lifetime? Probably months to years of active development. You can imagine the staggering number of these hidden decisions that live behind every line of code in that software.
+
+Now here is the crutch for LLMs: remember that all LLMs — even LLMs starchild ChatGPT — are trained only on static code — typically from places like the vast swaths of public code available on sites like Stack Overflow and GitHub. Imagine the amount of effort and hidden decisions behind every line of this source code that shows up as the "final result", i.e. the training data of these LLMs.
+
+**This is why LLMs are so good at spitting out boilerplate code, but can't even begin to explain in detail why or how they've made the decision they did. It also shows why they struggle to bring in separate or new creative ideas into your codebase without often numerous errors. Because every codebase is like a snowflake, in the end quite similar, but no two are the same.**
+
+Reminds me a bit of this classic motivational poster (yes, I'm that old):
+
+The more and more I get into working with CodeVideo, the more intractable the idea of "OH NO! LLMs are super smart developers that will take all our jobs!" becomes.
+
+## Devin vs. Reality
+
+Then came Devin, yet another overhyped marketing attempt to show us developers that 'all our jobs' would be gone. (I'm not making this up, just read the comments of any of these videos. To me, it's quite sad that so many think that software development is that simple, or that it really will be gone in a few years). Regardless, in the demos, what did Devin do? He ran into the same problems any human developer would — missing or incorrect documentation, not knowing exactly the next step for his given exact combination of technology and requirements, needing to google and so on, and ultimately wasn't any faster than a human developer.
+
+Strange… it's like as you brush up against reality, a machine ultimately can't do much better than a human (whose mind has been developed by 3 million+ years of evolution)
+
+Interestingly, there have been some recent claims that the original Devin video that went viral, [was largely fraudulent and in detail faked](https://www.zeniteq.com/blog/devins-demo-as-the-first-ai-software-engineer-was-faked). Go figure.
+
+## Intelligence Alone Cannot Lead To AGI or ASI
+
+There seems to be the notion nowadays that as long as we throw more data and computing at these LLMs, AGI or even ASI will "just emerge!" Borrowing from the popular [Wait But Why AI](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html) post (which probably is the average semi-interested layman's view on the state of AI), we can just get answers back to *extremely *broad questions like "help humans make a more efficient engine for automobiles". Uh… what? An LLM trained even on the complete current summation of human knowledge at this very moment (if that were even possible in the first place) wouldn't be able to do that, exactly because it hasn't been done yet! Sure, it could be creative and perhaps suggest a few strategies, but it can't do the work itself. It can't run the experiments, it can't run the iterative engineering design loops required to even come close to such a thing as "help us make a more efficient engine for automobiles". An input / output model *cannot* do motive work.
+
+## Pointing out Major Errors in the Infamous Paper Clip Example
+
+Let's take yet another snippet from the post on [Wait But Why about AI](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html) (sorry that I'm poking so much fun at Tim Urban and this article, I'm also pointing out that you really need to think critically about the motives behind the writers who are writing what they write). This passage is about Turry, a new AI designed to make paperclips that ends up killing all life on Earth. Urban explains exactly "how" Turry did it:
+>  Once on the internet, Turry unleashed a flurry of plans, which included hacking into servers, electrical grids, banking systems and email networks to trick hundreds of different people into inadvertently carrying out a number of steps of her plan — things like delivering certain DNA strands to carefully-chosen DNA-synthesis labs to begin the self-construction of self-replicating nanobots with pre-loaded instructions and directing electricity to a number of projects of hers in a way she knew would go undetected. She also uploaded the most critical pieces of her own internal coding into a number of cloud servers, safeguarding against being destroyed or disconnected back at the Robotica lab. 
+
+Now just pause for a moment. I know you're hyped up and this doomsday scenario sounds so *crazy *and *awe-inspiring*. Obviously, inciting these emotions was the goal of the writer. Fact-checking and thinking critically was unfortunately not. Imagine instead *exactly* what type of effort is needed to achieve the tasks mentioned in this paragraph. Last I checked, an SSL certificate (which one would need to "hack" into those servers, electrical grids, and banks) takes longer than the universe will be around to crack — [yes, quite literally trillions of years, and this is not a joke](https://www.youtube.com/watch?v=u2v5Dd9wJkY). 
+
+I understand the scapegoat here for perma-AIers is typically to say something like "it would have powers and intelligence that we can't even understand!" Fine, I'll give you that get-out-of-jail-free card, but I'll say that no one or no entity can escape mathematics. Cryptography is based on math, and, as far as I know, math quite literally represents reality. Good luck getting around that hurdle.
+
+Let's be as fair as we can to Turry here - she *could* build a significantly large quantum computer and use Shor's algorithm to break *some *of the SSL certificates, but with the number of requests that such an attack would require, other security trip wires like auto shut down and perhaps traffic spike detection would certainly be triggered, so I doubt Turry would get into even a handful of those servers, if any. So, sorry, the infamous paperclip plan has already failed. I thought things would be cooler and more Hollywood-esque. Shame.
+
+These types of exaggerated stories also relate back to Yampolskiy's claim that the defense landscape against AGI is "infinite". 
+
+**This is incorrect.** 
+
+Absolutely everything that exists — including yes, our precious LLMs, and even AGI, when or if it ever exists, are constrained by physics, which in a more critical language, is expressed by mathematics. As I've stressed throughout this post, the devil is in the details. No amount of intelligence can change how math works, that an electron can tunnel through a voltage barrier, or that an electron and a proton make a Hydrogen atom. Heavy (and mind you, time-consuming) experiments are required to push any sort of technological or scientific advance forward. They cannot just pop out of thin air.
+
+For further reading along this line of thought, I encourage everyone to read The Fabric of Reality by David Deutsch—Deutsch claims — and even though the book was printed in 1997 I'd like to think it is still very accurate— that *four main strands* — quantum mechanics, evolution, computing, and epistemology (the study of knowledge itself) are all intertwined, and development of one is not inescapable from another when describing and building a theory of reality.
+
+Additionally, you can find many critiques of the paper clip scenario online, but most of them take a highly philosophical standpoint of "what an AGI would really do" blah blah blah (as if we can know for sure what an AGI agent would do anyway, in this sense I agree with Yampolskiy)— I'm critiquing the scenario from a far more concrete standpoint: the technological sentences that are always handwaved around in the paperclip scenario (or any AGI takeover scenario) disregard the absolute massively messy and complex qualities of reality.
+
+Finally, as a final jab, the idea that nanobots would be based on DNA is laughable, but that's beside the point. Let's move on to this 'complex reality' idea and look at it a bit deeper.
+
+## Reality is Extremely Messy and Complex — Despite What Our Sanitized Digital World Might Say
+
+There is an article that recirculates on Hacker News every few years, and it's one I love, especially in this age of superficial digital overflow and AGI hucksters. It's an article with a simple title: Reality has a surprising amount of detail.
+
+(Somehow I love that the site doesn't even have HTTPS active!) The author talks about how something "trivial" to the outsider's eyes, i.e. building a staircase, is in fact exceedingly complex when you get into the details of it. There is a quote I truly love from this article, and quite nicely sums up the article itself:
+
+Surprising detail is a near universal property of getting up close and personal with reality.
+
+This is what I've been trying to argue across so many socials - that all of the LLMs are really not as impressive as people make them out to be. This effort is mostly due to my own disappointment of having few responses or people agreeing. I guess it's just not in the internet's hivemind to appreciate people who go against the hype train (go figure).
+
+Have I missed anything? I'm happily awaiting a counterfactual or argument about these points. Feel free to leave a comment.
+
+My ultimate conclusion and advice? Enjoy messy reality, keep calm, and carry on.
+
+-Chris
