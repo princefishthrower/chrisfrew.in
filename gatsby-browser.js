@@ -6,10 +6,12 @@ import './src/styles/styles.scss';
 
 require(`katex/dist/katex.min.css`)
 
-// custom language support - see https://github.com/FormidableLabs/prism-react-renderer?tab=readme-ov-file#custom-language-support
+// custom language support
+// see https://github.com/FormidableLabs/prism-react-renderer?tab=readme-ov-file#custom-language-support
 require(`prismjs/components/prism-csharp`);
 require(`prismjs/components/prism-toml`);
 require(`prismjs/components/prism-bash`);
 require(`prismjs/components/prism-powershell`);
+require(`prismjs/components/prism-json`);
 
 export const wrapRootElement = wrap
