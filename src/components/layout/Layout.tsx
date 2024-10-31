@@ -25,12 +25,13 @@ export default function Layout(props: PropsWithChildren<ILayoutProps>) {
         interval: 1000,
         animationType: AnimationType.LOOP,
         faviconURIs: [
-            "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_left.png",
-            "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_down.png",
-            "https://coffee-app.sfo2.cdn.digitaloceanspaces.com/chrisfrew.in/maskable_icon_right.png",
+            "https://chrisfrew.in/images/favicon-left.png",
+            "https://chrisfrew.in/images/favicon-down.png",
+            "https://chrisfrew.in/images/favicon-right.png",
         ],
         alwaysRunAnimations: false,
     })
+    
     return (
         <>
             <BodyClassName className={ThemeBodyClass.DARK_THEME} />
