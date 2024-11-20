@@ -12,8 +12,9 @@ const AudioPlayer = (props: IAudioPlayerProps) => {
             <audio src={audioSrc} preload="auto" controls={true} style={{margin:"5px"}}/>
             <i>
                 Brought to you by
-                <a href="https://github.com/codevideo/pontificator"><code>pontificator</code></a>, a
-                Full Stack Craft product.
+                <a href="https://github.com/codevideo/pontificator"><code>pontificator</code></a>, a{' '}
+                <a href="https://studio.codevide.io">CodeVideo</a> &{' '}
+                <a href="https://fullstackcraft.com">Full Stack Craft</a> product.
             </i>
         </div>
     )
