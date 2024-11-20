@@ -1,0 +1,77 @@
+---
+title: "Vanishingly Few Developers Can Build an Entire App From Start to Finish — Are You One of Them?"
+description: "Yep, I'm dropping truth bombs!"
+date: "2024-11-15"
+draft: false
+tags: applications, development, system design, startup
+---
+
+<img src="https://cdn-images-1.medium.com/max/2048/1*pQE6wRItKEHy6Cdr5qw7YA.jpeg" alt="Courtesy of Black Forest Labs FLUX 1.1: “A 2D high-res digital art of a very confused software engineer, sweating, and in panic, having no idea what he is doing.”" style={{maxWidth:"100%"}} />
+
+I've gone in and out of big industrial companies, small startups, and small companies throughout my decade-long career (yikes — can't believe it's been that long), and I've encountered probably somewhere upwards of 200 developers / software “engineers”…
+
+and I've arrived at a somewhat shocking conclusion:
+
+**The vast majority of software developers cannot build an entire product from start to finish by themselves.**
+
+Surprised? Don't worry — this is not the *only *conclusion I've come up with over the years of writing software — there are many, many more, but those are different blog posts for a different time ;)
+
+Sure, the typical memes by software engineers on the internet are to make fun of product owners / product managers... most having the tone that these folks don't “do” anything, are lazy, etc…. But let's be honest, the ‘average' developer couldn't get anything done without them!
+
+That's right. Did I stutter? Indeed, I'm stirring the pot on this post. Why do you think I've put this post behind the Medium paywall, anyway?! Most of the paid-for Medium posts are clickbait garbage anyway!
+
+You may scoff, thinking to yourself… are you one of those developers? Surely not… Okay then, I'll give you the benefit of the doubt. Have you ever built, in one application, on your own:
+
+-a frontend website with user login / logout / delete account etc. functionality?
+
+-a backend API that can deliver data (I'll make it easier — either REST or realtime) to the client?
+
+-all the damn glue that goes along with a software product: automating emails, password resets, cron jobs, batch jobs, etc. etc. etc. (yeah -those who know, know- and are probably smiling right now — the list here goes on and on, it feels like some days…)
+
+So… no? Not even *one* of those? Then, unfortunately, yes, you are one of those developers who falls into this category… sorry I'm not sorry.
+
+The bad news? It's going to get worse. With tools like Cursor, Claude, and ChatGPT “helping” developers whenever they get stuck, soon solo developers will be the brand new owners of codebases that are far, far beyond their abilities… and understanding.
+
+What I would like to ask to you is, in a “prompt-only” world, **how can you maintain a codebase where you don't even know what the right questions are to ask about it in the first place?**
+
+The toxically-positive-mentality-type folks tout these new LLM tools as “removing the barrier to entry” for almost any task involving a developer — indeed, this is the case I see as well, but like anything else, this is true only up to a point. From my own experiments with these tools, you can push and push these LLMs to the limit of complexity / context window / call it what you will —and then you hit a wall and a single syntax error or mistake by the model breaks the 2000+ LOC application, and you have not a single clue what exactly triggered the problem. In other words:
+
+**Not good. Very, very bad.**
+
+With these new tools, it is *so *easy to get lazy and put everything into a massive single file — no worries about that, the AI will take care of it all!
+
+Right?
+
+…right?
+
+Yeah… WRONG!
+
+This is a very enticing — yet extremely dangerous pattern to fall into. All those clean code principles, patterns, and blog posts that hundreds of thousands of people spent hundreds of thousands of years coming up with, building, and designing, just fly out the window — all because the LLM can “handle it” or “abstract it away for us”.
+
+It all feels very Asimovian — far in the future where nobody remembers how any of the massive systems that are literally running the entire empire were built — or how they work. Spoiler alert to what happens next — the empire falls into complete decay, then ceases to exist completely.
+
+## Complex Systems Are Incredibly Complex… By Definition
+
+Sounds stupid, right? Well then, I'm not sure why all these AI maximalists choose to ignore this simple statement.
+
+From an old David “DHH” Heinemeier Hansson podcast, I'll never forget how he discredits algorithms and AI with a few simple sentences: “Any application, no matter what it is, is the ongoing culmination of thousands and thousands of tiny decisions, one after the other… and that's not something you can just abstract away with AI…”
+
+(This is a heavily paraphrased quote, I thought it was in [his podcast with Tim Ferriss](https://tim.blog/2018/06/05/the-tim-ferriss-show-transcripts-david-dhh-heinemeier-hansson/), but I couldn't find quite the same quote in that transcript — if you recognize the quote I'm referring to, please let me know in the comments! I hope I'm not too far from the mark… sorry if I am DHH!)
+
+The problem is *learning *and *understanding why *those thousands of decisions were made takes years to understand... and it's not something you can simply “solve” or “back out” with AI — even with an LLM with a 2 million token context window (yes, looking at you , Gemini Pro) — they just don't have a sense of time! They are just input / output models based on their training data. If you claim anything else, you're wrong.
+
+You need to experience the system, the application through time. What issues came up? What new requirements? What new features? When the first customer emails you with a problem or bug and you suddenly realize “oh… that was really dumb, how I built it that way…” that's the first step. The first of thousands. Show me an LLM that can understand that, and I'll change my mind. Until then, I'll be happily building product in senior software engineer land.
+
+## A Small Attempt at Helping
+
+I can't just complain for this entire post, right? Well, in an effort to prevent what could become thousands of wasted hours and headaches from learning what it *really *takes to build a profitable SaaS (read: been, there, done that), I'm hoping to save folks the time and building out a huge series of courses, exercises, and video lessons over at [SaaS from Scratch](https://saasfromscratch.dev), which aims to teach solo developers how to build a sustainable and maintainable SaaS quickly and efficiently.
+
+Note that the courses *will* include how to leverage a variety of AI tools, but in a sustainable way so that you don't end up with a pile of spaghetti code that you don't understand anymore.
+
+## Thanks!
+
+This post is certainly more provocative than most, but I'm doing a bit of an experiment — don't worry, not all of my posts will be like this — they'll mostly be my typical software deep-dives, but recently, I've been feeling the need to blow off some steam about all this AI hype.
+
+Until then, *please* focus on the basics of software design, architecture concepts, and just good plain ol' experience of building applications as a human software engineer. The LLM won't do any of that for you.
+
+-Chris
