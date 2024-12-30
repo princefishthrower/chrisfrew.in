@@ -9,10 +9,16 @@ const SnippetsPage = () => {
     return (
         <>
             <BodyClassName className={ThemeBodyClass.LIGHT_THEME} />
-            <SEO title="Full Stack Snippets - PDF Mode" description="Chris' Full Stack Snippets as a PDF."/>
             <Snippets pdfMode={true} />
         </>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Full Stack Snippets - PDF Mode"
+        description="Chris' Full Stack Snippets as a PDF."
+    />
+)
 
 export default SnippetsPage

@@ -16,14 +16,10 @@ const BlogTagListing = ({
 }: PageProps<PageData, PageContext>) => {
     const { tag } = pageContext
     const posts = data.allMdx.edges
-
-    // only take those
-    // const postsToRender = posts.filter(({ node }) => { node.frontmatter.tags.includes(tag) })
     const cleanTitle = `Posts Tagged With "${tag}"`
-    const cleanDescription = `All posts on Chris' Full Stack Blog tagged with "${tag}"`
+    
     return (
         <Layout location={location}>
-            <SEO title={cleanTitle} description={cleanDescription} />
             <ColoredTitle title={`#️⃣ ${cleanTitle}`} />
             {posts.map(({ node }: any) => {
                 const title = node.frontmatter.title || node.fields.slug
@@ -68,6 +64,16 @@ const BlogTagListing = ({
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <Bio />
         </Layout>
+    )
+}
+
+export const Head = ({ pageContext }: any) => {
+    const { tag } = pageContext
+    const cleanTitle = `Posts Tagged With "${tag}"`
+    const cleanDescription = `All posts on Chris' Full Stack Blog tagged with "${tag}"`
+    
+    return (
+        <SEO title={cleanTitle} description={cleanDescription} />
     )
 }
 

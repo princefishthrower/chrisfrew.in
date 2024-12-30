@@ -8,7 +8,7 @@ tags: Yearly Goals
 
 # Another Year Goes By...
 
-Whew... this year has been _insane_. I truly can't believe the new year is in just a handful of days! As just a breif overview of everything that happened in 2021:
+Whew... this year has been _insane_. I truly can't believe the new year is in just a handful of days! As just a brief overview of everything that happened in 2021:
 
 - I moved away from my previous freelancing position 
 - Launched my first profitable (!) SaaS product

@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout"
 import SEO from "../components/utils/SEO"
 import { sanitizeTag } from "../utils/tags/getSanitizedTagsFromEdges"
 import { TagRenderer } from "../components/utils/tags/TagRenderer"
-import { Link,  graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 export default function BlogPost({ location, pageContext, data, children }: any) {
     useEffect(() => {
@@ -48,14 +48,10 @@ export default function BlogPost({ location, pageContext, data, children }: any)
 
     return (
         <Layout location={location}>
-            <SEO
-                title={title}
-                description={postDescription || data.mdx.excerpt}
-            />
             <div className="blog-article-wrapper">
                 <article>
                     <header>
-                        <h1 style={{marginBottom:"0.8rem"}}>{title}</h1>
+                        <h1 style={{ marginBottom: "0.8rem" }}>{title}</h1>
                         {postDescription && (
                             <p
                                 className="monokaiRedFont"
@@ -166,6 +162,18 @@ export default function BlogPost({ location, pageContext, data, children }: any)
                 <TagRenderer withTitle={false} linkToTagPage={true} />
             </div>
         </Layout>
+    )
+}
+
+export const Head = ({ data }: any) => {
+    const title = data.mdx.frontmatter.title
+    const postDescription = data.mdx.frontmatter.description
+    const excerpt = data.mdx.excerpt
+    return (
+        <SEO
+            title={title}
+            description={postDescription || excerpt}
+        />
     )
 }
 

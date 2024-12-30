@@ -14,7 +14,6 @@ export default function NotFoundPage(props: PageProps<PageData>) {
                 location={location}
             >
                 <>
-                <SEO title="Not Found" description="The site you are requesting on Chris' Full Stack Blog was not found." />
                 <h1 style={{ textAlign: "center" }}>Not Found!</h1>
                 <h2 style={{ textAlign: "center" }}>
                     Yay! You get some confetti!
@@ -35,6 +34,13 @@ export default function NotFoundPage(props: PageProps<PageData>) {
         </>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Not Found"
+        description="The site you are requesting on Chris' Full Stack Blog was not found."
+    />
+)
 
 export const pageQuery = graphql`
     query {

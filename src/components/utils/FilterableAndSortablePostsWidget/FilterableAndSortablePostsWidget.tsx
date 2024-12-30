@@ -149,7 +149,6 @@ export function FilterableAndSortablePostsWidget(
                                 <div style={{ borderColor: color }} />
                                 <small
                                     className="blog-post-date"
-                                    style={{ color }}
                                 >
                                     {node.frontmatter.date}
                                 </small>

@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const SnippetsPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Snippets" description="A variety of code snippets, from backend to frontend, written in a clean-as-I-can-make-it style, ready for you to copy and paste wherever you may need them."/>
             <Snippets pdfMode={false} />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Full Stack Snippets"
+        description="A variety of code snippets, from backend to frontend, written in a clean-as-I-can-make-it style, ready for you to copy and paste wherever you may need them."
+    />
+)
 
 export default SnippetsPage

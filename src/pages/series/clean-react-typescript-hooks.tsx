@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const CleanReactTypeScriptHooksPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Series: Clean React TypeScript Hooks" description={`All posts from my series "Clean React TypeScript Hooks". I hope you enjoy!`}/>
             <CleanReactTypeScriptHooks />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Series: Clean React TypeScript Hooks"
+        description={`All posts from my series "Clean React TypeScript Hooks". I hope you enjoy!`}
+    />
+)
 
 export default CleanReactTypeScriptHooksPage

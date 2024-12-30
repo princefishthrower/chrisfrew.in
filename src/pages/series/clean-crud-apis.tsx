@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const CleanCrudApisPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Series: Clean CRUD APIs" description={`All posts from my series "Clean CRUD APIs". I hope you enjoy!`}/>
             <CleanCrudApis />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Series: Clean CRUD APIs"
+        description={`All posts from my series "Clean CRUD APIs". I hope you enjoy!`}
+    />
+)
 
 export default CleanCrudApisPage

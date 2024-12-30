@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const StatsPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Blog Stats" description="Up to date stats all about Chris' Full Stack Blog."/>
             <Stats />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Blog Stats"
+        description="Up to date stats all about Chris' Full Stack Blog."
+    />
+)
 
 export default StatsPage
