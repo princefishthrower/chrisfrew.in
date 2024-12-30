@@ -4,16 +4,17 @@
     left: 10px;
     top: 30%;
     pre {
-        font-size: 12px !important;
+        font-size: 24px !important;
         line-height: 1 !important;
         margin: 0 !important;
         padding: 0 !important;
+        background-color: rgba(0,0,0,0.7) !important;
     }
     input,
     button {
         font-family: "Fira Code", monospace;
-        font-size: 12px;
-        background-color: transparent !important;
+        font-size: 24px;
+        background-color: rgba(0,0,0,0.7) !important;
         color: $lightColor;
         font-weight: bold;
         border: none !important;

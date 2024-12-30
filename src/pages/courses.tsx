@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const CoursesPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Courses" description="Courses for software developers who want to launch their skills beyond the basics."/>
             <Courses />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Full Stack Courses"
+        description="Courses for software developers who want to launch their skills beyond the basics."
+    />
+)
 
 export default CoursesPage

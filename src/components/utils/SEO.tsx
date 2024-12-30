@@ -9,6 +9,7 @@ export default function SEO(props: PropsWithChildren<ISEOProps>) {
   const { title, description, children } = props
   return (
     <>
+      <html lang="en"/>
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />

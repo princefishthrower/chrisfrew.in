@@ -1,11 +1,11 @@
 import * as React from "react"
 
-// update once per month :)
-const stackOverflowCount = 613000
+// update as you wish
+const stackOverflowCount = 652000
 const mediumCount = 362479 // stats are back on medium!
-const youtubeCount = 60807
+const youtubeCount = 67566
 const blogCount = 27000 // from google search console, 25.7K in the past 16 months
-const udemyCount = 4153
+const udemyCount = 4725
 const skillshareCount = 708
 const substackCount = 792
 const codedamnCount = 193

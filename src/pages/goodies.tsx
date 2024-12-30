@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const GoodiesPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Goodies" description="A variety of downloads, freebies, and more."/>
             <Goodies />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Full Stack Goodies"
+        description="A variety of downloads, freebies, and more."
+    />
+)
 
 export default GoodiesPage

@@ -7,10 +7,16 @@ import type { PageProps } from "gatsby"
 const BookPage = ({ location }: PageProps) => {
     return (
         <Layout location={location}>
-            <SEO title="Full Stack Books" description="Practical step-by-step software books." />
             <Books />
         </Layout>
     )
 }
+
+export const Head = () => (
+    <SEO
+        title="Full Stack Books"
+        description="Practical step-by-step software books."
+    />
+)
 
 export default BookPage

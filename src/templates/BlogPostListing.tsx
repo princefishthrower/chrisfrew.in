@@ -29,29 +29,24 @@ const BlogPostListing = ({ data, location, pageContext }: PageProps<PageData, Pa
             return query === ""
                 ? posts.slice(skip, limit)
                 : posts.filter(({ node }) => {
-                      return (
-                          node.excerpt
-                              .toLowerCase()
-                              .includes(query.toLowerCase()) ||
-                          node.frontmatter.title
-                              .toLowerCase()
-                              .includes(query.toLowerCase()) ||
-                          node.frontmatter.tags
-                              .toLowerCase()
-                              .includes(query.toLowerCase())
-                      )
-                  })
+                    return (
+                        node.excerpt
+                            .toLowerCase()
+                            .includes(query.toLowerCase()) ||
+                        node.frontmatter.title
+                            .toLowerCase()
+                            .includes(query.toLowerCase()) ||
+                        node.frontmatter.tags
+                            .toLowerCase()
+                            .includes(query.toLowerCase())
+                    )
+                })
         }
         return posts.slice(skip, skip + limit)
     }
     const postsToRender = getPostsToRender()
 
-    const cleanDescription =
-        postsToRender.length > 0
-            ? `All posts from ${postsToRender[0].node.frontmatter.date} to ${
-                  postsToRender[postsToRender.length - 1].node.frontmatter.date
-              }`
-            : `No posts found :(`
+
 
     return (
         <Layout location={location}>
@@ -75,10 +70,6 @@ const BlogPostListing = ({ data, location, pageContext }: PageProps<PageData, Pa
                     </small>
                 </div>
             )}
-            <SEO
-                title={cleanTitle}
-                description={cleanDescription}
-            />
             <div
                 style={{
                     display: "flex",
@@ -143,16 +134,66 @@ const BlogPostListing = ({ data, location, pageContext }: PageProps<PageData, Pa
                 withTitle={false}
                 linkToTagPage={true}
                 tags={[
-                    "Go",
-                    "React Native",
+                    "Rust",
+                    "Golang",
+                    "React",
                     "Gatsby",
-                    "TypeScript"
+                    "TypeScript",
+                    "C#",
+                    "WPF"
                 ]}
             />
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />
         </Layout>
+    )
+}
+
+export const Head = ({ data, pageContext }: any) => {
+    const { query } = useContext(SearchContext)
+    const { currentPage, limit, skip } = pageContext
+    const posts = data.allMdx.edges
+
+    const cleanTitle =
+        currentPage !== 1
+            ? `Posts Page No. ${currentPage}`
+            : `Chris' Full Stack Blog`
+
+    const getPostsToRender = () => {
+        // search is allowed on the homepage
+        if (currentPage === 1) {
+            return query === ""
+                ? posts.slice(skip, limit)
+                : posts.filter(({ node }: any) => {
+                    return (
+                        node.excerpt
+                            .toLowerCase()
+                            .includes(query.toLowerCase()) ||
+                        node.frontmatter.title
+                            .toLowerCase()
+                            .includes(query.toLowerCase()) ||
+                        node.frontmatter.tags
+                            .toLowerCase()
+                            .includes(query.toLowerCase())
+                    )
+                })
+        }
+        return posts.slice(skip, skip + limit)
+    }
+    const postsToRender = getPostsToRender()
+
+    const cleanDescription =
+        postsToRender.length > 0
+            ? `All posts from ${postsToRender[0].node.frontmatter.date} to ${postsToRender[postsToRender.length - 1].node.frontmatter.date
+            }`
+            : `No posts found :(`
+
+    return (
+        <SEO
+            title={cleanTitle}
+            description={cleanDescription}
+        />
     )
 }
 
