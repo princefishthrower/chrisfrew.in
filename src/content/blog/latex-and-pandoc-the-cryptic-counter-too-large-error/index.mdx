@@ -1,0 +1,99 @@
+---
+title: "LaTeX and pandoc: The Cryptic 'Counter Too Large' Error"
+description: "A debugging-to-solution journey through LaTeX's alphabetical limits!"
+date: "2025-01-15"
+draft: false
+tags: latex,pandoc,writing
+---
+
+<img src="https://cdn-images-1.medium.com/max/2048/1*BrzAEig8QHflxaaO54dSbA.png" alt="Experimenting with MacOS's new 'Image Playground'; Prompt: 'A robot printing out large PDF documents'" style={{maxWidth:"100%"}} />
+
+import AudioPlayer from "../../../components/utils/AudioPlayer"
+
+<AudioPlayer audioSrc="/audio/latex-and-pandoc-the-cryptic-counter-too-large-error/audio.mp3"/>
+
+## "Docs-as-code"
+
+At our organization, I'm the product owner of a relatively large Pandoc project. Pandoc is a tool that can convert one document type to another, i.e. HTML to markdown, PDF to TXT, and everything in between. At our org, however, which does a lot of ISO-certified medical technology software (read: you need to write A LOT of documentation alongside your software), we use it primarily to convert markdown to LaTeX to generate nice PDFs for regulatory uses. The project has grown so much in size that the example PDF we generate, which has a chapter per illustrative example, has over 100 pages (we have many complex markdown table generators for things like software bill of materials, software license lists, and so on — we're not physically writing that much!).
+
+However, in the last week, I ran into quite a "fun" side effect that involved the internals of LaTeX itself — a bug that left me scratching my head for longer than most bugs I have encountered in all of 2024. And it's only January... yeesh!
+
+## The Bug
+
+The error message appeared quite simple at first, but as we know, sometimes these "simple" errors are the most difficult to decipher:
+
+```
+/tmp/tex2pdf.-ee96064ef56b41d8/input.tex:5081: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+...                                              
+                                                
+l.5081 \section{Section 1}
+                        \label{section-1}
+Output written on /tmp/tex2pdf.-ee96064ef56b41d8/input.pdf (93 pages).
+```
+
+Okay... so we're getting Counter too large ... but all the way down at line 5081 in the document, where we have... Section 1?!?!? I was stumped and laughing to myself, apparently, LaTeX can't count higher than 1...
+
+With some Googling and Stackoverflowing, I saw many posts that mentioned the fact that lettered sections can't go above 26 (i.e. the letter Z) without custom LaTeX implementations. I kept ignoring these comments, marking them as irrelevant to our project because we were using numbered sections. For plain numbered sections in LaTeX, you can go up to 2147483647, or 2³¹-1, with no problem. Definitely a safe number even for our large PDF example!
+
+So what was going on?
+
+## The Aha Moment
+
+I noticed a peculiar aspect of our document structure (at least from the last document that was successfully generated from our pipeline before everything started breaking). We had exactly 23 numbered chapters, and then an appendix with 3 sections... that started, curiously, at X (in LaTeX counter language, 24.), and had two further sections Y and Z, before the end of the document.
+
+That's when I realized what was happening: the addition of my new *numbered *chapter (for the new feature I built) was the first one that would push the final appendix section to 27, or beyond "Z". So in a way, I was just "lucky" and the first one to reach this chapter count limit by submitting a new example chapter.
+
+I took a look at our existing appendix markdown to try to drill down even further to see what the heck was going on:
+
+```markdown
+\renewcommand\thesection{\Alph{section}}
+
+# Appendix
+
+\listoftables
+
+\listoffigures
+
+## Section 1
+In nulla officia tempor aliqua eu culpa id. Commodo anim aute anim duis sunt aute enim non ullamco voluptate proident fugiat officia. Laboris qui dolore minim veniam velit incididunt incididunt aute. Irure ex qui ad ut veniam duis duis laboris consectetur incididunt.
+
+### Subsection 2
+Nisi laborum duis consectetur esse veniam enim aliquip laboris. Id dolor sint proident reprehenderit. Aliquip in veniam dolor anim deserunt mollit laboris non laboris excepteur.
+
+## Section 2
+Consectetur minim labore proident velit. Dolore aliqua exercitation non veniam. Elit nulla veniam adipisicing quis adipisicing Lorem tempor voluptate. Nisi ex officia elit reprehenderit do nostrud qui cillum velit qui. Consectetur officia ad anim aliquip elit consectetur ea adipisicing ea ullamco quis.
+
+### Subsection 2
+Nostrud id non tempor laboris commodo incididunt minim in ut quis do eu magna non. Incididunt dolore ipsum aliqua elit quis duis. Reprehenderit aute veniam ipsum sint consequat minim consectetur proident est ex consectetur Lorem. Anim tempor nulla sunt id amet velit.
+```
+
+Aha! The very first line already illustrates the issue:
+
+```markdown
+\renewcommand\thesection{\Alph{section}}
+```
+
+We were switching to alpha numbering, but without resetting LaTeX's internal counter (no, apparently LaTeX won't do it for you when you switch numbering types.)...
+
+## The Solution
+
+The fix was a one-liner. In our appendix markdown, we simply needed to reset the counter as the first line in the markdown:
+
+```markdown
+\setcounter{section}{0}
+```
+
+This is a powerful advantage of pandoc: while it's fine to write plain markdown, you can also include standard LaTeX commands at any line in the markdown, and those will be picked up by pandoc during the conversion stage (at least when the conversion target is PDF). The addition of this \setcounter command started our appendices sectioning off fresh with the letter A. (I anyway thought it was awkward starting the appendix at the letter X!)
+
+With that, the "Counter too large" error was resolved and our example PDF build went through!
+
+## Thanks!
+
+I hope this post helped you if you are using both LaTeX and / or pandoc and run into the cryptic "Counter too large" error.
+
+Until next time,
+
+-Chris
