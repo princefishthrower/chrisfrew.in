@@ -1,0 +1,141 @@
+---
+title: "🎂 I've Been Building Software for 13 Years. Here's 13 Bits of Wisdom Observed During My Career"
+description: "Heavily influenced by recency bias of AI and LLMs, here are 13 bits of wisdom, some positive, and some negative, of software-related topics I hope I can impart to anyone in the software world willing to read it."
+date: "2025-04-14"
+draft: false
+tags: life,ai,machine learning,software,career,saas
+---
+
+<img src="https://cdn-images-1.medium.com/max/3072/1*31Vc-RXH81z8m0q_N8Sx5g.png" width="100%" alt="Chris in the lab, AKA home office. (Sorry Mr. Ghibli for the utterly blasphemous AI generated art!)"/>
+
+import AudioPlayer from "../../../components/utils/AudioPlayer"
+
+<AudioPlayer audioSrc="/audio/ive-been-building-software-for-13-years-here-13-bits-of-wisdom/audio.mp3"/>
+
+I turned 33 today. I've missed my standard birthday blog post for a few years now, but felt in the mood this year and socked away some time to get it done. I'm strapped for time (as always) so this is more a stream of consciousness at points and definitely full of typos, but more or less combines a series of posts and ideas I wanted to write in the past months.
+
+And no, these points are not April fool's jokes:) (Some I really wish were!)
+
+When I talk about my experience in software, it sometimes feels like nobody believes the breadth of software languages, frameworks, and projects I've worked on, which, in broad chronological order, from 2012 to present day, include:
+
+-HTML, JavaScript, CSS, and SQL (yep, back in the days when node was brand new and cool and we would upload our raw .HTML files to our raspberry pies and self host ourselves)
+
+-SAP ABAP
+
+-SAPUI5 (their super overengineered corporate JavaScript library)
+
+-React (when class components were still cool)
+
+-PHP
+
+-TypeScript with React (when there were still large gaps in props typing and things like that)
+
+-Django (Python)
+
+-.NET / C#
+
+-React Native
+
+-Angular
+
+-Go
+
+-WPF
+
+-Rust (Rust noobs like to say that all of the above languages and frameworks are just stepping stone languages to Rust — but they are also egotistical clowns who don't know how real software projects are built or probably how to choose the right tool for the right job in the first place — of *course* we'd all like a single language or framework to write our entire SaaS app in, but then again we do live in the real world)
+
+If you laugh and think any clown can list some jargon terms, that's fine (you're right!) you can instead verify through things like [my GitHub](https://github.com/princefishthrower), the sheer amount of software behind my [latest SaaS product CodeVideo](https://github.com/orgs/codevideo/repositories), or my [CodersRank profile](https://profile.codersrank.io/user/princefishthrower), or even [my blog](https://chrisfrew.in/), which has over [100 tech related tags](https://chrisfrew.in/stats/).
+
+Okay, enough dating myself, spewing humblebrag garbage never helped anybody, so let's get to this juicy list which I indeed hope can provide some piece of mind to any developer, young or old, aspiring or seasoned:
+
+## 1. You Can't Abstract Away the Complexity of Reality
+
+In 2025, I've got to start with an AI-related topic, right?! Many are eager to assume that LLMs will soon be able to take the work of a software engineer entirely, perhaps even including product and requirements engineering in the mix as well. Trust me, I of course myself have tried this sort of total flow and these things can just blow up your code base or attempt at such a task. One thing in general I can say, the more complex or involved your prompt, models (even including “the best” like Claude 3.7) seem to match 1:1 the complexity in the complexity of code in their responses. They write *way* too much code, overengineer everything, and often the multifile agent-style creation just doesn't work! In my opinion, good software is (and always will be) written in a step-by-step manner. (I shudder to mention the buzz words scrum / agile, but there is definitely something from not overoptimizing everything in the first step). “Vibe coding” will simply never be a replacement for good ol engineering, exactly *because* it skips all the “boring” steps of good ol engineering!
+
+## 2. Single Shot vs. Iteration / Multi-shot
+
+We forget as software engineers how iterative our work is: implement, write tests, test on real device(s) or hardware, find bugs, repeat. Perhaps this includes further red green tests, more edge case tests, and so on. It's a long process!
+
+And yet I continually see “I prompted XYZ to give me a for loop, and it did it wrong!”
+
+Well yeah, natural language is by nature lossy, and you wanted a complete solution that you pictured in your head but not defined in your prompt?
+
+I can definitely see some future form of models where a sort of cluster is used to ask N LLMs the same exact thing (the same prompt), and then all brought together by yet another series of LLMs, before a final result is produced. This would definitely reduce the number of “oh it got it wrong first try” issues. The original problem still comes back to the user, however. If you are not infinitely descriptive (and you can't be, by definition) then you often times won't get exactly what you want! Sorry, but linguistics has you beat on that one.
+
+Most of the other people complaining on the internet and social media about the performance of LLMs are talking about “oh I tried it once and it gave me incorrect output” — also don't understand how these models work in the first place (Like seriously, you're going to ask for the full publication list of some obscure author and expect a perfect, tabulated, ordered, and curated response list? Or ask for a full bio of your best friend just by giving it a first and last name? It's a machine, not a psychic!)
+
+Who knows, perhaps a large percent of these folks are just bitter they missed yet another massive tech investment cycle (and who knows even further — for folks who are invested, and watching the NASDAQ sink daily in recent days 😃)
+
+## 3. It (The Software Job Market) Will Get Worse Before It Gets Better
+
+Another one AI related — a lot of parody posts around social media are about CEOs firing all their staff and replacing them with AI bots. Most are hopefully exactly that, parody. But I'm sure there is some of this clueless job “replacement” going on around the globe. I say clueless because most folks making those decisions dismiss the above two points as “just a matter of time before the models get better”. But, those folks also don't have to immediately pay for the consequences of such a decision, so there is of course nothing stopping them.
+
+So in this way, it's going to get a lot worse before it gets better, and I'm not sure how long it will take C-level folks to see the “oopsies” they made.
+
+But there is good news: think about the same exact historical cycles in the dot com bubble (there are far more web engineering roles around the world than during the 90s) and the 2018 crypto bubble(s) (there are likewise, far more web3 and crypto roles than then.) I believe the same boom will happen for AI-assisted engineers.
+
+## 4. The Complexity LLMs Output Outpaces the Models Themselves
+
+So here's the “it will get better part” — I believe in approximately 3-5 years there will be yet another dev hiring boom. There are very very very few people doing basic research and development in software anymore, or perhaps I should say the (frankly) amount of garbage these LLMs are spitting out around the world already vastly eclipses the folks refining, optimizing, and building really world-class software. Unfortunately, I can't say how this will all end and what it will look like when it is over, but I can certainly picture an insanely mega huge amount of auto-generated, over-complicated, over-engineered, legacy projects generated by LLMs that will quite literally require an army of HUMAN software engineers to untangle (probably folks like us).
+
+One of many problems is that as soon as you generate code using these LLMs you are date-locked to the training date cut-off of the model the moment that any code is generated. There's a new version of .NET, C#, Go, React, or _insert favorite language or framework here_ that shows up? Too bad! The model has no idea about any of that new information! That is, unless you paste the entire new spec in every single prompt (which you can't) or go back and update the code that was generated with the new checkpoint model whenever it comes out (which you won't).
+
+This is why the horribly labeled action of “vibe coding” is idiotic and doomed to fail. Sorry, I said it, but I've been doing this too long and I'm starting to get pissed off at the amount of garbage I see on sites like YouTube about “vibe coding”. (Old man yelling at clouds)
+
+## 5. Any Code You Write (or an LLM can Write) Can Never Be Perfect
+
+Code is a series of ordered characters on a screen, nothing more. But from an engineering perspective, it carries a massive amount of further baggage: What language is it in? What framework in that language, if any? Is there a community to that framework? Support? Some sort of LTS cycle? (Do you even know what the LTS policy is for that language / framework!?). Is it testable? Efficient? Readable? Extendible? Portable? Thousands more in this line of thinking. There is physically no series of lines of characters you can write that can simultaneously fulfill all those profiles. You can do a fun numerical analysis on this — if you're writing with the phonetic alphabet (plus a few symbols as most languages use), already before 100 characters, you've exceeded the number of arrangments than the number of atoms in the universe. But we already all knew that right, from our common knowledge about a deck of card reshuffling and atoms in the universe :)
+
+In other words, there are literally countless ways to build software, but the question always comes back to what requirements it needs to meet, and how, and why.
+
+## 6. Making Money on the Internet is Insanely Difficult, and Feels Like It is Getting Harder Every Day
+
+Alongside of this “we generate all this crap with LLMs”, the digital space is filling up with noise faster than nearly anyone can keep up, and building quality products that have a clear use case is getting more and more difficult by the day. I'm not sure if I really have anything further positive to say on this one, as I'm also fighting the consequences…
+
+## 7. You Can't Make People More Ecofriendly or Green, You Can Only Offer Them Economic Alternatives
+
+While sure, there are eco-minded folks who actively try to reduce their footprint, there are also the liberal hippy type who bike to work, and then turn around and fly to Nepal, still thinking they are carbon neutral at the end of the year.
+
+As much as I'm not a fan of Elon Musk's recent antics, I really would like the era back when we marveled at technological developments and had a sense of hope about battling climate change and weather extremes. (Remember ca. 2016 when Elon Musk was the electric car tech hero every geek aspired to be?) Everyone seems to be so negative and jaded about technology and outlooks in general. Perhaps it really is those damn phones and those damn LLMs.
+
+## 8. Most Coders / Programmers / Software Engineers Aren't that Passionate
+
+And that's fine. Most are looking to just make a buck and checkout immediately at 17:00. Again, all fine. (Sometimes I really wish I had this switch built into my own brain). This point is a just warning for super motivated folks who are really in the industry because they absolutely love it — finding passionate folks are far and few between, I'd estimate around 1 for every 10 or so. Of course, it's always totally worth it when you find those folks :)
+
+## 9. In Software, Complexity is Truly the Root of All Evil
+
+Of course, I'm not the first person to declare this in software, but it's so important I have to also include it in my list! (Hats off to [grug brain developer](https://grugbrain.dev/) for the original inspiration). However, I'll add the addition that complexity can come from many more places than just the code and architecture itself. It can come from external things like company hierarchy, poor decisions made years ago (with even reasons forgotten) or just the classic straight-up trying to make executable tasks from unclear specifications. Oftentimes, even requirements themselves that may seem complex at first become actually extremely simple or easier by one detailed conversation with a customer, client, or stakeholder. Language and architecture decisions that were made years in advance can make years of a difference in effort, maintenance, or migrations.
+
+## 10. You Blink and The Years Go By
+
+It's April 2025. The COVID lockdowns started 5 years ago. Crazy, right? Often I'm torn between thinking I'm just a lazy ass that hasn't really done shit in those 5 years, and also recognizing how hard and difficult (and time-consuming!) it is to ship reliable, useful, and bug-free software — and just how much software I've produced in that time period.
+
+Also aside from work — it's important to enjoy life. All we truly have is the current moment, but it's overwhelmingly easy to forget that. In my opinion, the negative side of this notion is that this concept has been a scapegoat for folks to just not work at all and abuse various social systems, but well, that's another post for another time.
+
+## 11. Trends Which Have Been Foreseen are Starting To Materialize — Not Really Any of Them Positive
+
+People aren't getting married. People aren't having kids. Kids don't know how to read, kids don't know how to write. Many, many people have been writing about these topics, so I won't go any further into them…
+
+But what I will say: We need major societal changes, and fast, to reverse these trends (while the marriage and kids points are debatable, I *won't* debate the literary and writing points). It's quite paradoxical in a sense — we're the richest humans with the most exposure to information and mind boggling technology that has ever been on the planet, and yet you have to argue some of the political and social decisions in the past few years leave much to be desired (as well as the candidates themselves!). I mean, things like having a measles outbreak in 2025, when the vaccine has existed since 1963 — to me is just pure insanity. It really feels from time to time that society is in some ways is going backwards.
+
+## 12. Tech May Really Start to Accelerate Faster than We All Can Grok
+
+Earlier this year, [I speculated that Apple *might *come out with a chip with 128 GB RAM in 2025](https://chrisfrewin.medium.com/a-brief-history-and-a-future-ai-event-horizon-for-software-engineers-d17c886ccb85). A month later, Apple released their M3 Ultra which has a whopping 512 GB RAM. In areas of robotics, hardware, and yes, of course, AI, advancements really seem to be starting to take parabolic trajectories. Where major developments used to be on the order of months, its starting to seem like weeks and days now.
+
+I'm inclined to think the next big tech cycle will come in robotics, but that stuff is so complex it makes LLMs look easy ;)
+
+Stay safe out there.
+
+## 13. If You're Honest and Hard Working, it's Pretty Hard to Make Large Successes In Business
+
+A good life, sure, but an *outstanding* one? Not so easy. This may be a bit more of old-man-yelling-at-clouds, but this sentiment really hasn't changed for me in the past 10 years. Typically, I find the engineering folks to be the most honest people out there, but are often let down, swindled, or tricked by the business side of things. This could fully be us engineers overestimating the simple fact of “that's just business” and taking everything personally, or it could really be that the suites are a bunch of clueless clowns looking to make a buck on the backs of others — just go look at what's been happening to politics in the last 10 years in the U.S.!
+
+It could also just come back to the classic “it doesn't matter how much you know or what you know” but more about how friendly, gregarious, and good of a salesmen you are. In career success, it seems these things get you much further than knowing anything about the latest cryptography algorithms, frameworks, or LLM models.
+
+There's also plenty that could be said about people who make a living on TikTok posting garbage about hidden underground structures below the Egyptian Pyramids. But hey, I guess that's how it's going to stay for now — in 2025 and beyond. All I can hope is my current method of working hard and staying positive will pay off eventually.
+
+## Cheers!
+
+This post was 100% written by two fully functional human hands (much to my colleague's chagrin of loud keyboard noises).
+
+-Chris

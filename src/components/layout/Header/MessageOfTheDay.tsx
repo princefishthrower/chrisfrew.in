@@ -27,7 +27,8 @@ export function MessageOfTheDay() {
         "🤓 sir, best framework? 🤓",
         "☠️ framework X is better than Y! ☠️",
         "👓 RTFD - I won't do it for you 👓",
-        `🤖 ${currentYear} and AI still hasn't taken my job! 🤖`
+        `🤖 ${currentYear} and AI still hasn't taken my job! 🤖`,
+        "✅ ahh... no type errors! it has to work! ✅"
     ]
 
     const getMessageIndex = useCallback(() => {
