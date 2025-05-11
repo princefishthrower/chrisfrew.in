@@ -1,0 +1,406 @@
+---
+title: Two of My Favorite Custom MCP Tools I Use Every Day
+description: A step-by-step guide to creating 'list_repo_locations' and 'issue_terminal_command' tools that unlock fully agentic workflows with Claude Desktop.
+date: "2025-05-11"
+draft: false
+tags: LLMs, AI, MCP, Claude
+---
+
+## My Two Favorite MCP Tools - True Game Changers
+
+I've been building custom MCP tools for a month or so now, and just two of them have absolutely transformed how I work with Claude - they were the real 'aha!' moment for me and 'agentic' workflows. Now I get the MCP hype - at least partially :) 
+
+So, here they are: these two tools essentially give me Claude Code functionality without the extra cost:
+
+1. **`list_repo_locations`** - A smart repository finder that uses fuzzy matching and helpful hints when matches aren't found
+2. **`issue_terminal_command`** - A controlled terminal execution tool, with a 'yolo' option to go beyond read-only mode
+
+Let me walk you through how to build these tools from scratch. By the end of this post, you'll have your own versions that you can customize to your heart's content!
+
+The current MCP server I use locally on my own machine is published here: https://github.com/princefishthrower/mcp-server
+
+I've been reading lots of complaints and confusion about MCP in general - while I agree some of the decisions and examples are flakey at best, the above link is a real MCP server that actually works and is useful.
+
+## Tool #1: `list_repo_locations`
+
+I use this tool to scope what codebases I want Claude to find while just using natural language. Instead of trying to explain directory structures to Claude, I can just say something like "Take a look in the `super_widgets` repo and help me hunt down this bug..." and boom - it knows exactly where to look.
+
+### Create the Basic Structure
+
+First, let's set up the basic TypeScript file for our `list_repo_locations` tool:
+
+```typescript
+// src/tools/list_repo_locations.ts
+import { levenshteinDistance } from "../utils/levenshteinDistance.js";
+
+// We'll organize repos by environment for different projects
+const workRepoMap: Array<{ keywords: string[], repoPath: string}> = [
+    {
+        keywords: ["main-project", "core", "backend"],
+        repoPath: "/Users/yourname/work/main-project"
+    },
+    {
+        keywords: ["documentation", "docs", "wiki"],
+        repoPath: "/Users/yourname/work/documentation"
+    },
+    {
+        keywords: ["frontend", "ui", "client"],
+        repoPath: "/Users/yourname/work/frontend"
+    }
+];
+
+const personalRepoMap: Array<{ keywords: string[], repoPath: string}> = [
+    {
+        keywords: ["blog", "website", "personal-site"],
+        repoPath: "/Users/yourname/personal/blog"
+    },
+    {
+        keywords: ["side-project", "experiment"],
+        repoPath: "/Users/yourname/personal/side-project"
+    }
+];
+```
+
+### Add Fuzzy Matching Magic
+
+We'll use fuzzy matching using Levenshtein distance. When you (or Claude itself) types something close to what you mean, it still finds the right repo.
+
+We're in a new era where it helps when your tools are built using natural language principles. Your AI assistant shouldn't require perfect spelling or exact keywords - it should understand instead the meaning of what you want, including both successes and mistakes, just like a human would.
+
+```typescript
+export const listRepoLocations = async (environment: string, keyword: string) => {
+    const keywordLower = keyword.toLowerCase();
+    let keywordRepoMap: Array<{ keywords: string[], repoPath: string}> = [];
+    
+    // Select the right environment
+    if (environment === "work") {
+        keywordRepoMap = workRepoMap;
+    } else if (environment === "personal") {
+        keywordRepoMap = personalRepoMap;
+    }
+    
+    // First, try exact or substring matches
+    const exactMatches = keywordRepoMap.filter(repo => 
+        repo.keywords.some(kw => kw.toLowerCase().includes(keywordLower))
+    );
+
+    if (exactMatches.length > 0) {
+        return {
+            content: [{
+                type: "text",
+                text: `Found matching repo(s): ${exactMatches.map(repo => repo.repoPath).join(", ")}`
+            }],
+            isError: false
+        };
+    }
+    
+    // If no exact matches, use fuzzy matching
+    const DISTANCE_THRESHOLD = 3; // This is where the NLP magic happens!
+    const fuzzyMatches: Array<{repo: typeof keywordRepoMap[0], keyword: string, distance: number}> = [];
+    
+    for (const repo of keywordRepoMap) {
+        for (const kw of repo.keywords) {
+            const distance = levenshteinDistance(keywordLower, kw.toLowerCase());
+            if (distance <= DISTANCE_THRESHOLD) {
+                fuzzyMatches.push({repo, keyword: kw, distance});
+            }
+        }
+    }
+    
+    // Sort by distance (closest matches first)
+    fuzzyMatches.sort((a, b) => a.distance - b.distance);
+    
+    if (fuzzyMatches.length > 0) {
+        // This is where helpful error handling comes in - we're not just saying "not found"
+        // We're providing context and suggestions, making the tool more conversational
+        const suggestions = fuzzyMatches
+            .slice(0, 5)
+            .map(match => `${match.keyword} (${match.repo.repoPath})`)
+            .join(", ");
+            
+        return {
+            content: [{
+                type: "text",
+                text: `No exact matches found for '${keyword}'. Did you mean: ${suggestions}?`
+            }],
+            isError: true
+        };
+    }
+    
+    // Final fallback with full context - still being helpful!
+    return {
+        content: [{
+            type: "text",
+            text: `No matching repo found for '${keyword}'. Available keywords: ${keywordRepoMap.map(repo => repo.keywords.join(", ")).join("; ")}`
+        }],
+        isError: true
+    };
+};
+```
+
+### Implement the Levenshtein Distance Util Function
+
+This is where the NLP magic happens! Levenshtein distance calculates how many single-character edits (insertions, deletions, or substitutions) are needed to change one word into another. It's a classic algorithm that makes our tools much more human-friendly. (I'm glad I've got a bit of experience in these NLP things - you can see my old nearly 10+ year old experiments over at my archived site, [NLP Champs](https://nlp-champs.chrisfrew.in/)!)
+
+Here's the utility function you'll need:
+
+```typescript
+// src/utils/levenshteinDistance.ts
+export function levenshteinDistance(str1: string, str2: string): number {
+    const m = str1.length;
+    const n = str2.length;
+    const matrix: number[][] = [];
+
+    // Initialize matrix
+    for (let i = 0; i <= m; i++) {
+        matrix[i] = [i];
+        for (let j = 1; j <= n; j++) {
+            matrix[0][j] = j;
+        }
+    }
+
+    // Calculate distance
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+            matrix[i][j] = Math.min(
+                matrix[i - 1][j] + 1,     // deletion
+                matrix[i][j - 1] + 1,     // insertion
+                matrix[i - 1][j - 1] + cost // substitution
+            );
+        }
+    }
+
+    return matrix[m][n];
+}
+```
+
+## Tool #2: `issue_terminal_command`
+
+This tool lets Claude execute terminal commands safely. Think of it as a "shell with guardrails" that prevents potentially destructive operations.
+
+### Set Up the Basic Command Executor
+
+```typescript
+// src/tools/issue_terminal_command.ts
+import { exec } from 'child_process';
+import { promisify } from 'util';
+
+// Safety first - toggle this to control read-only mode
+const READ_ONLY_MODE = true;
+
+// List of allowed commands (read-only operations)
+// This list is not exhaustive - feel free to add more commands as needed!
+const ALLOWED_COMMANDS = [
+    'ls', 'dir', 'cat', 'head', 'tail', 'grep',
+    'pwd', 'echo', 'date', 'whoami', 'df', 'du', 'ps',
+    'wc', 'which', 'whereis', 'type', 'file', 'uname',
+    'history', 'env', 'printenv', 'git', 'cd', 'find'
+];
+
+export const issueTerminalCommand = async (command: string) => {
+    // Extract the base command (first word)
+    const baseCommand = command.trim().split(/\s+/)[0];
+    
+    // Special handling for problematic commands
+    if (baseCommand === 'find') {
+        return {
+            content: [{
+                type: "text",
+                text: `Warning: The 'find' command can be slow on large directories. Consider using 'ls' or 'tree' for specific directories instead.`
+            }],
+            isError: false
+        };
+    }
+    
+    // Security check with helpful error messages
+    if (READ_ONLY_MODE && !ALLOWED_COMMANDS.includes(baseCommand)) {
+        // Notice how we're not just saying "no" - we're providing context and alternatives
+        // This natural language approach makes working with the tool much more intuitive
+        return {
+            content: [{
+                type: "text",
+                text: `Error: Command '${baseCommand}' is not allowed in read-only mode. Allowed commands: ${ALLOWED_COMMANDS.join(', ')}`
+            }],
+            isError: true
+        };
+    }
+
+    // Execute the command
+    try {
+        const execPromise = promisify(exec);
+        const { stdout, stderr } = await execPromise(command);
+
+        if (stderr) {
+            return {
+                content: [{
+                    type: "text",
+                    text: `Error: ${stderr}`
+                }],
+                isError: true
+            };
+        }
+
+        return {
+            content: [{
+                type: "text",
+                text: stdout
+            }],
+            isError: false
+        };
+    } catch (error: any) {
+        return {
+            content: [{
+                type: "text",
+                text: `Error executing command: ${error.message}`
+            }],
+            isError: true
+        };
+    }
+};
+```
+
+You could optionally extend this with more sophisticated security:
+
+```typescript
+// Add these to your constants
+const DANGEROUS_COMMANDS = ['rm', 'rmdir', 'mv', 'cp', 'chmod', 'chown', 'sudo'];
+
+// Add this check before executing
+if (DANGEROUS_COMMANDS.some(dangerous => command.includes(dangerous))) {
+    return {
+        content: [{
+            type: "text",
+            text: `Security Alert: This command appears to modify or delete files. Operation blocked.`
+        }],
+        isError: true
+    };
+}
+
+// Add timeout protection
+const COMMAND_TIMEOUT = 30000; // 30 seconds
+
+try {
+    const execPromise = promisify(exec);
+    const { stdout, stderr } = await execPromise(command, {
+        timeout: COMMAND_TIMEOUT
+    });
+    // ... rest of the code
+} catch (error: any) {
+    if (error.killed && error.signal === 'SIGTERM') {
+        return {
+            content: [{
+                type: "text",
+                text: `Command timed out after ${COMMAND_TIMEOUT/1000} seconds`
+            }],
+            isError: true
+        };
+    }
+    // ... handle other errors
+}
+```
+
+## Wiring It All Together
+
+Now let's integrate these tools into your MCP server:
+
+### Update Your Server Registration
+
+```typescript
+// src/index.ts (partial)
+server.setRequestHandler(ListToolsRequestSchema, async () => {
+    return {
+        tools: [
+            {
+                name: "list_repo_locations",
+                description: "Given a keyword, returns the relevant repo path based on the keyword provided. If no matching keyword is found, it gives context of the nearest matches.",
+                inputSchema: {
+                    type: "object",
+                    properties: {
+                        keyword: { type: "string" },
+                    },
+                    required: ["keyword"]
+                }
+            },
+            {
+                name: "issue_terminal_command",
+                description: "Executes a terminal command and returns the result.",
+                inputSchema: {
+                    type: "object",
+                    properties: {
+                        command: { type: "string" },
+                    },
+                    required: ["command"]
+                }
+            }
+        ]
+    };
+});
+```
+
+### Handle the Tool Calls
+
+```typescript
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
+    if (request.params.name === "list_repo_locations") {
+        const args = request.params.arguments as { keyword: string };
+        const { keyword } = args;
+        // Pass the environment from server startup
+        return { toolResult: await listRepoLocations(environment, keyword) };
+    }
+    else if (request.params.name === "issue_terminal_command") {
+        const args = request.params.arguments as { command: string };
+        const { command } = args;
+        return { toolResult: await issueTerminalCommand(command) };
+    }
+    
+    throw new McpError(ErrorCode.MethodNotFound, "Tool not found");
+});
+```
+
+## Make It Your Own
+
+The beauty of these tools is how customizable they are. And remember - we're not just building tools, we're building conversational interfaces! Every error message, every hint, every suggestion should feel natural and helpful. Here are some ideas:
+
+- Add more environments (home, work, client projects)
+- Include path shortcuts for common operations
+- Add command aliases for complex terminal operations
+- Create repo-specific tool mappings
+
+## Don't Forget: Safety First :)
+
+Remember to:
+- Always use READ_ONLY_MODE unless you absolutely trust the environment
+- Test new commands in a safe environment first
+- Keep your allowed commands list minimal
+- Consider adding logging for audit trails
+
+## The Result? Claude Code, But Free!
+
+With these two tools, in my opinion, I've basically recreated the core functionality of Claude Code without the subscription. Claude can now:
+
+1. Intelligently navigate my desired repositories
+2. Execute safe terminal commands
+3. Understand project structure without constant hand-holding
+4. Work across multiple environments seamlessly
+
+## Coming Soon: Deep Dive into MCP Development
+
+If you found this helpful, I'm working on a comprehensive MCP Masterclass that will cover:
+
+- Advanced tool creation patterns
+- Natural language processing coding for tools
+- Building context-aware AI assistants
+- Performance optimization for MCP servers
+
+Stay tuned for course details!
+
+## Thanks for Your Time!
+
+These two tools have fundamentally changed how I work with Claude. The repository finder eliminates navigation friction, while the controlled terminal gives Claude real power to help with development tasks.
+
+Give them a try, customize them to your workflow, and let me know what awesome variations you come up with!
+
+-Chris
+
+P.S. Don't forget to check out my [other MCP post about managing multiple environments](/blog/how-to-manage-multiple-environments-with-mcp) - it pairs perfectly with these tools!

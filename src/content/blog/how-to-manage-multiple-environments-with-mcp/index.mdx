@@ -1,0 +1,164 @@
+---
+title: How To Manage Multiple Environments with MCP
+description: A simple but effective solution for juggling multiple environments with MCP servers.
+date: "2025-05-10"
+draft: false
+tags: LLMs, AI, MCP, Claude
+---
+
+## Environment Management with MCP
+
+When working with AI assistants like Claude, I've found the Model Context Protocol (MCP) to be incredibly powerful for extending their capabilities. But I quickly ran into an interesting challenge: I needed different server configurations for different projects. At first, I was simply copy and pasting different MCP server configs as needed and then restarting Claude. This was a pain, and I wanted to find a better way to manage multiple environments without the hassle of constantly reconfiguring my server.
+
+tl;dr: The solution is an `environment` command line argument that I pass to my MCP server. This allows me to dynamically load different configurations based on the project I'm working on. I can even run multiple servers at once, each with its own environment settings. This was a game-changer for me, and I hope it helps you too!
+
+Let me walk you through how I solved this with a simple but effective approach.
+
+## Single MCP Server, Multiple Environments
+
+I work across multiple projects that require different repository mappings from my AI assistant. Switching between them meant manually reconfiguring my MCP server or juggling multiple instances.
+
+For example:
+- Work projects need access to work-specific repositories
+- Personal projects require completely different repositories and tools
+
+## ...Just Use Command Line Arguments!
+
+The solution came when I realized I could pass a simple environment parameter to my MCP server. Yes, dumb realization, but so many of the MCP server examples out there just show the standard `node` or `uv` startup command, with no use of any other command line arguments! But accepting an `environment` variable allowed me to create a single server that dynamically loads different configurations based on what I'm working on - or all of them, if I want!
+
+## Create an Environment-Aware MCP Server
+
+First, I modified my MCP server `index.ts` to accept an environment flag (both `--environment=value` and `--environment value` formats). This flag will determine which environment-specific configurations to load:
+
+```typescript
+// Parse command line arguments
+const args = process.argv.slice(2);
+let environment: string | null = null;
+
+// Check for --environment=value format
+const envFlagWithValue = args.find(arg => arg.startsWith('--environment='));
+if (envFlagWithValue) {
+    environment = envFlagWithValue.split('=')[1];
+}
+
+// Check for --environment value format
+const envFlagIndex = args.findIndex(arg => arg === '--environment');
+if (envFlagIndex !== -1 && args[envFlagIndex + 1]) {
+    environment = args[envFlagIndex + 1];
+}
+
+// Validate environment is provided
+if (!environment) {
+    console.error('\x1b[31mError: Environment flag is required\x1b[0m');
+    console.error('Usage: node build/index.js --environment=<environment>');
+    console.error('   or: node build/index.js --environment <environment>');
+    console.error('\nAvailable environments: work, personal');
+    process.exit(1);
+}
+
+console.log(`Starting server with environment: ${environment}`);
+```
+
+## Consume Value in Environment-Specific Tools
+
+I have a tool called `list_repo_locations` which I find helps claude scope what source code to look at on my local machine.
+
+```typescript
+// Define repo maps for different environments
+const workRepoMap = [
+    {
+        keywords: ["main-project", "core"],
+        repoPath: "/Users/me/work/main-project"
+    },
+    {
+        keywords: ["documentation", "docs"],
+        repoPath: "/Users/me/work/documentation"
+    }
+];
+
+const personalRepoMap = [
+    {
+        keywords: ["blog", "website"],
+        repoPath: "/Users/me/personal/blog"
+    },
+    {
+        keywords: ["side-project"],
+        repoPath: "/Users/me/personal/side-project"
+    }
+];
+
+export const listRepoLocations = async (keyword: string, environment: string) => {
+    // Select the appropriate repo map based on environment
+    let keywordRepoMap;
+    
+    if (environment === 'work') {
+        keywordRepoMap = workRepoMap;
+    } else if (environment === 'personal') {
+        keywordRepoMap = personalRepoMap;
+    } else {
+        return `Unknown environment '${environment}'. Available environments: work, personal`;
+    }
+    
+    // Find matching repos...
+};
+```
+
+## Pass Environment to Your Tools
+
+Back in `index.ts`, I updated the server to pass the environment variable to my tools:
+
+```typescript
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
+    if (request.params.name === "list_repo_locations") {
+        const args = request.params.arguments as { keyword: string };
+        const { keyword } = args;
+        return { toolResult: await listRepoLocations(keyword, environment) };
+    }
+    // Other tools...
+});
+```
+
+## Configure Claude Desktop
+
+Now for the magic! Using the same server, we can configure our Claude Desktop config to launch different server instances via the `claude_desktop_config.json` file:
+
+```json
+{
+    "mcpServers": {
+        "mcp-work": {
+            "command": "node",
+            "args": [
+                "/Users/me/mcp-server/build/index.js",
+                "--environment",
+                "work"
+            ]
+        },
+        "mcp-personal": {
+            "command": "node",
+            "args": [
+                "/Users/me/mcp-server/build/index.js",
+                "--environment",
+                "personal"
+            ]
+        }
+    }
+}
+```
+
+Anthropic has finally added toggling activation for MCP servers directly in the Claude Desktop Application, so you just need to toggle the switch to select which type of "environmented" server you want to run.
+
+## Coming Soon: MCP Masterclass
+
+If you found this helpful, I'm excited to announce that I'll be releasing a comprehensive MCP Masterclass sometime in 2025. The course will cover:
+
+- Building powerful custom MCP tools for Claude, Gemini, OpenAI, and more
+- "Natural Language" friendly programming - Levenshtein distance, regex, etc.
+- Creating context-aware AI assistants
+
+Stay tuned for the announcement. I'll be sharing the course details soon!
+
+Oh, and [don't forget my other MCP post about my two favorite custom MCP tools](/blog/two-of-my-favorite-mcp-tools-i-use-every-day).
+
+Thanks for reading! If you have any questions about MCP servers or environment management, feel free to reach out.
+
+-Chris
