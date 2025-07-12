@@ -71,6 +71,23 @@ module.exports = {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.mdx`, `.md`],
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 800,
+                            quality: 90,
+                            showCaptions: true,
+                            linkImagesToOriginal: false,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-copy-linked-files`,
+                        options: {
+                            destinationDir: `static`,
+                        },
+                    },
+                ],
             },
         },
         {

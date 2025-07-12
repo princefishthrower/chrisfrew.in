@@ -83,5 +83,11 @@ export const sanitizeTag = (rawTag: string) => {
     if (rawTag === "latex") {
         return "LaTeX"
     }
+    if (rawTag === "mcp") {
+        return "MCP"
+    }
+        if (rawTag === "llms") {
+        return "LLMs"
+    }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }
