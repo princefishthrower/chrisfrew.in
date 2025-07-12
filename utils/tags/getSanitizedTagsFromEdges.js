@@ -81,6 +81,12 @@ const sanitizeTag = (rawTag) => {
     if (rawTag === "LaTeX") {
         return "latex"
     }
+    if (rawTag === "mcp") {
+        return "MCP"
+    }
+    if (rawTag === "llms") {
+        return "LLMs"
+    }
     return rawTag.trim().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 }
 
