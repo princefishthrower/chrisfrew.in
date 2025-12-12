@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { useWindowSize, useTween } from "react-use"
 import Confetti from "react-confetti"
 import { useContext } from "react"
@@ -37,12 +37,17 @@ export interface IConfettiContainerProps {
 
 export default function ConfettiContainer(props: IConfettiContainerProps) {
     const { onAnimationComplete } = props;
+    const [isMounted, setIsMounted] = useState(false)
     const { width, height } = useWindowSize()
     const frictionTween = useTween('outQuad', duration, 0)
     const opacityTween = useTween('linear', duration, duration / 2)
     const windTween = useTween('outQuart', duration*2, duration / 3)
     const { themeBodyClass } = useContext(ThemeContext)
     const colors = getThemeColorHexCodes(themeBodyClass);
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     // friction tweens from .99 to .79 (solved system of equations, hehe)
     const friction = -0.2 * frictionTween + .99;
@@ -59,6 +64,10 @@ export default function ConfettiContainer(props: IConfettiContainerProps) {
             }
         }
     }, [opacity, onAnimationComplete])
+
+    if (!isMounted) {
+        return null
+    }
 
     return (
         <>
