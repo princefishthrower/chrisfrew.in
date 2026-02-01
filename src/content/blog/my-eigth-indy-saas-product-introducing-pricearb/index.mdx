@@ -1,0 +1,79 @@
+---
+title: "My Eighth Indy SaaS Product: Introducing PriceArb!"
+description: Finding statistical edges in prediction markets
+date: "2026-01-09"
+draft: false
+tags: Sqlite, Go, TypeScript, Saas, Netlify
+---
+
+import AudioPlayer from "../../../components/utils/AudioPlayer";
+
+<AudioPlayer audioSrc="/audio/launching-pricearb/audio.mp3"/>
+
+_Note: I realize I have been neglecting this blog for quite some time now. That's because I've been too busying shipping! I did a quick look on the blog here and realized [the last time I posted](blog/my-third-indy-saas-product-squawk-market/) in my "X Indy SaaS Product" was my third SaaS ever, Squawk Market (which is now anyway [in the software graveyard](blog/tales-from-the-software-graveyard-the-birth-and-death-of-squawk-market/)). This was waaay back in March 2023. Since then, I've actually built _5 more SaaS products_ - [AMT JOY](https://amtjoy.com), [CodeVideo](https://codevideo.io), [LEAPS Screener](leapsscreener.com), [VannaCharm](https://vannacharm.com) but that is neither here nor there. This post is about my newest SaaS and the one I'm most excited about - [PriceArb](https://pricearb.com)._
+
+Let's get into it.
+
+## Motivation for PriceArb
+
+Throughout 2024 and 2025, prediction markets like Kalshi and Polymarket have exploded in popularity. For a long time, I ignored them, writing them off as weird / fringe markets and considering them gambling, but after a while of watching how these markets trade during live events, I realized there were likely historical and emotional edges that could be exploited.
+
+For example, the recent Eagles vs. Commanders game, which was _at_ Philadelphia, very early on in the game when the score was 7-10 Commanders, and the game contract was _in favor of Washington_ at 52%!
+
+<img class="mx-auto" src="https://miro.medium.com/v2/resize:fit:700/1*k6TvR2FfpSF3yy4e9bwwfQ.png"/>
+
+Mispricing in the event contracts…?
+
+I quickly looked at the current lineups and the team's records, and could see no reason for what I thought was a very poorly priced contract (I assumed this game would be a breeze for the Eagles — read on to find out how I made money even though they ultimately lost).
+
+I also looked at the two teams' records and previous games — as a long-time NASDAQ options and futures trader, I never doubt when a market is pricing something — I just needed to figure out _why,_ and if I agreed or not. I couldn't really find anything to convince me of this 50/50 pricing, and was sure the Eagles could at least have a scoring touchdown drive to retake the lead. I averaged into a position. Sure enough, after the half, the Eagles scored a touchdown and a field goal, bumping their contracts up to over 75%! I closed my position, netting a nice return:
+
+<img class="mx-auto" src="https://miro.medium.com/v2/resize:fit:205/1*LMPllr8Rj-cazUrN7MlFNg.png"/>
+
+My very first event contract trade, for all the world to see.
+
+Just like everything else in the trading world, I find (as dumb as it sounds) my only goal in these markets is to simply buy low and sell high — and prediction markets seem to offer more than ample edges to do this — as long as you stay objective, don't get emotional, and trade your edge.
+
+I realized, though, that doing all these disciplined things as a solo trader is quite a challenge. For stock, option, and futures traders, there are more than enough tools out there to help traders refine their edge — journals, advanced charting libraries, screeners (like [The Wheel Screener](https://wheelscreener.com) 😉), and much more. But so far, it seems like folks are left to their own wits when it comes to event contract trading.
+
+I thought it would be great to also begin building some advanced tools for those looking to find some edges in these event contract markets, so let's get into what we are launching with and what edges we've built so far.
+
+## The Edges for Wildcard Weekend
+
+We're launching PriceArb with a focus on NFL games, and we're all set for wildcard weekend:
+
+![A sneakpeek of our NFL dashboard.](https://miro.medium.com/v2/resize:fit:700/1*RjPRSh8hr03eObbf0XcYzw.png)
+
+The first two edges we've developed are **GameStateEdge** and **RecordEdge**.
+
+**GameStateEdge** is a real-time edge based on the current state of the game — we match the current score differential (from the home team's perspective), the time left, and which of the teams (home or away) have possession. We do a match against all games with a similar state based on time and score buckets, and then look ahead to see who ended up winning.
+
+**RecordEdge** is a pure historical context that can be calculated even before the game starts— we look back through all NFL games when two teams with similar records played — including home and away statistics, i.e., considering record at home vs record away.
+
+For more detailed and technical information as to how these edges work and are calculated, check out our [edges page](https://pricearb.com/edges).
+
+And don't worry — we are working on a half-dozen other edges _at least_ for the coming weeks and months, to give retail traders as much edge as possible!
+
+Two event contracts selected at random per each sport category will be free forever, but to unlock the full data and analysis, you'll have to subscribe.
+
+## Some Advice and Comments
+
+Coming from a trader's perspective, I wanted to list a few things on how I think about event contracts so far:
+
+1. In my opinion, if you are just buying and holding until the actual contract resolves, that _is_ more or less gambling — unless it is part of your strategy and you have strong conviction or edge to “know” this will work out in your favor (or on average does more than not)
+
+2. Instead, I encourage you to do what is known as 'scalping' in the futures and options world — holding positions for short amounts of time, fading extremes. This is exactly what [PriceArb](https://pricearb.com) offers to you on both a historical and real-time basis. You can even try without PriceArb — watch how price reacts on these event contracts during an NFL touchdown or even field goal — I find almost always the contracts become overpriced to one side and the future possibility of teams scoring points seems to be completely discounted! (This is all with the backdrop of assuming there is already a bit of a lopsided matchup — like the Eagles and Commanders game — if it's an otherwise 'toss up' match of teams with close records, then I wish you the best of luck) Also note: if I had 'gambled' my scalp until close — I would have lost it all! The Commanders ended up shutting out the Eagles fourth quarter and won!
+
+3. I find soccer games tougher in general to trade such an edge — goals are much further and few between and as such, any new goal rapidly reprices the contracts. Additionally, add to the fact that you can also trade a tie contract — and something like 30% of all Premier League games end as a tie — it makes for a challenging contract landscape. This is something we'll be exploring and working on in the lab very soon. Trust me when I say we'll be ready with soccer-specific metrics and data for the World Cup this summer.
+
+## Roadmap
+
+Truth be told, we're just getting started. You can check out everything I have planned so far for PriceArb on our [roadmap page](https://pricearb.com/roadmap). Unlike hype losers, I indeed plan to the best of my abilities to complete everything that is stated in that roadmap — and I welcome any other feature ideas as well!
+
+(I can prove my work ethic with my track record from on Wheel Screener and VannaCharm as well.) I find the event contract space to be extremely exciting (though it does feel a bit like the wild west crypto days)— and these instruments are so much different than the stocks and options which I've been trading so long. This excited feeling reminds me of when I first discovered options, which ultimately led me to build tools like [The Wheel Screener](https://wheelscreener.com), [LEAPS Screener](https://leapsscreener.com), and [VannaCharm](https://vannacharm.com).
+
+Now I'm here building [PriceArb](https://pricearb.com), and I hope you'll join me on this statistical adventure in this brand new product!
+
+-Chris
+
+_Not financial advice. PriceArb is a research tool only._

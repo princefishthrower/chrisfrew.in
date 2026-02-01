@@ -1,4 +1,5 @@
 import * as React from "react"
+import { navigate } from "gatsby"
 import { AsciiLine } from "../../utils/Ascii/AsciiLine"
 import { useState } from "react"
 import Constants from "../../../constants/Constants"
@@ -16,6 +17,11 @@ export function LaptopSubscriber() {
 
     useTimeout(() => setIsVisible(true), flyInDelay)
 
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
+        navigate("/signup")
+    }
+
     // if we should not show, or the user has already opted out, don't
     if (cookies[Constants.LAPTOP_SUBSCRIBER_COOKIE_KEY] === "false" || !isVisible) {
         return <></>
@@ -24,9 +30,7 @@ export function LaptopSubscriber() {
     return (
         <div className="laptop-subscriber animated large-only">
             <form
-                action="https://chrisfrew.us19.list-manage.com/subscribe/post?u=5f7289fbe97df30f673068826&amp;id=b1729bbdce"
-                method="post"
-                target="_blank"
+                onSubmit={handleSubmit}
                 noValidate
             >
                 <pre>{` ______________`}</pre>
