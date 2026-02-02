@@ -5,7 +5,20 @@ export function ProductPortfolio() {
         <>
             <h2 className="font-weight-bold">Products</h2>
             <div className="flex-container">
-
+                <a
+                    href="https://pricearb.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    PriceArb
+                </a>
+                <a
+                    href="https://vannacharm.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    VannaCharm
+                </a>
                 <a
                     href="https://wheelscreener.com"
                     target="_blank"
@@ -14,11 +27,11 @@ export function ProductPortfolio() {
                     The Wheel Screener
                 </a>
                 <a
-                    href="https://option-screener.com"
+                    href="https://leapsscreener.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Option Screener
+                    LEAPS Screener
                 </a>
                 <a
                     href="https://amtjoy.com"
