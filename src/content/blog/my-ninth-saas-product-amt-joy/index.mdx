@@ -1,0 +1,109 @@
+---
+title: "My Ninth Indy SaaS Product: Introducing AMT JOY!"
+description: "Daily TPO charts, volume profiles, developing value area playback, and 400+ fields per session — Auction Market Theory analytics for futures traders."
+date: "2026-03-22"
+draft: false
+tags: SaaS, Go, TypeScript, React, Trading
+---
+
+_Note: For those keeping count at home, yes, this is SaaS number nine. I think I have a problem. But it's still that kind of problem where you keep building things that you (read: me) actually use every single day!_
+
+Let's get into it.
+
+## Why I Built AMT JOY
+
+If you've been following this blog for a while, you know I've been deep in the futures trading world since my [first disastrous algorithmic trading attempts back in 2023](/blog/how-i-tried-to-achieve-2000-mrr-in-6-months-and-failed/). A lot has changed since then. Just recently, I've [flipped (read: 100% return) a small 5K futures account](https://amtjoy.substack.com/p/5k-account-flip-100-return-challenge), slowly and steadily over two months, february and march. I've gone from blowing up a rudimentary trend-following algo to actually understanding *why* markets move the way they do — and a huge part of that journey was discovering Auction Market Theory and Market Profile.
+
+The general problem in short? The current state of the tooling is terrible.
+
+If you want to do serious Market Profile analysis, your options are basically:
+
+1. Pay $80+/month for Sierra Chart or ATAS and wrestle with desktop software that looks like it was designed in 2005
+2. Manually build TPO charts locally in your terminal (yes, I've done this — it's exactly as painful and stupid as it sounds)
+3. Use your broker's volume profile overlay and pretend that's enough
+
+There's no web-based platform that gives you historical, granular, daily Market Profile analytics across all the major futures markets with developing value areas, session similarity matching, and raw data exports.
+
+## What AMT JOY Actually Does
+
+Every trading day, the backend (a Go pipeline that I'm quite proud of) pulls tick data for 36 markets — all the big futures (ES, NQ, YM, RTY, GC, CL, NG, BTC, ZN) plus major stocks and ETFs (SPY, QQQ, AAPL, NVDA, etc.) — and crunches it into a massive analytics dataset.
+
+For each session, we compute **400+ fields**. Not a typo. Four hundred. Here's a taste:
+
+- **TPO charts** with full A→M period labeling for RTH, EU, and overnight sessions
+- **Volume Profiles** with VAH, VAL, VPOC for RTH, overnight, and previous sessions
+- **Developing value area playback** — animated, period by period from A through M
+- **Session classification** — balanced, trending, inside days, outside days, opening drive type
+- **Gap analysis** — gap name, gap points, gap fill level, gap fill period
+- **One-Time Framing** — daily, weekly, monthly OTF status with historical tracking
+- **IB extensions** — direction, period, magnitude
+- **Poor highs/lows and excess** — for RTH, overnight, and previous sessions
+- **Cross-level analysis** — which levels got crossed, in which period, from which direction
+- **Inventory analysis** — Asia, EU, and overnight long/short inventory percentages
+- **Session similarity matching** — 7 algorithms including cosine similarity, Euclidean distance, and Hamming distance on the TPO matrices
+
+And all of this is downloadable in JSON and CSV for backtesting.
+
+## The Feature I Use Every Day
+
+If I had to pick one feature, it's the **developing value area playback**.
+
+Instead of looking at a static end-of-day TPO chart, you watch the value area, TPO, and volume profile *build* — from the A period opening print all the way through M period close. You can see exactly when value shifted, where the value area and VPOC migrated, and how the profile developed throughout the session.
+
+This completely changed how I prepare for the next trading day. You start to see patterns in *how* value develops, not just *where* it ended up. A session where value steadily migrated higher all day tells a very different story than a choppy one where VPOC flipped back and forth three or four times.
+
+## The Session Similarity Engine
+
+This one is for the quants and data nerds (myself included).
+
+For every session, AMT JOY computes similarity scores against all historical sessions using seven different algorithms:
+
+1. **Return-based similarity** — which sessions had the most similar daily return?
+2. **Return-from-open similarity** — same concept but anchored to the open
+3. **OHLC return similarity** — matching the full OHLC shape
+4. **EU return similarity** — European session return matching
+5. **TPO cosine similarity** — comparing the actual TPO matrix shapes
+6. **TPO Euclidean distance** — geometric distance between TPO profiles
+7. **TPO Hamming distance** — structural differences in the binary TPO matrix
+
+When multiple algorithms agree on the same historical match, we flag it as a "super match." These are the sessions worth studying before the next open.
+
+## The Tech Stack
+
+For those curious (this *is* a developer blog after all):
+
+- **Backend data pipeline**: Go — pulls from our data source, computes all stats, uploads to Supabase. Runs on a nightly cron at 4 AM EST with a full archive rebuild every Sunday.
+- **Frontend**: Next.js 16 on Netlify with Clerk auth
+- **Database**: Supabase (PostgreSQL) — the session data, minute-level events, and globex candles all live here
+- **Serverless functions**: Go Lambda functions on Netlify — handles Stripe payment verification, subscription management, bulk download generation, and API key management
+- **Payments**: Stripe payment links → success page → Go function verifies session → creates/updates Clerk user with tier metadata
+
+This is the same pattern I used for [VannaCharm](https://vannacharm.com), and it works really well. Clerk handles auth, Stripe handles money, Supabase handles data, Go handles the heavy computation, and Next.js handles the frontend animations and smooth web experience. As I've been harping for years, the right tool for the right job.
+
+## Pricing
+
+I wanted to keep the barrier to entry as low as possible:
+
+- **Free** — browse the entire session archive (sessions older than 7 days), the glossary, and the Risk Lab calculators. No credit card required.
+- **Starter ($10/month or $199 lifetime)** — full access to all sessions including the last 7 days, daily TPO charts, volume profiles, developing value area playback, and session similarity matching.
+- **Premium ($29/month or $499 lifetime)** — everything in Starter plus bulk data downloads, 400+ fields per session, multi-session coverage (Asia, EU, overnight, RTH), the full similarity engine, inventory analysis, and priority support.
+
+Compared to $85/month for ATAS or $879 one-time for Jigsaw, I think $10/month for what AMT JOY offers is a steal — and I'm not just saying that because I built it. Full Stack Craft's mission has always been to offer useful tools to retail traders at affordable prices.
+
+## What's Next
+
+I'm already working on more features:
+
+- **More markets** — bonds, ags, and forex futures are on the shortlist
+- **Real-time developing value areas** — live, during the session, not just after the close
+- **Custom alerts** — get notified when specific conditions fire (poor high formed, OTF status changed, etc.)
+
+## Try It Out
+
+Head over to [amtjoy.com](https://amtjoy.com) and poke around — the free tier gives you some access to the historical archive so you can see exactly what you're getting before you pay anything.
+
+If you trade futures with Market Profile or AMT concepts, I genuinely think this will save you time and surface context you didn't know you were missing. And if you have feedback — especially on what fields or features would make this indispensable for your daily prep — I want to hear it.
+
+Thanks, as always, for stopping by!
+
+-Chris

@@ -1,30 +1,51 @@
 ---
 title: I Shipped 4 SaaS Products in January
-description: With these cutting edge AI tools - the pace at which I can build & ship is getting out of control.
+description: January 2026 was a sprint: four launches, real users, and hard lessons.
 date: "2026-02-01"
 draft: false
 tags: Life, SaaS
 ---
 
-## \#1. Finally - Option Screener! - [option-screener.com](https://option-screener.com)
+## #1. Option Screener - [option-screener.com](https://option-screener.com)
 
-I'm going to start of with the biggun' - something that I've had in mind for years now and finally got the time to put together. Building on the success of The Wheel Screener and LEAPS Screener, I'm finally releasing Option Screener - a screener for a variety of strategies across the entire market. This is my sort of 'magnum opus' product, at least in the line of all these screeners I've built. Much more to come here over the coming years and months - if all goes well, I'll have a premium not just options analytics tool, but a full alerts system and trading suite.
+I will start with the one I had in my head for years: Option Screener.
 
-## \#2. PriceArb - [pricearb.com](https://pricearb.com)
+This is the natural next step after [The Wheel Screener](https://wheelscreener.com) and [LEAPS Screener](https://leapsscreener.com). The goal is broader coverage and faster insight: real-time options analytics, strategy screeners, flow tracking, put/call context, and momentum-style filters in one place.
 
-Coming in at number two, we have PriceArb. This is a very special product in my mind, and I'm either way too early, or so ignorant that I don't understand the sports betting world at all yet. This one was really a fun one and where I had a new breakthrough in my AI workflows. Using claude and my [issue_terminal_command MCP tool], I was able to build out [one of the most comprehensive NFL stat](https://pricearb.com/blog/100-nfl-stats-mad-lads) tables you can find on the web. Unfortunately, the launch flopped completely and I don't see any traction. I'll have to put this one on the backburner for now.
+Out of everything I shipped in January, this is the product that feels most like the long-game foundation.
 
-## \#3. Hindsight Data - [hindsightapi.com](https://hindsightapi.com)
+## #2. PriceArb - [pricearb.com](https://pricearb.com)
 
-Next, we have Hindsight Data - this is a historical api service where you can immediately get the answer to questions like, "what dates were all the FOMC trading dates?", "which days was CPI reported?". Combining this data with something like [AMT JOY](https://amtjoy.com), or a dashboard like the wheel screener, this becomes a powerful analytics and research tool. I've based the pricing off of many similar API datasets found around the web, and I'm hoping to officially launch this some time in February. (This was an experiment of building our first 'API' product - we will move to add an API layer to The Wheel Screener, LEAPS Screener, Option Screener, VannaCharm, and AMTJOY as well in February.)
+At number two is PriceArb, my prediction-market analytics platform.
 
-## \#4. Semanticprint - [semanticprint.com](https://semanticprint.com)
+PriceArb is built around one idea: markets can overreact in live event contracts. The app compares live prices against historical probabilities, then surfaces potential edge setups across dashboards and tools. It currently leans heavily into NFL use cases, with more sports support in the pipeline.
 
-This tool is only in it's early stages - but anyway provides a very cool architecture - full git cloning, file tree display, and shell operations on anything in that given repository. This is much more of an exploratory product than a "go to scale to the moon" one, but that could change as LLMs and agents continue to explode in popularity.
+This one was especially fun from a systems perspective. I used Claude plus terminal MCP workflows to move quickly from concept to production features. I also published [a deep NFL stats post](https://pricearb.com/blog/100-nfl-stats-mad-lads) as part of that launch.
+
+Commercially, this launch did not gain traction yet. I still like the product, but I am parking it for now while I focus on products with stronger pull.
+
+## #3. Hindsight Data - [hindsightapi.com](https://hindsightapi.com)
+
+Hindsight Data is a historical market-context API for traders and quants.
+
+You can query economic releases, Fed speakers, and other market-moving context by date range, then use that context in backtests or trading research. Typical questions it answers quickly:
+
+- "Which dates had FOMC events?"
+- "When was CPI released, and what were the actual vs forecast values?"
+
+It is already useful in my own stack (including [AMT JOY](https://amtjoy.com)), and it is also a testbed for the API-first direction I want across my other products.
+
+## #4. Semanticprint - [semanticprint.com](https://semanticprint.com)
+
+Semanticprint is still early, but the core concept is one I use every day: turn a repo into high-quality LLM context in seconds.
+
+You pass a GitHub repo URL, and the system analyzes structure, dependencies, and code patterns, then generates outputs like semantic fingerprints and AI-ready context files. It is more exploratory right now than revenue-focused, but I think the timing is good as agent workflows keep accelerating.
 
 ## Building is Outpacing Launching!
 
-The problem is, I'm currently building faster than I can launch or properly market and disseminate new features. Febraury will still be a shipping month for all our APIs, but I think I also need to take a step back a bit and instead focus and push things that are working, and leaving whatever isn't working behind for now.
+My main takeaway is simple: I am building faster than I can launch and market.
+
+February will still be a shipping month (especially on API work), but I need a tighter operating loop: double down on what is already working, and stop spreading attention across too many active bets at once.
 
 ## Thanks!
 
