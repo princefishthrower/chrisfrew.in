@@ -1,0 +1,82 @@
+---
+title: Attempting to Launch Verimu in March and April
+description: Why I built Verimu, what shipped this month, and what comes next for CRA compliance in the EU.
+date: "2026-03-22"
+draft: false
+tags: Life, SaaS, Security
+---
+
+March was all about one product: [verimu](https://verimu.com).
+
+It has three connected parts:
+
+- [verimu.com](https://verimu.com): the product website and docs
+- [app.verimu.com](https://app.verimu.com): the dashboard for teams and projects
+- [`verimu` on npm](https://www.npmjs.com/package/verimu): the package/CLI for SBOM generation and vulnerability scanning in CI/CD
+
+I built this because I keep seeing the same pattern across teams in the EU, especially from my own medtech experience: everyone knows the Cyber Resilience Act is real, but many teams are still not operationally ready.
+
+## Why this product exists
+
+Most teams do not fail compliance because they do not care. They fail because compliance work gets fragmented:
+
+- dependency inventory is manual or stale
+- CVE monitoring lives in multiple tools with no clear ownership
+- reporting workflows are discussed but not actually wired into engineering operations
+
+The CRA turns this into an execution problem. If your software ships in Europe, you need a repeatable system, not a one-off spreadsheet.
+
+## What we shipped in February and March
+
+### 1) npm package + CLI
+
+We shipped the [`verimu` npm package](https://www.npmjs.com/package/verimu) to make scanning easy inside existing pipelines.
+
+Current capabilities include:
+
+- CycloneDX SBOM generation
+- CVE checks across major databases
+- support for multiple ecosystems (npm, NuGet, pip, Cargo, Maven, Go, Ruby)
+- CI-agnostic usage with examples for GitHub Actions, GitLab CI, and Bitbucket Pipelines
+
+The goal is simple: one command in CI, and you always have fresh dependency evidence.
+
+### 2) enterprise dashboard
+
+At [app.verimu.com](https://app.verimu.com), teams can manage projects, review dependencies/vulnerabilities, and handle team access in one place.
+
+This closes a key gap: scanning is only useful if teams can operationalize the output.
+
+### 3) the main website and docs
+
+[verimu.com](https://verimu.com) now includes practical docs and onboarding flow so teams can go from zero setup to actionable scans quickly.
+
+I also focused messaging around what teams actually need right now:
+
+- SBOM coverage that is current and auditable
+- vulnerability visibility tied to real dependencies
+- workflows that engineering and compliance can both understand
+
+## Built from real-world pressure
+
+This was not a random idea from trend watching.
+
+I have worked in regulated environments long enough to know what happens when requirements arrive before internal process maturity: engineers scramble, compliance teams escalate, and everyone loses time.
+
+Verimu is my attempt to remove that scramble and make compliance implementation boring, predictable, and automatable.
+
+## What is next
+
+The next milestones are straightforward:
+
+- harden and expand CI/CD automation paths
+- improve team-level alerting and reporting workflows
+- continue closing the gap between technical outputs (SBOM/CVE data) and compliance-ready artifacts
+
+If this is your world and your team is still piecing things together manually, I would genuinely love to hear from you.
+
+## Thanks
+
+Thanks for reading and for following along as I keep building.
+
+-Chris
