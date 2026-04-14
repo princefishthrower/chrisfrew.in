@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Architect of Everything — The New Yorker</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+  :root {
+    --ny-black: #121212;
+    --ny-text: #1a1a1a;
+    --ny-body: #2d2d2d;
+    --ny-gray: #6b6b6b;
+    --ny-light: #a8a8a8;
+    --ny-rule: #c4c4c4;
+    --ny-bg: #faf9f6;
+    --ny-cream: #f5f0e8;
+    --ny-red: #c1272d;
+    --ny-pull: #e8e3d9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 18px;
+    background: var(--ny-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: var(--ny-bg);
+    color: var(--ny-body);
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.72;
+  }
+
+  /* ── Header / Masthead ── */
+  .masthead {
+    text-align: center;
+    padding: 2.5rem 1rem 1.8rem;
+    border-bottom: 1px solid var(--ny-rule);
+  }
+
+  .masthead-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ny-black);
+  }
+
+  .masthead-sub {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ny-gray);
+    margin-top: 0.4rem;
+  }
+
+  /* ── Section Label ── */
+  .section-label {
+    text-align: center;
+    padding: 1.5rem 0 0;
+  }
+
+  .section-label span {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ny-red);
+  }
+
+  /* ── Hero ── */
+  .hero {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 1.12;
+    color: var(--ny-black);
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero .deck {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ny-gray);
+    max-width: 580px;
+    margin: 0 auto 1.8rem;
+    line-height: 1.6;
+  }
+
+  .hero .byline {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ny-text);
+  }
+
+  .hero .dateline {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: var(--ny-light);
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+  }
+
+  /* ── Dividers ── */
+  .divider {
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--ny-rule);
+  }
+
+  .ornament {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--ny-light);
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+  }
+
+  /* ── Article Body ── */
+  .article {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  .article p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    text-indent: 0;
+  }
+
+  .article p + p {
+    text-indent: 1.5em;
+  }
+
+  .article p.no-indent {
+    text-indent: 0 !important;
+  }
+
+  .drop-cap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4.2rem;
+    float: left;
+    line-height: 0.75;
+    margin-right: 0.08em;
+    margin-top: 0.1em;
+    color: var(--ny-black);
+  }
+
+  /* ── Pull Quotes ── */
+  .pull-quote {
+    margin: 2.8rem -2rem;
+    padding: 2.2rem 2.5rem;
+    position: relative;
+    text-align: center;
+    border-top: 3px solid var(--ny-black);
+    border-bottom: 1px solid var(--ny-rule);
+  }
+
+  .pull-quote blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.35;
+    color: var(--ny-black);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .pull-quote .attrib {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ny-gray);
+    margin-top: 0.9rem;
+  }
+
+  /* ── Inline Quote Callout ── */
+  .inline-callout {
+    background: var(--ny-cream);
+    margin: 2.5rem -1rem;
+    padding: 1.8rem 2rem;
+    border-left: 3px solid var(--ny-red);
+  }
+
+  .inline-callout p {
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ny-text);
+    text-indent: 0 !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .inline-callout p:last-child { margin-bottom: 0; }
+
+  /* ── Section Breaks ── */
+  .section-break {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--ny-light);
+    letter-spacing: 0.3em;
+  }
+
+  /* ── Subhead ── */
+  .article h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--ny-black);
+    margin: 2.5rem 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Footer ── */
+  .article-footer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    border-top: 1px solid var(--ny-rule);
+    text-align: center;
+  }
+
+  .article-footer p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ny-light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .end-mark {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--ny-black);
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  /* ── Animations ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  .fade-in:nth-child(2) { animation-delay: 0.15s; }
+  .fade-in:nth-child(3) { animation-delay: 0.3s; }
+  .fade-in:nth-child(4) { animation-delay: 0.45s; }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    .hero h1 { font-size: 2.2rem; }
+    .pull-quote { margin: 2rem -0.5rem; padding: 1.5rem 1.2rem; }
+    .pull-quote blockquote { font-size: 1.3rem; }
+    .inline-callout { margin: 2rem -0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead fade-in">
+  <div class="masthead-brand">The New Yorker</div>
+  <div class="masthead-sub">Profiles &nbsp;·&nbsp; Business &nbsp;·&nbsp; Technology</div>
+</header>
+
+<div class="section-label fade-in"><span>Profiles</span></div>
+
+<div class="hero fade-in">
+  <h1>The Architect of Everything</h1>
+  <p class="deck">
+    Chris Frewin built twenty products, three open-source libraries, a market-regime engine,
+    and a meme-video pipeline—from a farm in the Austrian Tyrol. Then, without venture capital,
+    a sales team, or a single paid advertisement, he crossed a hundred thousand dollars
+    a month. A portrait of the one-man operation that quietly won the AI boom.
+  </p>
+  <div style="text-align:center; margin: 2rem auto 1.2rem;">
+    <img src="/images/avatar-newyorker-sketch.jpg" alt="Portrait illustration of Chris" style="max-width: 340px; width: 80%; border-radius: 2px;">
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 0.65rem; color: #a8a8a8; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.6rem;">Illustration by The New Yorker</p>
+  </div>
+  <p class="byline">By Staff Correspondent</p>
+  <p class="dateline">September 15, 2026</p>
+</div>
+
+<hr class="divider">
+
+<article class="article">
+
+  <p class="drop-cap no-indent">
+    The first thing you notice about Chris's office is that it isn't one. It is a converted room in a farmhouse in western Austria, somewhere in Tyrol, where the Inn Valley flattens out beneath a wall of Alps so implausibly steep they look like a rendering error. A monitor glows with candlestick charts. Another shows a terminal scrolling Go compiler output. A third displays a heat map of something he calls "dealer flow surfaces"—a visualization of how options market makers are positioned, which he built from scratch, and which a small but fanatical community of traders has come to treat as essential infrastructure. On a good month—and August was a very good month—these screens, and the products behind them, generate over a hundred thousand dollars in recurring revenue.
+  </p>
+
+  <p>
+    He runs this operation alone. Technically, Full Stack Craft is a single-member LLC. There are two part-time colleagues who contribute to specific products, but the architecture—every API, every data pipeline, every pricing page, every deployment—flows through one person. When the AI boom arrived, it minted fortunes for venture-backed teams of hundreds. Chris may be among the first to prove you could do it with a team you could fit in the front seat of a car, and without a single dollar of outside funding or paid advertising.
+  </p>
+
+  <div class="pull-quote">
+    <blockquote>
+      "I don't know what the world looks like in five years. I'm just trying to balance everything I can and provide for my family."
+    </blockquote>
+  </div>
+
+  <p class="no-indent">
+    Outside, there are actual fields. Actual cows within earshot. He moved here with his family earlier this year, partly for the life, partly for a thesis about the future that he articulates with the quiet conviction of someone who has thought about it at four in the morning more times than is probably healthy. The thesis goes like this: pure software is being commoditized by artificial intelligence. The moat is not code. The moat is the full stack—from silicon to screen, from soil sensors to dashboards, from raw market data to a product that helps a retail trader in Ohio understand what Goldman's derivatives desk is doing at two-thirty on a Tuesday. The people who survive are the ones who can build across every layer. And so he set about doing exactly that, with a breadth of output that borders on the unreasonable—and which, as of this summer, has been validated by the market in terms that are difficult to argue with.
+  </p>
+
+  <p>
+    Under Full Stack Craft, Chris built and operates a portfolio that, when listed in full, sounds like the product roadmap of a fifty-person startup: VannaCharm, a dealer-flow analytics platform for options traders. The Wheel Screener. The LEAPS Screener. The Option Screener. <span style="font-family: 'IBM Plex Sans', monospace; font-size: 0.9em;">AMT JOY</span>, which does market-profile and auction-theory analysis for futures traders. PriceArb, which finds edges in prediction markets. Hindsight Data, an API for historical economic releases. Verimu, a compliance tool for the European Union's Cyber Resilience Act. And underneath all of it, an open-source library suite called <span style="font-family: 'IBM Plex Sans', monospace; font-size: 0.9em; text-transform: lowercase;">floe</span>—ported to three languages, TypeScript, Go, and Python—that serves as both the calculation engine powering his products and a credibility play in the developer community.
+  </p>
+
+  <p>
+    No venture funding. No paid acquisition. No hype. The entire operation was built on organic search, Monday-morning livestreams, and what he describes, without embarrassment, as "delusional optimism."
+  </p>
+
+  <div class="section-break">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <p class="no-indent">
+    I ask him about the word "delusional," which he uses freely and with evident relish. He leans back. The Alps do something theatrical with the afternoon light behind him.
+  </p>
+
+  <div class="inline-callout">
+    <p>"There was a woman in my bachelor's program—years ago—and she said something I've never been able to shake. She said, 'I can't explain it, but everything I know about you and your personality, I know you're going to do something great and change the world.' And I've held onto that ever since. That was the seed. The rest was just building."</p>
+  </div>
+
+  <p class="no-indent">
+    There is something in the way he says this—blunt, slightly defiant, not performing vulnerability but not hiding from it either—that makes you believe him. The man is not trying to impress you. He has spent the better part of a decade outrunning a future he could see more clearly than most, and the running produced a body of work that is, by any honest accounting, staggering in its range. The difference now is that the market caught up with him.
+  </p>
+
+  <div class="section-break">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <p class="no-indent">
+    The proprietary systems are where things get interesting. Beneath the consumer-facing products sit two engines that Chris built in Go and guards with evident pride. The first, which he calls Market Regime, is a daily classification system that determines the current market environment and generates the replay surfaces that power VannaCharm. The second, Auction Flow, is a full cross-instrument intraday trading engine with backtesting, live signal scoring, and risk management. Together they represent a quantitative infrastructure stack that would be recognizable—and, he says with a grin that suggests this was always the point—threatening to any small quantitative fund.
+  </p>
+
+  <div class="pull-quote">
+    <blockquote>
+      "I am the architect of twenty-plus products. I have a framework for writing books. I have a framework for writing automated software courses. And I have a fintech stack that could make some small funds sweat."
+    </blockquote>
+    <div class="attrib">— Chris, in an interview session, September 2026</div>
+  </div>
+
+  <p class="no-indent">
+    He said that in April. At the time, Full Stack Craft's monthly recurring revenue sat around five thousand dollars—enough, with his wife's income, to cover household expenses, but not enough to constitute the escape velocity he was after. His employer had placed him on paid leave through mid-year, which he was treating less as a crisis and more as a strategic gift: a cash buffer and a window of protected time in which to push every product toward critical mass simultaneously.
+  </p>
+
+  <p>
+    His target, stated aloud that month with the straight face of a man who has decided that self-doubt is a luxury he can no longer afford: one hundred thousand dollars in monthly recurring revenue by August. A twentyfold increase in four months.
+  </p>
+
+  <p>
+    "People heard that and thought I was insane," he told me. "But look at the surface area. Look at what was already built and running. The bottleneck was never capability. It was commercialization velocity." He paused. "I just had to start selling."
+  </p>
+
+  <div class="section-break">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <p class="no-indent">
+    The story of the next four months is, in miniature, the story of the AI boom itself—but inverted. While venture-backed companies burned through funding on large language models and chatbot wrappers, Chris was doing something unglamorous and methodical: layering revenue streams on top of infrastructure he had already built. He launched an affiliate program—born not from strategy, he insists, but from users literally asking for a way to get paid for recommending his tools. He opened API tiers for quantitative developers and small funds, pricing the data feeds at three hundred to a thousand dollars a month. He pushed Verimu into the growing panic over EU compliance deadlines. He published an SEO article nearly every day. He launched Hindsight Data. He bundled his options tools into a single subscription at a price point that made the buying decision trivially easy.
+  </p>
+
+  <p>
+    None of it was revolutionary. All of it was execution—relentless, compounding, built on a foundation that had taken years to lay. The affiliate network grew. The API clients signed on. The organic search traffic, fed by years of genuine content rather than keyword-stuffed filler, compounded. By June, revenue had crossed fifty thousand. By August, it cleared a hundred.
+  </p>
+
+  <p>
+    There is a principle Chris applies to pricing that is, in the current landscape of SaaS entrepreneurship, almost quaintly countercultural. He refuses to optimize for maximum willingness to pay. VannaCharm's premium tier was—and remains—twenty-nine dollars a month. He has been told, more than once, by more than one person, that the market would bear three or four times that. He does not care.
+  </p>
+
+  <div class="inline-callout">
+    <p>"I want to charge what feels fair. Not what the spreadsheet says I can extract. If someone's using my tool to understand dealer flow and make better trades, twenty-nine bucks is fair. If I charge a hundred and twenty because some pricing consultant told me to, I'm not building a product anymore—I'm building a toll booth."</p>
+  </div>
+
+  <p class="no-indent">
+    This stubbornness—and it is stubbornness, the kind that makes advisors wince—is also, in a way, the brand. Full Stack Craft's users trust the tools because they trust the person behind them. He shows up on Monday mornings and livestreams his analysis of the week's dealer flow. He answers questions in communities. He open-sources the calculation libraries so people can verify his math. In an industry saturated with hype merchants selling courses on strategies they've never traded profitably, the transparency is notable. It is also, as it turns out, an extraordinarily effective growth strategy. People do not churn from products built by someone they believe is honest.
+  </p>
+
+  <p>
+    The revenue pyramid, as it exists today, is instructive. At the top sit a handful of institutional API clients and licensing partners—prop firms and trading platforms that pay four and five figures monthly for data most of the world didn't know existed. In the middle, a growing layer of quantitative developers accessing his engines programmatically. And at the broad base, hundreds of individual traders still paying prices Chris considers fair. The hundred-thousand-dollar figure is not one product. It is twenty products, three pricing tiers, an affiliate network, and a data infrastructure layer that took years to build and months to monetize.
+  </p>
+
+  <div class="section-break">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <p class="no-indent">
+    There is a narrative in the technology industry that the AI boom belongs to large teams with large budgets—that the era of the solo founder ended sometime around 2019, when the complexity of modern software exceeded what any one person could hold in their head. Chris's existence is a quiet rebuttal to this idea. Not a loud one. He has no Twitter following in the millions. He has not appeared on a podcast with the word "hustle" in the title. He built twenty products, open-sourced the math, priced them fairly, and let the work compound until the numbers became difficult to ignore.
+  </p>
+
+  <p>
+    "Full-stack" is a term the software industry uses to describe a developer who works on both the front end and the back end of a web application. Chris uses it to mean something more expansive—almost existential. To him, full-stack means the entire column of technology from a microcontroller buried in soil to a React component rendering in a browser. It means Go services classifying market regimes at four A.M. and meme videos rendering through a custom pipeline for TikTok distribution at noon. It means writing the library, hosting the API, building the product, designing the landing page, recording the livestream, and debugging the ESP32 that monitors whether frost is about to kill the neighbor's apple crop.
+  </p>
+
+  <div class="pull-quote">
+    <blockquote>
+      "The people who survive are the ones who can build across every layer. From silicon to screen."
+    </blockquote>
+  </div>
+
+  <p class="no-indent">
+    What he cares about, as near as I can tell from two days on a farm in the Austrian Tyrol watching a man context-switch between options-flow analysis and whether the IoT sensor enclosure can survive a Tyrolean winter, is the gap between what he can see in his head and what exists in the world. The gap offends him. And so he builds.
+  </p>
+
+  <p>
+    The hundred-thousand-dollar milestone, when it arrived, did not produce the reaction you might expect. There was no champagne. No announcement. He mentioned it to me in passing, between a discussion of gamma exposure and a complaint about the ESP32's Bluetooth range. I asked him what it felt like.
+  </p>
+
+  <p>
+    He looked at the mountains. The light was doing something theatrical with the late-afternoon clouds.
+  </p>
+
+  <p>
+    "It feels like the beginning."<span class="end-mark"></span>
+  </p>
+
+</article>
+
+<div class="article-footer">
+  <p>Published in the September 15, 2026, issue of The New Yorker</p>
+</div>
+
+</body>
+</html>
