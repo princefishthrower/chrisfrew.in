@@ -81,6 +81,14 @@ export function NavLinks() {
                     offsetArray[0]
                 )}
             </Link>
+            <Link style={{fontWeight: "bold"}} to="/ai-slop">
+                {colorizeStringBySeparator(
+                    themeBodyClass,
+                    "AI Slop",
+                    " ",
+                    offsetArray[2]
+                )}
+            </Link>
             <Link style={{fontWeight: "bold"}} to="/chris">
                 {colorizeStringBySeparator(
                     themeBodyClass,
