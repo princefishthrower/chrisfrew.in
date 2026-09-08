@@ -12,11 +12,15 @@ exports.createPages = async ({ graphql, actions }) => {
     const result = await graphql(
         `
             {
-                allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+                allMdx(
+                    sort: {frontmatter: {date: DESC}}
+                    limit: 1000
+                ) {
                     edges {
                         node {
                             fields {
                                 slug
+                                isPublished
                             }
                             frontmatter {
                                 title
@@ -40,15 +44,15 @@ exports.createPages = async ({ graphql, actions }) => {
         throw result.errors
     }
 
-    // get all posts - will need these for building pages
-    const posts = result.data.allMdx.edges
+    // Keep draft URLs previewable in development while excluding them from
+    // every production page, navigation relationship, tag, and pagination set.
+    const allPosts = result.data.allMdx.edges
+    const posts = process.env.NODE_ENV === `production`
+        ? allPosts.filter(({ node }) => node.fields.isPublished)
+        : allPosts
 
     // Create blog post pages.
     posts.forEach((post, index) => {
-
-        if (post.node.frontmatter.draft !== undefined && post.node.frontmatter.draft === false) {
-            console.log(`Post "${post.node.title}" has draft status and will not be published.`)
-        }
 
         const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
@@ -107,6 +111,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
             node,
             value,
         })
+        createNodeField({
+            name: `isPublished`,
+            node,
+            value: node.frontmatter?.draft !== true,
+        })
     }
 }
 
@@ -135,5 +144,3 @@ async function spawnChild(command, arguments, successConsoleLog) {
         console.log(successConsoleLog)
     }
 }
-
-

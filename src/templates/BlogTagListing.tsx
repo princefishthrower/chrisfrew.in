@@ -92,7 +92,10 @@ export const blogTagListQuery = graphql`
         }
         allMdx(
             sort: { frontmatter: { date: DESC } }
-            filter: { frontmatter: { tags: { regex: $tagRegex } } }
+            filter: {
+                fields: { isPublished: { eq: true } }
+                frontmatter: { tags: { regex: $tagRegex } }
+            }
         ) {
             edges {
                 node {

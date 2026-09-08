@@ -20,7 +20,11 @@ export function TagRenderer(props: ITagRendererProps) {
     const { tags, linkToTagPage, withTitle } = props
     const data = useStaticQuery(graphql`
         query AllTagsQuery {
-            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+            allMdx(
+                sort: {frontmatter: {date: DESC}}
+                filter: {fields: {isPublished: {eq: true}}}
+                limit: 1000
+            ) {
                 edges {
                     node {
                         frontmatter {

@@ -45,10 +45,6 @@ export function SocialsContainer() {
                     GitHub
                 </a>
                  
-                <a href="https://reddit.com/user/trollerroller" rel="me">
-                    Reddit
-                </a>
-                 
                 <a
                     className="u-email"
                     href="mailto:frewin.christopher@gmail.com"

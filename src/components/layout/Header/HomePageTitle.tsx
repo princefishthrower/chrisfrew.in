@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { AvatarPicture } from "../../utils/AvatarPicture"
-import { MissionText } from "./MissionText"
+// import { MissionText } from "./MissionText"
 
 export function HomePageTitle() {
     const data = useStaticQuery(graphql`
@@ -45,7 +45,7 @@ export function HomePageTitle() {
                     {data.site.siteMetadata.subsubtitle}
                 </h2>
             </div>
-            <MissionText/>
+            {/* <MissionText/> */}
         </>
     )
 }

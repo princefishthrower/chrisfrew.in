@@ -129,20 +129,20 @@ const BlogPostListing = ({ data, location, pageContext }: PageProps<PageData, Pa
                     <h2 className="monokaiRedFont">Clean CRUD APIs</h2>
                 </Link>
             </div>
-            <h2>Things I'm Working On / In:</h2>
-            <TagRenderer
-                withTitle={false}
-                linkToTagPage={true}
-                tags={[
-                    "Rust",
-                    "Golang",
-                    "React",
-                    "Gatsby",
-                    "TypeScript",
-                    "C#",
-                    "WPF"
-                ]}
-            />
+            {/* <h2>Things I'm Working On / In:</h2>
+                <TagRenderer
+                    withTitle={false}
+                    linkToTagPage={true}
+                    tags={[
+                        "Rust",
+                        "Golang",
+                        "React",
+                        "Gatsby",
+                        "TypeScript",
+                        "C#",
+                        "WPF"
+                    ]}
+                /> */}
             <h2>Posts By Tag:</h2>
             <TagRenderer withTitle={false} linkToTagPage={true} />
             <DuckContainer />
@@ -210,7 +210,11 @@ export const blogListQuery = graphql`
                 subsubsubtitle
             }
         }
-        allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+        allMdx(
+            sort: {frontmatter: {date: DESC}}
+            filter: {fields: {isPublished: {eq: true}}}
+            limit: 1000
+        ) {
             edges {
                 node {
                     excerpt

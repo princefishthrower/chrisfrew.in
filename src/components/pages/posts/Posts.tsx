@@ -8,7 +8,11 @@ import { useStaticQuery, graphql } from "gatsby"
 export function Posts() {
     const data = useStaticQuery(graphql`
         query PostCountQuery {
-            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+            allMdx(
+                sort: {frontmatter: {date: DESC}}
+                filter: {fields: {isPublished: {eq: true}}}
+                limit: 1000
+            ) {
                 edges {
                     node {
                         fields {

@@ -55,7 +55,10 @@ export function FilterableAndSortablePostsWidget(
                     subsubtitle
                 }
             }
-            allMdx(sort: { frontmatter: { date: DESC } }) {
+            allMdx(
+                sort: { frontmatter: { date: DESC } }
+                filter: { fields: { isPublished: { eq: true } } }
+            ) {
                 edges {
                     node {
                         excerpt

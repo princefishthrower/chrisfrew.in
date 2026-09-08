@@ -49,44 +49,12 @@ export function NavLinks() {
                     offsetArray[2]
                 )}
             </Link>
-            <Link style={{fontWeight: "bold"}} to="/goodies">
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    "Goodies",
-                    " ",
-                    offsetArray[3]
-                )}
-            </Link>
             <Link style={{fontWeight: "bold"}} to="/books">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Books",
                     " ",
                     offsetArray[4]
-                )}
-            </Link>
-            <Link style={{fontWeight: "bold"}} to="/stats">
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    "Stats",
-                    " ",
-                    offsetArray[5]
-                )}
-            </Link>
-            <Link style={{fontWeight: "bold"}} to="/podcasts">
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    "Podcasts",
-                    " ",
-                    offsetArray[0]
-                )}
-            </Link>
-            <Link style={{fontWeight: "bold"}} to="/ai-slop">
-                {colorizeStringBySeparator(
-                    themeBodyClass,
-                    "AI Slop",
-                    " ",
-                    offsetArray[2]
                 )}
             </Link>
             <Link style={{fontWeight: "bold"}} to="/chris">
@@ -97,6 +65,17 @@ export function NavLinks() {
                     offsetArray[1]
                 )}
             </Link>
+            <a
+                style={{ fontWeight: "bold" }}
+                href="https://writing.chrisfrewin.com"
+            >
+                {colorizeStringBySeparator(
+                    themeBodyClass,
+                    "Writing",
+                    " ",
+                    offsetArray[3]
+                )}
+            </a>
         </>
     )
 }
