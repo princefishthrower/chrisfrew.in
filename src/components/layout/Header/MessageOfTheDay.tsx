@@ -15,19 +15,19 @@ export function MessageOfTheDay() {
     const currentYear = new Date().getFullYear()
 
     const messagesOfTheDay = [
-        "💯 make strong types great again! 💯",
-        "👨‍💻👩‍💻 because somebody has to! 👨‍💻👩‍💻",
+        // "💯 make strong types great again! 💯",
+        // "👨‍💻👩‍💻 because somebody has to! 👨‍💻👩‍💻",
         "💻 recursively recurring 💻",
-        "🐵 code monkey 🐵",
-        "🚀 my terminals are burnin'! 🚀",
+        // "🐵 code monkey 🐵",
+        // "🚀 my terminals are burnin'! 🚀",
         "⏫ stacking the full stack ⏫",
         "💥 bashing the bash [~]$> 💥",
         "🍻 enjoy & cheers! 🍻",
-        "🤔 what's a software? 🤔",
-        "🤓 sir, best framework? 🤓",
-        "☠️ framework X is better than Y! ☠️",
-        "👓 RTFD - I won't do it for you 👓",
-        `🤖 ${currentYear} and AI still hasn't taken my job! 🤖`,
+        // "🤔 what's a software? 🤔",
+        // "🤓 sir, best framework? 🤓",
+        // "☠️ framework X is better than Y! ☠️",
+        // "👓 RTFD - I won't do it for you 👓",
+        // `🤖 ${currentYear} and AI still hasn't taken my job! 🤖`,
         "✅ ahh... no type errors! it has to work! ✅"
     ]
 

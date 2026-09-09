@@ -6,25 +6,11 @@ export function SitePortfolio() {
             <h2 className="font-weight-bold">Other Sites</h2>
             <div className="flex-container">
                 <a
-                    href="https://sirenapparel.us"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Siren Apparel
-                </a>
-                <a
                     href="https://nlp-champs.chrisfrew.in"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     NLP Champs
-                </a>
-                <a
-                    href="https://seelengeflüster-tirol.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    seelengeflüster-tirol.com
                 </a>
                 <a
                     href="https://wallstreetbetswally.github.io"
@@ -53,20 +39,6 @@ export function SitePortfolio() {
                     rel="noopener noreferrer"
                 >
                     photography.chrisfrew.in
-                </a>
-                <a
-                    href="https://fullstackcraft.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    fullstackcraft.com
-                </a>
-                <a
-                    href="https://princefishthrower.github.io/invaders/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Invaders!
                 </a>
             </div>
         </>

@@ -14,7 +14,11 @@ import Sparkles from "../../utils/Sparkles"
 export function Stats() {
     const data = useStaticQuery(graphql`
         query StatsQuery {
-            allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+            allMdx(
+                sort: {frontmatter: {date: DESC}}
+                filter: {fields: {isPublished: {eq: true}}}
+                limit: 1000
+            ) {
                 edges {
                     node {
                         fields {

@@ -175,6 +175,7 @@ function getBlogFeed({ filePathRegex, blogUrl, ...overrides }) {
            allMdx(
              limit: 25,
              sort: { order: DESC, fields: [frontmatter___date] }
+             filter: { fields: { isPublished: { eq: true } } }
            ) {
              edges {
                node {
