@@ -49,20 +49,20 @@ export function NavLinks() {
                     offsetArray[2]
                 )}
             </Link>
-            <Link style={{fontWeight: "bold"}} to="/books">
+            {/* <Link style={{fontWeight: "bold"}} to="/books">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "Books",
                     " ",
                     offsetArray[4]
                 )}
-            </Link>
+            </Link> */}
             <Link style={{fontWeight: "bold"}} to="/chris">
                 {colorizeStringBySeparator(
                     themeBodyClass,
                     "About",
                     " ",
-                    offsetArray[1]
+                    offsetArray[3]
                 )}
             </Link>
             <a
@@ -73,7 +73,7 @@ export function NavLinks() {
                     themeBodyClass,
                     "Writing",
                     " ",
-                    offsetArray[3]
+                    offsetArray[4]
                 )}
             </a>
         </>
